@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'f3ac95681e11'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Карликовая такса, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Карликовая такса (миниатюрная такса, мини-такса) – ближайшая родственница стандартной таксы, имеющая такой же экстерьер, но уступающая ей в размерах. По габаритам порода является «промежуточным звеном» между стандартной и кроличьей таксами." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/a3c/a3c8ff2f93c22a534463536b93cfcb3f.jpg" property="og:image"/>
+     <title>
+      Карликовая такса (миниатюрная такса, мини-такса)  — описание породы собаки от А до Я
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/karlikovaya-taksa/" property="og:url"/>
+     <meta content="Карликовая такса (миниатюрная такса, мини-такса)  — описание породы собаки от А до Я" property="og:title"/>
+     <meta content="Карликовая такса (миниатюрная такса, мини-такса) – ближайшая родственница стандартной таксы, имеющая такой же экстерьер, но уступающая ей в размерах. По габаритам порода является «промежуточным звеном» между стандартной и кроличьей таксами." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/karlikovaya-taksa/" itemprop="url">
+         <span itemprop="title">
+          Карликовая такса
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Карликовая такса
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/karlikovaya-taksa/">
+          Описание
+         </a>
+         <a href="/dog/karlikovaya-taksa/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/karlikovaya-taksa/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/karlikovaya-taksa/photo/">
+          Фото
+         </a>
+         <a href="/dog/karlikovaya-taksa/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Карликовая такса" src="/upload/iblock/70a/70a66036a7174161902b5ddbadf00673.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/karlikovaya-taksa/">
+           миниатюрная такса
+          </a>
+          ,
+          <a href="/dog/karlikovaya-taksa/">
+           мини-такса
+          </a>
+         </span>
+         <p>
+          Карликовая такса (миниатюрная такса, мини-такса) – ближайшая родственница стандартной таксы, имеющая такой же экстерьер, но уступающая ей в размерах. По габаритам порода является «промежуточным звеном» между стандартной и кроличьей таксами.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/247/247b6be9c93d965f4073b6779d6203d2.jpg" data-cap="Say hi ????????" data-fancybox="images" data-link="https://www.instagram.com/p/CFVEPj0jZh_/" data-type="image" data-username="dachshundparty" href="/upload/uf/586/586cc1bbd762e8ad82dc2b54b15276a9.jpg">
+            <img alt="Карликовая такса" src="/upload/resize_cache/uf/586/293_293_2/586cc1bbd762e8ad82dc2b54b15276a9.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/260/26049d2ca511663742e56077503242b8.jpg" data-cap="This bed ain’t big enough for the both of us! (Well it probs could be.. but I don’t share, soz ????)  Big thanks to my new furriends ???? over at @petslovescruffs for sending me one of their fancy ‘Manhattan’ beds ???? totally dachshund proof.... any doxie mamas will know how hard that is ????" data-fancybox="images" data-link="https://www.instagram.com/p/CFSXL35jh97/" data-type="image" data-username="dudleythe.dachshund" href="/upload/uf/aa5/aa561ee8fd429f854d7a7e710a503923.jpg">
+            <img alt="Карликовая такса" src="/upload/resize_cache/uf/aa5/293_293_2/aa561ee8fd429f854d7a7e710a503923.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/121/121926daf79a8fb53024aee784d64cc0.jpg" data-cap="Sorry, I can’t hear you over the volume of my hair ????" data-fancybox="images" data-link="https://www.instagram.com/p/CFR6Zq3DM-9/" data-type="image" data-username="gaston.the.dachshund" href="/upload/uf/f97/f9746cde2159adedea0b9c9583791369.jpg">
+            <img alt="Карликовая такса" src="/upload/resize_cache/uf/f97/293_293_2/f9746cde2159adedea0b9c9583791369.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/karlikovaya-taksa/photo/">
+         Все
+            фото карликовой таксы
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <style>
+        .podvidi h2 {
+                text-align: left;
+                margin: 0 0 40px;
+            }
+            .podvidi h2 a{
+                color: #000;
+                border-bottom: 1px solid #bbb;
+            }
+            .podvidi .pop-porodi-block{
+                text-align:left;
+            }
+       </style>
+       <div class="pop-porodi podvidi">
+        <div class="pop-porodi-block">
+         <h2 id="info">
+          Разновидности
+          <a href="/dog/taksa/">
+           Такс
+          </a>
+         </h2>
+         <a class="poroda-element" href="/dog/taksa/">
+          <div class="ava-poroda">
+           <img alt="Обычная такса" class="article_pic" src="/upload/resize_cache/iblock/53b/100_100_1/53b92eec713e2c552ebc1f1001a0a350.jpg"/>
+          </div>
+          <span>
+           Обычная такса
+          </span>
+         </a>
+         <a class="poroda-element" href="/dog/karlikovaya-taksa/">
+          <div class="ava-poroda">
+           <img alt="Карликовая такса" class="article_pic" src="/upload/resize_cache/iblock/70a/100_100_1/70a66036a7174161902b5ddbadf00673.jpg"/>
+          </div>
+          <span>
+           Карликовая такса
+          </span>
+         </a>
+         <a class="poroda-element" href="/dog/krolichya-taksa/">
+          <div class="ava-poroda">
+           <img alt="Кроличья такса" class="article_pic" src="/upload/resize_cache/iblock/31a/100_100_1/6qci7nzbprdskmwyxv3egov5ex0800tx.jpg"/>
+          </div>
+          <span>
+           Кроличья такса
+          </span>
+         </a>
+        </div>
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы карликовая такса
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы карликовая такса
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер миниатюрной таксы
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Охота
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Здоровье и болезни карликовых такс
+          </a>
+         </li>
+         <li>
+          <a href="#gl10">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl11">
+           Цена карликовой таксы
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Карликовая такса
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Германия
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         4-5 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         около 30 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         12-15 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         В теле мини-таксы скрывается существо с сильным характером и чувством собственного достоинства, которое не прочь занять место лидера в вашей семье.
+        </li>
+        <li>
+         Все карликовые таксы мнят себя супергероями и отважно бросаются на защиту хозяина, даже когда угроза незначительна.
+        </li>
+        <li>
+         Порода чувствительна к изменениям температурного режима, поэтому траты на зимний гардероб для мини-таксы неизбежны.
+        </li>
+        <li>
+         Мелкие животные для миниатюрной таксы – потенциальная добыча, но приучить собаку не истязать кошку и остальных представителей домашней фауны вполне реально.
+        </li>
+        <li>
+         Слабое место породы – позвоночник, поэтому собакам строго противопоказаны любые прыжки, а в юниорском возрасте – самостоятельные спуски и подъемы по ступенькам, а также поднятие за загривок.
+        </li>
+        <li>
+         Щенки миниатюрной таксы крайне шаловливы, поэтому прячьте подальше дорогую обувь, провода и бытовую химию, а также привыкайте к тому, что мебель и обои будут опробованы «на зубок».
+        </li>
+        <li>
+         Охотничьи инстинкты породы заставляют ее представителей совершать подвиги даже на прогулках: ни одна такса не пройдет мимо кротовой или мышиной норы, не исследовав ее.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Карликовая такса" data-original="/upload/iblock/a3c/a3c8ff2f93c22a534463536b93cfcb3f.jpg">
+          <noscript data-alt="Карликовая такса" data-original="/upload/iblock/a3c/a3c8ff2f93c22a534463536b93cfcb3f.jpg">
+           <img alt="Карликовая такса" src="/upload/iblock/a3c/a3c8ff2f93c22a534463536b93cfcb3f.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Карликовая такса
+          </strong>
+          – заводная «сарделька», всегда готовая спасти этот мир и собственного хозяина в придачу. Не обольщайтесь игрушечными габаритами корпулентного коротконожки и не пытайтесь рассмотреть в нем диванного ленивца. Настоящая мини-такса – это донельзя любопытный питомец и азартный норный инспектор, находящийся в перманентном поиске подходящей добычи. В домашней обстановке собака вынуждена снижать градус активности, поэтому вымещает свои охотничьи пристрастия на других мелких домашних животных или игрушках.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Сложно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средний (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Плохой охранник (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Карликовая такса основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы карликовая такса
+        </h2>
+        <p>
+         История карликовых такс прослеживается с XVI века, когда в южных районах Германии увлеклись разведением норных собак для отлова барсуков. Правда, отдельные исследователи считают возраст породы более внушительным, ссылаясь на изображения коротконогих псов, найденные в гробницах фараонов. Сегодня родство между древнеегипетскими и немецкими таксами остается неподтвержденным, что не мешает ученым строить самые невероятные теории относительно происхождения норных пород.
+        </p>
+        <p>
+         Первоначальное название таксы – «даксхунд»: от нем. Dachs – «барсук» и Hund – «собака». Однако со временем сложное слово вытеснило более удобное и короткое – «дакель» (как вариант – «текель»), которым в Германии такс называют до сих пор. Прародителями породы считаются браки – гончие с укороченными, непропорциональными ногами. Путем жесткого отбора производителей немецким заводчикам удалось получить питомцев с экстремально низкой «посадкой», которые были почти так же азартны в охоте, как браки, но при этом не застревали в барсучьих норах. К XVII веку клан браков распался на две ветви – низких гончих, охотившихся обычным способом, и текелей, специализировавшихся на работе в норах.
+        </p>
+        <p>
+         Что касается карликовой разновидности таксы, то она появилась на свет позже стандартной, причем порода выводилась исключительно с практической целью. Дело в том, что потомки браков отлично работали под землей с лисами и барсуками, но были крупноваты для кроличьих нор. Это натолкнуло заводчиков на мысль скрестить
+         <a class="ph" href="/dog/taksa/">
+          стандартную таксу
+         </a>
+         с представителями других миниатюрных пород. Одним из таких селекционеров-первопроходцев стал Ф. Энгельманн, повязавший своих подопечных с карликовыми пинчерами. Эксперимент оказался провальным, так как рожденное в результате потомство имело тонкий костяк и не могло использоваться в охоте. После этого специалисты сконцентрировались на внутрипородных вязках, отбирая для них только самых мелких особей. Именно таким способом и были выведены сначала карликовая такса, а затем еще более миниатюрная – кроличья.
+        </p>
+        <p>
+         В Россию карликовых такс завезли в XVIII веке, но позволить себе обладать коротконогой собакой могла только крупная знать. Охотничьим талантам породы в отечественных реалиях тоже применения не нашлось, поэтому животные вели сытую и ленивую жизнь декоративных питомцев. С XIX века армия поклонников карликовых такс не перестает расти. Самые известные фанаты породы: королева Виктория, Наполеон Бонапарт, принцесса Монако Каролина, Жак Ив Кусто.
+        </p>
+        <h2>
+         Видео: Карликовая такса
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="6l6sty6SFVo">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы карликовая такса
+        </h2>
+        <p>
+         У миниатюрной, кроличьей и
+         <a class="ph" href="/dog/taksa/">
+          стандартной таксы
+         </a>
+         один стандарт внешности на троих. Объясняется это тем, что породы различаются только габаритами и повадками. В качестве примера: оптимальные границы роста для карликовой таксы – 30-35 см, что минимум на 5 см меньше, чем у стандартной, но больше, чем у кроличьей разновидности. В остальном представители карликовой ветви – такие же упитанные, как и их сородичи. Важный пропорциональный баланс: соотношение высоты мини-таксы в холке и длины тела должно составлять не менее 1:1,7 (1,8).
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Контур головы вытянутый, но без заостренности. Надбровья четко выделяющиеся, черепная коробка уплощенная, стоп легкий, малозаметный.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Уши карликовой таксы отличает высокая посадка. Ушное полотно очень подвижное, умеренно вытянутое в длину.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         У всех такс глаза некрупные, овальной формы, заметно удаленные друг от друга. Взгляд ясный, энергичный, дружелюбный, без подозрительности. Утвержденные стандартом окрасы радужной оболочки: от красно-карего до чёрно-коричневого. Нежелательные тона глаз – белесый, частично либо полностью голубой.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Верхняя часть носа очень узкая, удлиненного типа. Мочка нормального размера, развитая.
+        </p>
+        <h3>
+         Челюсти, губы, зубы
+        </h3>
+        <p>
+         В меру крепкие челюсти легко распахиваются, открывая вытянутую пасть. Углы губ при раскрытой пасти располагаются почти на линии глаз. Сами губы без сырости, упругие, полностью скрывающие нижнюю челюсть. Прикус правильный, ножницеобразный. Смычка челюстей равномерная, хорошей плотности. Приветствуется наличие всех зубов (42).
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         В меру длинная шея миниатюрной таксы поставлена свободно, относительно высоко, а также имеет чуть выпуклый загривок. Мышцы шеи крепкие и развитые, кожа прилегающая, хорошо натянутая.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Карликовая такса – длиннотелая собака, с гармоничной линией верха, плавно опускающейся от шеи к круповой части. Спина собаки прямая либо едва ниспадающая с удлиненной поясницей. Для широкого длинного крупа животного характерен легкий наклон. Область грудины внушительная, выдающаяся вперед и образующая по бокам небольшие впадины. Форма груди овальная (при осмотре спереди). Нижняя часть живота хорошо подобрана.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Передние конечности должны быть хорошо омускуленными и прямыми, а также иметь правильные углы суставных сочленений. Костяк ног прочный, контуры сухие. Для лопаток характерно тесное прилегание к груди. Сами лопатки удлиненные, расположенные под наклоном. Плечи подвижные, одинаковой с лопатками длины и хорошо прилегающие к области ребер. Предплечья у породистой особи короткие и максимально выпрямленные, пясти без наклона и отвеса.
+        </p>
+        <p>
+         На задних конечностях отчетливо обозначены углы сочленений. Бедренная часть имеет нормальную длину и достаточно мощные мышцы. Коленные суставы крупные, с четкими углами, скакательные – сухие, очень жилистые. Голени таксы короткие, образующие по отношению к бедру прямой угол, плюсны достаточной длины. Лапы породы округлые, с объемными подушечками и собранными пальцами. Пятые пальцы функциональной нагрузки не несут, но не удаляются. Передвигается карликовая такса плавными движениями с широким вымахом передних ног, используя задние конечности для мощного толчка.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвост карликовой таксы продолжает линию ее спины и имеет достаточно невысокую посадку. Допустим также саблевидный изгиб ближе к концу хвоста.
+        </p>
+        <h3>
+         Особенности шерстного покрова и окрасы
+        </h3>
+        <p>
+         Все мини-таксы подразделяются на гладко-, жестко- и длинношерстных.
+        </p>
+        <p>
+         <strong>
+          Карликовые таксы с гладкой шерстью
+         </strong>
+         – собаки, покрытые очень короткой блестящей остью без проплешин и залысин. Для представителей этой разновидности типичны одноцветные (красный, рыже-красный, палевый – сплошной или слегка разбавленный черными волосами), двухцветные (черный либо коричневый с подпалом), а также мраморные и тигровые окрасы. Нежелательно, но допустимо наличие единичных белых меток на теле. Мочка и когти соответствуют тону шерсти, то есть у коричневых такс окрашены в коричневатый, у черных и одноцветных – в черный цвет.
+        </p>
+        <p>
+         <strong>
+          Жесткошерстные карликовые таксы
+         </strong>
+         имеют шерсть проволокообразной структуры, хорошо прилегающую к корпусу. На морде собак растут бородка, усы и кустистые брови. Уши покрыты более гладким и коротким волосом, чем тело. Как и гладкошерстные сородичи, жесткошерстные «карлики» имеют сплошную, двухцветную и пятнистую масть. Приветствуются окрасы от светло-кабаньего до темного, а также рыжие.
+        </p>
+        <p>
+         <strong>
+          Длинношерстные карликовые таксы
+         </strong>
+         – особи с прямой двойной шерстью, удлиненной на шее и нижней части корпуса, а также с очесами на ушах и задней части ног. Представители этой разновидности рождаются с теми же окрасами, что и гладкошерстные таксы.
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <p>
+         К экстерьеру карликовых такс предъявляются строгие требования. В частности, измененная структура шерстного покрова считается серьезным пороком, влияющим на выставочную оценку. Проще говоря, гладкошерстные особи не должны иметь грубую шерсть, а жесткошерстные – чересчур пухлявую и мягкую. Не допускаются к экспонированию на ринге животные со следующими недостатками:
+        </p>
+        <ul>
+         <li>
+          трусливое и агрессивное поведение;
+         </li>
+         <li>
+          деформированная грудь;
+         </li>
+         <li>
+          нестандартная смычка челюстей (перекус, перекрестный прикус, недокус);
+         </li>
+         <li>
+          неправильное расположение в ряду нижних клыков;
+         </li>
+         <li>
+          неполный комплект зубов (частично либо полностью отсутствуют клыки и резцы);
+         </li>
+         <li>
+          козий постав ног;
+         </li>
+         <li>
+          хвост неправильной формы с заломами;
+         </li>
+         <li>
+          черная шерсть без подпалин;
+         </li>
+         <li>
+          белая масть с подпалинами или без;
+         </li>
+         <li>
+          чересчур свободно расположенные плечевые кости и лопатки.
+         </li>
+        </ul>
+        <h2 id="gl3">
+         Характер миниатюрной таксы
+        </h2>
+        <p>
+         От
+         <a class="ph" href="/dog/taksa/">
+          стандартных такс
+         </a>
+         представителей миниатюрной разновидности отличают не только габариты, но и более взрывной темперамент. Хотя в России породу никогда не разводили для охоты, рабочие таланты у «карликов» не атрофировались, поэтому они продолжают использовать их везде, где предоставляется возможность. В качестве примера: у миниатюрных такс обострен инстинкт защитника, который они не стесняются «включать» по несколько раз на дню.
+        </p>
+        <p>
+         Если питомцу экстренно нужна разрядка, а подходящей угрозы поблизости не наблюдается, отважный коротконожка сам придумает себе врага, которого тут же заливисто облает. На прогулках карликовые таксы вспоминают о своем историческом предназначении и охотно суют нос в каждую нору. Терроризировать попадающихся на пути лягушек, грызунов и птенцов для породы тоже дело чести, так что не расценивайте подобные выпады как строптивость и невоспитанность животного. Карликовые таксы по-другому не могут.
+        </p>
+        <p>
+         По молодости многие представители породы грешат деструктивным поведением. В основном, всплески негативной активности характерны для особей мало и непродуктивно гуляющих, вынужденных часто оставаться в одиночестве, поэтому если ваша такса начала в квартире «ремонт» и снимает со стен обои, есть повод задуматься. Вполне возможно, что виноват в этом ералаше не питомец, а его затворнический образ жизни и ваша собственная лень. По мере взросления внутренняя батарейка животного начинает работать в режиме экономии энергии. Воспринимайте такие изменения спокойно: в диванного увальня собака все равно не превратится, просто будет чуть реже включать «сигнализацию».
+        </p>
+        <p>
+         Кстати о диванах: карликовые таксы не прочь на них поваляться, но игры и активное времяпрепровождение породе нравятся больше. Контакт с детьми хитрые «сосиски» тоже устанавливают на раз-два, но с одной оговоркой: подрастающее поколение не должно демонстрировать собственное превосходство над питомцем. В душе большинство карликовых такс считает себя равными хозяину, оставляя для остальных членов семьи более низкую ступень иерархической лестницы. Не забывайте и том, что все представители породы – большие артисты, когда речь заходит о каких-то выгодах для них. Таксы, получившие от владельца нагоняй, любят придавать своим мордочкам скорбное выражение и давить на жалость. Выпрашивая внеочередную прогулку или вкусняшку, собака тоже демонстрирует чудеса хитрости и изобретательности, на которые часто «покупаются» малоопытные хозяева.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         В обучении таксы кинологи советуют убрать подальше «кнут» и руководствоваться «методом пряника». Это не означает, что собаку нельзя наказывать, просто любой негатив существенно тормозит воспитательный процесс. А вот похвала и вкусные поощрения породу, наоборот, вдохновляют на подвиги. Главное, не торопитесь обучать питомца всему и сразу. В первые месяцы жизни дрессировкой таксы вообще не рекомендуется заниматься. Лучше сосредоточьтесь на воспитательных моментах и формировании у животного привычки соблюдать режим дня.
+        </p>
+        <p>
+         Оказавшись в новом доме, щенок карликовой таксы должен начать жить по новым правилам. Неторопливо, но настойчиво отучайте малыша от привычки скулить по ночам и проситься в вашу комнату. Почаще зовите питомца по кличке, чтобы он ее запомнил. С самых первых дней определите для щенка место в квартире и кормите маленького шалуна строго по часам, что тоже отлично дисциплинирует.
+        </p>
+        <p>
+         В играх маленькие таксы дают волю инстинктам и кусаются, поэтому будьте начеку и планомерно искореняйте эту нехорошую манеру. Как пример: в ответ на укус громко вскрикните или слегка прищемите малышу мочку носа пальцами. Старайтесь не поддаваться первой реакции на болевой импульс и не отшвыривайте таксу в сторону. Это, во-первых, травматично, а во-вторых, озлобляет питомца.
+        </p>
+        <p>
+         Правильно пользоваться домашним туалетом карликовые таксы привыкают быстро. Достаточно несколько раз высадить малыша на лоток после сна, чтобы он понял, чего от него ждут. Привычка проситься на улицу, чтобы справить нужду, формируется медленнее, поэтому до 4 месяцев наказывать подопечного, оставившего лужу на полу, бессмысленно. Имейте в виду, что растущие таксы еще не обладают умением сдерживать позывы к мочеиспусканию.
+        </p>
+        <p>
+         Первичную дрессировку собаки можно начинать в 3 месяца и лучше всего за пределами дома. Конечно, предварительно щенка нужно познакомить с улицей, ее запахами и звуками. Если заметили, что вне домашних стен подопечный боится резких хлопков и треска, потренируйте его смелость. Например, лопайте в присутствии собаки воздушные шарики. Со временем такса перестанет реагировать на неприятные звуки и будет спокойно их воспринимать.
+        </p>
+        <h2 id="gl5">
+         Охота
+        </h2>
+        <p>
+         Охотиться с карликовой таксой не принято, поскольку для работы по норному зверю порода слишком мала, особенно если речь идет не о трусливом молодняке, а о лисах и барсуках с опытом. Конечно, оказавшись в норе, такса будет изо всех сил стараться гнать добычу, вот только зверь вряд ли впечатлится размерами своего преследователя. Тем не менее отдельные владельцы практикуют с породой вылазки в лес и поле, но больше с развлекательной целью, чем с практической. На охотничьих состязаниях периодически появляются карликовые таксы, имеющие дипломы I степени по лисе и барсуку, однако важно понимать, что, в основном, это особи, работающие на притравочных станциях, а не в естественных природных условиях.
+        </p>
+        <p>
+         Найти в России карликовую таксу из охотничьих линий крайне сложно, но если вам удалось обзавестись таким щенком, можете попробовать свои силы в притравке. Однако сначала с питомцем нужно пройти подготовительные стадии, то есть социализацию, воспитание и обучение командам «Сидеть!», «Лежать!», «Рядом!», «Место!», «Гулять!». Имейте в виду, что притравка – это не обучение охоте, а всего лишь попытка разбудить в собаке добытчика и преследователя. Водить питомца на такие занятия можно не ранее, чем ему исполнится 6 месяцев. Если на притравочной станции такса не реагирует на искусственную нору, это значит, что рабочий инстинкт в ней не проснулся, и животное нужно просто везти домой, чтобы подождать месяц-другой. Обычно для первых притравок используют лисят, так как взрослый зверь может жестко разобраться с миниатюрной и малоопытной таксой. Работа со взрослыми особями возможна лишь тогда, когда собака привыкла к норе.
+        </p>
+        <h2 id="gl6">
+         Содержание и уход
+        </h2>
+        <p>
+         Место карликовой таксы в доме или квартире, но ни в коем случае не на улице. От природы порода очень игрива, поэтому игрушки ее представителям придется покупать часто. Небольшой лайфхак для владельцев: не отдавайте все игрушки сразу, а периодически меняйте – эффект новизны работает не только в случае с людьми, но и с животными. Зимой порода мерзнет, поэтому продолжительность прогулок в морозную погоду сокращают, а на животное перед выходом на улицу надевают дутый комбинезон или вязаную попону.
+        </p>
+        <p>
+         Неплохой защитой от дождя и ветра станут шапочки на завязках. Их можно сшить самим из плотного трикотажа или связать. Спокойно воспринимайте тот факт, что до начала отопительного сезона питомец будет активно пытаться проникнуть к вам под одеяло – потомки браков любят тепло и всегда находятся в поиске уютного убежища. Поводок и ошейник для карликовых такс должны быть легкими, поскольку тяжелая амуниция дополнительно нагружает суставы и позвоночник.
+        </p>
+        <h3>
+         Гигиена и уход за шерстью
+        </h3>
+        <p>
+         Породе не требуется сложный груминг, но раз в неделю расчесывать необходимо даже короткошерстных такс. Более часто делать эту процедуру ни к чему, если не хотите замедлить рост волоса. Ежедневный уход за шерстью обязателен осенью и весной, когда собака линяет. Обычно, чтобы убрать отмершие волоски и уличную пыль с тела короткошерстного песика, достаточно резиновой варежки или кусочка влажной ткани. Жестко- и длинношерстных особей можно дополнительно прочесать щеткой – она отлично собирает выпавший волос и массирует кожу, стимулируя обновление шерстного покрова.
+        </p>
+        <p>
+         Частота купаний питомца зависит от структуры его шерсти. Гладкошерстные карликовые таксы легко обходятся сухой чисткой, поэтому мыть их стоит только тогда, когда животные серьезно испачкались. Жесткошерстные и длинношерстные собаки (не шоу-особи) должны принимать ванну хотя бы раз в месяц. Кстати, имейте в виду, что после применения шампуней и бальзамов ость у представителей двух последних разновидностей становится мягче и разваливается. Со временем волос, конечно, приходит в норму, но если у вас шоу-питомец, мыть ему накануне выставки лучше только лапы, низ живота и мордочку, а остальные части тела обработать сухим шампунем.
+        </p>
+        <p>
+         Купите когтерез для декоративных пород и раз в месяц укорачивайте карликовой таксе коготки. Глаза проверяйте ежедневно, убирая накопившуюся в них слизь и пылевые комочки чистой неворсистой тканью, пропитанной настоем крепкого чая. Осмотр ушей собаки проводится раз в неделю. Если в воронке обнаружились грязь и сера, удалите их с помощью гигиенического лосьона для собак либо специальных салфеток для ушей.
+        </p>
+        <p>
+         Старайтесь 2-3 раза в неделю чистить карликовой таксе зубы. Для этой цели купите маленькую щетку и специальную пасту для собак. Если приучить животное к этой процедуре не получилось, попробуйте альтернативную методику – покупку твердых лакомств из жил, которые работают как абразивы.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Карликовые таксы – любители много и вкусно поесть, что объясняется высокими потребностями породы в животном белке. В связи с этим сухие корма для питомца подбирают с высоким содержанием протеина (от 22%), а долю растительной пищи в рационе (при натуральном кормлении) сокращают до необходимого минимума. Владельцам, решившим кормить собаку натуральными продуктами, важно делать ставку на мясо и субпродукты. Оптимальные варианты – говядина, конина, жилистая баранина, курица и индейка, которые рекомендуется слегка отварить или давать сырыми. Раз в неделю карликовую таксу можно угостить отварным рыбным филе и сухожильной костью.
+        </p>
+        <p>
+         За углеводную составляющую в меню питомца отвечают крупы – гречневая, геркулесовая, рисовая. Дают их в виде каши или супа, смешивая с мясом и слегка подсаливая. Из растительной пищи породе полезны яблоки, томаты, кабачки, морковь. Периодически можно предложить белокочанную капусту, но только в отварном виде. Картофель тоже не под запретом, но из-за высокого содержания крахмала его лучше вводить в рацион пореже. Добавкой к основному меню могут стать простокваша, ржаные сухарики, куриное яйцо. Перекармливать карликовых такс настоятельно не рекомендуется, поскольку у породы сильная предрасположенность к ожирению.
+        </p>
+        <p>
+         Взрослых собак кормят 2 раза в сутки. Пожилым особям еду предлагают 3 раза в день, но калорийность рациона снижают, поскольку с возрастом у животных развивается булимия. Корма коротконогим «пенсионерам» тоже берут с пониженным содержанием белка (от 15%). Щенков в возрасте до 3 месяцев кормят 5 раз, с 3 месяцев до полугода – 4 раза. Полностью взрослой карликовая такса считается в 10 месяцев, с этого же возраста животное переводят на двухразовое кормление.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важно:
+         </strong>
+         и в юном, и в пожилом возрасте миниатюрной таксе необходимы БАДы с хондропротекторами, иначе у животного есть все шансы заполучить проблемы с суставами и позвоночником.
+        </p>
+        <h2 id="gl9">
+         Здоровье и болезни карликовых такс
+        </h2>
+        <p>
+         Большинство болезней породы – результат особенностей телосложения ее представителей. Например, карликовые таксы часто страдают дископатией, при которой позвоночник перестает выполнять свою амортизирующую функцию. Догадаться, что у животного проблемы, можно по изменениям в поведении. Собаки с дископатией стараются меньше двигаться, взвизгивают, если им слегка надавить на спину.
+        </p>
+        <p>
+         Встречается у породы и такая редкая патология, как черный акантоз. Заболевание выражается в потемнении и огрубении кожи, а также выпадении шерсти в подмышечных впадинах и между пальцами. Недуг относится к наследуемым и защититься от него нереально, поэтому все, что можно сделать – вовремя отреагировать на изменения экстерьера и обратиться к ветеринару.
+        </p>
+        <p>
+         У карликовых такс в возрасте от 1 года и старше может дать о себе знать идиопатическая эпилепсия. Признаками надвигающегося приступа считаются нарушения координации, дрожь, неконтролируемое мочеиспускание. Обычно проблема решается введением противосудорожных препаратов. Сложность лишь в том, что зачастую инъекции предстоит делать самостоятельно, так как болезнь может застать в самый неудобный момент и вдали от клиники.
+        </p>
+        <h2 id="gl10">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Всегда требуйте у продавца акт осмотра помета – это поможет выбрать наиболее здоровое животное.
+         </li>
+         <li>
+          Старайтесь приобретать щенка, рожденного зимой или ранней весной. Отсидев положенный срок в карантине, такие малыши успеют застать теплые летние деньки и укрепят во время прогулок иммунитет.
+         </li>
+         <li>
+          Внимательно осмотрите спину малыша. У карликовых такс возникают патологии межпозвоночных дисков, в результате чего на спинах животных вырастают горбики и образуются седловидные прогибы.
+         </li>
+         <li>
+          Посмотрите, как щенок передвигается. Допускается легкая неуклюжесть движений, но явные нарушения координации свидетельствуют о проблемах с костяком и суставами.
+         </li>
+         <li>
+          Выбирая черно-подпалых особей, обратите внимание на насыщенность окраса. Чем разительнее контраст между основной мастью и пятнами подпала, тем лучше.
+         </li>
+         <li>
+          Наличие у щенка карликовой таксы сплошного черного окраса (без подпала) говорит о том, что в его родословной есть сторонние нечистокровные производители. Примерно то же можно сказать о гладкошерстных таксенышах, получивших при рождении кабанью (пятнистую) масть.
+         </li>
+        </ul>
+        <h2 id="gl11">
+         Цена карликовой таксы
+        </h2>
+        <p>
+         Щенок миниатюрной таксы с метрикой РКФ и пакетом прививок стоит 20 000 – 40 000 рублей. Животных с небольшими дефектами экстерьера и неидеальными родословными продают по 8000 – 15 000 рублей.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения карликовой таксы на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/28114/">
+          <div class="ava-med">
+           <div class="noava fill4">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/taksa-7-let-nachala-vizzhat-na-4-den-poyavleniya-novogo-shchenka-5662/">
+           Такса 7 лет начала визжать на 4 день появления нового щенка
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте ! Подскажите ,пожалуйста,может кто-то сталкивался с таким: неделю назад завели щенка аусси,3 месяца активный, также дома с нами живет такса и кошка,таксе 7 лет,на 4йдень начала визжать ни с того ни...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/28114/">
+            Анна Иванова
+           </a>
+          </span>
+          <span class="vopros-date">
+           2 дня назад
+          </span>
+          <span class="vopros-smotr">
+           27 просмотров
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/28035/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Валерина Валуева" data-original="/upload/resize_cache/main/9eb/200_200_2/pmr4040d53fqwdikhgxnys0e5nd4cutx.jpg">
+            <noscript data-alt="Валерина Валуева" data-original="/upload/resize_cache/main/9eb/200_200_2/pmr4040d53fqwdikhgxnys0e5nd4cutx.jpg">
+             <img alt="Валерина Валуева" src="/upload/resize_cache/main/9eb/200_200_2/pmr4040d53fqwdikhgxnys0e5nd4cutx.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/priveredlivaya-v-ede-5621/">
+           Привередливая в еде
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте. Мне отдали собачку, таксу, 13 лет. Никто за ней толком не ухаживал все эти 13 лет, кормили чем попало, и это привело к тому, что ко мне она попала с кучей диагнозов, основной - гастрит.
+Ветеринар...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/28035/">
+            Валерина Валуева
+           </a>
+          </span>
+          <span class="vopros-date">
+           3 недели назад
+          </span>
+          <span class="vopros-smotr">
+           62 просмотра
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/28020/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Наталья Проява" data-original="/upload/resize_cache/main/c86/200_200_2/9x4gsda2aopfzgklhd6f2y2cs70x7xgg.jpg">
+            <noscript data-alt="Наталья Проява" data-original="/upload/resize_cache/main/c86/200_200_2/9x4gsda2aopfzgklhd6f2y2cs70x7xgg.jpg">
+             <img alt="Наталья Проява" src="/upload/resize_cache/main/c86/200_200_2/9x4gsda2aopfzgklhd6f2y2cs70x7xgg.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/vsem-zdravstvuyte-ya-tut-vpervye-i-khochetsya-izlit-navernoe-dushu-mozhet-kto-to-chto-skazhet-5616/">
+           Всем здравствуйте... Я тут впервые и хочется излить наверное душу, может кто то что скажет....
+          </a>
+         </div>
+         <div class="forum-text">
+          У нас с мужем есть собака метис таксы, ей 11 лет. Последнее время стала часто болеть... В 2022 году ей поставили дифференциальный сахарный диабет, по крови сказали все хорошо по узи тоже, обращались что сильно чесалась...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/28020/">
+            Наталья Проява
+           </a>
+          </span>
+          <span class="vopros-date">
+           3 недели назад
+          </span>
+          <span class="vopros-smotr">
+           104 просмотра
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27846/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Полина Воронова" data-original="/upload/resize_cache/main/fb5/200_200_2/k5etsb8u159wub7yld378yq5mr1yc127.jpg">
+            <noscript data-alt="Полина Воронова" data-original="/upload/resize_cache/main/fb5/200_200_2/k5etsb8u159wub7yld378yq5mr1yc127.jpg">
+             <img alt="Полина Воронова" src="/upload/resize_cache/main/fb5/200_200_2/k5etsb8u159wub7yld378yq5mr1yc127.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/taksa-ili-metis-5544/">
+           Такса или метис?
+          </a>
+         </div>
+         <div class="forum-text">
+          Взяли щенка, девочку, без документов, как выяснилось после покупки. Заметила, что лапы длинные и передние шире, чем задние.
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27846/">
+            Полина Воронова
+           </a>
+          </span>
+          <span class="vopros-date">
+           Месяц назад
+          </span>
+          <span class="vopros-smotr">
+           88 просмотров
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/karlikovaya-taksa/forum/">
+        Перейти на
+        форум карликовой таксы
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Карликовая такса" src="/upload/iblock/70a/70a66036a7174161902b5ddbadf00673.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/karlikovaya-taksa/">
+          Карликовая такса
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/karlikovaya-taksa/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/karlikovaya-taksa/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/karlikovaya-taksa/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/karlikovaya-taksa/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/karlikovaya-taksa/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/ksoloittskuintli/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Ксолоитцкуинтли" data-original="/upload/resize_cache/iblock/c71/100_100_1/c710aa69d95138d0716d46ef12af913a.jpg">
+          <noscript data-alt="Ксолоитцкуинтли" data-original="/upload/resize_cache/iblock/c71/100_100_1/c710aa69d95138d0716d46ef12af913a.jpg">
+           <img alt="Ксолоитцкуинтли" src="/upload/resize_cache/iblock/c71/100_100_1/c710aa69d95138d0716d46ef12af913a.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Ксолоитцкуинтли
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/labradudl/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Лабрадудль" data-original="/upload/resize_cache/iblock/d4d/100_100_1/1ik6hem35wat4q4bcqa3ceksaudcqyvs.jpg">
+          <noscript data-alt="Лабрадудль" data-original="/upload/resize_cache/iblock/d4d/100_100_1/1ik6hem35wat4q4bcqa3ceksaudcqyvs.jpg">
+           <img alt="Лабрадудль" src="/upload/resize_cache/iblock/d4d/100_100_1/1ik6hem35wat4q4bcqa3ceksaudcqyvs.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Лабрадудль
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/rotveyler/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Ротвейлер" data-original="/upload/resize_cache/iblock/2ba/100_100_1/2ba727577729810222fac27e266e04ef.jpg">
+          <noscript data-alt="Ротвейлер" data-original="/upload/resize_cache/iblock/2ba/100_100_1/2ba727577729810222fac27e266e04ef.jpg">
+           <img alt="Ротвейлер" src="/upload/resize_cache/iblock/2ba/100_100_1/2ba727577729810222fac27e266e04ef.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Ротвейлер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/belgiyskaya-ovcharka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бельгийская овчарка" data-original="/upload/resize_cache/iblock/139/100_100_1/139d3d3ac38deaf8ec80dac1ee2e70e6.jpg">
+          <noscript data-alt="Бельгийская овчарка" data-original="/upload/resize_cache/iblock/139/100_100_1/139d3d3ac38deaf8ec80dac1ee2e70e6.jpg">
+           <img alt="Бельгийская овчарка" src="/upload/resize_cache/iblock/139/100_100_1/139d3d3ac38deaf8ec80dac1ee2e70e6.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бельгийская овчарка
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkarlikovaya-taksa%252F%253Fcheck_key%253Dd8e88a0cdbce7258243b1eff13a3474b%2526ANIMAL_CODE%253Dkarlikovaya-taksa%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkarlikovaya-taksa%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmthcmxpa292YXlhLXRha3NhJTJGJTNGY2hlY2tfa2V5JTNEZDhlODhhMGNkYmNlNzI1ODI0M2IxZWZmMTNhMzQ3NGIlMjZBTklNQUxfQ09ERSUzRGthcmxpa292YXlhLXRha3NhJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmthcmxpa292YXlhLXRha3NhJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkarlikovaya-taksa%252F%253Fcheck_key%253Dd8e88a0cdbce7258243b1eff13a3474b%2526ANIMAL_CODE%253Dkarlikovaya-taksa%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fkarlikovaya-taksa%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkarlikovaya-taksa%252F%253Fcheck_key%253Dd8e88a0cdbce7258243b1eff13a3474b%2526ANIMAL_CODE%253Dkarlikovaya-taksa%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkarlikovaya-taksa%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "46.72.8.63"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--3d0bc77fb643907b9b8922f53aac64aa-->

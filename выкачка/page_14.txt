@@ -1,0 +1,1925 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'f98b42ae157c'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Американский бульдог, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Американский бульдог – гремучая смесь темперамента и щенячьей преданности. С таким питомцем всегда чувствуешь себя в безопасности." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/439/439b4b06d8c26f82fc2d373e64ba7625.jpg" property="og:image"/>
+     <title>
+      Американский бульдог: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/amerikanskiy-buldog/" property="og:url"/>
+     <meta content="Американский бульдог: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Американский бульдог – гремучая смесь темперамента и щенячьей преданности. С таким питомцем всегда чувствуешь себя в безопасности." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/amerikanskiy-buldog/" itemprop="url">
+         <span itemprop="title">
+          Американский бульдог
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Американский бульдог
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/amerikanskiy-buldog/">
+          Описание
+         </a>
+         <a href="/dog/amerikanskiy-buldog/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/amerikanskiy-buldog/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/amerikanskiy-buldog/photo/">
+          Фото
+         </a>
+         <a href="/dog/amerikanskiy-buldog/video/">
+          Видео
+         </a>
+         <a href="/dog/amerikanskiy-buldog/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/amerikanskiy-buldog/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Американский бульдог" src="/upload/iblock/856/856f06d45a5b3b2ab7a1e6f4bf080a8a.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/amerikanskiy-buldog/">
+           Амбуль
+          </a>
+         </span>
+         <p>
+          Американский бульдог – гремучая смесь темперамента и щенячьей преданности. С таким питомцем всегда чувствуешь себя в безопасности.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/feb/feb3a01d302cf1d1b68cb68d860b12cf.jpg" data-cap="Squad...." data-fancybox="images" data-link="https://www.instagram.com/p/Be8Yz2VF6r_/" data-type="image" data-username="mikerashid" href="/upload/uf/972/97206f23db8af6806b82511fd99ed0b4.jpg">
+            <img alt="Американский бульдог" src="/upload/resize_cache/uf/972/293_293_2/97206f23db8af6806b82511fd99ed0b4.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/555/555f245d3d060a7d8847ed62d3e37d23.jpg" data-cap="older pups" data-fancybox="images" data-link="https://www.flickr.com/photos/bruiserbulldogs/5922358521/" data-type="image" data-username="Mitch Wysong" href="/upload/uf/91c/91c58a43cceb38b2efd4ddfaff9b3d12.jpg">
+            <img alt="Американский бульдог" src="/upload/resize_cache/uf/91c/293_293_2/91c58a43cceb38b2efd4ddfaff9b3d12.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/368/368ed0da2151d1a9a069bda34a17e330.jpg" data-cap="#AB #americanbulldog #cantkeepmefromhuntin" data-fancybox="images" data-link="https://www.instagram.com/p/Bih3GdCF5Km/" data-type="image" data-username="khanh1199" href="/upload/uf/0fb/0fba10ebe7a906cccd4cabdcab4a1859.jpg">
+            <img alt="Американский бульдог" src="/upload/resize_cache/uf/0fb/293_293_2/0fba10ebe7a906cccd4cabdcab4a1859.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/amerikanskiy-buldog/photo/">
+         Все
+            фото американского бульдога
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы американский бульдог
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность американского бульдога
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер американского бульдога
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни американского бульдога
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Сколько стоит американский бульдог
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Американский бульдог
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         США
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         конец XIX века
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 32-54 кг, суки 27-45 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 56-69 см, суки 51-64 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         11-14 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Американские бульдоги – отличные компаньоны для обладателей сильного характера.
+        </li>
+        <li>
+         Порода подразделяется на типы – стандартный Скотта и классический Джонсона.
+        </li>
+        <li>
+         Собаки питают безграничную любовь и преданность по отношению к своему хозяину.
+        </li>
+        <li>
+         Амбули плохо уживаются с другими домашними животными, поскольку не терпят конкуренции. Редкое исключение – питомцы, вместе с которыми пёс вырос.
+        </li>
+        <li>
+         Американские бульдоги обладают отличными охранными качествами, которые вкупе с интеллектом и наблюдательностью делают собак превосходными сторожами.
+        </li>
+        <li>
+         Представители породы нуждаются в ежедневных физических нагрузках. Им нужно выплеснуть энергию, иначе разгром в вашей квартире обеспечен.
+        </li>
+        <li>
+         Американский бульдог нуждается в правильном воспитании с первых дней жизни в доме, иначе из щенка вырастет бесцеремонный и агрессивный пёс.
+        </li>
+        <li>
+         Не подходят для начинающих собаководов.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Американский бульдог" data-original="/upload/iblock/439/439b4b06d8c26f82fc2d373e64ba7625.jpg">
+          <noscript data-alt="Американский бульдог" data-original="/upload/iblock/439/439b4b06d8c26f82fc2d373e64ba7625.jpg">
+           <img alt="Американский бульдог" src="/upload/iblock/439/439b4b06d8c26f82fc2d373e64ba7625.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Американский бульдог (амбуль)
+          </strong>
+          – это благородное сочетание независимости, силы и уверенности в собственном великолепии. Представители этой породы безупречно сложены и отличаются развитой мускулатурой. Внешний вид собаки вряд ли вызовет желание познакомиться поближе. Если это не имеет для вас значения, дерзайте! Американский бульдог станет лучшим другом ответственному и уверенному в себе человеку, который умеет стоять на своём и не пасует перед затруднительными ситуациями.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дорогое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средний (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средние (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Американский бульдог основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/amerikanskiy-buldog/razmeri-porodi/">
+         размеры американского бульдога
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы американский бульдог
+        </h2>
+        <p>
+         Амбуль по праву заслужил свой почётный «титул» – бульдог бульдогов. Порода уникальна тем, что её представителям удалось сохранить первоначальные характеристики и внешний вид с XV века до нашего времени. Впервые бульдоги появились на землях Англии, где их вывели из молосских собак для организации боёв с быками. Тогда собаки обходились своим владельцам в кругленькую сумму, поскольку их смелость и недюжинная сила определяли исход схватки с крупным рогатым скотом. Особенно ценилось потомство амбулей-чемпионов, которые неоднократно побеждали в жестокой схватке.
+        </p>
+        <p>
+         Ценность породы объяснялась и умением её представителей переносить любую боль. Разводчики нередко проводили показательные «выступления», во время которых доводили собак до состояния звериной ярости и демонстрировали их выносливость. Подобные представления имели печальный исход: нередко амбули умирали, но это нисколько не умаляло ни популярности породы, ни суммы, которую покупатели были готовы отдать за будущего чемпиона.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Белый американский бульдог" data-fancybox="gallery" href="/upload/iblock/47e/47e7c40d4a21c3ccbf398be2abd4457c.jpg" title="Белый американский бульдог">
+          <div class="lazy-load" data-alt="Белый американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/47e/412_2150_1/47e7c40d4a21c3ccbf398be2abd4457c.jpg">
+           <noscript data-alt="Белый американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/47e/412_2150_1/47e7c40d4a21c3ccbf398be2abd4457c.jpg">
+            <img alt="Белый американский бульдог" class="article_pic" height="274" src="/upload/resize_cache/iblock/47e/412_2150_1/47e7c40d4a21c3ccbf398be2abd4457c.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Белый американский бульдог
+         </div>
+        </div>
+        <p>
+         Американские бульдоги использовались в качестве животных для кровавых игрищ до начала XIX века. После подписания закона, который запрещал травлю быков и собачьи бои, цена амбулев резко снизилась. Бульдогов вынужденно содержали во дворе, поскольку их жестокость и неукротимый нрав нередко представляли опасность даже для хозяина. О породе забыли на некоторое время, поскольку ничем, кроме выносливости, она не отличалась: ни милым внешним видом, ни покладистостью, ни прочими характеристиками.
+        </p>
+        <p>
+         С популяризацией выставок амбуль вновь обратил на себя внимание собаководов. Желая сделать собак более подходящими для шоу, генетики приливали кровь
+         <a class="ph" href="/dog/mops/">
+          мопса
+         </a>
+         . Этот эксперимент занял тридцать лет и завершился весьма успешно: новые экземпляры отличались меньшим размером, более правильными пропорциями и спокойным нравом. Вскоре бульдогов разделили на отдельные породы. Для них были организованы клубы собаководов, которые регистрировали щенков и документально подтверждали их родословную. Так и возник английский бульдог, который заслужил славу национального символа страны.
+        </p>
+        <p>
+         Стоит отметить, что этим история породы не ограничивалась. В начале XVIII века в Англии царила напряжённая экономическая обстановка. Камеры тюрем переполняли должники, у которых не было достаточно средств для выплаты нужной суммы. Правительство сделало хитрый ход, пообещав амнистию тем заключённым, которые отправятся заселять новую колонию в Джорджии. Немногие узники достигли берегов Америки, но это сполна компенсировалось переездом выходцев из рабочего класса, которые надеялись начать новую жизнь и сбежать от тягот. Вместе с собой люди привезли и самое ценное «имущество» – настоящих бульдогов, которые на тот момент ещё участвовали в травлях быков и сохраняли свой необузданный нрав.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок американского бульдога" data-fancybox="gallery" href="/upload/iblock/7a2/7a27493c59e39aee5d5dc682d8bec862.jpg" title="Щенок американского бульдога">
+          <div class="lazy-load" data-alt="Щенок американского бульдога" data-class="article_pic" data-original="/upload/resize_cache/iblock/7a2/412_2150_1/7a27493c59e39aee5d5dc682d8bec862.jpg">
+           <noscript data-alt="Щенок американского бульдога" data-class="article_pic" data-original="/upload/resize_cache/iblock/7a2/412_2150_1/7a27493c59e39aee5d5dc682d8bec862.jpg">
+            <img alt="Щенок американского бульдога" class="article_pic" height="618" src="/upload/resize_cache/iblock/7a2/412_2150_1/7a27493c59e39aee5d5dc682d8bec862.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок американского бульдога
+         </div>
+        </div>
+        <p>
+         Поначалу колонистам приходилось несладко: дикие земли нуждались в расчистке и постоянной охране от воинственных индейских племён, испанцев и французов. Амбуль неожиданно проявил себя как надёжный и преданный сторож, на которого можно было положиться. Так, благодаря атлетическому телосложению, выносливости, трудолюбию, смелости, интеллекту и превосходному нюху бульдоги оказались незаменимыми компаньонами на диких землях Америки.
+        </p>
+        <p>
+         Тогда фермеры не придавали значения внешнему виду амбуля – крупного пса с массивной мордой и сильными лапами. Порода ценилась не за экстерьер, а рабочие качества. Попытки внести бульдогов Юга в список American Kennel Club (AKC) долго оставались безуспешными. Предпочтение отдавалось иностранным породам, а «выходцы» из колоний считались обычными и недостойными внимания.
+        </p>
+        <p>
+         Помимо этого, в AKC уже была зарегистрирована порода «бульдог», и южанам пришлось бы думать над новым названием, чтобы избежать путаницы при популяризации амбулей в США. Джорджинский большой, выставочный, рабочий, южный белый, старый – все эти наименования относились именно к амбулю. Вплоть до середины XX века он не был зарегистрирован ни одной кинологической организацией и не мог похвастать официальной родословной.
+        </p>
+        <p>
+         Лишь к 60-м годам за породой закрепилось название «американский пит-бульдог». Тогда же всеобщему вниманию был представлен и первый стандарт. Вскоре амбули были зарегистрированы большинством кинологических организаций. Собаководов покорила импозантная внешность в сочетании с её безупречными служебными навыками. Всё чаще бульдоги разводились и для военных ведомств и полицейских участков. В сравнении с другими собаками амбули отличались выносливостью, осмотрительностью и невероятным чутьём, доставшимися от далёких предков. Представителям этой породы находили применение и во время поисков выживших в крупных катастрофах.
+        </p>
+        <p>
+         Вскоре американский бульдог завоевал любовь не только Америки, но и всей Европы. Даже Россия в период «лихих девяностых» откликнулась на этот собачий тренд: всё чаще на улицах городов появлялись собаки устрашающего вида, готовые в любой момент броситься на защиту хозяина. Порода пользуется популярностью и по сей день. При этом её название – американский бульдог – не отпугивает потенциальных владельцев собак неприятными ассоциациями с травлей быков и собачьими боями. Напротив, массивные и устрашающие габариты животного придают человеку несокрушимую уверенность в себе.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/0e1/0e173dc766e935243d844f10a91da0ec.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/0e1/512_342_2/0e173dc766e935243d844f10a91da0ec.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/0e1/512_342_2/0e173dc766e935243d844f10a91da0ec.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/0e1/512_342_2/0e173dc766e935243d844f10a91da0ec.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/38e/38eb17f58e308258034090b06bc2305a.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/38e/512_342_2/38eb17f58e308258034090b06bc2305a.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/38e/512_342_2/38eb17f58e308258034090b06bc2305a.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/38e/512_342_2/38eb17f58e308258034090b06bc2305a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2>
+         Видео: Американский бульдог
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="-TXDMFkmA0I">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность американского бульдога
+        </h2>
+        <p>
+         Амбуль относится к крупным собакам. Вариативность – ключевая черта этой породы. Её представители отличаются друг от друга многими характеристиками. Несмотря на существование двух линий – классической (Джонсона) и стандартной (Скотта), – внешность современных собак сочетает в себе черты и той, и другой. Если рассматривать каждый тип отдельно, можно отметить, что амбули Джонсона более приземистые и крупные, чем напоминают своих собратьев – английских бульдогов. Собаки стандартного типа имеют больше сходств с американским питбультерьером.
+        </p>
+        <p>
+         Согласно стандарту FCI, высота амбуля в холке должна равняться 55-70 см (для кобелей) и 52-65 см (для сук). Что касается массы тела, она достигает 32-54 кг и 27-45 кг соответственно.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="«Стандартный» тип Американского бульдога (линия Скотта)" data-fancybox="gallery" href="/upload/iblock/1b7/1b7ac43fdfff2d9bf04b6efb33d3dced.jpg" title="«Стандартный» тип Американского бульдога (линия Скотта)">
+           <div class="lazy-load" data-alt="«Стандартный» тип Американского бульдога (линия Скотта)" data-class="article_pic" data-original="/upload/resize_cache/iblock/1b7/512_342_2/1b7ac43fdfff2d9bf04b6efb33d3dced.jpg">
+            <noscript data-alt="«Стандартный» тип Американского бульдога (линия Скотта)" data-class="article_pic" data-original="/upload/resize_cache/iblock/1b7/512_342_2/1b7ac43fdfff2d9bf04b6efb33d3dced.jpg">
+             <img alt="«Стандартный» тип Американского бульдога (линия Скотта)" class="article_pic" src="/upload/resize_cache/iblock/1b7/512_342_2/1b7ac43fdfff2d9bf04b6efb33d3dced.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           «Стандартный» тип Американского бульдога (линия Скотта)
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="«Классический» тип Американского бульдога (линия Джонсона)" data-fancybox="gallery" href="/upload/iblock/9b4/9b40cdb3983c66d23487881ec2c87d75.jpg" title="«Классический» тип Американского бульдога (линия Джонсона)">
+           <div class="lazy-load" data-alt="«Классический» тип Американского бульдога (линия Джонсона)" data-class="article_pic" data-original="/upload/resize_cache/iblock/9b4/512_342_2/9b40cdb3983c66d23487881ec2c87d75.jpg">
+            <noscript data-alt="«Классический» тип Американского бульдога (линия Джонсона)" data-class="article_pic" data-original="/upload/resize_cache/iblock/9b4/512_342_2/9b40cdb3983c66d23487881ec2c87d75.jpg">
+             <img alt="«Классический» тип Американского бульдога (линия Джонсона)" class="article_pic" src="/upload/resize_cache/iblock/9b4/512_342_2/9b40cdb3983c66d23487881ec2c87d75.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           «Классический» тип Американского бульдога (линия Джонсона)
+          </div>
+         </div>
+        </div>
+        <h3>
+         Голова и череп
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Америнаский бульдог линии Джонсона" data-fancybox="gallery" href="/upload/iblock/c7c/c7c4ca9e29643ac6ca392eb548873188.jpg" title="Америнаский бульдог линии Джонсона">
+          <div class="lazy-load" data-alt="Америнаский бульдог линии Джонсона" data-class="article_pic" data-original="/upload/resize_cache/iblock/c7c/412_2150_1/c7c4ca9e29643ac6ca392eb548873188.jpg">
+           <noscript data-alt="Америнаский бульдог линии Джонсона" data-class="article_pic" data-original="/upload/resize_cache/iblock/c7c/412_2150_1/c7c4ca9e29643ac6ca392eb548873188.jpg">
+            <img alt="Америнаский бульдог линии Джонсона" class="article_pic" height="622" src="/upload/resize_cache/iblock/c7c/412_2150_1/c7c4ca9e29643ac6ca392eb548873188.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Америнаский бульдог линии Джонсона
+         </div>
+        </div>
+        <p>
+         Голова американского бульдога отличается крупными размерами и пропорциональностью по отношению к корпусу собаки. Слегка округлый и широкий череп образует высокий лоб и умеренно выраженный затылочный бугор.
+        </p>
+        <h3>
+         Морда
+        </h3>
+        <p>
+         Её внешний вид зависит от того, к какому типу принадлежит ваш амбуль. Линия Джонсона отличается квадратной и плавно очерченной мордой с хорошо выраженным стопом. У представителей линии Скотта морда имеет более клиновидную форму, в то время как переход ото лба к носу выражен слабее. При этом классические амбули обладают более короткой мордой (до 30% от длины черепа) в отличие от стандартных экземпляров (до 40%). Глубокие складки характерны для бульдогов Джонсона. Крупный нос с широкими ноздрями окрашен в чёрный или коричневый цвет (первый более предпочтителен). Тёмные губы плотно прилегают к челюстям.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Уши американского бульдога обладают средними размерами, посажены высоко на линии лба. Могут быть висящими или стоящими. Форма преимущественно треугольная, но допускаются варианты «конверт» или «роза». Не рекомендуется купировать уши в любом возрасте.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Небольшие глаза округлой формы поставлены прямо и широко. Их цвет варьируется от орехового до тёмно-коричневого, при этом приоритетны всё же тёмные оттенки. Веки прилегают плотно и отличаются тёмной пигментацией вплоть до полной «обводки» глаз. Допускаются неокрашенные участки у особей до двух лет.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/3eb/3eba9575ee4c5f6757d06989c135f231.jpg" title="">
+          <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/3eb/412_2150_1/3eba9575ee4c5f6757d06989c135f231.jpg">
+           <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/3eb/412_2150_1/3eba9575ee4c5f6757d06989c135f231.jpg">
+            <img alt="Американский бульдог" class="article_pic" height="617" src="/upload/resize_cache/iblock/3eb/412_2150_1/3eba9575ee4c5f6757d06989c135f231.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Челюсти американского бульдога достаточно широкие. При этом нижняя слегка выдвигается вперёд за линию верхней, образуя так называемый плотный перекус или перекус с отходом. Обратите внимание на то, что в обоих случаях зубы не должны виднеться, если пасть закрыта. Клыки широко расставлены в челюсти, в то время как резцы образуют прямую линию. Крупные и здоровые зубы предпочтительны. Два первых премоляра могут отсутствовать.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Мускулистая и мощная шея поставлена под углом 45 градусов по отношению к корпусу. Отличается хорошо выраженным загривком.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Американский бульдог имеет слегка вытянутый корпус. Половина высоты собаки в холке равна глубине грудной клетки. Обхват черепа и шеи одинаков, при этом длина последней должна превышать длину головы.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Отличается широким основанием и плавно сужается к кончику. Максимальным соответствием стандарту считается хвост, который достаёт до скакательных суставов.
+        </p>
+        <h3>
+         Передние конечности
+        </h3>
+        <p>
+         Поставлены широко и параллельно друг другу. Плечи и предплечья примечательны отлично развитой мускулатурой. Локти направлены назад. Передние конечности переходят в сильные лапы округлой формы. Короткие пальцы плотно сжаты.
+        </p>
+        <h3>
+         Задние конечности
+        </h3>
+        <p>
+         Расстояние между задними конечностями значительно шире. Для бёдер и голеней амбуля характерна рельефная мускулатура. Угол конечностей выражен умеренно. Лапы имеют слегка вытянутую форму, благодаря чему выглядят длиннее и уже передних.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Морда американского бульдога линии Джонсона" data-fancybox="gallery" href="/upload/iblock/2e7/2e725b2723d61b53993481a3d71cda3c.jpg" title="Морда американского бульдога линии Джонсона">
+           <div class="lazy-load" data-alt="Морда американского бульдога линии Джонсона" data-class="article_pic" data-original="/upload/resize_cache/iblock/2e7/512_342_2/2e725b2723d61b53993481a3d71cda3c.jpg">
+            <noscript data-alt="Морда американского бульдога линии Джонсона" data-class="article_pic" data-original="/upload/resize_cache/iblock/2e7/512_342_2/2e725b2723d61b53993481a3d71cda3c.jpg">
+             <img alt="Морда американского бульдога линии Джонсона" class="article_pic" src="/upload/resize_cache/iblock/2e7/512_342_2/2e725b2723d61b53993481a3d71cda3c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Морда американского бульдога линии Джонсона
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Морда американского бульдога линии Скотта" data-fancybox="gallery" href="/upload/iblock/0f0/0f0db130c9392fe321295787cc80c9a2.jpg" title="Морда американского бульдога линии Скотта">
+           <div class="lazy-load" data-alt="Морда американского бульдога линии Скотта" data-class="article_pic" data-original="/upload/resize_cache/iblock/0f0/512_342_2/0f0db130c9392fe321295787cc80c9a2.jpg">
+            <noscript data-alt="Морда американского бульдога линии Скотта" data-class="article_pic" data-original="/upload/resize_cache/iblock/0f0/512_342_2/0f0db130c9392fe321295787cc80c9a2.jpg">
+             <img alt="Морда американского бульдога линии Скотта" class="article_pic" src="/upload/resize_cache/iblock/0f0/512_342_2/0f0db130c9392fe321295787cc80c9a2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Морда американского бульдога линии Скотта
+          </div>
+         </div>
+        </div>
+        <h3>
+         Манера движения
+        </h3>
+        <p>
+         Движения американского бульдога мощные и чётко скоординированные, напоминают свободную рысь.
+        </p>
+        <h3>
+         Шерстяной покров
+        </h3>
+        <p>
+         Длина волосков шерсти не должна превышать 1,5 см. Они плотно прилегают к корпусу собаки и отличаются здоровым блеском.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Готов к празднику!" data-fancybox="gallery" href="/upload/iblock/b7a/b7a1e50c6d47cd3d097f08f10bedff5c.jpg" title="Готов к празднику!">
+          <div class="lazy-load" data-alt="Готов к празднику!" data-class="article_pic" data-original="/upload/resize_cache/iblock/b7a/412_2150_1/b7a1e50c6d47cd3d097f08f10bedff5c.jpg">
+           <noscript data-alt="Готов к празднику!" data-class="article_pic" data-original="/upload/resize_cache/iblock/b7a/412_2150_1/b7a1e50c6d47cd3d097f08f10bedff5c.jpg">
+            <img alt="Готов к празднику!" class="article_pic" height="617" src="/upload/resize_cache/iblock/b7a/412_2150_1/b7a1e50c6d47cd3d097f08f10bedff5c.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Готов к празднику!
+         </div>
+        </div>
+        <p>
+         Чаще всего шерсть амбулей имеет тигровый, бело-тигровый, бело-рыжий и белый окрасы. Допускаются чёрный, чёрный с подпалинами, мраморный, голубой, но только в том случае, если эти окрасы включают в себя пятна белого цвета. При этом отметины должны покрывать не менее 10%  корпуса. Обратите внимание на то, что на выставках собак больше всего ценится именно белый окрас.
+        </p>
+        <p>
+         К дефектам породы американский бульдог относят следующие:
+        </p>
+        <ul>
+         <li>
+          хвост с заломом, лежащий на спине, штопором;
+         </li>
+         <li>
+          жёлтый, зелёный или серый цвет радужки;
+         </li>
+         <li>
+          глаза навыкате с отвисшими веками;
+         </li>
+         <li>
+          серая пигментация мочки носа;
+         </li>
+         <li>
+          слабо развитая мускулатура;
+         </li>
+         <li>
+          прямой прикус челюстей;
+         </li>
+         <li>
+          резкое сужение морды;
+         </li>
+         <li>
+          депигментация век;
+         </li>
+         <li>
+          гетерохромия.
+         </li>
+        </ul>
+        <p>
+         Обратите внимание на то, что дефектом является любое отклонение от стандарта. Выделяют и дисквалифицирующие пороки. Среди них:
+        </p>
+        <ul>
+         <li>
+          чрезмерная трусливость или агрессивность;
+         </li>
+         <li>
+          неопущение яичек кобеля в мошонку;
+         </li>
+         <li>
+          голубой оттенок глаз, асимметрия;
+         </li>
+         <li>
+          длинный шерстяной покров;
+         </li>
+         <li>
+          ножницеобразный прикус;
+         </li>
+         <li>
+          неровная линия резцов;
+         </li>
+         <li>
+          асимметрия челюстей;
+         </li>
+         <li>
+          глухота и слепота.
+         </li>
+        </ul>
+        <h2>
+         Фото взрослого американского бульдога
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5d5/5d539774a70e53f7205a04a3f4268c3b.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/5d5/380_264_2/5d539774a70e53f7205a04a3f4268c3b.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/5d5/380_264_2/5d539774a70e53f7205a04a3f4268c3b.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/5d5/380_264_2/5d539774a70e53f7205a04a3f4268c3b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5d7/5d71071b8e6b24a47e5a2980f0c85783.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/5d7/380_264_2/5d71071b8e6b24a47e5a2980f0c85783.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/5d7/380_264_2/5d71071b8e6b24a47e5a2980f0c85783.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/5d7/380_264_2/5d71071b8e6b24a47e5a2980f0c85783.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4b3/4b3017eeac18446469e86665e3501e12.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/4b3/380_264_2/4b3017eeac18446469e86665e3501e12.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/4b3/380_264_2/4b3017eeac18446469e86665e3501e12.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/4b3/380_264_2/4b3017eeac18446469e86665e3501e12.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/90b/90be39e331d7e9cd526ed928402de00f.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/90b/380_264_2/90be39e331d7e9cd526ed928402de00f.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/90b/380_264_2/90be39e331d7e9cd526ed928402de00f.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/90b/380_264_2/90be39e331d7e9cd526ed928402de00f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c26/c26c1ac8c4b55ab4f92be96efe70ff15.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/c26/380_264_2/c26c1ac8c4b55ab4f92be96efe70ff15.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/c26/380_264_2/c26c1ac8c4b55ab4f92be96efe70ff15.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/c26/380_264_2/c26c1ac8c4b55ab4f92be96efe70ff15.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ab3/ab39046f91eef6389a06152ed0eec925.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/ab3/380_264_2/ab39046f91eef6389a06152ed0eec925.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/ab3/380_264_2/ab39046f91eef6389a06152ed0eec925.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/ab3/380_264_2/ab39046f91eef6389a06152ed0eec925.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/896/8964fee1b74bf91a5cb802b2bed5ee3e.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/896/380_264_2/8964fee1b74bf91a5cb802b2bed5ee3e.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/896/380_264_2/8964fee1b74bf91a5cb802b2bed5ee3e.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/896/380_264_2/8964fee1b74bf91a5cb802b2bed5ee3e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/dd4/dd4948573b019302903bce816e638a08.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/dd4/380_264_2/dd4948573b019302903bce816e638a08.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/dd4/380_264_2/dd4948573b019302903bce816e638a08.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/dd4/380_264_2/dd4948573b019302903bce816e638a08.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9c0/9c092f50bfe4e8d9366b943ea27bff8d.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/9c0/380_264_2/9c092f50bfe4e8d9366b943ea27bff8d.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/9c0/380_264_2/9c092f50bfe4e8d9366b943ea27bff8d.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/9c0/380_264_2/9c092f50bfe4e8d9366b943ea27bff8d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер американского бульдога
+        </h2>
+        <p>
+         Амбуль – идеальный вариант для тех, кто ищет храброго, умного и самоотверженного компаньона. Бульдог пройдёт со своим хозяином сквозь огонь, воду и медные трубы. Главное – дать собаке понять, что в вашем дуэте роль вожака отведена не ей. Порода не подойдёт слабохарактерным людям, которые не смогут уделить достаточно времени воспитанию питомца. Не забывайте, что американский бульдог склонен доминировать и отстаивать свои права, оттого и нуждается в корректной социализации. В противном случае собака будет воспринимать любое живое существо как потенциальную угрозу и проявлять агрессию.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Американский бульдог с ребенком" data-fancybox="gallery" href="/upload/iblock/c16/c16c92ec0364c5bb2e20986a50acd1e7.jpg" title="Американский бульдог с ребенком">
+          <div class="lazy-load" data-alt="Американский бульдог с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/c16/412_2150_1/c16c92ec0364c5bb2e20986a50acd1e7.jpg">
+           <noscript data-alt="Американский бульдог с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/c16/412_2150_1/c16c92ec0364c5bb2e20986a50acd1e7.jpg">
+            <img alt="Американский бульдог с ребенком" class="article_pic" height="549" src="/upload/resize_cache/iblock/c16/412_2150_1/c16c92ec0364c5bb2e20986a50acd1e7.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Американский бульдог с ребенком
+         </div>
+        </div>
+        <p>
+         Грозный и внушительный облик амбуля скрывает дружелюбие и коммуникабельность. Представители этой породы проявляют невероятную верность и преданность по отношению к семье, в которой живут. В критических ситуациях бульдог станет защищать хозяина до последней капли крови. Будьте готовы к внезапным проявлениям любви, когда на ваши колени уляжется 40 килограммов щенячьей нежности – а это не так легко выдержать, между прочим! Американские бульдоги неплохо ладят с детьми и с радостью принимают участие в играх. Однако будьте внимательны: собака не всегда понимает, что превосходит малышей по силе и размерам, поэтому может нечаянно навалиться на ребёнка.
+        </p>
+        <p>
+         Порода славится своими охранными качествами. Амбули обладают отменным слухом и чутьём, поэтому ни одному воришке не удастся прошмыгнуть в охраняемые владения. Нередко собака устраивает показательную демонстрацию своей силы. Если это не останавливает злодея, бульдог бесстрашно бросается в бой, защищая не только вверенное ему имущество, но и людей, которых любит.
+        </p>
+        <p>
+         В момент опасности представители этой породы сохраняют хладнокровие и умело выстраивают тактику ведения боя. Их нельзя отвлечь ложными маневрами и наигранными угрозами. Американские бульдоги настороженно относятся к незнакомцам даже находясь рядом со своим хозяином. Им может потребоваться достаточно времени для того, чтобы привыкнуть к новому человеку.
+        </p>
+        <p>
+         Амбули обладают высоким интеллектом, который становится проблемой в определённых ситуациях. Даже щенок может оказаться достаточно смышлёным для того, чтобы открыть дверь или запрыгнуть на подоконник, где стоят горшки с комнатными растениями. А уж если американский бульдог скучает, тогда берегитесь: собака дойдёт вплоть до полного разгрома квартиры в попытке выплеснуть накопившуюся энергию наружу.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Пошли погуляем" data-fancybox="gallery" href="/upload/iblock/314/314d3d3042a35be095ff282484dd688d.jpg" title="Пошли погуляем">
+          <div class="lazy-load" data-alt="Пошли погуляем" data-class="article_pic" data-original="/upload/resize_cache/iblock/314/412_2150_1/314d3d3042a35be095ff282484dd688d.jpg">
+           <noscript data-alt="Пошли погуляем" data-class="article_pic" data-original="/upload/resize_cache/iblock/314/412_2150_1/314d3d3042a35be095ff282484dd688d.jpg">
+            <img alt="Пошли погуляем" class="article_pic" height="329" src="/upload/resize_cache/iblock/314/412_2150_1/314d3d3042a35be095ff282484dd688d.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Пошли погуляем
+         </div>
+        </div>
+        <p>
+         Не забывайте о том, что ваш питомец нуждается в ежедневных физических нагрузках. Отправьтесь на часовую пробежку в парк, не забыв захватить любимую игрушку для собаки. Амбуль оценит это и по возвращении домой с удовольствием уснёт в ногах хозяина, где и проведёт весь оставшийся день. Стоит отметить, что американские бульдоги – прекрасные спутники для прогулок. При правильном воспитании их уравновешенность и спокойствие избавят вас от необходимости держать поводок натянутым.
+        </p>
+        <p>
+         Если вы планируете взять бульдога в качестве компаньона для второго питомца, откажитесь от своей затеи. Представители этой породы плохо уживаются с животными, а в особенности – со своими сородичами. Американские бульдоги не терпят конкуренции, а наличие собаки того же пола лишь усугубит ситуацию. При отсутствии правильного воспитания амбуль способен покалечить или убить другое домашнее животное независимо от размеров. Не забывайте, что изначально эту породу разводили для кровавых боёв с быками. Ярко выраженные охотничьи инстинкты могут спровоцировать пса на погоню, которая в большинстве случаев имеет печальный исход.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/55a/55adbfe893e537a04c20a7d85169c798.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/55a/512_342_2/55adbfe893e537a04c20a7d85169c798.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/55a/512_342_2/55adbfe893e537a04c20a7d85169c798.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/55a/512_342_2/55adbfe893e537a04c20a7d85169c798.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/04e/04e1ac57e8f64942b9a86ab114fbe788.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/04e/512_342_2/04e1ac57e8f64942b9a86ab114fbe788.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/04e/512_342_2/04e1ac57e8f64942b9a86ab114fbe788.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/04e/512_342_2/04e1ac57e8f64942b9a86ab114fbe788.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Развитый интеллект и независимый характер – весомые причины начать воспитывать амбуля как можно раньше. Прежде всего, щенок должен осознать главную истину: слово хозяина – закон, который нельзя нарушить ни при каких обстоятельствах. Пресекайте малейшие попытки бульдога рычать и скалиться на членов вашей семьи, но ни в коем случае не поднимайте руку на собаку! Американские бульдоги не воспринимают жестокость и в будущем могут озлобиться на вас. Твёрдость, настойчивость и терпение – вот три кита, на которых держится правильное воспитание питомца.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="В ожидании хозяина" data-fancybox="gallery" href="/upload/iblock/7cd/7cd0909a369d96bc60fa8eca47ffc087.jpg" title="В ожидании хозяина">
+          <div class="lazy-load" data-alt="В ожидании хозяина" data-class="article_pic" data-original="/upload/resize_cache/iblock/7cd/412_2150_1/7cd0909a369d96bc60fa8eca47ffc087.jpg">
+           <noscript data-alt="В ожидании хозяина" data-class="article_pic" data-original="/upload/resize_cache/iblock/7cd/412_2150_1/7cd0909a369d96bc60fa8eca47ffc087.jpg">
+            <img alt="В ожидании хозяина" class="article_pic" height="367" src="/upload/resize_cache/iblock/7cd/412_2150_1/7cd0909a369d96bc60fa8eca47ffc087.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          В ожидании хозяина
+         </div>
+        </div>
+        <p>
+         Не забывайте о том, что самодисциплина – слабая сторона амбулей, поэтому на выработку привычек может уйти не один месяц. Прежде всего, займитесь формированием режима дня. Для этого выводите амбуля на прогулку дважды – утром и вечером. Вскоре ваш любимец поймёт, что справлять нужду необходимо исключительно на улице. Так вы избежите неприятных «инцидентов».
+        </p>
+        <p>
+         Во время прогулки не позволяйте амбулю натягивать поводок, устремляясь вперёд. В случае с щенком это может выглядеть забавно: коренастый малыш сопит от напряжения, желая ускорить шаг вопреки усилиям хозяина. Однако будьте уверены: когда на его месте окажется тучный пёс массой почти в полцентнера, это создаст определённые неудобства. Собака должна идти рядом с вами – и никак иначе.
+        </p>
+        <p>
+         Не позволяйте вашему питомцу прыгать на людей передними лапами. Выдержать внушительные габариты американского бульдога очень сложно (в особенности – детям). В целом не рекомендуется позволять амбулю проявлять силу. Удержите его от драки с другими собаками или кошками. Не допускайте даже оскала или рычания в их сторону.
+        </p>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <p>
+         Порода американский бульдог совершенно неприхотлива в уходе. Этим собакам запрещено проводить водные процедуры чаще двух-трёх раз в год. Достаточно протирать морду по мере загрязнения – и ваш питомец всегда будет выглядеть опрятным и чистым. Для этих целей подойдут палочки для ушей и ватные диски.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="О, да! Освежающий душ" data-fancybox="gallery" href="/upload/iblock/3df/3dff04c70656cab2e3c7887dffadbe90.jpg" title="О, да! Освежающий душ">
+          <div class="lazy-load" data-alt="О, да! Освежающий душ" data-class="article_pic" data-original="/upload/resize_cache/iblock/3df/412_2150_1/3dff04c70656cab2e3c7887dffadbe90.jpg">
+           <noscript data-alt="О, да! Освежающий душ" data-class="article_pic" data-original="/upload/resize_cache/iblock/3df/412_2150_1/3dff04c70656cab2e3c7887dffadbe90.jpg">
+            <img alt="О, да! Освежающий душ" class="article_pic" height="274" src="/upload/resize_cache/iblock/3df/412_2150_1/3dff04c70656cab2e3c7887dffadbe90.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          О, да! Освежающий душ
+         </div>
+        </div>
+        <p>
+         Единственное, на что придётся потратиться, – на специальную щётку для вычёсывания. Во время линьки американский бульдог оставляет много шерсти, поэтому рекомендуется вычёсывать собаку хотя бы раз в неделю. Если щётки под рукой не оказалось, резиновая перчатка вполне сгодится. Не забывайте и о когтях бульдога. Иногда длительных прогулок недостаточно для того, чтобы они стачивались. Используйте секатор для укорачивания когтей каждые полтора-два месяца.
+        </p>
+        <p>
+         Однако ваш амбуль будет благодарен не приятным спа-процедурам, а ежедневным активным прогулкам на свежем воздухе. В каждой черте этого мощного и благородного пса заложена тяга к физическим нагрузкам, поэтому не стоит лишать вашего питомца этой радости. Каждый пройденный километр подарит бульдогу крепкое здоровье, а вам – отличное настроение.
+        </p>
+        <p>
+         Что касается питания амбуля, рекомендуется использовать специальный сухой корм с витаминно-минеральным комплексом. Периодически разбавляйте рацион собаки молочными продуктами и свежим мясом. Не стоит угощать питомца «человеческой» едой, какими бы жалобными глазами он ни смотрел: это может негативно отразиться на самочувствии бульдога.
+        </p>
+        <p>
+         Соблюдайте следующие правила:
+        </p>
+        <ul>
+         <li>
+          Не делайте мясо основой рациона. Помните, что он должен быть сбалансированным и включать не менее 30% белков.
+         </li>
+         <li>
+          Не стоит часто давать американскому бульдогу продукты с высоким содержанием кальция и витаминов A, D. Это негативно отражается на костной системе собаки.
+         </li>
+         <li>
+          Придерживайтесь периодичности. Так, щенят до 4 месяцев кормят пять раз, до 6 месяцев – четыре раза, до полугода – трижды в день. После этого достаточно наполнять миску два раза – утром и вечером.
+         </li>
+        </ul>
+        <p>
+         Не рекомендуется включать в рацион американского бульдога следующие продукты:
+        </p>
+        <ul>
+         <li>
+          сырую речную рыбу (в проваренном виде допустима);
+         </li>
+         <li>
+          бобовые культуры (горох, фасоль и прочие);
+         </li>
+         <li>
+          мясной фарш (плохо усваивается);
+         </li>
+         <li>
+          мелкие трубчатые кости;
+         </li>
+         <li>
+          свежий белый хлеб;
+         </li>
+         <li>
+          неотваренные яйца;
+         </li>
+         <li>
+          свинину.
+         </li>
+        </ul>
+        <p>
+         Питьевая вода должна быть некипяченой и чистой.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Два брата" data-fancybox="gallery" href="/upload/iblock/85f/85f2ef883956613d806d101ed94628b6.jpg" title="Два брата">
+          <div class="lazy-load" data-alt="Два брата" data-class="article_pic" data-original="/upload/iblock/85f/85f2ef883956613d806d101ed94628b6.jpg">
+           <noscript data-alt="Два брата" data-class="article_pic" data-original="/upload/iblock/85f/85f2ef883956613d806d101ed94628b6.jpg">
+            <img alt="Два брата" class="article_pic" src="/upload/iblock/85f/85f2ef883956613d806d101ed94628b6.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Два брата
+         </div>
+        </div>
+        <h2 id="gl6">
+         Здоровье и болезни американского бульдога
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="амбуль в защитном воротнике" data-fancybox="gallery" href="/upload/iblock/a93/a93ab44eb6c0555b30b80d08aee108cd.jpg" title="амбуль в защитном воротнике">
+          <div class="lazy-load" data-alt="амбуль в защитном воротнике" data-class="article_pic" data-original="/upload/resize_cache/iblock/a93/412_2150_1/a93ab44eb6c0555b30b80d08aee108cd.jpg">
+           <noscript data-alt="амбуль в защитном воротнике" data-class="article_pic" data-original="/upload/resize_cache/iblock/a93/412_2150_1/a93ab44eb6c0555b30b80d08aee108cd.jpg">
+            <img alt="амбуль в защитном воротнике" class="article_pic" height="582" src="/upload/resize_cache/iblock/a93/412_2150_1/a93ab44eb6c0555b30b80d08aee108cd.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          амбуль в защитном воротнике
+         </div>
+        </div>
+        <p>
+         Несмотря на отменную выносливость и крепкое здоровье, амбули подвержены определённым заболеваниям. Среди них:
+        </p>
+        <ul>
+         <li>
+          проблемы с глазами (косоглазие, заворот века, катаракта);
+         </li>
+         <li>
+          дисплазия тазобедренных и локтевых суставов;
+         </li>
+         <li>
+          кожные заболевания и аллергия;
+         </li>
+         <li>
+          сердечная недостаточность;
+         </li>
+         <li>
+          врождённая глухота;
+         </li>
+         <li>
+          иммунодефицит;
+         </li>
+         <li>
+          порок сердца;
+         </li>
+         <li>
+          эпилепсия.
+         </li>
+        </ul>
+        <p>
+         У сук американского бульдога нередко возникают сложности во время родов. Однако не стоит думать, что приобретая амбуля, вы автоматически становитесь владельцем болезненной собаки. Эта порода сохраняет активность и жажду жизни вплоть до преклонного возраста. Остальное зависит от вашего внимания и своевременного лечения питомца.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Выбор щенка американского бульдога требует огромного внимания. Именно с этого этапа начинается знакомство с представителями благородной породы. Одному из них суждено стать вашим лучшим другом, поэтому отнеситесь к приобретению амбуля ответственно.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок амбуля с мамой" data-fancybox="gallery" href="/upload/iblock/41a/41a3ce93d672cc03d80ae04dae778146.jpg" title="Щенок амбуля с мамой">
+          <div class="lazy-load" data-alt="Щенок амбуля с мамой" data-class="article_pic" data-original="/upload/resize_cache/iblock/41a/412_2150_1/41a3ce93d672cc03d80ae04dae778146.jpg">
+           <noscript data-alt="Щенок амбуля с мамой" data-class="article_pic" data-original="/upload/resize_cache/iblock/41a/412_2150_1/41a3ce93d672cc03d80ae04dae778146.jpg">
+            <img alt="Щенок амбуля с мамой" class="article_pic" height="274" src="/upload/resize_cache/iblock/41a/412_2150_1/41a3ce93d672cc03d80ae04dae778146.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок амбуля с мамой
+         </div>
+        </div>
+        <p>
+         Чистокровных американских бульдогов можно найти только в проверенных питомниках. Заводчик должен предъявить по требованию справку о результатах ветеринарного осмотра каждого щенка из помёта. Отсутствие таковой – повод задуматься, а здорового ли малыша вы собираетесь взять в свой дом? При осмотре щенков сука должна сохранять спокойствие. Если собаку уводят в другое помещение или вовсе не хотят показать потенциальному покупателю, это косвенно свидетельствует о её психической нестабильности, которая может передаться и щенкам.
+        </p>
+        <p>
+         Идеальный возраст малыша – от полутора до трёх месяцев. Самый общительный, весёлый и активный карапуз по определению отличается крепким здоровьем. Блестящая шёрстка, влажный нос и задорные глазёнки – лишнее тому свидетельство. Если амбуль трусливо поджимает хвост или рычит на протянутую руку, откажитесь от приобретения такого щенка: вам не удастся стать друзьями на долгие годы.
+        </p>
+        <h2>
+         Фото щенков американского бульдога
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/dac/dacffea9bb673ad0d7cf3d427c2c3fac.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/dac/380_264_2/dacffea9bb673ad0d7cf3d427c2c3fac.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/dac/380_264_2/dacffea9bb673ad0d7cf3d427c2c3fac.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/dac/380_264_2/dacffea9bb673ad0d7cf3d427c2c3fac.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/dd5/dd52748440b0eadaa7308d6defd3b4f2.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/dd5/380_264_2/dd52748440b0eadaa7308d6defd3b4f2.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/dd5/380_264_2/dd52748440b0eadaa7308d6defd3b4f2.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/dd5/380_264_2/dd52748440b0eadaa7308d6defd3b4f2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fc5/fc54fc1c21a769d9bf7e0d31656ee8a8.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/fc5/380_264_2/fc54fc1c21a769d9bf7e0d31656ee8a8.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/fc5/380_264_2/fc54fc1c21a769d9bf7e0d31656ee8a8.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/fc5/380_264_2/fc54fc1c21a769d9bf7e0d31656ee8a8.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/695/69569478ad16c4491968b3211f84e922.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/695/380_264_2/69569478ad16c4491968b3211f84e922.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/695/380_264_2/69569478ad16c4491968b3211f84e922.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/695/380_264_2/69569478ad16c4491968b3211f84e922.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d33/d33f0012cf24d3ce79efd01b44a71739.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/d33/380_264_2/d33f0012cf24d3ce79efd01b44a71739.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/d33/380_264_2/d33f0012cf24d3ce79efd01b44a71739.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/d33/380_264_2/d33f0012cf24d3ce79efd01b44a71739.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f96/f96aa9130fef527a036342fc2cd5d147.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/f96/380_264_2/f96aa9130fef527a036342fc2cd5d147.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/f96/380_264_2/f96aa9130fef527a036342fc2cd5d147.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/f96/380_264_2/f96aa9130fef527a036342fc2cd5d147.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/cad/cad92cda147dc6c144e2db1236cf14a2.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/cad/380_264_2/cad92cda147dc6c144e2db1236cf14a2.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/cad/380_264_2/cad92cda147dc6c144e2db1236cf14a2.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/cad/380_264_2/cad92cda147dc6c144e2db1236cf14a2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e46/e467390cb13bd1d6f18f2a71473e276f.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/e46/380_264_2/e467390cb13bd1d6f18f2a71473e276f.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/e46/380_264_2/e467390cb13bd1d6f18f2a71473e276f.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/e46/380_264_2/e467390cb13bd1d6f18f2a71473e276f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/959/9591fd3561f0e681a77a7b43f00fe6c4.jpg" title="">
+           <div class="lazy-load" data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/959/380_264_2/9591fd3561f0e681a77a7b43f00fe6c4.jpg">
+            <noscript data-alt="Американский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/959/380_264_2/9591fd3561f0e681a77a7b43f00fe6c4.jpg">
+             <img alt="Американский бульдог" class="article_pic" src="/upload/resize_cache/iblock/959/380_264_2/9591fd3561f0e681a77a7b43f00fe6c4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Сколько стоит американский бульдог
+        </h2>
+        <p>
+         В сравнении с остальными породами собак амбуль стоит недорого. Щенки без родословной обойдутся в 7-8 тысяч рублей. Согласитесь, цена за очаровательного карапуза вполне приемлема. Если же родословная имеет значение, но участие в выставках или разведение вас не привлекает, приготовьтесь заплатить около 20 тысяч рублей. Выставочные и племенные американские бульдоги стоят 50 тысяч и выше.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения американского бульдога на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27825/">
+          <div class="ava-med">
+           <div class="noava fill5">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/amerikanskiy-buldog-5538/">
+           Американский бульдог
+          </a>
+         </div>
+         <div class="forum-text">
+          Щенку 6 месяцев, есть все документы, родословная ,прививки,чип.
+
+
+
+Щенок с очень хорошей родословной.
+Очень воспитанный и послушный щенок, 
+Спокойно остается в Доме один на долгое время , при этом ни луж ,ни...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27825/">
+            Валерия Ляшенко
+           </a>
+          </span>
+          <span class="vopros-date">
+           Месяц назад
+          </span>
+          <span class="vopros-smotr">
+           165 просмотров
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27096/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Диана Орлова" data-original="/upload/resize_cache/main/c2e/200_200_2/cxxj7x8febja8ouo3df20wxn453gcwr5.jpg">
+            <noscript data-alt="Диана Орлова" data-original="/upload/resize_cache/main/c2e/200_200_2/cxxj7x8febja8ouo3df20wxn453gcwr5.jpg">
+             <img alt="Диана Орлова" src="/upload/resize_cache/main/c2e/200_200_2/cxxj7x8febja8ouo3df20wxn453gcwr5.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/nuzhna-pomoshch-5181/">
+           Нужна помощь!
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте!Трое суток у нас живёт 3-х месячная девочка.Проблема в выгуле:приходится заставлять и тянуть на поводке на улицу! У продавца жила на улице, может в этом проблема? Даже собачьи лакомства не помогают...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27096/">
+            Диана Орлова
+           </a>
+          </span>
+          <span class="vopros-date">
+           6 месяцев назад
+          </span>
+          <span class="vopros-smotr">
+           333 просмотра
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/26975/">
+          <div class="ava-med">
+           <div class="noava fill5">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/druzya-vsem-privet-menya-zovut-sabina-u-menya-devochka-basendzhi--rubi-seychas-s-komandoy-gotovim-federalnyy-proekt-po-uluchsheniyu-i-razvitiyu-sobachikh-ploshchad-5136/">
+           Друзья, всем привет Меня зовут Сабина, у меня девочка басенджи - Руби  Сейчас с командой готовим федеральный проект по улучшению и развитию собачьих площад
+          </a>
+         </div>
+         <div class="forum-text">
+          Друзья, всем привет
+Меня зовут Сабина, у меня девочка басенджи - Руби
+
+Сейчас с командой готовим федеральный проект по улучшению и развитию собачьих площадок. 
+Просьба уделить 1 минуту и пройти короткий анонимный...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/26975/">
+            Сабина  Сабина
+           </a>
+          </span>
+          <span class="vopros-date">
+           6 месяцев назад
+          </span>
+          <span class="vopros-smotr">
+           292 просмотра
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/460/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="София Таганская" data-original="/upload/resize_cache/main/93c/200_200_2/93c97c69b109adc14839b8c92d28dd98.jpg">
+            <noscript data-alt="София Таганская" data-original="/upload/resize_cache/main/93c/200_200_2/93c97c69b109adc14839b8c92d28dd98.jpg">
+             <img alt="София Таганская" src="/upload/resize_cache/main/93c/200_200_2/93c97c69b109adc14839b8c92d28dd98.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/kak-prokhodit-techka-u-amerikanskogo-buldoga-318/">
+           Как проходит течка у американского бульдога
+          </a>
+         </div>
+         <div class="forum-text">
+          Купили маленького амбуля-девочку. Хотели бы знать, как проходит течка у собак этой породы? И что хозяин должен делать, чтобы течка не осложняла жизнь животного?
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/460/">
+            София Таганская
+           </a>
+          </span>
+          <span class="vopros-date">
+           6 лет назад
+          </span>
+          <span class="vopros-smotr">
+           3033 просмотра
+          </span>
+          <span class="vopros-otvet">
+           2 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/amerikanskiy-buldog/forum/">
+        Перейти на
+        форум американского бульдога
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Американский бульдог" src="/upload/iblock/856/856f06d45a5b3b2ab7a1e6f4bf080a8a.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/amerikanskiy-buldog/">
+          Американский бульдог
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/amerikanskiy-buldog/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/amerikanskiy-buldog/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/amerikanskiy-buldog/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/amerikanskiy-buldog/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/amerikanskiy-buldog/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/amerikanskiy-buldog/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/angliyskiy-koker-spaniel/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Английский кокер-спаниель" data-original="/upload/resize_cache/iblock/ed9/100_100_1/ed93b033c39f22c5b594c0c80f34f8be.jpg">
+          <noscript data-alt="Английский кокер-спаниель" data-original="/upload/resize_cache/iblock/ed9/100_100_1/ed93b033c39f22c5b594c0c80f34f8be.jpg">
+           <img alt="Английский кокер-спаниель" src="/upload/resize_cache/iblock/ed9/100_100_1/ed93b033c39f22c5b594c0c80f34f8be.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Английский кокер-спаниель
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/amerikanskiy-golyy-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Американский голый терьер" data-original="/upload/resize_cache/iblock/76f/100_100_1/76ff7605a3f7cce88b3bcdceef83a51e.jpg">
+          <noscript data-alt="Американский голый терьер" data-original="/upload/resize_cache/iblock/76f/100_100_1/76ff7605a3f7cce88b3bcdceef83a51e.jpg">
+           <img alt="Американский голый терьер" src="/upload/resize_cache/iblock/76f/100_100_1/76ff7605a3f7cce88b3bcdceef83a51e.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Американский голый терьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/coton-de-tulear/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Котон-де-тулеар" data-original="/upload/resize_cache/iblock/c7e/100_100_1/9e0fars86n0gc3w7ta5ry3et4x1qff4l.jpg">
+          <noscript data-alt="Котон-де-тулеар" data-original="/upload/resize_cache/iblock/c7e/100_100_1/9e0fars86n0gc3w7ta5ry3et4x1qff4l.jpg">
+           <img alt="Котон-де-тулеар" src="/upload/resize_cache/iblock/c7e/100_100_1/9e0fars86n0gc3w7ta5ry3et4x1qff4l.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Котон-де-тулеар
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/akita-inu/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Акита-ину" data-original="/upload/resize_cache/iblock/923/100_100_1/923124829b0781ae065bff0951917c74.jpg">
+          <noscript data-alt="Акита-ину" data-original="/upload/resize_cache/iblock/923/100_100_1/923124829b0781ae065bff0951917c74.jpg">
+           <img alt="Акита-ину" src="/upload/resize_cache/iblock/923/100_100_1/923124829b0781ae065bff0951917c74.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Акита-ину
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Famerikanskiy-buldog%252F%253Fcheck_key%253Dba468a58c7cf29c443745e921edaf27c%2526ANIMAL_CODE%253Damerikanskiy-buldog%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Famerikanskiy-buldog%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmFtZXJpa2Fuc2tpeS1idWxkb2clMkYlM0ZjaGVja19rZXklM0RiYTQ2OGE1OGM3Y2YyOWM0NDM3NDVlOTIxZWRhZjI3YyUyNkFOSU1BTF9DT0RFJTNEYW1lcmlrYW5za2l5LWJ1bGRvZyUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZhbWVyaWthbnNraXktYnVsZG9nJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Famerikanskiy-buldog%252F%253Fcheck_key%253Dba468a58c7cf29c443745e921edaf27c%2526ANIMAL_CODE%253Damerikanskiy-buldog%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Famerikanskiy-buldog%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Famerikanskiy-buldog%252F%253Fcheck_key%253Dba468a58c7cf29c443745e921edaf27c%2526ANIMAL_CODE%253Damerikanskiy-buldog%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Famerikanskiy-buldog%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "78.158.15.35"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--ff3eeaf203e73248d7d2c2f59f8bc4bd-->

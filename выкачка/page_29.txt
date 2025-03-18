@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'b07dd560f971'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Аффенпинчер, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Аффенпинчер – карликовый представитель группы пинчеров с жесткой шерстью по корпусу и длинной косматой растительностью на морде." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/a30/a30f63ef8fb3807cfa97b1157aa38c57.jpg" property="og:image"/>
+     <title>
+      Аффенпинчер: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/affenpincher/" property="og:url"/>
+     <meta content="Аффенпинчер: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Аффенпинчер – карликовый представитель группы пинчеров с жесткой шерстью по корпусу и длинной косматой растительностью на морде." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/affenpincher/" itemprop="url">
+         <span itemprop="title">
+          Аффенпинчер
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Аффенпинчер
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/affenpincher/">
+          Описание
+         </a>
+         <a href="/dog/affenpincher/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/affenpincher/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/affenpincher/photo/">
+          Фото
+         </a>
+         <a href="/dog/affenpincher/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Аффенпинчер" src="/upload/iblock/9be/9be8c6987511e69e726c7d23f694bab5.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/affenpincher/">
+           обезьяний пинчер
+          </a>
+          ,
+          <a href="/dog/affenpincher/">
+           обезьяний терьер
+          </a>
+          ,
+          <a href="/dog/affenpincher/">
+           аффен
+          </a>
+         </span>
+         <p>
+          Аффенпинчер – карликовый представитель группы пинчеров с жесткой шерстью по корпусу и длинной косматой растительностью на морде.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/338/31u77hlxfmb78a05u07zv7gg0ark7cm6.jpg" data-cap="Dennis the Affenpinscher" data-fancybox="images" data-link="https://www.flickr.com/photos/bigbluewolf/49719610097/" data-type="image" data-username="bigbluewolf" href="/upload/uf/68c/vq9kvipv8teyo8zed0osbr0azmztfm51.jpg">
+            <img alt="Аффенпинчер" src="/upload/resize_cache/uf/68c/293_293_2/vq9kvipv8teyo8zed0osbr0azmztfm51.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/dcf/8w371drtop3pjzc338n2we6s3ff4ao0d.jpg" data-cap="Camoflauge Affie" data-fancybox="images" data-link="https://www.flickr.com/photos/affiefilms/33665930748/" data-type="image" data-username="Wayne AffieFilms" href="/upload/uf/0eb/ydaxlcy336412kw95kvxrn6bkc247b0m.jpg">
+            <img alt="Аффенпинчер" src="/upload/resize_cache/uf/0eb/293_293_2/ydaxlcy336412kw95kvxrn6bkc247b0m.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/e56/8qewo9jakye8eglew9tv2cx3x20arc52.jpg" data-cap="Everyone meet Bud, our very rare Affenpinscher or as some call them, Monkey Terrier!!!" data-fancybox="images" data-link="https://www.instagram.com/p/CiHwRfYJqOs/" data-type="image" data-username="bigpawslittlepaws" href="/upload/uf/3bd/mojhd619iemcfoy73turxr5tg4mxsg70.jpg">
+            <img alt="Аффенпинчер" src="/upload/resize_cache/uf/3bd/293_293_2/mojhd619iemcfoy73turxr5tg4mxsg70.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/affenpincher/photo/">
+         Все
+            фото аффенпинчера
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы аффенпинчер
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы аффенпинчер
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер аффенпинчера
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни аффенпинчеров
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена аффенпинчера
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Аффенпинчер
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Германия
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         4-6 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         25-30 см
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         С немецкого языка название породы переводится как «обезьяний пинчер» – миниатюрные мордочки собак действительно имеют сходство с чертами мелких приматов.
+        </li>
+        <li>
+         Невзирая на компактные размеры, территориальный инстинкт у аффенпинчеров развит не хуже, чем у сторожевых пород, поэтому они всегда своевременно сообщают о приходе и приглашенных, и непрошеных гостей.
+        </li>
+        <li>
+         Главная фобия аффенпинчеров – одиночество, поэтому заводить собаку нежелательно занятым и несемейным людям.
+        </li>
+        <li>
+         Обзаводясь аффеном, от мечты устроить дома мини-зоопарк придется отказаться. Представители этого семейства не жалуют любых четвероногих созданий и борются с ними путем наскоков, рычания и покусывания.
+        </li>
+        <li>
+         Порода считается редкой, поэтому если подыскиваете питомца с оригинальным имиджем, с которым можно выделиться из толпы знакомых собачников, – аффенпинчер исполнит ваше заветное желание.
+        </li>
+        <li>
+         При живом темпераменте собаки нетребовательны к пространству, поэтому комфортно себя чувствуют даже в маленьких квартирах.
+        </li>
+        <li>
+         Не усложнять себе жизнь дрессировкой и воспитательными моментами с аффенпинчером не получится. Собака, своевременно не усвоившая элементарные нормы поведения в человеческом обществе, доставляет уйму проблем.
+        </li>
+        <li>
+         На своей родине, в Германии, аффены продолжают считаться эксклюзивной породой, а количество чистокровных щенков, ежегодно рождающихся от зарегистрированных производителей, не превышает тридцати.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Аффенпинчер" data-original="/upload/iblock/a30/a30f63ef8fb3807cfa97b1157aa38c57.jpg">
+          <noscript data-alt="Аффенпинчер" data-original="/upload/iblock/a30/a30f63ef8fb3807cfa97b1157aa38c57.jpg">
+           <img alt="Аффенпинчер" src="/upload/iblock/a30/a30f63ef8fb3807cfa97b1157aa38c57.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Аффенпинчер
+          </strong>
+          – любознательный косматый «метеор», чье доверие почти невозможно заслужить, если вы не его хозяин. Обладая на редкость сильным и ревнивым характером, этот смешной коротышка желает только одного – быть единственным питомцем и четвероногим баловнем в доме. В свою очередь, аффенпинчер обязуется от души ненавидеть всех уступающих ему в размерах пушистиков-грызунов, а также своевременно сообщать владельцу о том, что на пороге квартиры появился некто двуногий и подозрительный.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Ниже среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не переносит (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Аффенпинчер основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2>
+         Видео: Аффенпинчер
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="2ty0UNZyvIQ">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl1">
+         История породы аффенпинчер
+        </h2>
+        <p>
+         Родиной аффенпинчеров считаются южные регионы Германии, где песиков с обезьяньими мордочками разводили в качестве крысоловов. Особенно в этом преуспели жители Любека, населявшие мини-собаками амбары с зерном и конюшни, где те занимались уничтожением грызунов. Стоит заметить, что первые аффены были крупнее своих современных потомков и имели более обширную палитру окрасов, что не помешало им трансформироваться в декоративную породу и очаровать европейскую знать. Более того, к XIX веку аффенпинчеры превратились в дорогой и востребованный товар, что помогло немецким купцам сбывать их несведущим иностранцам по невероятной для того времени цене в 1 талер.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Аффенпинчер в цирке. Фото 1915 года" data-fancybox="gallery" href="/upload/iblock/101/poneepgup3s08yxbb6u7812zijxvtogf.jpg" title="Аффенпинчер в цирке. Фото 1915 года">
+          <div class="lazy-load" data-alt="Аффенпинчер в цирке. Фото 1915 года" data-class="article_pic" data-original="/upload/iblock/101/poneepgup3s08yxbb6u7812zijxvtogf.jpg">
+           <noscript data-alt="Аффенпинчер в цирке. Фото 1915 года" data-class="article_pic" data-original="/upload/iblock/101/poneepgup3s08yxbb6u7812zijxvtogf.jpg">
+            <img alt="Аффенпинчер в цирке. Фото 1915 года" class="article_pic" height="240" src="/upload/iblock/101/poneepgup3s08yxbb6u7812zijxvtogf.jpg" width="370"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Аффенпинчер в цирке. Фото 1915 года
+         </div>
+        </div>
+        <p>
+         Первые внятные описания внешности породы встречаются с XVII века, однако изображения аффенпинчеров появились еще раньше. Например, потешных косматиков можно увидеть на полотнах немецкого гравера Альбрехта Дюрера и других художников Средневековья. Поскольку документов, рассекречивающих информацию о генах животных, не сохранилось, родство аффенов с другими породами остается неустановленным. И хотя официальная версия гласит, что обезьяноподобные пинчеры появились путем скрещивания обычных пинчеров с азиатскими мопсоподобными собаками, вероятность примеси в их фенотипе других кровей по-прежнему не исключается.
+        </p>
+        <p>
+         В 1902 году аффенпинчеры прошли предварительную стандартизацию, а в 1913 г. были официально зарегистрированы в Германии. Английские кинологические ассоциации внесли породу в племенные книги только в 1936 году, поскольку популярностью среди британских заводчиков ее представители не пользовались. А вот в США аффенов приняли почти сразу после презентации – в 1935 году «партия» лохматых собачек пересекла Атлантику, а год спустя получила признание Американского Кеннел-клуба.
+        </p>
+        <p>
+         Существенный урон поголовью породы нанесла Вторая мировая война, поэтому в 50-х годах численность собак в Германии пришлось восстанавливать практически с нуля. В Россию первый аффенпинчер прибыл с кортежем будущей императрицы Екатерины II. По легенде, косматое создание взяли для охраны гардероба венценосной особы, на который в дороге стали покушаться мыши. Что касается племенных особей, то их начали завозить с конца 90-х, однако на протяжении почти десяти лет мини-пинчеры в России оставались живой экзотикой.
+        </p>
+        <h2 id="gl11">
+         Размер аффенпинчера
+        </h2>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Примерные размеры аффенпинчера относительно взрослого человека" data-fancybox="gallery" href="/upload/iblock/617/b5a7tg7macz11oyuvqle6j04aipblhrj.png" title="Примерные размеры аффенпинчера относительно взрослого человека">
+          <div class="lazy-load" data-alt="Примерные размеры аффенпинчера относительно взрослого человека" data-class="article_pic" data-original="/upload/iblock/617/b5a7tg7macz11oyuvqle6j04aipblhrj.png">
+           <noscript data-alt="Примерные размеры аффенпинчера относительно взрослого человека" data-class="article_pic" data-original="/upload/iblock/617/b5a7tg7macz11oyuvqle6j04aipblhrj.png">
+            <img alt="Примерные размеры аффенпинчера относительно взрослого человека" class="article_pic" src="/upload/iblock/617/b5a7tg7macz11oyuvqle6j04aipblhrj.png"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Примерные размеры аффенпинчера относительно взрослого человека
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы аффенпинчер
+        </h2>
+        <p>
+         Аффенпинчер – косматый милашка с умными глазами-пуговицами и обаятельной лохматой мордочкой, украшенной пышными усами и растрепанной бородкой. Усиливают общую «игрушечность» облика животного квадратный корпус, а также маленький рост – всего 25-28 см при средней массе тела 4-6 кг. Держится аффенпинчер с достоинством и серьезностью, что только добавляет очарования его и без того забавному имиджу.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         У представителей породы череп имеет округлую, куполообразную форму с хорошо очерченными лбом и стопом.
+        </p>
+        <h3>
+         Челюсти, зубы, губы
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Повелитель замка" data-fancybox="gallery" href="/upload/iblock/d00/jzou9oqbmsmuriyg2vypyf54u30pxqgg.jpg" title="Повелитель замка">
+          <div class="lazy-load" data-alt="Повелитель замка" data-class="article_pic" data-original="/upload/resize_cache/iblock/d00/412_2150_1/jzou9oqbmsmuriyg2vypyf54u30pxqgg.jpg">
+           <noscript data-alt="Повелитель замка" data-class="article_pic" data-original="/upload/resize_cache/iblock/d00/412_2150_1/jzou9oqbmsmuriyg2vypyf54u30pxqgg.jpg">
+            <img alt="Повелитель замка" class="article_pic" height="549" src="/upload/resize_cache/iblock/d00/412_2150_1/jzou9oqbmsmuriyg2vypyf54u30pxqgg.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Повелитель замка
+         </div>
+        </div>
+        <p>
+         Зубы белые, в количестве 42 штук. Резцы выстроены в слегка закругленный ряд, а нижняя челюсть имеет незначительный изгиб и чуть-чуть выдвинута над верхней. При сомкнутой пасти клыки и резцовые зубы собаки не просматриваются. Отсутствующие пары PM1, PM2 и PM3 допускаются стандартом. Губы аффенпинчера черные, без сырости.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Черную закругленную мочку отличают хорошая наполненность и широко распахнутые ноздри. Спинка носа укороченная, вытянутая по прямой.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Крупные, почти круглые глаза аффенов окрашены в темный цвет. Черные складки век по контуру опушены грубыми волосами.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Уши высоко и симметрично поставлены и развернуты вперед, внутренний край ушного полотна прижат к голове. Купировать уши выставочным особям запрещается, поэтому данную процедуру практикуют, в основном, владельцы пет-питомцев, желающие придать облику подопечного еще больше выразительности.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Массивная у основания, короткая и крепкая шея аффенпинчера не имеет кожных складок на горле.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Мордочка аффенпинчера" data-fancybox="gallery" href="/upload/iblock/534/ul93k95hkhxpbw6dg6eatyw3o6707ijr.jpg" title="Мордочка аффенпинчера">
+          <div class="lazy-load" data-alt="Мордочка аффенпинчера" data-class="article_pic" data-original="/upload/resize_cache/iblock/534/1024_2150_1/ul93k95hkhxpbw6dg6eatyw3o6707ijr.jpg">
+           <noscript data-alt="Мордочка аффенпинчера" data-class="article_pic" data-original="/upload/resize_cache/iblock/534/1024_2150_1/ul93k95hkhxpbw6dg6eatyw3o6707ijr.jpg">
+            <img alt="Мордочка аффенпинчера" class="article_pic" src="/upload/resize_cache/iblock/534/1024_2150_1/ul93k95hkhxpbw6dg6eatyw3o6707ijr.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мордочка аффенпинчера
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело собаки в меру плотное, напоминающее квадрат. Верх чуть наклонный, мышцы спины развитые, крепкие. Прочная укороченная поясница переходит в такой же короткий, имеющий сглаженно-округлые очертания круп. Грудь аффена нормальной ширины, нисходящая до суставов, с уплощенными боками. Низ живота подобран и практически параллелен линии спины.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Передние ноги ровные, умеренно широкого постава; задние – поставлены под легким наклоном (если смотреть сбоку) и имеют умеренные углы сочленений. Лопатки животного плоские, длинные, расположенные под наклоном 45°. Локти без выворота во внешнюю и внутреннюю стороны, пясти вертикального постава, едва наклонные, мускулистые. Объемные, развитые бедра тоже считаются характеристикой породистости. Голени аффенпинчера мощные и длинные, плюсны отвесные. Передние лапы собаки компактные и округлые, задние – более вытянуты в длину, с плотно собранными и изогнутыми пальцами.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок аффенпинчера" data-fancybox="gallery" href="/upload/iblock/cbb/b0fpxxge15lks8mx1aez7xp9mwamb19v.jpg" title="Щенок аффенпинчера">
+          <div class="lazy-load" data-alt="Щенок аффенпинчера" data-class="article_pic" data-original="/upload/resize_cache/iblock/cbb/412_2150_1/b0fpxxge15lks8mx1aez7xp9mwamb19v.jpg">
+           <noscript data-alt="Щенок аффенпинчера" data-class="article_pic" data-original="/upload/resize_cache/iblock/cbb/412_2150_1/b0fpxxge15lks8mx1aez7xp9mwamb19v.jpg">
+            <img alt="Щенок аффенпинчера" class="article_pic" height="412" src="/upload/resize_cache/iblock/cbb/412_2150_1/b0fpxxge15lks8mx1aez7xp9mwamb19v.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок аффенпинчера
+         </div>
+        </div>
+        <p>
+         От рождения хвост аффенпинчера имеет саблевидную или же серповидную форму. Ранее хвосты собакам купировали. Сегодня кинологические ассоциации Европы наложили на процедуру запрет, но в России пока встречаются заводчики, практикующие купирование невыставочных питомцев.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         У аффенпинчера жесткая густая шерсть, плотно прилегающая к телу, но хаотично топорщащаяся на голове и образующая пушистые бакенбарды, брови, усы и бородку.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         FCI признает эталонным окрасом породы сплошной черный, причем наличие участков с белой шерстью крайне нежелательно. Однако согласно стандарту AKC, аффенпинчеры могут иметь серебристые, красные, черные с подпалом или седоватым подтоном шубки.
+        </p>
+        <h3>
+         Дефекты и дисквалифицирующие пороки
+        </h3>
+        <p>
+         На выставочную оценку аффенпинчера влияют такие пороки экстерьера, как вздернутая гриффоноподобная мордочка, облегченный костяк, клещеобразный прикус или перекус с выраженным отходом. Запрещено экспонирование на ринге особей:
+        </p>
+        <ul>
+         <li>
+          ростом выше или ниже оговоренного стандартом более чем на 2 см;
+         </li>
+         <li>
+          страдающих любыми уродствами внешности;
+         </li>
+         <li>
+          имеющих перекошенные челюсти и ножницеобразный прикус;
+         </li>
+         <li>
+          обладающих пороками окраса, структуры шерсти и общего строения;
+         </li>
+         <li>
+          выказывающих трусливое либо агрессивное поведение.
+         </li>
+        </ul>
+        <h2>
+         Фото аффенпинчера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ad6/opqapktx4q2l2ke1ukzs9wk92au3ayf5.jpg" title="">
+           <div class="lazy-load" data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ad6/380_264_2/opqapktx4q2l2ke1ukzs9wk92au3ayf5.jpg">
+            <noscript data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ad6/380_264_2/opqapktx4q2l2ke1ukzs9wk92au3ayf5.jpg">
+             <img alt="Аффенпинчер" class="article_pic" src="/upload/resize_cache/iblock/ad6/380_264_2/opqapktx4q2l2ke1ukzs9wk92au3ayf5.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e6a/evzu7qd0as0xmohz7ovw6qp861ifdfk2.jpg" title="">
+           <div class="lazy-load" data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e6a/380_264_2/evzu7qd0as0xmohz7ovw6qp861ifdfk2.jpg">
+            <noscript data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e6a/380_264_2/evzu7qd0as0xmohz7ovw6qp861ifdfk2.jpg">
+             <img alt="Аффенпинчер" class="article_pic" src="/upload/resize_cache/iblock/e6a/380_264_2/evzu7qd0as0xmohz7ovw6qp861ifdfk2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/12a/8yayaome0vv12wlzf3usxovz6vufjr29.jpg" title="">
+           <div class="lazy-load" data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/12a/380_264_2/8yayaome0vv12wlzf3usxovz6vufjr29.jpg">
+            <noscript data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/12a/380_264_2/8yayaome0vv12wlzf3usxovz6vufjr29.jpg">
+             <img alt="Аффенпинчер" class="article_pic" src="/upload/resize_cache/iblock/12a/380_264_2/8yayaome0vv12wlzf3usxovz6vufjr29.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9b7/297zgu6by7ha1ro1ie7h1s19opz5mhig.jpg" title="">
+           <div class="lazy-load" data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9b7/380_264_2/297zgu6by7ha1ro1ie7h1s19opz5mhig.jpg">
+            <noscript data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9b7/380_264_2/297zgu6by7ha1ro1ie7h1s19opz5mhig.jpg">
+             <img alt="Аффенпинчер" class="article_pic" src="/upload/resize_cache/iblock/9b7/380_264_2/297zgu6by7ha1ro1ie7h1s19opz5mhig.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b4d/2xcfz9sm1xaizf024xn5to3apmvn5s6z.jpg" title="">
+           <div class="lazy-load" data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b4d/380_264_2/2xcfz9sm1xaizf024xn5to3apmvn5s6z.jpg">
+            <noscript data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b4d/380_264_2/2xcfz9sm1xaizf024xn5to3apmvn5s6z.jpg">
+             <img alt="Аффенпинчер" class="article_pic" src="/upload/resize_cache/iblock/b4d/380_264_2/2xcfz9sm1xaizf024xn5to3apmvn5s6z.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ba6/eibposg2halfiip3y3fh49bj8jzkx732.jpg" title="">
+           <div class="lazy-load" data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ba6/380_264_2/eibposg2halfiip3y3fh49bj8jzkx732.jpg">
+            <noscript data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ba6/380_264_2/eibposg2halfiip3y3fh49bj8jzkx732.jpg">
+             <img alt="Аффенпинчер" class="article_pic" src="/upload/resize_cache/iblock/ba6/380_264_2/eibposg2halfiip3y3fh49bj8jzkx732.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b6c/bwwhk7avj1uraea0pj5vz5p18xgl16o3.jpg" title="">
+           <div class="lazy-load" data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b6c/380_264_2/bwwhk7avj1uraea0pj5vz5p18xgl16o3.jpg">
+            <noscript data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b6c/380_264_2/bwwhk7avj1uraea0pj5vz5p18xgl16o3.jpg">
+             <img alt="Аффенпинчер" class="article_pic" src="/upload/resize_cache/iblock/b6c/380_264_2/bwwhk7avj1uraea0pj5vz5p18xgl16o3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b5c/77pabwd9fzr00wi7t823o4hho1c7yq22.jpg" title="">
+           <div class="lazy-load" data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b5c/380_264_2/77pabwd9fzr00wi7t823o4hho1c7yq22.jpg">
+            <noscript data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b5c/380_264_2/77pabwd9fzr00wi7t823o4hho1c7yq22.jpg">
+             <img alt="Аффенпинчер" class="article_pic" src="/upload/resize_cache/iblock/b5c/380_264_2/77pabwd9fzr00wi7t823o4hho1c7yq22.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ffc/g3e7gb6u1du44z5rld8kfoe6nusdrx1s.jpg" title="">
+           <div class="lazy-load" data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ffc/380_264_2/g3e7gb6u1du44z5rld8kfoe6nusdrx1s.jpg">
+            <noscript data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ffc/380_264_2/g3e7gb6u1du44z5rld8kfoe6nusdrx1s.jpg">
+             <img alt="Аффенпинчер" class="article_pic" src="/upload/resize_cache/iblock/ffc/380_264_2/g3e7gb6u1du44z5rld8kfoe6nusdrx1s.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер аффенпинчера
+        </h2>
+        <p>
+         Аффенпинчер – это почти 4 килограмма самоуверенности, настороженности и преданности, упакованные в жесткую косматую шубейку. Обычно порода зациклена на собственных взаимоотношениях с хозяином и старается не допустить в них третьих лиц. Выражается это у каждой особи по-разному. Одни аффены не жалуют детей и устраивают военные баталии с малышней из-за игрушек. Другие – агрессивно облаивают вторгшихся в квартиру чужаков, не брезгуя попытками проделать дырку на носке неизвестного гражданского лица, оккупировавшего хозяйскую территорию.
+        </p>
+        <p>
+         Домашним животным аффенпинчер тоже способен подорвать нервную систему. Если, помимо песика, вы держите дома еще и кошку, старайтесь гладить ее в те редкие моменты, когда аффен не видит. Такой «измены» усатый ревнивец не простит, а потому непременно разработает и приведет в действие акт отмщения, в котором котофею будет отведена крайне незавидная роль. С хомяками и шиншиллами тоже все непросто. Не забываем, что предки аффенпинчеров сделали свою карьеру как раз на отлове и умерщвлении грызунов, поэтому либо держите пушистиков в клетках под строгим надзором, либо пристройте зверьков в надежные руки до того момента, как до них доберутся острые собачьи зубы.
+        </p>
+        <p>
+         В общении с хозяином аффенпинчер надевает маску благообразного игромана, готового на все, чтобы угодить старшему другу. При этом навязываться и подхалимствовать порода не умеет. Например, если вы дали питомцу понять, что не готовы участвовать в его проектах, аффен не будет выклянчивать внимание, а тихо-мирно отойдет в сторонку и придумает себе новое развлечение. Кроме того, аффенпинчеры – заядлые путешественники, готовые сопровождать человека и на заднем сиденье автомобиля, и в велосипедной корзине. Заводчики шутят, что с породой можно сэкономить на покупке автосигнализации – аффен не пропустит ни одну живую душу, приблизившуюся к машине хотя бы на метр.
+        </p>
+        <p>
+         Наблюдая за активными играми аффенпинчера и за тем, с каким маниакальным упорством он достает других домашних питомцев, начинает казаться, что животное представляет собой маленькое «привидение с мотором», чью энергию невозможно укротить. На самом же деле активность собаки легко корректируется. Более того, за компанию с хозяином аффенпинчер не прочь прилечь или отвлечься на просмотр сериала. Главное, чтобы пассивный отдых не стал доминировать над активным времяпрепровождением – на бесцельное лентяйничество аффен ни за что не подпишется.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Аффенпинчеры — большие собаки в маленьком теле. Эта порода верная, любопытная и очень забавная, а их мордочка напоминает человеческое лицо." data-fancybox="gallery" href="/upload/iblock/bd6/f8g8bycajvbuvncfk5ldg6w85bjsj2wl.jpg" title="Аффенпинчеры — большие собаки в маленьком теле. Эта порода верная, любопытная и очень забавная, а их мордочка напоминает человеческое лицо.">
+          <div class="lazy-load" data-alt="Аффенпинчеры — большие собаки в маленьком теле. Эта порода верная, любопытная и очень забавная, а их мордочка напоминает человеческое лицо." data-class="article_pic" data-original="/upload/resize_cache/iblock/bd6/1024_2150_1/f8g8bycajvbuvncfk5ldg6w85bjsj2wl.jpg">
+           <noscript data-alt="Аффенпинчеры — большие собаки в маленьком теле. Эта порода верная, любопытная и очень забавная, а их мордочка напоминает человеческое лицо." data-class="article_pic" data-original="/upload/resize_cache/iblock/bd6/1024_2150_1/f8g8bycajvbuvncfk5ldg6w85bjsj2wl.jpg">
+            <img alt="Аффенпинчеры — большие собаки в маленьком теле. Эта порода верная, любопытная и очень забавная, а их мордочка напоминает человеческое лицо." class="article_pic" src="/upload/resize_cache/iblock/bd6/1024_2150_1/f8g8bycajvbuvncfk5ldg6w85bjsj2wl.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Аффенпинчеры — большие собаки в маленьком теле. Эта порода верная, любопытная и очень забавная, а их мордочка напоминает человеческое лицо.
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Аффенпинчер – невероятно обаятельное создание, и почти настолько же – упрямое и неорганизованное. Сложно представить, но если воспитанием питомца не заниматься, то аффен способен основательно подпортить жизнь владельцу, а за компанию и окружающим. Как только крошечный косматик объявился в доме, начинайте его социализировать и приучать к тому, что в мире, кроме угощений, ласки и игр, существуют еще требования и запреты.
+        </p>
+        <p>
+         В числе первых привычек, которые должны сформироваться у щенка аффенпинчера, – следование распорядку дня. Сразу же после переезда из питомника приучайте собаку подходить за едой в определенное время, показывая малышу, как берете миску и как готовите для него трапезу. Умение вежливо принимать корм тоже формируется не сразу. Обязательно учите щенка не наскакивать на вас, когда несете обед. Да, аффен – это не
+         <a class="ph" href="/dog/burbul/">
+          бурбуль
+         </a>
+         и с ног не свалит, но «помочь» расплескать еду сил у него хватит.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Аффенпинчер Банана Джо, победитель Best in Show Вестминстерского клуба собаководства. Сообщается, что он понимал четыре языка: немецкий, голландский, испанский и английский." data-fancybox="gallery" href="/upload/iblock/43c/prs3g3zv13dkz62jf5maex41f484n0fh.jpg" title="Аффенпинчер Банана Джо, победитель Best in Show Вестминстерского клуба собаководства. Сообщается, что он понимал четыре языка: немецкий, голландский, испанский и английский.">
+          <div class="lazy-load" data-alt="Аффенпинчер Банана Джо, победитель Best in Show Вестминстерского клуба собаководства. Сообщается, что он понимал четыре языка: немецкий, голландский, испанский и английский." data-class="article_pic" data-original="/upload/resize_cache/iblock/43c/412_2150_1/prs3g3zv13dkz62jf5maex41f484n0fh.jpg">
+           <noscript data-alt="Аффенпинчер Банана Джо, победитель Best in Show Вестминстерского клуба собаководства. Сообщается, что он понимал четыре языка: немецкий, голландский, испанский и английский." data-class="article_pic" data-original="/upload/resize_cache/iblock/43c/412_2150_1/prs3g3zv13dkz62jf5maex41f484n0fh.jpg">
+            <img alt="Аффенпинчер Банана Джо, победитель Best in Show Вестминстерского клуба собаководства. Сообщается, что он понимал четыре языка: немецкий, голландский, испанский и английский." class="article_pic" height="582" src="/upload/resize_cache/iblock/43c/412_2150_1/prs3g3zv13dkz62jf5maex41f484n0fh.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Аффенпинчер Банана Джо, победитель Best in Show Вестминстерского клуба собаководства. Сообщается, что он понимал четыре языка: немецкий, голландский, испанский и английский.
+         </div>
+        </div>
+        <p>
+         Опытные заводчики рекомендуют не впечатляться «игрушечностью» породы и обращаться с аффенпинчером так, будто перед вами среднестатистическая собака. Никакого сюсюканья и слез умиления тоже быть не должно, иначе песик быстро сообразит, как этим воспользоваться. Лучше всего отрабатывать полезные умения в игровой форме. Аффенпинчер быстро увлекается новой деятельностью и столь же стремительно теряет к ней интерес, поэтому делите урок на короткие пятиминутки, между которыми выдерживайте продолжительные паузы.
+        </p>
+        <p>
+         Место для занятий рекомендуется подбирать с минимумом отвлекающих факторов. Например, первые уроки удобнее проводить в комнате, доступ в которую будет перекрыт для остальных животных и членов семьи. Попытки тренировать юного аффена на открытом воздухе, как правило, заканчиваются неудачно. Сконцентрироваться на требованиях человека, когда вокруг столько соблазнительных запахов и звуков – задача, невыполнимая для щенка. Стимулировать животное к дальнейшим успехам в учебе лучше методом положительного подкрепления. Что конкретно будет выступать в этой роли – лакомство или ласка – каждый хозяин решает сам.
+        </p>
+        <p>
+         Сформировать у аффенпинчера систему запретов сложнее. Вместо вкусняшек, придется подключать легкий негатив, чтобы собака научилась улавливать связь между вашим недовольством и собственными действиями. При этом корректировать внезапные выпады щенка следует интонационно либо лишением его общения, но не криком и физическим воздействием. В частности, правильно воспитанный аффенпинчер не должен хватать за ноги гостей, рвать зубами мячики из рук человека, прикусывая пальцы, или вести войну с пылесосом в попытках разорвать шланг.
+        </p>
+        <p>
+         Над выработкой навыка пользования лотком тоже придется потрудиться. Чтобы щенок усвоил разницу между жилым пространством и комнатным туалетом, рекомендуется несколько раз в течение дня сажать малыша в клетку. Ограничитель пространства питомец воспринимает как место отдыха, поэтому оставлять лужицы в нем не будет. После сидения в вольере (не более получаса) собаку рекомендуется сопроводить к лотку.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         Любознательный и реактивный аффенпинчер не нуждается в просторных апартаментах – ему достаточно среднестатистической квартиры, в которой найдется достаточно места для его миски и лежанки, а также для дивана хозяина. Специфических приспособлений породе тоже не требуется, за исключением разве что комнатного вольера, необходимого для тех случаев, когда щенку придется оставаться в полном одиночестве. А вот игрушки аффену очень нужны: в юном возрасте – для развития и отработки команд, в зрелом – для разрядки.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="На прогулке с другом" data-fancybox="gallery" href="/upload/iblock/ea4/tmrhsbyos2cjsfx5t58joo0tbhyn2qoe.jpg" title="На прогулке с другом">
+          <div class="lazy-load" data-alt="На прогулке с другом" data-class="article_pic" data-original="/upload/resize_cache/iblock/ea4/412_2150_1/tmrhsbyos2cjsfx5t58joo0tbhyn2qoe.jpg">
+           <noscript data-alt="На прогулке с другом" data-class="article_pic" data-original="/upload/resize_cache/iblock/ea4/412_2150_1/tmrhsbyos2cjsfx5t58joo0tbhyn2qoe.jpg">
+            <img alt="На прогулке с другом" class="article_pic" height="309" src="/upload/resize_cache/iblock/ea4/412_2150_1/tmrhsbyos2cjsfx5t58joo0tbhyn2qoe.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          На прогулке с другом
+         </div>
+        </div>
+        <p>
+         Согласно стандарту Английского Кеннел-клуба, аффенпинчер имеет грубую шерсть длиной 2,5 см, не нуждающуюся в тримминге. Однако на практике собак приходится пощипывать, потому что редкий аффен обладает идеальной шубкой от природы. Раз в несколько месяцев полагается снять «перезревшую» шерсть, причем делать это можно вручную (стриппинг) либо с помощью стриппинг-ножа. Чересчур увлекаться процессом и выщипывать весь отошедший волос не рекомендуется. Фишка породы заключается именно в косматости, и слишком тщательный тримминг только ухудшит положение дел.
+        </p>
+        <p>
+         Шерсть на мордочке аффенпинчера слегка подстригают ножницами, придавая голове форму шара. Бородку домашним питомцам тоже укорачивают в целях гигиены. Опуская голову в миску, собака не будет пачкать волос на нижней челюсти, соответственно, хозяину не придется постоянно протирать питомцу подбородок. Однако с выставочными особями такой метод не прокатит, как и стриппинг – аффенпинчеры, у которых отчетливо прослеживаются следы недавнего тримминга или стрижки, на рингах штрафуются.
+        </p>
+        <p>
+         Шерсть на внутренней части уха собаки лучше укоротить, как и в области анальной зоны. Если песик чрезмерно зарос, полезно удалить избыточную растительность и в области глаз, заслоняющую животному обзор. Трижды в неделю аффена рекомендуется расчесать гребнем со средними зубцами, который уберет отмершие волоски, а затем помассировать щеткой.
+        </p>
+        <p>
+         Частые купания, особенно накануне выставки, аффенпинчерам противопоказаны, но раз в 3-4 месяца питомца можно помыть с применением шампуня и кондиционера для жесткошерстных пород. Стрижку когтей собакам проводят раз в 4-6 недель, зубы чистят раз в 7 дней. Глаза песика необходимо осматривать ежедневно, а раз в неделю еще и протирать их смоченной охлажденным чайным настоем салфеткой из текстиля.
+        </p>
+        <p>
+         Осмотр ушей тоже обязательная процедура. Если внутри воронки скопилось приличное количество серного налета, его следует аккуратно убрать смоченной в дезинфицирующем лосьоне тряпочкой. Однако впадать в крайности и вычищать ухо «до блеска» не стоит. Небольшое количество серы необходимо животному, поскольку препятствует проникновению песка, мусора и прочих микроскопических инородных тел вглубь органа.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Маленькие аффенпинчеры могут забыть о своих размерах и пытаться командовать более крупными щенками. Как и со всеми собаками, социализируйте своего щенка как можно раньше, чтобы во взрослом возрасте у него были хорошие манеры." data-fancybox="gallery" href="/upload/iblock/a27/rrof7mrl548sjwrra3oiblh1ij8zr3wd.jpg" title="Маленькие аффенпинчеры могут забыть о своих размерах и пытаться командовать более крупными щенками. Как и со всеми собаками, социализируйте своего щенка как можно раньше, чтобы во взрослом возрасте у него были хорошие манеры.">
+          <div class="lazy-load" data-alt="Маленькие аффенпинчеры могут забыть о своих размерах и пытаться командовать более крупными щенками. Как и со всеми собаками, социализируйте своего щенка как можно раньше, чтобы во взрослом возрасте у него были хорошие манеры." data-class="article_pic" data-original="/upload/resize_cache/iblock/a27/1024_2150_1/rrof7mrl548sjwrra3oiblh1ij8zr3wd.jpg">
+           <noscript data-alt="Маленькие аффенпинчеры могут забыть о своих размерах и пытаться командовать более крупными щенками. Как и со всеми собаками, социализируйте своего щенка как можно раньше, чтобы во взрослом возрасте у него были хорошие манеры." data-class="article_pic" data-original="/upload/resize_cache/iblock/a27/1024_2150_1/rrof7mrl548sjwrra3oiblh1ij8zr3wd.jpg">
+            <img alt="Маленькие аффенпинчеры могут забыть о своих размерах и пытаться командовать более крупными щенками. Как и со всеми собаками, социализируйте своего щенка как можно раньше, чтобы во взрослом возрасте у него были хорошие манеры." class="article_pic" src="/upload/resize_cache/iblock/a27/1024_2150_1/rrof7mrl548sjwrra3oiblh1ij8zr3wd.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Маленькие аффенпинчеры могут забыть о своих размерах и пытаться командовать более крупными щенками. Как и со всеми собаками, социализируйте своего щенка как можно раньше, чтобы во взрослом возрасте у него были хорошие манеры.
+         </div>
+        </div>
+        <h3>
+         Выгул
+        </h3>
+        <p>
+         Аффенпинчер обожает прогулки, и лишать его этого удовольствия жестоко. Лучше всего выводить питомца подышать утром и вечером, сочетая променады с элементами игр и оттачиванием спортивных умений. Если гуляете в местах, где высока вероятность встречи с другими собаками, держите руку на пульсе и не спускайте любимца с поводка. В общении с соплеменниками аффены ведут себя задиристо и вызывающе, обладая настоящим талантом к развязыванию конфликтов, так что поводок поможет вовремя ретироваться с поля боя и погасить назревающую ссору.
+        </p>
+        <p>
+         Хозяевам, выпускающим аффенпинчеров на прогулку во дворе частного дома и уповающим на благоразумие питомцев, придется немного разочароваться – заметив малейшую дыру в ограждении, аффен непременно через нее просочится. Так что либо контролируйте собаку самостоятельно, либо позаботьтесь о надежном частом заборе. Помните и о том, что в знойные дни порода страдает от перегрева, которому способствует густая шерсть насыщенного темного окраса. Летом выводите аффенпинчера на улицу ранним утром либо поздним вечером или же старайтесь держаться в тени, если жара застигла вас в разгар прогулки по городу.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Аффенпинчер и клубника" data-fancybox="gallery" href="/upload/iblock/68c/xnht02sbobx0r6ie2qive925njnfoadw.jpg" title="Аффенпинчер и клубника">
+          <div class="lazy-load" data-alt="Аффенпинчер и клубника" data-class="article_pic" data-original="/upload/resize_cache/iblock/68c/412_2150_1/xnht02sbobx0r6ie2qive925njnfoadw.jpg">
+           <noscript data-alt="Аффенпинчер и клубника" data-class="article_pic" data-original="/upload/resize_cache/iblock/68c/412_2150_1/xnht02sbobx0r6ie2qive925njnfoadw.jpg">
+            <img alt="Аффенпинчер и клубника" class="article_pic" height="471" src="/upload/resize_cache/iblock/68c/412_2150_1/xnht02sbobx0r6ie2qive925njnfoadw.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Аффенпинчер и клубника
+         </div>
+        </div>
+        <p>
+         Основной рацион аффенпинчеров из зарубежных питомников – сухие и влажные промышленные корма не ниже супер-премиум-класса. Натуральное питание породе тоже не противопоказано, но его придется «усиливать» покупными витаминами и минеральными комплексами. Меню аффена состоит из продуктов, полезных всем собакам, а именно: любого постного мяса, филе морской рыбы, кефира и творога пониженной жирности, перепелиного яйца (раз в неделю). Иногда разнообразить рацион можно крупяными кашами – рисовой и гречневой, но они должны вариться с добавлением мяса.
+        </p>
+        <p>
+         Еду с хозяйского стола, включая мясные полуфабрикаты, выпечку и сладости, аффенпинчерам не дают. Но поскольку в процессе дрессировки питомца необходимо стимулировать лакомствами, иногда от этого правила приходится отступать. В таком случае положительным подкреплением могут стать кусочек сыра, сухофрукты (не цукаты), ржаной сухарик. Овощи собакам полезны не все, поэтому если решили добавить в рацион питомца витамины, пусть их источником будут тыквенные культуры, а также морковь, огурцы и свекла. Раз в неделю полезно добавить к собачьей трапезе капельку льняного или оливкового масла, а также измельченную ламинарию.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни аффенпинчеров
+        </h2>
+        <p>
+         При заботливом обращении аффенпинчеры доживают до 12-14 лет. Список наследственных заболеваний, которые могут обнаружиться у собак, небольшой. К тому же, при правильно поставленном диагнозе основная часть породных недугов излечима. Чаще всего аффены страдают из-за переизбытка собственной активности. Вывихи, переломы, растяжения – то, с чем приходится сталкиваться большинству владельцев породы.
+        </p>
+        <p>
+         Встречаются у аффенпинчеров и заболевания сердца, гипотиреоз, а также инфекции мочеполовой системы. Глаза представителей этого семейства тоже подвержены различным патологиям, грозящим при отсутствии лечения полной слепотой. Важно также своевременно осуществлять гигиену полости рта – зубы у породы проблемные, нуждающиеся в регулярной чистке и профилактических осмотрах специалиста.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          У аффенпинчеров маленькие пометы, в которых рождается до 4 щенков, поэтому перед покупкой попросите заводчика продемонстрировать всех малышей. Если животные имеют примерно одинаковые габариты и степень упитанности – это хороший признак. Причем наличие одного щенка, слегка отстающего от других в росте, допустимо.
+         </li>
+         <li>
+          Если выбираете будущую «звезду» рингов, внимательно изучите ее родословную и выставочные дипломы родителей – эталонный экстерьер хоть и в разной степени, но передается по наследству.
+         </li>
+         <li>
+          Обратите внимание на поведение малышей. Щенки аффенпинчера должны не бояться незнакомца, а с любопытством его обнюхать, а в идеале и облаять.
+         </li>
+         <li>
+          Обязательно загляните животному в рот, чтобы удостовериться в правильности прикуса и наличии полного комплекта зубов.
+         </li>
+         <li>
+          Узнайте, согласен ли продавец «вести» щенка в течение первого года жизни. Предоставление этой «опции» говорит о том, что вы имеете дело с неравнодушным профи, а не с коммерческим разведенцем.
+         </li>
+         <li>
+          Оцените качество шерсти аффена. Она не должна иметь проплешин и источать посторонние запахи, говорящие о неухоженности собаки.
+         </li>
+        </ul>
+        <h2>
+         Фото щенков аффенпинчера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9c2/3dbrptlpgqncve2lz3bgyhz1wuqwwkyn.jpg" title="">
+           <div class="lazy-load" data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9c2/380_264_2/3dbrptlpgqncve2lz3bgyhz1wuqwwkyn.jpg">
+            <noscript data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9c2/380_264_2/3dbrptlpgqncve2lz3bgyhz1wuqwwkyn.jpg">
+             <img alt="Аффенпинчер" class="article_pic" src="/upload/resize_cache/iblock/9c2/380_264_2/3dbrptlpgqncve2lz3bgyhz1wuqwwkyn.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/eec/6e9yep9qgwerbt00d15iqtlofoabwuyl.jpg" title="">
+           <div class="lazy-load" data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/eec/380_264_2/6e9yep9qgwerbt00d15iqtlofoabwuyl.jpg">
+            <noscript data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/eec/380_264_2/6e9yep9qgwerbt00d15iqtlofoabwuyl.jpg">
+             <img alt="Аффенпинчер" class="article_pic" src="/upload/resize_cache/iblock/eec/380_264_2/6e9yep9qgwerbt00d15iqtlofoabwuyl.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f7c/2j4e1w1pdubi1p74975h8vsq7ehmps9d.jpg" title="">
+           <div class="lazy-load" data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f7c/380_264_2/2j4e1w1pdubi1p74975h8vsq7ehmps9d.jpg">
+            <noscript data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f7c/380_264_2/2j4e1w1pdubi1p74975h8vsq7ehmps9d.jpg">
+             <img alt="Аффенпинчер" class="article_pic" src="/upload/resize_cache/iblock/f7c/380_264_2/2j4e1w1pdubi1p74975h8vsq7ehmps9d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a0f/q64l1ut3zwuah68ubrzpt0dyyfo168lj.jpg" title="">
+           <div class="lazy-load" data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a0f/380_264_2/q64l1ut3zwuah68ubrzpt0dyyfo168lj.jpg">
+            <noscript data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a0f/380_264_2/q64l1ut3zwuah68ubrzpt0dyyfo168lj.jpg">
+             <img alt="Аффенпинчер" class="article_pic" src="/upload/resize_cache/iblock/a0f/380_264_2/q64l1ut3zwuah68ubrzpt0dyyfo168lj.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d57/tbfj7gqq0u1kz04ovfu0rc2za2623jty.jpg" title="">
+           <div class="lazy-load" data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/d57/380_264_2/tbfj7gqq0u1kz04ovfu0rc2za2623jty.jpg">
+            <noscript data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/d57/380_264_2/tbfj7gqq0u1kz04ovfu0rc2za2623jty.jpg">
+             <img alt="Аффенпинчер" class="article_pic" src="/upload/resize_cache/iblock/d57/380_264_2/tbfj7gqq0u1kz04ovfu0rc2za2623jty.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/94f/xdtw4oq1z7iv0a8m10xnxzyons8x0uti.jpg" title="">
+           <div class="lazy-load" data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/94f/380_264_2/xdtw4oq1z7iv0a8m10xnxzyons8x0uti.jpg">
+            <noscript data-alt="Аффенпинчер" data-class="article_pic" data-original="/upload/resize_cache/iblock/94f/380_264_2/xdtw4oq1z7iv0a8m10xnxzyons8x0uti.jpg">
+             <img alt="Аффенпинчер" class="article_pic" src="/upload/resize_cache/iblock/94f/380_264_2/xdtw4oq1z7iv0a8m10xnxzyons8x0uti.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Цена аффенпинчера
+        </h2>
+        <p>
+         В России профессиональных питомников, занимающихся разведением аффенпинчеров, немного, а в тех, что есть, качество пометов сильно различается. Обычно стоимость щенка обусловлена степенью титулованности его родителей, перспективностью экстерьера, а также репутацией и опытом заводчика. Так, например, приобрести аффена пет-класса можно за 25 000 – 30 000 рублей. Особи от производителей с интерчемпионскими дипломами и перспективной внешностью, дающей владельцу возможность экспонировать питомца на выставках, будут стоить уже 90 000 – 120 000 рублей.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения аффенпинчера на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/affenpincher/forum/">
+        Перейти на
+        форум аффенпинчера
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Аффенпинчер" src="/upload/iblock/9be/9be8c6987511e69e726c7d23f694bab5.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/affenpincher/">
+          Аффенпинчер
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/affenpincher/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/affenpincher/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/affenpincher/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/affenpincher/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/affenpincher/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/kanarskiy-dog/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Канарский дог" data-original="/upload/resize_cache/iblock/dc5/100_100_1/dc561b12f18840acd5356be0f3452ccc.jpg">
+          <noscript data-alt="Канарский дог" data-original="/upload/resize_cache/iblock/dc5/100_100_1/dc561b12f18840acd5356be0f3452ccc.jpg">
+           <img alt="Канарский дог" src="/upload/resize_cache/iblock/dc5/100_100_1/dc561b12f18840acd5356be0f3452ccc.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Канарский дог
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/belgiyskaya-ovcharka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бельгийская овчарка" data-original="/upload/resize_cache/iblock/139/100_100_1/139d3d3ac38deaf8ec80dac1ee2e70e6.jpg">
+          <noscript data-alt="Бельгийская овчарка" data-original="/upload/resize_cache/iblock/139/100_100_1/139d3d3ac38deaf8ec80dac1ee2e70e6.jpg">
+           <img alt="Бельгийская овчарка" src="/upload/resize_cache/iblock/139/100_100_1/139d3d3ac38deaf8ec80dac1ee2e70e6.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бельгийская овчарка
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/alabay-sredneaziatskaya-ovcharka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Алабай (Среднеазиатская овчарка)" data-original="/upload/resize_cache/iblock/609/100_100_1/609708aa8ba6a6e5eccecc9a058c1b65.jpg">
+          <noscript data-alt="Алабай (Среднеазиатская овчарка)" data-original="/upload/resize_cache/iblock/609/100_100_1/609708aa8ba6a6e5eccecc9a058c1b65.jpg">
+           <img alt="Алабай (Среднеазиатская овчарка)" src="/upload/resize_cache/iblock/609/100_100_1/609708aa8ba6a6e5eccecc9a058c1b65.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Алабай (Среднеазиатская овчарка)
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/prazhskiy-krysarik/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Пражский крысарик" data-original="/upload/resize_cache/iblock/53c/100_100_1/53ce498d01af92dc81d30527c8449b83.jpg">
+          <noscript data-alt="Пражский крысарик" data-original="/upload/resize_cache/iblock/53c/100_100_1/53ce498d01af92dc81d30527c8449b83.jpg">
+           <img alt="Пражский крысарик" src="/upload/resize_cache/iblock/53c/100_100_1/53ce498d01af92dc81d30527c8449b83.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Пражский крысарик
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Faffenpincher%252F%253Fcheck_key%253Df6f836ae995bf7a63dabdd7f45c0a946%2526ANIMAL_CODE%253Daffenpincher%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Faffenpincher%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmFmZmVucGluY2hlciUyRiUzRmNoZWNrX2tleSUzRGY2ZjgzNmFlOTk1YmY3YTYzZGFiZGQ3ZjQ1YzBhOTQ2JTI2QU5JTUFMX0NPREUlM0RhZmZlbnBpbmNoZXIlMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGYWZmZW5waW5jaGVyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Faffenpincher%252F%253Fcheck_key%253Df6f836ae995bf7a63dabdd7f45c0a946%2526ANIMAL_CODE%253Daffenpincher%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Faffenpincher%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Faffenpincher%252F%253Fcheck_key%253Df6f836ae995bf7a63dabdd7f45c0a946%2526ANIMAL_CODE%253Daffenpincher%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Faffenpincher%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "185.153.132.168"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--b3444d3ed5d3bb7eeb0e560228221c00-->

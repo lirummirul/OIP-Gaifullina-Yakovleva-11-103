@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'c523c1aa339b'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Испанский мастиф, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Испанский мастиф скрывает добродушный характер под внешностью угрюмого гиганта и демонстрирует его лишь близким людям. Из собаки получится не только отменный сторож, но и друг на долгие годы. Главное – найти к животному подход и наслаждаться его обществом!" name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/020/020b0b45680c157dafedae17b95687ae.jpg" property="og:image"/>
+     <title>
+      Испанский мастиф: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/ispanskiy-mastif/" property="og:url"/>
+     <meta content="Испанский мастиф: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Испанский мастиф скрывает добродушный характер под внешностью угрюмого гиганта и демонстрирует его лишь близким людям. Из собаки получится не только отменный сторож, но и друг на долгие годы. Главное – найти к животному подход и наслаждаться его обществом!" property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/ispanskiy-mastif/" itemprop="url">
+         <span itemprop="title">
+          Испанский мастиф
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Испанский мастиф
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/ispanskiy-mastif/">
+          Описание
+         </a>
+         <a href="/dog/ispanskiy-mastif/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/ispanskiy-mastif/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/ispanskiy-mastif/photo/">
+          Фото
+         </a>
+         <a href="/dog/ispanskiy-mastif/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Испанский мастиф" src="/upload/iblock/7b7/7b7851162ac25c8877fb43584c1aaab7.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Испанский мастиф скрывает добродушный характер под внешностью угрюмого гиганта и демонстрирует его лишь близким людям. Из собаки получится не только отменный сторож, но и друг на долгие годы. Главное – найти к животному подход и наслаждаться его обществом!
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/be8/be8cfb74e238b5def727ef3a938b6e6d.jpg" data-cap="Spanish Grand Ayu ❤️ малыш продаётся  #испанскиймастиф #щенокиспанскогомастифа #щенкииспанскогомастифа #питомникиспанскихмастифов #spanishmastiff #puppy #puppyspanishmastiff # puppyforsale #giantdog #mastiff" data-fancybox="images" data-link="https://www.instagram.com/p/B_dVo-8FHg2/" data-type="image" data-username="ignatyeva_mila" href="/upload/uf/3df/3dfea74c7532e5cdd4da57e76c025894.jpg">
+            <img alt="Испанский мастиф" src="/upload/resize_cache/uf/3df/293_293_2/3dfea74c7532e5cdd4da57e76c025894.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/8e5/8e5f2faafabac25953ad84506e01e719.jpg" data-cap="All male American XLs  5 pups available top quality secure your pup and msg for info" data-fancybox="images" data-link="https://www.instagram.com/p/B_dAAMbj9i4/" data-type="image" data-username="prestige_dog_imports" href="/upload/uf/791/7916c9526acf2335dd4afa74d0b6eaf1.jpg">
+            <img alt="Испанский мастиф" src="/upload/resize_cache/uf/791/293_293_2/7916c9526acf2335dd4afa74d0b6eaf1.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/cd8/cd8da033a9ca2832204668abe8b9cc75.jpg" data-cap="I’m a Spanish mastiff so I love sangria #hola #miamiga #spanishmastiff #mastiff #mastiffsofinstagram #partytime #sundayvibes #justchilling #lockdown #Sundayfunday #firepit #dogsofinstagram #dogs #doglife #dogstagram #dogsofinstaworld #dogsofinsta #stayhome #staysafe #stayathome" data-fancybox="images" data-link="https://www.instagram.com/p/B_c-uPXnOWJ/" data-type="image" data-username="babynaladog" href="/upload/uf/714/714369cb0574fa83add8ba99275b59e1.jpg">
+            <img alt="Испанский мастиф" src="/upload/resize_cache/uf/714/293_293_2/714369cb0574fa83add8ba99275b59e1.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/ispanskiy-mastif/photo/">
+         Все
+            фото испанского мастифа
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы испанский мастиф
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность испанского мастифа
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер испанского мастифа
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни испанских мастифов
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена испанского мастифа
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Испанский мастиф
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Испания
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         70-120 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели не менее 77 см, суки не менее 72 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         9-11 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Испанский мастиф нуждается в справедливом и ответственном лидере, который направит его потенциал в правильное русло.
+        </li>
+        <li>
+         Обязательное условие содержания – ранняя социализация, иначе животное вырастет агрессивным и нелюдимым.
+        </li>
+        <li>
+         Представители породы – флегматичные и спокойные создания: крайне сложно вывести их из душевного равновесия.
+        </li>
+        <li>
+         Мастифы терпимо относятся к посторонним людям и животным, но в случае малейшей агрессии покажут, на что они способны.
+        </li>
+        <li>
+         Эти собаки не соперничают за территорию и внимание хозяина, поэтому без проблем уживаются со своими сородичами и кошками.
+        </li>
+        <li>
+         Из испанских молоссов получаются отличные няньки для детей: весёлые и активные игры гарантированы!
+        </li>
+        <li>
+         Охотничьи и сторожевые инстинкты – главная причина беспокойства мастифов по ночам.
+        </li>
+        <li>
+         Представители породы очень привязаны к дому, поэтому крайне редко убегают со своей территории.
+        </li>
+        <li>
+         «Испанцы» – неподходящая порода для новичков.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Испанский мастиф" data-original="/upload/iblock/020/020b0b45680c157dafedae17b95687ae.jpg">
+          <noscript data-alt="Испанский мастиф" data-original="/upload/iblock/020/020b0b45680c157dafedae17b95687ae.jpg">
+           <img alt="Испанский мастиф" src="/upload/iblock/020/020b0b45680c157dafedae17b95687ae.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          Испанский мастиф входит в число крупнейших пород собак. Несмотря на внушительные размеры, животные довольно проворны: их сила, внимание и стремительная реакция восхищают и вызывают уважение. Не менее эффектные черты мастифов – смелость и колоссальная уверенность в себе. «Испанец» недолго тратит время на лай и предупредительный рык: в его интересах – проворная атака противника, будь то человек или сородич. В большинстве случаев мастиф одерживает победу, поэтому он идеальная кандидатура на роль охранника. Впрочем, если вы нуждаетесь в преданном и кротком компаньоне, также не стоит списывать этих собак со счетов!
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Сложно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дорогое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Длительные периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Почти не слышно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Испанский мастиф основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2>
+         Видео: Испанский мастиф
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="4DPDabrAL94">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl1">
+         История породы испанский мастиф
+        </h2>
+        <p>
+         Прошлое испанских молоссов уходит корнями в заоблачную древность. Первое литературное упоминание породы датировалось второй половиной IV века до нашей эры. Им стала дидактическая поэма Вергилия «Георгика» – красочное повествование о скотоводстве, земледелии и виноградарстве того времени.
+        </p>
+        <p>
+         Есть версии, что мастифы появились намного раньше: задолго до вторжения римлян на Пиренейский полуостров. Одна теория связывает собак с финикийскими купцами, вторая – с кочевниками из Азии. «Испанцы» имеют внешнее сходство с
+         <a class="ph" href="/dog/tibetskiy-mastif/">
+          тибетскими мастифами
+         </a>
+         ,
+         <a class="ph" href="/dog/kavkazskaya-ovcharka/">
+          кавказскими
+         </a>
+         и шарпланинскими овчарками, что позволяет говорить о наличии у этих пород общего предка.
+        </p>
+        <p>
+         Первые испанские мастифы имели более скромные размеры, но их было достаточно для защиты скота во время перегонов. Так представители породы стали трудолюбивыми пастухами. Их ценили за профессиональные качества – уравновешенность, отвагу и самостоятельность. Последняя была крайне важна, поскольку по ночам собаки оставались без хозяйского сопровождения и единолично исполняли роль сторожа.
+        </p>
+        <p>
+         В случае необходимости «испанцы» могли защитить скот от нападения диких животных: кабанов, волков и даже медведей. Во время перегона мастифы вели стадо в течение нескольких дней, прекрасно обходясь без пищи и не позволяя себе атаковать своих «подопечных».
+        </p>
+        <p>
+         В основном, испанскую породу использовали для выпаса овец. Собака закреплялась за отарой численностью в одну тысячу голов. Мастифов подвергали строгому отбору, оценивая не только рабочие качества, но и внешние характеристики. Прежде всего, скотоводы обращали внимание на размер головы и глубину корпуса животного.
+        </p>
+        <p>
+         Долгое время «испанцы» играли роль сугубо рабочих собак и не привлекали внимание кинологических организаций. Первая регистрация представителей породы состоялась в начале XX века. Счастливчиком стал пегий кобель по кличке Мачако – участник международной выставки собак в Мадриде. В то же время активная урбанизация стала причиной сокращения скотоводов и, как следствие, численности мастифов. Отрицательно сказались на существовании породы гражданская война в Испании и последовавший за ней кризис.
+        </p>
+        <p>
+         Породу удалось сохранить благодаря пастухам, которые продолжали содержать овец. Именно они предоставили собак для дальнейшей селекции. Первый стандарт появился в 1946 году усилиями заводчика Луиса дель Портильо. Он много путешествовал по провинции Леон в поисках самых крупных экземпляров для разведения. Спустя 20 лет над развитием породы начал работать и другой селекционер – Амодель Алехандро. Его питомцы стали прародителями современных линий «испанцев»: Эль Пинотара, Сакариеса Пьето, Эрминьо Таскона и Манало Мартинеда.
+        </p>
+        <p>
+         Окончательный стандарт породы появился в 1970-х годах, но официальное признание мастифов состоялось лишь в 1982 г. В то же время селекционер Карлос Солас разработал новую программу разведения собак. На сегодняшний день существует около 10 официальных питомников, где можно обзавестись верным другом породы испанский мастиф.
+        </p>
+        <h2 id="gl2">
+         Внешность испанского мастифа
+        </h2>
+        <p>
+         «Испанцы» относятся к молосским породам. Величественные и мощные животные в любых ситуациях сохраняют чувство собственного достоинства. Испанские мастифы по праву заслуживают звания Гераклов в собачьем мире!
+        </p>
+        <p>
+         Стандарт породы определяет рост животных: для кобелей – от 77 см, для сук – от 72 см. Прослеживается половой диморфизм: самцы выглядят крепче и сильнее самок. Помимо этого, им присуща бóльшая внимательность и наблюдательность. Масса тела варьируется в пределах 70-120 кг.
+        </p>
+        <h3>
+         Голова и череп
+        </h3>
+        <p>
+         Голова мастифа сильная и крупная, но в сравнении с туловищем её размеры гармоничны. Имеет форму усечённой пирамиды с широким основанием, при виде сверху выглядит квадратной. Череп крепкий и пропорциональный, с выпуклым профилем. Его длина соответствует ширине или ненамного превышает её. На затылке отчётливо виден бугор.
+        </p>
+        <h3>
+         Морда
+        </h3>
+        <p>
+         Морда испанского мастифа умеренно широкая. Её длина находится в соотношении 2:3 к длине черепа. Имеет квадратную форму, плавно сужается от основания к кончику. Лоб плоский; стоп слегка наклонный, но выражен слабо. Прямая спинка носа опущена, переходит к мочке с широко раскрытыми ноздрями. Верхняя губа нависает над нижней, формируя брыли. В уголках рта виднеются небольшие «карманы». Слизистая обнажена, пигментирована в чёрный цвет.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Уши собаки средних размеров, уплощены. Имеют форму треугольника с закруглённой вершиной. Поставлены выше линии наружных уголков глаз. Висячие, плотно прилегают к щекам. Когда собака насторожена, кончики ушей слегка приподнимаются и наклоняются вперёд.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза мастифа кажутся небольшими в сравнении с размерами головы. Имеют миндалевидную форму, раскосые. Цвет – карий или ореховый; чем темнее, тем лучше. Мясистые веки имеют чёрную окантовку. Нижнее веко отвисает, слегка обнажая конъюнктиву. Хотя взгляд кажется меланхоличным и спокойным, при более близком контакте с собакой заметны твёрдость и строгость.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Сильные и широкие челюсти формируют ножницеобразный прикус. Обязательна полная зубная формула: некрупные резцы, острые клыки, премоляры и мощные моляры. Такое расположение зубов обеспечивает крепкий захват и удержание добычи. Этим пользовались предки мастифов, охраняя стадо от хищников.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Мощная и крепкая, хотя и довольно короткая. Поставлена высоко и косо, мускулатура отлично развита. Эластичная кожа формирует двойной подвес в нижней части.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Испанский мастиф – обладатель прямоугольного и крепкого корпуса. Холка хорошо обозначена. Спина длинная и мускулистая, сохраняет горизонтальное положение даже в движении. Она переходит в широкую и слегка выпуклую поясницу, а та – в скошенный под углом 45° круп. Высота мастифа в этой части туловища соответствует его высоте в холке. Живот и линия паха умеренно подтянуты.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвост имеет средний постав, сужается от широкого основания к кончику. В состоянии покоя он свисает до скакательных суставов, во время движения приподнимается на манер сабли, но не забрасывается на спину или круп.
+        </p>
+        <h3>
+         Передние конечности
+        </h3>
+        <p>
+         Поставлены прямо и параллельно друг другу. Заметны крепкий костяк и развитая мускулатура. Длинные плечи поставлены под углом 100° к земле. Локти, плотно прижатые к бокам «испанца», направлены назад. Предплечья отвесные, образуют с локтями угол 125°. Их длина должна быть в три раза больше длины пястей. Массивные лучезапястные суставы переходят в чуть наклонные и крепкие пясти. Сводистые лапы собраны в комок, имеют упругие и твёрдые подушечки. Пальцы заканчиваются короткими когтями.
+        </p>
+        <h3>
+         Задние конечности
+        </h3>
+        <p>
+         Прямые, отличаются параллельным поставом. Мощный костяк подчёркнут мускулатурой, углы сочленений ярко выражены. Широкие бёдра отходят от крупа под углом 100°. Голени сухие и длинные, мышцы лучше развиты только в верхней трети. Ахиллово сухожилие крепкое. Скакательные суставы расположены параллельно друг другу, отклонены назад. Предплюсны и плюсны массивные, переходят в сводистые лапы. Прибылые пальцы допустимы вне зависимости от их типа.
+        </p>
+        <h3>
+         Манера движения
+        </h3>
+        <p>
+         Для испанских мастифов характерна тяжёлая рысь без покачиваний в стороны. Чем больше скорость, тем сильнее конечности собаки заносятся под корпус, ближе к центру тяжести. Движения элегантные, с ярко выраженной силой.
+        </p>
+        <h3>
+         Шёрстный покров
+        </h3>
+        <p>
+         У животных очень густая шерсть средней длины, которая плотно прилегает к телу. Плечи, грудь и хвост украшены более длинным волосом. Самая короткая шерсть покрывает межпальцевые пространства.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Окрас испанского мастифа строго не регламентирован. Предпочтительны однотонные соболиный, волчий, чёрный, красный, жёлтый и олений окрасы. Допустимы их всевозможные комбинации, а также отметины в виде пятен или белого «ошейника».
+        </p>
+        <h3>
+         Возможные пороки
+        </h3>
+        <p>
+         Среди основных дефектов породы выделяют:
+        </p>
+        <ul>
+         <li>
+          незначительные отклонения от полового типа;
+         </li>
+         <li>
+          отсутствие клыков, премоляров или моляров;
+         </li>
+         <li>
+          чрезмерную эктропию или энтропию;
+         </li>
+         <li>
+          «вихляние» задними конечностями;
+         </li>
+         <li>
+          волнистую или длинную шерсть;
+         </li>
+         <li>
+          неуравновешенный темперамент;
+         </li>
+         <li>
+          прямой или подобранный живот;
+         </li>
+         <li>
+          слабые линии спины и поясницы;
+         </li>
+         <li>
+          купированные уши или хвост;
+         </li>
+         <li>
+          закинутый на спину хвост;
+         </li>
+         <li>
+          заострённую морду;
+         </li>
+         <li>
+          слабые конечности;
+         </li>
+         <li>
+          «римский» нос;
+         </li>
+         <li>
+          прямой прикус.
+         </li>
+        </ul>
+        <p>
+         К дисквалифицирующим порокам относят:
+        </p>
+        <ul>
+         <li>
+          неопущение яичек (с одной или обеих сторон);
+         </li>
+         <li>
+          чрезмерно низкий или высокий постав хвоста;
+         </li>
+         <li>
+          депигментацию мочки носа и слизистых;
+         </li>
+         <li>
+          чрезмерную робость или агрессивность;
+         </li>
+         <li>
+          коренастость или длинноногость;
+         </li>
+         <li>
+          резкий переход ото лба к морде;
+         </li>
+         <li>
+          раздвоенную мочку носа;
+         </li>
+         <li>
+          слаборазвитый корпус;
+         </li>
+         <li>
+          перекус или недокус;
+         </li>
+         <li>
+          рыхлую мускулатуру;
+         </li>
+         <li>
+          горбатую поясницу;
+         </li>
+         <li>
+          коровью поступь;
+         </li>
+         <li>
+          светлые глаза;
+         </li>
+         <li>
+          лисью морду;
+         </li>
+         <li>
+          заячьи лапы;
+         </li>
+         <li>
+          иноходь.
+         </li>
+        </ul>
+        <h2 id="gl3">
+         Характер испанского мастифа
+        </h2>
+        <p>
+         Представители породы унаследовали сдержанный темперамент от далёких предков. Эти собаки отличаются независимостью и уверенностью в себе. «Испанцы» не обременены грузом в виде нервозности и трусости. Напротив, смелость и самоотверженность животных заслуживают искреннего уважения. Мастиф ринется в атаку даже на соперника, который превосходит его по габаритам, а если речь идёт о защите семьи – тем более!
+        </p>
+        <p>
+         Несмотря на безграничную преданность, испанский мастиф не признает хозяина в мягком и нерешительном человеке. Животному нужен безоговорочный лидер и партнёр, в противном случае дрессировка и корректное воспитание питомца невозможны. Если вы начинающий собаковод, присмотритесь к более лояльным породам:
+         <a class="ph" href="/dog/mops/">
+          мопсу
+         </a>
+         ,
+         <a class="ph" href="/dog/pudel/">
+          пуделю
+         </a>
+         ,
+         <a class="ph" href="/dog/zolotistyy-retriver/">
+          золотистому ретриверу
+         </a>
+         или
+         <a class="ph" href="/dog/russkiy-toy-terer/">
+          русскому той-терьеру
+         </a>
+         . Испанские молоссы не лучший вариант для новичков.
+        </p>
+        <p>
+         Мастифы тонко чувствуют настроение окружающих. Представитель породы не навязывает своё общество, спокойно относится к вынужденному одиночеству, но всегда встречает хозяина радостным лаем и вилянием хвоста. Собака не возражает против компании гостей. Однако почувствовав, как в комнате накаляется атмосфера, «испанец» проявит повышенное внимание к посторонним и в случае необходимости встанет на защиту хозяина.
+        </p>
+        <p>
+         В кругу семьи мастифы словно превращаются в огромные плюшевые игрушки! Они любят принимать ласку, отвечать на неё радостным ворчанием, лежать в чьих-то ногах и видеть собачьи сны. Особенно трепетные чувства собаки испытывают по отношению к тем, кого считают слабее себя: детям или пожилым людям.
+        </p>
+        <p>
+         К слову, семьи с детьми могут надеяться на четвероногую помощь со стороны питомца. Мастиф ведёт себя как нянька по отношению к маленьким членам семьи, опекая их и участвуя в играх. Если к вашему ребёнку пришли друзья, не оставляйте собаку наедине с весёлой компанией. Испанский мастиф может расценить крики и активную деятельность как угрозу и войдёт в роль защитника. Учитывая габариты и массу тела, эта демонстрация силы может закончиться плачевно для участников «конфликта».
+        </p>
+        <p>
+         Представители породы не любят соперничать, поскольку считают это ниже своего достоинства, поэтому они неплохо уживаются с другими животными. Исключение – декоративные грызуны и птицы. При этом наибольшую угрозу несут не инстинкты собаки, а её внушительные размеры. Не оставляйте маленьких питомцев наедине с огромным животным: испанский мастиф может непроизвольно причинить им вред.
+        </p>
+        <p>
+         Владельцы мастифов отмечают: собаки остаются в душе щенками до четырёхлетнего возраста. А это значит, что вы должны научиться веселить пушистого «ребёнка» прогулками на свежем воздухе или новыми игрушками. Скучающее животное – настоящая угроза! Вернувшись домой, вы буквально обнаружите руины. В попытках развлечь себя пес легко перевернёт диван или погрызёт ножку письменного стола. Стоит отметить, что ночью у мастифов обостряются инстинкты, поэтому собаки могут вести себя беспокойно, особенно в отсутствие хозяина.
+        </p>
+        <p>
+         К числу положительных качеств породы относят преданность дому. «Испанцы» не станут делать подкоп и ломать забор, желая уйти за пределы вверенной территории, благодаря чему мастифы прекрасно обходятся без привязи.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Испанские мастифы нуждаются в ранней социализации, но продолжают формироваться психологически до трёхлетнего возраста. С первого месяца жизни необходимо чётко расставить приоритеты: в импровизированной стае роль альфы закреплена за вами. Если животное сочтёт авторитет хозяина недостаточным, о плодотворном воспитании придётся забыть. «Испанец» проигнорирует любое предупреждение и команду с вашей стороны. Вместе послушного питомца вы обзаведётесь 70-килограммовой проблемой на ближайший десяток лет.
+        </p>
+        <p>
+         В воспитании мастифа важно быть спокойным и последовательным. Животное не воспринимает крики и угрозы в свой адрес. Поскольку у представителей породы исторически сложился довольно свирепый нрав, необходимо отказаться от несправедливых наказаний и жестокого обращения с собакой. В противном случае пес затаит обиду и не станет вам преданным другом.
+        </p>
+        <p>
+         На социализацию не меньше влияет и пребывание собаки в обществе – как человеческом, так и четвероногом. Почаще гуляйте с мастифом в окружении других людей и животных. Так ваш питомец поймёт, что мир принадлежит не только ему, и не станет проявлять агрессию. С этой же целью необходимо менять маршрут прогулок, чтобы каждый раз испанский мастиф изучал новую местность и не чувствовал себя властелином мира.
+        </p>
+        <p>
+         Что касается дрессировки, эти собаки заинтересованы в изучении новых команд. Важным элементом служит поощрение. Мастиф охотнее продемонстрирует свои умения, если вы наградите его угощением или ласковым поглаживанием. Чувствуете, что дрессировка испанского мастифа выходит из колеи? Обратитесь к профессиональным кинологам. Под их руководством собака пройдёт курс основных команд, а вы получите полезные советы по дальнейшему воспитанию питомца.
+        </p>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <p>
+         Уход за испанским мастифом затруднителен. Густая шерсть животного нуждается в регулярном вычёсывании не чаще трёх раз в неделю. Для этих целей идеально подходит металлическая щётка или деревянная расчёска с редкими зубьями. В период сезонной линьки понадобятся пуходёрка или фурминатор. Опытные владельцы собак облегчают процедуру тем, что слегка смачивают шерсть «испанца» водой с разведённым в ней кондиционером, тогда волоски реже путаются и вычёсываются без лишних хлопот.
+        </p>
+        <p>
+         Периодически на ушах, шее и задних лапах мастифа образуются колтуны. Для их удаления можно воспользоваться специальным спреем или колтунорезом. В запущенных случаях обратитесь в парикмахерскую, где занимаются стрижкой собак. Не рекомендуется укорачивать шерсть в домашних условиях.
+        </p>
+        <p>
+         Испанские мастифы не нуждаются в регулярном купании. Если ваш питомец не испачкался во время прогулки, ограничьтесь банным днём раз в три месяца. Злоупотребление водными процедурами грозит гипертрофированием кожных желёз животного и появлением характерного запаха «псины». В качестве альтернативы подойдёт сухой шампунь, который визуально «освежит» шерсть собаки. Средство тщательно вычёсывается после втирания в подшёрсток.
+        </p>
+        <p>
+         Рекомендуется укорачивать когти не реже одного раза в месяц. Из инструментов понадобятся когтерез для крупных пород собак и пилочка, помогающая отполировать острые края. Для облегчения процедуры можно подержать лапы любимца в тёплой воде: это размягчит когти. В холодное время года стоит обзавестись питательным маслом для смазывания подушечек лап.
+        </p>
+        <p>
+         Не забывайте и об уходе за ротовой полостью мастифа. Зубы собаки нуждаются в вашем внимании дважды в неделю. Для удаления мягкого налёта подойдёт старая щётка или специальная насадка на палец. Недостаточная гигиена приводит к образованию зубного камня, который требует вмешательства специалиста. Для профилактики включите твёрдую пищу в рацион «испанца» и порадуйте его новыми игрушками-грызунками.
+        </p>
+        <p>
+         Глаза и ушные раковины собаки промакиваются мягкой тканью без ворса. Вспомогательным средством может выступить специальный лосьон или отвар ромашки. Обеспечьте отсутствие сквозняков до тех пор, пока животное полностью не обсохнет.
+        </p>
+        <p>
+         Правильное питание – залог крепкого здоровья испанского мастифа. Владельцы собак этой породы выбирают натуральную пищу или сухие корма премиум-класса. Регулярная комбинация обоих вариантов чревата проблемами с пищеварительной системой. В первые месяцы жизни основу рациона должны составлять продукты с высоким содержанием кальция. Это укрепит суставы, которые с возрастом подвергаются большей нагрузке.
+        </p>
+        <p>
+         Исключите из собачьего меню:
+        </p>
+        <ul>
+         <li>
+          молочные продукты в больших количествах;
+         </li>
+         <li>
+          изделия из дрожжевого теста;
+         </li>
+         <li>
+          еду и напитки с кофеином;
+         </li>
+         <li>
+          кости крупных размеров;
+         </li>
+         <li>
+          рыбу в любом виде;
+         </li>
+         <li>
+          сырое мясо и яйца;
+         </li>
+         <li>
+          лук и чеснок;
+         </li>
+         <li>
+          цитрусовые;
+         </li>
+         <li>
+          копчёности;
+         </li>
+         <li>
+          картофель;
+         </li>
+         <li>
+          сладости;
+         </li>
+         <li>
+          грибы;
+         </li>
+         <li>
+          орехи.
+         </li>
+        </ul>
+        <p>
+         Миска питомца должна быть наполнена чистой водой – бутилированной или настоянной в течение 6-8 часов.
+        </p>
+        <h2 id="gl6">
+         Здоровье испанского мастифа
+        </h2>
+        <p>
+         Несмотря на крепкий иммунитет и выносливость, представители породы подвержены определённым заболеваниям:
+        </p>
+        <ul>
+         <li>
+          дисплазии тазобедренных суставов;
+         </li>
+         <li>
+          завороту желудка или кишок;
+         </li>
+         <li>
+          аденоме третьего века;
+         </li>
+         <li>
+          завороту века;
+         </li>
+         <li>
+          гонартрозу;
+         </li>
+         <li>
+          катаракте;
+         </li>
+         <li>
+          экземе.
+         </li>
+        </ul>
+        <p>
+         Не забывайте о своевременной вакцинации – залоге долголетия вашего любимца. Помимо этого, обязательна регулярная обработка животного от внешних и внутренних паразитов.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Испанский мастиф – «трудная» порода, поэтому не стоит хватать первого попавшегося щенка, особенно по привлекательной цене. К выбору нового друга необходимо подойти с умом. Пушистые малыши должны подрасти до трёх месяцев, прежде чем их пристроят в семью. В этом возрасте физическое и психическое здоровье животных считается достаточно окрепшим.
+        </p>
+        <p>
+         При знакомстве с испанскими мастифами нужно обратить внимание на условия содержания. Идеальный вариант – чистый и закрытый от сквозняков вольер. Желающие приобрести щенка с отличной родословной могут попросить заводчика предоставить всю необходимую информацию, в том числе и сведения о родителях.
+        </p>
+        <p>
+         Не менее важен внешний вид мастифа: крепкий костяк, густая шерсть, здоровые кожные и слизистые покровы, глазки и нос без патологических выделений. Малыш должен быть игривым и любопытным, не прятаться и не убегать от протянутой руки. Умеренная упитанность обязательна: худоба – верный признак того, что щенок нездоров.
+        </p>
+        <p>
+         Положитесь на интуицию – она подскажет, с каким «испанцем» завяжется самая трепетная дружба!
+        </p>
+        <h2 id="gl8">
+         Сколько стоит испанский мастиф
+        </h2>
+        <p>
+         Желающим обзавестись пушистым другом породы испанский мастиф придётся раскошелиться: минимальная цена составляет 35 000 – 40 000 рублей. Наследники с известными «родственниками» стоят в пять раз дороже: около 250 000 рублей. Лучшее место для покупки испанского мастифа – сертифицированный питомник. Животные с птичьего рынка не смогут похвастать отличной генетикой и превосходным здоровьем.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения испанского мастифа на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/ispanskiy-mastif/forum/">
+        Перейти на
+        форум испанского мастифа
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Испанский мастиф" src="/upload/iblock/7b7/7b7851162ac25c8877fb43584c1aaab7.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/ispanskiy-mastif/">
+          Испанский мастиф
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/ispanskiy-mastif/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/ispanskiy-mastif/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/ispanskiy-mastif/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/ispanskiy-mastif/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/ispanskiy-mastif/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/avstraliyskaya-pastushya-sobaka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Австралийская пастушья собака" data-original="/upload/resize_cache/iblock/e77/100_100_1/jduwiqflzthyboumerhnxby7di0cruhn.jpg">
+          <noscript data-alt="Австралийская пастушья собака" data-original="/upload/resize_cache/iblock/e77/100_100_1/jduwiqflzthyboumerhnxby7di0cruhn.jpg">
+           <img alt="Австралийская пастушья собака" src="/upload/resize_cache/iblock/e77/100_100_1/jduwiqflzthyboumerhnxby7di0cruhn.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Австралийская пастушья собака
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/affenpincher/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Аффенпинчер" data-original="/upload/resize_cache/iblock/9be/100_100_1/9be8c6987511e69e726c7d23f694bab5.jpg">
+          <noscript data-alt="Аффенпинчер" data-original="/upload/resize_cache/iblock/9be/100_100_1/9be8c6987511e69e726c7d23f694bab5.jpg">
+           <img alt="Аффенпинчер" src="/upload/resize_cache/iblock/9be/100_100_1/9be8c6987511e69e726c7d23f694bab5.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Аффенпинчер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/vengerskaya-vyzhla/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Венгерская выжла" data-original="/upload/resize_cache/iblock/8b9/100_100_1/8b980d5f59e40d4d0236188483a97269.jpg">
+          <noscript data-alt="Венгерская выжла" data-original="/upload/resize_cache/iblock/8b9/100_100_1/8b980d5f59e40d4d0236188483a97269.jpg">
+           <img alt="Венгерская выжла" src="/upload/resize_cache/iblock/8b9/100_100_1/8b980d5f59e40d4d0236188483a97269.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Венгерская выжла
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/maltiyskaya-bolonka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Мальтийская болонка" data-original="/upload/resize_cache/iblock/e7c/100_100_1/e7c3e3033da09dcdab93ef01e60138fc.jpg">
+          <noscript data-alt="Мальтийская болонка" data-original="/upload/resize_cache/iblock/e7c/100_100_1/e7c3e3033da09dcdab93ef01e60138fc.jpg">
+           <img alt="Мальтийская болонка" src="/upload/resize_cache/iblock/e7c/100_100_1/e7c3e3033da09dcdab93ef01e60138fc.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Мальтийская болонка
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fispanskiy-mastif%252F%253Fcheck_key%253D2b13b7fb0b730d7dc2a5b27243963f09%2526ANIMAL_CODE%253Dispanskiy-mastif%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fispanskiy-mastif%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmlzcGFuc2tpeS1tYXN0aWYlMkYlM0ZjaGVja19rZXklM0QyYjEzYjdmYjBiNzMwZDdkYzJhNWIyNzI0Mzk2M2YwOSUyNkFOSU1BTF9DT0RFJTNEaXNwYW5za2l5LW1hc3RpZiUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZpc3BhbnNraXktbWFzdGlmJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fispanskiy-mastif%252F%253Fcheck_key%253D2b13b7fb0b730d7dc2a5b27243963f09%2526ANIMAL_CODE%253Dispanskiy-mastif%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fispanskiy-mastif%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fispanskiy-mastif%252F%253Fcheck_key%253D2b13b7fb0b730d7dc2a5b27243963f09%2526ANIMAL_CODE%253Dispanskiy-mastif%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fispanskiy-mastif%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "81.94.132.131"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--fce68fc09bfa697df9dce28e5ff2f4ca-->

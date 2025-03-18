@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'ee846331fa50'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Бернский зенненхунд, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Бернский зенненхунд (бернская овчарка) – ласковый и обаятельный гигант с самой добродушной «улыбкой» на свете. Представители этой породы – идеальные компаньоны, обладающие врожденным чувством такта и необычайно миролюбивым характером." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/625/6252bf91ca4f1b52a6c6926fccbb6eec.jpg" property="og:image"/>
+     <title>
+      Бернский зенненхунд: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/bernskiy-zennenkhund/" property="og:url"/>
+     <meta content="Бернский зенненхунд: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Бернский зенненхунд (бернская овчарка) – ласковый и обаятельный гигант с самой добродушной «улыбкой» на свете. Представители этой породы – идеальные компаньоны, обладающие врожденным чувством такта и необычайно миролюбивым характером." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/bernskiy-zennenkhund/" itemprop="url">
+         <span itemprop="title">
+          Бернский зенненхунд
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Бернский зенненхунд
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/bernskiy-zennenkhund/">
+          Описание
+         </a>
+         <a href="/dog/bernskiy-zennenkhund/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/bernskiy-zennenkhund/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/bernskiy-zennenkhund/photo/">
+          Фото
+         </a>
+         <a href="/dog/bernskiy-zennenkhund/video/">
+          Видео
+         </a>
+         <a href="/dog/bernskiy-zennenkhund/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/bernskiy-zennenkhund/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Бернский зенненхунд" src="/upload/iblock/d6f/d6fa2b8515196659e82bd805a98aaa97.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/bernskiy-zennenkhund/">
+           бернская овчарка
+          </a>
+          ,
+          <a href="/dog/bernskiy-zennenkhund/">
+           бернская пастушья собака
+          </a>
+         </span>
+         <p>
+          Бернский зенненхунд (бернская овчарка) – ласковый и обаятельный гигант с самой добродушной «улыбкой» на свете. Представители этой породы – идеальные компаньоны, обладающие врожденным чувством такта и необычайно миролюбивым характером.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/96c/96cf93c2e6040f4c406f49aa9e429a5e.jpg" data-cap="Hyppy" data-fancybox="images" data-link="https://www.flickr.com/photos/jperkele/33949047804/" data-type="image" data-username="Ville Pajukoski" href="/upload/uf/019/019366e5bdc842b1ff193b53edd28022.jpg">
+            <img alt="Бернский зенненхунд" src="/upload/resize_cache/uf/019/293_293_2/019366e5bdc842b1ff193b53edd28022.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/fb7/fb740197c5500773d63ade89f9d95f58.jpg" data-cap="Duncan." data-fancybox="images" data-link="312" data-type="image" data-username="Jill Lehmann" href="/upload/uf/227/22752c7f9c5e779409a6eb6b4556cd35.jpg">
+            <img alt="Бернский зенненхунд" src="/upload/resize_cache/uf/227/293_293_2/22752c7f9c5e779409a6eb6b4556cd35.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/328/328e0f8a3b5f406f7491e52791403ea7.jpg" data-cap="Some love to you all on this lovely day ❤️" data-fancybox="images" data-link="https://www.instagram.com/p/Bilx11sDBw5/" data-type="image" data-username="maya_the_bmd" href="/upload/uf/00b/00bdc485c0505a8b9b109ea34c3797e2.jpg">
+            <img alt="Бернский зенненхунд" src="/upload/resize_cache/uf/00b/293_293_2/00bdc485c0505a8b9b109ea34c3797e2.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/bernskiy-zennenkhund/photo/">
+         Все
+            фото бернского зенненхунда
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы бернский зенненхунд
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность бернских зенненхундов
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер бернских зенненхундов
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни бернского зенненхунда
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Сколько стоит бернский зенненхунд
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Бернский зенненхунд
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Швейцария
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         1910 год
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 36-55 кг, суки 34-45 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 64-70 см, суки 58-66 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         8–10 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Несмотря на свои внушительные размеры, бернские зенненхунды неплохо приживаются в квартирах.
+        </li>
+        <li>
+         Собаки этой породы сравнительно долго растут и окончательно взрослеют только к 2 годам.
+        </li>
+        <li>
+         Без проблем уживаются с другими домашними питомцами, а с кошками способны поддерживать по-настоящему приятельские отношения.
+        </li>
+        <li>
+         Бернские зенненхунды благосклонно принимают хозяйское внимание, но выпрашивать ласку не в их правилах.
+        </li>
+        <li>
+         Хорошо воспринимают прогулки на поводке, но цепь и жизнь в вольере им не подходит.
+        </li>
+        <li>
+         Быстро учатся и охотно выполняют команды, хотя несколько уступают в интеллекте и дисциплинированности другим овчаркам.
+        </li>
+        <li>
+         Некоторым особям свойственно проявление легкого упрямства, что иногда может тормозить процесс дрессировки.
+        </li>
+        <li>
+         Берны имеют густую длинную шерсть и интенсивно линяют на протяжении всего года.
+        </li>
+        <li>
+         Нуждаются в хорошем выгуле и регулярных физических нагрузках.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Бернский зенненхунд" data-original="/upload/iblock/625/6252bf91ca4f1b52a6c6926fccbb6eec.jpg">
+          <noscript data-alt="Бернский зенненхунд" data-original="/upload/iblock/625/6252bf91ca4f1b52a6c6926fccbb6eec.jpg">
+           <img alt="Бернский зенненхунд" src="/upload/iblock/625/6252bf91ca4f1b52a6c6926fccbb6eec.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Бернские зенненхунды
+          </strong>
+          – собаки-добряки и верные помощники. Они превосходно ладят с каждым членом семьи, а малышам снисходительно прощают любые проказы. Терпение и уравновешенность превратили бернов едва ли не в идеальных домашних питомцев. Они не капризны в обучении и легко усваивают команды. Кроме того, в наследство от своих предков они получили превосходные сторожевые навыки, которыми с удовольствием пользуются, как только подворачивается подходящая возможность.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средний (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Бернский зенненхунд основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/bernskiy-zennenkhund/razmeri-porodi/">
+         размеры бернского зенненхунда
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы бернский зенненхунд
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бернский зенненхунд" data-fancybox="gallery" href="/upload/iblock/d27/d27cc76a29cfe33d60c9e3d119779d99.jpg" title="Бернский зенненхунд">
+          <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/d27/412_2150_1/d27cc76a29cfe33d60c9e3d119779d99.jpg">
+           <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/d27/412_2150_1/d27cc76a29cfe33d60c9e3d119779d99.jpg">
+            <img alt="Бернский зенненхунд" class="article_pic" height="617" src="/upload/resize_cache/iblock/d27/412_2150_1/d27cc76a29cfe33d60c9e3d119779d99.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бернский зенненхунд
+         </div>
+        </div>
+        <p>
+         Далекими предками сегодняшних зенненхундов считаются молоссы, разведением которых занимались древние римляне. Представители этой породы считались собаками-универсалами, так как каждая особь сочетала в себе бойцовские, пастушьи и сторожевые качества. Молоссы сопровождали римлян и в военных походах, что помогло собакам добраться до Альп и оставить потомство на территории современной Швейцарии, давшее начало родовой ветви зенненхундов.
+        </p>
+        <p>
+         Швейцарские крестьяне быстро оценили выносливость и добродушный нрав этих крупных собак, приспособив их для работы в сыроварнях и перевозки молока по горным тропам. Вплоть до середины XIX века зенненхунды исправно пасли коров на альпийских лужайках, в перерывах подрабатывая развозчиками молочной продукции, но довольно скоро были вытеснены из этой ниши сенбернарами. В некоторых отдаленных районах потомков римских молоссов все еще разводили, но уже не так рьяно, из-за чего знаменитый трехцветный окрас среди животных встречался все реже.
+        </p>
+        <p>
+         На протяжении длительного периода времени швейцарские зенненхунды приравнивались к дворнягам и не котировались у заводчиков. Лишь в конце XIX века эти собаки стали вызывать интерес специалистов, что и стало основным толчком к появлению ветви бернских овчарок. Основополагающую роль в становлении породы сыграл бургдорфский винодел Ф. Шертенляйб. Предприниматель настолько влюбился в альпийских собак, что без устали колесил по провинции Дюрбах в поисках подходящих «экземпляров» для своего питомника.
+        </p>
+        <p>
+         Название «бернский зенненхунд» этой ветви дал профессор Цюрихского университета Альберт Хайм, он же сформулировал ее основные «опознавательные признаки». Ну а в 1907 году был принят первый стандарт породы, который, по сути, был чистой формальностью. В итоге бернские зенненхунды еще довольно долго выставлялись в европейских салонах без родословных и регистрационных номеров.
+        </p>
+        <p class="legenda">
+         Любопытный факт: в 40-х годах XX века, в результате случайной вязки бернского зенненхунда с
+         <a class="ph" href="/dog/nyufaundlend/">
+          ньюфаундлендом
+         </a>
+         , швейцарские пастушьи собаки смогли улучшить свои природные показатели. Так, например, бернские овчарки приобрели более блестящую и длинную шерсть, а их темперамент стал более флегматичным.
+        </p>
+        <p>
+         Пик популярности бернов пришелся на 80-е годы прошлого столетия. Спокойные и дружелюбные овчарки пользовались неизменным авторитетом у европейских и американских заводчиков. В Россию представители этой породы были завезены из Венгрии, Польши, Чехословакии и Германии.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/17c/17c96a8c139456a09f85969c41d6daa0.jpg" title="">
+           <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/17c/512_342_2/17c96a8c139456a09f85969c41d6daa0.jpg">
+            <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/17c/512_342_2/17c96a8c139456a09f85969c41d6daa0.jpg">
+             <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/17c/512_342_2/17c96a8c139456a09f85969c41d6daa0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/96b/96b7b00dd3f4ddec9d187b69379dbd65.jpg" title="">
+           <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/96b/512_342_2/96b7b00dd3f4ddec9d187b69379dbd65.jpg">
+            <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/96b/512_342_2/96b7b00dd3f4ddec9d187b69379dbd65.jpg">
+             <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/96b/512_342_2/96b7b00dd3f4ddec9d187b69379dbd65.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2>
+         Видео: Бернский зенненхунд
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="5vGH-SPVSMY">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность бернских зенненхундов
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок бернского зенненхунда в 6 недель" data-fancybox="gallery" href="/upload/iblock/a74/a74218415c8911541e712a6a66bc8bf6.jpg" title="Щенок бернского зенненхунда в 6 недель">
+          <div class="lazy-load" data-alt="Щенок бернского зенненхунда в 6 недель" data-class="article_pic" data-original="/upload/resize_cache/iblock/a74/412_2150_1/a74218415c8911541e712a6a66bc8bf6.jpg">
+           <noscript data-alt="Щенок бернского зенненхунда в 6 недель" data-class="article_pic" data-original="/upload/resize_cache/iblock/a74/412_2150_1/a74218415c8911541e712a6a66bc8bf6.jpg">
+            <img alt="Щенок бернского зенненхунда в 6 недель" class="article_pic" height="605" src="/upload/resize_cache/iblock/a74/412_2150_1/a74218415c8911541e712a6a66bc8bf6.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок бернского зенненхунда в 6 недель
+         </div>
+        </div>
+        <p>
+         Бернские овчарки – довольно крупные собаки с длинной шерстью черно-палевого окраса и белыми пятнами в районе носа, шеи и лап. Фирменным «знаком» породы считается так называемая «улыбка» бернцев. В спокойном состоянии мышцы морды и головы собаки расслабляются, приоткрывая рот и создавая иллюзию человеческой мимики. Эталонная высота в холке для кобелей – от 64 до 70 см, для сук – от 58 до 67 см. Средний вес бернского зенненхунда колеблется в диапазоне 39-50 кг у особей мужского пола, 38-48 кг – у женского.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Пропорциональная, крупная. Череп массивный, округленной формы, что особенно заметно, если смотреть на животное в профиль. Лобная борозда неярко выражена. Переход от лобной части к морде плавный, без резких линий. Мочка носа большая, черного цвета, с крупными ноздрями.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Эталонный прикус – ножницеобразный, но в отдельных случаях допустим и клещеобразный (прямой) вариант. Зубы бернского зенненхунда большие, крепкие, располагаются по одной линии.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза средние, миндалевидные, поставлены прямо. Оттенок радужной оболочки темно-карий, белки глаз не заметны. Веки сухие, черного цвета («сырые» веки относятся к дефектам).
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Среднего размера, правильной треугольной формы, высоко поставлены. В состоянии покоя висячие, кончик уха слегка округлен. Когда бернский зенненхунд насторожен, передняя часть ушной раковины продолжает оставаться в прилегающем к черепу состоянии, в то время как ее задняя часть слегка приподнимается.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Средней длины, мускулистая, с выдающимся загривком и развитой холкой.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда бернского зенненхунда" data-fancybox="gallery" href="/upload/iblock/f73/f73b2c0e17e51dede9569e3a85e4ca5d.jpg" title="Морда бернского зенненхунда">
+          <div class="lazy-load" data-alt="Морда бернского зенненхунда" data-class="article_pic" data-original="/upload/iblock/f73/f73b2c0e17e51dede9569e3a85e4ca5d.jpg">
+           <noscript data-alt="Морда бернского зенненхунда" data-class="article_pic" data-original="/upload/iblock/f73/f73b2c0e17e51dede9569e3a85e4ca5d.jpg">
+            <img alt="Морда бернского зенненхунда" class="article_pic" src="/upload/iblock/f73/f73b2c0e17e51dede9569e3a85e4ca5d.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда бернского зенненхунда
+         </div>
+        </div>
+        <h3>
+         Тело
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/91c/91c38ebe5069397dba00a7a0796b4e8c.jpg" title="">
+          <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/91c/412_2150_1/91c38ebe5069397dba00a7a0796b4e8c.jpg">
+           <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/91c/412_2150_1/91c38ebe5069397dba00a7a0796b4e8c.jpg">
+            <img alt="Бернский зенненхунд" class="article_pic" height="617" src="/upload/resize_cache/iblock/91c/412_2150_1/91c38ebe5069397dba00a7a0796b4e8c.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Корпус компактный, крепкий, с широкой прямой спиной и глубокой длинной грудью. Ребра выпуклые. Поясница короткая, немного уже грудной и круповой частей.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Передние конечности бернского зенненхунда прямые, ровные, поставлены широко. Лопатки удлиненные, наклонены назад. Плече-лопаточный угол обычно равняется 100°. Задние ноги прямые, крепкие, мускулистые. Бедра удлиненной формы, с развитой мускулатурой. Скакательные суставы сильные, с ярко выраженным углом. Прибылые пальцы (рудиментарные пальцеобразные отростки, расположенные над лапами задних ног) у породистых особей подлежат удалению. Лапы направлены вперед, округлые, с упругими подушечками. Задние лапы собраны в менее рельефный «комок», чем передние.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвост бернского зенненхунда массивный, саблевидный, сужающийся от основания по направлению к концу. У спокойного животного опущен вниз, у возбужденного поднимается до уровня спины и выше.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Длинная, прямая, с эффектным блеском. Местами может иметь легкие «волны».
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Преобладающий окрас корпуса зенненхунда – черный. Участки шерстного покрова насыщенного палевого оттенка располагаются на груди, всех четырех ногах и над глазами. Белые отметки у бернских овчарок могут находиться на голове в виде проточины (не должна доходить до палевых участков шерсти), на морде в виде пятна (не должно заходить за границы углов рта) и груди. Идеальными параметрами также считаются белые «носочки» на лапах и белый кончик хвоста. Допустимо наличие небольших белых «фрагментов» в области затылка и зоны ануса.
+        </p>
+        <h3>
+         Основные пороки
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Лапа бернского зенненхунда" data-fancybox="gallery" href="/upload/iblock/30f/30fea435e0e3b5f3070048ce7ec60d63.jpg" title="Лапа бернского зенненхунда">
+          <div class="lazy-load" data-alt="Лапа бернского зенненхунда" data-class="article_pic" data-original="/upload/resize_cache/iblock/30f/412_2150_1/30fea435e0e3b5f3070048ce7ec60d63.jpg">
+           <noscript data-alt="Лапа бернского зенненхунда" data-class="article_pic" data-original="/upload/resize_cache/iblock/30f/412_2150_1/30fea435e0e3b5f3070048ce7ec60d63.jpg">
+            <img alt="Лапа бернского зенненхунда" class="article_pic" height="549" src="/upload/resize_cache/iblock/30f/412_2150_1/30fea435e0e3b5f3070048ce7ec60d63.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Лапа бернского зенненхунда
+         </div>
+        </div>
+        <p>
+         У бернских зенненхундов могут встречаться отклонения от стандарта породы:
+        </p>
+        <ul>
+         <li>
+          слишком легкий костяк;
+         </li>
+         <li>
+          неправильный постав резцов при правильном прикусе;
+         </li>
+         <li>
+          вьющаяся шерсть;
+         </li>
+         <li>
+          отсутствие белых «лоскутов» на голове, равно как и их избыточное количество;
+         </li>
+         <li>
+          черный окрас корпуса с выраженным коричневым или красным подтоном;
+         </li>
+         <li>
+          асимметрия окраса;
+         </li>
+         <li>
+          белые участки шерстного покрова имеют сероватый оттенок.
+         </li>
+        </ul>
+        <p>
+         Для дисквалификации животного шоу-класса достаточно следующих дефектов:
+        </p>
+        <ul>
+         <li>
+          прогения (перекус) или недокус;
+         </li>
+         <li>
+          энтропия (заворот века);
+         </li>
+         <li>
+          заломы хвоста, либо закрученный в «бублик» хвост;
+         </li>
+         <li>
+          раздвоенность мочки носа;
+         </li>
+         <li>
+          короткий шерстный покров, либо так называемая «двойная шерсть» (когда подшерсток «затмевает» остевой волос);
+         </li>
+         <li>
+          агрессия или трусливость животного;
+         </li>
+         <li>
+          крипторхизм;
+         </li>
+         <li>
+          недостаточный рост.
+         </li>
+        </ul>
+        <h2>
+         Фото взрослого бернского зенненхунда
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/518/5183d52e9d77cb6456558a8446806163.jpg" title="">
+           <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/518/380_264_2/5183d52e9d77cb6456558a8446806163.jpg">
+            <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/518/380_264_2/5183d52e9d77cb6456558a8446806163.jpg">
+             <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/518/380_264_2/5183d52e9d77cb6456558a8446806163.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/58f/58ff76171a1cc49c2369ebb736981d05.jpg" title="">
+           <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/58f/380_264_2/58ff76171a1cc49c2369ebb736981d05.jpg">
+            <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/58f/380_264_2/58ff76171a1cc49c2369ebb736981d05.jpg">
+             <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/58f/380_264_2/58ff76171a1cc49c2369ebb736981d05.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/60f/60f890fd8053fb7f997803a1761f795c.jpg" title="">
+           <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/60f/380_264_2/60f890fd8053fb7f997803a1761f795c.jpg">
+            <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/60f/380_264_2/60f890fd8053fb7f997803a1761f795c.jpg">
+             <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/60f/380_264_2/60f890fd8053fb7f997803a1761f795c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/23a/23a0c110346bbec3017935a75873a556.jpg" title="">
+           <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/23a/380_264_2/23a0c110346bbec3017935a75873a556.jpg">
+            <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/23a/380_264_2/23a0c110346bbec3017935a75873a556.jpg">
+             <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/23a/380_264_2/23a0c110346bbec3017935a75873a556.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d8c/d8caddcdd79b6d5e6b828d439772e460.jpg" title="">
+           <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/d8c/380_264_2/d8caddcdd79b6d5e6b828d439772e460.jpg">
+            <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/d8c/380_264_2/d8caddcdd79b6d5e6b828d439772e460.jpg">
+             <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/d8c/380_264_2/d8caddcdd79b6d5e6b828d439772e460.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7c2/7c2e60eff2111069492b3f9ce7d43905.jpg" title="">
+           <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/7c2/380_264_2/7c2e60eff2111069492b3f9ce7d43905.jpg">
+            <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/7c2/380_264_2/7c2e60eff2111069492b3f9ce7d43905.jpg">
+             <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/7c2/380_264_2/7c2e60eff2111069492b3f9ce7d43905.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/671/67170899fb672a401fa70a1a62601e4b.jpg" title="">
+           <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/671/380_264_2/67170899fb672a401fa70a1a62601e4b.jpg">
+            <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/671/380_264_2/67170899fb672a401fa70a1a62601e4b.jpg">
+             <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/671/380_264_2/67170899fb672a401fa70a1a62601e4b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/83a/83a3d1c7915c8921efe3d586848b5984.jpg" title="">
+           <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/83a/380_264_2/83a3d1c7915c8921efe3d586848b5984.jpg">
+            <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/83a/380_264_2/83a3d1c7915c8921efe3d586848b5984.jpg">
+             <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/83a/380_264_2/83a3d1c7915c8921efe3d586848b5984.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/29b/29b04adddd7ee5e2bce5fd7c81e3cca5.jpg" title="">
+           <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/29b/380_264_2/29b04adddd7ee5e2bce5fd7c81e3cca5.jpg">
+            <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/29b/380_264_2/29b04adddd7ee5e2bce5fd7c81e3cca5.jpg">
+             <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/29b/380_264_2/29b04adddd7ee5e2bce5fd7c81e3cca5.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер бернских зенненхундов
+        </h2>
+        <p>
+         Бернские овчарки – чрезвычайно добрые, послушные и преданные друзья, которые не будут изводить хозяина требованием повышенного внимания и бурным темпераментом. Берны невозмутимо спокойны и бесконечно мудры, но при этом не «сухари» и вполне способны на проявление чувств. Представители этой породы – типичные семейные собаки. Кстати, несмотря на то, что идеальными няньками зенненхунды не считаются, к детям они относятся покровительственно, с чувством легкого превосходства и на докучливые шалости агрессией не отвечают.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бернский зенненхунд с ребенком" data-fancybox="gallery" href="/upload/iblock/ca6/ca6ab572a53aaf7f6ac43f313a311b99.jpg" title="Бернский зенненхунд с ребенком">
+          <div class="lazy-load" data-alt="Бернский зенненхунд с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/ca6/412_2150_1/ca6ab572a53aaf7f6ac43f313a311b99.jpg">
+           <noscript data-alt="Бернский зенненхунд с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/ca6/412_2150_1/ca6ab572a53aaf7f6ac43f313a311b99.jpg">
+            <img alt="Бернский зенненхунд с ребенком" class="article_pic" height="274" src="/upload/resize_cache/iblock/ca6/412_2150_1/ca6ab572a53aaf7f6ac43f313a311b99.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бернский зенненхунд с ребенком
+         </div>
+        </div>
+        <p>
+         Молодые особи обычно очень любознательны и немного безалаберны, позволяют себе в меру подурачиться, но при этом не перегибают палку. Взрослые и умудренные опытом собаки спокойнее и флегматичнее. Эти невозмутимые гиганты уже не поведутся на перебегающую дорогу кошку и прочие немудреные провокации. Бернские зенненхунды обожают играть в помощников, гидов и охранников. Им в радость донести небольшие покупки хозяина или защитить его от других собак. А еще из бернов получаются превосходные аниматоры: научите своего питомца ходить в упряжке, и он будет с удовольствием катать в тележке ваших детей. Вошедшее в легенду бесстрашие бернов приносит им больше неприятностей, чем пользы. Представители этой породы часто совершают никому не нужные подвиги вроде прыжков с балкона, которые для самой собаки заканчиваются плачевно.
+        </p>
+        <p>
+         В целом зенненхунды – терпеливые и ласковые, уважающие человека. Кстати об уважении: к незнакомцам бернские овчарки относятся спокойно, без проявления агрессии, но и без особой симпатии. Обычно самым уважаемым в глазах животного становится только один член семьи. Это, конечно, не значит, что остальным людям собака не подчиняется. Просто команды хозяев «второго плана» питомец будет выполнять не так активно. Несмотря на легкую лень и любовь ко сну, периодически снисходящие на представителей данной породы, берны с удовольствием принимают участие в подвижных играх. Правда, в силу своего характера, слишком долго развлекаться не любят.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/131/1313d768d36e980b0f9bd7ae7ec4309e.jpg" title="">
+          <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/131/1024_2150_1/1313d768d36e980b0f9bd7ae7ec4309e.jpg">
+           <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/131/1024_2150_1/1313d768d36e980b0f9bd7ae7ec4309e.jpg">
+            <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/131/1024_2150_1/1313d768d36e980b0f9bd7ae7ec4309e.jpg"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Бернские зенненхунды подлежат обязательной социализации, причем чем раньше вы начнете обучать щенка командам, тем лучше для вас обоих. Невзирая на свой невозмутимый внешний вид, бернские овчарки – очень чувствительные собаки, поэтому кричать на питомца не стоит, как и применять к нему физическое насилие. В воспитании рекомендуется проявить определенную твердость и настойчивость: за оплошности щенку следует делать внушения строгим тоном (система наказаний к маленьким щенкам, как правило, не применяется).
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Дрессировка зенненхундов" data-fancybox="gallery" href="/upload/iblock/6be/6be391860456bca1b1b97ddf420b7d3b.jpg" title="Дрессировка зенненхундов">
+          <div class="lazy-load" data-alt="Дрессировка зенненхундов" data-class="article_pic" data-original="/upload/resize_cache/iblock/6be/412_2150_1/6be391860456bca1b1b97ddf420b7d3b.jpg">
+           <noscript data-alt="Дрессировка зенненхундов" data-class="article_pic" data-original="/upload/resize_cache/iblock/6be/412_2150_1/6be391860456bca1b1b97ddf420b7d3b.jpg">
+            <img alt="Дрессировка зенненхундов" class="article_pic" height="251" src="/upload/resize_cache/iblock/6be/412_2150_1/6be391860456bca1b1b97ddf420b7d3b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Дрессировка зенненхундов
+         </div>
+        </div>
+        <p>
+         Возраст от 4 до 8 месяцев – период максимального непослушания и шалостей. В это время у собаки режутся зубы, поэтому бернские зенненхунды активно пробуют на вкус окружающую реальность. Иногда объектом внимания становятся не только тапочки и туфли, но и пальцы членов семьи. Чтобы потом не запасаться йодом и бинтами, приучайте собаку не рассматривать руки владельца как объект для игр. В случае, если щенок все же начал кусать ваши пальцы, несильно прищемите ему мочку носа. Боль отрезвит животное и не причинит ему ощутимого вреда.
+        </p>
+        <p>
+         С первых месяцев жизни начинайте плавно отучать собаку от спонтанных наскакиваний. Пока животное маленькое, такое выражение нежных чувств вызывает искреннее умиление, но когда, по истечении пары лет, в ваши объятья будет прыгать лохматая 50-килограммовая туша – это перестанет быть удовольствием.
+        </p>
+        <p class="legenda">
+         Важно: бернские зенненхунды взрослеют позже представителей других пород, поэтому сложные тренировки следует практиковать только с особями, достигшими двухлетнего возраста.
+        </p>
+        <p>
+         Начинать обучение питомца следует с ношения ошейника и простейших команд «Ко мне!», «Фу!» и других. Усвоить эти несложные уроки способно даже животное полуторамесячного возраста. Уделяйте дрессировкам от 10 до 15 мин. в день, чтобы не переутомлять щенка, и обязательно используйте вкусные поощрения, купленные в зоомагазине или приготовленные самостоятельно. И ни в коем случае не переусердствуйте. Дисциплина не должна превращаться в свод запретов, ограничивающий свободу питомца: все-таки для нормального развития щенку необходимо как можно чаще контактировать с вещами и другими животными. Тем, кто видит в своем берне будущего сторожа, стоит сформировать у собаки умение делить людей на своих и чужих. Сюда же относится такой навык, как отказ принимать лакомства из рук незнакомца. Исключения недопустимы даже для «хороших знакомых».
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/aa1/aa1f5f0a06ac4218ef7e45e437222d29.jpg" title="">
+           <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/aa1/512_342_2/aa1f5f0a06ac4218ef7e45e437222d29.jpg">
+            <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/aa1/512_342_2/aa1f5f0a06ac4218ef7e45e437222d29.jpg">
+             <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/aa1/512_342_2/aa1f5f0a06ac4218ef7e45e437222d29.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/aff/aff588bb6edaa7cdf7cc80f47ad856ce.jpg" title="">
+           <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/aff/512_342_2/aff588bb6edaa7cdf7cc80f47ad856ce.jpg">
+            <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/aff/512_342_2/aff588bb6edaa7cdf7cc80f47ad856ce.jpg">
+             <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/aff/512_342_2/aff588bb6edaa7cdf7cc80f47ad856ce.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Я пират!" data-fancybox="gallery" href="/upload/iblock/817/817de3109c865fa1202306256e96f833.jpg" title="Я пират!">
+          <div class="lazy-load" data-alt="Я пират!" data-class="article_pic" data-original="/upload/resize_cache/iblock/817/412_2150_1/817de3109c865fa1202306256e96f833.jpg">
+           <noscript data-alt="Я пират!" data-class="article_pic" data-original="/upload/resize_cache/iblock/817/412_2150_1/817de3109c865fa1202306256e96f833.jpg">
+            <img alt="Я пират!" class="article_pic" height="538" src="/upload/resize_cache/iblock/817/412_2150_1/817de3109c865fa1202306256e96f833.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Я пират!
+         </div>
+        </div>
+        <p>
+         Домом для бернского зенненхунда может быть как поселковый коттедж, так и городская квартира. Особям, несущим охрану частного дома, целесообразнее соорудить жилье во дворе. Обычно в нем овчаркам отгораживают вольер, в котором устанавливается будка. Если питомец будет обитать в квартире, лучше всего выделить ему уголок на балконе (при условии, что он застеклен). Чтобы животное не мерзло в межсезонье, на балконе можно обустроить небольшую конуру.
+        </p>
+        <p>
+         В летнее время тоже необходимо следить за температурой на балконе: солнце сильно прогревает стенки жилья, что не лучшим образом сказывается на здоровье собаки. Тем, кто планирует содержать берна в квартире, есть смысл позаботиться о покупке манежа, в который можно посадить собаку, на случай собственного отсутствия. Ставить его лучше подальше от батарей и обогревательных приборов.
+        </p>
+        <p>
+         Выгуливать бернских овчарок полагается дважды в день, при этом желательно совмещать выгул с активными физическими нагрузками. Можно заставить собаку побегать или принять участие в какой-либо несложной игре, чтобы сжечь лишние калории и поднять мышечный тонус.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/3f3/3f3125be81a0f44e6a7e04208bc643a7.jpg" title="">
+          <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/3f3/412_2150_1/3f3125be81a0f44e6a7e04208bc643a7.jpg">
+           <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/3f3/412_2150_1/3f3125be81a0f44e6a7e04208bc643a7.jpg">
+            <img alt="Бернский зенненхунд" class="article_pic" height="615" src="/upload/resize_cache/iblock/3f3/412_2150_1/3f3125be81a0f44e6a7e04208bc643a7.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Поскольку линяют бернские зенненхунды интенсивно, расчесывать их необходимо каждый день. А вот купать собаку слишком часто не стоит. Банный день для представителей этой породы проводится не чаще одного раза в месяц, кроме тех случаев, когда ваш питомец умудрился основательно испачкаться во время прогулки. Голову во время мытья животного желательно вообще не мочить, чтобы избежать попадания воды в уши. Шампунь используется по мере необходимости и в очень ограниченном количестве, фен применяется только для сушки взрослых особей. После купания излишнюю влагу с шерсти удаляют полотенцем и следят, чтобы животное не сидело на сквозняке, пока не высохнет. После высыхания шерсть расчесывают.
+        </p>
+        <p>
+         Уши бернского зенненхунда необходимо осматривать раз в неделю. Если выгуливаете животное в лесополосе, то проверку лучше осуществлять после каждой прогулки. Загрязнения из ушной воронки удаляются посредством смоченного кипяченой водой ватного диска. Использовать ватные палочки не рекомендуется, во избежание повреждения органов слуха. Когти бернским зенненхундам полагается стричь раз в две недели. Удаление желтого налета с поверхности зубов производится специальной пастой, нанесенной на ватную палочку, 1-2 раза в неделю.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Двухмесячных щенков кормят до 5 раз в день, трехмесячных – 4 раза, семимесячных подростков переводят на трехразовое питание, а к году собака должна есть дважды в сутки. Животное, не достигшее двухмесячного возраста, должно ежедневно получать кисломолочные продукты вроде творога, простокваши или кефира. Молоко в чистом виде давать не разрешается. Мясо вводится в рацион зенненхундов постепенно, в сочетании с вареной крупой и овощами.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Омномном" data-fancybox="gallery" href="/upload/iblock/29f/29fd61cba9d963061989cf6e08b3683b.jpg" title="Омномном">
+          <div class="lazy-load" data-alt="Омномном" data-class="article_pic" data-original="/upload/resize_cache/iblock/29f/412_2150_1/29fd61cba9d963061989cf6e08b3683b.jpg">
+           <noscript data-alt="Омномном" data-class="article_pic" data-original="/upload/resize_cache/iblock/29f/412_2150_1/29fd61cba9d963061989cf6e08b3683b.jpg">
+            <img alt="Омномном" class="article_pic" height="275" src="/upload/resize_cache/iblock/29f/412_2150_1/29fd61cba9d963061989cf6e08b3683b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Омномном
+         </div>
+        </div>
+        <p>
+         В «меню» взрослой особи, находящейся на натуральном кормлении, должны обязательно входить постное мясо или субпродукты, филе морских рыб (замороженное), кисломолочные продукты. Вместе с мясом рекомендуется давать овощи (морковь, тыкву, брокколи), а на «десерт» питомца можно побаловать кусочком банана, яблока или груши. Количество крупяных изделий, потребляемых животным, должно составлять не менее 10% от общего рациона. Пару раз в неделю бернского зенненхунда можно угостить сырым желтком или сваренным вкрутую яйцом.
+        </p>
+        <p>
+         Хозяевам, предпочитающим потчевать своего питомца «сушкой», стоит озаботиться поиском корма пониженной жирности (не более 16%) и с содержанием белка от 18 до 26%. Старайтесь выбирать разновидности, в состав которых не входят соя, кукуруза и пшеница. Здоровое взрослое животное должно потреблять от 1800 до 3000 ккал в день, двухмесячный щенок – порядка 600 ккал, в то время как пожилой малоактивной собаке будет достаточно 1500 ккал.
+        </p>
+        <h3>
+         Туалет
+        </h3>
+        <p>
+         Чтобы приучить бернского зенненхунда к туалету, его обычно выгуливают после приема пищи. Если щенок не дождался прогулки и сделал лужу в квартире, ругать его бесполезно. А вот за терпение и отправление естественных потребностей в положенном месте поощрить стоит. В первые месяцы жизни щенка нужно чаще выводить на улицу, чтобы поймать тот момент, когда он захочет справить нужду. Взрослое животное, у которого навык уже сформирован, способно потерпеть. Что касается комнатного туалета, то для таких случаев обычно используются резиновые коврики, газеты или пеленки, помогающие сохранить чистоту пола.
+         <h2 id="gl6">
+          Здоровье и болезни бернского зенненхунда
+         </h2>
+         <div class="img-right">
+          <a class="fancybox" data-caption="Бернский зенненхунд с кошкой" data-fancybox="gallery" href="/upload/iblock/8f6/8f66712a8a261fba6e528176628813b1.jpg" title="Бернский зенненхунд с кошкой">
+           <div class="lazy-load" data-alt="Бернский зенненхунд с кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/8f6/412_2150_1/8f66712a8a261fba6e528176628813b1.jpg">
+            <noscript data-alt="Бернский зенненхунд с кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/8f6/412_2150_1/8f66712a8a261fba6e528176628813b1.jpg">
+             <img alt="Бернский зенненхунд с кошкой" class="article_pic" height="273" src="/upload/resize_cache/iblock/8f6/412_2150_1/8f66712a8a261fba6e528176628813b1.jpg" width="412"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бернский зенненхунд с кошкой
+          </div>
+         </div>
+         <p>
+          Бернские зенненхунды – собаки с хорошей наследственностью, но неизменная спутница «квартирных» собак – гиподинамия и постоянные стрессы могут серьезно подтачивать здоровье питомца. Средняя продолжительность жизни бернской овчарки – 8-10 лет. При отсутствии серьезных заболеваний и качественном уходе некоторые представители этой породы «дотягивают» до 13-го Дня рождения, что считается своеобразным рекордом.
+         </p>
+         <p>
+          Типичные заболевания бернских зенненхундов:
+         </p>
+         <ul>
+          <li>
+           дисплазия локтевых и тазобедренных суставов (не приговор и при грамотно подобранном лечении может не доставлять питомцу дискомфорта);
+          </li>
+          <li>
+           остеохондроз плеча;
+          </li>
+          <li>
+           проблемы с органами зрения (катаракта, энтропион, атрофия сетчатки);
+          </li>
+          <li>
+           алопеция (выпадение шерсти, облысение животного);
+          </li>
+          <li>
+           мокнущая экзема;
+          </li>
+          <li>
+           пупочная грыжа;
+          </li>
+          <li>
+           перегрев (тепловой удар).
+          </li>
+         </ul>
+         <p>
+          Как и представители многих других пород, берны подвержены онкологическим заболеваниям. Кроме того, у некоторых особей могут проявляться наследственные патологии почек.
+         </p>
+         <div class="img-w-center">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fc6/fc6b7e920d96f0449bf5171925dcc7bd.jpg" title="">
+           <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/iblock/fc6/fc6b7e920d96f0449bf5171925dcc7bd.jpg">
+            <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/iblock/fc6/fc6b7e920d96f0449bf5171925dcc7bd.jpg">
+             <img alt="Бернский зенненхунд" class="article_pic" src="/upload/iblock/fc6/fc6b7e920d96f0449bf5171925dcc7bd.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <h2 id="gl7">
+          Как выбрать щенка
+         </h2>
+         <p>
+          Брать щенков бернского зенненхунда на воспитание следует в возрасте от 2 до 6 месяцев. Кобели этой породы выглядят солиднее за счет своих внушительных габаритов, но сложнее поддаются обучению. Особи женского пола более покладистые и умные, но в период течки в них просыпается непреодолимая «тяга к путешествиям», что может стать серьезной проблемой для хозяина. Обязательно оцените обстановку в питомнике, заглянув в вольеры, где обитают животные, и тщательно изучив их стандартное меню. Знакомство с родительницей щенка, а также его ветеринарной картой тоже не будет лишним.
+         </p>
+         <p>
+          Наибольшим спросом пользуются резвые, игривые и любознательные щенки: такое поведение сигнализирует о том, что животное здорово и содержится в приемлемых условиях. В юном возрасте у бернов может наблюдаться видоизмененная структура шерстного покрова: он может быть излишне прямым или, наоборот, кудрявым, а также иметь сероватый подтон. Все эти особенности не считаются дефектами и с возрастом исчезают.
+         </p>
+         <h2>
+          Фото щенков бернского зенненхунда
+         </h2>
+         <div class="img-two">
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d94/d94fc761866088684b0ba27d6efffb43.jpg" title="">
+            <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/d94/380_264_2/d94fc761866088684b0ba27d6efffb43.jpg">
+             <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/d94/380_264_2/d94fc761866088684b0ba27d6efffb43.jpg">
+              <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/d94/380_264_2/d94fc761866088684b0ba27d6efffb43.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/12f/12f28d5238c60a0f60d01f76a74f45d3.jpg" title="">
+            <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/12f/380_264_2/12f28d5238c60a0f60d01f76a74f45d3.jpg">
+             <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/12f/380_264_2/12f28d5238c60a0f60d01f76a74f45d3.jpg">
+              <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/12f/380_264_2/12f28d5238c60a0f60d01f76a74f45d3.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/30b/30be6faa3b7bd9e167462a4afb8d59d1.jpg" title="">
+            <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/30b/380_264_2/30be6faa3b7bd9e167462a4afb8d59d1.jpg">
+             <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/30b/380_264_2/30be6faa3b7bd9e167462a4afb8d59d1.jpg">
+              <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/30b/380_264_2/30be6faa3b7bd9e167462a4afb8d59d1.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+         </div>
+         <div class="img-two">
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/edb/edb59d2169d130823d2acea00c2cb9e5.jpg" title="">
+            <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/edb/380_264_2/edb59d2169d130823d2acea00c2cb9e5.jpg">
+             <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/edb/380_264_2/edb59d2169d130823d2acea00c2cb9e5.jpg">
+              <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/edb/380_264_2/edb59d2169d130823d2acea00c2cb9e5.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a47/a4721c0fe78308c594a3f3e590e4047d.jpg" title="">
+            <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/a47/380_264_2/a4721c0fe78308c594a3f3e590e4047d.jpg">
+             <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/a47/380_264_2/a4721c0fe78308c594a3f3e590e4047d.jpg">
+              <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/a47/380_264_2/a4721c0fe78308c594a3f3e590e4047d.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d2e/d2ef26ba59ccac9f94abc4b9468766b7.jpg" title="">
+            <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/d2e/380_264_2/d2ef26ba59ccac9f94abc4b9468766b7.jpg">
+             <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/d2e/380_264_2/d2ef26ba59ccac9f94abc4b9468766b7.jpg">
+              <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/d2e/380_264_2/d2ef26ba59ccac9f94abc4b9468766b7.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+         </div>
+         <div class="img-two">
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5f4/5f49f04dc1f440fe0b1563d26f2ef2d5.jpg" title="">
+            <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/5f4/380_264_2/5f49f04dc1f440fe0b1563d26f2ef2d5.jpg">
+             <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/5f4/380_264_2/5f49f04dc1f440fe0b1563d26f2ef2d5.jpg">
+              <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/5f4/380_264_2/5f49f04dc1f440fe0b1563d26f2ef2d5.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5db/5dbf928dfc3a1e6f1377f0c9491ef9cc.jpg" title="">
+            <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/5db/380_264_2/5dbf928dfc3a1e6f1377f0c9491ef9cc.jpg">
+             <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/5db/380_264_2/5dbf928dfc3a1e6f1377f0c9491ef9cc.jpg">
+              <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/5db/380_264_2/5dbf928dfc3a1e6f1377f0c9491ef9cc.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/bdb/bdbccc560f03321bab198ebd8fc6a020.jpg" title="">
+            <div class="lazy-load" data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/bdb/380_264_2/bdbccc560f03321bab198ebd8fc6a020.jpg">
+             <noscript data-alt="Бернский зенненхунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/bdb/380_264_2/bdbccc560f03321bab198ebd8fc6a020.jpg">
+              <img alt="Бернский зенненхунд" class="article_pic" src="/upload/resize_cache/iblock/bdb/380_264_2/bdbccc560f03321bab198ebd8fc6a020.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+         </div>
+         <h2 id="gl8">
+          Сколько стоит бернский зенненхунд
+         </h2>
+         <p>
+          Стоимость щенка бернского зенненхунда в питомниках составляет порядка 80 000 – 120 000 руб. Многое зависит от качества щенка и его происхождения, рекомендуется отталкиваться от отметки в 100 000 руб. Собаки, рожденные от чемпионов, могут стоить дороже. Самый экономичный и рискованный вариант – покупка бернов «с рук». В таких случаях щенка можно заполучить за меньшие деньги, но его чистопородность и здоровье будут под большим вопросом.
+         </p>
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения бернского зенненхунда на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27841/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Анастасия Логинова" data-original="/upload/resize_cache/main/758/200_200_2/22nvp4c9pkx1drnk0eygc6aune4ako22.jpg">
+            <noscript data-alt="Анастасия Логинова" data-original="/upload/resize_cache/main/758/200_200_2/22nvp4c9pkx1drnk0eygc6aune4ako22.jpg">
+             <img alt="Анастасия Логинова" src="/upload/resize_cache/main/758/200_200_2/22nvp4c9pkx1drnk0eygc6aune4ako22.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/okras-dopustimyy-5542/">
+           Окрас допустимый
+          </a>
+         </div>
+         <div class="forum-text">
+          Всем добрый день)) скажите пожалуйста хочу взять щенка этой прекрасно породы ,нашли один вариант. Скажите допускается ли такой раскрас
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27841/">
+            Анастасия Логинова
+           </a>
+          </span>
+          <span class="vopros-date">
+           Месяц назад
+          </span>
+          <span class="vopros-smotr">
+           149 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27812/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Владимир Батманов" data-original="/upload/resize_cache/main/89e/200_200_2/u79p2w2xc23m323vjgyvykcc34x7ht5r.jpg">
+            <noscript data-alt="Владимир Батманов" data-original="/upload/resize_cache/main/89e/200_200_2/u79p2w2xc23m323vjgyvykcc34x7ht5r.jpg">
+             <img alt="Владимир Батманов" src="/upload/resize_cache/main/89e/200_200_2/u79p2w2xc23m323vjgyvykcc34x7ht5r.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/kak-i-skolko-bern-lyubit-tyagat-sanki-5533/">
+           Как и сколько Берн любит тягать санки?
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте! На стадии выбора породы  интересует информация по оптимальной нагрузке взрослой собаки в тяге саней или лыжника в походе. Комфортный километраж, темп, вес. Спорт, как таковой, не интересует, ходим...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27812/">
+            Владимир Батманов
+           </a>
+          </span>
+          <span class="vopros-date">
+           Месяц назад
+          </span>
+          <span class="vopros-smotr">
+           118 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/5588/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Алина  Малышева" data-original="/upload/resize_cache/main/241/200_200_2/0iq272gn80f3vm6ti6kaaqt38hhs03ld.jpg">
+            <noscript data-alt="Алина  Малышева" data-original="/upload/resize_cache/main/241/200_200_2/0iq272gn80f3vm6ti6kaaqt38hhs03ld.jpg">
+             <img alt="Алина  Малышева" src="/upload/resize_cache/main/241/200_200_2/0iq272gn80f3vm6ti6kaaqt38hhs03ld.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/mozhno-li-razvodit-zennenkhundov-s-brakom-4812/">
+           Можно ли разводить зенненхундов с браком?
+          </a>
+         </div>
+         <div class="forum-text">
+          У меня берн с браком по окрасу, одна щека рыжая, а другая нет. И некоторые говорят что таких собак можно разводить, а некоторые говорят что нельзя. Так можно или нет?
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/5588/">
+            Алина  Малышева
+           </a>
+          </span>
+          <span class="vopros-date">
+           9 месяцев назад
+          </span>
+          <span class="vopros-smotr">
+           186 просмотров
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/24976/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="HyggeGirl (Настя)" data-original="/upload/resize_cache/main/ab4/200_200_2/c25pzooqsymg056xkhlb541ui521paxr.jpg">
+            <noscript data-alt="HyggeGirl (Настя)" data-original="/upload/resize_cache/main/ab4/200_200_2/c25pzooqsymg056xkhlb541ui521paxr.jpg">
+             <img alt="HyggeGirl (Настя)" src="/upload/resize_cache/main/ab4/200_200_2/c25pzooqsymg056xkhlb541ui521paxr.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/kak-otuchit-shchenka-kusatsya-taskat-za-perchatkisharf-i-naprygivat-4367/">
+           Как отучить щенка кусаться, таскать за перчатки/шарф и напрыгивать?
+          </a>
+         </div>
+         <div class="forum-text">
+          Щенку 7 месяцев, мы занимаемся по 10-20 мин в день. Всегда когда напрыгивает, кусается и хватает одежду я говорю Фу. Но все равно не помогает. Теперь он кусает больнее и может повалить... Он совсем не агрессивный...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/24976/">
+            HyggeGirl (Настя)
+           </a>
+          </span>
+          <span class="vopros-date">
+           Год назад
+          </span>
+          <span class="vopros-smotr">
+           821 просмотр
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/bernskiy-zennenkhund/forum/">
+        Перейти на
+        форум бернского зенненхунда
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Бернский зенненхунд" src="/upload/iblock/d6f/d6fa2b8515196659e82bd805a98aaa97.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/bernskiy-zennenkhund/">
+          Бернский зенненхунд
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/bernskiy-zennenkhund/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/bernskiy-zennenkhund/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/bernskiy-zennenkhund/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/bernskiy-zennenkhund/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/bernskiy-zennenkhund/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/bernskiy-zennenkhund/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/angliyskiy-setter/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Английский сеттер" data-original="/upload/resize_cache/iblock/bfb/100_100_1/bfb0ef31133662f4b0def167b5b75477.jpg">
+          <noscript data-alt="Английский сеттер" data-original="/upload/resize_cache/iblock/bfb/100_100_1/bfb0ef31133662f4b0def167b5b75477.jpg">
+           <img alt="Английский сеттер" src="/upload/resize_cache/iblock/bfb/100_100_1/bfb0ef31133662f4b0def167b5b75477.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Английский сеттер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/chikhuakhua/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Чихуахуа" data-original="/upload/resize_cache/iblock/49c/100_100_1/49cd241c27d90c0ce9bd82c950cd4a76.jpg">
+          <noscript data-alt="Чихуахуа" data-original="/upload/resize_cache/iblock/49c/100_100_1/49cd241c27d90c0ce9bd82c950cd4a76.jpg">
+           <img alt="Чихуахуа" src="/upload/resize_cache/iblock/49c/100_100_1/49cd241c27d90c0ce9bd82c950cd4a76.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Чихуахуа
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/russkaya-tsvetnaya-bolonka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Русская цветная болонка" data-original="/upload/resize_cache/iblock/023/100_100_1/023bc24c757bdb03bf6d0dd6d04651b9.jpg">
+          <noscript data-alt="Русская цветная болонка" data-original="/upload/resize_cache/iblock/023/100_100_1/023bc24c757bdb03bf6d0dd6d04651b9.jpg">
+           <img alt="Русская цветная болонка" src="/upload/resize_cache/iblock/023/100_100_1/023bc24c757bdb03bf6d0dd6d04651b9.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Русская цветная болонка
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/norvezhskiy-lundekhund/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Норвежский лундехунд" data-original="/upload/resize_cache/iblock/ffe/100_100_1/qcsyc9hyxfg9o8nlqux3o8qv7ixsktsz.jpg">
+          <noscript data-alt="Норвежский лундехунд" data-original="/upload/resize_cache/iblock/ffe/100_100_1/qcsyc9hyxfg9o8nlqux3o8qv7ixsktsz.jpg">
+           <img alt="Норвежский лундехунд" src="/upload/resize_cache/iblock/ffe/100_100_1/qcsyc9hyxfg9o8nlqux3o8qv7ixsktsz.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Норвежский лундехунд
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbernskiy-zennenkhund%252F%253Fcheck_key%253D0e4a87f85357f06a98f55d5250b6b480%2526ANIMAL_CODE%253Dbernskiy-zennenkhund%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbernskiy-zennenkhund%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmJlcm5za2l5LXplbm5lbmtodW5kJTJGJTNGY2hlY2tfa2V5JTNEMGU0YTg3Zjg1MzU3ZjA2YTk4ZjU1ZDUyNTBiNmI0ODAlMjZBTklNQUxfQ09ERSUzRGJlcm5za2l5LXplbm5lbmtodW5kJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmJlcm5za2l5LXplbm5lbmtodW5kJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbernskiy-zennenkhund%252F%253Fcheck_key%253D0e4a87f85357f06a98f55d5250b6b480%2526ANIMAL_CODE%253Dbernskiy-zennenkhund%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fbernskiy-zennenkhund%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbernskiy-zennenkhund%252F%253Fcheck_key%253D0e4a87f85357f06a98f55d5250b6b480%2526ANIMAL_CODE%253Dbernskiy-zennenkhund%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbernskiy-zennenkhund%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "185.24.54.250"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--7120abbad7b2dc7e39e420aab408284c-->

@@ -1,0 +1,1845 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'dd7080a2d762'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Бордер-колли, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Бордер-колли – самая умная порода в мире, используется как компаньон или рабочая собака. С большим желанием «пасет» все живое, даже человека, если рядом нет овец или коров." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/bc6/bc644f96624a02bed8069cd35a689121.jpg" property="og:image"/>
+     <title>
+      Бордер-колли: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/border-kolli/" property="og:url"/>
+     <meta content="Бордер-колли: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Бордер-колли – самая умная порода в мире, используется как компаньон или рабочая собака. С большим желанием «пасет» все живое, даже человека, если рядом нет овец или коров." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/border-kolli/" itemprop="url">
+         <span itemprop="title">
+          Бордер-колли
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Бордер-колли
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/border-kolli/">
+          Описание
+         </a>
+         <a href="/dog/border-kolli/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/border-kolli/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/border-kolli/photo/">
+          Фото
+         </a>
+         <a href="/dog/border-kolli/video/">
+          Видео
+         </a>
+         <a href="/dog/border-kolli/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/border-kolli/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Бордер-колли" src="/upload/iblock/cb4/cb4b0e1ebffea8d8840c5d68529df853.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Бордер-колли – самая умная порода в мире, используется как компаньон или рабочая собака. С большим желанием «пасет» все живое, даже человека, если рядом нет овец или коров.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/7dc/7dc9a9ade599126a3d4f0c7dadc86f7c.jpg" data-cap="My Brown Beauty" data-fancybox="images" data-link="https://www.flickr.com/photos/135003743@N07/34409804310/" data-type="image" data-username="Virginie Soyez" href="/upload/uf/2be/2be5ac7300b2329b0314f48bf5e318b0.jpg">
+            <img alt="Бордер-колли" src="/upload/resize_cache/uf/2be/293_293_2/2be5ac7300b2329b0314f48bf5e318b0.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/c43/c4302fc43e5da917c9eb59136aa2bff3.jpg" data-cap="Plume" data-fancybox="images" data-link="https://www.flickr.com/photos/yume-design/39508643314/" data-type="image" data-username="Laetitia Boiron" href="/upload/uf/4d8/4d83bfad9b07eed5516b42f8eeb69913.jpg">
+            <img alt="Бордер-колли" src="/upload/resize_cache/uf/4d8/293_293_2/4d83bfad9b07eed5516b42f8eeb69913.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/a5a/a5a95d85b53641050d01bd6095788ab0.jpg" data-cap="Lord of the Hills" data-fancybox="images" data-link="https://www.flickr.com/photos/ssoell/12882844585/" data-type="image" data-username="Sven" href="/upload/uf/569/56986196234d3fc726e5ea47e7516234.jpg">
+            <img alt="Бордер-колли" src="/upload/resize_cache/uf/569/293_293_2/56986196234d3fc726e5ea47e7516234.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/border-kolli/photo/">
+         Все
+            фото бордер-колли
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы бордер-колли
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность бордер-колли
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер бордер-колли
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни бордер-колли
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Сколько стоит бордер-колли
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Бордер-колли
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         1570 год
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 14-20 кг, суки 12-18 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 48-56 см, суки 46-53 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         12-15 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         По результатам исследований Университета Британской Колумбии признаны самой умной породой собак.
+        </li>
+        <li>
+         Бордер-колли обожают пасти всех и вся, начиная от домашней птицы и заканчивая людьми.
+        </li>
+        <li>
+         Часто привлекаются к участию в спасательных и розыскных работах. Кроме того, из них получаются дисциплинированные поводыри.
+        </li>
+        <li>
+         Плохо чувствуют себя в квартирах и тесных помещениях.
+        </li>
+        <li>
+         Не будут воевать с другими домашними питомцами, но в отношениях с более мелкими животными предпочтут роль авторитетного покровителя, требующего беспрекословного подчинения.
+        </li>
+        <li>
+         Бордер-колли не рождаются компаньонами, но вполне способны ими стать после полноценного курса тренировок.
+        </li>
+        <li>
+         Молниеносно усваивают и охотно исполняют самые сложные команды.
+        </li>
+        <li>
+         Крайне свободолюбивы. Вольер и цепь не для них.
+        </li>
+        <li>
+         Не имеют себе равных в соревновательных видах спорта, в частности, в аджилити.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Бордер-колли" data-original="/upload/iblock/bc6/bc644f96624a02bed8069cd35a689121.jpg">
+          <noscript data-alt="Бордер-колли" data-original="/upload/iblock/bc6/bc644f96624a02bed8069cd35a689121.jpg">
+           <img alt="Бордер-колли" src="/upload/iblock/bc6/bc644f96624a02bed8069cd35a689121.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Бордер-колли
+          </strong>
+          – преданные умницы и невероятные трудоголики, открыто презирающие пассивный образ жизни и приходящие в неописуемый восторг от любой деятельности, сопряженной с повышенной физической активностью и энергозатратами. Предки современных бордеров были отличными пастухами, поэтому страсть к упорядоченности у этих лохматых «управленцев» в крови. Если поблизости нет овечьей отары, бордер-колли будет пасти любую другую живность, и отвлечь от этого занятия его сможет разве что увлекательная игра. Представители этой породы – верные друзья, способные ученики и непревзойденные интеллектуалы. Однако, чтобы животное имело возможность раскрыть свой потенциал, от владельца потребуется максимум старания: бордер-колли не из тех собак, которые довольствуются мягкой лежанкой и горой корма в миске.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Бордер-колли основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/border-kolli/razmeri-porodi/">
+         размеры бордер-колли
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы бордер-колли
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок бордер-колли" data-fancybox="gallery" href="/upload/iblock/e32/e322e61b667dd5e90e29620d7c8d7e5e.jpg" title="Щенок бордер-колли">
+          <div class="lazy-load" data-alt="Щенок бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/e32/412_2150_1/e322e61b667dd5e90e29620d7c8d7e5e.jpg">
+           <noscript data-alt="Щенок бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/e32/412_2150_1/e322e61b667dd5e90e29620d7c8d7e5e.jpg">
+            <img alt="Щенок бордер-колли" class="article_pic" height="622" src="/upload/resize_cache/iblock/e32/412_2150_1/e322e61b667dd5e90e29620d7c8d7e5e.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок бордер-колли
+         </div>
+        </div>
+        <p>
+         Ближайшими предками сегодняшних бордер-колли были овчарки английских крестьян, живших на границе с Шотландией. Отсюда и название породы – пограничные колли (от англ. «boarder» – «пограничный»). Эти непривередливые и резвые собаки пасли отары овец, сторожили усадьбы и не доставали своих флегматичных хозяев громким лаем. При этом «фермерские колли» не котировались у британской знати и в течение длительного времени оставались типичными сельскими собаками.
+        </p>
+        <p>
+         Вывести породу из тени помогла случайная встреча ее представителей с королевой Великобритании, Викторией. В 1860 году английские овчарки приняли участие в одной из первых собачьих выставок, после которой были представлены к королевскому двору. «Бабушке Европы» пришлись по душе умные и преданные животные, поэтому в скором времени в Букингемском дворце поселилось несколько представителей этой славной породы. За всю эпоху правления Виктории в ее покоях обитало множество бордер-колли, однако главным фаворитом королевы оставался пес по кличке Шарп, удостоенный после смерти внушительного памятного мемориала в Виндзоре.
+        </p>
+        <p>
+         Официально зарегистрировать породу бордер-колли удалось только в 1915 году, хотя стандарт внешности для ее представителей оставался несформированным еще в течение долгих 60 лет.
+        </p>
+        <p>
+         Самым известным прародителем современных бордеров считается овчарка Олд Хемп, появившаяся на свет в 1893 году в графстве Нортумберленд. Крепкий трехцветный красавец отличался выдающимся интеллектом и примерным поведением, за что и был отобран в качестве производителя для последующей вязки. Именно внуки и правнуки старины Хэмпа достигли первых успехов на выставках, став призерами международных и европейских чемпионатов. Еще одним знаменитым представителем породы является пес Уинстон, признанный официальным символом клуба любителей бордеров. По утверждениям бридеров, все современные особи носят в себе именно уинстонские гены.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/107/107d0b5eb8f7756b498b06324e8cb54d.jpg" title="">
+          <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/iblock/107/107d0b5eb8f7756b498b06324e8cb54d.jpg">
+           <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/iblock/107/107d0b5eb8f7756b498b06324e8cb54d.jpg">
+            <img alt="Бордер-колли" class="article_pic" src="/upload/iblock/107/107d0b5eb8f7756b498b06324e8cb54d.jpg"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/0de/0def86edcfae1f2c614871974da42d0b.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/0de/512_342_2/0def86edcfae1f2c614871974da42d0b.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/0de/512_342_2/0def86edcfae1f2c614871974da42d0b.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/0de/512_342_2/0def86edcfae1f2c614871974da42d0b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b70/b70ea8cc1ce0ba5b6c3ca05ea4bdbf68.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/b70/512_342_2/b70ea8cc1ce0ba5b6c3ca05ea4bdbf68.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/b70/512_342_2/b70ea8cc1ce0ba5b6c3ca05ea4bdbf68.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/b70/512_342_2/b70ea8cc1ce0ba5b6c3ca05ea4bdbf68.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2>
+         Видео: Бордер-колли
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="9G7cuaGqMpE">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность бордер-колли
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бордер-колли любят обниматься" data-fancybox="gallery" href="/upload/iblock/4d8/4d8dc76ea6c15340137d54b1020637c6.jpg" title="Бордер-колли любят обниматься">
+          <div class="lazy-load" data-alt="Бордер-колли любят обниматься" data-class="article_pic" data-original="/upload/resize_cache/iblock/4d8/412_2150_1/4d8dc76ea6c15340137d54b1020637c6.jpg">
+           <noscript data-alt="Бордер-колли любят обниматься" data-class="article_pic" data-original="/upload/resize_cache/iblock/4d8/412_2150_1/4d8dc76ea6c15340137d54b1020637c6.jpg">
+            <img alt="Бордер-колли любят обниматься" class="article_pic" height="464" src="/upload/resize_cache/iblock/4d8/412_2150_1/4d8dc76ea6c15340137d54b1020637c6.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бордер-колли любят обниматься
+         </div>
+        </div>
+        <p>
+         Бордер-колли далеко до титула гламурного красавчика. Скромный пятнистый или мраморный окрас, среднестатистические габариты, легкая лохматость шерстного покрова по сей день выдают в них типичных «селян», чье основное призвание – бегать по вересковым пустошам, отгонять от жилья непрошеных гостей и гуртовать овец. Но недостаток внешнего лоска с лихвой окупается удивительным обаянием и интеллектуальными задатками животного. Как утверждают заводчики этих обаятельных скромняг, недюжинный ум бордер-колли читается в их глазах.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Широкий череп со сглаженной затылочной частью. Скулы нормальные, без округлостей, не плоские. Щеки средние, без излишней мясистости. Морда средней ширины, немного сужающаяся по направлению к носу. Переход от носа к лобной части выражен отчетливо. Длина морды приблизительно равна длине черепа.
+        </p>
+        <h3>
+         Челюсти
+        </h3>
+        <p>
+         Челюсти у бордер-колли сильные, крепкие, с правильным ножницеобразным прикусом (верхние клыки прикрывают нижние). Зубы белые, располагаются ровно.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Овальные, средней величины. Расстояние между глазами широкое. Оттенок радужки коричневый, но для бордер-колли с мраморным окрасом шерсти допускаются голубые глаза. Взгляд мудрый, испытующий.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Треугольные, среднего размера, умеренной толщины. Расставлены широко. Допустимы как стоячий, так и полустоячий поставы.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда бордер-колли" data-fancybox="gallery" href="/upload/iblock/116/116aa296311964b6878c4c208f3b6c27.jpg" title="Морда бордер-колли">
+          <div class="lazy-load" data-alt="Морда бордер-колли" data-class="article_pic" data-original="/upload/iblock/116/116aa296311964b6878c4c208f3b6c27.jpg">
+           <noscript data-alt="Морда бордер-колли" data-class="article_pic" data-original="/upload/iblock/116/116aa296311964b6878c4c208f3b6c27.jpg">
+            <img alt="Морда бордер-колли" class="article_pic" src="/upload/iblock/116/116aa296311964b6878c4c208f3b6c27.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда бордер-колли
+         </div>
+        </div>
+        <h3>
+         Нос и губы
+        </h3>
+        <p>
+         Губы бордер-колли сухие. Мочка носа черная, сланцевая (при голубом окрасе) или коричневая, если особь имеет шоколадный окрас шерсти. Нос средней величины, ноздри крупные.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Затаившийся красавчик" data-fancybox="gallery" href="/upload/iblock/8e2/8e288e92de2a6e9afd2c54d989dbd75f.jpg" title="Затаившийся красавчик">
+          <div class="lazy-load" data-alt="Затаившийся красавчик" data-class="article_pic" data-original="/upload/resize_cache/iblock/8e2/412_2150_1/8e288e92de2a6e9afd2c54d989dbd75f.jpg">
+           <noscript data-alt="Затаившийся красавчик" data-class="article_pic" data-original="/upload/resize_cache/iblock/8e2/412_2150_1/8e288e92de2a6e9afd2c54d989dbd75f.jpg">
+            <img alt="Затаившийся красавчик" class="article_pic" height="423" src="/upload/resize_cache/iblock/8e2/412_2150_1/8e288e92de2a6e9afd2c54d989dbd75f.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Затаившийся красавчик
+         </div>
+        </div>
+        <p>
+         Вытянутая, с превосходно развитой мускулатурой, сильная. Присутствует небольшой изгиб.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Широкая и глубокая грудная клетка. Для верхней линии спины характерен легкий уклон в направлении хвоста. Поясница мускулистая, паховая линия не подтянута. Ребра пружинистые, округлой формы. Круповая часть средней ширины, удлиненная и немного покатая.
+        </p>
+        <h3>
+         Ноги
+        </h3>
+        <p>
+         Передние конечности бордер-колли поставлены параллельно. Локти прижаты к грудине, лопатки отклонены назад, но между собой не смыкаются. Задние ноги с достаточной мускулатурой, широкие, у основания хвоста имеют скошенную линию. Скакательные суставы расположены низко и чуть отклонены назад. Лапы в форме правильного овала с массивными черными подушечками и собирающимися в «комок» пальцами. Когти лап короткие и толстые.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвост у бордер-колли саблевидный, средней длины, достигающий скакательных суставов. Пушистый, ближе к кончику изгибается некрутым завитком. У эмоционально возбужденной особи часто поднимается до уровня верхней линии спины.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бордер-колли черного окраса с белыми пятнами" data-fancybox="gallery" href="/upload/iblock/b26/b26fa6544f449165852cabd48d7b691b.jpg" title="Бордер-колли черного окраса с белыми пятнами">
+           <div class="lazy-load" data-alt="Бордер-колли черного окраса с белыми пятнами" data-class="article_pic" data-original="/upload/resize_cache/iblock/b26/512_342_2/b26fa6544f449165852cabd48d7b691b.jpg">
+            <noscript data-alt="Бордер-колли черного окраса с белыми пятнами" data-class="article_pic" data-original="/upload/resize_cache/iblock/b26/512_342_2/b26fa6544f449165852cabd48d7b691b.jpg">
+             <img alt="Бордер-колли черного окраса с белыми пятнами" class="article_pic" src="/upload/resize_cache/iblock/b26/512_342_2/b26fa6544f449165852cabd48d7b691b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бордер-колли черного окраса с белыми пятнами
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бордер-колли мраморного окраса" data-fancybox="gallery" href="/upload/iblock/637/637ba02c6eda7745b83e2ba324aa19ad.jpg" title="Бордер-колли мраморного окраса">
+           <div class="lazy-load" data-alt="Бордер-колли мраморного окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/637/512_342_2/637ba02c6eda7745b83e2ba324aa19ad.jpg">
+            <noscript data-alt="Бордер-колли мраморного окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/637/512_342_2/637ba02c6eda7745b83e2ba324aa19ad.jpg">
+             <img alt="Бордер-колли мраморного окраса" class="article_pic" src="/upload/resize_cache/iblock/637/512_342_2/637ba02c6eda7745b83e2ba324aa19ad.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бордер-колли мраморного окраса
+          </div>
+         </div>
+        </div>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Бордер-колли могут быть как гладкошерстными, так и умеренно длинношерстными. Представители обеих разновидностей имеют пружинящий мягкий подшерсток, выполняющий согревающую и водоотталкивающую функции. В отличие от гладкошерстных, длинношерстные особи могут похвастаться наличием пышного шейного «воротника» и пушистых «штанишек». У некоторых собак на задней поверхности передних ног могут присутствовать так называемые «перья» или «очесы». При этом морда, уши и фронтальная часть передних конечностей должны иметь гладкую и короткую шерсть.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бордер-колли коричневого и карамельного цвета (тан)" data-fancybox="gallery" href="/upload/iblock/549/5496273c25c1a4eef741e12eef8b997f.jpg" title="Бордер-колли коричневого и карамельного цвета (тан)">
+           <div class="lazy-load" data-alt="Бордер-колли коричневого и карамельного цвета (тан)" data-class="article_pic" data-original="/upload/resize_cache/iblock/549/512_342_2/5496273c25c1a4eef741e12eef8b997f.jpg">
+            <noscript data-alt="Бордер-колли коричневого и карамельного цвета (тан)" data-class="article_pic" data-original="/upload/resize_cache/iblock/549/512_342_2/5496273c25c1a4eef741e12eef8b997f.jpg">
+             <img alt="Бордер-колли коричневого и карамельного цвета (тан)" class="article_pic" src="/upload/resize_cache/iblock/549/512_342_2/5496273c25c1a4eef741e12eef8b997f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бордер-колли коричневого и карамельного цвета (тан)
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бордер-колли белого цвета" data-fancybox="gallery" href="/upload/iblock/759/7593a9ec333883209bdd13b9f04d44a8.jpg" title="Бордер-колли белого цвета">
+           <div class="lazy-load" data-alt="Бордер-колли белого цвета" data-class="article_pic" data-original="/upload/resize_cache/iblock/759/512_342_2/7593a9ec333883209bdd13b9f04d44a8.jpg">
+            <noscript data-alt="Бордер-колли белого цвета" data-class="article_pic" data-original="/upload/resize_cache/iblock/759/512_342_2/7593a9ec333883209bdd13b9f04d44a8.jpg">
+             <img alt="Бордер-колли белого цвета" class="article_pic" src="/upload/resize_cache/iblock/759/512_342_2/7593a9ec333883209bdd13b9f04d44a8.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бордер-колли белого цвета
+          </div>
+         </div>
+        </div>
+        <h3>
+         Окрас
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Таблица цветов бордер-колли" data-fancybox="gallery" href="/upload/iblock/165/1653883abce44807a30da0361ad0bd82.png" title="Таблица цветов бордер-колли">
+          <div class="lazy-load" data-alt="Таблица цветов бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/165/412_2150_1/1653883abce44807a30da0361ad0bd82.png">
+           <noscript data-alt="Таблица цветов бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/165/412_2150_1/1653883abce44807a30da0361ad0bd82.png">
+            <img alt="Таблица цветов бордер-колли" class="article_pic" height="294" src="/upload/resize_cache/iblock/165/412_2150_1/1653883abce44807a30da0361ad0bd82.png" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Таблица цветов бордер-колли
+         </div>
+        </div>
+        <p>
+         На сегодняшний день ограничений по типам окрасов бордер-колли не предусмотрено. Однако приоритетными все же считаются черный с белыми пятнами или подпалинами, шоколадный со светлыми подпалами и белыми отметинами и мерль (голубой или мраморный). Белые отметины обычно располагаются на лбу, груди, лапах и хвосте и могут иметь краповый окрас.
+        </p>
+        <p class="legenda">
+         Важно: животные, у которых белый окрас является доминирующим, к участию в выставках не допускаются.
+        </p>
+        <h3>
+         Габариты
+        </h3>
+        <p>
+         Средний вес взрослой особи не превышает 15-20 кг. Суки немного мельче кобелей, стандартный рост собаки женского пола – 47-52 см, пса – 50-53 см.
+        </p>
+        <h3>
+         Дефекты внешности и дисквалифицирующие пороки бордер-колли
+        </h3>
+        <p>
+         В отношении лохматых выходцев с английских ферм действуют максимально лояльные критерии отбора. Получить запрет на участие в выставочных и соревновательных мероприятиях может только агрессивная или трусливая собака с неадекватной реакцией на обращенную к ней речь и не соответствующая стандарту FCI. Все остальные недостатки бордерам снисходительно прощаются.
+        </p>
+        <h2>
+         Фото взрослого бордер-колли
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/478/47870fa37825a1240631220ed86202a0.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/478/380_264_2/47870fa37825a1240631220ed86202a0.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/478/380_264_2/47870fa37825a1240631220ed86202a0.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/478/380_264_2/47870fa37825a1240631220ed86202a0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4dc/4dc9bcbcb366317bc14d11efaa5891ed.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/4dc/380_264_2/4dc9bcbcb366317bc14d11efaa5891ed.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/4dc/380_264_2/4dc9bcbcb366317bc14d11efaa5891ed.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/4dc/380_264_2/4dc9bcbcb366317bc14d11efaa5891ed.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5e7/5e7b73a11c4269fa9b13c9ac328e25d0.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/5e7/380_264_2/5e7b73a11c4269fa9b13c9ac328e25d0.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/5e7/380_264_2/5e7b73a11c4269fa9b13c9ac328e25d0.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/5e7/380_264_2/5e7b73a11c4269fa9b13c9ac328e25d0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/600/6004ab977a8c455f39191f8861835b83.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/600/380_264_2/6004ab977a8c455f39191f8861835b83.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/600/380_264_2/6004ab977a8c455f39191f8861835b83.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/600/380_264_2/6004ab977a8c455f39191f8861835b83.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/cfa/cfad84954dec5c53bde8e003cbe90f11.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/cfa/380_264_2/cfad84954dec5c53bde8e003cbe90f11.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/cfa/380_264_2/cfad84954dec5c53bde8e003cbe90f11.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/cfa/380_264_2/cfad84954dec5c53bde8e003cbe90f11.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/68c/68c74e68d320a90c5d32a1047631d024.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/68c/380_264_2/68c74e68d320a90c5d32a1047631d024.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/68c/380_264_2/68c74e68d320a90c5d32a1047631d024.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/68c/380_264_2/68c74e68d320a90c5d32a1047631d024.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/cc6/cc688919b64d802a4570add056b58e35.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/cc6/380_264_2/cc688919b64d802a4570add056b58e35.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/cc6/380_264_2/cc688919b64d802a4570add056b58e35.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/cc6/380_264_2/cc688919b64d802a4570add056b58e35.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/cc1/cc144789ba6703480142dd95879973e2.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/cc1/380_264_2/cc144789ba6703480142dd95879973e2.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/cc1/380_264_2/cc144789ba6703480142dd95879973e2.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/cc1/380_264_2/cc144789ba6703480142dd95879973e2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d66/d6652a02fa6e6c6db7a661881294ab3b.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/d66/380_264_2/d6652a02fa6e6c6db7a661881294ab3b.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/d66/380_264_2/d6652a02fa6e6c6db7a661881294ab3b.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/d66/380_264_2/d6652a02fa6e6c6db7a661881294ab3b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер бордер-колли
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Хозяин, я так тебя люблю ❤" data-fancybox="gallery" href="/upload/iblock/3b5/3b5feab9341652a0a8311a24ed2afd5a.jpg" title="Хозяин, я так тебя люблю ❤">
+          <div class="lazy-load" data-alt="Хозяин, я так тебя люблю ❤" data-class="article_pic" data-original="/upload/resize_cache/iblock/3b5/412_2150_1/3b5feab9341652a0a8311a24ed2afd5a.jpg">
+           <noscript data-alt="Хозяин, я так тебя люблю ❤" data-class="article_pic" data-original="/upload/resize_cache/iblock/3b5/412_2150_1/3b5feab9341652a0a8311a24ed2afd5a.jpg">
+            <img alt="Хозяин, я так тебя люблю ❤" class="article_pic" height="308" src="/upload/resize_cache/iblock/3b5/412_2150_1/3b5feab9341652a0a8311a24ed2afd5a.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Хозяин, я так тебя люблю ❤
+         </div>
+        </div>
+        <p>
+         Бордер-колли – наблюдательные добродушные трудяги с чрезвычайно миролюбивым характером. Бесцельному лежанию на коврике английские овчарки всегда предпочтут выполнение какого-нибудь ответственного поручения или интенсивную тренировку на свежем воздухе. Работа для этих собак не рутина, а смысл жизни, поэтому не стоит пытаться переделать энергичного бордера в «диванного горожанина».
+        </p>
+        <p>
+         Бордер-колли не считаются агрессивными собаками, но определенное недоверие к незнакомцам животные все же испытывают. А вот детей эти скромные интеллектуалы любят вполне искренне. Еще бы, ведь их можно «пасти» сутки напролет, неустанно загоняя отбившихся от «стада» индивидов в безопасную зону и не выпуская их из нее, пока не поступит разрешение от всесильного и многоуважаемого хозяина. Кстати, об отношениях с владельцем: сложно найти существо, способное любить вас больше, чем бордер-колли. Эти исполнительные трудоголики готовы целиком и полностью раствориться в своем хозяине, ничего не требуя взамен.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бордер-колли пасет овец" data-fancybox="gallery" href="/upload/iblock/623/623d1baecd8752a6791c5eb01de0e83b.jpg" title="Бордер-колли пасет овец">
+           <div class="lazy-load" data-alt="Бордер-колли пасет овец" data-class="article_pic" data-original="/upload/resize_cache/iblock/623/512_342_2/623d1baecd8752a6791c5eb01de0e83b.jpg">
+            <noscript data-alt="Бордер-колли пасет овец" data-class="article_pic" data-original="/upload/resize_cache/iblock/623/512_342_2/623d1baecd8752a6791c5eb01de0e83b.jpg">
+             <img alt="Бордер-колли пасет овец" class="article_pic" src="/upload/resize_cache/iblock/623/512_342_2/623d1baecd8752a6791c5eb01de0e83b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бордер-колли пасет овец
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Поймал!" data-fancybox="gallery" href="/upload/iblock/e5d/e5de2b1b568a0bf39995ca3d428afd9d.jpg" title="Поймал!">
+           <div class="lazy-load" data-alt="Поймал!" data-class="article_pic" data-original="/upload/resize_cache/iblock/e5d/512_342_2/e5de2b1b568a0bf39995ca3d428afd9d.jpg">
+            <noscript data-alt="Поймал!" data-class="article_pic" data-original="/upload/resize_cache/iblock/e5d/512_342_2/e5de2b1b568a0bf39995ca3d428afd9d.jpg">
+             <img alt="Поймал!" class="article_pic" src="/upload/resize_cache/iblock/e5d/512_342_2/e5de2b1b568a0bf39995ca3d428afd9d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Поймал!
+          </div>
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Бордеры – собаки, нуждающиеся не только в регулярных физических нагрузках, но и в постоянной дрессировке. Уроки они схватывают на лету, кроме того, это одна из немногих пород, которую не нужно без конца стимулировать вкусняшками, чтобы отработать простейший навык. И все же дисциплинированность и усидчивость у щенков развиты слабо: если животному надоело выполнять однообразные команды, оно просто сменит вид деятельности на другой, с его точки зрения, более интересный.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Быстрый, умный и довольный" data-fancybox="gallery" href="/upload/iblock/d79/d79adc5cbe69819f67ff6f803ff6370a.jpg" title="Быстрый, умный и довольный">
+          <div class="lazy-load" data-alt="Быстрый, умный и довольный" data-class="article_pic" data-original="/upload/resize_cache/iblock/d79/412_2150_1/d79adc5cbe69819f67ff6f803ff6370a.jpg">
+           <noscript data-alt="Быстрый, умный и довольный" data-class="article_pic" data-original="/upload/resize_cache/iblock/d79/412_2150_1/d79adc5cbe69819f67ff6f803ff6370a.jpg">
+            <img alt="Быстрый, умный и довольный" class="article_pic" height="274" src="/upload/resize_cache/iblock/d79/412_2150_1/d79adc5cbe69819f67ff6f803ff6370a.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Быстрый, умный и довольный
+         </div>
+        </div>
+        <p>
+         Сами владельцы бордеров называют своих питомцев лучшими фитнес-тренерами по той простой причине, что с ними не остается времени на пассивный отдых. Стандартные выгулы в вяло-расслабленном темпе с этими товарищами не прокатят. Бордер-колли требуется полноценная пробежка с играми и сложными заданиями на сообразительность и ловкость. Фрисби, флайбол, байк-джоринг, аджилити, прыжки в воду – вот стандартные развлечения, на которые очень быстро «подсаживаются» представители данной породы. Прятки и догонялки овчарки тоже уважают, но иногда могут терять контроль над собой и в процессе игры слегка покусывать ноги убегающего.
+        </p>
+        <p>
+         Бордер-колли хорошо воспринимают человеческую речь и понимают значение многих слов. Некоторые владельцы используют эту особенность в играх. Например, с животным заучивают названия игрушек, после чего хозяин произносит слово, обозначающее предмет, а собака должна принести именно ту игрушку, которую попросил человек. Не меньший восторг у питомцев вызывают охота за подключенным к водонапорной колонке шлангом и ловля мыльных пузырей. Проще говоря, бордер-колли любят все, что сопряжено с проявлением хоть какой-либо двигательной активности.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Тренировка бордер-колли" data-fancybox="gallery" href="/upload/iblock/f90/f90343a1b1acd41723009cad3f5b4f40.jpg" title="Тренировка бордер-колли">
+          <div class="lazy-load" data-alt="Тренировка бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/f90/412_2150_1/f90343a1b1acd41723009cad3f5b4f40.jpg">
+           <noscript data-alt="Тренировка бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/f90/412_2150_1/f90343a1b1acd41723009cad3f5b4f40.jpg">
+            <img alt="Тренировка бордер-колли" class="article_pic" height="270" src="/upload/resize_cache/iblock/f90/412_2150_1/f90343a1b1acd41723009cad3f5b4f40.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Тренировка бордер-колли
+         </div>
+        </div>
+        <p>
+         Вынужденное ничегонеделание чревато для животного расстройством психики, а для хозяина – неизбежными финансовыми потерями. Скучающая собака способна превратить даже идеальную квартиру в декорацию для постапокалиптического блокбастера. Щенки бордеров немного своевольны, что не является достаточной причиной для переноса дрессировки на более поздний период. Чем раньше вы научите питомца правилам поведения в доме/квартире, тем меньший материальный ущерб понесете.
+        </p>
+        <p>
+         Обычно щенки готовы к обучению простейшим командам в возрасте 3-4 мес. Средняя продолжительность тренировки для малыша составляет 10-15 минут, по истечении которых животное начинает испытывать скуку и усталость. По достижении собакой 6-месячного возраста обучение усложняют, не забывая при этом повторять и закреплять пройденный материал. Дрессировать и воспитывать питомца можно самостоятельно, методом проб и ошибок, а можно доверить это дело профессионалу. Преимущества второго варианта очевидны: животное быстрее овладевает базовым комплексом умений, а хозяин экономит собственное время и нервы.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Что-то тут не так..." data-fancybox="gallery" href="/upload/iblock/ead/ead178fca88638f73ad995b113d37361.jpg" title="Что-то тут не так...">
+           <div class="lazy-load" data-alt="Что-то тут не так..." data-class="article_pic" data-original="/upload/resize_cache/iblock/ead/512_342_2/ead178fca88638f73ad995b113d37361.jpg">
+            <noscript data-alt="Что-то тут не так..." data-class="article_pic" data-original="/upload/resize_cache/iblock/ead/512_342_2/ead178fca88638f73ad995b113d37361.jpg">
+             <img alt="Что-то тут не так..." class="article_pic" src="/upload/resize_cache/iblock/ead/512_342_2/ead178fca88638f73ad995b113d37361.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Что-то тут не так...
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Два друга" data-fancybox="gallery" href="/upload/iblock/4f8/4f8b73d95fb0d57bdc7c1953612b27c4.jpg" title="Два друга">
+           <div class="lazy-load" data-alt="Два друга" data-class="article_pic" data-original="/upload/resize_cache/iblock/4f8/512_342_2/4f8b73d95fb0d57bdc7c1953612b27c4.jpg">
+            <noscript data-alt="Два друга" data-class="article_pic" data-original="/upload/resize_cache/iblock/4f8/512_342_2/4f8b73d95fb0d57bdc7c1953612b27c4.jpg">
+             <img alt="Два друга" class="article_pic" src="/upload/resize_cache/iblock/4f8/512_342_2/4f8b73d95fb0d57bdc7c1953612b27c4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Два друга
+          </div>
+         </div>
+        </div>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <p>
+         Идеальная среда обитания для бордеров – загородный дом или ферма, где ничто не будет ограничивать активность животного. Содержание представителей данной породы в квартирах тоже имеет место, но только при условии хорошего выгула. Если осуществлять таковой нет возможности, стоит выбрать менее активного питомца.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Не люблю ванну..." data-fancybox="gallery" href="/upload/iblock/73d/73d033bacc112e540f050467f90efc40.jpg" title="Не люблю ванну...">
+          <div class="lazy-load" data-alt="Не люблю ванну..." data-class="article_pic" data-original="/upload/resize_cache/iblock/73d/412_2150_1/73d033bacc112e540f050467f90efc40.jpg">
+           <noscript data-alt="Не люблю ванну..." data-class="article_pic" data-original="/upload/resize_cache/iblock/73d/412_2150_1/73d033bacc112e540f050467f90efc40.jpg">
+            <img alt="Не люблю ванну..." class="article_pic" height="274" src="/upload/resize_cache/iblock/73d/412_2150_1/73d033bacc112e540f050467f90efc40.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Не люблю ванну...
+         </div>
+        </div>
+        <p>
+         Приобретая щенка бордер-колли, есть смысл потратиться на мощный пылесос, поскольку линяют пограничные овчарки хоть и сезонно, но на редкость обильно. Вычесывать собаку в период линьки требуется как минимум раз в два дня, в противном случае, придется бороться с колтунами. В промежутке между линьками достаточно проделывать эту процедуру раз в неделю. Перед вычесыванием шерсть слегка увлажняют разведенным в воде кондиционером, который должен существенно облегчить процесс. Пуходерку и фурминатор применять не рекомендуется, так как их использование негативно сказывается на структуре шерстного покрова.
+        </p>
+        <p>
+         Чтобы ускорить процесс линьки, опытные заводчики рекомендуют применять несложный рецепт:
+        </p>
+        <ul>
+         <li>
+          развести в воде небольшое количество шампуня и выкупать собаку;
+         </li>
+         <li>
+          повторить процедуру еще раз;
+         </li>
+         <li>
+          набрать в ванну чистой воды, развести в ней бальзам-кондиционер;
+         </li>
+         <li>
+          смочить шерсть животного полученным раствором (смывать необязательно);
+         </li>
+         <li>
+          промокнуть влажную шерсть полотенцем и тщательно расчесать, удалив таким образом основную массу подшерстка и остевого волоса.
+         </li>
+        </ul>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Другое дело!" data-fancybox="gallery" href="/upload/iblock/553/5539e3214b508a0b14508385616d04bb.jpg" title="Другое дело!">
+          <div class="lazy-load" data-alt="Другое дело!" data-class="article_pic" data-original="/upload/resize_cache/iblock/553/412_2150_1/5539e3214b508a0b14508385616d04bb.jpg">
+           <noscript data-alt="Другое дело!" data-class="article_pic" data-original="/upload/resize_cache/iblock/553/412_2150_1/5539e3214b508a0b14508385616d04bb.jpg">
+            <img alt="Другое дело!" class="article_pic" height="313" src="/upload/resize_cache/iblock/553/412_2150_1/5539e3214b508a0b14508385616d04bb.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Другое дело!
+         </div>
+        </div>
+        <p>
+         Бордер-колли любят купаться в открытых водоемах, но в ванной чувствуют себя неуютно. Мыть собаку с использованием специального шампуня полагается не чаще чем раз в 1-2 месяца.
+        </p>
+        <p>
+         Когти бордерам стригут раз в месяц. Если питомец ведет активную уличную жизнь этой процедурой можно пренебречь, потому что во время пробежек и тренировок когтевая пластина просто стирается.
+        </p>
+        <p>
+         Для профилактики появления зубного камня и удаления налета собаке можно давать томатный сок или время от времени баловать ее «очищающими» косточками. Пристальное внимание стоит уделить ушам, которые активно «собирают» всевозможные загрязнения. Чистить ушную воронку полагается ватным диском, смоченным в лосьоне, купить который можно в любой ветеринарной аптеке.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         В ежедневное меню бордер-колли обязательно должны входить мясо (желательно, чтобы это была не свинина) и субпродукты. Мясо подается в сыром виде. В случае, если это замороженный продукт, его следует обдать кипятком. Допускается включение в рацион животного промороженной морской рыбы, из которой предварительно удалены кости. Кроме того, в корм полезно подмешивать рыбий жир, ламинарию и растительное масло, служащие источником необходимых аминокислот и микроэлементов.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/cbc/cbc8f45647aad40921fe39ce1d026ca3.jpg" title="">
+          <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/cbc/412_2150_1/cbc8f45647aad40921fe39ce1d026ca3.jpg">
+           <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/cbc/412_2150_1/cbc8f45647aad40921fe39ce1d026ca3.jpg">
+            <img alt="Бордер-колли" class="article_pic" height="273" src="/upload/resize_cache/iblock/cbc/412_2150_1/cbc8f45647aad40921fe39ce1d026ca3.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Брокколи, кабачки, стручковая фасоль, тыква, шпинат и зеленые яблоки – обязательные продукты в рационе бордер-колли. Подаются они, как правило, протертыми или измельченными в блендере. Кисломолочку и яйца дают раз в неделю. Из круп наиболее полезны гречка и рис. Для дрессировок стоит выбирать лакомства на основе сушеной печени, а также любые другие деликатесы с пониженным содержанием жира, одобренные ветеринарами.
+        </p>
+        <p>
+         Из сухих кормов наиболее полезными считаются варианты с лососем, индейкой и ягненком. Поскольку активность у большинства бордеров зашкаливает, оптимальным рационом для них будет «сушка» с повышенным содержанием белка (около 30%) и жира (до 20%). Кроме того, правильный корм должен содержать в себе хондроитин и глюкозамин, а также источники Омега-3 и Омега-6. Разновидности на основе мясных субпродуктов, как и корма, в состав которых входят соя, кукуруза и пшеница, не лучшим образом сказываются на работе пищеварительной системы собаки.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Оооо.. грибочек" data-fancybox="gallery" href="/upload/iblock/950/950aea889f272d90479d27fabf17f386.jpg" title="Оооо.. грибочек">
+           <div class="lazy-load" data-alt="Оооо.. грибочек" data-class="article_pic" data-original="/upload/resize_cache/iblock/950/512_342_2/950aea889f272d90479d27fabf17f386.jpg">
+            <noscript data-alt="Оооо.. грибочек" data-class="article_pic" data-original="/upload/resize_cache/iblock/950/512_342_2/950aea889f272d90479d27fabf17f386.jpg">
+             <img alt="Оооо.. грибочек" class="article_pic" src="/upload/resize_cache/iblock/950/512_342_2/950aea889f272d90479d27fabf17f386.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Оооо.. грибочек
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Это все мне?" data-fancybox="gallery" href="/upload/iblock/d3e/d3e9bd014d7bb77886fecf92df458be1.jpg" title="Это все мне?">
+           <div class="lazy-load" data-alt="Это все мне?" data-class="article_pic" data-original="/upload/resize_cache/iblock/d3e/512_342_2/d3e9bd014d7bb77886fecf92df458be1.jpg">
+            <noscript data-alt="Это все мне?" data-class="article_pic" data-original="/upload/resize_cache/iblock/d3e/512_342_2/d3e9bd014d7bb77886fecf92df458be1.jpg">
+             <img alt="Это все мне?" class="article_pic" src="/upload/resize_cache/iblock/d3e/512_342_2/d3e9bd014d7bb77886fecf92df458be1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Это все мне?
+          </div>
+         </div>
+        </div>
+        <h2 id="gl6">
+         Здоровье и болезни бордер-колли
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/020/020909ec612561b54b94f101df81b872.jpg" title="">
+          <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/020/412_2150_1/020909ec612561b54b94f101df81b872.jpg">
+           <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/020/412_2150_1/020909ec612561b54b94f101df81b872.jpg">
+            <img alt="Бордер-колли" class="article_pic" height="617" src="/upload/resize_cache/iblock/020/412_2150_1/020909ec612561b54b94f101df81b872.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Средняя продолжительность жизни собак – 12-13 лет. Определить пожилое животное можно по его тяготению к более спокойному образу жизни, при этом внешний облик бордеров даже с возрастом остается неизменным. Что касается наследственных заболеваний, то их немного. Чаще всего бордер-колли страдают дисплазией тазобедренного сустава, рассекающим остеохондритом, атрофией сетчатки и эпилепсией. У некоторых особей может наблюдаться врожденная аномалия глаз, зачастую ведущая к слепоте. Выявить животное, пораженное этим недугом, можно еще в 10-недельном возрасте.
+        </p>
+        <p>
+         Бордер-колли чувствительны к анестетикам барбитурового ряда, что обусловлено низким содержанием жировой ткани в организме собаки. Крайне редко, но все же встречается такое заболевание, как гипотиреоз, сопровождающееся нарушениями в работе щитовидной железы и выпадением шерсти. Питомцы ленивых хозяев обычно страдают ожирением, являющимся прямым следствием пассивного образа жизни, а также перекармливания собаки.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Выбираем активное, контактное, в меру упитанное животное и отказываемся от вялых, апатичных щенков с грязными ушками и сухой мочкой носа. Предварительно стоит свести знакомство с родителями будущего питомца, ну и конечно, уточнить информацию о прививках, сделанных собаке. Если важны родословная и эталонная внешность, лучше обратиться в известные питомники.
+        </p>
+        <p>
+         В целях экономии можно пройтись по виртуальным доскам объявлений типа Авито и купить щенка бордер-колли «с рук». Иногда недобросовестные продавцы под видом породистых щенков сбывают дворняг сходного окраса, либо метисов, поэтому на встречу с владельцем животного лучше приходить со специалистом, который сумеет отличить породистую особь от псевдобордера.
+        </p>
+        <h2>
+         Фото щенков бордер-колли
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/39a/39a372c336ba81fa6ab5cd7b5ab83fbe.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/39a/380_264_2/39a372c336ba81fa6ab5cd7b5ab83fbe.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/39a/380_264_2/39a372c336ba81fa6ab5cd7b5ab83fbe.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/39a/380_264_2/39a372c336ba81fa6ab5cd7b5ab83fbe.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ed6/ed6952b1b87b7e738a4bde7ee7eb83be.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/ed6/380_264_2/ed6952b1b87b7e738a4bde7ee7eb83be.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/ed6/380_264_2/ed6952b1b87b7e738a4bde7ee7eb83be.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/ed6/380_264_2/ed6952b1b87b7e738a4bde7ee7eb83be.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fb3/fb31e1f17a15e5eebcb9776df7d0e533.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/fb3/380_264_2/fb31e1f17a15e5eebcb9776df7d0e533.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/fb3/380_264_2/fb31e1f17a15e5eebcb9776df7d0e533.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/fb3/380_264_2/fb31e1f17a15e5eebcb9776df7d0e533.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/90a/90a194c7892dc3286b0cf59cb1171ba8.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/90a/380_264_2/90a194c7892dc3286b0cf59cb1171ba8.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/90a/380_264_2/90a194c7892dc3286b0cf59cb1171ba8.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/90a/380_264_2/90a194c7892dc3286b0cf59cb1171ba8.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1ef/1ef45ed8fd0d721e4447b4e20b26a2d3.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/1ef/380_264_2/1ef45ed8fd0d721e4447b4e20b26a2d3.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/1ef/380_264_2/1ef45ed8fd0d721e4447b4e20b26a2d3.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/1ef/380_264_2/1ef45ed8fd0d721e4447b4e20b26a2d3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2f5/2f5234d6b285fb740e9446185153104c.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/2f5/380_264_2/2f5234d6b285fb740e9446185153104c.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/2f5/380_264_2/2f5234d6b285fb740e9446185153104c.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/2f5/380_264_2/2f5234d6b285fb740e9446185153104c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/46e/46e03a00b831d7f5f5c2664c2879e6cc.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/46e/380_264_2/46e03a00b831d7f5f5c2664c2879e6cc.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/46e/380_264_2/46e03a00b831d7f5f5c2664c2879e6cc.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/46e/380_264_2/46e03a00b831d7f5f5c2664c2879e6cc.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/913/913aaa3dcf61d982a51bed41217c3266.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/913/380_264_2/913aaa3dcf61d982a51bed41217c3266.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/913/380_264_2/913aaa3dcf61d982a51bed41217c3266.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/913/380_264_2/913aaa3dcf61d982a51bed41217c3266.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fa3/fa3553d6dfe762403f41536e37c29576.jpg" title="">
+           <div class="lazy-load" data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/fa3/380_264_2/fa3553d6dfe762403f41536e37c29576.jpg">
+            <noscript data-alt="Бордер-колли" data-class="article_pic" data-original="/upload/resize_cache/iblock/fa3/380_264_2/fa3553d6dfe762403f41536e37c29576.jpg">
+             <img alt="Бордер-колли" class="article_pic" src="/upload/resize_cache/iblock/fa3/380_264_2/fa3553d6dfe762403f41536e37c29576.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Сколько стоит бордер-колли
+        </h2>
+        <p>
+         Животное из приличного питомника обойдется в 50 000 - 60 000 руб., причем бордеры шоколадного окраса стоят дороже. В объявлениях от продавцов-одиночек средний ценник на щенка бордер-колли с метрикой РКФ приблизительно такой же. Стоимость малышей от титулованных родителей может достигать 70 000 руб. Чистопородные собаки с незначительными дефектами идут по 25 000 - 35 000 руб. Метисов без документов, которым закрыт путь на выставки и соревнования, зачастую отдают бесплатно либо за символическую плату.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения бордер-колли на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27393/">
+          <div class="ava-med">
+           <div class="noava fill3">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/border-1g-9mes-ubegaet-na-progulke-5282/">
+           Бордер (1г 9мес) убегает на прогулке
+          </a>
+         </div>
+         <div class="forum-text">
+          Доброго времени суток! Полтора года назад я стал обладателем замечательного щенка БК. Мальчик добрый, отзывчивый, веселый и совсем не агрессивный. Но, как и все бордеры, энергичный :) Мы с ним много занимаемся:...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27393/">
+            Константин Саркисов
+           </a>
+          </span>
+          <span class="vopros-date">
+           4 месяца назад
+          </span>
+          <span class="vopros-smotr">
+           711 просмотров
+          </span>
+          <span class="vopros-otvet">
+           2 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/26798/">
+          <div class="ava-med">
+           <div class="noava fill8">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/nuzhen-sovet-4980/">
+           Нужен совет.
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте! Скажите пожалуйста  в каком питомнике  лучше брать бордер колли?
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/26798/">
+            Полина Ильина
+           </a>
+          </span>
+          <span class="vopros-date">
+           8 месяцев назад
+          </span>
+          <span class="vopros-smotr">
+           420 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/26021/">
+          <div class="ava-med">
+           <div class="noava fill1">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/khoroshie-pitomniki-4498/">
+           хорошие питомники
+          </a>
+         </div>
+         <div class="forum-text">
+          кто знает хорошие, проверенные питомник в РФ? не важен город
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/26021/">
+            юка ким
+           </a>
+          </span>
+          <span class="vopros-date">
+           Год назад
+          </span>
+          <span class="vopros-smotr">
+           1195 просмотров
+          </span>
+          <span class="vopros-otvet">
+           2 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/25507/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Камила Рахимова" data-original="/upload/main/80f/shvo8lr4qjisis1yr16n1a43pyd2gng7.jpg">
+            <noscript data-alt="Камила Рахимова" data-original="/upload/main/80f/shvo8lr4qjisis1yr16n1a43pyd2gng7.jpg">
+             <img alt="Камила Рахимова" src="/upload/main/80f/shvo8lr4qjisis1yr16n1a43pyd2gng7.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/mozhno-li-zavesti-bk-novichku-4229/">
+           Можно ли завести бк новичку?
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте. Можно ли завести бордер-колли новичку? 
+Я очень активный человек, гуляю практически каждый день по 3-4 часа. Могу уделять всё сво свободное время собаке. Есть стабильный заработок, так что смогу покрыть...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/25507/">
+            Камила Рахимова
+           </a>
+          </span>
+          <span class="vopros-date">
+           Год назад
+          </span>
+          <span class="vopros-smotr">
+           2928 просмотров
+          </span>
+          <span class="vopros-otvet">
+           3 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/border-kolli/forum/">
+        Перейти на
+        форум бордер-колли
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Бордер-колли" src="/upload/iblock/cb4/cb4b0e1ebffea8d8840c5d68529df853.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/border-kolli/">
+          Бордер-колли
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/border-kolli/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/border-kolli/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/border-kolli/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/border-kolli/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/border-kolli/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/border-kolli/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/amerikanskaya-akita/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Американская акита" data-original="/upload/resize_cache/iblock/e88/100_100_1/e881aa3e59df6650a093dd15e28deb9d.jpg">
+          <noscript data-alt="Американская акита" data-original="/upload/resize_cache/iblock/e88/100_100_1/e881aa3e59df6650a093dd15e28deb9d.jpg">
+           <img alt="Американская акита" src="/upload/resize_cache/iblock/e88/100_100_1/e881aa3e59df6650a093dd15e28deb9d.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Американская акита
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/chau-chau/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Чау-чау" data-original="/upload/resize_cache/iblock/bd8/100_100_1/bd8964762e27a154083cf5a074971aae.jpg">
+          <noscript data-alt="Чау-чау" data-original="/upload/resize_cache/iblock/bd8/100_100_1/bd8964762e27a154083cf5a074971aae.jpg">
+           <img alt="Чау-чау" src="/upload/resize_cache/iblock/bd8/100_100_1/bd8964762e27a154083cf5a074971aae.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Чау-чау
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/maltipu/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Мальтипу" data-original="/upload/resize_cache/iblock/159/100_100_1/15959a8ce3bdb1284f37aadabb9d2fe8.jpg">
+          <noscript data-alt="Мальтипу" data-original="/upload/resize_cache/iblock/159/100_100_1/15959a8ce3bdb1284f37aadabb9d2fe8.jpg">
+           <img alt="Мальтипу" src="/upload/resize_cache/iblock/159/100_100_1/15959a8ce3bdb1284f37aadabb9d2fe8.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Мальтипу
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/chekhoslovatskiy-vlchak/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Чехословацкий влчак" data-original="/upload/resize_cache/iblock/1b4/100_100_1/5eg2rkx12crs8j7x7qvg08tf4p84l3pg.jpg">
+          <noscript data-alt="Чехословацкий влчак" data-original="/upload/resize_cache/iblock/1b4/100_100_1/5eg2rkx12crs8j7x7qvg08tf4p84l3pg.jpg">
+           <img alt="Чехословацкий влчак" src="/upload/resize_cache/iblock/1b4/100_100_1/5eg2rkx12crs8j7x7qvg08tf4p84l3pg.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Чехословацкий влчак
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fborder-kolli%252F%253Fcheck_key%253Dfcfe7eaaa1ea84f4d61c1ca292e5f35f%2526ANIMAL_CODE%253Dborder-kolli%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fborder-kolli%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmJvcmRlci1rb2xsaSUyRiUzRmNoZWNrX2tleSUzRGZjZmU3ZWFhYTFlYTg0ZjRkNjFjMWNhMjkyZTVmMzVmJTI2QU5JTUFMX0NPREUlM0Rib3JkZXIta29sbGklMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGYm9yZGVyLWtvbGxpJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fborder-kolli%252F%253Fcheck_key%253Dfcfe7eaaa1ea84f4d61c1ca292e5f35f%2526ANIMAL_CODE%253Dborder-kolli%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fborder-kolli%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fborder-kolli%252F%253Fcheck_key%253Dfcfe7eaaa1ea84f4d61c1ca292e5f35f%2526ANIMAL_CODE%253Dborder-kolli%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fborder-kolli%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "213.135.94.192"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--d8e6078e88530f366d86644077d8f7a9-->

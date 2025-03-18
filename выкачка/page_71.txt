@@ -1,0 +1,1750 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'140f7bf313f8'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Джек-рассел-терьер, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Джек-рассел-терьер – узнаваемая и популярная порода собак. Это питомец, с которым вам не придется скучать ни минуты." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/cce/cce746f24fbf7dbf7b3365e1b247ee9a.jpg" property="og:image"/>
+     <title>
+      Джек-рассел-терьер — описание породы собаки от А до Я
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/dzhek-rassel-terer/" property="og:url"/>
+     <meta content="Джек-рассел-терьер — описание породы собаки от А до Я" property="og:title"/>
+     <meta content="Джек-рассел-терьер – узнаваемая и популярная порода собак. Это питомец, с которым вам не придется скучать ни минуты." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/dzhek-rassel-terer/" itemprop="url">
+         <span itemprop="title">
+          Джек-рассел-терьер
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Джек-рассел-терьер
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/dzhek-rassel-terer/">
+          Описание
+         </a>
+         <a href="/dog/dzhek-rassel-terer/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/dzhek-rassel-terer/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/dzhek-rassel-terer/photo/">
+          Фото
+         </a>
+         <a href="/dog/dzhek-rassel-terer/video/">
+          Видео
+         </a>
+         <a href="/dog/dzhek-rassel-terer/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/dzhek-rassel-terer/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Джек-рассел-терьер" src="/upload/iblock/a02/a027665dded6df37d45e2c2a6c304b28.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Джек-рассел-терьер – узнаваемая и популярная порода собак. Это питомец, с которым вам не придется скучать ни минуты.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/665/66592ad4410642c11cb3586f7b946a5a.jpg" data-cap="My space" data-fancybox="images" data-link="https://www.flickr.com/photos/davidrallen/9717857643/" data-type="image" data-username="David Allen" href="/upload/uf/1e3/1e32e70cfd145342e5c0ad87c9a99855.jpg">
+            <img alt="Джек-рассел-терьер" src="/upload/resize_cache/uf/1e3/293_293_2/1e32e70cfd145342e5c0ad87c9a99855.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/156/156593ec2047aef6295e8344f9a02728.jpg" data-cap="Веселая компания на фризби - Пузырик, Баранка, Вудос и Марго" data-fancybox="images" data-link="https://www.instagram.com/p/BizStiThrZ2/" data-type="image" data-username="woody_jrt" href="/upload/uf/97b/97b4399eaa59e5d160781a44de97c8e9.jpg">
+            <img alt="Джек-рассел-терьер" src="/upload/resize_cache/uf/97b/293_293_2/97b4399eaa59e5d160781a44de97c8e9.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/7f8/7f8c5105e530d6f263f888c31f3f728c.jpg" data-cap="" data-fancybox="images" data-link="https://www.flickr.com/photos/114982504@N04/26002560957/" data-type="image" data-username="Lucie Peštová" href="/upload/uf/1b7/1b74d07725c9b826c387b7dca381d711.jpg">
+            <img alt="Джек-рассел-терьер" src="/upload/resize_cache/uf/1b7/293_293_2/1b74d07725c9b826c387b7dca381d711.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/dzhek-rassel-terer/photo/">
+         Все
+            фото джек-рассел-терьера
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы джек-рассел-терьер
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Охотничьи качества
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Внешность джек-рассел-терьеров
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Характер джек-рассел-терьера
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Здоровье и болезни джек-рассел-терьера
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Цена джек-рассел-терьера
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Джек-рассел-терьер
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         первая половина XIX века
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         5-6 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         25-30 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         13-16 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Джек-рассел-терьер подходит только людям, которые ведут активный образ жизни и могут обеспечить питомцу регулярные физические нагрузки.
+        </li>
+        <li>
+         Собаки прочно привязываются к хозяину и другим членам семьи, тоскуют в одиночестве.
+        </li>
+        <li>
+         Вопреки растиражированному в кино образу, джек-рассел-терьер не всегда мил и покладист, ему нужен опытный владелец, готовый уделять много времени воспитанию.
+        </li>
+        <li>
+         Звонкий и громкий лай, который был необходим на охоте, может привести к конфликтам с соседями в городской квартире.
+        </li>
+        <li>
+         Представители этой породы не требуют сложного ухода, достаточно стандартных гигиенических процедур и регулярных визитов к ветеринару.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Джек-рассел-терьер" data-original="/upload/iblock/cce/cce746f24fbf7dbf7b3365e1b247ee9a.jpg">
+          <noscript data-alt="Джек-рассел-терьер" data-original="/upload/iblock/cce/cce746f24fbf7dbf7b3365e1b247ee9a.jpg">
+           <img alt="Джек-рассел-терьер" src="/upload/iblock/cce/cce746f24fbf7dbf7b3365e1b247ee9a.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Джек-рассел-терьер
+          </strong>
+          ранее был знаменит своими рабочими качествами норной собаки, однако мало кто из современных заводчиков планомерно развивает заложенные в генах этих резвых малышей охотничьи инстинкты. В ХХ веке они превратились в преданных и забавных спутников, настоящих любимцев семей, которые привыкли проводить свой досуг активно.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Минимальная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Джек-рассел-терьер основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/dzhek-rassel-terer/razmeri-porodi/">
+         размеры джек-рассел-терьера
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы джек-рассел-терьер
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Гладкошерстный джек-рассел-терьер" data-fancybox="gallery" href="/upload/iblock/c5e/c5edcfa64ac50d868ed0dae96aa21168.jpg" title="Гладкошерстный джек-рассел-терьер">
+          <div class="lazy-load" data-alt="Гладкошерстный джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c5e/412_2150_1/c5edcfa64ac50d868ed0dae96aa21168.jpg">
+           <noscript data-alt="Гладкошерстный джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c5e/412_2150_1/c5edcfa64ac50d868ed0dae96aa21168.jpg">
+            <img alt="Гладкошерстный джек-рассел-терьер" class="article_pic" height="617" src="/upload/resize_cache/iblock/c5e/412_2150_1/c5edcfa64ac50d868ed0dae96aa21168.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Гладкошерстный джек-рассел-терьер
+         </div>
+        </div>
+        <p>
+         Существуют породы, которые живут бок о бок с человеком так давно, что достоверно узнать об их корнях можно лишь с помощью генетиков. Такова, например, ситуация с предками джек-расселов –
+         <a class="ph" href="/dog/foksterer/">
+          фокстерьерами
+         </a>
+         . Их первые описания встречаются еще в римских хрониках времен походов Цезаря на Альбион.
+        </p>
+        <p>
+         Но чем ближе к современности, тем больше документальных свидетельств, поэтому сегодня ни у кого не вызывает сомнений, что джек-рассел-терьер обязан своим возникновением вполне конкретному энтузиасту – Джону «Джеку» Расселу. Следуя семейной традиции, он стал священником и возглавил небольшой приход на юге Британии, однако истинной страстью этого человека оставалось не служение церкви, а парфорсная охота и разведение псов для нее.
+        </p>
+        <p>
+         Еще в последний год учебы Джона в Эксетерском колледже Оксфордского университета произошла знаковая встреча. Во время одной из прогулок он увидел собаку, воплощавшую идеальные качества настоящего охотника на лис: компактные размеры, азарт, бдительность и бесстрашие. Принадлежало сокровище местному молочнику, который вряд ли был способен в полной мере оценить упомянутые достоинства, поэтому первый хозяин тут же уступил Трамп настойчивому студенту. С этого Козыря – именно так переводится английское слово Trump – началась многолетняя селекционная работа.
+        </p>
+        <p>
+         Конечно, внешне прародительница породы не так уж сильно напоминает нынешних «джеков». Сходство заметно лишь в окрасе: на доминирующем белом фоне выделялись более темные пятна в районе глаз, ушей и в основании крючкообразного хвоста. Если судить по сохранившимся рисункам, Трамп была беднокостной собакой с небольшим черепом. Вероятнее всего, в ее роду были ныне вымершие английские белые терьеры.
+        </p>
+        <p>
+         Надо сказать, что в процессе выведения новой породы пастор использовал представителей различных норных псов. Точных данных об экспериментах с генофондом нет, поскольку никаких журналов с записями бридер не вел, либо они попросту не сохранились. Исследователи полагают, что свой след в формировании породы оставили
+         <a class="ph" href="/dog/foksterer/">
+          фокстерьеры
+         </a>
+         старого формата, бордеры, лейкленды, ирландские терьеры, шотландские керны. Рассел поставил перед собой задачу улучшить рабочие качества потомства, а выбраковывать щенков из-за формы черепа или постановки хвоста он не считал необходимым. В результате неказистые и грубо скроенные коротконогие питомцы девонширского священника завоевали горячую любовь всех окрестных охотников.
+        </p>
+        <p>
+         Хотя сам викарий занимался боксом (который в XIX веке был весьма жестким видом спорта, ведь защитные перчатки не использовали), он не был склонен к жестокости и публично порицал тех коллег-заводчиков, кто примешивал к терьерам кровь бойцовских псов. Парфорсная охота для Джона была несовместима с убийством или нанесением тяжелых увечий добыче, главной целью он считал состязание между лисами и своими животными в скорости и выносливости. Терьерам Рассела не требовались свирепость и мощные бульдожьи челюсти.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок жесткошерстного джек-рассел-терьера" data-fancybox="gallery" href="/upload/iblock/f7e/f7e289b79e2b91702e7462a828385d5a.jpg" title="Щенок жесткошерстного джек-рассел-терьера">
+          <div class="lazy-load" data-alt="Щенок жесткошерстного джек-рассел-терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/f7e/412_2150_1/f7e289b79e2b91702e7462a828385d5a.jpg">
+           <noscript data-alt="Щенок жесткошерстного джек-рассел-терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/f7e/412_2150_1/f7e289b79e2b91702e7462a828385d5a.jpg">
+            <img alt="Щенок жесткошерстного джек-рассел-терьера" class="article_pic" height="617" src="/upload/resize_cache/iblock/f7e/412_2150_1/f7e289b79e2b91702e7462a828385d5a.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок жесткошерстного джек-рассел-терьера
+         </div>
+        </div>
+        <p>
+         Достижения пастора в разведении и популяризации терьеров не остались незамеченными. В 1873 году он вместе со Сьюаллисом Ширли и десятком единомышленников принял участие в создании организации, сегодня известной как старейший клуб собаководства – английский Кеннел клуб. В последующие годы Джон Рассел приглашался в качестве судьи на выставки, но собственных питомцев не экспонировал, называя их диким шиповником на фоне оранжерейных роз. И это сравнение было не в пользу последних.
+        </p>
+        <p>
+         Джон Рассел, значительную часть своей жизни отдавший собаководству, скончался в возрасте 87 лет и был похоронен в деревушке Свимбридж – на кладбище рядом со средневековой церковью Святого Джеймса, где и служил. Поскольку щенков и взрослых собак он активно продавал, на момент смерти у бридера было всего 4 пса.
+        </p>
+        <p>
+         Развитие породы продолжил молодой коллега, Артур Хейнеманн. Именно он является автором первого проекта стандарта породы. В 1914 году был основан «Парсон Джек Рассел Терьер Клуб» (parson значит «священник»), просуществовавший до 40-х годов. В середине столетия терьеров Рассела, для улучшения характера и рабочих качеств, начали скрещивать с
+         <a class="ph" href="/dog/taksa/">
+          таксами
+         </a>
+         и
+         <a class="ph" href="/dog/velsh-korgi-pembrok/">
+          вельш-корги
+         </a>
+         . В результате на свет стали появляться не только «классические», но и коротконогие животные. Последние долгое время считались нежелательными и в глазах жюри неизменно проигрывали своим высокорослым собратьям.
+        </p>
+        <p>
+         Неизвестно, как сложилась бы судьба «побочной ветки», если бы в 1960-х годах несколько собак с короткими лапами не оказались на Зеленом континенте. Охотиться с ними австралийцы, конечно, не собирались, зато по достоинству оценили энергичность и сообразительность своих новых питомцев, потому с большим энтузиазмом взялись за развитие породы.
+        </p>
+        <p>
+         Официальное признание Кеннел клуба и FCI пришло лишь в 1990 году. Тогда в стандарт Международной кинологической организации внесли оба типа собак под общим названием парсон-джек-рассел-терьер. Однако активисты из Великобритании и Австралии не оставляли попыток добиться разграничения, и в 2001 году были приняты два стандарта: для парсон-рассел-терьера (животные на длинных ногах с туловищем квадратного формата) и джек-рассел-терьера (коротконогие с вытянутым туловищем).
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/34d/34d467cb1f0121f66aa1aeac906f5b95.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/34d/512_342_2/34d467cb1f0121f66aa1aeac906f5b95.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/34d/512_342_2/34d467cb1f0121f66aa1aeac906f5b95.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/34d/512_342_2/34d467cb1f0121f66aa1aeac906f5b95.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/084/084f2d3aee7826cf9bc57efc8110ee47.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/084/512_342_2/084f2d3aee7826cf9bc57efc8110ee47.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/084/512_342_2/084f2d3aee7826cf9bc57efc8110ee47.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/084/512_342_2/084f2d3aee7826cf9bc57efc8110ee47.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2>
+         Видео: Джек-рассел-терьер
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="cQVvro2vT1g">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Охотничьи качества
+        </h2>
+        <p>
+         Как и многие другие представители группы терьеров, джек-рассел-терьеры были выведены для участия в охоте на некрупную дичь, обитающую в норах. Конечно, для выслеживания и преследования у терьеров недостаточно скорости и мощи, но с этой задачей прекрасно справлялись английские фоксхаунды или иные гончие, а вот в том, чтобы проникнуть в подземное убежище и в схватке заставить «беглеца» его покинуть, нет равных настойчивым и компактным крепышам.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Джек-рассел исследует нору" data-fancybox="gallery" href="/upload/iblock/74b/74bcdfd79d61b0d53cd5885c5871b342.jpg" title="Джек-рассел исследует нору">
+          <div class="lazy-load" data-alt="Джек-рассел исследует нору" data-class="article_pic" data-original="/upload/resize_cache/iblock/74b/412_2150_1/74bcdfd79d61b0d53cd5885c5871b342.jpg">
+           <noscript data-alt="Джек-рассел исследует нору" data-class="article_pic" data-original="/upload/resize_cache/iblock/74b/412_2150_1/74bcdfd79d61b0d53cd5885c5871b342.jpg">
+            <img alt="Джек-рассел исследует нору" class="article_pic" height="309" src="/upload/resize_cache/iblock/74b/412_2150_1/74bcdfd79d61b0d53cd5885c5871b342.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Джек-рассел исследует нору
+         </div>
+        </div>
+        <p>
+         Выше уже упоминалось, что свою славу превосходных норных псов джек-рассел-терьеры снискали не за свирепость, а за звонкий голос и высокий интеллект. Они не только понимали стратегию охотников в той или иной ситуации, ориентируясь на различные сигналы рожка, но и принимали собственные решения, которые помогали экономить силы не в ущерб эффективности.
+        </p>
+        <p>
+         С момента своего появления «джеки» были неотъемлемой частью сельской жизни Великобритании. Однако с 2002 года в Шотландии, а с 2005 года в Англии и Уэльсе была официально запрещена охота на лис, хотя для многих она и являлась частью культурного наследия страны. Барсуки также находятся сегодня под защитой природоохранных организаций. На юге Испании до сих пор сохранился охотничий район, где возможно преследование дичи верхом, но в большинстве европейских стран традиция уходит в историю в связи с отсутствием незаселенных территорий с подходящим ландшафтом.
+        </p>
+        <p>
+         Но врожденные инстинкты нельзя отменить так же легко, как многовековые ритуалы, поэтому четвероногие «горожане» не упускают возможности во время прогулки устроить погоню за подвернувшейся кошкой или вырыть внушительную яму в корнях деревьев из ближайшего парка.
+        </p>
+        <h2 id="gl3">
+         Внешность джек-рассел-терьеров
+        </h2>
+        <p>
+         Джек-рассел-терьер – небольшая, но крепко сложенная собака. Рост в холке составляет 25-30 см. Строгих нормативов по весу не закреплено, однако специалисты отмечают, что гармонично выглядит джек-рассел-терьер, у которого на каждые 5 см роста приходится 1 кг веса, то есть желательная масса взрослого представителя этой породы – 5-6 кг.
+        </p>
+        <h3>
+         Тело
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кто здесь?" data-fancybox="gallery" href="/upload/iblock/3a8/3a86ab89f0402de4725a077c8c60c77b.jpg" title="Кто здесь?">
+          <div class="lazy-load" data-alt="Кто здесь?" data-class="article_pic" data-original="/upload/resize_cache/iblock/3a8/412_2150_1/3a86ab89f0402de4725a077c8c60c77b.jpg">
+           <noscript data-alt="Кто здесь?" data-class="article_pic" data-original="/upload/resize_cache/iblock/3a8/412_2150_1/3a86ab89f0402de4725a077c8c60c77b.jpg">
+            <img alt="Кто здесь?" class="article_pic" height="412" src="/upload/resize_cache/iblock/3a8/412_2150_1/3a86ab89f0402de4725a077c8c60c77b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кто здесь?
+         </div>
+        </div>
+        <p>
+         Силуэт джек-рассел-терьера строго прямоугольный, вытянутый (длина от холки до основания хвоста больше, чем высота в холке).
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Череп плоский и умеренно широкий. Морда несколько короче черепной коробки. Переход от лба к морде хорошо определен, но выражен не слишком резко.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Аккуратный. Мочка черного цвета. Ноздри развитые и хорошо открытые.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Миндалевидной формы, темные. Не выпучены, веки прилегают к глазному яблоку и затемнены по краю.
+        </p>
+        <h3>
+         Зубы и челюсти
+        </h3>
+        <p>
+         Челюсти джек-рассел-терьера должны быть сильные, мощные, зубы крепкие. Прикус ножницеобразный. Губы черные, плотно сомкнуты.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Джек-рассел-терьер любуется закатом" data-fancybox="gallery" href="/upload/iblock/a48/a48e490b2a4161b0c0eecd4d4245c147.jpg" title="Джек-рассел-терьер любуется закатом">
+          <div class="lazy-load" data-alt="Джек-рассел-терьер любуется закатом" data-class="article_pic" data-original="/upload/resize_cache/iblock/a48/1024_2150_1/a48e490b2a4161b0c0eecd4d4245c147.jpg">
+           <noscript data-alt="Джек-рассел-терьер любуется закатом" data-class="article_pic" data-original="/upload/resize_cache/iblock/a48/1024_2150_1/a48e490b2a4161b0c0eecd4d4245c147.jpg">
+            <img alt="Джек-рассел-терьер любуется закатом" class="article_pic" src="/upload/resize_cache/iblock/a48/1024_2150_1/a48e490b2a4161b0c0eecd4d4245c147.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Джек-рассел-терьер любуется закатом
+         </div>
+        </div>
+        <h3>
+         Уши
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4a7/4a73cd34a8150b0c96f91a3e91e1235a.jpg" title="">
+          <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/4a7/412_2150_1/4a73cd34a8150b0c96f91a3e91e1235a.jpg">
+           <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/4a7/412_2150_1/4a73cd34a8150b0c96f91a3e91e1235a.jpg">
+            <img alt="Джек-рассел-терьер" class="article_pic" height="595" src="/upload/resize_cache/iblock/4a7/412_2150_1/4a73cd34a8150b0c96f91a3e91e1235a.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         «Кнопки» или висячие. Маленькие, заломлены впереди. Чрезвычайно подвижные, могут поворачиваться на 180°. Кончики имеют V-образную форму.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Сильная, с чистой четкой линией.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Круп ровный. Поясница короткая, сильная и мускулистая. Спина сильная и достаточно узкая.
+        </p>
+        <h3>
+         Грудь
+        </h3>
+        <p>
+         Глубокая, не широкая. Ребра сильно выделяются у основания и заметно сплющены по бокам. Окружность ребер за локтями – 40-43 см.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         В состоянии покоя хвост джек-рассел-терьера может быть опущен, но при движении обязательно поднимается.
+        </p>
+        <h3>
+         Передние конечности
+        </h3>
+        <p>
+         Одинаково смотрятся как спереди, так и сбоку. Прямые, хорошо поставлены под туловищем. Лопатки имеют хороший уклон назад, мускулатурой не перегружены.
+        </p>
+        <h3>
+         Задние конечности
+        </h3>
+        <p>
+         Сильные и мускулистые. Коленные суставы сильно согнуты, скакательные расположены низко. Плюсны при осмотре сзади параллельны.
+        </p>
+        <h3>
+         Лапы
+        </h3>
+        <p>
+         Небольшие, круглой формы, с твердыми подушечками. Поставлены прямо. Пальцы средне закруглены.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Шерсть у джек-рассел-терьеров может быть трех типов: жесткая, гладкая или с изломом. Должна хорошо защищать от непогоды.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Преобладающий белый фон с темными пятнами. Цвет пятен может варьироваться от черного и темно-каштанового до рыжего.
+        </p>
+        <h2>
+         Фото взрослого джек-рассел-терьера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4d5/4d51eec3938e1ac27a487c15fb03f26f.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/4d5/380_264_2/4d51eec3938e1ac27a487c15fb03f26f.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/4d5/380_264_2/4d51eec3938e1ac27a487c15fb03f26f.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/4d5/380_264_2/4d51eec3938e1ac27a487c15fb03f26f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/057/05768d1ec8a7a45024f8e23a545b4eea.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/057/380_264_2/05768d1ec8a7a45024f8e23a545b4eea.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/057/380_264_2/05768d1ec8a7a45024f8e23a545b4eea.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/057/380_264_2/05768d1ec8a7a45024f8e23a545b4eea.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9d4/9d435ccb9a4aa19e56840b6c19789e37.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9d4/380_264_2/9d435ccb9a4aa19e56840b6c19789e37.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9d4/380_264_2/9d435ccb9a4aa19e56840b6c19789e37.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/9d4/380_264_2/9d435ccb9a4aa19e56840b6c19789e37.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/50c/50c694dfb5be45a4f6749ba6438a1ae6.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/50c/380_264_2/50c694dfb5be45a4f6749ba6438a1ae6.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/50c/380_264_2/50c694dfb5be45a4f6749ba6438a1ae6.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/50c/380_264_2/50c694dfb5be45a4f6749ba6438a1ae6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d35/d35c769bcb970ff8df127b131e83ffc6.JPG" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/d35/380_264_2/d35c769bcb970ff8df127b131e83ffc6.JPG">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/d35/380_264_2/d35c769bcb970ff8df127b131e83ffc6.JPG">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/d35/380_264_2/d35c769bcb970ff8df127b131e83ffc6.JPG"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/25b/25bacd229824acab8eac01a73cb0da73.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/25b/380_264_2/25bacd229824acab8eac01a73cb0da73.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/25b/380_264_2/25bacd229824acab8eac01a73cb0da73.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/25b/380_264_2/25bacd229824acab8eac01a73cb0da73.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/111/1117d10c672de93ee3eb237203517792.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/111/380_264_2/1117d10c672de93ee3eb237203517792.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/111/380_264_2/1117d10c672de93ee3eb237203517792.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/111/380_264_2/1117d10c672de93ee3eb237203517792.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/88f/88f70fc1bdc63559e34549ec11fdef39.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/88f/380_264_2/88f70fc1bdc63559e34549ec11fdef39.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/88f/380_264_2/88f70fc1bdc63559e34549ec11fdef39.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/88f/380_264_2/88f70fc1bdc63559e34549ec11fdef39.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ba8/ba808be53f9c87df41d74878f560b782.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ba8/380_264_2/ba808be53f9c87df41d74878f560b782.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ba8/380_264_2/ba808be53f9c87df41d74878f560b782.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/ba8/380_264_2/ba808be53f9c87df41d74878f560b782.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl4">
+         Характер джек-рассел-терьера
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Поиграем?" data-fancybox="gallery" href="/upload/iblock/a03/a0374f3514107658608a778557b0ada9.jpg" title="Поиграем?">
+          <div class="lazy-load" data-alt="Поиграем?" data-class="article_pic" data-original="/upload/resize_cache/iblock/a03/412_2150_1/a0374f3514107658608a778557b0ada9.jpg">
+           <noscript data-alt="Поиграем?" data-class="article_pic" data-original="/upload/resize_cache/iblock/a03/412_2150_1/a0374f3514107658608a778557b0ada9.jpg">
+            <img alt="Поиграем?" class="article_pic" height="587" src="/upload/resize_cache/iblock/a03/412_2150_1/a0374f3514107658608a778557b0ada9.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Поиграем?
+         </div>
+        </div>
+        <p>
+         Джек-рассел-терьер – настоящий вечный двигатель. Он просто физически не способен долго сидеть на одном месте и скучать в ожидании игры. Привлекать внимание хозяина эта собака будет всеми доступными способами. Она прекрасно знает правила поведения в доме и может сознательно их нарушать, чтобы вызвать хоть какую-то реакцию у хозяина, который слишком увлекся любимым сериалом или новой книгой.
+        </p>
+        <p>
+         Важно помнить о высоком интеллекте питомца. Физические нагрузки обязательно должны сопровождаться умственными, иначе любое занятие быстро наскучит. Чередуйте команды и игрушки, придумывайте новые виды активности.
+        </p>
+        <p>
+         В целом представители породы отличаются жизнерадостным и дружелюбным нравом. Джек-рассел-терьеры прекрасно подходят для семей, где дети достаточно взрослые, чтобы не относиться к домашнему любимцу как к плюшевому медведю. Агрессию без причины могут проявлять только собаки, в чьем воспитании с раннего детства были допущены серьезные промахи.
+        </p>
+        <p>
+         С другими животными в доме представители этой породы уживаются плохо из-за генов охотника. Особенно нежелательно соседство с грызунами, ведь джек-расселы – известные крысоловы, но доставлять неприятности они могут и кошкам. В отношениях с собаками своей или другой породы (независимо от габаритов противника) в силу отважного и своенравного характера всегда будут пытаться доминировать, постоянно вступая в стычки.
+        </p>
+        <h2 id="gl5">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Джек-рассел-терьеры лучше всего подходят опытным владельцам, поскольку они от природы хитры, независимы и стремятся к лидерству. Если вы чувствуете, что не до конца справляетесь с характером нового члена семьи, как можно раньше обратитесь за советом и помощью к специалисту-кинологу.
+        </p>
+        <p>
+         Ранняя социализация щенка важна для того, чтобы в будущем он мог мирно сосуществовать с домочадцами (в том числе детьми и пожилыми людьми), другими питомцами, не проявлял агрессию по отношению к гостям и случайным прохожим во время прогулок.
+        </p>
+        <p>
+         Основными проблемами в поведении джек-рассел-терьеров считаются упрямство, громкий лай, нанесение ущерба домашнему имуществу, беспокойство от одиночества, копание и преследование мелких животных. Все они поддаются коррекции при должном внимании со стороны владельца. Собака проявляет худшие стороны своего характера только в том случае, если не встречает противодействия или видит в этом единственный способ привлечь к себе внимание хозяина.
+        </p>
+        <p>
+         Порода прекрасно поддается дрессировке, главное в процессе проявлять терпение, не забывать о вознаграждении и не повышать голос. Установление авторитета хозяина крайне важно, но добиться его можно и нужно спокойной твердостью. Питомец должен уважать и слушать вас, а не бояться.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e2d/e2d9386f29c18e01b1650a197f24b48f.jpg" title="">
+          <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e2d/1024_2150_1/e2d9386f29c18e01b1650a197f24b48f.jpg">
+           <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e2d/1024_2150_1/e2d9386f29c18e01b1650a197f24b48f.jpg">
+            <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/e2d/1024_2150_1/e2d9386f29c18e01b1650a197f24b48f.jpg"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <h2 id="gl6">
+         Уход и содержание
+        </h2>
+        <p>
+         Несмотря на компактные размеры джек-расселов, содержание их в городской квартире сопряжено с определенными трудностями. Собаки слишком активны, чтобы прогулки по четверти часа утром и вечером могли удовлетворить их потребность в физических нагрузках. При недостатке тренировок излишек энергии они будут тратить на разрушительные шалости. В результате могут пострадать мебель, техника, полы, обувь и одежда владельцев. Следует понимать, что для джек-рассел-терьера это не акт мести или сознательная диверсия, а просто попытка занять себя чем-то в отсутствие хозяина, поэтому перед уходом на несколько часов нужно находить время на долгую и содержательную прогулку.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/74f/74f0e4eb25dd1cfe6098246b7468d92d.jpg" title="">
+          <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/74f/412_2150_1/74f0e4eb25dd1cfe6098246b7468d92d.jpg">
+           <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/74f/412_2150_1/74f0e4eb25dd1cfe6098246b7468d92d.jpg">
+            <img alt="Джек-рассел-терьер" class="article_pic" height="397" src="/upload/resize_cache/iblock/74f/412_2150_1/74f0e4eb25dd1cfe6098246b7468d92d.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         С юного возраста ваш питомец должен знать, что в доме у него есть собственная территория. Выберите место, защищенное от сквозняков и не слишком близко расположенное к источникам тепла. Необходимо приобрести натуральный матрас, достаточно прочный, чтобы выдержать атаки мощных зубов. Рядом следует хранить игрушки, которые джек-рассел-терьер сможет безнаказанно грызть после пробуждения.
+        </p>
+        <p>
+         Уход за шерстью не доставит чрезмерных хлопот, хотя эта порода при полностью домашнем содержании линяет в течение всего года. В тримминге с помощью специальных инструментов нуждаются только жесткошерстные терьеры, остальным достаточно регулярного вычесывания. Частые купания противопоказаны, поскольку повреждают естественный защитный слой на шерсти и коже питомца. После прогулок достаточно протирать лапы влажным полотенцем или салфетками для животных.
+        </p>
+        <p>
+         Зубы следует чистить один-два раза в неделю с помощью специализированной пасты. Дважды в месяц проводите осмотр и очистку ушных раковин.
+        </p>
+        <p>
+         К питанию джек-рассел-терьера выдвигаются стандартные требования. Либо корма класса премиум и супер-премиум, либо сбалансированная натуральная еда. В последнем случае соотношение мясных (говядина, телятина, вареная птица и субпродукты) и растительных компонентов должно составлять 2:1.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/99c/99ced78ebd52570bdf2fcb86b35b09a7.jpg" title="">
+          <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/99c/1024_2150_1/99ced78ebd52570bdf2fcb86b35b09a7.jpg">
+           <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/99c/1024_2150_1/99ced78ebd52570bdf2fcb86b35b09a7.jpg">
+            <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/99c/1024_2150_1/99ced78ebd52570bdf2fcb86b35b09a7.jpg"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <h2 id="gl7">
+         Здоровье и болезни джек-рассел-терьера
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Игра в фрисби с джек-расселом" data-fancybox="gallery" href="/upload/iblock/7e7/7e7c1226fd4edc5561792e9a81aabc9d.jpg" title="Игра в фрисби с джек-расселом">
+          <div class="lazy-load" data-alt="Игра в фрисби с джек-расселом" data-class="article_pic" data-original="/upload/resize_cache/iblock/7e7/412_2150_1/7e7c1226fd4edc5561792e9a81aabc9d.jpg">
+           <noscript data-alt="Игра в фрисби с джек-расселом" data-class="article_pic" data-original="/upload/resize_cache/iblock/7e7/412_2150_1/7e7c1226fd4edc5561792e9a81aabc9d.jpg">
+            <img alt="Игра в фрисби с джек-расселом" class="article_pic" height="614" src="/upload/resize_cache/iblock/7e7/412_2150_1/7e7c1226fd4edc5561792e9a81aabc9d.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Игра в фрисби с джек-расселом
+         </div>
+        </div>
+        <p>
+         В целом джек-рассел-терьеров можно назвать выносливыми собаками с хорошим здоровьем. Но и они не застрахованы от ряда врожденных и приобретенных заболеваний:
+        </p>
+        <ul>
+         <li>
+          остеохондропатия головки бедренной кости (болезнь Пертеса) проявляется у щенков 4–10 месяцев в виде постоянной или периодической хромоты;
+         </li>
+         <li>
+          вывих коленной чашечки;
+         </li>
+         <li>
+          дисплазия тазобедренных суставов, хотя к группе риска чаще причисляют крупные породы, не обходит стороной терьеров;
+         </li>
+         <li>
+          глухота;
+         </li>
+         <li>
+          болезни сердца;
+         </li>
+         <li>
+          эпилепсия;
+         </li>
+         <li>
+          наследственные дефекты развития склеры, сосудистой оболочки, сетчатки, зрительного нерва и ретинальных сосудов – так называемая аномалия глаза колли.
+         </li>
+        </ul>
+        <p>
+         Чтобы обеспечить вашему питомцу нормальное самочувствие и улучшить качество его жизни вплоть до преклонных лет, регулярно посещайте ветеринара для профилактических осмотров и следуйте его рекомендациям. Не занимайтесь самолечением в случае возникновения симптомов различных заболеваний.
+        </p>
+        <h2 id="gl8">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Появление джек-рассел-терьеров на киноэкране и в фоторепортажах глянцевых журналов из жизни знаменитостей сказалось на породе не самым лучшим образом. Появилось немало недобросовестных заводчиков, которые стремятся к получению прибыли на продаже популярных животных и совершенно не заботятся о генофонде и воспитании малышей.
+        </p>
+        <p>
+         Очень важно покупать щенков только у бридеров с безупречной репутацией и в лучших питомниках. Конечно, такие джек-расселы будут стоить дороже, но в будущем вам не придется сталкиваться с неконтролируемым поведением собаки или проводить все свободное время в клиниках из-за наследственных проблем со здоровьем.
+        </p>
+        <p>
+         При первом знакомстве с джек-рассел-терьером важно обратить внимание на поведение выбранного щенка. Он должен быть игривым, энергичным и общительным. Вялость, апатия и отсутствие аппетита свидетельствуют о плохом самочувствии, а агрессия или страх перед окружающим миром – о нестабильности психики. Не оставляйте без внимания условия содержания мамы и малышей. Чистота, достаточное пространство и наличие игрушек свидетельствуют об ответственном отношении заводчика не меньше, чем наличие официальных документов и плановых прививок.
+        </p>
+        <h2>
+         Фото щенков джек-рассел-терьера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/751/7513f01913fe98b5d68faeb45fd7958a.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/751/380_264_2/7513f01913fe98b5d68faeb45fd7958a.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/751/380_264_2/7513f01913fe98b5d68faeb45fd7958a.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/751/380_264_2/7513f01913fe98b5d68faeb45fd7958a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/3a5/3a5354b0a68f0028fe3d9c7223f0475b.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/3a5/380_264_2/3a5354b0a68f0028fe3d9c7223f0475b.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/3a5/380_264_2/3a5354b0a68f0028fe3d9c7223f0475b.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/3a5/380_264_2/3a5354b0a68f0028fe3d9c7223f0475b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b9b/b9b7f554d743cfce27a77004c799cb0b.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b9b/380_264_2/b9b7f554d743cfce27a77004c799cb0b.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b9b/380_264_2/b9b7f554d743cfce27a77004c799cb0b.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/b9b/380_264_2/b9b7f554d743cfce27a77004c799cb0b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/342/342df3028fe3768bbc9a3dc014500a0d.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/342/380_264_2/342df3028fe3768bbc9a3dc014500a0d.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/342/380_264_2/342df3028fe3768bbc9a3dc014500a0d.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/342/380_264_2/342df3028fe3768bbc9a3dc014500a0d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/829/82949c5b84e5e0c52c53fa4f87510d11.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/829/380_264_2/82949c5b84e5e0c52c53fa4f87510d11.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/829/380_264_2/82949c5b84e5e0c52c53fa4f87510d11.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/829/380_264_2/82949c5b84e5e0c52c53fa4f87510d11.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/60b/60b5ed6bef4a1b4ac4835cd5d672860a.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/60b/380_264_2/60b5ed6bef4a1b4ac4835cd5d672860a.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/60b/380_264_2/60b5ed6bef4a1b4ac4835cd5d672860a.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/60b/380_264_2/60b5ed6bef4a1b4ac4835cd5d672860a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/65e/65ee726440f3a875e5820b4d792da60e.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/65e/380_264_2/65ee726440f3a875e5820b4d792da60e.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/65e/380_264_2/65ee726440f3a875e5820b4d792da60e.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/65e/380_264_2/65ee726440f3a875e5820b4d792da60e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/76e/76e54ce5463481086db09956b6dd6da0.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/76e/380_264_2/76e54ce5463481086db09956b6dd6da0.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/76e/380_264_2/76e54ce5463481086db09956b6dd6da0.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/76e/380_264_2/76e54ce5463481086db09956b6dd6da0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/81f/81f090fb4676cb73a8f19b8a6826dfcd.jpg" title="">
+           <div class="lazy-load" data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/81f/380_264_2/81f090fb4676cb73a8f19b8a6826dfcd.jpg">
+            <noscript data-alt="Джек-рассел-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/81f/380_264_2/81f090fb4676cb73a8f19b8a6826dfcd.jpg">
+             <img alt="Джек-рассел-терьер" class="article_pic" src="/upload/resize_cache/iblock/81f/380_264_2/81f090fb4676cb73a8f19b8a6826dfcd.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl9">
+         Цена джек-рассел-терьера
+        </h2>
+        <p>
+         Как и в случае с любой породистой собакой, цена джек-рассел-терьера напрямую зависит от родословной и соответствия стандарту породы. «Домашние» щенки, которые не смогут участвовать в выставках, но станут замечательными компаньонами для активных владельцев, обойдутся примерно в 15 тысяч рублей. Далее стоимость растет, исходя из перспективности, и может доходить до 50 000 - 60 000 рублей.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения джек-рассел-терьера на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/28077/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Екатерина Корякина" data-original="/upload/resize_cache/main/4db/200_200_2/f3jjvufvoyo8awsozkmyl5n5pqol3y7b.jpg">
+            <noscript data-alt="Екатерина Корякина" data-original="/upload/resize_cache/main/4db/200_200_2/f3jjvufvoyo8awsozkmyl5n5pqol3y7b.jpg">
+             <img alt="Екатерина Корякина" src="/upload/resize_cache/main/4db/200_200_2/f3jjvufvoyo8awsozkmyl5n5pqol3y7b.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/allergiya-u-dzhekrassela-5650/">
+           Аллергия у джек-рассела
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте, подскажите, может кто сталкивался!
+Собаке 9 месяцев, с 5 месяцев началась аллергия, красные уши и глаза, постоянно чешется. Снимали приступы преднизолоном, как слезали с него опять все заново, врач-дерматолог...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/28077/">
+            Екатерина Корякина
+           </a>
+          </span>
+          <span class="vopros-date">
+           Неделю назад
+          </span>
+          <span class="vopros-smotr">
+           24 просмотра
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27958/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Артур Товмасян" data-original="/upload/main/178/0olp91rqrf2n6eexlm0mmhdj3loklvtm.jpg">
+            <noscript data-alt="Артур Товмасян" data-original="/upload/main/178/0olp91rqrf2n6eexlm0mmhdj3loklvtm.jpg">
+             <img alt="Артур Товмасян" src="/upload/main/178/0olp91rqrf2n6eexlm0mmhdj3loklvtm.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/dzhek-rassel-5595/">
+           Джек Рассел
+          </a>
+         </div>
+         <div class="forum-text">
+          Подскажите Джек может жить не в доме не с хозяевами, живем в Краснодаре на крайний случай есть хоз постройка отапливаемая, и как с кошкой они смогут ужиться. Еще рассматриваем шиперке
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27958/">
+            Артур Товмасян
+           </a>
+          </span>
+          <span class="vopros-date">
+           Месяц назад
+          </span>
+          <span class="vopros-smotr">
+           93 просмотра
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27790/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Мария Александровна" data-original="/upload/resize_cache/main/391/200_200_2/xpemw62u5efpleg22mv89lwrbyfft4h4.jpg">
+            <noscript data-alt="Мария Александровна" data-original="/upload/resize_cache/main/391/200_200_2/xpemw62u5efpleg22mv89lwrbyfft4h4.jpg">
+             <img alt="Мария Александровна" src="/upload/resize_cache/main/391/200_200_2/xpemw62u5efpleg22mv89lwrbyfft4h4.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/dzhek-rassel-5525/">
+           Джек Рассел
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте.подскажите чистокровный Джек Рассел илиинет
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27790/">
+            Мария Александровна
+           </a>
+          </span>
+          <span class="vopros-date">
+           2 месяца назад
+          </span>
+          <span class="vopros-smotr">
+           169 просмотров
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27592/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Татьяна Кулагина" data-original="/upload/resize_cache/main/c41/200_200_2/boku15ob4cjywsktaut39posz01axc46.jpg">
+            <noscript data-alt="Татьяна Кулагина" data-original="/upload/resize_cache/main/c41/200_200_2/boku15ob4cjywsktaut39posz01axc46.jpg">
+             <img alt="Татьяна Кулагина" src="/upload/resize_cache/main/c41/200_200_2/boku15ob4cjywsktaut39posz01axc46.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/pitanie-kashi-i-konservy-5447/">
+           Питание каши и консервы
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте,подскажите пожалуйста 
+У меня Джек Рассел нам 1год и 2 месяца
+Кормлю консервами «доктор алдрес» и запаривающей кашей «гурман»
+Кормлю так:25гр каши+25 воды+200гр консерв
+Утром и вечером
+Столкнулась...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27592/">
+            Татьяна Кулагина
+           </a>
+          </span>
+          <span class="vopros-date">
+           3 месяца назад
+          </span>
+          <span class="vopros-smotr">
+           351 просмотр
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/dzhek-rassel-terer/forum/">
+        Перейти на
+        форум джек-рассел-терьера
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Джек-рассел-терьер" src="/upload/iblock/a02/a027665dded6df37d45e2c2a6c304b28.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/dzhek-rassel-terer/">
+          Джек-рассел-терьер
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/dzhek-rassel-terer/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/dzhek-rassel-terer/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/dzhek-rassel-terer/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/dzhek-rassel-terer/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/dzhek-rassel-terer/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/dzhek-rassel-terer/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/belgiyskaya-ovcharka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бельгийская овчарка" data-original="/upload/resize_cache/iblock/139/100_100_1/139d3d3ac38deaf8ec80dac1ee2e70e6.jpg">
+          <noscript data-alt="Бельгийская овчарка" data-original="/upload/resize_cache/iblock/139/100_100_1/139d3d3ac38deaf8ec80dac1ee2e70e6.jpg">
+           <img alt="Бельгийская овчарка" src="/upload/resize_cache/iblock/139/100_100_1/139d3d3ac38deaf8ec80dac1ee2e70e6.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бельгийская овчарка
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/bulmastif/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бульмастиф" data-original="/upload/resize_cache/iblock/a0a/100_100_1/a0a5d60d572e841f0ed6243471d1042f.jpg">
+          <noscript data-alt="Бульмастиф" data-original="/upload/resize_cache/iblock/a0a/100_100_1/a0a5d60d572e841f0ed6243471d1042f.jpg">
+           <img alt="Бульмастиф" src="/upload/resize_cache/iblock/a0a/100_100_1/a0a5d60d572e841f0ed6243471d1042f.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бульмастиф
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/chikhuakhua/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Чихуахуа" data-original="/upload/resize_cache/iblock/49c/100_100_1/49cd241c27d90c0ce9bd82c950cd4a76.jpg">
+          <noscript data-alt="Чихуахуа" data-original="/upload/resize_cache/iblock/49c/100_100_1/49cd241c27d90c0ce9bd82c950cd4a76.jpg">
+           <img alt="Чихуахуа" src="/upload/resize_cache/iblock/49c/100_100_1/49cd241c27d90c0ce9bd82c950cd4a76.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Чихуахуа
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/chesapik-bey-retriver/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Чесапик-бей-ретривер" data-original="/upload/resize_cache/iblock/760/100_100_1/q081nva4oresbwcnramkklvou32filaz.jpg">
+          <noscript data-alt="Чесапик-бей-ретривер" data-original="/upload/resize_cache/iblock/760/100_100_1/q081nva4oresbwcnramkklvou32filaz.jpg">
+           <img alt="Чесапик-бей-ретривер" src="/upload/resize_cache/iblock/760/100_100_1/q081nva4oresbwcnramkklvou32filaz.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Чесапик-бей-ретривер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fdzhek-rassel-terer%252F%253Fcheck_key%253Da2bdc6f0cdf982f222cfdc14995742f5%2526ANIMAL_CODE%253Ddzhek-rassel-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fdzhek-rassel-terer%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmR6aGVrLXJhc3NlbC10ZXJlciUyRiUzRmNoZWNrX2tleSUzRGEyYmRjNmYwY2RmOTgyZjIyMmNmZGMxNDk5NTc0MmY1JTI2QU5JTUFMX0NPREUlM0Rkemhlay1yYXNzZWwtdGVyZXIlMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGZHpoZWstcmFzc2VsLXRlcmVyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fdzhek-rassel-terer%252F%253Fcheck_key%253Da2bdc6f0cdf982f222cfdc14995742f5%2526ANIMAL_CODE%253Ddzhek-rassel-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fdzhek-rassel-terer%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fdzhek-rassel-terer%252F%253Fcheck_key%253Da2bdc6f0cdf982f222cfdc14995742f5%2526ANIMAL_CODE%253Ddzhek-rassel-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fdzhek-rassel-terer%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "176.59.43.210"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--6f10d85ce2d2f5297dedf283d055a267-->

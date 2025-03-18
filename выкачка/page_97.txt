@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'7b3823e04a47'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Кокапу, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Кокапу – дизайнерская порода собак, полученная в результате скрещивания американского кокер-спаниеля и пуделя." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/47e/ar31355zd7yffqxnilxygfsz4zpxv6wd.jpg" property="og:image"/>
+     <title>
+      Кокапу: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/kokapu/" property="og:url"/>
+     <meta content="Кокапу: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Кокапу – дизайнерская порода собак, полученная в результате скрещивания американского кокер-спаниеля и пуделя." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/kokapu/" itemprop="url">
+         <span itemprop="title">
+          Кокапу
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Кокапу
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/kokapu/">
+          Описание
+         </a>
+         <a href="/dog/kokapu/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/kokapu/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/kokapu/photo/">
+          Фото
+         </a>
+         <a href="/dog/kokapu/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Кокапу" src="/upload/iblock/aa4/octqp7b7eis2l972tlwifol826ij62w8.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/kokapu/">
+           кокерпу
+          </a>
+          ,
+          <a href="/dog/kokapu/">
+           кокер-пудель
+          </a>
+          ,
+          <a href="/dog/kokapu/">
+           кокердудл
+          </a>
+         </span>
+         <p>
+          Кокапу – дизайнерская порода собак, полученная в результате скрещивания американского кокер-спаниеля и пуделя.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/50f/0z0oasz1d64tu40ulxtyj9z0f3xsez4n.jpg" data-cap="" data-fancybox="images" data-link="https://www.flickr.com/photos/dave_minogue/51054302638/" data-type="image" data-username="Julie, Dave &amp; Family" href="/upload/uf/9e4/u57pd293c6hkt1ev1r3fm4iom6cxtf34.jpg">
+            <img alt="Кокапу" src="/upload/resize_cache/uf/9e4/293_293_2/u57pd293c6hkt1ev1r3fm4iom6cxtf34.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/39f/itfyy90gt5x65my8gt6j10a9rf3k2jh1.jpg" data-cap="I Drove over to meet my new friends!!" data-fancybox="images" data-link="https://www.instagram.com/p/Coc9tSbulhd/" data-type="image" data-username=" justtheotings" href="/upload/uf/dcb/cd5w8y574fud02ofr9bksbf5fc8o4l4x.jpg">
+            <img alt="Кокапу" src="/upload/resize_cache/uf/dcb/293_293_2/cd5w8y574fud02ofr9bksbf5fc8o4l4x.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/a5e/rjauw7fc2le1tye9mu6kea4osw0fqljx.jpg" data-cap="AC3A3660.jpg" data-fancybox="images" data-link="https://www.flickr.com/photos/123038483@N07/20237596505/" data-type="image" data-username="Andrew Hockenhull" href="/upload/uf/822/8gcb70y32jxj2lgkajfya0rbyg048s3j.jpg">
+            <img alt="Кокапу" src="/upload/resize_cache/uf/822/293_293_2/8gcb70y32jxj2lgkajfya0rbyg048s3j.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/kokapu/photo/">
+         Все
+            фото кокапу
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы кокапу
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт кокер-пуделя
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер собак кокапу
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни кокапу
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена кокапу
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Кокапу
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         США
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         1960-е
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         9,1-10,9 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         36-38 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         13-16 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Кокапу демонстрируют высокие интеллектуальные показатели пуделей, усиленные любопытством и активностью спаниелей.
+        </li>
+        <li>
+         Как мальтипу и помски, кокапу имеют условный породный статус. Международные кинологические ассоциации таких собак просто не регистрируют.
+        </li>
+        <li>
+         Единственные организации, где можно получить информацию о метисах, – это Реестр дизайнерских пород (Designer Breed Registry), Международный реестр дизайнерских собак (International Designer Canine Registry), а также Kлуб заводчиков дизайнерских собак (Designer Dogs Kennel Club).
+        </li>
+        <li>
+         Экстерьер кокапу целиком и полностью зависит от типа пуделя, участвовавшего в скрещивании. На сегодняшний день распространены как вязки со стандартными производителями, так и с той-пуделями.
+        </li>
+        <li>
+         Кокапу считается старейшей из дизайнерских пород, успешно разводимой в то время, когда кинологические круги еще не захватила мода на метисов.
+        </li>
+        <li>
+         Одна из особенностей потомства пуделя и кокер-спаниеля – очень умеренная, а иногда и полностью отсутствующая линька. В связи с этим частыми покупателями кокапу становятся люди с аллергией на шерсть животных, а также все те, кого пугает необходимость ежедневной уборки.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Кокапу" data-original="/upload/iblock/47e/ar31355zd7yffqxnilxygfsz4zpxv6wd.jpg">
+          <noscript data-alt="Кокапу" data-original="/upload/iblock/47e/ar31355zd7yffqxnilxygfsz4zpxv6wd.jpg">
+           <img alt="Кокапу" src="/upload/iblock/47e/ar31355zd7yffqxnilxygfsz4zpxv6wd.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Кокапу
+          </strong>
+          – очаровательный умница и большой юморист, миссия которого – создавать вокруг себя атмосферу веселья и доброжелательности, а не проблемы своему владельцу. С этим позитивным метисом приятно делать что угодно: гулять, смотреть любимый сериал и даже учиться. Неслучайно порода постоянно попадает во всевозможные топы самых легко дрессируемых и дружелюбных собак.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не переносит (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средний (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Плохой охранник (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Кокапу основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы кокапу
+        </h2>
+        <p>
+         Идея скрестить интеллектуалов-пуделей с проказниками-спаниелями первой посетила бридеров из США. Что касается реального возраста породы, то живые «результаты» таких экспериментов разгуливали по улицам американских городов уже в 60-х годах XX века. Считается, что изначально заводчики планировали создать предельно здорового питомца, который бы вобрал в себя лучшее от
+         <a class="ph" href="/dog/amerikanskiy-koker-spaniel/">
+          кокера
+         </a>
+         и
+         <a class="ph" href="/dog/pudel/">
+          пуделя
+         </a>
+         .
+        </p>
+        <p>
+         Однако со временем список требований к животным расширился. Так, например, современные кокапу уже обязаны быть не только бодрыми, веселыми и здоровыми, но и максимально гипоаллергенными, не болтливыми и ни в коем случае не задирами. Стоит добавить, что перспективами развития этого собачьего клана занимаются преимущественно американские клубы. Собственно, именно в США и сосредоточено основное поголовье кокапу.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важно:
+         </strong>
+         цель заводчиков породы – добиться для собак всемирного признания, поэтому в Американском кокапу-клубе официально прекратили скрещивание
+         <a class="ph" href="/dog/pudel/">
+          пуделей
+         </a>
+         с
+         <a class="ph" href="/dog/amerikanskiy-koker-spaniel/">
+          кокер-спаниелями
+         </a>
+         , начав работать над линиями полностью чистокровных особей.
+        </p>
+        <h2>
+         Видео: Кокапу
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="b9hm3Nut2qk">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт кокер-пуделя
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Из-за разнообразия родительских пород, у кокапу допустим любой окрас. Собаки могут значительно различаться по размеру и типу шерсти" data-fancybox="gallery" href="/upload/iblock/f29/rjuowkzlqp5ij52hrfs3k4nrhhur9moj.jpg" title="Из-за разнообразия родительских пород, у кокапу допустим любой окрас. Собаки могут значительно различаться по размеру и типу шерсти">
+          <div class="lazy-load" data-alt="Из-за разнообразия родительских пород, у кокапу допустим любой окрас. Собаки могут значительно различаться по размеру и типу шерсти" data-class="article_pic" data-original="/upload/resize_cache/iblock/f29/412_2150_1/rjuowkzlqp5ij52hrfs3k4nrhhur9moj.jpg">
+           <noscript data-alt="Из-за разнообразия родительских пород, у кокапу допустим любой окрас. Собаки могут значительно различаться по размеру и типу шерсти" data-class="article_pic" data-original="/upload/resize_cache/iblock/f29/412_2150_1/rjuowkzlqp5ij52hrfs3k4nrhhur9moj.jpg">
+            <img alt="Из-за разнообразия родительских пород, у кокапу допустим любой окрас. Собаки могут значительно различаться по размеру и типу шерсти" class="article_pic" height="618" src="/upload/resize_cache/iblock/f29/412_2150_1/rjuowkzlqp5ij52hrfs3k4nrhhur9moj.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Из-за разнообразия родительских пород, у кокапу допустим любой окрас. Собаки могут значительно различаться по размеру и типу шерсти
+         </div>
+        </div>
+        <p>
+         Разведение кокапу – занятие для бридеров, готовых к элементам неожиданности. Дело в том, что «коктейль» генов в каждом отдельном случае дает совершенно непрогнозируемый результат. Отсюда – сложности со стандартизацией животных. Согласитесь, непростая задача: «подогнать» экстерьер собаки под конкретные требования, если каждая вязка
+         <a class="ph" href="/dog/amerikanskiy-koker-spaniel/">
+          кокера
+         </a>
+         и
+         <a class="ph" href="/dog/pudel/">
+          пуделя
+         </a>
+         приносит совершенно уникальных щенков. В породных клубах проблему решили по-своему: вместо классического стандарта, описывающего внешность, кокапу просто получили «разбивку» по весовым категориям.
+        </p>
+        <ul>
+         <li>
+          Ти-кап кокапу (от англ. teacup – «cобака с чайную чашку») – ростом до 24,5 см и весом до 2,5-2,7 кг.
+         </li>
+         <li>
+          Той особи – рост составляет 25-28 см; вес – 2,7-5,5 кг.
+         </li>
+         <li>
+          Мини-песики – от 28 до 35,6 см в холке с массой тела 5,9-8 кг.
+         </li>
+         <li>
+          Макси или стандарт – ростом от 38 см и весом от 8,6 кг.
+         </li>
+        </ul>
+        <p>
+         Примечательно, что на габариты кокапу всегда влияет размер
+         <a class="ph" href="/dog/pudel/">
+          пуделя
+         </a>
+         , участвовавшего в вязке. Если это стандарт-животное, то вероятность получить потомство аналогичных размеров всегда выше. Той-пудели обычно производят себе подобных щенков.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Кокер-пудель – это не обязательно потешный кудряш. Структура шерстного покрова щенка напрямую зависит от того, чьи гены в нем победят –
+         <a class="ph" href="/dog/amerikanskiy-koker-spaniel/">
+          спаниеля
+         </a>
+         или
+         <a class="ph" href="/dog/pudel/">
+          пуделя
+         </a>
+         . Кокапу может иметь и кудрявоватую, и слегка волнистую, и даже совершенно прямую шерстку. Длина волоса тоже варьируется – от короткой до длинной. Единственное, что объединяет всех кокапу, – очень скудная линька, унаследованная от
+         <a class="ph" href="/dog/pudel/">
+          пуделей
+         </a>
+         . Также к важнейшим породным признакам относится отсутствие у шерсти сильного псового запаха.
+        </p>
+        <h3>
+         Окрасы
+        </h3>
+        <p>
+         Кокапу – обладатель всех типов окрасов, типичных для
+         <a class="ph" href="/dog/pudel/">
+          пуделя
+         </a>
+         и
+         <a class="ph" href="/dog/amerikanskiy-koker-spaniel/">
+          кокера
+         </a>
+         . Проще говоря, «шубка» метиса может иметь абсолютно любой тон, включая черную, коричневую, белую, подпалую, рыжую, желто-коричневую и соболиную масти.
+        </p>
+        <h2>
+         Фото кокапу
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9a3/6ahcdg2zii8mimcyalnbgnhy6l5nvwhb.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/9a3/380_264_2/6ahcdg2zii8mimcyalnbgnhy6l5nvwhb.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/9a3/380_264_2/6ahcdg2zii8mimcyalnbgnhy6l5nvwhb.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/9a3/380_264_2/6ahcdg2zii8mimcyalnbgnhy6l5nvwhb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/17b/rkxvjqals2wtv2ic4crodiq0pwtuxbzd.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/17b/380_264_2/rkxvjqals2wtv2ic4crodiq0pwtuxbzd.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/17b/380_264_2/rkxvjqals2wtv2ic4crodiq0pwtuxbzd.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/17b/380_264_2/rkxvjqals2wtv2ic4crodiq0pwtuxbzd.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9a6/8vjbtd7jvay53p77x4m6252t5zzs8gw3.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/9a6/380_264_2/8vjbtd7jvay53p77x4m6252t5zzs8gw3.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/9a6/380_264_2/8vjbtd7jvay53p77x4m6252t5zzs8gw3.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/9a6/380_264_2/8vjbtd7jvay53p77x4m6252t5zzs8gw3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8e0/mysj99mbir3suydrac8u85uuadmce3ml.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/8e0/380_264_2/mysj99mbir3suydrac8u85uuadmce3ml.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/8e0/380_264_2/mysj99mbir3suydrac8u85uuadmce3ml.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/8e0/380_264_2/mysj99mbir3suydrac8u85uuadmce3ml.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1b1/dtvdzo3oxid2jei1wnop18i2c0kvwmgj.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/1b1/380_264_2/dtvdzo3oxid2jei1wnop18i2c0kvwmgj.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/1b1/380_264_2/dtvdzo3oxid2jei1wnop18i2c0kvwmgj.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/1b1/380_264_2/dtvdzo3oxid2jei1wnop18i2c0kvwmgj.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d2b/wk5lz4cao3rvp50bv86behlrhbw83l37.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/d2b/380_264_2/wk5lz4cao3rvp50bv86behlrhbw83l37.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/d2b/380_264_2/wk5lz4cao3rvp50bv86behlrhbw83l37.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/d2b/380_264_2/wk5lz4cao3rvp50bv86behlrhbw83l37.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/24f/cualpqlqgaows78gilkn9hasxd49bpi0.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/24f/380_264_2/cualpqlqgaows78gilkn9hasxd49bpi0.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/24f/380_264_2/cualpqlqgaows78gilkn9hasxd49bpi0.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/24f/380_264_2/cualpqlqgaows78gilkn9hasxd49bpi0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4f1/imnm9m3kxh2ve7iddqoo4pltqnae4g5w.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/4f1/380_264_2/imnm9m3kxh2ve7iddqoo4pltqnae4g5w.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/4f1/380_264_2/imnm9m3kxh2ve7iddqoo4pltqnae4g5w.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/4f1/380_264_2/imnm9m3kxh2ve7iddqoo4pltqnae4g5w.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/94e/rqbm6xg05zeqwbj8dp5c0e3ozdmm8dsf.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/94e/380_264_2/rqbm6xg05zeqwbj8dp5c0e3ozdmm8dsf.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/94e/380_264_2/rqbm6xg05zeqwbj8dp5c0e3ozdmm8dsf.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/94e/380_264_2/rqbm6xg05zeqwbj8dp5c0e3ozdmm8dsf.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер собак кокапу
+        </h2>
+        <p>
+         Создатели породы основательно проработали компаньонские характеристики ее представителей, поэтому сегодняшние кокапу – веселые, в меру общительные и удобные во всех отношениях питомцы. Это те редкие собаки, которые одинаково любят всех членов семьи, включая детей, и при этом всегда в восторге от гостей. Совместное проживание с кокер-пуделем – дело вполне приятное и ненапряжное. Представители этого семейства не шумят и подают голос только по двум поводам – от страха и скуки. Эти две фобии животные унаследовали от предков.
+         <a class="ph" href="/dog/amerikanskiy-koker-spaniel/">
+          Кокеры
+         </a>
+         , страдающие от одиночества, грешат деструктивным поведением, в то время как
+         <a class="ph" href="/dog/pudel/">
+          пудели
+         </a>
+         в аналогичной ситуации впадают в затяжную депрессию.
+        </p>
+        <p>
+         Охотничьи гены
+         <a class="ph" href="/dog/amerikanskiy-koker-spaniel/">
+          спаниелей
+         </a>
+         в кокапу не спят, но проявляются более смазанно. Как пример: питомец с удовольствием погоняется по двору за вашей кошкой или цыпленком, но исключительно ради удовольствия, а не с целью отлова. В остальном же кокапу – максимально толерантный и миролюбивый товарищ, готовый уживаться с самыми неконтактными соплеменниками.
+        </p>
+        <p>
+         От
+         <a class="ph" href="/dog/pudel/">
+          пуделей
+         </a>
+         метисам передались хорошие интеллектуальные показатели и природный артистизм. Так что если положительно относитесь к питомцам с задатками клоуна, общий язык с собакой будет найти нетрудно. Кокапу не так активны, как
+         <a class="ph" href="/dog/amerikanskiy-koker-spaniel/">
+          спаниели
+         </a>
+         , но в диванных лежебок не деградируют и любые выходы за порог дома расценивают как начало увлекательного и познавательного путешествия. Для убежденных домоседов, подыскивающих флегматичного квартирного песика, кокер-пудель не лучший вариант.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Кокапу быстро набирают популярность" data-fancybox="gallery" href="/upload/iblock/178/v3v4qjnwmdrdu16pgx5doul4pas95eek.jpg" title="Кокапу быстро набирают популярность">
+          <div class="lazy-load" data-alt="Кокапу быстро набирают популярность" data-class="article_pic" data-original="/upload/resize_cache/iblock/178/1024_2150_1/v3v4qjnwmdrdu16pgx5doul4pas95eek.jpg">
+           <noscript data-alt="Кокапу быстро набирают популярность" data-class="article_pic" data-original="/upload/resize_cache/iblock/178/1024_2150_1/v3v4qjnwmdrdu16pgx5doul4pas95eek.jpg">
+            <img alt="Кокапу быстро набирают популярность" class="article_pic" src="/upload/resize_cache/iblock/178/1024_2150_1/v3v4qjnwmdrdu16pgx5doul4pas95eek.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кокапу быстро набирают популярность
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Кокапу сообразителен, не строптив и охотно учится всему, чему вы захотите его научить. Чтобы вызвать у породы интерес к занятиям, почти всегда достаточно положительного подкрепления, так что побольше вкусняшек и поменьше всевозможных принуждений! Периодически кокапу будет прикидываться непонимайкой, как его сородич
+         <a class="ph" href="/dog/pudel/">
+          пудель
+         </a>
+         , но в целом процесс дрессировки проходит легко. Что касается направленности обучения, то известно, что из кокер-пуделей получаются отличные трюкачи. Так что при желании можете разучить с собакой несколько интересных номеров, чтобы показывать знакомым.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенки кокапу умны и хорошо поддаются дрессировке. Если питомец отвлекается, то проявите терпение и не забывайте про поощрения" data-fancybox="gallery" href="/upload/iblock/a41/tnr4k90k7y4hpestcv9y5f5yp4op6rsc.jpg" title="Щенки кокапу умны и хорошо поддаются дрессировке. Если питомец отвлекается, то проявите терпение и не забывайте про поощрения">
+          <div class="lazy-load" data-alt="Щенки кокапу умны и хорошо поддаются дрессировке. Если питомец отвлекается, то проявите терпение и не забывайте про поощрения" data-class="article_pic" data-original="/upload/resize_cache/iblock/a41/412_2150_1/tnr4k90k7y4hpestcv9y5f5yp4op6rsc.jpg">
+           <noscript data-alt="Щенки кокапу умны и хорошо поддаются дрессировке. Если питомец отвлекается, то проявите терпение и не забывайте про поощрения" data-class="article_pic" data-original="/upload/resize_cache/iblock/a41/412_2150_1/tnr4k90k7y4hpestcv9y5f5yp4op6rsc.jpg">
+            <img alt="Щенки кокапу умны и хорошо поддаются дрессировке. Если питомец отвлекается, то проявите терпение и не забывайте про поощрения" class="article_pic" height="275" src="/upload/resize_cache/iblock/a41/412_2150_1/tnr4k90k7y4hpestcv9y5f5yp4op6rsc.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенки кокапу умны и хорошо поддаются дрессировке. Если питомец отвлекается, то проявите терпение и не забывайте про поощрения
+         </div>
+        </div>
+        <p>
+         Специальной методики воспитания для породы пока не создано, поэтому руководствуйтесь общими правилами, подходящими большинству имиджевых собак. Сразу же после прибытия щенка в ваш дом, учите его ходить в туалет в правильном месте – на пеленку, газету. Привитых малышей, отсидевших в карантине, чаще выносите на улицу, чтобы те сделали свои мокрые дела вне домашних стен. Однако впечатляющих результатов не ждите. Полноценно терпеть с туалетом до прогулки собаки начинают с полугодовалого возраста, а то и позже.
+        </p>
+        <p>
+         Приучать кокапу к ошейнику и поводку нужно до того, как он впервые выйдет на улицу. По правилам, отправляться на выгул собака должна в полной «экипировке». С первых дней совместной жизни со щенком устанавливайте рамки дозволенного. Не разрешайте играть с вашими вещами (для этого у кокапу должны быть собственные игрушки), запрещайте кусаться в моменты забав, а также крушить дом. Это не просто детские шалости, которые с возрастом пройдут, а полноценное формирование личности собаки.
+        </p>
+        <p>
+         С 3 до 6 месяцев животное социализируется, а также учится подчинению. К 4 месяцам кокер-пудель способен четко усвоить команды «Рядом!», «Фу!», «Лежать!», «Сидеть!». Также важно научить щенка прекращать лай по требованию. Начиная с 6-месячного возраста, в послушании кокапу возможны «откаты» – это период полового созревания, когда собака пытается давить на хозяина своим авторитетом. Воспринимайте такое поведение как данность, но дрессировку не прекращайте. Постепенно гормональная буря успокоится, и питомец вновь станет самим собой.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Обладая общительным характером, кокапу легко ладят со всеми, кого встречают" data-fancybox="gallery" href="/upload/iblock/1e2/4t60bjgpafyoc66gz42dtvomy730szao.jpg" title="Обладая общительным характером, кокапу легко ладят со всеми, кого встречают">
+           <div class="lazy-load" data-alt="Обладая общительным характером, кокапу легко ладят со всеми, кого встречают" data-class="article_pic" data-original="/upload/resize_cache/iblock/1e2/512_342_2/4t60bjgpafyoc66gz42dtvomy730szao.jpg">
+            <noscript data-alt="Обладая общительным характером, кокапу легко ладят со всеми, кого встречают" data-class="article_pic" data-original="/upload/resize_cache/iblock/1e2/512_342_2/4t60bjgpafyoc66gz42dtvomy730szao.jpg">
+             <img alt="Обладая общительным характером, кокапу легко ладят со всеми, кого встречают" class="article_pic" src="/upload/resize_cache/iblock/1e2/512_342_2/4t60bjgpafyoc66gz42dtvomy730szao.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Обладая общительным характером, кокапу легко ладят со всеми, кого встречают
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Благодаря генам пуделя кокапу обожают воду и все, что с ней связано" data-fancybox="gallery" href="/upload/iblock/88c/qzbs883eir2j6t85l10qa9c8x62kr1e3.jpg" title="Благодаря генам пуделя кокапу обожают воду и все, что с ней связано">
+           <div class="lazy-load" data-alt="Благодаря генам пуделя кокапу обожают воду и все, что с ней связано" data-class="article_pic" data-original="/upload/resize_cache/iblock/88c/512_342_2/qzbs883eir2j6t85l10qa9c8x62kr1e3.jpg">
+            <noscript data-alt="Благодаря генам пуделя кокапу обожают воду и все, что с ней связано" data-class="article_pic" data-original="/upload/resize_cache/iblock/88c/512_342_2/qzbs883eir2j6t85l10qa9c8x62kr1e3.jpg">
+             <img alt="Благодаря генам пуделя кокапу обожают воду и все, что с ней связано" class="article_pic" src="/upload/resize_cache/iblock/88c/512_342_2/qzbs883eir2j6t85l10qa9c8x62kr1e3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Благодаря генам пуделя кокапу обожают воду и все, что с ней связано
+          </div>
+         </div>
+        </div>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         Дизайнерский статус кокапу не превращает их в пассивных домоседов – физическая активность собаке не только полезна, но и необходима. Так что выгуливать питомца все же придется. Но для хозяев, не уважающих разного рода активности, есть и приятная новость: кокапу хватает от 15 до 30 минут, чтобы выплеснуть накопленную за день энергию. Придется выделять на променады около часа-полутора в день, которые лучше разбить на утренний и вечерний выгулы.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Кокапу линяет крайне умеренно, а иногда и вообще не линяет – все зависит от того, чьи гены собака унаследовала. Проще всего придется владельцам особей, лишенных подшерстка (да, такие метисы тоже бывают), чуть сложнее – хозяевам животных с двойной путающейся шерстью. Расчесывать, конечно, необходимо и тех, и других, но с разной периодичностью.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Чем сильнее у кокапу кучерявится шерсть, тем чаще собаке нужно видеться с грумером. Обычно интервалы между стрижками составляют 4-6 недель" data-fancybox="gallery" href="/upload/iblock/c52/8joyf6mwi8yjkq5h4kkqfaxx9pif3khl.jpg" title="Чем сильнее у кокапу кучерявится шерсть, тем чаще собаке нужно видеться с грумером. Обычно интервалы между стрижками составляют 4-6 недель">
+          <div class="lazy-load" data-alt="Чем сильнее у кокапу кучерявится шерсть, тем чаще собаке нужно видеться с грумером. Обычно интервалы между стрижками составляют 4-6 недель" data-class="article_pic" data-original="/upload/resize_cache/iblock/c52/412_2150_1/8joyf6mwi8yjkq5h4kkqfaxx9pif3khl.jpg">
+           <noscript data-alt="Чем сильнее у кокапу кучерявится шерсть, тем чаще собаке нужно видеться с грумером. Обычно интервалы между стрижками составляют 4-6 недель" data-class="article_pic" data-original="/upload/resize_cache/iblock/c52/412_2150_1/8joyf6mwi8yjkq5h4kkqfaxx9pif3khl.jpg">
+            <img alt="Чем сильнее у кокапу кучерявится шерсть, тем чаще собаке нужно видеться с грумером. Обычно интервалы между стрижками составляют 4-6 недель" class="article_pic" height="338" src="/upload/resize_cache/iblock/c52/412_2150_1/8joyf6mwi8yjkq5h4kkqfaxx9pif3khl.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Чем сильнее у кокапу кучерявится шерсть, тем чаще собаке нужно видеться с грумером. Обычно интервалы между стрижками составляют 4-6 недель
+         </div>
+        </div>
+        <p>
+         Считается, что кокапу не нужно стричь, так как их шерсть не настолько густая, как у
+         <a class="ph" href="/dog/pudel/">
+          пуделей
+         </a>
+         . Но гигиеническую стрижку питомцу сделать только полезно – и собаке удобнее, и вам не придется устранять неприятные последствия похода животного в туалет. Полноценное купание с шампунем и кондиционером песику можно устраивать не чаще одного раза в месяц.
+        </p>
+        <p>
+         А вот уши кокер-пуделя придется взять под особый надзор. Висячие и плохо вентилирующиеся, они моментально зарастают грязью в смеси с серными выделениями. Закупитесь специальными лосьонами и каплями для растворения серы. Если собака не соглашается на закапывание жидкости внутрь уха, смочите лосьоном мягкую хлопковую ткань, намотайте ее на палец и очистите ушной проход вручную. И пожалуйста, никаких домашних гигиенических средств! Только препараты из ветаптеки. Иначе рискуете лишить животное слуха. Проветривание ушей – еще одна обязательная процедура для кокапу. Просто возьмите ушное полотно пальцами и слегка потрясите им, загоняя воздух в слуховой проход. Проделывать подобные манипуляции нужно несколько раз в день, просто между делом.
+        </p>
+        <p>
+         Когти кокер-пуделей не стачиваются естественным образом, так что со щенячьего возраста приучайте питомца к необходимости «педикюра». В Сети достаточно мануалов, как сделать это быстро и безболезненно для животного. Уход за глазами представителей породы самый минимальный – осмотреть, снять имеющиеся загрязнения и слизистые комочки тряпочкой, увлажненной холодным черным чаем либо отваром ромашки аптечной.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Очаровательные щенки кокапу" data-fancybox="gallery" href="/upload/iblock/f52/d04fvndkak8nr8tfh4baqsqxloon37t2.jpg" title="Очаровательные щенки кокапу">
+          <div class="lazy-load" data-alt="Очаровательные щенки кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/f52/1024_2150_1/d04fvndkak8nr8tfh4baqsqxloon37t2.jpg">
+           <noscript data-alt="Очаровательные щенки кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/f52/1024_2150_1/d04fvndkak8nr8tfh4baqsqxloon37t2.jpg">
+            <img alt="Очаровательные щенки кокапу" class="article_pic" src="/upload/resize_cache/iblock/f52/1024_2150_1/d04fvndkak8nr8tfh4baqsqxloon37t2.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Очаровательные щенки кокапу
+         </div>
+        </div>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         В большинстве питомников кокапу «держат» на сухих промышленных кормах и влажных консервах. Часто при покупке щенка новому владельцу выдается специальный пакетик с «сушкой», назначение которого – помочь щенку безболезненно перейти на систему кормления, выбранную хозяином.
+        </p>
+        <p>
+         При этом нет никаких запретов на натуральное меню для кокапу. Так что если решите заняться самостоятельным составлением рациона для собаки, следуйте классической схеме, базирующейся на животном белке (постные виды мяса), злаках (гречневая и овсяная крупа), овощах (за исключением бобовых, картофеля, лука, чеснока и пряных трав) и иногда обезжиренной кисломолочке.
+        </p>
+        <p>
+         Перечисленные натуральные продукты придется дополнительно усиливать подкормками и витаминными комплексами, помогающими полноценно сбалансировать рацион. Кроме того, старайтесь исключить еду с повышенной степенью аллергенности, например, курицу. Сухие корма также выбирайте по этому показателю – чем меньше в них пшеницы и кукурузы, которую производители часто маскируют под названием маис, тем лучше для кокапу.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни кокапу
+        </h2>
+        <p>
+         Как бы бридеры ни стремились создать полностью свободную от наследственных недугов породу, результаты пока оставляют желать лучшего. Кокапу в этом плане тоже не исключение. С одной стороны, список болезней животных не так уж велик. Но с другой, стопроцентными здоровяками щенки
+         <a class="ph" href="/dog/amerikanskiy-koker-spaniel/">
+          кокера
+         </a>
+         и
+         <a class="ph" href="/dog/pudel/">
+          пуделя
+         </a>
+         бывают далеко не всегда. Основные проблемы, встречающиеся у породы:
+        </p>
+        <ul>
+         <li>
+          болезни печени (наследие
+          <a class="ph" href="/dog/amerikanskiy-koker-spaniel/">
+           кокер-спаниелей
+          </a>
+          ) – медный токсикоз и хронический гепатит;
+         </li>
+         <li>
+          генетическая дисплазия тазобедренного сустава;
+         </li>
+         <li>
+          вывих надколенника;
+         </li>
+         <li>
+          катаракта (чаще у пожилых особей);
+         </li>
+         <li>
+          аллергия – пищевая, контактная, ингаляционная.
+         </li>
+        </ul>
+        <p>
+         Один из самых проблемных органов породы – уши. Кокапу моментально цепляют ушные инфекции, что частично обусловлено плохим уходом или является следствием постоянно возникающих аллергических реакций. Вот почему так важны своевременная гигиена и регулярная профилактика состояния органов слуха собаки.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Всегда уточняйте у заводчика, кокапу какого поколения тот продает. Потомство F1 – это щенки, рожденные от
+          <a class="ph" href="/dog/amerikanskiy-koker-spaniel/">
+           спаниеля
+          </a>
+          и
+          <a class="ph" href="/dog/pudel/">
+           пуделя
+          </a>
+          ; F2 – животные от двух кокапу.
+         </li>
+         <li>
+          Выбирать собаку по внешности не получится, так как порода пока не имеет единого стандарта, поэтому отнеситесь спокойно к тому факту, что в разных питомниках щенки могут иметь различный экстерьер. Предсказать, в какую комбинацию гены
+          <a class="ph" href="/dog/amerikanskiy-koker-spaniel/">
+           кокер-спаниелей
+          </a>
+          и
+          <a class="ph" href="/dog/pudel/">
+           пуделей
+          </a>
+          объединятся в очередном помете, не в состоянии ни один специалист.
+         </li>
+         <li>
+          Если продавец предоставляет данные тестирования производителей на генетические заболевания или готов согласовать их проведение в присутствии покупателя, обязательно воспользуйтесь данной возможностью. Так вы обезопасите себя от покупки щенка с плохой наследственностью.
+         </li>
+         <li>
+          Внешнее состояние маленького кокапу – достаточно важный критерий. Пугливые, ослабленные, неухоженные малыши – признак того, что владелец разводит их исключительно с целью наживы и совершенно не заинтересован в развитии породы.
+         </li>
+         <li>
+          Не покупайте животных в питомниках, появившихся «вчера». Выбирайте заводчиков с опытом, имеющих группы в соцсетях с отзывами реальных покупателей, фотографиями предыдущих пометов.
+         </li>
+         <li>
+          Если покупаете 3-месячного щенка и старше, то узнайте, вакцинирован и чипирован ли он. Если нет, скорее всего, вы нарвались на «плодильщика».
+         </li>
+         <li>
+          Выбирая ти-кап кокапу, будьте готовы к тому, что при покупке вас попросят стерилизовать питомца. Из-за особенностей анатомии, у микро-собачек часто возникают проблемы с вынашиванием и рождением потомства, поэтому заниматься вязками таких особей должен опытный заводчик.
+         </li>
+        </ul>
+        <h2>
+         Фото щенков кокапу
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/60d/bwt0p904fz65dm3zj35y6pghqlz6zt9d.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/60d/380_264_2/bwt0p904fz65dm3zj35y6pghqlz6zt9d.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/60d/380_264_2/bwt0p904fz65dm3zj35y6pghqlz6zt9d.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/60d/380_264_2/bwt0p904fz65dm3zj35y6pghqlz6zt9d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/19f/91g836fl7t60rvl882wqdoi9lac69yjw.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/19f/380_264_2/91g836fl7t60rvl882wqdoi9lac69yjw.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/19f/380_264_2/91g836fl7t60rvl882wqdoi9lac69yjw.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/19f/380_264_2/91g836fl7t60rvl882wqdoi9lac69yjw.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e2f/5ez3k39vd3x794w9i4hssvm8bipkvhvg.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/e2f/380_264_2/5ez3k39vd3x794w9i4hssvm8bipkvhvg.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/e2f/380_264_2/5ez3k39vd3x794w9i4hssvm8bipkvhvg.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/e2f/380_264_2/5ez3k39vd3x794w9i4hssvm8bipkvhvg.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/df5/rlew5jm2o6la3wymphbk2t42arnbugb1.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/df5/380_264_2/rlew5jm2o6la3wymphbk2t42arnbugb1.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/df5/380_264_2/rlew5jm2o6la3wymphbk2t42arnbugb1.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/df5/380_264_2/rlew5jm2o6la3wymphbk2t42arnbugb1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/610/tyhb001asuk4zww79cq6f8xg74ps82y2.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/610/380_264_2/tyhb001asuk4zww79cq6f8xg74ps82y2.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/610/380_264_2/tyhb001asuk4zww79cq6f8xg74ps82y2.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/610/380_264_2/tyhb001asuk4zww79cq6f8xg74ps82y2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/192/cd0i0orb2e8zjur9xdopkarptw7m3m4p.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/192/380_264_2/cd0i0orb2e8zjur9xdopkarptw7m3m4p.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/192/380_264_2/cd0i0orb2e8zjur9xdopkarptw7m3m4p.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/192/380_264_2/cd0i0orb2e8zjur9xdopkarptw7m3m4p.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4bb/m7rccuu3u60ajcmqw3huknopzw7wsore.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/4bb/380_264_2/m7rccuu3u60ajcmqw3huknopzw7wsore.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/4bb/380_264_2/m7rccuu3u60ajcmqw3huknopzw7wsore.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/4bb/380_264_2/m7rccuu3u60ajcmqw3huknopzw7wsore.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/20d/ms4s85ylwq0feva6n9jtjuz6jkepg28j.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/20d/380_264_2/ms4s85ylwq0feva6n9jtjuz6jkepg28j.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/20d/380_264_2/ms4s85ylwq0feva6n9jtjuz6jkepg28j.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/20d/380_264_2/ms4s85ylwq0feva6n9jtjuz6jkepg28j.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/171/3dskoymgbm3g47apm2z6bczm4e4h4gcy.jpg" title="">
+           <div class="lazy-load" data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/171/380_264_2/3dskoymgbm3g47apm2z6bczm4e4h4gcy.jpg">
+            <noscript data-alt="Кокапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/171/380_264_2/3dskoymgbm3g47apm2z6bczm4e4h4gcy.jpg">
+             <img alt="Кокапу" class="article_pic" src="/upload/resize_cache/iblock/171/380_264_2/3dskoymgbm3g47apm2z6bczm4e4h4gcy.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Цена кокапу
+        </h2>
+        <p>
+         В России потомство
+         <a class="ph" href="/dog/pudel/">
+          пуделя
+         </a>
+         и
+         <a class="ph" href="/dog/amerikanskiy-koker-spaniel/">
+          кокер-спаниеля
+         </a>
+         можно встретить в питомниках, специализирующихся на дизайнерских породах, поэтому заглядывайте в группы в соцсетях и на сайты, где предлагают к покупке
+         <a class="ph" href="/dog/maltipu/">
+          мальтипу
+         </a>
+         ,
+         <a class="ph" href="/dog/pomski/">
+          помски
+         </a>
+         и других модных метисов. Обычно там же всегда есть и кокапу. Цена щенка зависит от презентабельности его экстерьера, популярности родителей, а также дополнительных услуг, которые предлагает продавец.
+        </p>
+        <p>
+         В среднем, стоимость малышей поколений F1 (производители –
+         <a class="ph" href="/dog/pudel/">
+          пудель
+         </a>
+         и
+         <a class="ph" href="/dog/amerikanskiy-koker-spaniel/">
+          кокер
+         </a>
+         ), F2 (оба родителя – кокапу) составит 40 000 – 50 000 ₽. На сайтах бесплатных объявлений можно подыскать и более дешевых животных – порядка 20 000 ₽ за щенка. Но обычно сниженный ценник обусловлен каким-то физическим или внешним недостатком животного, так что отбирать таких питомцев нужно очень осторожно.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения кокапу на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/kokapu/forum/">
+        Перейти на
+        форум кокапу
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Кокапу" src="/upload/iblock/aa4/octqp7b7eis2l972tlwifol826ij62w8.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/kokapu/">
+          Кокапу
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/kokapu/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/kokapu/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/kokapu/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/kokapu/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/kokapu/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/toy-foksterer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Той-фокстерьер" data-original="/upload/resize_cache/iblock/7d7/100_100_1/8fyyjzdkhdtafij2cxsa66dp03kfmjxy.jpg">
+          <noscript data-alt="Той-фокстерьер" data-original="/upload/resize_cache/iblock/7d7/100_100_1/8fyyjzdkhdtafij2cxsa66dp03kfmjxy.jpg">
+           <img alt="Той-фокстерьер" src="/upload/resize_cache/iblock/7d7/100_100_1/8fyyjzdkhdtafij2cxsa66dp03kfmjxy.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Той-фокстерьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/gollandskaya-ovcharka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Голландская овчарка" data-original="/upload/resize_cache/iblock/5bb/100_100_1/npr87d631ss3thjd1019yp2ku4vbvfwf.jpg">
+          <noscript data-alt="Голландская овчарка" data-original="/upload/resize_cache/iblock/5bb/100_100_1/npr87d631ss3thjd1019yp2ku4vbvfwf.jpg">
+           <img alt="Голландская овчарка" src="/upload/resize_cache/iblock/5bb/100_100_1/npr87d631ss3thjd1019yp2ku4vbvfwf.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Голландская овчарка
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/parson-rassel-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Парсон-рассел-терьер" data-original="/upload/resize_cache/iblock/061/100_100_1/06138526117682773b188ede60c85ec4.jpg">
+          <noscript data-alt="Парсон-рассел-терьер" data-original="/upload/resize_cache/iblock/061/100_100_1/06138526117682773b188ede60c85ec4.jpg">
+           <img alt="Парсон-рассел-терьер" src="/upload/resize_cache/iblock/061/100_100_1/06138526117682773b188ede60c85ec4.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Парсон-рассел-терьер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/irlandskiy-setter/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Ирландский сеттер" data-original="/upload/resize_cache/iblock/70f/100_100_1/70fbd421205fd3f451af3a9cefb4cf3b.jpg">
+          <noscript data-alt="Ирландский сеттер" data-original="/upload/resize_cache/iblock/70f/100_100_1/70fbd421205fd3f451af3a9cefb4cf3b.jpg">
+           <img alt="Ирландский сеттер" src="/upload/resize_cache/iblock/70f/100_100_1/70fbd421205fd3f451af3a9cefb4cf3b.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Ирландский сеттер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkokapu%252F%253Fcheck_key%253Daa89caf5d06af3417dc6aad7cde6d3f5%2526ANIMAL_CODE%253Dkokapu%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkokapu%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmtva2FwdSUyRiUzRmNoZWNrX2tleSUzRGFhODljYWY1ZDA2YWYzNDE3ZGM2YWFkN2NkZTZkM2Y1JTI2QU5JTUFMX0NPREUlM0Rrb2thcHUlMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGa29rYXB1JTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkokapu%252F%253Fcheck_key%253Daa89caf5d06af3417dc6aad7cde6d3f5%2526ANIMAL_CODE%253Dkokapu%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fkokapu%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkokapu%252F%253Fcheck_key%253Daa89caf5d06af3417dc6aad7cde6d3f5%2526ANIMAL_CODE%253Dkokapu%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkokapu%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "46.39.51.23"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--0cc92dafbaef4cdd79ef4adff3b10fe0-->

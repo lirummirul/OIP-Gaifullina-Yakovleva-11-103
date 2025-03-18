@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'49854f36eb7e'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Бордоский дог, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Бордоский дог – солидный джентльмен, который редко показывает истинные эмоции. Под маской напускной важности скрывается добродушный и весёлый толстячок, с которым стоит подружиться!" name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/384/384396b6bfe042f78e59f8bfc1e6d9bd.jpg" property="og:image"/>
+     <title>
+      Бордоский дог: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/bordoskiy-dog/" property="og:url"/>
+     <meta content="Бордоский дог: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Бордоский дог – солидный джентльмен, который редко показывает истинные эмоции. Под маской напускной важности скрывается добродушный и весёлый толстячок, с которым стоит подружиться!" property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/bordoskiy-dog/" itemprop="url">
+         <span itemprop="title">
+          Бордоский дог
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Бордоский дог
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/bordoskiy-dog/">
+          Описание
+         </a>
+         <a href="/dog/bordoskiy-dog/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/bordoskiy-dog/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/bordoskiy-dog/photo/">
+          Фото
+         </a>
+         <a href="/dog/bordoskiy-dog/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Бордоский дог" src="/upload/iblock/ff2/ff21f972bce919225702325884516c17.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/bordoskiy-dog/">
+           бордоский мастиф
+          </a>
+          ,
+          <a href="/dog/bordoskiy-dog/">
+           французский мастиф
+          </a>
+          ,
+          <a href="/dog/bordoskiy-dog/">
+           аквитанский дог
+          </a>
+          ,
+          <a href="/dog/bordoskiy-dog/">
+           бордос
+          </a>
+         </span>
+         <p>
+          Бордоский дог – солидный джентльмен, который редко показывает истинные эмоции. Под маской напускной важности скрывается добродушный и весёлый толстячок, с которым стоит подружиться!
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/8ba/8baca206e55922c5ed14c507cda400c6.jpg" data-cap="" data-fancybox="images" data-link="https://www.instagram.com/lapkins.ru/" data-type="image" data-username="lapkins.ru" href="/upload/uf/9f6/9f6275c5497d725c6b0ab15261ddb4f9.jpg">
+            <img alt="Бордоский дог" src="/upload/resize_cache/uf/9f6/293_293_2/9f6275c5497d725c6b0ab15261ddb4f9.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/585/5858d7b14e7a03d2aa250a2a3eac2e71.jpg" data-cap="" data-fancybox="images" data-link="https://www.flickr.com/photos/155152635@N07/42627603751/" data-type="image" data-username="Andrey Shkvarchuk" href="/upload/uf/94c/94ca999e8ddbc8ee5bf9130f13859a6b.jpg">
+            <img alt="Бордоский дог" src="/upload/resize_cache/uf/94c/293_293_2/94ca999e8ddbc8ee5bf9130f13859a6b.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/00a/00a4a36e1486abcc37fdd335aa840e8a.jpg" data-cap="Thor" data-fancybox="images" data-link="https://www.flickr.com/photos/elishajesudason/13204708724/" data-type="image" data-username="Elisha Jesudason" href="/upload/uf/8d7/8d7f4da585829a33142a3ad745373163.jpg">
+            <img alt="Бордоский дог" src="/upload/resize_cache/uf/8d7/293_293_2/8d7f4da585829a33142a3ad745373163.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/bordoskiy-dog/photo/">
+         Все
+            фото бордоского дога
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы бордоский дог
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность бордоского дога
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер бордоского дога
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни бордоского дога
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Сколько стоит бордоский дог
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Бордоский дог
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Франция
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         1954 год
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели не менее 50 кг, суки не менее 45 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 60-68 см, суки 58-66 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         9-11 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Несмотря на устрашающую внешность, «бордос» станет любящим и верным другом своей семье, а в особенности – хозяину.
+        </li>
+        <li>
+         Собаки плохо переносят одиночество и оттого ежеминутно сопровождают близких людей, принимая посильное участие в их жизни.
+        </li>
+        <li>
+         Порода не подходит для семей с маленькими детьми (до шести лет): игры с огромным псом могут оказаться травмоопасными.
+        </li>
+        <li>
+         Бордоский дог уживётся с другими питомцами при определённых условиях, но с незнакомыми собратьями дружбы никогда не получится.
+        </li>
+        <li>
+         Эта собака – великолепный сторож, который не позволит чужаку хозяйничать на вверенной ему территории и бросится в атаку при малейшей угрозе.
+        </li>
+        <li>
+         «Бордосы» нуждаются в своевременной социализации, иначе вы рискуете стать владельцем непослушного питомца.
+        </li>
+        <li>
+         Дрессировка бордоского дога – задача не из лёгких, поэтому стоит вооружиться терпением и в случае необходимости обратиться за помощью к профессионалу.
+        </li>
+        <li>
+         Представитель этой породы является не самым подходящим вариантом для чистоплотного и аккуратного человека: ни того, ни другого ждать от собаки не стоит.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Бордоский дог" data-original="/upload/iblock/384/384396b6bfe042f78e59f8bfc1e6d9bd.jpg">
+          <noscript data-alt="Бордоский дог" data-original="/upload/iblock/384/384396b6bfe042f78e59f8bfc1e6d9bd.jpg">
+           <img alt="Бордоский дог" src="/upload/iblock/384/384396b6bfe042f78e59f8bfc1e6d9bd.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Бордоский дог
+          </strong>
+          кажется нелюдимым великаном, но в глубине души он не прочь проявить ласку и понежиться в объятиях хозяина. Сильная привязанность к членам семьи часто принимает серьёзный оборот: если огромный пёс решил, что сейчас подходящее время для «поцелуев», то уйти сухим после встречи с любвеобильным питомцем не получится. Впрочем, едва ли стоит считать недостатком столь сильную общительность, ведь это своеобразный «ключик», которым собака откроет дверь в сердце будущего хозяина! Так что смело заводите знакомство с бордоским догом, если вы мечтаете о преданном друге, который одарит любовью и вниманием. Представительный компаньон внушает уверенность и чувство защищённости.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Ниже среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дорогое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Длительные периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Бордоский дог основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы бордоский дог
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бордоский дог" data-fancybox="gallery" href="/upload/iblock/b6a/b6a2f12e6e26040872d163ebb3d7a777.jpg" title="Бордоский дог">
+          <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/b6a/412_2150_1/b6a2f12e6e26040872d163ebb3d7a777.jpg">
+           <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/b6a/412_2150_1/b6a2f12e6e26040872d163ebb3d7a777.jpg">
+            <img alt="Бордоский дог" class="article_pic" height="576" src="/upload/resize_cache/iblock/b6a/412_2150_1/b6a2f12e6e26040872d163ebb3d7a777.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бордоский дог
+         </div>
+        </div>
+        <p>
+         Происхождение бордоского дога считают яблоком раздора кинологов всего мира: достоверно не известно, кто стал прародителем породы, и споры всё ещё не утихают. Среди собаководов распространены три теории. Согласно первой версии, доги произошли от боевых «французов», участников кровавых собачьих ям. Приверженцы второй теории считают, что порода произошла от
+         <a class="ph" href="/dog/angliyskiy-buldog/">
+          бульдогов
+         </a>
+         . Третья версия гласит, что генотип собак имеет прямое отношение к
+         <a class="ph" href="/dog/tibetskiy-mastif/">
+          тибетским мастифам
+         </a>
+         .
+        </p>
+        <p>
+         Наиболее распространённой стала первая теория: «бордосы» унаследовали внешность от древних аланов, широко распространённых среди испанцев и французов. Этих бойцовых собак подробно описал Гастон де Фуа, который увлекался охотой и в XIV веке издал целую книгу, где алан предстаёт одной из древнейших охотничьих пород Франции. Хватка мощного пса была соразмерна хватке одновременно трёх борзых, поэтому аланов разводили для травли кабанов и другой крупной добычи. Вместе с тем животные подходили и для охраны рогатого скота, транспортировки освежёванных туш и даже для участия в распространённом кровожадном развлечении – собачьих ямах.
+        </p>
+        <p>
+         Все доги Франции делились на три вида. Различия между ними были кардинальными. Встречались собаки с однородным окрасом или поинтами по всей поверхности тела, маленькой или крупной головой, прямым или ножницеобразным прикусом… Они внесли свою лепту во внешность современной породы.
+        </p>
+        <p>
+         Долгое время бордоские доги были известны как французские мастифы. Всё изменилось в 1863 году. Животных представили уже под нынешним названием. Победу одержала собака по имени Мажент, и это был первый шаг на пути официального признания породы.
+        </p>
+        <p>
+         Воодушевлённые успехом, селекционеры принялись за активное разведение собак, которые хотя бы отдалённо напоминали догов. Каждый с уверенностью утверждал, что именно в его питомнике можно найти чистокровных животных. Несмотря на очевидное сходство «бордосов» с
+         <a class="ph" href="/dog/bulmastif/">
+          бульмастифами
+         </a>
+         , факт их родства отрицали. При этом большинство собаководов утверждало обратное: англичане использовали бордоских догов для выведения похожих животных.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок бордоского дога" data-fancybox="gallery" href="/upload/iblock/25c/25c71311972b4a97e3b32e23e80fac4e.jpg" title="Щенок бордоского дога">
+          <div class="lazy-load" data-alt="Щенок бордоского дога" data-class="article_pic" data-original="/upload/resize_cache/iblock/25c/412_2150_1/25c71311972b4a97e3b32e23e80fac4e.jpg">
+           <noscript data-alt="Щенок бордоского дога" data-class="article_pic" data-original="/upload/resize_cache/iblock/25c/412_2150_1/25c71311972b4a97e3b32e23e80fac4e.jpg">
+            <img alt="Щенок бордоского дога" class="article_pic" height="618" src="/upload/resize_cache/iblock/25c/412_2150_1/25c71311972b4a97e3b32e23e80fac4e.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок бордоского дога
+         </div>
+        </div>
+        <p>
+         Чистокровные собаки всё же сохранились – правда, в ничтожно малых количествах. Селекционеру Эйлеру удалось обзавестись парой представителей породы – кобелём Буфало и сукой Султаной. С 1892 года началась активная работа по разведению чистокровных «бордосов».
+        </p>
+        <p>
+         Спустя четыре года ветеринар Пьер Меньен, возглавлявший группу заводчиков, представил первый стандарт породы, списанный с вышеупомянутого Буфало. В то время как другие селекционеры считали нужным признавать догов исключительно с тёмной «маской», Меньен не поддерживал эту гипотезу. Объяснение ветеринара было простым: такого рода отметины – признак кровосмешения пород, поэтому стоит отбирать собак с однородным окрасом или же с «маской» коричневатого оттенка. В дальнейшем Меньен поощрял разведение исключительно рыжих бордоских догов с некупированными ушами.
+        </p>
+        <p>
+         В 1910 году к деятельности Пьера Меньена примкнул и некий господин Кунстлер. Будучи профессиональным кинологом и страстным любителем собак, мужчина написал объёмную статью о бордоском доге, используя достоверные документы и факты. Портрет животного, составленный Кунстлером, представлял собой расширенный стандарт породы. Как и Меньен, кинолог считал, что наличие чёрной «маски» на морде «бордоса» недопустимо, поскольку такая собака не считается чистокровной.
+        </p>
+        <p>
+         Первый породный клуб основали в 1924 году под руководством А. Баре. На его плечи легла ответственность по восстановлению численности породы после событий Первой мировой войны. Два года спустя на основе статьи Кунстлера Баре создал новый стандарт.
+        </p>
+        <p>
+         Порода едва не оказалась на грани вымирания после 1939-1945 годов, когда число собак катастрофически сократилось. Поскольку бордоские доги были довольно крупными животными, прокормить их в военное время оказалось практически неосуществимой задачей. Многих собак убили или усыпили, чтобы не обременять себя дополнительным «грузом» в лице голодного питомца. Немногие заводчики самоотверженно оберегали своих подопечных. В истории бордоского дога сохранилось имя лишь одного – мистера Ван-Капеля, который не оставил собак на произвол судьбы.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Этот мечтательный взгляд..." data-fancybox="gallery" href="/upload/iblock/e9d/e9d9b0a6fa47fdaf6b4eeffc07ed8341.jpg" title="Этот мечтательный взгляд...">
+          <div class="lazy-load" data-alt="Этот мечтательный взгляд..." data-class="article_pic" data-original="/upload/resize_cache/iblock/e9d/412_2150_1/e9d9b0a6fa47fdaf6b4eeffc07ed8341.jpg">
+           <noscript data-alt="Этот мечтательный взгляд..." data-class="article_pic" data-original="/upload/resize_cache/iblock/e9d/412_2150_1/e9d9b0a6fa47fdaf6b4eeffc07ed8341.jpg">
+            <img alt="Этот мечтательный взгляд..." class="article_pic" height="291" src="/upload/resize_cache/iblock/e9d/412_2150_1/e9d9b0a6fa47fdaf6b4eeffc07ed8341.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Этот мечтательный взгляд...
+         </div>
+        </div>
+        <p>
+         К счастью, французскую Аквитанию практически не затронули кровопролитные сражения, и немногочисленным «бордосам» удалось выжить. За повторное восстановление догов в 1960 годах первым взялся кинолог Раймон Трике. А. Баре снова создал породный клуб. Несмотря на усилия селекционеров, к 1966 году зарегистрировали лишь пять чистокровных собак. Во время разведения щенки бордоского дога из немногочисленных помётов проживали дома у заводчиков или их близких друзей.
+        </p>
+        <p>
+         Результаты организованной деятельности Трике прояснились к 1970 году. Совместно с Морисом Люке кинолог создал третий стандарт. Год спустя FCI официально зарегистрировала бордоских догов. В 1993 году месье Люке повторно взялся за создание стандарта – на этот раз вместе с Филиппом Серуем. Тогда же была издана «Сага о бордоском доге» в двух томах.
+        </p>
+        <p>
+         Со временем порода стала известной. Её представителей повсеместно импортировали в другие государства для дальнейшей селекции. «Бордосов» скрещивали с японскими тоса-ину, использовали для выведения
+         <a class="ph" href="/dog/argentinskiy-dog/">
+          аргентинского дога
+         </a>
+         и спасения линии английских мастифов. На территорию России бордоские собаки попали в 1900 годах. Среди завезённых «бордосов» выделялся питомец Светланы Дороговой – красавец Бельмондо, чемпион мира среди своих собратьев. Спустя три года он одержал победу и в Москве, где среди 60 бордоских догов члены жюри выделили именно собаку Дороговой. Бельмондо стал почётным участником программы по разведению «бордосов» и привлёк внимание общественности к своей породе.
+        </p>
+        <h2>
+         Видео: Бордосский дог
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="OUhKBkg1or0">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность бордоского дога
+        </h2>
+        <p>
+         Природа щедро наградила бордоских догов атлетичным телосложением, крепким здоровьем и недюжинной силой. Несмотря на некоторую приземистость, «бордосы» выглядят гармонично, а экстравагантный шарм животных сглаживает их внешнюю грубость.
+        </p>
+        <p>
+         Стандарт предусматривает определённый рост и вес бордоских догов. Высота кобелей в холке достигает 60-68 см, масса их тела – 50 кг и выше. Сукам присущи другие параметры: рост около 58-66 см и вес в пределах 45-50 кг. Половой диморфизм ярко выражен. Особи мужского пола массивные и тяжёлые, а их характер более беспокойный.
+        </p>
+        <h3>
+         Голова и череп
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Садись, поехали!" data-fancybox="gallery" href="/upload/iblock/786/786d2245bee0159a4458838fa674fc81.jpg" title="Садись, поехали!">
+          <div class="lazy-load" data-alt="Садись, поехали!" data-class="article_pic" data-original="/upload/resize_cache/iblock/786/412_2150_1/786d2245bee0159a4458838fa674fc81.jpg">
+           <noscript data-alt="Садись, поехали!" data-class="article_pic" data-original="/upload/resize_cache/iblock/786/412_2150_1/786d2245bee0159a4458838fa674fc81.jpg">
+            <img alt="Садись, поехали!" class="article_pic" height="270" src="/upload/resize_cache/iblock/786/412_2150_1/786d2245bee0159a4458838fa674fc81.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Садись, поехали!
+         </div>
+        </div>
+        <p>
+         При осмотре собаки сверху заметна трапециевидная форма головы, при взгляде на животное спереди – квадратная. Выпуклый лоб разделён неглубокой ложбинкой по центру. От неё расходятся складки, которые углубляются при возбуждённом состоянии бордоского дога. Надбровные дуги и скулы собаки придают черепу заметный объём.
+        </p>
+        <h3>
+         Морда
+        </h3>
+        <p>
+         Морда «бордоса» немного короче лба. Её отличительная черта – «маска» на тон темнее основного цвета шерсти. Стоп резко выражен, представляет собой почти прямой угол. Широкая мочка вздёрнута, но не приплюснута. Губы мясистые, образуют перевёрнутую «галочку». Подбородок массивный.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Небольшие уши бордоского дога закруглены, едва достают кончиками до наружного края глаз. Их высокая и широкая (в сравнении друг с другом) посадка визуально делает череп собаки более массивным. Уши приподнимаются в возбуждённом состоянии животного и плотно прилегают к скулам, если дог насторожен.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Посажены довольно низко. Цвет радужки может быть разным: ореховым или карим – у собак с тёмной «маской» на морде, светло-коричневым – у животных с красной «маской». Последний вариант характерен и для псов с полным отсутствием «маски».
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Нижняя челюсть бордоского дога выступает вперёд и слегка возвышается над верхней. Резцы собаки посажены на одной линии. Для представителей породы характерен перекус (бульдогообразный прикус).
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Шея бордоского дога имеет цилиндрическую форму. Загривок выпуклый, соединён с широкой холкой животного. Видимость подгрудка и подвеса создают складки кожи на горле собаки.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда бордоского дога" data-fancybox="gallery" href="/upload/iblock/bbb/bbba786afef2970ed7f643509c6c9ae9.jpg" title="Морда бордоского дога">
+          <div class="lazy-load" data-alt="Морда бордоского дога" data-class="article_pic" data-original="/upload/resize_cache/iblock/bbb/1024_2150_1/bbba786afef2970ed7f643509c6c9ae9.jpg">
+           <noscript data-alt="Морда бордоского дога" data-class="article_pic" data-original="/upload/resize_cache/iblock/bbb/1024_2150_1/bbba786afef2970ed7f643509c6c9ae9.jpg">
+            <img alt="Морда бордоского дога" class="article_pic" src="/upload/resize_cache/iblock/bbb/1024_2150_1/bbba786afef2970ed7f643509c6c9ae9.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда бордоского дога
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бордоский дог, вид сзади" data-fancybox="gallery" href="/upload/iblock/9a1/9a115a475791f8cdeb65385d9eb35d7a.jpg" title="Бордоский дог, вид сзади">
+          <div class="lazy-load" data-alt="Бордоский дог, вид сзади" data-class="article_pic" data-original="/upload/resize_cache/iblock/9a1/412_2150_1/9a115a475791f8cdeb65385d9eb35d7a.jpg">
+           <noscript data-alt="Бордоский дог, вид сзади" data-class="article_pic" data-original="/upload/resize_cache/iblock/9a1/412_2150_1/9a115a475791f8cdeb65385d9eb35d7a.jpg">
+            <img alt="Бордоский дог, вид сзади" class="article_pic" height="615" src="/upload/resize_cache/iblock/9a1/412_2150_1/9a115a475791f8cdeb65385d9eb35d7a.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бордоский дог, вид сзади
+         </div>
+        </div>
+        <p>
+         Туловище «бордосов» вытянуто, отличается массивным костяком. Холка возвышена. Лопатки плотно прижаты. Спина переходит в довольно выпуклую поясницу, а та – в наклонный круп дога. Грудная клетка хорошо заполнена. Округлые рёбра слегка уплощены с обеих сторон. Нижняя часть груди переходит в подтянутую линию низа.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Имеет широкое основание и умеренную длину. Его кончик опущен до скакательных суставов животного. В спокойном состоянии хвост ниспадает, а в движении приподнимается на 100°.
+        </p>
+        <h3>
+         Передние конечности
+        </h3>
+        <p>
+         Отличаются особой массивностью в области плеч, которые образуют с лопатками прямой угол. Локти прижаты. Предплечья и пясти отвесные. Лапы сильные, «оснащённые» скученными пальцами с прочными когтями. Подушечки эластичные.
+        </p>
+        <h3>
+         Задние конечности
+        </h3>
+        <p>
+         Поставлены на меньшем расстоянии друг от друга в сравнении с передними конечностями. На широких бёдрах собаки заметна развитая мускулатура. Суставы подчёркнуты, плюсны отвесные. Лапы незначительно длиннее передних, прибылые пальцы отсутствуют. Когти прочные.
+        </p>
+        <h3>
+         Манера движения
+        </h3>
+        <p>
+         Бордоские доги предпочитают двигаться рысью, но при увеличении скорости начинают «стелиться» по земле. Для неторопливого шага собаки характерна иноходь. В остальных случаях движения размашистые и упругие.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бордоский дог в движении" data-fancybox="gallery" href="/upload/iblock/f60/f60ddbfa0485e88ab3ef9e0f1c8cc4ad.jpg" title="Бордоский дог в движении">
+           <div class="lazy-load" data-alt="Бордоский дог в движении" data-class="article_pic" data-original="/upload/resize_cache/iblock/f60/512_342_2/f60ddbfa0485e88ab3ef9e0f1c8cc4ad.jpg">
+            <noscript data-alt="Бордоский дог в движении" data-class="article_pic" data-original="/upload/resize_cache/iblock/f60/512_342_2/f60ddbfa0485e88ab3ef9e0f1c8cc4ad.jpg">
+             <img alt="Бордоский дог в движении" class="article_pic" src="/upload/resize_cache/iblock/f60/512_342_2/f60ddbfa0485e88ab3ef9e0f1c8cc4ad.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бордоский дог в движении
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d8c/d8cb66f11b4e9a90df405d8679fca8fa.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/d8c/512_342_2/d8cb66f11b4e9a90df405d8679fca8fa.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/d8c/512_342_2/d8cb66f11b4e9a90df405d8679fca8fa.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/d8c/512_342_2/d8cb66f11b4e9a90df405d8679fca8fa.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h3>
+         Шёрстный покров
+        </h3>
+        <p>
+         Шерсть бордоского дога короткая и тонкая, довольно мягкая, плотно облегает туловище собаки. Подшёрсток отсутствует.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Стандарт породы допускает тёмные и светлые оттенки коричневого цвета. Белые поинты на груди и кончиках пальцев допустимы. «Маска» на тон темнее, может быть чёрной или отсутствовать. Для последнего случая характерен рыжеватый или розовый цвет мочки носа.
+        </p>
+        <h3>
+         Возможные пороки
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бордоский дог на выставке собак" data-fancybox="gallery" href="/upload/iblock/54b/54bf31d419b22ad624e1e66408a1dfbe.jpg" title="Бордоский дог на выставке собак">
+          <div class="lazy-load" data-alt="Бордоский дог на выставке собак" data-class="article_pic" data-original="/upload/resize_cache/iblock/54b/412_2150_1/54bf31d419b22ad624e1e66408a1dfbe.jpg">
+           <noscript data-alt="Бордоский дог на выставке собак" data-class="article_pic" data-original="/upload/resize_cache/iblock/54b/412_2150_1/54bf31d419b22ad624e1e66408a1dfbe.jpg">
+            <img alt="Бордоский дог на выставке собак" class="article_pic" height="618" src="/upload/resize_cache/iblock/54b/412_2150_1/54bf31d419b22ad624e1e66408a1dfbe.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бордоский дог на выставке собак
+         </div>
+        </div>
+        <p>
+         Дефектом породы считают любое (даже малейшее) отклонение от стандарта бордоского дога. Чаще всего встречаются:
+        </p>
+        <ul>
+         <li>
+          тесный бульдогообразный, ножницеобразный или прямой прикус;
+         </li>
+         <li>
+          раскачивание крупа в вертикальной плоскости при движении;
+         </li>
+         <li>
+          слабая и довольно растянутая спина и/или поясница;
+         </li>
+         <li>
+          резко подтянутая или прямая линия живота;
+         </li>
+         <li>
+          невыраженная мускулатура конечностей;
+         </li>
+         <li>
+          близко посаженные и/или круглые глаза;
+         </li>
+         <li>
+          робость и меланхоличность;
+         </li>
+         <li>
+          утяжелённые движения;
+         </li>
+         <li>
+          рыхлое телосложение;
+         </li>
+         <li>
+          неразвитые челюсти;
+         </li>
+         <li>
+          гипервозбудимость;
+         </li>
+         <li>
+          удлинённая шея;
+         </li>
+         <li>
+          мелкие зубы.
+         </li>
+        </ul>
+        <p>
+         К дисквалифицирующим порокам бордоского дога относят:
+        </p>
+        <ul>
+         <li>
+          горбатую/провисшую спину и/или поясницу;
+         </li>
+         <li>
+          куполо- или бульдогообразную голову;
+         </li>
+         <li>
+          бочкообразную или лещеватую грудь;
+         </li>
+         <li>
+          белые поинты на голове и теле собаки;
+         </li>
+         <li>
+          агрессивное или трусливое поведение;
+         </li>
+         <li>
+          квадратный или удлинённый корпус;
+         </li>
+         <li>
+          большой или маленький разрез глаз;
+         </li>
+         <li>
+          нетипичную пигментацию радужки;
+         </li>
+         <li>
+          низкую или высокую посадку шеи;
+         </li>
+         <li>
+          излишнюю худобу или ожирение;
+         </li>
+         <li>
+          храп при движении животного;
+         </li>
+         <li>
+          укороченную верхнюю губу;
+         </li>
+         <li>
+          «женственность» кобелей;
+         </li>
+         <li>
+          очень короткий хвост;
+         </li>
+         <li>
+          неопущение яичек;
+         </li>
+         <li>
+          прямые клыки.
+         </li>
+        </ul>
+        <h2>
+         Фото бордоского дога
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/dea/deae72fe127e5b8a14d60add083c0782.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/dea/380_264_2/deae72fe127e5b8a14d60add083c0782.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/dea/380_264_2/deae72fe127e5b8a14d60add083c0782.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/dea/380_264_2/deae72fe127e5b8a14d60add083c0782.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/58f/58f9cc523352c555f7810eabdbe0ab10.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/58f/380_264_2/58f9cc523352c555f7810eabdbe0ab10.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/58f/380_264_2/58f9cc523352c555f7810eabdbe0ab10.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/58f/380_264_2/58f9cc523352c555f7810eabdbe0ab10.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2fd/2fd4ecc0c1f9299a3dc8f07d6f2498be.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/2fd/380_264_2/2fd4ecc0c1f9299a3dc8f07d6f2498be.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/2fd/380_264_2/2fd4ecc0c1f9299a3dc8f07d6f2498be.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/2fd/380_264_2/2fd4ecc0c1f9299a3dc8f07d6f2498be.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/282/282e6b8ad2d6523ed32e3589c9d20a88.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/282/380_264_2/282e6b8ad2d6523ed32e3589c9d20a88.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/282/380_264_2/282e6b8ad2d6523ed32e3589c9d20a88.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/282/380_264_2/282e6b8ad2d6523ed32e3589c9d20a88.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/535/535a97fa77ce24a10d3572f563f5abde.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/535/380_264_2/535a97fa77ce24a10d3572f563f5abde.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/535/380_264_2/535a97fa77ce24a10d3572f563f5abde.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/535/380_264_2/535a97fa77ce24a10d3572f563f5abde.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c04/c04b9212934966026067b24f63d8e59e.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/c04/380_264_2/c04b9212934966026067b24f63d8e59e.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/c04/380_264_2/c04b9212934966026067b24f63d8e59e.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/c04/380_264_2/c04b9212934966026067b24f63d8e59e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ca4/ca43063fbd8a35cff613c3332490e06a.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/ca4/380_264_2/ca43063fbd8a35cff613c3332490e06a.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/ca4/380_264_2/ca43063fbd8a35cff613c3332490e06a.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/ca4/380_264_2/ca43063fbd8a35cff613c3332490e06a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/406/4067c3e40171fb853d0c826df9572f78.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/406/380_264_2/4067c3e40171fb853d0c826df9572f78.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/406/380_264_2/4067c3e40171fb853d0c826df9572f78.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/406/380_264_2/4067c3e40171fb853d0c826df9572f78.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/65f/65ffbe1444c72395ddda720fcca4326c.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/65f/380_264_2/65ffbe1444c72395ddda720fcca4326c.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/65f/380_264_2/65ffbe1444c72395ddda720fcca4326c.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/65f/380_264_2/65ffbe1444c72395ddda720fcca4326c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер бордоского дога
+        </h2>
+        <p>
+         Пугающая внешность бордоского дога – главная причина, по которой люди считают этих собак агрессивными и опасными. Стоит отбросить стереотипы – и пес предстанет перед вами другим: игривым, верным и любящим. Для животного нет наказания страшнее, чем одиночество. Недостаток внимания отрицательно сказывается на поведении «бордоса», поэтому не удивляйтесь, если по возвращении домой вас будут ждать испорченная мебель, разбитые вазы и опрокинутое ведро с водой.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бордоский дог с ребенком" data-fancybox="gallery" href="/upload/iblock/f44/f443f3ddeafff7f71727eeac9faf81c6.jpg" title="Бордоский дог с ребенком">
+          <div class="lazy-load" data-alt="Бордоский дог с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/f44/412_2150_1/f443f3ddeafff7f71727eeac9faf81c6.jpg">
+           <noscript data-alt="Бордоский дог с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/f44/412_2150_1/f443f3ddeafff7f71727eeac9faf81c6.jpg">
+            <img alt="Бордоский дог с ребенком" class="article_pic" height="615" src="/upload/resize_cache/iblock/f44/412_2150_1/f443f3ddeafff7f71727eeac9faf81c6.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бордоский дог с ребенком
+         </div>
+        </div>
+        <p>
+         Представители породы всецело преданы семье, в которой живут, а особенно – своему хозяину. Присев за письменный стол или удобно устроившись для отдыха на диване, не поленитесь опустить руку вниз: спустя несколько минут в неё обязательно уткнётся влажный нос вашего питомца. Как только вы решите покинуть комнату, собака тотчас пойдёт следом независимо от того, насколько крепким и уютным был её сон.
+        </p>
+        <p>
+         Аналогично ведёт себя бордоский дог и на улице. Гуляя без поводка, животное предпочитает не отходить далеко от хозяина, чтобы не упустить его из виду. Чтобы ваш любимец смог размять лапы, устройте лёгкую пробежку по городскому парку. Это не только взбодрит собаку, но и обеспечит вам немного спокойствия вечером: уставший дог займёт место на любимой подстилке, а не устроит разгром с целью выплеснуть накопившуюся энергию.
+        </p>
+        <p>
+         «Бордоса» нельзя назвать семейной собакой, но всё же он легко уживается с детьми старше шести лет. Возня и шум ребёнка помладше воспринимаются догом как потенциальная угроза. К тому же огромные габариты животного делают его довольно травмоопасным: проходя мимо, бордоский дог может ненароком толкнуть ваше чадо или упасть на него во время игры. Кинологи рекомендуют отложить покупку собаки до тех пор, пока дети не пойдут в школу, но даже в этом случае необходимо пристально следить за отношениями, которые складываются у ребёнка и «бордоса». Малейший конфликт стоит пресекать на корню.
+        </p>
+        <p>
+         Сожительство дога с другими питомцами возможно при определённом условии. Правильно воспитанная собака не оскалит зубы на своего сородича, но этого же нельзя сказать о кобелях, у которых чаще всего складываются сопернические отношения с животными того же пола. Бордоский дог довольно легко уживётся с домашней кошкой, но при виде чужой непременно бросится в погоню и, скорее всего, порадует «добычей». На прогулке не рекомендуется спускать дога с поводка, если вы не хотите стать соучастником кровавой расправы. У представителей этой породы чрезмерно обострён охотничий инстинкт, поэтому не стоит рисковать, даже если вы уверены в спокойствии питомца.
+        </p>
+        <p>
+         Социализированный бордоский дог не бросится в атаку на незнакомого человека. Главное – относиться к великану с уважением и не докучать ему излишним вниманием. Прислушайтесь к ворчанию собаки: зачастую это предупредительный сигнал, после которого может последовать нападение.
+        </p>
+        <p>
+         Из представителей породы получаются великолепные охранники. «Бордосы» не позволят войти без спроса на вверенную им территорию. Даже при появлении чужака дог не сразу ринется в погоню. Сначала животное постарается как следует напугать нежеланного гостя грозным внешним видом и лишь потом проявит силу. Если дело дойдёт до защиты семьи, бордоский дог будет драться до последнего и, скорее всего, станет победителем.
+        </p>
+        <p>
+         Интересной особенностью характера собаки считают её непереносимость запаха алкоголя. Воздержитесь от прогулок с бордоским догом во время городских празднеств: встреча с нетрезвым человеком может стать причиной раздражительности питомца. При определённых обстоятельствах дог атакует, а сдержать собаку таких размеров – пусть даже и на привязи – довольно затруднительно.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бордоский дог с кошкой" data-fancybox="gallery" href="/upload/iblock/1d4/1d41c423bc8948cff2a1429e8d0a51ec.jpg" title="Бордоский дог с кошкой">
+           <div class="lazy-load" data-alt="Бордоский дог с кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/1d4/512_342_2/1d41c423bc8948cff2a1429e8d0a51ec.jpg">
+            <noscript data-alt="Бордоский дог с кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/1d4/512_342_2/1d41c423bc8948cff2a1429e8d0a51ec.jpg">
+             <img alt="Бордоский дог с кошкой" class="article_pic" src="/upload/resize_cache/iblock/1d4/512_342_2/1d41c423bc8948cff2a1429e8d0a51ec.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бордоский дог с кошкой
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бордоский дог с маленькой собакой" data-fancybox="gallery" href="/upload/iblock/358/35803cd4bc1b29ebe533355ab9ee9d79.jpg" title="Бордоский дог с маленькой собакой">
+           <div class="lazy-load" data-alt="Бордоский дог с маленькой собакой" data-class="article_pic" data-original="/upload/resize_cache/iblock/358/512_342_2/35803cd4bc1b29ebe533355ab9ee9d79.jpg">
+            <noscript data-alt="Бордоский дог с маленькой собакой" data-class="article_pic" data-original="/upload/resize_cache/iblock/358/512_342_2/35803cd4bc1b29ebe533355ab9ee9d79.jpg">
+             <img alt="Бордоский дог с маленькой собакой" class="article_pic" src="/upload/resize_cache/iblock/358/512_342_2/35803cd4bc1b29ebe533355ab9ee9d79.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бордоский дог с маленькой собакой
+          </div>
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Дрессировка бордоского дога" data-fancybox="gallery" href="/upload/iblock/032/032539c02e78a3aac9fa74d187ac6d01.jpg" title="Дрессировка бордоского дога">
+          <div class="lazy-load" data-alt="Дрессировка бордоского дога" data-class="article_pic" data-original="/upload/resize_cache/iblock/032/412_2150_1/032539c02e78a3aac9fa74d187ac6d01.jpg">
+           <noscript data-alt="Дрессировка бордоского дога" data-class="article_pic" data-original="/upload/resize_cache/iblock/032/412_2150_1/032539c02e78a3aac9fa74d187ac6d01.jpg">
+            <img alt="Дрессировка бордоского дога" class="article_pic" height="618" src="/upload/resize_cache/iblock/032/412_2150_1/032539c02e78a3aac9fa74d187ac6d01.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Дрессировка бордоского дога
+         </div>
+        </div>
+        <p>
+         Бордоские доги отличаются сообразительностью и развитым интеллектом, но это отнюдь не облегчает процесс воспитания и дрессировки. Начиная со щенячьего возраста, необходимо учить питомца относиться к людям с доверием. Регулярно берите малыша на руки и ласково поглаживайте его мягкую шёрстку. В сознании «бордоса» человек будет ассоциироваться с положительными эмоциями. Впрочем, не стоит доверять проявления ласки посторонним, которые не умеют обращаться с собаками.
+        </p>
+        <p>
+         Многие владельцы бордоских догов отмечают, что наибольшим послушанием щенки отличаются в возрасте трёх недель. Именно в это время необходимо начать активное воспитание и приучение малыша к правилам поведения. Не рекомендуется прекращать тренировки на продолжительный срок. Выученное имеет свойство забываться, особенно по мере взросления «бордоса» и появления новых отвлекающих факторов.
+        </p>
+        <p>
+         С самого начала дог должен усвоить простую истину: лидер в «стае» только один, и это не он. Если вы проявите мягкость характера, повзрослевшая собака создаст немало хлопот. Представители породы довольно своенравны и умеют находить слабые места в «броне» хозяина. К тому же, бордоские доги – отличные манипуляторы, поэтому в скором времени могут начать дрессировать вас.
+        </p>
+        <p>
+         Отучите питомца прыгать лапами на грудь. Вряд ли вы будете счастливы, когда это сделает 50-килограммовая собака, а не очаровательный щенок. Чрезмерная навязчивость – ещё одна черта характера бордоского дога, которую стоит искоренить. Запомните: малейшая поблажка со стороны кого-либо из членов семьи сведёт к нулю ваши попытки воспитать из домашнего любимца порядочную собаку.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок бордоского дога с хозяином" data-fancybox="gallery" href="/upload/iblock/996/9964e6fdb8264a155b5b7113e22a6d0c.jpg" title="Щенок бордоского дога с хозяином">
+          <div class="lazy-load" data-alt="Щенок бордоского дога с хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/996/412_2150_1/9964e6fdb8264a155b5b7113e22a6d0c.jpg">
+           <noscript data-alt="Щенок бордоского дога с хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/996/412_2150_1/9964e6fdb8264a155b5b7113e22a6d0c.jpg">
+            <img alt="Щенок бордоского дога с хозяином" class="article_pic" height="615" src="/upload/resize_cache/iblock/996/412_2150_1/9964e6fdb8264a155b5b7113e22a6d0c.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок бордоского дога с хозяином
+         </div>
+        </div>
+        <p>
+         Представители породы довольно быстро усваивают то, что от них требуется. Ваша задача – поощрять питомца в нужные моменты. Не стоит заставлять бордоского дога: это не поможет. Гораздо эффективнее сделать так, чтобы собака сама захотела выполнить ваше требование. Способов множество: лакомство, внеочередная прогулка в парке или любимая игрушка питомца.
+        </p>
+        <p>
+         Дрессировка бордоских догов довольно затруднительна. Наряду с пытливым умом, собаки отличаются независимостью и упрямством, поэтому изучение новой команды может затянуться не на один день. Тренировка должна быть последовательной и непродолжительной (не более часа). Не повышайте голос на любимца и поощряйте его успех ласковым поглаживанием или угощением. Резкие окрики и грубые приказы – ваш главный враг: огорчённое животное теряется и тренируется ещё хуже. Если бордоский дог балуется, ограничьтесь строгим выговором, а затем сразу же приободрите пса, предложив повторить команду.
+        </p>
+        <p>
+         Собаководы отмечают, что представители этой породы довольно часто ленятся и становятся медлительными. Не ругайте собаку за долгое обдумывание команд. Стоит завоевать уважение и любовь четвероногого друга, и процесс дрессировки пойдёт как по накатанной тропе!
+        </p>
+        <p>
+         Важный момент обучения бордоского дога – прогулка на поводке. Не позволяйте щенку тянуть вас вперёд! По мере взросления удержать животное будет всё сложнее. Если питомец рвётся с поводка, одёрните его, иначе вы поменяетесь ролями во время прогулки.
+        </p>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Этот бордоский дог обожает, когда его поливают из шланга" data-fancybox="gallery" href="/upload/iblock/d48/d487f42027a2b1b0bc76229bb7c3e595.jpg" title="Этот бордоский дог обожает, когда его поливают из шланга">
+          <div class="lazy-load" data-alt="Этот бордоский дог обожает, когда его поливают из шланга" data-class="article_pic" data-original="/upload/resize_cache/iblock/d48/412_2150_1/d487f42027a2b1b0bc76229bb7c3e595.jpg">
+           <noscript data-alt="Этот бордоский дог обожает, когда его поливают из шланга" data-class="article_pic" data-original="/upload/resize_cache/iblock/d48/412_2150_1/d487f42027a2b1b0bc76229bb7c3e595.jpg">
+            <img alt="Этот бордоский дог обожает, когда его поливают из шланга" class="article_pic" height="615" src="/upload/resize_cache/iblock/d48/412_2150_1/d487f42027a2b1b0bc76229bb7c3e595.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Этот бордоский дог обожает, когда его поливают из шланга
+         </div>
+        </div>
+        <p>
+         Короткошёрстные породы собак не требуют кропотливого ухода, и бордоский дог не исключение. Единственное, с чем вам придётся повозиться, – водные процедуры. Эти собаки любят валяться в грязи, поэтому будьте готовы привести домой не питомца, а огромного и с виду незнакомого грязнулю. Бордоских догов купают по мере необходимости или же дважды в месяц. Для мытья используйте зоошампунь или его сухой аналог (последний приобретает всё большую популярность среди собаководов).
+        </p>
+        <p>
+         Помимо купания, вам придётся ежедневно протирать морду дога, а в особенности – её складки. В них часто скапливаются слюна и пища, поскольку животное ест крайне неаккуратно. Вооружитесь увлажнённым лоскутом ткани и тщательно удалите всё лишнее из складочек на морде. Это поможет предотвратить появление неприятного запаха.
+        </p>
+        <p>
+         Уход за шерстью бордоского дога не требует усилий. Достаточно два-три раза в неделю протирать её суконной тряпкой (для придания здорового блеска). Во время сезонной линьки, которая протекает практически незаметно, воспользуйтесь специальной рукавицей с силиконовыми «наростами». Они деликатно уберут отмершие волоски из шерсти вашего любимца.
+        </p>
+        <p>
+         Ушные раковины бордоского дога склонны накапливать пыль и грязь, тем самым создавая благоприятную среду для размножения бактерий. Ваша задача – предотвратить возможные воспаления. Приподнимите ухо и протрите его увлажнённым ватным диском. Для удаления серы воспользуйтесь ватной палочкой, но будьте внимательны: неосторожное движение может повредить барабанные перепонки животного! Если не хотите рисковать, обмотайте палец марлей и сделайте то же самое. Результат будет не таким эффективным, но безопасным.
+        </p>
+        <p class="legenda">
+         Помните: неприятный запах, покраснение или огромное скопление серы – тревожный знак и повод обратиться в ветеринарную клинику.
+        </p>
+        <p>
+         Не забывайте осматривать и протирать глаза питомца. Для этой процедуры используйте ватный диск, смоченный слабозаваренным чаем или тёплой кипячёной водой. Если обильные выделения в уголках глаз имеют нездоровый цвет, запишитесь на консультацию к ветеринару. Ваше бездействие в будущем создаст массу проблем со здоровьем собаки.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Три богатыря" data-fancybox="gallery" href="/upload/iblock/2a8/2a8c6e94f9faa936cdb88e55b9a762af.jpg" title="Три богатыря">
+          <div class="lazy-load" data-alt="Три богатыря" data-class="article_pic" data-original="/upload/resize_cache/iblock/2a8/412_2150_1/2a8c6e94f9faa936cdb88e55b9a762af.jpg">
+           <noscript data-alt="Три богатыря" data-class="article_pic" data-original="/upload/resize_cache/iblock/2a8/412_2150_1/2a8c6e94f9faa936cdb88e55b9a762af.jpg">
+            <img alt="Три богатыря" class="article_pic" height="274" src="/upload/resize_cache/iblock/2a8/412_2150_1/2a8c6e94f9faa936cdb88e55b9a762af.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Три богатыря
+         </div>
+        </div>
+        <p>
+         Ротовая полость бордоского дога нуждается в не меньшем уходе. Чистите зубы животного трижды в неделю с помощью пасты для собак и старой щётки. Можно воспользоваться и более бюджетным вариантом: оберните палец в марлю и пройдитесь им по зубам «бордоса». Если ваш любимец ведёт себя беспокойно, успокойте его ласковым поглаживанием и обещанием дать лакомство после окончания «экзекуции».
+        </p>
+        <p>
+         Когти укорачивают дважды в месяц с помощью когтереза. Для устранения острых краёв и заусениц используйте пилочку. Не забывайте после прогулки тщательно вытирать лапы. При появлении трещин или ранок смажьте подушечки жирным детским кремом или антисептиком. Не будет лишним включить в рацион бордоского дога подсолнечное масло (не более одной чайной ложки в день).
+        </p>
+        <p class="legenda">
+         Важно: обработка шерсти средством от паразитов и дегельминтизация должны проводиться регулярно – один и четыре раза в месяц соответственно.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="О, какой вкусный тортик!" data-fancybox="gallery" href="/upload/iblock/aed/aed242902a4d0328789c8792c8d1aa40.jpg" title="О, какой вкусный тортик!">
+          <div class="lazy-load" data-alt="О, какой вкусный тортик!" data-class="article_pic" data-original="/upload/resize_cache/iblock/aed/412_2150_1/aed242902a4d0328789c8792c8d1aa40.jpg">
+           <noscript data-alt="О, какой вкусный тортик!" data-class="article_pic" data-original="/upload/resize_cache/iblock/aed/412_2150_1/aed242902a4d0328789c8792c8d1aa40.jpg">
+            <img alt="О, какой вкусный тортик!" class="article_pic" height="309" src="/upload/resize_cache/iblock/aed/412_2150_1/aed242902a4d0328789c8792c8d1aa40.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          О, какой вкусный тортик!
+         </div>
+        </div>
+        <p>
+         Бордоский дог не склонен к полноте при сбалансированном и правильно подобранном питании. Чем однообразнее и «легче» еда, тем слаженнее пищеварение собаки. При натуральном рационе основу ежедневного питания должно составлять мясо. Его необходимо чередовать с субпродуктами, морской рыбой и кисломолочными продуктами. Периодически можно угощать питомца фруктами и овощами, а в зимнее время – компенсировать их отсутствие комплексом витаминов и минералов.
+        </p>
+        <p>
+         При использовании промышленного корма приобретайте продукцию премиум-класса, при этом не забывая ориентироваться на варианты для крупных пород собак. Нелишним будет визит к ветеринару: он подскажет, на какой корм лучше обратить внимание.
+        </p>
+        <p>
+         Исключите из рациона бордоского дога:
+        </p>
+        <ul>
+         <li>
+          речную рыбу (в том числе и консервы);
+         </li>
+         <li>
+          продукты с содержанием кофеина;
+         </li>
+         <li>
+          острую и солёную пищу;
+         </li>
+         <li>
+          грибы в любом виде;
+         </li>
+         <li>
+          плоды с косточками;
+         </li>
+         <li>
+          сырые яйца и мясо;
+         </li>
+         <li>
+          бобовые культуры;
+         </li>
+         <li>
+          дрожжевое тесто;
+         </li>
+         <li>
+          трубчатые кости;
+         </li>
+         <li>
+          жирную пищу;
+         </li>
+         <li>
+          лук и чеснок;
+         </li>
+         <li>
+          цитрусовые;
+         </li>
+         <li>
+          сладости.
+         </li>
+        </ul>
+        <p>
+         В миске собаки всегда должна быть свежая вода – бутилированная или из-под крана, предварительно настоянная в течение 6-8 часов.
+        </p>
+        <p>
+         Представители породы нуждаются в ежедневных часовых прогулках, особенно в городских условиях. В жаркий сезон отдайте предпочтение утренним и вечерним променадам: высокая температура вызывает у «бордоса» хриплое дыхание и одышку. Можете взять с собой бутылку воды, а по возвращении домой устроить собаке прохладный душ в течение нескольких минут.
+        </p>
+        <p>
+         По возможности отправляйтесь с четвероногим другом на природу, чтобы тот вдоволь побегал. Возьмите с собой любимый мяч и лакомство: повтор изученных команд на свежем воздухе – прекрасная альтернатива привычной дрессировке на дому.
+        </p>
+        <p>
+         Бордоских догов сложно содержать в квартире. Вам придётся обеспечить комфортные условия, включая и активные прогулки, чтобы животное чувствовало себя вольготно и не стремилось высвободить накопившуюся энергию в ущерб вашему интерьеру.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни бордоского дога
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мячик! Давай его сюда!" data-fancybox="gallery" href="/upload/iblock/9cc/9cc3d912f95e22a26b77d1805dab4875.jpg" title="Мячик! Давай его сюда!">
+          <div class="lazy-load" data-alt="Мячик! Давай его сюда!" data-class="article_pic" data-original="/upload/resize_cache/iblock/9cc/412_2150_1/9cc3d912f95e22a26b77d1805dab4875.jpg">
+           <noscript data-alt="Мячик! Давай его сюда!" data-class="article_pic" data-original="/upload/resize_cache/iblock/9cc/412_2150_1/9cc3d912f95e22a26b77d1805dab4875.jpg">
+            <img alt="Мячик! Давай его сюда!" class="article_pic" height="515" src="/upload/resize_cache/iblock/9cc/412_2150_1/9cc3d912f95e22a26b77d1805dab4875.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мячик! Давай его сюда!
+         </div>
+        </div>
+        <p>
+         «Бордосы» отличаются крепким здоровьем и практически не подвержены распространённым заболеваниям. При этом не забывайте, что стойким иммунитетом могут похвастать взрослые собаки. Щенки, не прошедшие вакцинацию, – уязвимая мишень. Не рекомендуется выгуливать малыша на улице до того, как вы сделаете все необходимые прививки.
+        </p>
+        <p>
+         Чаще всего бордоские доги страдают от следующих недугов:
+        </p>
+        <ul>
+         <li>
+          дисплазии локтевого и/или тазобедренного суставов;
+         </li>
+         <li>
+          заболеваний сердечно-сосудистой системы;
+         </li>
+         <li>
+          респираторных инфекций;
+         </li>
+         <li>
+          заболеваний почек;
+         </li>
+         <li>
+          заворота кишок;
+         </li>
+         <li>
+          гиперкератоза;
+         </li>
+         <li>
+          метеоризма;
+         </li>
+         <li>
+          эпилепсии;
+         </li>
+         <li>
+          лимфомы;
+         </li>
+         <li>
+          артрита;
+         </li>
+         <li>
+          рака.
+         </li>
+        </ul>
+        <p>
+         У сук часто наблюдаются затруднительные роды. Не оставляйте любимицу и будьте готовы оказать ей посильную помощь.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Мама бордоского дога с щенками" data-fancybox="gallery" href="/upload/iblock/1f3/1f3fa5c8017b89195a7e0c7921def59a.jpg" title="Мама бордоского дога с щенками">
+          <div class="lazy-load" data-alt="Мама бордоского дога с щенками" data-class="article_pic" data-original="/upload/resize_cache/iblock/1f3/1024_2150_1/1f3fa5c8017b89195a7e0c7921def59a.jpg">
+           <noscript data-alt="Мама бордоского дога с щенками" data-class="article_pic" data-original="/upload/resize_cache/iblock/1f3/1024_2150_1/1f3fa5c8017b89195a7e0c7921def59a.jpg">
+            <img alt="Мама бордоского дога с щенками" class="article_pic" src="/upload/resize_cache/iblock/1f3/1024_2150_1/1f3fa5c8017b89195a7e0c7921def59a.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мама бордоского дога с щенками
+         </div>
+        </div>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Планируя обзавестись очаровательным четвероногим другом, определитесь с его классом. Собаки категории «шоу» могут одержать победу на выставке, поскольку максимально соответствуют стандарту породы. Для животных класса брид допускаются незначительные отклонения, но это не мешает использовать собак для разведения. Бордоские доги класса пэт – типичные домашние любимцы, чьи несоответствия стандарту не позволяют участвовать в выставках или племенных программах.
+        </p>
+        <p>
+         Следующий этап – пол животного. Суки более послушные, но хитрости и женского лукавства им не занимать. Кобели склочные и независимые, поэтому придётся проявить недюжинную твёрдость характера в общении с ними.
+        </p>
+        <p>
+         Теперь можно приступать к поиску проверенного питомника. Перед встречей с малышами попросите заводчика познакомить вас с их родителями. Обратите внимание на возможные дефекты: они могут передаться щенкам по наследству. Не менее важно проверить необходимую документацию: ветеринарный паспорт, диплом родословной, результаты теста на дисплазию. Лишь после этого можете отправиться на встречу с будущим другом.
+        </p>
+        <p>
+         Здоровый щенок в меру игрив и любопытен. Животное не должно хромать, беспричинно скулить, трусливо прятаться, проявлять вялость или излишнее возбуждение. Внимательно осмотрите малыша и напоследок сверьте клеймо и кличку с его паспортом. Теперь можно приступать к заключению сделки с заводчиком.
+        </p>
+        <h2>
+         Фото щенков бордоского дога
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/95b/95bfc4e29cea1c8bfbb204bbe094ff04.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/95b/380_264_2/95bfc4e29cea1c8bfbb204bbe094ff04.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/95b/380_264_2/95bfc4e29cea1c8bfbb204bbe094ff04.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/95b/380_264_2/95bfc4e29cea1c8bfbb204bbe094ff04.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/440/44050521e00c66f6d8829f473d322163.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/440/380_264_2/44050521e00c66f6d8829f473d322163.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/440/380_264_2/44050521e00c66f6d8829f473d322163.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/440/380_264_2/44050521e00c66f6d8829f473d322163.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/303/303976b8716a814d7631c3bca3b3beef.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/303/380_264_2/303976b8716a814d7631c3bca3b3beef.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/303/380_264_2/303976b8716a814d7631c3bca3b3beef.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/303/380_264_2/303976b8716a814d7631c3bca3b3beef.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/93a/93a60f4736a80c2a0568bbcf112a5edc.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/93a/380_264_2/93a60f4736a80c2a0568bbcf112a5edc.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/93a/380_264_2/93a60f4736a80c2a0568bbcf112a5edc.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/93a/380_264_2/93a60f4736a80c2a0568bbcf112a5edc.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9f8/9f8bb10a6f3b3353b5afeb23a725d59c.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/9f8/380_264_2/9f8bb10a6f3b3353b5afeb23a725d59c.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/9f8/380_264_2/9f8bb10a6f3b3353b5afeb23a725d59c.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/9f8/380_264_2/9f8bb10a6f3b3353b5afeb23a725d59c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f41/f41122894289db538014a4a5a820f672.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/f41/380_264_2/f41122894289db538014a4a5a820f672.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/f41/380_264_2/f41122894289db538014a4a5a820f672.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/f41/380_264_2/f41122894289db538014a4a5a820f672.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ee5/ee501f8563948163ad2180637650524c.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/ee5/380_264_2/ee501f8563948163ad2180637650524c.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/ee5/380_264_2/ee501f8563948163ad2180637650524c.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/ee5/380_264_2/ee501f8563948163ad2180637650524c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/08b/08b607e8b8e2d60cbcc821c7e3254f85.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/08b/380_264_2/08b607e8b8e2d60cbcc821c7e3254f85.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/08b/380_264_2/08b607e8b8e2d60cbcc821c7e3254f85.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/08b/380_264_2/08b607e8b8e2d60cbcc821c7e3254f85.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2be/2bec648ad1f224ec7e77ebcc01b1d89c.jpg" title="">
+           <div class="lazy-load" data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/2be/380_264_2/2bec648ad1f224ec7e77ebcc01b1d89c.jpg">
+            <noscript data-alt="Бордоский дог" data-class="article_pic" data-original="/upload/resize_cache/iblock/2be/380_264_2/2bec648ad1f224ec7e77ebcc01b1d89c.jpg">
+             <img alt="Бордоский дог" class="article_pic" src="/upload/resize_cache/iblock/2be/380_264_2/2bec648ad1f224ec7e77ebcc01b1d89c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Сколько стоит бордоский дог
+        </h2>
+        <p>
+         Цена бордоского дога зависит от нескольких факторов. Среди главных – класс собаки; местонахождение заводчика; наличие документов, подтверждающих происхождение животного. Бордоский дог пет-класса обойдётся владельцу в 40 000 рублей и выше. За породистую собаку и, возможно, будущего победителя выставки, придётся отдать 70 000 – 100 000 рублей.
+        </p>
+        <p>
+         Сколько бы вы ни заплатили за «бордоса», знайте: вы обзавелись преданным и любящим другом, который всегда составит компанию и вызовет улыбку даже в самый хмурый день!
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения бордоского дога на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/bordoskiy-dog/forum/">
+        Перейти на
+        форум бордоского дога
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Бордоский дог" src="/upload/iblock/ff2/ff21f972bce919225702325884516c17.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/bordoskiy-dog/">
+          Бордоский дог
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/bordoskiy-dog/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/bordoskiy-dog/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/bordoskiy-dog/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/bordoskiy-dog/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/bordoskiy-dog/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/kolli-dlinnoshyerstnyy/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Шотландская овчарка (колли)" data-original="/upload/resize_cache/iblock/128/100_100_1/1286da8e4827f9df9e47173635fbfca5.jpg">
+          <noscript data-alt="Шотландская овчарка (колли)" data-original="/upload/resize_cache/iblock/128/100_100_1/1286da8e4827f9df9e47173635fbfca5.jpg">
+           <img alt="Шотландская овчарка (колли)" src="/upload/resize_cache/iblock/128/100_100_1/1286da8e4827f9df9e47173635fbfca5.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Шотландская овчарка (колли)
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/rotveyler/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Ротвейлер" data-original="/upload/resize_cache/iblock/2ba/100_100_1/2ba727577729810222fac27e266e04ef.jpg">
+          <noscript data-alt="Ротвейлер" data-original="/upload/resize_cache/iblock/2ba/100_100_1/2ba727577729810222fac27e266e04ef.jpg">
+           <img alt="Ротвейлер" src="/upload/resize_cache/iblock/2ba/100_100_1/2ba727577729810222fac27e266e04ef.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Ротвейлер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/burbul/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бурбуль" data-original="/upload/resize_cache/iblock/ac5/100_100_1/ac5c35296db807ff0bade5b9b8c98b15.jpg">
+          <noscript data-alt="Бурбуль" data-original="/upload/resize_cache/iblock/ac5/100_100_1/ac5c35296db807ff0bade5b9b8c98b15.jpg">
+           <img alt="Бурбуль" src="/upload/resize_cache/iblock/ac5/100_100_1/ac5c35296db807ff0bade5b9b8c98b15.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бурбуль
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/afganskaya-borzaya/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Афганская борзая" data-original="/upload/resize_cache/iblock/c0e/100_100_1/c0e78efc4e6e63cea908b0a0261cf317.jpg">
+          <noscript data-alt="Афганская борзая" data-original="/upload/resize_cache/iblock/c0e/100_100_1/c0e78efc4e6e63cea908b0a0261cf317.jpg">
+           <img alt="Афганская борзая" src="/upload/resize_cache/iblock/c0e/100_100_1/c0e78efc4e6e63cea908b0a0261cf317.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Афганская борзая
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbordoskiy-dog%252F%253Fcheck_key%253D9b0897917e16751642fd3f10cd347a75%2526ANIMAL_CODE%253Dbordoskiy-dog%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbordoskiy-dog%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmJvcmRvc2tpeS1kb2clMkYlM0ZjaGVja19rZXklM0Q5YjA4OTc5MTdlMTY3NTE2NDJmZDNmMTBjZDM0N2E3NSUyNkFOSU1BTF9DT0RFJTNEYm9yZG9za2l5LWRvZyUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZib3Jkb3NraXktZG9nJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbordoskiy-dog%252F%253Fcheck_key%253D9b0897917e16751642fd3f10cd347a75%2526ANIMAL_CODE%253Dbordoskiy-dog%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fbordoskiy-dog%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbordoskiy-dog%252F%253Fcheck_key%253D9b0897917e16751642fd3f10cd347a75%2526ANIMAL_CODE%253Dbordoskiy-dog%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbordoskiy-dog%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "91.245.151.245"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--18da3f0134142bd68039cbfcc9fb008e-->

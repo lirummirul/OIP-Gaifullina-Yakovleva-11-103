@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'47273c4dc0bc'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Восточноевропейская овчарка, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Восточноевропейская овчарка – ближайшая родственница немецкой овчарки, обладающая более выдержанным характером и внушительными габаритами." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/3ff/3ff3bb0278ad99f3b38aaca9da8ec247.jpg" property="og:image"/>
+     <title>
+      Восточноевропейская овчарка: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/vostochnoevropeyskaya-ovcharka/" property="og:url"/>
+     <meta content="Восточноевропейская овчарка: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Восточноевропейская овчарка – ближайшая родственница немецкой овчарки, обладающая более выдержанным характером и внушительными габаритами." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/vostochnoevropeyskaya-ovcharka/" itemprop="url">
+         <span itemprop="title">
+          Восточноевропейская овчарка
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Восточноевропейская овчарка
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/vostochnoevropeyskaya-ovcharka/">
+          Описание
+         </a>
+         <a href="/dog/vostochnoevropeyskaya-ovcharka/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/vostochnoevropeyskaya-ovcharka/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/vostochnoevropeyskaya-ovcharka/photo/">
+          Фото
+         </a>
+         <a href="/dog/vostochnoevropeyskaya-ovcharka/video/">
+          Видео
+         </a>
+         <a href="/dog/vostochnoevropeyskaya-ovcharka/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Восточноевропейская овчарка" src="/upload/iblock/27e/27eb172b86a8aa90c74bf7f989003b59.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/vostochnoevropeyskaya-ovcharka/">
+           ВЕО
+          </a>
+          ,
+          <a href="/dog/vostochnoevropeyskaya-ovcharka/">
+           восточники
+          </a>
+         </span>
+         <p>
+          Восточноевропейская овчарка – ближайшая родственница немецкой овчарки, обладающая более выдержанным характером и внушительными габаритами.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/7b5/7b52a2beef3aa29b59d49e2e2bc47483.jpg" data-cap="Мальчишки наши играют))) 
+(ВеоРосс Якут и ВеоРосс Ярый)
+(Вео Росс Корсар&amp;Витязь Эсмиральда) .
+#easteuropeanshepherd #веоКомягино #овчаркикомягино #щенкисдокументами
+#восточноевропейскаяовчарка #щенкивосточноевропейскойовчарки #ВЕО #щенкивео #щенкиоовчарки #пушкино #ивантеевка #красноармейск #Щёлково #щелково #купитьщенкаовчарки #купитьщенка #купитьовчарку #купитьвео #купитьщенкавео #овчарка #щенки #овчарки #щенок #щеноквео" data-fancybox="images" data-link="https://www.instagram.com/p/B8b5aSJIeQw/" data-type="image" data-username="veo_puppy" href="/upload/uf/9e7/9e726f1efbe09fb48bad42ee2772af77.jpg">
+            <img alt="Восточноевропейская овчарка" src="/upload/resize_cache/uf/9e7/293_293_2/9e726f1efbe09fb48bad42ee2772af77.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/f9d/f9d81da8b542c37f287d627d50e67ed2.jpg" data-cap="Someone’s Enjoying cuddles  #Arta and #Angel #proudmom #family #photooftheday #girl #beautiful #cute #smile #happy #instadaily #instagram #instalike  #photo #fun #daughter #EastEuropeanShepherd #rytųeuroposaviganiai #восточноeвропейскаяoвчарка 
+#VEO 
+#VostochnoEvropeyskayaOvcharka
+#dog #puppy #pet #doglover #love #dogoftheday #puppylove #ilovemydog #animals" data-fancybox="images" data-link="https://www.instagram.com/p/B8b25LDhvvK/" data-type="image" data-username="daivadivadomeikaite" href="/upload/uf/f96/f961dde8932a3548fd3283f97a715c2a.jpg">
+            <img alt="Восточноевропейская овчарка" src="/upload/resize_cache/uf/f96/293_293_2/f961dde8932a3548fd3283f97a715c2a.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/7da/7dac5e736297eed0ad62f223b1b62188.jpg" data-cap="Egon's first birthday is coming up soon! So exciting ❤️ it feels like he's older than that though  i wish I could show him but there's literally no US shows that recognizes VEOs that I have been able to find besides the one I took Odette to, but it looks like they are no longer doing shows..  guess we will figure something else out for him
+°
+°
+°
+°Veolar Knight Egon (Egon)
+Breed: Veo (Vostochno-Evropeiskaya Ovcharka) aka East European Shepherd (not GSD)
+DOB: March 17th, 2019
+°
+°
+°
+°
+Follow our Pawtners!
+@blanca_german_shepherd 
+@its_good_2_b_duke 
+@mountainpup_ 
+@gsd_servicedogbentley
+@asia.and.lotus
+@leiaandthespoo" data-fancybox="images" data-link="https://www.instagram.com/p/B8b1yltgUs-/" data-type="image" data-username="plysbjorngsd" href="/upload/uf/22d/22d6999d285e274cd301db30b7cf3c91.jpg">
+            <img alt="Восточноевропейская овчарка" src="/upload/resize_cache/uf/22d/293_293_2/22d6999d285e274cd301db30b7cf3c91.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/vostochnoevropeyskaya-ovcharka/photo/">
+         Все
+            фото восточноевропейской овчарки
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы восточноевропейская овчарка
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы восточноевропейская овчарка и отличия от немецкой
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер восточноевропейской овчарки
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни восточноевропейских овчарок
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена восточноевропейской овчарки
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Восточноевропейская овчарка
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Россия
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         12-13 лет
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 35-60 кг, суки 30-50 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 66-76 см, суки 62-72 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         12 – 13 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Восточноевропейских овчарок не затронуло коммерческое разведение, что позволило уберечь породу от многих генетических заболеваний. Даже сегодня отечественное поголовье считается самым перспективным в плане рабочих и внешних качеств, поэтому зарубежные заводчики предпочитают покупать щенков именно в российских питомниках.
+        </li>
+        <li>
+         Как любая служебная собака, восточноевропейская овчарка обязана пройти курс ОКД и, по возможности, ЗКС. Только так можно снизить риски неправильного поведения животного и его нападения на человека.
+        </li>
+        <li>
+         Брать восточноевропейскую овчарку «на диван» – фатальная ошибка. Это активная рабочая порода, которая может смириться с ролью серьезного компаньона либо спортсмена, но не с амплуа комнатного питомца.
+        </li>
+        <li>
+         Взрослые «восточники» адаптированы к низким температурам, но сырость и сквозняки для них губительны.
+        </li>
+        <li>
+         Невзирая на внешнюю суровость и подозрительное отношение к незнакомцам, детей овчарки любят и не обижают.
+        </li>
+        <li>
+         Психика восточноевропейских овчарок заканчивает формироваться только к 3 годам. До этого возраста относиться к собаке следует снисходительно, поскольку она все еще остается щенком – громадным, сильным, но все-таки щенком.
+        </li>
+        <li>
+         Помимо охранно-сторожевой деятельности, в СССР порода привлекалась к работе собаки-поводыря, однако сегодня «восточников» из этой ниши вытеснили лабрадоры.
+        </li>
+        <li>
+         Восточноевропейские овчарки достаточно спортивны и способны занимать призовые места в вейтпуллинге, аджилити и фристайле.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Восточноевропейская овчарка" data-original="/upload/iblock/3ff/3ff3bb0278ad99f3b38aaca9da8ec247.jpg">
+          <noscript data-alt="Восточноевропейская овчарка" data-original="/upload/iblock/3ff/3ff3bb0278ad99f3b38aaca9da8ec247.jpg">
+           <img alt="Восточноевропейская овчарка" src="/upload/iblock/3ff/3ff3bb0278ad99f3b38aaca9da8ec247.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <p>
+           <strong>
+            Восточноевропейская овчарка
+           </strong>
+           – усовершенствованная и доработанная советскими селекционерами «копия»
+           <a class="ah" href="/dog/nemetskaya-ovcharka/">
+            немецкой овчарки
+           </a>
+           , вобравшая в себя лучшие качества своего родственника. Сегодняшний «восточник» – это все еще великолепный сторож и телохранитель, но уже не такой азартный шалопай, как его знаменитый собрат. Именно благодаря молниеносной реакции и уравновешенному характеру порода нашла признание у владельцев, так или иначе связанных с правопорядком и охранной деятельностью. Бдительные и собранные, ВЕО как нельзя лучше подходят для защиты имущества и отпугивания лиц, посягающих на чужую жизнь. Если в доме обитает такая собака, безопасность и спокойные ночи гарантированы.
+          </p>
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Восточноевропейская овчарка основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы восточноевропейская овчарка
+        </h2>
+        <p>
+         Как и большинство отечественных служебных пород, восточноевропейские овчарки были выведены в 30-50-х годах XX столетия, в связи с государственной необходимостью. Кстати, под выражением «государственная необходимость» подразумевалась караульно-конвойная служба в ГУЛАГе, что по понятным причинам не афишировалось. Племенным материалом для создания очередной суперсобаки послужили
+         <a class="ph" href="/dog/nemetskaya-ovcharka/">
+          немецкие овчарки
+         </a>
+         , благодаря которым в СССР образовалось сразу несколько породных линий. В частности, самым востребованным оказалось потомство от импортированных кобелей, таких как Эду фон Гейзенхоф, Эди фон Блюмендуфт и Девете фон Фюрстенштег.
+        </p>
+        <p>
+         После Великой Отечественной войны поголовье ВЕО в советских питомниках сократилось до критического минимума, из-за чего работы по развитию и совершенствованию породы пришлось начинать с чистого листа. Однако уже в 60-х годах в стране появилось семь новых племенных линий, представители которых демонстрировали выдающиеся служебные и экстерьерные качества. Эпоха сталинских лагерей и тюрем к тому времени стала частью истории, поэтому животных начали привлекать к службе в МВД, а также использовать в качестве собак-поводырей. Подогревал интерес к породе и отечественный кинематограф. После выхода фильмов «Ко мне, Мухтар!» и «Пограничный пес Алый» обзавестись восточноевропейской овчаркой мечтал едва ли не каждый второй советский школьник.
+        </p>
+        <p>
+         В 1964 году для «восточников» был составлен первый полноценный стандарт внешности, что обеспечило им признание сначала Союза кинологических организаций России, а позже – одобрение РКФ. Что касается аналогичных зарубежных и международных сообществ, то далеко не все из них согласились рассматривать ВЕО как отдельную породу. Так, например, FCI до сих пор позиционирует восточноевропейских овчарок как русскую ветвь
+         <a class="ph" href="/dog/nemetskaya-ovcharka/">
+          немецких овчарок
+         </a>
+         : обновленную и усовершенствованную, но в целом сохранившую фенотип и психологические черты своего предка.
+        </p>
+        <h2>
+         Видео: Восточноевропейская овчарка
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="VtXoxzrranY">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы восточноевропейская овчарка и отличия от немецкой
+        </h2>
+        <p>
+         Учитывая то, что чистокровная ВЕО – это, по сути, «обрусевшая»
+         <a class="ph" href="/dog/nemetskaya-ovcharka/">
+          немецкая овчарка
+         </a>
+         , рассчитывать на кардинальные внешние различия между породами не приходится. Тем не менее, если поставить рядом образцового «немца» и его советского потомка, идентифицировать каждого вполне реально. Обычно первое, что бросается в глаза, это внушительная комплекция «восточника». В качестве примера: среднестатистический кобель
+         <a class="ph" href="/dog/nemetskaya-ovcharka/">
+          немецкой овчарки
+         </a>
+         имеет такие же рост и вес, что и сука восточноевропейской и это при том, что обеим породам свойственен половой диморфизм. Согласно стандарту породы, высота восточноевропейской овчарки в холке составляет 66-76 см у кобелей, 62-72 см у сук. Вес «мальчиков» и «девочек» составляет, соответственно, 35-60 кг и 30-50 кг.
+        </p>
+        <p>
+         Немаловажный нюанс – линия спины. У «немцев» она сильно скошена (угол наклона около 23°), тогда как у «восточников» верх выглядит почти горизонтальным. Ноги ВЕО гораздо толще и массивнее, чем у его предка. Отсюда – различия в движении.
+         <a class="ph" href="/dog/nemetskaya-ovcharka/">
+          Немецкие овчарки
+         </a>
+         передвигаются короткой, стреляющей рысью с длинным шагом, восточноевропейские – более размашистой и тяжелой.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Череп уплощенный, расширенный между ушами, с неглубокой продольной бороздой. Надбровья и затылочный бугор слабо обозначенные. Стоп умеренный, без резкости. Морда восточноевропейской овчарки клинообразная, суженная в районе мочки, но не заостренная.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Челюсти восточноевропейской овчарки мощные, с полным комплектом из 42 крупных зубов. Единственный допустимый стандартом тип прикуса – «ножницы».
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Спинка носа ровная, мочка массивная, угольно-черная.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза восточноевропейской овчарки среднего размера, правильной овальной формы, посаженные слегка косо и очень широко. Желательный окрас радужки – максимально темный.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Среднего размера, стоячие, с треугольной формой ушного полотна и закругленным кончиком. Уши посажены широко и выше уровня глаз, у спокойной собаки могут принимать слегка развешанное положение, у настороженной – подняты строго вертикально.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Поставленная к спине под углом от 40° до 45°, плавно расширяющаяся по направлению к плечам. У чистопородных особей шеи должны быть мускулистыми, без подвеса.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело восточноевропейской овчарки сбалансированное, прямоугольного умеренно растянутого формата. Спина сильная, почти прямая, удлиненного типа. Поясница чуть выпуклая, короткая и массивная. Хорошо прорисованы: линия холки и широкий округлый круп. Грудь у представителей этой породы овальная, доходящая до локтей, с аккуратно изогнутыми ребрами. Живот умеренно подобранный.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         У ВЕО прямые, параллельно поставленные ноги, причем задние лапы заметно оттянуты назад. Лопатки и плечевые кости удлиненные, расположены косо. Угол плечелопаточного сочленения равен примерно 100°. Предплечья животного прямые, переходящие в плотно прижатые к бокам локти и длинные пружинистые пясти, стоящие под легким наклоном.
+        </p>
+        <p>
+         Задние конечности выглядят более массивно за счет мускулистых бедер. Голени собаки в меру длинные, но без чрезмерной вытянутости, плюсны прочные, практически отвесные. Лапы «восточников» имеют классическую овальную форму с лапами в комке и плотными черными подушечками.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Спускающийся до скакательных суставов или ниже, саблевидно-изогнутый. У спокойной собаки хвост опущен книзу, у взволнованной – приподнят (примерно на ⅔) до верхней линии спины.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Шерстный покров восточноевропейских овчарок двойной, образованный плотным мягким подшерстком, имеющим более светлый тон, и жесткой полудлинной остью, окрашенной темнее. Зоны с обильной длинной шерстью – шея и бедра; с максимально короткой – голова, передняя часть ног, поверхность лап и пальцев.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Восточноевропейские овчарки могут быть черно-рыжими, черными и черно-серыми. Допускаются стандартом и такие масти, как черная с осветленными участками (метки над глазами, на лапах, скулах, под хвостом), черно-подпалая и зонарно-серая. Не приветствуется, но возможен также зонарно-рыжий окрас.
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <ul>
+         <li>
+          Развешанные уши.
+         </li>
+         <li>
+          Разнообразные отклонения прикуса, включая перекошенную челюсть.
+         </li>
+         <li>
+          Неполная зубная формула.
+         </li>
+         <li>
+          Выходящая за рамки стандарта масть.
+         </li>
+         <li>
+          Недостаточно пигментированная мочка.
+         </li>
+         <li>
+          Лишенная подшерстка шерсть.
+         </li>
+         <li>
+          Чересчур короткий хвост.
+         </li>
+         <li>
+          Альбинизм.
+         </li>
+         <li>
+          Наличие бельма, гетерохромии или голубой радужки.
+         </li>
+         <li>
+          Курчавая, чересчур длинная или короткая шерсть.
+         </li>
+         <li>
+          Заплетающаяся, перекатывающаяся походка.
+         </li>
+         <li>
+          Крипторхизм.
+         </li>
+         <li>
+          Необоснованные злобность и трусливость.
+         </li>
+        </ul>
+        <h2 id="gl3">
+         Характер восточноевропейской овчарки
+        </h2>
+        <p>
+         Среднестатистический «восточник» флегматичнее и рассудительнее своего немецкого родственника. Он не резок и не вспыльчив, что в случае опасности не мешает животному молниеносно принимать решение и действовать. Ну а если точнее, то восточноевропейская овчарка – собака, не любящая бесцельного проявления каких бы то ни было качеств. Все существо этого серьезного неутомимого служаки стремится к тому, чтобы быть полезным владельцу. Соответственно, если вы не нуждаетесь ни в бдительном стороже, ни в предусмотрительном охраннике, подыскать для ВЕО альтернативный вид деятельности будет непросто.
+        </p>
+        <p>
+         Восточноевропейские овчарки не жалуют незнакомцев, и эта неприязнь неискоренима. В то же время бросаться на чужака, едва тот появился в поле зрения, собака не станет. Да, животное готово к защите собственного владельца 24 часа в сутки, но только когда угроза действительно реальна. Впрочем, здесь необходимо уточнение: так сдержанно ведут себя вышколенные особи, владелец которых не поленился пройти с ними ОКД. С молодыми, не научившимися управлять собственными эмоциями псами лучше держать руку на пульсе. Эти «товарищи» пока не в состоянии отличать дружеское похлопывание по плечу от полноценного удара и шумные компании от банд хулиганов, поэтому могут включить режим защитника в самый неподходящий момент.
+        </p>
+        <p>
+         Еще один приятный бонус для поклонников восточноевропейских овчарок – отсутствие у кобелей привычки соперничать с хозяином за статус альфа-самца. При правильном воспитании порода охотно передает бразды правления человеку, легко привыкая к статусу компаньона и соблюдая необходимую субординацию. Единственное – распределить роли в доме придется сразу после появления в нем щенка. Если своевременно этого не сделать, у восточноевропейской овчарки появится повод заподозрить владельца в бесхарактерности. А это прямой путь к непослушанию, упрямству и в конечном итоге – к опасному противостоянию между хозяином и питомцем.
+        </p>
+        <p>
+         В целом у восточноевропейских овчарок выдержанный характер, о чем свидетельствует их добродушное отношение к детям. Домашних питомцев, с которыми ей приходилось вместе расти, собака тоже не обижает. А вот на бродячих котофеев и псов ВЕО может и сорваться, так что на прогулках увлечение питомца другими четырехлапыми созданиями лучше брать под личный контроль.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         В плане учебы восточноевропейские овчарки – твердые хорошисты. Они сообразительны, охотно вникают в суть объясняемых им действий и не путают реальность с ситуациями, моделируемыми кинологом на тренировочной площадке. ВЕО легко расправляются с базовыми командами ОКД и с не меньшей увлеченностью постигают азы ЗКС, но это не та порода, которая усваивает материал раз и навсегда. Как любят говорить кинологи: восточноевропейская овчарка учится и воспитывается на протяжении всей жизни. Только так животным реально управлять и не бояться за безопасность окружающих. Соответственно, вводя в дом такого брутального питомца, нужно быть готовым к тому, что тренировки и повторение пройденного материала станут неотъемлемой частью вашей жизни.
+        </p>
+        <p class="legenda">
+         Важно: восточноевропейская овчарка считает своим хозяином не того, кто ежедневно подносит миску с кормом, а человека, который ее тренирует, поэтому заниматься дрессировкой питомца лучше самостоятельно, прибегая к консультации профессионального кинолога лишь в самых сложных ситуациях.
+        </p>
+        <p>
+         До двух месяцев щенка восточноевропейской овчарки социализируют, то есть собака должна привыкнуть к месту жительства, владельцам, звукам и запахам, сопровождающим ее дома. С двухмесячного возраста начинается разучивание элементарных команд и уроки послушания, которые будут одновременно подготовкой к предстоящему ОКД. В этом возрасте малышу придется усвоить новое правило: перед тем как совершить действие, необходимо получить разрешение хозяина. Кстати, полноценно обучить овчарку можно лишь при условии понимания и признания ей авторитета владельца. Играя со щенком ВЕО, не позволяйте ему выигрывать. Такое поведение малыш расценивает как слабость, которой не замедлит воспользоваться.
+        </p>
+        <p>
+         Возраст 4 месяца – оптимальный период для разучивания с восточноевропейской овчаркой более сложных команд из того же ОКД. Если все правильно спланировать, к 6 месяцам щенок будет готов сдать нормативы по курсу и сможет начать заниматься охранной деятельностью. Правда, до года усвоенные питомцем навыки и умения придется дополнительно оттачивать и доводить до совершенства. Как отмечалось ранее, повторение материала для породы – насущная необходимость.
+        </p>
+        <p>
+         Владельцам, планирующим для собственных питомцев спортивную карьеру, можно порекомендовать международный курс IPO. Однако стоит понимать, что подобные программы у импозантных и, чего уж там, тяжеловатых «восточников» идут со скрипом. Что касается ЗКС, то записывать восточноевропейскую овчарку на подобные курсы имеет смысл после успешного прохождения ей ОКД, а также если вы сотрудник силовых структур и работаете в паре с четырехлапым другом. В остальных случаях прохождение столь суровой программы не обязательно. При необходимости восточноевропейская овчарка и без дрессировки защитит владельца, причем в силу достаточно спокойного темперамента ВЕО не будет делать из врага фарш. Ее миссия – догнать условного агрессора, уложить на лопатки, продемонстрировав собственное физическое превосходство. Однако в 90% случаев до полноценной гонки за противником дело не доходит: оценив габариты восточноевропейской овчарки, злоумышленники предпочитают самостоятельно исчезать из поля зрения столь бдительного телохранителя.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         Для типовой городской квартиры у восточноевропейской овчарки не самый подходящий размер, поэтому если уж решились на пополнение в семье, заранее подумайте над тем, как обеспечить собаке достаточное количество свободного пространства. В частности, лежанка питомца должна находиться в уединенном, но хорошо освещенном месте – рахит породе ни к чему. Если тюфячок овчарки лежит в проходе, где за него постоянно цепляются ноги домочадцев, это раздражает и нервирует щенка. Матрас для восточноевропейской овчарки лучше выбирать полужесткий, во избежание появления мозолей на локтях, а миску для еды фиксировать на регулируемом штативе (выбираем самую высокую конструкцию), что снизит нагрузку на суставы.
+        </p>
+        <p>
+         Оптимальный с позиции удобства для владельца вариант – содержание восточноевропейской овчарки в вольере с утепленной конурой, которая должна иметь такой размер, чтобы собака могла в ней не просто улечься, но и вытянуть лапы. В качестве подстилки подойдет сухое сено. Главное – не забывайте своевременно менять подстилку и дважды в год обрабатывать собачье жилье от паразитов. Обычно сигналом к тому, что пора провести дезинфекцию, служит нежелание овчарки лежать в будке. Летом сенная «постель» ВЕО не нужна, но чтобы питомец не наращивал локтевые мозоли, лучше постелить в вольере коврик. И самое важное: никаких цепей, даже если они длинные и позволяют собаке бегать по всей территории двора. Такой подход портит животное, развивая в нем недоверие к хозяину и озлобленность против всего мира.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Чтобы упростить себе жизнь в будущем, сформируйте у щенка понятие о гигиене, как о необходимости, которая неизбежна. Не забывайте, восточноевропейская овчарка – это не померанский шпиц, которого можно обездвижить одной рукой. И если питомец с раннего возраста противится гигиеническим процедурам, то когда животное повзрослеет и нарастит мышечную массу, «уговорить» его будет невозможно. В остальном порода считается неприхотливой и не требующей профессионального ухода. Например, ежедневное расчесывание ВЕО потребуется два раза в год, в сезон линьки. В промежутках между этими периодами отмершие шерстинки удаляют раз-другой в неделю щеткой или резиновой варежкой. Мыть восточноевропейскую овчарку рекомендуется дважды в месяц, если животное не бегает по лужам. Летом можно ограничиться купанием в открытом водоеме, которое порода безумно любит.
+        </p>
+        <p>
+         Уши собаки лучше осматривать регулярно, но бороться за полную «стерильность» слухового прохода не стоит. Убирайте коричневый налет салфетками и ветеринарными лосьонами только когда его скопилось действительно много. Помните, частые «ныряния» ватными палочками в ушную воронку провоцируют серовыделение, из-за чего ухо выглядит еще более неопрятно. Кстати, до года восточноевропейских овчарок лучше не гладить по голове. Ушное полотно у породы тяжелое, медленно и трудно «встающее», поэтому любое неосторожное прикосновение к нему может стать причиной неправильного постава хряща.
+        </p>
+        <h3>
+         Выгул и физические нагрузки
+        </h3>
+        <p>
+         Восточноевропейские овчарки – активные и крепкие собаки, хоть и уступающие своим немецким родственникам в выносливости. Соответственно, нагружать их на тренировках и прогулках следует меньше, чем
+         <a class="ph" href="/dog/nemetskaya-ovcharka/">
+          немецких овчарок
+         </a>
+         . Например, до 7-8 месяцев щенку ВЕО запрещены любые физические нагрузки. Единственное, на что может рассчитывать малыш, – непродолжительные экскурсии в парке и купание в реках и озерах, если погода достаточно теплая. Никаких шлеек с утяжелителями щенкам тоже не положено, хотя подобные аксессуары не запрещены и могут стать неплохим подспорьем в тренировке служебной собаки.
+        </p>
+        <p>
+         Со взрослыми особями традиционные гуляния на поводке не практикуют. Если уж зрелый «восточник» вышел на улицу, ему следует дать выпустить пар. Обычно, чтобы размяться, породе хватает 1-2 часов, в которые можно вместить буксировку предметов по снегу или песку, гонки за велосипедом, пробежки по мелководью и плаванье. Но все это при условии, что питомец здоров. Больным и простуженным собакам любые виды спорта, включая водные, строго противопоказаны. Кроме того, в первый год жизни восточноевропейской овчарке лучше не предлагать упражнений на прыжки. Как и любой крупной породе, подобные упражнения ВЕО даются тяжело, что только ускоряет износ суставов.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Восточноевропейская овчарка не нуждается в специфическом рационе. Ее устроит традиционное собачье меню либо промышленный корм премиум-класса. Тем не менее лучше соблюдать ряд нехитрых правил, чтобы сохранить здоровье питомца.
+        </p>
+        <ul>
+         <li>
+          Мясо дается сырым, если оно свежее и вы в курсе его происхождения. В остальных случаях лучше не рисковать и отваривать либо ошпаривать продукт.
+         </li>
+         <li>
+          Никакой еды с вашего стола, даже если питомец просит.
+         </li>
+         <li>
+          Поменьше фруктов и овощей в рационе. Да, в них масса витаминов и полезные волокна, но пищеварительная система восточноевропейской овчарки плохо приспособлена для переваривания растительной пищи.
+         </li>
+         <li>
+          Никакие «увкусняющие» добавки собакам не нужны. В частности, каша из нескольких видов круп, орехи и сухофрукты – это не несущие пользы излишества, на которые не стоит тратить время и деньги.
+         </li>
+        </ul>
+        <p>
+         Правильно сбалансировать натуральный рацион восточноевропейской овчарки в домашних условиях практически невозможно, поэтому на помощь приходят всевозможные подкормки и ветеринарные БАДы. Так, например, щенкам ВЕО дают комплексы с хондроитином и глюкозамином для поддержки суставных хрящей. Однако и здесь важно не переусердствовать: передозировка минералами и витаминами – штука серьезная. Предварительно проконсультируйтесь со специалистом, который точно определит, нуждается ли ваш подопечный в подкормках или спокойно обойдется без них.
+        </p>
+        <p>
+         Обычно щенки переезжают к новым владельцам не ранее двухмесячного возраста. Это как раз тот период, когда малыша переводят на пятиразовое кормление. С 4 по 8 месяцы жизни восточноевропейская овчарка питается четыре раза в день, с 8 месяцев до года – три раза. Переводить «восточника» на двухразовое кормление рекомендуется с полутора лет, но даже таким особям первые 5-7 месяцев в середине дня устраивают легкий кефирный или фруктово-овощной перекус.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни восточноевропейских овчарок
+        </h2>
+        <p>
+         У восточноевропейских овчарок неплохое здоровье, но предрасположенность породы к ряду заболеваний никто не отменял. Так, например, ВЕО подвержены завороту желудка, из-за которого им строго противопоказано кормление большими порциями. Кроме того, как у подавляющего большинства крупных собак, у «восточников» часто дают о себе знать суставы. Причем это может быть как классическая дисплазия, обусловленная избыточным весом и гиподинамией, так и воспалительные заболевания вроде артрита. Глаукому и заворот века овчарки тоже получили в наследство от предков, вот почему так важно изучать родословные и ветпаспорта производителей пометов.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Познакомьтесь с мамой щенков и оцените ее темперамент, так как он передается потомству. В частности, если перед вашим приходом заводчик ставит суку на привязь, скорее всего, она агрессивна и плохо управляема. Задумайтесь, а нужен ли вам щенок с таким наследственным багажом?
+         </li>
+         <li>
+          Лающая на незнакомца восточноевропейская овчарка – дело обычное, особенно если это особь женского пола, защищающая свое потомство. Однако более решительных действий производительница помета предпринимать не должна.
+         </li>
+         <li>
+          Выбирая будущую служебную собаку, ориентируйтесь на рабочие качества ее родителей. В наличии дипломы по ЗКС и ОКД? Отлично! В 9 случаях из 10 щенок повторит, а то и побьет родительские рекорды.
+         </li>
+         <li>
+          Если берете восточноевропейскую овчарку в качестве домашнего любимца и компаньона, откажитесь от соблазна схватить самого резвого малыша с лидерскими задатками. Кроме того, уточните у заводчика, как мама щенков относится к детям. Чадолюбие у породы тоже наследственное.
+         </li>
+         <li>
+          Если боитесь не справиться с воспитанием и дрессировкой восточноевропейской овчарки, откажитесь от покупки подрощенных щенков. С одной стороны, замечательно, что заводчик успел проделать часть работы, социализировав подростка, сделав ему необходимые прививки и обучив командам, однако перевоспитать такого щенка и адаптировать под личные предпочтения сложнее.
+         </li>
+         <li>
+          Покупая восточноевропейскую овчарку для племенного разведения, отыщите в сети информацию об участии питомника в выставках, а также уточните, завоевывали ли его воспитанники какие-либо награды.
+         </li>
+        </ul>
+        <h2 id="gl8">
+         Цена восточноевропейской овчарки
+        </h2>
+        <p>
+         Стандартная стоимость щенка восточноевропейской овчарки с метрикой РКФ – 15 000 - 20 000 руб. Потомство от производителей-чемпионов с дипломами 1 степени по ОКД и ЗКС – это еще плюс 10 000 - 15 000 рублей к среднему ценнику.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения восточноевропейской овчарки на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/26521/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Диана Витальевна" data-original="/upload/resize_cache/main/f3c/200_200_2/ege9ly738w4x6i1emn3v7l3wolwtwn8j.png">
+            <noscript data-alt="Диана Витальевна" data-original="/upload/resize_cache/main/f3c/200_200_2/ege9ly738w4x6i1emn3v7l3wolwtwn8j.png">
+             <img alt="Диана Витальевна" src="/upload/resize_cache/main/f3c/200_200_2/ege9ly738w4x6i1emn3v7l3wolwtwn8j.png"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/ne-vstaet-ukho-4796/">
+           Не встает ухо
+          </a>
+         </div>
+         <div class="forum-text">
+          Собачники, подскажите, щенок ВЕО, 9 месяцев, не встает ухо. Стояло, потом упало и не встает. Давали и желатин, и холодец, и витамины гелабон, и клеили уши, не стоит и всё. Занимаемся  ушами несколько месяцев. Уже...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/26521/">
+            Диана Витальевна
+           </a>
+          </span>
+          <span class="vopros-date">
+           9 месяцев назад
+          </span>
+          <span class="vopros-smotr">
+           314 просмотров
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/25621/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Андрей Теряев" data-original="/upload/resize_cache/main/bcf/200_200_2/rg1xcxnabmh9v7gdzadiquk6e2itlf1b.jpg">
+            <noscript data-alt="Андрей Теряев" data-original="/upload/resize_cache/main/bcf/200_200_2/rg1xcxnabmh9v7gdzadiquk6e2itlf1b.jpg">
+             <img alt="Андрей Теряев" src="/upload/resize_cache/main/bcf/200_200_2/rg1xcxnabmh9v7gdzadiquk6e2itlf1b.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/o-sobake-35-mesyatsa-suka-mne-kazhetsya-chto-ona-malenkaya-dlya-svoego-vozrasta-vysota-budki-90-sm-4282/">
+           о собаке 3.5 месяца сука, мне кажется что она маленькая для своего возраста. Высота будки 90 см
+          </a>
+         </div>
+         <div class="forum-text">
+          Подскажи пожалуйста на фото собаке 3.5 сука, мне кажется что она маленькая для своего возраста. Высота будки 90 см
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/25621/">
+            Андрей Теряев
+           </a>
+          </span>
+          <span class="vopros-date">
+           Год назад
+          </span>
+          <span class="vopros-smotr">
+           585 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/25438/">
+          <div class="ava-med">
+           <div class="noava fill8">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/veo-ili-pomes-4194/">
+           ВЕО или помесь?
+          </a>
+         </div>
+         <div class="forum-text">
+          У свекрови под Тулой нашли такую девочку 
+ВЕО или помесь?
+Хотим взять домой малышку
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/25438/">
+            Мария Гудей
+           </a>
+          </span>
+          <span class="vopros-date">
+           Год назад
+          </span>
+          <span class="vopros-smotr">
+           606 просмотров
+          </span>
+          <span class="vopros-otvet">
+           2 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/25273/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Оля Токарева" data-original="/upload/resize_cache/main/94c/200_200_2/nhv2z7ckt79n52q1odsqmyek0aul6uqm.jpg">
+            <noscript data-alt="Оля Токарева" data-original="/upload/resize_cache/main/94c/200_200_2/nhv2z7ckt79n52q1odsqmyek0aul6uqm.jpg">
+             <img alt="Оля Токарева" src="/upload/resize_cache/main/94c/200_200_2/nhv2z7ckt79n52q1odsqmyek0aul6uqm.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/veo-ochen-malenkiy-4114/">
+           ВЕО очень маленький
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте, моему щенку ВЕО(кобель) 3 месяца 8 дней, брала его в питомнике, ему на тот момент было 2 месяца, он с документами. Ещё когда покупала его, заметила что он очень мелкий, но меня это не смутило, потому...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/25273/">
+            Оля Токарева
+           </a>
+          </span>
+          <span class="vopros-date">
+           Год назад
+          </span>
+          <span class="vopros-smotr">
+           1206 просмотров
+          </span>
+          <span class="vopros-otvet">
+           2 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/vostochnoevropeyskaya-ovcharka/forum/">
+        Перейти на
+        форум восточноевропейской овчарки
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Восточноевропейская овчарка" src="/upload/iblock/27e/27eb172b86a8aa90c74bf7f989003b59.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/vostochnoevropeyskaya-ovcharka/">
+          Восточноевропейская овчарка
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/vostochnoevropeyskaya-ovcharka/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/vostochnoevropeyskaya-ovcharka/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/vostochnoevropeyskaya-ovcharka/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/vostochnoevropeyskaya-ovcharka/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/vostochnoevropeyskaya-ovcharka/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/vostochnoevropeyskaya-ovcharka/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/ksoloittskuintli/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Ксолоитцкуинтли" data-original="/upload/resize_cache/iblock/c71/100_100_1/c710aa69d95138d0716d46ef12af913a.jpg">
+          <noscript data-alt="Ксолоитцкуинтли" data-original="/upload/resize_cache/iblock/c71/100_100_1/c710aa69d95138d0716d46ef12af913a.jpg">
+           <img alt="Ксолоитцкуинтли" src="/upload/resize_cache/iblock/c71/100_100_1/c710aa69d95138d0716d46ef12af913a.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Ксолоитцкуинтли
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/maltiyskaya-bolonka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Мальтийская болонка" data-original="/upload/resize_cache/iblock/e7c/100_100_1/e7c3e3033da09dcdab93ef01e60138fc.jpg">
+          <noscript data-alt="Мальтийская болонка" data-original="/upload/resize_cache/iblock/e7c/100_100_1/e7c3e3033da09dcdab93ef01e60138fc.jpg">
+           <img alt="Мальтийская болонка" src="/upload/resize_cache/iblock/e7c/100_100_1/e7c3e3033da09dcdab93ef01e60138fc.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Мальтийская болонка
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/kern-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Керн-терьер" data-original="/upload/resize_cache/iblock/e00/100_100_1/e00878f7ff3ef8efa2f9b4932cc2199b.jpg">
+          <noscript data-alt="Керн-терьер" data-original="/upload/resize_cache/iblock/e00/100_100_1/e00878f7ff3ef8efa2f9b4932cc2199b.jpg">
+           <img alt="Керн-терьер" src="/upload/resize_cache/iblock/e00/100_100_1/e00878f7ff3ef8efa2f9b4932cc2199b.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Керн-терьер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/yaponskiy-shpits/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Японский шпиц" data-original="/upload/resize_cache/iblock/a9f/100_100_1/a9f6004878eea81bc3aac1ca4426c15e.jpg">
+          <noscript data-alt="Японский шпиц" data-original="/upload/resize_cache/iblock/a9f/100_100_1/a9f6004878eea81bc3aac1ca4426c15e.jpg">
+           <img alt="Японский шпиц" src="/upload/resize_cache/iblock/a9f/100_100_1/a9f6004878eea81bc3aac1ca4426c15e.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Японский шпиц
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fvostochnoevropeyskaya-ovcharka%252F%253Fcheck_key%253D7584b147aca07d12e65d0694040f6582%2526ANIMAL_CODE%253Dvostochnoevropeyskaya-ovcharka%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fvostochnoevropeyskaya-ovcharka%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRnZvc3RvY2hub2V2cm9wZXlza2F5YS1vdmNoYXJrYSUyRiUzRmNoZWNrX2tleSUzRDc1ODRiMTQ3YWNhMDdkMTJlNjVkMDY5NDA0MGY2NTgyJTI2QU5JTUFMX0NPREUlM0R2b3N0b2Nobm9ldnJvcGV5c2theWEtb3ZjaGFya2ElMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGdm9zdG9jaG5vZXZyb3BleXNrYXlhLW92Y2hhcmthJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fvostochnoevropeyskaya-ovcharka%252F%253Fcheck_key%253D7584b147aca07d12e65d0694040f6582%2526ANIMAL_CODE%253Dvostochnoevropeyskaya-ovcharka%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fvostochnoevropeyskaya-ovcharka%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fvostochnoevropeyskaya-ovcharka%252F%253Fcheck_key%253D7584b147aca07d12e65d0694040f6582%2526ANIMAL_CODE%253Dvostochnoevropeyskaya-ovcharka%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fvostochnoevropeyskaya-ovcharka%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "46.159.56.168"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--829cb9f3687b4c58872ab4a445235ac7-->

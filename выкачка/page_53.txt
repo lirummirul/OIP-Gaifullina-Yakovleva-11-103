@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'7d14fc7685b1'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Бульмастиф, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Бульмастиф – ответственный сторож и неутомимый компаньон, ведущий свою родословную от английских бульдогов и мастифов. Бесконечно ласков к владельцу и членам его семьи, но всегда насторожен в отношении незнакомцев." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/eff/eff1d3f0d785f645b9c3ef25a8c9c9f4.jpg" property="og:image"/>
+     <title>
+      Бульмастиф: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/bulmastif/" property="og:url"/>
+     <meta content="Бульмастиф: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Бульмастиф – ответственный сторож и неутомимый компаньон, ведущий свою родословную от английских бульдогов и мастифов. Бесконечно ласков к владельцу и членам его семьи, но всегда насторожен в отношении незнакомцев." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/bulmastif/" itemprop="url">
+         <span itemprop="title">
+          Бульмастиф
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Бульмастиф
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/bulmastif/">
+          Описание
+         </a>
+         <a href="/dog/bulmastif/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/bulmastif/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/bulmastif/photo/">
+          Фото
+         </a>
+         <a href="/dog/bulmastif/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/bulmastif/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Бульмастиф" src="/upload/iblock/a0a/a0a5d60d572e841f0ed6243471d1042f.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Бульмастиф – ответственный сторож и неутомимый компаньон, ведущий свою родословную от английских бульдогов и мастифов. Бесконечно ласков к владельцу и членам его семьи, но всегда насторожен в отношении незнакомцев.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/fa6/fa611ce3da9d19c91be235cff3e727f8.jpg" data-cap="My boy ❤️" data-fancybox="images" data-link="https://www.instagram.com/p/BxRQWarAa1N/" data-type="image" data-username="bullmastiff.bruno" href="/upload/uf/356/35657d9276ffd8b1e407565843b2e1d9.jpg">
+            <img alt="Бульмастиф" src="/upload/resize_cache/uf/356/293_293_2/35657d9276ffd8b1e407565843b2e1d9.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/77e/77ea81fffa97043490dba31d8eba5fe8.jpg" data-cap="puppy.eyes" data-fancybox="images" data-link="https://www.flickr.com/photos/somebody-outthere/5527094943/" data-type="image" data-username="Somebody-OutThere" href="/upload/uf/f9a/f9a0121773a0de748f6ae90b4e27ba2c.jpg">
+            <img alt="Бульмастиф" src="/upload/resize_cache/uf/f9a/293_293_2/f9a0121773a0de748f6ae90b4e27ba2c.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/d12/d12b587e4b6cdcbdf6922f2b62f8268d.jpg" data-cap="Yes little humans, that's the spot..." data-fancybox="images" data-link="https://www.instagram.com/p/BnhQo9Uh5Ys/" data-type="image" data-username="home.of.guardians.bullmastiffs" href="/upload/uf/8b1/8b10b329e8f0e377ccea04d8197c90ef.jpg">
+            <img alt="Бульмастиф" src="/upload/resize_cache/uf/8b1/293_293_2/8b10b329e8f0e377ccea04d8197c90ef.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/bulmastif/photo/">
+         Все
+            фото бульмастифа
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы бульмастиф
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы бульмастиф
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер бульмастифа
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни бульмастифов
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена бульмастифа
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Бульмастиф
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         1924 год
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 50-59 кг, суки 41-50 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 64-69 см, суки 61-66 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         10-12 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Сегодняшние бульмастифы больше компаньоны, чем полноценные бойцы, и все же, не имея опыта работы со сторожевыми породами, такую собаку лучше не заводить.
+        </li>
+        <li>
+         Бульмастиф, конечно, не такой «слюнтяй», как его предок – английский бульдог, но «покапывать» из пасти у него все равно будет.
+        </li>
+        <li>
+         Порода одинаково подходит как для загородного, так и для квартирного содержания.
+        </li>
+        <li>
+         Бульмастиф – собака контрастов, у которой периоды повышенной активности перемежаются сонливо-ленивыми состояниями, когда животное невозможно согнать с дивана.
+        </li>
+        <li>
+         Теоретически порода не склонна к необоснованной агрессии, однако случаи нападения собак на людей все же имеют место.
+        </li>
+        <li>
+         У бульмастифов очень грозный голос, но пользуются они им крайне редко и всегда обоснованно.
+        </li>
+        <li>
+         У представителей этой породы отменное чутье, позволяющее им профессионально работать по следу, а также заниматься поиском психотропных и взрывчатых веществ.
+        </li>
+        <li>
+         Во сне животные воспроизводят забавные звуки, напоминающие смесь сильного храпа и сопения одновременно.
+        </li>
+        <li>
+         Как и все брахицефальные породы, бульмастиф плохо переносит высокие температуры, поэтому в жару с ним не работают и не гуляют, предоставив собаке возможность отлежаться в тени и снабдив ее достаточным количеством жидкости.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Бульмастиф" data-original="/upload/iblock/eff/eff1d3f0d785f645b9c3ef25a8c9c9f4.jpg">
+          <noscript data-alt="Бульмастиф" data-original="/upload/iblock/eff/eff1d3f0d785f645b9c3ef25a8c9c9f4.jpg">
+           <img alt="Бульмастиф" src="/upload/iblock/eff/eff1d3f0d785f645b9c3ef25a8c9c9f4.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Бульмастиф
+          </strong>
+          – увлеченный спортсмен и охранник, четко разграничивающий работу и отдых. Как истинный уроженец Туманного Альбиона, этот харизматичный крепыш имеет собственное независимое мнение относительно любого явления, поэтому переубедить его в чем бы то ни было под силу только волевому и настойчивому владельцу. Впрочем, назвать бульмастифа неисправимым упрямцем было бы явным преувеличением. Вступать в конфронтацию с хозяином порода не любит, предпочитая бесполезному противостоянию приятное партнерство и взаимопонимание.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Минимальная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Ниже среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дорогое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Бульмастиф основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/bulmastif/razmeri-porodi/">
+         размеры бульмастифа
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы бульмастиф
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бульмастиф" data-fancybox="gallery" href="/upload/iblock/014/0142d744322e59eaca7fae021b6d7be2.jpg" title="Бульмастиф">
+          <div class="lazy-load" data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/014/412_2150_1/0142d744322e59eaca7fae021b6d7be2.jpg">
+           <noscript data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/014/412_2150_1/0142d744322e59eaca7fae021b6d7be2.jpg">
+            <img alt="Бульмастиф" class="article_pic" height="618" src="/upload/resize_cache/iblock/014/412_2150_1/0142d744322e59eaca7fae021b6d7be2.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бульмастиф
+         </div>
+        </div>
+        <p>
+         Порода бульмастиф начала формироваться на стыке XVII-XVIII веков. К этому времени в Великобритании ужесточились законы, направленные на искоренение браконьерства, и природные угодья стали тщательно охраняться. А поскольку в одиночку справиться с любителями несанкционированной охоты английским егерям не удавалось, возникла необходимость в сильных, крепких собаках, способных догнать и задержать нарушителя до прихода подкрепления.
+        </p>
+        <p>
+         Опыты по созданию идеального лесного сторожа тянулись долго, и участие в них принимало около десятка пород. Как результат: в каждом сегодняшнем бульмастифе имеется частичка крови
+         <a class="ph" href="/dog/bladkhaund/">
+          бладхаунда
+         </a>
+         ,
+         <a class="ph" href="/dog/senbernar/">
+          сенбернара
+         </a>
+         и даже
+         <a class="ph" href="/dog/nemetskiy-dog/">
+          немецкого дога
+         </a>
+         . И это невзирая на то, что официальными прародителями породы продолжают оставаться
+         <a class="ph" href="/dog/angliyskiy-buldog/">
+          английский бульдог
+         </a>
+         и
+         <a class="ph" href="/dog/angliyskiy-mastif/">
+          мастиф
+         </a>
+         .
+        </p>
+        <p>
+         Поначалу разведением бульмастифов ведали заводчики-любители из народа, поэтому поголовье собак было крайне неоднородным. Но в XIX веке «прокачкой» породного фенотипа увлеклись профессионалы вроде Дж. Бриггса и В. Холландера, что значительно повысило экстерьерные и рабочие показатели животных. В частности, бульмастифы стали более стремительными в движении, не утратив при этом природной злобности и бульдожьей хватки.
+        </p>
+        <p>
+         В 1924 году породу официально зарегистрировал Английский Кеннел-клуб, а год спустя им же был предложен первый стандарт внешности для ее представителей. К тому моменту бульмастифы успели переквалифицироваться из помощников егерей в полицейских и армейских собак, которыми остаются и сейчас в США, а также в ряде других западных стран. Кстати, именно бульмастифов использует для охраны своих алмазных месторождений в ЮАР корпорация «De Beers». И это на родине свирепых
+         <a class="ph" href="/dog/burbul/">
+          бурбулей
+         </a>
+         !
+        </p>
+        <p>
+         В 1933 году порода была импортирована в Америку, где год спустя AKC опубликовал для нее новый стандарт, незначительно, но все же отличавшийся от английского. Что касается советских заводчиков, то они познакомились с потомками мастифов и бульдогов только в 1988 году. Тем не менее времени на то, чтобы приспособиться к российским реалиям, у бульмастифов ушло совсем немного. В частности, начиная с 1997 года, отечественное поголовье уже во всю заправляло на международных выставках, собирая всевозможные награды и чемпионские титулы.
+        </p>
+        <h3>
+         Видео: Бульмастиф
+        </h3>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="yho-q1os39s">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы бульмастиф
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок бульмастифа" data-fancybox="gallery" href="/upload/iblock/b87/b872de60713c8fcf26bff49869b677aa.jpg" title="Щенок бульмастифа">
+          <div class="lazy-load" data-alt="Щенок бульмастифа" data-class="article_pic" data-original="/upload/resize_cache/iblock/b87/412_2150_1/b872de60713c8fcf26bff49869b677aa.jpg">
+           <noscript data-alt="Щенок бульмастифа" data-class="article_pic" data-original="/upload/resize_cache/iblock/b87/412_2150_1/b872de60713c8fcf26bff49869b677aa.jpg">
+            <img alt="Щенок бульмастифа" class="article_pic" height="425" src="/upload/resize_cache/iblock/b87/412_2150_1/b872de60713c8fcf26bff49869b677aa.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок бульмастифа
+         </div>
+        </div>
+        <p>
+         Бульмастиф – плотный компактный тяжелоатлет с меланхоличным, будто слегка утомленным взглядом. Впрочем, отстраненное выражение глаз не более чем хитрая уловка. На самом деле бульмастиф находится в состоянии перманентной настороженности, о чем свидетельствуют складки на его морде. Эти импровизированные морщины расправляются только в состоянии полного покоя и умиротворенности, которые у собаки наступают лишь в периоды сна.
+        </p>
+        <p>
+         Бульмастиф – порода с ярко выраженным половым диморфизмом. Отсюда – особо рельефные формы и подчеркнуто брутальный имидж у кобелей и утонченно-элегантные фигуры у сук. Высота в холке у кобелей – 63-69 см, суки немного ниже – 61-66 см. Весовые категории у «девочек» и «мальчиков» тоже разные. Максимум, который может набрать без ущерба для здоровья и экстерьера женская особь, – 50 кг, в то время как для кобеля такая масса тела – предельно допустимый минимум.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Черепная коробка бульмастифа массивная, почти квадратная. Морда короткая, тупоугольная, более объемная под глазами, с хорошо намеченным стопом. Кожа на голове бульмастифа натянута свободно, и у заинтересованной каким-либо явлением собаки образовывает неглубокие складки.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Морда бульмастифа" data-fancybox="gallery" href="/upload/iblock/e76/e769a04a9d3cb802c3212752b41390a4.jpg" title="Морда бульмастифа">
+           <div class="lazy-load" data-alt="Морда бульмастифа" data-class="article_pic" data-original="/upload/resize_cache/iblock/e76/512_342_2/e769a04a9d3cb802c3212752b41390a4.jpg">
+            <noscript data-alt="Морда бульмастифа" data-class="article_pic" data-original="/upload/resize_cache/iblock/e76/512_342_2/e769a04a9d3cb802c3212752b41390a4.jpg">
+             <img alt="Морда бульмастифа" class="article_pic" src="/upload/resize_cache/iblock/e76/512_342_2/e769a04a9d3cb802c3212752b41390a4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Морда бульмастифа
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Прилег отдохнуть" data-fancybox="gallery" href="/upload/iblock/426/4266a5546292f6da1bdb8e83e575b274.jpg" title="Прилег отдохнуть">
+           <div class="lazy-load" data-alt="Прилег отдохнуть" data-class="article_pic" data-original="/upload/resize_cache/iblock/426/512_342_2/4266a5546292f6da1bdb8e83e575b274.jpg">
+            <noscript data-alt="Прилег отдохнуть" data-class="article_pic" data-original="/upload/resize_cache/iblock/426/512_342_2/4266a5546292f6da1bdb8e83e575b274.jpg">
+             <img alt="Прилег отдохнуть" class="article_pic" src="/upload/resize_cache/iblock/426/512_342_2/4266a5546292f6da1bdb8e83e575b274.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Прилег отдохнуть
+          </div>
+         </div>
+        </div>
+        <h3>
+         Нос и губы
+        </h3>
+        <p>
+         Мочка плоская, достаточно широкая, с крупными ноздрями. Губы бульмастифа развитые, но не отвислые, брыли умеренные.
+        </p>
+        <h3>
+         Зубы и челюсти
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бульмастиф на выставке" data-fancybox="gallery" href="/upload/iblock/ea1/ea1887af3e2343ad8fefc8df93d65449.jpg" title="Бульмастиф на выставке">
+          <div class="lazy-load" data-alt="Бульмастиф на выставке" data-class="article_pic" data-original="/upload/resize_cache/iblock/ea1/412_2150_1/ea1887af3e2343ad8fefc8df93d65449.jpg">
+           <noscript data-alt="Бульмастиф на выставке" data-class="article_pic" data-original="/upload/resize_cache/iblock/ea1/412_2150_1/ea1887af3e2343ad8fefc8df93d65449.jpg">
+            <img alt="Бульмастиф на выставке" class="article_pic" height="222" src="/upload/resize_cache/iblock/ea1/412_2150_1/ea1887af3e2343ad8fefc8df93d65449.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бульмастиф на выставке
+         </div>
+        </div>
+        <p>
+         Зубы крепкие, свободно помещающиеся в пасти, клыки массивные, широко поставленные. Предпочтительные типы прикуса: прямой, перекус с легким отходом, плотный перекус.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза бульмастифа орехового или темно-орехового оттенка, сравнительно широко расставленные и окаймленные черными «очками».
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Для ушей характерны высокий постав, усиливающий угловатость черепа, и форма равнобедренного треугольника. Ушное полотно небольшого размера, плотно прилегающее к скулам и окрашенное в более темный тон, чем остальные части тела.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Шея бульмастифа невероятно мускулистая, умеренной длины, в толщину равная окружности головы.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бульмастиф со спины" data-fancybox="gallery" href="/upload/iblock/b7e/b7e18a762d404bbd41b032a620142c90.jpg" title="Бульмастиф со спины">
+          <div class="lazy-load" data-alt="Бульмастиф со спины" data-class="article_pic" data-original="/upload/resize_cache/iblock/b7e/412_2150_1/b7e18a762d404bbd41b032a620142c90.jpg">
+           <noscript data-alt="Бульмастиф со спины" data-class="article_pic" data-original="/upload/resize_cache/iblock/b7e/412_2150_1/b7e18a762d404bbd41b032a620142c90.jpg">
+            <img alt="Бульмастиф со спины" class="article_pic" height="549" src="/upload/resize_cache/iblock/b7e/412_2150_1/b7e18a762d404bbd41b032a620142c90.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бульмастиф со спины
+         </div>
+        </div>
+        <p>
+         Тело собаки массивное, но компактное. Спина короткая и ровная. Грудь сильно опущенная вниз, с широкой, глубокой грудной клеткой. Круп бульмастифа чуть выгнутый и немного покатый.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Ноги породного бульмастифа должны производить впечатление скрытой мощи и силы. Широко расставленные, с мускулистыми плечами, прямыми пястями и подвижными сильными голенями, они позволяют животному перемещаться свободной энергичной рысью с хорошим вымахом передних конечностей. Лапы бульмастифа имеют подчеркнуто выгнутую форму и твердые подушечки. Когти предпочтительнее темного окраса.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         У представителей породы очень сильный, заметно утолщенный у основания хвост с крепким кончиком. В движении и состоянии покоя хвост несется прямо либо слегка изгибается, но никогда не принимает вертикальное положение.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Идеальная «одежда» для бульмастифа – это глянцевая короткая и жесткая псовина, плотно охватывающая тело. Наличие подшерстка зависит от окраса собаки. Замечено: у большинства тигровых особей подшерсток отсутствует, тогда как у светлоокрашенных животных он имеется.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Бульмастифы могут быть обладателями шерсти красного (как светлые, так и темные тона), коричневого и тигрового окрасов. Все перечисленные варианты должны быть однотонными, без намека на соболиность (серое напыление) и осветленность на отдельных участках тела. Обязательные пункты: темная маска на морде и такая же окантовка глаз. Приемлемо также наличие небольшого белого пятна на груди.
+        </p>
+        <p>
+         Шелковистый блеск, присущий шерсти бульмастифов, имеет разную интенсивность и часто привязан к типу окраса. В частности, самая блестящая псовина у темно-рыжих и тигровых собак и гораздо более тусклая у животных палевого и песочного окрасов.
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <ul>
+         <li>
+          Желтые глаза.
+         </li>
+         <li>
+          Коричневая маска на морде либо полное ее отсутствие.
+         </li>
+         <li>
+          Крипторхизм.
+         </li>
+         <li>
+          Поведенческие отклонения: трусливость, беспричинная агрессия.
+         </li>
+         <li>
+          Явные физические дефекты, ставящие под сомнение породность животного.
+         </li>
+        </ul>
+        <h2>
+         Фото взрослого бульмастифа
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4fa/4faccff40cb83d97ff392ddcaa8388f4.jpg" title="">
+           <div class="lazy-load" data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/4fa/380_264_2/4faccff40cb83d97ff392ddcaa8388f4.jpg">
+            <noscript data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/4fa/380_264_2/4faccff40cb83d97ff392ddcaa8388f4.jpg">
+             <img alt="Бульмастиф" class="article_pic" src="/upload/resize_cache/iblock/4fa/380_264_2/4faccff40cb83d97ff392ddcaa8388f4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/482/4821b2d3776d07810c03d5fa93b8ff27.jpg" title="">
+           <div class="lazy-load" data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/482/380_264_2/4821b2d3776d07810c03d5fa93b8ff27.jpg">
+            <noscript data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/482/380_264_2/4821b2d3776d07810c03d5fa93b8ff27.jpg">
+             <img alt="Бульмастиф" class="article_pic" src="/upload/resize_cache/iblock/482/380_264_2/4821b2d3776d07810c03d5fa93b8ff27.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8cc/8cc2409237de11ec8216be2414bd7e6e.jpg" title="">
+           <div class="lazy-load" data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/8cc/380_264_2/8cc2409237de11ec8216be2414bd7e6e.jpg">
+            <noscript data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/8cc/380_264_2/8cc2409237de11ec8216be2414bd7e6e.jpg">
+             <img alt="Бульмастиф" class="article_pic" src="/upload/resize_cache/iblock/8cc/380_264_2/8cc2409237de11ec8216be2414bd7e6e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9f7/9f7926a1deb0c8976d9145c425bc90bb.jpg" title="">
+           <div class="lazy-load" data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/9f7/380_264_2/9f7926a1deb0c8976d9145c425bc90bb.jpg">
+            <noscript data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/9f7/380_264_2/9f7926a1deb0c8976d9145c425bc90bb.jpg">
+             <img alt="Бульмастиф" class="article_pic" src="/upload/resize_cache/iblock/9f7/380_264_2/9f7926a1deb0c8976d9145c425bc90bb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/091/091509dafadd67a850e4956e9abf4f07.jpg" title="">
+           <div class="lazy-load" data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/091/380_264_2/091509dafadd67a850e4956e9abf4f07.jpg">
+            <noscript data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/091/380_264_2/091509dafadd67a850e4956e9abf4f07.jpg">
+             <img alt="Бульмастиф" class="article_pic" src="/upload/resize_cache/iblock/091/380_264_2/091509dafadd67a850e4956e9abf4f07.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a10/a1031f847d44e84dab6f8a791dc8afab.jpg" title="">
+           <div class="lazy-load" data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/a10/380_264_2/a1031f847d44e84dab6f8a791dc8afab.jpg">
+            <noscript data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/a10/380_264_2/a1031f847d44e84dab6f8a791dc8afab.jpg">
+             <img alt="Бульмастиф" class="article_pic" src="/upload/resize_cache/iblock/a10/380_264_2/a1031f847d44e84dab6f8a791dc8afab.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер бульмастифа
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бульмастиф на страже порядка" data-fancybox="gallery" href="/upload/iblock/dca/dca4fde9abcb3b75966b7987215c7219.jpg" title="Бульмастиф на страже порядка">
+          <div class="lazy-load" data-alt="Бульмастиф на страже порядка" data-class="article_pic" data-original="/upload/resize_cache/iblock/dca/412_2150_1/dca4fde9abcb3b75966b7987215c7219.jpg">
+           <noscript data-alt="Бульмастиф на страже порядка" data-class="article_pic" data-original="/upload/resize_cache/iblock/dca/412_2150_1/dca4fde9abcb3b75966b7987215c7219.jpg">
+            <img alt="Бульмастиф на страже порядка" class="article_pic" height="232" src="/upload/resize_cache/iblock/dca/412_2150_1/dca4fde9abcb3b75966b7987215c7219.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бульмастиф на страже порядка
+         </div>
+        </div>
+        <p>
+         Бульмастифы – собаки, сотканные из миллиона противоречий и такого же количества перемены состояний. Только бульмастиф может одновременно сочетать в себе бесстрашие и осторожность, игривость и вялую расслабленность, бесконечное добродушие и злобную подозрительность. Сами заводчики любят называть породу думающей, а это значит, что помыкать ее представителями не получится. Зато с собакой со столь богатым внутренним миром в разы интереснее, чем с постоянно оглядывающимся на вас и замирающим в ожидании команды служебным псом.
+        </p>
+        <p>
+         Вопреки распространенному клише, современные бульмастифы – это не какие-то там «шварценеггеры в собачьем теле», готовые порвать обидчика на лоскутки. Правильно воспитанная собака никогда не побежит навстречу мирно прогуливающемуся незнакомцу и совершенно точно не будет его облаивать. Да, эти упитанные «бруталы» всегда держат ушки на макушке, но перестраховываться и бросаться на любую живую мишень не в их характере. Бульмастиф атакует только в случае, когда угроза становится слишком явной, да и то исключительно с молчаливого согласия хозяина. Кстати, это заметно даже при взгляде со стороны: перед тем как отстоять чью-то безопасность, собака обязательно наладит зрительный контакт с владельцем, чтобы на телепатическом уровне спросить разрешения.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бульмастиф и кошка" data-fancybox="gallery" href="/upload/iblock/85a/85a1e3482002ded976437237ac20cfaf.jpg" title="Бульмастиф и кошка">
+          <div class="lazy-load" data-alt="Бульмастиф и кошка" data-class="article_pic" data-original="/upload/resize_cache/iblock/85a/412_2150_1/85a1e3482002ded976437237ac20cfaf.jpg">
+           <noscript data-alt="Бульмастиф и кошка" data-class="article_pic" data-original="/upload/resize_cache/iblock/85a/412_2150_1/85a1e3482002ded976437237ac20cfaf.jpg">
+            <img alt="Бульмастиф и кошка" class="article_pic" height="309" src="/upload/resize_cache/iblock/85a/412_2150_1/85a1e3482002ded976437237ac20cfaf.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бульмастиф и кошка
+         </div>
+        </div>
+        <p>
+         Успешно завершивший работу и отдыхающий бульмастиф – совершенно иная собака. В домашней обстановке бравый сторож и охранник быстро забывает о суровой профессии и начинает оттягиваться по полной программе, то есть дурачиться, шалить, а также захватывать самые мягкие поверхности, включая хозяйскую кровать и любимое бабушкино кресло. Кроме того, он превосходно маскируется, поэтому зачастую догадаться о том, что питомец оккупировал постель, можно лишь по забавному храпу из-под одеяла.
+        </p>
+        <p>
+         Бульмастифы – существа социальные, но соблюдающие стайную иерархию и покровительственно относящиеся к тем, кто слабее. Как результат: из представителей этой породы получаются неплохие бебиситтеры и детские аниматоры – добродушные, всепрощающие, осторожные. Конечно, для подстраховки игры животного и ребятни лучше контролировать, хотя у подавляющего большинства бульмастифов выработан устойчивый иммунитет к детским вредностям и шуткам. Порода не представляет угрозы и для домашних питомцев. Завидев прогуливающуюся кошку, бульмастиф не впадет в экстаз и не потащит не выдержавшего такой удали владельца по лужам. Пушистым «матроскиным» собака безусловно заинтересуется, но не до такой степени, чтобы лететь за ним на всех парусах.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Начинать дрессировать бульмастифа кинологи рекомендуют не ранее, чем собаке исполнится 6-7 месяцев, так как у породы замедленные темпы взросления. В связи с этим возникает вопрос: а что же делать со щенком до наступления положенного возраста? Все просто: до полугода малышей воспитывают, то есть к тому моменту, когда бульмастиф «созреет» для полноценного тренировочного курса, он должен отзываться на кличку, знать свое место в доме и спокойно реагировать на периодические «посадки» в клетку или вольер. Обязательно проведите работу по отучению щенка от привычки покусывать вас за ноги, а также от избыточного проявления эмоций, выражающихся в наскоках на человека. Да-да, все это скорее забавно, чем больно, но ровно до тех пор пока щенок маленький. Игривый укус за пятку от взрослого бульмастифа вызывает шквал уже совершенно иных эмоций.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Фото щенков бульмастифа" data-fancybox="gallery" href="/upload/iblock/280/28030d1ddf80fa9434c4934f924dc1c4.jpg" title="Фото щенков бульмастифа">
+          <div class="lazy-load" data-alt="Фото щенков бульмастифа" data-class="article_pic" data-original="/upload/resize_cache/iblock/280/412_2150_1/28030d1ddf80fa9434c4934f924dc1c4.jpg">
+           <noscript data-alt="Фото щенков бульмастифа" data-class="article_pic" data-original="/upload/resize_cache/iblock/280/412_2150_1/28030d1ddf80fa9434c4934f924dc1c4.jpg">
+            <img alt="Фото щенков бульмастифа" class="article_pic" height="357" src="/upload/resize_cache/iblock/280/412_2150_1/28030d1ddf80fa9434c4934f924dc1c4.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Фото щенков бульмастифа
+         </div>
+        </div>
+        <p>
+         К 6 месяцам щенок бульмастифа обязан научиться ладить с детьми, адекватно воспринимать хождение на поводке, правильно понимать команду «Нельзя!». Собака должна быть социализирована и не шарахаться от внезапных резких звуков. Щенячьи шалости – явление неизбежное, так что спокойно отнеситесь к необходимости косметического ремонта после того, как ваш подопечный повзрослеет. Минимизировать ущерб от скучающего в одиночестве малыша поможет и клетка, но это радикальная мера. Сидеть в условиях ограниченного пространства щенок бульмастифа может максимум час, потом маленький хулиган начнет выражать неудовольствие путем назойливого подвывания, поэтому самый лучший способ избежать разрушений в квартире – приучить питомца мириться с одиночеством. Для этого чаще оставляйте животное наедине с собственными мыслями, причем начинать разумнее с коротких интервалов в пару минут, плавно увеличивая срок до часа-двух.
+        </p>
+        <p>
+         В 6-7 месяцев с бульмастифом разрешается переходить к ОКД, правда, при условии, что питомец научился работать за лакомство и ласку. Без положительной мотивации эта порода утруждаться не станет. Заниматься с собакой лучше на площадке. К году у бульмастифов начинается половое созревание, и они пытаются устраивать разборки со зрелыми кобелями. Работа на площадке поможет питомцу быстрее занять свою нишу в собачьем коллективе, а также сформирует у него правильные представления об иерархии и лидерстве.
+        </p>
+        <p>
+         Прохождение ЗКС, если у вас не служебная собака, не обязательно. В повседневной жизни довольно сложно найти применение навыкам из этого сурового курса, тем более что при необходимости бульмастиф легко защитит вас без дрессировки. Догнать обидчика, свалить с ног и удерживать, пока не подоспеет помощь, питомец в состоянии без предварительных тренировок. В 99% случаев большего и не требуется: вы же не хотите потом отвечать за превышение пределов допустимой обороны. Если без ЗКС совсем никак, дождитесь, когда бульмастифу исполнится хотя бы пара лет. До двухлетнего возраста у породы щенячья психика, которая не позволит ей полноценно усвоить базовые умения программы. Подобные тренировки лучше доверить специалисту, способному разработать для питомца индивидуальный защитный или охранный курс.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         В плане содержания бульмастифы – универсальные сторожевые собаки. Они прекрасно себя чувствуют и в доме, и в квартире, и даже в уличном вольере (при условии, что животные не сидят в нем сутками). Единственное требование – никаких задворок и прикованных к будкам цепей. Бульмастиф – любопытная и общительная порода, поэтому подобная изоляция ее обижает и расстраивает. В квартирах экс-помощники егерей ведут себя скромно, предпочитая мирно дремать на диванах, так что спотыкаться о питомца вы вряд ли будете.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Любитель попозировать" data-fancybox="gallery" href="/upload/iblock/756/756295d5194a9a68738b8afcf7d2c0d1.jpg" title="Любитель попозировать">
+          <div class="lazy-load" data-alt="Любитель попозировать" data-class="article_pic" data-original="/upload/resize_cache/iblock/756/412_2150_1/756295d5194a9a68738b8afcf7d2c0d1.jpg">
+           <noscript data-alt="Любитель попозировать" data-class="article_pic" data-original="/upload/resize_cache/iblock/756/412_2150_1/756295d5194a9a68738b8afcf7d2c0d1.jpg">
+            <img alt="Любитель попозировать" class="article_pic" height="618" src="/upload/resize_cache/iblock/756/412_2150_1/756295d5194a9a68738b8afcf7d2c0d1.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Любитель попозировать
+         </div>
+        </div>
+        <p>
+         Никаких неприятных сюрпризов короткая, в меру жесткая шерсть бульмастифа не преподносит. Линяют собаки сезонно и не очень обильно, причем их волос практически не пахнет. Уход за псовиной обычно заключается в систематическом прочесывании ее резиновой варежкой (ежедневно в период линьки и раз в неделю в остальное время) и периодическом мытье. Злоупотреблять купанием не стоит. Домашних любимцев ведут в ванную, только когда они испачканы, а шоу-особей – за пару дней до выставки. В холода стандартное мытье лучше заменить сухой чисткой с помощью специального шампуня.  Летом большинство бульмастифов не прочь покувыркаться в открытом водоеме, и это допустимо. Но после купания всегда промывайте шерсть собаки под проточной водой, чтобы убрать водоросли и паразитов.
+        </p>
+        <p>
+         В остальном уход за бульмастифом прост и не требует специальных умений. Осмотр глаз питомца проводится ежедневно, чтобы убрать скопившуюся в уголках слизь. Во избежание закисания слизистой можно раз в несколько дней протереть глаза салфеткой, увлажненной крепким чаем или офтальмологическим фито-лосьоном. Уши необходимо осматривать и чистить еженедельно. Кроме того, рекомендуется каждые 2-3 дня удалять зубной налет при помощи щетки или насадки и зубной пасты для собак. Ну и конечно, не забываем про морду. По наследству от бульдогов бульмастифы заполучили умеренную слюнявость, так что после еды и прогулок протирайте губы и подбородок собаки хлопчатобумажной тканью.
+        </p>
+        <h3>
+         Выгул, физические нагрузки, спорт
+        </h3>
+        <p>
+         Энергии бульмастифам не занимать, поэтому забудьте о прогулках в черепашьем темпе и сидении на парковых скамейках. Только активные игры и интенсивные тренировки, только хардор! Конечно, можно не изменять собственным принципам и вальяжно прохаживаться с питомцем по тихим переулкам, но тогда есть риск воспитать агрессивного драчуна. Особенно это актуально для владельцев молодых кобелей, которые от скуки будут искать, с кем бы позадираться и что бы такое из лежащей под ногами гадости съесть.
+        </p>
+        <p>
+         Чтобы выпустить пар, среднестатистическому бульмастифу требуется 3-4 часа прогулок в день. Если у вас «девочка», можно слегка полениться и сократить продолжительность променадов на полчаса-час. Суки в этом плане менее требовательны и активны. Некоторые владельцы привлекают бульмастифов к перетаскиванию грузов, но в целом это не лучшая порода для вейтпуллинга. Впрочем, шлейки с небольшими утяжелителями взрослым особям только на пользу. Главное – не преувеличивайте физические возможности питомца и не перебирайте с весом груза.
+        </p>
+        <p>
+         Прыжки через препятствия бульмастифам даются нелегко, поэтому до года животное лучше не знакомить с данным видом спорта. Да и взрослых особей привлекать к нему имеет смысл лишь в том случае, когда это интересно им самим. Если же нужно хорошенько нагрузить кобеля, лучше вывезти его за город и погонять по пересеченной местности и в гору. Хорошо выматывают бульмастифов апортировка предметов, пробежки по рыхлому грунту (песок на пляже и снежные сугробы еще лучше), а также плавание.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Бежим навстречу приключениям!" data-fancybox="gallery" href="/upload/iblock/469/4694d2e021838b3df3536ebb1687a2c9.jpg" title="Бежим навстречу приключениям!">
+          <div class="lazy-load" data-alt="Бежим навстречу приключениям!" data-class="article_pic" data-original="/upload/resize_cache/iblock/469/1024_2150_1/4694d2e021838b3df3536ebb1687a2c9.jpg">
+           <noscript data-alt="Бежим навстречу приключениям!" data-class="article_pic" data-original="/upload/resize_cache/iblock/469/1024_2150_1/4694d2e021838b3df3536ebb1687a2c9.jpg">
+            <img alt="Бежим навстречу приключениям!" class="article_pic" src="/upload/resize_cache/iblock/469/1024_2150_1/4694d2e021838b3df3536ebb1687a2c9.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бежим навстречу приключениям!
+         </div>
+        </div>
+        <h3>
+         Кормление
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Тренировка стальной выдержки" data-fancybox="gallery" href="/upload/iblock/f44/f441a5b9eca882f73cccc56c6d9a8e3a.jpg" title="Тренировка стальной выдержки">
+          <div class="lazy-load" data-alt="Тренировка стальной выдержки" data-class="article_pic" data-original="/upload/resize_cache/iblock/f44/412_2150_1/f441a5b9eca882f73cccc56c6d9a8e3a.jpg">
+           <noscript data-alt="Тренировка стальной выдержки" data-class="article_pic" data-original="/upload/resize_cache/iblock/f44/412_2150_1/f441a5b9eca882f73cccc56c6d9a8e3a.jpg">
+            <img alt="Тренировка стальной выдержки" class="article_pic" height="549" src="/upload/resize_cache/iblock/f44/412_2150_1/f441a5b9eca882f73cccc56c6d9a8e3a.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Тренировка стальной выдержки
+         </div>
+        </div>
+        <p>
+         Натуральное меню бульмастифа – это классический рацион любой крупной собаки: питательный, высокобелковый, усиленный минеральными подкормками. Суточная норма натуральной пищи для 50-килограммовой особи – 2 кг, из которых 1,2 кг приходится на животный белок (мясо, рыба) и 800 г на сочетание круп, отрубей и овощей. Кстати, о мясе: выбирайте для бульмастифа жилистые, нежирные сорта с большим количеством хрящевой ткани. Именно они насыщают организм собаки комплексом полезных веществ, включая необходимый породе коллаген. Выращивание бульмастифа на промышленных кормах тоже приемлемый вариант. Правда, сухие крокеты придется периодически «увкуснять» влажными консервами.
+        </p>
+        <p>
+         Чего не стоит делать:
+        </p>
+        <ul>
+         <li>
+          смешивать в одном кормлении сырую пищу с термически обработанной;
+         </li>
+         <li>
+          самостоятельно назначать собаке витамины и БАДы;
+         </li>
+         <li>
+          в экспериментальных целях переводить питомца с натурального питания на «сушку» и обратно;
+         </li>
+         <li>
+          кормить бульмастифа перед прогулкой или сразу после нее.
+         </li>
+        </ul>
+        <p>
+         Щенки бульмастифа быстро набирают массу тела и обладают волчьим аппетитом. Кормить их нужно усиленно, но без фанатизма, чтобы не перегружать неокрепшие связки и суставы. Кроме того, придется дополнительно подкармливать малыша комплексами с хондроитином и глюкозамином.
+        </p>
+        <p class="legenda">
+         Важный момент: в жару бульмастифы часто отказываются от пищи, и бегать за ними с миской нет смысла. Лучше обеспечьте собаку достаточным количеством обезжиренного кефира, ряженки и воды. Это поможет ей легче пережить жару.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни бульмастифов
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бульмастиф – собака с хорошим здоровьем" data-fancybox="gallery" href="/upload/iblock/dd2/dd2710b98a261c7da322f19fe10414a4.jpg" title="Бульмастиф – собака с хорошим здоровьем">
+          <div class="lazy-load" data-alt="Бульмастиф – собака с хорошим здоровьем" data-class="article_pic" data-original="/upload/resize_cache/iblock/dd2/412_2150_1/dd2710b98a261c7da322f19fe10414a4.jpg">
+           <noscript data-alt="Бульмастиф – собака с хорошим здоровьем" data-class="article_pic" data-original="/upload/resize_cache/iblock/dd2/412_2150_1/dd2710b98a261c7da322f19fe10414a4.jpg">
+            <img alt="Бульмастиф – собака с хорошим здоровьем" class="article_pic" height="274" src="/upload/resize_cache/iblock/dd2/412_2150_1/dd2710b98a261c7da322f19fe10414a4.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бульмастиф – собака с хорошим здоровьем
+         </div>
+        </div>
+        <p>
+         Бульмастифы довольно крепкие собаки, но не долгожители: средняя продолжительность жизни здоровой особи – 8-9 лет. Что касается болезней, то здесь все то же самое, что и у других крупных пород. В частности, бульмастифы подвержены завороту желудка, дисплазии тазобедренных суставов и врожденному вывиху локтей. Среди прочих недугов, которые могут быть диагностированы у животных, стоит особо отметить пищевую аллергию, мочекаменную болезнь, аномалии развития века и лимфому. Портят собакам жизнь и разнообразные дерматиты (чаще всего межпальцевый и атопический), а также экземы.
+        </p>
+        <p>
+         У многих бульмастифов на локтях и скакательных суставах образуются мозоли. Это бич всех крупных, грузных пород, с которым, однако, можно бороться. Чаще всего мозоли дают о себе знать у собак, спящих на твердых поверхностях, хотя от их появления не застрахован любой бульмастиф. Если у питомца обнаружились мозолистые участки на локтях, не ждите, что все само рассосется. Возьмите раствор Диоксидина (20-30%) и обработайте очаг поражения, после чего нанесите на кожу масляный раствор витаминов А, Е и Д3. Обычно процедуру проводят трижды в день, на ночь смазывая мозоль ланолиновой или глицериновой мазью.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Послушный друг семьи" data-fancybox="gallery" href="/upload/iblock/540/540e1777d3427c29005640d36df680fb.jpg" title="Послушный друг семьи">
+          <div class="lazy-load" data-alt="Послушный друг семьи" data-class="article_pic" data-original="/upload/resize_cache/iblock/540/412_2150_1/540e1777d3427c29005640d36df680fb.jpg">
+           <noscript data-alt="Послушный друг семьи" data-class="article_pic" data-original="/upload/resize_cache/iblock/540/412_2150_1/540e1777d3427c29005640d36df680fb.jpg">
+            <img alt="Послушный друг семьи" class="article_pic" height="524" src="/upload/resize_cache/iblock/540/412_2150_1/540e1777d3427c29005640d36df680fb.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Послушный друг семьи
+         </div>
+        </div>
+        <ul>
+         <li>
+          Кобели бульмастифа выглядят фактурнее сук, но и характер имеют доминантно-независимый. Кроме того, псы чаще подвержены аллергии и, как следствие, атопическим дерматитам.
+         </li>
+         <li>
+          «Девочки» обладают менее выразительным экстерьером, зато они контактнее, лояльнее по отношению к детям и легче обучаются. А еще их можно брать парами, чего нельзя сказать о кобелях.
+         </li>
+         <li>
+          Щенки бульмастифа довольно упитанные и тяжелые. Вес здорового двухмесячного малыша должен быть не менее 9-10 кг, трехмесячного – от 17 кг. Если понравившийся «экземпляр» имеет низкую массу тела, это сигнализирует о болезнях и плохом уходе.
+         </li>
+         <li>
+          Щенка для выставок лучше брать в возрасте 7-8 месяцев, когда его породные черты отчетливо проступают. Если необходим компаньон или охранник, затягивать не стоит: 1,5-3 месяца – лучший период для переезда в новую семью.
+         </li>
+         <li>
+          Проверьте, тестировались ли производители помета на генетические заболевания, особенно на дисплазию. Обязательно уточните, как у суки и кобеля обстоят дела с пищевой аллергией. Ее юные бульмастифы часто наследуют от родителей.
+         </li>
+         <li>
+          Всегда осматривайте всех щенков, если заводчик предоставляет такую возможность. Это поможет сравнить животных и сделать выбор в пользу наиболее смышленого малыша.
+         </li>
+         <li>
+          Оцените однородность помета. У здоровой племенной суки не бывает слишком крупных/чересчур мелких щенков.
+         </li>
+         <li>
+          Тщательно прощупайте хвост маленького бульмастифа. Часто у щенков бывают заломы на кончике, которые предприимчивые заводчики убирают оперативным методом. Когда такой малыш вырастет, его хвост будет короче, чем у собратьев, что отрежет ему путь на выставки.
+         </li>
+         <li>
+          Загляните щенку в рот. Если молочных резцов больше, чем требует зубная формула, это не порок. Куда хуже, если их не хватает.
+         </li>
+         <li>
+          У породистого щенка бульмастифа П-образный постав передних лап. Если в верхней части конечности сходятся в перевернутую букву V, животное расценивается как плембрак.
+         </li>
+         <li>
+          У двухмесячных щенков бульмастифа всегда темно-синие либо карие глаза и никогда – голубые.
+         </li>
+         <li>
+          Для ЗКС лучше выбирать щенков с облегченным типом конституции, удлиненным корпусом и с таким типом прикуса, как перекус с отходом. Кроме того, малыш должен занимать лидирующие позиции в стае. Если же собака приобретается в качестве домашнего любимца в семью с детьми, разумнее остановить выбор на флегматичном щенке.
+         </li>
+         <li>
+          В качестве квартирных питомцев идеально подойдут особи с тигровым окрасом: у них практически нет подшерстка и они не так сильно линяют. Палевые и коричневые щенки имеют тонкий слой подшерстка и лучше переносят холода, но и шерсти от них больше.
+         </li>
+        </ul>
+        <h2>
+         Фото щенков бульмастифа
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/22d/22ddd5f4885d6cf7e13b708bba5caa76.jpg" title="">
+           <div class="lazy-load" data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/22d/380_264_2/22ddd5f4885d6cf7e13b708bba5caa76.jpg">
+            <noscript data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/22d/380_264_2/22ddd5f4885d6cf7e13b708bba5caa76.jpg">
+             <img alt="Бульмастиф" class="article_pic" src="/upload/resize_cache/iblock/22d/380_264_2/22ddd5f4885d6cf7e13b708bba5caa76.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/dc1/dc1bc81c42e0c07681a9b23541c39dde.jpg" title="">
+           <div class="lazy-load" data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/dc1/380_264_2/dc1bc81c42e0c07681a9b23541c39dde.jpg">
+            <noscript data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/dc1/380_264_2/dc1bc81c42e0c07681a9b23541c39dde.jpg">
+             <img alt="Бульмастиф" class="article_pic" src="/upload/resize_cache/iblock/dc1/380_264_2/dc1bc81c42e0c07681a9b23541c39dde.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/374/374aab31cb0abdf62abb2ec0a4cb4bc4.jpg" title="">
+           <div class="lazy-load" data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/374/380_264_2/374aab31cb0abdf62abb2ec0a4cb4bc4.jpg">
+            <noscript data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/374/380_264_2/374aab31cb0abdf62abb2ec0a4cb4bc4.jpg">
+             <img alt="Бульмастиф" class="article_pic" src="/upload/resize_cache/iblock/374/380_264_2/374aab31cb0abdf62abb2ec0a4cb4bc4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9ae/9aebb965407cb3efdaeb2778bbc32338.jpg" title="">
+           <div class="lazy-load" data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/9ae/380_264_2/9aebb965407cb3efdaeb2778bbc32338.jpg">
+            <noscript data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/9ae/380_264_2/9aebb965407cb3efdaeb2778bbc32338.jpg">
+             <img alt="Бульмастиф" class="article_pic" src="/upload/resize_cache/iblock/9ae/380_264_2/9aebb965407cb3efdaeb2778bbc32338.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/774/77473fbfb7bf67197d238c88a82b10fe.jpg" title="">
+           <div class="lazy-load" data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/774/380_264_2/77473fbfb7bf67197d238c88a82b10fe.jpg">
+            <noscript data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/774/380_264_2/77473fbfb7bf67197d238c88a82b10fe.jpg">
+             <img alt="Бульмастиф" class="article_pic" src="/upload/resize_cache/iblock/774/380_264_2/77473fbfb7bf67197d238c88a82b10fe.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1f7/1f7d9e034e1fe3ae77ae6474ea3ec1b3.jpg" title="">
+           <div class="lazy-load" data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/1f7/380_264_2/1f7d9e034e1fe3ae77ae6474ea3ec1b3.jpg">
+            <noscript data-alt="Бульмастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/1f7/380_264_2/1f7d9e034e1fe3ae77ae6474ea3ec1b3.jpg">
+             <img alt="Бульмастиф" class="article_pic" src="/upload/resize_cache/iblock/1f7/380_264_2/1f7d9e034e1fe3ae77ae6474ea3ec1b3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Цена бульмастифа
+        </h2>
+        <p>
+         Привитый щенок бульмастифа пет-класса со всеми необходимыми документами будет стоить 25 000 - 30 000 руб. Расценки на потомство с перспективной внешностью, произведенное на свет чемпионами и импортированными особями, посерьезнее – 40 000 - 80 000 рублей за щенка.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения бульмастифа на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/148/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Алексей Живой" data-original="/upload/resize_cache/main/9a6/200_200_2/9a6707b032e0133529c3350a4810920e.jpg">
+            <noscript data-alt="Алексей Живой" data-original="/upload/resize_cache/main/9a6/200_200_2/9a6707b032e0133529c3350a4810920e.jpg">
+             <img alt="Алексей Живой" src="/upload/resize_cache/main/9a6/200_200_2/9a6707b032e0133529c3350a4810920e.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/posovetovali-shchenku-ispanskogo-mastiffa-khondroprotektory-artra-146/">
+           Посоветовали щенку бульмастифа хондропротекторы ARTRA
+          </a>
+         </div>
+         <div class="forum-text">
+          Нужен ваш совет – щенку 6 месяцев, только не уточнили, как правильно давать хондропротекторы. Подскажите, кто знает?
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/148/">
+            Алексей Живой
+           </a>
+          </span>
+          <span class="vopros-date">
+           6 лет назад
+          </span>
+          <span class="vopros-smotr">
+           670 просмотров
+          </span>
+          <span class="vopros-otvet">
+           3 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/bulmastif/forum/">
+        Перейти на
+        форум бульмастифа
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Бульмастиф" src="/upload/iblock/a0a/a0a5d60d572e841f0ed6243471d1042f.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/bulmastif/">
+          Бульмастиф
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/bulmastif/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/bulmastif/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/bulmastif/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/bulmastif/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/bulmastif/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/amerikanskiy-buldog/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Американский бульдог" data-original="/upload/resize_cache/iblock/856/100_100_1/856f06d45a5b3b2ab7a1e6f4bf080a8a.jpg">
+          <noscript data-alt="Американский бульдог" data-original="/upload/resize_cache/iblock/856/100_100_1/856f06d45a5b3b2ab7a1e6f4bf080a8a.jpg">
+           <img alt="Американский бульдог" src="/upload/resize_cache/iblock/856/100_100_1/856f06d45a5b3b2ab7a1e6f4bf080a8a.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Американский бульдог
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/koikerkhonde/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Коикерхондье" data-original="/upload/resize_cache/iblock/b8f/100_100_1/etj7y5leh1qw03e0dl8vggckbq6tq89o.jpg">
+          <noscript data-alt="Коикерхондье" data-original="/upload/resize_cache/iblock/b8f/100_100_1/etj7y5leh1qw03e0dl8vggckbq6tq89o.jpg">
+           <img alt="Коикерхондье" src="/upload/resize_cache/iblock/b8f/100_100_1/etj7y5leh1qw03e0dl8vggckbq6tq89o.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Коикерхондье
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/kurtskhaar/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Курцхаар" data-original="/upload/resize_cache/iblock/1e7/100_100_1/1e7295ba6ec80f1ad7709b4ebff1d697.jpg">
+          <noscript data-alt="Курцхаар" data-original="/upload/resize_cache/iblock/1e7/100_100_1/1e7295ba6ec80f1ad7709b4ebff1d697.jpg">
+           <img alt="Курцхаар" src="/upload/resize_cache/iblock/1e7/100_100_1/1e7295ba6ec80f1ad7709b4ebff1d697.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Курцхаар
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/velsh-korgi-kardigan/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Вельш-корги кардиган" data-original="/upload/resize_cache/iblock/c0b/100_100_1/c0b931451d53ccc8eb5719cf559cfcf2.jpg">
+          <noscript data-alt="Вельш-корги кардиган" data-original="/upload/resize_cache/iblock/c0b/100_100_1/c0b931451d53ccc8eb5719cf559cfcf2.jpg">
+           <img alt="Вельш-корги кардиган" src="/upload/resize_cache/iblock/c0b/100_100_1/c0b931451d53ccc8eb5719cf559cfcf2.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Вельш-корги кардиган
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbulmastif%252F%253Fcheck_key%253D2dfe7c29cf4785b7739d780956666877%2526ANIMAL_CODE%253Dbulmastif%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbulmastif%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmJ1bG1hc3RpZiUyRiUzRmNoZWNrX2tleSUzRDJkZmU3YzI5Y2Y0Nzg1Yjc3MzlkNzgwOTU2NjY2ODc3JTI2QU5JTUFMX0NPREUlM0RidWxtYXN0aWYlMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGYnVsbWFzdGlmJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbulmastif%252F%253Fcheck_key%253D2dfe7c29cf4785b7739d780956666877%2526ANIMAL_CODE%253Dbulmastif%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fbulmastif%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbulmastif%252F%253Fcheck_key%253D2dfe7c29cf4785b7739d780956666877%2526ANIMAL_CODE%253Dbulmastif%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbulmastif%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "178.176.231.40"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--01a722e75ce205cef367022f1095ed99-->

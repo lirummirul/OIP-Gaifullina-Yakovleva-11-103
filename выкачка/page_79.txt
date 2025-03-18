@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'a4f1565ae472'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Ирландский сеттер, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Ирландский сеттер (ирландский красный сеттер) – охотник, склонный к экстраверсии интеллектуал и адепт активного образа жизни с роскошной каштановой шерстью." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/b92/b92ecf61f7ed4b7e5429e5c3fd7d9ab9.jpg" property="og:image"/>
+     <title>
+      Ирландский сеттер: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/irlandskiy-setter/" property="og:url"/>
+     <meta content="Ирландский сеттер: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Ирландский сеттер (ирландский красный сеттер) – охотник, склонный к экстраверсии интеллектуал и адепт активного образа жизни с роскошной каштановой шерстью." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/irlandskiy-setter/" itemprop="url">
+         <span itemprop="title">
+          Ирландский сеттер
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Ирландский сеттер
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/irlandskiy-setter/">
+          Описание
+         </a>
+         <a href="/dog/irlandskiy-setter/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/irlandskiy-setter/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/irlandskiy-setter/photo/">
+          Фото
+         </a>
+         <a href="/dog/irlandskiy-setter/video/">
+          Видео
+         </a>
+         <a href="/dog/irlandskiy-setter/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Ирландский сеттер" src="/upload/iblock/70f/70fbd421205fd3f451af3a9cefb4cf3b.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/irlandskiy-setter/">
+           Ирландский красный сеттер
+          </a>
+         </span>
+         <p>
+          Ирландский сеттер (ирландский красный сеттер) – охотник, склонный к экстраверсии интеллектуал и адепт активного образа жизни с роскошной каштановой шерстью.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/e3a/e3abc5f504e97964aaa19845bfeb9725.jpg" data-cap="Eyes like a Hawk" data-fancybox="images" data-link="https://www.instagram.com/p/BbCqh32lnMw/" data-type="image" data-username="george_and_troja" href="/upload/uf/01b/01b30f62c66f35f54cd79b1f39368f22.jpg">
+            <img alt="Ирландский сеттер" src="/upload/resize_cache/uf/01b/293_293_2/01b30f62c66f35f54cd79b1f39368f22.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/300/3009629e2db5aaafecf3c961755dfa5e.jpg" data-cap="Holo#irishsetter" data-fancybox="images" data-link="https://www.instagram.com/p/Bx-mAWnI200/" data-type="image" data-username="sir_leopold_" href="/upload/uf/2cf/2cf8d75c639f3bdf36e84dfb33a422b4.jpg">
+            <img alt="Ирландский сеттер" src="/upload/resize_cache/uf/2cf/293_293_2/2cf8d75c639f3bdf36e84dfb33a422b4.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/135/1353467221b320a10475e95a97b60d83.jpg" data-cap="The scariest day of the year is coming!" data-fancybox="images" data-link="https://www.flickr.com/photos/124324951@N06/30547003092/" data-type="image" data-username="Ada Sanakiewicz" href="/upload/uf/6e6/6e606cb3e7abf138d98b7789c057c486.jpg">
+            <img alt="Ирландский сеттер" src="/upload/resize_cache/uf/6e6/293_293_2/6e606cb3e7abf138d98b7789c057c486.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/irlandskiy-setter/photo/">
+         Все
+            фото ирландского сеттера
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы ирландский сеттер
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы ирландский сеттер
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер ирландского сеттера
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Охота с ирландским сеттером
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Здоровье и болезни ирландских сеттеров
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена ирландского сеттера
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Ирландский сеттер
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Ирландия
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         XIX век
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         27-32 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 58-67 см, суки 55-62 см
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Ирландский сеттер – собака ультраобщительная, ласковая, не умеющая и не желающая мириться с одиночеством, так что заводить ее трудоголикам, днями пропадающим на работе, нежелательно.
+        </li>
+        <li>
+         Отсутствие подозрительности и доброжелательность по отношению к человеку и домашним животным превращают ирландских красных сеттеров в абсолютно никаких сторожей.
+        </li>
+        <li>
+         Современные шоу-представители породы – больше компаньоны и семейные психотерапевты, чем полноценные охотники. В то же время особи из рабочих линий замечательно справляются со своим историческим предназначением – обнаружением и вспугиванием дикой птицы.
+        </li>
+        <li>
+         Порода достаточно спортивна и требует того же от владельца, поэтому о 15-минутных выгулах для галочки придется забыть.
+        </li>
+        <li>
+         Несмотря на то, что ирландские сеттеры – существа миролюбивые и уживчивые, переубедить их в чем бы то ни было непросто.
+        </li>
+        <li>
+         Если летом в поле зрения питомца оказался открытый водоем, в 9 случаях из 10 он рванет купаться, забыв про все на свете.
+        </li>
+        <li>
+         Подчеркнуто аристократический имидж ирландского красного сеттера – это обязательно время, деньги и труд. Без систематического мытья, расчесывания, применения профессиональной собачьей косметики и витаминов сохранить шерсть питомца в приличном виде не получится.
+        </li>
+        <li>
+         В щенячьем возрасте «ирландцы» гиперактивны и разрушительны, причем корректировать деструктивное поведение малыша бессмысленно, он просто должен перерасти этот период.
+        </li>
+        <li>
+         Шерсть ирландского сеттера не имеет выраженного запаха псины. Линяют собаки очень скудно, а выпавший подшерсток не летает в воздухе и не оседает на вещах и мебели.
+        </li>
+        <li>
+         Порода относится к медленно взрослеющим. Полной психической зрелости ирландские сеттеры достигают не ранее, чем к трем годам.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Ирландский сеттер" data-original="/upload/iblock/b92/b92ecf61f7ed4b7e5429e5c3fd7d9ab9.jpg">
+          <noscript data-alt="Ирландский сеттер" data-original="/upload/iblock/b92/b92ecf61f7ed4b7e5429e5c3fd7d9ab9.jpg">
+           <img alt="Ирландский сеттер" src="/upload/iblock/b92/b92ecf61f7ed4b7e5429e5c3fd7d9ab9.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Ирландский сеттер
+          </strong>
+          – обаятельный, интеллигентный умница с позитивным отношением к жизни и окружающим. Иногда чересчур доверчивый, но умеющий настоять на своем, этот каштановый симпатяга представляет собой тот тип домашнего питомца, в котором не устаешь открывать неожиданные качества. Охота с ирландским сеттером – это тема, достойная отдельной статьи. Вернуться с поля без добычи с собакой можно лишь в одном-единственном случае – если на этом поле изначально не водилось ни одного пернатого создания.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средние (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Ирландский сеттер основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы ирландский сеттер
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Ирландский сеттер" data-fancybox="gallery" href="/upload/iblock/8e1/8e1bec0cbd7e318b62de7f97fdc5747b.jpg" title="Ирландский сеттер">
+          <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8e1/412_2150_1/8e1bec0cbd7e318b62de7f97fdc5747b.jpg">
+           <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8e1/412_2150_1/8e1bec0cbd7e318b62de7f97fdc5747b.jpg">
+            <img alt="Ирландский сеттер" class="article_pic" height="619" src="/upload/resize_cache/iblock/8e1/412_2150_1/8e1bec0cbd7e318b62de7f97fdc5747b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Ирландский сеттер
+         </div>
+        </div>
+        <p>
+         Ирландский красный сеттер – одна из самых «засекреченных» охотничьих пород, первые письменные упоминания о которой относятся к XV веку. Поначалу термином «сеттер» обозначалась не конкретная разновидность собак, а целые группы животных, чьей главной квалификацией была работа с дикой птицей. В частности, сеттеров частенько привлекали к охоте с сетью на куропаток. Обладая чрезвычайно острым чутьем, псы всегда безошибочно определяли местонахождение добычи и указывали направление к ней, выполняя функцию живого навигатора.
+        </p>
+        <p>
+         О ближайших родственниках ирландских сеттеров известно немного. Есть предположение, что в жилах современных представителей породы течет кровь нескольких разновидностей спаниелей, бладхаундов, пойнтеров и даже волкодавов. Однако подтвердить догадки фактически до сих пор не удалось. Целенаправленно разводить охотничьих собак с красновато-каштановой шерстью в Ирландии начали в конце XVIII столетия, о чем свидетельствуют племенные книги тех лет. Тем не менее до середины XIX века порода не считалась сформированной, поэтому на рингах животные выступали группами с другими разновидностями сеттеров. Официальной точкой отсчета истории породы считается 1860 год, когда было принято решение о выделении ирландских сеттеров в отдельный тип. В 1882 году в Дублине открылся первый клуб любителей «красных ирландцев», а три года спустя этой же организацией был выпущен первый стандарт породы.
+        </p>
+        <p class="legenda">
+         Интересный факт: на стыке XIX-XX вв. в Европе практиковали скрещивание выставочной и охотничьей разновидностей ирландского сеттера. Такие эксперименты повлекли за собой ряд проблем, включая вырождение породных черт животных, из-за чего вязки между рабочими и шоу-линиями пришлось прекратить. Американские селекционеры, наоборот, увлекались совершенствованием преимущественно выставочных особей, поэтому сегодняшние «ирландцы» made in USA несколько отличаются от своих заокеанских соплеменников.
+        </p>
+        <p>
+         В России об ирландских сеттерах было известно еще до революции. Более того, в стране действовали элитные питомники, покровительство которым оказывали члены княжеских фамилий. Но даже после смены государственного строя о породе не забыли: ее продолжали не только разводить, но и активно улучшать, ввозя в Союз чистокровных европейских производителей. Так, например, выдающуюся роль в популяризации «ирландцев» в СССР сыграл А. Я. Пегов – профессиональный селекционер и автор книги «Ирландский сеттер», более чем на полвека ставшей «библией» отечественных собаководов.
+        </p>
+        <p>
+         Стоит отметить, что в России всегда делалась ставка на разведение животных охотничьих линий, а это значит, что на международные выставки отечественное поголовье никогда не выезжало. Позднее эстафету Пегова перехватили Е. Э. Клейн и Т. Н. Кром, видоизменившие тип собак в сторону более сухого и мускулистого, что позволило советским сеттерам немного приблизиться к англо-ирландскому породному идеалу.
+        </p>
+        <h3>
+         Видео: Ирландский сеттер
+        </h3>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="z2uBS5EJrSU">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы ирландский сеттер
+        </h2>
+        <p>
+         Если бы для охотничьих собак составлялись топы самых утонченных особей, ирландским сеттерам в них светили бы первые места. Высоконогие, с горделивой осанкой, плавными, стремительными движениями, эти самодостаточные «джентльмены» являют собой образец интеллигентности и сдержанного шарма. Кстати, именно эту особенность породы обожают эксплуатировать маркетологи и создатели рекламных роликов. Помните лицо, точнее счастливую «морду» бренда «Чаппи»?
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок ирландского сеттера" data-fancybox="gallery" href="/upload/iblock/7d2/7d25d0f6bce74149392386a618cb537f.jpg" title="Щенок ирландского сеттера">
+          <div class="lazy-load" data-alt="Щенок ирландского сеттера" data-class="article_pic" data-original="/upload/resize_cache/iblock/7d2/412_2150_1/7d25d0f6bce74149392386a618cb537f.jpg">
+           <noscript data-alt="Щенок ирландского сеттера" data-class="article_pic" data-original="/upload/resize_cache/iblock/7d2/412_2150_1/7d25d0f6bce74149392386a618cb537f.jpg">
+            <img alt="Щенок ирландского сеттера" class="article_pic" height="223" src="/upload/resize_cache/iblock/7d2/412_2150_1/7d25d0f6bce74149392386a618cb537f.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок ирландского сеттера
+         </div>
+        </div>
+        <p>
+         Сильное влияние на внешность ирландских сеттеров оказывает половой диморфизм, благодаря которому кобели не только превосходят сук по габаритам, но и в целом выглядят более колоритно. Уникальный в плане окраса и структуры шерстный покров тоже играет не последнюю роль в формировании породного имиджа. Атласная, переливающаяся всеми оттенками рыжевато-красного псовина напоминает изысканный наряд, меняющий подтон в зависимости от типа и интенсивности освещения. Богатство шерсти зависит от породной линии. Рабочие сеттеры обычно «одеты» скромнее, чем шоу-особи, у них не такие пышные очесы на ушах и менее выразительная бахрома на животе.
+        </p>
+        <p>
+         Что касается роста и веса ирландских сеттеров, у кобелей высота в холке составляет 58-67 см, у сук – 55-62 см; собаки должны весить от 27 до 32 кг.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         У представителей породы узкая, сильно вытянутая голова, с хорошим балансом между мордой и черепной частью. Надбровные дуги и затылочный бугор отчетливо выступающие, морда умеренно брыластая, почти квадратная у окончания.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда ирландского сеттера" data-fancybox="gallery" href="/upload/iblock/607/60769bb126685600eb3793e66dae003b.jpg" title="Морда ирландского сеттера">
+          <div class="lazy-load" data-alt="Морда ирландского сеттера" data-class="article_pic" data-original="/upload/resize_cache/iblock/607/1024_2150_1/60769bb126685600eb3793e66dae003b.jpg">
+           <noscript data-alt="Морда ирландского сеттера" data-class="article_pic" data-original="/upload/resize_cache/iblock/607/1024_2150_1/60769bb126685600eb3793e66dae003b.jpg">
+            <img alt="Морда ирландского сеттера" class="article_pic" src="/upload/resize_cache/iblock/607/1024_2150_1/60769bb126685600eb3793e66dae003b.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда ирландского сеттера
+         </div>
+        </div>
+        <h3>
+         Челюсти и прикус
+        </h3>
+        <p>
+         Верхняя и нижняя челюсти ирландского сеттера имеют одинаковую длину и сомкнуты в классические «ножницы».
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Держит нос по ветру и ухо востро :)" data-fancybox="gallery" href="/upload/iblock/69b/69b5814b787a6fcdeb31112355c8d07f.jpg" title="Держит нос по ветру и ухо востро :)">
+          <div class="lazy-load" data-alt="Держит нос по ветру и ухо востро :)" data-class="article_pic" data-original="/upload/resize_cache/iblock/69b/412_2150_1/69b5814b787a6fcdeb31112355c8d07f.jpg">
+           <noscript data-alt="Держит нос по ветру и ухо востро :)" data-class="article_pic" data-original="/upload/resize_cache/iblock/69b/412_2150_1/69b5814b787a6fcdeb31112355c8d07f.jpg">
+            <img alt="Держит нос по ветру и ухо востро :)" class="article_pic" height="515" src="/upload/resize_cache/iblock/69b/412_2150_1/69b5814b787a6fcdeb31112355c8d07f.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Держит нос по ветру и ухо востро :)
+         </div>
+        </div>
+        <p>
+         Мочка среднего размера, ноздри широко раскрытые. Типичные окрасы мочки – темный орех, угольно-черный, темный оттенок красного дерева.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Для овальных, неглубоко посаженных глаз ирландского сеттера характерен чуть скошенный разрез. Стандартные окрасы радужки – темно-карий и темно-ореховый.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Небольшие, низко посаженные, очень мягкие на ощупь. Ушное полотно имеет закругленный кончик и свисает вниз, вдоль скул.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Чуть изогнутая, хорошей длины, достаточно мускулистая, но совершенно не толстая.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело ирландского красного сеттера хороших пропорций, с глубокой хоть и довольно узкой грудью, ровной спиной и покатым, длинным крупом. Живот и паховые зоны высоко подтянуты.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Лапа красного сеттера" data-fancybox="gallery" href="/upload/iblock/a77/a77ffa0a979464344045e917217b52d0.jpg" title="Лапа красного сеттера">
+          <div class="lazy-load" data-alt="Лапа красного сеттера" data-class="article_pic" data-original="/upload/resize_cache/iblock/a77/412_2150_1/a77ffa0a979464344045e917217b52d0.jpg">
+           <noscript data-alt="Лапа красного сеттера" data-class="article_pic" data-original="/upload/resize_cache/iblock/a77/412_2150_1/a77ffa0a979464344045e917217b52d0.jpg">
+            <img alt="Лапа красного сеттера" class="article_pic" height="262" src="/upload/resize_cache/iblock/a77/412_2150_1/a77ffa0a979464344045e917217b52d0.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Лапа красного сеттера
+         </div>
+        </div>
+        <p>
+         Передние ноги костистые, жилистые, поставленные параллельно друг другу. Лопатки глубокие, локти свободные, без явного выворота в любую из сторон. Задние конечности внушительной длины, хорошо омускуленные. Углы сочленений правильные, область от скакательного сустава до лапы массивная и короткая. Лапы собаки некрупные, пальцы сильные, плотно собранные. Движется ирландский красный сеттер классическим галопом, гордо вскинув голову. Вымах передних конечностей животного достаточно высокий, но без чрезмерного выбрасывания ног вверх, толчок задних лап мощный, пружиняще-мягкий.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         У ирландского сеттера в меру длинный (у сук на пару-тройку сантиметров длиннее, чем у кобелей), низко посаженный хвост с массивным основанием и сравнительно тонким кончиком. Классическая форма хвоста – прямая либо саблевидная.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Ирландский сеттер на выставке" data-fancybox="gallery" href="/upload/iblock/af4/af4d334a3b7b6017c8942afac1f6193e.jpg" title="Ирландский сеттер на выставке">
+           <div class="lazy-load" data-alt="Ирландский сеттер на выставке" data-class="article_pic" data-original="/upload/resize_cache/iblock/af4/512_342_2/af4d334a3b7b6017c8942afac1f6193e.jpg">
+            <noscript data-alt="Ирландский сеттер на выставке" data-class="article_pic" data-original="/upload/resize_cache/iblock/af4/512_342_2/af4d334a3b7b6017c8942afac1f6193e.jpg">
+             <img alt="Ирландский сеттер на выставке" class="article_pic" src="/upload/resize_cache/iblock/af4/512_342_2/af4d334a3b7b6017c8942afac1f6193e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Ирландский сеттер на выставке
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c12/c129d231a01789c1c0f7c1a558aa0fa3.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c12/512_342_2/c129d231a01789c1c0f7c1a558aa0fa3.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c12/512_342_2/c129d231a01789c1c0f7c1a558aa0fa3.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/c12/512_342_2/c129d231a01789c1c0f7c1a558aa0fa3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h3>
+         Шерсть
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок ирландского сеттера с белыми проточинами на морде и носу" data-fancybox="gallery" href="/upload/iblock/585/58505fdc35757d645f8e627adfa35e10.jpg" title="Щенок ирландского сеттера с белыми проточинами на морде и носу">
+          <div class="lazy-load" data-alt="Щенок ирландского сеттера с белыми проточинами на морде и носу" data-class="article_pic" data-original="/upload/resize_cache/iblock/585/412_2150_1/58505fdc35757d645f8e627adfa35e10.jpg">
+           <noscript data-alt="Щенок ирландского сеттера с белыми проточинами на морде и носу" data-class="article_pic" data-original="/upload/resize_cache/iblock/585/412_2150_1/58505fdc35757d645f8e627adfa35e10.jpg">
+            <img alt="Щенок ирландского сеттера с белыми проточинами на морде и носу" class="article_pic" height="616" src="/upload/resize_cache/iblock/585/412_2150_1/58505fdc35757d645f8e627adfa35e10.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок ирландского сеттера с белыми проточинами на морде и носу
+         </div>
+        </div>
+        <p>
+         Взрослые особи покрыты гладкой, шелковистой псовиной средней длины. На фронтальной стороне передних ног, голове и кончиках ушного полотна шерсть короткая, прилегающая к коже. Тыльная сторона всех четырех конечностей и верхняя часть ушного полотна «декорированы» тонким украшающим волосом. На хвосте и животе обильная псовина трансформируется в изысканную бахрому, часто переходящую на область груди и горла. Между пальцами присутствуют пучки очесов.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Все собаки имеют каштановую масть без намека на черный подтон. Приемлемы: маленькие белые метки в области горла, на груди и лбу или же белые проточины на морде и носу.
+        </p>
+        <h3>
+         Дефекты и дисквалифицирующие пороки
+        </h3>
+        <p>
+         Ирландские красные сеттеры могут не соответствовать требованиям породного стандарта по различным экстерьерным показателям. Например, нежелательно, чтобы у животного имелись такие недостатки, как:
+        </p>
+        <ul>
+         <li>
+          длинная или с завитком шерсть;
+         </li>
+         <li>
+          широкая или нетипично короткая голова;
+         </li>
+         <li>
+          сворачивающиеся в трубку/свисающие лопухом уши.
+         </li>
+        </ul>
+        <p>
+         Выпученные, маленькие или чересчур сближенные глаза, спина с горбинкой, плоская грудь, тонкий серповидный хвост тоже не будут оценены племенными комиссиями. Что касается полной дисквалификации, то она угрожает особям с крипторхизмом, обладателям нетипичного либо черного окраса шерсти, а также собакам, у которых отсутствует уборная шерсть и депигментированы губы, веки или мочка носа.
+        </p>
+        <h2>
+         Фото ирландского сеттера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9d7/9d73c81c3bd2feda22988b70e897f206.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9d7/380_264_2/9d73c81c3bd2feda22988b70e897f206.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9d7/380_264_2/9d73c81c3bd2feda22988b70e897f206.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/9d7/380_264_2/9d73c81c3bd2feda22988b70e897f206.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e15/e15618a2e2e32d8f1d77e28710cee18f.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e15/380_264_2/e15618a2e2e32d8f1d77e28710cee18f.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e15/380_264_2/e15618a2e2e32d8f1d77e28710cee18f.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/e15/380_264_2/e15618a2e2e32d8f1d77e28710cee18f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f8a/f8abae1ecf6977f916fd14b668c2e251.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f8a/380_264_2/f8abae1ecf6977f916fd14b668c2e251.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f8a/380_264_2/f8abae1ecf6977f916fd14b668c2e251.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/f8a/380_264_2/f8abae1ecf6977f916fd14b668c2e251.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f17/f17f9e57d443d8cdb856c32e9fa318a3.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f17/380_264_2/f17f9e57d443d8cdb856c32e9fa318a3.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f17/380_264_2/f17f9e57d443d8cdb856c32e9fa318a3.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/f17/380_264_2/f17f9e57d443d8cdb856c32e9fa318a3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/232/2328f92b0745135e7e571478c8611e8d.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/232/380_264_2/2328f92b0745135e7e571478c8611e8d.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/232/380_264_2/2328f92b0745135e7e571478c8611e8d.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/232/380_264_2/2328f92b0745135e7e571478c8611e8d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/3c8/3c8c02494d72c0a1965a2552a227b583.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/3c8/380_264_2/3c8c02494d72c0a1965a2552a227b583.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/3c8/380_264_2/3c8c02494d72c0a1965a2552a227b583.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/3c8/380_264_2/3c8c02494d72c0a1965a2552a227b583.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6ac/6ac43eec354b44c2778f802ed28e623b.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/6ac/380_264_2/6ac43eec354b44c2778f802ed28e623b.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/6ac/380_264_2/6ac43eec354b44c2778f802ed28e623b.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/6ac/380_264_2/6ac43eec354b44c2778f802ed28e623b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c11/c11fd2d138c69238640c10048c493098.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c11/380_264_2/c11fd2d138c69238640c10048c493098.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c11/380_264_2/c11fd2d138c69238640c10048c493098.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/c11/380_264_2/c11fd2d138c69238640c10048c493098.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/90f/90fe07992ac018174a58150252fc707e.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/90f/380_264_2/90fe07992ac018174a58150252fc707e.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/90f/380_264_2/90fe07992ac018174a58150252fc707e.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/90f/380_264_2/90fe07992ac018174a58150252fc707e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер ирландского сеттера
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Ирландский сеттер с ребенком" data-fancybox="gallery" href="/upload/iblock/5c8/5c84f08cf13cf686fb4f4437546cc5f2.jpg" title="Ирландский сеттер с ребенком">
+          <div class="lazy-load" data-alt="Ирландский сеттер с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/5c8/412_2150_1/5c84f08cf13cf686fb4f4437546cc5f2.jpg">
+           <noscript data-alt="Ирландский сеттер с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/5c8/412_2150_1/5c84f08cf13cf686fb4f4437546cc5f2.jpg">
+            <img alt="Ирландский сеттер с ребенком" class="article_pic" height="549" src="/upload/resize_cache/iblock/5c8/412_2150_1/5c84f08cf13cf686fb4f4437546cc5f2.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Ирландский сеттер с ребенком
+         </div>
+        </div>
+        <p>
+         Ирландский сеттер – собака, чья внутренняя батарейка работает в турбо-режиме, начиная со щенячьего и до почтенного возраста. И это касается не только физической активности, но и эмоций, которых у породы стратегический запас. Если за весь день «ирландцу» не удалось пообщаться ни с одним живым существом (нет человека – сгодится и кошка), – для него это серьезный повод огорчиться.
+        </p>
+        <p>
+         Контактные и дружелюбные, ирландские красные сеттеры напрочь лишены какой бы то ни было агрессии. Они не ждут подвоха от незнакомцев и великодушны по отношению к детям, даже если те ведут себя не очень вежливо. Однако воспринимать представителей этой породы как безвольных тюфячков – большая ошибка. Когда нужно, ирландский сеттер в состоянии и упрямство проявить, и твердость характера продемонстрировать. Правда, делать он это будет не напористо, а исподволь, пуская в ход хитроумные уловки, а иногда и явное притворство. Пытаться доминировать над человеком каштановым умникам не свойственно (исключения тоже бывают), но принимать решения в повседневной жизни они предпочитают самостоятельно.
+        </p>
+        <p>
+         Ирландские красные сеттеры не прочь «потусить» и легко вписываются в собачьи компании. Вторую появившуюся в доме собаку они тоже примут с «распростертыми лапами», если только это не доминант-ревнивец типа
+         <a class="ph" href="/dog/rotveyler/">
+          ротвейлера
+         </a>
+         или
+         <a class="ph" href="/dog/burbul/">
+          бурбуля
+         </a>
+         . И все же самую искреннюю привязанность животные испытывают к человеку, поэтому, перед тем как обзаводиться ирландским сеттером, задумайтесь: готовы ли вы жертвовать диванным отдыхом за книгой в пользу утренних пробежек в любую погоду и не будете ли вы уставать от того объема чувств и эмоций, которые собака считает своим долгом выплескивать на хозяина. В частности, дома «ирландцы» любят ходить за владельцем хвостом, ненавязчиво, но настойчиво требуя ласки, объятий и внимания, и никакими строгими командами или окриками такая патологическая любовь не лечится.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Ирландский красный сеттер – собака не без способностей, хотя и не пользуется репутацией легко дрессируемой. Проблема кроется в слишком живом темпераменте породы, не позволяющем ее представителям надолго концентрироваться на одном объекте или виде деятельности. Так что, если планируете всерьез заняться обучением любимца, готовьтесь поломать голову над составлением индивидуальной программы занятий, которая не вызовет у собаки отторжения.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Дрессировка ирландского сеттера" data-fancybox="gallery" href="/upload/iblock/1ce/1ce08064ec71d05b805de4df475c2f3e.jpg" title="Дрессировка ирландского сеттера">
+          <div class="lazy-load" data-alt="Дрессировка ирландского сеттера" data-class="article_pic" data-original="/upload/resize_cache/iblock/1ce/412_2150_1/1ce08064ec71d05b805de4df475c2f3e.jpg">
+           <noscript data-alt="Дрессировка ирландского сеттера" data-class="article_pic" data-original="/upload/resize_cache/iblock/1ce/412_2150_1/1ce08064ec71d05b805de4df475c2f3e.jpg">
+            <img alt="Дрессировка ирландского сеттера" class="article_pic" height="273" src="/upload/resize_cache/iblock/1ce/412_2150_1/1ce08064ec71d05b805de4df475c2f3e.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Дрессировка ирландского сеттера
+         </div>
+        </div>
+        <p>
+         3,5-8 месяцев – оптимальный возраст для дрессировки щенка ирландского сеттера. К этому времени малыши уже в курсе, что такое коллективная иерархия, поэтому важно успеть дать им понять, кто в доме настоящий хозяин, а кто «парень на подхвате». Обучение питомца командам ОКД и УГС – обязательная мера, поскольку порода склонна к побегам. Особое внимание уделяется отработке подзыва «Ко мне!». Реагировать на него собака должна моментально и беспрекословно, хотя, как показывает практика, это умение дается животному сложнее всего.
+        </p>
+        <p>
+         С остальными командами можно слишком не усердствовать. Ирландский сеттер – это все-таки не овчарка; легавая и механическая работа на автомате – не ее конек. Так что, если питомец выполнил требование не сразу или слегка его переиначил, это уже повод похвалить животное. Для такой самодостаточной и упрямой собаки – это серьезное достижение.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Забег друзей" data-fancybox="gallery" href="/upload/iblock/3e4/3e4fdd57086e8119e18120aaf2a4b8c1.jpg" title="Забег друзей">
+          <div class="lazy-load" data-alt="Забег друзей" data-class="article_pic" data-original="/upload/resize_cache/iblock/3e4/412_2150_1/3e4fdd57086e8119e18120aaf2a4b8c1.jpg">
+           <noscript data-alt="Забег друзей" data-class="article_pic" data-original="/upload/resize_cache/iblock/3e4/412_2150_1/3e4fdd57086e8119e18120aaf2a4b8c1.jpg">
+            <img alt="Забег друзей" class="article_pic" height="274" src="/upload/resize_cache/iblock/3e4/412_2150_1/3e4fdd57086e8119e18120aaf2a4b8c1.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Забег друзей
+         </div>
+        </div>
+        <p>
+         Сеттеры зависимы от хозяйского одобрения, и на этой черте характера можно неплохо «выезжать» в случаях, когда четверолапый любимец увиливает от занятий. Покажите, как вы огорчены нежеланием собаки работать вместе с вами, и через пару минут обуреваемый угрызениями совести «ирландец» будет вымучивать очередной трюк. Только не злоупотребляйте собачьей покладистостью: бывают ситуации, в которых ирландский сеттер ни за что не пойдет на уступку. Нет, открытого протеста не будет, потому что каштановый хитрец не любит конфликты. Зато будут виртуозно разыгранные глухота к командам и вселенское непонимание в глазах. Относиться к подобным выпадам нужно с пониманием, перенося урок на другое время, но ни в коем случае не отказываясь от поставленной цели окончательно. Ирландские сеттеры – ребята смекалистые, быстро соображающие на какие рычаги надавить, чтобы добиться желаемого, поэтому, если не хотите воспитать строптивого лентяя, проявляйте настойчивость и изворотливость.
+        </p>
+        <p>
+         В психологическом отношении «уроженцы страны лепреконов» долго остаются щенками: хулиганистыми, гиперактивными, неуправляемыми. С этим фактом придется смириться, так как наказания и авторитарный стиль общения для породы неприемлемы и только ухудшат положение. А вот слегка корректировать поведение малыша реально. Например, хорошо снижают тягу к авантюрам физические нагрузки. У нагулявшегося до изнеможения шалуна обычно не остается сил на проказы и возникает только одно желание – прикорнуть в уголке.
+        </p>
+        <h2 id="gl5">
+         Охота с ирландским сеттером
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Ирландский сеттер на охоте" data-fancybox="gallery" href="/upload/iblock/5dc/5dc9a5cc739bd3b52c38d4a088fe5642.jpg" title="Ирландский сеттер на охоте">
+          <div class="lazy-load" data-alt="Ирландский сеттер на охоте" data-class="article_pic" data-original="/upload/resize_cache/iblock/5dc/412_2150_1/5dc9a5cc739bd3b52c38d4a088fe5642.jpg">
+           <noscript data-alt="Ирландский сеттер на охоте" data-class="article_pic" data-original="/upload/resize_cache/iblock/5dc/412_2150_1/5dc9a5cc739bd3b52c38d4a088fe5642.jpg">
+            <img alt="Ирландский сеттер на охоте" class="article_pic" height="274" src="/upload/resize_cache/iblock/5dc/412_2150_1/5dc9a5cc739bd3b52c38d4a088fe5642.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Ирландский сеттер на охоте
+         </div>
+        </div>
+        <p>
+         Основная добыча ирландского красного сеттера на охоте – это куропатки, перепела, коростели, тетерева, утки и вальдшнепы. Порода азартна, легка на подъем и сравнительно управляема, но не так терпелива, как хотелось бы. Работает собака, полагаясь преимущественно на чутье, по минимуму задействуя слух и зрение. Как результат: в ходе длительных бесцельных блужданий по полям четверолапый добытчик недополучает впечатлений, поэтому утрачивает интерес к работе и переключается на другой вид деятельности. Охотиться с ирландским сеттером целесообразно лишь в проверенных местах, где совершенно точно обитают пернатые трофеи. Если же необходим более последовательный и сконцентрированный на процессе поиска «разведчик», лучше обратить внимание на английского сеттера.
+        </p>
+        <h2 id="gl6">
+         Содержание и уход
+        </h2>
+        <p>
+         В прошлом сугубо охотничья порода, ирландский сеттер сегодня все чаще позиционируется как собака-компаньон, что не замедлило сказаться на условиях содержания. «Ирландцы» больше не ночуют в сараях и под открытым небом, а уход за собственной шерстью перепоручили хозяевам и грумерам. Классический тип жилья для современной собаки – частный дом, желательно загородный, с огороженным двором. Более скромная альтернатива – удобная лежанка в квартире. Причем оба варианта не исключают интенсивные физические нагрузки, без которых четверолапые «энерджайзеры» теряют вкус к жизни и деградируют.
+        </p>
+        <p>
+         Выгуливают животных традиционно дважды в день. Длится каждый такой променад минимум час, а лучше – полтора. Кстати, привычка терпеть с туалетом до выхода на улицу умницам-сеттерам дается легко, но лучше не впадать в крайности и дополнительно выводить собаку для справления нужды – 10 потраченных минут избавят питомца от ненужных мучений.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Утро в лесу" data-fancybox="gallery" href="/upload/iblock/656/656cb56214a124e39c7f26dd6bdd3f36.jpg" title="Утро в лесу">
+          <div class="lazy-load" data-alt="Утро в лесу" data-class="article_pic" data-original="/upload/resize_cache/iblock/656/412_2150_1/656cb56214a124e39c7f26dd6bdd3f36.jpg">
+           <noscript data-alt="Утро в лесу" data-class="article_pic" data-original="/upload/resize_cache/iblock/656/412_2150_1/656cb56214a124e39c7f26dd6bdd3f36.jpg">
+            <img alt="Утро в лесу" class="article_pic" height="618" src="/upload/resize_cache/iblock/656/412_2150_1/656cb56214a124e39c7f26dd6bdd3f36.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Утро в лесу
+         </div>
+        </div>
+        <p>
+         Готовьтесь, возиться с шерстью ирландского сеттера придется много и часто. Во-первых, потому что она сравнительно длинная, особенно в области живота, груди и хвоста. Во-вторых, потому что гладкий, шелковистый волос сеттеров постоянно сваливается, завязывается в узлы и путается, попутно цепляя на себя колючки и семена растений. Особенно туго придется с представителями выставочных линий, чья псовина на порядок длиннее, чем у охотничьих особей. Расчесывают шоу-сеттеров ежедневно, основательно прорабатывая пряди щеткой из натуральной щетины.
+        </p>
+        <p>
+         Купать собаку нужно сравнительно часто: раз в 7-10 дней. Обычно процессу мойки предшествует закупка профессиональных шампуней, кондиционирующих составов и натуральных масел для улучшения структуры шерстного покрова. Без них добиться гламурного перелива на шерсти ирландского сеттера практически невозможно. Мыть питомца следует после того, как его псовина тщательно расчесана, а колтуны разобраны, потому что после ванны проделать это будет сложнее.
+        </p>
+        <p>
+         Чтобы придать облику больше породистости, ирландских красных сеттеров подстригают филировочными ножницами. Это не полноценная стрижка, а легкое прореживание украшающей шерсти, так что сильно не увлекайтесь, а лучше доверьте дело профи. В периоды межсезонья, когда на улице много грязи и луж, собаку целесообразнее выгуливать в защитном комбинезоне, который можно заказать в интернет-магазине или сшить самостоятельно из непромокаемой ткани.
+        </p>
+        <p>
+         Уход за ушами, глазами и зубами животного осуществляется регулярно. Висячие уши ирландского красного сеттера плохо вентилируются, поэтому, помимо чистки, их придется искусственно проветривать – возьмите ушное полотно за края и интенсивно помашите ими. Когти собакам стригут 1-2 раза в месяц: поскольку порода не любит бегать по асфальту, предпочитая песчаные дорожки и тропинки, они у нее стачиваются слабо. Кстати, лучше всего делать «педикюр» ирландскому сеттеру после ванны, когда коготь размягчился под действием пара и теплой воды. Из обязательных процедур стоит также упомянуть чистку зубов (хотя бы пару раз в неделю) и ежедневное протирание слизистой глаз травяными настоями (ромашка, чай).
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fd2/fd2e73aacc10401f1a4725ce4c2e6f78.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/fd2/512_342_2/fd2e73aacc10401f1a4725ce4c2e6f78.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/fd2/512_342_2/fd2e73aacc10401f1a4725ce4c2e6f78.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/fd2/512_342_2/fd2e73aacc10401f1a4725ce4c2e6f78.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9e1/9e1af35bdaaf1ccf8281986535ecac9b.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9e1/512_342_2/9e1af35bdaaf1ccf8281986535ecac9b.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9e1/512_342_2/9e1af35bdaaf1ccf8281986535ecac9b.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/9e1/512_342_2/9e1af35bdaaf1ccf8281986535ecac9b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h3>
+         Кормление
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Что там у нас?" data-fancybox="gallery" href="/upload/iblock/f61/f61ef31099676fee4d6531b23dc51e22.jpg" title="Что там у нас?">
+          <div class="lazy-load" data-alt="Что там у нас?" data-class="article_pic" data-original="/upload/resize_cache/iblock/f61/412_2150_1/f61ef31099676fee4d6531b23dc51e22.jpg">
+           <noscript data-alt="Что там у нас?" data-class="article_pic" data-original="/upload/resize_cache/iblock/f61/412_2150_1/f61ef31099676fee4d6531b23dc51e22.jpg">
+            <img alt="Что там у нас?" class="article_pic" height="515" src="/upload/resize_cache/iblock/f61/412_2150_1/f61ef31099676fee4d6531b23dc51e22.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Что там у нас?
+         </div>
+        </div>
+        <p>
+         Начните с того, что купите питомцу подставку под миску. Ирландский сеттер – порода не приземистая, и отбивать поклоны за каждым приемом пищи ей элементарно вредно, есть риск заполучить заворот кишечника. Рассчитывать калорийность рациона следует с оглядкой на уровень физических нагрузок, получаемых псом. Например, спортсменов и представителей охотничьих линий, регулярно выезжающих в поле, кормить нужно плотнее, чем домашних любимцев. Кроме того, ирландские сеттеры в большинстве своем малоежки, и с этим необходимо считаться. Конечно, запихнуть в животное больше положенной нормы невозможно, но сделать порцию питательнее либо выбрать оптимальный по содержанию жиров корм (от 16% и выше) – вполне реально.
+        </p>
+        <p>
+         Что касается натурального меню для породы, то особой оригинальностью оно не отличается. Мясная некондиция (из расчета 20 г на килограмм массы тела животного), субпродукты, рыбное филе – вот три продукта, составляющие его базу. Из каш ирландским красным сеттерам полезны гречневая и овсяная. Кстати, щенкам крупу добавляют в мясной или костный бульон. Овощи и фрукты собакам дают только сезонные – и никакой азиатской экзотики, способной спровоцировать приступ аллергии. Дополнительно взрослых особей можно угощать омлетом из двух куриных яиц, обезжиренной кисломолочкой и растительным маслом (примерно чайная ложка), плюс витаминные подкормки, подобранные и согласованные с ветеринаром.
+        </p>
+        <h2 id="gl9">
+         Здоровье и болезни ирландских сеттеров
+        </h2>
+        <p>
+         Здоровье породы зависит от того, насколько ответственно владелец питомника подходит к ее разведению. Те же наследственные заболевания могут не проявлять себя у животных, заводчик которых не экономит на генетическом тестировании помета, скрупулезно подбирает производителей для вязки и не злоупотребляет близкородственным скрещиванием. И наоборот: у ирландских сеттеров, которым не слишком повезло с владельцем и наследственностью, могут обнаружиться следующие болезни:
+        </p>
+        <ul>
+         <li>
+          заворот кишок;
+         </li>
+         <li>
+          эпилепсия;
+         </li>
+         <li>
+          гипотиреоз;
+         </li>
+         <li>
+          злокачественные опухоли (меланомы);
+         </li>
+         <li>
+          энтропион;
+         </li>
+         <li>
+          дисплазия тазобедренного сустава;
+         </li>
+         <li>
+          аллергический дерматит;
+         </li>
+         <li>
+          воспалительные процессы в матке;
+         </li>
+         <li>
+          патологии спинного мозга (дегенеративная миелопатия);
+         </li>
+         <li>
+          врожденное расширение пищевода (идиопатический мегаэзофагус);
+         </li>
+         <li>
+          гипертрофическая остеодистрофия;
+         </li>
+         <li>
+          паралич гортани.
+         </li>
+        </ul>
+        <p>
+         В начале XX века европейские селекционеры сильно переборщили с инбридингом, в результате чего «ирландцы» долго страдали от прогрессирующей атрофии сетчатки. Искоренить дефект удалось только после разработки системы тестов, помогавших выявить ген слепоты на ранних стадиях. В конечном итоге дефектных особей перестали допускать к разведению, что снизило риск передачи заболевания по наследству.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мама с щенками" data-fancybox="gallery" href="/upload/iblock/a35/a356a49c783153115567ad88d3e4ac08.jpg" title="Мама с щенками">
+          <div class="lazy-load" data-alt="Мама с щенками" data-class="article_pic" data-original="/upload/resize_cache/iblock/a35/412_2150_1/a356a49c783153115567ad88d3e4ac08.jpg">
+           <noscript data-alt="Мама с щенками" data-class="article_pic" data-original="/upload/resize_cache/iblock/a35/412_2150_1/a356a49c783153115567ad88d3e4ac08.jpg">
+            <img alt="Мама с щенками" class="article_pic" height="262" src="/upload/resize_cache/iblock/a35/412_2150_1/a356a49c783153115567ad88d3e4ac08.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мама с щенками
+         </div>
+        </div>
+        <ul>
+         <li>
+          «Девочки» ирландского красного сеттера более ласковы и покладисты, зато «мальчики» богаче «одеты» и отличаются фактурной внешностью.
+         </li>
+         <li>
+          Чтобы выбрать хорошую подружейную собаку, лучше не тратить время на выставки, а обратиться сразу в охотничий клуб, курирующий питомники рабочих сеттеров.
+         </li>
+         <li>
+          Щенки рабочих линий выглядят более блекло по сравнению со своими выставочными собратьями. Шерсть у них светлее, короче и реже, а сами щенки гораздо мельче.
+         </li>
+         <li>
+          Приобретая щенка ирландского красного сеттера для выставок, стоит основательно изучить родословные производителей. Ждать эталонного экстерьера от малыша, чьи родители не имеют ни одного выставочного диплома, бессмысленно.
+         </li>
+         <li>
+          Уточните, откуда родом родители щенков. Обычно отечественные производители дают потомство, отличное по рабочим качествам и весьма скромное по внешним показателям. Это связано с тем, что на протяжении более ста лет российские заводчики специализировались на разведении охотничьих линий. Если же необходим щенок с выставочным потенциалом, лучше обратиться в питомники, практикующие вязки импортированных особей. Таковых не очень много, но они есть.
+         </li>
+         <li>
+          В зависимости от места разведения выделяется два особенно удачных шоу-типа ирландских сеттеров: английский и американский. Если вы приверженец классики во всех ее проявлениях, лучше отдать предпочтение уроженцам Туманного Альбиона. В свое время американские заводчики переборщили с «апгрейдом» породы, из-за чего внешность их подопечных приобрела несколько утрированный вид.
+         </li>
+        </ul>
+        <h2>
+         Фото щенков ирландского сеттера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c0d/c0d1a54987516e57e139a06a42a5fcfc.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c0d/380_264_2/c0d1a54987516e57e139a06a42a5fcfc.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c0d/380_264_2/c0d1a54987516e57e139a06a42a5fcfc.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/c0d/380_264_2/c0d1a54987516e57e139a06a42a5fcfc.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/bc9/bc9eb6058f1a04169bf1e259e2507ee3.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/bc9/380_264_2/bc9eb6058f1a04169bf1e259e2507ee3.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/bc9/380_264_2/bc9eb6058f1a04169bf1e259e2507ee3.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/bc9/380_264_2/bc9eb6058f1a04169bf1e259e2507ee3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/280/28058a319ea67daba31fc28b5771a1ae.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/280/380_264_2/28058a319ea67daba31fc28b5771a1ae.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/280/380_264_2/28058a319ea67daba31fc28b5771a1ae.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/280/380_264_2/28058a319ea67daba31fc28b5771a1ae.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/62a/62a253258e3064edf61443994b33cf74.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/62a/380_264_2/62a253258e3064edf61443994b33cf74.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/62a/380_264_2/62a253258e3064edf61443994b33cf74.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/62a/380_264_2/62a253258e3064edf61443994b33cf74.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/591/5912a8187e198a243a6e3066784fd677.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/591/380_264_2/5912a8187e198a243a6e3066784fd677.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/591/380_264_2/5912a8187e198a243a6e3066784fd677.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/591/380_264_2/5912a8187e198a243a6e3066784fd677.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4ed/4eddcd9a0548ad472196b80c273ef22f.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/4ed/380_264_2/4eddcd9a0548ad472196b80c273ef22f.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/4ed/380_264_2/4eddcd9a0548ad472196b80c273ef22f.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/4ed/380_264_2/4eddcd9a0548ad472196b80c273ef22f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8ef/8efd442f77d74ad4ab4b26f833414787.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8ef/380_264_2/8efd442f77d74ad4ab4b26f833414787.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8ef/380_264_2/8efd442f77d74ad4ab4b26f833414787.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/8ef/380_264_2/8efd442f77d74ad4ab4b26f833414787.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c5a/c5a16f6e01f29018fe4b8305756a3650.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c5a/380_264_2/c5a16f6e01f29018fe4b8305756a3650.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c5a/380_264_2/c5a16f6e01f29018fe4b8305756a3650.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/c5a/380_264_2/c5a16f6e01f29018fe4b8305756a3650.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7a5/7a529a40cb40738d2eecf7d211fb7eee.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/7a5/380_264_2/7a529a40cb40738d2eecf7d211fb7eee.jpg">
+            <noscript data-alt="Ирландский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/7a5/380_264_2/7a529a40cb40738d2eecf7d211fb7eee.jpg">
+             <img alt="Ирландский сеттер" class="article_pic" src="/upload/resize_cache/iblock/7a5/380_264_2/7a529a40cb40738d2eecf7d211fb7eee.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Цена ирландского сеттера
+        </h2>
+        <p>
+         Средняя цена щенка ирландского красного сеттера из рабочей линии – 20 000 - 30 000 руб. Расценки на представителей шоу-класса повыше – от 40 000 рублей.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения ирландского сеттера на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/irlandskiy-setter/forum/">
+        Перейти на
+        форум ирландского сеттера
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Ирландский сеттер" src="/upload/iblock/70f/70fbd421205fd3f451af3a9cefb4cf3b.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/irlandskiy-setter/">
+          Ирландский сеттер
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/irlandskiy-setter/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-setter/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-setter/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-setter/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-setter/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-setter/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/estonskaya-gonchaya/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Эстонская гончая" data-original="/upload/resize_cache/iblock/fcc/100_100_1/fcc2e4db742cfe3125dff431c50d47d3.jpg">
+          <noscript data-alt="Эстонская гончая" data-original="/upload/resize_cache/iblock/fcc/100_100_1/fcc2e4db742cfe3125dff431c50d47d3.jpg">
+           <img alt="Эстонская гончая" src="/upload/resize_cache/iblock/fcc/100_100_1/fcc2e4db742cfe3125dff431c50d47d3.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Эстонская гончая
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/labradudl/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Лабрадудль" data-original="/upload/resize_cache/iblock/d4d/100_100_1/1ik6hem35wat4q4bcqa3ceksaudcqyvs.jpg">
+          <noscript data-alt="Лабрадудль" data-original="/upload/resize_cache/iblock/d4d/100_100_1/1ik6hem35wat4q4bcqa3ceksaudcqyvs.jpg">
+           <img alt="Лабрадудль" src="/upload/resize_cache/iblock/d4d/100_100_1/1ik6hem35wat4q4bcqa3ceksaudcqyvs.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Лабрадудль
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/angliyskiy-buldog/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Английский бульдог" data-original="/upload/resize_cache/iblock/9a7/100_100_1/9a72d195c7b2eb2cc9a39dba2ab1c233.jpg">
+          <noscript data-alt="Английский бульдог" data-original="/upload/resize_cache/iblock/9a7/100_100_1/9a72d195c7b2eb2cc9a39dba2ab1c233.jpg">
+           <img alt="Английский бульдог" src="/upload/resize_cache/iblock/9a7/100_100_1/9a72d195c7b2eb2cc9a39dba2ab1c233.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Английский бульдог
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/briar/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бриар" data-original="/upload/resize_cache/iblock/cdc/100_100_1/cdc6b0c8519a0234b35ed2713e199bde.jpg">
+          <noscript data-alt="Бриар" data-original="/upload/resize_cache/iblock/cdc/100_100_1/cdc6b0c8519a0234b35ed2713e199bde.jpg">
+           <img alt="Бриар" src="/upload/resize_cache/iblock/cdc/100_100_1/cdc6b0c8519a0234b35ed2713e199bde.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бриар
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Firlandskiy-setter%252F%253Fcheck_key%253D39250118dfc8194cbc667f2ccb730754%2526ANIMAL_CODE%253Dirlandskiy-setter%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Firlandskiy-setter%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmlybGFuZHNraXktc2V0dGVyJTJGJTNGY2hlY2tfa2V5JTNEMzkyNTAxMThkZmM4MTk0Y2JjNjY3ZjJjY2I3MzA3NTQlMjZBTklNQUxfQ09ERSUzRGlybGFuZHNraXktc2V0dGVyJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmlybGFuZHNraXktc2V0dGVyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Firlandskiy-setter%252F%253Fcheck_key%253D39250118dfc8194cbc667f2ccb730754%2526ANIMAL_CODE%253Dirlandskiy-setter%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Firlandskiy-setter%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Firlandskiy-setter%252F%253Fcheck_key%253D39250118dfc8194cbc667f2ccb730754%2526ANIMAL_CODE%253Dirlandskiy-setter%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Firlandskiy-setter%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "81.94.132.142"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--fd2e2ab969f8b4e6bea93b0bdaeedcea-->

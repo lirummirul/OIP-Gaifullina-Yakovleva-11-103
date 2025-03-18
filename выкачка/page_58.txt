@@ -1,0 +1,1982 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'a055b39cdcd5'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Вельш-корги пемброк, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Вельш-корги пемброк – удивительная собака, любимая порода Ее Величества королевы Великобритании Елизаветы ІІ, маленькая овчарка с большим и бесстрашным сердцем." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/401/40164de2367cfa4761592b2b57ec0fac.jpg" property="og:image"/>
+     <title>
+      Вельш-корги пемброк: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/velsh-korgi-pembrok/" property="og:url"/>
+     <meta content="Вельш-корги пемброк: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Вельш-корги пемброк – удивительная собака, любимая порода Ее Величества королевы Великобритании Елизаветы ІІ, маленькая овчарка с большим и бесстрашным сердцем." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/velsh-korgi-pembrok/" itemprop="url">
+         <span itemprop="title">
+          Вельш-корги пемброк
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Вельш-корги пемброк
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/velsh-korgi-pembrok/">
+          Описание
+         </a>
+         <a href="/dog/velsh-korgi-pembrok/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/velsh-korgi-pembrok/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/velsh-korgi-pembrok/photo/">
+          Фото
+         </a>
+         <a href="/dog/velsh-korgi-pembrok/video/">
+          Видео
+         </a>
+         <a href="/dog/velsh-korgi-pembrok/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/velsh-korgi-pembrok/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Вельш-корги пемброк" src="/upload/iblock/9af/9af916d1cf3fb7990d7618dd6861ec43.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/velsh-korgi-pembrok/">
+           Корги
+          </a>
+          ,
+          <a href="/dog/velsh-korgi-pembrok/">
+           Вельш-корги
+          </a>
+         </span>
+         <p>
+          Вельш-корги пемброк – удивительная собака, любимая порода Ее Величества королевы Великобритании Елизаветы ІІ, маленькая овчарка с большим и бесстрашным сердцем.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/878/8785b4bee8da1a781a5e08c82e1637f4.jpg" data-cap="Baxter 11 weeks" data-fancybox="images" data-link="https://www.flickr.com/photos/kenbphotos/12000396224/" data-type="image" data-username="Kenan Bakin" href="/upload/uf/504/504bf1f66d02049c4be0637446df588f.jpg">
+            <img alt="Вельш-корги пемброк" src="/upload/resize_cache/uf/504/293_293_2/504bf1f66d02049c4be0637446df588f.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/113/113e77c9e742c1209efcf2fe01114599.jpg" data-cap="Cooper the Corgi" data-fancybox="images" data-link="https://www.flickr.com/photos/markblumer/13906161344/" data-type="image" data-username="Mark Blumer" href="/upload/uf/467/4675e821d185b2a1293fa16c6062e20b.jpg">
+            <img alt="Вельш-корги пемброк" src="/upload/resize_cache/uf/467/293_293_2/4675e821d185b2a1293fa16c6062e20b.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/61a/61a3d27c566b8c17ba6f1c3cdf8db424.jpg" data-cap="There's a monster on my head!" data-fancybox="images" data-link="https://www.flickr.com/photos/trinketbaby/14126203103/" data-type="image" data-username="trinketbaby" href="/upload/uf/992/992db15e6c5056305c4540964292d3fe.jpg">
+            <img alt="Вельш-корги пемброк" src="/upload/resize_cache/uf/992/293_293_2/992db15e6c5056305c4540964292d3fe.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/velsh-korgi-pembrok/photo/">
+         Все
+            фото вельш-корги пемброка
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <style>
+        .podvidi h2 {
+                text-align: left;
+                margin: 0 0 40px;
+            }
+            .podvidi h2 a{
+                color: #000;
+                border-bottom: 1px solid #bbb;
+            }
+            .podvidi .pop-porodi-block{
+                text-align:left;
+            }
+       </style>
+       <div class="pop-porodi podvidi">
+        <div class="pop-porodi-block">
+         <h2 id="info">
+          Разновидности корги
+         </h2>
+         <a class="poroda-element" href="/dog/velsh-korgi-pembrok/">
+          <div class="ava-poroda">
+           <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/9af/100_100_1/9af916d1cf3fb7990d7618dd6861ec43.jpg"/>
+          </div>
+          <span>
+           Вельш-корги пемброк
+          </span>
+         </a>
+         <a class="poroda-element" href="/dog/velsh-korgi-kardigan/">
+          <div class="ava-poroda">
+           <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/c0b/100_100_1/c0b931451d53ccc8eb5719cf559cfcf2.jpg"/>
+          </div>
+          <span>
+           Вельш-корги кардиган
+          </span>
+         </a>
+        </div>
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы вельш-корги пемброк
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность вельш-корги
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер вельш-корги пемброка
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни вельш-корги пемброка
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Сколько стоит вельш-корги пемброк
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Вельш-корги пемброк
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         X век
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         9-13 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         25-30 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         9-12 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Корги – собака, идеально подходящая большой и дружной семье. Прекрасно чувствует себя как в условиях городской квартиры, так и в загородном жилье.
+        </li>
+        <li>
+         Главные черты характера животного – жизнерадостность, доброжелательность и активность. При практически полном отсутствии агрессивности в поведении, корги – отважная собака с высокоразвитым интеллектом.
+        </li>
+        <li>
+         Пемброк – порода собак, которые сильно нуждаются в человеческом обществе. Держать ее на улице, а уж тем более на привязи абсолютно недопустимо.
+        </li>
+        <li>
+         Вельш-корги пемброк очень чутко воспринимает настроение своих хозяев и никогда не будет вам докучать некстати.
+         <li>
+          Они очень активны и любят подвижные игры, хорошо дрессируются.
+         </li>
+         <li>
+          Любовь корги к детям стала уже легендой. Абсолютно безо всякой опаски вы можете оставить с ним даже малыша – пемброк стоически вытерпит все его шалости.
+         </li>
+         <li>
+          Как истинно пастушья собака, корги любят и умеют работать в команде. Они не склонны к доминированию, но слушаться будут только хозяина, который относится к ним с пониманием и любовью. Истеричный, нервный и вспыльчивый человек вряд ли может рассчитывать на любовь и дружбу вельш-корги пемброка – слишком уж умна эта собака.
+         </li>
+         <li>
+          Уход за животным несложен. Купание нечастое, поскольку шерсть имеет хорошие водоотталкивающие свойства и грязь не собирает. Систематический груминг требуется только два раза в год – во время активной линьки. Питание – сбалансированное. Помня о склонности пемброка к перееданию, нужно контролировать количество пищи.
+         </li>
+         <li>
+          Строение тела вельш-корги пемброка требует внимательного отношения к характеру физических нагрузок. Чтобы избежать травм позвоночника, нужно избегать прыжков с высоты на землю. Многие заводчики рекомендуют оберегать щенков от передвижения вниз по лестницам. Не рекомендуется применять шлейку, лучше сразу приучайте пса к ошейнику. Подстилка для питомца не должна быть излишне мягкой. Идеально, если это будет специальный ортопедический матрац.
+         </li>
+         <li>
+          Людям, которые собираются становиться заводчиками, следует знать, что эта порода трудна в разведении, поэтому следует посоветоваться со специалистами, чтобы трезво оценить свои силы и принять правильное решение.
+         </li>
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Вельш-корги пемброк" data-original="/upload/iblock/401/40164de2367cfa4761592b2b57ec0fac.jpg">
+          <noscript data-alt="Вельш-корги пемброк" data-original="/upload/iblock/401/40164de2367cfa4761592b2b57ec0fac.jpg">
+           <img alt="Вельш-корги пемброк" src="/upload/iblock/401/40164de2367cfa4761592b2b57ec0fac.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Вельш-корги пемброк
+          </strong>
+          – большая собака в маленьком теле. Такую характеристику чаще всего приходится слышать от владельцев этих собак. Удивительно, как в столь некрупном животном помещается столько любви, жизнерадостности, общительности и преданности человеку. А уж по уровню интеллекта и интуиции корги даст фору многим признанным помощникам человека из числа крупных служебных собак. Отличный характер, удивительные артистические способности, очаровательная внешность позволили представителям породы снискать любовь во многих странах мира. Все более популярной становится она и у нас.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Вельш-корги пемброк основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/velsh-korgi-pembrok/razmeri-porodi/">
+         размеры вельш-корги пемброка
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы вельш-корги пемброк
+        </h2>
+        <p>
+         История породы вельш-корги пемброк уходит в глубь веков. Производя раскопки на месте существовавшего на рубеже VIII-IX столетий поселения на территории Южного Уэльса, ученые Кардиффского университета среди прочих находок обнаружили кости небольшой собаки, очень похожие на части скелета современных корги.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Вельш-корги пемброк" data-fancybox="gallery" href="/upload/iblock/fe5/fe5847614a9cff3daec8ba1a7a76c865.jpg" title="Вельш-корги пемброк">
+          <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/fe5/412_2150_1/fe5847614a9cff3daec8ba1a7a76c865.jpg">
+           <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/fe5/412_2150_1/fe5847614a9cff3daec8ba1a7a76c865.jpg">
+            <img alt="Вельш-корги пемброк" class="article_pic" height="617" src="/upload/resize_cache/iblock/fe5/412_2150_1/fe5847614a9cff3daec8ba1a7a76c865.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Вельш-корги пемброк
+         </div>
+        </div>
+        <p>
+         Письменные упоминания о породе впервые встречаются в своде законов уэльского короля Хивэла Доброго, который правил в этих краях в X веке. Согласно положениям закона, за убийство корги, пасущей скот, ее хозяин имел право потребовать от виновника целого вола в качестве компенсации ущерба. Интересно то, что за собак любой другой породы, даже если те являлись собственностью короля, больше барана никто не давал. Дело в том, что вельш-корги пасли стада без участия человека, самостоятельно сопровождали стадо, бесстрашно защищали его от волков и разбойников, то есть работали и за себя, и за хозяина. Гибель такого помощника была действительно очень ощутимой потерей.
+        </p>
+        <p>
+         По одной из версий, предков сегодняшних пемброков завезли на острова Туманного Альбиона викинги. Возможно, это были лундехунды, сходство с которыми заключается не только в размере, но и в особом расположении ушей, которое препятствует попаданию вглубь ушной раковины песка и влаги. Очень много общего у корги и с другим представителем шпицев – шведским вальхундом.
+        </p>
+        <p>
+         Основной функцией этих питомцев в те времена была пастушья, причем речь идет не только об отарах овец. Корги великолепно присматривали и за табунами пони, а когда в Уэльсе начался бум разведения домашней птицы (в основном гусей и уток), то лучшего помощника в сопровождении этих весьма своенравных птиц на городские рынки было просто не сыскать. Несколько собак, работая хорошо организованной командой, доставляли огромные птичьи стада до места назначения почти без потерь. Немаловажным было и то, что представители породы делали свою работу без лая, не нервировали птицу.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Елизавета II со своими корги" data-fancybox="gallery" href="/upload/iblock/82f/82f623ab288ab618e2a5586bba72c9d3.jpg" title="Елизавета II со своими корги">
+          <div class="lazy-load" data-alt="Елизавета II со своими корги" data-class="article_pic" data-original="/upload/resize_cache/iblock/82f/412_2150_1/82f623ab288ab618e2a5586bba72c9d3.jpg">
+           <noscript data-alt="Елизавета II со своими корги" data-class="article_pic" data-original="/upload/resize_cache/iblock/82f/412_2150_1/82f623ab288ab618e2a5586bba72c9d3.jpg">
+            <img alt="Елизавета II со своими корги" class="article_pic" height="568" src="/upload/resize_cache/iblock/82f/412_2150_1/82f623ab288ab618e2a5586bba72c9d3.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Елизавета II со своими корги
+         </div>
+        </div>
+        <p>
+         Вельш-корги пемброк ведет свою историю из уэльского графства Пемброкшир. Эта местность отделена Камбрийской горной грядой от графства Кардиганшир, откуда родом
+         <a class="ph" href="/dog/velsh-korgi-kardigan/">
+          вельш-корги кардиган
+         </a>
+         . Несмотря на схожесть названий – это все-таки разные собаки. Из-за обособленного существования в определенных горных районах и, как следствие, близкородственного скрещивания, за каждой из пород закрепились присущие только данному виду собак особенности.
+        </p>
+        <p>
+         Что касается значения слов «вельш пемброк» или «вельш кардиган» в названии породы, то тут все более-менее ясно. А вот слово «корги» можно перевести по-разному. Кто-то считает, что слово происходит от уэльских «cor» (наблюдать, собирать) плюс «gi» (собака). Другие трактуют «corgi» в значении «помесь» или «злая собака». Третьи переводят «cor» как «гном, карлик».
+        </p>
+        <p>
+         Официальный дебют породы на выставках состоялся в Англии и датируется 1925 годом. Оба вида – и пемброк и кардиган – до 1934 года оценивались как представители одной породы, пока Кинологический клуб Великобритании признал их абсолютно независимыми друг от друга. В этом же 1934 году для большего разграничения типов было принято решение купировать пемброкам хвосты.
+        </p>
+        <p>
+         Вельш-корги пемброки приобрели чрезвычайную популярность благодаря тому, что они являются любимцами королевской семьи Великобритании. В далеком 1933 году герцог Йоркский, впоследствии король Георг VI, подарил своим дочерям маленького пемброка. С тех пор эти замечательные собаки стали постоянными обитателями Букингемского дворца и даже участвуют в официальных приемах, а Ее Величество королева Великобритании Елизавета ІІ по праву считается самым большим в мире любителем и знатоком породы.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Щенок корги бегает за бабочками" data-fancybox="gallery" href="/upload/iblock/291/2915614e73479b265b56cdaf441c5de1.jpg" title="Щенок корги бегает за бабочками">
+          <div class="lazy-load" data-alt="Щенок корги бегает за бабочками" data-class="article_pic" data-original="/upload/iblock/291/2915614e73479b265b56cdaf441c5de1.jpg">
+           <noscript data-alt="Щенок корги бегает за бабочками" data-class="article_pic" data-original="/upload/iblock/291/2915614e73479b265b56cdaf441c5de1.jpg">
+            <img alt="Щенок корги бегает за бабочками" class="article_pic" src="/upload/iblock/291/2915614e73479b265b56cdaf441c5de1.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок корги бегает за бабочками
+         </div>
+        </div>
+        <h2>
+         Видео: Вельш-корги
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="j4jH39qGK50">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность вельш-корги
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="вельш-корги пемброк" data-fancybox="gallery" href="/upload/iblock/6bb/6bbb4abc38bc3c31ea57d1531b6e703a.jpg" title="вельш-корги пемброк">
+          <div class="lazy-load" data-alt="вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/6bb/412_2150_1/6bbb4abc38bc3c31ea57d1531b6e703a.jpg">
+           <noscript data-alt="вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/6bb/412_2150_1/6bbb4abc38bc3c31ea57d1531b6e703a.jpg">
+            <img alt="вельш-корги пемброк" class="article_pic" height="617" src="/upload/resize_cache/iblock/6bb/412_2150_1/6bbb4abc38bc3c31ea57d1531b6e703a.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          вельш-корги пемброк
+         </div>
+        </div>
+        <p>
+         Вельш-корги пемброк – приземистая, компактная и крепкая собака. Длина туловища (от холки до основания хвоста) приблизительно на 40% больше, чем высота от холки до земли (25-30 см).
+        </p>
+        <p>
+         Масса животного пропорциональна росту и составляет для сук до 12,7 кг и не более 13,6 кг для кобелей.
+        </p>
+        <p>
+         Выставочные представители породы должны иметь меньший вес – около 11,4 кг и 12,4 кг соответственно.
+        </p>
+        <h3>
+         Голова и череп
+        </h3>
+        <p>
+         Голова корги по форме напоминает лисью, череп достаточно широкий и плоский между ушами. Морда пропорциональна черепу в соотношении 3:5, незначительно суживается к носу. Переход от лба к морде умеренно выражен. Нос всегда черный.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Челюсти у корги сильные с хорошо выраженным правильным ножницеобразным прикусом.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Небольшого размера, округлые. Цвет радужной оболочки – коричневый, хорошо гармонирующий с окрасом шерсти.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Морда вельш-корги пемброка" data-fancybox="gallery" href="/upload/iblock/e57/e57104a6175db0db16f32429b81aa564.jpg" title="Морда вельш-корги пемброка">
+          <div class="lazy-load" data-alt="Морда вельш-корги пемброка" data-class="article_pic" data-original="/upload/resize_cache/iblock/e57/412_2150_1/e57104a6175db0db16f32429b81aa564.jpg">
+           <noscript data-alt="Морда вельш-корги пемброка" data-class="article_pic" data-original="/upload/resize_cache/iblock/e57/412_2150_1/e57104a6175db0db16f32429b81aa564.jpg">
+            <img alt="Морда вельш-корги пемброка" class="article_pic" height="274" src="/upload/resize_cache/iblock/e57/412_2150_1/e57104a6175db0db16f32429b81aa564.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда вельш-корги пемброка
+         </div>
+        </div>
+        <p>
+         Среднего размера, острые, со слегка закругленными кончиками. Условная линия, проведенная от мочки носа через центр глаза, должна пересечь кончик уха или пройти очень близко от него.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Средний. Грудная клетка округлая, слегка яйцевидной формы и умеренной длины. Линия верха ровная, с возможной небольшой впадиной в районе холки.
+         <h3>
+          Хвост
+         </h3>
+         <p>
+          Короткий. Возможны варианты – купированный или естественный. Если хвост корги не купирован, то он должен быть расположен в одну линию с верхом, нестись достаточно низко и ни в коем случае не закидываться на спину.
+         </p>
+         <h3>
+          Конечности
+         </h3>
+         <div class="img-right">
+          <a class="fancybox" data-caption="Задние лапы корги" data-fancybox="gallery" href="/upload/iblock/827/8274942826019aa331651ddc867ef788.jpg" title="Задние лапы корги">
+           <div class="lazy-load" data-alt="Задние лапы корги" data-class="article_pic" data-original="/upload/resize_cache/iblock/827/412_2150_1/8274942826019aa331651ddc867ef788.jpg">
+            <noscript data-alt="Задние лапы корги" data-class="article_pic" data-original="/upload/resize_cache/iblock/827/412_2150_1/8274942826019aa331651ddc867ef788.jpg">
+             <img alt="Задние лапы корги" class="article_pic" height="305" src="/upload/resize_cache/iblock/827/412_2150_1/8274942826019aa331651ddc867ef788.jpg" width="412"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Задние лапы корги
+          </div>
+         </div>
+         <p>
+          Пясти передних конечностей вельш-корги пемброка короткие и максимально возможно прямые. Кости широкие до самой лапы, без сужений. Локти находятся близко к бокам. Плечи гармонично положены и находятся к предплечьям под прямым углом. Задние конечности короткие и сильные. Углы коленных суставов хорошие, плюсны прямые. Кости крепкие.
+         </p>
+         <p>
+          Лапы овальной формы с сильными пальцами, два центральных слегка выдвинуты вперед. Подушечки плотные, хорошо наполненные. Когти короткие.
+         </p>
+         <h3>
+          Шерсть
+         </h3>
+         <p>
+          Прямая с хорошим плотным подшерстком. Никогда не бывает мягкой и волнистой, равно как и проволокообразной.
+         </p>
+         <div class="img-w-center">
+          <a class="fancybox" data-caption="Много корги не бывает" data-fancybox="gallery" href="/upload/iblock/64b/64bff1bec740d27c1b045d792e6f8e92.jpg" title="Много корги не бывает">
+           <div class="lazy-load" data-alt="Много корги не бывает" data-class="article_pic" data-original="/upload/resize_cache/iblock/64b/1024_2150_1/64bff1bec740d27c1b045d792e6f8e92.jpg">
+            <noscript data-alt="Много корги не бывает" data-class="article_pic" data-original="/upload/resize_cache/iblock/64b/1024_2150_1/64bff1bec740d27c1b045d792e6f8e92.jpg">
+             <img alt="Много корги не бывает" class="article_pic" src="/upload/resize_cache/iblock/64b/1024_2150_1/64bff1bec740d27c1b045d792e6f8e92.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Много корги не бывает
+          </div>
+         </div>
+         <div class="img-right">
+          <a class="fancybox" data-caption="Щенок корги черного окраса" data-fancybox="gallery" href="/upload/iblock/f24/f2420a011b544fb94fc4b2dc5a07b52a.jpg" title="Щенок корги черного окраса">
+           <div class="lazy-load" data-alt="Щенок корги черного окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/f24/412_2150_1/f2420a011b544fb94fc4b2dc5a07b52a.jpg">
+            <noscript data-alt="Щенок корги черного окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/f24/412_2150_1/f2420a011b544fb94fc4b2dc5a07b52a.jpg">
+             <img alt="Щенок корги черного окраса" class="article_pic" height="617" src="/upload/resize_cache/iblock/f24/412_2150_1/f2420a011b544fb94fc4b2dc5a07b52a.jpg" width="412"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Щенок корги черного окраса
+          </div>
+         </div>
+         <h3>
+          Окрас
+         </h3>
+         <p>
+          Окрас вельш-корги рыжий, светло-рыжий, черный с рыжими подпалинами с возможными светлыми маркировками на груди, шее и лапах (трехцветный), соболиный. Стандарт породы допускает белые маркировки на голове и морде.
+         </p>
+         <p>
+          К недостаткам породы вельш-корги относят:
+         </p>
+         <ul>
+          <li>
+           неправильный постав хвоста;
+           <li>
+            чересчур глубокую грудь, которая мешает движениям животного, бочкообразную или плоскую форму грудной клетки;
+           </li>
+           <li>
+            высокое расположение зада собаки или наоборот чрезмерную покатость линии верха;
+           </li>
+           <li>
+            прямые скакательные суставы, узко поставленные конечности;
+           </li>
+           <li>
+            агрессию или пугливость в характере;
+           </li>
+           <li>
+            любые отклонения от свободной естественной походки (семенящий шаг, «гарцевание», шаг «вразвалку»).
+           </li>
+          </li>
+         </ul>
+         <p>
+          У кобелей должны быть ясно выражены полностью опущенные в мошонку два нормально развитых яичка.
+         </p>
+         <h2>
+          Фото взрослого вельш-корги
+         </h2>
+         <div class="img-two">
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b28/b285af59b6c517f735e887cfaeedd11b.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/b28/380_264_2/b285af59b6c517f735e887cfaeedd11b.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/b28/380_264_2/b285af59b6c517f735e887cfaeedd11b.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/b28/380_264_2/b285af59b6c517f735e887cfaeedd11b.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1e6/1e6bf250c42efc1fe90447a8c040a3a8.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/1e6/380_264_2/1e6bf250c42efc1fe90447a8c040a3a8.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/1e6/380_264_2/1e6bf250c42efc1fe90447a8c040a3a8.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/1e6/380_264_2/1e6bf250c42efc1fe90447a8c040a3a8.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d4b/d4b750905d6c4821fa1ce832a81ae686.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/d4b/380_264_2/d4b750905d6c4821fa1ce832a81ae686.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/d4b/380_264_2/d4b750905d6c4821fa1ce832a81ae686.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/d4b/380_264_2/d4b750905d6c4821fa1ce832a81ae686.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+         </div>
+         <div class="img-two">
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b0f/b0fd665284d8398a10e5d881295cd762.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/b0f/380_264_2/b0fd665284d8398a10e5d881295cd762.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/b0f/380_264_2/b0fd665284d8398a10e5d881295cd762.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/b0f/380_264_2/b0fd665284d8398a10e5d881295cd762.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/218/2186a25a2876da43c57fdadc1f22c25e.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/218/380_264_2/2186a25a2876da43c57fdadc1f22c25e.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/218/380_264_2/2186a25a2876da43c57fdadc1f22c25e.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/218/380_264_2/2186a25a2876da43c57fdadc1f22c25e.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b07/b0754196a82bd27c1470694ff022ca34.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/b07/380_264_2/b0754196a82bd27c1470694ff022ca34.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/b07/380_264_2/b0754196a82bd27c1470694ff022ca34.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/b07/380_264_2/b0754196a82bd27c1470694ff022ca34.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+         </div>
+         <div class="img-two">
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a42/a4277c802aad797945ebc7512137135f.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/a42/380_264_2/a4277c802aad797945ebc7512137135f.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/a42/380_264_2/a4277c802aad797945ebc7512137135f.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/a42/380_264_2/a4277c802aad797945ebc7512137135f.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e95/e95c597bb3585f64782d2e7309aa688d.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/e95/380_264_2/e95c597bb3585f64782d2e7309aa688d.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/e95/380_264_2/e95c597bb3585f64782d2e7309aa688d.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/e95/380_264_2/e95c597bb3585f64782d2e7309aa688d.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f5c/f5c52949f9028db8ccfb342b15f75ee8.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/f5c/380_264_2/f5c52949f9028db8ccfb342b15f75ee8.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/f5c/380_264_2/f5c52949f9028db8ccfb342b15f75ee8.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/f5c/380_264_2/f5c52949f9028db8ccfb342b15f75ee8.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+         </div>
+         <div id="bxdynamic_publ1_start" style="display:none">
+         </div>
+         <div id="bxdynamic_publ1_end" style="display:none">
+         </div>
+         <h2 id="gl3">
+          Характер вельш-корги пемброка
+         </h2>
+         <p>
+          Все владельцы собак породы вельш-корги пемброк практически в один голос говорят о замечательном характере этих маленьких овчарок. Среди главных черт можно выделить активность животного, его высокий интеллект и удивительное дружелюбие к представителям рода человеческого. Если корги еще могут позволить себе проявления некоторой настороженности и агрессивности по отношению к другим собакам, то зарычать или залаять на человека – практически никогда.
+         </p>
+         <div class="img-right">
+          <a class="fancybox" data-caption="У меня есть корги и я этому очень рад ^-^" data-fancybox="gallery" href="/upload/iblock/de0/de082c09b7c9ef0036f6eb8ee10ad012.jpg" title="У меня есть корги и я этому очень рад ^-^">
+           <div class="lazy-load" data-alt="У меня есть корги и я этому очень рад ^-^" data-class="article_pic" data-original="/upload/resize_cache/iblock/de0/412_2150_1/de082c09b7c9ef0036f6eb8ee10ad012.jpg">
+            <noscript data-alt="У меня есть корги и я этому очень рад ^-^" data-class="article_pic" data-original="/upload/resize_cache/iblock/de0/412_2150_1/de082c09b7c9ef0036f6eb8ee10ad012.jpg">
+             <img alt="У меня есть корги и я этому очень рад ^-^" class="article_pic" height="489" src="/upload/resize_cache/iblock/de0/412_2150_1/de082c09b7c9ef0036f6eb8ee10ad012.jpg" width="412"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           У меня есть корги и я этому очень рад ^-^
+          </div>
+         </div>
+         <p>
+          Первоначально пемброки являлись исключительно пастушьими собаками. Это род деятельности, который требует выносливости, сообразительности и умения работать в команде. Многих людей искренне удивляет очень высокая активность корги, который любит побегать, порезвиться и даже весело подурачиться, несмотря на свою, казалось бы, не совсем располагающую к подобному времяпрепровождению внешность. Не помеха ему в этом занятии ни скромный размер, ни коротенькие ножки.
+         </p>
+         <p>
+          Вельш-корги пемброки – собаки, которые умеют искренне радоваться жизни. Создается впечатление, что эти милые псы просто не знают, что такое хандра и плохое настроение. Общение с хозяином, прогулки и даже работа – все доставляет псам удовольствие. Их улыбчивая морда, полный задора и оптимизма взгляд не могут оставить равнодушным никого.
+         </p>
+         <p>
+          Такое социальное существо, как пемброк, нужно еще поискать. Они не просто любят хозяина и стремятся быть около него. Они хотят находиться вместе со своим человеком всегда. Чем бы вы ни занимались, любимец будет рядом. У собак этой замечательной породы есть одна интересная особенность – они любят трогать хозяина лапой или подталкивать его носом. Вельш-корги садится рядом и по нескольку раз подряд с небольшим интервалом времени аккуратно касается вас, как бы намекая на то, что более интересного занятия, чем пообщаться с такой в высшей степени привлекательной и умной собакой просто не найти. Впрочем, если вы не отвечаете на эти знаки внимания, зверь поймет (не факт, что сразу), что ему придется подождать. Опасаясь упустить момент, когда хозяин освободится, пемброк будет томиться от одиночества и забытости, улегшись у ваших ног.
+         </p>
+         <div class="img-right">
+          <a class="fancybox" data-caption="Кажется, я нашел лучшее место в этом доме!" data-fancybox="gallery" href="/upload/iblock/10e/10e50ca797168fd9ebbd1bc5614f188e.jpg" title="Кажется, я нашел лучшее место в этом доме!">
+           <div class="lazy-load" data-alt="Кажется, я нашел лучшее место в этом доме!" data-class="article_pic" data-original="/upload/resize_cache/iblock/10e/412_2150_1/10e50ca797168fd9ebbd1bc5614f188e.jpg">
+            <noscript data-alt="Кажется, я нашел лучшее место в этом доме!" data-class="article_pic" data-original="/upload/resize_cache/iblock/10e/412_2150_1/10e50ca797168fd9ebbd1bc5614f188e.jpg">
+             <img alt="Кажется, я нашел лучшее место в этом доме!" class="article_pic" height="274" src="/upload/resize_cache/iblock/10e/412_2150_1/10e50ca797168fd9ebbd1bc5614f188e.jpg" width="412"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Кажется, я нашел лучшее место в этом доме!
+          </div>
+         </div>
+         <p>
+          Корги очень любят детей. Они стоически терпят все проявления детского восторга и насыщенные игры. Как бы активно их ни тормошили-целовали-тискали, животное никогда не проявит даже малейшего намека на агрессию по отношению к ребенку.
+         </p>
+         <p>
+          Вельш-корги считают себя обязанными быть в курсе всех событий, происходящих вокруг. Даже место для сна этот пес постарается выбрать посреди комнаты или прямо на проходе, чтобы в случае чего быть тут как тут.
+         </p>
+         <p>
+          Пастушья работа выработала еще один характерный признак этой породы – бесстрашие. Если предки не боялись вступить в бой с волками, то и ваш питомец безо всяких сомнений и раздумий бросится в схватку даже с противником, значительно превосходящим его по размерам.
+         </p>
+         <p>
+          Пемброки удивительно разговорчивы, они выражают свои эмоции не только лаем и поскуливанием. Корги неплохие певцы (правда, не все). Если их переполняют положительные чувства, то своеобразные рулады в разных вариантах могут продолжаться достаточно долго. Те, кого природа обделила вокальными талантами, проявляются с помощью самых разных звуков: кряхтения, «похрюкивания», повизгивания и даже бормотания. Делают они это настолько выразительно, что у хозяина не остается другого выбора, как вступить со своим любимцем в диалог.
+         </p>
+         <div class="img-right">
+          <a class="fancybox" data-caption="Вельш-корги пемброк с кошкой" data-fancybox="gallery" href="/upload/iblock/5fa/5fa51484a52416fe53d2c90c5aee6e45.jpg" title="Вельш-корги пемброк с кошкой">
+           <div class="lazy-load" data-alt="Вельш-корги пемброк с кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/5fa/412_2150_1/5fa51484a52416fe53d2c90c5aee6e45.jpg">
+            <noscript data-alt="Вельш-корги пемброк с кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/5fa/412_2150_1/5fa51484a52416fe53d2c90c5aee6e45.jpg">
+             <img alt="Вельш-корги пемброк с кошкой" class="article_pic" height="300" src="/upload/resize_cache/iblock/5fa/412_2150_1/5fa51484a52416fe53d2c90c5aee6e45.jpg" width="412"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Вельш-корги пемброк с кошкой
+          </div>
+         </div>
+         <p>
+          По голосу пемброка трудно отличить от крупной собаки. Лают вельш-корги громко и на низких нотах, что не совсем соотносится с их небольшими размерами.
+         </p>
+         <p>
+          Инстинкты этого пса требуют, чтобы все живые существа, окружающие его, находились под контролем, были организованы и двигались только в нужном направлении. Именно отсюда привычка пемброков, особенно молодых, покусывать людей сзади за ноги и пятки. В отсутствии гусей или овец на роль «подопечных» определяются члены вашей семьи, которым придется потерпеть такие проявления характера породы. Отучить питомца от этой привычки несложно, нужно только проявить последовательность и настойчивость.
+         </p>
+         <p>
+          Вельш-корги пемброки любят поесть. Это тоже заложено генетически. Пастушья работа требовала много сил, а восстановить их можно было, только плотно перекусив. У современных собак забот поменьше, а вот любовь к еде осталась на прежнем уровне, поэтому вельш-корги никогда не откажется от лишнего кусочка, другое дело, что переедание при отсутствии активной работы негативно скажется на здоровье собаки, прежде всего на позвоночнике.
+         </p>
+         <p>
+          При всех общих чертах каждая питомец имеет ряд индивидуальных особенностей. Кто-то более спокоен, кто-то более игрив, кто-то хулиганистее сородичей. Но какой бы пес ни достался вам, можете быть уверены: ваш пемброк вырастет преданным, умным и отважным другом!
+         </p>
+         <div class="img-w-center">
+          <a class="fancybox" data-caption="Я умен, отважен и невероятно красив!" data-fancybox="gallery" href="/upload/iblock/b35/b357aaeee3dc42d53954aecba75e023a.jpg" title="Я умен, отважен и невероятно красив!">
+           <div class="lazy-load" data-alt="Я умен, отважен и невероятно красив!" data-class="article_pic" data-original="/upload/iblock/b35/b357aaeee3dc42d53954aecba75e023a.jpg">
+            <noscript data-alt="Я умен, отважен и невероятно красив!" data-class="article_pic" data-original="/upload/iblock/b35/b357aaeee3dc42d53954aecba75e023a.jpg">
+             <img alt="Я умен, отважен и невероятно красив!" class="article_pic" src="/upload/iblock/b35/b357aaeee3dc42d53954aecba75e023a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Я умен, отважен и невероятно красив!
+          </div>
+         </div>
+         <h2 id="gl4">
+          Воспитание и дрессировка
+         </h2>
+         <p>
+          Глядя на эту небольшую собачку, может показаться странной рекомендация обратиться к литературе по воспитанию и дрессировке немецкой овчарки. Опытные кинологи утверждают, что у этих пород очень схожие психологические портреты.
+         </p>
+         <p>
+          Прежде, чем вы принесете малыша домой, сделайте следующее:
+         </p>
+         <ul>
+          <li>
+           уберите в недоступные для щенка места обувь;
+          </li>
+          <li>
+           электропровода, интернет и телефонные кабели постарайтесь спрятать за мебель, упаковать в короба или под плинтусы;
+          </li>
+          <li>
+           сверните ковры, ведь проще убрать лужицу или кучку с пола;
+          </li>
+          <li>
+           запаситесь достаточным количеством игрушек и подручных материалов, которые собака сможет без вреда для здоровья изгрызть.
+          </li>
+         </ul>
+         <p>
+          Пока пес поймет, что такое хорошо, а что такое плохо, пройдет определенное время, и подобные меры предосторожности будут совсем не лишними.
+         </p>
+         <div class="img-right">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/898/898a92bdbc89b3248d208f2ba2e55d93.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/898/412_2150_1/898a92bdbc89b3248d208f2ba2e55d93.jpg">
+            <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/898/412_2150_1/898a92bdbc89b3248d208f2ba2e55d93.jpg">
+             <img alt="Вельш-корги пемброк" class="article_pic" height="274" src="/upload/resize_cache/iblock/898/412_2150_1/898a92bdbc89b3248d208f2ba2e55d93.jpg" width="412"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <p>
+          Главный принцип в воспитании вельш-корги пемброка – категоричность и последовательность. Однажды что-то запрещенное не должно разрешаться потом.
+         </p>
+         <p>
+          Что касается правил дрессировки, то они достаточно просты. Никакой специальной методики для этих собак не разрабатывали, поскольку они от природы умны и сообразительны. Прежде всего, щенка нужно приучить откликаться на собственную кличку. Чаще подзывайте пемброка к себе, разговаривайте с ним, называя по имени. Так же должны поступать и все ваши домочадцы.
+         </p>
+         <p>
+          Поскольку процесс дрессировки воспринимается корги как игра, то и тон общения с щенком должен быть командно-игривым. Очень важно правильно подобрать интонационную окраску той или иной команде.
+         </p>
+         <p>
+          «Ко мне!» произносится первое время только вместе с именем собаки и сопровождается похлопыванием рукой по бедру или приседанием. Не отдавайте команду чересчур резко, лучше сделать это протяжно.
+         </p>
+         <div class="img-right">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/bca/bca57a3e18f52d8de8700beaf7b6ec3f.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/bca/412_2150_1/bca57a3e18f52d8de8700beaf7b6ec3f.jpg">
+            <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/bca/412_2150_1/bca57a3e18f52d8de8700beaf7b6ec3f.jpg">
+             <img alt="Вельш-корги пемброк" class="article_pic" height="274" src="/upload/resize_cache/iblock/bca/412_2150_1/bca57a3e18f52d8de8700beaf7b6ec3f.jpg" width="412"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <p>
+          Команда «Место!» предполагает четкую с оттенком угрозы интонацию. Кличка собаки тоже обязательно произносится, и щенок обязательно доставляется в определенное место, выбрать которое следует заранее и в процессе дрессировки не менять.
+         </p>
+         <p>
+          Команду «Ко мне!» можно подавать только через некоторое времени после команды «Место!».
+         </p>
+         <p>
+          Очень быстро пемброки осваивают выполнение команды «Принеси!». Держа щенка за ошейник, бросьте его игрушку, подайте команду и отпустите щенка. Он должен обязательно отдать вам предмет. Чтобы этого добиться, покажите животному любимое лакомство, держа его в руке. Поначалу корги будет воспринимать это, как взаимовыгодный обмен, но очень скоро станет выполнять команду просто ради удовольствия.
+         </p>
+         <p>
+          Обязательно хвалите питомца, даже если поначалу у него не все получается. Терпение, настойчивость и любовь – вот слагаемые успеха.
+         </p>
+         <p>
+          Специализированные курсы дрессировки, если в них есть необходимость, есть смысл начинать, когда корги достигнет четырехмесячного возраста. Лучше, если вам будет помогать в этом профессионал.
+         </p>
+         <div class="img-two">
+          <div class="img-two-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/be1/be122ba2e026e6454c2c0650d18dd855.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/be1/512_342_2/be122ba2e026e6454c2c0650d18dd855.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/be1/512_342_2/be122ba2e026e6454c2c0650d18dd855.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/be1/512_342_2/be122ba2e026e6454c2c0650d18dd855.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-two-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b95/b957dd9af6ef07d2ce08eb4305de8a8a.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/b95/512_342_2/b957dd9af6ef07d2ce08eb4305de8a8a.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/b95/512_342_2/b957dd9af6ef07d2ce08eb4305de8a8a.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/b95/512_342_2/b957dd9af6ef07d2ce08eb4305de8a8a.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+         </div>
+         <h2 id="gl5">
+          Уход и содержание
+         </h2>
+         <p>
+          Несмотря на то, что вельш-корги пемброк – порода достаточно дорогая, каких-либо особо сложных требований по уходу за ней вы не найдете. Характерного запаха от этих собак практически нет, поэтому купать ее часто не потребуется. Правда, учитывая то, что собака коротколапая, в дождливую погоду избежать водных процедур не удастся. Для купания применяйте только специальные шампуни высокого качества и не забывайте тщательно смывать с шерсти остатки моющих средств. Чтобы корги меньше пачкался, многие хозяева покупают специальные комбинезоны.
+         </p>
+         <div class="img-right">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8ea/8eaa6774903135ed3422d8c53815d044.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/8ea/412_2150_1/8eaa6774903135ed3422d8c53815d044.jpg">
+            <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/8ea/412_2150_1/8eaa6774903135ed3422d8c53815d044.jpg">
+             <img alt="Вельш-корги пемброк" class="article_pic" height="274" src="/upload/resize_cache/iblock/8ea/412_2150_1/8eaa6774903135ed3422d8c53815d044.jpg" width="412"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <p>
+          Из гигиенических процедур важно не забывать с определенной периодичностью (не реже раза в неделю) стричь любимцу когти. Во время манипуляций не забывайте выстригать шерсть между пальцами лап. Следите также за чистотой ушей собаки и чистите их по мере загрязнения.
+         </p>
+         <p>
+          Уход за шерстью предельно прост. Линяет вельш-корги пемброк два раза в год, в это время старайтесь ежедневно тщательно расчесывать собаку. В другие периоды достаточно иногда обрабатывать пса щеткой.
+         </p>
+         <p>
+          Что касается рациона питания, то многие заводчики предлагают остановить свой выбор на сухих кормах премиум-класса. Если вы решили отдать предпочтение натуральным продуктам, то следует помнить, что основная задача – предоставить вашему питомцу сбалансированное питание. В рацион обязательно должны входить мясные продукты (за исключением птицы), крупяные каши, яйца (не реже двух раз в неделю), нежирный творог. Бобовые (чечевица, горох) и перловую крупу для кормления корги лучше не использовать. Не забывайте вводить в рацион вашего питомца блюда из овощей. О постоянном наличии чистой воды напоминать излишне.
+         </p>
+         <p>
+          Животные быстро привыкают к любым условиям жизни, будь-то небольшая квартира или загородный дом. У них хороший густой подшерсток, который защищает от холода зимой и от жары летом, но это совсем не значит, что держать вельш-корги пемброка можно в будке на улице. Это все же скорее комнатная порода собак, и находиться ей лучше в доме.
+         </p>
+         <div class="img-right">
+          <a class="fancybox" data-caption="Вычесывание шерсти у вельш-корги" data-fancybox="gallery" href="/upload/iblock/aba/aba6c341414384eb3d005e145e88aba0.jpg" title="Вычесывание шерсти у вельш-корги">
+           <div class="lazy-load" data-alt="Вычесывание шерсти у вельш-корги" data-class="article_pic" data-original="/upload/resize_cache/iblock/aba/412_2150_1/aba6c341414384eb3d005e145e88aba0.jpg">
+            <noscript data-alt="Вычесывание шерсти у вельш-корги" data-class="article_pic" data-original="/upload/resize_cache/iblock/aba/412_2150_1/aba6c341414384eb3d005e145e88aba0.jpg">
+             <img alt="Вычесывание шерсти у вельш-корги" class="article_pic" height="274" src="/upload/resize_cache/iblock/aba/412_2150_1/aba6c341414384eb3d005e145e88aba0.jpg" width="412"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Вычесывание шерсти у вельш-корги
+          </div>
+         </div>
+         <p>
+          Если вы живете в городской квартире, постарайтесь обеспечить любимцу хорошие физические нагрузки.
+         </p>
+         <p>
+          Обустроить собачье место несложно. Для этого подойдет любая ненужная подушка, на которую можно надеть наволочку и менять ее по мере загрязнения. Если такой вариант вас не устраивает – приобретите в зоомагазине специальный домик для вашего питомца.
+         </p>
+         <p>
+          Помня о природной активности корги, купите вашему любимцу достаточное количество игрушек.
+         </p>
+         <p>
+          Покупая пемброка, будьте готовы уделять ему максимально много вашего времени – ведь он так в этом нуждается.
+         </p>
+         <h2 id="gl6">
+          Здоровье и болезни вельш-корги пемброка
+         </h2>
+         <p>
+          Пемброка нельзя отнести к изнеженной страдающей многочисленными заболеваниями породе. Это крепкая рабочая выносливая собака. Если своевременно и в полном объеме вакцинировать питомца и регулярно посещать ветеринара, то особых проблем со здоровьем не возникнет.
+         </p>
+         <div class="img-right">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/525/525e21e4e4f0db27061cfbe1eb757feb.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/525/412_2150_1/525e21e4e4f0db27061cfbe1eb757feb.jpg">
+            <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/525/412_2150_1/525e21e4e4f0db27061cfbe1eb757feb.jpg">
+             <img alt="Вельш-корги пемброк" class="article_pic" height="274" src="/upload/resize_cache/iblock/525/412_2150_1/525e21e4e4f0db27061cfbe1eb757feb.jpg" width="412"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <p>
+          Однако ряд «слабых звеньев» у животных все же есть. У псов этой породы довольно часто проявляются проблемы с глазами и ушами, поэтому профилактические визиты к врачу необходимы. В детстве вельш-корги пемброки иногда страдают нарколепсией. Это редкое заболевание, которое проявляется в том, что собака ни с того ни с сего вдруг засыпает. Главное в этот момент уберечь малыша от резких громких звуков.
+         </p>
+         <p>
+          Еще одна зона риска – это спина. Корги – собака коротколапая и достаточно длинная, поэтому возможны проблемы с межпозвоночными дисками. Старайтесь не давать прыгать вашему питомцу с высоты на землю. Да и вообще любые прыжки – не для этого пса. Его стихия – бег.
+         </p>
+         <p>
+          Пемброки очень любят поесть. Чтобы не возникло никаких осложнений со здоровьем из-за ожирения, следите за рационом вашего корги и контролируйте физические нагрузки.
+         </p>
+         <p>
+          Еще одна характерная для вельша проблема – дисплазия тазобедренных суставов. Это заболевание передается по наследству, поэтому следить за состоянием суставов нужно, начиная с раннего возраста.
+         </p>
+         <div class="img-w-center">
+          <a class="fancybox" data-caption="Солидарность лучшего друга" data-fancybox="gallery" href="/upload/iblock/075/075b1d9c5de80285079e70d28ee42a5f.jpg" title="Солидарность лучшего друга">
+           <div class="lazy-load" data-alt="Солидарность лучшего друга" data-class="article_pic" data-original="/upload/resize_cache/iblock/075/1024_2150_1/075b1d9c5de80285079e70d28ee42a5f.jpg">
+            <noscript data-alt="Солидарность лучшего друга" data-class="article_pic" data-original="/upload/resize_cache/iblock/075/1024_2150_1/075b1d9c5de80285079e70d28ee42a5f.jpg">
+             <img alt="Солидарность лучшего друга" class="article_pic" src="/upload/resize_cache/iblock/075/1024_2150_1/075b1d9c5de80285079e70d28ee42a5f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Солидарность лучшего друга
+          </div>
+         </div>
+         <h2 id="gl7">
+          Как выбрать щенка
+         </h2>
+         <p>
+          Если вы остановили свой выбор на породе вельш-корги пемброк, то, чтобы купить здорового и крепкого щенка, который соответствовал бы стандарту породы, следуйте основным правилам.
+         </p>
+         <div class="img-right">
+          <a class="fancybox" data-caption="Я спасу этот город!" data-fancybox="gallery" href="/upload/iblock/c66/c6656833196ccfcd5e336eca908e25f5.jpg" title="Я спасу этот город!">
+           <div class="lazy-load" data-alt="Я спасу этот город!" data-class="article_pic" data-original="/upload/resize_cache/iblock/c66/412_2150_1/c6656833196ccfcd5e336eca908e25f5.jpg">
+            <noscript data-alt="Я спасу этот город!" data-class="article_pic" data-original="/upload/resize_cache/iblock/c66/412_2150_1/c6656833196ccfcd5e336eca908e25f5.jpg">
+             <img alt="Я спасу этот город!" class="article_pic" height="542" src="/upload/resize_cache/iblock/c66/412_2150_1/c6656833196ccfcd5e336eca908e25f5.jpg" width="412"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Я спасу этот город!
+          </div>
+         </div>
+         <p>
+          Покупать любимца на птичьем рынке – дело априори провальное. Приобретение вельша через интернет – затея столь же сомнительная. Выход один – обратиться к известному заводчику или в питомник, который занимается разведением именно этой породы.
+         </p>
+         <p>
+          Помня о том, что пемброк – порода собак, где 75-80% наследственных признаков (по здоровью, характеру, внешности) щенок получает от матери, покупайте маленького корги от хорошо зарекомендовавшей себя суки.
+         </p>
+         <p>
+          Обязательно обратите внимание на темперамент и характер малыша. Щенок должен быть веселым, любопытным и даже несколько навязчивым, его все должно интересовать.
+         </p>
+         <p>
+          Породистый пес должен обязательно иметь щенячью карточку с указанием той организации, под чью юрисдикцию подпадает заводчик или питомник, продающий вам животное. Кроме того, должен иметься ветеринарный паспорт с отметками про все проведенные вакцинации.
+         </p>
+         <p>
+          Выбирая щенка, обратите внимание на то, в каких условиях содержатся его родители, поинтересуйтесь их достижениями в выставочной карьере, образом жизни (квартира или загородное содержание).
+         </p>
+         <p>
+          Лучше приобретать малыша, который появился на свет в результате запланированной вязки.
+         </p>
+         <p>
+          Что касается внешних признаков, то:
+         </p>
+         <ul>
+          <li>
+           вас не должно смущать, что уши у полуторамесячного корги могут еще не стоять – они обязательно примут вертикальное положение через некоторое время;
+          </li>
+          <li>
+           глазки малыша-пемброка всегда темного цвета и округлой формы;
+          </li>
+          <li>
+           выражение мордочки должно быть озорным и хитроватым – «лисьим», что очень ценится в породе;
+          </li>
+          <li>
+           у кобельков, особенно если они планируются к племенной работе, в возрасте 45 дней уже хорошо определяются в мошонке оба семенника.
+          </li>
+         </ul>
+         <p>
+          Еще один актуальный вопрос, кого выбрать – мальчика или девочку? По характеру, темпераменту и сообразительности вы разницы не найдете. Физиологические отличия потребуют со временем от вас различного подхода к условиям содержания суки или кобеля.
+         </p>
+         <p>
+          При первом знакомстве с корги вы должны почувствовать, что это – ваш щенок. И даже если он последний в помете, покупайте его без сомнения. Он последний не потому, что плохой, а потому, что ждал именно вас.
+         </p>
+         <h2>
+          Фото щенков вельш-корги
+         </h2>
+         <div class="img-two">
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e66/e6618d8714890be3e444a7b7e5988ced.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/e66/380_264_2/e6618d8714890be3e444a7b7e5988ced.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/e66/380_264_2/e6618d8714890be3e444a7b7e5988ced.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/e66/380_264_2/e6618d8714890be3e444a7b7e5988ced.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ad4/ad4b49e37cfd3b61d9ccd23737daef8c.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/ad4/380_264_2/ad4b49e37cfd3b61d9ccd23737daef8c.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/ad4/380_264_2/ad4b49e37cfd3b61d9ccd23737daef8c.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/ad4/380_264_2/ad4b49e37cfd3b61d9ccd23737daef8c.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8be/8bef8057e1e35add5b844303f7d54c4d.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/8be/380_264_2/8bef8057e1e35add5b844303f7d54c4d.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/8be/380_264_2/8bef8057e1e35add5b844303f7d54c4d.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/8be/380_264_2/8bef8057e1e35add5b844303f7d54c4d.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+         </div>
+         <div class="img-two">
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fa2/fa2661bc9f39109ab0521248a06a0800.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/fa2/380_264_2/fa2661bc9f39109ab0521248a06a0800.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/fa2/380_264_2/fa2661bc9f39109ab0521248a06a0800.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/fa2/380_264_2/fa2661bc9f39109ab0521248a06a0800.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c92/c926f1359d5d80c96eecc50ab60661b2.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/c92/380_264_2/c926f1359d5d80c96eecc50ab60661b2.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/c92/380_264_2/c926f1359d5d80c96eecc50ab60661b2.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/c92/380_264_2/c926f1359d5d80c96eecc50ab60661b2.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e91/e917a226555361338aab1dc68fc7a295.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/e91/380_264_2/e917a226555361338aab1dc68fc7a295.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/e91/380_264_2/e917a226555361338aab1dc68fc7a295.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/e91/380_264_2/e917a226555361338aab1dc68fc7a295.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+         </div>
+         <div class="img-two">
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7d9/7d91b1e9b6f5b8eaf90085941211d14b.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/7d9/380_264_2/7d91b1e9b6f5b8eaf90085941211d14b.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/7d9/380_264_2/7d91b1e9b6f5b8eaf90085941211d14b.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/7d9/380_264_2/7d91b1e9b6f5b8eaf90085941211d14b.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4b2/4b23d9b0d8ccb1298a2073985efae8c6.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/4b2/380_264_2/4b23d9b0d8ccb1298a2073985efae8c6.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/4b2/380_264_2/4b23d9b0d8ccb1298a2073985efae8c6.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/4b2/380_264_2/4b23d9b0d8ccb1298a2073985efae8c6.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <div class="img-three-block">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/757/757a1ad7beee7373a6fcb1823658b844.jpg" title="">
+            <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/757/380_264_2/757a1ad7beee7373a6fcb1823658b844.jpg">
+             <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/757/380_264_2/757a1ad7beee7373a6fcb1823658b844.jpg">
+              <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/757/380_264_2/757a1ad7beee7373a6fcb1823658b844.jpg"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+         </div>
+         <h2 id="gl8">
+          Сколько стоит вельш-корги пемброк
+         </h2>
+         <p>
+          Собаки породы вельш-корги пемброк входят в топ-5 по стоимости. Да и может ли стоить любимая порода английского королевского дома дешево? Но дело не только в популярности и редкости животного. Дело в том, что животных очень сложно разводить. Во-первых, найти подходящую пару для вязки совсем не просто. Иногда владельцам приходится ехать даже в другие города, преодолевая немалые расстояния. Но и удачная встреча пары пемброков еще ничего не гарантирует. Практика показывает, что почти в 80% случаев для родовспоможения сукам этой породы делают кесарево сечение. Далее следует выхаживание, выкармливание щенков, их обязательная вакцинация и оформление соответствующих документов. Все эти затраты компенсируются, хотя бы частично, стоимостью щенков.
+         </p>
+         <p>
+          Существует определенная ценовая градация на щенков этой породы.
+         </p>
+         <div class="img-right">
+          <a class="fancybox" data-caption="Я не корги, я зайчик" data-fancybox="gallery" href="/upload/iblock/d83/d8390211ac5199aa969ab0e03141eabc.jpg" title="Я не корги, я зайчик">
+           <div class="lazy-load" data-alt="Я не корги, я зайчик" data-class="article_pic" data-original="/upload/resize_cache/iblock/d83/412_2150_1/d8390211ac5199aa969ab0e03141eabc.jpg">
+            <noscript data-alt="Я не корги, я зайчик" data-class="article_pic" data-original="/upload/resize_cache/iblock/d83/412_2150_1/d8390211ac5199aa969ab0e03141eabc.jpg">
+             <img alt="Я не корги, я зайчик" class="article_pic" height="274" src="/upload/resize_cache/iblock/d83/412_2150_1/d8390211ac5199aa969ab0e03141eabc.jpg" width="412"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Я не корги, я зайчик
+          </div>
+         </div>
+         <p>
+          Малыша пет-класса, который не будет участвовать в выставках в силу каких-либо отклонений от стандарта породы или отсутствия полного пакета документов, вы сможете купить по цене 20-25 тыс. рублей. И это минимальная сумма. Если дешевле – вас хотят обмануть: либо это не корги, либо у щенка серьезные проблемы со здоровьем.
+         </p>
+         <p>
+          Пес брид-класса «потянет» на сумму от 30 до 40 тысяч рублей. Щенок обеспечен всеми нужными документами, привит, соответствует стандартам породы.
+         </p>
+         <p>
+          Корги шоу-класса – это дитя собак-чемпионов. Вам практически гарантирована здоровая элитная собака со всеми шансами сделать блестящую выставочную карьеру. Цена на такого малыша будет стартовать с отметки в 55 тысяч рублей, а часто и выше.
+         </p>
+         <p>
+          Стоимость щенка вельш-корги пемброка находится в прямой зависимости от чистоты породы, здоровья и перспективности. Цена на девочку будет выше, чем на кобеля.
+         </p>
+         <p>
+          Планируя приобрести представителя именно этой породы, определитесь, для какой цели вы хотите купить эту замечательную собаку. В любом случае, будь то щенок пет-класса или элитный малыш, вы никогда не пожалеете о своем решении, потому что вельш-корги пемброк прежде всего добрый, умный, жизнерадостный и преданный друг.
+         </p>
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения вельш-корги пемброка на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27701/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Ирина Кравченко" data-original="/upload/main/dfb/ywear5wyuudn0y2lldn12xrdzxytm097.jpg">
+            <noscript data-alt="Ирина Кравченко" data-original="/upload/main/dfb/ywear5wyuudn0y2lldn12xrdzxytm097.jpg">
+             <img alt="Ирина Кравченко" src="/upload/main/dfb/ywear5wyuudn0y2lldn12xrdzxytm097.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/obrabotka-ot-blokh-5489/">
+           Обработка от блох
+          </a>
+         </div>
+         <div class="forum-text">
+          Добрый вечер, подскажите, коржик подцепил блох в подъезде, что посоветуете?
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27701/">
+            Ирина Кравченко
+           </a>
+          </span>
+          <span class="vopros-date">
+           2 месяца назад
+          </span>
+          <span class="vopros-smotr">
+           117 просмотров
+          </span>
+          <span class="vopros-otvet">
+           2 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27160/">
+          <div class="ava-med">
+           <div class="noava fill0">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/sherst-u-korgi-5202/">
+           Шерсть у корги
+          </a>
+         </div>
+         <div class="forum-text">
+          Коргу 7 лет,окрас рыжий с белым. Сейчас, в осеннюю линьку, при вычесе заметила, что волос рыжий (ость) стал наполовину чёрный. Это от возраста, стареет? Или это связано с тем, что зимой пришлось кастрировать?
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27160/">
+            Елена Новикова
+           </a>
+          </span>
+          <span class="vopros-date">
+           5 месяцев назад
+          </span>
+          <span class="vopros-smotr">
+           98 просмотров
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/26930/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Альбина Симкина" data-original="/upload/resize_cache/main/3c9/200_200_2/txfw79hueokjm8dxve1wjdmfksskuf12.jpg">
+            <noscript data-alt="Альбина Симкина" data-original="/upload/resize_cache/main/3c9/200_200_2/txfw79hueokjm8dxve1wjdmfksskuf12.jpg">
+             <img alt="Альбина Симкина" src="/upload/resize_cache/main/3c9/200_200_2/txfw79hueokjm8dxve1wjdmfksskuf12.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/dobryy-den-5117/">
+           Добрый день!
+          </a>
+         </div>
+         <div class="forum-text">
+          Недавно у нас в семье появился хвостик, корги пемброк.
+Девочка, 5 месяцев, у заводчика ела Роял Канин для средних пород и вот хотелось бы у опытных корги родителей поинтересоваться насколько хорош этот корм или...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/26930/">
+            Альбина Симкина
+           </a>
+          </span>
+          <span class="vopros-date">
+           7 месяцев назад
+          </span>
+          <span class="vopros-smotr">
+           691 просмотр
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/26660/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Eleonora Mustafaeva" data-original="/upload/main/975/l5h2w3j3jzaay89xa3psdc720rb0ruv9.jpg">
+            <noscript data-alt="Eleonora Mustafaeva" data-original="/upload/main/975/l5h2w3j3jzaay89xa3psdc720rb0ruv9.jpg">
+             <img alt="Eleonora Mustafaeva" src="/upload/main/975/l5h2w3j3jzaay89xa3psdc720rb0ruv9.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/pyatna-na-lapkakh-4900/">
+           Пятна на лапках
+          </a>
+         </div>
+         <div class="forum-text">
+          Добрый день! Подскажите пожалуйста. Щенку 2,5 мес. Есть вот такие пятнышки на лапках. Это повод для обращения к врачу или такая пигментация в норме?
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/26660/">
+            Eleonora Mustafaeva
+           </a>
+          </span>
+          <span class="vopros-date">
+           8 месяцев назад
+          </span>
+          <span class="vopros-smotr">
+           493 просмотра
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/velsh-korgi-pembrok/forum/">
+        Перейти на
+        форум вельш-корги пемброка
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Вельш-корги пемброк" src="/upload/iblock/9af/9af916d1cf3fb7990d7618dd6861ec43.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/velsh-korgi-pembrok/">
+          Вельш-корги пемброк
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/velsh-korgi-pembrok/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/velsh-korgi-pembrok/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/velsh-korgi-pembrok/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/velsh-korgi-pembrok/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/velsh-korgi-pembrok/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/velsh-korgi-pembrok/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/kavaler-king-charlz-spaniel/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-original="/upload/resize_cache/iblock/b48/100_100_1/b485acd675a27aac77d3a42829a213ed.jpg">
+          <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-original="/upload/resize_cache/iblock/b48/100_100_1/b485acd675a27aac77d3a42829a213ed.jpg">
+           <img alt="Кавалер-кинг-чарльз-спаниель" src="/upload/resize_cache/iblock/b48/100_100_1/b485acd675a27aac77d3a42829a213ed.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Кавалер-кинг-чарльз-спаниель
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/velsh-korgi-kardigan/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Вельш-корги кардиган" data-original="/upload/resize_cache/iblock/c0b/100_100_1/c0b931451d53ccc8eb5719cf559cfcf2.jpg">
+          <noscript data-alt="Вельш-корги кардиган" data-original="/upload/resize_cache/iblock/c0b/100_100_1/c0b931451d53ccc8eb5719cf559cfcf2.jpg">
+           <img alt="Вельш-корги кардиган" src="/upload/resize_cache/iblock/c0b/100_100_1/c0b931451d53ccc8eb5719cf559cfcf2.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Вельш-корги кардиган
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/vostochno-sibirskaya-layka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Восточно-сибирская лайка" data-original="/upload/resize_cache/iblock/429/100_100_1/429bc9c2b87c860844280bf9d0f75935.jpg">
+          <noscript data-alt="Восточно-сибирская лайка" data-original="/upload/resize_cache/iblock/429/100_100_1/429bc9c2b87c860844280bf9d0f75935.jpg">
+           <img alt="Восточно-сибирская лайка" src="/upload/resize_cache/iblock/429/100_100_1/429bc9c2b87c860844280bf9d0f75935.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Восточно-сибирская лайка
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/peterburgskaya-orkhideya/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Петербургская орхидея" data-original="/upload/resize_cache/iblock/bee/100_100_1/bee557f2a7bf4f9ee238d5c310a3d5f3.jpg">
+          <noscript data-alt="Петербургская орхидея" data-original="/upload/resize_cache/iblock/bee/100_100_1/bee557f2a7bf4f9ee238d5c310a3d5f3.jpg">
+           <img alt="Петербургская орхидея" src="/upload/resize_cache/iblock/bee/100_100_1/bee557f2a7bf4f9ee238d5c310a3d5f3.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Петербургская орхидея
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fvelsh-korgi-pembrok%252F%253Fcheck_key%253Df053bf361d04d4d7f8e9eec43c86826e%2526ANIMAL_CODE%253Dvelsh-korgi-pembrok%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fvelsh-korgi-pembrok%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRnZlbHNoLWtvcmdpLXBlbWJyb2slMkYlM0ZjaGVja19rZXklM0RmMDUzYmYzNjFkMDRkNGQ3ZjhlOWVlYzQzYzg2ODI2ZSUyNkFOSU1BTF9DT0RFJTNEdmVsc2gta29yZ2ktcGVtYnJvayUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZ2ZWxzaC1rb3JnaS1wZW1icm9rJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fvelsh-korgi-pembrok%252F%253Fcheck_key%253Df053bf361d04d4d7f8e9eec43c86826e%2526ANIMAL_CODE%253Dvelsh-korgi-pembrok%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fvelsh-korgi-pembrok%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fvelsh-korgi-pembrok%252F%253Fcheck_key%253Df053bf361d04d4d7f8e9eec43c86826e%2526ANIMAL_CODE%253Dvelsh-korgi-pembrok%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fvelsh-korgi-pembrok%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "77.95.9.0"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--008f27d989b7754e92b626588e45d6e5-->

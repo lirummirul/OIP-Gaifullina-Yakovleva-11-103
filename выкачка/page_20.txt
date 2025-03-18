@@ -1,0 +1,1954 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'28439455a866'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Английский кокер-спаниель, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Английский кокер-спаниель – подружейная охотничья собака, выведенная в Великобритании специально для поиска и подъема под выстрел пернатой дичи." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/234/234191ec870af9dee40a5133ed518bce.jpg" property="og:image"/>
+     <title>
+      Английский кокер-спаниель: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/angliyskiy-koker-spaniel/" property="og:url"/>
+     <meta content="Английский кокер-спаниель: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Английский кокер-спаниель – подружейная охотничья собака, выведенная в Великобритании специально для поиска и подъема под выстрел пернатой дичи." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/angliyskiy-koker-spaniel/" itemprop="url">
+         <span itemprop="title">
+          Английский кокер-спаниель
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Английский кокер-спаниель
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/angliyskiy-koker-spaniel/">
+          Описание
+         </a>
+         <a href="/dog/angliyskiy-koker-spaniel/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/angliyskiy-koker-spaniel/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/angliyskiy-koker-spaniel/photo/">
+          Фото
+         </a>
+         <a href="/dog/angliyskiy-koker-spaniel/video/">
+          Видео
+         </a>
+         <a href="/dog/angliyskiy-koker-spaniel/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/angliyskiy-koker-spaniel/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Английский кокер-спаниель" src="/upload/iblock/ed9/ed93b033c39f22c5b594c0c80f34f8be.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/angliyskiy-koker-spaniel/">
+           кокер
+          </a>
+         </span>
+         <p>
+          Английский кокер-спаниель – подружейная охотничья собака, выведенная в Великобритании специально для поиска и подъема под выстрел пернатой дичи.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/f3d/f3d28a71f6ff1519df1058c71f1cc9fa.jpg" data-cap="" data-fancybox="images" data-link="https://www.instagram.com/p/BnIyAkZhmYy/" data-type="image" data-username="charlieandfrankie_" href="/upload/uf/63a/63a0d555b2dc45b7f200ef303ee44870.jpg">
+            <img alt="Английский кокер-спаниель" src="/upload/resize_cache/uf/63a/293_293_2/63a0d555b2dc45b7f200ef303ee44870.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/b7c/b7ce2d11686b84b3986d5a38f353c00b.jpg" data-cap="saba" data-fancybox="images" data-link="https://www.flickr.com/photos/noebus/37438869750/" data-type="image" data-username="noelia bustamante" href="/upload/uf/a9d/a9d97e25ce9d8d9048d117bea71ce533.jpg">
+            <img alt="Английский кокер-спаниель" src="/upload/resize_cache/uf/a9d/293_293_2/a9d97e25ce9d8d9048d117bea71ce533.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/12f/12f7a840f6fa8fcdfdedb97a413a16f8.jpg" data-cap="Oli spotted another dog in the wood on our walk and just watched as it sniffed around and played with stan at the stream. Oli is such a quirky character..." data-fancybox="images" data-link="https://www.flickr.com/photos/schooly1/31376807386/" data-type="image" data-username="Anthony de Schoolmeester" href="/upload/uf/ca9/ca986f90d0226b3f27aa05f6b24b7cd9.jpg">
+            <img alt="Английский кокер-спаниель" src="/upload/resize_cache/uf/ca9/293_293_2/ca986f90d0226b3f27aa05f6b24b7cd9.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/angliyskiy-koker-spaniel/photo/">
+         Все
+            фото английского кокер-спаниеля
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы английский кокер-спаниель
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность английского кокер-спаниеля
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер английского кокер-спаниеля
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Натаска английского кокер-спаниеля
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Здоровье и болезни английских кокер-спаниелей
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Сколько стоит английский кокер-спаниель
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Английский кокер-спаниель
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         XIX век
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         13-14,5 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 39-41 см, суки 38-39 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         13-14 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Звонко лаять по поводу и без – одно из любимых развлечений кокер-спаниелей, поэтому обзаводитесь берушами или тренируйте собственные терпение и выдержку.
+        </li>
+        <li>
+         Английские кокеры не жалуют незнакомцев, но и сильной агрессии по отношению к ним не испытывают и уж точно никого не укусят, так что для опытного домушника вынести ценные вещи из квартиры, в которой обитает «англичанин», – дело нескольких минут.
+        </li>
+        <li>
+         Правильно воспитанные взрослые животные очень аккуратны в быту: не портят мебель и обувь, не рвут обои, не воруют хозяйские вкусняшки и сами просятся в туалет.
+        </li>
+        <li>
+         Главный дефект породы – врожденная нервозность, поэтому в ходе воспитания собаки легко перегнуть палку, поселив в ней чувство неуверенности и собственной несостоятельности.
+        </li>
+        <li>
+         Как и их американские родственники, английские кокер-спаниели не выносят длительного одиночества и очень переживают, если их лишают человеческого общества.
+        </li>
+        <li>
+         Порода отличается феноменальным чутьем и сильным охотничьим инстинктом, благодаря чему ее представителей часто привлекают к поиску наркотиков и других психотропных веществ.
+        </li>
+        <li>
+         Без разницы, живет ли английский кокер-спаниель в квартире или коротает дни в дачном вольере – выгуливать собаку дважды в день, нагружая ее дополнительными физическими упражнениями, – ваша прямая обязанность. В противном случае готовьтесь к «чудесному» превращению домашнего любимца в ленивое, истеричное и очень толстое создание.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Английский кокер-спаниель" data-original="/upload/iblock/234/234191ec870af9dee40a5133ed518bce.jpg">
+          <noscript data-alt="Английский кокер-спаниель" data-original="/upload/iblock/234/234191ec870af9dee40a5133ed518bce.jpg">
+           <img alt="Английский кокер-спаниель" src="/upload/iblock/234/234191ec870af9dee40a5133ed518bce.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Английский кокер-спаниель
+          </strong>
+          – спортсмен, заядлый охотник и неутомимый искатель приключений, смотрящий на мир сквозь розовые очки. Это с ним вы начнете находить прелесть в прогулках в любую погоду, приобретете первичные грумерские навыки и начнете поглощать буржуйских рябчиков на завтрак, обед и ужин (если, конечно, серьезно подойдете к вопросу натаскивания). А еще с кокер-спаниелем просто весело, потому что этот проказник неистощим на всевозможные выдумки и всегда предпочтет живое общение пассивному лежанию на диване.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Ниже среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошие (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Английский кокер-спаниель основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/angliyskiy-koker-spaniel/razmeri-porodi/">
+         размеры английского кокер-спаниеля
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы английский кокер-спаниель
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Английский кокер-спаниель" data-fancybox="gallery" href="/upload/iblock/14b/14b042d73c29da2da7106512bc5a944c.jpg" title="Английский кокер-спаниель">
+          <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/14b/412_2150_1/14b042d73c29da2da7106512bc5a944c.jpg">
+           <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/14b/412_2150_1/14b042d73c29da2da7106512bc5a944c.jpg">
+            <img alt="Английский кокер-спаниель" class="article_pic" height="515" src="/upload/resize_cache/iblock/14b/412_2150_1/14b042d73c29da2da7106512bc5a944c.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английский кокер-спаниель
+         </div>
+        </div>
+        <p>
+         Невзирая на то, что официальная история породы начинается с XIX века, жители Великобритании познакомились с ее представителями гораздо раньше. Ну а если точнее, то все английские кокеры произошли от спаниелей, обитавших на берегах Туманного Альбиона с незапамятных времен. Самих же спаниелей ученые причислили к родственникам древних зольных собак, сопровождавших человека в эпоху бронзового века. Хотя отдельные специалисты до сих считают родиной животных средиземноморское побережье, приводя в качестве доказательства старофранцузское название породы «espaigneul», то есть дословно – испанская собака. Впрочем, как бы то ни было, предки кокеров в Англии прижились и даже начали участвовать в экспериментах по скрещиванию, что привело к расслоению этого собачьего племени.
+        </p>
+        <p>
+         От природы все спаниели – неплохие преследователи пернатой дичи. Однако в XIX веке охотничьи качества собак подверглись масштабному «апгрейду» со стороны заводчиков, в результате чего род спаниелей распался на два отличных друг от друга семейства. Крупные особи, так называемые филд-спаниели, чей вес превышал 11 кг, начали конкурировать со своими более легковесными собратьями – предками сегодняшних кокеров. Кстати, сами британские эсквайры предпочитали ходить на пернатую дичь с более массивными собаками, оставляя кокер-спаниелям охоту на вальдшнепов, которая и дала животным путевку в жизнь.
+        </p>
+        <p>
+         1893-й – год официального признания породы английский кокер-спаниель и ее окончательного отделения от клана филд-спаниелей. Первое время вес собак строго регламентировался стандартом, что несколько тормозило их разведение. Но когда ограничения были сняты, британские питомники смогли наверстать упущенное буквально за несколько лет. В Россию порода завозилась несколько раз, но бурного восторга как у заводчиков, так и у обывателей не вызвала. В результате полноценно разводить английских кокер-спаниелей в нашей стране начали с большим опозданием, примерно с середины 70-х.
+        </p>
+        <p class="legenda">
+         Любопытный факт: британские заводчики утверждают, что слово «кокер» в названии породы является сокращенной формой английского «woodcock» – вальдшнеп.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/757/757ced77649e8b024522cbe801c827a0.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/757/512_342_2/757ced77649e8b024522cbe801c827a0.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/757/512_342_2/757ced77649e8b024522cbe801c827a0.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/757/512_342_2/757ced77649e8b024522cbe801c827a0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1a8/1a878066bde9157298fb84a9933c22bd.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/1a8/512_342_2/1a878066bde9157298fb84a9933c22bd.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/1a8/512_342_2/1a878066bde9157298fb84a9933c22bd.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/1a8/512_342_2/1a878066bde9157298fb84a9933c22bd.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2>
+         Видео: Английский кокер-спаниель
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="ltCX2opsURw">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность английского кокер-спаниеля
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок английского кокер-спаниеля" data-fancybox="gallery" href="/upload/iblock/a12/a126f35c1c3081c779d65ee6288c1995.jpg" title="Щенок английского кокер-спаниеля">
+          <div class="lazy-load" data-alt="Щенок английского кокер-спаниеля" data-class="article_pic" data-original="/upload/resize_cache/iblock/a12/412_2150_1/a126f35c1c3081c779d65ee6288c1995.jpg">
+           <noscript data-alt="Щенок английского кокер-спаниеля" data-class="article_pic" data-original="/upload/resize_cache/iblock/a12/412_2150_1/a126f35c1c3081c779d65ee6288c1995.jpg">
+            <img alt="Щенок английского кокер-спаниеля" class="article_pic" height="549" src="/upload/resize_cache/iblock/a12/412_2150_1/a126f35c1c3081c779d65ee6288c1995.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок английского кокер-спаниеля
+         </div>
+        </div>
+        <p>
+         Хоть внешне английский кокер и уступает своему гламурному
+         <a class="ph" href="/dog/amerikanskiy-koker-spaniel/">
+          американскому
+         </a>
+         «кузену», бедным родственником на его фоне он не выглядит. В целом «англичане» крупнее «американцев» (средний вес взрослого кобеля – 13-14,5 кг) и на сантиметр-другой выше их в холке. При этом у них вполне гармоничное телосложение. Особенно грациозно собака смотрится в движении и совсем неважно, несется ли она по полю за добычей или же просто пытается поймать фрисби-диск.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         У английского кокер-спаниеля нормальный, не растянутый в ширину и умеренно короткий череп. Морда пропорциональная, квадратная, с рельефным стопом.
+        </p>
+        <h3>
+         Челюсти
+        </h3>
+        <p>
+         Массивные, с классическим типом прикуса («ножницы»).
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Исключительное чутье английских кокер-спаниелей обеспечивается за счет мясистой мочки носа с широкими, распахнутыми ноздрями.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Большие, без заметной выпуклости, темно-карего или карего окрасов. Для собак с шоколадной шерстью типичны ореховые оттенки радужки.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Длинные, овальные, низко посаженные. Покрыты мягким, шелковистым волосом. Тип ушного полотна – висячий.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Шея правильного английского кокера должна быть не очень длинной, крепкой, мускулистой и без складок.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Мордочка английского кокер-спаниеля" data-fancybox="gallery" href="/upload/iblock/268/268a8f8985566db1e39c2aa4944205ff.jpg" title="Мордочка английского кокер-спаниеля">
+          <div class="lazy-load" data-alt="Мордочка английского кокер-спаниеля" data-class="article_pic" data-original="/upload/resize_cache/iblock/268/1024_2150_1/268a8f8985566db1e39c2aa4944205ff.jpg">
+           <noscript data-alt="Мордочка английского кокер-спаниеля" data-class="article_pic" data-original="/upload/resize_cache/iblock/268/1024_2150_1/268a8f8985566db1e39c2aa4944205ff.jpg">
+            <img alt="Мордочка английского кокер-спаниеля" class="article_pic" src="/upload/resize_cache/iblock/268/1024_2150_1/268a8f8985566db1e39c2aa4944205ff.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мордочка английского кокер-спаниеля
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         У чистокровных представителей породы крепкое туловище компактного размера. Спина английского кокер-спаниеля прямая, без намека на провислость. Круп массивный, но короткий. Грудь в меру глубокая, просторная, но без заметной выпуклости и бочкообразности.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Отличные ребята" data-fancybox="gallery" href="/upload/iblock/c8a/c8a70df6dc0172de003e86bd181f215a.jpg" title="Отличные ребята">
+          <div class="lazy-load" data-alt="Отличные ребята" data-class="article_pic" data-original="/upload/resize_cache/iblock/c8a/412_2150_1/c8a70df6dc0172de003e86bd181f215a.jpg">
+           <noscript data-alt="Отличные ребята" data-class="article_pic" data-original="/upload/resize_cache/iblock/c8a/412_2150_1/c8a70df6dc0172de003e86bd181f215a.jpg">
+            <img alt="Отличные ребята" class="article_pic" height="327" src="/upload/resize_cache/iblock/c8a/412_2150_1/c8a70df6dc0172de003e86bd181f215a.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Отличные ребята
+         </div>
+        </div>
+        <p>
+         Идеальным вариантом считаются крепкие, прямые и не чрезмерно вытянутые ноги. Плечи и колени у этой породы хорошо согнутые, что делает движения собаки более свободными, а вымах передних конечностей – большим. Упругий толчок английскому кокеру обеспечивают хорошие углы сочленений плюсны и скакательного сустава. Лапы у животного округлые, с плотно примыкающими друг к другу пальцами и упругими подушечками.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвост у представителей породы английский кокер-спаниель традиционно купируется. Но поскольку в ряде стран данная процедура запрещена, на выставках встречаются особи, никогда ей не подвергавшиеся. Естественная длина хвоста собаки – до скакательных суставов, посадка – заметно ниже уровня спины, форма – утолщенная у основания и сужающаяся по мере приближения к кончику. Купированный хвост не должен быть слишком куцым, что помешает «англичанину» четко выражать собственные эмоции и, как следствие, существенно ухудшит его охотничьи показатели.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Прилегающая, очень мягкая, не вьющаяся и не волнистая. На передних и задних ногах, животе и в области паха шерсть более обильная, с небольшой волной. Присутствуют очесы.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок английского кокер-спаниеля черно-белого окраса" data-fancybox="gallery" href="/upload/iblock/b9c/b9ca75d5675a0f5181322cf396a65f67.jpg" title="Щенок английского кокер-спаниеля черно-белого окраса">
+          <div class="lazy-load" data-alt="Щенок английского кокер-спаниеля черно-белого окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/b9c/412_2150_1/b9ca75d5675a0f5181322cf396a65f67.jpg">
+           <noscript data-alt="Щенок английского кокер-спаниеля черно-белого окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/b9c/412_2150_1/b9ca75d5675a0f5181322cf396a65f67.jpg">
+            <img alt="Щенок английского кокер-спаниеля черно-белого окраса" class="article_pic" height="522" src="/upload/resize_cache/iblock/b9c/412_2150_1/b9ca75d5675a0f5181322cf396a65f67.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок английского кокер-спаниеля черно-белого окраса
+         </div>
+        </div>
+        <p>
+         Стандартом FCI за английскими кокер-спаниелями закреплено право на одноцветные, пятнистые, триколорные и крапчатые типы окрасов.
+        </p>
+        <p>
+         Сплошные (одноцветные):
+        </p>
+        <ul>
+         <li>
+          золотистый;
+         </li>
+         <li>
+          черный;
+         </li>
+         <li>
+          красный;
+         </li>
+         <li>
+          шоколадный;
+         </li>
+         <li>
+          печеночный с подпалинами;
+         </li>
+         <li>
+          черный с подпалинами.
+         </li>
+        </ul>
+        <p>
+         Пятнистые:
+        </p>
+        <ul>
+         <li>
+          палевый с белым;
+         </li>
+         <li>
+          рыжий с белым;
+         </li>
+         <li>
+          печеночный с белым;
+         </li>
+         <li>
+          черный с белым.
+         </li>
+        </ul>
+        <p>
+         Триколорные:
+        </p>
+        <ul>
+         <li>
+          черно-белый с подпалинами;
+         </li>
+         <li>
+          печеночно-белый с подпалом.
+         </li>
+        </ul>
+        <p>
+         Крапчатые:
+        </p>
+        <ul>
+         <li>
+          палевый роан;
+         </li>
+         <li>
+          рыжий роан;
+         </li>
+         <li>
+          голубой роан;
+         </li>
+         <li>
+          печеночный роан;
+         </li>
+         <li>
+          печеночный роан с подпалинами;
+         </li>
+         <li>
+          голубой роан с подпалинами.
+         </li>
+        </ul>
+        <h3>
+         Дефекты и дисквалифицирующие пороки
+        </h3>
+        <p>
+         Поводов для снижения оценки выставочным кокер-спаниелям – масса, начиная от кудрявой шерсти и заканчивая короткой шеей. К недостаткам, исключающим вероятность попадания животного в «лигу чемпионов», относят также изуродованную прогибом или же горбатую спину, коровий постав конечностей и белые «заплаты» на груди и горле у особей с моноокрасом.
+        </p>
+        <p>
+         Выбыть из соревнований на этапе отбора английский кокер может только в том случае, если у него будут выявлены отклонения прикуса, розовая мочка, депигментированные губы, радужки желтоватого оттенка и крипторхизм. Агрессивным особям и собакам, передвигающимся иноходью, на выставках тоже делать нечего.
+        </p>
+        <h2>
+         Фото английского кокер-спаниеля
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/704/7045c3abdf45f2a158a7913f69fd7f40.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/704/380_264_2/7045c3abdf45f2a158a7913f69fd7f40.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/704/380_264_2/7045c3abdf45f2a158a7913f69fd7f40.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/704/380_264_2/7045c3abdf45f2a158a7913f69fd7f40.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f99/f990d6862561d16d639de9d738fe3450.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/f99/380_264_2/f990d6862561d16d639de9d738fe3450.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/f99/380_264_2/f990d6862561d16d639de9d738fe3450.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/f99/380_264_2/f990d6862561d16d639de9d738fe3450.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/893/893785cea24917970537ec2182f84dd8.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/893/380_264_2/893785cea24917970537ec2182f84dd8.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/893/380_264_2/893785cea24917970537ec2182f84dd8.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/893/380_264_2/893785cea24917970537ec2182f84dd8.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/242/242dc1795564711c69c92faa312d7a83.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/242/380_264_2/242dc1795564711c69c92faa312d7a83.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/242/380_264_2/242dc1795564711c69c92faa312d7a83.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/242/380_264_2/242dc1795564711c69c92faa312d7a83.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/01a/01a616bc77a94fa5d04f64ca34514d28.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/01a/380_264_2/01a616bc77a94fa5d04f64ca34514d28.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/01a/380_264_2/01a616bc77a94fa5d04f64ca34514d28.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/01a/380_264_2/01a616bc77a94fa5d04f64ca34514d28.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9b4/9b4e2069347b5cb68007f49ac4139712.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/9b4/380_264_2/9b4e2069347b5cb68007f49ac4139712.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/9b4/380_264_2/9b4e2069347b5cb68007f49ac4139712.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/9b4/380_264_2/9b4e2069347b5cb68007f49ac4139712.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/592/592fb591ddac24e53f5e100f7ac80048.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/592/380_264_2/592fb591ddac24e53f5e100f7ac80048.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/592/380_264_2/592fb591ddac24e53f5e100f7ac80048.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/592/380_264_2/592fb591ddac24e53f5e100f7ac80048.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/215/2151e5c5d4dd13c9c725b31387a6796c.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/215/380_264_2/2151e5c5d4dd13c9c725b31387a6796c.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/215/380_264_2/2151e5c5d4dd13c9c725b31387a6796c.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/215/380_264_2/2151e5c5d4dd13c9c725b31387a6796c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/23e/23e78ea1fb5fb3066443b83a514cd9c2.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/23e/380_264_2/23e78ea1fb5fb3066443b83a514cd9c2.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/23e/380_264_2/23e78ea1fb5fb3066443b83a514cd9c2.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/23e/380_264_2/23e78ea1fb5fb3066443b83a514cd9c2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер английского кокер-спаниеля
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Ребенок играет с английскими кокер-спаниелями" data-fancybox="gallery" href="/upload/iblock/46f/46fa9644933a36c0e4fbb78abe31bb30.jpg" title="Ребенок играет с английскими кокер-спаниелями">
+          <div class="lazy-load" data-alt="Ребенок играет с английскими кокер-спаниелями" data-class="article_pic" data-original="/upload/resize_cache/iblock/46f/412_2150_1/46fa9644933a36c0e4fbb78abe31bb30.jpg">
+           <noscript data-alt="Ребенок играет с английскими кокер-спаниелями" data-class="article_pic" data-original="/upload/resize_cache/iblock/46f/412_2150_1/46fa9644933a36c0e4fbb78abe31bb30.jpg">
+            <img alt="Ребенок играет с английскими кокер-спаниелями" class="article_pic" height="618" src="/upload/resize_cache/iblock/46f/412_2150_1/46fa9644933a36c0e4fbb78abe31bb30.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Ребенок играет с английскими кокер-спаниелями
+         </div>
+        </div>
+        <p>
+         Английские кокер-спаниели – любознательные, знающие себе цену шустрики с дружелюбным, но отнюдь не слабым характером. Хозяина они будут ценить и слушаться по умолчанию, а вот остальным домочадцам манипулировать собой не позволят. Более того, при попытках принудить питомца к чему-либо, готовьтесь наблюдать упрямство и умелую имитацию непонимания. Если вести речь об уважении, то в первую очередь собака испытывает его по отношению к владельцу, а во вторую – к самой себе. Дети в этой иерархической пирамиде занимают предпоследнюю ступень. Да, «англичане» с ними с удовольствием играют, но не ждите от собаки ангельского терпения и железной выдержки, когда ребенок начнет причинять ей серьезный дискомфорт или боль.
+        </p>
+        <p>
+         Большинство кокеров миролюбивы и уживчивы (исключения тоже возможны), поэтому подселять к ним кошек и других собак вполне допустимо. А вот в случае с птичками не все так гладко. Оставленный наедине с канарейками, попугаями или цыплятами питомец вряд ли справится с соблазном отточить на них свои охотничьи приемы. Зов предков – ничего не поделаешь. В играх «англичане» – этакие Нэнси Дрю в собачьем обличье. Обладая превосходным нюхом (американские кокеры отдыхают) и отличным зрением, они обожают играть в сыщиков и отыскивать, казалось бы, навсегда потерянные предметы. Во время выгула большинство особей включает режим «экскаватора» и начинает вести раскопки на клумбах и песчаных горках, что со стороны смотрится весьма потешно.
+        </p>
+        <p>
+         Что касается темперамента, то внутри каждого английского кокер-спаниеля живет неугомонный тусовщик, презирающий размеренность и вальяжность. Эти длинноухие живчики искренне рады любой компании. Причем чем больше в ней участников, тем лучше, потому что поиграть на публику песики ну очень любят. Прирожденные тактики и психологи, «англичане» всегда найдут способ протиснуться даже в не самый дружелюбный собачий коллектив и закрепиться в нем на позиции лохматого массовика-затейника.
+        </p>
+        <p>
+         В последнее время все больше заводчиков отмечает у английских кокеров любовь к путешествиям на различных видах транспорта. Так, например, воспользовавшись рассеянностью хозяина, во время прогулки они запросто могут запрыгнуть в маршрутный автобус и укатить в неизвестном направлении. Если у вас имеется собственное авто, кокер-спаниель будет счастлив протестировать его скорость, развалившись на заднем сиденье и подставив морду ветру в открытое окно.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Счастливые лапки" data-fancybox="gallery" href="/upload/iblock/393/393726fbd6064bcc9c1c1463d01c2320.jpg" title="Счастливые лапки">
+          <div class="lazy-load" data-alt="Счастливые лапки" data-class="article_pic" data-original="/upload/resize_cache/iblock/393/1024_2150_1/393726fbd6064bcc9c1c1463d01c2320.jpg">
+           <noscript data-alt="Счастливые лапки" data-class="article_pic" data-original="/upload/resize_cache/iblock/393/1024_2150_1/393726fbd6064bcc9c1c1463d01c2320.jpg">
+            <img alt="Счастливые лапки" class="article_pic" src="/upload/resize_cache/iblock/393/1024_2150_1/393726fbd6064bcc9c1c1463d01c2320.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Счастливые лапки
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Заставить английского кокер-спаниеля учиться под давлением нереально, но заинтересовать его новым, необычным видом деятельности очень легко. Кокеры просто повернуты на двигательной активности, поэтому лучше всего постигают уроки, сопряженные с разумными физическими нагрузками, преподносимые в игровой форме. С интеллектом у этой породы тоже все в порядке, так что на освоение базовых командных техник много времени не уйдет, но занятия не должны быть длинными и монотонно повторяющимися – так собака быстро потеряет к ним интерес.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Хозяин, возьми поводок" data-fancybox="gallery" href="/upload/iblock/6a6/6a622567b5ff3182e049f64461ae7a20.jpg" title="Хозяин, возьми поводок">
+          <div class="lazy-load" data-alt="Хозяин, возьми поводок" data-class="article_pic" data-original="/upload/resize_cache/iblock/6a6/412_2150_1/6a622567b5ff3182e049f64461ae7a20.jpg">
+           <noscript data-alt="Хозяин, возьми поводок" data-class="article_pic" data-original="/upload/resize_cache/iblock/6a6/412_2150_1/6a622567b5ff3182e049f64461ae7a20.jpg">
+            <img alt="Хозяин, возьми поводок" class="article_pic" height="618" src="/upload/resize_cache/iblock/6a6/412_2150_1/6a622567b5ff3182e049f64461ae7a20.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Хозяин, возьми поводок
+         </div>
+        </div>
+        <p>
+         Воспитание английского кокера начинается с его социализации. В 2-3 месяца малыша нужно учить соблюдать субординацию и нормы этикета, а также преодолевать страх перед незнакомцами. Обладая гурманскими наклонностями и острым нюхом, маленькие английские кокер-спаниели любят наблюдать за тем, как хозяин ест, умудряясь одновременно разыгрывать роль голодного страдальца. Не ведитесь на подобные шоу и ни в коем случае не угощайте притворщика пищей с собственного стола. Каждая такая уступка снижает ваш авторитет в глазах собаки, которая быстро начинает понимать, каким образом надавить, чтобы получить желаемое. Крайностей тоже лучше избегать. Авторитарный стиль воспитания для щенка столь же вреден, как и чрезмерное сюсюканье. Обучайте любимца базовым командам ненавязчиво, но настойчиво и систематически.
+        </p>
+        <p>
+         Невзирая на мимишную внешность, английские кокер-спаниели не чужды лидерских замашек. Обычно волна самостоятельности накрывает щенков возрасте 3-4 месяцев. В этот период собака пытается занять позицию главы дома, сместив с нее хозяина. Если не хотите оказаться под пятой у лохматого доминанта, придется ежечасно доказывать ему собственную состоятельность. Способы могут быть самые разные. В частности, во время прогулок лучше «гасить» эмоциональные всплески питомца. Почаще используйте запреты в повседневном обиходе, а также не позволяйте вышагивающему на поводке щенку тащить вас за собой на буксире.
+        </p>
+        <p>
+         Примерять к английскому кокеру ошейник начинают с 3-х месяцев. Первый раз надевать «аксессуар» лучше в процессе игры, чтобы животное его не заметило. Можно проделать эту процедуру перед кормлением: еда отвлечет собаку от неприятных для нее ощущений. Поводок на первых порах стоит выбрать подлиннее, постепенно укорачивая его в процессе привыкания. Если щенку исполнилось 8 месяцев, можно переходить к ОКД (Общему курсу дрессировки), который для кокер-спаниелей считается обязательной программой. Даже если вы не собираетесь водить питомца на охоту, подчиняться вашим требованиям он обязан.
+        </p>
+        <h2 id="gl5">
+         Натаска английского кокер-спаниеля
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Охота с английским кокер-спаниелем" data-fancybox="gallery" href="/upload/iblock/3a7/3a73505527db31f90171393673dbed5b.jpg" title="Охота с английским кокер-спаниелем">
+          <div class="lazy-load" data-alt="Охота с английским кокер-спаниелем" data-class="article_pic" data-original="/upload/resize_cache/iblock/3a7/412_2150_1/3a73505527db31f90171393673dbed5b.jpg">
+           <noscript data-alt="Охота с английским кокер-спаниелем" data-class="article_pic" data-original="/upload/resize_cache/iblock/3a7/412_2150_1/3a73505527db31f90171393673dbed5b.jpg">
+            <img alt="Охота с английским кокер-спаниелем" class="article_pic" height="548" src="/upload/resize_cache/iblock/3a7/412_2150_1/3a73505527db31f90171393673dbed5b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Охота с английским кокер-спаниелем
+         </div>
+        </div>
+        <p>
+         В современных условиях «англичане» плавно меняют квалификацию, все больше превращаясь в спортивных собак и резвых компаньонов. Однако охотничьи инстинкты породы от такого расклада не страдают. Работать английские кокер-спаниели могут как с болотной, так и с полевой или даже с боровой дичью. Однако, учитывая то, что каждый вид птицы обладает собственным, различным по интенсивности запахом, натаскать собаку сразу и на бекаса, и на тетерева вряд ли получится. Опытные владельцы рекомендуют начинать знакомить питомца с охотой с болотной птицы. По наблюдениям, пес, ловко управляющийся с дупелями, в работе с перепелами проявляет себя не хуже. В то же время собаки, привыкшие поднимать на крыло исключительно полевых обитателей, на заболоченных территориях тормозят и теряются.
+        </p>
+        <p>
+         Натаскивать английского кокер-спаниеля начинают с раннего возраста и в игровой форме. Например, можно привязать птичье крылышко на бечевку и подергать им перед носом 3-месячного щенка. Удивленное животное попытается тут же схватить оживший пучок перьев, и ваша задача – позволить ему это проделать. Только не разрешайте щенку жевать «добычу», поскольку впоследствии эта привычка будет перенесена уже на настоящие охотничьи трофеи. В 4 месяца малышей натаскивают на поиск и подношение предметов. Собаке дают понюхать птичью тушку, после чего прячут ее в укромном месте и предлагают отыскать пропажу. На первых порах можно использовать подсказки – жест рукой в направлении предмета или намеренно созданный сквозняк, разносящий запах дичи по квартире.
+        </p>
+        <p>
+         Команды «Ко мне!» и «Рядом!» у охотничьих собак должны быть отработаны до автоматизма, поэтому ОКД, пройденный перед натаской, английскому кокеру только на пользу. Еще один важный навык – равнодушие к выстрелам, которое «англичанам» дается сложнее всего. Приучать питомца к резким звукам и запаху пороха начинают в полевых условиях. Сначала выстрелы производятся в отдалении (оптимальное расстояние – 150 м) и лишь после того, как собака привыкнет к шуму, промежуток между стрелком и животным плавно сокращают.
+        </p>
+        <p class="legenda">
+         Важно: чтобы выработать у английского кокер-спаниеля четкое понимание ваших требований и исполнительность, используйте только одну запретительную команду из нескольких возможных. Не дезориентируйте собаку словом «Фу!», если до этого она слышала от вас только «Нельзя!».
+        </p>
+        <p>
+         Начинать знакомство с болотной дичью лучше с дупелей, которые летают достаточно низко и тяжело. Болотные курочки тоже неплохой объект для малоопытного кокера. В боровой же охоте оптимальной целью станет тетеревиный выводок. К работе с водоплавающими английских кокер-спаниелей, как правило, не привлекают, но при желании натаскать питомца на этот вид дичи тоже возможно. Дождитесь середины июля, когда утята подрастут, но не полностью оперятся, и начинайте тренировки. Ну и вариант для самых выдержанных – охота на зайца. Почему именно для выдержанных? Потому что спаниели обожают бесцельно гонять ушастых, в 99% случаев оставляя хозяина без добычи.
+        </p>
+        <h2 id="gl6">
+         Содержание и уход
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Груминг английского кокер-спаниеля" data-fancybox="gallery" href="/upload/iblock/5bb/5bb80118632646a7c666928c46373a77.jpg" title="Груминг английского кокер-спаниеля">
+          <div class="lazy-load" data-alt="Груминг английского кокер-спаниеля" data-class="article_pic" data-original="/upload/resize_cache/iblock/5bb/412_2150_1/5bb80118632646a7c666928c46373a77.jpg">
+           <noscript data-alt="Груминг английского кокер-спаниеля" data-class="article_pic" data-original="/upload/resize_cache/iblock/5bb/412_2150_1/5bb80118632646a7c666928c46373a77.jpg">
+            <img alt="Груминг английского кокер-спаниеля" class="article_pic" height="274" src="/upload/resize_cache/iblock/5bb/412_2150_1/5bb80118632646a7c666928c46373a77.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Груминг английского кокер-спаниеля
+         </div>
+        </div>
+        <p>
+         Комфортнее всего английские кокер-спаниели чувствуют себя в частных загородных домиках, где у них всегда будет возможность погоняться за бабочками и покопаться в песочке. Содержание в квартире тоже возможно, но при регулярном и продолжительном выгуле. Английские кокеры – это не просто охотники, а игривые и активные шалуны, которым для сохранения психического равновесия необходимо вволю побегать и подурачиться.
+        </p>
+        <p>
+         Принимать участие во всех проделках питомца во время выгула совсем не обязательно. Просто спустите его с поводка в малолюдном и безопасном месте и позвольте нарезать круги по территории. Впрочем, если вы подбросите своему подопечному фрисби или мячик, он с радостью поддержит вашу инициативу и включится в игру. Выгуливать «англичанина» полагается дважды в день, причем каждый из таких променадов должен длиться не менее часа. Большая ошибка выводить собаку на улицу только для того, чтобы та справила нужду. В конце концов отсутствие свободного времени – проблема хозяина, а не кокер-спаниеля.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Уход за английским кокер-спаниелем не самый сложный, но определенное внимание животному уделить потребуется. Обязательны: стрижка когтей, чистка глаз и зубов (все по той же схеме, что и для других пород). В вопросе купания мнения заводчиков разделились. Кто-то рекомендует мыть кокеров как можно реже, потому что слишком частые плескания в ванной провоцируют у питомцев перхоть. Противники такого метода выступают за регулярные «банные дни» (раз в 7-10 дней) и использование ветеринарных шампуней, сохраняющих структуру шерстного покрова и стимулирующих его рост.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Черный английский кокер-спаниель" data-fancybox="gallery" href="/upload/iblock/700/700f0980d3fd621bd8bbbda6c7eb2d91.jpg" title="Черный английский кокер-спаниель">
+          <div class="lazy-load" data-alt="Черный английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/700/412_2150_1/700f0980d3fd621bd8bbbda6c7eb2d91.jpg">
+           <noscript data-alt="Черный английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/700/412_2150_1/700f0980d3fd621bd8bbbda6c7eb2d91.jpg">
+            <img alt="Черный английский кокер-спаниель" class="article_pic" height="274" src="/upload/resize_cache/iblock/700/412_2150_1/700f0980d3fd621bd8bbbda6c7eb2d91.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Черный английский кокер-спаниель
+         </div>
+        </div>
+        <p>
+         Расчесывание – ежедневный ритуал в жизни английского кокер-спаниеля, так что внесите в список обязательных покупок мягкую и жесткую щетки, пуходерку, колтунорез и металлический гребень с длинными зубьями. Владельцам, планирующим экономить на профессиональном груминге, сюда стоит добавить тримминговочные перчатку и расческу, а также парикмахерские ножницы.
+        </p>
+        <p>
+         Висячие уши английского кокер-спаниеля требуют повышенного внимания. Например, когда животное ест, желательно стянуть их резинкой на затылке. Так уши будут меньше пачкаться и отвлекать собаку. Сами кокеры подобные манипуляции встречают без восторга, но со временем привыкают реагировать на них адекватно. Плохой запах из ушей, на который частенько жалуются неопытные владельцы кокер-спаниелей, – результат недостаточного ухода. В ушной воронке спаниелей очень много волосков, перекрывающих поступление воздуха внутрь, а также примагничивающих к себе загрязнения и серные выделения, которые и являются источником характерного «амбре». Решается проблема выщипыванием шерсти в ушном проходе и удалением скопившихся в нем загрязнений при помощи ветеринарного лосьона и спонжа.
+        </p>
+        <h3>
+         Стрижка английского кокер-спаниеля
+        </h3>
+        <p>
+         Существует несколько основных техник обработки шерсти английских кокер-спаниелей, которые при необходимости можно комбинировать:
+        </p>
+        <ul>
+         <li>
+          стриппинг (щипка шерсти с помощью специального ножа; идеальная техника для обработки головы и корпуса питомца);
+         </li>
+         <li>
+          плакинг (выщипывание волоса пальцами);
+         </li>
+         <li>
+          клиппервек (ультракороткая стрижка машинкой);
+         </li>
+         <li>
+          флэтвек (обычная стрижка машинкой);
+         </li>
+         <li>
+          блендинг (стрижка ножницами).
+         </li>
+        </ul>
+        <p>
+         Подстригая английского кокер-спаниеля самостоятельно, избегайте кардинальной смены имиджа животного. На родине породы ее представителей стригут очень бережно, поэтому вышедший из кабинета грумера обитатель Туманного Альбиона выглядит так, как будто он вообще никогда в него не заходил. Оптимальный вариант стрижки – пройтись по голове собаки тримминговочным ножом, произвести стриппинг туловища и чуть укоротить очесы на ногах. Шерсть между пальцами тоже подлежит выстриганию.
+        </p>
+        <h3>
+         Английские кокер-спаниели и вода
+        </h3>
+        <p>
+         Несмотря на то, что порода английский кокер-спаниель выводилась в основном для охоты на болотную дичь и крайне редко работала с водоплавающей птицей, тяга у ее представителей к воде просто фантастическая. При отсутствии поблизости нормального водоема кокер спокойно искупается в луже, отряхнется рядом с хозяином и будет искренне недоумевать, почему у последнего такая кислая мина. Не поленитесь в теплое время года сводить питомца на речной пляж. Во-первых, потому что купание – это дополнительная физическая нагрузка, которой комнатным кокерам часто не достает. А во-вторых, потому что вода снимает у собак усталость и накопившийся за день стресс.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кокер-спаниель и еда" data-fancybox="gallery" href="/upload/iblock/ab1/ab18828abcea33045ff5fe8c05d82ff7.jpg" title="Кокер-спаниель и еда">
+          <div class="lazy-load" data-alt="Кокер-спаниель и еда" data-class="article_pic" data-original="/upload/resize_cache/iblock/ab1/412_2150_1/ab18828abcea33045ff5fe8c05d82ff7.jpg">
+           <noscript data-alt="Кокер-спаниель и еда" data-class="article_pic" data-original="/upload/resize_cache/iblock/ab1/412_2150_1/ab18828abcea33045ff5fe8c05d82ff7.jpg">
+            <img alt="Кокер-спаниель и еда" class="article_pic" height="275" src="/upload/resize_cache/iblock/ab1/412_2150_1/ab18828abcea33045ff5fe8c05d82ff7.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кокер-спаниель и еда
+         </div>
+        </div>
+        <p>
+         Большинство «англичан» не склонно к стихийному обжорству, но вполне способно докатиться до пищевой зависимости. И все потому что кокеры – отъявленные гурманы, имеющие собственные вкусовые пристрастия, которые хозяину необходимо контролировать. Помимо того, у собак мало и непродуктивно гуляющих, зато от души набивающих животы вкусняшками, быстро развивается ожирение, что значительно сокращает продолжительность их жизни. Если вы не задаетесь целью отправить питомца «за радугу», не поддавайтесь на его просящие взгляды и не закармливайте животное деликатесами.
+        </p>
+        <p>
+         Теперь о ежедневном меню. Мясо английским кокер-спаниелям дают в отварном или сыром виде из расчета – 50 г продукта на килограмм массы тела животного. Лучше всего подойдут жилистая баранина, говядина, птица (без костей). Субпродукты можно вводить в рацион только основательно промороженными. Так риск заразить собаку глистами и кишечными паразитами сводится к минимуму.
+        </p>
+        <p>
+         Запрещенные продукты:
+        </p>
+        <ul>
+         <li>
+          бобовые культуры;
+         </li>
+         <li>
+          картофель;
+         </li>
+         <li>
+          макароны, а также любые кондитерские и хлебобулочные изделия;
+         </li>
+         <li>
+          колбасная продукция;
+         </li>
+         <li>
+          кости;
+         </li>
+         <li>
+          брокколи;
+         </li>
+         <li>
+          томатный соус и блюда с ним.
+         </li>
+        </ul>
+        <p>
+         Дополнить меню английского спаниеля можно рисовой или гречневой кашами, кисломолочной продукцией, морской рыбкой и овощами в виде заправленной растительным маслом нарезки. Яйца собакам дают сваренными всмятку или же в виде омлета. А еще у кокеров самая настоящая страсть к фруктам, но поскольку большинство из них может спровоцировать у животного расстройство пищеварения, угощать его подобными вкусняшками стоит пореже. Или же, как вариант, используйте в качестве поощрительного лакомства сухофрукты и изюм. Раз в неделю предлагайте любимцу зубчик чеснока, работающий как натуральное противоглистное средство. Кроме того, в период с 3 до 7 месяцев, когда идет активное формирование скелета, в еду щенка рекомендуется подмешивать тертый мел либо 2-3 таблетки лактата кальция.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Счастливые лапки" data-fancybox="gallery" href="/upload/iblock/393/393726fbd6064bcc9c1c1463d01c2320.jpg" title="Счастливые лапки">
+           <div class="lazy-load" data-alt="Счастливые лапки" data-class="article_pic" data-original="/upload/resize_cache/iblock/393/512_342_2/393726fbd6064bcc9c1c1463d01c2320.jpg">
+            <noscript data-alt="Счастливые лапки" data-class="article_pic" data-original="/upload/resize_cache/iblock/393/512_342_2/393726fbd6064bcc9c1c1463d01c2320.jpg">
+             <img alt="Счастливые лапки" class="article_pic" src="/upload/resize_cache/iblock/393/512_342_2/393726fbd6064bcc9c1c1463d01c2320.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Счастливые лапки
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Хозяин, покидай мне палочку!" data-fancybox="gallery" href="/upload/iblock/e8e/e8e33045cd71013b71eb4b1d0d0b2a32.jpg" title="Хозяин, покидай мне палочку!">
+           <div class="lazy-load" data-alt="Хозяин, покидай мне палочку!" data-class="article_pic" data-original="/upload/resize_cache/iblock/e8e/512_342_2/e8e33045cd71013b71eb4b1d0d0b2a32.jpg">
+            <noscript data-alt="Хозяин, покидай мне палочку!" data-class="article_pic" data-original="/upload/resize_cache/iblock/e8e/512_342_2/e8e33045cd71013b71eb4b1d0d0b2a32.jpg">
+             <img alt="Хозяин, покидай мне палочку!" class="article_pic" src="/upload/resize_cache/iblock/e8e/512_342_2/e8e33045cd71013b71eb4b1d0d0b2a32.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Хозяин, покидай мне палочку!
+          </div>
+         </div>
+        </div>
+        <h2 id="gl7">
+         Здоровье и болезни английских кокер-спаниелей
+        </h2>
+        <p>
+         Средняя продолжительность жизни английского кокер-спаниеля – 10-14 лет, однако не всегда этот временной отрезок животное проходит в добром здравии.
+        </p>
+        <p>
+         Типичные заболевания породы:
+        </p>
+        <ul>
+         <li>
+          мочекаменная болезнь;
+         </li>
+         <li>
+          дисплазия тазобедренного сустава;
+         </li>
+         <li>
+          меланома;
+         </li>
+         <li>
+          отит;
+         </li>
+         <li>
+          глухота;
+         </li>
+         <li>
+          пищевая аллергия;
+         </li>
+         <li>
+          дистихиаз;
+         </li>
+         <li>
+          болезни глаз (конъюнктивит, заворот/выворот века, катаракта);
+         </li>
+         <li>
+          эпилепсия;
+         </li>
+         <li>
+          гидроцефалия;
+         </li>
+         <li>
+          гепатит;
+         </li>
+         <li>
+          атопия;
+         </li>
+         <li>
+          дископатия;
+         </li>
+         <li>
+          перианальная аденокарцинома.
+         </li>
+        </ul>
+        <p>
+         Психическое здоровье породы тоже не всегда бывает эталонным. Так, например, многие кокер-спаниели подвержены истерическим припадкам, которые лечат физическими нагрузками в сочетании с регулярным выгулом.
+        </p>
+        <h2 id="gl8">
+         Как выбрать щенка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок английского кокер-спаниеля с мамой" data-fancybox="gallery" href="/upload/iblock/f12/f124f9da81f9985c13d1d047be607401.jpg" title="Щенок английского кокер-спаниеля с мамой">
+          <div class="lazy-load" data-alt="Щенок английского кокер-спаниеля с мамой" data-class="article_pic" data-original="/upload/resize_cache/iblock/f12/412_2150_1/f124f9da81f9985c13d1d047be607401.jpg">
+           <noscript data-alt="Щенок английского кокер-спаниеля с мамой" data-class="article_pic" data-original="/upload/resize_cache/iblock/f12/412_2150_1/f124f9da81f9985c13d1d047be607401.jpg">
+            <img alt="Щенок английского кокер-спаниеля с мамой" class="article_pic" height="282" src="/upload/resize_cache/iblock/f12/412_2150_1/f124f9da81f9985c13d1d047be607401.jpg" width="411"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок английского кокер-спаниеля с мамой
+         </div>
+        </div>
+        <ul>
+         <li>
+          Чаще посещайте выставки собак, чтобы познакомиться с авторитетными заводчиками и их питомцами.
+         </li>
+         <li>
+          Если щенок покупается, как будущий охотник, удостоверьтесь, что у его папы и мамы имеются дипломы по полевой и болотной дичи. В большинстве случаев потомство наследует родительские таланты.
+         </li>
+         <li>
+          Суки английского кокер-спаниеля легче поддаются натаскиванию, чем кобели, но в работе хороши и те, и другие. Учитывайте этот факт, если собираетесь прививать животному охотничьи умения самостоятельно.
+         </li>
+         <li>
+          У заводчика, хвастающегося полевыми дипломами родителей щенка, стоит уточнить вид имеющегося документа. Замечательно, если собака имеет аттестат 1-й степени. Это дает надежду на то, что охотничьи способности у ее потомства будут выражены достаточно ярко. Диплом 3-й степени не самый большой повод для гордости.
+         </li>
+         <li>
+          Выбирать лучше бодрых, любопытных и игривых малышей. А вот от постоянно подающих голос английских кокеров лучше отказаться. Чрезмерная «разговорчивость» будущему охотнику ни к чему.
+         </li>
+         <li>
+          Тем, кто ищет дружелюбного домашнего питомца в квартиру, наоборот, стоит присмотреться к более флегматичным щенкам.
+         </li>
+        </ul>
+        <h2>
+         Фото щенков английского кокер-спаниеля
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4de/4de78654c04509ce984221e17af3fa9a.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/4de/380_264_2/4de78654c04509ce984221e17af3fa9a.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/4de/380_264_2/4de78654c04509ce984221e17af3fa9a.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/4de/380_264_2/4de78654c04509ce984221e17af3fa9a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8cd/8cd4f2f088ee4dda1587643b2ee471a9.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/8cd/380_264_2/8cd4f2f088ee4dda1587643b2ee471a9.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/8cd/380_264_2/8cd4f2f088ee4dda1587643b2ee471a9.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/8cd/380_264_2/8cd4f2f088ee4dda1587643b2ee471a9.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/60c/60c02523b856d834e158d9c2859b939c.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/60c/380_264_2/60c02523b856d834e158d9c2859b939c.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/60c/380_264_2/60c02523b856d834e158d9c2859b939c.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/60c/380_264_2/60c02523b856d834e158d9c2859b939c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8f7/8f7dec7cc3d9dc84c19076d4def21130.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/8f7/380_264_2/8f7dec7cc3d9dc84c19076d4def21130.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/8f7/380_264_2/8f7dec7cc3d9dc84c19076d4def21130.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/8f7/380_264_2/8f7dec7cc3d9dc84c19076d4def21130.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/0ac/0ac7b8d3a199c1559d7d240d42f518a6.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/0ac/380_264_2/0ac7b8d3a199c1559d7d240d42f518a6.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/0ac/380_264_2/0ac7b8d3a199c1559d7d240d42f518a6.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/0ac/380_264_2/0ac7b8d3a199c1559d7d240d42f518a6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/866/866a4405935ec7f1d481d02cbe7b6337.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/866/380_264_2/866a4405935ec7f1d481d02cbe7b6337.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/866/380_264_2/866a4405935ec7f1d481d02cbe7b6337.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/866/380_264_2/866a4405935ec7f1d481d02cbe7b6337.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/cd9/cd96fabbbad200a28e0902580f3f68bf.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd9/380_264_2/cd96fabbbad200a28e0902580f3f68bf.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd9/380_264_2/cd96fabbbad200a28e0902580f3f68bf.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/cd9/380_264_2/cd96fabbbad200a28e0902580f3f68bf.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e11/e118cfd647caff2268ef163f7bf7571e.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/e11/380_264_2/e118cfd647caff2268ef163f7bf7571e.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/e11/380_264_2/e118cfd647caff2268ef163f7bf7571e.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/e11/380_264_2/e118cfd647caff2268ef163f7bf7571e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c73/c7396adc63366d9058fa4986913a08e3.jpg" title="">
+           <div class="lazy-load" data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/c73/380_264_2/c7396adc63366d9058fa4986913a08e3.jpg">
+            <noscript data-alt="Английский кокер-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/c73/380_264_2/c7396adc63366d9058fa4986913a08e3.jpg">
+             <img alt="Английский кокер-спаниель" class="article_pic" src="/upload/resize_cache/iblock/c73/380_264_2/c7396adc63366d9058fa4986913a08e3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl9">
+         Сколько стоит английский кокер-спаниель
+        </h2>
+        <p>
+         Стоимость щенка английского кокер-спаниеля с метрикой РКФ варьируется от 20 000 до 25 000 рублей. Домашнего питомца с незначительными дефектами экстерьера и вполне чистой родословной можно приобрести за 12 000 - 18 000 руб. Плембрак и метисы обойдутся еще дешевле – в среднем от 4000 до 8000 рублей.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения английского кокер-спаниеля на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27653/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Мария Виноградова" data-original="/upload/resize_cache/main/aad/200_200_2/049xzkcdcxf9l5838xt7v2e7yutu675z.jpg">
+            <noscript data-alt="Мария Виноградова" data-original="/upload/resize_cache/main/aad/200_200_2/049xzkcdcxf9l5838xt7v2e7yutu675z.jpg">
+             <img alt="Мария Виноградова" src="/upload/resize_cache/main/aad/200_200_2/049xzkcdcxf9l5838xt7v2e7yutu675z.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/shchenok-i-tualet-doma-5471/">
+           Щенок и туалет дома
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте! Щенок Английский Кокер спаниель ,уже 5 месяцев ,скоро 5,. На улицу ходим,все дела делает даже по несколько раз за прогулку. Но дома писает где хочет вообще. Мы старались его приучивать к пеленке,но...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27653/">
+            Мария Виноградова
+           </a>
+          </span>
+          <span class="vopros-date">
+           2 месяца назад
+          </span>
+          <span class="vopros-smotr">
+           349 просмотров
+          </span>
+          <span class="vopros-otvet">
+           2 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27468/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Евгений Иванов" data-original="/upload/resize_cache/main/229/200_200_2/3t21v3e28gz03yi90doxk14emn8o8zvi.jpg">
+            <noscript data-alt="Евгений Иванов" data-original="/upload/resize_cache/main/229/200_200_2/3t21v3e28gz03yi90doxk14emn8o8zvi.jpg">
+             <img alt="Евгений Иванов" src="/upload/resize_cache/main/229/200_200_2/3t21v3e28gz03yi90doxk14emn8o8zvi.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/agressiya-u-kokera-5398/">
+           Агрессия у кокера
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте!у молодого кокера агрессия, находит себе место и не дает не кому подойти. Ложится то на кухне, то под вешалкой и тд. Кто сталкивался с такой ситуацией скажите пожалуйста вы с ней справлялись( собаке...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27468/">
+            Евгений Иванов
+           </a>
+          </span>
+          <span class="vopros-date">
+           4 месяца назад
+          </span>
+          <span class="vopros-smotr">
+           204 просмотра
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/26697/">
+          <div class="ava-med">
+           <div class="noava fill7">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/ishchem-dom-angliyskiy-koker-spaniel-4918/">
+           Ищем дом! Английский кокер спаниель!
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте!Срочно ищем дом чистокровной кокер спаниель,ей 6 лет.По семейным обстоятельствам, отдаём в добрые руки.Хвост не купирован.Не стерилизована,прививки все есть.Соответствующие документы есть, при запросе...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/26697/">
+            Алина  Белоусова
+           </a>
+          </span>
+          <span class="vopros-date">
+           8 месяцев назад
+          </span>
+          <span class="vopros-smotr">
+           341 просмотр
+          </span>
+          <span class="vopros-otvet">
+           2 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/26671/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Таня Маринец-Дейнеко" data-original="/upload/resize_cache/main/248/200_200_2/5jfv3b11p9pxz107yg64l4bc936wqyg2.jpg">
+            <noscript data-alt="Таня Маринец-Дейнеко" data-original="/upload/resize_cache/main/248/200_200_2/5jfv3b11p9pxz107yg64l4bc936wqyg2.jpg">
+             <img alt="Таня Маринец-Дейнеко" src="/upload/resize_cache/main/248/200_200_2/5jfv3b11p9pxz107yg64l4bc936wqyg2.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/opredelenie-porody-4907/">
+           Определение породы
+          </a>
+         </div>
+         <div class="forum-text">
+          Приветствую, купила собаку «Американский Кокер спаниель» ей сейчас 3 месяца. 
+после просмотра пород закрадывается ощущения что это смесь английского и американского, хочу услышать мнение со стороны
+Очень ласковая...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/26671/">
+            Таня Маринец-Дейнеко
+           </a>
+          </span>
+          <span class="vopros-date">
+           8 месяцев назад
+          </span>
+          <span class="vopros-smotr">
+           455 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/angliyskiy-koker-spaniel/forum/">
+        Перейти на
+        форум английского кокер-спаниеля
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Английский кокер-спаниель" src="/upload/iblock/ed9/ed93b033c39f22c5b594c0c80f34f8be.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/angliyskiy-koker-spaniel/">
+          Английский кокер-спаниель
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/angliyskiy-koker-spaniel/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-koker-spaniel/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-koker-spaniel/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-koker-spaniel/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-koker-spaniel/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-koker-spaniel/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/angliyskiy-fokskhaund/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Английский фоксхаунд" data-original="/upload/resize_cache/iblock/53b/100_100_1/ejm59vghub9n54e1bey60d6b4lr7cp8o.jpg">
+          <noscript data-alt="Английский фоксхаунд" data-original="/upload/resize_cache/iblock/53b/100_100_1/ejm59vghub9n54e1bey60d6b4lr7cp8o.jpg">
+           <img alt="Английский фоксхаунд" src="/upload/resize_cache/iblock/53b/100_100_1/ejm59vghub9n54e1bey60d6b4lr7cp8o.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Английский фоксхаунд
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/russko-evropeyskaya-layka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Русско-европейская лайка" data-original="/upload/resize_cache/iblock/ebd/100_100_1/ebd19f44cd131f425feed81f9b578198.jpg">
+          <noscript data-alt="Русско-европейская лайка" data-original="/upload/resize_cache/iblock/ebd/100_100_1/ebd19f44cd131f425feed81f9b578198.jpg">
+           <img alt="Русско-европейская лайка" src="/upload/resize_cache/iblock/ebd/100_100_1/ebd19f44cd131f425feed81f9b578198.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Русско-европейская лайка
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/kurchavosherstnyy-retriver/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Курчавошерстный ретривер" data-original="/upload/resize_cache/iblock/a64/100_100_1/b17ft6yro5pem0g0k578czg3ej3gajd4.jpg">
+          <noscript data-alt="Курчавошерстный ретривер" data-original="/upload/resize_cache/iblock/a64/100_100_1/b17ft6yro5pem0g0k578czg3ej3gajd4.jpg">
+           <img alt="Курчавошерстный ретривер" src="/upload/resize_cache/iblock/a64/100_100_1/b17ft6yro5pem0g0k578czg3ej3gajd4.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Курчавошерстный ретривер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/vest-khaylend-uayt-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Вест-хайленд-уайт-терьер" data-original="/upload/resize_cache/iblock/09f/100_100_1/09f78d0c57156a58c3cad34c111f059c.jpg">
+          <noscript data-alt="Вест-хайленд-уайт-терьер" data-original="/upload/resize_cache/iblock/09f/100_100_1/09f78d0c57156a58c3cad34c111f059c.jpg">
+           <img alt="Вест-хайленд-уайт-терьер" src="/upload/resize_cache/iblock/09f/100_100_1/09f78d0c57156a58c3cad34c111f059c.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Вест-хайленд-уайт-терьер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-koker-spaniel%252F%253Fcheck_key%253D9c037c9c7e57af68a88fd6b3009dc94f%2526ANIMAL_CODE%253Dangliyskiy-koker-spaniel%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fangliyskiy-koker-spaniel%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmFuZ2xpeXNraXkta29rZXItc3BhbmllbCUyRiUzRmNoZWNrX2tleSUzRDljMDM3YzljN2U1N2FmNjhhODhmZDZiMzAwOWRjOTRmJTI2QU5JTUFMX0NPREUlM0RhbmdsaXlza2l5LWtva2VyLXNwYW5pZWwlMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGYW5nbGl5c2tpeS1rb2tlci1zcGFuaWVsJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-koker-spaniel%252F%253Fcheck_key%253D9c037c9c7e57af68a88fd6b3009dc94f%2526ANIMAL_CODE%253Dangliyskiy-koker-spaniel%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fangliyskiy-koker-spaniel%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-koker-spaniel%252F%253Fcheck_key%253D9c037c9c7e57af68a88fd6b3009dc94f%2526ANIMAL_CODE%253Dangliyskiy-koker-spaniel%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fangliyskiy-koker-spaniel%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "212.109.27.229"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--f5339d4307f0717f9444803a82f47106-->

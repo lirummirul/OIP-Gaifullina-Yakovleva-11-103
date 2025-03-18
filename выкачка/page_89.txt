@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'cd1688d9ffe4'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Карело-финская лайка, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Карело-финская лайка – промысловая собака рыже-медового окраса, в 2006 году объединенная в одну породу с финским шпицем. Хорошо проявила себя в охоте на мелкого пушного зверя, некоторые виды птиц и кабана." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/48e/48e3d05ae6cd7a605fa73243f11a4b92.jpg" property="og:image"/>
+     <title>
+      Карело-финская лайка (Финский шпиц) — описание собаки с фото
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/karelo-finskaya-layka/" property="og:url"/>
+     <meta content="Карело-финская лайка (Финский шпиц) — описание собаки с фото" property="og:title"/>
+     <meta content="Карело-финская лайка – промысловая собака рыже-медового окраса, в 2006 году объединенная в одну породу с финским шпицем. Хорошо проявила себя в охоте на мелкого пушного зверя, некоторые виды птиц и кабана." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/karelo-finskaya-layka/" itemprop="url">
+         <span itemprop="title">
+          Карело-финская лайка
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Карело-финская лайка
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/karelo-finskaya-layka/">
+          Описание
+         </a>
+         <a href="/dog/karelo-finskaya-layka/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/karelo-finskaya-layka/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/karelo-finskaya-layka/photo/">
+          Фото
+         </a>
+         <a href="/dog/karelo-finskaya-layka/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Карело-финская лайка" src="/upload/iblock/413/413b151ced68d1caa779ab522acbc2b8.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/karelo-finskaya-layka/">
+           финский шпиц
+          </a>
+          ,
+          <a href="/dog/karelo-finskaya-layka/">
+           суоменпистикорва
+          </a>
+          ,
+          <a href="/dog/karelo-finskaya-layka/">
+           карелка
+          </a>
+         </span>
+         <p>
+          Карело-финская лайка – промысловая собака рыже-медового окраса, в 2006 году объединенная в одну породу с финским шпицем. Хорошо проявила себя в охоте на мелкого пушного зверя, некоторые виды птиц и кабана.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/f93/f9321940e7b755e2161ece07f210640d.jpg" data-cap="BLEP 
+.
+.
+#blep #mlem #mushukkamaanantai #tongueout #suomenpystykorva #finnishspitz #finnishspitzofinstagram #karelofinnishlaika #cutedog #foxdog #dailyfluff #weeklyfluff #outdoors #koiraurheilunilo #ulkoilu #february #visitfinland #metsässä #intothewoods" data-fancybox="images" data-link="https://www.instagram.com/p/B8qMyg_hZuB/" data-type="image" data-username="elli_thefinnishspitz" href="/upload/uf/509/509e5a332ecb74dd1555b2d45d09b2ec.jpg">
+            <img alt="Карело-финская лайка" src="/upload/resize_cache/uf/509/293_293_2/509e5a332ecb74dd1555b2d45d09b2ec.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/04c/04cd73937ea5d685cb2757f87374d0db.jpg" data-cap=" HALOO. Äiti Maa? Suomi kutsuu. Nyt ei ole kovin helmikuinen helmikuu. Näyttää enemmän marraskuulta. 
+ HELLOO. Mother Earth? This is Finland calling. Where is our February? This thing here looks like November. 
+.
+(Swipe for cute head tilts ➡️ )
+.
+.
+#pupstagram #pupperthoughts #suomenpystykorva #finnishspitz #finnishspitzofinstagram #karelofinnishlaika #cutedog #foxdog #dailyfluff #weeklyfluff #outdoors #koiraurheilunilo #ulkoilu #february #globalwarming #ilmastonmuutos #wetdog #muddydog" data-fancybox="images" data-link="https://www.instagram.com/p/B8f6s3Ch2u4/" data-type="image" data-username="elli_thefinnishspitz" href="/upload/uf/be9/be91cba602ac97d8f1c5e2fa57cf745c.jpg">
+            <img alt="Карело-финская лайка" src="/upload/resize_cache/uf/be9/293_293_2/be91cba602ac97d8f1c5e2fa57cf745c.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/503/503991118fb9d1f5eefab3e532c3a6b3.jpg" data-cap="❄️
+.
+.
+#suomenpystykorva #finnishspitz #finnishspitzofinstagram #karelofinnishlaika #cutedog #foxdog #dailyfluff #weeklyfluff #outdoors #koiraurheilunilo #ulkoilu #february #visitfinland #metsässä #intothewoods" data-fancybox="images" data-link="https://www.instagram.com/p/B8TVnRHBWJF/" data-type="image" data-username="elli_thefinnishspitz" href="/upload/uf/3fb/3fb0ddaceb6eeb5251bd1a8da18ee366.jpg">
+            <img alt="Карело-финская лайка" src="/upload/resize_cache/uf/3fb/293_293_2/3fb0ddaceb6eeb5251bd1a8da18ee366.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/karelo-finskaya-layka/photo/">
+         Все
+            фото карело-финской лайки
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы карело-финская лайка
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность карело-финской лайки
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер карело-финской лайки
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Охота с карельской лайкой
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Здоровье и болезни карело-финских лаек
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Цена карело-финской лайки
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Карело-финская лайка
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Финляндия
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 12-13 кг, суки 7-10 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 42-50 см, суки 38-46 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         12-14 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Карело-финские лайки выводились в качестве универсальных охотников, одинаково ловко управляющихся как с белками, так и с косулями.
+        </li>
+        <li>
+         Избыток хитрости и самостоятельности у представителей этой породы несколько мешает им в учебе. Иногда животное может упрямиться и притворяться, поэтому к этим рыжим плутишкам придется искать особый подход.
+        </li>
+        <li>
+         Как и большинство охотничьих собак, карело-финские лайки – очень энергичные животные, требующие регулярной физической разрядки, так что гулять с питомцем придется много и основательно.
+        </li>
+        <li>
+         Среднестатистический «карело-финн» быстро приживается в семье, но может конфликтовать с другими представителями собачьего племени, если видит в них соперников. Желание лидерствовать и властвовать – ничего не поделаешь.
+        </li>
+        <li>
+         Карело-финская лайка – собака шумная, любящая подавать голос даже по самому незначительному поводу, поэтому перед тем, как обзавестись крошечным рыжим комочком, задайтесь вопросом: а готовы ли вы жить в обществе столь разговорчивого питомца.
+        </li>
+        <li>
+         Бесстрашие и храбрость – главные охотничьи фишки карело-финских лаек. При этом они достаточно благоразумны и не атакуют слишком крупных зверей.
+        </li>
+        <li>
+         Одно из наиболее значительных достоинств породы – компактность ее представителей, в сравнении с другими лайками. Такие собаки не требуют много места, их удобно транспортировать, что немаловажно для владельцев, регулярно выезжающих со своими питомцами на охоту.
+        </li>
+        <li>
+         В кругу любителей породы карело-финских лаек именуют просто карелками.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Карело-финская лайка" data-original="/upload/iblock/48e/48e3d05ae6cd7a605fa73243f11a4b92.jpg">
+          <noscript data-alt="Карело-финская лайка" data-original="/upload/iblock/48e/48e3d05ae6cd7a605fa73243f11a4b92.jpg">
+           <img alt="Карело-финская лайка" src="/upload/iblock/48e/48e3d05ae6cd7a605fa73243f11a4b92.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Карело-финская лайка
+          </strong>
+          – шумливая рыжая красавица, при правильной натаске способная засыпать собственного хозяина охотничьими трофеями. Обладая массой неоспоримых достоинств, включая такие важные для промысловой породы качества, как находчивость, смелость, интуитивное чутье, эти энергичные охотницы являют собой эталон самодостаточности. Именно поэтому обладание карелкой налагает на ее владельца ряд обязательств: это не та собака, которая будет любить вас вопреки всему, ее уважение и признательность придется в прямом смысле заслужить.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Плохой охранник (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Карело-финская лайка основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы карело-финская лайка
+        </h2>
+        <p>
+         Карело-финская лайка – пожалуй, самая обделенная из отечественных пород, представители которой так и не удостоились собственного стандарта и были поглощены более популярным собачьим кланом. Карельские лайки объявились в царской России еще в конце XIX века, причем основная их концентрация приходилась на север и запад страны. Впоследствии животные, обитавшие на приграничных территориях, стали стихийно скрещиваться с финскими промысловыми собаками, что привело к появлению на свет отдельной породной ветви. По сути, это и были первые карело-финские лайки, с которыми жители северных губерний весьма успешно ходили на глухарей.
+        </p>
+        <p>
+         В 1936 году карелки попали на Всесоюзную сельскохозяйственную выставку, где приятно удивили кинологов. А в 1939-м их даже попытались стандартизировать, но сначала делу помешала низкая численность поголовья, а потом – Великая Отечественная война. В конце 40-х советские заводчики задались целью превратить карело-финских лаек в универсальных охотников, начав вязать их с финскими шпицами. В итоге животные резко улучшили свои экстерьерные показатели, что стало толчком для масштабного ввоза в СССР финских шпицев и последующей бесконтрольной прокачки породы. Дошло до того, что к 80-м годам большинство особей из отечественных питомников носило в себе 70% крови финского шпица.
+        </p>
+        <p>
+         В 1984 году вновь встал вопрос о стандартизации карело-финских лаек. На этот раз решать проблему взялись члены Ленинградского общества охотников и рыболовов, которые не стали слишком заморачиваться и причислили животных к семейству финских шпицев. Однако окончательное «расформирование» породы произошло только в 2006 году, после того как председателем Финского кеннел-клуба и президентом РКФ было подписано официальное соглашение, согласно которому финский шпиц и карело-финская лайка объявлялись единой племенной ветвью и получали общий стандарт внешности. Это создало иллюзию некой упорядоченности, но не прекратило споры о различиях между обоими собачьими кланами. В частности, современные специалисты, занимающиеся тестированием охотничьих талантов «финнов» и «карелов», уверяют, что рабочие показатели собак не одинаковы, и слияние двух пород в одну не принесло никакой практической пользы ни животным, ни их владельцам.
+        </p>
+        <h2>
+         Видео: Карело-финская лайка
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="FXDJUMXWri4">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность карело-финской лайки
+        </h2>
+        <p>
+         Карело-финская лайка – охотничья порода среднего размера, с пушистой «медовой» шерстью и карими или черными глазами. Собака имеет сухой крепкий тип конституции, практически квадратный формат. «Мальчики» в среднем чуть крупнее и массивнее «девочек». Стандарт породы определяет следующие параметры: высота в холке – 42-50 см (для кобелей) и 38-46 см (для сук); масса тела – 12-13 кг и 7-10 кг соответственно.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Череп карелки выглядит овальным сверху и слегка выпуклым с боков. Надбровья и затылочный бугор выражены не очень ярко, как и лобная бороздка. Стоп у представителей этой породы прорисован отчетливо, но не чересчур резко. Морда узкая, с ровной спинкой, сухая.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Челюсти собаки массивные, сомкнутые в плотном ножницеобразном прикусе. Зубы крепкие, ровные, симметрично поставленные.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Мочка миниатюрная, угольного окраса.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         У карело-финских лаек не очень большие, миндалевидные глаза, посаженные несколько косо. Радужка глаза окрашена в темный цвет.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Уши высокого постава, стоячие. Ушное полотно небольшое, заостренной формы, внешняя сторона скрыта под слоем густой короткой шерсти.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Шея карело-финской лайки нормальной длины, но из-за объемного шерстяного «воротника» производит впечатление коротковатой и толстой.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Правильный «карело-финн» отличается крепким телосложением. Туловище собаки квадратного формата с прямой спиной, массивным, наклонным крупом и хорошо вырисовывающейся холкой. Живот чуть подтянут.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Ноги карело-финской лайки прямые, поставлены параллельно друг другу. Для передних ног характерны развитый костяк, подвижные, чуть наклоненные лопатки и нормальной длины пясти. Задние ноги у этой породы крепкие, с мясистыми бедрами, мускулистыми голенями и низко поставленными скакательными суставами. Лапы собаки округлые, почти кошачьи, при этом передние чуть короче задних.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Длина хвоста карело-финской лайки – до скакательного сустава. Граничащий с основанием участок хвоста круто развернут в сторону спины, из-за чего остальная его часть устремляется вниз и свешивается к бедру.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         На голове и фронтальной части всех четырех конечностей шерсть сравнительно короткая. На корпусе, хвосте и бедрах шерстный покров более длинный, пышный, заметно отстающий от тела. Особенно выделяется остевой волос на лопатках кобелей – он жесткий и стоит почти торчком.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Спины карело-финских лаек окрашены более интенсивно и бывают насыщенного рыжего либо красновато-золотистого тонов. Скулы, внутренняя часть ушей, ног и хвоста, а также грудь и низ живота собаки заметно светлее. Наличие белых вкраплений на лапах и светлой проточины на груди считается нормальным явлением.
+        </p>
+        <h3>
+         Недостатки и пороки породы
+        </h3>
+        <p>
+         Наиболее типичные дефекты карело-финских лаек – крупная голова, утяжеленная морда, недостаточно развитая нижняя челюсть, чрезмерно либо недостаточно закрученный хвост. Нередко среди карелок можно встретить такие отклонения от стандарта, как резкие переходы между оттенками окраса, развешенные в стороны, отклоненные назад или направленные друг к другу кончиками уши, а также мягкие пясти. Если вести речь о дисквалифицирующих пороках породы, то к ним относятся:
+        </p>
+        <ul>
+         <li>
+          голубой и желтый окрасы радужки;
+         </li>
+         <li>
+          чересчур мягкие кончики ушей;
+         </li>
+         <li>
+          любые отклонения от стандартного прикуса;
+         </li>
+         <li>
+          шерсть с волной или выраженным завитком;
+         </li>
+         <li>
+          крупные белые отметины на груди и такие же «носки» на ногах животного;
+         </li>
+         <li>
+          депигментированная мочка;
+         </li>
+         <li>
+          необоснованная агрессия, направленная на человека.
+         </li>
+        </ul>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер карело-финской лайки
+        </h2>
+        <p>
+         Карело-финская лайка – создание веселое, позитивное, но при этом с большим чувством собственного достоинства, задевать которое не стоит даже любимому и обожаемому хозяину. Вообще «карело-финны» – питомцы самодостаточные, отвечающие ровным, доброжелательным отношением на хорошее обращение и недоверием и нервозностью на грубый, авторитарный стиль руководства. Кстати, понять, что четверолапый друг обижен проще всего по хвосту, который у раздраженных животных распрямляется.
+        </p>
+        <p>
+         В детстве и подростковом возрасте карело-финская лайка производит впечатление крайне зависимого от хозяина существа. Она послушна, исполнительна, ловит каждый взгляд своего наставника. Но чем старше становится собака, тем быстрее растет ее чувство собственной значимости. Так что упрямство и самостоятельность – это те черты, которые вы почти наверняка встретите у четырехлетней карелки и почти никогда у щенков. Впрочем, если вам показалось, что карело-финские лайки зациклены только на себе, то вам действительно показалось. Финский шпиц карельского разлива – неплохой телепат и отлично чувствует настроение собственного хозяина. Он далеко не тугодум, поэтому быстро соображает, каких поступков от него ждут, и в соответствии с этим выстраивает собственную линию поведения.
+        </p>
+        <p>
+         Незнакомцев, внезапно вторгающихся на частную территорию, карело-финские лайки откровенно недолюбливают, так что воспитать из представителя этой породы домашнего сторожа – проще простого. Что касается детворы, то с ней у собак отношения дружеские, хоть и не всегда идеальные. То есть поиграть с малышней в догонялки карелка, конечно, не прочь, но в ответ на насилие или откровенное ущемление собственных прав, может сделать предупредительный «Гав!». В целом карело-финские лайки – очень удобные компаньоны не только для профессиональных охотников, но и для адептов активного образа жизни. Они никогда не откажутся побегать с собственным владельцем по городским паркам и с радостью отправятся на любой пикник, стоит только свистнуть.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Основная сложность в дрессировке карело-финских лаек – быстрая потеря собакой интереса к занятиям. Да, финский шпиц готов учиться, но недолго и за вкусняшку. Кроме того, чтобы отработать команду до автоматизма, представителю этой породы потребуется не меньше 25-30 повторов, что не так уж мало.
+        </p>
+        <p>
+         Начинается обучение карелок стандартно – с узнавания питомцем собственной клички и привычки обустраиваться на отведенном ему в квартире местечке. Отрабатывать основные команды со щенком нужно очень аккуратно и дозированно, чтобы не переутомить малыша. В три месяца карело-финская лайка должна начать знакомиться с такими командами, как «Сидеть!», «Ко мне!», «Нельзя!». С этого же возраста, если у вас весенняя собака, можно преподавать ей уроки плавания. Начните с простого гуляния по теплым лужам, постепенно переходя к купанию в ручьях и других мелких водоемах. Когда карело-финская лайка начнет охотиться, этот навык ей пригодится. Только не забывайте после каждого такого заплыва обмывать животное чистой водой, чтобы очистить шерсть от бактерий и микроорганизмов, живущих в открытых водоемах.
+        </p>
+        <p>
+         В юном возрасте карело-финские лайки – крайне разрушительные создания, так что придется смириться с неизбежностью материального ущерба. Важно понимать, что щенок шалит не из вредности, просто он таким образом развивается и знакомится с окружающей реальностью. Если вы планируете наведываться с финским шпицем в сельскую местность, приучите собаку адекватно реагировать на домашнюю птицу, для чего сгодится старая добрая команда «Нельзя!». Если же проконтролировать питомца не удалось, и он уже задушил курицу или гуся, накажите четверолапого хулигана, не отходя от места преступления. Спустите дело на тормозах один-единственный раз, и карело-финская лайка будет пожизненно развлекать себя охотой на птичьи стада.
+        </p>
+        <h2 id="gl5">
+         Охота с карельской лайкой
+        </h2>
+        <p>
+         Невзирая на универсальность породы в охотничьем плане, с карело-финскими лайками целесообразнее ходить на мелких пушных зверьков (белки, куница) и глухарей. Карелки превосходно отыскивают и останавливают дичь, мастерски вспугивают животное под выстрел и наконец апортируют подстреленную добычу. Теоретически притравливать щенка можно уже с четырех месяцев, но далеко не все лайки в этом возрасте обладают достаточной смышленостью. Так что если на первом занятии собака не проявляет интереса к зверю, стоит выждать еще месяц-другой. Кстати, натаска финского шпица на медведя, ставшая неожиданно-популярной в последнее время, – это больше шоу, нежели настоящая охота. Одно дело облаять подсадного косолапого на притравочной станции и совсем другое – раззадорить дикого потапыча у его родной берлоги. Безусловно, в биографии отдельных карелок такой вид охоты тоже имеет место, но это уже высший пилотаж, который удается избранным и то после многочисленных и утомительных тренировок.
+        </p>
+        <p>
+         Иногда инстинкт охотника может дремать в финском шпице до полутора лет. Пугаться этого не стоит, так как наверстывать упущенное карело-финские лайки умеют превосходно. Главное – поддерживать в питомце интерес к работе. Например, можно периодически отдавать в личное пользование щенку звериные шкурки или битую птицу. Если у вас есть вторая собака, уже принимавшая участие в охоте, берите на притравку и ее. Глядя на поведение старшего товарища, щенок обязательно попытается его скопировать.
+        </p>
+        <p>
+         В работе с крупным зверем представители этой породы особенно аккуратны, они не теряют рассудка и никогда не забывают о правилах собственной безопасности. От разъяренного кабана карело-финская лайка держится на почтительном расстоянии, при этом не переставая его облаивать. Кстати, на добычливости столь осторожный подход никак не сказывается: без трофея из леса рыжие карелки почти никогда не уходят.
+        </p>
+        <h2 id="gl6">
+         Содержание и уход
+        </h2>
+        <p>
+         Карело-финская лайка – это не вольерная и уж тем более не цепная собака. Ее место в доме, в компании доброго, понимающего хозяина и членов его семьи. Кроме того, несмотря на то, что среди охотников эта разновидность лайки пользуется репутацией «холодоустойчивой», русские морозы не для нее. В качестве компромисса питомца можно периодически переселять в будку во дворе, но только в теплое время года. И кстати, не очень рассчитывайте на то, что пушистый охотник будет очень обрадован таким переездом.
+        </p>
+        <p>
+         Оборудовать для щенка отдельное спальное место в доме стоит обязательно, как и приучать его к нему. В противном случае в ваше отсутствие финский шпиц будет отдыхать на вашей же кровати. Так что в первые недели обитания собаки в вашем жилище не поленитесь застелить дорогой диван газетами – на шуршащее ложе лайки обычно не посягают.
+        </p>
+        <p>
+         С полутора месяцев карело-финских лаек начинают выгуливать. Первые прогулки могут длиться по 15-20 минут, но по мере взросления собаки их следует увеличивать. Оптимально, если животное выводят на улицу дважды в день на 2-3 часа. Особенно это важно для карелок, живущих в условиях крупного города, которым необходимо компенсировать выгулом отсутствие возможности поохотиться. Кстати, из-за развитых преследовательских инстинктов лаек выводят из дома на поводке, иначе есть риск потерять задорного рыжика навсегда.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Дежурить возле карело-финской лайки с фурминатором и лосьоном для облегчения расчесывания не придется, так как шерсть у представителей этой породы беспроблемная, почти не пахнущая псиной и линяющая дважды в год. Расчесывают карелок металлической расческой пару раз в неделю и ежедневно в период линьки. Купать взрослую собаку можно не чаще 2-3 раз в год. Помните, что регулярно выезжающая на охоту лайка и так принимает внеплановые ванны, прыгая в болота за подстреленной дичью.
+        </p>
+        <p>
+         Глаза карело-финской лайки относительно здоровые, не склонные к образованию закиси, поэтому особый уход им не требуется. Единственное – не забывайте по утрам убирать из глазных уголков комочки, образование которых провоцирует попавшая на слизистую пыль. Для этого смочите чистую тряпочку в ромашковом настое и осторожно протрите глаза. Если заметили у питомца гнойные выделения, покраснения или повышенную слезливость, посетите специалиста – одними травяными отварами подобные проблемы не устранить.
+        </p>
+        <p>
+         Раз в неделю необходимо выделять время на тщательный осмотр ушных раковин собаки, а раз в месяц карело-финской лайке следует подстричь когти. Чистка зубов для карелок тоже обязательна, так что каждые 3-4 дня вооружайтесь пастой и чистящей насадкой и обрабатывайте ротовую полость подопечного. Зубной налет правильнее удалять в ветеринарном кабинете, а вот профилактические меры для борьбы с ним можно предпринять и дома. В частности, систематически угощайте финского шпица прессованными лакомствами из зоомагазина и свежими томатами.
+        </p>
+        <p>
+         Как и всем охотничьим собакам, регулярно выезжающим в лес, карело-финской лайке требуется повышенная защита от клещей, так что не экономьте на средствах от эктопаразитов. Кроме того, с мая по сентябрь (пик активности клещей) осматривайте шерсть питомца после прогулки. Если заметили, что к карелке прицепился «бесплатный пассажир», вытащите его выкручивающим движением пинцета и протрите область укуса хлоргексидином. Теперь остается лишь наблюдать за поведением животного. Если карело-финская лайка игрива и нормально ест, можете облегченно вздохнуть – вам попался безопасный паразит. Если же собака отказывается от пищи, выглядит апатичной, у нее поднялась температура, а моча приобрела буроватый оттенок – срочно ведите ее к ветеринару.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Финские шпицы на фоне других, более крупных лаек выглядят настоящими малоежками. При этом энергия из этих рыжих созданий бьет фонтаном. Трехнедельных щенков заводчики обычно уже подкармливают, поэтому к 2-3 месяцам малыши карелки полностью переходят на взрослый стол. Примерно 20% рациона собаки-подростка составляет нежирное мясо. Лучше, если это будет не промороженный продукт, а парной. Первый вариант тоже возможен, но только после основательного оттаивания.
+        </p>
+        <p>
+         Мясо щенкам карело-финской лайки всегда дают порезанным на кусочки и никогда в виде фарша, пролетающего через пищеварительный тракт в ускоренном темпе и не приносящего насыщения. Костные хрящи – тоже полезный продукт и источник натурального коллагена, поэтому их лайкам можно уже в 7-недельном возрасте. А вот с костями лучше повременить, пока щенку не исполнится хотя бы 3 месяца.
+        </p>
+        <p>
+         Начинать знакомить животное с крупяными изделиями лучше с молочной манной каши, через месяц-другой заменив ее овсяной. Пшено, рис, гречка в меню финского шпица тоже имеют место быть, но готовить их придется на мясном бульоне, так как добровольно заталкивать в себя сваренную на воде крупу не будет ни одна собака. Очень полезны карело-финским лайкам нежирная кисломолочка, овощи (особенно морковь), морская рыба без костей. Отличным угощением для питомца станут сухофрукты (не цукаты) и сыр, но давать их следует порционно и не вдоволь.
+        </p>
+        <p>
+         Еда в миску собаки должна накладываться без запаса. Если карело-финская лайка не доела предложенное блюдо, через 15 минут после начала кормления миску убирают, а порцию в следующий раз уменьшают. Такой подход дисциплинирует животное, приучая его не оставлять пищу на следующий заход. В 8 месяцев щенок начинает питаться по «взрослому» графику, то есть дважды в день. 1,5-месячных карелок кормят часто – до 6 раз в сутки, с каждым последующим месяцем уменьшая количество приемов пищи на один.
+        </p>
+        <p class="legenda">
+         Важно: карело-финским лайкам, питающимся натуральными продуктами, необходимы витаминно-минеральные подкормки, так как самостоятельно сбалансировать рацион охотничьей собаки крайне сложно.
+        </p>
+        <h2 id="gl7">
+         Здоровье и болезни карело-финских лаек
+        </h2>
+        <p>
+         У карело-финских лаек имеется предрасположенность к дисплазии суставов, вывихам конечностей и чуть реже – эпилепсии. В остальном это вполне здоровые собаки с крепким иммунитетом.
+        </p>
+        <h2 id="gl8">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Для начала посмотрите на родителей щенка и узнайте их возраст. Карело-финских лаек от слишком молодой пары (суке и кобелю менее 1,5 лет) лучше не брать.
+         </li>
+         <li>
+          Не возлагайте слишком больших надежд на рабочие и чемпионские дипломы мамы и папы малыша. Победителями не рождаются, ими становятся.
+         </li>
+         <li>
+          У 6-недельных щенков карело-финской лайки уши уже должны стоять. Однако существует небольшой процент животных, у которых ушное полотно приподнимается только к 3 месяцам. В таком случае лучше подождать лишние пару недель, чтобы точно определить, кто перед вами – достойный представитель семейства карелок или крошечный самозванец.
+         </li>
+         <li>
+          Обращайте внимание на количество щенков в помете. Лучше, если их будет меньше 6.
+         </li>
+         <li>
+          Качество шерстного покрова малыша тоже немаловажно, но следует помнить, что наиболее эффектные «шубки» у карело-финских лаек, рожденных зимой.
+         </li>
+         <li>
+          Внимательно изучите родословную потенциального питомца. Если в ней повторяются одни и те же клички с одинаковыми номерами, это свидетельствует о том, что заводчик увлекается инбридингом (близкородственным скрещиванием), а это чревато для пометов серьезными отклонениями в развитии и внешними дефектами.
+         </li>
+         <li>
+          Оцените походку щенка карело-финской лайки. Здоровое животное должно иметь прямые конечности без признаков рахита и свободно двигаться. Если перед тем как лечь или сесть щенок «задумывается», с его опорно-двигательной системой не все ладно.
+         </li>
+         <li>
+          Неухоженные щенки с признаками грыжи, грязными ушками и гноящимися глазами бесспорно вызывают жалость, но взять такое животное – значит приобрести в комплекте массу проблем и навсегда отказаться от мечты пройтись с питомцем по рингу.
+         </li>
+        </ul>
+        <h2 id="gl9">
+         Цена карело-финской лайки
+        </h2>
+        <p>
+         Стоимость щенков карело-финской лайки с чистой родословной и метрикой РКФ начинается от 25 000 рублей и заканчивается в районе 75 000 - 80 000 руб. В первом случае это будут обычные собаки-работяги с возможными дефектами внешности, но развитыми охотничьими инстинктами. Во втором – животные с эталонным экстерьером и чемпионскими перспективами, с которыми не стыдно податься на зарубежные выставки.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения карело-финской лайки на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/1981/">
+          <div class="ava-med">
+           <div class="noava fill1">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/pitanie-i-dieta-1362/">
+           Питание и диета.
+          </a>
+         </div>
+         <div class="forum-text">
+          У меня поправилась собака,как за счет питания снизить ее вес.Кормлю натуралкой.
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/1981/">
+            Мария Шеркунова
+           </a>
+          </span>
+          <span class="vopros-date">
+           4 года назад
+          </span>
+          <span class="vopros-smotr">
+           366 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/1156/">
+          <div class="ava-med">
+           <div class="noava fill6">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/kak-vospitat-karelo-finskuyu-layku-918/">
+           Как воспитать Карело Финскую лайку
+          </a>
+         </div>
+         <div class="forum-text">
+          Здраствуйте друзья , купил себе щенка 4 месяца и не знаю как приучить к туалету на улице да и в воспитании , во первых живу я в квартире в городе , он со мной только 4 дня но уже ладим , куда я туда и он , лижет...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/1156/">
+            Vladimir Miklasevic
+           </a>
+          </span>
+          <span class="vopros-date">
+           5 лет назад
+          </span>
+          <span class="vopros-smotr">
+           3098 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/karelo-finskaya-layka/forum/">
+        Перейти на
+        форум карело-финской лайки
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Карело-финская лайка" src="/upload/iblock/413/413b151ced68d1caa779ab522acbc2b8.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/karelo-finskaya-layka/">
+          Карело-финская лайка
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/karelo-finskaya-layka/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/karelo-finskaya-layka/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/karelo-finskaya-layka/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/karelo-finskaya-layka/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/karelo-finskaya-layka/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/russkaya-psovaya-borzaya/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Русская псовая борзая" data-original="/upload/resize_cache/iblock/3ea/100_100_1/3ea1f19fedb872f465ab48774e95886d.jpg">
+          <noscript data-alt="Русская псовая борзая" data-original="/upload/resize_cache/iblock/3ea/100_100_1/3ea1f19fedb872f465ab48774e95886d.jpg">
+           <img alt="Русская псовая борзая" src="/upload/resize_cache/iblock/3ea/100_100_1/3ea1f19fedb872f465ab48774e95886d.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Русская псовая борзая
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/pti-brabanson/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Пти-брабансон" data-original="/upload/resize_cache/iblock/0e6/100_100_1/0e62c17933c771a85a0546211950d579.jpg">
+          <noscript data-alt="Пти-брабансон" data-original="/upload/resize_cache/iblock/0e6/100_100_1/0e62c17933c771a85a0546211950d579.jpg">
+           <img alt="Пти-брабансон" src="/upload/resize_cache/iblock/0e6/100_100_1/0e62c17933c771a85a0546211950d579.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Пти-брабансон
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/mittelshnautser/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Миттельшнауцер" data-original="/upload/resize_cache/iblock/075/100_100_1/07530c91362e094d1e47898176bbda4e.jpg">
+          <noscript data-alt="Миттельшнауцер" data-original="/upload/resize_cache/iblock/075/100_100_1/07530c91362e094d1e47898176bbda4e.jpg">
+           <img alt="Миттельшнауцер" src="/upload/resize_cache/iblock/075/100_100_1/07530c91362e094d1e47898176bbda4e.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Миттельшнауцер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/toy-foksterer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Той-фокстерьер" data-original="/upload/resize_cache/iblock/7d7/100_100_1/8fyyjzdkhdtafij2cxsa66dp03kfmjxy.jpg">
+          <noscript data-alt="Той-фокстерьер" data-original="/upload/resize_cache/iblock/7d7/100_100_1/8fyyjzdkhdtafij2cxsa66dp03kfmjxy.jpg">
+           <img alt="Той-фокстерьер" src="/upload/resize_cache/iblock/7d7/100_100_1/8fyyjzdkhdtafij2cxsa66dp03kfmjxy.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Той-фокстерьер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkarelo-finskaya-layka%252F%253Fcheck_key%253D0fbcbb56a765327b4ed7e0a54b013c82%2526ANIMAL_CODE%253Dkarelo-finskaya-layka%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkarelo-finskaya-layka%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmthcmVsby1maW5za2F5YS1sYXlrYSUyRiUzRmNoZWNrX2tleSUzRDBmYmNiYjU2YTc2NTMyN2I0ZWQ3ZTBhNTRiMDEzYzgyJTI2QU5JTUFMX0NPREUlM0RrYXJlbG8tZmluc2theWEtbGF5a2ElMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGa2FyZWxvLWZpbnNrYXlhLWxheWthJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkarelo-finskaya-layka%252F%253Fcheck_key%253D0fbcbb56a765327b4ed7e0a54b013c82%2526ANIMAL_CODE%253Dkarelo-finskaya-layka%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fkarelo-finskaya-layka%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkarelo-finskaya-layka%252F%253Fcheck_key%253D0fbcbb56a765327b4ed7e0a54b013c82%2526ANIMAL_CODE%253Dkarelo-finskaya-layka%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkarelo-finskaya-layka%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "188.170.82.95"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--4ebe03b583f8ad852e33e5d82065aa18-->

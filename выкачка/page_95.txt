@@ -1,0 +1,1808 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'b3f5d2dd0dc3'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Китайская хохлатая собака, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Китайская хохлатая собака – имиджевая, комнатная порода, представители которой делятся на два типа: бесшерстных особей с полностью голым корпусом и пуховых, заросших длинным шелковистым волосом." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/dfa/dfab232a29302ec95a83b4ea8b083966.jpg" property="og:image"/>
+     <title>
+      Китайская хохлатая собака: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/kitayskaya-khokhlataya-sobaka/" property="og:url"/>
+     <meta content="Китайская хохлатая собака: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Китайская хохлатая собака – имиджевая, комнатная порода, представители которой делятся на два типа: бесшерстных особей с полностью голым корпусом и пуховых, заросших длинным шелковистым волосом." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/kitayskaya-khokhlataya-sobaka/" itemprop="url">
+         <span itemprop="title">
+          Китайская хохлатая собака
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Китайская хохлатая собака
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/kitayskaya-khokhlataya-sobaka/">
+          Описание
+         </a>
+         <a href="/dog/kitayskaya-khokhlataya-sobaka/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/kitayskaya-khokhlataya-sobaka/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/kitayskaya-khokhlataya-sobaka/photo/">
+          Фото
+         </a>
+         <a href="/dog/kitayskaya-khokhlataya-sobaka/video/">
+          Видео
+         </a>
+         <a href="/dog/kitayskaya-khokhlataya-sobaka/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/kitayskaya-khokhlataya-sobaka/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Китайская хохлатая собака" src="/upload/iblock/39a/39a8f33c4174a4636113e6c2b6c8cdbe.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/kitayskaya-khokhlataya-sobaka/">
+           голая китайская хохлатая собака
+          </a>
+          ,
+          <a href="/dog/kitayskaya-khokhlataya-sobaka/">
+           КХС
+          </a>
+         </span>
+         <p>
+          Китайская хохлатая собака – имиджевая, комнатная порода, представители которой делятся на два типа: бесшерстных особей с полностью голым корпусом и пуховых, заросших длинным шелковистым волосом.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/e11/e1187169dd003b2c5101319efaae366e.jpg" data-cap="Китайская хохлатая собака" data-fancybox="images" data-link="https://www.instagram.com/lapkins.ru/" data-type="image" data-username="lapkins.ru" href="/upload/uf/b97/b976c55cc2baf9ca9811419766692c26.jpg">
+            <img alt="Китайская хохлатая собака" src="/upload/resize_cache/uf/b97/293_293_2/b976c55cc2baf9ca9811419766692c26.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/74a/74addcf9cb401efc7e69d21ef752421a.png" data-cap="Like a princess" data-fancybox="images" data-link="https://www.flickr.com/photos/127246375@N04/15616412648/" data-type="image" data-username="Kristi Vilmunen" href="/upload/uf/36e/36eb023cf25c3355b5ef0bce1dc2943f.jpg">
+            <img alt="Китайская хохлатая собака" src="/upload/resize_cache/uf/36e/293_293_2/36eb023cf25c3355b5ef0bce1dc2943f.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/04c/04c9a59ca6cbaf413ce1b1990495ae37.jpg" data-cap="Щенок китайской хохлатой собаки" data-fancybox="images" data-link="https://www.instagram.com/lapkins.ru/" data-type="image" data-username="lapkins.ru" href="/upload/uf/af1/af1b216b61eebd4c93e78d4e283e1db5.jpg">
+            <img alt="Китайская хохлатая собака" src="/upload/resize_cache/uf/af1/293_293_2/af1b216b61eebd4c93e78d4e283e1db5.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/kitayskaya-khokhlataya-sobaka/photo/">
+         Все
+            фото китайской хохлатой собаки
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы голая китайская хохлатая собака
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность китайской хохлатой собаки
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер китайской хохлатой собаки
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни китайских хохлатых собак
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Сколько стоит голая китайская хохлатая собака
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Китайская хохлатая собака
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Китай
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         2,3-5,5 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 28-33 см, суки 23-30 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         12-14 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Китайские хохлатые – превосходные компаньоны и «стрессосниматели», но плохие сторожа.
+        </li>
+        <li>
+         Все «китайцы» очень чувствительны даже к незначительному понижению температуры окружающей среды. Соответственно, обитать такие животные должны только в квартире.
+        </li>
+        <li>
+         Чрезмерно практичных владельцев порода, скорее всего, разочарует. Мягкой, легкой, сбивающейся в колтуны шерсти собак необходимо уделять много внимания, а также регулярно тратиться на услуги грумера. Бесшерстные особи в этом плане не экономичнее и потребуют расходов на ухаживающую косметику и гардероб.
+        </li>
+        <li>
+         Для тех, кто плохо переносит одиночество и ищет заводного питомца, не страдающего перепадами настроения, КХС – идеальная собака. Эти малыши дружелюбны, милы и очень зависимы от собственного хозяина.
+        </li>
+        <li>
+         Голые китайские хохлатые собаки неплохо относятся к другим домашним животным и знают 1000 и 1 способ, как втереться в доверие к детям. Правда, оставлять от природы хрупких собачек на попечение несмышленых малышей все же не стоит.
+        </li>
+        <li>
+         Представители этой породы достаточно сообразительны, но не лишены упрямства, поэтому обучение и воспитание животного не всегда проходит гладко и быстро.
+        </li>
+        <li>
+         С КХС придется навсегда забыть о таком понятии, как личное пространство. Спрятаться от собаки за плотно закрытой дверью – значит всерьез обидеть питомца.
+        </li>
+        <li>
+         Китайских хохлатых с длинной шерстью по всему телу называют паудер-паффами. Powder puff в переводе английского – пуховка для нанесения пудры.
+        </li>
+        <li>
+         В одном помете могут рождаться как абсолютно голые, так и пушистые щенки.
+        </li>
+        <li>
+         Шерсть КХС не имеет характерного запаха псины и практически не линяет.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Китайская хохлатая собака" data-original="/upload/iblock/dfa/dfab232a29302ec95a83b4ea8b083966.jpg">
+          <noscript data-alt="Китайская хохлатая собака" data-original="/upload/iblock/dfa/dfab232a29302ec95a83b4ea8b083966.jpg">
+           <img alt="Китайская хохлатая собака" src="/upload/iblock/dfa/dfab232a29302ec95a83b4ea8b083966.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Китайская хохлатая собака
+          </strong>
+          – миниатюрная умница со стильной «прической», неизменная спутница голливудских див и старлеток середины XX столетия. Обладающие живым, незлобливым характером и патологической привязанностью к хозяину, КХС хоть и заявили о себе только в начале прошлого века, однако успели виртуозно подстроиться под реалии своего времени и приобрести завидную популярность. Приблизительно с 70-х годов порода начала плавно спускаться со звездного Олимпа, благодаря чему ее представители стали появляться не только на закрытых богемных вечеринках, но и в квартирах простых людей по всему миру.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Минимальная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средний (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средние (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Китайская хохлатая собака основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/kitayskaya-khokhlataya-sobaka/razmeri-porodi/">
+         размеры китайской хохлатой собаки
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы голая китайская хохлатая собака
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Китайская хохлатая собака" data-fancybox="gallery" href="/upload/iblock/575/5753d1dcb0d20b092dcd4827196aac47.jpg" title="Китайская хохлатая собака">
+          <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/575/412_2150_1/5753d1dcb0d20b092dcd4827196aac47.jpg">
+           <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/575/412_2150_1/5753d1dcb0d20b092dcd4827196aac47.jpg">
+            <img alt="Китайская хохлатая собака" class="article_pic" height="618" src="/upload/resize_cache/iblock/575/412_2150_1/5753d1dcb0d20b092dcd4827196aac47.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Китайская хохлатая собака
+         </div>
+        </div>
+        <p>
+         Прямых доказательств того, что родиной китайских хохлатых была именно Поднебесная, до сих пор не найдено. Да, азиатские вельможи всегда были падки на живую экзотику и традиционно отдавали предпочтение мелким бесшерстным песикам, но большинство таких питомцев было «иностранцами», завезенными из других держав. Если говорить конкретно о КХС, то современные исследователи предлагают три сравнительно правдоподобных версии их происхождения. Согласно первой из них, миниатюрные «хохлатики» – прямые потомки вымершей африканской голой собаки, приплывшей в Китай с торговыми караванами. Вторая теория базируется на внешнем сходстве «китайчат» с мексиканской голой собакой. Правда, не совсем ясно, какими путями животные с неизвестного в те времена американского континента пробирались в Азию. Третьей возможной родиной китайских голых хохлатых собак называют территории современного Таиланда и Шри-Ланки, жители которых с незапамятных времен вели торговые отношения с Китаем и, соответственно, имели возможность сплавлять туда своих четверолапых подопечных.
+        </p>
+        <p>
+         Современный этап становления породы пришелся на конец XIX века, когда нью-йоркская журналистка Ида Гаррет привезла в США первых «китайцев». Женщину настолько восхитили декоративные «хохлатики», что она посвятила их разведению 60 лет жизни. В начале XX столетия к питомцам пробудился интерес и у профессиональных бридеров. В частности, американская заводчица Дебора Вудс завела первую племенную книгу китайских хохлатых уже в 30-х годах прошлого столетия. В 1959 году в США появился первый клуб любителей КХС, а в 1965-м один из подопечных миссис Вудс отправился покорять Туманный Альбион. Британские заводчики тоже не остались равнодушными к экзотическим собачкам, о чем свидетельствует открытие многочисленных питомников в разных уголках Англии в период с 1969 по 1975 год. При этом волокита с признанием породы кинологическими ассоциациями тянулась еще долго. Первым в 1981 году капитулировал KC (Английский кинологический клуб), а 6 лет спустя к нему подтянулась и FCI, утвердившая право китайских хохлатых на племенное разведение. Дольше всех держался AKC (Американский клуб собаководства), провозгласивший «китайцев» самостоятельной породой лишь в 1991 году.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Голая китайская хохлатая собака" data-fancybox="gallery" href="/upload/iblock/78c/78ca4a72137a91c4a077174db4654998.jpg" title="Голая китайская хохлатая собака">
+           <div class="lazy-load" data-alt="Голая китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/78c/512_342_2/78ca4a72137a91c4a077174db4654998.jpg">
+            <noscript data-alt="Голая китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/78c/512_342_2/78ca4a72137a91c4a077174db4654998.jpg">
+             <img alt="Голая китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/78c/512_342_2/78ca4a72137a91c4a077174db4654998.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Голая китайская хохлатая собака
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Китайская хохлатая собака паудер-пафф" data-fancybox="gallery" href="/upload/iblock/205/205f9bfcf9fe5c41a47f7ff9abfe396c.jpg" title="Китайская хохлатая собака паудер-пафф">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака паудер-пафф" data-class="article_pic" data-original="/upload/resize_cache/iblock/205/512_342_2/205f9bfcf9fe5c41a47f7ff9abfe396c.jpg">
+            <noscript data-alt="Китайская хохлатая собака паудер-пафф" data-class="article_pic" data-original="/upload/resize_cache/iblock/205/512_342_2/205f9bfcf9fe5c41a47f7ff9abfe396c.jpg">
+             <img alt="Китайская хохлатая собака паудер-пафф" class="article_pic" src="/upload/resize_cache/iblock/205/512_342_2/205f9bfcf9fe5c41a47f7ff9abfe396c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Китайская хохлатая собака паудер-пафф
+          </div>
+         </div>
+        </div>
+        <h2>
+         Видео: Китайская хохлатая собака
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="wxXJ9QgcZuc">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность китайской хохлатой собаки
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок китайской хохлатой собаки" data-fancybox="gallery" href="/upload/iblock/24b/24be90a2bb88f1cf3aa01f87c4ab056f.jpg" title="Щенок китайской хохлатой собаки">
+          <div class="lazy-load" data-alt="Щенок китайской хохлатой собаки" data-class="article_pic" data-original="/upload/resize_cache/iblock/24b/412_2150_1/24be90a2bb88f1cf3aa01f87c4ab056f.jpg">
+           <noscript data-alt="Щенок китайской хохлатой собаки" data-class="article_pic" data-original="/upload/resize_cache/iblock/24b/412_2150_1/24be90a2bb88f1cf3aa01f87c4ab056f.jpg">
+            <img alt="Щенок китайской хохлатой собаки" class="article_pic" height="274" src="/upload/resize_cache/iblock/24b/412_2150_1/24be90a2bb88f1cf3aa01f87c4ab056f.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок китайской хохлатой собаки
+         </div>
+        </div>
+        <p>
+         Китайская хохлатая собака не самая удобная в содержании порода, но этот недостаток полностью компенсируется нетривиальным имиджем ее представителей. Согласно стандарту, утвержденному FCI, китайские хохлатые могут иметь оленье или коренастое телосложение. Особей из первой категории отличает облегченный скелет (костяк) и, соответственно, большая грация. Коренастые животные тяжелее своих собратьев почти в два раза (вес взрослой собаки может достигать 5 кг) и приземистее.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Слегка вытянута, черепная коробка в меру округлая, скулы невыпуклые. Морда чуть сужена, стоп выражен умеренно.
+        </p>
+        <h3>
+         Зубы и челюсти
+        </h3>
+        <p>
+         Челюсти у китайских хохлатых крепкие, с правильным прикусом (нижние зубы полностью перекрыты верхними). У бесшерстных особей коренные зубы часто не прорезаются, однако такое отклонение от стандарта считается вполне допустимым, так как обусловлено генетически.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Мочка средней величины, окрас может быть любым.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Сравнительно большие, поставлены вертикально. Исключение из правила – китайские хохлатые пухового типа, которые могут иметь висячее ушное полотно.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         У КХС небольшие, широко поставленные и очень темные глаза.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Сухая, длинная, с изящным изгибом, который особенно заметен у движущегося животного.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Мордочка голой китайской хохлатой собаки" data-fancybox="gallery" href="/upload/iblock/352/352f09cc9de7fa43638956425ef3eb68.jpg" title="Мордочка голой китайской хохлатой собаки">
+          <div class="lazy-load" data-alt="Мордочка голой китайской хохлатой собаки" data-class="article_pic" data-original="/upload/iblock/352/352f09cc9de7fa43638956425ef3eb68.jpg">
+           <noscript data-alt="Мордочка голой китайской хохлатой собаки" data-class="article_pic" data-original="/upload/iblock/352/352f09cc9de7fa43638956425ef3eb68.jpg">
+            <img alt="Мордочка голой китайской хохлатой собаки" class="article_pic" src="/upload/iblock/352/352f09cc9de7fa43638956425ef3eb68.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мордочка голой китайской хохлатой собаки
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Длина корпуса у особей оленьего и коренастого типов сильно различается. В первом случае туловище будет нормальных пропорций, во-втором – вытянутым в длину. Грудь у представителей породы китайская хохлатая широкая, ребра слегка изогнутые, живот подтянут.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Передние ноги у голых китайских хохлатых собак прямые и тонкие. Плечи узкие и «смотрят» назад, а пясти миниатюрные и стоят почти вертикально. Задние конечности ровные, с мускулистыми бедрами и низко опущенными скакательными суставами. Лапы у китайских хохлатых заячьего типа, то есть узкие и вытянутые в длину. Пальцы лап прикрыты «сапожками» из воздушной шерсти.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Голая хохлатая и паудер-пафф" data-fancybox="gallery" href="/upload/iblock/057/0570e418785af1caea79f0232659a8be.jpg" title="Голая хохлатая и паудер-пафф">
+          <div class="lazy-load" data-alt="Голая хохлатая и паудер-пафф" data-class="article_pic" data-original="/upload/resize_cache/iblock/057/412_2150_1/0570e418785af1caea79f0232659a8be.jpg">
+           <noscript data-alt="Голая хохлатая и паудер-пафф" data-class="article_pic" data-original="/upload/resize_cache/iblock/057/412_2150_1/0570e418785af1caea79f0232659a8be.jpg">
+            <img alt="Голая хохлатая и паудер-пафф" class="article_pic" height="274" src="/upload/resize_cache/iblock/057/412_2150_1/0570e418785af1caea79f0232659a8be.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Голая хохлатая и паудер-пафф
+         </div>
+        </div>
+        <p>
+         Длинный, прямого типа, с эффектным плюмажем из мягкой шерсти. При движении держится приподнятым, в состоянии покоя опущен.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         В идеале шерсть у голых «хохлатиков» должна присутствовать только на лапах, хвосте и голове, хотя нередки и исключения из правила. Паудер-паффы полностью зарастают мягким вуалевидным волосом, под которым скрывается небольшой подшерсток. При этом очаровательный «чубчик» на голове имеется как у голых, так и у пуховых собак.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         В мировой кинологии разрешенными объявлены все типы окрасов китайских хохлатых собак. Обитатели же российских питомников располагают только 20 официально признанными окрасами:
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Голая китайская собака на выставке" data-fancybox="gallery" href="/upload/iblock/3bb/3bbe0be4c207061a9569b0915f91f728.jpg" title="Голая китайская собака на выставке">
+          <div class="lazy-load" data-alt="Голая китайская собака на выставке" data-class="article_pic" data-original="/upload/resize_cache/iblock/3bb/412_2150_1/3bbe0be4c207061a9569b0915f91f728.jpg">
+           <noscript data-alt="Голая китайская собака на выставке" data-class="article_pic" data-original="/upload/resize_cache/iblock/3bb/412_2150_1/3bbe0be4c207061a9569b0915f91f728.jpg">
+            <img alt="Голая китайская собака на выставке" class="article_pic" height="346" src="/upload/resize_cache/iblock/3bb/412_2150_1/3bbe0be4c207061a9569b0915f91f728.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Голая китайская собака на выставке
+         </div>
+        </div>
+        <ul>
+         <li>
+          сплошной белый;
+         </li>
+         <li>
+          бело-черный;
+         </li>
+         <li>
+          бело-голубой;
+         </li>
+         <li>
+          бело-шоколадный;
+         </li>
+         <li>
+          бело-бронзовый;
+         </li>
+         <li>
+          бело-кремовый;
+         </li>
+         <li>
+          сплошной черный;
+         </li>
+         <li>
+          черный с белым;
+         </li>
+         <li>
+          черный с подпалом;
+         </li>
+         <li>
+          сплошной кремовый;
+         </li>
+         <li>
+          кремово-белый;
+         </li>
+         <li>
+          сплошной шоколадный;
+         </li>
+         <li>
+          сплошной бронзовый;
+         </li>
+         <li>
+          бронзовый с белым;
+         </li>
+         <li>
+          соболиный;
+         </li>
+         <li>
+          шоколадный с белым;
+         </li>
+         <li>
+          шоколадно-подпалый;
+         </li>
+         <li>
+          сплошной голубой;
+         </li>
+         <li>
+          голубой с белым;
+         </li>
+         <li>
+          трехцветный.
+         </li>
+        </ul>
+        <p class="legenda">
+         Важно: голая, пуховая, в оленьем или коренастом типе – все эти разновидности китайских хохлатых уравнены в правах, так что дисквалифицировать собаку на выставке можно только за ее несоответствие породному стандарту, но никак не за внешние особенности.
+        </p>
+        <h2>
+         Фото китайской хохлатой собаки
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/983/983aca5ca8cbcc5f322f36d41d69ec00.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/983/380_264_2/983aca5ca8cbcc5f322f36d41d69ec00.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/983/380_264_2/983aca5ca8cbcc5f322f36d41d69ec00.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/983/380_264_2/983aca5ca8cbcc5f322f36d41d69ec00.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a54/a54d0036624c9f84916f57c30b7ab688.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/a54/380_264_2/a54d0036624c9f84916f57c30b7ab688.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/a54/380_264_2/a54d0036624c9f84916f57c30b7ab688.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/a54/380_264_2/a54d0036624c9f84916f57c30b7ab688.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/96f/96fcb9006712a697ebf42466569467f9.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/96f/380_264_2/96fcb9006712a697ebf42466569467f9.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/96f/380_264_2/96fcb9006712a697ebf42466569467f9.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/96f/380_264_2/96fcb9006712a697ebf42466569467f9.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/cd7/cd7f2d47e56d0bb3e69b88506f1b7707.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd7/380_264_2/cd7f2d47e56d0bb3e69b88506f1b7707.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd7/380_264_2/cd7f2d47e56d0bb3e69b88506f1b7707.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/cd7/380_264_2/cd7f2d47e56d0bb3e69b88506f1b7707.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/da8/da8b8413dc2022fbdd2d775e6a9cbbd2.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/da8/380_264_2/da8b8413dc2022fbdd2d775e6a9cbbd2.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/da8/380_264_2/da8b8413dc2022fbdd2d775e6a9cbbd2.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/da8/380_264_2/da8b8413dc2022fbdd2d775e6a9cbbd2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/453/453c338819e03aa36d55608b5b215ba5.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/453/380_264_2/453c338819e03aa36d55608b5b215ba5.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/453/380_264_2/453c338819e03aa36d55608b5b215ba5.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/453/380_264_2/453c338819e03aa36d55608b5b215ba5.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/604/60410c21a7d91b0754e3c8d0b93777c2.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/604/380_264_2/60410c21a7d91b0754e3c8d0b93777c2.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/604/380_264_2/60410c21a7d91b0754e3c8d0b93777c2.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/604/380_264_2/60410c21a7d91b0754e3c8d0b93777c2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fc4/fc4cdfde34c91023ebbf501f1c2f7f92.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/fc4/380_264_2/fc4cdfde34c91023ebbf501f1c2f7f92.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/fc4/380_264_2/fc4cdfde34c91023ebbf501f1c2f7f92.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/fc4/380_264_2/fc4cdfde34c91023ebbf501f1c2f7f92.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ff4/ff487db0610236e53308a74ba96dfbf5.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/ff4/380_264_2/ff487db0610236e53308a74ba96dfbf5.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/ff4/380_264_2/ff487db0610236e53308a74ba96dfbf5.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/ff4/380_264_2/ff487db0610236e53308a74ba96dfbf5.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер китайской хохлатой собаки
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Китайская хохлатая собака с любимой хозяйкой" data-fancybox="gallery" href="/upload/iblock/dbf/dbf6155c605d7f9779f92905ff0c4f5f.jpg" title="Китайская хохлатая собака с любимой хозяйкой">
+          <div class="lazy-load" data-alt="Китайская хохлатая собака с любимой хозяйкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/dbf/412_2150_1/dbf6155c605d7f9779f92905ff0c4f5f.jpg">
+           <noscript data-alt="Китайская хохлатая собака с любимой хозяйкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/dbf/412_2150_1/dbf6155c605d7f9779f92905ff0c4f5f.jpg">
+            <img alt="Китайская хохлатая собака с любимой хозяйкой" class="article_pic" height="309" src="/upload/resize_cache/iblock/dbf/412_2150_1/dbf6155c605d7f9779f92905ff0c4f5f.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Китайская хохлатая собака с любимой хозяйкой
+         </div>
+        </div>
+        <p>
+         Коммуникабельная, доброжелательная, боготворящая собственного хозяина – если ваша КХС не обладает хотя бы этими тремя качествами, задумайтесь, а действительно ли это китайская хохлатая. Удивительная привязанность породы к человеку породила ряд мифов о ее ментальных талантах. Так, например, многие владельцы «китайчат» всерьез уверены в том, что их питомцы обладают склонностью к телепатии и способны предугадывать желания.
+        </p>
+        <p>
+         Историй о так называемой «лечебности» породы тоже немало. Правда, это относится больше к «голышам», кожа которых кажется горячей из-за отсутствия на ней шерсти. По заверениям владельцев, голые китайские хохлатые собаки смягчают болевые ощущения при артрозе и ревматизме, выполняя функцию живой грелки. Насколько такие рассказы правдивы, судить сложно, но то, что КХС действительно умеют создать в доме гармоничную, умиротворяющую атмосферу – доказанный факт.
+        </p>
+        <p>
+         Одна из главных фобий породы китайская хохлатая – одиночество. Надолго оставленное в пустой квартире животное в буквальном смысле сходит с ума, оповещая окружающих о своем несчастье громким воем. Впрочем, чтобы от души полаять, «пуховкам» и «голышам» далеко не всегда нужен повод, поэтому если в какой-то момент ваш любимец увлекся «ораториями», займитесь его воспитанием. Но не переусердствуйте: превратить хохлатого вокалиста в молчуна все равно не удастся.
+        </p>
+        <p>
+         Представители этой породы не привязаны к дивану и вполне мобильны. Заднее сиденье автомобиля, велосипедная корзина или обычный поводок – выбирайте любой понравившийся способ и смело выводите или вывозите питомца в свет. Кроме того, озорные «хохолки» всегда рады поиграть с мячиком, пищалкой и прочими собачьими развлекушками. Ну а если к процессу присоединится кто-нибудь из домочадцев, включая детей, радости «китайца» не будет предела.
+        </p>
+        <p>
+         Любовь к человеку у КХС часто доходит до навязчивости. Щенки интуитивно копируют кошачье поведение: трутся об ноги, пытаются взгромоздиться на колени и поиграть в обнимашки с обожаемым хозяином. Пытаться взрастить в китайских хохлатых эмоциональную холодность и степенность – бесполезное, а для психики животного еще и заведомо вредное занятие. Если перспектива постоянного тесного контакта с питомцем вас серьезно напрягает, придется остановить свой выбор на другой, менее общительной породе.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Тренировка китайской хохлатой собаки" data-fancybox="gallery" href="/upload/iblock/2b4/2b478ee1be23023346d5c4393977b9a1.jpg" title="Тренировка китайской хохлатой собаки">
+          <div class="lazy-load" data-alt="Тренировка китайской хохлатой собаки" data-class="article_pic" data-original="/upload/resize_cache/iblock/2b4/412_2150_1/2b478ee1be23023346d5c4393977b9a1.jpg">
+           <noscript data-alt="Тренировка китайской хохлатой собаки" data-class="article_pic" data-original="/upload/resize_cache/iblock/2b4/412_2150_1/2b478ee1be23023346d5c4393977b9a1.jpg">
+            <img alt="Тренировка китайской хохлатой собаки" class="article_pic" height="274" src="/upload/resize_cache/iblock/2b4/412_2150_1/2b478ee1be23023346d5c4393977b9a1.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Тренировка китайской хохлатой собаки
+         </div>
+        </div>
+        <p>
+         Нередко на зоофорумах можно встретить жалобы на недалекость и плохую воспитанность КХС, хотя на самом деле «хохлатики» – умные, любознательные и вполне обучаемые создания. И все же ни одна, даже самая интеллектуально развитая собака не станет сама себя дрессировать, так что если ждете от животного врожденного чувства такта и поведенческого аристократизма, то совершенно напрасно.
+        </p>
+        <p>
+         Воспитание щенка начинается с рождения или же с первых минут его появления в доме. Для начала приучите малыша к месту и не позволяйте ему лезть в вашу кровать (да-да, КХС – исключительные обаяшки, но спать они должны на собственной лежанке). Если щенок слишком скучает по маме и братьям, первое время на его тюфячок подкладывают грелку, создающую иллюзию теплого собачьего живота. И не забывайте, что психика китайских хохлатых собак очень хрупкая, поэтому зажмите собственные эмоции в кулак и никогда не кричите на проштрафившегося малыша.
+        </p>
+        <p>
+         Проблемы с туалетом, на которые часто жалуются владельцы породы, возникают в основном у особей, которым плохо или слишком поздно объяснили, как пользоваться приспособлениями для собачьих нужд. В целом китайские хохлатые – прирожденные «пеленочники» и «лоточники», то есть они не могут долго терпеть и предпочитают сделать свои «делишки» на газету или в лоток, чем дожидаться выгула. Однако приучить их к уличному туалету вполне реально, причем методы используются те же, что и для собак других пород.
+        </p>
+        <p>
+         Несмотря на то, что в силу своей субтильной комплекции КХС кажутся управляемыми и податливыми, дрессировать их все равно необходимо. В частности, команду «Нельзя!» обязан понимать и исполнять каждый взрослый «китаец», точно так же, как и подходить к хозяину по его зову. При желании китайскую хохлатую можно обучить несложным цирковым трюкам. Известно, что «пуховки» и «голыши» хорошо ходят на задних лапах и кружатся под музыку.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Голая китайская хохлатая собака" data-fancybox="gallery" href="/upload/iblock/4bc/4bce42c8d06b3583a91ce6e8594c0120.jpg" title="Голая китайская хохлатая собака">
+          <div class="lazy-load" data-alt="Голая китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/4bc/1024_2150_1/4bce42c8d06b3583a91ce6e8594c0120.jpg">
+           <noscript data-alt="Голая китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/4bc/1024_2150_1/4bce42c8d06b3583a91ce6e8594c0120.jpg">
+            <img alt="Голая китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/4bc/1024_2150_1/4bce42c8d06b3583a91ce6e8594c0120.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Голая китайская хохлатая собака
+         </div>
+        </div>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         Дома питомец должен чувствовать себя уютно и защищенно, поэтому обустройте для него уединенный уголок. Оптимальный вариант – небольшой домик, хотя лежанка с бортиками тоже подойдет. У растущей китайкой хохлатой собаки должно быть достаточное количество игрушек. Здесь сгодятся как резиновые пищалки из магазина, так и альтернативные варианты вроде пробок, клубков и небольших картонных коробочек. Для поездок к ветеринару или путешествий лучше приобрести сумку-переноску.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Красивая «пуховка»" data-fancybox="gallery" href="/upload/iblock/c39/c39f28aa77b8141e2ed6d731f510c24b.jpg" title="Красивая «пуховка»">
+          <div class="lazy-load" data-alt="Красивая «пуховка»" data-class="article_pic" data-original="/upload/resize_cache/iblock/c39/412_2150_1/c39f28aa77b8141e2ed6d731f510c24b.jpg">
+           <noscript data-alt="Красивая «пуховка»" data-class="article_pic" data-original="/upload/resize_cache/iblock/c39/412_2150_1/c39f28aa77b8141e2ed6d731f510c24b.jpg">
+            <img alt="Красивая «пуховка»" class="article_pic" height="441" src="/upload/resize_cache/iblock/c39/412_2150_1/c39f28aa77b8141e2ed6d731f510c24b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Красивая «пуховка»
+         </div>
+        </div>
+        <p>
+         Как это ни парадоксально, но с кожей «голышей» не меньше возни, чем с шерстью паудер-паффов. Моют бесшерстных КХС раз, а то и два в неделю с использованием мягкого, гипоаллергенного шампуня и кондиционера. Если же специальных средств гигиены под рукой не оказалось, можно ограничиться детским или дегтярным мылом. Сушка феном тоже обязательное мероприятие.
+        </p>
+        <p>
+         С кожи голых китайских хохлатых необходимо регулярно удалять угри и комедоны – черные сальные пробки, закупоривающие поры. В частности, «просянки» (белые шарики) прокалывают медицинской иглой, выдавливают их содержимое и обрабатывают место прокола хлоргексидином. Перед тем как начать убирать черные угри, кожу собаки распаривают (подойдет махровое полотенце, смоченное в нагретой воде и обернутое вокруг корпуса животного). Удалять комедоны можно руками, но пальцы в таком случае должны быть обернуты стерильным бинтом, пропитанным антисептиком. С прыщиками, которые могут быть следствием пищевой аллергии, можно бороться посредством мазей типа «Бепантен» и масла чайного дерева.
+        </p>
+        <p>
+         Стоит учесть, что даже у голых китайских хохлатых собак на корпусе и животе имеется некоторое количество шерсти. Обычно это редкие волоски, портящие гламурный облик животного, но у отдельных особей встречается и более густой зарост. В целях улучшения внешнего вида волос на теле «голышей» удаляют одноразовым бритвенным станком, предварительно смазав кожу собаки пенкой для бритья. Еще один доступный и безболезненный вариант – депилирующие кремы из обычного супермаркета. Эпилятор и восковые полоски дают более длительный результат, но далеко не все КХС способны вытерпеть такую «экзекуцию». Впрочем, отдельным заводчикам удается приучить своих питомцев стойко переносить дискомфорт и во время таких процедур. Главное потом не забыть обработать кожу любимца антисептическим лосьоном и смазать ее кремом после бритья.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/df3/df39d3e1099d2750475c4ce413bac3d4.jpg" title="">
+          <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/df3/412_2150_1/df39d3e1099d2750475c4ce413bac3d4.jpg">
+           <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/df3/412_2150_1/df39d3e1099d2750475c4ce413bac3d4.jpg">
+            <img alt="Китайская хохлатая собака" class="article_pic" height="620" src="/upload/resize_cache/iblock/df3/412_2150_1/df39d3e1099d2750475c4ce413bac3d4.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Кстати, о кремах. В «косметичке» голой китайской хохлатой собаки они должны быть обязательно, поскольку кожа таких животных склонна к сухости и очень чувствительна к воздействию окружающей среды. Прикупите питомцу парочку питательных и увлажняющих средств, а на летний период запаситесь кремом с высоким уровнем SPF.
+        </p>
+        <p>
+         Владельцам пуховых китайских «хохлатиков» тоже расслабляться не придется. Моют паудер-паффов, конечно, реже, чем «голышей» (2-3 раза в месяц), но зато расчесывают ежедневно. Шерсть «пуховок» очень мягкая, а это значит, что как бы тщательно вы ни ухаживали за питомцем, колтуны обеспечены. Вопрос лишь в том, насколько плотными они будут. Если животное расчесывают регулярно, запутавшуюся шерстку проще привести в порядок. У хозяев запущенных собак выход только один – выстригание свалявшихся участков. Отлично, если у владельца есть время и свободные средства, чтобы сводить любимца к грумеру. Если же уход осуществляется в домашних условиях, соблюдайте несколько правил.
+        </p>
+        <ul>
+         <li>
+          Никогда не расчесывайте сухую шерсть «пуховок». Обязательно увлажните ее специальным лосьоном.
+         </li>
+         <li>
+          Закрепляйте хохолок собаки резиночкой – так волос будет меньше путаться.
+         </li>
+         <li>
+          Выбирайте для лежанки питомца гладкую ткань вроде сатина. Это в какой-то мере снизит вероятность сбивания шерсти в колтуны, пока животное спит.
+         </li>
+        </ul>
+        <p>
+         Уход за ушами и глазами китайских хохлатых собак не самый сложный. Пару раз в неделю ушные воронки питомцев необходимо чистить ватными палочками и обрабатывать ветеринарным лосьоном слизистую глаза (народные средства противопоказаны). Можно дополнительно выщипать волоски во внутренней части уха животного, это улучшит циркуляцию воздуха в нем. Кроме того, слишком обильная шерсть мешает удалению серных отложений из ушной раковины.
+        </p>
+        <p>
+         Стрижка когтей китайской хохлатой собаки потребует максимальной сосредоточенности. Кровеносные сосуды в когтях «китайцев» проходят достаточно глубоко, и есть риск задеть их ножницами. Это как раз тот случай, когда лучше недорезать, чем отхватить лишнее.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Взъерошенное чудо" data-fancybox="gallery" href="/upload/iblock/e2d/e2dcbb5fdfe3d9e0d151392f8f853072.jpg" title="Взъерошенное чудо">
+          <div class="lazy-load" data-alt="Взъерошенное чудо" data-class="article_pic" data-original="/upload/resize_cache/iblock/e2d/1024_2150_1/e2dcbb5fdfe3d9e0d151392f8f853072.jpg">
+           <noscript data-alt="Взъерошенное чудо" data-class="article_pic" data-original="/upload/resize_cache/iblock/e2d/1024_2150_1/e2dcbb5fdfe3d9e0d151392f8f853072.jpg">
+            <img alt="Взъерошенное чудо" class="article_pic" src="/upload/resize_cache/iblock/e2d/1024_2150_1/e2dcbb5fdfe3d9e0d151392f8f853072.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Взъерошенное чудо
+         </div>
+        </div>
+        <h3>
+         Прогулки
+        </h3>
+        <p>
+         Выгуливать представителей породы китайская хохлатая следует ежедневно. На свежем воздухе энергичные и любознательные «хохлатики» впадают в своего рода неистовство, поэтому выводят их на поводке-рулетке. А еще эти малыши обожают играть в археологов и вести раскопки на клумбах, поэтому остановить увлекшуюся собаку без поводка будет трудно.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Китайская хохлатая собака в одежде" data-fancybox="gallery" href="/upload/iblock/3e8/3e82bfceed0e5d43387fd14ea7096233.jpg" title="Китайская хохлатая собака в одежде">
+          <div class="lazy-load" data-alt="Китайская хохлатая собака в одежде" data-class="article_pic" data-original="/upload/resize_cache/iblock/3e8/412_2150_1/3e82bfceed0e5d43387fd14ea7096233.jpg">
+           <noscript data-alt="Китайская хохлатая собака в одежде" data-class="article_pic" data-original="/upload/resize_cache/iblock/3e8/412_2150_1/3e82bfceed0e5d43387fd14ea7096233.jpg">
+            <img alt="Китайская хохлатая собака в одежде" class="article_pic" height="274" src="/upload/resize_cache/iblock/3e8/412_2150_1/3e82bfceed0e5d43387fd14ea7096233.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Китайская хохлатая собака в одежде
+         </div>
+        </div>
+        <p>
+         Прогулкам обычно предшествует подготовка. Например, в весенне-летний период тело голых собак смазывают солнцезащитным кремом, чтобы предупредить ожог. Осенью и зимой животных выводят на улицу одетыми (актуально для «голышей»), причем в морозную погоду количество выгулов лучше свести к минимуму.
+        </p>
+        <p>
+         Ходить с китайской хохлатой можно не везде. В частности, бесшерстных любимцев не рекомендуется водить в лес или ездить с ними на пикник к водоемам. Не защищенное шерстью тело собаки – отличная мишень для комаров и других кровососущих насекомых, поэтому после такой вылазки КХС придется лечить от укусов и возможной аллергии. Оставлять четверолапого друга загорать на солнышке тоже нежелательно. У «голышей» это может спровоцировать перегрев, ожог, и пигментацию кожи, а у «пушистиков» под действием ультрафиолета пересыхает и грубеет волос.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Правило первое и единственное: никаких несанкционированных вкусняшек и деликатесов с собственного стола. У голых китайских хохлатых собак очень чувствительное пищеварение и аллергия на целую кучу продуктов, поэтому любая попытка видоизменить меню питомца неизменно заканчивается походом к ветеринару. Понять, что вы сплоховали и накормили любимца не тем, чем нужно, можно по состоянию его кожи и шерсти. Прыщи, жировики, подтеки под глазами – еще не самые ужасные симптомы. Гораздо хуже, если после вашего угощения китайскую хохлатую собаку рвет.
+        </p>
+        <p>
+         Строгое нет:
+        </p>
+        <ul>
+         <li>
+          сырым мясу и рыбе;
+         </li>
+         <li>
+          молоку;
+         </li>
+         <li>
+          свинине;
+         </li>
+         <li>
+          курице (сильнейший аллерген);
+         </li>
+         <li>
+          любым колбасным изделиям;
+         </li>
+         <li>
+          сладостям;
+         </li>
+         <li>
+          винограду;
+         </li>
+         <li>
+          костям;
+         </li>
+         <li>
+          манке, овсянке, перловке.
+         </li>
+        </ul>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок китайской хохлатой собаки паудер-пафф" data-fancybox="gallery" href="/upload/iblock/9ab/9ab7a6a7b8e41980c22791d9bd192138.jpg" title="Щенок китайской хохлатой собаки паудер-пафф">
+          <div class="lazy-load" data-alt="Щенок китайской хохлатой собаки паудер-пафф" data-class="article_pic" data-original="/upload/resize_cache/iblock/9ab/412_2150_1/9ab7a6a7b8e41980c22791d9bd192138.jpg">
+           <noscript data-alt="Щенок китайской хохлатой собаки паудер-пафф" data-class="article_pic" data-original="/upload/resize_cache/iblock/9ab/412_2150_1/9ab7a6a7b8e41980c22791d9bd192138.jpg">
+            <img alt="Щенок китайской хохлатой собаки паудер-пафф" class="article_pic" height="548" src="/upload/resize_cache/iblock/9ab/412_2150_1/9ab7a6a7b8e41980c22791d9bd192138.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок китайской хохлатой собаки паудер-пафф
+         </div>
+        </div>
+        <p>
+         Особям, питающимся «натуралкой», хорошо подходят обезжиренная кисломолочка, каши на воде (кукурузная, рисовая, пшенная), тертое яблоко. Ужинать «китаец» должен нежирным мясом, которое раз в неделю можно заменить отварной морской рыбкой. Сырые морковь и капуста, приправленные растительным маслом, в меню китайской хохлатой тоже допустимы. Если в вашей квартире обитает пожилая КХС, то пищу для нее необходимо тщательно измельчать или доводить до состояния фарша. Особенно это касается «голышей», которые от рождения имеют неполный комплект зубов, а к старости и вовсе превращаются в беззубиков. Хохлатых «старичков», ранее сидевших на промышленных кормах, обычно переводят на влажные их разновидности (паштеты, мясо в желе).
+        </p>
+        <p>
+         Молодых и здоровых собак можно кормить «сушкой», но качественной. Корма эконом-класса здесь не прокатят. Да и из супер-премиум разновидностей лучше выбрать гипоаллергенные сорта. Для беременных КХС сухие крокеты и вовсе идеальный вариант, поскольку содержат в себе необходимые развивающемуся плоду витамины и микроэлементы. Беременным «девочкам», которых потчуют «натуралкой», в этом плане сложнее, поэтому, если вы обеими руками за натурпитание и не готовы кардинально менять рацион будущей мамы, купите ей витаминный комплекс. И не впадайте в панику, если в первые недели беременности китайская хохлатая отказывается от еды или ее рвет. Это самый обыкновенный токсикоз, через который проходит большинство сук.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни китайских хохлатых собак
+        </h2>
+        <p>
+         Китайские хохлатые – относительно крепкие собаки, но свой список генетических недугов имеется и у них. Чаще всего у представителей этой породы можно обнаружить:
+        </p>
+        <ul>
+         <li>
+          первичный вывих глазного хрусталика;
+         </li>
+         <li>
+          прогрессирующую атрофию сетчатки;
+         </li>
+         <li>
+          катаракту;
+         </li>
+         <li>
+          сухой кератоконъюнктивит;
+         </li>
+         <li>
+          гиперурикозурию;
+         </li>
+         <li>
+          дегенеративную миелопатию;
+         </li>
+         <li>
+          эпилепсию;
+         </li>
+         <li>
+          болезнь Пертеса;
+         </li>
+         <li>
+          вывих коленной чашечки;
+         </li>
+         <li>
+          гиперплазию суставов (тазобедренных).
+         </li>
+        </ul>
+        <p>
+         Из хворей, не обусловленных наследственностью, можно отметить пищевую аллергию, провоцирующую высыпания на коже голых «китайчат».
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Китайская хохлатая собака с щенком" data-fancybox="gallery" href="/upload/iblock/3d5/3d5b7550be29fb847f88c04553286632.jpg" title="Китайская хохлатая собака с щенком">
+          <div class="lazy-load" data-alt="Китайская хохлатая собака с щенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/3d5/412_2150_1/3d5b7550be29fb847f88c04553286632.jpg">
+           <noscript data-alt="Китайская хохлатая собака с щенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/3d5/412_2150_1/3d5b7550be29fb847f88c04553286632.jpg">
+            <img alt="Китайская хохлатая собака с щенком" class="article_pic" height="272" src="/upload/resize_cache/iblock/3d5/412_2150_1/3d5b7550be29fb847f88c04553286632.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Китайская хохлатая собака с щенком
+         </div>
+        </div>
+        <p>
+         Продавать щенков китайской хохлатой начинают в возрасте полутора месяцев, но ничто не мешает вам наведаться в питомник раньше, чтобы забронировать малыша, а заодно оценить условия, в которых он живет. Познакомиться с родителями будущего питомца или хотя бы с одним из них стоит обязательно. В конце концов, наследственные заболевания никто не отменял.
+        </p>
+        <p>
+         Что касается экстерьера, то он у щенков китайской хохлатой нестабилен. Животные с черной и шоколадной шерсткой по мере взросления светлеют, у многих малышей меняются пропорции головы (удлиняется мордочка), да и хохолок у большинства юных особей еще не слишком выражен и больше напоминает шапочку.
+        </p>
+        <p>
+         Если ваш выбор – голая китайская хохлатая, уделите максимум внимания шерсти на голове и хвосте малыша. Например, если «чубчик» и плюмаж густые, по мере взросления эта особенность проявится ярче. Редкий же волос, увы, обильнее не станет. Иногда щенки бесшерстной КХС могут зарастать по всему корпусу. Это не дефект. Наоборот, у таких особей всегда более эффектные хохолок и хвост. Единственное, брить и эпилировать такую собаку придется чаще. Не стоит стесняться заглянуть «голышу» в рот, чтобы удостовериться в том, что у него прорезались все зубы ну или хотя бы большая их часть.
+        </p>
+        <p>
+         Выбирая между кобелем или сукой, учтите, что даже самые интеллигентные китайские «мальчики» метят территорию. Кроме того, почувствовав запах течной хохлатой «барышни», они становятся неуправляемыми и склонны к побегам. У нестерилизованных «девочек» проблема лишь в течке, которая у них случается дважды в год и длится по 3 недели. При этом на протяжении всего брачного периода малышка может оставлять кровянистые следы выделений в квартире, что понравится далеко не каждому хозяину.
+        </p>
+        <h2>
+         Фото щенков китайской хохлатой собаки
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e8f/e8fa51274b383e0a72a7c263c5020977.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/e8f/380_264_2/e8fa51274b383e0a72a7c263c5020977.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/e8f/380_264_2/e8fa51274b383e0a72a7c263c5020977.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/e8f/380_264_2/e8fa51274b383e0a72a7c263c5020977.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a09/a0922c51ab464b903951abda09cfb26f.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/a09/380_264_2/a0922c51ab464b903951abda09cfb26f.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/a09/380_264_2/a0922c51ab464b903951abda09cfb26f.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/a09/380_264_2/a0922c51ab464b903951abda09cfb26f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/24e/24edf7afbfcbb2f9db90a940a6d2a0ab.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/24e/380_264_2/24edf7afbfcbb2f9db90a940a6d2a0ab.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/24e/380_264_2/24edf7afbfcbb2f9db90a940a6d2a0ab.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/24e/380_264_2/24edf7afbfcbb2f9db90a940a6d2a0ab.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b57/b575e6415123288487d0485312a624f7.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/b57/380_264_2/b575e6415123288487d0485312a624f7.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/b57/380_264_2/b575e6415123288487d0485312a624f7.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/b57/380_264_2/b575e6415123288487d0485312a624f7.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9f6/9f665f891bd2a0c1320b3894518911ce.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/9f6/380_264_2/9f665f891bd2a0c1320b3894518911ce.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/9f6/380_264_2/9f665f891bd2a0c1320b3894518911ce.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/9f6/380_264_2/9f665f891bd2a0c1320b3894518911ce.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/60f/60f8e6b3765d550926e0fe62906aaf4d.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/60f/380_264_2/60f8e6b3765d550926e0fe62906aaf4d.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/60f/380_264_2/60f8e6b3765d550926e0fe62906aaf4d.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/60f/380_264_2/60f8e6b3765d550926e0fe62906aaf4d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ee6/ee6beb7b985842d8677d7b1c1354aa02.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/ee6/380_264_2/ee6beb7b985842d8677d7b1c1354aa02.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/ee6/380_264_2/ee6beb7b985842d8677d7b1c1354aa02.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/ee6/380_264_2/ee6beb7b985842d8677d7b1c1354aa02.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e53/e53f5355f457052047f479973d4e87f2.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/e53/380_264_2/e53f5355f457052047f479973d4e87f2.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/e53/380_264_2/e53f5355f457052047f479973d4e87f2.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/e53/380_264_2/e53f5355f457052047f479973d4e87f2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/54d/54d57c37eae20cca721301cb3c654023.jpg" title="">
+           <div class="lazy-load" data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/54d/380_264_2/54d57c37eae20cca721301cb3c654023.jpg">
+            <noscript data-alt="Китайская хохлатая собака" data-class="article_pic" data-original="/upload/resize_cache/iblock/54d/380_264_2/54d57c37eae20cca721301cb3c654023.jpg">
+             <img alt="Китайская хохлатая собака" class="article_pic" src="/upload/resize_cache/iblock/54d/380_264_2/54d57c37eae20cca721301cb3c654023.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Сколько стоит голая китайская хохлатая собака
+        </h2>
+        <p>
+         Приобрести чистокровного щенка китайской хохлатой меньше чем за 20 000 - 30 000 рублей почти невозможно. В целом даже во время устраиваемых питомником «распродаж», стоимость породистого малыша не должна опускаться ниже 15 000 руб. Если же за животное просят меньше, скорее всего, у него имеется серьезный внешний дефект. Немаловажный момент: щенки голой китайской хохлатой ценятся больше, чем малыши пуховой, и ценник на них всегда выше.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения китайской хохлатой собаки на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27923/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Юлия Макарова" data-original="/upload/resize_cache/main/e25/200_200_2/clfc8049iefu7g2udh0647y8a7ztyiix.jpg">
+            <noscript data-alt="Юлия Макарова" data-original="/upload/resize_cache/main/e25/200_200_2/clfc8049iefu7g2udh0647y8a7ztyiix.jpg">
+             <img alt="Юлия Макарова" src="/upload/resize_cache/main/e25/200_200_2/clfc8049iefu7g2udh0647y8a7ztyiix.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/kitayskaya-khokhlataya-ili-kto-my-5607/">
+           Китайская хохлатая или кто мы
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте. Подскажите пожалуйста. Никогда не мечтала о собаке. Но неожиданно появилось вот такое лысое чудо. Сейчас 1 год и весит 6,5 кг. Кто говорит что китаец, а кто ксоло... Так кто мы 🤔
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27923/">
+            Юлия Макарова
+           </a>
+          </span>
+          <span class="vopros-date">
+           Месяц назад
+          </span>
+          <span class="vopros-smotr">
+           71 просмотр
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/326/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Мария Каражова" data-original="/upload/resize_cache/main/8c9/200_200_2/8c9809c4177962003920be770dee62d1.jpg">
+            <noscript data-alt="Мария Каражова" data-original="/upload/resize_cache/main/8c9/200_200_2/8c9809c4177962003920be770dee62d1.jpg">
+             <img alt="Мария Каражова" src="/upload/resize_cache/main/8c9/200_200_2/8c9809c4177962003920be770dee62d1.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/odezhda-kitayskoy-khokhlatoy-sobaki-229/">
+           Одежда китайской хохлатой собаки
+          </a>
+         </div>
+         <div class="forum-text">
+          Как мы поняли, без одежды грациозных китайских хохлатых собак гулять не выведешь – замерзнут. Как подбирают для них одежду? Сколько комплектов необходимо и что больше подходит по сезонам?
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/326/">
+            Мария Каражова
+           </a>
+          </span>
+          <span class="vopros-date">
+           6 лет назад
+          </span>
+          <span class="vopros-smotr">
+           1896 просмотров
+          </span>
+          <span class="vopros-otvet">
+           3 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/kitayskaya-khokhlataya-sobaka/forum/">
+        Перейти на
+        форум китайской хохлатой собаки
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Китайская хохлатая собака" src="/upload/iblock/39a/39a8f33c4174a4636113e6c2b6c8cdbe.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/kitayskaya-khokhlataya-sobaka/">
+          Китайская хохлатая собака
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/kitayskaya-khokhlataya-sobaka/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/kitayskaya-khokhlataya-sobaka/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/kitayskaya-khokhlataya-sobaka/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/kitayskaya-khokhlataya-sobaka/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/kitayskaya-khokhlataya-sobaka/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/kitayskaya-khokhlataya-sobaka/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/chesapik-bey-retriver/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Чесапик-бей-ретривер" data-original="/upload/resize_cache/iblock/760/100_100_1/q081nva4oresbwcnramkklvou32filaz.jpg">
+          <noscript data-alt="Чесапик-бей-ретривер" data-original="/upload/resize_cache/iblock/760/100_100_1/q081nva4oresbwcnramkklvou32filaz.jpg">
+           <img alt="Чесапик-бей-ретривер" src="/upload/resize_cache/iblock/760/100_100_1/q081nva4oresbwcnramkklvou32filaz.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Чесапик-бей-ретривер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/russkiy-chernyy-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Русский черный терьер" data-original="/upload/resize_cache/iblock/b1f/100_100_1/b1f2a39155ff41379b0c49fc1f751303.jpg">
+          <noscript data-alt="Русский черный терьер" data-original="/upload/resize_cache/iblock/b1f/100_100_1/b1f2a39155ff41379b0c49fc1f751303.jpg">
+           <img alt="Русский черный терьер" src="/upload/resize_cache/iblock/b1f/100_100_1/b1f2a39155ff41379b0c49fc1f751303.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Русский черный терьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/prazhskiy-krysarik/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Пражский крысарик" data-original="/upload/resize_cache/iblock/53c/100_100_1/53ce498d01af92dc81d30527c8449b83.jpg">
+          <noscript data-alt="Пражский крысарик" data-original="/upload/resize_cache/iblock/53c/100_100_1/53ce498d01af92dc81d30527c8449b83.jpg">
+           <img alt="Пражский крысарик" src="/upload/resize_cache/iblock/53c/100_100_1/53ce498d01af92dc81d30527c8449b83.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Пражский крысарик
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/staffordshirskiy-bulterer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Стаффордширский бультерьер" data-original="/upload/resize_cache/iblock/9ee/100_100_1/9eeea860af6408a02f9d4120979bf5ef.jpg">
+          <noscript data-alt="Стаффордширский бультерьер" data-original="/upload/resize_cache/iblock/9ee/100_100_1/9eeea860af6408a02f9d4120979bf5ef.jpg">
+           <img alt="Стаффордширский бультерьер" src="/upload/resize_cache/iblock/9ee/100_100_1/9eeea860af6408a02f9d4120979bf5ef.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Стаффордширский бультерьер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkitayskaya-khokhlataya-sobaka%252F%253Fcheck_key%253Dda8beb0a6f235216b1d70ddffb3e4653%2526ANIMAL_CODE%253Dkitayskaya-khokhlataya-sobaka%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkitayskaya-khokhlataya-sobaka%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmtpdGF5c2theWEta2hva2hsYXRheWEtc29iYWthJTJGJTNGY2hlY2tfa2V5JTNEZGE4YmViMGE2ZjIzNTIxNmIxZDcwZGRmZmIzZTQ2NTMlMjZBTklNQUxfQ09ERSUzRGtpdGF5c2theWEta2hva2hsYXRheWEtc29iYWthJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmtpdGF5c2theWEta2hva2hsYXRheWEtc29iYWthJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkitayskaya-khokhlataya-sobaka%252F%253Fcheck_key%253Dda8beb0a6f235216b1d70ddffb3e4653%2526ANIMAL_CODE%253Dkitayskaya-khokhlataya-sobaka%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fkitayskaya-khokhlataya-sobaka%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkitayskaya-khokhlataya-sobaka%252F%253Fcheck_key%253Dda8beb0a6f235216b1d70ddffb3e4653%2526ANIMAL_CODE%253Dkitayskaya-khokhlataya-sobaka%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkitayskaya-khokhlataya-sobaka%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "176.100.61.39"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--6f81d89efe3d33867dc580bbf0a619ab-->

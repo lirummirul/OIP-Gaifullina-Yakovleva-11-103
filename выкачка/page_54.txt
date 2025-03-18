@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'10a53a8796e6'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Бультерьер, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Бультерьер – потомственный английский аристократ в белоснежном «костюме» с иголочки. Его угрожающий внешний вид лишь маска, под которой скрывается компанейский характер." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/4d2/4d24e8019a6788ef504b406e3f303937.jpg" property="og:image"/>
+     <title>
+      Бультерьер: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/bulterer/" property="og:url"/>
+     <meta content="Бультерьер: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Бультерьер – потомственный английский аристократ в белоснежном «костюме» с иголочки. Его угрожающий внешний вид лишь маска, под которой скрывается компанейский характер." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/bulterer/" itemprop="url">
+         <span itemprop="title">
+          Бультерьер
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Бультерьер
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/bulterer/">
+          Описание
+         </a>
+         <a href="/dog/bulterer/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/bulterer/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/bulterer/photo/">
+          Фото
+         </a>
+         <a href="/dog/bulterer/video/">
+          Видео
+         </a>
+         <a href="/dog/bulterer/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/bulterer/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Бультерьер" src="/upload/iblock/155/1551a67206f254d7314425b17f1d57f1.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/bulterer/">
+           буль
+          </a>
+          ,
+          <a href="/dog/bulterer/">
+           английский бультерьер
+          </a>
+         </span>
+         <p>
+          Бультерьер – потомственный английский аристократ в белоснежном «костюме» с иголочки. Его угрожающий внешний вид лишь маска, под которой скрывается компанейский характер.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/b98/b98d63786331034017bc42cbe5e7f06b.jpg" data-cap="bull terrier puppy" data-fancybox="images" data-link="https://www.flickr.com/photos/76179720@N08/8334910550/" data-type="image" data-username="JuJuMan's" href="/upload/uf/790/790aa2bc4e951bb610e1180309253d37.jpg">
+            <img alt="Бультерьер" src="/upload/resize_cache/uf/790/293_293_2/790aa2bc4e951bb610e1180309253d37.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/a8f/a8f2a479f98ee4125d2d9dbec7da464a.jpg" data-cap="By the river" data-fancybox="images" data-link="https://www.flickr.com/photos/myenglishbullterrier/25703055031/" data-type="image" data-username="Kenzo's place" href="/upload/uf/d66/d66c30ba93d70f00983e7712dedda23c.jpg">
+            <img alt="Бультерьер" src="/upload/resize_cache/uf/d66/293_293_2/d66c30ba93d70f00983e7712dedda23c.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/7ba/7ba5cdc46f21a6dfab5c838c50f657e9.jpg" data-cap="Photo trick" data-fancybox="images" data-link="https://www.flickr.com/photos/138824375@N05/25265024610/" data-type="image" data-username="Frank Winkler" href="/upload/uf/2f6/2f690135542368081b1a606081788e6f.jpg">
+            <img alt="Бультерьер" src="/upload/resize_cache/uf/2f6/293_293_2/2f690135542368081b1a606081788e6f.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/bulterer/photo/">
+         Все
+            фото бультерьера
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <style>
+        .podvidi h2 {
+                text-align: left;
+                margin: 0 0 40px;
+            }
+            .podvidi h2 a{
+                color: #000;
+                border-bottom: 1px solid #bbb;
+            }
+            .podvidi .pop-porodi-block{
+                text-align:left;
+            }
+       </style>
+       <div class="pop-porodi podvidi">
+        <div class="pop-porodi-block">
+         <h2 id="info">
+          Разновидности бультерьеров
+         </h2>
+         <a class="poroda-element" href="/dog/bulterer/">
+          <div class="ava-poroda">
+           <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/155/100_100_1/1551a67206f254d7314425b17f1d57f1.jpg"/>
+          </div>
+          <span>
+           Бультерьер
+          </span>
+         </a>
+         <a class="poroda-element" href="/dog/mini-bulterer/">
+          <div class="ava-poroda">
+           <img alt="Мини-бультерьер" class="article_pic" src="/upload/resize_cache/iblock/798/100_100_1/7981540ecc0f3d9da3919e25833b47fc.jpg"/>
+          </div>
+          <span>
+           Мини-бультерьер
+          </span>
+         </a>
+        </div>
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы бультерьер
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность бультерьера
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер бультерьера
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни бультерьера
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена бультерьера
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Бультерьер
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         XIX век
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         20-37 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         46-56 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         11-14 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Несмотря на устрашающую внешность, бультерьеры весьма доброжелательны и преданны, если их правильно воспитать.
+        </li>
+        <li>
+         Эти собаки чрезмерно активны и оттого нуждаются в регулярных физических нагрузках, где они смогут выплеснуть свою энергию.
+        </li>
+        <li>
+         Бультерьер не самый лучший вариант для охраны, поскольку редко проявляет агрессию даже по отношению к чужакам.
+        </li>
+        <li>
+         Представители породы плохо переносят одиночество, поэтому не уживаются с людьми, которые часто отсутствуют дома.
+        </li>
+        <li>
+         Из них получаются замечательные няньки для детей, но рекомендуется не спускать с питомца глаз во время буйных игр с вашим чадом.
+        </li>
+        <li>
+         Не рекомендуется содержать бультерьера с другими домашними животными: эта порода весьма доминантна и не потерпит конкуренции.
+        </li>
+        <li>
+         Собака нуждается в ранней социализации и воспитании, иначе вырастет неуправляемой и озлобленной.
+        </li>
+        <li>
+         Эти английские аристократы подходят только для опытных собаководов, которые займут позицию лидера и не уступят её четверолапому другу.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Бультерьер" data-original="/upload/iblock/4d2/4d24e8019a6788ef504b406e3f303937.jpg">
+          <noscript data-alt="Бультерьер" data-original="/upload/iblock/4d2/4d24e8019a6788ef504b406e3f303937.jpg">
+           <img alt="Бультерьер" src="/upload/iblock/4d2/4d24e8019a6788ef504b406e3f303937.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Бультерьер
+          </strong>
+          – порода, которую можно описать двумя словами: «гремучая смесь». При неправильном воспитании добродушный нрав животного уступит место древним инстинктам борьбы, которые, наравне с развитым интеллектом, станут причиной многих неприятностей. Делая выбор в пользу бультерьера, стоит трезво оценивать свои силы и твёрдость характера – необходимые условия для грамотной социализации собаки. Впрочем, заняв место альфы в «стае», вы станете счастливым обладателем преданного питомца, который сполна одарит вас любовью и вниманием. Этот спортсмен с радостью присоединится к семейной утренней пробежке или активной игре в футбол.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не переносит (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средний (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Бультерьер основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/bulterer/razmeri-porodi/">
+         размеры бультерьера
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы бультерьер
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бультерьер" data-fancybox="gallery" href="/upload/iblock/708/708c4356a6ce9a62483b09dc937bd336.jpg" title="Бультерьер">
+          <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/708/412_2150_1/708c4356a6ce9a62483b09dc937bd336.jpg">
+           <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/708/412_2150_1/708c4356a6ce9a62483b09dc937bd336.jpg">
+            <img alt="Бультерьер" class="article_pic" height="618" src="/upload/resize_cache/iblock/708/412_2150_1/708c4356a6ce9a62483b09dc937bd336.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бультерьер
+         </div>
+        </div>
+        <p>
+         История бультерьеров уходит корнями в эпоху Средневековья и её «кровавого тотализатора» – беспощадных боёв животных друг с другом. Жажда лёгкой наживы объединяла бедняков и представителей знати: ставки на победителя достигали головокружительных высот. Это жестокое развлечение снискало особую популярность в Англии, где вплоть до XIX века считалось национальным видом спорта.
+        </p>
+        <p>
+         Всеобщим признанием пользовалась травля быков собаками. Первое кровожадное шоу, проведённое в Стамфорде, датируется 1209 годом. Тогда же организаторы поняли: для боя с быком как нельзя лучше подойдут низкорослые породы, которые смогут незаметно обогнуть животное и вцепиться клыками в его незащищённый нос. Собаки не разжимали челюстей даже в тот момент, когда обезумевший от боли бык вскидывал голову вверх. Не меньшую напористость животные проявляли в боях с кабанами и медведями.
+        </p>
+        <p>
+         Популярность жестокого развлечения росла с каждым годом. Даже самая захудалая английская деревушка могла похвастать наличием бойцовой ямы, в которой ежедневно проливалась кровь не одного животного. На арену выпускали самых разъярённых, быстрых и сильных собак, иначе шоу не было зрелищным и ярким. Многие были готовы отдать кругленькую сумму за особо озлобленный экземпляр средних размеров: его победа с лихвой окупила бы затраты и позволила владельцу обогатиться. Так, частыми «гостями» боёв были предки
+         <a class="ph" href="/dog/amerikanskiy-buldog/">
+          американских бульдогов
+         </a>
+         , которые славились смелостью и нетипичной для собак силой.
+        </p>
+        <p>
+         Неизвестно, какая судьба ждала бы участников кровавого представления, если бы не изданный в 1835 году закон, который запрещал открытие бойцовых ям и эксплуатацию животных в столь извращённой манере. Впрочем, человеческая алчность и здесь нашла лазейку. Пользуясь тем, что закон запрещал только бои между крупными животными, организаторы решили переключиться на травлю исключительно собак. Во-первых, эти представления требовали меньше усилий, средств и времени. Во-вторых, наличие бойцовых пород проще утаивалось от представителей закона, чем содержание крупного рогатого скота.
+        </p>
+        <p>
+         Вновь вспыхнула волна интереса разводчиков к компактным животным. Бульдоги ввиду своей неповоротливости не могли обеспечить зевакам зрелищный бой, а организаторы развлекательной программы не желали терять деньги. В то время начались работы по выведению новой породы, которая сохранила бы прежнюю свирепость, но слегка уменьшилась в размерах, став более изворотливой и подвижной. Для этого селекционеры-энтузиасты скрестили терьера со староанглийским бульдогом. Первый ценился за бдительность и ловкость, второй же – за выносливость, упорство и силу. В результате селекции появилась новая порода – буль-энд-терьер, – которая идеально подходила для участия в подпольных боях. Этих собак называли гладиаторами за их готовность биться до победного конца ради одобрения хозяина (и, конечно же, его прибыли на импровизированном тотализаторе).
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок бультерьера" data-fancybox="gallery" href="/upload/iblock/4ae/4aedbd8affc393eac04a88f3fa185581.jpg" title="Щенок бультерьера">
+          <div class="lazy-load" data-alt="Щенок бультерьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/4ae/412_2150_1/4aedbd8affc393eac04a88f3fa185581.jpg">
+           <noscript data-alt="Щенок бультерьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/4ae/412_2150_1/4aedbd8affc393eac04a88f3fa185581.jpg">
+            <img alt="Щенок бультерьера" class="article_pic" height="274" src="/upload/resize_cache/iblock/4ae/412_2150_1/4aedbd8affc393eac04a88f3fa185581.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок бультерьера
+         </div>
+        </div>
+        <p>
+         Слава создателя первых бультерьеров принадлежит Джеймсу Хинксу – английскому заводчику, который с 1850 года начал работу по совершенствованию породы. Мужчина планировал улучшить внешность буль-энд-терьеров, сделав их более утончёнными. В 1862 году на выставке собак в Бирмингеме Хинкс представил результат своей плодотворной селекции, который имел аристократичную внешность, но сохранял бойцовские качества неказистых прародителей.
+        </p>
+        <p>
+         Предпринимательская жилка Джеймса натолкнула его на мысль о том, что интерес публики к кровавым боям собак не вечен, а, значит, и неэстетичные бойцовые породы обречены на вымирание. Лишь благородный экстерьер давал им призрачную надежду на дальнейшее существование. Хинкс в компании других заводчиков решил продолжить разведение собак. На этот раз буль-энд-терьеров скрестили сразу с несколькими породами: белым староанглийским терьером (ныне считается вымершим), бульдогом, борзой,
+         <a class="ph" href="/dog/dalmatinets/">
+          далматином
+         </a>
+         и даже
+         <a class="ph" href="/dog/kolli-dlinnoshyerstnyy/">
+          шотландским колли
+         </a>
+         .
+        </p>
+        <p>
+         Так и появилась элегантная и динамичная собака белоснежного окраса, которая всё ещё отличалась крепким телосложением предков, но имела более утончённые черты. Во избежание путаницы с коренастыми буль-энд-терьерами Джеймс Хинкс дал новой породе другое название – бультерьер. Эти животные тотчас заслужили любовь многих английских собаководов. С тех пор считалось модным содержать этих четверолапых аристократов, которые славились развитым интеллектом и феноменальной выносливостью.
+        </p>
+        <p>
+         Стоит отметить, что заводчики буль-энд-терьеров отнеслись к собакам Джеймса с долей скепсиса. По их мнению, привлекательная внешность животных не могла обеспечить отменных бойцовых качеств. Хинкс предложил заключить пари и выставил одного из своих бультерьеров – суку по кличке Пусс – против буль-энд-терьера. Последний потерпел сокрушительное поражение, а Хинкс получил ящик шампанского и денежное вознаграждение.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/427/427566443c38d38833818b52f2385823.jpg" title="">
+          <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/427/1024_2150_1/427566443c38d38833818b52f2385823.jpg">
+           <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/427/1024_2150_1/427566443c38d38833818b52f2385823.jpg">
+            <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/427/1024_2150_1/427566443c38d38833818b52f2385823.jpg"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2fe/2fe4e70efccbdddd25c1a02636f86998.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/2fe/512_342_2/2fe4e70efccbdddd25c1a02636f86998.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/2fe/512_342_2/2fe4e70efccbdddd25c1a02636f86998.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/2fe/512_342_2/2fe4e70efccbdddd25c1a02636f86998.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4e0/4e0df2b2991c2e23df0c03a8e661d4ea.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/4e0/512_342_2/4e0df2b2991c2e23df0c03a8e661d4ea.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/4e0/512_342_2/4e0df2b2991c2e23df0c03a8e661d4ea.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/4e0/512_342_2/4e0df2b2991c2e23df0c03a8e661d4ea.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <p>
+         В 1864 году два бультерьера – горячо любимые питомцы Джеймса – произвели фурор на очередной выставке собак. Это сыграло важную роль в дальнейшем распространении породы по миру. Английские колонисты, военные и мигранты редко уезжали из Англии без сопровождения белоснежного друга. В 1885 году бультерьер был признан американской кинологической организацией AKC, а спустя тринадцать лет на территории США появился первый клуб любителей этой экстравагантной породы. В 1917 году признали бультерьера современного типа. Им стал кобель по кличке Лорд Гладиатор.
+        </p>
+        <p>
+         На этом история породы не завершилась. Разводчикам бультерьеров пришлось столкнуться с массой новых проблем. Так, в 1985 году был рассмотрен и подписан законопроект, который запрещал купировать собакам уши. Это едва не отразилось на популярности породы: теперь её представители выглядели не так привлекательно. К счастью, заводчики нашли способ вывести бультерьеров с естественно стоячими ушками.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бультерьер немного утомился" data-fancybox="gallery" href="/upload/iblock/a58/a58905d3ffb3983f9ac0b03f101cb2be.jpg" title="Бультерьер немного утомился">
+          <div class="lazy-load" data-alt="Бультерьер немного утомился" data-class="article_pic" data-original="/upload/resize_cache/iblock/a58/412_2150_1/a58905d3ffb3983f9ac0b03f101cb2be.jpg">
+           <noscript data-alt="Бультерьер немного утомился" data-class="article_pic" data-original="/upload/resize_cache/iblock/a58/412_2150_1/a58905d3ffb3983f9ac0b03f101cb2be.jpg">
+            <img alt="Бультерьер немного утомился" class="article_pic" height="274" src="/upload/resize_cache/iblock/a58/412_2150_1/a58905d3ffb3983f9ac0b03f101cb2be.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бультерьер немного утомился
+         </div>
+        </div>
+        <p>
+         Не меньшую опасность для породы представлял и отказ признать цветных собак – результата скрещивания бультерьеров и
+         <a class="ph" href="/dog/amerikanskiy-staffordshirskiy-terer/">
+          амстаффов
+         </a>
+         . Резонансной стала победа пятнистых булей на выставке в Англии: тогда многие заводчики роптали против единогласного решения судей. По мнению селекционеров, разведение бультерьеров с поинтами негативно отразится на линии животных белого окраса. Однако именно этот негласный протест едва не погубил породу.
+        </p>
+        <p>
+         Поскольку к разведению допускались только особи, в роду которых не было цветных собак, генофонд бультерьеров со временем обеднел. Помимо этого, у многих животных начали проявляться генетические пороки далёких предков – староанглийских белых терьеров: глухота и невозможность давать потомство. К 1950 году количество больных собак достигло критического уровня. Это стало толчком для признания цветных представителей породы.
+        </p>
+        <p>
+         Спустя двадцать лет первые бультерьеры появились на территории России и уже к 90-м годам XX века приобрели головокружительную популярность. К сожалению, из-за вины неопытных заводчиков эти собаки всё чаще становились бомбой замедленного действия, готовой в любой момент обнажить клыки и вцепиться в горло обидчика.
+        </p>
+        <h2>
+         Видео: Бультерьер
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="tkXGpLAZKjs">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность бультерьера
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Морда бультерьера" data-fancybox="gallery" href="/upload/iblock/edd/eddd2b2d9599a892c92f7afdad063098.jpg" title="Морда бультерьера">
+          <div class="lazy-load" data-alt="Морда бультерьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/edd/412_2150_1/eddd2b2d9599a892c92f7afdad063098.jpg">
+           <noscript data-alt="Морда бультерьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/edd/412_2150_1/eddd2b2d9599a892c92f7afdad063098.jpg">
+            <img alt="Морда бультерьера" class="article_pic" height="579" src="/upload/resize_cache/iblock/edd/412_2150_1/eddd2b2d9599a892c92f7afdad063098.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда бультерьера
+         </div>
+        </div>
+        <p>
+         Бультерьер относится к средним породам собак с мускулистым и крепким телосложением. При этом суки выглядят утончённее кобелей. Так, их высота в холке составляет 53 и 56 см соответственно. Допустимо незначительно отклонение в меньшую (для сук) или большую (для кобелей) стороны.
+        </p>
+        <p>
+         Что касается массы животного, в среднем она достигает 23-32 кг.
+        </p>
+        <h3>
+         Голова и череп
+        </h3>
+        <p>
+         Голова бультерьера низко посажена и отличается яйцеобразной формой. Это заметно при осмотре собаки спереди. Имеет однородную структуру без углублений и выступов, довольно удлинённая и мощная. Покатый череп закруглён, за исключением пространства между ушами животного.
+        </p>
+        <h3>
+         Морда
+        </h3>
+        <p>
+         Крепкая морда бультерьера опущена, её глубина находится в соотношении 1:3 с высотой собаки в холке. Стоп сглажен и создаёт так называемый римский профиль. Крупная мочка носа слегка наклонена вниз и пигментирована в чёрный цвет. Сухие губы плотно прилегают к челюстям, ввиду чего собака не выглядит брылястой.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Для ушей бультерьера характерны средний размер и близкая посадка по отношению друг к другу. При этом сами «треугольнички» тонкие и стоячие. Животное держит их вертикально – особенно в том случае, если встревожено.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Узкие глаза поставлены высоко и косо, за счёт чего их форма кажется треугольной. Пигментация радужки должна быть чёрной, допускается и тёмно-коричневый оттенок. Обратите внимание на то, что расстояние от глаз до затылка значительно меньше, чем до мочки носа. Веки сухие и пигментированы в чёрный цвет.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8bb/8bb2941eacd04334c4d7cca6d58de818.jpg" title="">
+          <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8bb/1024_2150_1/8bb2941eacd04334c4d7cca6d58de818.jpg">
+           <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8bb/1024_2150_1/8bb2941eacd04334c4d7cca6d58de818.jpg">
+            <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/8bb/1024_2150_1/8bb2941eacd04334c4d7cca6d58de818.jpg"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Бультерьер – обладатель правильного ножницеобразного прикуса. Стандарт предусматривает тесный перекус или прямой прикус после трёхлетнего возраста животного. Нижняя челюсть более развитая и сильная. Ровные и крепкие зубы плотно сидят в дёснах.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Пассажир" data-fancybox="gallery" href="/upload/iblock/fae/fae4ee2e823f2b29385a12eb38a8379b.jpg" title="Пассажир">
+          <div class="lazy-load" data-alt="Пассажир" data-class="article_pic" data-original="/upload/resize_cache/iblock/fae/412_2150_1/fae4ee2e823f2b29385a12eb38a8379b.jpg">
+           <noscript data-alt="Пассажир" data-class="article_pic" data-original="/upload/resize_cache/iblock/fae/412_2150_1/fae4ee2e823f2b29385a12eb38a8379b.jpg">
+            <img alt="Пассажир" class="article_pic" height="618" src="/upload/resize_cache/iblock/fae/412_2150_1/fae4ee2e823f2b29385a12eb38a8379b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Пассажир
+         </div>
+        </div>
+        <p>
+         Мускулистая шея собаки довольно длинная, расширяется от головы к холке. Изогнута дугой, линия загривка ярко выражена. Кожа не образует складки, ввиду чего шея выглядит сухой.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Представители этой породы сложены весьма компактно. Широкая грудная клетка имеет округлые и эластичные рёбра. Крепкая холка плавно переходит в короткую и прямую спину с очерченной мускулатурой. Живот подтянут и образует восходящую кривую вместе с линией груди. Круп собаки умеренно скошен под углом 30-35 градусов. Поясница укорочена, имеет квадратное сечение.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Короткий хвост бультерьера посажен во впадине крупа. Сужается от основания к кончику. Собака всегда держит его горизонтально.
+        </p>
+        <h3>
+         Передние конечности
+        </h3>
+        <p>
+         Длина конечностей взрослого животного соответствует глубине грудной клетки. Они выглядят параллельными и прямыми при осмотре бультерьера спереди. Плоские и широкие лопатки вместе с крепкими плечами образуют угол 90 градусов. Локти повёрнуты строго назад и плотно прилегают к груди. Короткие пясти расположены вертикально и переходят в компактные округлые лапы с подогнутыми пальцами.
+        </p>
+        <h3>
+         Задние конечности
+        </h3>
+        <p>
+         Как и передние, задние конечности прямые и параллельны друг другу. Бёдра мускулистые и широкие. Угол коленей ярко выражен. Крепкие голени прекрасно развиты. Сухие скакательные суставы бультерьера отличаются хорошо очерченными углами. Короткие и массивные плюсны заканчиваются небольшими лапами с плотно скученными пальцами.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/657/65757ae336febfa0283db9cbc10fcca1.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/657/512_342_2/65757ae336febfa0283db9cbc10fcca1.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/657/512_342_2/65757ae336febfa0283db9cbc10fcca1.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/657/512_342_2/65757ae336febfa0283db9cbc10fcca1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1b9/1b97befcaa0bcf418c31beca1bf9edf7.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1b9/512_342_2/1b97befcaa0bcf418c31beca1bf9edf7.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1b9/512_342_2/1b97befcaa0bcf418c31beca1bf9edf7.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/1b9/512_342_2/1b97befcaa0bcf418c31beca1bf9edf7.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h3>
+         Манера движения
+        </h3>
+        <p>
+         Представители породы идут легко и свободно, каждый шаг собак гибок и самоуверен. Конечности движутся параллельно друг другу, но смещаются к центральной линии при беге животного. Передние лапы бультерьера захватывают значительное пространство, в то время как задние двигаются более свободно.
+        </p>
+        <h3>
+         Шерстяной покров
+        </h3>
+        <p>
+         Прямая и короткая шерсть собаки отличается здоровым блеском. На ощупь весьма жёсткая; «смягчается» лишь зимой, когда у животных появляется небольшой подшёрсток.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бультерьер на прогулке" data-fancybox="gallery" href="/upload/iblock/3c5/3c5ba8edb71dbfceb9c9c0e183814f80.jpg" title="Бультерьер на прогулке">
+          <div class="lazy-load" data-alt="Бультерьер на прогулке" data-class="article_pic" data-original="/upload/resize_cache/iblock/3c5/412_2150_1/3c5ba8edb71dbfceb9c9c0e183814f80.jpg">
+           <noscript data-alt="Бультерьер на прогулке" data-class="article_pic" data-original="/upload/resize_cache/iblock/3c5/412_2150_1/3c5ba8edb71dbfceb9c9c0e183814f80.jpg">
+            <img alt="Бультерьер на прогулке" class="article_pic" height="617" src="/upload/resize_cache/iblock/3c5/412_2150_1/3c5ba8edb71dbfceb9c9c0e183814f80.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бультерьер на прогулке
+         </div>
+        </div>
+        <p>
+         Стандарт породы предусматривает несколько вариантов окраса бультерьера:
+        </p>
+        <ul>
+         <li>
+          белый;
+         </li>
+         <li>
+          рыжий;
+         </li>
+         <li>
+          чёрный;
+         </li>
+         <li>
+          красный;
+         </li>
+         <li>
+          тигровый;
+         </li>
+         <li>
+          трёхцветный.
+         </li>
+        </ul>
+        <p>
+         Крайне нежелательны песочный или голубой окрасы шерсти.
+        </p>
+        <h3>
+         Возможные пороки
+        </h3>
+        <p>
+         Малейшее отклонение от стандарта считается дефектом. Чаще всего встречаются:
+        </p>
+        <ul>
+         <li>
+          высоко поставленный и/или длинный хвост;
+         </li>
+         <li>
+          неполная пигментация губ и мочки носа;
+         </li>
+         <li>
+          легковозбудимость и робость;
+         </li>
+         <li>
+          слабо развитая мускулатура;
+         </li>
+         <li>
+          ярко выраженные скулы;
+         </li>
+         <li>
+          выпуклая линия спины;
+         </li>
+         <li>
+          прямой прикус.
+         </li>
+        </ul>
+        <p>
+         К дисквалифицирующим порокам бультерьера относят:
+        </p>
+        <ul>
+         <li>
+          песочную, телесную или розовую пигментацию носа;
+         </li>
+         <li>
+          преобладание белого оттенка у цветных собак;
+         </li>
+         <li>
+          неопущение одного или двух яичек;
+         </li>
+         <li>
+          поинты на шерсти белого окраса;
+         </li>
+         <li>
+          высоту в холке меньше 35,5 см;
+         </li>
+         <li>
+          перекус и недокус;
+         </li>
+         <li>
+          голубой цвет глаз;
+         </li>
+         <li>
+          гетерохромию;
+         </li>
+         <li>
+          глухоту.
+         </li>
+        </ul>
+        <h2>
+         Фото взрослого бультерьера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c55/c5555cb818ada2b2410036c40efa484e.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c55/380_264_2/c5555cb818ada2b2410036c40efa484e.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c55/380_264_2/c5555cb818ada2b2410036c40efa484e.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/c55/380_264_2/c5555cb818ada2b2410036c40efa484e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/751/751da260cd9acdbfd317d9a54ca5f0dd.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/751/380_264_2/751da260cd9acdbfd317d9a54ca5f0dd.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/751/380_264_2/751da260cd9acdbfd317d9a54ca5f0dd.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/751/380_264_2/751da260cd9acdbfd317d9a54ca5f0dd.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/dcd/dcde912129856f8484982ca20c4d50c3.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/dcd/380_264_2/dcde912129856f8484982ca20c4d50c3.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/dcd/380_264_2/dcde912129856f8484982ca20c4d50c3.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/dcd/380_264_2/dcde912129856f8484982ca20c4d50c3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a47/a4705883e8b5aa7173e7cabeb670b330.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a47/380_264_2/a4705883e8b5aa7173e7cabeb670b330.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a47/380_264_2/a4705883e8b5aa7173e7cabeb670b330.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/a47/380_264_2/a4705883e8b5aa7173e7cabeb670b330.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5c0/5c026212a36c0e94c5dce6eb13b428fb.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/5c0/380_264_2/5c026212a36c0e94c5dce6eb13b428fb.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/5c0/380_264_2/5c026212a36c0e94c5dce6eb13b428fb.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/5c0/380_264_2/5c026212a36c0e94c5dce6eb13b428fb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/029/029c73b5bc400c42582cdc29ddaa992d.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/029/380_264_2/029c73b5bc400c42582cdc29ddaa992d.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/029/380_264_2/029c73b5bc400c42582cdc29ddaa992d.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/029/380_264_2/029c73b5bc400c42582cdc29ddaa992d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/91d/91d49fe3557a00e33a1126ef4cbe3eda.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/91d/380_264_2/91d49fe3557a00e33a1126ef4cbe3eda.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/91d/380_264_2/91d49fe3557a00e33a1126ef4cbe3eda.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/91d/380_264_2/91d49fe3557a00e33a1126ef4cbe3eda.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5b0/5b05a4a5bf274b796383ca404e7692a2.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/5b0/380_264_2/5b05a4a5bf274b796383ca404e7692a2.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/5b0/380_264_2/5b05a4a5bf274b796383ca404e7692a2.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/5b0/380_264_2/5b05a4a5bf274b796383ca404e7692a2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/48e/48e06fa0bc68a7531d6f6d0761879e91.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/48e/380_264_2/48e06fa0bc68a7531d6f6d0761879e91.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/48e/380_264_2/48e06fa0bc68a7531d6f6d0761879e91.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/48e/380_264_2/48e06fa0bc68a7531d6f6d0761879e91.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер бультерьера
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Девушка с щенком бультерьера" data-fancybox="gallery" href="/upload/iblock/a9d/a9db29e57e1f58de03612c700375a5fc.jpg" title="Девушка с щенком бультерьера">
+          <div class="lazy-load" data-alt="Девушка с щенком бультерьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/a9d/412_2150_1/a9db29e57e1f58de03612c700375a5fc.jpg">
+           <noscript data-alt="Девушка с щенком бультерьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/a9d/412_2150_1/a9db29e57e1f58de03612c700375a5fc.jpg">
+            <img alt="Девушка с щенком бультерьера" class="article_pic" height="617" src="/upload/resize_cache/iblock/a9d/412_2150_1/a9db29e57e1f58de03612c700375a5fc.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Девушка с щенком бультерьера
+         </div>
+        </div>
+        <p>
+         Представителей породы отличает весьма добродушный нрав. Однако, в условиях неграмотной социализации и всяческого поощрения агрессии бультерьер обязательно покажет свои инстинкты. В этом случае вы станете владельцем «холодного оружия» – невероятно умной и выносливой собаки с крепкой хваткой и сильными мускулами.
+        </p>
+        <p>
+         К счастью, исследования американской организации ATTS свидетельствуют о том, что лишь 10% бультерьеров потенциально опасны для человека. Остальные собаки больше не напоминают своих далёких предков – кровожадных гладиаторов бойцовых ям. Правильно воспитанные бультерьеры – воплощение дружелюбия и неукротимой жизнерадостности.
+        </p>
+        <p>
+         Эти собаки хотят играть и резвиться сутками напролёт. Беря в дом непоседу, приготовьтесь к регулярным и продолжительным прогулкам. В противном случае питомец будет чувствовать себя несчастным и самостоятельно найдёт способ развлечься. Если вы не хотите жертвовать комнатными тапочками или обивкой дивана, отправьтесь вместе с бультерьером в ближайший парк. Любимые игрушки животного скрасят совместный досуг.
+        </p>
+        <p>
+         Из этого следует, что представители породы прекрасно чувствуют себя в условиях частного дома, где смогут в любой момент размять лапы и при этом не вызвать возмущение окружающих. Проживание бультерьера в квартире допустимо лишь в том случае, если вы можете обеспечить питомцу разнообразные физические упражнения. Утренние пробежки, игра с фрисби, езда на велосипеде – во всех случаях животное составит прекрасную компанию!
+        </p>
+        <p>
+         Присмотритесь к другим породам собак, если вы планируете проводить значительную часть дня на работе. Бультерьеры плохо переносят одиночество. Если вы решите оставить любимца за запертой дверью, приготовьтесь вернуться домой и обнаружить её полностью изгрызанной. К тому же соседи явно не обрадуются нервному вою, который не смолкнет на протяжении нескольких часов.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="В ожидании хозяина" data-fancybox="gallery" href="/upload/iblock/fa8/fa80a3fc704e1bc7479cf3bb5efd9cb3.jpg" title="В ожидании хозяина">
+          <div class="lazy-load" data-alt="В ожидании хозяина" data-class="article_pic" data-original="/upload/resize_cache/iblock/fa8/412_2150_1/fa80a3fc704e1bc7479cf3bb5efd9cb3.jpg">
+           <noscript data-alt="В ожидании хозяина" data-class="article_pic" data-original="/upload/resize_cache/iblock/fa8/412_2150_1/fa80a3fc704e1bc7479cf3bb5efd9cb3.jpg">
+            <img alt="В ожидании хозяина" class="article_pic" height="549" src="/upload/resize_cache/iblock/fa8/412_2150_1/fa80a3fc704e1bc7479cf3bb5efd9cb3.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          В ожидании хозяина
+         </div>
+        </div>
+        <p>
+         Несмотря на великолепные инстинкты, из бультерьеров редко получаются хорошие сторожа. У собак отсутствует врождённая агрессия к человеку, поэтому вы дождётесь тревожного лая при приближении чужака лишь в самом крайнем случае. Даже к незнакомцам животные весьма дружелюбны. Впрочем, если дело приобретает неожиданный и опасный оборот, белоснежный аристократ вмиг забудет о своих манерах и бросится защищать хозяина от обидчика.
+        </p>
+        <p>
+         Бультерьер прекрасно уживается со всеми членами семьи, а для детей и вовсе не сыскать няньки лучше. Собака с радостью принимает активное участие во всех играх и шалостях, однако не спускайте с питомца глаз: он может не рассчитать свои силы и случайно толкнуть ребёнка. Учитывая массу и мощную мускулатуру бультерьера, даже лёгкий толчок может иметь неприятные последствия. Помимо этого, не забывайте, что животные не любят, когда кто-то дразнит их, провоцирует или же отнимает игрушки. Приучите питомца быть более терпимым и «делиться» – так вы избавите себя от лишних проблем.
+        </p>
+        <p>
+         Представители этой породы отличаются развитым инстинктом преследования, поэтому могут погнаться за собакой или кошкой, которые попали в поле зрения. По этой же причине бультерьеры не всегда уживаются с другими животными. Некоторые собаки терпимо относятся к четвероногим собратьям, но не стоит испытывать судьбу. От содержания декоративных птиц и грызунов и вовсе лучше отказаться.
+        </p>
+        <p>
+         Порода бультерьер весьма своенравна, но с радостью примет вашу заботу и ласку. Установите со своим любимцем доброжелательный контакт – и никогда не найдёте друга преданнее, чем ваша собака!
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Безумие и отвага" data-fancybox="gallery" href="/upload/iblock/e62/e620e4b81678f7fe46b1d7a006351b47.jpg" title="Безумие и отвага">
+           <div class="lazy-load" data-alt="Безумие и отвага" data-class="article_pic" data-original="/upload/resize_cache/iblock/e62/512_342_2/e620e4b81678f7fe46b1d7a006351b47.jpg">
+            <noscript data-alt="Безумие и отвага" data-class="article_pic" data-original="/upload/resize_cache/iblock/e62/512_342_2/e620e4b81678f7fe46b1d7a006351b47.jpg">
+             <img alt="Безумие и отвага" class="article_pic" src="/upload/resize_cache/iblock/e62/512_342_2/e620e4b81678f7fe46b1d7a006351b47.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Безумие и отвага
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Сонное царство" data-fancybox="gallery" href="/upload/iblock/19f/19fb145a0c46267b5009c74ea396dc61.jpg" title="Сонное царство">
+           <div class="lazy-load" data-alt="Сонное царство" data-class="article_pic" data-original="/upload/resize_cache/iblock/19f/512_342_2/19fb145a0c46267b5009c74ea396dc61.jpg">
+            <noscript data-alt="Сонное царство" data-class="article_pic" data-original="/upload/resize_cache/iblock/19f/512_342_2/19fb145a0c46267b5009c74ea396dc61.jpg">
+             <img alt="Сонное царство" class="article_pic" src="/upload/resize_cache/iblock/19f/512_342_2/19fb145a0c46267b5009c74ea396dc61.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Сонное царство
+          </div>
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Прыжок!" data-fancybox="gallery" href="/upload/iblock/2cc/2cc0bd2797d9e99ec525ff9a5b27382c.jpg" title="Прыжок!">
+          <div class="lazy-load" data-alt="Прыжок!" data-class="article_pic" data-original="/upload/resize_cache/iblock/2cc/412_2150_1/2cc0bd2797d9e99ec525ff9a5b27382c.jpg">
+           <noscript data-alt="Прыжок!" data-class="article_pic" data-original="/upload/resize_cache/iblock/2cc/412_2150_1/2cc0bd2797d9e99ec525ff9a5b27382c.jpg">
+            <img alt="Прыжок!" class="article_pic" height="622" src="/upload/resize_cache/iblock/2cc/412_2150_1/2cc0bd2797d9e99ec525ff9a5b27382c.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Прыжок!
+         </div>
+        </div>
+        <p>
+         Поскольку бультерьеры отличаются независимым (даже упрямым) нравом и развитым интеллектом, воспитание и дрессировка питомца потребуют от вас немало сил и терпения. При этом шаги стоит предпринимать с первого дня появления собаки в доме. Своевременная и грамотная социализация – гарантия того, что вы получите управляемого и дружелюбного питомца. Знакомьте своего бультерьера с новыми местами, людьми, вещами, запахами, ощущениями – и в будущем он не будет агрессивно реагировать на смену обстановки.
+        </p>
+        <p>
+         Ваша задача – занять позицию вожака в импровизированной стае и ежеминутно придерживаться её. Пытливый ум собаки захочет расширить границы дозволенного, и если он найдёт слабину в вашей «броне», то непременно воспользуется упущением. Реагируйте на буйное поведение бультерьера твёрдо, но в то же время не проявляйте жестокости по отношению к питомцу. Крики, грубость и побои сделают собаку замкнутой и озлобленной, а вас вскоре не сочтут хозяином и лучшим другом. Скажите о своём недовольстве строгим тоном, но будьте искренны: животное отлично улавливает фальшивые нотки и в этом случае просто не воспринимает ваши слова всерьёз.
+        </p>
+        <p>
+         Дрессировка бультерьера займёт не один месяц. У представителей этой породы весьма рассеянное внимание, поэтому вам придётся постоянно поддерживать интерес. Занятия не должны быть однообразными и продолжительными, иначе питомец заскучает и будет думать о чём угодно, кроме выполнения команд. Заметили, что внимание собаки переключилось на другое? Любимое лакомство вынудит бультерьера перестать витать в облаках и вернуться к процессу дрессировки.
+        </p>
+        <p>
+         Занимайтесь с животным в твёрдой и спокойной манере, не забывая при этом хвалить его за послушание. Своевременное вмешательство и коррекция поведения сделают из бультерьера преданного компаньона. Людям с мягким характером лучше выбрать другую, менее доминантную породу собак.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/cf5/cf5c599923d431475e3024a40bf6bbb7.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/cf5/512_342_2/cf5c599923d431475e3024a40bf6bbb7.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/cf5/512_342_2/cf5c599923d431475e3024a40bf6bbb7.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/cf5/512_342_2/cf5c599923d431475e3024a40bf6bbb7.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/599/59963fe542c15f95e35619f8c866c2de.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/599/512_342_2/59963fe542c15f95e35619f8c866c2de.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/599/512_342_2/59963fe542c15f95e35619f8c866c2de.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/599/512_342_2/59963fe542c15f95e35619f8c866c2de.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <p>
+         Бультерьер относится к породам собак, которые весьма неприхотливы в уходе. Короткая шерсть животного нуждается в еженедельном вычёсывании (не чаще трёх раз). Для удаления волосков используйте щётку с жёсткой щетиной, но на период линьки лучше обзавестись специальной перчаткой для груминга. Она значительно облегчит уход за шерстью вашего питомца. Представители породы линяют дважды в год: осенью и весной.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Купание бультерьера" data-fancybox="gallery" href="/upload/iblock/bfb/bfb41fc069b8f7efc6c068d25994cc12.jpg" title="Купание бультерьера">
+          <div class="lazy-load" data-alt="Купание бультерьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/bfb/412_2150_1/bfb41fc069b8f7efc6c068d25994cc12.jpg">
+           <noscript data-alt="Купание бультерьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/bfb/412_2150_1/bfb41fc069b8f7efc6c068d25994cc12.jpg">
+            <img alt="Купание бультерьера" class="article_pic" height="412" src="/upload/resize_cache/iblock/bfb/412_2150_1/bfb41fc069b8f7efc6c068d25994cc12.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Купание бультерьера
+         </div>
+        </div>
+        <p>
+         Забудьте о регулярных водных процедурах: бультерьеры не нуждаются в них. Купайте любимца по мере загрязнения шерсти, используя шампунь для собак с мягкой формулой. Впрочем, протирания туловища бультерьера губкой или полотенцем вполне достаточно. Хотите придать шёрстке здоровый блеск? Вооружитесь замшей и пройдитесь ею по волоскам. Эффект не заставит себя долго ждать!
+        </p>
+        <p>
+         Не стоит купать бультерьера и после прогулки (конечно же, если вы не отправились изучать просёлочную дорогу во время ливня). Достаточно промыть лапы под проточной зимой. Во избежание появления трещинок на сухой поверхности подушечек смажьте их растительным маслом. Это правило ухода за бультерьером особенно актуально в зимнее время года, когда тротуары посыпаны солью и реагентами.
+        </p>
+        <p>
+         Регулярно проверяйте глаза и уши питомца: это поможет вовремя предотвратить развитие инфекционных заболеваний. Для удаления скопившихся выделений в уголках глаз рекомендуется использовать специальную жидкость, которую можно найти в зоомагазинах. Что касается ухода за ушными раковинами, протирайте их один раз в неделю влажным ватным диском.
+        </p>
+        <p>
+         Поскольку бультерьеры – весьма активные собаки, которые нуждаются в регулярных и продолжительных прогулках, их когти обычно стачиваются самостоятельно. Впрочем, всё же рекомендуется приобрести когтерез и подрезать когти раз в месяц, чтобы избавить вашего питомца от дискомфортных ощущений.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Интересно, нам что-то перепадет?" data-fancybox="gallery" href="/upload/iblock/221/221c096927cbf2380cd98d8e8b98851b.jpg" title="Интересно, нам что-то перепадет?">
+          <div class="lazy-load" data-alt="Интересно, нам что-то перепадет?" data-class="article_pic" data-original="/upload/resize_cache/iblock/221/412_2150_1/221c096927cbf2380cd98d8e8b98851b.jpg">
+           <noscript data-alt="Интересно, нам что-то перепадет?" data-class="article_pic" data-original="/upload/resize_cache/iblock/221/412_2150_1/221c096927cbf2380cd98d8e8b98851b.jpg">
+            <img alt="Интересно, нам что-то перепадет?" class="article_pic" height="309" src="/upload/resize_cache/iblock/221/412_2150_1/221c096927cbf2380cd98d8e8b98851b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Интересно, нам что-то перепадет?
+         </div>
+        </div>
+        <p>
+         Не менее важен и уход за ротовой полостью бультерьера. Необходимо раз в неделю выделять время на чистку зубов животного, используя пасту для собак. Что касается приспособлений, можно приобрести насадку на палец или обойтись привычной зубной щёткой.
+        </p>
+        <p>
+         Обратите внимание на то, что представители породы склонны к аллергии от укусов насекомых. По этой же причине рекомендуется обрабатывать шерсть бультерьера специальными средствами от эктопаразитов. Можно использовать таблетки, спрей или капли. В качестве «тяжёлой артиллерии» подойдёт ошейник, эффект от которого заметен лишь при длительном ношении.
+        </p>
+        <p>
+         Рацион бультерьера принято строить в двух направлениях: сухие корма премиум-класса или натуральная пища. Комбинация двух вариантов чревата проблемами с пищеварительной системой собаки. Подбирайте корм с учётом возраста и массы вашего питомца. Так, щенок нуждается в большем количестве минералов и витаминов, чем взрослая особь.
+        </p>
+        <p>
+         При кормлении животного натуральной пищей вам придётся самостоятельно продумывать сбалансированный рацион. Рекомендуется обратиться в ветеринарную клинику за советом по поводу витаминов для вашего бультерьера.
+        </p>
+        <p>
+         Среди обязательных продуктов выделяют:
+        </p>
+        <ul>
+         <li>
+          сырое нежирное мясо (предварительно обдать кипятком);
+         </li>
+         <li>
+          перепелиные яйца (не более одного в неделю);
+         </li>
+         <li>
+          растительное масло (ежедневно по 1 ч. л.);
+         </li>
+         <li>
+          говяжьи или куриные субпродукты;
+         </li>
+         <li>
+          варёную морскую рыбу без костей;
+         </li>
+         <li>
+          гречневая и рисовая крупы;
+         </li>
+         <li>
+          кефир и нежирный творог;
+         </li>
+         <li>
+          сезонные овощи.
+         </li>
+        </ul>
+        <p>
+         Запрещено включать в рацион:
+        </p>
+        <ul>
+         <li>
+          речную рыбу в любом виде;
+         </li>
+         <li>
+          острую и солёную пищу;
+         </li>
+         <li>
+          копчёные изделия;
+         </li>
+         <li>
+          жирное мясо;
+         </li>
+         <li>
+          сладости;
+         </li>
+         <li>
+          выпечку.
+         </li>
+        </ul>
+        <p>
+         Старайтесь придерживаться графика кормления. Наполняйте миску после прогулки и оставляйте на 10-15 минут: за это время бультерьер съест ровно столько, сколько ему нужно. Питомец должен иметь постоянный доступ к свежей воде. Рекомендуется использовать бутилированную или проточную (после того как она отстоялась в течение 7-8 часов).
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/da0/da072967065fd489be7f1e94d0505be0.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/da0/512_342_2/da072967065fd489be7f1e94d0505be0.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/da0/512_342_2/da072967065fd489be7f1e94d0505be0.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/da0/512_342_2/da072967065fd489be7f1e94d0505be0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7aa/7aab1509189476bd1a8df067d6f17f21.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/7aa/512_342_2/7aab1509189476bd1a8df067d6f17f21.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/7aa/512_342_2/7aab1509189476bd1a8df067d6f17f21.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/7aa/512_342_2/7aab1509189476bd1a8df067d6f17f21.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl6">
+         Здоровье и болезни бультерьера
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2e1/2e17993ec60a960c47a8086498f1a2a4.jpg" title="">
+          <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/2e1/412_2150_1/2e17993ec60a960c47a8086498f1a2a4.jpg">
+           <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/2e1/412_2150_1/2e17993ec60a960c47a8086498f1a2a4.jpg">
+            <img alt="Бультерьер" class="article_pic" height="619" src="/upload/resize_cache/iblock/2e1/412_2150_1/2e17993ec60a960c47a8086498f1a2a4.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         У представителей породы не наблюдается специфичных генетических пороков, однако определённым заболеваниям собаки подвергаются чаще всего. Среди них:
+        </p>
+        <ul>
+         <li>
+          вывих коленных чашечек и локтей;
+         </li>
+         <li>
+          выворот или заворот век;
+         </li>
+         <li>
+          гипоплазия гортани;
+         </li>
+         <li>
+          дисплазия суставов;
+         </li>
+         <li>
+          стеноз аорты;
+         </li>
+         <li>
+          кожная сыпь;
+         </li>
+         <li>
+          эпилепсия;
+         </li>
+         <li>
+          глухота.
+         </li>
+        </ul>
+        <p>
+         У взрослого питомца велик риск развития рака. Щенки же могут страдать от редкого заболевания – летального акродерматита.
+        </p>
+        <p>
+         Приобретая бультерьера, не забывайте о том, что тонкая кожа собаки очень чувствительная, поэтому прогулка в летний зной чревата солнечными ожогами. Старательно отгоняйте от питомца комаров: даже один укус может спровоцировать крапивницу и сильный зуд.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бультерьер приглядывает за своим щенком" data-fancybox="gallery" href="/upload/iblock/566/566c26654bdaaa9ee86e6c0ddd0652e9.jpg" title="Бультерьер приглядывает за своим щенком">
+          <div class="lazy-load" data-alt="Бультерьер приглядывает за своим щенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/566/412_2150_1/566c26654bdaaa9ee86e6c0ddd0652e9.jpg">
+           <noscript data-alt="Бультерьер приглядывает за своим щенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/566/412_2150_1/566c26654bdaaa9ee86e6c0ddd0652e9.jpg">
+            <img alt="Бультерьер приглядывает за своим щенком" class="article_pic" height="272" src="/upload/resize_cache/iblock/566/412_2150_1/566c26654bdaaa9ee86e6c0ddd0652e9.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бультерьер приглядывает за своим щенком
+         </div>
+        </div>
+        <p>
+         Лучшее место для приобретения бультерьера – питомник, который специализируется на разведении этой породы. Только здесь вы получите привитого малыша с хорошей родословной. Не упустите шанс познакомиться поближе с родителями будущего питомца: их поведение позволит вам понять, чего ждать от вашего бультерьера в дальнейшем.
+        </p>
+        <p>
+         Обратите внимание на условия содержания щенков. Место должно хорошо отапливаться, а малыши – находиться в отдалении от возможных сквозняков. Выберите самого игривого и активного питомца и внимательно осмотрите его. В первую очередь, рекомендуется проверить слух: ввиду строения головы и ушей бультерьеры часто страдают от глухоты. Карапуз должен быть в меру упитан и ухожен.
+        </p>
+        <p>
+         Оптимальный возраст для покупки щенка бультерьера – 2,5-3 месяца. В этом случае вы получите уравновешенного и здорового малыша, который уже не зависит от матери и готов познавать мир под вашим чутким руководством.
+        </p>
+        <h2>
+         Фото щенков бультерьера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d36/d3684170c04f3b874a342b59b7da830d.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/d36/380_264_2/d3684170c04f3b874a342b59b7da830d.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/d36/380_264_2/d3684170c04f3b874a342b59b7da830d.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/d36/380_264_2/d3684170c04f3b874a342b59b7da830d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/adc/adc3868c573afaaa996a19f17b61bc83.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/adc/380_264_2/adc3868c573afaaa996a19f17b61bc83.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/adc/380_264_2/adc3868c573afaaa996a19f17b61bc83.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/adc/380_264_2/adc3868c573afaaa996a19f17b61bc83.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/13d/13df1dd527e700993c8893eeb8377096.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/13d/380_264_2/13df1dd527e700993c8893eeb8377096.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/13d/380_264_2/13df1dd527e700993c8893eeb8377096.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/13d/380_264_2/13df1dd527e700993c8893eeb8377096.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/541/541f81c5ca71d55b0fcf1a275d4835e4.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/541/380_264_2/541f81c5ca71d55b0fcf1a275d4835e4.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/541/380_264_2/541f81c5ca71d55b0fcf1a275d4835e4.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/541/380_264_2/541f81c5ca71d55b0fcf1a275d4835e4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/84e/84e71d9f626017f98efdf2f2e4bbc049.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/84e/380_264_2/84e71d9f626017f98efdf2f2e4bbc049.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/84e/380_264_2/84e71d9f626017f98efdf2f2e4bbc049.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/84e/380_264_2/84e71d9f626017f98efdf2f2e4bbc049.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6c4/6c41ebd806d32f44d68aadf72ea186a7.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/6c4/380_264_2/6c41ebd806d32f44d68aadf72ea186a7.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/6c4/380_264_2/6c41ebd806d32f44d68aadf72ea186a7.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/6c4/380_264_2/6c41ebd806d32f44d68aadf72ea186a7.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f9c/f9c81eae7c82ae7c54025cc226152340.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f9c/380_264_2/f9c81eae7c82ae7c54025cc226152340.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f9c/380_264_2/f9c81eae7c82ae7c54025cc226152340.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/f9c/380_264_2/f9c81eae7c82ae7c54025cc226152340.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9e4/9e41fa6e5697bc761cc61e917637b969.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9e4/380_264_2/9e41fa6e5697bc761cc61e917637b969.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9e4/380_264_2/9e41fa6e5697bc761cc61e917637b969.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/9e4/380_264_2/9e41fa6e5697bc761cc61e917637b969.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/657/65748f176cea53fba906a29d2a49a6da.jpg" title="">
+           <div class="lazy-load" data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/657/380_264_2/65748f176cea53fba906a29d2a49a6da.jpg">
+            <noscript data-alt="Бультерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/657/380_264_2/65748f176cea53fba906a29d2a49a6da.jpg">
+             <img alt="Бультерьер" class="article_pic" src="/upload/resize_cache/iblock/657/380_264_2/65748f176cea53fba906a29d2a49a6da.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Цена бультерьера
+        </h2>
+        <p>
+         Цена бультерьера зависит от того, какого класса будет щенок. Для участия в выставках нужно приобретать питомца шоу-класса. Категория брид подходит для разведения. Если же вы ищете друга для души, то достаточно приобрести собаку пэт-класса. В среднем, английский аристократ обходится в 50 000 – 60 000 рублей. Потомство от неоднократных победителей выставок стоит 80 000 рублей и выше.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения бультерьера на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/25333/">
+          <div class="ava-med">
+           <div class="noava fill3">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/chistka-zubov-sobaki-5241/">
+           Чистка зубов собаки
+          </a>
+         </div>
+         <div class="forum-text">
+          Как приучит собаку чистить зубы? Что вам помогло?
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/25333/">
+            Ната Ворошилова
+           </a>
+          </span>
+          <span class="vopros-date">
+           5 месяцев назад
+          </span>
+          <span class="vopros-smotr">
+           559 просмотров
+          </span>
+          <span class="vopros-otvet">
+           5 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/310/">
+          <div class="ava-med">
+           <div class="noava fill0">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/vospitanie-bulterera-282/">
+           Воспитание бультерьера
+          </a>
+         </div>
+         <div class="forum-text">
+          Собираемся покупать щенка бультерьера. Будем очень благодарны за информацию, как правильно воспитывать собаку этой породы?
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/310/">
+            Глеб Косинский
+           </a>
+          </span>
+          <span class="vopros-date">
+           6 лет назад
+          </span>
+          <span class="vopros-smotr">
+           4047 просмотров
+          </span>
+          <span class="vopros-otvet">
+           3 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/308/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Анюта Бойкова" data-original="/upload/resize_cache/main/4e9/200_200_2/4e986e06cf4d2bfef0fdcc50a64cfca8.jpg">
+            <noscript data-alt="Анюта Бойкова" data-original="/upload/resize_cache/main/4e9/200_200_2/4e986e06cf4d2bfef0fdcc50a64cfca8.jpg">
+             <img alt="Анюта Бойкова" src="/upload/resize_cache/main/4e9/200_200_2/4e986e06cf4d2bfef0fdcc50a64cfca8.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/chem-opasen-bulterer-225/">
+           Чем опасен бультерьер
+          </a>
+         </div>
+         <div class="forum-text">
+          Мы понимаем, что иметь бойцовую собаку – большая ответственность. Чем может быть опасен бультерьер? Подскажите, пожалуйста, стоит ли заводить такую собаку, когда в доме есть дети?
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/308/">
+            Анюта Бойкова
+           </a>
+          </span>
+          <span class="vopros-date">
+           6 лет назад
+          </span>
+          <span class="vopros-smotr">
+           7170 просмотров
+          </span>
+          <span class="vopros-otvet">
+           7 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/bulterer/forum/">
+        Перейти на
+        форум бультерьера
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Бультерьер" src="/upload/iblock/155/1551a67206f254d7314425b17f1d57f1.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/bulterer/">
+          Бультерьер
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/bulterer/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/bulterer/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/bulterer/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/bulterer/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/bulterer/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/bulterer/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/vest-khaylend-uayt-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Вест-хайленд-уайт-терьер" data-original="/upload/resize_cache/iblock/09f/100_100_1/09f78d0c57156a58c3cad34c111f059c.jpg">
+          <noscript data-alt="Вест-хайленд-уайт-терьер" data-original="/upload/resize_cache/iblock/09f/100_100_1/09f78d0c57156a58c3cad34c111f059c.jpg">
+           <img alt="Вест-хайленд-уайт-терьер" src="/upload/resize_cache/iblock/09f/100_100_1/09f78d0c57156a58c3cad34c111f059c.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Вест-хайленд-уайт-терьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/alabay-sredneaziatskaya-ovcharka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Алабай (Среднеазиатская овчарка)" data-original="/upload/resize_cache/iblock/609/100_100_1/609708aa8ba6a6e5eccecc9a058c1b65.jpg">
+          <noscript data-alt="Алабай (Среднеазиатская овчарка)" data-original="/upload/resize_cache/iblock/609/100_100_1/609708aa8ba6a6e5eccecc9a058c1b65.jpg">
+           <img alt="Алабай (Среднеазиатская овчарка)" src="/upload/resize_cache/iblock/609/100_100_1/609708aa8ba6a6e5eccecc9a058c1b65.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Алабай (Среднеазиатская овчарка)
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/skotch-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Скотч-терьер" data-original="/upload/resize_cache/iblock/dc1/100_100_1/dc1145c66f561e1c2a3ef13f49c53c7c.jpg">
+          <noscript data-alt="Скотч-терьер" data-original="/upload/resize_cache/iblock/dc1/100_100_1/dc1145c66f561e1c2a3ef13f49c53c7c.jpg">
+           <img alt="Скотч-терьер" src="/upload/resize_cache/iblock/dc1/100_100_1/dc1145c66f561e1c2a3ef13f49c53c7c.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Скотч-терьер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/sakhalinskiy-khaski/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Сахалинский хаски" data-original="/upload/resize_cache/iblock/c11/100_100_1/rbst7q2ws6jbfqftgv1nlo3ib8q1nivp.jpg">
+          <noscript data-alt="Сахалинский хаски" data-original="/upload/resize_cache/iblock/c11/100_100_1/rbst7q2ws6jbfqftgv1nlo3ib8q1nivp.jpg">
+           <img alt="Сахалинский хаски" src="/upload/resize_cache/iblock/c11/100_100_1/rbst7q2ws6jbfqftgv1nlo3ib8q1nivp.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Сахалинский хаски
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbulterer%252F%253Fcheck_key%253Dbe3baec832390375dc25c2350f576f18%2526ANIMAL_CODE%253Dbulterer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbulterer%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmJ1bHRlcmVyJTJGJTNGY2hlY2tfa2V5JTNEYmUzYmFlYzgzMjM5MDM3NWRjMjVjMjM1MGY1NzZmMTglMjZBTklNQUxfQ09ERSUzRGJ1bHRlcmVyJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmJ1bHRlcmVyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbulterer%252F%253Fcheck_key%253Dbe3baec832390375dc25c2350f576f18%2526ANIMAL_CODE%253Dbulterer%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fbulterer%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbulterer%252F%253Fcheck_key%253Dbe3baec832390375dc25c2350f576f18%2526ANIMAL_CODE%253Dbulterer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbulterer%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "176.59.213.8"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--3ca0672871d115d58fcc533fdfc05a7a-->

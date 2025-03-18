@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'c15fd1dbba0e'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Английский бульдог, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Английский бульдог – мощная, коренастая собака с отлично развитой мускулатурой. За невозмутимый характер, природный ум и чистоплотность бульдога называют «английским джентльменом»." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/758/7581aabcc645a1ff5edaf2ebe7fb6921.jpg" property="og:image"/>
+     <title>
+      Английский бульдог: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/angliyskiy-buldog/" property="og:url"/>
+     <meta content="Английский бульдог: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Английский бульдог – мощная, коренастая собака с отлично развитой мускулатурой. За невозмутимый характер, природный ум и чистоплотность бульдога называют «английским джентльменом»." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/angliyskiy-buldog/" itemprop="url">
+         <span itemprop="title">
+          Английский бульдог
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Английский бульдог
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/angliyskiy-buldog/">
+          Описание
+         </a>
+         <a href="/dog/angliyskiy-buldog/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/angliyskiy-buldog/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/angliyskiy-buldog/photo/">
+          Фото
+         </a>
+         <a href="/dog/angliyskiy-buldog/video/">
+          Видео
+         </a>
+         <a href="/dog/angliyskiy-buldog/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/angliyskiy-buldog/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Английский бульдог" src="/upload/iblock/9a7/9a72d195c7b2eb2cc9a39dba2ab1c233.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/angliyskiy-buldog/">
+           бульдог
+          </a>
+         </span>
+         <p>
+          Английский бульдог – мощная, коренастая собака с отлично развитой мускулатурой. За невозмутимый характер, природный ум и чистоплотность бульдога называют «английским джентльменом».
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/e17/e17d7aae7ce39408d43d1e1bfbddf25c.jpg" data-cap="Doug is 5!" data-fancybox="images" data-link="https://www.flickr.com/photos/cookiespi/25984830780/" data-type="image" data-username="cookiespi" href="/upload/uf/56e/56ee71f2271700e4a7050a1f195d63d6.jpg">
+            <img alt="Английский бульдог" src="/upload/resize_cache/uf/56e/293_293_2/56ee71f2271700e4a7050a1f195d63d6.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/e30/e30c14adbcdd603806a520d8d8653a2e.jpg" data-cap="Cookie (30)" data-fancybox="images" data-link="https://www.flickr.com/photos/126746279@N02/38113794266/" data-type="image" data-username="Malcolm Robertson" href="/upload/uf/ed7/ed7b171518f6b4d1556bf1ada69eb243.jpg">
+            <img alt="Английский бульдог" src="/upload/resize_cache/uf/ed7/293_293_2/ed7b171518f6b4d1556bf1ada69eb243.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/ff7/ff74a56e3abe479649f64c0a0e3652e5.jpg" data-cap="Murphy" data-fancybox="images" data-link="https://www.flickr.com/photos/rsorrentino/6911484300/" data-type="image" data-username="Robert Sorrentino" href="/upload/uf/7db/7db4dd21e7b9c0b3bf0f589d63d855d6.jpg">
+            <img alt="Английский бульдог" src="/upload/resize_cache/uf/7db/293_293_2/7db4dd21e7b9c0b3bf0f589d63d855d6.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/angliyskiy-buldog/photo/">
+         Все
+            фото английского бульдога
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы английский бульдог
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Особенности породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Внешность английского бульдога
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Характер английского бульдога
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Дрессировка и воспитание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Здоровье и болезни английского бульдога
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Сколько стоит английский бульдог
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Английский бульдог
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 23-25 кг, суки 18-23 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         31-40 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         7-10 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Взрослый английский бульдог – пес довольно ленивый и без особого восторга выходит на прогулку, может даже заупрямиться. Однако для поддержания формы ежедневный выгул просто необходим.
+        </li>
+        <li>
+         Жара и повышенная влажность – настоящее наказание для собак этой породы. Гуляя с бульдогом в солнечный летний день, следите, чтобы ваш питомец не перегрелся, а если это случится, примите срочные меры.
+        </li>
+        <li>
+         Английский бульдог не относится к «уличным» породам. Во дворе дома, в обычной конуре ему будет крайне некомфортно, и все из-за того, что у него короткая шерсть, которая от холода не защищает. Содержать таких собак можно только в доме или в квартире.
+        </li>
+        <li>
+         Четвероногие джентльмены зачастую производят много шума. Они булькают, хрипят, а ночью и вовсе храпят.
+        </li>
+        <li>
+         Не очень-то вяжется с «аристократическими» нормами и другая особенность этих псов – они нередко страдают метеоризмом, то есть повышенным газообразованием. Для людей брезгливых это может стать настоящей проблемой.
+        </li>
+        <li>
+         Английский бульдог уязвим для различных заболеваний дыхательных путей. Причина – в короткой морде, что обуславливает уязвимость органов носоглотки для различных возбудителей.
+        </li>
+        <li>
+         Представители этой породы зачастую страдают прожорливостью, легко набирают вес и потом страдают от ожирения.
+        </li>
+        <li>
+         По причине крупной головы и особенностей строения черепа, у английских бульдогов возникают трудности с воспроизведением потомства. Большинство щенков появляется на свет с помощью кесарева сечения.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Английский бульдог" data-original="/upload/iblock/758/7581aabcc645a1ff5edaf2ebe7fb6921.jpg">
+          <noscript data-alt="Английский бульдог" data-original="/upload/iblock/758/7581aabcc645a1ff5edaf2ebe7fb6921.jpg">
+           <img alt="Английский бульдог" src="/upload/iblock/758/7581aabcc645a1ff5edaf2ebe7fb6921.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Английский бульдог
+          </strong>
+          – не только отличный телохранитель, но и настоящий друг. Даже если вам по каким-то причинам тоскливо на душе, этот приземистый «англичанин» со смешной мордой обязательно сумеет поднять настроение. Но если большая голова, множество морщинок и складок на морде могут развеселить, то присущее собакам обильное слюноотделение кого-то может и оттолкнуть. Английский бульдог – обладатель весьма характерной наружности, которую не спутаешь ни с какой другой. Из-за его внешности может создаться впечатление, что питомец по своей природе неповоротлив и медлителен. Однако если возникнет реальная опасность для него самого или хозяина, то пес среагирует быстро и сумеет встать на защиту. Четвероногий уроженец Туманного Альбиона обладает спокойным нравом и уравновешенным характером. Эти черты сочетаются со смелостью и даже упрямством.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средний (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Английский бульдог основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/angliyskiy-buldog/razmeri-porodi/">
+         размеры английского бульдога
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы английский бульдог
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Английский бульдог" data-fancybox="gallery" href="/upload/iblock/713/713aaa2b2121b93d0bacf075225c4d17.jpg" title="Английский бульдог">
+          <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/713/412_2150_1/713aaa2b2121b93d0bacf075225c4d17.jpg">
+           <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/713/412_2150_1/713aaa2b2121b93d0bacf075225c4d17.jpg">
+            <img alt="Английский бульдог" class="article_pic" height="620" src="/upload/resize_cache/iblock/713/412_2150_1/713aaa2b2121b93d0bacf075225c4d17.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английский бульдог
+         </div>
+        </div>
+        <p>
+         В XVII-XIX веках на территории Великобритании были распространены старые английские бульдоги, произошедшие от центральноазиатских мастифов и северокавказских аланов. Они пользовались спросом как травильные собаки на охоте. Название полностью соответствовало предназначению: слово «бульдог» переводится с английского как «бычья собака». Именно старые английские бульдоги и являются предками героев нашей статьи – современных английских бульдогов.
+        </p>
+        <p>
+         Между старым английским и современным английским бульдогом есть значительные сходства во внешности. А вот главным отличием все же является характер. Предки нынешних бульдогов были очень злобными. Их использовали для развлечения толпы, стравливали на быков, лошадей и даже медведей и львов. Такие кровавые схватки приводили к гибели не только диких животных, но и самих бульдогов, становившихся жертвами клыков, рогов и копыт. Конец таким, с позволения сказать, развлечениям пришел в 1835 году, когда британское правительство полностью запретило бои с быками. Только это не остановило любителей кровавого «спорта»: если стало нельзя стравливать староанглийских бульдогов с быками, то вместо последних они стали использовать других собак.
+        </p>
+        <p>
+         Через короткое время были запрещены и собачьи бои. Но такая гуманность сыграла со старыми английскими бульдогами злую шутку. Лишившись возможности участвовать в сражениях – будь то с дикими животными или с другими собаками – порода начала деградировать, так как ее необычайно мощные, крепкие челюсти с мертвой хваткой не находили себе применения. Еще одним ударом для породы стало и ее фактическое вымирание, так как бульдогов вязали с представителями других пород, и чистокровных собак в конечном счете осталось очень мало.
+        </p>
+        <p>
+         В 1858-1859 годах началась работа по сохранению английских бульдогов. Однако селекционеры поставили перед собой и другую задачу – искоренить в них излишнюю злобу. Не без труда по всей Британии отобрали самых уравновешенных особей. Уже через год в Бирмингеме состоялась выставка, на которой были представлены образцы «новой» породы. По характеру и внутреннему миру это были уже далеко не те бульдоги, которые были известны ранее. Посетители выставки смогли оценить работу генетиков и селекционеров сполна: отзывы были самые положительные!
+        </p>
+        <p>
+         В 1873 году порода была официально признана Английским кинологическим клубом, свидетельством чему стала запись в племенных книгах того времени. В начале 1880-х годов на английских бульдогов все чаще стали обращать внимание и за пределами их исторической родины. И сегодня уже никто не скажет, за что именно их полюбили: за забавную внешность или уравновешенный характер – скорее всего, и за то, и за другое.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1e1/1e1196ad7fcd6dc1649cdf59ecd1604f.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/1e1/512_342_2/1e1196ad7fcd6dc1649cdf59ecd1604f.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/1e1/512_342_2/1e1196ad7fcd6dc1649cdf59ecd1604f.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/1e1/512_342_2/1e1196ad7fcd6dc1649cdf59ecd1604f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9b8/9b8fb649e4f0bb4aab13da1184cdc342.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/9b8/512_342_2/9b8fb649e4f0bb4aab13da1184cdc342.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/9b8/512_342_2/9b8fb649e4f0bb4aab13da1184cdc342.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/9b8/512_342_2/9b8fb649e4f0bb4aab13da1184cdc342.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2>
+         Видео: Английский бульдог
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="RslGKan9Teo">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Особенности породы
+        </h2>
+        <p>
+         Представители других пород, например,
+         <a class="ph" href="/dog/amerikanskaya-akita/">
+          американская акита
+         </a>
+         или
+         <a class="ph" href="/dog/alyaskinskiy-malamut/">
+          аляскинский маламут
+         </a>
+         , буквально рвутся на волю. Они любят гулять, резвиться. Но этого никак не скажешь об английском бульдоге. Эта собака – настоящий домосед. Его любимое место в доме – хозяйский диван, вокруг которого он постоянно крутится и может проспать хоть весь день. Длительные прогулки, особенно на дальние расстояния, тоже не в его вкусе. Нашему «джентльмену» комфортнее всего недалеко от дома.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенки английского бульдога" data-fancybox="gallery" href="/upload/iblock/fa8/fa8ce0f77d8c50a04210d64b097a78d4.jpg" title="Щенки английского бульдога">
+          <div class="lazy-load" data-alt="Щенки английского бульдога" data-class="article_pic" data-original="/upload/resize_cache/iblock/fa8/412_2150_1/fa8ce0f77d8c50a04210d64b097a78d4.jpg">
+           <noscript data-alt="Щенки английского бульдога" data-class="article_pic" data-original="/upload/resize_cache/iblock/fa8/412_2150_1/fa8ce0f77d8c50a04210d64b097a78d4.jpg">
+            <img alt="Щенки английского бульдога" class="article_pic" height="273" src="/upload/resize_cache/iblock/fa8/412_2150_1/fa8ce0f77d8c50a04210d64b097a78d4.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенки английского бульдога
+         </div>
+        </div>
+        <p>
+         Еще одна особенность породы – завидное упрямство. Если английский бульдог не хочет что-то делать, то вы в буквальном смысле выдохнитесь, пока заставите его. В какой-то момент начинает казаться, что нервы просто не выдержат, однако по-настоящему рассердиться на своего питомца, которого отличает весьма потешное поведение, не получается. Наоборот, он будет заставлять вас невольно улыбаться даже тогда, когда этого меньше всего хочется.
+        </p>
+        <p>
+         Английский бульдог станет настоящим другом младшим членам семьи. Связь с детьми у него устанавливается прочная и по отношению к ним он себя ведет просто замечательно. Из недостатков хотелось бы выделить то, что собаки этой породы очень любят грызть разные вещи, включая хозяйские тапочки. Если не будете давать ему много игрушек для жевания, питомец нанесет вашему имуществу немалый ущерб, испортив зубами ножки диванов, кресел, столов.
+        </p>
+        <p>
+         Другая характерная черта породы – уроженцы Британских островов плохо переносят жару. По этой причине для проживающих в жаркой местности английский бульдог станет не самым лучшим выбором. Но зато он отлично подойдет для жизни в городе, поскольку не нуждается в постоянных физических упражнениях. Правда, многих потенциальных владельцев смущают присущие собаке слюнотечение и запах. Это действительно может стать проблемой в условиях городских квартир, поэтому перед тем как покупать щенка английского бульдога, тщательно взвесьте для себя, сможете ли вы с ним ужиться, учитывая такие особенности животного.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f37/f37cd06712392ad0ac27b252818659aa.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/f37/512_342_2/f37cd06712392ad0ac27b252818659aa.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/f37/512_342_2/f37cd06712392ad0ac27b252818659aa.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/f37/512_342_2/f37cd06712392ad0ac27b252818659aa.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c89/c893a12cae562c702de9947de2d5d57e.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/c89/512_342_2/c893a12cae562c702de9947de2d5d57e.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/c89/512_342_2/c893a12cae562c702de9947de2d5d57e.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/c89/512_342_2/c893a12cae562c702de9947de2d5d57e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Интересный факт: английские бульдоги обожают кататься на скейте и у них это неплохо получается! Так, например, в 2015 году бульдог Отто из Перу проехал с большой скоростью через 30 человек, которые встали на дороге и расставили ноги." data-fancybox="gallery" href="/upload/iblock/bf3/bf3d98c47727b65ca5bdbcf8263945b8.jpg" title="Интересный факт: английские бульдоги обожают кататься на скейте и у них это неплохо получается! Так, например, в 2015 году бульдог Отто из Перу проехал с большой скоростью через 30 человек, которые встали на дороге и расставили ноги.">
+          <div class="lazy-load" data-alt="Интересный факт: английские бульдоги обожают кататься на скейте и у них это неплохо получается! Так, например, в 2015 году бульдог Отто из Перу проехал с большой скоростью через 30 человек, которые встали на дороге и расставили ноги." data-class="article_pic" data-original="/upload/resize_cache/iblock/bf3/1024_2150_1/bf3d98c47727b65ca5bdbcf8263945b8.jpg">
+           <noscript data-alt="Интересный факт: английские бульдоги обожают кататься на скейте и у них это неплохо получается! Так, например, в 2015 году бульдог Отто из Перу проехал с большой скоростью через 30 человек, которые встали на дороге и расставили ноги." data-class="article_pic" data-original="/upload/resize_cache/iblock/bf3/1024_2150_1/bf3d98c47727b65ca5bdbcf8263945b8.jpg">
+            <img alt="Интересный факт: английские бульдоги обожают кататься на скейте и у них это неплохо получается! Так, например, в 2015 году бульдог Отто из Перу проехал с большой скоростью через 30 человек, которые встали на дороге и расставили ноги." class="article_pic" src="/upload/resize_cache/iblock/bf3/1024_2150_1/bf3d98c47727b65ca5bdbcf8263945b8.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Интересный факт: английские бульдоги обожают кататься на скейте и у них это неплохо получается! Так, например, в 2015 году бульдог Отто из Перу проехал с большой скоростью через 30 человек, которые встали на дороге и расставили ноги.
+         </div>
+        </div>
+        <h2 id="gl3">
+         Внешность английского бульдога
+        </h2>
+        <p>
+         Английские бульдоги – обладатели массивной головы и маленького таза. Из-за таких особенностей строения, не позволяющих щенкам нормально проходить через родовые пути, представители этой породы нередко рожают с помощью ветеринара, который проводит им кесарева сечения. К тому же английский бульдог относится к брахицефальным собакам, отличительная черта которых – вдавленный нос и голова.
+        </p>
+        <p>
+         Эти забавные «англичане» также отличаются неджентльменским поведением. Поскольку они дышат открытым ртом, то заглатывают при этом много воздуха, что, собственно, и обуславливает метеоризм. Хозяевам нужно либо просто свыкнуться с этим, либо постоянно держать при себе освежитель воздуха.
+        </p>
+        <h3>
+         Общее описание
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c4f/c4f0b2a67bc92de57342a33214dd1f9b.jpg" title="">
+          <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/c4f/412_2150_1/c4f0b2a67bc92de57342a33214dd1f9b.jpg">
+           <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/c4f/412_2150_1/c4f0b2a67bc92de57342a33214dd1f9b.jpg">
+            <img alt="Английский бульдог" class="article_pic" height="733" src="/upload/resize_cache/iblock/c4f/412_2150_1/c4f0b2a67bc92de57342a33214dd1f9b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Английский бульдог относится к собакам среднего размера. Он гладкошерстный, крепко сбитый и приземистый. Голова выраженно крупная, массивная, ее обхват равняется высоте собаки в холке. Характерная особенность бульдогов – короткая и широкая морда с таким же широким и крупным носом.
+        </p>
+        <p>
+         Рост в холке зависит от половой принадлежности. У кобелей он составляет 36-41 см, у сук – 30-36 см. У кобелей больше и вес, он составляет 20-25 кг. Суки весят 16-20 кг.
+        </p>
+        <p>
+         Английский бульдог совмещает в себе не только функции сторожа, но также телохранителя, веселого компаньона и надежного друга. Характер пса довольно ласковый, но благодаря грозному виду он способен заменить сторожевую собаку: бульдог отпугивает нежданных гостей, позарившихся на чужое имущество.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Голова, если сопоставлять ее с размерами собаки в целом, довольно крупная. Но при этом общую симметрию она не нарушает, поэтому английский бульдог не выглядит деформированным, в противном случае пострадало бы качество его движений. Морда широкая и тупая, ее отличает изогнутость кверху.
+        </p>
+        <p>
+         Лоб бульдога плоский, над мордой слишком не выступающий и не свисающий. На лбу и коже вокруг головы имеются выраженные складки. От стопа до вершины черепа просматривается борозда – она отчетливо широкая и глубокая.
+        </p>
+        <p>
+         Фронтальные кости в проекции выпуклые и рельефные. Еще их отличает высота, широта и квадратная форма.
+        </p>
+        <h3>
+         Зубы
+        </h3>
+        <p>
+         Английский бульдог может похвастать широкой и массивной челюстной системой квадратной формы. Нижняя челюсть, в отличие от верхней, выдается вперед и изогнута кверху. Челюсть располагает шестью резцами, расположенными между клыками на ровной линии. Последние имеют широкую расстановку.
+        </p>
+        <p>
+         Представители породы обладают крупными и мощными зубами, которые, если пасть закрыта, полностью спрятаны во рту. Если смотреть спереди, то видно, что расположение нижней челюсти параллельно верхней – она находится прямо под ней.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Серьезный бульдог" data-fancybox="gallery" href="/upload/iblock/653/653b02a492d5f5a42a4c7e465d6f9495.jpg" title="Серьезный бульдог">
+          <div class="lazy-load" data-alt="Серьезный бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/653/412_2150_1/653b02a492d5f5a42a4c7e465d6f9495.jpg">
+           <noscript data-alt="Серьезный бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/653/412_2150_1/653b02a492d5f5a42a4c7e465d6f9495.jpg">
+            <img alt="Серьезный бульдог" class="article_pic" height="274" src="/upload/resize_cache/iblock/653/412_2150_1/653b02a492d5f5a42a4c7e465d6f9495.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Серьезный бульдог
+         </div>
+        </div>
+        <p>
+         Расположение глаз на черепе низкое, на приличном удалении от ушей. Находятся со стопом на одной линии и располагаются под прямым углом к борозде.
+        </p>
+        <p>
+         Расстановка глаз широкая, но внешние углы располагаются внутри внешней линии щек. Их форма округлая, размер – средний. Не западают в глазнице, но и выпуклыми не являются. Цвет глаз весьма тёмный, практически чёрный. Если смотреть спереди, то видимых белков они не обнаруживают.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Уши английского бульдога отличаются высокой посадкой. При осмотре спереди каждое ухо передним краем касается в верхнем углу черепа, а именно его внешней линии. Таким образом, уши размещаются максимально высоко и далеко от глаз.
+        </p>
+        <p>
+         Форма ушей – так называемая роза: они висят и обращены назад, то есть к спине. Передний или верхний край отличается кривизной как назад, так и наружу. Благодаря этому так называемая спинка языка делается частично просматриваемой.
+        </p>
+        <h3>
+         Нос и губы
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Вот это губы!" data-fancybox="gallery" href="/upload/iblock/d52/d52f531bd8eeffa2b24831c9b45a581d.jpg" title="Вот это губы!">
+          <div class="lazy-load" data-alt="Вот это губы!" data-class="article_pic" data-original="/upload/resize_cache/iblock/d52/412_2150_1/d52f531bd8eeffa2b24831c9b45a581d.jpg">
+           <noscript data-alt="Вот это губы!" data-class="article_pic" data-original="/upload/resize_cache/iblock/d52/412_2150_1/d52f531bd8eeffa2b24831c9b45a581d.jpg">
+            <img alt="Вот это губы!" class="article_pic" height="309" src="/upload/resize_cache/iblock/d52/412_2150_1/d52f531bd8eeffa2b24831c9b45a581d.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Вот это губы!
+         </div>
+        </div>
+        <p>
+         Мочка носа английского бульдога широкая и крупная, она глубоко утоплена между глаз. Носовая складка на линию профиля не влияет. Цвет чёрный, вкрапления коричневого, печёночного либо красного цвета отсутствуют. Аналогичными характеристиками обладают и ноздри. Кроме того, они открытые, и между ними хорошо заметна вертикальная бороздка.
+        </p>
+        <p>
+         Губы широкие и толстые и одновременно очень глубокие и отвислые. Благодаря последнему качеству ими полностью закрывается челюсть с боков. Но этого не происходит впереди: здесь губы лишь прикрывают зубы.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Английскому бульдогу досталась шея средней длины, сильная, крепкая и очень толстая. Она имеет слегка выпуклую форму. Вокруг горла имеется толстая, свободная и складчатая кожа, образующая второй подбородок (подгрудок), который тянется от нижней челюсти до груди.
+        </p>
+        <p>
+         Стандарт породы требует, чтобы шея по своей длине гармонировала с размером головы и корпуса собаки. Если шея короткая, это может говорить о наличии у животного дыхательных проблем, не говоря уже о том, что недостаточная длина не лучшим образом сказывается на общем виде английского бульдога.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда английского бульдога" data-fancybox="gallery" href="/upload/iblock/ebe/ebe4c572651fa78177b70c103e526de3.jpg" title="Морда английского бульдога">
+          <div class="lazy-load" data-alt="Морда английского бульдога" data-class="article_pic" data-original="/upload/resize_cache/iblock/ebe/1024_2150_1/ebe4c572651fa78177b70c103e526de3.jpg">
+           <noscript data-alt="Морда английского бульдога" data-class="article_pic" data-original="/upload/resize_cache/iblock/ebe/1024_2150_1/ebe4c572651fa78177b70c103e526de3.jpg">
+            <img alt="Морда английского бульдога" class="article_pic" src="/upload/resize_cache/iblock/ebe/1024_2150_1/ebe4c572651fa78177b70c103e526de3.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда английского бульдога
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Линия верха, если просматривать ее сразу за холкой, в самой нижней части несколько опущена. Затем она поднимается до поясницы, становясь на уровень выше роста собаки в холке, и, закругляясь, снижается к хвосту. Благодаря таким «хитросплетениям» линии верха формируется арка парусом, что является одной из визитных карточек породы.
+        </p>
+        <p>
+         Спина нашего «джентльмена» короткая, ее отличает мощность. В плечах английский бульдог широк. Относительно узкая спина только в пояснице.
+        </p>
+        <p>
+         Грудь у представителей этой породы широкая и глубокая, причем от холки и непосредственно до самой нижней части, а также выпуклая и с боков округлая.
+        </p>
+        <p>
+         Живот собаки подтянутый, не отвисает.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Ты сам погуляй, а я лучше тут посижу" data-fancybox="gallery" href="/upload/iblock/9e4/9e4216e3346df7e6166442ff4afa7751.jpg" title="Ты сам погуляй, а я лучше тут посижу">
+          <div class="lazy-load" data-alt="Ты сам погуляй, а я лучше тут посижу" data-class="article_pic" data-original="/upload/resize_cache/iblock/9e4/412_2150_1/9e4216e3346df7e6166442ff4afa7751.jpg">
+           <noscript data-alt="Ты сам погуляй, а я лучше тут посижу" data-class="article_pic" data-original="/upload/resize_cache/iblock/9e4/412_2150_1/9e4216e3346df7e6166442ff4afa7751.jpg">
+            <img alt="Ты сам погуляй, а я лучше тут посижу" class="article_pic" height="618" src="/upload/resize_cache/iblock/9e4/412_2150_1/9e4216e3346df7e6166442ff4afa7751.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Ты сам погуляй, а я лучше тут посижу
+         </div>
+        </div>
+        <p>
+         Посадка хвоста низкая, у основания он довольно прямой и толстый, а потом изгибается вниз и сужается к концу. Форма округлая, кожа на хвосте гладкая, жесткой шерсти нет, отсутствует и бахрома. Если говорить о длине, то он скорее короткий. Над спиной никогда не поднимается.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Английский бульдог обладает крупными, сильными и крепкими передними конечностями. Они толстые, с развитой мускулатурой, постав у них широкий.
+        </p>
+        <p>
+         Внешняя линия конечностей выглядит заметно изогнутой, однако их кости прямые: никакой кривизны и изогнутости в них не наблюдается. В сравнении с задними конечностями они короткие, и все же не настолько, чтобы спина собаки воспринималась длиннее, чем она есть на самом деле, или чтобы они могли помешать повседневной активности вашего питомца.
+        </p>
+        <p>
+         Плечи широкие, их отличает мощность, они обладают развитой мускулатурой. Но также их можно охарактеризовать как глубокие, наклонные и покатые. Локти имеют низкое расположение и отстоят от рёбер. Пясти можно описать очень емко: мощные, прямые и короткие.
+        </p>
+        <p>
+         Крупными и мускулистыми являются также задние конечности бульдогов. Поскольку они длиннее передних, то за счет этого достигается эффект приподнятости поясницы собаки. Нижняя часть задних конечностей имеет такие характеристики: она прямая, короткая и мощная. Для круглых коленей характерна лёгкая развернутость в сторону от корпуса собаки. Скакательные суставы расположены низко и отличаются лёгкой изогнутостью, углы выражены умеренно.
+        </p>
+        <p>
+         И передние, и задние лапы имеют характерную для породы развернутость наружу. Различие между ними только в том, что первые среднего размера, прямые и в меру округлые, а вторые – компактные, круглой формы. Пальцы задних лап сводистые, толстые, вследствие чего их суставы приподняты и, соответственно, высоко выдаются.
+        </p>
+        <p>
+         Английского бульдога отличает своеобразная, можно даже сказать не совсем обычная для собак походка. Он перемещается коротким, быстрым шагом на кончиках пальцев. При этом задние лапы не поднимаются высоко, поэтому наш «джентльмен» слегка шаркает. Стандарт породы предполагает, что качество и уверенность движений имеют большое значение.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Короткая, с нежной текстурой. Она гладкая и плотно прилегает. Не должна быть волнистой.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Отличается однотонностью, чистотой и яркостью. В породе английский бульдог встречаются различные цвета, но предпочтение необходимо отдавать красно-тигровым и всем другим тигровым окрасам, белому, красному, оленьему, пегому – причём в указанной последовательности.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Английский бульдог белого окраса" data-fancybox="gallery" href="/upload/iblock/ffa/ffa71651356a15c6dbb354c1c8eaba04.jpg" title="Английский бульдог белого окраса">
+          <div class="lazy-load" data-alt="Английский бульдог белого окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/ffa/412_2150_1/ffa71651356a15c6dbb354c1c8eaba04.jpg">
+           <noscript data-alt="Английский бульдог белого окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/ffa/412_2150_1/ffa71651356a15c6dbb354c1c8eaba04.jpg">
+            <img alt="Английский бульдог белого окраса" class="article_pic" height="273" src="/upload/resize_cache/iblock/ffa/412_2150_1/ffa71651356a15c6dbb354c1c8eaba04.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английский бульдог белого окраса
+         </div>
+        </div>
+        <p>
+         Если выбирать из хорошего пегового, грязно-пестрого или нечистого сплошного, то предпочтительнее хороший пегий.
+        </p>
+        <p>
+         Черный цвет считается порочным и допускается лишь в пеговом окрасе в виде пятен в умеренном количестве. Чтобы пятнистый окрас не воспринимался как дефектный, цвета должны иметь равномерное распределение мелкими пятнами.
+        </p>
+        <p>
+         Если у вашего питомца на груди небольшое белое пятно, это допустимо, но только в двух вариантах окраса: однотонном и тигровом.
+        </p>
+        <h3>
+         Возможные пороки
+        </h3>
+        <p>
+         Любые отклонения от перечисленных стандартов головы, зубов, глаз, ушей, шеи, корпуса и конечностей должны рассматриваться как недостатки или пороки породы.
+        </p>
+        <p>
+         О степени и глубине этих отклонений судят в зависимости от их влияния на здоровье и повседневную жизнедеятельность собаки.
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <p>
+         Если английский бульдог проявляет агрессивность либо излишнюю робость, если у него заметное расстройство дыхания или вросший хвост, то такие пороки считаются дисквалифицирующими.
+        </p>
+        <p>
+         Дисквалифицирована должна быть любая собака, демонстрирующая аномальное поведение или обнаруживающая отклонения в психике.
+        </p>
+        <p class="legenda">
+         К сведению: кобели должны иметь нормально развитые семенники в количестве двух штук, полностью опущенные в мошонку.
+        </p>
+        <h2>
+         Фото английского бульдога
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/dc6/dc6ba5ec71c9d05092a9534b1a47749a.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/dc6/380_264_2/dc6ba5ec71c9d05092a9534b1a47749a.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/dc6/380_264_2/dc6ba5ec71c9d05092a9534b1a47749a.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/dc6/380_264_2/dc6ba5ec71c9d05092a9534b1a47749a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/88c/88c4bac09a4d6db0cdea2924f8005067.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/88c/380_264_2/88c4bac09a4d6db0cdea2924f8005067.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/88c/380_264_2/88c4bac09a4d6db0cdea2924f8005067.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/88c/380_264_2/88c4bac09a4d6db0cdea2924f8005067.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/bf0/bf099e1911e1d68c99ef8b069a930a00.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/bf0/380_264_2/bf099e1911e1d68c99ef8b069a930a00.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/bf0/380_264_2/bf099e1911e1d68c99ef8b069a930a00.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/bf0/380_264_2/bf099e1911e1d68c99ef8b069a930a00.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d33/d3357d4136f56c4eda4d6efd34ebf133.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/d33/380_264_2/d3357d4136f56c4eda4d6efd34ebf133.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/d33/380_264_2/d3357d4136f56c4eda4d6efd34ebf133.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/d33/380_264_2/d3357d4136f56c4eda4d6efd34ebf133.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e9c/e9cc15c13dcb837a75c6aa68064b1b05.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/e9c/380_264_2/e9cc15c13dcb837a75c6aa68064b1b05.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/e9c/380_264_2/e9cc15c13dcb837a75c6aa68064b1b05.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/e9c/380_264_2/e9cc15c13dcb837a75c6aa68064b1b05.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ab5/ab507b44925f68fcb9d9d6087cd98075.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/ab5/380_264_2/ab507b44925f68fcb9d9d6087cd98075.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/ab5/380_264_2/ab507b44925f68fcb9d9d6087cd98075.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/ab5/380_264_2/ab507b44925f68fcb9d9d6087cd98075.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/05c/05c6239179cdd5a4fe27fc4182f75e60.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/05c/380_264_2/05c6239179cdd5a4fe27fc4182f75e60.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/05c/380_264_2/05c6239179cdd5a4fe27fc4182f75e60.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/05c/380_264_2/05c6239179cdd5a4fe27fc4182f75e60.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d09/d099f0f7243b9d3e0564286531719d97.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/d09/380_264_2/d099f0f7243b9d3e0564286531719d97.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/d09/380_264_2/d099f0f7243b9d3e0564286531719d97.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/d09/380_264_2/d099f0f7243b9d3e0564286531719d97.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7db/7dbc265bf62fd10bf6e04391d42fc84a.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/7db/380_264_2/7dbc265bf62fd10bf6e04391d42fc84a.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/7db/380_264_2/7dbc265bf62fd10bf6e04391d42fc84a.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/7db/380_264_2/7dbc265bf62fd10bf6e04391d42fc84a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl4">
+         Характер английского бульдога
+        </h2>
+        <p>
+         Английский бульдог воспринимает семью, в которой проживает, как свою «стаю». Питомец сопереживает всему, что происходит в доме, проявляя в отношении хозяев чуткость и преданность.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="С любимым хозяином" data-fancybox="gallery" href="/upload/iblock/ed1/ed15d9cf5cc219d94a72def9250783e8.jpg" title="С любимым хозяином">
+          <div class="lazy-load" data-alt="С любимым хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/ed1/412_2150_1/ed15d9cf5cc219d94a72def9250783e8.jpg">
+           <noscript data-alt="С любимым хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/ed1/412_2150_1/ed15d9cf5cc219d94a72def9250783e8.jpg">
+            <img alt="С любимым хозяином" class="article_pic" height="275" src="/upload/resize_cache/iblock/ed1/412_2150_1/ed15d9cf5cc219d94a72def9250783e8.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          С любимым хозяином
+         </div>
+        </div>
+        <p>
+         Представитель этой породы станет хорошим компаньоном. Он очень любит детей, понимая, что они объект всеобщей любви взрослых, и старается подражать в этом последним, проявляя к маленьким членам семьи аналогичные чувства. По своей натуре наш «англичанин» несколько простоват, что делает его незаменимым участником детских развлечений. Бульдоги шумные, азартные, очень энергичные и в то же время нетерпеливые.
+        </p>
+        <p class="legenda">
+         Важно: английского бульдога ещё с детства следует отучить от привычки прыгать на людей в доме. В противном случае, когда он вырастет и станет достаточно тяжелым, может неожиданно прыгнуть на хозяина или на кого-то из членов семьи, причём в самый неожиданный момент. Если взрослый пес прыгнет на ребёнка, он может нанести ему травму.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Английский бульдог с детьми (и яблочком)" data-fancybox="gallery" href="/upload/iblock/d73/d73c7bca69226c2287b0c3f3e405c48e.jpg" title="Английский бульдог с детьми (и яблочком)">
+          <div class="lazy-load" data-alt="Английский бульдог с детьми (и яблочком)" data-class="article_pic" data-original="/upload/resize_cache/iblock/d73/412_2150_1/d73c7bca69226c2287b0c3f3e405c48e.jpg">
+           <noscript data-alt="Английский бульдог с детьми (и яблочком)" data-class="article_pic" data-original="/upload/resize_cache/iblock/d73/412_2150_1/d73c7bca69226c2287b0c3f3e405c48e.jpg">
+            <img alt="Английский бульдог с детьми (и яблочком)" class="article_pic" height="274" src="/upload/resize_cache/iblock/d73/412_2150_1/d73c7bca69226c2287b0c3f3e405c48e.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английский бульдог с детьми (и яблочком)
+         </div>
+        </div>
+        <p>
+         Несмотря на простоватость, собака этой породы весьма сообразительна. К тому же, она плохо переносит одиночество. При недостатке общения становится угрюмой и строптивой. Кстати, упрямство – одна из характерных черт характера бульдога, благодаря которой он обрел мировую славу. Заставить английского бульдога делать что-либо при помощи грубости или силы невозможно, однако договориться с ним, что называется, по-хорошему вполне реально. Собаководы настолько уважают это качество представителей данной породы, что бульдог стал талисманом многих спортивных клубов.
+        </p>
+        <p>
+         Что ещё импонирует в английском бульдоге, так это его глубокая преданность человеку. Своего хозяина он принимает любым – энергичным или ленивым, радостным или грустным, успешным или не очень, то есть таким, каков он есть, и всегда готов защитить своего владельца, если тому угрожает какая-либо опасность.
+        </p>
+        <p>
+         Английский бульдог имеет грозный вид, но в душе он ласковый, дружелюбный и спокойный. В то же время его отличают независимость и самостоятельность, уравновешенность и уверенность в себе. По отношению к другим домашним животным «англичанин» ведёт себя миролюбиво.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Английский бульдог встретил котенка" data-fancybox="gallery" href="/upload/iblock/606/606d9c0826a81853dd6541639a2aae5d.jpg" title="Английский бульдог встретил котенка">
+          <div class="lazy-load" data-alt="Английский бульдог встретил котенка" data-class="article_pic" data-original="/upload/resize_cache/iblock/606/1024_2150_1/606d9c0826a81853dd6541639a2aae5d.jpg">
+           <noscript data-alt="Английский бульдог встретил котенка" data-class="article_pic" data-original="/upload/resize_cache/iblock/606/1024_2150_1/606d9c0826a81853dd6541639a2aae5d.jpg">
+            <img alt="Английский бульдог встретил котенка" class="article_pic" src="/upload/resize_cache/iblock/606/1024_2150_1/606d9c0826a81853dd6541639a2aae5d.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английский бульдог встретил котенка
+         </div>
+        </div>
+        <h2 id="gl5">
+         Дрессировка и воспитание
+        </h2>
+        <p>
+         Английского бульдога трудно отнести к породам, представители которых могут претендовать на звание чемпионов красоты. Однако дрессировка, пусть даже минимальная, нужна и им.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Английский бульдог – настоящий джентльмен" data-fancybox="gallery" href="/upload/iblock/e11/e1140907310e475ff8eab77d9f399808.jpg" title="Английский бульдог – настоящий джентльмен">
+          <div class="lazy-load" data-alt="Английский бульдог – настоящий джентльмен" data-class="article_pic" data-original="/upload/resize_cache/iblock/e11/412_2150_1/e1140907310e475ff8eab77d9f399808.jpg">
+           <noscript data-alt="Английский бульдог – настоящий джентльмен" data-class="article_pic" data-original="/upload/resize_cache/iblock/e11/412_2150_1/e1140907310e475ff8eab77d9f399808.jpg">
+            <img alt="Английский бульдог – настоящий джентльмен" class="article_pic" height="617" src="/upload/resize_cache/iblock/e11/412_2150_1/e1140907310e475ff8eab77d9f399808.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английский бульдог – настоящий джентльмен
+         </div>
+        </div>
+        <p>
+         Учить собаку «правилам приличия» и дрессировать ее должен волевой человек с твердым и терпеливым характером. Только обладая такими качествами, можно справиться с этой породой, поскольку она может проявлять непокорность и элементарную лень.
+        </p>
+        <p>
+         Начинать воспитание следует с приучения английского бульдога к поводку. Он не должен быть слишком длинным или слишком коротким. Многие думают, что если поводок короткий, то это поможет надежнее удерживать пса. Однако это является заблуждением, поскольку в этом случае собака, наоборот, начнет вырываться.
+        </p>
+        <p>
+         Надев на бульдога ошейник с поводком оптимальной длины (2-2,5 м), начните двигаться вперёд, дав собаке команду «Рядом!». При этом следите за тем, чтобы она шла рядом с левой стороны, не убегая вперёд и не отставая. Когда убедитесь, что ваш питомец хорошо научился ходить по прямой, приступайте к разучиванию поворотов в разные стороны, а также к полному развороту.
+        </p>
+        <p>
+         Важно научить английского бульдога садиться, когда вы останавливаетесь. Для этого скомандуйте ему «Сидеть!». Команду следует сопроводить следующим действием: положите левую руку на его круп и легко надавите. Нескольких уроков будет достаточно, чтобы собака поняла: каждый раз, когда хозяин останавливается, она должна садиться, причем даже если он и не произносит команду. И уж тем более она должна усвоить, что садиться нужно каждый раз, когда команда «Сидеть!» произносится.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Прогулка с английскими бульдогами" data-fancybox="gallery" href="/upload/iblock/e3e/e3e8c6bcd28a1cca030d791b1933908c.jpg" title="Прогулка с английскими бульдогами">
+          <div class="lazy-load" data-alt="Прогулка с английскими бульдогами" data-class="article_pic" data-original="/upload/resize_cache/iblock/e3e/1024_2150_1/e3e8c6bcd28a1cca030d791b1933908c.jpg">
+           <noscript data-alt="Прогулка с английскими бульдогами" data-class="article_pic" data-original="/upload/resize_cache/iblock/e3e/1024_2150_1/e3e8c6bcd28a1cca030d791b1933908c.jpg">
+            <img alt="Прогулка с английскими бульдогами" class="article_pic" src="/upload/resize_cache/iblock/e3e/1024_2150_1/e3e8c6bcd28a1cca030d791b1933908c.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Прогулка с английскими бульдогами
+         </div>
+        </div>
+        <h2 id="gl6">
+         Уход и содержание
+        </h2>
+        <p>
+         Благодаря тому, что у английского бульдога гладкая короткая шерсть, ухаживать за ним гораздо легче, чем над представителями ряда других пород. Вам понадобится щетка с жесткой щетиной, с помощью которой рекомендуется расчесывать питомца два-три раза в неделю, что доставит бульдогу массу удовольствия.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Супер-бульдог спасет этот город!" data-fancybox="gallery" href="/upload/iblock/44b/44bc907d87147079a543759356f6bd9b.jpg" title="Супер-бульдог спасет этот город!">
+          <div class="lazy-load" data-alt="Супер-бульдог спасет этот город!" data-class="article_pic" data-original="/upload/resize_cache/iblock/44b/412_2150_1/44bc907d87147079a543759356f6bd9b.jpg">
+           <noscript data-alt="Супер-бульдог спасет этот город!" data-class="article_pic" data-original="/upload/resize_cache/iblock/44b/412_2150_1/44bc907d87147079a543759356f6bd9b.jpg">
+            <img alt="Супер-бульдог спасет этот город!" class="article_pic" height="617" src="/upload/resize_cache/iblock/44b/412_2150_1/44bc907d87147079a543759356f6bd9b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Супер-бульдог спасет этот город!
+         </div>
+        </div>
+        <p>
+         Особенное внимание следует уделить складкам на морде. Их надлежащее состояние с точки зрения гигиены – залог здоровья собаки. Если в складках скапливается грязь, удалять ее следует с помощью влажного ватного диска. А чтобы складку просушить, протрите ее сухой ватой. Никаких косметических средств для ухода за английским бульдогом не требуется, так как их использование может спровоцировать аллергию. Аллергические реакции вероятны и в том случае, если складку на морде оставить непросушенной.
+        </p>
+        <p>
+         Купать английского бульдога слишком часто не следует – достаточно это делать в случаях острой необходимости. Частые ванные процедуры могут вызвать шелушение кожи, что будет сопровождаться постоянным зудом и доставит собаке немалый дискомфорт. После прогулок пыль с шерстного покрова лучше всего убирать влажной салфеткой.
+        </p>
+        <p>
+         Важно контролировать и рост когтей, их надлежит регулярно состригать. Зубы английскому бульдогу рекомендовано чистить регулярно, не реже 1 раза в месяц. В противном случае моментально начнёт образовываться зубной камень.
+        </p>
+        <p>
+         На свежем воздухе бульдоги весьма активны и во время прогулок не прочь заняться вместе с хозяином спортом. Если пренебречь физическими нагрузками, английский бульдог начнет набирать лишний вес, который впоследствии перейдет в ожирение. Однако не слишком активничайте со своим питомцем в жаркие или холодные дни. Из-за того, что у собаки короткая шерсть, в холод она может замерзнуть, а в жару – получить тепловой удар.
+        </p>
+        <p class="legenda">
+         К сведению: если вы приобрели 2-3-недельного щенка в летний период, обязательно поставьте в коробку с ним емкость с кубиками льда. Как только заметите первые симптомы перегрева, обязательно прочистите глотку бульдога от скопившегося секрета, промойте ее и сразу же обратитесь к ветеринару.
+        </p>
+        <p>
+         В целом английский бульдог, в сравнении с некоторыми другими породами, не слишком активная собака. В больших пространствах он не нуждается. Проживая в квартире или в загородном доме, он большую часть дня дремлет, и это тоже приводит к наращиванию массы тела.
+        </p>
+        <p>
+         Что касается питания, у владельцев английских бульдогов есть 2 варианта: натуральная еда или сухой корм. Определиться лучше сразу – смешанный рацион для этой породы не рекомендуется. Большинство собаководов отдает предпочтение промышленным кормам супер-премиум-класса или холистик. Такая система питания будет удобна во время путешествий, к тому же не придется следить за сбалансированностью рациона.
+        </p>
+        <p>
+         В случае с кормлением «натуралкой» важно соблюдать баланс. Из-за склонности бульдогов к ожирению, их меню должно состоять преимущественно из белковой пищи с ограничением углеводов. При этом полностью исключать их нельзя, иначе у собаки может развиться мочекаменная болезнь. Пример продуктовой корзины «англичанина»: телятина, говядина, рис, гречка, яйца, кефир, творог, свежая зелень, овощи, немного фруктов и ягод. Щенку необходимо употреблять 59 г мяса в расчете на 1 кг веса, а взрослый английский бульдог должен ежедневно съедать 250 г мяса.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Ничего не нашел..." data-fancybox="gallery" href="/upload/iblock/ff5/ff5d1bc3308fd42720ca480def759271.jpg" title="Ничего не нашел...">
+           <div class="lazy-load" data-alt="Ничего не нашел..." data-class="article_pic" data-original="/upload/resize_cache/iblock/ff5/512_342_2/ff5d1bc3308fd42720ca480def759271.jpg">
+            <noscript data-alt="Ничего не нашел..." data-class="article_pic" data-original="/upload/resize_cache/iblock/ff5/512_342_2/ff5d1bc3308fd42720ca480def759271.jpg">
+             <img alt="Ничего не нашел..." class="article_pic" src="/upload/resize_cache/iblock/ff5/512_342_2/ff5d1bc3308fd42720ca480def759271.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Ничего не нашел...
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Щенок английского бульдога спит рядом с мамой" data-fancybox="gallery" href="/upload/iblock/d22/d22b5124588de4213329465bf6f60ae8.jpg" title="Щенок английского бульдога спит рядом с мамой">
+           <div class="lazy-load" data-alt="Щенок английского бульдога спит рядом с мамой" data-class="article_pic" data-original="/upload/resize_cache/iblock/d22/512_342_2/d22b5124588de4213329465bf6f60ae8.jpg">
+            <noscript data-alt="Щенок английского бульдога спит рядом с мамой" data-class="article_pic" data-original="/upload/resize_cache/iblock/d22/512_342_2/d22b5124588de4213329465bf6f60ae8.jpg">
+             <img alt="Щенок английского бульдога спит рядом с мамой" class="article_pic" src="/upload/resize_cache/iblock/d22/512_342_2/d22b5124588de4213329465bf6f60ae8.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Щенок английского бульдога спит рядом с мамой
+          </div>
+         </div>
+        </div>
+        <h2 id="gl7">
+         Здоровье и болезни английского бульдога
+        </h2>
+        <p>
+         Для породы английский бульдог характерны такие заболевания, как вишневый глаз, кератоконъюнктивит, межпальцевой дерматит, дерматит кожных складок, энтропион, акне, врожденный вывих локтя, демодекоз, тепловой удар, гипотериоз, дистихиаз, гипоплазия трахеи, крипторхизм, стеноз аорты, брахицефальный синдром, вагинальная гиперплазия, тетрада Фалло, глухота, трудные роды, лимфосаркома, дефект межжелудочковой перегородки.
+        </p>
+        <p>
+         Перед тем как остановить свой выбор на английском бульдоге, потенциальный хозяин должен принять во внимание, что представители этой породы имеют склонность к проблемам с пищеварением. Они также склонны к метеоризму, могут храпеть и обильно пускают слюну.
+        </p>
+        <h2 id="gl8">
+         Как выбрать щенка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Правда я милый?" data-fancybox="gallery" href="/upload/iblock/bcc/bccc66d0f10c9bf5bd7d1be77c08afaa.jpg" title="Правда я милый?">
+          <div class="lazy-load" data-alt="Правда я милый?" data-class="article_pic" data-original="/upload/resize_cache/iblock/bcc/412_2150_1/bccc66d0f10c9bf5bd7d1be77c08afaa.jpg">
+           <noscript data-alt="Правда я милый?" data-class="article_pic" data-original="/upload/resize_cache/iblock/bcc/412_2150_1/bccc66d0f10c9bf5bd7d1be77c08afaa.jpg">
+            <img alt="Правда я милый?" class="article_pic" height="573" src="/upload/resize_cache/iblock/bcc/412_2150_1/bccc66d0f10c9bf5bd7d1be77c08afaa.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Правда я милый?
+         </div>
+        </div>
+        <p>
+         Заводчика следует подробнее расспросить о каждом из щенков, которых он вам предложит. Совершенно необязательно покупать первого, кто к вам подбежит: по мере взросления он может не подойти вам по характеру. Окончательный выбор следует сделать после того, как узнаете у продавца об особенностях поведения каждого щенка, и некоторое время понаблюдав за ними. Обратите внимание на корпус щенка. Желательно, чтобы формат маленького бульдога был квадратным, с приподнятым кверху крупом.
+        </p>
+        <p>
+         Заранее вы должны решить и вопрос, кого именно вы хотите – кобеля или суку. В любой породе разница между полами существенная, и английские бульдоги не исключение. Ярким представителем породы, конечно же, является «мужчина», то есть кобель. По своим внешним качествам он интереснее и импозантнее представительниц «слабого пола». Он крупнее, шире, и сильнее. Держится гордо и важно, обладает более покладистым характером и, в отличие от сук, не проявляет пустой суетливости.
+        </p>
+        <p>
+         Обязательно расспросите заводчика, чем кормили щенков. Если, например, сухим кормом, то на первое время возьмите немного корма там, где купили себе питомца. Возьмите с собой также небольшую тряпочку, которая сохраняет в себе запах места, где щенок родился, его братьев и сестер. В этом случае щенок гораздо легче перенесет и смену рациона, и смену обстановки.
+        </p>
+        <p>
+         И, конечно, перед покупкой обязательно внимательно изучите официальный стандарт английского бульдога. Желательно с подробными комментариями к ее недостаткам и дефектам по каждому пункту. Это особенно важно, если вы выбираете себе не только друга, как говорится, для души, но и будущего участника выставочных конкурсов.
+        </p>
+        <p>
+         Потенциальный владелец этой собаки также должен учесть то обстоятельство, что многие заводчики разводили эту породу, не учитывая особенности ее характера, и это привело к увеличению количества особей, имеющих агрессию в характере. Поэтому не допускайте, чтобы ваш питомец рос сам по себе, занимайтесь им, воспитывайте его. Только в этом случае вы получите отличного друга со здоровой психикой, преданного и надежного.
+        </p>
+        <h2>
+         Фото щенков английского бульдога
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6dc/6dc1e79f10a9402de2e484b397090ea1.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/6dc/380_264_2/6dc1e79f10a9402de2e484b397090ea1.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/6dc/380_264_2/6dc1e79f10a9402de2e484b397090ea1.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/6dc/380_264_2/6dc1e79f10a9402de2e484b397090ea1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4c4/4c41e5950cf4acee4d312edf2a74bf0e.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/4c4/380_264_2/4c41e5950cf4acee4d312edf2a74bf0e.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/4c4/380_264_2/4c41e5950cf4acee4d312edf2a74bf0e.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/4c4/380_264_2/4c41e5950cf4acee4d312edf2a74bf0e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/00c/00c11fab60b5648eba49c0c33096f66a.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/00c/380_264_2/00c11fab60b5648eba49c0c33096f66a.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/00c/380_264_2/00c11fab60b5648eba49c0c33096f66a.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/00c/380_264_2/00c11fab60b5648eba49c0c33096f66a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/dd9/dd90ccb16f3c09941c49666593d64b28.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/dd9/380_264_2/dd90ccb16f3c09941c49666593d64b28.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/dd9/380_264_2/dd90ccb16f3c09941c49666593d64b28.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/dd9/380_264_2/dd90ccb16f3c09941c49666593d64b28.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/3cd/3cd8a833ae89bb765ac87122dda58850.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/3cd/380_264_2/3cd8a833ae89bb765ac87122dda58850.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/3cd/380_264_2/3cd8a833ae89bb765ac87122dda58850.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/3cd/380_264_2/3cd8a833ae89bb765ac87122dda58850.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/39e/39ed7a894f81b1b7d55c8681576591ac.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/39e/380_264_2/39ed7a894f81b1b7d55c8681576591ac.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/39e/380_264_2/39ed7a894f81b1b7d55c8681576591ac.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/39e/380_264_2/39ed7a894f81b1b7d55c8681576591ac.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/df6/df6a9097daa65b42a84a0c9b761e05d2.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/df6/380_264_2/df6a9097daa65b42a84a0c9b761e05d2.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/df6/380_264_2/df6a9097daa65b42a84a0c9b761e05d2.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/df6/380_264_2/df6a9097daa65b42a84a0c9b761e05d2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e0d/e0dd04b7217feb98e4bc69b4a352cc42.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/e0d/380_264_2/e0dd04b7217feb98e4bc69b4a352cc42.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/e0d/380_264_2/e0dd04b7217feb98e4bc69b4a352cc42.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/e0d/380_264_2/e0dd04b7217feb98e4bc69b4a352cc42.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/00c/00c049db5d57fe0ca3fc00012d2f76b7.jpg" title="">
+           <div class="lazy-load" data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/00c/380_264_2/00c049db5d57fe0ca3fc00012d2f76b7.jpg">
+            <noscript data-alt="Английский бульдог" data-class="article_pic" data-original="/upload/resize_cache/iblock/00c/380_264_2/00c049db5d57fe0ca3fc00012d2f76b7.jpg">
+             <img alt="Английский бульдог" class="article_pic" src="/upload/resize_cache/iblock/00c/380_264_2/00c049db5d57fe0ca3fc00012d2f76b7.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl9">
+         Сколько стоит английский бульдог
+        </h2>
+        <p>
+         Английского бульдога можно купить в России как с документами, так и без них. Если вы остановили свой выбор на щенке без документов, то покупка будет не слишком обременительна для семейного бюджета: вы заплатите в пределах 2500-5000 рублей. Но в этом случае вы должны быть готовы к тому, что покупаете «кота в мешке». В том смысле, что чистоту породы вам никто не гарантирует.
+        </p>
+        <p>
+         Покупая же зарегистрированного щенка у заводчика, будьте готовы ощутимо потратиться. Английский бульдог с «удостоверением личности» стоит порядка 23 000 - 35 000 рублей.
+        </p>
+        <p>
+         Около 40 000 - 70 000 рублей будет стоить потомок титулованных родителей и будущий чемпион всевозможных выставок.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения английского бульдога на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27317/">
+          <div class="ava-med">
+           <div class="noava fill7">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/nochnoy-vygul-5256/">
+           Ночной выгул
+          </a>
+         </div>
+         <div class="forum-text">
+          Добрый день. Взяли из приюта английского бульдога. 2 года. У нас он уже 2 месяца. Не могу приучить его терпеть с 23-00 до 06-00 утра. Просится на пописать в 03-00 ночи. Но при этом днем он терпит с 08-00 утра до...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27317/">
+            Марина Иванова
+           </a>
+          </span>
+          <span class="vopros-date">
+           4 месяца назад
+          </span>
+          <span class="vopros-smotr">
+           112 просмотров
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/26473/">
+          <div class="ava-med">
+           <div class="noava fill3">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/angliyskiy-buldog-4753/">
+           Английский бульдог
+          </a>
+         </div>
+         <div class="forum-text">
+          В основном после кормления начинает высовывать и убирать язык, как ящерица, как будто-то что-то мешает в пасти. Может 10 минут, может час так делать. Это о чём говорит? Спасибо
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/26473/">
+            Константин Борисович
+           </a>
+          </span>
+          <span class="vopros-date">
+           10 месяцев назад
+          </span>
+          <span class="vopros-smotr">
+           68 просмотров
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/2618/">
+          <div class="ava-med">
+           <div class="noava fill8">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/moskovskaya-zima-angliyskiy-buldog-1799/">
+           Московская зима АНГЛИЙСКИЙ БУЛЬДОГ
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте, меня зовут Мара. Я очень долгое время изучала породу эту породу и вот уже почти решилась приобрести, но смущает один вопрос-как гулять с щенком во время холодов? Если одевать одежду, то не станет ли...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/2618/">
+            Mara Harutyunyan
+           </a>
+          </span>
+          <span class="vopros-date">
+           4 года назад
+          </span>
+          <span class="vopros-smotr">
+           1908 просмотров
+          </span>
+          <span class="vopros-otvet">
+           2 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/408/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Ксения Чистова" data-original="/upload/resize_cache/main/caf/200_200_2/cafe63f5976fe77b11ddd0266b188d25.jpg">
+            <noscript data-alt="Ксения Чистова" data-original="/upload/resize_cache/main/caf/200_200_2/cafe63f5976fe77b11ddd0266b188d25.jpg">
+             <img alt="Ксения Чистова" src="/upload/resize_cache/main/caf/200_200_2/cafe63f5976fe77b11ddd0266b188d25.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/plyusy-i-minusy-angliyskogo-buldoga-278/">
+           Плюсы и минусы английского бульдога
+          </a>
+         </div>
+         <div class="forum-text">
+          Мы раздумываем о покупке щенка. Мужу очень нравятся английские бульдоги. Будем признательны за информацию о позитивных и негативных особенностях собак этой породы.
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/408/">
+            Ксения Чистова
+           </a>
+          </span>
+          <span class="vopros-date">
+           6 лет назад
+          </span>
+          <span class="vopros-smotr">
+           6775 просмотров
+          </span>
+          <span class="vopros-otvet">
+           4 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/angliyskiy-buldog/forum/">
+        Перейти на
+        форум английского бульдога
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Английский бульдог" src="/upload/iblock/9a7/9a72d195c7b2eb2cc9a39dba2ab1c233.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/angliyskiy-buldog/">
+          Английский бульдог
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/angliyskiy-buldog/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-buldog/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-buldog/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-buldog/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-buldog/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-buldog/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/kavaler-king-charlz-spaniel/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-original="/upload/resize_cache/iblock/b48/100_100_1/b485acd675a27aac77d3a42829a213ed.jpg">
+          <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-original="/upload/resize_cache/iblock/b48/100_100_1/b485acd675a27aac77d3a42829a213ed.jpg">
+           <img alt="Кавалер-кинг-чарльз-спаниель" src="/upload/resize_cache/iblock/b48/100_100_1/b485acd675a27aac77d3a42829a213ed.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Кавалер-кинг-чарльз-спаниель
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/skotch-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Скотч-терьер" data-original="/upload/resize_cache/iblock/dc1/100_100_1/dc1145c66f561e1c2a3ef13f49c53c7c.jpg">
+          <noscript data-alt="Скотч-терьер" data-original="/upload/resize_cache/iblock/dc1/100_100_1/dc1145c66f561e1c2a3ef13f49c53c7c.jpg">
+           <img alt="Скотч-терьер" src="/upload/resize_cache/iblock/dc1/100_100_1/dc1145c66f561e1c2a3ef13f49c53c7c.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Скотч-терьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/mittelshnautser/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Миттельшнауцер" data-original="/upload/resize_cache/iblock/075/100_100_1/07530c91362e094d1e47898176bbda4e.jpg">
+          <noscript data-alt="Миттельшнауцер" data-original="/upload/resize_cache/iblock/075/100_100_1/07530c91362e094d1e47898176bbda4e.jpg">
+           <img alt="Миттельшнауцер" src="/upload/resize_cache/iblock/075/100_100_1/07530c91362e094d1e47898176bbda4e.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Миттельшнауцер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/pagl/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Пагль" data-original="/upload/resize_cache/iblock/27c/100_100_1/g03ybu975jvkzcb5520wd1if364byzaa.jpg">
+          <noscript data-alt="Пагль" data-original="/upload/resize_cache/iblock/27c/100_100_1/g03ybu975jvkzcb5520wd1if364byzaa.jpg">
+           <img alt="Пагль" src="/upload/resize_cache/iblock/27c/100_100_1/g03ybu975jvkzcb5520wd1if364byzaa.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Пагль
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-buldog%252F%253Fcheck_key%253D5f28505efb6fdde1d53d190c22c9a23f%2526ANIMAL_CODE%253Dangliyskiy-buldog%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fangliyskiy-buldog%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmFuZ2xpeXNraXktYnVsZG9nJTJGJTNGY2hlY2tfa2V5JTNENWYyODUwNWVmYjZmZGRlMWQ1M2QxOTBjMjJjOWEyM2YlMjZBTklNQUxfQ09ERSUzRGFuZ2xpeXNraXktYnVsZG9nJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmFuZ2xpeXNraXktYnVsZG9nJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-buldog%252F%253Fcheck_key%253D5f28505efb6fdde1d53d190c22c9a23f%2526ANIMAL_CODE%253Dangliyskiy-buldog%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fangliyskiy-buldog%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-buldog%252F%253Fcheck_key%253D5f28505efb6fdde1d53d190c22c9a23f%2526ANIMAL_CODE%253Dangliyskiy-buldog%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fangliyskiy-buldog%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "128.204.77.96"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--28f0d1b98f98f74147de797d253b14a0-->

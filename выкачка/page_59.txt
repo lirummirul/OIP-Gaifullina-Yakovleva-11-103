@@ -1,0 +1,1539 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'26f26e0360d9'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Вельштерьер, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Вельштерьер (уэльский терьер, вельш) – порода норных собак чепрачного окраса, напоминающих уменьшенные копии эрдельтерьеров." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/d80/d80fe5c2a3a609340c63fb9849965065.jpg" property="og:image"/>
+     <title>
+      Вельштерьер: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/velshterer/" property="og:url"/>
+     <meta content="Вельштерьер: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Вельштерьер (уэльский терьер, вельш) – порода норных собак чепрачного окраса, напоминающих уменьшенные копии эрдельтерьеров." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/velshterer/" itemprop="url">
+         <span itemprop="title">
+          Вельштерьер
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Вельштерьер
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/velshterer/">
+          Описание
+         </a>
+         <a href="/dog/velshterer/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/velshterer/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/velshterer/photo/">
+          Фото
+         </a>
+         <a href="/dog/velshterer/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Вельштерьер" src="/upload/iblock/d7f/d7f1633c7e0f41b32e6de37e63c131d5.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/velshterer/">
+           уэльский терьер
+          </a>
+          ,
+          <a href="/dog/velshterer/">
+           вельш
+          </a>
+         </span>
+         <p>
+          Вельштерьер (уэльский терьер, вельш) – порода норных собак чепрачного окраса, напоминающих уменьшенные копии эрдельтерьеров.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/d49/cy551o7w1j5hq1xiuq8xor2dsg6y3cfs.jpg" data-cap="My new 8 week old Welsh Terrier puppy testing out those little legs!!" data-fancybox="images" data-link="https://www.flickr.com/photos/97254724@N06/34034122421/" data-type="image" data-username="Nathan Hammonds" href="/upload/uf/439/lktlit3w4xbzboe38xpsrf7s0rhd573n.jpg">
+            <img alt="Вельштерьер" src="/upload/resize_cache/uf/439/293_293_2/lktlit3w4xbzboe38xpsrf7s0rhd573n.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/894/rpp6oj3vn4308du26eulgoc9lqqfpv1u.jpg" data-cap="Glorious morning in London today!" data-fancybox="images" data-link="https://www.flickr.com/photos/24584176@N08/8710021898/" data-type="image" data-username="Angie" href="/upload/uf/c4a/p0z4lg082c0b776ox57pxycqmr1884xo.jpg">
+            <img alt="Вельштерьер" src="/upload/resize_cache/uf/c4a/293_293_2/p0z4lg082c0b776ox57pxycqmr1884xo.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/f9a/qottm5iqefwuo37k6skkib9ohxv0ozdu.jpg" data-cap="Rooney II" data-fancybox="images" data-link="https://www.flickr.com/photos/markadsit/42161378810/" data-type="image" data-username="In Wonder Photo" href="/upload/uf/f4e/dp0a8p5qm5ut6d0o16l6wkocey78dh1w.jpg">
+            <img alt="Вельштерьер" src="/upload/resize_cache/uf/f4e/293_293_2/dp0a8p5qm5ut6d0o16l6wkocey78dh1w.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/velshterer/photo/">
+         Все
+            фото вельштерьера
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История вельштерьеров
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер вельштерьера
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Охота с вельштерьером
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Гигиена
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Кормление
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Здоровье и болезни вельштерьеров
+          </a>
+         </li>
+         <li>
+          <a href="#gl10">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl11">
+           Цена вельштерьера
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Вельштерьер
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         9-9,5 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         до 39 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         12-15 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Как и все жесткошерстные породы терьеров, вельш нуждается в систематическом тримминге и расчесывании.
+        </li>
+        <li>
+         Раскапывать любое отверстие в земле для уэльского терьера – лучшее развлечение, поэтому на прогулках придется проявлять бдительность и поменьше ходить возле провоцирующих животное клумб и грядок.
+        </li>
+        <li>
+         В России порода не распространена, поэтому на поиски надежного питомника и последующую покупку щенка придется потратить время и силы.
+        </li>
+        <li>
+         Идеальный хозяин для вельштерьера – охотник и любитель спортивных тренировок на лоне природы. Порода обожает проявлять активность за компанию с человеком, будь то работа с диким зверем или утренняя пробежка по парку.
+        </li>
+        <li>
+         Уэльские терьеры сохраняют живой темперамент и подвижность до преклонного возраста, поэтому «выйти на пенсию» с представителем этого собачьего клана не получится.
+        </li>
+        <li>
+         Вельши – официальные родоначальники племени жесткошерстных фокстерьеров. Порода была получена в результате скрещивания короткошерстного фокса с вельштерьером.
+        </li>
+        <li>
+         Уэльский терьер обучаем, но в плане прилежания и исполнительности уступает служебным собакам. В связи с этим требовать от питомца молниеносного следования командам крайне нежелательно. Вельши – охотники и спортсмены, а не послушные солдаты.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Вельштерьер" data-original="/upload/iblock/d80/d80fe5c2a3a609340c63fb9849965065.jpg">
+          <noscript data-alt="Вельштерьер" data-original="/upload/iblock/d80/d80fe5c2a3a609340c63fb9849965065.jpg">
+           <img alt="Вельштерьер" src="/upload/iblock/d80/d80fe5c2a3a609340c63fb9849965065.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Вельштерьер
+          </strong>
+          – темпераментный экстраверт, «помешанный» на охоте и подвижных играх. Невзирая на скромные габариты породы, ее представители буквально заряжены смелостью и отвагой, из-за чего их крайне нежелательно отпускать с поводка на оживленных улицах и в поле зрения более крупных собак. А еще вельши в курсе что такое настоящая дружба. Поэтому не надейтесь, что вам так просто удастся отделаться от знаков внимания и проявления чувств питомца – способов вступить в контакт и поделиться собственными переживаниями с хозяином у этих косматых шалунов невероятное количество.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Минимальная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Ниже среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Вельштерьер основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h3>
+         Видео: Вельштерьер
+        </h3>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="5Oc51yu3GHQ">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl1">
+         История вельштерьеров
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="10-ти месячный вельштерьер" data-fancybox="gallery" href="/upload/iblock/eb5/iiua9r32yz5td74j46j37bec1wlb34vf.jpg" title="10-ти месячный вельштерьер">
+          <div class="lazy-load" data-alt="10-ти месячный вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/eb5/412_2150_1/iiua9r32yz5td74j46j37bec1wlb34vf.jpg">
+           <noscript data-alt="10-ти месячный вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/eb5/412_2150_1/iiua9r32yz5td74j46j37bec1wlb34vf.jpg">
+            <img alt="10-ти месячный вельштерьер" class="article_pic" height="618" src="/upload/resize_cache/iblock/eb5/412_2150_1/iiua9r32yz5td74j46j37bec1wlb34vf.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          10-ти месячный вельштерьер
+         </div>
+        </div>
+        <p>
+         Родословная породы уходит своими корнями в XVII век, когда по полям английского Уэльса разгуливали жесткошерстные черно-подпалые терьеры. Изначально задиристых звонкоголосых псов разводили фермеры, которым были необходимы компактные животные, объединяющие в себе «квалификации» стражей и крысоловов, но при этом довольствующиеся половником жидкой похлебки. Впоследствии от уэльских собак «отпочковалось» несколько новых породных линий, в числе которых оказалось и семейство вельшей.
+        </p>
+        <p>
+         Со временем род староанглийского черно-подпалого терьера угас, уступив место более живучим и проворным потомкам. Возможно поэтому с середины XIX столетия стало уделяться повышенное внимание «прокачке» внешних и рабочих качеств вельштерьеров – к 1886 году у породы уже имелись и собственный стандарт, и странички в племенных книгах, и клуб почитателей. В Россию потомки уэльских крысоловов попали после Великой Отечественной войны, но профессионального интереса у собаководов не вызвали. В результате косматые «эмигранты» прожили обычные, ничем непримечательные жизни домашних питомцев, не оставивших после себя чистокровного потомства.
+        </p>
+        <p>
+         По-настоящему разводить вельштерьеров в СССР начали в 70-х годах, когда в страну доставили племенных особей из-за рубежа. В то время отечественное поголовье происходило от иностранных производителей Глая-Эрика, Акселя, Глори-Мерси и Юдиты-Йожо, поэтому скоро заводчики столкнулись с дефицитом свежих генов – все повязанные советскими бридерами животные состояли в тесном родстве друг с другом. К счастью, уже в 80-х проблему удалось решить импортированием племенных вельштерьеров из Швеции, Германии и Финляндии, что заметно улучшило внешние показатели российских породных линий.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Погоня" data-fancybox="gallery" href="/upload/iblock/621/sr44y3wc4yo14j8l0an89hhl4pk26v0y.jpg" title="Погоня">
+          <div class="lazy-load" data-alt="Погоня" data-class="article_pic" data-original="/upload/resize_cache/iblock/621/1024_2150_1/sr44y3wc4yo14j8l0an89hhl4pk26v0y.jpg">
+           <noscript data-alt="Погоня" data-class="article_pic" data-original="/upload/resize_cache/iblock/621/1024_2150_1/sr44y3wc4yo14j8l0an89hhl4pk26v0y.jpg">
+            <img alt="Погоня" class="article_pic" src="/upload/resize_cache/iblock/621/1024_2150_1/sr44y3wc4yo14j8l0an89hhl4pk26v0y.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Погоня
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы
+        </h2>
+        <p>
+         При первом знакомстве с вельшем его очень хочется записать в родственники
+         <a class="ph" href="/dog/erdelterer/">
+          эрдельтерьера
+         </a>
+         – та же косматая прямоугольная мордашка, та же жесткая шерсть по корпусу и такая же охотничья выправка. На самом деле общий у пород только дальний предок – староанглийский черно-подпалый терьер. При этом между собой представителей обоих семейств никогда не скрещивали, не говоря о рабочих специализациях, которые у вельша и эрделя абсолютно разные. В частности, вельштерьер всегда был «заточен» под норную охоту, тогда как его конкурент из Йоркшира чаще практиковался в отлове речных выдр.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         У вельштерьеров уплощенный, умеренной ширины череп, гармонично развитая, но не чрезмерно длинная морда и подчеркнуто плавный стоп.
+        </p>
+        <h3>
+         Зубы и челюсти
+        </h3>
+        <p>
+         Крепкие, сильные зубы смыкаются в прикус «ножницы». Массивные, четко очерченные челюсти отличаются хорошей глубиной.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Мочка аккуратная, окрашена в равномерный черный тон.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Для вельштерьеров характерны маленькие миндалевидные глаза без явной выпуклости и округлости.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         У вельшей элегантные высоко посаженные уши: некрупные, правильной V-образной формы, плотно прилегающие к вискам.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда вельштерьера" data-fancybox="gallery" href="/upload/iblock/6bf/0xq0plx5ud2794g2vha7qw0giw2h3izl.jpg" title="Морда вельштерьера">
+          <div class="lazy-load" data-alt="Морда вельштерьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/6bf/1024_2150_1/0xq0plx5ud2794g2vha7qw0giw2h3izl.jpg">
+           <noscript data-alt="Морда вельштерьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/6bf/1024_2150_1/0xq0plx5ud2794g2vha7qw0giw2h3izl.jpg">
+            <img alt="Морда вельштерьера" class="article_pic" src="/upload/resize_cache/iblock/6bf/1024_2150_1/0xq0plx5ud2794g2vha7qw0giw2h3izl.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда вельштерьера
+         </div>
+        </div>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Шея уэльского терьера имеет легкий изящный изгиб и плавно переходит в плечи. Шейные мышцы развиты, но не чрезмерно.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Вельштерьер – компактная собака. Спина животного короткая, с сильной поясницей; грудь в меру широкая и глубокая.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         У вельшей крепкие ровные ножки с низко опущенными скакательными суставами, обеспечивающими животному свободный, энергичный вымах и линейность движений. Лопатки собаки длинные, сильно отведенные назад; пясти мощные и прямые, а локти свободно движутся вдоль корпуса. Задние ноги смотрятся массивно из-за мускулистых удлиненных бедер, при этом лапы имеют миниатюрную кошачью форму.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Исторически вельшам, как и всем терьерам, работающим в норах, хвост купировали. Сегодня данная процедура запрещена европейскими ассоциациями, поэтому у современных представителей породы высоко посаженные нормальной длины хвосты, несущиеся вертикально (так называемый веселый хвост считается дефектом). Если же хвост купирован, что пока встречается в России, его кончик не должен находиться выше затылочного бугра питомца.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Слегка растрепанная «одежка» уэльского терьера состоит из подшерстка и проволокообразной, грубой ости. При этом слой шерсти очень плотный, не отстающий от тела животного.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="В большинстве случаев вельштерьеры обладают черно-подпалым окрасом шерсти, однако щенки рождаются почти полностью черными. По мере взросления их окрас меняется." data-fancybox="gallery" href="/upload/iblock/844/740u1s1kidz1jvkqp1q2tsgqyjkb7umg.jpg" title="В большинстве случаев вельштерьеры обладают черно-подпалым окрасом шерсти, однако щенки рождаются почти полностью черными. По мере взросления их окрас меняется.">
+          <div class="lazy-load" data-alt="В большинстве случаев вельштерьеры обладают черно-подпалым окрасом шерсти, однако щенки рождаются почти полностью черными. По мере взросления их окрас меняется." data-class="article_pic" data-original="/upload/resize_cache/iblock/844/1024_2150_1/740u1s1kidz1jvkqp1q2tsgqyjkb7umg.jpg">
+           <noscript data-alt="В большинстве случаев вельштерьеры обладают черно-подпалым окрасом шерсти, однако щенки рождаются почти полностью черными. По мере взросления их окрас меняется." data-class="article_pic" data-original="/upload/resize_cache/iblock/844/1024_2150_1/740u1s1kidz1jvkqp1q2tsgqyjkb7umg.jpg">
+            <img alt="В большинстве случаев вельштерьеры обладают черно-подпалым окрасом шерсти, однако щенки рождаются почти полностью черными. По мере взросления их окрас меняется." class="article_pic" src="/upload/resize_cache/iblock/844/1024_2150_1/740u1s1kidz1jvkqp1q2tsgqyjkb7umg.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          В большинстве случаев вельштерьеры обладают черно-подпалым окрасом шерсти, однако щенки рождаются почти полностью черными. По мере взросления их окрас меняется.
+         </div>
+        </div>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Вельштерьер может быть черно-подпалым либо должен иметь «шубу» окраса черный гризли с подпалом. При этом запрещены черные отметины на пальцах, да и черный окрас ниже скакательных суставов собаки тоже не желателен.
+        </p>
+        <h3>
+         Дефекты и дисквалифицирующие пороки внешности
+        </h3>
+        <p>
+         К недостаткам экстерьера относят чересчур крупные габариты (рост выше 39 см в холке), русачьи лапы, анатомические отклонения от стандарта (длинный/скошенный круп, прибрюшистость, слабую холку и пр.). Запрет на экспонирование на ринге распространяется на вельштерьеров с крипторхизмом, депигментированными мочкой, губами и веками, нетипичными окрасами и структурой шерстного покрова, а также на трусливых и чересчур агрессивных собак.
+        </p>
+        <h2>
+         Фото вельштерьера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e44/i8jd9ald8usdzvx9j7rdyvgiks1l940w.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e44/380_264_2/i8jd9ald8usdzvx9j7rdyvgiks1l940w.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e44/380_264_2/i8jd9ald8usdzvx9j7rdyvgiks1l940w.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/e44/380_264_2/i8jd9ald8usdzvx9j7rdyvgiks1l940w.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/653/a6y2iv9q3sop8q4rjblpxiili09l4888.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/653/380_264_2/a6y2iv9q3sop8q4rjblpxiili09l4888.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/653/380_264_2/a6y2iv9q3sop8q4rjblpxiili09l4888.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/653/380_264_2/a6y2iv9q3sop8q4rjblpxiili09l4888.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/447/jyvol1ivknhzun5hpjw0wq1k3gy9g9vb.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/447/380_264_2/jyvol1ivknhzun5hpjw0wq1k3gy9g9vb.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/447/380_264_2/jyvol1ivknhzun5hpjw0wq1k3gy9g9vb.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/447/380_264_2/jyvol1ivknhzun5hpjw0wq1k3gy9g9vb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ad5/tto994pidh4wzuwu7cyji2mcl7g0ga47.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ad5/380_264_2/tto994pidh4wzuwu7cyji2mcl7g0ga47.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ad5/380_264_2/tto994pidh4wzuwu7cyji2mcl7g0ga47.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/ad5/380_264_2/tto994pidh4wzuwu7cyji2mcl7g0ga47.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/04f/nqya85s76zkgnzgans1xu23w9e4jeu2g.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/04f/380_264_2/nqya85s76zkgnzgans1xu23w9e4jeu2g.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/04f/380_264_2/nqya85s76zkgnzgans1xu23w9e4jeu2g.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/04f/380_264_2/nqya85s76zkgnzgans1xu23w9e4jeu2g.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/42d/iy37xmvk4u4jqkiyq4ldes7t5a0d3nay.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/42d/380_264_2/iy37xmvk4u4jqkiyq4ldes7t5a0d3nay.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/42d/380_264_2/iy37xmvk4u4jqkiyq4ldes7t5a0d3nay.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/42d/380_264_2/iy37xmvk4u4jqkiyq4ldes7t5a0d3nay.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d8a/cw3ynag3rz242e0jaieg2i6px2pzq374.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/d8a/380_264_2/cw3ynag3rz242e0jaieg2i6px2pzq374.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/d8a/380_264_2/cw3ynag3rz242e0jaieg2i6px2pzq374.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/d8a/380_264_2/cw3ynag3rz242e0jaieg2i6px2pzq374.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1c6/63m6lk9ktupp41ym8wny3orn6u545bau.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1c6/380_264_2/63m6lk9ktupp41ym8wny3orn6u545bau.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1c6/380_264_2/63m6lk9ktupp41ym8wny3orn6u545bau.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/1c6/380_264_2/63m6lk9ktupp41ym8wny3orn6u545bau.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5ac/zi9rw0hea6h1k8g4bq3s5edqj6qar0n8.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/5ac/380_264_2/zi9rw0hea6h1k8g4bq3s5edqj6qar0n8.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/5ac/380_264_2/zi9rw0hea6h1k8g4bq3s5edqj6qar0n8.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/5ac/380_264_2/zi9rw0hea6h1k8g4bq3s5edqj6qar0n8.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер вельштерьера
+        </h2>
+        <p>
+         Вельш – пожалуй один из самых «терьеристых» представителей собственной группы. Бесконечно экспрессивный, азартный, а в отношении других животных еще и невероятно задиристый, этот товарищ жаждет успевать всегда и везде. Обзаводясь породой для домашнего содержания, не стоит пасовать перед ее охотничьим прошлым: на детей вельштерьеры не бросаются да и в отношении взрослых агрессии не проявляют. Единственное, к чему придется привыкать, – это к своенравию подвижного шустрика. У истинного уэльского терьера свое видение любой бытовой ситуации и собственная система суждений, поэтому переубедить его бывает непросто.
+        </p>
+        <p>
+         Порода не мыслит жизни без тесного контакта с хозяином. А если точнее, то вельши вообще готовы не расставаться с владельцем сутками: терьер, положивший голову на тапок или ногу человека, и уснувший в таком положении, – картина совершенно обычная. Кстати, если мечтаете о питомце, умеющем «мимикрировать» под цвет обоев, с уэльскими терьерами вам точно не по пути, потому что их в квартире видно и слышно всегда. А еще от вельшей сложно что-либо утаить, поэтому, обзаводясь представителем данного семейства, готовьтесь ежеминутно быть «под колпаком» у питомца.
+        </p>
+        <p>
+         Вельштерьер не ладит с другими собаками: это факт, который нужно принять. К тому же он величайший провокатор, знающий, как вызвать враждебный интерес со стороны овчарок, волкодавов и прочих крупногабаритных соплеменников, славящихся своей свирепостью. Впрочем, с мелкими представителями фауны пес поступает не лучше – кошки, хомяки и крысы, завидев вельшей, разбегаются с реактивной скоростью. Устраивать жесткие разборки с существами, хоть чуть-чуть уступающими ему в размерах, уэльский терьер обожает.
+        </p>
+        <p>
+         Современный чистопородный вельштерьер – это почти всегда игроман. Не думайте, что выполнили миссию, сводив песика на улицу и заставив его побегать за мячиком. По возвращении домой косматый «метеор» продолжит требовать новой порции развлечений. Делает он это не нахально, но в присущей терьерам манере, то есть ежеминутно подстерегая отвлекшегося от дел хозяина и напоминая ему о собственном существовании. Разбросанные по дому игрушки – еще один хитрый способ поймать человека в свои сети. Как только вы пнете подвернувшуюся под ногу пищалку, вельш расценит изданный игрушкой звук, как сигнал к действию и тогда отвертеться от игры не получится.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Вельштерьеры — жизнерадостные и дружелюбные собаки. Благодаря своему дружелюбию они являются отличным выбором для семей с детьми и другими питомцами." data-fancybox="gallery" href="/upload/iblock/500/4zq1su2ja1gnb0pye728uncc2ta7q3no.jpg" title="Вельштерьеры — жизнерадостные и дружелюбные собаки. Благодаря своему дружелюбию они являются отличным выбором для семей с детьми и другими питомцами.">
+          <div class="lazy-load" data-alt="Вельштерьеры — жизнерадостные и дружелюбные собаки. Благодаря своему дружелюбию они являются отличным выбором для семей с детьми и другими питомцами." data-class="article_pic" data-original="/upload/resize_cache/iblock/500/1024_2150_1/4zq1su2ja1gnb0pye728uncc2ta7q3no.jpg">
+           <noscript data-alt="Вельштерьеры — жизнерадостные и дружелюбные собаки. Благодаря своему дружелюбию они являются отличным выбором для семей с детьми и другими питомцами." data-class="article_pic" data-original="/upload/resize_cache/iblock/500/1024_2150_1/4zq1su2ja1gnb0pye728uncc2ta7q3no.jpg">
+            <img alt="Вельштерьеры — жизнерадостные и дружелюбные собаки. Благодаря своему дружелюбию они являются отличным выбором для семей с детьми и другими питомцами." class="article_pic" src="/upload/resize_cache/iblock/500/1024_2150_1/4zq1su2ja1gnb0pye728uncc2ta7q3no.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Вельштерьеры — жизнерадостные и дружелюбные собаки. Благодаря своему дружелюбию они являются отличным выбором для семей с детьми и другими питомцами.
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         В Интернете полно забавных роликов, герои которых – терьеры, включающие кофеварки, смахивающие метелочкой пыль с мебели и начищающие до блеска хозяйские ботинки. Тем не менее важно понимать, что за подобными шоу стоят месяцы, а то и годы упорного труда. В обычной жизни вельши, как и все представители терьерной группы, не горят желанием учиться и не терпят если их принуждают к получению знаний. Поэтому единственный способ заинтересовать собаку тренировками – облечь их в игровую форму. Главное, чтобы четырехлапый шалопай не раскусил хитрость и не догадалась, что за якобы развлечением кроется серьезная работа. Положительные стимулы тоже способны творить чудеса. Вельштерьеры падки на похвалу, и их легко соблазнить вкусняшкой.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Очаровательный щенок вельштерьера" data-fancybox="gallery" href="/upload/iblock/8ce/1sku68opor37dlqtzymx3aw6sv1grt1q.jpg" title="Очаровательный щенок вельштерьера">
+          <div class="lazy-load" data-alt="Очаровательный щенок вельштерьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/8ce/412_2150_1/1sku68opor37dlqtzymx3aw6sv1grt1q.jpg">
+           <noscript data-alt="Очаровательный щенок вельштерьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/8ce/412_2150_1/1sku68opor37dlqtzymx3aw6sv1grt1q.jpg">
+            <img alt="Очаровательный щенок вельштерьера" class="article_pic" height="618" src="/upload/resize_cache/iblock/8ce/412_2150_1/1sku68opor37dlqtzymx3aw6sv1grt1q.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Очаровательный щенок вельштерьера
+         </div>
+        </div>
+        <p>
+         В воспитании щенка необходимо придерживаться умеренной твердости. С первых дней пребывания в доме малыш должен уяснить систему запретов и в дальнейшем строго ей следовать. Поначалу вельштерьер попытается отстоять собственные права. Например, станет обиженно скулить, когда не удастся поваляться на постели, либо начнет гипнотизировать взглядом каждый кусок, который человек отправляет в рот. Важно не вестись на провокации и не идти навстречу собачьим слабостям. Любое разрешительное действие для животного тождественно маленькой победе, которую стоит закрепить. Как результат: сегодня вы выудили для вельша из собственной тарелки кусочек мяса, а завтра питомец запрыгнет к вам на колени, чтобы самостоятельно взять лакомство со стола.
+        </p>
+        <p>
+         Своевременно приучите щенка подходить по требованию. К трем-четырем месяцам вельштерьер должен откликаться на зов хозяина, причем управлять животным можно как стандартной командой «Ко мне!», так и просто произнесением клички. Злоупотреблять доверием однако не стоит, поэтому если животное провинилось, подзывать его для наказания – грубейшая ошибка. Вельш – неглупое существо и быстро сообразит, что его ждет в подобных случаях, поэтому в следующий раз либо искусно разыграет глухоту, либо спрячется от наказания.
+        </p>
+        <p>
+         Если уэльский терьер начал делать поползновения к доминированию, их необходимо резко, но беззлобно пресечь. Например, если собака вздумала ворчать в ответ на требования или после поданной команды «Сидеть!» резко срывается с места, ее можно хорошенько встряхнуть или прижать рукой к полу.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важно!
+         </strong>
+         Не следуйте модным трендам и не дрессируйте вельша с помощью электроошейника. Это весьма болезненный для животного аксессуар, который в будущем способен навредить и без того чувствительной шее уэльского терьера.
+        </p>
+        <p>
+         Чтобы приучить вельша к туалету, почаще его выгуливайте. Щенки не умеют и не могут долго терпеть, поэтому важно успевать выводить малыша до того, как он успеет сделать лужу (сразу после сна или еды). Если же подопечный не дотянул до прогулки и оставил продукты жизнедеятельности на полу, не ругайте и не шлепайте его. Щенок решит, что ходить в туалет в вашем присутствии – верх невоспитанности и в следующий раз справит нужду в укромном уголке квартиры. Вообще с возрастом вельштерьеры быстро соображают, что удовлетворять туалетные потребности удобнее на улице и с нетерпением ждут очередного выгула.
+        </p>
+        <p>
+         Заниматься ринговой подготовкой питомца лучше в уединенных местах, где нет собак и других людей. Так вельштерьеру будет проще сконцентрироваться на командах. Обычно тренировки начинают с бега (команды «Рысь!», «Работать!»). Если животное движется неправильно и переходит на галоп, его следует одернуть (команда «Нет!»). От прямолинейных движений можно переходить к бегу по кругу, который является более сложным действием. Команды «Ринг!», «Осмотр!», «Зубы!» вводятся после того, как вельштерьер научился двигаться правильной рысью.
+        </p>
+        <h2 id="gl5">
+         Охота с вельштерьером
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Когда Ваш вельштерьер находится на улице, он всегда должен быть на поводке или в огороженном дворе. Иначе он может броситься вдогонку за бегущей кошкой!!" data-fancybox="gallery" href="/upload/iblock/067/j79lpoqkng8pkjl6mjxyjokz2jufgtws.jpg" title="Когда Ваш вельштерьер находится на улице, он всегда должен быть на поводке или в огороженном дворе. Иначе он может броситься вдогонку за бегущей кошкой!!">
+          <div class="lazy-load" data-alt="Когда Ваш вельштерьер находится на улице, он всегда должен быть на поводке или в огороженном дворе. Иначе он может броситься вдогонку за бегущей кошкой!!" data-class="article_pic" data-original="/upload/resize_cache/iblock/067/412_2150_1/j79lpoqkng8pkjl6mjxyjokz2jufgtws.jpg">
+           <noscript data-alt="Когда Ваш вельштерьер находится на улице, он всегда должен быть на поводке или в огороженном дворе. Иначе он может броситься вдогонку за бегущей кошкой!!" data-class="article_pic" data-original="/upload/resize_cache/iblock/067/412_2150_1/j79lpoqkng8pkjl6mjxyjokz2jufgtws.jpg">
+            <img alt="Когда Ваш вельштерьер находится на улице, он всегда должен быть на поводке или в огороженном дворе. Иначе он может броситься вдогонку за бегущей кошкой!!" class="article_pic" height="618" src="/upload/resize_cache/iblock/067/412_2150_1/j79lpoqkng8pkjl6mjxyjokz2jufgtws.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Когда Ваш вельштерьер находится на улице, он всегда должен быть на поводке или в огороженном дворе. Иначе он может броситься вдогонку за бегущей кошкой!!
+         </div>
+        </div>
+        <p>
+         В российских реалиях с вельшем можно успешно ходить на лису. Порода отличается хорошей злобностью и яростно нападает на зверя в норе. Однако на молниеносный успех лучше не рассчитывать, поскольку матерые лисы могут долго водить пса за нос, петляя по подземным тоннелям. На то, чтобы измотать рыжую плутовку и выгнать под выстрел, у вельштерьеров обычно уходит несколько часов. Особенно процесс затягивается, если нора старая и разветвленная.
+        </p>
+        <p>
+         Еще сложнее дело обстоит с барсучьими норами, которые иногда занимают лисьи семейства. Ориентироваться в этом подобии парижских катакомб вельшу бывает непросто и зачастую, поактивничав несколько часов, собака теряет интерес к противнику. Именно поэтому при покупке щенка для охотничьих целей важно поинтересоваться у продавца, насколько высока степень вязкости у родителей малыша. Это качество, как и злобность к зверю, передается по наследству и воспитать ее просто так не получится даже у опытного профи.
+        </p>
+        <p>
+         В Европе и Америке классическую охоту не жалуют, предпочитая заменять ее бескровными развлечениями. Так, например, в США вельштерьеров задействуют в таком виде спорта, как барнхант (от англ. barn hunt – амбарная охота). Суть аттракциона заключается в имитации охотничьих действий при помощи выстроенного из соломенных тюков лабиринта, в котором размещены клетки с крысами. Запущенный в нору вельштерьер обязан отыскать грызунов за предельно короткий срок и сообщить об этом владельцу.
+        </p>
+        <p>
+         На данный момент барнхант признан официальным видом спорта несколькими кинологическими ассоциациями. Кроме того, в нем не устанавливаются классовые рамки для участников (могут соревноваться, как шоу-питомцы, так и вельши пет-класса). В России подобные «квесты» пока не распространены, хотя отдельные первопроходцы уже построили на приусадебных участках соломенные лабиринты, где успешно тренируют вельштерьеров и их сородичей.
+        </p>
+        <h2 id="gl6">
+         Содержание и уход
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Груминг вельштерьера перед выставкой" data-fancybox="gallery" href="/upload/iblock/03b/pf5wyxymmgkftuiybae7e3rpfi14bhzw.jpg" title="Груминг вельштерьера перед выставкой">
+          <div class="lazy-load" data-alt="Груминг вельштерьера перед выставкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/03b/412_2150_1/pf5wyxymmgkftuiybae7e3rpfi14bhzw.jpg">
+           <noscript data-alt="Груминг вельштерьера перед выставкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/03b/412_2150_1/pf5wyxymmgkftuiybae7e3rpfi14bhzw.jpg">
+            <img alt="Груминг вельштерьера перед выставкой" class="article_pic" height="274" src="/upload/resize_cache/iblock/03b/412_2150_1/pf5wyxymmgkftuiybae7e3rpfi14bhzw.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Груминг вельштерьера перед выставкой
+         </div>
+        </div>
+        <p>
+         Щенок вельштерьера – это маленький энерджайзер с неутолимой страстью к шалостям и разрушениям, поэтому перед тем как перевозить малыша в новый дом, позаботьтесь о покупке ограничителей пространства. Это могут собачьи клетки, комнатные вольеры и прочие конструкции, не позволяющие животному выбраться за пределы отведенной зоны. Разумеется, просиживать дни в этом подобии камеры питомец не должен, но, отлучаясь из дома даже на короткий срок, разумнее обезопасить вельштерьера от него же самого, ограничив ареал перемещения.
+        </p>
+        <p>
+         В качестве подстилки в клетке лучше использовать старый текстиль, а не газеты, которые вельши способны ради интереса пожевать. В жаркие летние дни уэльские терьеры не прочь освежиться в водоеме, поэтому, если такового поблизости не имеется, можно устроить песику искусственный бассейн прямо во дворе, наполнив водой плоскую неглубокую емкость.
+        </p>
+        <p>
+         Позаботьтесь о покупке правильных ошейника и поводка и выводите вельша на оживленные улицы, где встречаются другие собаки, в полной прогулочной амуниции. Помните, что на даже незначительную провокацию со стороны четвероногих питомцев уэльские терьеры реагируют очень бурно. Содержа собаку во дворе частного дома, ответственно подходите к выбору ограждения. Вельштерьер чрезвычайно прыгуч, не говоря о том, что сделать подкоп под забор этот товарищ успевает за считанные минуты.
+        </p>
+        <h2 id="gl7">
+         Гигиена
+        </h2>
+        <p>
+         Условная линька – то, что случается с вельштерьерами дважды в год. Полноценно порода не сбрасывает шерсть, поэтому, чтобы покров обновился, владельцу придется заняться триммингом (щипка шерсти) либо доверить процесс опытному грумеру. Первые тримминги начинаются в щенячьем возрасте: в три-четыре месяца вельша пора приучать спокойно переносить неприятную для него процедуру. Если планируете наводить лоск самостоятельно, купите грумерский инструмент: ножи с частыми, средними и грубыми насечками, мукракеры и прочие вспомогательные мелочи, включая щетки и колтунорезы.
+        </p>
+        <p>
+         Перед щипкой вельштерьера необходимо расчесать по росту шерсти и против него, попутно разобрав колтуны, если таковые имеются. Кроме того, придется подготовиться к тому, что сногсшибательный результат получится не сразу. Имейте в виду, что по-настоящему эффектная ость вырастает после нескольких триммингов. При этом поначалу уэльскими терьерам приходится щеголять чуть ли не голышом, поскольку во время первых щипок шерсти убирать приходится весь отмерший волос до подшерстка, что обнажает кожу. У щенков и юных особей может возникнуть другая проблема – не желающая линять ость на шее и груди. Усердствовать и пытаться выдрать шерсть в таких случаях не рекомендуется. Просто ежедневно прочесывайте эти участки тела и ждите, когда волос начнет отмирать сам.
+        </p>
+        <p>
+         Начинающим поклонникам породы при первых щипках лучше руководствоваться грумерскими схемами, которые легко найти в Интернете. Они наглядно иллюстрируют, как правильно захватывать шерсть и в какой последовательности тримминговать части тела собаки. Например, ноги вельшей перед выставкой почти никогда не щиплют до подшерстка, поскольку конечности шоу-особей должны выглядеть, как столбики, иначе оценка на ринге будет снижена.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важно!
+         </strong>
+         Шоу-собак выщипывают за пару месяцев до выхода на ринг, причем для этого необходим особый, более тщательный тримминг. Если вы пока не в состоянии правильно «окультурить» вельша, выставочную щипку лучше доверить грумеру, предварительно внимательно изучив его портфолио.
+        </p>
+        <p>
+         Ухаживать за ушами, глазами и ротовой полостью вельштерьера не сложно, но необходимо. Самое главное – своевременный осмотр органов слуха и зрения, а также их гигиена. Серу из ушной воронки убирают чистой тканью, смоченной в перекиси водорода, хлоргексидине или мирамистине. Пылевые комочки из глаз по утрам можно удалить чистой салфеткой, а раз в неделю полезно протереть слизистую века холодным чаем или ромашковым отваром. Примерно раз в три дня придется вооружаться зубной щеткой и пастой для собак, чтобы обработать ротовую полость питомца. Процесс это несложный, учитывая, что ветеринарные пасты не пенятся и после них не нужно промывать пасть вельша водой.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Жесткая шерсть вельштерьера делает его похожим на плюшевую игрушки. Не купайте его слишком часто, иначе кожа собаки станет сухой, а шерсть тусклой." data-fancybox="gallery" href="/upload/iblock/b43/w5idx6xhifutmi0o6kr8qnjhrc7w0nz1.jpg" title="Жесткая шерсть вельштерьера делает его похожим на плюшевую игрушки. Не купайте его слишком часто, иначе кожа собаки станет сухой, а шерсть тусклой.">
+          <div class="lazy-load" data-alt="Жесткая шерсть вельштерьера делает его похожим на плюшевую игрушки. Не купайте его слишком часто, иначе кожа собаки станет сухой, а шерсть тусклой." data-class="article_pic" data-original="/upload/resize_cache/iblock/b43/1024_2150_1/w5idx6xhifutmi0o6kr8qnjhrc7w0nz1.jpg">
+           <noscript data-alt="Жесткая шерсть вельштерьера делает его похожим на плюшевую игрушки. Не купайте его слишком часто, иначе кожа собаки станет сухой, а шерсть тусклой." data-class="article_pic" data-original="/upload/resize_cache/iblock/b43/1024_2150_1/w5idx6xhifutmi0o6kr8qnjhrc7w0nz1.jpg">
+            <img alt="Жесткая шерсть вельштерьера делает его похожим на плюшевую игрушки. Не купайте его слишком часто, иначе кожа собаки станет сухой, а шерсть тусклой." class="article_pic" src="/upload/resize_cache/iblock/b43/1024_2150_1/w5idx6xhifutmi0o6kr8qnjhrc7w0nz1.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Жесткая шерсть вельштерьера делает его похожим на плюшевую игрушки. Не купайте его слишком часто, иначе кожа собаки станет сухой, а шерсть тусклой.
+         </div>
+        </div>
+        <h2 id="gl8">
+         Кормление
+        </h2>
+        <p>
+         Обычно смешанный и сухой типы кормления собак предпочитают заводчики, регулярно отмечающиеся на международных выставках, – находясь в походных условиях, кормить питомца натуральными блюдами становится хлопотно. Заводчики рабочих линий, наоборот, предпочитают промышленной «сушке» животные белки, крупы и свежие овощи.
+        </p>
+        <p>
+         Традиционное меню взрослого вельштерьера состоит из постного мяса, рубца и субпродуктов, которые добавляются в сваренные на бульоне гречневую и рисовую каши. Филе океанических рыб тоже вносит в рацион приятное разнообразие, как и кисломолочные продукты, но ежедневно появляться в собачьей миске подобные изыски не должны.
+        </p>
+        <p>
+         В качестве витаминных добавок в ход пускаются тыква и морковь, заправленные нерафинированным растительным маслом. Подобные салаты уэльские терьеры любят, если приучены к ним с раннего возраста. Некоторые особи предпочитают термически обработанные овощи или квашеную капусту – это нормально и допустимо. Главное, не пытаться заменять растительной клетчаткой животный белок.
+        </p>
+        <p>
+         Равноценной заменой промышленным минеральным комплексам способны стать ламинария, фукус, а также рыбий жир, которые не имеют противопоказаний и хорошо переносятся пищеварением собаки. В качестве лакомств, которыми животное поощряется за успехи в учении и на тренировках, отлично подойдут домашние ржаные сухарики или сухофрукты. Главное, чтобы последние были не из магазина, где подобные продукты содержат в себе убойные дозы красителей, сахара и консервантов.
+        </p>
+        <h2 id="gl9">
+         Здоровье и болезни вельштерьеров
+        </h2>
+        <p>
+         Среднестатистический вельш живет до 12-14 лет. Серьезных наследственных заболеваний у породы не выявлено, за исключением разве что дисплазии суставов, которая у косматых «уроженцев» Уэльса встречается реже, чем у более крупных собак. Среди типичных недугов вельштерьеров специалисты отмечают атопические болезни кожи, которые может спровоцировать несбалансированный рацион, гипотиреоз и эпилепсию. У отдельных особей могут иметь место болезни глаз – глаукома, вывих хрусталика.
+        </p>
+        <h2 id="gl10">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Выбирайте активных, любознательных щенков средних габаритов. Чересчур маленькие или крупные вельши – не самый завидный товар.
+         </li>
+         <li>
+          Если подыскиваете животное с выставочным и племенным потенциалом, отдавайте предпочтение подрощенным особям, поскольку предсказать выставочную карьеру двухмесячного щенка не в состоянии даже экстрасенс.
+          <li>
+           Обратите внимание на степень упитанности помета. Вельштерьеры не должны быть ни худыми, ни закормленными.
+          </li>
+          <li>
+           Поинтересуйтесь, какие дипломы имеют производители потомства. Как правило, у родителей с развитыми рабочими (охотничьими) качествами дети имеют схожие таланты.
+          </li>
+          <li>
+           На шерсти вельштерьера не должно быть белых пятен. Если продавец предлагает вельша с белой проточиной или меткой на груди, уверяя, что для животных пет-категории в этом нет ничего не страшного, – не поддавайтесь на уговоры и отказывайтесь от покупки.
+          </li>
+          <li>
+           Уточните, какие прививки получили щенки, а также узнайте, чем они питаются. Ответственные заводчики кормят подопечных натуралкой либо «сушкой» суперпремиум-класса. Если же, гуляя по питомнику, вы наткнулись на мешок «Педигри», не надейтесь приобрести здесь здорового вельштерьера.
+          </li>
+         </li>
+        </ul>
+        <h2>
+         Фото щенков вельштерьера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a3f/tcq391h8eg5ezdm0xwrtlhwkvj4wku2h.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a3f/380_264_2/tcq391h8eg5ezdm0xwrtlhwkvj4wku2h.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a3f/380_264_2/tcq391h8eg5ezdm0xwrtlhwkvj4wku2h.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/a3f/380_264_2/tcq391h8eg5ezdm0xwrtlhwkvj4wku2h.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/cb5/ap7ykbkr1487x3cgcsk2xcn2iw62xmlg.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/cb5/380_264_2/ap7ykbkr1487x3cgcsk2xcn2iw62xmlg.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/cb5/380_264_2/ap7ykbkr1487x3cgcsk2xcn2iw62xmlg.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/cb5/380_264_2/ap7ykbkr1487x3cgcsk2xcn2iw62xmlg.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/98e/eqpqppg6w92d831hgqvlqunr9iubd93c.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/98e/380_264_2/eqpqppg6w92d831hgqvlqunr9iubd93c.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/98e/380_264_2/eqpqppg6w92d831hgqvlqunr9iubd93c.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/98e/380_264_2/eqpqppg6w92d831hgqvlqunr9iubd93c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/70b/kel40z15hswuinirxg3pojvz3qggcktf.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/70b/380_264_2/kel40z15hswuinirxg3pojvz3qggcktf.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/70b/380_264_2/kel40z15hswuinirxg3pojvz3qggcktf.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/70b/380_264_2/kel40z15hswuinirxg3pojvz3qggcktf.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/732/2mnlhddi2o6in7zvmfssm75qnn4zqgt6.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/732/380_264_2/2mnlhddi2o6in7zvmfssm75qnn4zqgt6.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/732/380_264_2/2mnlhddi2o6in7zvmfssm75qnn4zqgt6.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/732/380_264_2/2mnlhddi2o6in7zvmfssm75qnn4zqgt6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b8b/52f5dmkn3d7ivnr9wxa3rgn3qg038ivd.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b8b/380_264_2/52f5dmkn3d7ivnr9wxa3rgn3qg038ivd.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b8b/380_264_2/52f5dmkn3d7ivnr9wxa3rgn3qg038ivd.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/b8b/380_264_2/52f5dmkn3d7ivnr9wxa3rgn3qg038ivd.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9d8/1bz8x1b2ef3l1wz7150z81s2ak8ssl9w.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9d8/380_264_2/1bz8x1b2ef3l1wz7150z81s2ak8ssl9w.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9d8/380_264_2/1bz8x1b2ef3l1wz7150z81s2ak8ssl9w.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/9d8/380_264_2/1bz8x1b2ef3l1wz7150z81s2ak8ssl9w.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/25c/c47idu4utpwo45rce061v6vu1l36ljen.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/25c/380_264_2/c47idu4utpwo45rce061v6vu1l36ljen.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/25c/380_264_2/c47idu4utpwo45rce061v6vu1l36ljen.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/25c/380_264_2/c47idu4utpwo45rce061v6vu1l36ljen.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f63/qbhhig2ia9aut0wh0w6vblzwhiemno0j.jpg" title="">
+           <div class="lazy-load" data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f63/380_264_2/qbhhig2ia9aut0wh0w6vblzwhiemno0j.jpg">
+            <noscript data-alt="Вельштерьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f63/380_264_2/qbhhig2ia9aut0wh0w6vblzwhiemno0j.jpg">
+             <img alt="Вельштерьер" class="article_pic" src="/upload/resize_cache/iblock/f63/380_264_2/qbhhig2ia9aut0wh0w6vblzwhiemno0j.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl11">
+         Цена вельштерьера
+        </h2>
+        <p>
+         Вельштерьеры не так часто встречаются в России, как хотелось бы, поэтому на поиски щенка нужного класса придется потратить время. Самые дешевые предложения на рынке – представители рабочих линий, которых можно приобрести за скромные 7000-10 000 рублей. Обычно это щенки от производителей, достигших определенных успехов в охоте, но непримечательных в экстерьерном плане. Если необходима будущая звезда выставок и дог-шоу, обратите внимание на зарегистрированные питомники вроде «Сиверского», десятилетиями работающие с породой. За малыша с приличной родословной и многообещающей внешностью в подобных местах просят от 25 000 рублей.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения вельштерьера на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/velshterer/forum/">
+        Перейти на
+        форум вельштерьера
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Вельштерьер" src="/upload/iblock/d7f/d7f1633c7e0f41b32e6de37e63c131d5.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/velshterer/">
+          Вельштерьер
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/velshterer/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/velshterer/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/velshterer/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/velshterer/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/velshterer/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/entlebukher-zennenkhund/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Энтлебухер зенненхунд" data-original="/upload/resize_cache/iblock/f94/100_100_1/f94335dbdd1645812f4a6229dd643a38.jpg">
+          <noscript data-alt="Энтлебухер зенненхунд" data-original="/upload/resize_cache/iblock/f94/100_100_1/f94335dbdd1645812f4a6229dd643a38.jpg">
+           <img alt="Энтлебухер зенненхунд" src="/upload/resize_cache/iblock/f94/100_100_1/f94335dbdd1645812f4a6229dd643a38.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Энтлебухер зенненхунд
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/greyhound/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Грейхаунд" data-original="/upload/resize_cache/iblock/4af/100_100_1/4af20db77d745c640f94d918d4b45ff6.jpg">
+          <noscript data-alt="Грейхаунд" data-original="/upload/resize_cache/iblock/4af/100_100_1/4af20db77d745c640f94d918d4b45ff6.jpg">
+           <img alt="Грейхаунд" src="/upload/resize_cache/iblock/4af/100_100_1/4af20db77d745c640f94d918d4b45ff6.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Грейхаунд
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/briar/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бриар" data-original="/upload/resize_cache/iblock/cdc/100_100_1/cdc6b0c8519a0234b35ed2713e199bde.jpg">
+          <noscript data-alt="Бриар" data-original="/upload/resize_cache/iblock/cdc/100_100_1/cdc6b0c8519a0234b35ed2713e199bde.jpg">
+           <img alt="Бриар" src="/upload/resize_cache/iblock/cdc/100_100_1/cdc6b0c8519a0234b35ed2713e199bde.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бриар
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/yaponskiy-khin/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Японский хин" data-original="/upload/resize_cache/iblock/4b1/100_100_1/4b1a1ebf8bb53d83837c72672bd55989.jpg">
+          <noscript data-alt="Японский хин" data-original="/upload/resize_cache/iblock/4b1/100_100_1/4b1a1ebf8bb53d83837c72672bd55989.jpg">
+           <img alt="Японский хин" src="/upload/resize_cache/iblock/4b1/100_100_1/4b1a1ebf8bb53d83837c72672bd55989.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Японский хин
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fvelshterer%252F%253Fcheck_key%253D88d66bd801cf39b18d6a0d67f600e033%2526ANIMAL_CODE%253Dvelshterer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fvelshterer%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRnZlbHNodGVyZXIlMkYlM0ZjaGVja19rZXklM0Q4OGQ2NmJkODAxY2YzOWIxOGQ2YTBkNjdmNjAwZTAzMyUyNkFOSU1BTF9DT0RFJTNEdmVsc2h0ZXJlciUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZ2ZWxzaHRlcmVyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fvelshterer%252F%253Fcheck_key%253D88d66bd801cf39b18d6a0d67f600e033%2526ANIMAL_CODE%253Dvelshterer%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fvelshterer%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fvelshterer%252F%253Fcheck_key%253D88d66bd801cf39b18d6a0d67f600e033%2526ANIMAL_CODE%253Dvelshterer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fvelshterer%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "194.190.115.22"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--60e3862e24c1cbbae5345d9822b4d126-->

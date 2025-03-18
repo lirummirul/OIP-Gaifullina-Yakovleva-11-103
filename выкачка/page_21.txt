@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'b9aad227c422'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Английский мастиф, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Английский мастиф – настоящий герой сказок о мирных великанах! В противовес грозному и внушительному виду эта собака отличается мягким и добродушным нравом. " name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/d80/d8080a3aadf34ac52a13c026852ff8be.jpg" property="og:image"/>
+     <title>
+      Английский мастиф: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/angliyskiy-mastif/" property="og:url"/>
+     <meta content="Английский мастиф: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Английский мастиф – настоящий герой сказок о мирных великанах! В противовес грозному и внушительному виду эта собака отличается мягким и добродушным нравом. " property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/angliyskiy-mastif/" itemprop="url">
+         <span itemprop="title">
+          Английский мастиф
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Английский мастиф
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/angliyskiy-mastif/">
+          Описание
+         </a>
+         <a href="/dog/angliyskiy-mastif/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/angliyskiy-mastif/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/angliyskiy-mastif/photo/">
+          Фото
+         </a>
+         <a href="/dog/angliyskiy-mastif/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Английский мастиф" src="/upload/iblock/8fa/8fa0685444078808ed14bdf5b03d7ec7.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/angliyskiy-mastif/">
+           мастиф
+          </a>
+         </span>
+         <p>
+          Английский мастиф – настоящий герой сказок о мирных великанах! В противовес грозному и внушительному виду эта собака отличается мягким и добродушным нравом.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/683/6837be38511a0bf200cb8374c1bf5b80.jpg" data-cap="@iamwinniecooper #englishmastiff" data-fancybox="images" data-link="https://www.instagram.com/p/B-IarHHh0_h/" data-type="image" data-username="cooper_custom" href="/upload/uf/e15/e15e1530952895bfc01bb255bfc79a51.jpg">
+            <img alt="Английский мастиф" src="/upload/resize_cache/uf/e15/293_293_2/e15e1530952895bfc01bb255bfc79a51.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/637/637a8df6b77e8614b244fdb13b50943b.jpg" data-cap="Not a worry in the world   #englishmastiff" data-fancybox="images" data-link="https://www.instagram.com/p/B-IMPbuBQ1k/" data-type="image" data-username="19farmhouse40" href="/upload/uf/427/4276f463d887d5894f2059e3e48b594e.jpg">
+            <img alt="Английский мастиф" src="/upload/resize_cache/uf/427/293_293_2/4276f463d887d5894f2059e3e48b594e.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/b23/b23ba5ed761bf474e09ba307c4949d22.jpg" data-cap="Excuse me miss, that is figaros bed (out cat) #englishmastiff #furbaby" data-fancybox="images" data-link="https://www.instagram.com/p/B-ILIUSnjWB/" data-type="image" data-username="trena.lynn" href="/upload/uf/fc6/fc6b40c4d890fdac30bbab407711adaf.jpg">
+            <img alt="Английский мастиф" src="/upload/resize_cache/uf/fc6/293_293_2/fc6b40c4d890fdac30bbab407711adaf.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/angliyskiy-mastif/photo/">
+         Все
+            фото английского мастифа
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы английский мастиф
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность английского мастифа
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер английского мастифа
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни английских мастифов
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена английского мастифа
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Английский мастиф
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели около 72 кг, суки около 68 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели от 76 см, суки от 69 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         9-11 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         У представителей породы стоит поучиться спокойствию и непоколебимости: этих внушительных собак сложно выбить из колеи.
+        </li>
+        <li>
+         Мастифы отличаются сильной привязанностью к хозяину и выражают свою любовь «призывом» обняться и вместе понежиться на диване.
+        </li>
+        <li>
+         Между дополнительной прогулкой и отдыхом в тепле семейного очага «англичане» выберут второе: эти собаки слывут заядлыми домоседами.
+        </li>
+        <li>
+         Несмотря на доброту и отзывчивость, из представителей породы получаются великолепные охранники.
+        </li>
+        <li>
+         Английские мастифы не подходят семьям с маленькими детьми и людям, ведущим чрезмерно активный образ жизни.
+        </li>
+        <li>
+         При своевременной социализации эти собаки неплохо сосуществуют с другими домашними питомцами, изредка соперничая с животными своего пола.
+        </li>
+        <li>
+         Изучение команд – отнюдь не приоритет породы, поэтому для плодотворной дрессировки придётся приложить усилия.
+        </li>
+        <li>
+         Доминантный характер и природное упрямство – главные причины, по которым английские мастифы не подходят новичкам.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Английский мастиф" data-original="/upload/iblock/d80/d8080a3aadf34ac52a13c026852ff8be.jpg">
+          <noscript data-alt="Английский мастиф" data-original="/upload/iblock/d80/d8080a3aadf34ac52a13c026852ff8be.jpg">
+           <img alt="Английский мастиф" src="/upload/iblock/d80/d8080a3aadf34ac52a13c026852ff8be.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Английский мастиф
+          </strong>
+          – эмигрант из Туманного Альбиона и представитель одной из древнейших пород собак. Этот могучий защитник славится храбрым сердцем и непоколебимой уверенностью в себе – столь ценные качества достались ему в наследство от далёких предков. История английских мастифов многогранна, как и сама порода. Встречались жестокие моменты и благоприятные события, кровавые войны и мирное время, королевская жизнь и достойные бедняков скитания… Несмотря на неоднозначную судьбу, мастифам удалось сохранить вековую мудрость и стальную выдержку. На этих импозантных и мощных собак сложно не обратить внимание!
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Ниже среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дорогое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Почти не слышно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Английский мастиф основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы английский мастиф
+        </h2>
+        <p>
+         Английские мастифы не могут похвастать достоверной версией происхождения. История их существования исчисляется не одним тысячелетием, и современным кинологам сложно установить, какая из двух теорий верна. Первая гласит: «англичане» произошли от собак молоссоидного типа – массивных и выносливых животных, которых разводили для охоты на крупную дичь или организации гладиаторских боёв. Вторая версия подтверждает исконно английское происхождение животных.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Английские мастифы — одна из старейших пород собак. Есть свидетельства того, что они использовались для охоты на львов в 2500 г. до н.э." data-fancybox="gallery" href="/upload/iblock/3dc/ca0clyrsqs189j5g995bic7zys325p4e.jpg" title="Английские мастифы — одна из старейших пород собак. Есть свидетельства того, что они использовались для охоты на львов в 2500 г. до н.э.">
+          <div class="lazy-load" data-alt="Английские мастифы — одна из старейших пород собак. Есть свидетельства того, что они использовались для охоты на львов в 2500 г. до н.э." data-class="article_pic" data-original="/upload/resize_cache/iblock/3dc/412_2150_1/ca0clyrsqs189j5g995bic7zys325p4e.jpg">
+           <noscript data-alt="Английские мастифы — одна из старейших пород собак. Есть свидетельства того, что они использовались для охоты на львов в 2500 г. до н.э." data-class="article_pic" data-original="/upload/resize_cache/iblock/3dc/412_2150_1/ca0clyrsqs189j5g995bic7zys325p4e.jpg">
+            <img alt="Английские мастифы — одна из старейших пород собак. Есть свидетельства того, что они использовались для охоты на львов в 2500 г. до н.э." class="article_pic" height="618" src="/upload/resize_cache/iblock/3dc/412_2150_1/ca0clyrsqs189j5g995bic7zys325p4e.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английские мастифы — одна из старейших пород собак. Есть свидетельства того, что они использовались для охоты на львов в 2500 г. до н.э.
+         </div>
+        </div>
+        <p>
+         Известно, что мастифообразные собаки существовали ещё в эпоху процветания древних государств – Персии, Греции, Египта и Вавилона – и были довольно популярны среди представителей знати и простого люда. Мастифов широко использовали в качестве тягловой силы, а также для травли кабанов, диких лошадей и даже крупных хищников – тигров и львов. В свободное от охоты время собаки успешно справлялись с охраной имущества и домашнего скота.
+        </p>
+        <p>
+         Не менее важным было участие животных в кровопролитных войнах. Мастифообразные собаки ценились наравне с хорошо обученными солдатами. Сохранились исторические документы, которые подтверждают существование собачьей «армии» Александра Македонского, включавшей около 50 тысяч животных! Эти четвероногие свирепые воины наводили страх на армию противника, вынуждая её поднимать белый флаг раньше времени. С помощью собак полководец завоевал Персию в V веке до н. э. и обзавёлся новым титулом – царь Азии.
+        </p>
+        <p>
+         Предков английского мастифа содержал и другой военачальник – Гай Юлий Цезарь. Животных завезли в Римскую империю во второй половине I века до н. э. До этого легионы полководца высадились на территории Британии, где и состоялось их знакомство с огромными собаками. По словам римских воинов, животные напоминали львов своими размерами и отличались столь же свирепым нравом. Эти псы произошли от вавилонских мастифов, которые попали в Британию вместе с финикийскими купцами задолго до появления всемогущей империи.
+        </p>
+        <p>
+         Римлян покорили ярость и мощь животных: в сравнении с ними молоссы Цезаря выглядели покладистыми и безобидными. После захвата государства легионы отправились в обратный путь, взяв с собой не один десяток мастифов. С тех пор на боевых аренах Рима появились более внушительные британские собаки, которые всегда обеспечивали зрелищную победу над дикими животными.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Мы можем сказать, что мастиф большой, но это было бы преуменьшением. Кобели английских мастифов могут весить более 80 кг!" data-fancybox="gallery" href="/upload/iblock/5a7/n23o7g2zw5yg01unax28mwzwmcc7j77b.jpg" title="Мы можем сказать, что мастиф большой, но это было бы преуменьшением. Кобели английских мастифов могут весить более 80 кг!">
+          <div class="lazy-load" data-alt="Мы можем сказать, что мастиф большой, но это было бы преуменьшением. Кобели английских мастифов могут весить более 80 кг!" data-class="article_pic" data-original="/upload/resize_cache/iblock/5a7/1024_2150_1/n23o7g2zw5yg01unax28mwzwmcc7j77b.jpg">
+           <noscript data-alt="Мы можем сказать, что мастиф большой, но это было бы преуменьшением. Кобели английских мастифов могут весить более 80 кг!" data-class="article_pic" data-original="/upload/resize_cache/iblock/5a7/1024_2150_1/n23o7g2zw5yg01unax28mwzwmcc7j77b.jpg">
+            <img alt="Мы можем сказать, что мастиф большой, но это было бы преуменьшением. Кобели английских мастифов могут весить более 80 кг!" class="article_pic" src="/upload/resize_cache/iblock/5a7/1024_2150_1/n23o7g2zw5yg01unax28mwzwmcc7j77b.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мы можем сказать, что мастиф большой, но это было бы преуменьшением. Кобели английских мастифов могут весить более 80 кг!
+         </div>
+        </div>
+        <p>
+         После краха империи псы не утратили свою популярность. Со временем они распространились по территории Европы, образуя небольшие группы, из которых в дальнейшем сформировались новые породы – в частности,
+         <a class="ph" href="/dog/nemetskiy-dog/">
+          немецкий
+         </a>
+         и
+         <a class="ph" href="/dog/bordoskiy-dog/">
+          бордоский
+         </a>
+         доги. Британские собаки сменили своё амплуа, обосновавшись в королевских гвардиях и охотничьих угодьях аристократов. Простолюдины вынужденно отказывались от содержания этих животных из-за огромных размеров: прокормить такого пса – задача не из лёгких.
+        </p>
+        <p>
+         Пик популярности мастифообразных собак пришёлся на первую половину XIII века, когда стало известно о необычном поступке боевой суки, принадлежавшей английскому дворянину сэру Пиру Ли. Она прославилась тем, что яростно охраняла тело раненого хозяина во время сражения под Азенкуром до тех пор, пока к городу не подоспело подкрепление. Тогда на животных взглянули по-другому, отметив не только выдающиеся физические данные, но и удивительную преданность. Именно последняя стала отправной точкой, после которой в Британии возник первый питомник молосских собак. От любимицы Пира произошла английская линия породы. Благодарность аристократа была столь огромной, что он вырастил всех щенков своей собаки и позаботился об их дальнейшей судьбе. Помимо этого, сэр Ли принимал активное участие в жизни нового питомника.
+        </p>
+        <p>
+         Представление людей о мастифах изменилось в эпоху Ренессанса. Королева Елизавета I, которая славилась любовью к жестокости и кровопролитиям, всячески поощряла проведение звериных боёв. Для этого молосские псы оказались довольно неповоротливыми. Их скрещивание с
+         <a class="ph" href="/dog/angliyskiy-buldog/">
+          бульдогами
+         </a>
+         вывело идеальных претендентов на участие в собачьих ямах. От этих животных в дальнейшем произошла новая порода –
+         <a class="ph" href="/dog/bulmastif/">
+          бульмастиф
+         </a>
+         .
+        </p>
+        <p>
+         Травля четвероногих гладиаторов стала любимым «спортом» англичан. Особой зрелищностью отличались бои мастифов с медведями и быками. Готовность собак драться до последней капли крови сделала их благодатной почвой для открытия подпольного тотализатора. Частные селекционеры активно занимались племенным разведением животных до XV века, пока бульдоги полностью не вытеснили молосских собак с кровавой арены. О существовании мастифов начали забывать. Запрет жестокого развлечения в 1835 году лишь усугубил ситуацию. Во втором половине XIX столетия число английских молоссов настолько уменьшилось, что порода оказалась на грани вымирания.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Мордочка щенка английского мастифа" data-fancybox="gallery" href="/upload/iblock/25d/rnugyft96u8jkkgolq0jpuqcunquefqp.jpg" title="Мордочка щенка английского мастифа">
+          <div class="lazy-load" data-alt="Мордочка щенка английского мастифа" data-class="article_pic" data-original="/upload/resize_cache/iblock/25d/1024_2150_1/rnugyft96u8jkkgolq0jpuqcunquefqp.jpg">
+           <noscript data-alt="Мордочка щенка английского мастифа" data-class="article_pic" data-original="/upload/resize_cache/iblock/25d/1024_2150_1/rnugyft96u8jkkgolq0jpuqcunquefqp.jpg">
+            <img alt="Мордочка щенка английского мастифа" class="article_pic" src="/upload/resize_cache/iblock/25d/1024_2150_1/rnugyft96u8jkkgolq0jpuqcunquefqp.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мордочка щенка английского мастифа
+         </div>
+        </div>
+        <p>
+         Так бы и случилось, если бы не вмешательство любителей мастифов. Объединив усилия, они создали первый общественный клуб, который контролировал селекцию собак с целью увеличения их количества и сохранения чистоты породы. Результат слаженной работы волонтёров стал заметен уже в 1873 году, когда один из «воспитанников» клуба – пёс по кличке Таурас – одержал победу на международной выставке. В дальнейшем этот мастиф активно участвовал в воссоздании численности молоссов. Среди всех щенков запомнился лишь один – Кроун Принц: его признали единственным чемпионом породы. От этого кобеля произошла основная линия английского мастифа, существующая по сей день.
+        </p>
+        <p>
+         С началом Первой мировой войны судьба молоссов оказалась под угрозой. Наступили голодные времена, и столь огромные животные стали обременительными. Содержание собак, которые съедали столько же, сколько и солдаты армии, считалось в высшей степени непатриотичным. Животных массово усыпляли, поэтому лишь немногочисленным мастифам удалось выжить. События 1939-1945 гг. уничтожили и эти «крохи». К середине XX века численность молоссов не превышала и пятнадцати особей. Среди них находилась единственная сука, способная воспроизводить потомство. Это давало призрачный шанс на повторное возрождение породы.
+        </p>
+        <p>
+         Нора Диккен отличалась такой же крепкой «хваткой», как и её любимые английские мастифы. В поисках выживших собак женщина отправилась в Канаду и США, где приобрела последних представителей породы, нашла нескольких спонсоров и начала кропотливую племенную работу по разведению животных.
+        </p>
+        <p>
+         Об успехе мисс Диккен как нельзя лучше говорит официальное признание мастифов Английским клубом собаководства (UKC) в 1948 году. Селекционеры продолжали придерживаться стратегии инбридинга – близкородственной вязки животных. По этой причине собаки обзавелись внушительным списком генетических недостатков. Частично от них удалось избавиться благодаря успешной племенной работе. Современные представители породы отличаются более крепким здоровьем.
+        </p>
+        <p>
+         Сейчас в характере массивных собак едва ли можно заметить кровожадность их предков. Мастифы Англии занимают 27 позицию в списке самых популярных пород США: из этих животных получаются великолепные компаньоны и преданные друзья.
+        </p>
+        <h2>
+         Видео: Английский мастиф
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="8zb06YVXlig">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность английского мастифа
+        </h2>
+        <p>
+         Английский мастиф относится к крупным породам. Несмотря на свои габариты, собака выглядит пропорционально. Особи женского пола более изящные и лёгкие, гендерный тип животного ярко выражен.
+        </p>
+        <p>
+         Параметры, определённые стандартом породы, впечатляют. Высота сук в холке достигает 69 см и выше, рост кобелей начинается от 76 см. Что касается массы тела, она достигает 68 и 72 кг соответственно. Вес отдельных собак может равняться 86 кг.
+        </p>
+        <h3>
+         Голова и череп
+        </h3>
+        <p>
+         Ширина и длина головы мастифа находится в соотношении 2:3, что определяет её квадратный формат. Мускулатура выражена (особенно в области щёк, висков и темени). Очертания черепа плавные. Затылочный бугор сглажен, в то время как лоб и надбровные дуги выдаются вперёд.
+        </p>
+        <h3>
+         Морда
+        </h3>
+        <p>
+         Соотношение длины морды к черепу составляет 1:2, а их линии параллельны друг другу. Формат прямоугольный. Окружность морды меньше окружности головы в 2,2 раза. Стоп выражен в незначительной степени, небольшое углубление в его центральной части доходит до середины лба. Здесь же появляются морщинки, когда мастиф сосредоточен или насторожен. Щёки круглые, скулы практически не выступают. Мочка носа приплюснута в горизонтальной плоскости, пигментирована в чёрный цвет, имеет подвижные и широко раскрытые ноздри. Толстые и мясистые губы собаки прямоугольной формы: это заметно, когда животное повёрнуто в профиль. Окрашены в чёрный цвет, прилегают к челюстям. На морде собаки виднеется «маска».
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда английского мастифа" data-fancybox="gallery" href="/upload/iblock/c18/sn7jvh62225qbbc8if4sjcpzildfm15l.jpg" title="Морда английского мастифа">
+          <div class="lazy-load" data-alt="Морда английского мастифа" data-class="article_pic" data-original="/upload/resize_cache/iblock/c18/1024_2150_1/sn7jvh62225qbbc8if4sjcpzildfm15l.jpg">
+           <noscript data-alt="Морда английского мастифа" data-class="article_pic" data-original="/upload/resize_cache/iblock/c18/1024_2150_1/sn7jvh62225qbbc8if4sjcpzildfm15l.jpg">
+            <img alt="Морда английского мастифа" class="article_pic" src="/upload/resize_cache/iblock/c18/1024_2150_1/sn7jvh62225qbbc8if4sjcpzildfm15l.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда английского мастифа
+         </div>
+        </div>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Тонкие висячие уши английского мастифа средней длины, посажены почти на макушке и сильно удалены к боковым частям головы. Выглядят как правильные треугольники с закруглёнными вершинами. Отличаются наклоном вперёд, прилегают к щекам собаки.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза «англичанина» поставлены низко, на значительном расстоянии друг от друга. Радужка окрашена в светлый или тёмный оттенок орехового цвета. Стандарт породы отдаёт предпочтение последнему варианту. Веки прилегают к глазным яблокам. Взгляд мастифа кажется добродушным и мягким из-за «очков».
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Челюсти квадратной формы образуют ножницевидный или прямой прикус. Зубы имеют здоровый белый цвет. Нижние резцы расположены линейно или в шахматном порядке. Мощные клыки широко расставлены. Когда мастиф смыкает пасть, его зубы не видны из-за плотно прилегающих губ.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Для слегка выгнутой шеи «англичанина» характерны средний постав и сухая мускулатура. Её окружность меньше окружности черепа на 2-3 см. Кожа плотная, образует симметричные складки лишь на горле собаки.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Английский мастиф – обладатель мощного и удлинённого корпуса. Глубокая грудная клетка животного образована выпуклыми рёбрами, опущена до уровня локтей. Передний выступ грудной кости выдвинут за плечелопаточные суставы. От холки начинается прямая и широкая спина. Над ней слегка возвышается поясница, круп скошен. Линии живота и паха подтянуты.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Поставлен высоко, сужается от основания к кончику. Имеет серповидную форму. В движении несётся на уровне спины; в состоянии покоя достигает скакательных суставов собаки.
+        </p>
+        <h3>
+         Передние конечности
+        </h3>
+        <p>
+         Очерчены мускулатурой, расположены на значительном расстоянии друг от друга. Линии локтей и грудной клетки образуют небольшой угол. Косо поставленные плечи переходят в отвесные предплечья, а те – в массивные пясти. Большие лапы имеют круглую форму, пальцы собраны.
+        </p>
+        <h3>
+         Задние конечности
+        </h3>
+        <p>
+         Мускулистые бёдра переходят в сухие голени. Суставы выражены, короткие плюсны отличаются практически отвесным поставом. Лапы сводистые, пальцы собраны в комок.
+        </p>
+        <h3>
+         Манера движения
+        </h3>
+        <p>
+         Английский мастиф передвигается тяжёлой рысью, которая переходит в галоп при увеличении скорости собаки. Движения свободные, иногда выглядят «разболтанными». Независимо от темпа животное держит спину прямо.
+        </p>
+        <h3>
+         Шёрстный покров
+        </h3>
+        <p>
+         Представители породы покрыты густой и короткой шерстью, которая плотно прилегает к корпусу. На ощупь жестковатая, особенно в сравнении с более густым подшёрстком.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Для английского мастифа характерен окрас с подпалом. Основной тон представлен тигровым, серебристым, абрикосовым, оленьим и желтовато-коричневым вариантами. Независимо от цвета шерсти уши всегда окрашены в чёрный. То же самое касается и «маски» на морде собаки.
+        </p>
+        <h3>
+         Возможные пороки
+        </h3>
+        <p>
+         Среди дефектов породы выделяют:
+        </p>
+        <ul>
+         <li>
+          несоответствие гендерного типа полу животного;
+         </li>
+         <li>
+          раскачивание крупа в горизонтальной плоскости;
+         </li>
+         <li>
+          выпуклые и/или близко посаженные глаза;
+         </li>
+         <li>
+          укороченную или удлинённую морду;
+         </li>
+         <li>
+          ярко выраженный изгиб переносицы;
+         </li>
+         <li>
+          длинную и/или волнистую шерсть;
+         </li>
+         <li>
+          мелкую и/или уплощённую грудь;
+         </li>
+         <li>
+          наличие белого пятна на груди;
+         </li>
+         <li>
+          избыточную зубную формулу;
+         </li>
+         <li>
+          нервозное и робкое поведение;
+         </li>
+         <li>
+          светлый оттенок радужки;
+         </li>
+         <li>
+          слабую мускулатуру;
+         </li>
+         <li>
+          удлинённые лапы;
+         </li>
+         <li>
+          светлую «маску»;
+         </li>
+         <li>
+          выпуклую спину;
+         </li>
+         <li>
+          налёт на зубах;
+         </li>
+         <li>
+          косолапость.
+         </li>
+        </ul>
+        <p>
+         Английского мастифа дисквалифицируют по следующим порокам:
+        </p>
+        <ul>
+         <li>
+          меланхоличное или безосновательно агрессивное поведение;
+         </li>
+         <li>
+          длинные или короткие уши, их нетипичный окрас;
+         </li>
+         <li>
+          лёгкое или чрезмерно грубоватое телосложение;
+         </li>
+         <li>
+          ярко выраженная щекастость или скуластость;
+         </li>
+         <li>
+          частичное или полное отсутствие подшёрстка;
+         </li>
+         <li>
+          растянутый или квадратный формат корпуса;
+         </li>
+         <li>
+          загнутый или скрученный в кольцо хвост;
+         </li>
+         <li>
+          резкий или полностью сглаженный стоп;
+         </li>
+         <li>
+          сильно выдающийся затылочный бугор;
+         </li>
+         <li>
+          частичная пигментация носа и губ;
+         </li>
+         <li>
+          злой и невыразительный взгляд;
+         </li>
+         <li>
+          длинная волнистая шерсть;
+         </li>
+         <li>
+          отсутствие окантовки глаз;
+         </li>
+         <li>
+          асимметричная «маска»;
+         </li>
+         <li>
+          куполообразная голова;
+         </li>
+         <li>
+          неравномерный окрас;
+         </li>
+         <li>
+          гетерохромия;
+         </li>
+         <li>
+          брылястость;
+         </li>
+         <li>
+          иноходь;
+         </li>
+         <li>
+          кариес.
+         </li>
+        </ul>
+        <p>
+         Для кобелей недопустим крипторхизм – неопущение яичек в мошонку.
+        </p>
+        <h2>
+         Фото взрослого английского мастифа
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a21/wglqvnkz9zyer5p31p2y337ctkojhkdg.jpg" title="">
+           <div class="lazy-load" data-alt="Английский мастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/a21/380_264_2/wglqvnkz9zyer5p31p2y337ctkojhkdg.jpg">
+            <noscript data-alt="Английский мастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/a21/380_264_2/wglqvnkz9zyer5p31p2y337ctkojhkdg.jpg">
+             <img alt="Английский мастиф" class="article_pic" src="/upload/resize_cache/iblock/a21/380_264_2/wglqvnkz9zyer5p31p2y337ctkojhkdg.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a5f/303lb9wi4xomzg4f3eiadwpg5qrxo4nh.jpg" title="">
+           <div class="lazy-load" data-alt="Английский мастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/a5f/380_264_2/303lb9wi4xomzg4f3eiadwpg5qrxo4nh.jpg">
+            <noscript data-alt="Английский мастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/a5f/380_264_2/303lb9wi4xomzg4f3eiadwpg5qrxo4nh.jpg">
+             <img alt="Английский мастиф" class="article_pic" src="/upload/resize_cache/iblock/a5f/380_264_2/303lb9wi4xomzg4f3eiadwpg5qrxo4nh.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/022/hdpi5zf98fr1350ptow0yaqbmgz8uzvp.jpg" title="">
+           <div class="lazy-load" data-alt="Английский мастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/022/380_264_2/hdpi5zf98fr1350ptow0yaqbmgz8uzvp.jpg">
+            <noscript data-alt="Английский мастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/022/380_264_2/hdpi5zf98fr1350ptow0yaqbmgz8uzvp.jpg">
+             <img alt="Английский мастиф" class="article_pic" src="/upload/resize_cache/iblock/022/380_264_2/hdpi5zf98fr1350ptow0yaqbmgz8uzvp.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/0c2/n9g5djy5lgcpdqp0we1tgjvvh33kuwqv.jpg" title="">
+           <div class="lazy-load" data-alt="Английский мастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/0c2/380_264_2/n9g5djy5lgcpdqp0we1tgjvvh33kuwqv.jpg">
+            <noscript data-alt="Английский мастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/0c2/380_264_2/n9g5djy5lgcpdqp0we1tgjvvh33kuwqv.jpg">
+             <img alt="Английский мастиф" class="article_pic" src="/upload/resize_cache/iblock/0c2/380_264_2/n9g5djy5lgcpdqp0we1tgjvvh33kuwqv.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/dea/zgulu3lxs36l4qb699sh0lqoyttei7aa.jpg" title="">
+           <div class="lazy-load" data-alt="Английский мастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/dea/380_264_2/zgulu3lxs36l4qb699sh0lqoyttei7aa.jpg">
+            <noscript data-alt="Английский мастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/dea/380_264_2/zgulu3lxs36l4qb699sh0lqoyttei7aa.jpg">
+             <img alt="Английский мастиф" class="article_pic" src="/upload/resize_cache/iblock/dea/380_264_2/zgulu3lxs36l4qb699sh0lqoyttei7aa.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/859/mvf94k5t22rl00uep70wwxqxw6xbpb6n.jpg" title="">
+           <div class="lazy-load" data-alt="Английский мастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/859/380_264_2/mvf94k5t22rl00uep70wwxqxw6xbpb6n.jpg">
+            <noscript data-alt="Английский мастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/859/380_264_2/mvf94k5t22rl00uep70wwxqxw6xbpb6n.jpg">
+             <img alt="Английский мастиф" class="article_pic" src="/upload/resize_cache/iblock/859/380_264_2/mvf94k5t22rl00uep70wwxqxw6xbpb6n.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер английского мастифа
+        </h2>
+        <p>
+         От боевого прошлого английского мастифа не осталось и следа. Современные представители породы – спокойные и дружелюбные собаки, которые проявляют удивительное постоянство перед скачками настроения. В характере этих животных прослеживаются черты выходцев из Старой Англии: терпимость, надёжность и величие. Мастиф знает себе цену, никогда не опускается до щенячьих шалостей и держится с таким благородством, что невольно вспоминаются особи королевских кровей. На первый взгляд, собака кажется закоренелым флегматиком, но это не так. В глубине души «англичане» испытывают удивительную любовь к членам своей семьи.
+        </p>
+        <p>
+         Привязанность мастифов может быть отягощающей (в прямом смысле): эти собаки любят крепкие объятия, поэтому при малейшей возможности запрыгнут на колени к хозяину. Учитывая массу животного, стоит забыть о силовых тренировках в спортивном зале: достаточно «понянчить» питомца весом в 70 кг!
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мастиф — воплощение кроткого гиганта. Он ласков с детьми, кошками и другими собаками, поэтому впишется в любую семью." data-fancybox="gallery" href="/upload/iblock/ae7/6zj8541fuh39l5aiuwik148m9l3wqbrc.jpg" title="Мастиф — воплощение кроткого гиганта. Он ласков с детьми, кошками и другими собаками, поэтому впишется в любую семью.">
+          <div class="lazy-load" data-alt="Мастиф — воплощение кроткого гиганта. Он ласков с детьми, кошками и другими собаками, поэтому впишется в любую семью." data-class="article_pic" data-original="/upload/resize_cache/iblock/ae7/412_2150_1/6zj8541fuh39l5aiuwik148m9l3wqbrc.jpg">
+           <noscript data-alt="Мастиф — воплощение кроткого гиганта. Он ласков с детьми, кошками и другими собаками, поэтому впишется в любую семью." data-class="article_pic" data-original="/upload/resize_cache/iblock/ae7/412_2150_1/6zj8541fuh39l5aiuwik148m9l3wqbrc.jpg">
+            <img alt="Мастиф — воплощение кроткого гиганта. Он ласков с детьми, кошками и другими собаками, поэтому впишется в любую семью." class="article_pic" height="275" src="/upload/resize_cache/iblock/ae7/412_2150_1/6zj8541fuh39l5aiuwik148m9l3wqbrc.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мастиф — воплощение кроткого гиганта. Он ласков с детьми, кошками и другими собаками, поэтому впишется в любую семью.
+         </div>
+        </div>
+        <p>
+         Английские мастифы нуждаются в постоянной компании, хотя и не «говорят» об этом. Если рабочий график или разгульный образ жизни не позволяют проводить время с собакой, лучше отказаться от желания завести представителя этой породы. Одиночество – худшее наказание для мастифов. В отчаянии животное постарается развлечь себя самостоятельно, а это в любом случае нанесёт ущерб вашей квартире.
+        </p>
+        <p>
+         «Англичане» – закоренелые домоседы, абсолютно не склонные к побегам. Спуская питомца с поводка в безлюдном парке, можно не волноваться: мастиф всегда вернётся к вам независимо от того, насколько интересной и увлекательной покажется ему окружающая обстановка.
+        </p>
+        <p>
+         Хотя представители породы считаются трепетными и нежными гигантами, они великолепно справляются со сторожевыми обязанностями. Охранный инстинкт собаки распространяется не только на территорию, но и на членов её семьи. Встретив непрошеного гостя, мастиф никогда не ринется в атаку первым: его внушительных размеров более чем достаточно. Вероятнее всего, животное загонит чужака в угол, где и «оставит» его до возвращения хозяина. Впрочем, если дело дойдёт до схватки, собака никогда не уступит противнику, пусть даже и ценой собственной жизни.
+        </p>
+        <p>
+         К незнакомым людям мастиф относится не менее настороженно. Животное практически никогда не идёт на контакт с посторонним человеком. Более того: «англичанин» будет стоять между ним и хозяином, пока не убедится в отсутствии опасности. Даже частым гостям в вашем доме не удастся уклониться от пристального взгляда мастифа, готового в любой миг ринуться на защиту. Собаки нападают крайне редко, поэтому единственное, чего вы должны опасаться, – отсутствия свободного места на диване. Мастиф узурпирует эту «территорию» самым наглым образом.
+        </p>
+        <p>
+         «Англичане» не подходят для семей с маленькими детьми – во многом из-за своих габаритов. В разгар весёлой игры животное может случайно толкнуть малыша и нанести ему травму. Если вы непоколебимы в убеждении завести четвероногого друга для своего чада, обратите внимание на менее травмоопасную породу. Это может быть
+         <a class="ph" href="/dog/erdelterer/">
+          эрдельтерьер
+         </a>
+         ,
+         <a class="ph" href="/dog/pudel/">
+          пудель
+         </a>
+         или
+         <a class="ph" href="/dog/bishon-frize/">
+          бишон фризе
+         </a>
+         .
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="За любимым делом" data-fancybox="gallery" href="/upload/iblock/1c3/xhy3mcs3l7bqldvprrbi7hh7siib7gq6.jpg" title="За любимым делом">
+          <div class="lazy-load" data-alt="За любимым делом" data-class="article_pic" data-original="/upload/resize_cache/iblock/1c3/412_2150_1/xhy3mcs3l7bqldvprrbi7hh7siib7gq6.jpg">
+           <noscript data-alt="За любимым делом" data-class="article_pic" data-original="/upload/resize_cache/iblock/1c3/412_2150_1/xhy3mcs3l7bqldvprrbi7hh7siib7gq6.jpg">
+            <img alt="За любимым делом" class="article_pic" height="255" src="/upload/resize_cache/iblock/1c3/412_2150_1/xhy3mcs3l7bqldvprrbi7hh7siib7gq6.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          За любимым делом
+         </div>
+        </div>
+        <p>
+         Представители молоссов доброжелательно относятся к сородичам – как чужакам, так и своим «соседям» по апартаментам. Правильно воспитанные мастифы могут смириться и с кошачьей компанией; даже к декоративным грызунам и птицам, запертым в клетках, собаки равнодушны. При отсутствии социализации «англичанин» может проявлять агрессию по отношению к животным того же пола. Эту нетерпимость стоит пресекать на корню: в порыве ярости стычка мастифа с его «соперником» может закончиться гибелью последнего.
+        </p>
+        <p>
+         Как и подобает британским аристократам, эти собаки любят бездельничать и часами нежиться на диване. Для полноты картины не хватает традиционного чая с молоком и дождливой погоды, которая напомнит мастифу о родине его предков. Впрочем, регулярные физические нагрузки всё же важны: для поддержания формы и гармоничного психологического состояния. Английские мастифы нуждаются в длительных прогулках без бега: эти собаки не любят быстрые движения. Исключение – виднеющийся вдалеке лакомый кусочек: тогда животное поспешит к нему с упорством и звуками небольшого паровоза.
+        </p>
+        <p>
+         Делая выбор в пользу мастифа, не стоит опасаться боевого прошлого этой породы. Характер питомца зависит исключительно от участия хозяина в его воспитании и социализации. На каких чертах сделают акцент, такие и будут преобладать в характере «англичанина», поэтому главная задача владельца молосской собаки – «вылепить» из неё спокойное и дружелюбное животное.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Хоть этой породе нравится бегать по парку, но английские мастифы совсем не спортсмены. Им больше по душе растянуться на диване и провести так весь день." data-fancybox="gallery" href="/upload/iblock/3ed/qg5buamrxmvuc63ede2t65835cms0alw.jpg" title="Хоть этой породе нравится бегать по парку, но английские мастифы совсем не спортсмены. Им больше по душе растянуться на диване и провести так весь день.">
+          <div class="lazy-load" data-alt="Хоть этой породе нравится бегать по парку, но английские мастифы совсем не спортсмены. Им больше по душе растянуться на диване и провести так весь день." data-class="article_pic" data-original="/upload/resize_cache/iblock/3ed/1024_2150_1/qg5buamrxmvuc63ede2t65835cms0alw.jpg">
+           <noscript data-alt="Хоть этой породе нравится бегать по парку, но английские мастифы совсем не спортсмены. Им больше по душе растянуться на диване и провести так весь день." data-class="article_pic" data-original="/upload/resize_cache/iblock/3ed/1024_2150_1/qg5buamrxmvuc63ede2t65835cms0alw.jpg">
+            <img alt="Хоть этой породе нравится бегать по парку, но английские мастифы совсем не спортсмены. Им больше по душе растянуться на диване и провести так весь день." class="article_pic" src="/upload/resize_cache/iblock/3ed/1024_2150_1/qg5buamrxmvuc63ede2t65835cms0alw.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Хоть этой породе нравится бегать по парку, но английские мастифы совсем не спортсмены. Им больше по душе растянуться на диване и провести так весь день.
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Представители породы «взрослеют» довольно долго, чем вводят своих владельцев в заблуждение: крупные и массивные, как им кажется, собаки – на деле лишь шаловливые щенки, которые любят играть против правил. Воспитание мастифа нужно начинать как можно скорее, а именно с первого дня появления животного в доме. Малыш должен усвоить главное правило: звание лидера закреплено вовсе не за ним, а за вами. Пресекайте малейшие попытки «англичанина» проявить своеволие и даже агрессию, но ни в коем случае не бейте питомца. Мастифы любят нежность и ласку, но нуждаются в твёрдой руке. Ваша задача – найти золотую середину.
+        </p>
+        <p>
+         Склонность «англичан» к плодотворной дрессировке колеблется от собаки к собаке. Некоторые представители породы хотят угодить хозяину и с радостью обучаются новым трюкам; другие же упрямятся и ограничиваются лишь базовыми командами. Главный секрет эффективной дрессировки английского мастифа – в положительном закреплении изученного. Не забывайте делать любимцу комплименты и поощрять его поведение лакомством. От повышенного тона и болезненных тычков лучше отказаться.
+        </p>
+        <p>
+         Во избежание потенциальных проблем кинологи рекомендуют придерживаться определённого режима дня. Мастиф куда охотнее выполнит вашу команду, если будет знать, что вскоре его ожидают вкусный ужин и долгожданный сон. Дрессировка должна занимать не менее часа. Изучайте команды постепенно, не забывая повторять уже пройденный материал. Не вынуждайте любимца многократно выполнять трюк лишь оттого, что вам скучно: английскому мастифу не составит труда раскрыть эти корыстные намерения, и тогда о плодотворном изучении команд можно забыть. Представители породы прекрасно осведомлены об уровне своего интеллекта, поэтому не захотят исполнять роль марионетки.
+        </p>
+        <p>
+         Пытливый ум собаки может повлечь за собой и другую проблему: английский мастиф легко найдёт ваше слабое место и сможет манипулировать. Не забывайте лукавить в общении с питомцем, не поддавайтесь на его жалостливые взгляды и при надобности консультируйтесь с профессиональным дрессировщиком. Эти небольшие хитрости помогут воспитать из строптивого пса покладистого и умного джентльмена.
+        </p>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <p>
+         Уход за мастифами нельзя назвать обременительным, и в этом заслуга короткой шерсти собак. Её достаточно расчёсывать раз в две-три недели, в период сезонной линьки – немного чаще. Для удаления отмерших волосков используйте жёсткую щетинную щётку. Пуходёрки и специальные перчатки с силиконовыми шипами не подходят для этой процедуры. «Нанести» здоровый блеск на шерсть английского мастифа поможет ткань или замша. Так ваш питомец будет выглядеть ещё более опрятным и холёным.
+        </p>
+        <p>
+         Мастифы не нуждаются в частых водных процедурах. Некоторые владельцы этих собак и вовсе ограничиваются уходом с помощью сухого шампуня. Полностью купать животное стоит лишь по мере необходимости. Для этого используйте специальное зоосредство: «человеческие» шампуни часто вызывают раздражение кожи и даже выпадение шерсти. После принятия мастифом ванны позаботьтесь о том, чтобы собака не лежала на сквозняке. Это чревато простудными заболеваниями.
+        </p>
+        <p class="legenda">
+         Запомните: хоть вам и не потребуется регулярно устраивать английскому мастифу банный день, забывать о чистоте морды животного всё же не стоит. В морщинках регулярно накапливаются грязь, жир, пот и даже частички пищи. Очищайте их ежедневно с помощью влажного лоскута ткани во избежание инфекционных заболеваний.
+        </p>
+        <p>
+         После длительной прогулки (особенно в ветреную погоду) не забудьте внимательно осмотреть уши любимца и протереть их увлажнённым ватным тампоном. Для подсушивающего эффекта можно использовать слабый раствор борной кислоты или другое специальное средство из зоомагазина.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Довольный щенок" data-fancybox="gallery" href="/upload/iblock/5be/wykeridzicikxrq1sfewe7bl2q51z2qm.jpg" title="Довольный щенок">
+          <div class="lazy-load" data-alt="Довольный щенок" data-class="article_pic" data-original="/upload/resize_cache/iblock/5be/412_2150_1/wykeridzicikxrq1sfewe7bl2q51z2qm.jpg">
+           <noscript data-alt="Довольный щенок" data-class="article_pic" data-original="/upload/resize_cache/iblock/5be/412_2150_1/wykeridzicikxrq1sfewe7bl2q51z2qm.jpg">
+            <img alt="Довольный щенок" class="article_pic" height="515" src="/upload/resize_cache/iblock/5be/412_2150_1/wykeridzicikxrq1sfewe7bl2q51z2qm.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Довольный щенок
+         </div>
+        </div>
+        <p>
+         То же самое касается и глаз английского мастифа. Осматривайте их по возможности чаще и очищайте с помощью крепкого чая или отвара ромашки. Обильные выделения нездорового цвета – тревожный признак. Предотвратить воспаление поможет своевременный визит в ветеринарную клинику.
+        </p>
+        <p>
+         Ротовая полость «англичанина» нуждается в не меньшем уходе. Кинологи рекомендуют чистить зубы собаки еженедельно, вооружившись щёткой или компактной насадкой на палец. В крайнем случае можно обойтись сложённым в несколько слоёв бинтом. Не забывайте, что из-за особенностей прикуса английские мастифы практически не пользуются задними зубами, так что придётся следить за сохранностью их эмали.
+        </p>
+        <p>
+         Не стоит забывать о когтях собаки. Несмотря на то что они по большей мере стачиваются во время прогулки, периодически стоит пользоваться секатором для крупных пород, чтобы избавить любимца от дискомфорта.
+        </p>
+        <p>
+         Кормление мастифа – задача не из лёгких. Ввиду внушительных размеров собака потребляет много пищи, так что в этом плане содержание молосса весьма затратно. Существует два возможных рациона – готовые премиум-корма и натуральная пища. Первый вариант сочетает в себе необходимые для полноценного развития микроэлементы, второй же подразумевает тщательную разработку меню мастифа и приём витаминов.
+        </p>
+        <p class="legenda">
+         Важно знать: сочетание двух типов рациона недопустимо! Сухой корм на завтрак и каша с мясом на обед – прямой путь к несварению желудка. Не забывайте и о том, что молосских щенков до четырёх месяцев необходимо кормить 5 раз в день. Малышам до шести месяцев обеспечивают 4-кратное питание. Собака возрастом до года нуждается в кормлении не менее 3 раз. Взрослым же особям достаточно 2 приёмов пищи.
+        </p>
+        <p>
+         В рационе английского мастифа не должно быть:
+        </p>
+        <ul>
+         <li>
+          молока (если животное старше четырёх месяцев);
+         </li>
+         <li>
+          продуктов с высоким содержанием углеводов;
+         </li>
+         <li>
+          баранины или свинины (из-за жирности);
+         </li>
+         <li>
+          пищи с огромным количеством специй;
+         </li>
+         <li>
+          трубчатых костей любых размеров;
+         </li>
+         <li>
+          лакомств с «человеческого» стола;
+         </li>
+         <li>
+          сырой или варёной речной рыбы;
+         </li>
+         <li>
+          «кофеиновых» напитков;
+         </li>
+         <li>
+          грибов в любом виде;
+         </li>
+         <li>
+          ягод с косточками;
+         </li>
+         <li>
+          бобовых культур;
+         </li>
+         <li>
+          копчёностей;
+         </li>
+         <li>
+          сладостей.
+         </li>
+        </ul>
+        <p>
+         Миска собаки должна быть наполнена свежей некипячёной водой. Владельцы английских мастифов советуют использовать бутилированную.
+        </p>
+        <p>
+         Представители породы одинаково комфортно чувствуют себя и в апартаментах, и в частном доме – правда, только при условии своевременных и длительных прогулок. Мастифы нуждаются в ежедневных физических нагрузках, но вместе с тем довольно неповоротливы и ленивы. Хозяину великана придётся приложить усилия, чтобы заинтересовать своего любимца.
+        </p>
+        <p>
+         Английский мастиф – отличная компания для малоактивных людей. Животным достаточно продолжительного променада по парку, к аджилити и погоне за фрисби они равнодушны. Мастифам категорически противопоказаны прогулки в жаркую погоду. Виной тому – брахицефальный тип морды, который затрудняет дыхание собаки.
+        </p>
+        <p>
+         Изрядным чистюлям и эстетам стоит задуматься о приобретении другой породы. Английские мастифы отличаются обильным слюноотделением, питаются неаккуратно из-за отвисших брылей, громко храпят и к тому же страдают метеоризмом. Если вы не готовы мириться с этим, сделайте выбор в пользу других собак.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни английских мастифов
+        </h2>
+        <p>
+         Несмотря на «железный» иммунитет и высокую продолжительность жизни, представители породы страдают от определённых недугов. Среди самых распространённых болезней мастифов выделяют:
+        </p>
+        <ul>
+         <li>
+          дисплазию тазобедренных суставов;
+         </li>
+         <li>
+          заворот желудка или кишечника;
+         </li>
+         <li>
+          остеоартроз коленных суставов;
+         </li>
+         <li>
+          растяжение сердечных стенок;
+         </li>
+         <li>
+          мочекаменную болезнь;
+         </li>
+         <li>
+          выворот и заворот века;
+         </li>
+         <li>
+          проблемы с дыханием;
+         </li>
+         <li>
+          покраснение глаз;
+         </li>
+         <li>
+          кишечную непроходимость;
+         </li>
+         <li>
+          вздутие живота;
+         </li>
+         <li>
+          катаракту.
+         </li>
+        </ul>
+        <p>
+         Категорически запрещено заниматься самостоятельным лечением мастифа при обнаружении симптомов заболевания. Своевременное обращение к ветеринару – залог крепкого здоровья и долгой жизни вашего любимца.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Лучшее место для приобретения английского мастифа – официальный питомник, где можно найти здорового и покладистого малыша с хорошими генами. Главный критерий отбора – характер. Семьям с детьми лучше обратить внимание на щенков с менее доминантным нравом, которые не станут соревноваться за лидерство и проверять на прочность авторитет хозяина. Помните: чрезмерно робкий характер – дисквалифицирующий порок английских мастифов.
+        </p>
+        <p>
+         То же самое правило выбора касается и семей, где уже проживают другие собаки. При этом желательно приобретать щенка противоположного пола.
+        </p>
+        <p>
+         Доминирующий тип характера «англичанина» подходит только людям с опытом содержания крупных пород собак. Будьте готовы постоянно бороться за главенство в «стае» и принимать вызов от мастифа. Впрочем, правильное воспитание и своевременная социализация сделают послушного и дружелюбного компаньона даже из прирождённого лидера.
+        </p>
+        <p>
+         Кинологи рекомендуют покупать щенков в возрасте от полутора до трёх месяцев. Собаки уже отличаются устойчивым психологическим здоровьем и готовы к самостоятельной жизни. Перед покупкой внимательно осмотрите потенциального питомца. Шёрстка маленького мастифа должна быть блестящей, глазки и взгляд – ясными, нос – влажным и холодным. Обратите внимание на условия содержания малышей, попросите заводчика предъявить необходимые документы и справку о своевременной вакцинации. Нелишним будет и познакомиться с родителями щенка: это поможет составить первое впечатление о том, чего ждать от вашего четвероногого друга.
+        </p>
+        <h2>
+         Фото щенков английского мастифа
+        </h2>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/286/04hgbv2gb81qv3ytsdsrs28j6f646w8z.jpg" title="">
+           <div class="lazy-load" data-alt="Английский мастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/286/512_342_2/04hgbv2gb81qv3ytsdsrs28j6f646w8z.jpg">
+            <noscript data-alt="Английский мастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/286/512_342_2/04hgbv2gb81qv3ytsdsrs28j6f646w8z.jpg">
+             <img alt="Английский мастиф" class="article_pic" src="/upload/resize_cache/iblock/286/512_342_2/04hgbv2gb81qv3ytsdsrs28j6f646w8z.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2c0/qm0zeh4jtyczq7tjb6ybwnijbs377iev.jpg" title="">
+           <div class="lazy-load" data-alt="Английский мастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/2c0/512_342_2/qm0zeh4jtyczq7tjb6ybwnijbs377iev.jpg">
+            <noscript data-alt="Английский мастиф" data-class="article_pic" data-original="/upload/resize_cache/iblock/2c0/512_342_2/qm0zeh4jtyczq7tjb6ybwnijbs377iev.jpg">
+             <img alt="Английский мастиф" class="article_pic" src="/upload/resize_cache/iblock/2c0/512_342_2/qm0zeh4jtyczq7tjb6ybwnijbs377iev.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Цена английского мастифа
+        </h2>
+        <p>
+         Цена представителей породы зависит от многих факторов – в частности, от родословной и титулованности родителей, местоположения питомника, пола собаки и её соответствия стандарту. В среднем стоимость английских мастифов начинается от 30 000 рублей. За меньшую цену можно приобрести выбракованный экземпляр. В обоих случаях вы станете обладателей идеального партнёра, который скрасит однообразные будни тёплыми и увесистыми объятиями!
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения английского мастифа на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/angliyskiy-mastif/forum/">
+        Перейти на
+        форум английского мастифа
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Английский мастиф" src="/upload/iblock/8fa/8fa0685444078808ed14bdf5b03d7ec7.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/angliyskiy-mastif/">
+          Английский мастиф
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/angliyskiy-mastif/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-mastif/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-mastif/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-mastif/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-mastif/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/russkaya-kashtanka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Русская каштанка" data-original="/upload/resize_cache/iblock/bad/100_100_1/18geilmyufga4lplhgvlsfxinxefl7pz.jpg">
+          <noscript data-alt="Русская каштанка" data-original="/upload/resize_cache/iblock/bad/100_100_1/18geilmyufga4lplhgvlsfxinxefl7pz.jpg">
+           <img alt="Русская каштанка" src="/upload/resize_cache/iblock/bad/100_100_1/18geilmyufga4lplhgvlsfxinxefl7pz.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Русская каштанка
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/gladkoshyerstnyy-foksterer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Гладкошёрстный фокстерьер" data-original="/upload/resize_cache/iblock/f5e/100_100_1/x63dm3t6k3wocudqkjdmoww1meh2mo1p.jpg">
+          <noscript data-alt="Гладкошёрстный фокстерьер" data-original="/upload/resize_cache/iblock/f5e/100_100_1/x63dm3t6k3wocudqkjdmoww1meh2mo1p.jpg">
+           <img alt="Гладкошёрстный фокстерьер" src="/upload/resize_cache/iblock/f5e/100_100_1/x63dm3t6k3wocudqkjdmoww1meh2mo1p.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Гладкошёрстный фокстерьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/norvezhskiy-lundekhund/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Норвежский лундехунд" data-original="/upload/resize_cache/iblock/ffe/100_100_1/qcsyc9hyxfg9o8nlqux3o8qv7ixsktsz.jpg">
+          <noscript data-alt="Норвежский лундехунд" data-original="/upload/resize_cache/iblock/ffe/100_100_1/qcsyc9hyxfg9o8nlqux3o8qv7ixsktsz.jpg">
+           <img alt="Норвежский лундехунд" src="/upload/resize_cache/iblock/ffe/100_100_1/qcsyc9hyxfg9o8nlqux3o8qv7ixsktsz.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Норвежский лундехунд
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/tibetskiy-spaniel/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Тибетский спаниель" data-original="/upload/resize_cache/iblock/0fc/100_100_1/rgkz030nqf43gt36t7jvnk2bh5cjib8w.jpg">
+          <noscript data-alt="Тибетский спаниель" data-original="/upload/resize_cache/iblock/0fc/100_100_1/rgkz030nqf43gt36t7jvnk2bh5cjib8w.jpg">
+           <img alt="Тибетский спаниель" src="/upload/resize_cache/iblock/0fc/100_100_1/rgkz030nqf43gt36t7jvnk2bh5cjib8w.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Тибетский спаниель
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-mastif%252F%253Fcheck_key%253D425762566adc4521e2fff22ca91093cf%2526ANIMAL_CODE%253Dangliyskiy-mastif%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fangliyskiy-mastif%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmFuZ2xpeXNraXktbWFzdGlmJTJGJTNGY2hlY2tfa2V5JTNENDI1NzYyNTY2YWRjNDUyMWUyZmZmMjJjYTkxMDkzY2YlMjZBTklNQUxfQ09ERSUzRGFuZ2xpeXNraXktbWFzdGlmJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmFuZ2xpeXNraXktbWFzdGlmJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-mastif%252F%253Fcheck_key%253D425762566adc4521e2fff22ca91093cf%2526ANIMAL_CODE%253Dangliyskiy-mastif%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fangliyskiy-mastif%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-mastif%252F%253Fcheck_key%253D425762566adc4521e2fff22ca91093cf%2526ANIMAL_CODE%253Dangliyskiy-mastif%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fangliyskiy-mastif%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "94.199.108.230"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--2a52b6b96ed5cfa693982aa617301eee-->

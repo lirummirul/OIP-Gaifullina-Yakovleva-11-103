@@ -1,0 +1,1293 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'f5d759ccdb87'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Восточно-сибирская лайка, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Восточно-сибирская лайка характеризуется как охотничья порода с задатками ездовой. Это самая крупная из лаек, выведенная на основе эвенкийских, амурских и других промысловых собак Восточной Сибири." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/ae6/ae65dc9e504dc176a7c0dc090eb61be7.jpg" property="og:image"/>
+     <title>
+      Восточно-сибирская лайка: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/vostochno-sibirskaya-layka/" property="og:url"/>
+     <meta content="Восточно-сибирская лайка: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Восточно-сибирская лайка характеризуется как охотничья порода с задатками ездовой. Это самая крупная из лаек, выведенная на основе эвенкийских, амурских и других промысловых собак Восточной Сибири." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/vostochno-sibirskaya-layka/" itemprop="url">
+         <span itemprop="title">
+          Восточно-сибирская лайка
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Восточно-сибирская лайка
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/vostochno-sibirskaya-layka/">
+          Описание
+         </a>
+         <a href="/dog/vostochno-sibirskaya-layka/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/vostochno-sibirskaya-layka/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/vostochno-sibirskaya-layka/photo/">
+          Фото
+         </a>
+         <a href="/dog/vostochno-sibirskaya-layka/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Восточно-сибирская лайка" src="/upload/iblock/429/429bc9c2b87c860844280bf9d0f75935.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/vostochno-sibirskaya-layka/">
+           ВСЛ
+          </a>
+          ,
+          <a href="/dog/vostochno-sibirskaya-layka/">
+           восточник
+          </a>
+         </span>
+         <p>
+          Восточно-сибирская лайка характеризуется как охотничья порода с задатками ездовой. Это самая крупная из лаек, выведенная на основе эвенкийских, амурских и других промысловых собак Восточной Сибири.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="#всл #восточники #восточносибирскаялайка #охотаслайкой" data-fancybox="images" data-link="https://www.instagram.com/p/CBIjPDPKsiB/" data-type="image" data-username="" href="/upload/uf/1ad/1ad9e8ec3e91eb9cb2f6445059bf0ae5.jpg">
+            <img alt="Восточно-сибирская лайка" src="/upload/resize_cache/uf/1ad/293_293_2/1ad9e8ec3e91eb9cb2f6445059bf0ae5.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="#всл #восточники #восточносибирскаялайка #охотаслайкой" data-fancybox="images" data-link="https://www.instagram.com/p/CBIjDkVqyF3/" data-type="image" data-username="" href="/upload/uf/f1e/f1e20f98a257e55e42e17027c4c1b576.jpg">
+            <img alt="Восточно-сибирская лайка" src="/upload/resize_cache/uf/f1e/293_293_2/f1e20f98a257e55e42e17027c4c1b576.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="Малыши
+
+Хотя старший из этих двоих за последние несколько месяцев, конечно, стал существенно самостоятельнее.
+Ему торжественно поручена обязанность по выносу мусора.
+Разрешено гулять на площадке одному (с условием никуда с неё не уходить, чтобы мама видела в окно).
+И сегодня парень ходил в магазин, чтоб вы знали. Сам сгонял за сгущёнкой к оладьям. Сгущёнку принёс, даже сдачу (спасибо продавщице, завязала заботливо в пакетик).
+А ещё категорически противится, когда его называю «малыш», но млеет от удовольствия, когда слышит «птенчик мой»
+Конечно, место жительства играет в этом всём главную роль. Поэтому пользуюсь, пока могу.
+
+#дети #собакадругчеловека #детииживотные #лайка #щенок #детскаяфотография #child #childphotography #dog #puppy #puppydog #восточносибирскаялайка #мурманскаяобласть #lifestyle #lifestylephotography #familyphotography" data-fancybox="images" data-link="https://www.instagram.com/p/CBGw2cVi2MC/" data-type="image" data-username="" href="/upload/uf/8c0/8c078a575993fcf560e85a3633ecdeaf.jpg">
+            <img alt="Восточно-сибирская лайка" src="/upload/resize_cache/uf/8c0/293_293_2/8c078a575993fcf560e85a3633ecdeaf.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/vostochno-sibirskaya-layka/photo/">
+         Все
+            фото восточносибирской лайки
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы восточно-сибирская лайка
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы восточно-сибирская лайка
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер восточно-сибирской лайки
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Охота с восточно-сибирской лайкой
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Воспитание, дрессировка, натаска
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Здоровье и болезни восточно-сибирских лаек
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Цена восточно-сибирской лайки
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Восточно-сибирская лайка
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         СССР
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         XIX век
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         18-23 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 57-64, суки 53-60 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         12-15 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Восточно-сибирская лайка – самая медленно взрослеющая из всех лаек. Полной физической зрелости животные достигают к 2,5-3 годам.
+        </li>
+        <li>
+         Определяющая характеристика породы – отсутствие злобности к человеку при любых обстоятельствах.
+        </li>
+        <li>
+         В центральной части России ВСЛ не так популярны, как их родственники – западно-сибирские лайки, поэтому найти питомник, где племенным разведением занимаются в соответствии с установленными стандартами, не так просто.
+        </li>
+        <li>
+         Порода нуждается в продолжительном выгуле и систематических выездах на охоту, поэтому брать ее представителя в дом просто потому, что «захотелось симпатичную лайку», недопустимо.
+        </li>
+        <li>
+         Управлять поведением и послушанием восточно-сибирской лайки способен только тот, кто водит собаку на охоту и кормит. Авторитет остальных членов семьи лайка не воспринимает, хотя и доброжелательно относится ко всем знакомым людям.
+        </li>
+        <li>
+         В быту восточники неприхотливы: они не нуждаются в услугах грумера, охотно едят любую пищу, предложенную хозяином, и без всякого риска для здоровья обитают в вольере и конуре в зимнее время.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Восточно-сибирская лайка" data-original="/upload/iblock/ae6/ae65dc9e504dc176a7c0dc090eb61be7.jpg">
+          <noscript data-alt="Восточно-сибирская лайка" data-original="/upload/iblock/ae6/ae65dc9e504dc176a7c0dc090eb61be7.jpg">
+           <img alt="Восточно-сибирская лайка" src="/upload/iblock/ae6/ae65dc9e504dc176a7c0dc090eb61be7.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Восточно-сибирская лайка
+          </strong>
+          – обладательница выдающегося чутья, прирожденная охотница, способная добывать лесные трофеи даже без предварительной натаски. Уравновешенные и миролюбивые, восточники не создают проблем в повседневной жизни и не изводят владельца сиюминутными капризами. Единственное место, где собака не прочь «порулить», – это лесные угодья, в которых ВСЛ привыкли ощущать себя на шаг впереди хозяина. Впрочем, все основания для этого у породы имеются – в охоте на пушного зверя и лося восточно-сибирские лайки вне конкуренции.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Восточно-сибирская лайка основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы восточно-сибирская лайка
+        </h2>
+        <p>
+         Современные восточно-сибирские лайки – это потомки промысловых собак, которых издревле разводило коренное население Сибири. Главным занятием предков породы была охота на пушного зверя, так как торговля мехами в России процветала с незапамятных времен и считалась прибыльным ремеслом. Но поскольку плотность населения за Уральским хребтом всегда была небольшой, животные плодились и проживали в относительной изоляции. В конечном итоге это привело к расслоению клана лаек на отродья, различавшиеся между собой рабочими характеристиками и внешними данными.
+        </p>
+        <p>
+         Первую попытку описать собак-промысловиков сделали в конце XIX столетия исследователи Ширинский-Шахматов, Ливеровский и Крестников. После путешествия по Сибири и Забайкалью заводчики выделили 20 типов аборигенных лаек, положив в основу своих описаний географический принцип распространения пород. Что касается полноценной классификации, то ее удалось создать только в 1949 году, когда члены советского общества «Главохота» согласились на стандартизацию животных. Было решено выделить четыре основных породы –
+         <a class="ph" href="/dog/karelo-finskaya-layka/">
+          карело-финскую
+         </a>
+         , русско-европейскую, восточно-сибирскую и
+         <a class="ph" href="/dog/zapadno-sibirskaya-layka/">
+          западно-сибирскую лайку
+         </a>
+         . Причем для восточно-сибирских лаек написали только временный стандарт, так как фактического материала об экстерьерных и рабочих качествах восточников было крайне мало.
+        </p>
+        <p>
+         Своим современным стандартом порода обязана советскому кинологу А. В. Гейцу. За 13 лет работы специалист изучил более восьми тысяч восточно-сибирских лаек и систематизировал их внешние характеристики. Именно по его требованию были установлены границы роста породы, а также индекс растянутости тела собак. Кроме того, был сужен ареал происхождения ВСЛ. Если раньше родиной животных считался, помимо Сибири, еще и Дальний Восток, то после исследования А. В. Гейца, восточную окраину страны из этого списка исключили. Окончательный стандарт, в котором фиксировались конкретные масти породы, а также тип костяка, для восточников утвердили в 1981 году. Им же заводчики и выставочные комиссии руководствуются до сих пор.
+        </p>
+        <h2 id="gl2">
+         Стандарт породы восточно-сибирская лайка
+        </h2>
+        <p>
+         Первоначально образцовыми считались особи с крепким типом конституции. Однако современные правила лояльнее по отношению к животным с сухой мускулатурой. Тем не менее сравнивать на ринге двух собак, находящихся в полярных типах кондиции, недопустимо. Половой диморфизм восточникам тоже присущ: рост породистого кобеля должен составлять не менее 55 и не более 64 см, суки – от 51 до 60 см.
+        </p>
+        <p>
+         Для рабочих ВСЛ важен индекс растянутости тела. У кобелей он колеблется в пределах 104-109, у сук – в рамках 107-112. Определить визуально, какая собака больше подходит для промысловой деятельности, несложно. Для этого достаточно сопоставить рост животного в холке с длиной корпуса. Если вторая величина превышает первую, это хороший признак. Лайки с растянутым телом, достаточным ростом и крепкой конституцией выносливее и легче работают в снежных сугробах. В то же время чересчур крупные, как и слишком низкие особи считаются незавидным приобретением. Первые тяжелее на подъем и с возрастом приобретают рыхлость конституции, вторые быстро устают и плохо работают по многоснежью.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         При осмотре сверху череп имеет клинообразные очертания, напоминающие равносторонний треугольник. Надбровные дуги у породы невыраженные, стоп плавный, лоб практически плоский. У щенков может иметь место выпуклость в лобной зоне (ростовая прилобина), выравнивающаяся к 3-4 годам.
+        </p>
+        <p>
+         По мере взросления голова восточно-сибирской лайки раздается вширь за счет прироста мышечной массы. Морда собаки грубоватая, нормально заполненная в области под глазами, брускового типа. Признаки сырости губ отсутствуют.
+        </p>
+        <h3>
+         Челюсти
+        </h3>
+        <p>
+         Челюсти массивные и широкие с плотно смыкающимися резцами. Прикус премоляров волчьего типа, то есть открытый. Хватка челюстей глубокая и сильная.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Отличительные черты глаз восточно-сибирской лайки – косой разрез век, миндалевидная форма, умеренная посадка (глазные яблоки не навыкате, но и не «утоплены» вглубь глазниц). Радужка коричневого либо темно-карего тона вне зависимости от масти.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Форма уха ВСЛ напоминает равнобедренный треугольник с заостренной либо слегка закругленной вершиной (кончик уха). Постав почти на уровне глаз, вдобавок заметен небольшой развал, когда тыльные края ушей не параллельны друг другу.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Шеи восточно-сибирских лаек могут быть в сечении как округлыми, так и слегка овальными. Постав шеи по отношению к корпусу на уровне угла 40-50°. Длина шеи соответствует длине головы.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Восточно-сибирская лайка – крепкий и в меру «подкачанный» питомец. Характерную для породы растянутость силуэта обеспечивает прямая широкая спина. При этом область поясницы не должна быть чрезмерно длинной. Круп широкий, с умеренной покатостью в задней части. Низ подобранный, со слабо выраженным переходом от грудины к животу.
+        </p>
+        <p>
+         Грудь породы глубокая, крепкая, часто опущенная на пару сантиметров ниже локтей либо достигающая их уровня. Стандартом допускается овальная в сечении грудь, но не приемлема яйцевидная. Важный нюанс: для промысла в заснеженной местности собаки с чересчур развитой грудной клеткой не лучший вариант, так как при вымахе передних лап широкая грудина препятствует развороту лопаток во внешнюю сторону.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Ровные и параллельные передние ноги производят впечатление своим мощным костяком и силой. Плечи в меру косые, углы плечелопаточных сочленений в пределах 90-100°. Локтевые отростки выраженные, смотрящие назад. Пясти недлинные, имеют легкий наклон.
+        </p>
+        <p>
+         Задние конечности без кривизны, параллельные между собой. Отчетливо обозначены углы сочленений. Голени заметно длиннее бедер, плюсны стоят вертикально. Лапы восточников собираются в комок, очертаниями напоминая круг либо овал. Недопустимо присутствие прибылых пальцев на задних лапах.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Серповидный либо свернут в кольцевидную конструкцию. В распрямленном виде кончик находится на уровне скакательных суставов либо короче на 1-2 см.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Прямая ость характеризуется жесткой, грубой структурой. Подшерсток шелковистый, но плотный, выполняющий функцию натуральной фуфайки. На ушах и голове шерстный покров короткий, прилегающий. На шее и плечах волос растет обильнее, переходя в богатый воротник. На холке псовина тоже сравнительно длинная.
+        </p>
+        <p>
+         Ноги ВСЛ покрывает короткий гладкий волос, немного удлиняющийся на их внутренней части и образующий на задних конечностях очесы. Хорошо опушены лапы породы. Особенно это заметно в области пальцев, где волос пробивается миниатюрными щетками. Хвост собаки защищен прямой жесткой шерстью, которая заметно длиннее на внутренней стороне, но при этом не переходит в подвес.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Традиционные масти восточно-европейских лаек: сплошная черная, черно-пегая, рыжая, серая и бурая всех оттенков. Черный с подпалом окрас тоже считается ценным, особенно если это его карамистая разновидность (светлые пятна подпала на черном). Допускаются также сочетания перечисленных мастей с белым.
+        </p>
+        <h3>
+         Возможные пороки
+        </h3>
+        <ul>
+         <li>
+          Отклонения от стандартного роста более чем на 2 см.
+         </li>
+         <li>
+          Хвост «крючком» либо «поленом».
+         </li>
+         <li>
+          Выраженная прямозадость.
+         </li>
+         <li>
+          Размет, косолапость, вывернутые локти.
+         </li>
+         <li>
+          Провислая или горбатая спина.
+         </li>
+         <li>
+          Шея с подбрудком и намного длиннее головы.
+         </li>
+         <li>
+          Радужка любого тона, кроме разрешенных стандартом.
+         </li>
+         <li>
+          Гетерохромия, глаза выпученные либо глубокой посадки с горизонтальным разрезом век.
+         </li>
+         <li>
+          Полустоячие или свисающие уши, поставленные ниже линии глаз.
+         </li>
+         <li>
+          Сырая, тяжелая голова со вздернутой, горбоносой либо острой мордой.
+         </li>
+        </ul>
+        <h2 id="gl3">
+         Характер восточно-сибирской лайки
+        </h2>
+        <p>
+         Чистопородный восточник в повседневной жизни – доброжелательное и миролюбивое создание. Склонность к немотивированное агрессии для породы не характерна, но только если речь идет о человеке и соплеменниках. Мелкая домашняя живность для ВСЛ по-прежнему остается объектом охотничьего вожделения, которую необходимо если не изловить, то хотя бы слегка погонять. Кстати, никакого подобострастия от восточно-сибирских лаек ждать не стоит, воспитать это качество у питомца не получится при всем старании.
+        </p>
+        <p>
+         Истинная лайка-промысловик прислушивается только к наставлениям владельца, а на охоте идеально исполняет команду лишь когда та не идет вразрез с ее собственным мнением. При этом собака не отказывается признавать авторитет хозяина-охотника, но остальных членов семьи воспринимает как равных себе, а то и как существ низшего порядка, если речь идет о детях. На практике это выглядит так: ВСЛ охотно дурачится и играет с домочадцами сколько захочется, но периодически включает «непонимайку», когда от нее чего-то требует не сам хозяин.
+        </p>
+        <p>
+         Восточно-сибирская лайка не самый квалифицированный охранник, хотя ее далеких предков приобщали к сторожевой деятельности. На своей территории животное расслабляется и не пытается контролировать ситуацию. В случае явного нарушения границ собака, конечно, продемонстрирует свое неудовольствие. Но обычно дальше угрожающего ворчания и вздыбленной шерсти на холке дело не заходит. В остальном восточно-сибирских лаек считают мягкохарактерными, хоть и немного обидчивыми питомцами, на которых не стоит слишком давить.
+        </p>
+        <h2 id="gl4">
+         Охота с восточно-сибирской лайкой
+        </h2>
+        <p>
+         В отличие от
+         <a class="ph" href="/dog/zapadno-sibirskaya-layka/">
+          западно-сибирских лаек
+         </a>
+         , восточники у охотников Центральной полосы не так популярны. Причина небольшой распространенности породы заключается отчасти в том, что в работе ее представители обладают меньшей азартностью, чем их сородичи по секции. При этом ВСЛ отличает большая широта поиска, высокая чутьистость и отличная вязкость. Ценным качеством восточно-сибирских лаек является их умение быстро приспосабливаться к меняющимся реалиям. Фактически животное способно охотиться в любых климатических зонах, начиная с таежных дебрей и заканчивая лесостепью.
+        </p>
+        <p>
+         Как и большинство лаек, ВСЛ считаются универсальными охотниками. Однако лучше всего порода работает с лосем, медведем, кабаном и мелкими куньими. Охотничья техника собаки заключается в выслеживании зверя по запаху, облаивании его и задержании до прихода хозяина. Правильный восточник идет по следу молча и подает голос лишь тогда, когда дичь находится в поле зрения. Еще одна фишка породы – поиск рысью, переходящей в галоп и реже – в шаг. На полевых испытаниях таланты промысловых восточно-сибирских лаек оценивают по следующим показателям:
+        </p>
+        <ul>
+         <li>
+          чутье;
+         </li>
+         <li>
+          быстрота и правильность поиска;
+         </li>
+         <li>
+          голос;
+         </li>
+         <li>
+          характер облаивания (никаких истеричных воплей, беготни и бросания на дерево, где сидит белка);
+         </li>
+         <li>
+          слежка и вязкость (упорство в поиске и задержании зверя);
+         </li>
+         <li>
+          послушание;
+         </li>
+         <li>
+          отношение к убитой добыче (разрешается слегка прикусить подстреленную белку, но не рвать).
+         </li>
+        </ul>
+        <p>
+         У каждой лайки – свои предпочтения в охоте. Соответственно, обзаводясь ВСЛ, спокойно воспринимайте тот факт, что степень увлеченности процессом поимки трофеев в разных условиях будет неодинакова. Например, отдельным собакам нравится хардкорная добыча медведя, другие предпочитают ходить на лосей. Кроме того, попробовав работать «по-крупному», восточно-сибирские лайки теряют интерес к мелкой пушной живности и в охоте на белку особого рвения не проявляют.
+        </p>
+        <p>
+         В среде промысловиков считается нежелательным приобщение восточно-сибирской лайки к охоте на зайца. Увлекаясь преследованием косого, собака чересчур быстро удаляется от хозяина и не слышит команд. В результате охотник не имеет возможности догнать питомца, а раззадорившийся пес самостоятельно расправляется с добычей, что в принципе неприемлемо. По этой же причине не рекомендуется позволять восточно-сибирским лайкам бесконтрольно разгуливать по лесу летом. В таких несанкционированных походах собака учится добывать, душить и поедать легкую дичь вроде молодых лосят и зайцев и потом на сезонной охоте уже не придерживается правил, портя добычу зубами.
+        </p>
+        <h2 id="gl5">
+         Воспитание, дрессировка, натаска
+        </h2>
+        <p>
+         С восточно-сибирской лайкой не принято проходить ОКД, но базовые техники управления питомцем освоить придется. Несмотря на то, что в плане повадок лайки близки к дикому предку – волку, корректировать их действия все равно важно. Первая команда в жизни щенка ВСЛ – «Ко мне!». Ее обязан вводить в обиход сам заводчик либо владелец питомника, когда наступает время прикорма новорожденного потомства. В дальнейшем это облегчит обучающий процесс покупателю.
+        </p>
+        <p>
+         По мере подрастания малыша традиционный подзыв можно заменить на подход по свисту хозяина. За своевременный отклик на зов, будь то голосовая команда или свист, питомца следует обязательно поощрить. Помните, что среди охотников ценятся особи, не теряющие связи с человеком на промысле, а также приходящие по первому требованию. Вторая базовая команда – «Нельзя!». Без нее управлять темпераментом четвероногого добытчика на охоте будет невозможно. Команды «Брось!» и «Место!» щенок должен понимать в 3-месячном возрасте. Приучать к ошейнику и поводку также начинают с 3 месяцев.
+        </p>
+        <p>
+         В 5-6 месяцев восточно-сибирскую лайку начинают натаскивать по белке. Причем если дома имеется взрослая опытная лайка, ее желательно тоже подключить к делу. В процессе щенок будет перенимать повадки старшего соплеменника и быстрее научится правильной охоте. С первых же занятий необходимо искоренять традиционные ошибки молодой особи. Профессионально натасканная ВСЛ не должна бросаться на деревья и грызть ветки, где сидит белка. Нельзя также допускать пустого лая и терзания подстреленного зверя. Дисциплинированная собака должна спокойно обнюхать мертвую добычу, иногда чуть прикусить, но не пытаться ее рвать либо есть.
+        </p>
+        <p>
+         Охота на соболя, которую часто практикуют с восточно-сибирскими лайками, считается переходом на более высокий уровень, так как, в отличие от белки, этот пушной зверек уходит от погони более виртуозно. Натаскивать восточника по соболю лучше по первому снегу, когда хорошо видны следы. Оптимальный возраст для этого занятия тот же, что и при работе с белкой, то есть 5-6 месяцев. Более подробно методы натаски породы на различные виды добычи описаны в книге А. В. Гейца «Восточносибирская лайка».
+        </p>
+        <p>
+         Пытаться ходить на лося с лайкой стоит, когда питомцу исполнится год, а лучше два. Оптимальный месяц для первой натаски – сентябрь, когда у диких парнокопытных начинается гон и когда разрешен отстрел самцов. Обычно добыча ведется двумя способами. Первый – это длительное преследование животного лайкой на расстоянии не менее 15 м, без резких выпадов. Второй – азартная гонка, яростное облаивание и активные попытки схватить добычу за морду и шею.
+        </p>
+        <p>
+         В обоих случаях облаивание должно производиться с головы потенциальной жертвы. Если восточник подает голос, держась на удалении от лося, и при первом же развороте сохатого убегает, это означает, что собака либо очень молода и пока не выработала правильную технику, либо просто не обладает способностями к работе с крупной добычей. Хорошей лосятницей считается лайка, способная идти за парнокопытным не менее 5 часов и делать по несколько подсечек (остановка сохатого и облаивание его с головы). Статус профи присваивается единичным особям, готовым идти за лосем и ставить подсечки до утра следующих суток.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важно:
+         </strong>
+         ходить на белок, соболей и ондатр лучше с одной лайкой, поскольку присутствие «напарника» будет отвлекать животное от процесса. При этом охотиться на лося, кабана и медведя рекомендуется с парой восточников.
+        </p>
+        <h2 id="gl6">
+         Содержание и уход
+        </h2>
+        <p>
+         Восточно-сибирская лайка – собака с богатырским иммунитетом и выработанной на генетическом уровне закалкой, поэтому даже новорожденных щенков с их родительницей специалисты рекомендуют не брать в тепло, а держать в неотапливаемом помещении. Нередко можно услышать рассказы о том, как легко восточники приспосабливаются к жизни в квартире. В то же время содержание породы в «тепличных» условиях не одобряется заводчиками, да и самому животному на пользу не идет. Здоровая рабочая собака способна обитать во дворе, где для нее должен быть построен прочный вольер с теплой будкой, которую лучше устанавливать на солнечной стороне.
+        </p>
+        <p>
+         Содержание лайки на цепи допустимо, как временное явление, пока не обустроен вольер. Причем цепь должна быть закреплена на подвижном блоке, что позволит животному свободно перемещаться по территории двора. Выводить щенка на прогулку в людные места нужно после вакцинации от чумки и энтерита. До получения прививок выносить малыша подышать тоже необходимо, но в такие локации, где будут исключены контакты с другими собаками и людьми. Лучше всего гулять с подопечным в лесных угодьях и по лугам, что является подготовкой к будущей охоте. Продолжительность променадов должна составлять минимум 2 часа в день, поскольку чем дольше щенок находится на солнце, тем меньше у него шансов заполучить рахит.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Щенков восточно-сибирской лайки нельзя купать в принципе. Взрослых особей мыть без особой надобности тоже не стоит, поскольку вместе с шампунем и водой удаляется защитная жировая смазка с кожи и шерсти. Испачкавшегося питомца достаточно протереть влажной тряпкой, а грязные лапы ополоснуть в чуть теплой воде без применения собачьей косметики. Настоятельно не рекомендуется мыть восточно-сибирскую лайку накануне выставки, поскольку лишенный жирового слоя волос выглядит менее эстетично и есть риск получить от судей низкий балл за экстерьер.
+        </p>
+        <p>
+         Расчесывать дворовую ВСЛ нужно дважды в неделю в период линьки и раз в неделю во все остальное время. С квартирными лайками частоту расчесываний придется увеличить, если не хотите, чтобы жилище превратилось в склад для шерсти. Если собака постоянно и продуктивно охотится, «педикюром» когтей разрешается пренебречь, поскольку пластина естественным образом стачивается. Восточникам, которые чаще разъезжают по выставкам, чем работают, когти необходимо аккуратно подстригать. Уши восточно-сибирской лайки проверяют после каждого похода в лес либо пару раз в неделю, если собака проводит время во дворе.
+        </p>
+        <p>
+         Удалять избыток серы внутри ушной воронки лучше смоченной в гигиеническом лосьоне тканью. Обязательные меры – обработка шерсти от клещей и эктопаразитов, а также периодическое кипячение тюфячка, на котором животное спит. Крайне важно следить за здоровьем глаз восточно-сибирской лайки и убирать из них загрязнения чистой тряпочкой, увлажненной крепким охлажденным чаем. Если глаза внезапно покраснели или начали слезиться, попробуйте наложить на нижнее веко тетрациклиновую мазь. Если за пару дней улучшений не наступило, лайку придется отвезти к ветеринару.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Взрослых особей кормят дважды в день, причем во время охотничьего сезона еду делят неравными частями: утром питомец съедает ⅓ суточной нормы, вечером, но не ранее чем через час после работы по зверю, – оставшиеся ⅔. Как для всякой промысловой собаки, основой рациона для восточно-сибирской лайки является мясо. В целях экономии в ход идет все добытое на охоте – разделанные беличьи тушки, мясо и внутренности ондатры, а также любые другие съедобные трофеи. Во время активной промысловой деятельности доля животной пищи в суточном меню ВСЛ должна достигать 600-800 г.
+        </p>
+        <p>
+         Восточно-сибирские лайки – неприхотливые питомцы, не нуждающиеся в пищевом разнообразии. Наряду с мясом им можно давать и более дешевые продукты – морскую рыбу, из которой извлечены крупные кости (можно провернуть через мясорубку), крупяные каши, субпродукты, ржаной хлеб, простоквашу, куриные яйца, овощи (кроме бобовых), фрукты, молодую зелень. Некоторые владельцы учат питомцев находить съедобные плоды и поедать их с куста. В дальнейшем, если собака потеряется на охоте, она сможет самостоятельно прокормиться несколько дней.
+        </p>
+        <p>
+         Обязательные продукты в рационе щенков восточно-сибирской лайки – творог и хрящевые ткани, без которых невозможно формирование прочного костяка. Первый прикорм в жизни восточника – жидкие каши на молоке (манная, протертая геркулесовая). Их лучше давать месячным щенкам. Полугодовалым подросткам разрешается вводить в меню каши из цельных круп – рисовую, овсяную, перловую. Готовят их на мясо-костном бульоне с добавлением небольшого количества соли, нерафинированного растительного масла либо рыбьего жира, а также овощей – капусты, моркови, тыквы, кабачков. Полезно также подкармливать растущую ВСЛ пророщенными овсом и пшеницей. В качестве поощрительного лакомства подойдут несоленый сыр, сливочное масло, ржаные сухарики. Источником необходимых витаминов могут служить листья одуванчика, крапива (ошпаренная кипятком), ламинария или готовые витаминные комплексы из ветаптеки.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важно:
+         </strong>
+         речную рыбу и печень восточно-сибирским лайкам разрешается давать только термически обработанными, так как данные продукты часто бывают заражены глистами.
+        </p>
+        <h2 id="gl7">
+         Здоровье и болезни восточно-сибирских лаек
+        </h2>
+        <p>
+         Восточно-сибирские лайки – собаки-здоровяки, не имеющие предрасположенности к большинству наследственных недугов. Порода не способна противостоять только вирусным заболеваниям – чумке, энтериту и бешенству, причем более всего им подвержены именно рабочие особи. Спасением от перечисленных проблем продолжает оставаться своевременное вакцинирование – в 2-2,5 месяца щенков уже разрешается прививать от собачьей чумы, в год – от бешенства.
+        </p>
+        <p>
+         К моменту вакцинации щенок должен быть заранее проглистогонен – желательно сделать это за пару недель до процедуры, чтобы у организма было время на восстановление. После прививок животное находится на карантине от 14 до 22 дней. Его следует усиленно кормить, оберегать от переохлаждения и выгуливать только в безлюдных местах, где нет других собак. Ну и конечно, не стоит забывать, что введение вакцины придется повторять, а обработка питомца антигельминтными препаратами должна иметь место на протяжении всей жизни лайки.
+        </p>
+        <h2 id="gl8">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Если щенок приобретается для охоты по конкретному зверю, уточните у продавца, каковы успехи в этом деле у родителей малыша. Например, для лосиной охоты лучше брать потомство от лаек-лосятниц и нежелательно от восточников, работающих строго по белке.
+         </li>
+         <li>
+          Добычливость охоты у кобелей и сук восточно-сибирской лайки практически не различается. Однако кобели чаще теряются в лесу, поскольку отвлекаются на запахи течных сук, которые могут находиться на расстоянии нескольких километров. Соответственно, если не готовы тратить часы, а то и сутки на поиски заблудившегося пса, выбирайте «девочек».
+         </li>
+         <li>
+          Делайте выбор в пользу щенков из весенних пометов. Такие малыши здоровее, поскольку растут и развиваются в теплое, солнечное время года.
+         </li>
+         <li>
+          Уточните возраст производителей помета. Племенные суки восточно-сибирской лайки готовы к вязке в полтора года, а кобели к двум годам. Потомство от слишком юных родителей, как и от чересчур пожилых, имеет слабое здоровье. Оптимально, когда зрелых и старых кобелей (6-10 лет) вяжут с 3-летними суками и наоборот – молодых кобелей-двухлеток сводят с 6-9-летними лайками.
+         </li>
+         <li>
+          Оцените общее состояние щенков. Редкая шерсть, сухой нос и признаки намечающегося рахита сигнализируют о том, что выхаживать такого малыша придется долго.
+         </li>
+        </ul>
+        <h2 id="gl9">
+         Цена восточно-сибирской лайки
+        </h2>
+        <p>
+         Средний ценник на щенков восточно-сибирской лайки составляет 15 000 – 20 000 рублей, если речь идет о потомстве от плановых вязок, с пакетом документов и от рабочих родителей с дипломами. Единственный нюанс: за породой придется в прямом смысле поохотиться, так как в европейской части России заводчиков, занимающихся племенным разведением восточников, единицы. Основное поголовье ВСЛ сосредоточено в Сибири и на Дальнем Востоке, поэтому готовьтесь прокатиться по таким городам, как Иркутск, Красноярск, Благовещенск. Также разведением породы занимаются в южных областях страны – Воронежской, Белгородской.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения восточносибирской лайки на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/vostochno-sibirskaya-layka/forum/">
+        Перейти на
+        форум восточносибирской лайки
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Восточно-сибирская лайка" src="/upload/iblock/429/429bc9c2b87c860844280bf9d0f75935.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/vostochno-sibirskaya-layka/">
+          Восточно-сибирская лайка
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/vostochno-sibirskaya-layka/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/vostochno-sibirskaya-layka/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/vostochno-sibirskaya-layka/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/vostochno-sibirskaya-layka/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/vostochno-sibirskaya-layka/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/khanaanskaya-sobaka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Ханаанская собака" data-original="/upload/resize_cache/iblock/abb/100_100_1/pcpmnfad7glt0qgr4yacbf7uib1j58f0.jpg">
+          <noscript data-alt="Ханаанская собака" data-original="/upload/resize_cache/iblock/abb/100_100_1/pcpmnfad7glt0qgr4yacbf7uib1j58f0.jpg">
+           <img alt="Ханаанская собака" src="/upload/resize_cache/iblock/abb/100_100_1/pcpmnfad7glt0qgr4yacbf7uib1j58f0.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Ханаанская собака
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/burbul/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бурбуль" data-original="/upload/resize_cache/iblock/ac5/100_100_1/ac5c35296db807ff0bade5b9b8c98b15.jpg">
+          <noscript data-alt="Бурбуль" data-original="/upload/resize_cache/iblock/ac5/100_100_1/ac5c35296db807ff0bade5b9b8c98b15.jpg">
+           <img alt="Бурбуль" src="/upload/resize_cache/iblock/ac5/100_100_1/ac5c35296db807ff0bade5b9b8c98b15.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бурбуль
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/mittelshnautser/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Миттельшнауцер" data-original="/upload/resize_cache/iblock/075/100_100_1/07530c91362e094d1e47898176bbda4e.jpg">
+          <noscript data-alt="Миттельшнауцер" data-original="/upload/resize_cache/iblock/075/100_100_1/07530c91362e094d1e47898176bbda4e.jpg">
+           <img alt="Миттельшнауцер" src="/upload/resize_cache/iblock/075/100_100_1/07530c91362e094d1e47898176bbda4e.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Миттельшнауцер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/angliyskiy-koker-spaniel/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Английский кокер-спаниель" data-original="/upload/resize_cache/iblock/ed9/100_100_1/ed93b033c39f22c5b594c0c80f34f8be.jpg">
+          <noscript data-alt="Английский кокер-спаниель" data-original="/upload/resize_cache/iblock/ed9/100_100_1/ed93b033c39f22c5b594c0c80f34f8be.jpg">
+           <img alt="Английский кокер-спаниель" src="/upload/resize_cache/iblock/ed9/100_100_1/ed93b033c39f22c5b594c0c80f34f8be.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Английский кокер-спаниель
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fvostochno-sibirskaya-layka%252F%253Fcheck_key%253D95bd87aa6b6cbcef81e79422a9cc71b2%2526ANIMAL_CODE%253Dvostochno-sibirskaya-layka%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fvostochno-sibirskaya-layka%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRnZvc3RvY2huby1zaWJpcnNrYXlhLWxheWthJTJGJTNGY2hlY2tfa2V5JTNEOTViZDg3YWE2YjZjYmNlZjgxZTc5NDIyYTljYzcxYjIlMjZBTklNQUxfQ09ERSUzRHZvc3RvY2huby1zaWJpcnNrYXlhLWxheWthJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRnZvc3RvY2huby1zaWJpcnNrYXlhLWxheWthJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fvostochno-sibirskaya-layka%252F%253Fcheck_key%253D95bd87aa6b6cbcef81e79422a9cc71b2%2526ANIMAL_CODE%253Dvostochno-sibirskaya-layka%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fvostochno-sibirskaya-layka%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fvostochno-sibirskaya-layka%252F%253Fcheck_key%253D95bd87aa6b6cbcef81e79422a9cc71b2%2526ANIMAL_CODE%253Dvostochno-sibirskaya-layka%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fvostochno-sibirskaya-layka%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "95.220.230.79"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--e4159543a126ede4450f451851f70b4b-->

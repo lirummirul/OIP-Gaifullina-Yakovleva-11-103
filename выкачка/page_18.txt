@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'225732a3fb41'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Английская овчарка, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Английская овчарка – универсальная рабочая порода из США, родственная бордер-колли. Ведет свое происхождение от собак английских и шотландских переселенцев. Как самостоятельная пастушья порода признана только клубом федерации UKC." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/b4a/438kijt1fwen90ae5qezmi18ggeimsp9.jpg" property="og:image"/>
+     <title>
+      Английская овчарка: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/angliyskaya-ovcharka/" property="og:url"/>
+     <meta content="Английская овчарка: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Английская овчарка – универсальная рабочая порода из США, родственная бордер-колли. Ведет свое происхождение от собак английских и шотландских переселенцев. Как самостоятельная пастушья порода признана только клубом федерации UKC." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/angliyskaya-ovcharka/" itemprop="url">
+         <span itemprop="title">
+          Английская овчарка
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Английская овчарка
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/angliyskaya-ovcharka/">
+          Описание
+         </a>
+         <a href="/dog/angliyskaya-ovcharka/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/angliyskaya-ovcharka/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/angliyskaya-ovcharka/photo/">
+          Фото
+         </a>
+         <a href="/dog/angliyskaya-ovcharka/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Английская овчарка" src="/upload/iblock/f29/1i9sqzuakrb2z7u6lt1rl11gq5fe45kf.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Английская овчарка – универсальная рабочая порода из США, родственная бордер-колли. Ведет свое происхождение от собак английских и шотландских переселенцев. Как самостоятельная пастушья порода признана только клубом федерации UKC.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="A few woodlanders on their daily romp. 🪵" data-fancybox="images" data-link="https://www.instagram.com/p/DDyPsbcuysq/" data-type="image" data-username="thenubandthetails" href="/upload/uf/15d/yygn5ohex2yisc6u49eas9dm5w58ickv.jpg">
+            <img alt="Английская овчарка" src="/upload/resize_cache/uf/15d/293_293_2/yygn5ohex2yisc6u49eas9dm5w58ickv.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="it is with a heavy heart that i announce Nesha’s departure from our household. this has been a thought for a while now, so it’s not a sudden decision. it is an incredibly heartbreaking one though. we are doing what’s best for her. she will be a single dog and be spoiled rotten. the reality is she deserves more than we can give her and she will thrive as a single dog. as my physical health continues to be disabling i may need another service dog a few years before parker retires. we realistically can’t own 4 dogs right now. but the main reasoning is because this family can give her what she needs and more. as much as this hurts i know that this family will love her more than anything. they will exercise her a LOT. runs, bikejoring, swimming. she’ll get it all. this is something that’s been weighing on me recently and i’ve been trying to process my emotions. i just have to understand that this is truly the best thing for her. we will get updates and pictures! any and all hate will be removed immediately. you’re gonna have an amazing rest of your life little lady, i’m heartbroken it won’t be with us but i’m grateful to know that it will be the best thing for you and that you will be happy.💜" data-fancybox="images" data-link="https://www.instagram.com/p/DDST1s7ROm6/" data-type="image" data-username="theroyalherders" href="/upload/uf/a19/evqxutu2ioy3htrcxcikw21i53g04mk1.jpg">
+            <img alt="Английская овчарка" src="/upload/resize_cache/uf/a19/293_293_2/evqxutu2ioy3htrcxcikw21i53g04mk1.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="Made with AI.Kidding. But, Maine is beautiful enough, I'd believe it 😄" data-fancybox="images" data-link="https://www.instagram.com/p/C8xOxzzpnbs/" data-type="image" data-username="georgiethecollie" href="/upload/uf/f96/lmkw372nubzdav1idoansn27kx50zpg7.jpg">
+            <img alt="Английская овчарка" src="/upload/resize_cache/uf/f96/293_293_2/lmkw372nubzdav1idoansn27kx50zpg7.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/angliyskaya-ovcharka/photo/">
+         Все
+            фото английской овчарки
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы английская овчарка
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы английская овчарка
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер английской овчарки
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни английских овчарок
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена английской овчарки
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Английская овчарка
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         США
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 20-29 кг, суки 18-23 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 48-58 см, суки 46-56 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         10-14 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Первое название английских овчарок, под которым их зарегистрировали в 1927 году, – американская фермерская собака.
+        </li>
+        <li>
+         У представителей породы развит пастушеский инстинкт. В обычной жизни он выражается в легком покусывании детей и мелких домашних питомцев за ноги.
+        </li>
+        <li>
+         Все особи нуждаются в ранних умственных и физических нагрузках. Социализация и дрессировка повзрослевших овчарок успеха, как правило, не приносит.
+        </li>
+        <li>
+         Вторая страсть американской фермерской собаки, помимо пастушеской деятельности, – спорт. При определенном старании из животного может получиться чемпион по аджилити, флайболу и обидиенс.
+        </li>
+        <li>
+         У английских овчарок довольно пахучая шерсть. Особенно интенсивно волос пахнет при намокании.
+        </li>
+        <li>
+         В США порода позиционировалась как умеющая взбираться на деревья. В печатных источниках 1950-х годов владельцам английских овчарок рекомендовали использовать их в поимке опоссумов и белок.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Английская овчарка" data-original="/upload/iblock/b4a/438kijt1fwen90ae5qezmi18ggeimsp9.jpg">
+          <noscript data-alt="Английская овчарка" data-original="/upload/iblock/b4a/438kijt1fwen90ae5qezmi18ggeimsp9.jpg">
+           <img alt="Английская овчарка" src="/upload/iblock/b4a/438kijt1fwen90ae5qezmi18ggeimsp9.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Английская овчарка
+          </strong>
+          – пастух-универсал, обладающий внушительным списком дополнительных собачьих квалификаций. Уважение этого лохматого трудоголика придется заслужить, зато в дальнейшем авторитет хозяина остается величиной постоянной и непререкаемой. Рабочее прошлое породы делает жизнь с ее представителями активной и наполненной. Английская овчарка – собака не для совместного отдыха на диване. Это серьезный, любознательный и заряженный энергией партнер, с интересами которого придется считаться.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Английская овчарка основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы английская овчарка
+        </h2>
+        <p>
+         Своим происхождением английские овчарки обязаны первым американским поселенцам. Перебравшись в Новый Свет, те привезли с собой собственных питомцев. Скоро выяснилось, что европейские собаки обладают слишком узкими специализациями и для работы на фермах мало подходят, так что фермерам пришлось создавать идеальную собаку самостоятельно.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок английской овчарки" data-fancybox="gallery" href="/upload/iblock/bfc/bz9mjh7zbgmht6iufq84hbnt1hg38mnn.jpg" title="Щенок английской овчарки">
+          <div class="lazy-load" data-alt="Щенок английской овчарки" data-class="article_pic" data-original="/upload/resize_cache/iblock/bfc/412_2150_1/bz9mjh7zbgmht6iufq84hbnt1hg38mnn.jpg">
+           <noscript data-alt="Щенок английской овчарки" data-class="article_pic" data-original="/upload/resize_cache/iblock/bfc/412_2150_1/bz9mjh7zbgmht6iufq84hbnt1hg38mnn.jpg">
+            <img alt="Щенок английской овчарки" class="article_pic" height="292" src="/upload/resize_cache/iblock/bfc/412_2150_1/bz9mjh7zbgmht6iufq84hbnt1hg38mnn.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок английской овчарки
+         </div>
+        </div>
+        <p>
+         При выведении породы делалась ставка на ее универсальность в работе. Правильный четвероногий помощник должен был и за стадом присмотреть, и ранчо от злоумышленников защитить, и кроликов, уничтожавших урожай на полях, истребить. На стыке XVIII-XIX веков такие качества были жизненно необходимы, так как фермерство играло в экономике Штатов весомую роль.
+        </p>
+        <p>
+         Точных сведений о породах, подаривших гены американской фермерской собаке, не сохранилось. Известны лишь некоторые предки, среди которых оказались
+         <a class="ph" href="/dog/border-kolli/">
+          бордер-колли
+         </a>
+         и старотипные
+         <a class="ph" href="/dog/kolli-dlinnoshyerstnyy/">
+          шотландские колли
+         </a>
+         . Именно их часто вязали со сторожевыми псами, чтобы усилить охранные способности потомства.
+        </p>
+        <p>
+         К середине XX столетия семейные фермы изжили себя, а вместе с ними утратили востребованность и английские овчарки. Универсальных помощников «для всего» вытеснили более узкоспециализированные и эффектные питомцы. Однако полностью порода не исчезла, так как вовремя привлекла интерес профессиональных заводчиков. При этом ее основное поголовье по-прежнему сосредоточено на североамериканском континенте и редко встречается за его пределами.
+        </p>
+        <h2 id="gl2">
+         Стандарт породы английская овчарка
+        </h2>
+        <p>
+         Американская фермерская собака – питомец средних габаритов с выраженным половым диморфизмом. Суки не только ниже кобелей ростом, но и смотрятся менее фактурно, в том числе из-за более «бедного» шерстного покрова. Неспециалист легко перепутает английскую овчарку с
+         <a class="ph" href="/dog/border-kolli/">
+          бордер-колли
+         </a>
+         , хотя подопечные американских фермеров гораздо плотнее и коренастее европейских предков.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Череп округлый, среднего размера, с удлиненной мордой, плавно сужающейся по направлению к носу.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Ушное полотно держится в полустоячем положении, кончик свисает книзу. Сами уши удалены друг от друга.
+        </p>
+        <h3>
+         Мочка
+        </h3>
+        <p>
+         Крупная, с умеренно широкими ноздрями. Классический цвет мочки – черный. Исключение – особи соболиного окраса, у которых носы коричневого оттенка.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Овальной формы, с карим оттенком радужки.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Изогнутая и мускулистая.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда английской овчарки" data-fancybox="gallery" href="/upload/iblock/a1f/0cs1smhops25zvt3zj0u8e65nfyejqpk.jpg" title="Морда английской овчарки">
+          <div class="lazy-load" data-alt="Морда английской овчарки" data-class="article_pic" data-original="/upload/resize_cache/iblock/a1f/1024_2150_1/0cs1smhops25zvt3zj0u8e65nfyejqpk.jpg">
+           <noscript data-alt="Морда английской овчарки" data-class="article_pic" data-original="/upload/resize_cache/iblock/a1f/1024_2150_1/0cs1smhops25zvt3zj0u8e65nfyejqpk.jpg">
+            <img alt="Морда английской овчарки" class="article_pic" src="/upload/resize_cache/iblock/a1f/1024_2150_1/0cs1smhops25zvt3zj0u8e65nfyejqpk.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда английской овчарки
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Порода характеризуется достаточно рыхлым и коренастым сложением. Тело собаки несколько растянуто в длину. Спина ровная, причем остается таковой и в движении. Грудная клетка глубокая.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Передняя пара ног отличается прямым поставом. Задние конечности слегка изогнуты.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         В меру длинный, загнутый кверху в движении и опущенный ниже спины, когда животное находится в статичном состоянии.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Для английских овчарок типичны прямой, чуть курчавый или волнистый шерстный покров. Шерсть короткая на передней части лап и морде, средней длины – на теле и хвосте. У кобелей богаче украшающий волос, что делает их экстерьер выразительнее.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Классические вариации окраса – двухцветные, но трехцветные разновидности также приемлемы. Сочетания цветов, в которые может быть окрашена шерсть особей любого пола: черный, подпалый, соболиный, белый.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важный момент:
+         </strong>
+         при экспонировании породных кобелей и сук на выставке учитывается не только экстерьер, но и результаты рабочих испытаний, прохождение которых для породы обязательно.
+        </p>
+        <h2>
+         Фото английской овчарки
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/30c/jekti1jlna0gvyrdi35swi4e6vu3kon1.jpg" title="">
+           <div class="lazy-load" data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/30c/380_264_2/jekti1jlna0gvyrdi35swi4e6vu3kon1.jpg">
+            <noscript data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/30c/380_264_2/jekti1jlna0gvyrdi35swi4e6vu3kon1.jpg">
+             <img alt="Английская овчарка" class="article_pic" src="/upload/resize_cache/iblock/30c/380_264_2/jekti1jlna0gvyrdi35swi4e6vu3kon1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/947/51rb6ho5dbohc1c9b9sedpiqso2kgnbw.jpg" title="">
+           <div class="lazy-load" data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/947/380_264_2/51rb6ho5dbohc1c9b9sedpiqso2kgnbw.jpg">
+            <noscript data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/947/380_264_2/51rb6ho5dbohc1c9b9sedpiqso2kgnbw.jpg">
+             <img alt="Английская овчарка" class="article_pic" src="/upload/resize_cache/iblock/947/380_264_2/51rb6ho5dbohc1c9b9sedpiqso2kgnbw.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8fd/lfpxyjrf6i3x4oz1zrcybhlyabmnkvp8.jpg" title="">
+           <div class="lazy-load" data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/8fd/380_264_2/lfpxyjrf6i3x4oz1zrcybhlyabmnkvp8.jpg">
+            <noscript data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/8fd/380_264_2/lfpxyjrf6i3x4oz1zrcybhlyabmnkvp8.jpg">
+             <img alt="Английская овчарка" class="article_pic" src="/upload/resize_cache/iblock/8fd/380_264_2/lfpxyjrf6i3x4oz1zrcybhlyabmnkvp8.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/630/dhgmd82gghdq0n8eg8rhtlip9hn3fop7.jpg" title="">
+           <div class="lazy-load" data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/630/380_264_2/dhgmd82gghdq0n8eg8rhtlip9hn3fop7.jpg">
+            <noscript data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/630/380_264_2/dhgmd82gghdq0n8eg8rhtlip9hn3fop7.jpg">
+             <img alt="Английская овчарка" class="article_pic" src="/upload/resize_cache/iblock/630/380_264_2/dhgmd82gghdq0n8eg8rhtlip9hn3fop7.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/365/m2tlhqqvzmw79718c6co9lzx13jpqas8.jpg" title="">
+           <div class="lazy-load" data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/365/380_264_2/m2tlhqqvzmw79718c6co9lzx13jpqas8.jpg">
+            <noscript data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/365/380_264_2/m2tlhqqvzmw79718c6co9lzx13jpqas8.jpg">
+             <img alt="Английская овчарка" class="article_pic" src="/upload/resize_cache/iblock/365/380_264_2/m2tlhqqvzmw79718c6co9lzx13jpqas8.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/512/c4dkzn330xm64h79r56a97leqhyjgkjm.jpg" title="">
+           <div class="lazy-load" data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/512/380_264_2/c4dkzn330xm64h79r56a97leqhyjgkjm.jpg">
+            <noscript data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/512/380_264_2/c4dkzn330xm64h79r56a97leqhyjgkjm.jpg">
+             <img alt="Английская овчарка" class="article_pic" src="/upload/resize_cache/iblock/512/380_264_2/c4dkzn330xm64h79r56a97leqhyjgkjm.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/56d/0aret2b3q8x17sccsis1he601gott7ul.jpg" title="">
+           <div class="lazy-load" data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/56d/380_264_2/0aret2b3q8x17sccsis1he601gott7ul.jpg">
+            <noscript data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/56d/380_264_2/0aret2b3q8x17sccsis1he601gott7ul.jpg">
+             <img alt="Английская овчарка" class="article_pic" src="/upload/resize_cache/iblock/56d/380_264_2/0aret2b3q8x17sccsis1he601gott7ul.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/36f/1dr2rd7r4gnkd9dofqb1lqv8bn3b0arc.jpg" title="">
+           <div class="lazy-load" data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/36f/380_264_2/1dr2rd7r4gnkd9dofqb1lqv8bn3b0arc.jpg">
+            <noscript data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/36f/380_264_2/1dr2rd7r4gnkd9dofqb1lqv8bn3b0arc.jpg">
+             <img alt="Английская овчарка" class="article_pic" src="/upload/resize_cache/iblock/36f/380_264_2/1dr2rd7r4gnkd9dofqb1lqv8bn3b0arc.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/3ba/egqc8ejlh0fcsn0bptoi1t12b4ir7pze.jpg" title="">
+           <div class="lazy-load" data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/3ba/380_264_2/egqc8ejlh0fcsn0bptoi1t12b4ir7pze.jpg">
+            <noscript data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/3ba/380_264_2/egqc8ejlh0fcsn0bptoi1t12b4ir7pze.jpg">
+             <img alt="Английская овчарка" class="article_pic" src="/upload/resize_cache/iblock/3ba/380_264_2/egqc8ejlh0fcsn0bptoi1t12b4ir7pze.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер английской овчарки
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Что может быть лучше обнимашек с хозяйкой" data-fancybox="gallery" href="/upload/iblock/1e4/dlyf2ry6c0stsonds3rdai67pusyfnct.jpg" title="Что может быть лучше обнимашек с хозяйкой">
+          <div class="lazy-load" data-alt="Что может быть лучше обнимашек с хозяйкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/1e4/412_2150_1/dlyf2ry6c0stsonds3rdai67pusyfnct.jpg">
+           <noscript data-alt="Что может быть лучше обнимашек с хозяйкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/1e4/412_2150_1/dlyf2ry6c0stsonds3rdai67pusyfnct.jpg">
+            <img alt="Что может быть лучше обнимашек с хозяйкой" class="article_pic" height="515" src="/upload/resize_cache/iblock/1e4/412_2150_1/dlyf2ry6c0stsonds3rdai67pusyfnct.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Что может быть лучше обнимашек с хозяйкой
+         </div>
+        </div>
+        <p>
+         В сравнении с другими пастушьими породами, американские фермерские собаки отличаются большим добродушием и послушанием. При этом они настоящие перфекционисты в вопросах иерархии и порядка. Слегка прикусить конечность распоясавшемуся коту или облаять покинувшего песочницу ребенка – дело само собой разумеющееся.
+        </p>
+        <p>
+         В обычной жизни английскую овчарку интересует все новое и незнакомое, если только это «неизвестное явление» – не человек, ступивший на ее территорию. К незнакомцам «хвост» умеренно-подозрителен. Оставив его за сторожа, можно не переживать за благополучие имущества – отпор неизвестным будет дан серьезный.
+        </p>
+        <p>
+         Няньки для детей из «англичанина» тоже не получится. Терпеть младшее поколение – святая обязанность животного. Однако остальное, включая участие в детских играх, – для потомков
+         <a class="ph" href="/dog/border-kolli/">
+          бордер-колли
+         </a>
+         за гранью. По этой причине в дом с малышами такого четвероногого друга лучше не приводить.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важный момент:
+         </strong>
+         все представители породы – питомцы одного хозяина. Смену дома и окружения пес переживает невероятно остро. В исключительных случаях овчарка так и не привыкает к новой жизни, впадая в жесткую депрессию.
+        </p>
+        <p>
+         Современные английские овчарки такие же замечательные пастухи, как и их предки сто лет назад. Им можно доверить любую живность – от крупного рогатого скота до цыплят. Соответственно, лучший хозяин для лохматого фермера – обладатель небольшого хозяйства, в котором требуется четверолапый помощник.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Несмотря на отличные способности к обучению, английским овчаркам необходима твердая рука. Природная уверенность животного в своих силах и тяга к самостоятельному принятию решений могут тормозить процесс дрессировки. Как итог: заниматься воспитанием собаки должен тот человек, в котором она признает лидера.
+        </p>
+        <p>
+         Заинтересовывать подопечного не придется. Потомки
+         <a class="ph" href="/dog/border-kolli/">
+          бордер-колли
+         </a>
+         от природы любопытны, обожают открывать для себя что-то новое и работать в паре с хозяином. Позитивные подкрепления в обучении не должны использоваться чрезмерно. Правильная английская овчарка работает не за лакомства и ласку, а на правах младшего партнера.
+        </p>
+        <p class="legenda">
+         <strong>
+          К сведению:
+         </strong>
+         одна из главных особенностей породы – необходимость ранней социализации и обучения. Это тот случай, когда наверстать упущенное время не получится, как и переучить четвероногого друга.
+        </p>
+        <p>
+         Животные, которым не привили нормы «этикета», могут превратить жизнь владельца в вечную борьбу. Самые незначительные недостатки таких особей – разрушительное поведение в доме и методичный террор остальных представителей фауны.
+        </p>
+        <p>
+         В целом английская овчарка – собака для свободных и активных. Это значит, что дрессировку придется постоянно разбавлять физическими упражнениями – играми, спортом, просто пробежками. Среди своих соплеменников «англичанин» – пожалуй, самый энергичный «хвост», выводившийся для интенсивной и продолжительной работы. Невозможность расходовать внутренний ресурс его очень угнетает. Лишенный достаточной нагрузки пес становится гиперактивным, непослушным, тревожным.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Английская овчарка за работой" data-fancybox="gallery" href="/upload/iblock/589/w0xxs2tqsdfp5fy3qfq8z32dj1r3nkgo.jpg" title="Английская овчарка за работой">
+          <div class="lazy-load" data-alt="Английская овчарка за работой" data-class="article_pic" data-original="/upload/resize_cache/iblock/589/1024_2150_1/w0xxs2tqsdfp5fy3qfq8z32dj1r3nkgo.jpg">
+           <noscript data-alt="Английская овчарка за работой" data-class="article_pic" data-original="/upload/resize_cache/iblock/589/1024_2150_1/w0xxs2tqsdfp5fy3qfq8z32dj1r3nkgo.jpg">
+            <img alt="Английская овчарка за работой" class="article_pic" src="/upload/resize_cache/iblock/589/1024_2150_1/w0xxs2tqsdfp5fy3qfq8z32dj1r3nkgo.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английская овчарка за работой
+         </div>
+        </div>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         Породе подходит как квартирное, так и вольерное содержание – разумеется, и первое, и второе при условии интенсивных выгулов дважды в день. Щенка английской овчарки ненавязчиво приучают к вольеру с 4,5-5 месяцев и только в теплое время года. Приучение сочетают с позитивным подкреплением. Например, ставят в вольер миску с едой, чтобы щенок самостоятельно забегал внутрь. В условиях средней полосы вольерная постройка должна быть с тремя глухими стенами, которые защитят ее обитателя от сквозняков и ветра.
+        </p>
+        <p>
+         И все же идеальный дом для английской овчарки – просторный огороженный двор частного коттеджа, где она сможет свободно передвигаться. Жилье подопечному лучше обустроить на отапливаемой веранде или в теплом сарае. Замечательно, если во дворе обитает живность, с которой питомец реализует свой пастушеский инстинкт.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Английские овчарки линяют дважды в год. Шерсть собак пахучая, поэтому людям с чувствительным обонянием и аллергикам порода противопоказана. Во время линьки отстающий волос сваливается, образуя колтуны. Избежать проблемы можно ежедневным вычесыванием. В промежутках между линьками, раз в пару недель, полезно пройтись по лохматой «шубе» расческой. Если период смены шерстного покрова затягивается, можно свозить четвероногого друга в салон на процедуру экспресс-линьки. После нее животное теряет до 80% старой шерсти, что особенно актуально для любимцев, живущих в квартирах.
+        </p>
+        <p>
+         Нельзя злоупотреблять гигиеническими процедурами. Потомки
+         <a class="ph" href="/dog/border-kolli/">
+          бордер-колли
+         </a>
+         – рабочие особи. Им непривычны частые купания и не требуется арсенал средств по уходу за волосом. Шерсть моют лишь в случаях сильного загрязнения и дискомфорта для животного. Осмотр и чистка ушей проводятся по мере необходимости. Стандартный график – раз в неделю. Почистить глаза от пыли и слизистых выделений можно как обычным 0,9% физраствором, так и специальным гигиеническим лосьоном из зоомагазина.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Как усиленно работающей фермерской собаке, английской овчарке рекомендован рацион, составленный по системе BARF. На американских фермах потомков
+         <a class="ph" href="/dog/border-kolli/">
+          бордер-колли
+         </a>
+         исторически кормили тем, что остается от переработки сельхозпродукции. Дополнительный бонус такого питания – отсутствие необходимости чистки зубов. Жилы, кости и хрящи сами по себе отлично счищают зубной налет.
+        </p>
+        <p>
+         Сухие и влажные промышленные корма не запрещены, но подбирать их лучше с кинологом или ветеринаром. Специалист определит подходящий состав, исходя из возраста, активности и состояния здоровья «хвоста».
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни английских овчарок
+        </h2>
+        <p>
+         Около 15% особей от общего мирового поголовья страдают аллергией на лекарственные препараты. У возрастных собак отмечаются проблемы со зрением и вероятность развития дисплазии тазобедренных суставов. Чтобы избежать последнего недуга, пожилых животных рекомендуется меньше нагружать физически.
+        </p>
+        <h2>
+         Фото щенков английской овчарки
+        </h2>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/24a/kk1refgj6laug5exu6tgwk93nrpe21hy.jpg" title="">
+           <div class="lazy-load" data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/24a/512_342_2/kk1refgj6laug5exu6tgwk93nrpe21hy.jpg">
+            <noscript data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/24a/512_342_2/kk1refgj6laug5exu6tgwk93nrpe21hy.jpg">
+             <img alt="Английская овчарка" class="article_pic" src="/upload/resize_cache/iblock/24a/512_342_2/kk1refgj6laug5exu6tgwk93nrpe21hy.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/334/jb2ht1q4u98k938gwu57g8ofml2l8y5h.jpg" title="">
+           <div class="lazy-load" data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/334/512_342_2/jb2ht1q4u98k938gwu57g8ofml2l8y5h.jpg">
+            <noscript data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/334/512_342_2/jb2ht1q4u98k938gwu57g8ofml2l8y5h.jpg">
+             <img alt="Английская овчарка" class="article_pic" src="/upload/resize_cache/iblock/334/512_342_2/jb2ht1q4u98k938gwu57g8ofml2l8y5h.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/39e/prpcpi1mk6vw4fooy0ysbsjaeopx2klv.jpg" title="">
+           <div class="lazy-load" data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/39e/512_342_2/prpcpi1mk6vw4fooy0ysbsjaeopx2klv.jpg">
+            <noscript data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/39e/512_342_2/prpcpi1mk6vw4fooy0ysbsjaeopx2klv.jpg">
+             <img alt="Английская овчарка" class="article_pic" src="/upload/resize_cache/iblock/39e/512_342_2/prpcpi1mk6vw4fooy0ysbsjaeopx2klv.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2f7/1qvaoufd9bmb6nmzh07uzd1su1qekhvo.jpg" title="">
+           <div class="lazy-load" data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/2f7/512_342_2/1qvaoufd9bmb6nmzh07uzd1su1qekhvo.jpg">
+            <noscript data-alt="Английская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/2f7/512_342_2/1qvaoufd9bmb6nmzh07uzd1su1qekhvo.jpg">
+             <img alt="Английская овчарка" class="article_pic" src="/upload/resize_cache/iblock/2f7/512_342_2/1qvaoufd9bmb6nmzh07uzd1su1qekhvo.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <p>
+         В России английские овчарки непопулярны. Крупных питомников, занимающихся породой, в стране нет, как нет и достаточного поголовья производителей. Изредка объявления о продаже щенков мелькают в Сети, однако далеко не всегда за ними скрывается реальный заводчик и породные особи.
+        </p>
+        <p>
+         Главный совет при выборе щенка английской овчарки – готовиться к серьезным тратам и искать зарубежный питомник с собственной племенной базой, регистрирующий пометы в UKC. С большой вероятностью местом покупки будут Соединенные Штаты – в Европе порода тоже не в топе по востребованности. В идеале продавец щенков должен показать родословные и рабочие дипломы племенных особей, а также данные теста на аллергию, которой страдает большой процент собак.
+        </p>
+        <h2 id="gl8">
+         Цена английской овчарки
+        </h2>
+        <p>
+         На стоимость щенка влияют именитость производителей помета, линия разведения и репутация самого заводчика. В США приобрести американскую фермерскую собаку можно как по цене в 500 USD, так и в два раза дороже.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения английской овчарки на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/angliyskaya-ovcharka/forum/">
+        Перейти на
+        форум английской овчарки
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Английская овчарка" src="/upload/iblock/f29/1i9sqzuakrb2z7u6lt1rl11gq5fe45kf.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/angliyskaya-ovcharka/">
+          Английская овчарка
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/angliyskaya-ovcharka/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/angliyskaya-ovcharka/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/angliyskaya-ovcharka/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/angliyskaya-ovcharka/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/angliyskaya-ovcharka/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/bretonskiy-epanol/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бретонский эпаньоль" data-original="/upload/resize_cache/iblock/c3e/100_100_1/9vgu34zs8e4pxn9xwxgb9vrhvt0jn6g0.jpg">
+          <noscript data-alt="Бретонский эпаньоль" data-original="/upload/resize_cache/iblock/c3e/100_100_1/9vgu34zs8e4pxn9xwxgb9vrhvt0jn6g0.jpg">
+           <img alt="Бретонский эпаньоль" src="/upload/resize_cache/iblock/c3e/100_100_1/9vgu34zs8e4pxn9xwxgb9vrhvt0jn6g0.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бретонский эпаньоль
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/kangal/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Кангал" data-original="/upload/resize_cache/iblock/94d/100_100_1/useii4q9qiwq8p2elw8gi5aqvo170pi3.jpg">
+          <noscript data-alt="Кангал" data-original="/upload/resize_cache/iblock/94d/100_100_1/useii4q9qiwq8p2elw8gi5aqvo170pi3.jpg">
+           <img alt="Кангал" src="/upload/resize_cache/iblock/94d/100_100_1/useii4q9qiwq8p2elw8gi5aqvo170pi3.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Кангал
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/yakutskaya-layka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Якутская лайка" data-original="/upload/resize_cache/iblock/a07/100_100_1/a07e67c4089cf690b4b8f00649289cbd.jpg">
+          <noscript data-alt="Якутская лайка" data-original="/upload/resize_cache/iblock/a07/100_100_1/a07e67c4089cf690b4b8f00649289cbd.jpg">
+           <img alt="Якутская лайка" src="/upload/resize_cache/iblock/a07/100_100_1/a07e67c4089cf690b4b8f00649289cbd.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Якутская лайка
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/nemetskiy-pincher/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Немецкий пинчер" data-original="/upload/resize_cache/iblock/996/100_100_1/996ddd57f53f9118ad9f7218a8807779.jpg">
+          <noscript data-alt="Немецкий пинчер" data-original="/upload/resize_cache/iblock/996/100_100_1/996ddd57f53f9118ad9f7218a8807779.jpg">
+           <img alt="Немецкий пинчер" src="/upload/resize_cache/iblock/996/100_100_1/996ddd57f53f9118ad9f7218a8807779.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Немецкий пинчер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskaya-ovcharka%252F%253Fcheck_key%253D2982ffa53fd1af9411ba875df9df7178%2526ANIMAL_CODE%253Dangliyskaya-ovcharka%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fangliyskaya-ovcharka%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmFuZ2xpeXNrYXlhLW92Y2hhcmthJTJGJTNGY2hlY2tfa2V5JTNEMjk4MmZmYTUzZmQxYWY5NDExYmE4NzVkZjlkZjcxNzglMjZBTklNQUxfQ09ERSUzRGFuZ2xpeXNrYXlhLW92Y2hhcmthJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmFuZ2xpeXNrYXlhLW92Y2hhcmthJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskaya-ovcharka%252F%253Fcheck_key%253D2982ffa53fd1af9411ba875df9df7178%2526ANIMAL_CODE%253Dangliyskaya-ovcharka%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fangliyskaya-ovcharka%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskaya-ovcharka%252F%253Fcheck_key%253D2982ffa53fd1af9411ba875df9df7178%2526ANIMAL_CODE%253Dangliyskaya-ovcharka%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fangliyskaya-ovcharka%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "212.3.142.80"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--f8b872c840fc8b47534cd71779f5b285-->

@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'86eb156ea391'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Бассет-хаунд, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Бассет-хаунд – массивный брудастый «британец» из секции гончих с экстремально низкой посадкой и длинными ушами." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/aca/aca1fbe6e1ee766fc4fe2c0df3c0ae30.jpg" property="og:image"/>
+     <title>
+      Бассет-хаунд: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/basset-khaund/" property="og:url"/>
+     <meta content="Бассет-хаунд: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Бассет-хаунд – массивный брудастый «британец» из секции гончих с экстремально низкой посадкой и длинными ушами." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/basset-khaund/" itemprop="url">
+         <span itemprop="title">
+          Бассет-хаунд
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Бассет-хаунд
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/basset-khaund/">
+          Описание
+         </a>
+         <a href="/dog/basset-khaund/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/basset-khaund/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/basset-khaund/photo/">
+          Фото
+         </a>
+         <a href="/dog/basset-khaund/video/">
+          Видео
+         </a>
+         <a href="/dog/basset-khaund/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/basset-khaund/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Бассет-хаунд" src="/upload/iblock/178/17857d5d64a088a571464b2a524d0723.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Бассет-хаунд – массивный брудастый «британец» из секции гончих с экстремально низкой посадкой и длинными ушами.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/c38/c38ad7789a6b69ed26de30622dece049.jpg" data-cap="" data-fancybox="images" data-link="https://www.instagram.com/lapkins.ru/" data-type="image" data-username="lapkins.ru" href="/upload/uf/d5b/d5bf927f95a8497635222f6a009939d1.jpeg">
+            <img alt="Бассет-хаунд" src="/upload/resize_cache/uf/d5b/293_293_2/d5bf927f95a8497635222f6a009939d1.jpeg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/dee/deef502d8c5f220387e462e596f0c176.jpg" data-cap="DIY Puppy Capelet" data-fancybox="images" data-link="https://www.flickr.com/photos/o_hai/8612580904/" data-type="image" data-username="Katherine McAdoo" href="/upload/uf/2e1/2e1b9599c042392270b4752e0a7d2667.jpg">
+            <img alt="Бассет-хаунд" src="/upload/resize_cache/uf/2e1/293_293_2/2e1b9599c042392270b4752e0a7d2667.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/7ae/7ae65b80e9f542e3ed525ebe604d83db.jpg" data-cap="The Thinker" data-fancybox="images" data-link="https://www.flickr.com/photos/jcscoombes/31596354538/" data-type="image" data-username="Jonny Coombes" href="/upload/uf/64c/64c697ab652d07b08bea1133be08d0d2.jpg">
+            <img alt="Бассет-хаунд" src="/upload/resize_cache/uf/64c/293_293_2/64c697ab652d07b08bea1133be08d0d2.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/basset-khaund/photo/">
+         Все
+            фото бассет-хаунда
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы бассет-хаунд
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы бассет-хаунд
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер бассет-хаунда
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни бассет-хаундов
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена бассет-хаунда
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Бассет-хаунд
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         XX век
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 25-34 кг, суки 20-29 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 30-38 см, суки 28-36 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         10-12 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         За любовь к комфорту и мягким лежанкам в Англии бассет-хаундов окрестили «диванными атлетами».
+        </li>
+        <li>
+         Дословный перевод названия породы – низкая гончая.
+        </li>
+        <li>
+         У бассет-хаундов звучный, глубокий голос, которым они охотно пользуются в отсутствие хозяина. Соответственно, если вы живете в квартире и будете частенько оставлять собаку наедине с собственными мыслями, ее завывания могут серьезно подпортить вашу репутацию в глазах соседей.
+        </li>
+        <li>
+         Порода отличается недюжинным интеллектом в сочетании с умеренным упрямством, что превращает ее представителей в преданных, но не самых сговорчивых питомцев.
+        </li>
+        <li>
+         Бассет-хаунд – натура увлекающаяся. Если на прогулке собака напала на след зверя, привести ее в чувство и отвлечь от поиска потенциальной добычи практически невозможно.
+        </li>
+        <li>
+         Обманчиво декоративный облик бассет-хаунда не избавляет владельца от необходимости гулять с питомцем больше, чем со среднестатистической легавой.
+        </li>
+        <li>
+         Бассет-хаунд – это обязательно слюна. Очень много свисающей с брылей слюны. А еще постоянно разбрызганная вокруг питьевой миски вода.
+        </li>
+        <li>
+         «Игрушечные» лапки и в буквальном смысле волочащиеся по полу уши совершенно не мешают охотничьим талантам бассет-хаундов, поэтому при своевременной натаске они способны раздобыть кролика или фазана.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Бассет-хаунд" data-original="/upload/iblock/aca/aca1fbe6e1ee766fc4fe2c0df3c0ae30.jpg">
+          <noscript data-alt="Бассет-хаунд" data-original="/upload/iblock/aca/aca1fbe6e1ee766fc4fe2c0df3c0ae30.jpg">
+           <img alt="Бассет-хаунд" src="/upload/iblock/aca/aca1fbe6e1ee766fc4fe2c0df3c0ae30.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Бассет-хаунд
+          </strong>
+          – корпулентный коротконожка со взглядом вечного обиженки и душой неутомимого охотника. Эта собака ни в коем случае не меланхолик, хотя именно на него и смахивает больше всего, а вполне общительный и жизнерадостный питомец. Впрочем, сказать, что с бассет-хаундом всегда легко и ненапряжно – будет полуправдой. Обладая незаурядным интеллектом и запасом здорового эгоизма, коренастый «джентльмен» редко поступается своими принципами и комфортом по первому требованию. Так что если хотите поладить с породой, будьте готовы уважать ее привычки и интересы – по-другому с бассет-хаундами никак.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Почти не слышно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Может лизнуть вора :) (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Бассет-хаунд основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/basset-khaund/razmeri-porodi/">
+         размеры бассет-хаунда
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы бассет-хаунд
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бассет-хаунд" data-fancybox="gallery" href="/upload/iblock/ba6/ba663f4c03a6a7cb6e3a7212a4be4251.jpg" title="Бассет-хаунд">
+          <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/ba6/412_2150_1/ba663f4c03a6a7cb6e3a7212a4be4251.jpg">
+           <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/ba6/412_2150_1/ba663f4c03a6a7cb6e3a7212a4be4251.jpg">
+            <img alt="Бассет-хаунд" class="article_pic" height="621" src="/upload/resize_cache/iblock/ba6/412_2150_1/ba663f4c03a6a7cb6e3a7212a4be4251.jpg" width="411"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бассет-хаунд
+         </div>
+        </div>
+        <p>
+         Официально бассет-хаунд считается английской породой, однако родиной его предков была все-таки Франция. Начиная со Средних веков, в книгах и рукописях французских историков стали проскакивать заметки о приземистых собаках из племени артезиано-нормандских гончих, привлекавшихся для норной охоты и поиска трюфелей. В письменных источниках животные фигурировали под названием бассеты и изображались как коротколапые псы с массивным костяком. Кстати, характерная низкорослость, присущая всем современным представителям этого семейства, была элементарной мутацией, впоследствии искусственно закрепленной заводчиками.
+        </p>
+        <p>
+         В XVII веке разведение бассетов во Франции приняло массовый характер, в результате чего порода расширила список «квалификаций». Теперь с коротконогими псами ходили не только на норного зверя, но и на фазанов. Понятно, что это была преимущественно пешая охота, так как угнаться за лошадью бассеты просто не смогли бы, зато им отлично удавалось продираться сквозь заросли и нырять за добычей под валежник. Примерно на этом этапе началось и расслоение семейства низкорослых борзых. Как результат: к XVIII веку на французских псарнях можно было отыскать 12 различных по внешним и рабочим показателям линий бассетов, часть из которых «слилась» позже в так называемый артезиано-нормандский тип.
+        </p>
+        <p>
+         Английский этап становления породы начался в XIX веке, когда артезиано-нормандские бассеты пересекли Ла-Манш. На родине Шекспира животным сразу же добавили «национального колорита», повязав их с
+         <a class="ph" href="/dog/bladkhaund/">
+          бладхаундами
+         </a>
+         , что придало телу собак основательности и легкой «складчатости», а их ушам – внушительную длину. Потомство, полученное в результате скрещивания, назвали бассет-хаундами, представив его на Парижской выставке в 1863 году.
+        </p>
+        <p>
+         Примерно через 20 лет после официального анонсирования у бассет-хаундов появился собственный клуб, а в 1887 году они окончательно отделились от остальных типов бассетов, пройдя процедуру стандартизации. В конце XIX века о породе уже хорошо знали в Америке, в то время как в российских питомниках эти грустные коротколапики объявились лишь в конце 70-х годов XX в.
+        </p>
+        <h2>
+         Видео: Бассет-хаунд
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="xokyvAmQaXc">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы бассет-хаунд
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок бассет-хаунда" data-fancybox="gallery" href="/upload/iblock/a71/a71c9baee87b2e8b90539ca68e4b9e5e.jpg" title="Щенок бассет-хаунда">
+          <div class="lazy-load" data-alt="Щенок бассет-хаунда" data-class="article_pic" data-original="/upload/resize_cache/iblock/a71/412_2150_1/a71c9baee87b2e8b90539ca68e4b9e5e.jpg">
+           <noscript data-alt="Щенок бассет-хаунда" data-class="article_pic" data-original="/upload/resize_cache/iblock/a71/412_2150_1/a71c9baee87b2e8b90539ca68e4b9e5e.jpg">
+            <img alt="Щенок бассет-хаунда" class="article_pic" height="604" src="/upload/resize_cache/iblock/a71/412_2150_1/a71c9baee87b2e8b90539ca68e4b9e5e.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок бассет-хаунда
+         </div>
+        </div>
+        <p>
+         Растянувшийся на коврике бассет-хаунд производит впечатление неповоротливой шерстяной гусеницы, в которой сложно заподозрить охотника. Тем не менее собака отлично приспособлена к гонкам за добычей в условиях пересеченной местности: короткие лапки бассетов легко преодолевают «ловушки» неровного рельефа, что не под силу другим разновидностям гончих.
+        </p>
+        <p>
+         Скорбное выражение морды, характерное для представителей этой породы, – их эксклюзивная экстерьерная изюминка. Бассет-хаунд может быть умиротворенным, восторженным, разозленным, но все эти перемены настроения будут сопровождаться одной-единственной печальной миной.
+        </p>
+        <p>
+         Нельзя обойти вниманием и длинные, свисающие чуть ли не до земли уши породы, напоминающие поникшие крылья. У набравшего достаточную скорость бассета они развеваются под напором ветра, создавая иллюзию того, что собака вот-вот взлетит.
+        </p>
+        <p>
+         Высота бассет-хаунда в холке, согласно стандарту, должна составлять 33-38 см. Собаки весят от 18 до 29 кг.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Голова бассет-хаунда имеет куполовидную форму с отчетливо выступающим затылком, массивной мордой и умеренным стопом. Обиженно-печальное выражение морды, присущее породе, достигается за счет эластичной кожи, образующей небольшие морщины под глазами и у бровей. Кроме того, собакам свойственна брылястость, когда нижняя челюсть перекрывается свободно свисающей верхней губой.
+        </p>
+        <h3>
+         Зубы и прикус
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Эй! Отдай мой мячик!" data-fancybox="gallery" href="/upload/iblock/4a5/4a56bb1d8eaddf699d08d4c99cee8aeb.jpg" title="Эй! Отдай мой мячик!">
+          <div class="lazy-load" data-alt="Эй! Отдай мой мячик!" data-class="article_pic" data-original="/upload/resize_cache/iblock/4a5/412_2150_1/4a56bb1d8eaddf699d08d4c99cee8aeb.jpg">
+           <noscript data-alt="Эй! Отдай мой мячик!" data-class="article_pic" data-original="/upload/resize_cache/iblock/4a5/412_2150_1/4a56bb1d8eaddf699d08d4c99cee8aeb.jpg">
+            <img alt="Эй! Отдай мой мячик!" class="article_pic" height="309" src="/upload/resize_cache/iblock/4a5/412_2150_1/4a56bb1d8eaddf699d08d4c99cee8aeb.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Эй! Отдай мой мячик!
+         </div>
+        </div>
+        <p>
+         Зубы бассет-хаунда крепкие, белые, сомкнутые в правильном ножницеобразном прикусе.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         У бассет-хаундов выдающиеся ноздри: крупные, широко распахнутые, нередко выступающие за линию губ. Предпочтительный окрас мочки – черный, хотя для животных со светлой шерстью допустимы коричневый и печеночный варианты.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза бассет-хаунда отличают неглубокая посадка, овальная форма и подчеркнуто меланхоличное выражение. Эталонными считаются особи с темно-карим оттенком радужной оболочки, но для светлоокрашенных собак возможен средне-коричневый тон. Строгое нет – желтым и светло-карим глазам.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Длинные, завернутые внутрь уши бассет-хаунда посажены ниже уровня глаз и свисают вдоль шеи. Ушное полотно тонкое на ощупь, бархатистое.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Уши бассет-хаунда" data-fancybox="gallery" href="/upload/iblock/7c1/7c1543d4afe018e5d0026a2cf899deaf.jpg" title="Уши бассет-хаунда">
+          <div class="lazy-load" data-alt="Уши бассет-хаунда" data-class="article_pic" data-original="/upload/resize_cache/iblock/7c1/1024_2150_1/7c1543d4afe018e5d0026a2cf899deaf.jpg">
+           <noscript data-alt="Уши бассет-хаунда" data-class="article_pic" data-original="/upload/resize_cache/iblock/7c1/1024_2150_1/7c1543d4afe018e5d0026a2cf899deaf.jpg">
+            <img alt="Уши бассет-хаунда" class="article_pic" src="/upload/resize_cache/iblock/7c1/1024_2150_1/7c1543d4afe018e5d0026a2cf899deaf.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Уши бассет-хаунда
+         </div>
+        </div>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Вытянутая, толстая шея собаки имеет различимый изгиб верхней линии и выраженный подвес.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело удлиненное, объемное, мускулистое, с широкой спиной и расположенными на одной линии холкой и крупом. Грудь бассет-хаунда гармонично развитая, не узкая, умеренно-глубокая. Линия живота должна быть достаточно подтянута, чтобы не мешать животному при беге.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Лапы бассет-хаунда" data-fancybox="gallery" href="/upload/iblock/56f/56f8790d1ea564d727daed784ecd53b4.jpg" title="Лапы бассет-хаунда">
+          <div class="lazy-load" data-alt="Лапы бассет-хаунда" data-class="article_pic" data-original="/upload/resize_cache/iblock/56f/412_2150_1/56f8790d1ea564d727daed784ecd53b4.jpg">
+           <noscript data-alt="Лапы бассет-хаунда" data-class="article_pic" data-original="/upload/resize_cache/iblock/56f/412_2150_1/56f8790d1ea564d727daed784ecd53b4.jpg">
+            <img alt="Лапы бассет-хаунда" class="article_pic" height="274" src="/upload/resize_cache/iblock/56f/412_2150_1/56f8790d1ea564d727daed784ecd53b4.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Лапы бассет-хаунда
+         </div>
+        </div>
+        <p>
+         Передние ноги собаки коротенькие, толстые, с крепким костяком и небольшими складками в нижней части. Лопатки поставлены под наклоном 45°, обеспечивая хороший вымах в движении. Предплечья слегка сближенные в верху, но не мешающие шагу. Задние ноги с мясистыми бедрами, хорошими скакательными суставами и короткими, чуть морщинистыми плюснами. Помимо того, у бассет-хаунда массивные, сводистые лапы, «поставленные» на крупные подушечки. Движется порода плавно, благодаря хорошему вымаху передних ног и пружинистому толчку задних.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Крепкий, длинный хвост бассет-хаунда имеет легкий изгиб без явной закрученности (саблевидная форма). У движущейся собаки хвост поднят вверх.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Короткая псовина бассет-хаунда плотно охватывает тело, не образуя очесов.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Теоретически бассет-хаунды могут иметь любые, свойственные гончим окрасы. В реальности собаки чаще всего бывают трехцветными (например, черно-белыми с рыжеватыми подпалинами) и двухцветными (рыже-белыми).
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <p>
+         Запрет на участие в выставках и дог-шоу получают бассет-хаунды с пороками развития, ставящими под сомнение их породность. Например, если собака имеет избыточный рост (выше 38 см), длинную шерсть или явный козинец (выдающийся вперед сустав запястья) – этого достаточно, чтобы исключить ее из числа конкурсантов.
+        </p>
+        <h2>
+         Фото бассет-хаунда
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/666/666dbd1d3cdae1c0e307ab2a57636d55.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/666/380_264_2/666dbd1d3cdae1c0e307ab2a57636d55.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/666/380_264_2/666dbd1d3cdae1c0e307ab2a57636d55.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/666/380_264_2/666dbd1d3cdae1c0e307ab2a57636d55.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/26c/26c2695eaa75af36eb2a73ab79bb8544.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/26c/380_264_2/26c2695eaa75af36eb2a73ab79bb8544.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/26c/380_264_2/26c2695eaa75af36eb2a73ab79bb8544.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/26c/380_264_2/26c2695eaa75af36eb2a73ab79bb8544.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ddb/ddb690f0667e8daae0e6ad51fef1989a.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/ddb/380_264_2/ddb690f0667e8daae0e6ad51fef1989a.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/ddb/380_264_2/ddb690f0667e8daae0e6ad51fef1989a.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/ddb/380_264_2/ddb690f0667e8daae0e6ad51fef1989a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5dd/5dda53b85114f18b350e922c55a75919.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/5dd/380_264_2/5dda53b85114f18b350e922c55a75919.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/5dd/380_264_2/5dda53b85114f18b350e922c55a75919.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/5dd/380_264_2/5dda53b85114f18b350e922c55a75919.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4cf/4cfc53d43305d7264175b138b50b35c9.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/4cf/380_264_2/4cfc53d43305d7264175b138b50b35c9.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/4cf/380_264_2/4cfc53d43305d7264175b138b50b35c9.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/4cf/380_264_2/4cfc53d43305d7264175b138b50b35c9.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/83f/83f2c51e584aa3a0a927c5aff956caeb.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/83f/380_264_2/83f2c51e584aa3a0a927c5aff956caeb.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/83f/380_264_2/83f2c51e584aa3a0a927c5aff956caeb.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/83f/380_264_2/83f2c51e584aa3a0a927c5aff956caeb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/941/94123d20ee4b0b8b7386dc1c867fe7f1.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/941/380_264_2/94123d20ee4b0b8b7386dc1c867fe7f1.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/941/380_264_2/94123d20ee4b0b8b7386dc1c867fe7f1.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/941/380_264_2/94123d20ee4b0b8b7386dc1c867fe7f1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/dab/dabf477b203f488be3d934de426cf06f.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/dab/380_264_2/dabf477b203f488be3d934de426cf06f.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/dab/380_264_2/dabf477b203f488be3d934de426cf06f.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/dab/380_264_2/dabf477b203f488be3d934de426cf06f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/151/151ab050b8d310e2b7c8917243521027.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/151/380_264_2/151ab050b8d310e2b7c8917243521027.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/151/380_264_2/151ab050b8d310e2b7c8917243521027.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/151/380_264_2/151ab050b8d310e2b7c8917243521027.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер бассет-хаунда
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бассет-хаунд с ребенком" data-fancybox="gallery" href="/upload/iblock/4ba/4ba45a390e7936f30834561220b63547.jpg" title="Бассет-хаунд с ребенком">
+          <div class="lazy-load" data-alt="Бассет-хаунд с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/4ba/412_2150_1/4ba45a390e7936f30834561220b63547.jpg">
+           <noscript data-alt="Бассет-хаунд с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/4ba/412_2150_1/4ba45a390e7936f30834561220b63547.jpg">
+            <img alt="Бассет-хаунд с ребенком" class="article_pic" height="618" src="/upload/resize_cache/iblock/4ba/412_2150_1/4ba45a390e7936f30834561220b63547.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бассет-хаунд с ребенком
+         </div>
+        </div>
+        <p>
+         Бассет-хаунд, невзирая на потешный, подчеркнуто неуклюжий облик, – тот еще ловкач, причем как в плане физиологии, так и по интеллектуальным показателям. Самолюбивый и гордый, он не просто болезненно реагирует на критику и ущемление личных прав, но и способен разработать, а потом привести в действие план маленькой мести тому, кто его разозлил, поэтому если однажды обнаружите на любимом ковре подозрительное пятно или кучку, не спешите возмущаться. Вполне возможно, что бассет-хаунд подложил вам свинью в счет вчерашней обиды.
+        </p>
+        <p>
+         Представители этой породы имеют собственные взгляды на жизнь, что не мешает им находиться в хороших отношениях с владельцами. Не смотрите на грустную мину, навечно приклеившуюся к собачьей морде. Внутри бассет-хаунды – существа общительные и очень даже жизнерадостные. Например, в домашней обстановке собака ведет себя как типичный сибарит: набивает живот вкусняшками, пока не раздуется, как пузырь, валяется по диванам, закутавшись в уши, околачивается возле хозяйских ног в ожидании ласки. В общем, всем своим видом показывает, что знает толк в удовольствиях.
+        </p>
+        <p>
+         Как и полагается настоящей гончей, бассет-хаунд абсолютно не агрессивен. Конечно, если постараться, то вывести из равновесия можно любую собаку, но в целом ворчать и кусаться порода не будет. Более того, бассет-хаунд способен терпеть рядом других собак и гораздо реже – кошек. Естественно, переносить терпеливость на всех животных без исключения бассета никто не обяжет. Но если заранее познакомить «ушастика» с остальными представителями домашней фауны, терроризировать их он тоже не станет.
+        </p>
+        <p>
+         Представители этой породы категорически не желают отказываться от любимых привычек, предпочитая в качестве компромисса менять уклад жизни собственных владельцев. Например, все бассет-хаунды плотно «подсажены» на комфорт, поэтому если питомец облюбовал конкретное место в квартире, перенести его пристанище в другую часть жилья почти невозможно. Уединение и одиночество собак тоже не радует, поэтому если вы по какой-то причине не взяли бассет-хаунда с собой, а он очень хотел, готовьтесь к мелким пакостям. Обожают ушастики и лежать на диванах, с первых месяцев жизни чуть ли не рефлекторно карабкаясь на хозяйскую постель. Причем тайная страсть к мягким перинам сохраняется даже у тех особей, которых, казалось бы, отучили от этой привычки. Вышли из дома на часок? Можете быть уверены, бассет-хаунд не упустит возможности использовать вашу отлучку с пользой для себя и расслабиться на вашей же кровати.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бассет-хаунд с кошкой" data-fancybox="gallery" href="/upload/iblock/e3b/e3b42232c0bf913d9c8e3e8e3e2004ed.jpg" title="Бассет-хаунд с кошкой">
+           <div class="lazy-load" data-alt="Бассет-хаунд с кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/e3b/512_342_2/e3b42232c0bf913d9c8e3e8e3e2004ed.jpg">
+            <noscript data-alt="Бассет-хаунд с кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/e3b/512_342_2/e3b42232c0bf913d9c8e3e8e3e2004ed.jpg">
+             <img alt="Бассет-хаунд с кошкой" class="article_pic" src="/upload/resize_cache/iblock/e3b/512_342_2/e3b42232c0bf913d9c8e3e8e3e2004ed.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бассет-хаунд с кошкой
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6bd/6bd765cf49a2c94ca8bff3b4010cbee3.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/6bd/512_342_2/6bd765cf49a2c94ca8bff3b4010cbee3.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/6bd/512_342_2/6bd765cf49a2c94ca8bff3b4010cbee3.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/6bd/512_342_2/6bd765cf49a2c94ca8bff3b4010cbee3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Дай лапу" data-fancybox="gallery" href="/upload/iblock/1a7/1a793b7030c426c585330ed3b60e2bdf.jpg" title="Дай лапу">
+          <div class="lazy-load" data-alt="Дай лапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/1a7/412_2150_1/1a793b7030c426c585330ed3b60e2bdf.jpg">
+           <noscript data-alt="Дай лапу" data-class="article_pic" data-original="/upload/resize_cache/iblock/1a7/412_2150_1/1a793b7030c426c585330ed3b60e2bdf.jpg">
+            <img alt="Дай лапу" class="article_pic" height="274" src="/upload/resize_cache/iblock/1a7/412_2150_1/1a793b7030c426c585330ed3b60e2bdf.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Дай лапу
+         </div>
+        </div>
+        <p>
+         Бассет-хаунды – собаки коммуникабельные и потешные, но рьяно оберегающие собственные интересы. Например, они обожают адаптировать учебный процесс под свои нужды и не единожды попытаются нарушить правила игры, если их что-то не устроит. Соответственно, если вы приняли решение воспитать послушного питомца, то и не делайте исключений, пока щенок маленький и беззащитный. Не то чтобы бассет был таким уж патологическим упрямцем, просто он слишком умен, чтобы не попытаться выторговать себе поблажки.
+        </p>
+        <p>
+         Обучать собаку правилам поведения в доме и командам должен опытный владелец либо специалист кинологического клуба, хотя это не означает, что на животное необходимо «давить». Наоборот, попытайтесь взглянуть на занятия глазами питомца, что позволит понять его желания и стремления. При правильном подходе бассет-хаунды как орешки щелкают любые дисциплины послушания, а также всевозможные динамичные состязания вроде аджилити. Правда, не стоит надеяться на безупречную исполнительность породы. Все-таки бассеты – это не служебные собаки, и постоянные одергивания им быстро надоедают. Следовательно, придется отнестись с пониманием к тому, что однажды ваш подопечный намеренно «не услышит» призыва или запрета.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Что-то я устал..." data-fancybox="gallery" href="/upload/iblock/b46/b46a6b046df46180cda33cd42475db94.jpg" title="Что-то я устал...">
+          <div class="lazy-load" data-alt="Что-то я устал..." data-class="article_pic" data-original="/upload/resize_cache/iblock/b46/412_2150_1/b46a6b046df46180cda33cd42475db94.jpg">
+           <noscript data-alt="Что-то я устал..." data-class="article_pic" data-original="/upload/resize_cache/iblock/b46/412_2150_1/b46a6b046df46180cda33cd42475db94.jpg">
+            <img alt="Что-то я устал..." class="article_pic" height="620" src="/upload/resize_cache/iblock/b46/412_2150_1/b46a6b046df46180cda33cd42475db94.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Что-то я устал...
+         </div>
+        </div>
+        <p>
+         Лучшими стимулами в работе с бассет-хаундами были и остаются вкусные поощрения. Главное – умело сыграть на склонности породы к обжорству и не переборщить. Негативные подкрепления желательно вообще не использовать. Не забывайте, бассет-хаунд обидчив и обязательно ответит на ущемление личных прав какой-нибудь вредностью. Впрочем, если животное упорствует и намеренно пакостит, не возбраняется слегка шлепнуть его прутиком. Традиционная свернутая в трубку газета не вариант, бассеты – существа в прямом смысле толстокожие.
+        </p>
+        <p>
+         Продолжительность уроков для породы должна быть минимальной. Максимум, который бассет-хаунд может вытерпеть, – 10 минут, после чего собаке потребуется эмоциональная «перезагрузка». Помимо стандартной дрессировки, бассет-хаундов учат мириться с вынужденным одиночеством. Оставленный в квартире на час-другой питомец не должен пугать соседей и прохожих «оперными ариями». Понятно, что добиться стопроцентной тишины с данной породой не получится, но снизить ее разговорчивость реально. С первых дней после переезда на постоянное место жительства отучайте щенка от «собирательства» хозяйских вещей, которое для бассет-хаундов что-то вроде хобби. Уберите от ушастого проказника всю обувь, даже если она старая и ее давно пора выбросить. Не забывайте, животное не видит разницы между стоптанными вьетнамками и только что купленными найками, поэтому грызет их с одинаковым азартом.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         В отличие от своих французских предков, сегодняшний бассет-хаунд мало приспособлен для жизни во дворе, поэтому его место в доме. Особенных условий для содержания собаки не требуется, так что покупать для нее придется все те бытовые предметы, что и для любой квартирной породы, то есть лежанку, миски для еды и воды, игрушки, лоток, поводок, ошейник и прочие аксессуары.
+        </p>
+        <p>
+         До полугода все перемещения щенков по дому необходимо отслеживать. В таком возрасте короткие лапки бассет-хаундов хрупки, неустойчивы и травмируются даже при незначительных прыжках, например с дивана. Лестниц до 6-месячного возраста лучше избегать, либо поднимайтесь и спускайтесь по ним с питомцем на руках.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Бассет-хаунды линяют осенью и весной, но это не означает, что расчесывать их короткую шерсть необходимо с такой же периодичностью. Массировать кожу и волосяные фолликулы питомца следует мягкой щеткой, если не ежедневно, то хотя бы пару раз в неделю. Это, во-первых, стимулирует кровообращение в глубоких слоях кожи, а во-вторых, улучшает структуру волоса.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Моем грязнулю" data-fancybox="gallery" href="/upload/iblock/d7b/d7bdb7271e0ff726499c6f880dfd1f37.jpg" title="Моем грязнулю">
+          <div class="lazy-load" data-alt="Моем грязнулю" data-class="article_pic" data-original="/upload/resize_cache/iblock/d7b/412_2150_1/d7bdb7271e0ff726499c6f880dfd1f37.jpg">
+           <noscript data-alt="Моем грязнулю" data-class="article_pic" data-original="/upload/resize_cache/iblock/d7b/412_2150_1/d7bdb7271e0ff726499c6f880dfd1f37.jpg">
+            <img alt="Моем грязнулю" class="article_pic" height="274" src="/upload/resize_cache/iblock/d7b/412_2150_1/d7bdb7271e0ff726499c6f880dfd1f37.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Моем грязнулю
+         </div>
+        </div>
+        <p>
+         Что до запаха псины, то у бассет-хаундов он проявляется только в случае, когда шерсть намокает. Бассеты, которых купают не реже двух раз в месяц, тоже источают «аромат» мутоновой шубы, но он, как правило, не слишком ярко выраженный и не раздражает обоняние. Кстати, «мальчики» и особи с большим количеством складок всегда пахнут интенсивнее.
+        </p>
+        <p>
+         В ситуации, когда хочется минимизировать собачье «благоухание», можно вымыть бассет-хаунда дегтярным шампунем или добавить в ванну немного разведенной уксусной кислоты. Если от собаки чересчур несет противным «амбре», есть вероятность, что она подхватила грибок или у нее засорены параанальные железы. Последнее с бассет-хаундами случается часто. Заметили, что питомец начал ездить пятой точкой по полу? Срочно ведите его к специалисту, чтобы освободил забитые проходы, либо проделайте процедуру сами, руководствуясь пошаговыми инструкциями.
+        </p>
+        <p>
+         Опахалообразные уши бассет-хаундов нуждаются в повышенном внимании. Мало того что, купая собаку, придется постоянно контролировать, не попала ли в ушной проход вода, необходимо выделять время на ежедневный «досмотр» ушной воронки и проветривание. Тотальная слежка за мордочкой питомца тоже имеет место. Бассет-хаунды – еще те слюнтяи, да и манера лакать у них специфическая (брызги и лужи фонтаном во все стороны), так что дежурить возле собаки с полотенцем придется волей-неволей. Гигиена глаз бассет-хаунда – это в основном протирание слизистой травяными настоями (чай, ромашка). Не забывайте заботиться о толстых собачьих лапках, очищая их после прогулок влажной тканью и состригая когти примерно пару раз в месяц.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/023/02349a04738d0924bc6691c2fa555104.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/023/512_342_2/02349a04738d0924bc6691c2fa555104.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/023/512_342_2/02349a04738d0924bc6691c2fa555104.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/023/512_342_2/02349a04738d0924bc6691c2fa555104.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/556/556f38bb78c0ed4b9f7647d54fb79d71.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/556/512_342_2/556f38bb78c0ed4b9f7647d54fb79d71.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/556/512_342_2/556f38bb78c0ed4b9f7647d54fb79d71.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/556/512_342_2/556f38bb78c0ed4b9f7647d54fb79d71.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h3>
+         Туалет
+        </h3>
+        <p>
+         Не нужно изобретать специальную методику для приучения бассет-хаунда к лотку или газете. Эти хитрецы справляются с традиционной программой. Отдельный вопрос, с какой частотой они следуют правилам. Конечно, среди представителей семейства бассетов попадаются настоящие перфекционисты, смиренно делающие свои «дела» туда, куда положено, но таких паинек меньше половины. Остальные 50% периодически «минируют» жилплощадь, на которой живут. Причин тому может быть несколько, начиная от желания насолить хозяину и заканчивая отсутствием возможности потерпеть с туалетом до прогулки.
+        </p>
+        <p>
+         Многие бассет-хаунды творят туалетные пакости в силу юного возраста и, повзрослев, полностью с ними завязывают. Тем не менее предсказать, как поведет себя конкретный щенок, почти невозможно, так как каждый бассет – это маленькая ушастая личность с неповторимым характером и наклонностями. Иногда собака может упорно не ходить в туалет во время прогулки, а придя домой, тут же оставить «лужу» на полу. Это уже протест, которому не стоит давать повториться. Если пес приходит в жилище, не справив нужду на улице, через пять минут ведите его снова на прогулку и так до тех пор, пока животное не поймет, что в покое его не оставят.
+        </p>
+        <h3>
+         Выгул и охота
+        </h3>
+        <p>
+         Бассет-хаунды – настоящие агенты под прикрытием. Как только пес покидает границы собственного подъезда, он моментально активизируется, трансформируясь из диванного увальня в упорного следопыта. Помните об этой особенности породы и не отпускайте животное с поводка вблизи автомагистралей. Стандартный режим выгула бассет-хаунда – утром и вечером, примерно по часу. Впрочем, если есть возможность выводить питомца чаще – это большой плюс. Здоровый бассет никогда не откажется от дополнительного променада, причем особенно внеплановые прогулки полезны молодым особям с несформированным туалетным этикетом.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бассет-хаунд на прогулке" data-fancybox="gallery" href="/upload/iblock/e09/e09edddd6974fa9b18abf7952056a0f9.jpg" title="Бассет-хаунд на прогулке">
+          <div class="lazy-load" data-alt="Бассет-хаунд на прогулке" data-class="article_pic" data-original="/upload/resize_cache/iblock/e09/412_2150_1/e09edddd6974fa9b18abf7952056a0f9.jpg">
+           <noscript data-alt="Бассет-хаунд на прогулке" data-class="article_pic" data-original="/upload/resize_cache/iblock/e09/412_2150_1/e09edddd6974fa9b18abf7952056a0f9.jpg">
+            <img alt="Бассет-хаунд на прогулке" class="article_pic" height="274" src="/upload/resize_cache/iblock/e09/412_2150_1/e09edddd6974fa9b18abf7952056a0f9.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бассет-хаунд на прогулке
+         </div>
+        </div>
+        <p>
+         Заводчики советуют выводить бассет-хаундов на свежий воздух по числу кормлений, то есть если 4-месячный щенок опустошает миску пять раз за день, у него должно быть столько же выходов на улицу. Прогулки бассет-хаунда должны проходить в живом, но непринужденном темпе. Не нагружайте собак марафонскими пробежками – порода для них не создана. Лучше походите с питомцем по улице, поиграйте в мячик или догонялки, но без фанатизма.
+        </p>
+        <p>
+         Шерсть бассет-хаунда плотная, с хорошим слоем подшерстка, поэтому согревающие попонки в холодную погоду породе не нужны. Тем не менее встретить собак в комбинезонах можно часто. Связана такая экипировка с желанием хозяина защитить шерсть питомца от грязи и брызг, которые низкий пузик бассета притягивает, как магнит. Немаловажный момент: как и полагается охотничьей собаке, бассет-хаунд на улице любит маскироваться. Делает он это традиционным способом, валяясь в падали, а то и фекалиях. Это, кстати, дополнительный повод облачить ушастого беспредельщика в попонку.
+        </p>
+        <p>
+         Основная рабочая квалификация бассет-хаундов – охота по кровяному следу, с которой они блестяще справлялись в Англии. Крепкие, коротенькие ножки собаки тут были весьма кстати, поскольку помогали пробираться в густые заросли кустарника и корневищ. Смешные уши породы – тоже нелишний «аксессуар». Развевающееся в беге полотно «захватывало» запах дичи и доносило его до обоняния пса.
+        </p>
+        <p>
+         Что касается российских охотников, то бассет-хаундам они предпочитают «полноразмерных» гончих. Объясняется подобная избирательность тем, что коротконогим бассетам охотиться в условиях средней полосы проблематично. В частности, в снежные зимы собака будет тонуть в сугробах. Не стоит забывать и о том, что оптимальной добычей для породы всегда были кролики, на которых в России охотятся крайне редко. По этой причине подавляющее большинство отечественных бассет-хаундов – это декоративные собаки с развитыми, но не находящими практического применения охотничьими инстинктами.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Ищейка в деле" data-fancybox="gallery" href="/upload/iblock/1fe/1fe3ab5a92089a5677902ec33dd6771a.jpg" title="Ищейка в деле">
+           <div class="lazy-load" data-alt="Ищейка в деле" data-class="article_pic" data-original="/upload/resize_cache/iblock/1fe/512_342_2/1fe3ab5a92089a5677902ec33dd6771a.jpg">
+            <noscript data-alt="Ищейка в деле" data-class="article_pic" data-original="/upload/resize_cache/iblock/1fe/512_342_2/1fe3ab5a92089a5677902ec33dd6771a.jpg">
+             <img alt="Ищейка в деле" class="article_pic" src="/upload/resize_cache/iblock/1fe/512_342_2/1fe3ab5a92089a5677902ec33dd6771a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Ищейка в деле
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Отлично! Ты идешь на службу в полицию" data-fancybox="gallery" href="/upload/iblock/9c5/9c520c1bdffc89999759f7f327aefed8.jpg" title="Отлично! Ты идешь на службу в полицию">
+           <div class="lazy-load" data-alt="Отлично! Ты идешь на службу в полицию" data-class="article_pic" data-original="/upload/resize_cache/iblock/9c5/512_342_2/9c520c1bdffc89999759f7f327aefed8.jpg">
+            <noscript data-alt="Отлично! Ты идешь на службу в полицию" data-class="article_pic" data-original="/upload/resize_cache/iblock/9c5/512_342_2/9c520c1bdffc89999759f7f327aefed8.jpg">
+             <img alt="Отлично! Ты идешь на службу в полицию" class="article_pic" src="/upload/resize_cache/iblock/9c5/512_342_2/9c520c1bdffc89999759f7f327aefed8.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Отлично! Ты идешь на службу в полицию
+          </div>
+         </div>
+        </div>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Бассет-хаунд – быстрорастущая порода. В частности, в 3,5 месяца молочные зубы щенка полностью сменяются постоянными, а его скелет постепенно заканчивает формироваться. В связи с этой особенностью малышей необходимо кормить питательно с первых месяцев жизни. Основное блюдо для щенков бассет-хаунда – каша с говядиной, вдобавок к которой можно дать обезжиренный кефир или ряженку. Примерный размер порции для 2-месячного щенка – 100-200 г; для 3-4-месячных особей – 400 г; с 4 до 6 мес. – 500-600 г.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Так делать нельзя" data-fancybox="gallery" href="/upload/iblock/0fe/0fee5a34f32472fdb1c5f114b0423107.jpg" title="Так делать нельзя">
+           <div class="lazy-load" data-alt="Так делать нельзя" data-class="article_pic" data-original="/upload/resize_cache/iblock/0fe/512_342_2/0fee5a34f32472fdb1c5f114b0423107.jpg">
+            <noscript data-alt="Так делать нельзя" data-class="article_pic" data-original="/upload/resize_cache/iblock/0fe/512_342_2/0fee5a34f32472fdb1c5f114b0423107.jpg">
+             <img alt="Так делать нельзя" class="article_pic" src="/upload/resize_cache/iblock/0fe/512_342_2/0fee5a34f32472fdb1c5f114b0423107.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Так делать нельзя
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="И так тоже :)" data-fancybox="gallery" href="/upload/iblock/68c/68c57a11ce0eaa5328c218656b81de02.jpg" title="И так тоже :)">
+           <div class="lazy-load" data-alt="И так тоже :)" data-class="article_pic" data-original="/upload/resize_cache/iblock/68c/512_342_2/68c57a11ce0eaa5328c218656b81de02.jpg">
+            <noscript data-alt="И так тоже :)" data-class="article_pic" data-original="/upload/resize_cache/iblock/68c/512_342_2/68c57a11ce0eaa5328c218656b81de02.jpg">
+             <img alt="И так тоже :)" class="article_pic" src="/upload/resize_cache/iblock/68c/512_342_2/68c57a11ce0eaa5328c218656b81de02.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           И так тоже :)
+          </div>
+         </div>
+        </div>
+        <p>
+         10-месячных бассет-хаундов принято переводить на двухразовую кормежку и взрослый рацион. В этом возрасте породе можно практически все, включая субпродукты, рыбное филе, овощи (кроме картофеля и бобовых), фрукты, крупяные каши, а в качестве редкого лакомства – мозговые косточки. Подкормки с кальцием, фосфором и витамином D – еще один обязательный пункт «меню» как для подростков, так и для взрослых бассетов: нагрузка на суставы у породы колоссальная. Растущим щенкам полезно добавлять в пищу добавки с хондроитином и глюкозамином, чтобы не выросли кривоножками. А вот особое гастрономическое разнообразие бассет-хаундам не требуется. Если пес здоров и ведет активный образ жизни, он уплетает все, что съедобно пахнет. Опытные заводчики рекомендуют не умиляться зверскому аппетиту собаки, а сдерживать его, потому что набирает вес порода виртуозно.
+        </p>
+        <p>
+         Забросить в миску еду и забыть про бассет-хаунда не получится: увлеченный процессом, он обязательно будет полоскать в посудине уши. Чтобы этого не произошло, «локаторы» лучше стянуть резиночкой на затылке. Кроме того, после трапезы в защечных мешках бассет-хаунда остается небольшое количество пищи, которая со временем начинает неприятно пахнуть. Избавляться от гниющих остатков придется вручную: раскройте пасть собаки и извлеките разлагающуюся кашицу тряпочкой.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни бассет-хаундов
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Хозяин, давай всегда так будем гулять? Мне нравится!" data-fancybox="gallery" href="/upload/iblock/a11/a1152d4c06a2ef8cba8641cb2eeeffb7.jpg" title="Хозяин, давай всегда так будем гулять? Мне нравится!">
+          <div class="lazy-load" data-alt="Хозяин, давай всегда так будем гулять? Мне нравится!" data-class="article_pic" data-original="/upload/resize_cache/iblock/a11/412_2150_1/a1152d4c06a2ef8cba8641cb2eeeffb7.jpg">
+           <noscript data-alt="Хозяин, давай всегда так будем гулять? Мне нравится!" data-class="article_pic" data-original="/upload/resize_cache/iblock/a11/412_2150_1/a1152d4c06a2ef8cba8641cb2eeeffb7.jpg">
+            <img alt="Хозяин, давай всегда так будем гулять? Мне нравится!" class="article_pic" height="336" src="/upload/resize_cache/iblock/a11/412_2150_1/a1152d4c06a2ef8cba8641cb2eeeffb7.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Хозяин, давай всегда так будем гулять? Мне нравится!
+         </div>
+        </div>
+        <p>
+         Бассет-хаунды не такие уж хилые собаки, но со своими слабыми местами. Например, как любая вислоухая порода, бассеты подвержены отитам. Болезнь Виллебранда (нарушение свертываемости крови) перешла к ним по наследству от предков, точно также как аллергия на определенные виды растений и склонность к завороту кишок. Широкие пухлые лапы бассет-хаундов – еще одно уязвимое место, на котором иногда возникают абсцессы, грибок, межпальцевые кисты.
+        </p>
+        <p>
+         Достаточно неприятной породной болезнью является паностит. Недуг сопровождается временной хромотой, из-за чего его часто путают с дисплазией тазобедренного сустава и вывихом коленной чашечки. Проявляется паностит только у щенков, не требует хирургического вмешательства и к двум годам перестает беспокоить животное. Однако из-за сложности постановки диагноза бассет-хаундов с этой болезнью ошибочно оперируют, что не лучшим образом сказывается на здоровье собаки.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Если на выставке познакомиться с профессиональными заводчиками бассет-хаундов не получилось, обратитесь в породный клуб, где всегда есть адреса надежных питомников.
+         </li>
+         <li>
+          Осматривайте и сравнивайте сразу пару, а лучше тройку пометов.
+         </li>
+         <li>
+          Аккуратно пощупайте хвост понравившегося щенка бассет-хаунда. Он должен быть ровным и упругим. Заломы и искривления – существенный порок, за который стоит поторговаться, чтобы сбить цену.
+         </li>
+         <li>
+          Внимательно осмотрите лапы малышей. Предпочтение – бассет-хаунду с толстыми ровными ножками, свидетельствующими об основательности костяка.
+         </li>
+         <li>
+          Разверните щенячьи ушки и загляните в ушной проход. Корочек и серы в нем быть не должно, как и неприятного запаха.
+         </li>
+         <li>
+          Переверните маленького бассет-хаунда на спинку и исследуйте его живот на предмет излишней раздутости и грыжи.
+         </li>
+         <li>
+          Понаблюдайте, как заинтересовавший вас щенок ведет себя в стае, с аппетитом ли ест, не пугается ли каждого шороха.
+         </li>
+        </ul>
+        <h2>
+         Щенки бассет-хаунда
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c60/c606da218831ab5ea1d8510388bad496.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/c60/380_264_2/c606da218831ab5ea1d8510388bad496.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/c60/380_264_2/c606da218831ab5ea1d8510388bad496.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/c60/380_264_2/c606da218831ab5ea1d8510388bad496.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/762/7628c0a7a5c859b19fb154a178aa8137.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/762/380_264_2/7628c0a7a5c859b19fb154a178aa8137.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/762/380_264_2/7628c0a7a5c859b19fb154a178aa8137.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/762/380_264_2/7628c0a7a5c859b19fb154a178aa8137.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2b4/2b4f9358229696a420ae64035708f5f5.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/2b4/380_264_2/2b4f9358229696a420ae64035708f5f5.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/2b4/380_264_2/2b4f9358229696a420ae64035708f5f5.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/2b4/380_264_2/2b4f9358229696a420ae64035708f5f5.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/12d/12dc1920aad439f23fb9ef9de97b6562.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/12d/380_264_2/12dc1920aad439f23fb9ef9de97b6562.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/12d/380_264_2/12dc1920aad439f23fb9ef9de97b6562.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/12d/380_264_2/12dc1920aad439f23fb9ef9de97b6562.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6e3/6e3c1f30feccc80f75c3b72cb3cf8aac.jpeg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/6e3/380_264_2/6e3c1f30feccc80f75c3b72cb3cf8aac.jpeg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/6e3/380_264_2/6e3c1f30feccc80f75c3b72cb3cf8aac.jpeg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/6e3/380_264_2/6e3c1f30feccc80f75c3b72cb3cf8aac.jpeg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/aaa/aaaa44be09d22a5adb5467126e22bd76.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/aaa/380_264_2/aaaa44be09d22a5adb5467126e22bd76.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/aaa/380_264_2/aaaa44be09d22a5adb5467126e22bd76.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/aaa/380_264_2/aaaa44be09d22a5adb5467126e22bd76.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7fb/7fbfa72cb00ef33250b608747e91582f.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/7fb/380_264_2/7fbfa72cb00ef33250b608747e91582f.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/7fb/380_264_2/7fbfa72cb00ef33250b608747e91582f.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/7fb/380_264_2/7fbfa72cb00ef33250b608747e91582f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/3b9/3b9db467a6f8fa8db2f2af28fbd06096.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/3b9/380_264_2/3b9db467a6f8fa8db2f2af28fbd06096.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/3b9/380_264_2/3b9db467a6f8fa8db2f2af28fbd06096.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/3b9/380_264_2/3b9db467a6f8fa8db2f2af28fbd06096.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/425/425f47480b9e47b46254a6d567c41893.jpg" title="">
+           <div class="lazy-load" data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/425/380_264_2/425f47480b9e47b46254a6d567c41893.jpg">
+            <noscript data-alt="Бассет-хаунд" data-class="article_pic" data-original="/upload/resize_cache/iblock/425/380_264_2/425f47480b9e47b46254a6d567c41893.jpg">
+             <img alt="Бассет-хаунд" class="article_pic" src="/upload/resize_cache/iblock/425/380_264_2/425f47480b9e47b46254a6d567c41893.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Цена бассет-хаунда
+        </h2>
+        <p>
+         Покупка здорового, привитого и чипированного бассет-хаунда в питомнике обойдется в 25 000 - 40 000 руб. Варианты подороже – это потомство от пары интерчемпионов, в будущем претендующее на право называться шоу-классом, – от 60 000 рублей и выше.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения бассет-хаунда на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/24749/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Наталия Михайловна" data-original="/upload/resize_cache/main/a62/200_200_2/ght3e7hub17608g41o1bz6habza2pcmx.png">
+            <noscript data-alt="Наталия Михайловна" data-original="/upload/resize_cache/main/a62/200_200_2/ght3e7hub17608g41o1bz6habza2pcmx.png">
+             <img alt="Наталия Михайловна" src="/upload/resize_cache/main/a62/200_200_2/ght3e7hub17608g41o1bz6habza2pcmx.png"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/bassetkhaund-3869/">
+           Бассет-хаунд
+          </a>
+         </div>
+         <div class="forum-text">
+          У меня бассет хаунд,сейчас ей 1 год 4 месяца. У нее в груди образовались мешки,плотного сложения. Ее ничего не беспокоит. Что это может быть. Я сама увидела это на улице когда она гуляла,что уж сильно весит.
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/24749/">
+            Наталия Михайловна
+           </a>
+          </span>
+          <span class="vopros-date">
+           Год назад
+          </span>
+          <span class="vopros-smotr">
+           333 просмотра
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/182/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Регина Пельман" data-original="/upload/resize_cache/main/e32/200_200_2/e3246b998317109403e3ea349ee0d417.jpg">
+            <noscript data-alt="Регина Пельман" data-original="/upload/resize_cache/main/e32/200_200_2/e3246b998317109403e3ea349ee0d417.jpg">
+             <img alt="Регина Пельман" src="/upload/resize_cache/main/e32/200_200_2/e3246b998317109403e3ea349ee0d417.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/vorovstvo-so-stola-vo-vremya-otsutstviya-khozyaev-165/">
+           Воровство со стола во время отсутствия хозяев
+          </a>
+         </div>
+         <div class="forum-text">
+          Наша собака стала воровать еду в наше отсутствие. Мы стараемся, уходя из дома, закрывать на кухне двери, но иногда в спешке забываем, и тогда все, что есть на кухне, оказывается на полу, а все съестное – в желудке...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/182/">
+            Регина Пельман
+           </a>
+          </span>
+          <span class="vopros-date">
+           6 лет назад
+          </span>
+          <span class="vopros-smotr">
+           1378 просмотров
+          </span>
+          <span class="vopros-otvet">
+           3 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/basset-khaund/forum/">
+        Перейти на
+        форум бассет-хаунда
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Бассет-хаунд" src="/upload/iblock/178/17857d5d64a088a571464b2a524d0723.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/basset-khaund/">
+          Бассет-хаунд
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/basset-khaund/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/basset-khaund/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/basset-khaund/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/basset-khaund/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/basset-khaund/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/basset-khaund/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/prazhskiy-krysarik/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Пражский крысарик" data-original="/upload/resize_cache/iblock/53c/100_100_1/53ce498d01af92dc81d30527c8449b83.jpg">
+          <noscript data-alt="Пражский крысарик" data-original="/upload/resize_cache/iblock/53c/100_100_1/53ce498d01af92dc81d30527c8449b83.jpg">
+           <img alt="Пражский крысарик" src="/upload/resize_cache/iblock/53c/100_100_1/53ce498d01af92dc81d30527c8449b83.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Пражский крысарик
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/kangal/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Кангал" data-original="/upload/resize_cache/iblock/94d/100_100_1/useii4q9qiwq8p2elw8gi5aqvo170pi3.jpg">
+          <noscript data-alt="Кангал" data-original="/upload/resize_cache/iblock/94d/100_100_1/useii4q9qiwq8p2elw8gi5aqvo170pi3.jpg">
+           <img alt="Кангал" src="/upload/resize_cache/iblock/94d/100_100_1/useii4q9qiwq8p2elw8gi5aqvo170pi3.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Кангал
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/leonberger/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Леонбергер" data-original="/upload/resize_cache/iblock/3f8/100_100_1/3f8ffbf9639e2c6370001b553ee32280.jpg">
+          <noscript data-alt="Леонбергер" data-original="/upload/resize_cache/iblock/3f8/100_100_1/3f8ffbf9639e2c6370001b553ee32280.jpg">
+           <img alt="Леонбергер" src="/upload/resize_cache/iblock/3f8/100_100_1/3f8ffbf9639e2c6370001b553ee32280.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Леонбергер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/ispanskiy-mastif/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Испанский мастиф" data-original="/upload/resize_cache/iblock/7b7/100_100_1/7b7851162ac25c8877fb43584c1aaab7.jpg">
+          <noscript data-alt="Испанский мастиф" data-original="/upload/resize_cache/iblock/7b7/100_100_1/7b7851162ac25c8877fb43584c1aaab7.jpg">
+           <img alt="Испанский мастиф" src="/upload/resize_cache/iblock/7b7/100_100_1/7b7851162ac25c8877fb43584c1aaab7.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Испанский мастиф
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbasset-khaund%252F%253Fcheck_key%253Db7b83af2cb69a32d1f83325da951f119%2526ANIMAL_CODE%253Dbasset-khaund%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbasset-khaund%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmJhc3NldC1raGF1bmQlMkYlM0ZjaGVja19rZXklM0RiN2I4M2FmMmNiNjlhMzJkMWY4MzMyNWRhOTUxZjExOSUyNkFOSU1BTF9DT0RFJTNEYmFzc2V0LWtoYXVuZCUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZiYXNzZXQta2hhdW5kJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbasset-khaund%252F%253Fcheck_key%253Db7b83af2cb69a32d1f83325da951f119%2526ANIMAL_CODE%253Dbasset-khaund%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fbasset-khaund%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbasset-khaund%252F%253Fcheck_key%253Db7b83af2cb69a32d1f83325da951f119%2526ANIMAL_CODE%253Dbasset-khaund%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbasset-khaund%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "176.123.173.185"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--944c10c6de5a17fe6edc965ba7a14ea8-->

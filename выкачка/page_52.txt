@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'a5ae9548aa3b'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Брюссельский гриффон, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Брюссельский гриффон словно сошёл со страниц сказок о добрых домовятах! Этот очаровательный и слегка неуклюжий бородач с лёгкостью завоюет любовь всех членов семьи." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/bc6/bc65e667a76766c241b86701a32d6a57.jpg" property="og:image"/>
+     <title>
+      Брюссельский гриффон: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/bryusselskiy-griffon/" property="og:url"/>
+     <meta content="Брюссельский гриффон: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Брюссельский гриффон словно сошёл со страниц сказок о добрых домовятах! Этот очаровательный и слегка неуклюжий бородач с лёгкостью завоюет любовь всех членов семьи." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/bryusselskiy-griffon/" itemprop="url">
+         <span itemprop="title">
+          Брюссельский гриффон
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Брюссельский гриффон
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/bryusselskiy-griffon/">
+          Описание
+         </a>
+         <a href="/dog/bryusselskiy-griffon/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/bryusselskiy-griffon/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/bryusselskiy-griffon/photo/">
+          Фото
+         </a>
+         <a href="/dog/bryusselskiy-griffon/video/">
+          Видео
+         </a>
+         <a href="/dog/bryusselskiy-griffon/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Брюссельский гриффон" src="/upload/iblock/f7a/f7a2fe2890315c592510483d8de8f002.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Брюссельский гриффон словно сошёл со страниц сказок о добрых домовятах! Этот очаровательный и слегка неуклюжий бородач с лёгкостью завоюет любовь всех членов семьи.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/805/8054a6365ae313e3b4675b1f2bf14c00.jpg" data-cap="As you go through life, you will see that there is so much that we don’t understand. And the only thing we know is things don’t always go the way we plan.- Simba " data-fancybox="images" data-link="https://www.instagram.com/p/CDle-3ujrXZ/" data-type="image" data-username="obi_wan_the_griffon" href="/upload/uf/281/28184382900aa3f5ecaae3f7ae30d3f6.jpg">
+            <img alt="Брюссельский гриффон" src="/upload/resize_cache/uf/281/293_293_2/28184382900aa3f5ecaae3f7ae30d3f6.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/476/476a0d62b7a61cc65e368360681f0187.jpg" data-cap="Last day of being 7 years old ! Hey hey Friday " data-fancybox="images" data-link="https://www.instagram.com/p/CEaYm19lL4t/" data-type="image" data-username="tuna_the_griffon" href="/upload/uf/d79/d79de8e6befd9cd4854f27d430051837.jpg">
+            <img alt="Брюссельский гриффон" src="/upload/resize_cache/uf/d79/293_293_2/d79de8e6befd9cd4854f27d430051837.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/73f/73f809e74aab710b86b4faeddca6cb6a.jpg" data-cap="TGIF! ❤" data-fancybox="images" data-link="https://www.instagram.com/p/CB6vhMXDS5K/" data-type="image" data-username="lilgriffons" href="/upload/uf/353/35369754f3127248b6ba2735468e9231.jpg">
+            <img alt="Брюссельский гриффон" src="/upload/resize_cache/uf/353/293_293_2/35369754f3127248b6ba2735468e9231.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/bryusselskiy-griffon/photo/">
+         Все
+            фото брюссельского гриффона
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы брюссельский гриффон
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность брюссельского гриффона
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер брюссельского гриффона
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни брюссельских гриффонов
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена брюссельского гриффона
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Брюссельский гриффон
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Бельгия
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         3-6 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         18-20 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         12-15 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Коммуникабельность и активность – главные черты представителей породы. С брюссельским гриффоном сложно заскучать.
+        </li>
+        <li>
+         «Брюссельцы» – спутники во всех смыслах этого слова: хозяевам тяжело избежать преследования и постоянного контроля со стороны этих бородачей.
+        </li>
+        <li>
+         Из всех членов семьи собака выделяет лишь одного человека, к остальным же поначалу относится прохладно и недоверчиво.
+        </li>
+        <li>
+         Вопреки небольшим размерам, брюссельские гриффоны становятся хорошими охранниками. Животное обязательно известит хозяина о приближении чужака звонким лаем.
+        </li>
+        <li>
+         Эта порода не подходит для семей с детьми, поскольку её представители не станут терпеть фамильярности и небрежного обращения.
+        </li>
+        <li>
+         Социализированные гриффоны легко уживаются как со своими сородичами, так и с другими домашними животными.
+        </li>
+        <li>
+         «Брюссельцы» славятся развитым интеллектом, поэтому легко обучаются командам, конечно, если не упрямятся.
+        </li>
+        <li>
+         Новичкам и людям с мягким характером лучше подумать о приобретении другого питомца.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Брюссельский гриффон" data-original="/upload/iblock/bc6/bc65e667a76766c241b86701a32d6a57.jpg">
+          <noscript data-alt="Брюссельский гриффон" data-original="/upload/iblock/bc6/bc65e667a76766c241b86701a32d6a57.jpg">
+           <img alt="Брюссельский гриффон" src="/upload/iblock/bc6/bc65e667a76766c241b86701a32d6a57.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Брюссельский гриффон
+          </strong>
+          – декоративная порода собак. При виде этих малышей невольно возникает ассоциация с Эркюлем Пуаро – героем романов А. Кристи. Во-первых, и легендарного детектива, и гриффонов объединяет общая родина – Бельгия. Во-вторых, животные примечательны такими же забавными «усами», как и месье Пуаро. Брюссельских гриффонов отличает жизнерадостный и добродушный характер – универсальный ключик от сердца большинства людей. Эти собаки обладают пытливым и живым умом, не любят сидеть на одном месте и всегда следуют за хозяином по пятам. Окружите бойкого малыша заботой и вниманием, и он станет вам самым преданным другом, о котором можно только мечтать!
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Сложно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошие (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Брюссельский гриффон основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы брюссельский гриффон
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Брюссельский гриффон" data-fancybox="gallery" href="/upload/iblock/01a/01adadad946c18f31b0bff24600c5934.jpg" title="Брюссельский гриффон">
+          <div class="lazy-load" data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/01a/412_2150_1/01adadad946c18f31b0bff24600c5934.jpg">
+           <noscript data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/01a/412_2150_1/01adadad946c18f31b0bff24600c5934.jpg">
+            <img alt="Брюссельский гриффон" class="article_pic" height="617" src="/upload/resize_cache/iblock/01a/412_2150_1/01adadad946c18f31b0bff24600c5934.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Брюссельский гриффон
+         </div>
+        </div>
+        <p>
+         Брюссельские гриффоны появились в Бельгии около двух столетий назад, хотя косвенные упоминания породы датируются ещё первой половиной XV века. Так, на «Портрете четы Арнольфини» ранненидерландского живописца Яна ван Эйка изображена небольшая лохматая собака, внешне напоминающая брюссельского гриффона. Сходство животного с современным представителем породы прослеживается и на более поздней картине немецкого художника Иоганна Цоффани. На ней дети британского короля Георга III играют с собаками светло-бежевого окраса, похожими на гриффонов. Француз Пьер Огюст Ренуар создал шедевр под названием «Обнажённая с гриффоном», где также нашлось место для этого удивительного животного.
+        </p>
+        <p>
+         Вопреки всеобщему заблуждению, название породы произошло вовсе не от мифологического существа с головой орла и телом льва. Слово «гриффон» французского происхождения и переводится как «жесткошёрстный».
+        </p>
+        <p>
+         Благоприятные климатические условия Бельгии обязывали её жителей активно заниматься сельским хозяйством. Частыми посетителями амбаров, где хранили зерно, становились дикие грызуны, отличавшиеся удивительной прожорливостью. После десятка их варварских набегов бельгийцы могли лишиться урожая перед наступлением зимних холодов. Для успешной борьбы с вредителями и вывели новую породу – небольших лохматых собак, которые без труда проникали в труднодоступные места и выдворяли незваных гостей. Внешне они отличались от современных животных, но сходство было очевидным.
+        </p>
+        <p>
+         Стоит отметить, что племенная программа стала довольно плодотворной, подарив миру три разновидности гриффонов:
+        </p>
+        <ul>
+         <li>
+          бельгийскую  – прямые потомки
+          <a class="ph" href="/dog/affenpincher/">
+           аффенпинчеров
+          </a>
+          ;
+         </li>
+         <li>
+          брюссельскую – помесь аффенпинчеров и
+          <a class="ph" href="/dog/kavaler-king-charlz-spaniel/">
+           кавалер-кинг-чарльз-спаниелей
+          </a>
+          ;
+         </li>
+         <li>
+          брабантскую (
+          <a class="ph" href="/dog/pti-brabanson/">
+           пти-брабансон
+          </a>
+          ) – результат вязки кавалер-кинг-чарльз-спаниелей и
+          <a class="ph" href="/dog/mops/">
+           мопсов
+          </a>
+          .
+         </li>
+        </ul>
+        <p>
+         Селекционеры допускают скрещивание трёх линий между собой. Взрослые собаки отличаются лишь окрасом и типом шерсти. Это косвенно подтверждают случаи рождения представителей всех видов гриффонов в пределах одного помёта.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Пти-брабансон" data-fancybox="gallery" href="/upload/iblock/830/830b26545e7c8fbaa56ea15c4b06ab72.jpg" title="Пти-брабансон">
+          <div class="lazy-load" data-alt="Пти-брабансон" data-class="article_pic" data-original="/upload/resize_cache/iblock/830/412_2150_1/830b26545e7c8fbaa56ea15c4b06ab72.jpg">
+           <noscript data-alt="Пти-брабансон" data-class="article_pic" data-original="/upload/resize_cache/iblock/830/412_2150_1/830b26545e7c8fbaa56ea15c4b06ab72.jpg">
+            <img alt="Пти-брабансон" class="article_pic" height="273" src="/upload/resize_cache/iblock/830/412_2150_1/830b26545e7c8fbaa56ea15c4b06ab72.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Пти-брабансон
+         </div>
+        </div>
+        <p>
+         Судьба маленьких крысоловов кардинально изменилась во второй половине XIX века. Тогда гриффоны обратили на себя внимание представителей дворянства. Этими собаками восхищалась даже бельгийская королева Мария Генриетта. Она поддерживала разведение животных и сыграла важную роль в распространении породы по территории Европы. Всё чаще на ужинах и балах появлялись знатные дамы в сопровождении гриффонов. Некоторые использовали этих собак и для охраны экипажей: звонкий лай малышей тотчас привлекал внимание.
+        </p>
+        <p>
+         С брюссельскими гриффонами связана известная история с печальным концом. Так, королева Драга Сербская была одержима идеей отравления, поэтому перед каждым приёмом пищи делилась порцией еды со своим любимцем. Однажды после очередного кусочка гриффон упал на пол замертво. Подозрения королевы подтвердились, но вместе с тем она лишилась своего верного питомца.
+        </p>
+        <p>
+         Брюссельские гриффоны не отличались миловидной внешностью. Их популярность была обусловлена энтузиазмом владельцев, которые появлялись на всевозможных смотрах и выставках вместе со своими лохматыми питомцами. Первый выход гриффонов в свет состоялся в 1880 году на выставке, организованной в Брюсселе. Заметив интерес публики к очаровательным «бородачам», любители собак объединились и в 1882 году основали Королевское общество Святого Хьюберта. Вскоре его члены принялись за ведение племенной книги породы, которая в то время носила другое название – маленький бельгийский жесткошёрстный терьер.
+        </p>
+        <p>
+         Столь активная стратегия увенчалась успехом: уже в 1904 году был принят первый стандарт породы. Спустя шесть лет брюссельских гриффонов внесли в официальный реестр Американского клуба собаководов (AKC). В 1920 году орлеанский питомник Volcano, принадлежавший мисс Ионидес, насчитывал около 40 представителей породы. Большая часть собак была привезена из Франции и Бельгии. Спустя десять лет женщина обзавелась новыми гриффонами из питомника Nunsoe. С началом военных событий XX века Ионидес позаботилась о вывозе своих подопечных в Великобританию.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Черный брюссельский гриффон" data-fancybox="gallery" href="/upload/iblock/1e5/1e56e47d1153ca62d65b83cc456acdbc.jpg" title="Черный брюссельский гриффон">
+           <div class="lazy-load" data-alt="Черный брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/1e5/512_342_2/1e56e47d1153ca62d65b83cc456acdbc.jpg">
+            <noscript data-alt="Черный брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/1e5/512_342_2/1e56e47d1153ca62d65b83cc456acdbc.jpg">
+             <img alt="Черный брюссельский гриффон" class="article_pic" src="/upload/resize_cache/iblock/1e5/512_342_2/1e56e47d1153ca62d65b83cc456acdbc.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Черный брюссельский гриффон
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бежевый брюссельский гриффон" data-fancybox="gallery" href="/upload/iblock/040/04074b67b7fa316e22d298c4ef5f9331.jpg" title="Бежевый брюссельский гриффон">
+           <div class="lazy-load" data-alt="Бежевый брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/040/512_342_2/04074b67b7fa316e22d298c4ef5f9331.jpg">
+            <noscript data-alt="Бежевый брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/040/512_342_2/04074b67b7fa316e22d298c4ef5f9331.jpg">
+             <img alt="Бежевый брюссельский гриффон" class="article_pic" src="/upload/resize_cache/iblock/040/512_342_2/04074b67b7fa316e22d298c4ef5f9331.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бежевый брюссельский гриффон
+          </div>
+         </div>
+        </div>
+        <p>
+         В 1926 году прозвучал первый сигнал тревоги: представителей породы всё реже экспортировали с территории Бельгии. После окончания Второй мировой войны поголовье собак и вовсе сократилось. В основном они обитали на территории США и Великобритании, на родине же встречались гораздо реже. В 1945 году появилась первая американская ассоциация породы. Спустя 11 лет брюссельских гриффонов признали члены Объединённого клуба собаководства (UKC). В 1963 году селекционеры доработали прежний стандарт. Именно эта версия действительна и по сей день.
+        </p>
+        <p>
+         Несмотря на усилия собаководов, порода оставалась немногочисленной. Так, в течение 1993 года племенная книга Франции зарегистрировала лишь 25 случаев появления гриффонов на свет. Да и сейчас встретить представителя этой породы – редкая удача. Брюссельские «бородачи» не получили значительного распространения, но всё же снискали любовь и восхищение кинологов всего мира благодаря незаурядному внешнему виду и добродушному характеру.
+        </p>
+        <h2>
+         Видео: Брюссельский гриффон
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="yq1P9r9EsFk">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность брюссельского гриффона
+        </h2>
+        <p>
+         Брюссельский гриффон относится к декоративным породам. Его нельзя назвать комнатной собачкой, подразумевая миловидного и покладистого любимца. Гриффоны известны в Бельгии как уличные пострелята: грубоватые и коренастые, с непослушной жёсткой шерстью и «человеческим» выражением глаз.
+        </p>
+        <p>
+         Стандарт породы определяет следующие параметры: высота в холке – 27-32 см (для кобелей) и 25-30 см (для сук); масса тела – от 3,5 до 6 кг. «Мальчики» выглядят более крепкими и сильными: половой тип хорошо выражен.
+        </p>
+        <h3>
+         Голова и череп
+        </h3>
+        <p>
+         Голова брюссельского гриффона имеет округлые очертания, выглядит крупной по отношению к корпусу. В сравнении с выпуклым лбом надбровные дуги и затылочный бугор неприметны. Череп круглый и большой.
+        </p>
+        <h3>
+         Морда
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мордаха брюссельского гриффона" data-fancybox="gallery" href="/upload/iblock/7c3/7c30f318e3d6231c4c4d91b044856251.jpg" title="Мордаха брюссельского гриффона">
+          <div class="lazy-load" data-alt="Мордаха брюссельского гриффона" data-class="article_pic" data-original="/upload/resize_cache/iblock/7c3/412_2150_1/7c30f318e3d6231c4c4d91b044856251.jpg">
+           <noscript data-alt="Мордаха брюссельского гриффона" data-class="article_pic" data-original="/upload/resize_cache/iblock/7c3/412_2150_1/7c30f318e3d6231c4c4d91b044856251.jpg">
+            <img alt="Мордаха брюссельского гриффона" class="article_pic" height="412" src="/upload/resize_cache/iblock/7c3/412_2150_1/7c30f318e3d6231c4c4d91b044856251.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мордаха брюссельского гриффона
+         </div>
+        </div>
+        <p>
+         Брюссельские гриффоны – обладатели очень короткой и вздёрнутой мордочки. Её длина обычно не превышает 1,5-2 см. Стоп глубокий: лобная часть резко переходит в небольшую переносицу. Короткая мочка носа примечательна широкими ноздрями, разделена бороздой, пигментирована в чёрный цвет. При осмотре собаки в профиль кончик носа и лоб образуют линию. При взгляде спереди видно, что глаза и нос животного расположены на одном уровне. Сухие и плотно прилегающие губы имеют тёмную кайму. Несмотря на то что верхняя губа полностью скрывает нижнюю челюсть, в уголках рта отсутствуют так называемые кармашки. Зубы и язык не видны при сомкнутой пасти собаки. Подбородок выдаётся вперёд, слегка приподнят. На шёрстном покрове морды выделяется «маска» на тон-два темнее основного цвета шерсти.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Уши брюссельского гриффона маленького размера, поставлены высоко на макушке и на значительном расстоянии друг от друга. Расположены в полустоячем положении под небольшим наклоном вперёд. Стандарт допускает купирование ушей: при этом они становятся остроконечными и слегка приподнимаются.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза поставлены широко и на одной линии. Отличаются довольно крупными размерами; округлые, но не выпуклые. Взгляду гриффона присуща «человечность», из-за чего даже щенки кажутся умудрёнными жизненным опытом. Веки плотно прилегают, полностью скрывая белки глаз и так называемое третье веко. «Украшены» длинными ресницами, из-за чего создаётся эффект чёрной окантовки. Предпочитаемый цвет радужки – коричневый; чем темнее оттенок, тем лучше. Взгляд выразительный и бойкий.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Нижняя челюсть брюссельского гриффона имеет П-образную форму, немного изогнута вверх, формирует перекус. Резцы расположены на двух параллельных линиях, клыки расставлены довольно широко. Наличие полной зубной формулы обязательно. При сомкнутой пасти собаки язык и зубы должны быть скрыты.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Победитель выставки" data-fancybox="gallery" href="/upload/iblock/9cf/9cf3786eeca0c4fb2eccd7d388be99f3.jpg" title="Победитель выставки">
+          <div class="lazy-load" data-alt="Победитель выставки" data-class="article_pic" data-original="/upload/resize_cache/iblock/9cf/1024_2150_1/9cf3786eeca0c4fb2eccd7d388be99f3.jpg">
+           <noscript data-alt="Победитель выставки" data-class="article_pic" data-original="/upload/resize_cache/iblock/9cf/1024_2150_1/9cf3786eeca0c4fb2eccd7d388be99f3.jpg">
+            <img alt="Победитель выставки" class="article_pic" src="/upload/resize_cache/iblock/9cf/1024_2150_1/9cf3786eeca0c4fb2eccd7d388be99f3.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Победитель выставки
+         </div>
+        </div>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Сильная шея животного не выглядит утяжелённой, несмотря на высокий постав и «выпуклость». Средней длины, отличается сухой мускулатурой.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок брюссельского гриффона" data-fancybox="gallery" href="/upload/iblock/3e6/3e6dbffe60a43504c17b9eb13e9c3d91.jpg" title="Щенок брюссельского гриффона">
+          <div class="lazy-load" data-alt="Щенок брюссельского гриффона" data-class="article_pic" data-original="/upload/resize_cache/iblock/3e6/412_2150_1/3e6dbffe60a43504c17b9eb13e9c3d91.jpg">
+           <noscript data-alt="Щенок брюссельского гриффона" data-class="article_pic" data-original="/upload/resize_cache/iblock/3e6/412_2150_1/3e6dbffe60a43504c17b9eb13e9c3d91.jpg">
+            <img alt="Щенок брюссельского гриффона" class="article_pic" height="512" src="/upload/resize_cache/iblock/3e6/412_2150_1/3e6dbffe60a43504c17b9eb13e9c3d91.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок брюссельского гриффона
+         </div>
+        </div>
+        <p>
+         Брюссельским гриффонам присущ квадратный формат корпуса: высота собаки в холке совпадает с длиной туловища. За счёт развитой кости кажется, что грудь животного выдаётся вперёд, как у гордо носящего свой мундир гусара. Округлые рёбра не создают эффект «бочкообразности». Холка собаки выражена умеренно. Длинные лопатки плотно прижаты. Спина гриффонов мускулистая и крепкая, переходит в поясницу (её линия слегка приподнята вверх). Круп скошен в направлении вниз. Живот подтянутый, пах очерчен.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Для хвоста брюссельского гриффона характерен высокий постав. Несётся поднятым, кончик «смотрит» на спину, но не закручивается и не касается её. Допустимо купирование хвоста на 2/3 от его первоначальной длины.
+        </p>
+        <h3>
+         Передние конечности
+        </h3>
+        <p>
+         Отличаются рельефной мускулатурой и крепким развитым костяком. «Вынесены» под корпус животного, поставлены параллельно и на значительном расстоянии друг от друга. Плотно прижатые локти расположены под холкой. Отвесные предплечья переходят в короткие пясти. Конечности гриффона заканчиваются маленькими круглыми лапами с собранными пальцами. Подушечки и когти пигментированы в чёрный цвет.
+        </p>
+        <h3>
+         Задние конечности
+        </h3>
+        <p>
+         Поставлены таким образом, что слегка выступают за седалищные бугры; углы сочленений развиты умеренно. Сильные бёдра примечательны рельефной мускулатурой. Скакательные суставы расположены низко над уровнем земли, переходят в крепкие плюсны. Лапы округлые и сводистые, заканчиваются жёсткими подушечками и когтями, окрашенными в чёрный цвет.
+        </p>
+        <h3>
+         Манера движения
+        </h3>
+        <p>
+         Брюссельские гриффоны передвигаются рысью. Задние конечности обеспечивают мощный толчок, передние же умеренно выбрасываются вперёд. При движении спина остаётся прямой и ровной.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Грация – мое второе имя" data-fancybox="gallery" href="/upload/iblock/aca/aca8e237dc2c2d302448581f26dd6f51.jpg" title="Грация – мое второе имя">
+          <div class="lazy-load" data-alt="Грация – мое второе имя" data-class="article_pic" data-original="/upload/resize_cache/iblock/aca/1024_2150_1/aca8e237dc2c2d302448581f26dd6f51.jpg">
+           <noscript data-alt="Грация – мое второе имя" data-class="article_pic" data-original="/upload/resize_cache/iblock/aca/1024_2150_1/aca8e237dc2c2d302448581f26dd6f51.jpg">
+            <img alt="Грация – мое второе имя" class="article_pic" src="/upload/resize_cache/iblock/aca/1024_2150_1/aca8e237dc2c2d302448581f26dd6f51.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Грация – мое второе имя
+         </div>
+        </div>
+        <h3>
+         Шёрстный покров
+        </h3>
+        <p>
+         Остевой волос средней длины, густой и проволокообразный – чем он грубее на ощупь, тем лучше. Вокруг глаз собаки, возле носа, на щеках и подбородке шерсть более длинная, формирует «растительность» на морде: брови, бакенбарды, усы и бороду. Нуждается в ручном тримминге.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Стандарт породы брюссельский гриффон предусматривает следующие варианты окраса:
+        </p>
+        <ul>
+         <li>
+          красный с коричневатой «маской» и тёмной украшающей шерстью;
+         </li>
+         <li>
+          бежевый с коричневато-красной или чёрной «маской» и тёмной украшающей шерстью;
+         </li>
+         <li>
+          сплошной чёрный (у взрослых собак проступает седина).
+         </li>
+        </ul>
+        <h3>
+         Возможные пороки
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Настоящий джентльмен" data-fancybox="gallery" href="/upload/iblock/9c5/9c5a62bcd352aaaa767e91848f214f1b.jpg" title="Настоящий джентльмен">
+          <div class="lazy-load" data-alt="Настоящий джентльмен" data-class="article_pic" data-original="/upload/resize_cache/iblock/9c5/412_2150_1/9c5a62bcd352aaaa767e91848f214f1b.jpg">
+           <noscript data-alt="Настоящий джентльмен" data-class="article_pic" data-original="/upload/resize_cache/iblock/9c5/412_2150_1/9c5a62bcd352aaaa767e91848f214f1b.jpg">
+            <img alt="Настоящий джентльмен" class="article_pic" height="515" src="/upload/resize_cache/iblock/9c5/412_2150_1/9c5a62bcd352aaaa767e91848f214f1b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Настоящий джентльмен
+         </div>
+        </div>
+        <p>
+         Дефектами считают малейшие отклонения от стандарта. Среди распространённых выделяют:
+        </p>
+        <ul>
+         <li>
+          растянутый или укорочённый формат корпуса;
+         </li>
+         <li>
+          шелковистый и мягкий шёрстный покров;
+         </li>
+         <li>
+          косо поставленные и/или светлые глаза;
+         </li>
+         <li>
+          облегчённое или грубое телосложение;
+         </li>
+         <li>
+          заострённую и/или опущенную морду;
+         </li>
+         <li>
+          агрессивное или трусливое поведение;
+         </li>
+         <li>
+          неаккуратно подстриженную шерсть;
+         </li>
+         <li>
+          резко острый или прямой угол крупа;
+         </li>
+         <li>
+          горбатую или провисшую поясницу;
+         </li>
+         <li>
+          коричневую пигментацию когтей;
+         </li>
+         <li>
+          бочкообразную грудную клетку;
+         </li>
+         <li>
+          плоскую и/или узкую голову;
+         </li>
+         <li>
+          наличие прибылых пальцев;
+         </li>
+         <li>
+          низко поставленную шею;
+         </li>
+         <li>
+          неразвитую мускулатуру;
+         </li>
+         <li>
+          избыточную массу тела;
+         </li>
+         <li>
+          белый остевой волос;
+         </li>
+         <li>
+          узкие холку и спину;
+         </li>
+         <li>
+          прямой прикус.
+         </li>
+        </ul>
+        <p>
+         Дисквалифицирующие пороки породы таковы:
+        </p>
+        <ul>
+         <li>
+          частичная или отсутствующая пигментация век, мочки носа и губ;
+         </li>
+         <li>
+          белые пятна или «проточины»;
+         </li>
+         <li>
+          коричневый цвет мочки носа;
+         </li>
+         <li>
+          светлая пигментация когтей;
+         </li>
+         <li>
+          неплотно закрытая пасть;
+         </li>
+         <li>
+          вывихнутые суставы;
+         </li>
+         <li>
+          неопущение яичек;
+         </li>
+         <li>
+          хромота;
+         </li>
+         <li>
+          недокус;
+         </li>
+         <li>
+          глухота;
+         </li>
+         <li>
+          слепота.
+         </li>
+        </ul>
+        <h2>
+         Фото брюссельского гриффона
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d2a/d2a386c52041a5583cde91718e2fafa7.jpg" title="">
+           <div class="lazy-load" data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/d2a/380_264_2/d2a386c52041a5583cde91718e2fafa7.jpg">
+            <noscript data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/d2a/380_264_2/d2a386c52041a5583cde91718e2fafa7.jpg">
+             <img alt="Брюссельский гриффон" class="article_pic" src="/upload/resize_cache/iblock/d2a/380_264_2/d2a386c52041a5583cde91718e2fafa7.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/329/32970922868b84bd1412ea7195035fc2.jpg" title="">
+           <div class="lazy-load" data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/329/380_264_2/32970922868b84bd1412ea7195035fc2.jpg">
+            <noscript data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/329/380_264_2/32970922868b84bd1412ea7195035fc2.jpg">
+             <img alt="Брюссельский гриффон" class="article_pic" src="/upload/resize_cache/iblock/329/380_264_2/32970922868b84bd1412ea7195035fc2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/820/820e49d39c31e3b5a1a1250d9d3135a2.jpg" title="">
+           <div class="lazy-load" data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/820/380_264_2/820e49d39c31e3b5a1a1250d9d3135a2.jpg">
+            <noscript data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/820/380_264_2/820e49d39c31e3b5a1a1250d9d3135a2.jpg">
+             <img alt="Брюссельский гриффон" class="article_pic" src="/upload/resize_cache/iblock/820/380_264_2/820e49d39c31e3b5a1a1250d9d3135a2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d9f/d9fbd9b2ba1ad7981872b28a047adc66.jpg" title="">
+           <div class="lazy-load" data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/d9f/380_264_2/d9fbd9b2ba1ad7981872b28a047adc66.jpg">
+            <noscript data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/d9f/380_264_2/d9fbd9b2ba1ad7981872b28a047adc66.jpg">
+             <img alt="Брюссельский гриффон" class="article_pic" src="/upload/resize_cache/iblock/d9f/380_264_2/d9fbd9b2ba1ad7981872b28a047adc66.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a0b/a0b62df88543abfecc3ad41bf5d674d3.jpg" title="">
+           <div class="lazy-load" data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/a0b/380_264_2/a0b62df88543abfecc3ad41bf5d674d3.jpg">
+            <noscript data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/a0b/380_264_2/a0b62df88543abfecc3ad41bf5d674d3.jpg">
+             <img alt="Брюссельский гриффон" class="article_pic" src="/upload/resize_cache/iblock/a0b/380_264_2/a0b62df88543abfecc3ad41bf5d674d3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d8a/d8a7fd290dedb483c91c347fe8ad59a6.jpg" title="">
+           <div class="lazy-load" data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/d8a/380_264_2/d8a7fd290dedb483c91c347fe8ad59a6.jpg">
+            <noscript data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/d8a/380_264_2/d8a7fd290dedb483c91c347fe8ad59a6.jpg">
+             <img alt="Брюссельский гриффон" class="article_pic" src="/upload/resize_cache/iblock/d8a/380_264_2/d8a7fd290dedb483c91c347fe8ad59a6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c86/c865affe9a8807c1c3a2570009c6e735.jpg" title="">
+           <div class="lazy-load" data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/c86/380_264_2/c865affe9a8807c1c3a2570009c6e735.jpg">
+            <noscript data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/c86/380_264_2/c865affe9a8807c1c3a2570009c6e735.jpg">
+             <img alt="Брюссельский гриффон" class="article_pic" src="/upload/resize_cache/iblock/c86/380_264_2/c865affe9a8807c1c3a2570009c6e735.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6e8/6e87b26da4d35ec0860ae8518742657c.jpg" title="">
+           <div class="lazy-load" data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/6e8/380_264_2/6e87b26da4d35ec0860ae8518742657c.jpg">
+            <noscript data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/6e8/380_264_2/6e87b26da4d35ec0860ae8518742657c.jpg">
+             <img alt="Брюссельский гриффон" class="article_pic" src="/upload/resize_cache/iblock/6e8/380_264_2/6e87b26da4d35ec0860ae8518742657c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1c2/1c26e1c47ee82b950d8d628c48dd7556.jpg" title="">
+           <div class="lazy-load" data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/1c2/380_264_2/1c26e1c47ee82b950d8d628c48dd7556.jpg">
+            <noscript data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/1c2/380_264_2/1c26e1c47ee82b950d8d628c48dd7556.jpg">
+             <img alt="Брюссельский гриффон" class="article_pic" src="/upload/resize_cache/iblock/1c2/380_264_2/1c26e1c47ee82b950d8d628c48dd7556.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер брюссельского гриффона
+        </h2>
+        <p>
+         Представители породы выглядят как суровые и нелюдимые бородачи, но при более тесном общении с ними несложно понять, что первое впечатление всё же обманчиво. Брюссельские гриффоны – энергичные и общительные собаки, которые любят быть в центре внимания. С последним стоит осторожничать: из этих малышей легко вырастить капризных и требовательных питомцев, которые не оставят вас в покое до тех пор, пока не получат желаемое.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Окружен любовью" data-fancybox="gallery" href="/upload/iblock/3a0/3a00b5dc5dfd40a21aaa7ae027cf6463.jpg" title="Окружен любовью">
+          <div class="lazy-load" data-alt="Окружен любовью" data-class="article_pic" data-original="/upload/resize_cache/iblock/3a0/412_2150_1/3a00b5dc5dfd40a21aaa7ae027cf6463.jpg">
+           <noscript data-alt="Окружен любовью" data-class="article_pic" data-original="/upload/resize_cache/iblock/3a0/412_2150_1/3a00b5dc5dfd40a21aaa7ae027cf6463.jpg">
+            <img alt="Окружен любовью" class="article_pic" height="410" src="/upload/resize_cache/iblock/3a0/412_2150_1/3a00b5dc5dfd40a21aaa7ae027cf6463.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Окружен любовью
+         </div>
+        </div>
+        <p>
+         Владельцы гриффонов отзываются о своих любимцах как о «хвостиках». И вправду: животные привыкли следовать за хозяином по пятам и при первой же возможности «зацеловывать» его до полусмерти. Четвероногие выходцы из Брюсселя склонны поддерживать любую, даже самую сумасбродную идею. Спонтанная поездка к берегу реки ранним утром? Всеми лапами за! Неожиданное путешествие на край света? Ещё лучше! Каким уставшим и сонным ни был бы «брюсселец», он не станет ворчать в ответ на предложение активно провести время и найдёт силы для долгожданной прогулки.
+        </p>
+        <p>
+         Проживая в многочисленной семье, гриффон считает равным себе лишь одного человека. Остальным же придётся изрядно постараться, чтобы заслужить хотя бы минимальное доверие со стороны собаки. А уж о беззаветной любви и говорить не стоит: на завоевание сердца строптивого малыша может уйти не один месяц.
+        </p>
+        <p>
+         Хотя брюссельских гриффонов и отличает уверенность в себе, они нуждаются в обществе хозяина и плохо мирятся с одиночеством. Эта порода не подойдёт людям, которые проводят значительную часть своего времени на рабочем месте. Не станет «брюсселец» лучшим другом и тому, кто не привык к обязательствам перед живым существом. Животное склонно навязывать свою компанию, что придётся по душе далеко не каждому человеку.
+        </p>
+        <p>
+         Среди новичков бытует мнение о том, что декоративные собаки не нуждаются в длительных прогулках. В случае с брюссельским гриффоном это не так: представители породы любят изучать окрестности под пристальным наблюдением хозяина. Конечно, животным достаточно и получасового променада, но если вам удастся задержаться на улице как можно дольше, счастью питомца не будет границ! Кажется, что под жестковатой на ощупь шёрсткой спрятан маленький моторчик, который приводит собаку в движение, вынуждая её резвиться на свежем воздухе.
+        </p>
+        <p>
+         Несмотря на скромные габариты, эта порода славится охранными качествами. Маленький «звоночек» оповестит хозяина о приближении незваного гостя. Конечно же, от гриффона не стоит ждать рьяной защиты имущества, но всё же будьте уверены: мимо бдительного «бородача» и муха не пролетит незамеченной.
+        </p>
+        <p>
+         «Брюссельцы» нуждаются в ранней социализации, иначе при виде незнакомцев собака будет проявлять испуг или агрессию. Даже правильно воспитанные гриффоны настороженно относятся к чужим людям. Типичный представитель породы не станет зря вилять хвостом, если окружающие будут искренне восхищаться им. Вместо громкого и радостного лая животное заворчит и сделает шаг назад. Погладить малыша чужаку вряд ли удастся.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Дружба с котом" data-fancybox="gallery" href="/upload/iblock/b69/b698116ea7191193fadf63b6eb763af6.jpg" title="Дружба с котом">
+          <div class="lazy-load" data-alt="Дружба с котом" data-class="article_pic" data-original="/upload/resize_cache/iblock/b69/412_2150_1/b698116ea7191193fadf63b6eb763af6.jpg">
+           <noscript data-alt="Дружба с котом" data-class="article_pic" data-original="/upload/resize_cache/iblock/b69/412_2150_1/b698116ea7191193fadf63b6eb763af6.jpg">
+            <img alt="Дружба с котом" class="article_pic" height="412" src="/upload/resize_cache/iblock/b69/412_2150_1/b698116ea7191193fadf63b6eb763af6.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Дружба с котом
+         </div>
+        </div>
+        <p>
+         Семьям с детьми стоит задуматься о других породах. Брюссельские гриффоны не отличаются терпением по отношению к ребяческим играм, не станут мириться с грубыми толчками и могут даже обнажить клыки, если увидят в действиях ребёнка опасность. К тому же эти небольшие собаки довольно хрупкие и требуют соответствующего к себе отношения. К сожалению, не все дети проявляют аккуратность к домашним животным.
+        </p>
+        <p>
+         Представители этой породы легко находят общий язык со своими сородичами. Если до появления гриффона в доме у вас уже жила собака, брюссельский «бородач» с радостью признает авторитет старшего друга и даже станет копировать его повадки. Впрочем, некоторые малыши всё же постараются занять место альфы. Задача хозяина – пресекать возможную агрессию. Это правило относится и к другим домашним питомцам: кошкам, декоративным грызунам и птицам. Социализированный гриффон терпимо относится к животным, но в любом случае будет ревностно оберегать свои игрушки и лакомства.
+        </p>
+        <p>
+         Брюссельские гриффоны не подходят для содержания в вольере – это факт. Маленьким питомцам приходится по душе уютная квартира без сквозняков. Обустройте собаке укромное местечко, ежедневно выделяйте около полутора часов на прогулку, чаще выбирайтесь за город – и брюссельский гриффон станет самым счастливым!
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Помимо внешности умудрённого опытом старичка, брюссельский гриффон примечателен и пытливым умом. Даже двухмесячные щенки с лёгкостью понимают, чего от них хотят, поэтому их воспитание следует начинать как можно раньше. Сперва чётко определитесь с позицией лидера: гриффон не должен допускать мысли о том, что он главный в семье. «Брюссельцы» склонны к доминированию, так что эта порода не подойдёт людям с мягким характером.
+        </p>
+        <p>
+         Хотя гриффоны и слывут довольно смышлёными собаками, их дрессировка может стать затруднительной. Животное часто проявляет упрямство и своенравие, поэтому обучение потребует много времени и сил. Вместе с тем брюссельский гриффон – одна из самых дрессируемых миниатюрных пород. Стоит начать с изучения базовых команд: «Сидеть!», «Лежать!», «Голос!», «Ко мне!», «Дай лапу!», «Рядом!», «Нельзя!». При необходимости стоит обратиться к услугам профессионального кинолога.
+        </p>
+        <p>
+         В процессе дрессировки пользуйтесь главным оружием – последовательностью и терпением. Прибегайте только к положительным методам: лакомству, поощрению или ласковому поглаживанию за ухом. Не рекомендуется повышать голос на собаку: после такого унижения гриффон нескоро настроится на учебный лад.
+        </p>
+        <p>
+         Помимо команд, стоит задействовать брюссельского гриффона в отдельных видах спорта – в частности, аджилити. Во время бега с препятствиями животное не только повторит уже изученные команды, но и вдоволь разомнёт лапы. К тому же общение с хозяином и четвероногими сородичами только пойдёт на пользу.
+        </p>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Постирушки" data-fancybox="gallery" href="/upload/iblock/fcc/fcc13022c01a61142ebcdd32386f0861.jpg" title="Постирушки">
+          <div class="lazy-load" data-alt="Постирушки" data-class="article_pic" data-original="/upload/resize_cache/iblock/fcc/412_2150_1/fcc13022c01a61142ebcdd32386f0861.jpg">
+           <noscript data-alt="Постирушки" data-class="article_pic" data-original="/upload/resize_cache/iblock/fcc/412_2150_1/fcc13022c01a61142ebcdd32386f0861.jpg">
+            <img alt="Постирушки" class="article_pic" height="309" src="/upload/resize_cache/iblock/fcc/412_2150_1/fcc13022c01a61142ebcdd32386f0861.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Постирушки
+         </div>
+        </div>
+        <p>
+         Ввиду специфичного шёрстного покрова брюссельские гриффоны нуждаются в постоянном и тщательном уходе. Собаку необходимо вычёсывать минимум раз в неделю (желательно чаще), используя гребень с густыми зубьями или фурминатор. Подойдёт и специальная «шипованная» рукавица: такие продаются в зоомагазинах. Бакенбарды, усы и бороду стоит расчёсывать ежедневно, чтобы шерсть не спутывалась и выглядела опрятно. Представители породы нуждаются и в регулярном тримминге – выщипывании волосков. Эту процедуру желательно доверить специалисту, особенно если ваш любимец планирует участвовать в выставке.
+        </p>
+        <p>
+         Представители породы не нуждаются в регулярных водных процедурах: это негативно сказывается на состоянии шерсти. Достаточно купать собаку по мере необходимости, но не чаще двух раз в месяц. Уделите внимание и составу зоошампуня: в нём не должны содержаться агрессивные вещества. Перед купанием следует разбавить средство гигиены водой в соотношении 1:3. Смывайте шампунь тщательно, особенно с украшающих волосков на морде животного. После купания достаточно протереть шерсть гриффона полотенцем из натурального материала, которое хорошо впитывает влагу. Позаботьтесь об отсутствии сквозняков, иначе собака может простудиться. Идеальное место для отдыха после принятия ванны – сухое и тёплое помещение.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важно знать:
+         </strong>
+         небольшие кожные складочки на морде брюссельского гриффона – благоприятное место для размножения болезнетворных бактерий. Обязательно осматривайте их после каждой прогулки или приёма пищи. Так вы избежите вынужденных визитов в ветеринарную клинику.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Модная стрижка" data-fancybox="gallery" href="/upload/iblock/f7b/f7bd9edf49604d80b6e6453029a60e93.jpg" title="Модная стрижка">
+          <div class="lazy-load" data-alt="Модная стрижка" data-class="article_pic" data-original="/upload/resize_cache/iblock/f7b/412_2150_1/f7bd9edf49604d80b6e6453029a60e93.jpg">
+           <noscript data-alt="Модная стрижка" data-class="article_pic" data-original="/upload/resize_cache/iblock/f7b/412_2150_1/f7bd9edf49604d80b6e6453029a60e93.jpg">
+            <img alt="Модная стрижка" class="article_pic" height="444" src="/upload/resize_cache/iblock/f7b/412_2150_1/f7bd9edf49604d80b6e6453029a60e93.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Модная стрижка
+         </div>
+        </div>
+        <p>
+         Процедура тримминга необходима и ушам гриффона: густой шёрстный покров в раковинах препятствует хорошей вентиляции. Для размягчения серы и её осторожного удаления рекомендуется использовать средства с подсушивающим эффектом.
+        </p>
+        <p>
+         Регулярному осмотру стоит подвергать и глаза собаки. Их выпуклая форма способствует раздражению из-за длинных шерстинок, так что участки тела над носом необходимо осторожно простригать. Волоски убираются в направлении ко внутреннему уголку глаз. Помните, что обильные выделения – тревожный сигнал: нужно ликвидировать проблему как можно скорее, иначе потребуется вмешательство ветеринара.
+        </p>
+        <p>
+         Ротовая полость – ещё одна благоприятная среда для размножения бактерий. Владельцу брюссельского гриффона стоит позаботиться о регулярном удалении налёта с зубов питомца. Частоту процедуры можно уменьшить, если собака питается сухим кормом: в этом случае чистка осуществляется непроизвольно. Вмешательство хозяина потребуется лишь раз в месяц. Животным, которые употребляют натуральную пищу, придётся чистить зубной ряд уже со щенячьего возраста. Для этого необходимо приобрести специальную пасту в зоомагазине. Можно «порадовать» гриффона гигиеническим средством со вкусом рыбы или мяса. Некоторые владельцы собак рекомендуют натирать зубы питомцев активированным углём, замедляющим образование налёта.
+        </p>
+        <p>
+         Брюссельский гриффон – весьма активная порода, когти её представителей чаще всего стачиваются самостоятельно. Иногда этого не происходит, и животное начинает испытывать дискомфорт. Здесь придёт на помощь специальный когтерез для маленьких собак. Подрезайте когти гриффона осторожно, не задевая участков с кровеносными сосудами. Не причиняйте любимцу боль, иначе в следующий раз он сделает всё что угодно, лишь бы не даться вам в руки.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Что на обед?" data-fancybox="gallery" href="/upload/iblock/6ac/6acee715b91b7c59064f4cdb8697f28d.jpg" title="Что на обед?">
+          <div class="lazy-load" data-alt="Что на обед?" data-class="article_pic" data-original="/upload/resize_cache/iblock/6ac/412_2150_1/6acee715b91b7c59064f4cdb8697f28d.jpg">
+           <noscript data-alt="Что на обед?" data-class="article_pic" data-original="/upload/resize_cache/iblock/6ac/412_2150_1/6acee715b91b7c59064f4cdb8697f28d.jpg">
+            <img alt="Что на обед?" class="article_pic" height="410" src="/upload/resize_cache/iblock/6ac/412_2150_1/6acee715b91b7c59064f4cdb8697f28d.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Что на обед?
+         </div>
+        </div>
+        <p>
+         Питание – важный момент в содержании брюссельских гриффонов. Приобретая нового друга, стоит проконсультироваться с заводчиком касательно прежнего рациона собаки: резко менять его категорически не рекомендуется. Переводить питомца на новый тип питания нужно постепенно, наблюдая за самочувствием гриффона. У представителей породы часто проявляется аллергия.
+        </p>
+        <p>
+         Выделяют два варианта рациона: сухие корма и натуральная пища. При выборе первого необходимо проконсультироваться с ветеринаром и внимательно читать рекомендации на упаковке. Идеально подходит корм супер-премиум-класса или холистик. Этот способ питания значительно сэкономит время.
+        </p>
+        <p>
+         Натуральный рацион брюссельского гриффона должен включать сырое или ошпаренное кипятком мясо, варёную морскую рыбу без костей и крупы (овсянку, гречку, рис). Кинологи рекомендуют дополнять собачье меню сезонными фруктами и овощами, нежирными кисломолочными продуктами и перепелиными яйцами. Раз в день добавляйте в основное «блюдо» чайную ложку растительного масла.
+        </p>
+        <p>
+         Стоит исключить:
+        </p>
+        <ul>
+         <li>
+          острую, солёную, маринованную пищу со специями;
+         </li>
+         <li>
+          «человеческие» напитки (чай, кофе);
+         </li>
+         <li>
+          жирное мясо (свинину, баранину);
+         </li>
+         <li>
+          речную рыбу в любом виде;
+         </li>
+         <li>
+          коровье и кобылье молоко;
+         </li>
+         <li>
+          углеводные продукты;
+         </li>
+         <li>
+          копчёные деликатесы;
+         </li>
+         <li>
+          ягоды с косточками;
+         </li>
+         <li>
+          бобовые культуры;
+         </li>
+         <li>
+          трубчатые кости;
+         </li>
+         <li>
+          сладости.
+         </li>
+        </ul>
+        <p>
+         Необходимо предоставить собаке постоянный доступ к чистой воде. Владельцы советуют использовать бутилированную. Подойдёт и настоянная вода из-под крана.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Готов прогуляться под дождем" data-fancybox="gallery" href="/upload/iblock/22f/22fc89d6113ecdf6eecfbe6a318833c0.jpg" title="Готов прогуляться под дождем">
+          <div class="lazy-load" data-alt="Готов прогуляться под дождем" data-class="article_pic" data-original="/upload/resize_cache/iblock/22f/412_2150_1/22fc89d6113ecdf6eecfbe6a318833c0.jpg">
+           <noscript data-alt="Готов прогуляться под дождем" data-class="article_pic" data-original="/upload/resize_cache/iblock/22f/412_2150_1/22fc89d6113ecdf6eecfbe6a318833c0.jpg">
+            <img alt="Готов прогуляться под дождем" class="article_pic" height="414" src="/upload/resize_cache/iblock/22f/412_2150_1/22fc89d6113ecdf6eecfbe6a318833c0.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Готов прогуляться под дождем
+         </div>
+        </div>
+        <p>
+         В целом брюссельские гриффоны неприхотливы. Хоть им и требуются трёхразовые прогулки, можно приучить животное справлять нужду в специально отведённом месте (к примеру, на пелёнке) и тем самым сократить время променада. Некоторые владельцы бородачей любят одевать их в красивую одёжку, но в целом это нельзя назвать необходимостью. Исключение – слякоть: из-за низкого роста гриффон может изрядно испачкаться, поэтому ему потребуется непромокаемый комбинезон.
+        </p>
+        <p>
+         Обзаведясь маленьким другом, необходимо выделить укромный уголок. В противном случае гриффон будет скрываться от любопытных глаз под ванной или кроватью, на нижних полках шкафов и даже в открытых тумбочках. Там же животное спрячет и свои «сокровища»: тапочки, игрушки, носки, карандаши, ручки и прочие предметы, которые, по его мнению, утратили для хозяина свою ценность. Взяв в дом маленького пушистика, придётся приучить себя к порядку, если вы не хотите лишиться многих вещей. К слову, за столь забавную привычку брюссельских гриффонов часто называют домовятами.
+        </p>
+        <p>
+         Несмотря на скромные размеры, храп гриффона может сравниться с храпом
+         <a class="ph" href="/dog/angliyskiy-mastif/">
+          английского мастифа
+         </a>
+         . Это объясняется приплюснутой мордой, из-за которой дыхание получается чересчур громким. Для крепкого сна и прекрасного самочувствия утром рекомендуется организовать личное местечко питомца далеко от вашей спальни.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни брюссельских гриффонов
+        </h2>
+        <p>
+         Представителей породы отличает крепкий иммунитет по отношению к вирусным и простудным заболеваниям. Вместе с тем для собак характерны распространённые патологии:
+        </p>
+        <ul>
+         <li>
+          гидроцефалия (водянка головного мозга);
+         </li>
+         <li>
+          дистихиаз (наличие лишних ресниц);
+         </li>
+         <li>
+          выпадение глазных яблок;
+         </li>
+         <li>
+          осложнения при родах;
+         </li>
+         <li>
+          киста в спинном мозге;
+         </li>
+         <li>
+          атрофия сетчатки;
+         </li>
+         <li>
+          болезнь Пертеса;
+         </li>
+         <li>
+          узкие ноздри;
+         </li>
+         <li>
+          катаракта.
+         </li>
+        </ul>
+        <p>
+         Ежедневные прогулки, возрастной режим кормления, своевременная вакцинация, обработка от паразитов – вот ключи к долголетию и здоровью вашего питомца. При обнаружении подозрительных симптомов необходимо записаться на консультацию в ветеринарную клинику.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Перед покупкой брюссельского гриффона важно создать подходящие условия для содержания будущего друга. Лежак, миски, игрушки, шлейка, средства собачьей гигиены – лишь после приобретения этих необходимых вещей стоит приступать к поиску питомника. Заводчики, которые специализируются на породе, в основном находятся в крупных городах. Если вы проживаете на периферии, тщательно продумайте обратный путь – уже в компании четвероногого приятеля.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Как тебе мой прикус?" data-fancybox="gallery" href="/upload/iblock/193/193527a16efdbae10d18e5efe9411ccf.jpg" title="Как тебе мой прикус?">
+          <div class="lazy-load" data-alt="Как тебе мой прикус?" data-class="article_pic" data-original="/upload/resize_cache/iblock/193/412_2150_1/193527a16efdbae10d18e5efe9411ccf.jpg">
+           <noscript data-alt="Как тебе мой прикус?" data-class="article_pic" data-original="/upload/resize_cache/iblock/193/412_2150_1/193527a16efdbae10d18e5efe9411ccf.jpg">
+            <img alt="Как тебе мой прикус?" class="article_pic" height="309" src="/upload/resize_cache/iblock/193/412_2150_1/193527a16efdbae10d18e5efe9411ccf.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Как тебе мой прикус?
+         </div>
+        </div>
+        <p>
+         Как только подходящий питомник брюссельских гриффонов найден, можно приступать к выбору пола щенка. Помните, что кобелей отличают независимость и склонность к агрессии, а сук – послушание и преданность. Последние могут создать дополнительный дискомфорт при течке: во время прогулки с любимицей едва ли удастся скрыться от толпы четвероногих «женихов».
+        </p>
+        <p>
+         Если вы уже определились с полом будущего питомца, самое время присмотреться к кандидатам! Оптимальный возраст щенка для покупки – 6-8 недель. Малыши, которых рано оторвали от матери, в большинстве случаев вырастают слабыми и неприспособленными. К тому же психическое состояние такого гриффона оставляет желать лучшего: у щенка отсутствуют навыки первичной социализации.
+        </p>
+        <p>
+         При выборе брюссельского гриффона внимательно присмотритесь ко всему помёту. Если малыши в большинстве своём пугливы или даже агрессивны, попросите заводчика познакомить вас с другой собачьей семьёй. Здоровые «брюссельцы» должны быть любопытными, игривыми и весёлыми. Проверить это легко: возьмите в руку связку ключей или погремушку и протяните её в сторону щенков. Малышей с прекрасным самочувствием тотчас привлечёт новый звук и запах.
+        </p>
+        <p>
+         Обращайте внимание и на комплекцию гриффона. Не стоит выбирать самого упитанного щенка, однако излишняя худоба животного тоже должна насторожить вас. Отдайте предпочтение малышу средних размеров, внимательно осмотрите его со всех сторон. Шерсть должна быть густой, без проплешин; глаза и ушки – чистыми; лапы – неповреждёнными. Здоровый «брюсселец» не должен кашлять и чихать.
+        </p>
+        <p>
+         Последний шаг на пути к беззаветной дружбе с гриффоном – получение документов. Добросовестный заводчик должен предоставить покупателю свидетельство о вакцинации щенка, его паспорт и подтверждение родословной. Стоит расспросить его подробнее о содержании брюссельских гриффонов, а особенно – о режиме питания выбранного малыша. Для положительной адаптации не рекомендуется резко менять рацион щенка.
+        </p>
+        <h2>
+         Щенки брюссельского гриффона
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ec4/ec4f017c961d37903264360b41704448.jpg" title="">
+           <div class="lazy-load" data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/ec4/380_264_2/ec4f017c961d37903264360b41704448.jpg">
+            <noscript data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/ec4/380_264_2/ec4f017c961d37903264360b41704448.jpg">
+             <img alt="Брюссельский гриффон" class="article_pic" src="/upload/resize_cache/iblock/ec4/380_264_2/ec4f017c961d37903264360b41704448.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a3d/a3dfa7b485ceb89f2c3712d470c601dd.jpg" title="">
+           <div class="lazy-load" data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/a3d/380_264_2/a3dfa7b485ceb89f2c3712d470c601dd.jpg">
+            <noscript data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/a3d/380_264_2/a3dfa7b485ceb89f2c3712d470c601dd.jpg">
+             <img alt="Брюссельский гриффон" class="article_pic" src="/upload/resize_cache/iblock/a3d/380_264_2/a3dfa7b485ceb89f2c3712d470c601dd.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/3ec/3ec0e22ebedaf94c52e55af7c7b0678d.jpg" title="">
+           <div class="lazy-load" data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/3ec/380_264_2/3ec0e22ebedaf94c52e55af7c7b0678d.jpg">
+            <noscript data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/3ec/380_264_2/3ec0e22ebedaf94c52e55af7c7b0678d.jpg">
+             <img alt="Брюссельский гриффон" class="article_pic" src="/upload/resize_cache/iblock/3ec/380_264_2/3ec0e22ebedaf94c52e55af7c7b0678d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5dc/5dcfd1032825f9c6bf303d8f2db01c85.jpg" title="">
+           <div class="lazy-load" data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/5dc/380_264_2/5dcfd1032825f9c6bf303d8f2db01c85.jpg">
+            <noscript data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/5dc/380_264_2/5dcfd1032825f9c6bf303d8f2db01c85.jpg">
+             <img alt="Брюссельский гриффон" class="article_pic" src="/upload/resize_cache/iblock/5dc/380_264_2/5dcfd1032825f9c6bf303d8f2db01c85.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/029/0299be709415e8bc6e5fdb987b353d42.jpg" title="">
+           <div class="lazy-load" data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/029/380_264_2/0299be709415e8bc6e5fdb987b353d42.jpg">
+            <noscript data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/029/380_264_2/0299be709415e8bc6e5fdb987b353d42.jpg">
+             <img alt="Брюссельский гриффон" class="article_pic" src="/upload/resize_cache/iblock/029/380_264_2/0299be709415e8bc6e5fdb987b353d42.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c00/c00c681e862a7d0715d0af0c5890af55.jpg" title="">
+           <div class="lazy-load" data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/c00/380_264_2/c00c681e862a7d0715d0af0c5890af55.jpg">
+            <noscript data-alt="Брюссельский гриффон" data-class="article_pic" data-original="/upload/resize_cache/iblock/c00/380_264_2/c00c681e862a7d0715d0af0c5890af55.jpg">
+             <img alt="Брюссельский гриффон" class="article_pic" src="/upload/resize_cache/iblock/c00/380_264_2/c00c681e862a7d0715d0af0c5890af55.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Цена брюссельского гриффона
+        </h2>
+        <p>
+         Брюссельский гриффон с элитным происхождением и крепким здоровьем обойдётся будущему владельцу в 40 000 рублей. Цена может меняться в любую сторону, исходя из некоторых факторов: расположения и популярности питомника, возраста и пола собаки, титулов и наград его родителей. За меньшую стоимость – около 15 000 рублей – можно купить «брюссельца» с рук, но в этом случае никто не гарантирует здоровье и хороший иммунитет собаки.
+        </p>
+        <p>
+         Сколько бы вам ни пришлось заплатить за гриффона, это ничто в сравнении с тем, какого преданного и жизнерадостного друга вы получите! Представитель этой породы привнесёт долю веселья даже в самые однообразные будни.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения брюссельского гриффона на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/bryusselskiy-griffon/forum/">
+        Перейти на
+        форум брюссельского гриффона
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Брюссельский гриффон" src="/upload/iblock/f7a/f7a2fe2890315c592510483d8de8f002.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/bryusselskiy-griffon/">
+          Брюссельский гриффон
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/bryusselskiy-griffon/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/bryusselskiy-griffon/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/bryusselskiy-griffon/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/bryusselskiy-griffon/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/bryusselskiy-griffon/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/bryusselskiy-griffon/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/pagl/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Пагль" data-original="/upload/resize_cache/iblock/27c/100_100_1/g03ybu975jvkzcb5520wd1if364byzaa.jpg">
+          <noscript data-alt="Пагль" data-original="/upload/resize_cache/iblock/27c/100_100_1/g03ybu975jvkzcb5520wd1if364byzaa.jpg">
+           <img alt="Пагль" src="/upload/resize_cache/iblock/27c/100_100_1/g03ybu975jvkzcb5520wd1if364byzaa.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Пагль
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/norvich-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Норвич-терьер" data-original="/upload/resize_cache/iblock/052/100_100_1/052b31c84bf7b1d943721130161d5495.jpg">
+          <noscript data-alt="Норвич-терьер" data-original="/upload/resize_cache/iblock/052/100_100_1/052b31c84bf7b1d943721130161d5495.jpg">
+           <img alt="Норвич-терьер" src="/upload/resize_cache/iblock/052/100_100_1/052b31c84bf7b1d943721130161d5495.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Норвич-терьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/lkhasa-apso/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Лхаса апсо" data-original="/upload/resize_cache/iblock/83b/100_100_1/83bae38048ca793ddcd6b501b74eb3e1.jpg">
+          <noscript data-alt="Лхаса апсо" data-original="/upload/resize_cache/iblock/83b/100_100_1/83bae38048ca793ddcd6b501b74eb3e1.jpg">
+           <img alt="Лхаса апсо" src="/upload/resize_cache/iblock/83b/100_100_1/83bae38048ca793ddcd6b501b74eb3e1.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Лхаса апсо
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/alabay-sredneaziatskaya-ovcharka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Алабай (Среднеазиатская овчарка)" data-original="/upload/resize_cache/iblock/609/100_100_1/609708aa8ba6a6e5eccecc9a058c1b65.jpg">
+          <noscript data-alt="Алабай (Среднеазиатская овчарка)" data-original="/upload/resize_cache/iblock/609/100_100_1/609708aa8ba6a6e5eccecc9a058c1b65.jpg">
+           <img alt="Алабай (Среднеазиатская овчарка)" src="/upload/resize_cache/iblock/609/100_100_1/609708aa8ba6a6e5eccecc9a058c1b65.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Алабай (Среднеазиатская овчарка)
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbryusselskiy-griffon%252F%253Fcheck_key%253Dcbeaef87e63da0ff16d4e80eaaf06cbc%2526ANIMAL_CODE%253Dbryusselskiy-griffon%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbryusselskiy-griffon%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmJyeXVzc2Vsc2tpeS1ncmlmZm9uJTJGJTNGY2hlY2tfa2V5JTNEY2JlYWVmODdlNjNkYTBmZjE2ZDRlODBlYWFmMDZjYmMlMjZBTklNQUxfQ09ERSUzRGJyeXVzc2Vsc2tpeS1ncmlmZm9uJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmJyeXVzc2Vsc2tpeS1ncmlmZm9uJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbryusselskiy-griffon%252F%253Fcheck_key%253Dcbeaef87e63da0ff16d4e80eaaf06cbc%2526ANIMAL_CODE%253Dbryusselskiy-griffon%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fbryusselskiy-griffon%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbryusselskiy-griffon%252F%253Fcheck_key%253Dcbeaef87e63da0ff16d4e80eaaf06cbc%2526ANIMAL_CODE%253Dbryusselskiy-griffon%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbryusselskiy-griffon%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "217.66.157.22"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--f367952976ce8ce0ff2f913e17682bbd-->

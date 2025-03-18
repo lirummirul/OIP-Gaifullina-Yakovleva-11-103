@@ -1,0 +1,1713 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'0a00262ae829'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Босерон, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Босерон – собака-пастух из французского Средневековья, которая дошла до наших дней, не претерпев практически никаких изменений." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/51e/51e2ab59d47d2caf5986710fdf1e605e.jpg" property="og:image"/>
+     <title>
+      Босерон: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/boseron/" property="og:url"/>
+     <meta content="Босерон: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Босерон – собака-пастух из французского Средневековья, которая дошла до наших дней, не претерпев практически никаких изменений." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/boseron/" itemprop="url">
+         <span itemprop="title">
+          Босерон
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Босерон
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/boseron/">
+          Описание
+         </a>
+         <a href="/dog/boseron/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/boseron/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/boseron/photo/">
+          Фото
+         </a>
+         <a href="/dog/boseron/video/">
+          Видео
+         </a>
+         <a href="/dog/boseron/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Босерон" src="/upload/iblock/d56/d565b328cff4741735e33f0a590a6e88.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/boseron/">
+           французская овчарка
+          </a>
+         </span>
+         <p>
+          Босерон – собака-пастух из французского Средневековья, которая дошла до наших дней, не претерпев практически никаких изменений.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="" data-fancybox="images" data-link="https://www.flickr.com/photos/125574296@N05/14708540797/" data-type="image" data-username="Krista Rosenlöf" href="/upload/uf/8c8/8c809ad7446199aa2ca6d62df688c875.jpg">
+            <img alt="Босерон" src="/upload/resize_cache/uf/8c8/293_293_2/8c809ad7446199aa2ca6d62df688c875.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/7e3/7e3db726389d2281f3f1b4e481951192.png" data-cap="" data-fancybox="images" data-link="https://www.reddit.com/r/aww/comments/3ohwfk/heres_watson_not_a_harlequin_beauceron_just_an/" data-type="image" data-username=" r/aww" href="/upload/uf/bf5/bf561bae62f20956d7202df016853138.jpg">
+            <img alt="Босерон" src="/upload/resize_cache/uf/bf5/293_293_2/bf561bae62f20956d7202df016853138.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/aca/aca40c0f43f50243f18ce0c5561bb9cc.jpg" data-cap="Два очаровательных щенка босерона" data-fancybox="images" data-link="https://www.instagram.com/p/BnbCja6F101/" data-type="image" data-username="lapkins.ru" href="/upload/uf/e9e/e9e620c22dc731775fe6e6937758474a.jpg">
+            <img alt="Босерон" src="/upload/resize_cache/uf/e9e/293_293_2/e9e620c22dc731775fe6e6937758474a.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/boseron/photo/">
+         Все
+            фото босерона
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы босерон
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность босерона
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер босерона
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка босерона
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни босерона
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Сколько стоит босерон
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Босерон
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Франция
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         30-45 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 65-70 см, суки 61-68 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         10-13 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Босерон или французская овчарка – достаточно редкая порода в нашей стране.
+        </li>
+        <li>
+         Животное крупное, хорошего сбалансированного атлетического сложения, ловкое, быстрое и выносливое.
+        </li>
+        <li>
+         Исторически сложилось так, что босерон недоверчив к незнакомцам. Чтобы избежать проблем в будущем, нужно правильно воспитывать собаку с детства.
+        </li>
+        <li>
+         Характер французской овчарки можно назвать даже жестким. Собаки этой породы (чаще кобели) склонны к доминированию. Чтобы найти с питомцем общий язык и достичь взаимопонимания, придется приложить много времени и сил.
+        </li>
+        <li>
+         Городским жителям нужно знать, что босерон не очень подходящая для квартирного содержания собака. Причина этому – активный темперамент пса и потребность в постоянной физической нагрузке.
+        </li>
+        <li>
+         Босерона отличает замедленный процесс созревания – до двух-трех лет пес не считается взрослым.
+        </li>
+        <li>
+         Детям среднего и старшего возраста сразу нужно объяснить основные правила поведения с таким животным. Подолгу терпеть шалости босерон не будет, но при соблюдении норм дружелюбного общения вполне способен стать для ребенка преданным другом и защитником. Если же в доме есть совсем малыши, пес незамедлительно возьмет на себя опеку над самыми маленькими членами «стаи». Босероны – отличные няни.
+        </li>
+        <li>
+         Дрессировать французскую овчарку нужно обязательно. Босерон создан для службы и работы, и лишать собаку ее истинного предназначения просто не гуманно.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Босерон" data-original="/upload/iblock/51e/51e2ab59d47d2caf5986710fdf1e605e.jpg">
+          <noscript data-alt="Босерон" data-original="/upload/iblock/51e/51e2ab59d47d2caf5986710fdf1e605e.jpg">
+           <img alt="Босерон" src="/upload/iblock/51e/51e2ab59d47d2caf5986710fdf1e605e.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Босерон
+          </strong>
+          – аборигенная порода, прямой потомок волка. Изначально незаменимая пастушья собака, сегодня она по праву считается первоклассным сторожем и полноценным членом семьи, заслужившим абсолютное доверие человека. Босероны воплощают в себе лучшие черты семейства псовых: силу, выносливость, бесконечную преданность, умение быть компаньонами и готовность защищать тех, кого любят.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Босерон основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы босерон
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Босерон" data-fancybox="gallery" href="/upload/iblock/327/327e40dc02d63d6b4f3760dfe2100828.jpg" title="Босерон">
+          <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/327/412_2150_1/327e40dc02d63d6b4f3760dfe2100828.jpg">
+           <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/327/412_2150_1/327e40dc02d63d6b4f3760dfe2100828.jpg">
+            <img alt="Босерон" class="article_pic" height="618" src="/upload/resize_cache/iblock/327/412_2150_1/327e40dc02d63d6b4f3760dfe2100828.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Босерон
+         </div>
+        </div>
+        <p>
+         Если говорить о происхождении породы босерон, на сегодняшний день выдвигается две основные гипотезы. Согласно одной из них, предком французской гладкошерстной овчарки была ископаемая торфяная собака, останки которой обнаружили в районе горного массива Юра. По другой – предком босерона был волк. В пользу этой версии говорит большое сходство животных не только во внешнем облике, но и на внутриклеточном уровне. Расставить все точки над «и» под силу лишь генетикам, но на данный момент эта проблема не исследуется.
+        </p>
+        <p>
+         Точно известно следующее: порода босерон формировалась на территории современной Франции практически безо всякого постороннего влияния. Эволюционное развитие привело к появлению достаточно крупной, очень мощной и выносливой собаки, которая с успехом применялась в охоте на крупного зверя.
+        </p>
+        <p>
+         Со временем развитие сельского хозяйства, особенно пастбищного животноводства, привело к массовой вырубке лесов и значительному снижению поголовья объектов охоты – медведей, кабанов и оленей. У человека возникла острая потребность в пастушьих собаках, причем поначалу приоритетной задачей таких животных была защита отары от волков и даже разбойников.
+        </p>
+        <p>
+         Первые документальные сведения о французской овчарке можно найти в рукописи, которая датируется 1578 годом. Значительно позже, в 1809 году, один из католических аббатов написал трактат «Работа в сельском хозяйстве», где подробно осветил вопрос правильного применения собак для выпаса овец. Автор описал две разновидности псов: длинношерстную пастушью собаку Brie и значительно более мощную сторожевую, которой под силу в одиночку справиться с волком.
+        </p>
+        <p>
+         Через полвека, в 1863 году, в Париже прошла выставка собак, где французский босерон впервые был представлен публике. Однако официальное признание порода получила позже, в 1896 году. Комиссия из авторитетных специалистов утвердила на своем заседании первые стандарты двух разновидностей французской овчарки – Berger de Brie (длинношерстной) и Berger de Beauce (гладкошерстной). Название «босерон» было дано по французскому региону Бос. Годом спустя, под эгидой Министерства сельского хозяйства Франции, был создан первый кинологический клуб этой породы. Официальный клуб, занявшийся непосредственно босеронами, появился в 1911 году. Он существует и по сей день и строго контролирует разведение представителей породы во Франции.
+        </p>
+        <p>
+         Berger de Beauce очень популярны в своей стране, а вот за ее пределами известны гораздо меньше. Знатоки говорят, что это и к лучшему. Никто из «посторонних» не приложил руку к селекционной работе, что позволило до наших дней в полной мере сохранить все рабочие качества псов.
+        </p>
+        <p>
+         Сегодня босерон во Франции – это отменная служебная собака, которая с успехом применяется и в армии, и в полицейской работе.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/289/289e5d3d96cbde3734345a232b6a5499.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/289/512_342_2/289e5d3d96cbde3734345a232b6a5499.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/289/512_342_2/289e5d3d96cbde3734345a232b6a5499.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/289/512_342_2/289e5d3d96cbde3734345a232b6a5499.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/713/71304c635b50b155e283dddf829a680d.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/713/512_342_2/71304c635b50b155e283dddf829a680d.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/713/512_342_2/71304c635b50b155e283dddf829a680d.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/713/512_342_2/71304c635b50b155e283dddf829a680d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2>
+         Видео: Босерон
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="38S6SX1mIrI">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность босерона
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок Босерона" data-fancybox="gallery" href="/upload/iblock/d13/d13a0ad24b029875af91b53ee79e6aa8.jpg" title="Щенок Босерона">
+          <div class="lazy-load" data-alt="Щенок Босерона" data-class="article_pic" data-original="/upload/resize_cache/iblock/d13/412_2150_1/d13a0ad24b029875af91b53ee79e6aa8.jpg">
+           <noscript data-alt="Щенок Босерона" data-class="article_pic" data-original="/upload/resize_cache/iblock/d13/412_2150_1/d13a0ad24b029875af91b53ee79e6aa8.jpg">
+            <img alt="Щенок Босерона" class="article_pic" height="460" src="/upload/resize_cache/iblock/d13/412_2150_1/d13a0ad24b029875af91b53ee79e6aa8.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок Босерона
+         </div>
+        </div>
+        <p>
+         Босерон – крупная собака, мощного мускулистого телосложения, однако ни в коем случае не выглядящая тяжело. Довольно часто босеронов путают с
+         <a class="ph" href="/dog/doberman/">
+          доберманом
+         </a>
+         или
+         <a class="ph" href="/dog/rotveyler/">
+          ротвейлером
+         </a>
+         , или с метисом этих пород с овчарками.
+        </p>
+        <p>
+         Рост самок колеблется от 61 до 68 см, кобелей – от 65 до 70 см. Масса тела составляет от 40 до 50 кг в зависимости от пола животного.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Размер пропорционален корпусу, череп округлый, рельефный. Стоп мягкий, плавный. Прослеживается лобная борозда, затылочный бугор ясно выражен. Величина черепа и длина морды пропорциональны. Морда босерона слегка удлиненная, но не острая и не узкая. Прикус ножницеобразный.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Всегда черный, мочка хорошо развита.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Босерон с купированными ушами" data-fancybox="gallery" href="/upload/iblock/ca3/ca3f2d88c203bbfce818038ba5985725.jpg" title="Босерон с купированными ушами">
+          <div class="lazy-load" data-alt="Босерон с купированными ушами" data-class="article_pic" data-original="/upload/resize_cache/iblock/ca3/412_2150_1/ca3f2d88c203bbfce818038ba5985725.jpg">
+           <noscript data-alt="Босерон с купированными ушами" data-class="article_pic" data-original="/upload/resize_cache/iblock/ca3/412_2150_1/ca3f2d88c203bbfce818038ba5985725.jpg">
+            <img alt="Босерон с купированными ушами" class="article_pic" height="274" src="/upload/resize_cache/iblock/ca3/412_2150_1/ca3f2d88c203bbfce818038ba5985725.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Босерон с купированными ушами
+         </div>
+        </div>
+        <p>
+         Глубоко посажены, округлой формы. Цвет темный, у арлекинов возможна гетерохромия. У босерона всегда ясный, спокойный и доброжелательный взгляд.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Посажены высоко, если не купированы – могут быть висячими или полустоячими, не прижаты к щекам, не длинные (не более ½ длины черепа). Купированные – стоят прямо, слегка развернуты вперед, но без наклона ни к центру, ни врозь.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Мускулистая, длинная, гармонично переходящая в холку.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда босерона" data-fancybox="gallery" href="/upload/iblock/ad5/ad5247d8ab8318ce4cefd1a692514ddf.jpg" title="Морда босерона">
+          <div class="lazy-load" data-alt="Морда босерона" data-class="article_pic" data-original="/upload/iblock/ad5/ad5247d8ab8318ce4cefd1a692514ddf.jpg">
+           <noscript data-alt="Морда босерона" data-class="article_pic" data-original="/upload/iblock/ad5/ad5247d8ab8318ce4cefd1a692514ddf.jpg">
+            <img alt="Морда босерона" class="article_pic" src="/upload/iblock/ad5/ad5247d8ab8318ce4cefd1a692514ddf.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда босерона
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Корпус босерона атлетичный, с развитой мускулатурой. Не длинный и не короткий. Грудь хорошо развита, высокая. Спина прямая, круп слегка наклонен. Поясница широкая.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бегущий босерон" data-fancybox="gallery" href="/upload/iblock/489/489c2c9102c5a105f4729955605ca634.jpg" title="Бегущий босерон">
+          <div class="lazy-load" data-alt="Бегущий босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/489/412_2150_1/489c2c9102c5a105f4729955605ca634.jpg">
+           <noscript data-alt="Бегущий босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/489/412_2150_1/489c2c9102c5a105f4729955605ca634.jpg">
+            <img alt="Бегущий босерон" class="article_pic" height="259" src="/upload/resize_cache/iblock/489/412_2150_1/489c2c9102c5a105f4729955605ca634.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бегущий босерон
+         </div>
+        </div>
+        <p>
+         Длинный, имеет саблевидную форму.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Передние – мускулистые, прямые. Задние – сильные. Подколенная впадина расположена низко. Обязательно наличие двух прибылых пальцев.
+        </p>
+        <h3>
+         Лапы
+        </h3>
+        <p>
+         Сводистые, округлые, с упругой подошвой. Когти всегда черные.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Шерсть босерона на голове гладкая, по телу короткая (не более 3-4 см), грубая и плотно прилегающая. На ягодицах и нижней стороне хвоста более длинная бахромчатая. Подшерсток густой, пушистый, мышиного оттенка, не должен просматриваться через остевой волос.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Для породы босерон существует два традиционных варианта окрасов.
+        </p>
+        <ul>
+         <li>
+          Черно-подпалый. Черный – густой и насыщенный, подпал – в цвет меха белки. Расположение рыжих отметин: над глазами; по бокам морды с убыванием к щекам, до уха не доходят; на груди (лучше, если отметины две); на нижней части шеи; под хвостом; на конечностях, постепенно сходя на нет ближе к верху, с наружной стороны ноги поднимаются приблизительно на ⅓ длины, на внутренней – немного выше.
+         </li>
+         <li>
+          Арлекин. Шерсть черно-серого окраса с равномерным распределением обоих цветов или с некоторым преобладанием черного, на груди допускается наличие небольшого белого пятна. Рыжий подпал распределяется так же, как и в случае с черно-подпалым окрасом. Подобный вариант ценится более высоко в силу его редкости.
+         </li>
+        </ul>
+        <h3>
+         Возможные пороки
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок босерона на выставке собак" data-fancybox="gallery" href="/upload/iblock/4f5/4f54d10f24a3e175bd632247d810724c.jpg" title="Щенок босерона на выставке собак">
+          <div class="lazy-load" data-alt="Щенок босерона на выставке собак" data-class="article_pic" data-original="/upload/resize_cache/iblock/4f5/412_2150_1/4f54d10f24a3e175bd632247d810724c.jpg">
+           <noscript data-alt="Щенок босерона на выставке собак" data-class="article_pic" data-original="/upload/resize_cache/iblock/4f5/412_2150_1/4f54d10f24a3e175bd632247d810724c.jpg">
+            <img alt="Щенок босерона на выставке собак" class="article_pic" height="274" src="/upload/resize_cache/iblock/4f5/412_2150_1/4f54d10f24a3e175bd632247d810724c.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок босерона на выставке собак
+         </div>
+        </div>
+        <p>
+         Любые отклонения от стандарта считаются недостатками, степень серьезности которых определяется отдельно в каждом конкретном случае.
+        </p>
+        <p>
+         Основанием для дисквалификации босерона на выставке являются:
+        </p>
+        <ul>
+         <li>
+          агрессивность или, наоборот, боязливость собаки;
+         </li>
+         <li>
+          отклонения в росте и облегченный костяк;
+         </li>
+         <li>
+          светлые или разноцветные глаза (если окрас не арлекин);
+         </li>
+         <li>
+          не черная мочка носа;
+         </li>
+         <li>
+          дефекты прикуса;
+         </li>
+         <li>
+          отсутствие прибылых пальцев на задних лапах;
+         </li>
+         <li>
+          стоящие прямо уши, если они не купированы;
+         </li>
+         <li>
+          укороченный хвост;
+         </li>
+         <li>
+          отличие от стандартов по окрасу и структуре шерстяного покрова (полностью серая голова, отсутствие подпала, лохматость; у арлекинов – преобладание серого цвета).
+         </li>
+        </ul>
+        <p>
+         Кобели должны иметь четко выраженные половые признаки.
+        </p>
+        <h2>
+         Фотографии босерона
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9f3/9f391c8ed0722520fd03e895aa171d35.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/9f3/380_264_2/9f391c8ed0722520fd03e895aa171d35.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/9f3/380_264_2/9f391c8ed0722520fd03e895aa171d35.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/9f3/380_264_2/9f391c8ed0722520fd03e895aa171d35.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7f8/7f8fd0c0a5a84cb7ffb38d045f0f926e.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/7f8/380_264_2/7f8fd0c0a5a84cb7ffb38d045f0f926e.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/7f8/380_264_2/7f8fd0c0a5a84cb7ffb38d045f0f926e.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/7f8/380_264_2/7f8fd0c0a5a84cb7ffb38d045f0f926e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/64b/64bbb8b6220c828293b6747827ec8cf3.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/64b/380_264_2/64bbb8b6220c828293b6747827ec8cf3.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/64b/380_264_2/64bbb8b6220c828293b6747827ec8cf3.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/64b/380_264_2/64bbb8b6220c828293b6747827ec8cf3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/467/46749e5086e3d0337053ae8c8be1e966.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/467/380_264_2/46749e5086e3d0337053ae8c8be1e966.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/467/380_264_2/46749e5086e3d0337053ae8c8be1e966.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/467/380_264_2/46749e5086e3d0337053ae8c8be1e966.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c13/c13a5d2a0696b1f9ba3983621d3f0f7c.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/c13/380_264_2/c13a5d2a0696b1f9ba3983621d3f0f7c.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/c13/380_264_2/c13a5d2a0696b1f9ba3983621d3f0f7c.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/c13/380_264_2/c13a5d2a0696b1f9ba3983621d3f0f7c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/53b/53b77cd365a15ca66429216eb5668394.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/53b/380_264_2/53b77cd365a15ca66429216eb5668394.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/53b/380_264_2/53b77cd365a15ca66429216eb5668394.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/53b/380_264_2/53b77cd365a15ca66429216eb5668394.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/45c/45c98487c2d75eb262ddeeaa41dfc246.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/45c/380_264_2/45c98487c2d75eb262ddeeaa41dfc246.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/45c/380_264_2/45c98487c2d75eb262ddeeaa41dfc246.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/45c/380_264_2/45c98487c2d75eb262ddeeaa41dfc246.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/0b6/0b6ea3eab1da4780b9b7f3896e4386bd.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/0b6/380_264_2/0b6ea3eab1da4780b9b7f3896e4386bd.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/0b6/380_264_2/0b6ea3eab1da4780b9b7f3896e4386bd.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/0b6/380_264_2/0b6ea3eab1da4780b9b7f3896e4386bd.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e30/e30a3f958cef4e25a192e4e4fdf46d06.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/e30/380_264_2/e30a3f958cef4e25a192e4e4fdf46d06.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/e30/380_264_2/e30a3f958cef4e25a192e4e4fdf46d06.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/e30/380_264_2/e30a3f958cef4e25a192e4e4fdf46d06.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер босерона
+        </h2>
+        <p>
+         Босерон – собака с ровным и уравновешенным типом психики. Это в высшей степени социализированное существо, которое хорошо ладит и с сородичами, и с другими животными. Французская овчарка, что может показаться странным для такой самостоятельной собаки, остро нуждается в проявлениях взаимной любви и привязанности со стороны человека.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Босерон и бабочка" data-fancybox="gallery" href="/upload/iblock/a2e/a2eaeeacc73b0b2d668b49193c0afbbe.jpg" title="Босерон и бабочка">
+          <div class="lazy-load" data-alt="Босерон и бабочка" data-class="article_pic" data-original="/upload/resize_cache/iblock/a2e/412_2150_1/a2eaeeacc73b0b2d668b49193c0afbbe.jpg">
+           <noscript data-alt="Босерон и бабочка" data-class="article_pic" data-original="/upload/resize_cache/iblock/a2e/412_2150_1/a2eaeeacc73b0b2d668b49193c0afbbe.jpg">
+            <img alt="Босерон и бабочка" class="article_pic" height="274" src="/upload/resize_cache/iblock/a2e/412_2150_1/a2eaeeacc73b0b2d668b49193c0afbbe.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Босерон и бабочка
+         </div>
+        </div>
+        <p>
+         Генетически заложено наличие в характере таких черт, как наблюдательность и внимание к мелочам. Босероны умны, сообразительны, прекрасно работают в команде.
+        </p>
+        <p>
+         Сложность характеру придает стремление «боса» к доминированию, что особенно заметно проявляется у кобелей. Желание управлять выражается достаточно ярко и часто направлено не только на других животных в доме, но и на членов семьи. Многие владельцы шутят, что босерон, как истинно пастушья собака, считает окружающих беспомощными овечками, за которых он целиком и полностью в ответе. Может быть, это действительно так. Готовность защитить слабого – отличительная черта Berger de Beauce. Именно поэтому им без опаски можно доверить даже маленьких детей.
+        </p>
+        <p>
+         Многих удивляет привычка этой собаки слегка покусывать-пощипывать людей за ноги. Угрозы здоровью человека такое поведение абсолютно не несет, а связано оно с тем, что таким образом далекие предки сегодняшних овчарок управляли стадами, указывая им нужное направление движения. Этот жест – ни в коем случае не агрессия, а просто проявление бдительности и заботы об окружающих.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Босерон на пробежке со своей хозяйкой" data-fancybox="gallery" href="/upload/iblock/901/901a2eb52ff103be68da98b59650b30c.jpg" title="Босерон на пробежке со своей хозяйкой">
+          <div class="lazy-load" data-alt="Босерон на пробежке со своей хозяйкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/901/412_2150_1/901a2eb52ff103be68da98b59650b30c.jpg">
+           <noscript data-alt="Босерон на пробежке со своей хозяйкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/901/412_2150_1/901a2eb52ff103be68da98b59650b30c.jpg">
+            <img alt="Босерон на пробежке со своей хозяйкой" class="article_pic" height="274" src="/upload/resize_cache/iblock/901/412_2150_1/901a2eb52ff103be68da98b59650b30c.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Босерон на пробежке со своей хозяйкой
+         </div>
+        </div>
+        <p>
+         Босерон беспрекословно принимает власть хозяина и во всем ему подчиняется. Не путайте это с услужливостью и раболепием. Перефразируя классика, можно сказать, что «бос» будет служить, но никогда не станет прислуживаться. Построить такие отношения с собакой можно только через справедливость, уважение и любовь. Следует учесть, что такая любовь к хозяину имеет и отрицательную сторону. Эти собаки очень тяжело переносят длительные разлуки и могут даже заболеть.
+        </p>
+        <p>
+         На характер босерона сильное влияние оказывает и образ его жизни. Пес, не имеющий достаточных физических нагрузок, возможности выплеснуть накопившуюся энергию, в скором времени может стать раздражительным, агрессивным или, наоборот, ко всему безразличным.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка босерона
+        </h2>
+        <p>
+         Воспитание босерона начинается с самого первого дня его появления в доме. Учитывая, что взрослеет собака достаточно медленно (кобели – до двух-трехлетнего возраста, суки – чуть быстрее), вы должны быть готовы к тому, чтобы все это время вопросы воспитания и дрессировки собаки держать под постоянным контролем.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок босерона учится командам" data-fancybox="gallery" href="/upload/iblock/71c/71cbc1950df61e1a3af0c78e98cc7e18.jpg" title="Щенок босерона учится командам">
+          <div class="lazy-load" data-alt="Щенок босерона учится командам" data-class="article_pic" data-original="/upload/resize_cache/iblock/71c/412_2150_1/71cbc1950df61e1a3af0c78e98cc7e18.jpg">
+           <noscript data-alt="Щенок босерона учится командам" data-class="article_pic" data-original="/upload/resize_cache/iblock/71c/412_2150_1/71cbc1950df61e1a3af0c78e98cc7e18.jpg">
+            <img alt="Щенок босерона учится командам" class="article_pic" height="274" src="/upload/resize_cache/iblock/71c/412_2150_1/71cbc1950df61e1a3af0c78e98cc7e18.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок босерона учится командам
+         </div>
+        </div>
+        <p>
+         Процесс начинается с того, что малыш должен четко усвоить ряд простейших правил. Щенка приучают к месту, режиму приема пищи, времени прогулок. «Бос» должен понять запрет на попрошайничество, нельзя разрешать ему грызть обувь и портить предметы домашнего обихода, даже если он пока еще совсем малыш, а его проделки вас скорее умиляют, чем сердят. Для достижения результата потребуется определенное время и терпение хозяина. Помните, что любое проявление насилия и несправедливости по отношению к собаке могут навсегда разрушить ваши отношения с босероном. Важно, чтобы воспитанием щенка занимался сам владелец – помощь домашних в этом деле будет не самым лучшим решением. Во-первых, малыш будет просто теряться, чьи же требования ему выполнять, а, во-вторых, при такой методике стать для собаки настоящим «вожаком» у вас точно не получится.
+        </p>
+        <p>
+         Французские овчарки очень умны. Начинать их дрессировать можно с раннего возраста. Темперамент босерона таков, что рутинности и монотонности он не приемлет. Тренировки лучше проводить в игровой форме и излишне не перегружать молодую собаку.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Дрессировка босерона" data-fancybox="gallery" href="/upload/iblock/3a1/3a1e07956cc19f7b88ddfbb92781fbbf.jpg" title="Дрессировка босерона">
+          <div class="lazy-load" data-alt="Дрессировка босерона" data-class="article_pic" data-original="/upload/resize_cache/iblock/3a1/412_2150_1/3a1e07956cc19f7b88ddfbb92781fbbf.jpg">
+           <noscript data-alt="Дрессировка босерона" data-class="article_pic" data-original="/upload/resize_cache/iblock/3a1/412_2150_1/3a1e07956cc19f7b88ddfbb92781fbbf.jpg">
+            <img alt="Дрессировка босерона" class="article_pic" height="274" src="/upload/resize_cache/iblock/3a1/412_2150_1/3a1e07956cc19f7b88ddfbb92781fbbf.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Дрессировка босерона
+         </div>
+        </div>
+        <p>
+         Приступая к дрессировке, примите во внимание особенности характера вашего питомца и помните, что успех придет только в том случае, если вы сможете установить контакт и добиться полного взаимопонимания. Обучайте собаку последовательно – от простых команд к более сложным. Не старайтесь сразу добиться выполнения разнообразных трюков. Если возникают какие-либо сложности, лучше сделать шаг назад, чем насильно пытаться заставить животное выполнить ту или иную команду. Причем речь идет не только о физических наказаниях, которые в абсолютно неприемлемы. Моральное давление тоже может серьезно нарушить баланс ваших взаимоотношений, поскольку босерон – очень чуткая собака.
+        </p>
+        <p>
+         Дрессировать «боса» лучше в спокойных местах, подальше от суеты. Так ваш воспитанник не будет лишний раз отвлекаться и быстрее достигнет нужного результата. Поощрять собаку за успехи нужно лакомствами. Чтобы этот способ был более действенным, проводите занятия с питомцем либо до кормления, либо через 4-5 часов после него. Сытое животное работает неохотно и особого интереса зарабатывать лакомые кусочки просто не видит.
+        </p>
+        <p>
+         Сумев правильно воспитать и обучить босерона, вы получите удивительную собаку – преданного друга и надежного защитника.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Щенок босерона учится командам" data-fancybox="gallery" href="/upload/iblock/e5d/e5d2d53ad6f8e23a12ab270ffa0cc037.jpg" title="Щенок босерона учится командам">
+          <div class="lazy-load" data-alt="Щенок босерона учится командам" data-class="article_pic" data-original="/upload/resize_cache/iblock/e5d/1024_2150_1/e5d2d53ad6f8e23a12ab270ffa0cc037.jpg">
+           <noscript data-alt="Щенок босерона учится командам" data-class="article_pic" data-original="/upload/resize_cache/iblock/e5d/1024_2150_1/e5d2d53ad6f8e23a12ab270ffa0cc037.jpg">
+            <img alt="Щенок босерона учится командам" class="article_pic" src="/upload/resize_cache/iblock/e5d/1024_2150_1/e5d2d53ad6f8e23a12ab270ffa0cc037.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок босерона учится командам
+         </div>
+        </div>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <p>
+         Босерон – собака неприхотливая, и ее содержание сводится к соблюдению ряда несложных требований.
+        </p>
+        <p>
+         Уход за шерстью заключается в периодическом расчесывании специальными гребнями. В период линьки удалять выпавшую шерсть нужно ежедневно, хотя надо отметить, что линяют собаки этой породы редко.
+        </p>
+        <p>
+         Купать босерона достаточно раз в месяц или по необходимости, в случае, если собака загрязнилась. Для водных процедур применяются специальные зоошампуни. Когти у босеронов обрезают по необходимости, если они становятся чересчур длинными и начинают причинять собаке неудобства. Глаза и уши нужно содержать в чистоте, удаляя появившуюся грязь ватными тампонами.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Босерон в лесу" data-fancybox="gallery" href="/upload/iblock/db7/db757305ef69dcfacc26212eacda63c4.jpg" title="Босерон в лесу">
+          <div class="lazy-load" data-alt="Босерон в лесу" data-class="article_pic" data-original="/upload/resize_cache/iblock/db7/412_2150_1/db757305ef69dcfacc26212eacda63c4.jpg">
+           <noscript data-alt="Босерон в лесу" data-class="article_pic" data-original="/upload/resize_cache/iblock/db7/412_2150_1/db757305ef69dcfacc26212eacda63c4.jpg">
+            <img alt="Босерон в лесу" class="article_pic" height="620" src="/upload/resize_cache/iblock/db7/412_2150_1/db757305ef69dcfacc26212eacda63c4.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Босерон в лесу
+         </div>
+        </div>
+        <p>
+         Наиболее разумным представляется заводить животное этой породы владельцам загородных домов. В качестве места обитания можно обустроить вольер нужного размера, а вот держать босеронов на цепи не следует. Если же этого избежать в определенных ситуациях невозможно, старайтесь максимально сократить время ограничения свободы. При содержании в условиях квартиры без длительных систематических прогулок с хорошей физической нагрузкой не обойтись.
+        </p>
+        <p>
+         Организовать питание собаки можно двумя способами – использовать готовые сухие корма или натуральные продукты.
+        </p>
+        <p>
+         Готовые корма многим кажутся предпочтительнее. Это и экономия времени хозяина, и гарантия того, что животное получит с пищей все необходимое для развития и здоровья, но только в случае применения специализированных составов высокого качества.
+        </p>
+        <p>
+         Если вы составляете рацион босерона из натуральных продуктов, то помните:
+        </p>
+        <ul>
+         <li>
+          из мясных продуктов лучше остановить свой выбор на телятине или курятине. Свинина слишком жирна и не рекомендуется для этих собак;
+         </li>
+         <li>
+          молоко взрослым собакам давать не стоит, гораздо больше пользы принесут нежирный творог и сыр;
+         </li>
+         <li>
+          крупяные каши в рационе просто необходимы;
+         </li>
+         <li>
+          фрукты и овощи также обязательны в меню.
+         </li>
+        </ul>
+        <p>
+         Босероны, как и большинство собак, потенциальные сладкоежки, но тут вы должны проявить строгость. Пирожные, конфеты, шоколад – это не для вашего друга. Тем более, что зоомагазины предлагают в качестве альтернативы большой ассортимент собачьих лакомств, которые с успехом можно и нужно применять и во время дрессировки, и просто для того, чтобы побаловать вашего питомца.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни босерона
+        </h2>
+        <p>
+         Собаки этой породы отличаются крепким здоровьем. При надлежащем уходе босерон болеет нечасто и до 10-12-летнего возраста, а иногда и дольше, сохраняет бодрость духа и работоспособность.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Босерон играет с палкой" data-fancybox="gallery" href="/upload/iblock/070/070dc542471be007a4be8dcec942b59e.jpg" title="Босерон играет с палкой">
+          <div class="lazy-load" data-alt="Босерон играет с палкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/070/412_2150_1/070dc542471be007a4be8dcec942b59e.jpg">
+           <noscript data-alt="Босерон играет с палкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/070/412_2150_1/070dc542471be007a4be8dcec942b59e.jpg">
+            <img alt="Босерон играет с палкой" class="article_pic" height="274" src="/upload/resize_cache/iblock/070/412_2150_1/070dc542471be007a4be8dcec942b59e.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Босерон играет с палкой
+         </div>
+        </div>
+        <p>
+         Не подвержены французские овчарки и специфическим наследственным заболеваниям. Даже дисплазия тазобедренного или локтевого сустава, довольно часто встречающаяся у крупных собак, для босеронов – явление достаточно редкое. Очень невелик процент диагностирования у этих животных заворота желудка, но такие случаи все же бывают. Чаще всего страдают кобели в возрасте от 5 лет. Если у вашего питомца вдруг стали проявляться характерные симптомы – позывы к рвоте, вздутие живота, сильные боли в этой области, резкое ухудшение общего состояния – немедленно в клинику. Без срочного хирургического вмешательства животное может погибнуть.
+        </p>
+        <p>
+         Иногда у представителей этой породы встречаются проблемы с сердцем.
+        </p>
+        <p>
+         Уши у босеронов раньше без исключений купировали, в открытой «проветриваемой» раковине не развивалась болезнетворная микрофлора. Сегодня во многих странах запретили подвергать собак такому хирургическому вмешательству. Вредные микроорганизмы в некупированном ухе получают гораздо более комфортные условия для развития, что может привести к развитию отитов различного характера. Лечение подобного заболевания лучше доверить специалисту.
+        </p>
+        <p>
+         Важную роль в сохранении здоровья вашего питомца играют соблюдение графиков вакцинации, дегельминтизации, а также организация правильного питания.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Желающим завести босерона надо знать, что в нашей стране – это очень редкая порода, поэтому купить животное через интернет или на птичьем рынке невозможно. Любое подобное предложение – 100% обман.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок босерона с папой" data-fancybox="gallery" href="/upload/iblock/1bf/1bf456d214a2e4ef9271039dcf3847c8.jpg" title="Щенок босерона с папой">
+          <div class="lazy-load" data-alt="Щенок босерона с папой" data-class="article_pic" data-original="/upload/resize_cache/iblock/1bf/412_2150_1/1bf456d214a2e4ef9271039dcf3847c8.jpg">
+           <noscript data-alt="Щенок босерона с папой" data-class="article_pic" data-original="/upload/resize_cache/iblock/1bf/412_2150_1/1bf456d214a2e4ef9271039dcf3847c8.jpg">
+            <img alt="Щенок босерона с папой" class="article_pic" height="273" src="/upload/resize_cache/iblock/1bf/412_2150_1/1bf456d214a2e4ef9271039dcf3847c8.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок босерона с папой
+         </div>
+        </div>
+        <p>
+         Гарантию чистоты крови вам могут дать только в серьезном уважаемом питомнике, который специализируется на разведении босеронов.
+        </p>
+        <p>
+         Щенка французской овчарки иногда можно ждать длительное время. Если у вас есть такая возможность, используйте этот период для того, чтобы познакомиться с заводчиками, увидеть родителей будущего малыша, оценить их темперамент, интеллект, характер, изучить родословную.
+        </p>
+        <p>
+         Щенка босерона обычно берут в возрасте около семи недель. В специализированном питомнике к этому времени малыш пройдет специально разработанное тестирование. По его результатам специалисты дают прогнозные предположения относительно того, какой характер может быть у собаки и как будут проявляться его рабочие качества. Покупая французскую овчарку, поинтересуйтесь результатами тестирования вашего избранника.
+        </p>
+        <p>
+         Если малыш не проходил проверку, выбирайте самого бойкого и игривого.
+        </p>
+        <p>
+         Кроме того, обратите внимание на следующие нюансы.
+        </p>
+        <ul>
+         <li>
+          Босерон должен быть веселым, жизнерадостным, в меру активным и любопытным.
+         </li>
+         <li>
+          Щенок к возрасту 7-8 недель уже достаточно крупный, с блестящей лоснящейся шерстью.
+         </li>
+         <li>
+          Глаза и ушки должны быть чистыми, без неприятного запаха.
+         </li>
+         <li>
+          Лапы у здорового щенка толстые, с крепким костяком, на задних конечностях – по два прибылых пальца.
+         </li>
+         <li>
+          Чем темнее цвет радужки босерона, тем лучше. У мраморных щенков глаза могут быть разного цвета.
+         </li>
+         <li>
+          Цвет подпалин допускается светлый с желтизной (возможно, он потемнеет с возрастом), но предпочтительно, чтобы участки шерстки изначально были более темными с красноватым оттенком.
+         </li>
+        </ul>
+        <h2>
+         Фото щенков босерона
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/cdf/cdf6c26aba51ff42b6f1a6f1d2a9a829.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/cdf/380_264_2/cdf6c26aba51ff42b6f1a6f1d2a9a829.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/cdf/380_264_2/cdf6c26aba51ff42b6f1a6f1d2a9a829.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/cdf/380_264_2/cdf6c26aba51ff42b6f1a6f1d2a9a829.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/500/5001f5dd8697f75b546fc9618deea6fa.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/500/380_264_2/5001f5dd8697f75b546fc9618deea6fa.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/500/380_264_2/5001f5dd8697f75b546fc9618deea6fa.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/500/380_264_2/5001f5dd8697f75b546fc9618deea6fa.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/32a/32a75cb30e457391bb637503004d577d.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/32a/380_264_2/32a75cb30e457391bb637503004d577d.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/32a/380_264_2/32a75cb30e457391bb637503004d577d.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/32a/380_264_2/32a75cb30e457391bb637503004d577d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/3cd/3cd86317b9bfed2547687c98033d797b.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/3cd/380_264_2/3cd86317b9bfed2547687c98033d797b.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/3cd/380_264_2/3cd86317b9bfed2547687c98033d797b.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/3cd/380_264_2/3cd86317b9bfed2547687c98033d797b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/171/1718d518eb99be9ac2b16269067cdf56.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/171/380_264_2/1718d518eb99be9ac2b16269067cdf56.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/171/380_264_2/1718d518eb99be9ac2b16269067cdf56.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/171/380_264_2/1718d518eb99be9ac2b16269067cdf56.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/cd5/cd599df9327897b12b25dc9567b7f2f1.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd5/380_264_2/cd599df9327897b12b25dc9567b7f2f1.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd5/380_264_2/cd599df9327897b12b25dc9567b7f2f1.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/cd5/380_264_2/cd599df9327897b12b25dc9567b7f2f1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/343/343ba902e9d7d02f21daa030d4d416e9.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/343/380_264_2/343ba902e9d7d02f21daa030d4d416e9.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/343/380_264_2/343ba902e9d7d02f21daa030d4d416e9.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/343/380_264_2/343ba902e9d7d02f21daa030d4d416e9.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d67/d678116c39598d7c4c81c085ae16757b.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/d67/380_264_2/d678116c39598d7c4c81c085ae16757b.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/d67/380_264_2/d678116c39598d7c4c81c085ae16757b.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/d67/380_264_2/d678116c39598d7c4c81c085ae16757b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/13b/13b9cdf1a4d18e859f63f21696e712e4.jpg" title="">
+           <div class="lazy-load" data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/13b/380_264_2/13b9cdf1a4d18e859f63f21696e712e4.jpg">
+            <noscript data-alt="Босерон" data-class="article_pic" data-original="/upload/resize_cache/iblock/13b/380_264_2/13b9cdf1a4d18e859f63f21696e712e4.jpg">
+             <img alt="Босерон" class="article_pic" src="/upload/resize_cache/iblock/13b/380_264_2/13b9cdf1a4d18e859f63f21696e712e4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Сколько стоит босерон
+        </h2>
+        <p>
+         Собаки этой породы в России – большая редкость. Вполне логично, что и стоят щенки босерона недешево. Щенок из специализированного питомника будет оценен в зависимости от класса. Наименьшую сумму, около 40 000 руб., с вас возьмут за животное пет-класса. Такая собака будет вам прекрасным компаньоном, а вот к племенной работе ее не допустят. Планируете становиться заводчиком? За пригодного в будущем для этой цели босерона придется заплатить примерно 60 000 рублей. Если же вы настроены амбициозно и хотите владеть собакой-чемпионом, то стоит обратить внимание на щенков шоу-класса, цена на которых колеблется в районе 80 000 рублей.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения босерона на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/5588/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Алина  Малышева" data-original="/upload/resize_cache/main/241/200_200_2/0iq272gn80f3vm6ti6kaaqt38hhs03ld.jpg">
+            <noscript data-alt="Алина  Малышева" data-original="/upload/resize_cache/main/241/200_200_2/0iq272gn80f3vm6ti6kaaqt38hhs03ld.jpg">
+             <img alt="Алина  Малышева" src="/upload/resize_cache/main/241/200_200_2/0iq272gn80f3vm6ti6kaaqt38hhs03ld.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/ne-opasno-li-kupirovat-ushi-boseronu-4451/">
+           Не опасно ли купировать уши босерону?
+          </a>
+         </div>
+         <div class="forum-text">
+          После зенненхунда в планах завести босерона, и встал такой вопрос. А не опасно ли для здоровья собаки купировать ему уши?
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/5588/">
+            Алина  Малышева
+           </a>
+          </span>
+          <span class="vopros-date">
+           Год назад
+          </span>
+          <span class="vopros-smotr">
+           307 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/boseron/forum/">
+        Перейти на
+        форум босерона
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Босерон" src="/upload/iblock/d56/d565b328cff4741735e33f0a590a6e88.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/boseron/">
+          Босерон
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/boseron/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/boseron/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/boseron/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/boseron/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/boseron/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/boseron/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/siba-inu/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Сиба-ину" data-original="/upload/resize_cache/iblock/11e/100_100_1/11ea73b02406f137742271272c2812e5.jpg">
+          <noscript data-alt="Сиба-ину" data-original="/upload/resize_cache/iblock/11e/100_100_1/11ea73b02406f137742271272c2812e5.jpg">
+           <img alt="Сиба-ину" src="/upload/resize_cache/iblock/11e/100_100_1/11ea73b02406f137742271272c2812e5.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Сиба-ину
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/pekines/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Пекинес" data-original="/upload/resize_cache/iblock/b61/100_100_1/b61169457eab98ed122cda7e99579a5a.jpg">
+          <noscript data-alt="Пекинес" data-original="/upload/resize_cache/iblock/b61/100_100_1/b61169457eab98ed122cda7e99579a5a.jpg">
+           <img alt="Пекинес" src="/upload/resize_cache/iblock/b61/100_100_1/b61169457eab98ed122cda7e99579a5a.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Пекинес
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/nemetskiy-shpits/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Немецкий шпиц" data-original="/upload/resize_cache/iblock/703/100_100_1/z9jqdv6eas8u20zm77oj40m1uuxg107x.jpg">
+          <noscript data-alt="Немецкий шпиц" data-original="/upload/resize_cache/iblock/703/100_100_1/z9jqdv6eas8u20zm77oj40m1uuxg107x.jpg">
+           <img alt="Немецкий шпиц" src="/upload/resize_cache/iblock/703/100_100_1/z9jqdv6eas8u20zm77oj40m1uuxg107x.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Немецкий шпиц
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/doberman/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Доберман" data-original="/upload/resize_cache/iblock/a5a/100_100_1/a5ac1cf0c810f673a0f4032b85fc9f6b.jpg">
+          <noscript data-alt="Доберман" data-original="/upload/resize_cache/iblock/a5a/100_100_1/a5ac1cf0c810f673a0f4032b85fc9f6b.jpg">
+           <img alt="Доберман" src="/upload/resize_cache/iblock/a5a/100_100_1/a5ac1cf0c810f673a0f4032b85fc9f6b.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Доберман
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fboseron%252F%253Fcheck_key%253D7b6e900b94cc459516acea6bf246fd42%2526ANIMAL_CODE%253Dboseron%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fboseron%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmJvc2Vyb24lMkYlM0ZjaGVja19rZXklM0Q3YjZlOTAwYjk0Y2M0NTk1MTZhY2VhNmJmMjQ2ZmQ0MiUyNkFOSU1BTF9DT0RFJTNEYm9zZXJvbiUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZib3Nlcm9uJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fboseron%252F%253Fcheck_key%253D7b6e900b94cc459516acea6bf246fd42%2526ANIMAL_CODE%253Dboseron%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fboseron%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fboseron%252F%253Fcheck_key%253D7b6e900b94cc459516acea6bf246fd42%2526ANIMAL_CODE%253Dboseron%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fboseron%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "79.139.156.228"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--55b97a665f707587c6e3365d040d8312-->

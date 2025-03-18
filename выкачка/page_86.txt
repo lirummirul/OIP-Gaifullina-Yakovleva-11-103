@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'29a57e431c79'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Канарский дог, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Канарский дог – порода молоссоподобных собак с обостренными территориальным и сторожевым инстинктами, зародившаяся на островах Канарского архипелага." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/cb0/cb067a62959ead7b7e33aa0c95663104.jpg" property="og:image"/>
+     <title>
+      Канарский дог: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/kanarskiy-dog/" property="og:url"/>
+     <meta content="Канарский дог: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Канарский дог – порода молоссоподобных собак с обостренными территориальным и сторожевым инстинктами, зародившаяся на островах Канарского архипелага." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/kanarskiy-dog/" itemprop="url">
+         <span itemprop="title">
+          Канарский дог
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Канарский дог
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/kanarskiy-dog/">
+          Описание
+         </a>
+         <a href="/dog/kanarskiy-dog/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/kanarskiy-dog/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/kanarskiy-dog/photo/">
+          Фото
+         </a>
+         <a href="/dog/kanarskiy-dog/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Канарский дог" src="/upload/iblock/dc5/dc561b12f18840acd5356be0f3452ccc.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/kanarskiy-dog/">
+           преса-канарио
+          </a>
+          ,
+          <a href="/dog/kanarskiy-dog/">
+           дого канарио
+          </a>
+         </span>
+         <p>
+          Канарский дог – порода молоссоподобных собак с обостренными территориальным и сторожевым инстинктами, зародившаяся на островах Канарского архипелага.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="Have a nice weekend everyone ✌️ #dogocanario #doglovers #weekendvibes #naturelovers" data-fancybox="images" data-link="https://www.instagram.com/p/B_nSNxBqGza/" data-type="image" data-username="" href="/upload/uf/365/365ef6fafa73b58a20d8ffa898a1a843.jpg">
+            <img alt="Канарский дог" src="/upload/resize_cache/uf/365/293_293_2/365ef6fafa73b58a20d8ffa898a1a843.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="We were on the road today and shop at @hunter.international and you?
+
+Swipe to see me on the road. 
+
+#hunter#shopping#cabrio#trip#outside#nature#germany#dogsofinstagram#instadogs#petstagram#pet#love#dogocanario#canecorso#bordeauxdogge" data-fancybox="images" data-link="https://www.instagram.com/p/B_nPy9IBRE3/" data-type="image" data-username="" href="/upload/uf/2dc/2dca1ae55964658692b4779df27f15ac.jpg">
+            <img alt="Канарский дог" src="/upload/resize_cache/uf/2dc/293_293_2/2dca1ae55964658692b4779df27f15ac.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="You Talkin' To Me!?" data-fancybox="images" data-link="https://www.instagram.com/p/B_nPbqfnEZx/" data-type="image" data-username="" href="/upload/uf/8a5/8a5451883d2a8f47081d67a24db142c7.jpg">
+            <img alt="Канарский дог" src="/upload/resize_cache/uf/8a5/293_293_2/8a5451883d2a8f47081d67a24db142c7.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/kanarskiy-dog/photo/">
+         Все
+            фото канарского дога
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы канарский дог
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы канарский дог
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер канарского дога
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни канарских догов
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена канарского дога
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Канарский дог
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Испания
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели от 50 кг, суки от 40 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 60-65 см, суки 56-61 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         9-11 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         С испанского presa canario переводится как «собака, которая хватает/душит».
+        </li>
+        <li>
+         Порода внесена в списки потенциально опасных в ряде стран и запрещена ко ввозу в Австралию, Малайзию и Новую Зеландию.
+        </li>
+        <li>
+         По сравнению с большинством бойцовских собак, у канарских догов снижен уровень агрессии, что не мешает им остро реагировать на любую угрозу в отношении человека.
+        </li>
+        <li>
+         Преса канарио – собака одного хозяина, поэтому даже живя в большой семье, животное будет подчиняться требованиям кого-то одного.
+        </li>
+        <li>
+         Породу полезно привлекать к вейтпуллингу, но кардиотренировки, включая пробежки за велосипедом, не её конек.
+        </li>
+        <li>
+         Канарские доги практически не инициируют драки с соплеменниками, но охотно в них участвуют.
+        </li>
+        <li>
+         Как и за любую собаку с бойцовскими генами, за дого канарио придется нести груз ответственности, следуя жестким ограничениям на выгул и появление в общественных местах.
+        </li>
+        <li>
+         Канарские доги не страдают обильным слюнотечением, характерным для их родственников – неаполитанских мастифов, бульдогов и боксеров. Исключение – когда перед носом животного возникает деликатес, по каким-то причинам ему недоступный.
+        </li>
+        <li>
+         Порода до сих пор существует в разных типах, которые трудно подогнать под официальный стандарт FCI, что усложняет процесс выбора щенка.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Канарский дог" data-original="/upload/iblock/cb0/cb067a62959ead7b7e33aa0c95663104.jpg">
+          <noscript data-alt="Канарский дог" data-original="/upload/iblock/cb0/cb067a62959ead7b7e33aa0c95663104.jpg">
+           <img alt="Канарский дог" src="/upload/iblock/cb0/cb067a62959ead7b7e33aa0c95663104.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Канарский дог
+          </strong>
+          – уравновешенный, хоть и слегка подозрительный брутал, считающий своей миссией охрану спокойствия семьи, в которой живет. Достаточно сдержанный, чтобы не бросаться на каждого встречного, но и не флегматичный, этот молоссоподобный страж всегда готов к подвигу во имя хозяина. В свободное от сторожевой деятельности время преса канарио не прочь сбросить груз забот и поиграть с домочадцами. Только не пытайтесь воспитать из него бэбиситтера или доставщика утренних газет – в этих нишах у канарских догов полно более успешных конкурентов.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Сложно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Минимальная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Ниже среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Ниже среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Канарский дог основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2>
+         Видео: Канарский дог
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="3ZyJoaAwm4U">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl1">
+         История породы канарский дог
+        </h2>
+        <p>
+         Зарождение породы произошло на островах Тенерифе и Гран-Канария. Считается, что в формировании генотипа животных поучаствовали скотогонные собаки махореро, издревле разводимые племенами гуанчей, а также римские молоссы, которых завезли на Канары позднее. На протяжении долгого времени преса канарио свободно плодились на территориях архипелага, причем основной сферой их деятельности были охрана хозяйского имущества и выпас скота.
+        </p>
+        <p>
+         В XV веке Канары присвоили себе испанцы частично истребив, частично отправив в плен коренное население. На собаках военный конфликт тоже отразился. На разоренных пепелищах животным стало нечего сторожить, поэтому для них придумали новую работу – бои и травлю диких зверей. Так, канарские доги переквалифицировались в гладиаторов, устраивавших публичные представления, поначалу не отличавшиеся особой жестокостью.
+        </p>
+        <p>
+         Агрессия и подозрительность пришли к породе позднее, когда её представителям прокачали генофонд, скрестив преса канарио с завезенными на Тенерифе
+         <a href="/dog/angliyskiy-buldog/">
+          английскими бульдогами
+         </a>
+         и
+         <a href="/dog/angliyskiy-mastif/">
+          мастифами
+         </a>
+         . Потомство от этих вязок обладало большой злобностью и скоростью реакции, поэтому испанские власти посчитали породу опасной, разрешив её к содержанию только мясникам. Особи, принадлежавшие обладателям других профессий, уничтожались. Доги продолжали и свою бойцовскую карьеру, ради которой их вязали с другими четвероногими «агрессорами» вроде стаффордов и боксеров. Впоследствии это привело к утрате животными аборигенного экстерьера и расслоению на породные типы.
+        </p>
+        <p>
+         Со второй половины XX века на собачьи бои наложили запрет, и род канарских догов пришел в упадок. Возможно, порода так бы и исчезла, не возьмись за её возрождение испанские энтузиасты. Животным в очередной раз обновили фенотип, добавив в него гены
+         <a href="/dog/rotveyler/">
+          ротвейлеров
+         </a>
+         , догов и
+         <a href="/dog/neapolitanskiy-mastif/">
+          мастино неаполитано
+         </a>
+         , а в 1982 году начал работать национальный клуб преса канарио. В 1986 году в Испании стартовали первые выставки канарских догов, в 1989 г. породу стандартизировали, а в 2001 г. её представителей официально зарегистрировала FCI.
+        </p>
+        <h2 id="gl2">
+         Стандарт породы канарский дог
+        </h2>
+        <p>
+         Преса канарио смахивают на
+         <a href="/dog/kane-korso/">
+          кане-корсо
+         </a>
+         своим молоссоподобным, подчеркнуто брутальным обликом. Весовая категория у породы тоже серьезная: правильный кобель обязан нарастить не менее 50 кг живой массы, в то время как сукам разрешается остановиться на отметке в 40 кг. Имеются у «девочек» и другие внешние отличия. Например, особи женского пола имеют более растянутый формат тела. К тому же, они гораздо ниже своих партнеров: всего 56-61 см против 64-68 см, отмечаемых у кобелей. Добавляют фактурности и харизмы породе «дикая» тигровая масть, а также небольшие складки кожи на морде, напоминающие о предках-мастифах.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Крепкая массивная голова канарского дога имеет форму удлиненного куба. Соотношение длины черепной коробки к морде составляет примерно 60:40. Череп умеренно выпуклый с отчетливо выделяющимися скулами, сглаженным затылочным бугром и свободно свисающей кожей. Стоп достаточно заметный, но не крутой, с хорошо выделенной средней складкой. Характерная особенность породы – плоская прямая морда с широким основанием, лишь едва сужающаяся в районе кончика.
+        </p>
+        <h3>
+         Зубы, челюсти, губы
+        </h3>
+        <p>
+         При соприкосновении друг с другом губы принимают форму перевернутой буквы V, при этом верхние губы слегка свисают вниз. Челюсти массивные с развитыми клыками, крупными коренными и сравнительно небольшими передними зубами. Стандартные типы прикуса – ножницеобразный и плотный перекус. Прямая смычка челюстей допустима, но нежелательна, поскольку способствует стиранию зубов.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Ярко пигментированная мочка с крупными ноздрями растянута в ширину. Передняя часть носа слегка выступает над губами собаки.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         У канарского дога крупные либо среднего размера глаза гармоничной посадки – то есть не на выкате, но и не глубоко расположенные. Глазные яблоки прикрывают плотные ярко пигментированные веки. Классический окрас радужки – от каштанового до темно-коричневого.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Свободно свисающие по бокам черепа уши далеко отстоят друг от друга. Само ушное полотно небольшого размера, тесно прилегающее к голове и в сложенном состоянии напоминающее розовый лепесток. Зачастую уши купируют, в таком случае орган принимает правильное стоячее положение.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Шея канарского дога напоминает цилиндр с отменно развитой мускулатурой и небольшим подвесом в передней части.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело чистопородной особи должно быть массивным, крепким и превосходить в длину высоту животного в холке хотя бы на 18-20%. Спина прямая, но с незначительным подъемом между круповой зоной и холкой. Круп догов развитый, причем массивнее эта часть тела выглядит у сук. Обязательное требование породного стандарта – широкая грудь с сильно выгнутыми ребрами и слегка подобранная линия живота.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         У канарских догов мускулистые параллельные конечности, обеспечивающие в движении упругий длинный шаг. Плечи породы поставлены под правильным наклоном, локти без выворота в стороны, пясти массивные с легким изгибом. При взгляде сзади и с боков бедра животного выглядят удлиненными и мускулистыми, а скакательные суставы – низко расположенными. Все четыре лапы с плотно сжатыми округленными пальцами и твердыми черными подушечками, причем передние лапы короче задних. Когти – обязательно черного окраса.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвост канарского дога имеет среднюю посадку, он очень массивный у основания и суженный у кончика. У спокойной собаки хвост опущен книзу, но не достигает скакательных суставов; у возбужденной – принимает саблевидную форму, приподнимается в направлении спины, но никогда не закручивается.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Формально «канарцы» не имеют подшерстка, но на практике его реально обнаружить в шейной и ягодичной областях. Покровный волос короткий, ровный и жесткий. Более длинная шерсть – на бедрах и холке, самая короткая – на внешней стороне ушей.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Традиционные масти породы – все типы тигрового: от светло-серого до теплых оттенков. Дополнительно стандарт разрешает разведение особей оленьего и песочного окрасов. На морде канарского дога присутствует черная маска. Кроме того, могут иметь место контрастные белые отметины на шее и пальцах лап, наличие которых нежелательно.
+        </p>
+        <h3>
+         Недостатки и дисквалифицирующие пороки
+        </h3>
+        <p>
+         Идеальный шоу-питомец должен вписываться в заданные стандартом параметры по всем пунктам. Если же собака имеет заметные дефекты внешности вроде общей хрупкости облика, нетипичной формы черепа и нарушенных пропорций, это сильно повлияет на выставочную оценку. Что касается запрета на экспонирование, то получить его может канарский дог, имеющий следующие пороки внешности:
+        </p>
+        <ul>
+         <li>
+          гетерохромию либо чересчур светлые глаза;
+         </li>
+         <li>
+          белые метки на шерсти в неоговоренных стандартом местах;
+         </li>
+         <li>
+          недокус;
+         </li>
+         <li>
+          отсутствие черной маски;
+         </li>
+         <li>
+          депигментированную кожу губ, век и мочки;
+         </li>
+         <li>
+          килевидную форму груди;
+         </li>
+         <li>
+          крипторхизм;
+         </li>
+         <li>
+          круповую часть ниже уровня холки.
+         </li>
+        </ul>
+        <p>
+         Не допускаются к выставкам и разведению особи с купированными хвостами, а также имеющие атипичное поведение. Обычно это излишне трусливые либо агрессивные животные, которыми сложно управлять на ринге.
+        </p>
+        <h2 id="gl3">
+         Характер канарского дога
+        </h2>
+        <p>
+         Преса канарио – уже давно не гладиаторы и не травильщики дичи, но территориальный инстинкт у них все еще силен. Именно поэтому обзаводиться канарским догом лучше тогда, когда возникла необходимость в защитнике и чутком стороже. В повседневной жизни тигровые «качки» вполне уравновешенны и спокойны, но из реальности не выпадают, предпочитая держать ситуацию под контролем. Отсюда – недоверие к незнакомцам и подозрительность ко всем, кто пытается тесно контактировать с хозяином. В отношениях с соплеменниками канарские доги рассудительны и сдержанны, но ровно до первой провокации. Как только накал страстей достигает своего пика, остановить собаку нереально.
+        </p>
+        <p>
+         Нападение без предупреждения не в правилах преса канарио, поэтому если животное зарычало, встало и продемонстрировало клыки, это сигнализирует о том, что пора немедленно ретироваться. Бегать от уроженцев Тенерифе не рекомендуется в принципе, если не хотите спровоцировать собаку на более радикальные меры. С детьми у канарских догов мирные и доверительные отношения. Малышам грозный «бодигард» может позволить многое, так что если видите пса, катающего на саночках ребятню, – это не постановочное шоу, а вполне рядовое явление для семьи, в которой собака и дети доверяют друг другу. Впрочем, безоглядно полагаться на терпение животного не стоит: при всем своем чадолюбии канарские доги не входят в топ четвероногих нянек, на которых можно оставить малышей.
+        </p>
+        <p>
+         С остальными домашними питомцами порода за сферы влияния не конкурирует, особенно если эти самые питомцы уступают догам в размерах. Обзаводясь щенком преса канарио, необязательно выселять из дома кошек и собак декоративных пород. Живя бок о бок, животные постепенно притираются друг к другу и не конфликтуют. Выяснять, кто в доме главный, канарские доги предпочитают между собой, поэтому если вы планируете стать владельцем двух кобелей или сук, готовьтесь к трениям между подопечными. В быту потомки римских молоссов неприхотливы, при отсутствии у владельца желания коммуницировать они легко сливаются с интерьером. Еще одна отличительная черта характера породы – легкое упрямство, которое необходимо просто принять.
+        </p>
+        <h2 id="gl4">
+         Воспитание дрессировка
+        </h2>
+        <p>
+         Канарский дог – собака, для которой важна ранняя социализация. Что бы там ни говорили о кровожадности породы обыватели, в 9 случаях из 10 она обусловлена неправильной интеграцией животного в домашнюю и уличную среду. Вся работа по приучению щенка к звукам, запахам и сюрпризам окружающего мира ложится на плечи хозяина, как и ответственность за поведение питомца. Так что готовьтесь серьезно потрудиться, прежде чем получить воспитанного и невозмутимого стража, а не взрывного агрессора, создающего проблемы с окружающими и законом.
+        </p>
+        <p>
+         Малоопытные владельцы ошибочно понимают под социализацией умение канарского дога влиться в собачий коллектив, а также воспитание привычки не пугаться резких звуков, общественного транспорта и прочих внешних раздражителей. Как результат: на первых же прогулках щенка пытаются «подружить» с отдыхающими рядом соплеменниками, вместо того, чтобы самостоятельно заняться объяснением малышу прописных истин. Помните, в первые месяцы жизни наставником и родителем для собаки остается человек, а не сородичи. Именно с владельцем малыш должен гулять и ему же подчиняться.
+        </p>
+        <p>
+         Попытки заменить авторитет хозяина участием в воспитательном процессе других членов семьи не засчитываются. Учителем должен быть кто-то один, иначе канарский дог быстро сообразит, что лидера в доме нет, и извлечет из ситуации собственную выгоду. Кстати, о доминантных чертах породы: предельно ярко они проявляются в подростковый период, хотя, повзрослев, «канарец» нет-нет да и попытается представить себя суперменом. В связи с этим псу придется регулярно напоминать о том, что не он центр Вселенной.
+        </p>
+        <p>
+         Не забывайте и то, что собака никогда не должна входить в квартиру и выходить из нее впереди человека. Попытки ворчать и кусаться, когда хозяин отнимает игрушку, должны сразу пресекаться (отнять, но не кричать и не бить щенка). Не позволяйте любимцу валяться на кровати, а также препятствовать вашему доступу в любую из комнат дома. Не купируя подобное поведение, вы уравниваете животное с собой в правах, что стимулирует его к дальнейшему непослушанию.
+        </p>
+        <p>
+         Дрессируют канарских догов по тем же методикам, что и всех собак-лидеров. Отработать базовые команды типа «Сидеть!», «Гуляй!», «Место!» в состоянии даже хозяин-новичок, поскольку память и сообразительность у породы отличные. Для обеспечения безопасности окружающих и возможности появляться с псом в общественных местах достаточно прохождения курсов УГС и ОКД. Если же для «канарца» планируется спортивная карьера, стоит походить с ним на тренировочные площадки. Собаки, занимающиеся спортом, должны работать на автоматизме и моментально исполнять команды.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важно:
+         </strong>
+         задействовать канарского дога в спортивных дисциплинах можно не ранее, чем животному исполнится год. Как и у большинства крупных пород, у преса канарио не очень крепкие суставы, поэтому слишком ранние нагрузки негативно сказываются на их здоровье.
+        </p>
+        <p>
+         При желании можно попробовать и комплексную дрессировку, позволяющую сформировать у канарского дога навыки послушания и защиты владельца. Идеальный вариант – позволить себе и щенку индивидуальные занятия с кинологом. Профессионал быстрее определит психотип питомца, подберет методы управления им и даст полезные советы относительно подходящих методик обучения.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         Поскольку канарские доги – выходцы из тропического климата, мириться с российскими погодными реалиями им сложновато. По этой причине кинологи рекомендуют содержать породу в домах и квартирах, допуская на летний период переселение в вольер или во двор. В остальном уроженцы Тенерифе – нетребовательные питомцы, которым достаточно, чтобы их обеспечили отдельной лежанкой, мисками для еды и питья и парой-тройкой игрушек. Весь остальной «скарб» собаке по большому счету не нужен. Единственный нюанс: учитывайте габариты породы и подбирайте игрушки покрупнее, чтобы у животного не было возможности их проглотить. Испорченные и искусанные предметы забав канарского дога лучше выбрасывать без сожаления. Если тигровому «атлету» удалось распотрошить игрушку, есть риск, что ему удасться заглотнуть частичку пластика или резины, а это ведет к неприятным последствиям и стоянию в очередях в ветеринарный кабинет.
+        </p>
+        <h3>
+         Выгул
+        </h3>
+        <p>
+         Канарский дог не такой ярко выраженный брахицефал, как, например,
+         <a href="/dog/angliyskiy-buldog/">
+          английский бульдог
+         </a>
+         , что не мешает ему страдать от чрезмерной жары. В летний зной гулять с питомцем нужно поменьше, перенося променады на раннее утро и поздний вечер. Несмотря на то, что преса канарио не входит в российский список потенциально опасных пород, в публичные места собаку рекомендуется выводить на поводке и в наморднике, причем «экипировку» обязаны носить и особи, безупречно сдавшие нормативы по послушанию. Шлейки с утяжелителями, которые иногда рекомендуются для выгула крупных пород, в случае с «канарцами» лучше не использовать. Потомки римских молоссов и без того тяжелые собаки, лишняя нагрузка на суставы и позвоночник им ни к чему.
+        </p>
+        <p>
+         Свободный выгул возможен на частной огороженной территории, а также в безлюдных местах, например, на пустырях или в лесу. Предусмотрительность тоже важна. Порой столкновения с невоспитанными подопечными других собачников приводят не только к конфликту между владельцами, но и к травмам питомцев. Если вы видите, что рядом выгуливают визгливого декоративного пушистика или агрессивного «кавказца», отойдите с любимцем подальше. Канарские доги почти никогда не провоцируют драку, но и уступать зарвавшимся соплеменникам не намерены.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Ухаживать за короткой шерстью канарского дога несложно: собак моют раз в 3-6 месяцев, а дважды в неделю проходятся по шерсти щеткой или резиновой варежкой, чтобы собрать отмершие волоски и помассировать кожу. Формально порода лишена подшерстка, но на практике он частенько имеется на шее и бедрах собаки, так что периодически эти зоны лучше стриппинговать, то есть выщипывать отмерший пуховой слой вручную.
+        </p>
+        <p>
+         Стрижка породы стандартом не регламентируется, но в США «канарцев» принято подстригать. В основном данные манипуляции производят с шоу-особями: стрижка помогает подчеркнуть идеальные участки фигуры, отвлекая внимание оценочной комиссии от менее «удачных» частей тела. Покупка собачьей косметики вроде кондиционеров и спреев для шерсти тоже актуальна для владельцев выставочных догов. Но если возникло желание придать «костюму» любимца больше блеска, не затрачивая лишних средств, с задачей отлично справится раствор столового уксуса, водки и воды. Достаточно смочить в нем тряпочку и провести ей по шерсти.
+        </p>
+        <p>
+         Раз в неделю стоит выделить время на осмотр ушей собаки. Если внутри воронки обнаружились загрязнения или излишки серы, их следует удалить чистой тряпочкой, смоченной в фитолосьоне, либо при помощи капель для чистки ушей. Глаза нужно осматривать ежедневно, пару раз в неделю протирая их тканью, увлажненной крепким чайным настоем либо отваром ромашки. Кроме того, ежемесячно канарскому догу нужно укорачивать когти, что удобнее делать при помощи когтереза для крупных пород.
+        </p>
+        <p>
+         Чистка зубов тоже входит в число обязательных процедур, которую придется организовывать хотя бы дважды в неделю. Если не рискуете чистить зубы канарского дога самостоятельно, купите спреи и гели для полости рта. Их достаточно частично нанести на зубы животного – далее, смешиваясь со слюной, средства самостоятельно распределяются в пасти. Неплохо очищают налет покупные твердые лакомства и натуральный томатный сок.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Основным источником белка в рационе канарского дога должно быть нежирное жилистое мясо с большим количеством хрящевой ткани. Пару раз в неделю мясную часть полезно заменить промороженным рыбным филе или субпродуктами (печень, почки, сердце, легкие), не забыв увеличить размер порции из-за сниженной питательной ценности перечисленных продуктов. Кстати, чтобы утолить аппетит такой крупной собаки, как канарский дог, с мясом лучше варить каши – гречневую, овсяную, рисовую.
+        </p>
+        <p>
+         Молоко взрослым «канарцам» нельзя – оно не усваивается организмом. А вот пахту, обезжиренный кефир и творог давать разрешается. Щенкам и подросткам подойдет мясо птицы, поскольку оно богато аминокислотами. Но в этом случае важно знать, что собака полностью здорова, поскольку существуют болезни, при которых любая птица противопоказана. Дополнительно заводчики рекомендуют вводить в корм юных особей БАДы с хондроитином и глюкозамином, помогающим избежать проблем с суставами, которые часто бывают у догов-подростков.
+        </p>
+        <p>
+         Источниками полезных микроэлементов и витаминов являются также куриные яйца и водоросли. Обязательно включение в меню канарского дога овощей. Например, капуста и свекла должны проходить термическую обработку, но морковную стружку разрешается давать в сыром виде. Разнообразить рацион собаки можно свежими ягодами и сухариками из ржаного хлеба. Потребность организма в жирах легко удовлетворить сливочным и нерафинированным растительным маслом, но здесь важно не переборщить, чтобы не вызвать расстройство желудка.
+        </p>
+        <p>
+         Определять, какой сухой корм подходит канарскому догу, придется методом подбора, поэтому ошибки и промахи в этом деле неизбежны. Если экспериментировать на четвероногом друге не хочется, попробуйте оставить его на той «сушке», которую покупал заводчик, продавший вам собаку – иногда такой метод работает. Ну и конечно, не экономьте на животном, выбирая бюджетные марки. Мало того, что дешевые корма практически не содержат мяса, они еще провоцируют проблемы с пищеварением и почками.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни канарских догов
+        </h2>
+        <p>
+         Самое распространенное заболевание канарских догов – дисплазия тазобедренных и локтевых суставов. Недуг наследуется от родителей, поэтому ранняя диагностика производителей – важный нюанс, который не стоит упускать из виду. Иногда у представителей породы диагностируют синдром Воблера, эпилепсию и многоочаговую ретинопатию, но происходит это не так часто, как в случае с дисплазией. Еще одна важная особенность преса канарио – склонность к завороту кишечника и желудка. Обычно виной тому перекармливание, а также несоблюдение режима (выгул и спортивные тренировки сразу после еды). В остальном канарские доги – вполне здоровые и крепкие создания, при заботливом уходе живущие не меньше прочих крупных пород, то есть до 10-12 лет.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Удостоверьтесь, что производители помета успешно прошли тестирование на генетическую дисплазию суставов.
+         </li>
+         <li>
+          Старайтесь получить у продавца как можно больше сведений о предках щенка. Не забывайте, что канарские доги продолжают существовать в разных породных типах, отличающихся как внешне, так и темпераментом.
+         </li>
+         <li>
+          В среде заводчиков особенно ценится потомство испанских и польских линий, поэтому если вам предлагают щенка от «поляков» или «испанцев» – это большой плюс.
+         </li>
+         <li>
+          Поскольку малоопытному владельцу легко спутать канарского дога с
+          <a href="/dog/kane-korso/">
+           кане-корсо
+          </a>
+          , на первое знакомство со щенком и продавцом лучше ехать со специалистом-породником.
+         </li>
+         <li>
+          Если есть возможность, познакомьтесь со всеми животными из помета и протестируйте их на смелость – боятся ли присутствия незнакомого человека, как реагируют на резкие звуки. Отдавайте предпочтение в меру смелым, любознательным, но не агрессивным малышам.
+         </li>
+         <li>
+          Попросите заводчика показать племенную суку. Именно от родительницы щенки зачастую наследуют особенности характера и повадки.
+         </li>
+        </ul>
+        <h2 id="gl8">
+         Цена канарского дога
+        </h2>
+        <p>
+         Порода считается редкой не только в России, но и в мире, отсюда – внушительный ценник на чистокровных щенков и сложности в поиске надежного питомника. В качестве примера: преса канарио от американских заводчиков обойдется в 2000-4000 долларов, что эквивалентно 160 000 – 313 000 рублей. В питомниках СНГ расценки скромнее, поэтому приобрести здорового щенка канарского дога у продавцов из России, Казахстана и Беларуси можно в среднем за 40 000 – 60 000 рублей.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения канарского дога на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/kanarskiy-dog/forum/">
+        Перейти на
+        форум канарского дога
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Канарский дог" src="/upload/iblock/dc5/dc561b12f18840acd5356be0f3452ccc.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/kanarskiy-dog/">
+          Канарский дог
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/kanarskiy-dog/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/kanarskiy-dog/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/kanarskiy-dog/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/kanarskiy-dog/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/kanarskiy-dog/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/russko-evropeyskaya-layka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Русско-европейская лайка" data-original="/upload/resize_cache/iblock/ebd/100_100_1/ebd19f44cd131f425feed81f9b578198.jpg">
+          <noscript data-alt="Русско-европейская лайка" data-original="/upload/resize_cache/iblock/ebd/100_100_1/ebd19f44cd131f425feed81f9b578198.jpg">
+           <img alt="Русско-европейская лайка" src="/upload/resize_cache/iblock/ebd/100_100_1/ebd19f44cd131f425feed81f9b578198.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Русско-европейская лайка
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/shotlandskiy-setter/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Шотландский сеттер" data-original="/upload/resize_cache/iblock/b41/100_100_1/6iwkcqf0j4ypaiz6e617slj0tecprwqt.jpg">
+          <noscript data-alt="Шотландский сеттер" data-original="/upload/resize_cache/iblock/b41/100_100_1/6iwkcqf0j4ypaiz6e617slj0tecprwqt.jpg">
+           <img alt="Шотландский сеттер" src="/upload/resize_cache/iblock/b41/100_100_1/6iwkcqf0j4ypaiz6e617slj0tecprwqt.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Шотландский сеттер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/yuzhnorusskaya-ovcharka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Южнорусская овчарка" data-original="/upload/resize_cache/iblock/254/100_100_1/254d591f1140197ca737aceef59259db.jpg">
+          <noscript data-alt="Южнорусская овчарка" data-original="/upload/resize_cache/iblock/254/100_100_1/254d591f1140197ca737aceef59259db.jpg">
+           <img alt="Южнорусская овчарка" src="/upload/resize_cache/iblock/254/100_100_1/254d591f1140197ca737aceef59259db.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Южнорусская овчарка
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/border-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бордер-терьер" data-original="/upload/resize_cache/iblock/aab/100_100_1/aab34a0f98d67e5b7160bfea9b0e6159.jpg">
+          <noscript data-alt="Бордер-терьер" data-original="/upload/resize_cache/iblock/aab/100_100_1/aab34a0f98d67e5b7160bfea9b0e6159.jpg">
+           <img alt="Бордер-терьер" src="/upload/resize_cache/iblock/aab/100_100_1/aab34a0f98d67e5b7160bfea9b0e6159.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бордер-терьер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkanarskiy-dog%252F%253Fcheck_key%253D8d27d18adefe18769d144d1ff92b6756%2526ANIMAL_CODE%253Dkanarskiy-dog%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkanarskiy-dog%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmthbmFyc2tpeS1kb2clMkYlM0ZjaGVja19rZXklM0Q4ZDI3ZDE4YWRlZmUxODc2OWQxNDRkMWZmOTJiNjc1NiUyNkFOSU1BTF9DT0RFJTNEa2FuYXJza2l5LWRvZyUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZrYW5hcnNraXktZG9nJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkanarskiy-dog%252F%253Fcheck_key%253D8d27d18adefe18769d144d1ff92b6756%2526ANIMAL_CODE%253Dkanarskiy-dog%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fkanarskiy-dog%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkanarskiy-dog%252F%253Fcheck_key%253D8d27d18adefe18769d144d1ff92b6756%2526ANIMAL_CODE%253Dkanarskiy-dog%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkanarskiy-dog%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "93.171.133.51"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--df44d65f5ff9c4bf74431e8ac7c829a3-->

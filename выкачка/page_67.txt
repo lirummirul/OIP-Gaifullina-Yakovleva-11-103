@@ -1,0 +1,1463 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'6fbd7d38e3a5'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Голландская овчарка, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Голландская овчарка или хердер – универсальная пастушья собака тигрового окраса из Нидерландов. Позиционируется как очень редкая порода, разведение которой поощряется Голландским хердер-клубом (Hollandse Herderclub)." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/19d/nt8ms7gyk0hrg7t3ow5t2090rpdwvnvd.jpg" property="og:image"/>
+     <title>
+      Голландская овчарка (Хердер) — описание породы собаки от А до Я
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/gollandskaya-ovcharka/" property="og:url"/>
+     <meta content="Голландская овчарка (Хердер) — описание породы собаки от А до Я" property="og:title"/>
+     <meta content="Голландская овчарка или хердер – универсальная пастушья собака тигрового окраса из Нидерландов. Позиционируется как очень редкая порода, разведение которой поощряется Голландским хердер-клубом (Hollandse Herderclub)." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/gollandskaya-ovcharka/" itemprop="url">
+         <span itemprop="title">
+          Голландская овчарка
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Голландская овчарка
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/gollandskaya-ovcharka/">
+          Описание
+         </a>
+         <a href="/dog/gollandskaya-ovcharka/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/gollandskaya-ovcharka/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/gollandskaya-ovcharka/photo/">
+          Фото
+         </a>
+         <a href="/dog/gollandskaya-ovcharka/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Голландская овчарка" src="/upload/iblock/5bb/npr87d631ss3thjd1019yp2ku4vbvfwf.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/gollandskaya-ovcharka/">
+           хердер
+          </a>
+         </span>
+         <p>
+          Голландская овчарка или хердер – универсальная пастушья собака тигрового окраса из Нидерландов. Позиционируется как очень редкая порода, разведение которой поощряется Голландским хердер-клубом (Hollandse Herderclub).
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="Happy 2nd Birthday, Maslow!" data-fancybox="images" data-link="https://www.flickr.com/photos/dynamutt/53777618362/" data-type="image" data-username="Kristen" href="/upload/uf/9f0/jvvf5u6b6islt8mzg373hmhb5yhzfxqq.jpg">
+            <img alt="Голландская овчарка" src="/upload/resize_cache/uf/9f0/293_293_2/jvvf5u6b6islt8mzg373hmhb5yhzfxqq.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="Nyyppis 9kk 🦥" data-fancybox="images" data-link="https://www.instagram.com/p/C56Sr8ksq7l/" data-type="image" data-username="lorujavella" href="/upload/uf/ebc/cxdtglayeo8o41gp3fi9gjw1ha3vmnre.jpg">
+            <img alt="Голландская овчарка" src="/upload/resize_cache/uf/ebc/293_293_2/cxdtglayeo8o41gp3fi9gjw1ha3vmnre.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="Dutchie puppy spam 🐾" data-fancybox="images" data-link="https://www.instagram.com/p/C9Vki8MSWCk/" data-type="image" data-username="prettylittlehellhounds" href="/upload/uf/143/4l6ub9z9t3jeokbzp6rjkiw64j5dy383.jpg">
+            <img alt="Голландская овчарка" src="/upload/resize_cache/uf/143/293_293_2/4l6ub9z9t3jeokbzp6rjkiw64j5dy383.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/gollandskaya-ovcharka/photo/">
+         Все
+            фото голландской овчарки
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы голландская овчарка
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы голландская овчарка
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер голландской овчарки
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни хердеров
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена голландской овчарки
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Голландская овчарка
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Нидерланды
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         30-40 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 57-62 см, суки 55-60 см
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Современные хердеры разводятся в трех разновидностях – короткошерстной, крайне редкой длинношерстной и жесткошерстной.
+        </li>
+        <li>
+         Все представители породы – в меру независимые существа, но при этом поддающиеся дрессировке и охотно работающие в паре с человеком.
+        </li>
+        <li>
+         У голландских овчарок отличная интуиция и развитый сторожевой инстинкт, позволяющий задействовать их в качестве профессиональных охранников.
+        </li>
+        <li>
+         Жизнь «голландца» должна быть наполнена большим количеством физических нагрузок, прогулок, спорта и контактов с хозяином.
+        </li>
+        <li>
+         Хердер хорош в аджилити, дог-фрисби, шутцхунде, вейтпуллинге. Его привлекает к служебным и поисково-спасательным работам Королевская голландская ассоциация полицейских собак.
+        </li>
+        <li>
+         Породе по душе сельская или хотя бы загородная жизнь. Она плохо приспосабливается к условиям городского существования и необходимости обитания в квартире.
+        </li>
+        <li>
+         Голландская овчарка категорически не подходит в качестве первой собаки в семью и компаньона для пожилого либо маломобильного владельца.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Голландская овчарка" data-original="/upload/iblock/19d/nt8ms7gyk0hrg7t3ow5t2090rpdwvnvd.jpg">
+          <noscript data-alt="Голландская овчарка" data-original="/upload/iblock/19d/nt8ms7gyk0hrg7t3ow5t2090rpdwvnvd.jpg">
+           <img alt="Голландская овчарка" src="/upload/iblock/19d/nt8ms7gyk0hrg7t3ow5t2090rpdwvnvd.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Хердер
+          </strong>
+          – овчарка-универсал, с одинаковым упоением управляющая овцами и домашней птицей, охраняющая дом и работающая поисковиком-спасателем. В жилах этих трудоголиков течет кровь неугомонных малинуа и лакенуа, поэтому их темпераментность легко объяснима. Настоящий «голландец» умен, сверхэнергичен и на одной волне с хозяином. В отличие от бельгийских соплеменников, голландская овчарка более терпима к домашним животным. Впрочем, статус лучшего друга кошек ей все равно не светит.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средний (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошие (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Голландская овчарка основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы голландская овчарка
+        </h2>
+        <p>
+         Хердер – типичный «селянин», выведенный для присмотра за овцами и охраны ферм. В работе с мелким скотом собака выполняла контролирующую роль – не позволяла копытным забредать на поля и топтать посевы, загоняла коров на дойку. Порода имеет общих предков с
+         <a class="ph" href="">
+          немецкими
+         </a>
+         и
+         <a class="ph" href="">
+          бельгийскими овчарками
+         </a>
+         , хотя точно установить происхождение первых особей сейчас невозможно.
+        </p>
+        <p class="legenda">
+         <strong>
+          Интересный факт:
+         </strong>
+         на молочных фермах хердеры работали доставщиками – собаку запрягали в небольшую тележку, которую грузили молочной продукцией. Во дворе голландская овчарка трудилась сторожем, гоняла кур, пытавшихся пробраться в огород, оповещала о приходе гостей.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок голландской овчарки" data-fancybox="gallery" href="/upload/iblock/42b/nypd3ts190sd1r5dst0s50798flgvo3k.jpeg" title="Щенок голландской овчарки">
+          <div class="lazy-load" data-alt="Щенок голландской овчарки" data-class="article_pic" data-original="/upload/resize_cache/iblock/42b/412_2150_1/nypd3ts190sd1r5dst0s50798flgvo3k.jpeg">
+           <noscript data-alt="Щенок голландской овчарки" data-class="article_pic" data-original="/upload/resize_cache/iblock/42b/412_2150_1/nypd3ts190sd1r5dst0s50798flgvo3k.jpeg">
+            <img alt="Щенок голландской овчарки" class="article_pic" height="329" src="/upload/resize_cache/iblock/42b/412_2150_1/nypd3ts190sd1r5dst0s50798flgvo3k.jpeg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок голландской овчарки
+         </div>
+        </div>
+        <p>
+         Первый стандарт породы был опубликован в 1898 г. К тому времени голландским овчаркам пришлось попрощаться с пастушьей долей – овцеводство в стране резко пришло в упадок. Однако и тут хердерам повезло – их заметила местная полиция. Так четвероногие пастухи переквалифицировались в служебников.
+        </p>
+        <p>
+         За годы Второй мировой войны поголовье хердеров в Нидерландах сократилось до предела. Часть животных погибла от голода, а часть вывезли в Германию немецкие военные. Чистых породных линий в стране не осталось, так что восстанавливать численность пришлось с привлечением сторонних кровей. Сначала хердеров вязали с малинуа. Затем на их смену пришли бельгийские лакенуа, подарившие голландским овчаркам свою жесткую шерсть.
+        </p>
+        <p class="legenda">
+         <strong>
+          К сведению:
+         </strong>
+         в наши дни порода существует в двух равноправных разновидностях – особи с чистыми родословными и их рабочие соплеменники. Генофонд первых контролируется комиссией FCI. Вторыми занимается KNPV – Королевская голландская ассоциация полицейских собак. Подопечные FCI разводятся по всем правилам современного собаководства с тщательным подбором производителей и регистрацией вязок. В KNPV в приоритете рабочие характеристики. Подавляющее большинство полицейских «хвостов» рождено при участии малинуа с хорошим служебным потенциалом.
+        </p>
+        <h2>
+         Видео: Голландская овчарка
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="6a2abM3zIhw">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы голландская овчарка
+        </h2>
+        <p>
+         Из-за разнородного шерстного покрова хердеров бывает сложно идентифицировать. Длинношерстная голландская овчарка и ее жесткошерстный родственник на первый взгляд – два совершенно разных существа. Однако под слоем густого подшерстка и ости оба «экземпляра» имеют абсолютно одинаковое сложение.
+        </p>
+        <p>
+         Главная отличительная черта хердера – выносливость. Собака выводилась для работы в суровых сельских условиях. Сами голландцы питомцев не баловали, а вот отдачи требовали серьезной, поэтому крупных прожорливых псов содержать никто не желал. Как итог: типичный представитель породы – создание средних габаритов, но при этом с характерной мускулистостью и основательностью сложения.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Длинношерстная голландская овчарка" data-fancybox="gallery" href="/upload/iblock/5bd/m2xyfhi8dekwk097uuaknzobe2ao9xox.jpg" title="Длинношерстная голландская овчарка">
+           <div class="lazy-load" data-alt="Длинношерстная голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/5bd/512_342_2/m2xyfhi8dekwk097uuaknzobe2ao9xox.jpg">
+            <noscript data-alt="Длинношерстная голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/5bd/512_342_2/m2xyfhi8dekwk097uuaknzobe2ao9xox.jpg">
+             <img alt="Длинношерстная голландская овчарка" class="article_pic" src="/upload/resize_cache/iblock/5bd/512_342_2/m2xyfhi8dekwk097uuaknzobe2ao9xox.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Длинношерстная голландская овчарка
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Жесткошерстная голландская овчарка" data-fancybox="gallery" href="/upload/iblock/60f/6vbzuq17j5r903j5cj7nh252qnbf0kgn.jpg" title="Жесткошерстная голландская овчарка">
+           <div class="lazy-load" data-alt="Жесткошерстная голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/60f/512_342_2/6vbzuq17j5r903j5cj7nh252qnbf0kgn.jpg">
+            <noscript data-alt="Жесткошерстная голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/60f/512_342_2/6vbzuq17j5r903j5cj7nh252qnbf0kgn.jpg">
+             <img alt="Жесткошерстная голландская овчарка" class="article_pic" src="/upload/resize_cache/iblock/60f/512_342_2/6vbzuq17j5r903j5cj7nh252qnbf0kgn.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Жесткошерстная голландская овчарка
+          </div>
+         </div>
+        </div>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Стандарт РКФ описывает голландских овчарок как длинноголовых и плоскоскулых. Череп кобелей и сук уплощенный, с плавным переходом к морде. Прямая спинка носа усиливает общую клиновидность головы.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Мочка густого черного окраса.
+        </p>
+        <h3>
+         Зубы, губы, челюсти
+        </h3>
+        <p>
+         Плотные и хорошо пигментированные губы скрывают под собой крепкие зубные ряды. Прикус должен быть классического ножницеобразного типа.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Нормального размера, в форме миндалин с незначительной раскосостью, но никогда не навыкате. Окрас глаз – максимально темный.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Уши хердеров не миниатюрные и не крупные. Когда животное настороже, уши «встают» вертикально.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Для породы характерна сухая, средней длины шея, без подвеса и выраженных складок.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда голландской овчарки" data-fancybox="gallery" href="/upload/iblock/cf0/egbb4lv3o80mqaqp2jtqlqbto5u2hgdx.jpg" title="Морда голландской овчарки">
+          <div class="lazy-load" data-alt="Морда голландской овчарки" data-class="article_pic" data-original="/upload/resize_cache/iblock/cf0/1024_2150_1/egbb4lv3o80mqaqp2jtqlqbto5u2hgdx.jpg">
+           <noscript data-alt="Морда голландской овчарки" data-class="article_pic" data-original="/upload/resize_cache/iblock/cf0/1024_2150_1/egbb4lv3o80mqaqp2jtqlqbto5u2hgdx.jpg">
+            <img alt="Морда голландской овчарки" class="article_pic" src="/upload/resize_cache/iblock/cf0/1024_2150_1/egbb4lv3o80mqaqp2jtqlqbto5u2hgdx.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда голландской овчарки
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело крепкое, с прямой спиной и в меру развитой поясницей. Круп характеризуется умеренной длиной и расположен под заметным наклоном. Глубокая длинная грудь с хорошим форбрустом, линия живота слегка подобрана кверху.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Ноги мощные, достаточной длины, с хорошими мышцами и прочным костяком. Передние конечности должны быть идеально прямыми, задние – без чрезмерных углов. Лапы в форме овала, с черными когтями и хорошо собранными пальцами.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         У расслабленной собаки хвост опущен книзу прямо или с легким изгибом.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Гладкошерстные и короткошерстные голландские овчарки покрыты грубоватым, плотно прилегающим к коже волосом с развитым слоем подшерстка. Сама шерсть не слишком короткая, образующая штаны на бедрах, воротник на шее и заметный подвес на хвосте.
+        </p>
+        <p>
+         У длинношерстного хердера покров грубый на ощупь, умеренно длинный и прямой. Короткая шерсть растет только на ушах, голове, лапах и задних ногах под плюснами. Подшерсток у таких особей тоже хорошо развит. Бедра животного скрыты под пушистыми «штанишками», шея обрастает аккуратным воротником.
+        </p>
+        <p>
+         Жесткошерстные суки и кобели должны иметь взъерошенный жесткий волос по всем телу, кроме головы. Прослойка подшерстка плотная. На обеих губах шерсть формирует аккуратные усы и бороду. Над глазами пучки волоса образуют подобие бровей. Преимущество имеют особи, чьи бедра украшены пышными «штанами».
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Шерсть голландских овчарок отличается тигровой мастью. Цветовые вариации – золотистая и серебристая. Тигровины на теле должны хорошо просматриваться. Исключение – жесткошерстные собаки, у которых тигровые метки видны хуже из-за ершистой текстуры волоса. Преимущества окраса – черная маска на морде. Недостатки – белые метки на грудной клетке и лапах.
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <p>
+         По требованиям FCI, не участвуют в выставках и не используются в качестве производителей больные, психически нестабильные особи, а также животные с сильными дефектами экстерьера.
+        </p>
+        <h2>
+         Фото голландской овчарки
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/245/4dxav3x59tkmn25bczyjqoxq6j7rulvk.jpg" title="">
+           <div class="lazy-load" data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/245/380_264_2/4dxav3x59tkmn25bczyjqoxq6j7rulvk.jpg">
+            <noscript data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/245/380_264_2/4dxav3x59tkmn25bczyjqoxq6j7rulvk.jpg">
+             <img alt="Голландская овчарка" class="article_pic" src="/upload/resize_cache/iblock/245/380_264_2/4dxav3x59tkmn25bczyjqoxq6j7rulvk.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/374/q5hxh0q0dcurz0fif0o1zi6f9x393gau.jpg" title="">
+           <div class="lazy-load" data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/374/380_264_2/q5hxh0q0dcurz0fif0o1zi6f9x393gau.jpg">
+            <noscript data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/374/380_264_2/q5hxh0q0dcurz0fif0o1zi6f9x393gau.jpg">
+             <img alt="Голландская овчарка" class="article_pic" src="/upload/resize_cache/iblock/374/380_264_2/q5hxh0q0dcurz0fif0o1zi6f9x393gau.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a6a/l60ehr4d3l9lpz67olgr5b7e8ssurld9.jpg" title="">
+           <div class="lazy-load" data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/a6a/380_264_2/l60ehr4d3l9lpz67olgr5b7e8ssurld9.jpg">
+            <noscript data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/a6a/380_264_2/l60ehr4d3l9lpz67olgr5b7e8ssurld9.jpg">
+             <img alt="Голландская овчарка" class="article_pic" src="/upload/resize_cache/iblock/a6a/380_264_2/l60ehr4d3l9lpz67olgr5b7e8ssurld9.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/035/h4atll19zpgkimsozwasgbeo093q3118.jpg" title="">
+           <div class="lazy-load" data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/035/380_264_2/h4atll19zpgkimsozwasgbeo093q3118.jpg">
+            <noscript data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/035/380_264_2/h4atll19zpgkimsozwasgbeo093q3118.jpg">
+             <img alt="Голландская овчарка" class="article_pic" src="/upload/resize_cache/iblock/035/380_264_2/h4atll19zpgkimsozwasgbeo093q3118.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fa0/d1u07i486whma5ape2qhztzb078u1jh0.jpg" title="">
+           <div class="lazy-load" data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/fa0/380_264_2/d1u07i486whma5ape2qhztzb078u1jh0.jpg">
+            <noscript data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/fa0/380_264_2/d1u07i486whma5ape2qhztzb078u1jh0.jpg">
+             <img alt="Голландская овчарка" class="article_pic" src="/upload/resize_cache/iblock/fa0/380_264_2/d1u07i486whma5ape2qhztzb078u1jh0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fac/1ddmmok2v1vrn2zxu9cjf4l26072n6k1.jpg" title="">
+           <div class="lazy-load" data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/fac/380_264_2/1ddmmok2v1vrn2zxu9cjf4l26072n6k1.jpg">
+            <noscript data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/fac/380_264_2/1ddmmok2v1vrn2zxu9cjf4l26072n6k1.jpg">
+             <img alt="Голландская овчарка" class="article_pic" src="/upload/resize_cache/iblock/fac/380_264_2/1ddmmok2v1vrn2zxu9cjf4l26072n6k1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/bfb/1a721199chqujjjx71d6v0hht3h6wo0e.jpg" title="">
+           <div class="lazy-load" data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/bfb/380_264_2/1a721199chqujjjx71d6v0hht3h6wo0e.jpg">
+            <noscript data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/bfb/380_264_2/1a721199chqujjjx71d6v0hht3h6wo0e.jpg">
+             <img alt="Голландская овчарка" class="article_pic" src="/upload/resize_cache/iblock/bfb/380_264_2/1a721199chqujjjx71d6v0hht3h6wo0e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e9c/pxpwen7jltk2ax1njs4vq40q3thzidqn.jpg" title="">
+           <div class="lazy-load" data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/e9c/380_264_2/pxpwen7jltk2ax1njs4vq40q3thzidqn.jpg">
+            <noscript data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/e9c/380_264_2/pxpwen7jltk2ax1njs4vq40q3thzidqn.jpg">
+             <img alt="Голландская овчарка" class="article_pic" src="/upload/resize_cache/iblock/e9c/380_264_2/pxpwen7jltk2ax1njs4vq40q3thzidqn.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c34/bybir5h5xzswbwjtq96zot4e257w9nr8.jpg" title="">
+           <div class="lazy-load" data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/c34/380_264_2/bybir5h5xzswbwjtq96zot4e257w9nr8.jpg">
+            <noscript data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/c34/380_264_2/bybir5h5xzswbwjtq96zot4e257w9nr8.jpg">
+             <img alt="Голландская овчарка" class="article_pic" src="/upload/resize_cache/iblock/c34/380_264_2/bybir5h5xzswbwjtq96zot4e257w9nr8.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер голландской овчарки
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок голландской овчарки со своей хозяйкой" data-fancybox="gallery" href="/upload/iblock/6ab/kuocxh1mya47ekq8z9aelneppx7v8prv.jpg" title="Щенок голландской овчарки со своей хозяйкой">
+          <div class="lazy-load" data-alt="Щенок голландской овчарки со своей хозяйкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/6ab/412_2150_1/kuocxh1mya47ekq8z9aelneppx7v8prv.jpg">
+           <noscript data-alt="Щенок голландской овчарки со своей хозяйкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/6ab/412_2150_1/kuocxh1mya47ekq8z9aelneppx7v8prv.jpg">
+            <img alt="Щенок голландской овчарки со своей хозяйкой" class="article_pic" height="515" src="/upload/resize_cache/iblock/6ab/412_2150_1/kuocxh1mya47ekq8z9aelneppx7v8prv.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок голландской овчарки со своей хозяйкой
+         </div>
+        </div>
+        <p>
+         Хердер – эталон собачьей преданности, бдительности и ответственности, которому не страшно доверить любое сложное дело. По характеру голландские овчарки чуть спокойнее своих сородичей – «бельгийцев». Однако при необходимости они тоже способны включать режим быстрого реагирования. Интеллектуальные показатели породы очень высокие. В сочетании с природным послушанием, которым характеризуются все «голландцы», – это настоящий клад для полицейских кинологов.
+        </p>
+        <p>
+         Голландская овчарка обладает развитым территориальным инстинктом и не испытывает восторга от незнакомцев. Сторожа из породы получаются превосходные – внимательные, в меру суровые, голосистые. В отношениях с другими собаками «голландцы» лояльны и инициаторами конфликтов обычно не выступают. Трения с кошками неизбежны, но при определенном старании приструнить четвероногого доминанта возможно. Со своей «стаей» людей хердер подчеркнуто ласков и дружелюбен. И да, он обожает сильную руку, которая будет направлять его.
+        </p>
+        <p>
+         Что касается периодических сбоев в системе, когда питомец демонстрирует независимость от человеческого мнения, то это норма. Породу изначально приучали к самостоятельности – в Нидерландах ее представители управлялись с овечьими отарами без подсказок. Как итог: тягу хердера к самодостаточности необходимо понять и принять, но целенаправленно не стимулировать.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         По уровню сообразительности голландские хердеры близки к бельгийским овчаркам. По шкале Стэнли Корена – это вторая интеллектуальная группа собак, демонстрирующая предельно высокие показатели в работе. Животные с таким уровнем развития – одни из лучших учеников. У них замечательная память, позволяющая усвоить команду всего за 6-15 повторений. Более 85% собак второй группы исполняют отданный приказ с первого раза.
+        </p>
+        <p>
+         Начинать работать с породой кинологи рекомендуют максимально рано. В 6-8 недель «голландец» уже достаточно развит, чтобы учиться. Социализировать овчарку нужно синхронно с воспитанием. Щенка приучают к новым для него явлениям – незнакомым людям и животным, езде в машине, звукам улицы. Основные стереотипы поведения взрослой особи закладываются в щенячьем возрасте. Очень важно не упустить время, когда у малыша формируется система разрешений и запретов.
+        </p>
+        <p>
+         Параллельно с социализацией у подопечного вырабатывают привыкание к режиму дня, умение распознавать собственную кличку и отзываться на нее. Если планируется экспонирование на ринге, водить любимца на выставки необходимо со щенячьего возраста. Собака должна «впитывать» выставочную атмосферу, привыкать к встречам с другими участниками дог-шоу и корректно реагировать на них.
+        </p>
+        <p class="legenda">
+         <strong>
+          К сведению:
+         </strong>
+         в идеале дрессировать хердера должен практикующий кинолог. Как вариант – специалист хотя бы иногда консультирует того, кто занимается с собакой. Несмотря на то что порода родственна малинуа и немецким овчаркам, в ее характере есть нюансы, под которые придется адаптировать программу дрессировки.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Лучший игрок в фрисби" data-fancybox="gallery" href="/upload/iblock/4a0/7vjozum4j9qcfmijz4g0t0wxwgemyv22.jpg" title="Лучший игрок в фрисби">
+          <div class="lazy-load" data-alt="Лучший игрок в фрисби" data-class="article_pic" data-original="/upload/resize_cache/iblock/4a0/1024_2150_1/7vjozum4j9qcfmijz4g0t0wxwgemyv22.jpg">
+           <noscript data-alt="Лучший игрок в фрисби" data-class="article_pic" data-original="/upload/resize_cache/iblock/4a0/1024_2150_1/7vjozum4j9qcfmijz4g0t0wxwgemyv22.jpg">
+            <img alt="Лучший игрок в фрисби" class="article_pic" src="/upload/resize_cache/iblock/4a0/1024_2150_1/7vjozum4j9qcfmijz4g0t0wxwgemyv22.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Лучший игрок в фрисби
+         </div>
+        </div>
+        <p>
+         У «голландцев» мощная пищевая и игровая мотивация, но одобрение хозяина тоже рассматривается как поощрение. За успехи в учебе четвероногого друга обязательно нужно угощать и хвалить. Тон голоса при этом должен быть веселым, чтобы пес различал поощрительные слова и внушение.
+        </p>
+        <p>
+         При отработке запретительных команд задействуется негативное подкрепление. Это повышенный тон, легкий шлепок газетой, иногда прижимание за холку к полу. Бить малыша и кричать на него нельзя, чтобы не вырастить травмированную собаку-психопата. Положительно на процесс дрессировки влияют и другие питомцы. Если в доме уже есть воспитанная, исполнительная собака, щенок будет присматриваться к поведению старшего лидера, частично копируя его.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важный момент:
+         </strong>
+         голландская овчарка должна быть постоянно занята. Если питомец успешно завершил курс дрессировки, это не повод расслабляться. План занятий для четвероногого партнера расписывается на год вперед. Если пес не пасет скот и не работает в «органах», его задействуют в спортивных дисциплинах. Без работы собака тупеет, срывается и чаще демонстрирует непослушание.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         Энергичность хердера, периодами переходящая в гиперактивность, может сослужить плохую службу тем, кто собирается держать его в квартире. Голландским овчаркам рекомендовано загородное содержание, причем не вольерное. Пес должен свободно перемещаться по двору, посещать дом.
+        </p>
+        <p>
+         Выгулы голландской овчарки – хорошая «армейская» школа для хозяина. Бег, прыжки, спортивные упражнения, подвижные игры – то, чем должен сопровождаться каждый выход из дома. Как итог: для человека в плохой физической форме содержание «голландца» превратится в принудительные работы.
+        </p>
+        <p>
+         Пытаться «гасить» активность животного спокойными променадами на поводке – не выход. Для нормального существования и сохранения психического здоровья голландской овчарке необходима полная физическая выкладка продолжительностью не менее 2 часов.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Лесной гуляка" data-fancybox="gallery" href="/upload/iblock/4c4/3a09zxje7zzfikk0aom8uk9xah2577ux.jpg" title="Лесной гуляка">
+          <div class="lazy-load" data-alt="Лесной гуляка" data-class="article_pic" data-original="/upload/resize_cache/iblock/4c4/1024_2150_1/3a09zxje7zzfikk0aom8uk9xah2577ux.jpg">
+           <noscript data-alt="Лесной гуляка" data-class="article_pic" data-original="/upload/resize_cache/iblock/4c4/1024_2150_1/3a09zxje7zzfikk0aom8uk9xah2577ux.jpg">
+            <img alt="Лесной гуляка" class="article_pic" src="/upload/resize_cache/iblock/4c4/1024_2150_1/3a09zxje7zzfikk0aom8uk9xah2577ux.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Лесной гуляка
+         </div>
+        </div>
+        <h3>
+         Уход за шерстью
+        </h3>
+        <p>
+         Поддержание шерсти «голландца» в аккуратном виде – задача несложная. За хердерами не нужно ходить с расческой – достаточно разобрать ость гребнем раз в неделю. В сезон линьки длинношерстных и короткошерстных особей вычесывают ежедневно, чтобы ускорить смену подшерстка. Жесткошерстные овчарки самостоятельно шерсть не сбрасывают, поэтому их триммингуют.
+        </p>
+        <p>
+         Если в глазах «хвоста» скапливаются загрязнения, их убирают чистым кусочком ткани, смоченным в холодной кипяченой воде. Важно еженедельно освобождать слуховые проходы собаки от серы. Для процедуры подойдут гигиенические капли для ушей, но можно прибегать и к механической чистке, намотав на палец салфетку.
+        </p>
+        <p>
+         Для очистки зубов от налета полезно давать специальные твердые лакомства и томатный сок. Использование пасты и щетки обеспечит более ощутимый эффект, но тогда придется помучиться с приучением к данным предметам.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Калорийность рациона рассчитывают, исходя из активности собаки. Рабочим особям, занимающимся пастьбой, спортом, поисково-спасательными работами, калораж увеличивают. В остальном пропорции БЖУ для голландской овчарки стандартные:
+        </p>
+        <ul>
+         <li>
+          60% – белок животного происхождения: мясо и его отходы, субпродукты, рыбное филе, яйца;
+         </li>
+         <li>
+          20-25% – углеводы (гречневая, рисовая, овсяная крупы);
+         </li>
+         <li>
+          10-15% – овощи и фрукты.
+         </li>
+        </ul>
+        <p>
+         Обязательно включаются в рацион нежирные кисломолочные продукты, нерафинированные растительные масла, сливочное масло, рыбий жир, сушеная ламинария, перепелиные яйца. Для поддержания здоровья связок полезно давать ушной хрящ, кожу копытных, жилы, куриные головы и шейки.
+        </p>
+        <p>
+         Если голландская овчарка питается промышленными сухими и влажными кормами, важно чтобы их состав был достаточно мясным. Марки с дешевыми злаковыми наполнителями не дают ни ощущения сытости, ни пользы.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Любитель поплавать" data-fancybox="gallery" href="/upload/iblock/d3c/zoqd4nutxhqrvx1bka1ii8e6t800kkng.jpg" title="Любитель поплавать">
+          <div class="lazy-load" data-alt="Любитель поплавать" data-class="article_pic" data-original="/upload/resize_cache/iblock/d3c/1024_2150_1/zoqd4nutxhqrvx1bka1ii8e6t800kkng.jpg">
+           <noscript data-alt="Любитель поплавать" data-class="article_pic" data-original="/upload/resize_cache/iblock/d3c/1024_2150_1/zoqd4nutxhqrvx1bka1ii8e6t800kkng.jpg">
+            <img alt="Любитель поплавать" class="article_pic" src="/upload/resize_cache/iblock/d3c/1024_2150_1/zoqd4nutxhqrvx1bka1ii8e6t800kkng.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Любитель поплавать
+         </div>
+        </div>
+        <h2 id="gl6">
+         Здоровье и болезни хердеров
+        </h2>
+        <p>
+         К выявленным генетическим заболеваниям хердера можно отнести аллергию, паннус, жевательный миозит, дисплазию тазобедренных и локтевых суставов. Клуб породы также предупреждает об уязвимости органов зрения у жесткошерстных «голландцев». При проведении процедуры гониоскопии (исследование передней камеры глаз) высока вероятность развития слепоты.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Для работы рекомендуется отбирать потомство от производителей из линий КNРV.
+         </li>
+         <li>
+          Важный нюанс – возраст племенной суки. Она не должна быть как слишком молодой, так и чересчур возрастной.
+         </li>
+         <li>
+          Желательно отдавать предпочтение монопородным питомникам «с историей». Обычно в таких местах интересуются не только продажей щенков, но и развитием породы. Покупателю в них обязательно предложат бесплатные консультации по содержанию, обеспечат на первых порах необходимую поддержку.
+         </li>
+         <li>
+          Если опыт в воспитании сложных питомцев небольшой, лучше сделать выбор в пользу сук голландской овчарки. У них более мягкий характер, к тому же «девочки» не переживают переломный период, пытаясь занять доминирующее положение в доме.
+         </li>
+         <li>
+          В идеале покупать щенка нужно в Нидерландах. Особенно это касается представителей рабочих линий – в РФ практикуют в основном разведение будущих выставочных «звезд».
+         </li>
+        </ul>
+        <h2>
+         Фото щенков голландской овчарки
+        </h2>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ba9/lvdxkvh27vijiak2ct2erg4sqy6r73q0.jpg" title="">
+           <div class="lazy-load" data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/ba9/512_342_2/lvdxkvh27vijiak2ct2erg4sqy6r73q0.jpg">
+            <noscript data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/ba9/512_342_2/lvdxkvh27vijiak2ct2erg4sqy6r73q0.jpg">
+             <img alt="Голландская овчарка" class="article_pic" src="/upload/resize_cache/iblock/ba9/512_342_2/lvdxkvh27vijiak2ct2erg4sqy6r73q0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1c5/0hhjm1ww4w81xashei9505u9i6huajnm.jpg" title="">
+           <div class="lazy-load" data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/1c5/512_342_2/0hhjm1ww4w81xashei9505u9i6huajnm.jpg">
+            <noscript data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/1c5/512_342_2/0hhjm1ww4w81xashei9505u9i6huajnm.jpg">
+             <img alt="Голландская овчарка" class="article_pic" src="/upload/resize_cache/iblock/1c5/512_342_2/0hhjm1ww4w81xashei9505u9i6huajnm.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/91e/6tbo1yh9oo36549u3t0s6zfr0amvan9t.jpg" title="">
+           <div class="lazy-load" data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/91e/512_342_2/6tbo1yh9oo36549u3t0s6zfr0amvan9t.jpg">
+            <noscript data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/91e/512_342_2/6tbo1yh9oo36549u3t0s6zfr0amvan9t.jpg">
+             <img alt="Голландская овчарка" class="article_pic" src="/upload/resize_cache/iblock/91e/512_342_2/6tbo1yh9oo36549u3t0s6zfr0amvan9t.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f5a/7rq738x0ztwco85wut5w7eq82fiemfgt.jpg" title="">
+           <div class="lazy-load" data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/f5a/512_342_2/7rq738x0ztwco85wut5w7eq82fiemfgt.jpg">
+            <noscript data-alt="Голландская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/f5a/512_342_2/7rq738x0ztwco85wut5w7eq82fiemfgt.jpg">
+             <img alt="Голландская овчарка" class="article_pic" src="/upload/resize_cache/iblock/f5a/512_342_2/7rq738x0ztwco85wut5w7eq82fiemfgt.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Цена голландской овчарки
+        </h2>
+        <p>
+         Хердер – порода редкая и потому недешевая. Стоимость породного щенка в России колеблется от 50 000 до 110 000 р. На рабочих особей ценник чуть ниже, шоу-класс обходится дороже. В основном российские питомники предлагают короткошерстный тип питомцев. Жесткошерстного и длинношерстного хердеров в РФ найти почти нереально.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения голландской овчарки на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/gollandskaya-ovcharka/forum/">
+        Перейти на
+        форум голландской овчарки
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Голландская овчарка" src="/upload/iblock/5bb/npr87d631ss3thjd1019yp2ku4vbvfwf.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/gollandskaya-ovcharka/">
+          Голландская овчарка
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/gollandskaya-ovcharka/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/gollandskaya-ovcharka/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/gollandskaya-ovcharka/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/gollandskaya-ovcharka/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/gollandskaya-ovcharka/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/gampr/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Гампр" data-original="/upload/resize_cache/iblock/8fd/100_100_1/8fd84d87328462a570e8b18a8430488e.jpg">
+          <noscript data-alt="Гампр" data-original="/upload/resize_cache/iblock/8fd/100_100_1/8fd84d87328462a570e8b18a8430488e.jpg">
+           <img alt="Гампр" src="/upload/resize_cache/iblock/8fd/100_100_1/8fd84d87328462a570e8b18a8430488e.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Гампр
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/avstraliyskaya-pastushya-sobaka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Австралийская пастушья собака" data-original="/upload/resize_cache/iblock/e77/100_100_1/jduwiqflzthyboumerhnxby7di0cruhn.jpg">
+          <noscript data-alt="Австралийская пастушья собака" data-original="/upload/resize_cache/iblock/e77/100_100_1/jduwiqflzthyboumerhnxby7di0cruhn.jpg">
+           <img alt="Австралийская пастушья собака" src="/upload/resize_cache/iblock/e77/100_100_1/jduwiqflzthyboumerhnxby7di0cruhn.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Австралийская пастушья собака
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/leonberger/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Леонбергер" data-original="/upload/resize_cache/iblock/3f8/100_100_1/3f8ffbf9639e2c6370001b553ee32280.jpg">
+          <noscript data-alt="Леонбергер" data-original="/upload/resize_cache/iblock/3f8/100_100_1/3f8ffbf9639e2c6370001b553ee32280.jpg">
+           <img alt="Леонбергер" src="/upload/resize_cache/iblock/3f8/100_100_1/3f8ffbf9639e2c6370001b553ee32280.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Леонбергер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/velshterer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Вельштерьер" data-original="/upload/resize_cache/iblock/d7f/100_100_1/d7f1633c7e0f41b32e6de37e63c131d5.jpg">
+          <noscript data-alt="Вельштерьер" data-original="/upload/resize_cache/iblock/d7f/100_100_1/d7f1633c7e0f41b32e6de37e63c131d5.jpg">
+           <img alt="Вельштерьер" src="/upload/resize_cache/iblock/d7f/100_100_1/d7f1633c7e0f41b32e6de37e63c131d5.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Вельштерьер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fgollandskaya-ovcharka%252F%253Fcheck_key%253D9618ee8fed91773c73cbd3931b846c19%2526ANIMAL_CODE%253Dgollandskaya-ovcharka%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fgollandskaya-ovcharka%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmdvbGxhbmRza2F5YS1vdmNoYXJrYSUyRiUzRmNoZWNrX2tleSUzRDk2MThlZThmZWQ5MTc3M2M3M2NiZDM5MzFiODQ2YzE5JTI2QU5JTUFMX0NPREUlM0Rnb2xsYW5kc2theWEtb3ZjaGFya2ElMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGZ29sbGFuZHNrYXlhLW92Y2hhcmthJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fgollandskaya-ovcharka%252F%253Fcheck_key%253D9618ee8fed91773c73cbd3931b846c19%2526ANIMAL_CODE%253Dgollandskaya-ovcharka%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fgollandskaya-ovcharka%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fgollandskaya-ovcharka%252F%253Fcheck_key%253D9618ee8fed91773c73cbd3931b846c19%2526ANIMAL_CODE%253Dgollandskaya-ovcharka%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fgollandskaya-ovcharka%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "89.149.93.159"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--9a189688f5e0ead9589e5031c3ef5d2b-->

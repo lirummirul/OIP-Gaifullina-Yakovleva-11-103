@@ -1,0 +1,1892 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'203bb08c741a'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Австралийская овчарка (аусси), порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Австралийская овчарка обладает удивительной красотой. Её выразительный взгляд сведёт с ума даже заядлого любителя кошек." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/d44/d44fb8e4580b59ba1b09440270cd6fac.jpg" property="og:image"/>
+     <title>
+      Австралийская овчарка (аусси): все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/avstraliyskaya-ovcharka-aussi/" property="og:url"/>
+     <meta content="Австралийская овчарка (аусси): все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Австралийская овчарка обладает удивительной красотой. Её выразительный взгляд сведёт с ума даже заядлого любителя кошек." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/avstraliyskaya-ovcharka-aussi/" itemprop="url">
+         <span itemprop="title">
+          Австралийская овчарка (аусси)
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Австралийская овчарка (аусси)
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/avstraliyskaya-ovcharka-aussi/">
+          Описание
+         </a>
+         <a href="/dog/avstraliyskaya-ovcharka-aussi/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/avstraliyskaya-ovcharka-aussi/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/avstraliyskaya-ovcharka-aussi/photo/">
+          Фото
+         </a>
+         <a href="/dog/avstraliyskaya-ovcharka-aussi/video/">
+          Видео
+         </a>
+         <a href="/dog/avstraliyskaya-ovcharka-aussi/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/avstraliyskaya-ovcharka-aussi/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Австралийская овчарка (аусси)" src="/upload/iblock/2ca/2ca744cbcd97469ed86860852ace4f40.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/avstraliyskaya-ovcharka-aussi/">
+           аусси
+          </a>
+         </span>
+         <p>
+          Австралийская овчарка обладает удивительной красотой. Её выразительный взгляд сведёт с ума даже заядлого любителя кошек.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/c20/c205659d1e8231a9855af38837f0680b.jpg" data-cap="Tap the link in our bio" data-fancybox="images" data-link="https://www.instagram.com/p/BiacEKHBJP1/" data-type="image" data-username="australianshepherdworld" href="/upload/uf/5d4/5d449e9fbca170775640ad7f0304eca9.jpg">
+            <img alt="Австралийская овчарка (аусси)" src="/upload/resize_cache/uf/5d4/293_293_2/5d449e9fbca170775640ad7f0304eca9.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/f25/f259c9a902b3b76579421407fc9bf8e0.jpg" data-cap="What a weekend! Thank you to @thedogloversshow for having us and also @pablo.and.co for making us look a solid 12 out of 10! Waiting for our @furbodogcamera to come in the mail! We can't wait!!!!" data-fancybox="images" data-link="https://www.instagram.com/p/BibzFkLgRx7/" data-type="image" data-username="myaussietribe" href="/upload/uf/bdb/bdb4ab3e91a55ff855b80ec4db0f16d8.jpg">
+            <img alt="Австралийская овчарка (аусси)" src="/upload/resize_cache/uf/bdb/293_293_2/bdb4ab3e91a55ff855b80ec4db0f16d8.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/284/284dbfc9ac3d78d87ea685fdd811df0e.jpg" data-cap="Kája &amp; Aria ❤ #australianshepherd" data-fancybox="images" data-link="https://www.instagram.com/p/Bibpln6DzB1/" data-type="image" data-username="ts_videophotography" href="/upload/uf/412/41295da19efa2a1caa8f7f982ab9df21.jpg">
+            <img alt="Австралийская овчарка (аусси)" src="/upload/resize_cache/uf/412/293_293_2/41295da19efa2a1caa8f7f982ab9df21.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/avstraliyskaya-ovcharka-aussi/photo/">
+         Все
+            фото австралийской овчарки
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы австралийская овчарка
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность аусси
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер австралийской овчарки
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни австралийской овчарки
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Сколько стоит австралийская овчарка
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Австралийская овчарка (аусси)
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         США
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 25-32 кг, суки 18-25 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 51-58 см, суки 46-53 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         13 – 15 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Несмотря на «говорящее» название породы, родиной австралийцев считаются США.
+        </li>
+        <li>
+         Собаки легко обучаемы и по этой причине часто используются для несения службы или в качестве поводырей.
+        </li>
+        <li>
+         Аусси известны своим дружелюбием, которое позволяет им легко ужиться с другими животными.
+        </li>
+        <li>
+         Добродушный вид овчарок отнюдь не умаляет их умения дать достойный отпор обидчику.
+        </li>
+        <li>
+         Представители этой породы ежедневно нуждаются в 60-минутных физических упражнениях.
+        </li>
+        <li>
+         Австралийские овчарки не самый лучший вариант для содержания в квартире, но частые прогулки с лихвой компенсируют это.
+        </li>
+        <li>
+         Эти животные гиперответственны и могут присматривать за ребёнком, кошкой или хомяком на протяжении нескольких часов.
+        </li>
+        <li>
+         Неопытный хозяин не сможет подавить доминантный характер питомца.
+        </li>
+        <li>
+         Аусси нуждаются в тщательном уходе (особенно за шерстью).
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-original="/upload/iblock/d44/d44fb8e4580b59ba1b09440270cd6fac.jpg">
+          <noscript data-alt="Австралийская овчарка (аусси)" data-original="/upload/iblock/d44/d44fb8e4580b59ba1b09440270cd6fac.jpg">
+           <img alt="Австралийская овчарка (аусси)" src="/upload/iblock/d44/d44fb8e4580b59ba1b09440270cd6fac.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          Австралийская овчарка представляет собой гармоничное сочетание миловидной внешности и гибкого интеллекта. Эти собаки известны на весь мир как надёжные и преданные компаньоны, которые поднимут настроение своими забавными выходками. Для аусси не найти развлечения лучше, чем активная прогулка с хозяином по городскому парку. Животные искренне наслаждаются обществом своей семьи и не любят оставаться в одиночестве на долгое время. Этот очаровательный лохматик на своём примере покажет вам, что значит неиссякаемый оптимизм и умение веселиться сутками напролёт!
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошие (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Австралийская овчарка (аусси) основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/avstraliyskaya-ovcharka-aussi/razmeri-porodi/">
+         размеры австралийской овчарки
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы австралийская овчарка
+        </h2>
+        <p>
+         Несмотря на то, что изучению австралийской овчарки посвятили более полувека, эксперты до сих пор не пришли к единому мнению в вопросе касательно её происхождения. Считается, что порода была выведена в США, но история появления аусси всё же уходит корнями в Австралию и связана с именем Элизы Форлонг – родоначальницы разведения мериносов и производства высококачественной шерсти на южном континенте.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Австралийская овчарка" data-fancybox="gallery" href="/upload/iblock/d4f/d4f632bc5d5fba8979e0bb5a6f5c5247.jpg" title="Австралийская овчарка">
+          <div class="lazy-load" data-alt="Австралийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/d4f/412_2150_1/d4f632bc5d5fba8979e0bb5a6f5c5247.jpg">
+           <noscript data-alt="Австралийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/d4f/412_2150_1/d4f632bc5d5fba8979e0bb5a6f5c5247.jpg">
+            <img alt="Австралийская овчарка" class="article_pic" height="440" src="/upload/resize_cache/iblock/d4f/412_2150_1/d4f632bc5d5fba8979e0bb5a6f5c5247.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Австралийская овчарка
+         </div>
+        </div>
+        <p>
+         В тридцатых годах XIX века она вместе с семьёй обосновалась недалеко от Кэмпбелл-Тауна – небольшого города на востоке Тасмании (Австралия), – куда с мужем и двумя сыновьями эмигрировала из Шотландии. Здесь семейство основало ферму «Уинтон», на которой стали разводить овец, купленных в Германии и привезённых с собой. Смотрителем за отарами был нанят Йозеф Пабтс, последовавший за Форлонгами вместе со своими пастушьими собаками – тайгерами, которых сейчас называют старыми немецкими овчарками. Это подтверждённая версия о том, как прародители аусси попали в «Cтрану вверх тормашками».
+        </p>
+        <p>
+         Согласно другой теории, предком овчарки является австралийский кули, который более всего похож на современную аусси. Фермеры и заводчики предпринимали попытки вывести идеального четвероногого пастуха, для чего они скрестили австралийского келпи и скотогонную собаку. Помимо этого, в создании породы приняли участие тайгеры и
+         <a class="ph" href="/dog/border-kolli/">
+          бордер-колли
+         </a>
+         . В результате селекции, превзошедшей все ожидания, был получен идеальный вариант собаки-пастуха. Животное обладало силой и выносливостью, было способно во время своей работы самостоятельно оценивать обстановку и принимать решение, не дожидаясь указаний хозяина. Одним из важных положительных качеств аусси было отсутствие агрессии к домашнему скоту.
+        </p>
+        <p>
+         В конце XIX века началось интенсивное развитие шерстяного рынка Америки. Основной упор был сделан на австралийских овец, которых привозили судами из Австралии. Вместе с ними завезли и пастушью породу собак, поразившую своими способностями местных скотоводов. Эти одарённые животные стремительно завоевали популярность в западных штатах, где более всего было развито овцеводство.
+        </p>
+        <p>
+         Именно Америка является родиной австралийской овчарки. Первым официально зарегистрированным заводчиком считается Хуанита Эли, которая вывозила мериносов из Австралии. Вместе с одной партией овец прибыл и пастух с собакой голубоватого окраса. Это была первая австралийская пастушья собака, приобретённая Хуанитой Эли, сделавшей огромный вклад в дальнейшее развитие породы.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок Аусси" data-fancybox="gallery" href="/upload/iblock/0fd/0fd5cfc60357ba7689c89ba453662154.jpg" title="Щенок Аусси">
+          <div class="lazy-load" data-alt="Щенок Аусси" data-class="article_pic" data-original="/upload/resize_cache/iblock/0fd/412_2150_1/0fd5cfc60357ba7689c89ba453662154.jpg">
+           <noscript data-alt="Щенок Аусси" data-class="article_pic" data-original="/upload/resize_cache/iblock/0fd/412_2150_1/0fd5cfc60357ba7689c89ba453662154.jpg">
+            <img alt="Щенок Аусси" class="article_pic" height="493" src="/upload/resize_cache/iblock/0fd/412_2150_1/0fd5cfc60357ba7689c89ba453662154.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок Аусси
+         </div>
+        </div>
+        <p>
+         Увеличением своей популярности среди населения австралийские овчарки обязаны Джею Сислеру – владельцу ранчо в Айдахо. Мужчина был заядлым участником состязаний по родео. Обычно в перерывах между ними устраивались шоу. Джей Сислер развлекал публику, выступая с номерами, в которых участвовали его австралийские овчарки – Куинни, Стабби и Шорти, – вызывавшие восхищение зрителей не только в США, но и в Канаде. Компания Walt Disney пригласила пушистых артистов для участия в съёмках двух фильмов. Всё это в значительной мере способствовало популяризации породы аусси, поскольку многие захотели заполучить такого смышлёного и симпатичного четвероногого друга.
+        </p>
+        <p>
+         История развития породы связана и с тремя поколениями американских фермеров – Хартнэглами. Занимаясь разведением овец, они также искали подходящего помощника среди пастушьих собак. Их выбор пал на австралийскую овчарку, поразившую своими рабочими качествами. К слову, два щенка – Баджер и Гуди, приобретённые у Хуаниты Эли, – были «племянниками» Куинни, знаменитой собаки Джея Сислера. Гуди дал начало таким известным линиям, как Вуд и Флинтридж. Хартнэглы вместе с Хуанитой Эли и Джеем Сислером стоят рядом в списке знаменитых заводчиков австралийских овчарок.
+        </p>
+        <p>
+         Окончательно свой нынешний облик австралийские овчарки приобрели сравнительно недавно – в первой половине XX столетия. В 1957 году в списке Национальной регистратуры пастушьих собак на официальных правах появилась овчарка по кличке Панда. Это было первым значимым признанием аусси как самостоятельной породы. В 1962 году состоялась регистрация Американского клуба австралийских овчарок, хотя фактически он существовал ещё за пять лет до этого. В 1970 году были организованы первые питомники – Мэйвуд и Лас-Рокоса, и вскоре их число уже достигло двадцати шести. Стандарт породы был впервые зарегистрирован только в 1977 году. По официальной версии, которая не раз подвергалась сомнениям со стороны экспертов, австралийскую овчарку вывели в результате скрещивания пиренейской овчарки,
+         <a class="ph" href="/dog/bernskiy-zennenkhund/">
+          бернского зенненхунда
+         </a>
+         и
+         <a class="ph" href="/dog/kolli-dlinnoshyerstnyy/">
+          колли
+         </a>
+         .
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Австралийская овчарка черного цвета с черными и рыжими отметинами" data-fancybox="gallery" href="/upload/iblock/3c0/3c0e543ba9a618436acbbf1459a4d2c9.jpg" title="Австралийская овчарка черного цвета с черными и рыжими отметинами">
+           <div class="lazy-load" data-alt="Австралийская овчарка черного цвета с черными и рыжими отметинами" data-class="article_pic" data-original="/upload/resize_cache/iblock/3c0/512_342_2/3c0e543ba9a618436acbbf1459a4d2c9.jpg">
+            <noscript data-alt="Австралийская овчарка черного цвета с черными и рыжими отметинами" data-class="article_pic" data-original="/upload/resize_cache/iblock/3c0/512_342_2/3c0e543ba9a618436acbbf1459a4d2c9.jpg">
+             <img alt="Австралийская овчарка черного цвета с черными и рыжими отметинами" class="article_pic" src="/upload/resize_cache/iblock/3c0/512_342_2/3c0e543ba9a618436acbbf1459a4d2c9.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Австралийская овчарка черного цвета с черными и рыжими отметинами
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Аусси мраморного окраса" data-fancybox="gallery" href="/upload/iblock/7e3/7e3abbf670e0d4846e8b688c9a6d15a4.jpg" title="Аусси мраморного окраса">
+           <div class="lazy-load" data-alt="Аусси мраморного окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/7e3/512_342_2/7e3abbf670e0d4846e8b688c9a6d15a4.jpg">
+            <noscript data-alt="Аусси мраморного окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/7e3/512_342_2/7e3abbf670e0d4846e8b688c9a6d15a4.jpg">
+             <img alt="Аусси мраморного окраса" class="article_pic" src="/upload/resize_cache/iblock/7e3/512_342_2/7e3abbf670e0d4846e8b688c9a6d15a4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Аусси мраморного окраса
+          </div>
+         </div>
+        </div>
+        <h2>
+         Видео: Австралийская овчарка
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="ZYlmfLkhS1Y">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность аусси
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Австралийская овчарка пасет овец" data-fancybox="gallery" href="/upload/iblock/f61/f61f264c22860d0d98ac54ea2c09ebc4.jpg" title="Австралийская овчарка пасет овец">
+          <div class="lazy-load" data-alt="Австралийская овчарка пасет овец" data-class="article_pic" data-original="/upload/resize_cache/iblock/f61/412_2150_1/f61f264c22860d0d98ac54ea2c09ebc4.jpg">
+           <noscript data-alt="Австралийская овчарка пасет овец" data-class="article_pic" data-original="/upload/resize_cache/iblock/f61/412_2150_1/f61f264c22860d0d98ac54ea2c09ebc4.jpg">
+            <img alt="Австралийская овчарка пасет овец" class="article_pic" height="274" src="/upload/resize_cache/iblock/f61/412_2150_1/f61f264c22860d0d98ac54ea2c09ebc4.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Австралийская овчарка пасет овец
+         </div>
+        </div>
+        <p>
+         Австралийская овчарка относится к средним породам с гендерными различиями в размерах особей. Высота кобелей колеблется в пределах 52-58 см, у сук обычно не превышает 46-53 см. Вес собаки может варьироваться от 18 до 30 кг.
+        </p>
+        <p>
+         Тело несколько вытянуто в длину, но общие размеры остаются сбалансированными, так что собака не выглядит приземистой. В сравнении с кобелями суки смотрятся изящнее и грациознее, но без намёка на тонкокостность.
+        </p>
+        <h3>
+         Голова и череп
+        </h3>
+        <p>
+         Голова довольно крупная, но вместе с этим кажется аккуратной и лёгкой. Пропорциональна корпусу, с незначительным закруглением черепа. Лоб слегка округлый или же плоский. В затылочной области допустимо наличие бугра небольших размеров. Изгиб, разделяющий лоб и нос, довольно хорошо выражен. Линия свода черепа параллельна переносице.
+        </p>
+        <h3>
+         Морда
+        </h3>
+        <p>
+         Конусовидная морда аусси сужается от основания к спинке носа. Длина – средняя, соответствующая длине задней черепной части (или же чуть короче). Мочка носа пигментирована в зависимости от основного окраса. Чёрный цвет встречается у мраморно-голубых и чёрных собак, коричневый – у мраморно-красных и красных. При этом мраморный основной окрас допускает мелкие вкрапления розового цвета при условии, что их суммарная площадь не превышает 25% всей мочки носа у собак от одного года и старше.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Щенок австралийской овчарки с голубыми глазами" data-fancybox="gallery" href="/upload/iblock/1d6/1d65db75ae39c24fdd2a314d5e9baf82.jpg" title="Щенок австралийской овчарки с голубыми глазами">
+          <div class="lazy-load" data-alt="Щенок австралийской овчарки с голубыми глазами" data-class="article_pic" data-original="/upload/resize_cache/iblock/1d6/1024_2150_1/1d65db75ae39c24fdd2a314d5e9baf82.jpg">
+           <noscript data-alt="Щенок австралийской овчарки с голубыми глазами" data-class="article_pic" data-original="/upload/resize_cache/iblock/1d6/1024_2150_1/1d65db75ae39c24fdd2a314d5e9baf82.jpg">
+            <img alt="Щенок австралийской овчарки с голубыми глазами" class="article_pic" src="/upload/resize_cache/iblock/1d6/1024_2150_1/1d65db75ae39c24fdd2a314d5e9baf82.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок австралийской овчарки с голубыми глазами
+         </div>
+        </div>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Средней длины уши имеют треугольную форму с едва закруглёнными кончиками. Чаще всего отмечается высокое расположение (но не слишком далеко), однако допустимо и боковое при соблюдении следующего условия: кончик уха «переломлен» и смотрит вперёд. Уши полустоячие, в момент настороженности приподнимаются. Стоячие или полностью висячие уши считаются серьёзным недостатком. Не купируются.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Взгляд аусси весьма выразительный и умный. Они будут внимательно рассматривать незнакомца, но определённая настороженность во взгляде почти всегда сопровождается дружелюбием. Глаза имеют миндалевидный разрез, посажены умеренно косо, не слишком глубоко, но и не выпукло. Встречается различный цвет радужки: янтарный, голубой, зеленоватый, коричневый. Возможна некоторая мраморность в её окраске с вкраплениями различных цветов. Встречаются даже особи с разным цветом глаз, что не является дисквалифицирующим недостатком. Собаки чёрного и мраморно-голубого окраса, как правило, имеют вокруг глаз обводку чёрного цвета. У красных и мраморно-красных «окантовка» коричневого цвета.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Хочу играть" data-fancybox="gallery" href="/upload/iblock/47f/47f4d2f36e9dd2ca3743de51c70ec788.jpg" title="Хочу играть">
+          <div class="lazy-load" data-alt="Хочу играть" data-class="article_pic" data-original="/upload/resize_cache/iblock/47f/412_2150_1/47f4d2f36e9dd2ca3743de51c70ec788.jpg">
+           <noscript data-alt="Хочу играть" data-class="article_pic" data-original="/upload/resize_cache/iblock/47f/412_2150_1/47f4d2f36e9dd2ca3743de51c70ec788.jpg">
+            <img alt="Хочу играть" class="article_pic" height="309" src="/upload/resize_cache/iblock/47f/412_2150_1/47f4d2f36e9dd2ca3743de51c70ec788.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Хочу играть
+         </div>
+        </div>
+        <p>
+         Челюсти аусси крепкие, прикус ножницеобразный (клещеобразный также допустим). Перекус и недокус более 3 мм считаются дисквалифицирующими недостатками. Зубы крепкие, белые, представлены полным комплектом. Полная формула насчитывает 42 зуба, из которых 20 расположены на верхней челюсти, а 22 – на нижней. В наличии должны быть все зубы, однако отсутствие некоторых по причине травмы снижением оценки на выставках наказываться не будет.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Шея у австралийской овчарки умеренной длины, имеет небольшой изгиб на загривке. Крепкая, мускулистая, хорошо посажена на плечах.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Крепкий корпус имеет развитую мускулатуру. Спина широкая, в естественной стойке собаки имеет прямую линию верха от холки до таза, переходя далее в слегка наклонный круп. Передняя часть корпуса равна по ширине задней. Умеренно глубокая грудь отличается выраженным рельефом. Её нижняя точка достигает уровня локтевого сустава. Длинные рёбра имеют правильную овальную форму. Живот подобран, с умеренной линией изгиба от груди к паху.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок с коротким хвостом" data-fancybox="gallery" href="/upload/iblock/6ad/6ad5d10d04f6d124ac428efb997dc239.jpg" title="Щенок с коротким хвостом">
+          <div class="lazy-load" data-alt="Щенок с коротким хвостом" data-class="article_pic" data-original="/upload/resize_cache/iblock/6ad/412_2150_1/6ad5d10d04f6d124ac428efb997dc239.jpg">
+           <noscript data-alt="Щенок с коротким хвостом" data-class="article_pic" data-original="/upload/resize_cache/iblock/6ad/412_2150_1/6ad5d10d04f6d124ac428efb997dc239.jpg">
+            <img alt="Щенок с коротким хвостом" class="article_pic" height="306" src="/upload/resize_cache/iblock/6ad/412_2150_1/6ad5d10d04f6d124ac428efb997dc239.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок с коротким хвостом
+         </div>
+        </div>
+        <p>
+         У австралийской овчарки возможны три варианта длины хвоста: длинный, естественно короткий длиной до 10 см (когда щенок рождается с уже коротким хвостиком) и купированный. При купировании хвоста (если это не запрещено законами страны) взрослой особи он также не должен превышать 10 см.
+        </p>
+        <h3>
+         Передние конечности
+        </h3>
+        <p>
+         Плоские лопатки аусси отличаются близким расположением к холке. Угол их наклона составляет 45 градусов. Плечевая кость по своей длине соответствует лопатке и расположена под прямым углом по отношению к её оси. Сильные лапы по форме сечения больше напоминают овал, нежели круг. Локтевой сустав занимает срединное положение между землёй и холкой животного. Предплечья расположены перпендикулярно поверхности, по которой движется собака. Пясти средней длины слегка наклонены. Пятые (прибылые) пальцы удаляются по желанию хозяина. Овальные стопы оканчиваются изогнутыми и компактно собранными вместе пальцами. Подушечки лап упругие, с толстой кожей.
+        </p>
+        <h3>
+         Задние конечности
+        </h3>
+        <p>
+         Угол между бедренной костью и осью таза образует перпендикуляр. Коленные суставы чётко выражены, а в области скакательных конечности умеренно изогнуты. Если смотреть на австралийскую овчарку сзади, ее голени будут перпендикулярны земле и параллельны друг другу. Они переходят в короткие плюсны. В норме задние прибылые пальцы отсутствуют. Овальные стоп компактны, имеют изогнутые пальцы, которые заканчиваются толстыми и упругими подушечками.
+        </p>
+        <h3>
+         Манера движения
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Два красавца" data-fancybox="gallery" href="/upload/iblock/0ca/0ca54ba42e636a121f1e4ab76e7277e3.jpg" title="Два красавца">
+          <div class="lazy-load" data-alt="Два красавца" data-class="article_pic" data-original="/upload/resize_cache/iblock/0ca/412_2150_1/0ca54ba42e636a121f1e4ab76e7277e3.jpg">
+           <noscript data-alt="Два красавца" data-class="article_pic" data-original="/upload/resize_cache/iblock/0ca/412_2150_1/0ca54ba42e636a121f1e4ab76e7277e3.jpg">
+            <img alt="Два красавца" class="article_pic" height="274" src="/upload/resize_cache/iblock/0ca/412_2150_1/0ca54ba42e636a121f1e4ab76e7277e3.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Два красавца
+         </div>
+        </div>
+        <p>
+         Движения аусси ровные; отличаются быстротой, лёгкостью и свободой. Несмотря на размашистость, её шаг неплохо сбалансирован. Обе пары конечностей двигаются параллельно центральной оси тела. Лапы собаки приближаются к проекции её центра тяжести, когда животное ускоряет шаг. Линия спины во время бега остаётся прямой. Австралийской овчарке, обладающей необычайным проворством, присуща способность быстро менять направление и манеру движения.
+        </p>
+        <h3>
+         Шерстяной покров
+        </h3>
+        <p>
+         Шерсть австралийской овчарки жёсткая, средней длины и умеренной плотности. Может быть прямой или немного волнистой. Шерстяной покров состоит из более длинной остевой шерсти и короткого мягкого подшёрстка, который полностью сменяется дважды в году. Его густота находится в прямой зависимости от условий климата: чем прохладнее, тем плотность подшёрстка выше. В периоды между сменой подшёрстка наблюдается умеренная линька.
+        </p>
+        <p>
+         Голова, уши, передние отделы передних конечностей, а также участки под скакательными суставами покрыты короткой и гладкой шерстью. На задних поверхностях передних конечностей и на ягодицах волосяной покров образует так называемые перья – более длинные в области задних конечностей. У овчарок умеренно развиты грива и воротник, которые более выражены у кобелей.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f80/f80e69557c7b2be07eaf7039700c270d.jpg" title="">
+           <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/f80/512_342_2/f80e69557c7b2be07eaf7039700c270d.jpg">
+            <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/f80/512_342_2/f80e69557c7b2be07eaf7039700c270d.jpg">
+             <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/f80/512_342_2/f80e69557c7b2be07eaf7039700c270d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b54/b5431c467b6c7e7e4899d42ce505825c.jpg" title="">
+           <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/b54/512_342_2/b5431c467b6c7e7e4899d42ce505825c.jpg">
+            <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/b54/512_342_2/b5431c467b6c7e7e4899d42ce505825c.jpg">
+             <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/b54/512_342_2/b5431c467b6c7e7e4899d42ce505825c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Несмотря на то, что среди австралийских овчарок встречаются особи с разнообразными расцветками, а сама порода славится их неповторимостью, официальным стандартом признаются всего четыре типа окраса: чёрный, мраморно-голубой (с ним чаще всего ассоциируется аусси), красный и мраморно-красный. Во всех случаях допустимо наличие белых участков, но без излишеств. Обратите внимание на то, что глаза должны находиться в обрамлении цвета. По мере взросления шерсть немного темнеет.
+        </p>
+        <p>
+         Существуют также соболиный, графитовый, золотистый и тигровый окрасы, однако они не признаны официально.
+        </p>
+        <h3>
+         Дефекты породы
+        </h3>
+        <p>
+         Практически любые отклонения от вышеописанного стандарта можно считать дефектами породы. К наиболее серьёзным и распространённым недостаткам относятся:
+        </p>
+        <ul>
+         <li>
+          висячие или полностью стоячие уши;
+         </li>
+         <li>
+          нетипичный шерстяной покров.
+         </li>
+        </ul>
+        <p>
+         Дисквалифицирующие пороки таковы:
+        </p>
+        <ul>
+         <li>
+          поведенческие отклонения, проявляемые робостью или чрезмерной агрессией;
+         </li>
+         <li>
+          отклонения в прикусе в виде недокуса или перекуса более 3 мм (несмыкание резцов из-за их короткости не расценивается как неправильный прикус);
+         </li>
+         <li>
+          неполная зубная формула (их утрата в результате травмы не учитывается);
+         </li>
+         <li>
+          белые поинты на спине в пространстве между основанием хвоста и холкой, а также на боковых поверхностях между конечностями;
+         </li>
+         <li>
+          неопущенные в мошонку яички (крипторхизм).
+         </li>
+        </ul>
+        <h2>
+         Фото взрослой австралийской овчарки
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/599/5996e0c66a842405e0cf2ce1ad51c10a.jpg" title="">
+           <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/599/380_264_2/5996e0c66a842405e0cf2ce1ad51c10a.jpg">
+            <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/599/380_264_2/5996e0c66a842405e0cf2ce1ad51c10a.jpg">
+             <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/599/380_264_2/5996e0c66a842405e0cf2ce1ad51c10a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6d1/6d15ccd84fbfa261c10d40168b677ed5.jpg" title="">
+           <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/6d1/380_264_2/6d15ccd84fbfa261c10d40168b677ed5.jpg">
+            <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/6d1/380_264_2/6d15ccd84fbfa261c10d40168b677ed5.jpg">
+             <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/6d1/380_264_2/6d15ccd84fbfa261c10d40168b677ed5.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/541/541302a5651d3108e24cc6b183bce315.jpg" title="">
+           <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/541/380_264_2/541302a5651d3108e24cc6b183bce315.jpg">
+            <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/541/380_264_2/541302a5651d3108e24cc6b183bce315.jpg">
+             <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/541/380_264_2/541302a5651d3108e24cc6b183bce315.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/846/846919ff08b1e8ca7f98d9f34d12a180.jpg" title="">
+           <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/846/380_264_2/846919ff08b1e8ca7f98d9f34d12a180.jpg">
+            <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/846/380_264_2/846919ff08b1e8ca7f98d9f34d12a180.jpg">
+             <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/846/380_264_2/846919ff08b1e8ca7f98d9f34d12a180.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c87/c87dafa8ae84c990bf04f76c82f2abdc.jpg" title="">
+           <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/c87/380_264_2/c87dafa8ae84c990bf04f76c82f2abdc.jpg">
+            <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/c87/380_264_2/c87dafa8ae84c990bf04f76c82f2abdc.jpg">
+             <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/c87/380_264_2/c87dafa8ae84c990bf04f76c82f2abdc.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/06c/06c951035e5a4b055ab4e4f06de33853.jpg" title="">
+           <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/06c/380_264_2/06c951035e5a4b055ab4e4f06de33853.jpg">
+            <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/06c/380_264_2/06c951035e5a4b055ab4e4f06de33853.jpg">
+             <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/06c/380_264_2/06c951035e5a4b055ab4e4f06de33853.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f50/f5082af0e4dbc7920ec7ef5be4b1365e.jpg" title="">
+           <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/f50/380_264_2/f5082af0e4dbc7920ec7ef5be4b1365e.jpg">
+            <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/f50/380_264_2/f5082af0e4dbc7920ec7ef5be4b1365e.jpg">
+             <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/f50/380_264_2/f5082af0e4dbc7920ec7ef5be4b1365e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/856/8567803abde9730afbb398ca66463afb.jpg" title="">
+           <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/856/380_264_2/8567803abde9730afbb398ca66463afb.jpg">
+            <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/856/380_264_2/8567803abde9730afbb398ca66463afb.jpg">
+             <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/856/380_264_2/8567803abde9730afbb398ca66463afb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/686/686b8d3212ab6bb4cee974085b3a8b6c.jpg" title="">
+           <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/686/380_264_2/686b8d3212ab6bb4cee974085b3a8b6c.jpg">
+            <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/686/380_264_2/686b8d3212ab6bb4cee974085b3a8b6c.jpg">
+             <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/686/380_264_2/686b8d3212ab6bb4cee974085b3a8b6c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер австралийской овчарки
+        </h2>
+        <p>
+         Жизнерадостная, ласковая, сообразительная и подвижная – именно так можно описать любую австралийскую овчарку. Кстати, это одна из немногих пород, представители которой в хорошем настроении умеют «улыбаться» во все 42 зуба и вилять при этом задом. По своей натуре это прирождённые пастухи, которые призваны следить за стадом и вовремя возвращать отбившихся животных. Эту черту можно заметить и при прогулках с питомцем: он постоянно будет следить, чтобы никто не отстал от компании, и собирать всех вместе. Несмотря на постоянное желание выполнять команды хозяина, собака в экстренной ситуации может принимать самостоятельные решения.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок аусси мраморно-голубого окраса" data-fancybox="gallery" href="/upload/iblock/a50/a503d61ba33ae6e0523384f4c682b892.jpg" title="Щенок аусси мраморно-голубого окраса">
+          <div class="lazy-load" data-alt="Щенок аусси мраморно-голубого окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/a50/412_2150_1/a503d61ba33ae6e0523384f4c682b892.jpg">
+           <noscript data-alt="Щенок аусси мраморно-голубого окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/a50/412_2150_1/a503d61ba33ae6e0523384f4c682b892.jpg">
+            <img alt="Щенок аусси мраморно-голубого окраса" class="article_pic" height="275" src="/upload/resize_cache/iblock/a50/412_2150_1/a503d61ba33ae6e0523384f4c682b892.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок аусси мраморно-голубого окраса
+         </div>
+        </div>
+        <p>
+         Аусси очень дружелюбные и легко находят общий язык как со своими сородичами во время прогулок, так и с остальными домашними животными – будь то кошка или хомяк, корова или домашний гусь. Создаётся впечатление, что слова из известной песенки: «Он не лает, не кусается, на прохожих не бросается» – написаны об аусси. Собака прекрасно ведёт себя на выставках среди лающей братии, на улице и дома. Австралийская овчарка никогда не задирается первой, но в случае недружелюбного поведения сородичей, а также при угрозе хозяину или членам семьи, всегда сможет дать достойный отпор. Для этого у животного есть всё: и развитая мускулатура, и крепкие зубы.
+        </p>
+        <p>
+         Аусси просто обожает детей и станет им неутомимым компаньоном для подвижных игр. Собака будет с удовольствием сопровождать хозяина во время пробежки или велосипедной прогулки, примет активное участие в различных соревнованиях или туристических походах. Для представителей этой породы невыносимо сидеть целыми днями в замкнутом пространстве. Двигательная активность им просто необходима для поддержания мышечной массы, хорошего самочувствия и настроения.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Будучи от природы прирождёнными охранниками, аусси могут при неправильном воспитании иногда проявлять излишнюю агрессию при защите своей территории. Этому моменту нужно уделить особое внимание. Поскольку по своей натуре австралийские овчарки очень дружелюбны, агрессия, равно как и трусость, относится к поведенческим отклонениям.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Хозяйка, мы тебя внимательно слушаем" data-fancybox="gallery" href="/upload/iblock/063/063fd001b52f26dc2b147c87097743c8.jpg" title="Хозяйка, мы тебя внимательно слушаем">
+          <div class="lazy-load" data-alt="Хозяйка, мы тебя внимательно слушаем" data-class="article_pic" data-original="/upload/resize_cache/iblock/063/412_2150_1/063fd001b52f26dc2b147c87097743c8.jpg">
+           <noscript data-alt="Хозяйка, мы тебя внимательно слушаем" data-class="article_pic" data-original="/upload/resize_cache/iblock/063/412_2150_1/063fd001b52f26dc2b147c87097743c8.jpg">
+            <img alt="Хозяйка, мы тебя внимательно слушаем" class="article_pic" height="273" src="/upload/resize_cache/iblock/063/412_2150_1/063fd001b52f26dc2b147c87097743c8.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Хозяйка, мы тебя внимательно слушаем
+         </div>
+        </div>
+        <p>
+         С самых первых дней появления щенка в доме необходимо объяснить ему элементарные правила поведения и выделить территорию, что поможет малышу быстрее адаптироваться к новому месту. Важно, чтобы собака знала, кто её хозяин. В противном случае животное будет стремиться занять в доме главенствующее положение.
+        </p>
+        <p>
+         Австралийская овчарка – очень умная и талантливая, легко обучаемая и поддающаяся дрессировке. Считается, что она способна выполнять команды через 30-40 повторений. Начинать, конечно же, стоит в домашних условиях с первых дней появления щенка, разучивая простые команды, которые обеспечат его безопасность во время прогулок: «Фу!», «Рядом!», «Ко мне!». Мотивация питомца – важный момент в дрессуре, поэтому всегда поощряйте малыша в случае правильного выполнения команд. Аусси – лакомки, так что не придётся долго думать о том, как лучше это сделать.
+        </p>
+        <p>
+         После того как выполнение элементарных команд отработано в домашних условиях, следует переходить к занятиям на улице с целью изучения новых и закрепления приобретённых навыков при отвлекающих факторах. Следует помнить, что перед началом тренировок рекомендуется дать собаке немного прогуляться и сделать все свои «дела», чтобы впоследствии ничего не отвлекало животное. Поощрительно-мотивационный подход должен стать основополагающим методом в разучивании команд. Нельзя проявлять грубость к питомцу или наказывать его: это может сделать собаку робкой и пугливой. Помощь инструктора-кинолога позволяет быстрее закрепить курс общей дрессировки. Зачастую австралийской овчарке хватает нескольких занятий.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="У всех бывают неудачные кадры..." data-fancybox="gallery" href="/upload/iblock/19f/19f214c50cb5b55bc9e281bba24e0436.jpg" title="У всех бывают неудачные кадры...">
+           <div class="lazy-load" data-alt="У всех бывают неудачные кадры..." data-class="article_pic" data-original="/upload/resize_cache/iblock/19f/512_342_2/19f214c50cb5b55bc9e281bba24e0436.jpg">
+            <noscript data-alt="У всех бывают неудачные кадры..." data-class="article_pic" data-original="/upload/resize_cache/iblock/19f/512_342_2/19f214c50cb5b55bc9e281bba24e0436.jpg">
+             <img alt="У всех бывают неудачные кадры..." class="article_pic" src="/upload/resize_cache/iblock/19f/512_342_2/19f214c50cb5b55bc9e281bba24e0436.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           У всех бывают неудачные кадры...
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Поймала!" data-fancybox="gallery" href="/upload/iblock/30d/30d1be489eb73a6c755b9fd9c2c730f8.jpg" title="Поймала!">
+           <div class="lazy-load" data-alt="Поймала!" data-class="article_pic" data-original="/upload/resize_cache/iblock/30d/512_342_2/30d1be489eb73a6c755b9fd9c2c730f8.jpg">
+            <noscript data-alt="Поймала!" data-class="article_pic" data-original="/upload/resize_cache/iblock/30d/512_342_2/30d1be489eb73a6c755b9fd9c2c730f8.jpg">
+             <img alt="Поймала!" class="article_pic" src="/upload/resize_cache/iblock/30d/512_342_2/30d1be489eb73a6c755b9fd9c2c730f8.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Поймала!
+          </div>
+         </div>
+        </div>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <p>
+         Австралийская овчарка – это не та собака, которой нравится спокойно возлежать на диване. Будучи очень активными животными, аусси нуждаются в длительных прогулках – не менее 2-3 часов в день. Летом в жару лучше сократить их или использовать для этого более прохладное время суток – утро и вечер. Конечно, при наличии загородного дома это не проблема: овчарка и сама найдёт, чем занять себя на участке. Обладателям городской квартиры, однако, придётся уделять собаке значительную часть своего времени, выгуливая питомца. Аусси с удовольствием побегает за палкой, мячом, пластиковыми дисками или по полосе препятствий.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кто тут у нас модный мальчик?" data-fancybox="gallery" href="/upload/iblock/03b/03b61025ac2bdf442048084dd4683ebb.jpg" title="Кто тут у нас модный мальчик?">
+          <div class="lazy-load" data-alt="Кто тут у нас модный мальчик?" data-class="article_pic" data-original="/upload/resize_cache/iblock/03b/412_2150_1/03b61025ac2bdf442048084dd4683ebb.jpg">
+           <noscript data-alt="Кто тут у нас модный мальчик?" data-class="article_pic" data-original="/upload/resize_cache/iblock/03b/412_2150_1/03b61025ac2bdf442048084dd4683ebb.jpg">
+            <img alt="Кто тут у нас модный мальчик?" class="article_pic" height="465" src="/upload/resize_cache/iblock/03b/412_2150_1/03b61025ac2bdf442048084dd4683ebb.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кто тут у нас модный мальчик?
+         </div>
+        </div>
+        <p>
+         Конечно же, не стоит забывать во время прогулок и о дрессировке собаки: австралийская овчарка с удовольствием будет выполнять команды хозяина. Во время таких занятий следите за поведением питомца. Трудоголик по натуре, австралиец готов работать до тех пор, пока он буквально не будет падать от усталости, чего допускать, конечно же, нежелательно.
+        </p>
+        <p>
+         При содержании австралийской овчарки в квартире необходимо выделить ей отдельное место в стороне от сквозняков и приборов отопления, оборудовав его лежанкой. Собака должна осознавать, что это её территория. Купите питомцу несколько игрушек, с которыми он с удовольствием сможет порезвиться. Поставьте рядом поилку и следите, чтобы в ней всегда была чистая вода. Помещение, в котором содержится собака, должно периодически проветриваться. Воздух должен быть свежим и достаточной влажным, иначе шерсть будет постоянно линять.
+        </p>
+        <p>
+         Аусси прекрасно чувствует себя в городской квартире при условии, что с ней достаточно долго гуляют и играют в активные игры. Если запереть животное в квартире, у него могут начаться проблемы с поведением в виде хандры, лая без причины или вытья, а нерастраченная энергия выльется в погрызанные обувь и мебель. В частном доме питомца можно держать в вольере, но это нежелательно, поскольку аусси нуждается во внимании хозяина и постоянном общении с ним. В противном случае можно получить агрессивное или, наоборот, робкое животное. Категорически не рекомендуется содержание представителей этой породы на цепи.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Австралийская овчарка с коротким хвостом" data-fancybox="gallery" href="/upload/iblock/4ea/4ea91dfee9b66083cd1fd74f08fd6e67.jpg" title="Австралийская овчарка с коротким хвостом">
+          <div class="lazy-load" data-alt="Австралийская овчарка с коротким хвостом" data-class="article_pic" data-original="/upload/iblock/4ea/4ea91dfee9b66083cd1fd74f08fd6e67.jpg">
+           <noscript data-alt="Австралийская овчарка с коротким хвостом" data-class="article_pic" data-original="/upload/iblock/4ea/4ea91dfee9b66083cd1fd74f08fd6e67.jpg">
+            <img alt="Австралийская овчарка с коротким хвостом" class="article_pic" src="/upload/iblock/4ea/4ea91dfee9b66083cd1fd74f08fd6e67.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Австралийская овчарка с коротким хвостом
+         </div>
+        </div>
+        <p>
+         Австралийская овчарка – обладательница полудлинной шерсти с густым подшёрстком – нуждается в вычёсывании 2-3 раза в неделю, а в период линьки – ежедневно. При отсутствии этой процедуры возможно развитие дерматита, образование колтунов или появление кожных паразитов. Вычёсывать шерсть лучше всего металлической щёткой с крупными редкими зубьями и пуходёркой или специальным фурминатором. Купать собаку рекомендуют не чаще, чем один раз в два месяца, используя специальные зоошампуни.
+        </p>
+        <p>
+         Когти собаки стачиваются естественным путём, однако если она часто гуляет по траве или мягкому грунту, этого не происходит. Так что, пользуясь специальным когтерезом, их подрезают два раза в месяц, ведь длинные когти негативно влияют на походку и вызывают чувство дискомфорта в лапах. При этом надо стараться не повредить пульпу, в которой находятся нерв и сосуды. Если это произойдёт, следует обработать ранку раствором антисептика или йодом.
+         <p>
+          <div class="img-right">
+           <a class="fancybox" data-caption="Щенок аусси в один месяц" data-fancybox="gallery" href="/upload/iblock/19d/19d27aefec4f0555a1641e8a719e0e63.jpg" title="Щенок аусси в один месяц">
+            <div class="lazy-load" data-alt="Щенок аусси в один месяц" data-class="article_pic" data-original="/upload/resize_cache/iblock/19d/412_2150_1/19d27aefec4f0555a1641e8a719e0e63.jpg">
+             <noscript data-alt="Щенок аусси в один месяц" data-class="article_pic" data-original="/upload/resize_cache/iblock/19d/412_2150_1/19d27aefec4f0555a1641e8a719e0e63.jpg">
+              <img alt="Щенок аусси в один месяц" class="article_pic" height="272" src="/upload/resize_cache/iblock/19d/412_2150_1/19d27aefec4f0555a1641e8a719e0e63.jpg" width="412"/>
+             </noscript>
+            </div>
+           </a>
+           <div class="img_text">
+            Щенок аусси в один месяц
+           </div>
+          </div>
+          <p>
+           Необходимо следить и за здоровьем зубов аусси при помощи специальных средств и приспособлений – щётки, пасты, искусственных косточек для удаления налёта. В запущенных случаях, возможно, понадобится скалер – стоматологический шпатель для удаления камней. Перед процедурой и после неё необходимо продезинфицировать инструмент и ротовую полость при помощи раствора перекиси или фурацилина.
+          </p>
+          <p>
+           Одними из условий правильного содержания питомца является протирание глаз с использованием специальных медицинских растворов, обычной чайной заварки или отвара ромашки. Уши собаки необходимо протирать 1-2 раза в неделю, используя для этого ушные палочки и ватные диски. Для удаления избыточно образующейся серы можно закапать в слуховой проход 3% раствор перекиси и потом дать питомцу вволю потрясти головой. Для протирания ушных раковин ватными дисками используются отвары различных трав.
+          </p>
+          <p>
+           Аусси весьма неприхотливы в еде. Их можно кормить как натуральной пищей, так и различными кормами. Для взрослого питомца подходит каша (рис, овсянка, гречка) и мясо (курица, индейка, говядина и нежирная рыба). Щенку желательно добавить в рацион творог, смешанный с кефиром, а также перепелиные яйца. При необходимости в молоке стоит начинать с небольших количеств. Австралийские овчарки с удовольствием едят как сырые, так и варёные овощи и фрукты: яблоки, морковь, кабачки, тыкву, репу. В зимнее время рацион австралийской овчарки необходимо обогатить растительными и животными жирами, что позволит лучше перенести холода.
+          </p>
+          <div class="img-w-center">
+           <a class="fancybox" data-caption="Мордочка аусси" data-fancybox="gallery" href="/upload/iblock/cd5/cd547187f7ddff6619ff4630f4fe616c.jpg" title="Мордочка аусси">
+            <div class="lazy-load" data-alt="Мордочка аусси" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd5/1024_2150_1/cd547187f7ddff6619ff4630f4fe616c.jpg">
+             <noscript data-alt="Мордочка аусси" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd5/1024_2150_1/cd547187f7ddff6619ff4630f4fe616c.jpg">
+              <img alt="Мордочка аусси" class="article_pic" src="/upload/resize_cache/iblock/cd5/1024_2150_1/cd547187f7ddff6619ff4630f4fe616c.jpg"/>
+             </noscript>
+            </div>
+           </a>
+           <div class="img_text">
+            Мордочка аусси
+           </div>
+          </div>
+          <p>
+           Если вы решили использовать сухой корм, следует выбирать продукцию премиум-класса. Старайтесь покупать тот, в котором содержится меньшее количество белка.
+          </p>
+          <p>
+           Категорически запрещается давать собаке следующие продукты:
+          </p>
+          <ul>
+           <li>
+            сырые яйца (за исключением перепелиных);
+           </li>
+           <li>
+            газированные и спиртные напитки, кофе;
+           </li>
+           <li>
+            жареную пищу и «еду со стола»;
+           </li>
+           <li>
+            мелкие трубчатые кости;
+           </li>
+           <li>
+            фрукты с косточками;
+           </li>
+           <li>
+            сырую речную рыбу;
+           </li>
+           <li>
+            конфеты и шоколад;
+           </li>
+           <li>
+            сырые мясо и кости;
+           </li>
+           <li>
+            грибы и орехи;
+           </li>
+           <li>
+            жирное мясо;
+           </li>
+           <li>
+            цитрусовые.
+           </li>
+          </ul>
+          <h2 id="gl6">
+           Здоровье и болезни австралийской овчарки
+          </h2>
+          <p>
+           Аусси при должном уходе, правильном питании и достаточной физической активности отличаются хорошим здоровьем. Для профилактики таких заболеваний, как бешенство, чума плотоядных, болезнь Лайма и прочие, необходимо своевременно проводить вакцинацию по графику прививок.
+          </p>
+          <div class="img-right">
+           <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2ae/2ae089b5c9ebc1eed53ba14d9e859642.jpg" title="">
+            <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/2ae/412_2150_1/2ae089b5c9ebc1eed53ba14d9e859642.jpg">
+             <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/2ae/412_2150_1/2ae089b5c9ebc1eed53ba14d9e859642.jpg">
+              <img alt="Австралийская овчарка (аусси)" class="article_pic" height="412" src="/upload/resize_cache/iblock/2ae/412_2150_1/2ae089b5c9ebc1eed53ba14d9e859642.jpg" width="412"/>
+             </noscript>
+            </div>
+           </a>
+          </div>
+          <p>
+           Как и многие представители пастушьих пород, австралийские овчарки подвержены риску развития юношеской катаракты. Среди наиболее распространённых заболеваний, присущих этой породе, выделяются:
+          </p>
+          <ul>
+           <li>
+            аутоиммунные заболевания (тиреоидит, аллергия);
+           </li>
+           <li>
+            дисплазия тазобедренного сустава;
+           </li>
+           <li>
+            дистрофия зрительного нерва;
+           </li>
+           <li>
+            онкологические заболевания;
+           </li>
+           <li>
+            эпилепсия;
+           </li>
+           <li>
+            демодекоз.
+           </li>
+          </ul>
+          <p>
+           Особи окраса мерль предрасположены к проблемам с органами зрения и слуха. Это связано с рецессивным геном, отвечающим за мраморный окрас, слух и зрение. Стремясь избежать такого генетического сочетания и многократного увеличения риска развития упомянутых выше заболеваний (вплоть до полной глухоты и слепоты), запрещено скрещивание двух собак окраса мерль.
+          </p>
+          <p class="legenda">
+           Австралийские овчарки, как и остальные представители группы колли, с большей вероятностью, чем другие породы, могут иметь мутацию гена MDR. Таким собакам настоятельно рекомендуется сдавать тест на непереносимость лекарственных препаратов.
+          </p>
+          <h2 id="gl7">
+           Как выбрать щенка
+          </h2>
+          <p>
+           Прежде чем приобрести щенка австралийской овчарки, посетите выставки этой породы, пообщайтесь с хозяевами, чтобы определиться, подходит ли вам такая собака по темпераменту и активности. Если всё же вы приняли окончательное решение, желательно посетить несколько питомников. Определившись с заводчиком, узнайте, какие обследования были проведены у кобеля и суки. Необходимо заключение об отсутствии патологии органов зрения (атрофии сетчатки, катаракты) и опорно-двигательного аппарата (дисплазии тазобедренных и локтевых суставов).
+          </p>
+          <p>
+           Лишь после этого приступайте к выбору будущего питомца. Здоровый щенок, похожий на плюшевую игрушку, будет проявлять любопытство, не испытывая при этом робости. Чистая шерсть не должна иметь колтунов или проплешин. Осмотрите живот (на коже не должны присутствовать высыпания), убедитесь в отсутствии грыжевых выпячиваний. Нос должен быть влажным и прохладным. Дайте щенку пройтись, чтобы убедиться в отсутствии косолапости. Если вас всё устраивает, осталось только договориться о цене.
+          </p>
+          <h2>
+           Фото щенков австралийской овчарки
+          </h2>
+          <div class="img-two">
+           <div class="img-three-block">
+            <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e88/e8862c6ce53161e1f610702b32d561f2.jpg" title="">
+             <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/e88/380_264_2/e8862c6ce53161e1f610702b32d561f2.jpg">
+              <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/e88/380_264_2/e8862c6ce53161e1f610702b32d561f2.jpg">
+               <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/e88/380_264_2/e8862c6ce53161e1f610702b32d561f2.jpg"/>
+              </noscript>
+             </div>
+            </a>
+           </div>
+           <div class="img-three-block">
+            <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f2b/f2bb7ac9eb68e69a3785e9b10d1ffb1b.jpg" title="">
+             <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/f2b/380_264_2/f2bb7ac9eb68e69a3785e9b10d1ffb1b.jpg">
+              <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/f2b/380_264_2/f2bb7ac9eb68e69a3785e9b10d1ffb1b.jpg">
+               <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/f2b/380_264_2/f2bb7ac9eb68e69a3785e9b10d1ffb1b.jpg"/>
+              </noscript>
+             </div>
+            </a>
+           </div>
+           <div class="img-three-block">
+            <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a89/a89c0e395fb1403d4e4d5ab11ea1a479.jpg" title="">
+             <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/a89/380_264_2/a89c0e395fb1403d4e4d5ab11ea1a479.jpg">
+              <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/a89/380_264_2/a89c0e395fb1403d4e4d5ab11ea1a479.jpg">
+               <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/a89/380_264_2/a89c0e395fb1403d4e4d5ab11ea1a479.jpg"/>
+              </noscript>
+             </div>
+            </a>
+           </div>
+          </div>
+          <div class="img-two">
+           <div class="img-three-block">
+            <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/888/8888dedec607754338f6d79df6bf4b7a.jpg" title="">
+             <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/888/380_264_2/8888dedec607754338f6d79df6bf4b7a.jpg">
+              <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/888/380_264_2/8888dedec607754338f6d79df6bf4b7a.jpg">
+               <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/888/380_264_2/8888dedec607754338f6d79df6bf4b7a.jpg"/>
+              </noscript>
+             </div>
+            </a>
+           </div>
+           <div class="img-three-block">
+            <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8e3/8e3b62562ac77cd02c74b856973ef6a1.jpg" title="">
+             <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/8e3/380_264_2/8e3b62562ac77cd02c74b856973ef6a1.jpg">
+              <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/8e3/380_264_2/8e3b62562ac77cd02c74b856973ef6a1.jpg">
+               <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/8e3/380_264_2/8e3b62562ac77cd02c74b856973ef6a1.jpg"/>
+              </noscript>
+             </div>
+            </a>
+           </div>
+           <div class="img-three-block">
+            <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fe1/fe12f63e35e0d390964e70e848f4f8b3.jpg" title="">
+             <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/fe1/380_264_2/fe12f63e35e0d390964e70e848f4f8b3.jpg">
+              <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/fe1/380_264_2/fe12f63e35e0d390964e70e848f4f8b3.jpg">
+               <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/fe1/380_264_2/fe12f63e35e0d390964e70e848f4f8b3.jpg"/>
+              </noscript>
+             </div>
+            </a>
+           </div>
+          </div>
+          <div class="img-two">
+           <div class="img-three-block">
+            <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6ca/6ca1babed58262d8d61d154fd6eb886b.jpg" title="">
+             <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/6ca/380_264_2/6ca1babed58262d8d61d154fd6eb886b.jpg">
+              <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/6ca/380_264_2/6ca1babed58262d8d61d154fd6eb886b.jpg">
+               <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/6ca/380_264_2/6ca1babed58262d8d61d154fd6eb886b.jpg"/>
+              </noscript>
+             </div>
+            </a>
+           </div>
+           <div class="img-three-block">
+            <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/781/781b938197abe51d084c8e0dee1172bc.jpg" title="">
+             <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/781/380_264_2/781b938197abe51d084c8e0dee1172bc.jpg">
+              <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/781/380_264_2/781b938197abe51d084c8e0dee1172bc.jpg">
+               <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/781/380_264_2/781b938197abe51d084c8e0dee1172bc.jpg"/>
+              </noscript>
+             </div>
+            </a>
+           </div>
+           <div class="img-three-block">
+            <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1bb/1bb17173ab63f1076c8416c1a2f9e8a9.jpg" title="">
+             <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/1bb/380_264_2/1bb17173ab63f1076c8416c1a2f9e8a9.jpg">
+              <noscript data-alt="Австралийская овчарка (аусси)" data-class="article_pic" data-original="/upload/resize_cache/iblock/1bb/380_264_2/1bb17173ab63f1076c8416c1a2f9e8a9.jpg">
+               <img alt="Австралийская овчарка (аусси)" class="article_pic" src="/upload/resize_cache/iblock/1bb/380_264_2/1bb17173ab63f1076c8416c1a2f9e8a9.jpg"/>
+              </noscript>
+             </div>
+            </a>
+           </div>
+          </div>
+          <h2 id="gl8">
+           Сколько стоит австралийская овчарка
+          </h2>
+          <p>
+           Австралийская овчарка довольно редко встречается в России: зарегистрировано всего около полусотни особей. Родители почти всех этих собак – представители чемпионов среди породы, обладающие исключительными рабочими качествами. Если вы решили приобрести в питомнике такого щенка аусси, приготовьтесь к тому, что он обойдётся недёшево – от 60 до 85 тысяч рублей. Однако если вы не собираетесь принимать участие в выставках или заниматься разведением собак, то можно сэкономить на покупке, приобретя щенка с дисквалифицирующими пороками (обычно это касается окраса). В любом случае вы обзаведётесь симпатичным и смышлёным четвероногим другом.
+          </p>
+         </p>
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения австралийской овчарки на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/25895/">
+          <div class="ava-med">
+           <div class="noava fill5">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/pooshchrenie-pri-dressirovke-4431/">
+           Поощрение при дрессировке
+          </a>
+         </div>
+         <div class="forum-text">
+          Добрый день, друзья! Подскажите, кто, что использует для лакомства/поощрения щенка Аусси, при дрессировке? Он у нас на сухом корме. Что можно? Что нравится вашим питомцам? Что использовать при натуральным вскармливании...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/25895/">
+            Александр  Андреев
+           </a>
+          </span>
+          <span class="vopros-date">
+           Год назад
+          </span>
+          <span class="vopros-smotr">
+           451 просмотр
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/24275/">
+          <div class="ava-med">
+           <div class="noava fill5">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/dressirovka-3649/">
+           Дрессировка
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте! Ищу очень хорошего кинолога и специализирующиеся центры в спб. У меня аусси, девочка, 7 месяцев. 
+Буду рада советам, рекомендациям, контактам
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/24275/">
+            Анастасия  Ланцова
+           </a>
+          </span>
+          <span class="vopros-date">
+           Год назад
+          </span>
+          <span class="vopros-smotr">
+           645 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/6189/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Ester Alène" data-original="/upload/resize_cache/main/89d/200_200_2/38vmh6j4ndxklvcvqscq4shahow1p94n.jpg">
+            <noscript data-alt="Ester Alène" data-original="/upload/resize_cache/main/89d/200_200_2/38vmh6j4ndxklvcvqscq4shahow1p94n.jpg">
+             <img alt="Ester Alène" src="/upload/resize_cache/main/89d/200_200_2/38vmh6j4ndxklvcvqscq4shahow1p94n.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/sherst-aussi-3307/">
+           Шерсть аусси
+          </a>
+         </div>
+         <div class="forum-text">
+          Добрый день! Девочка, год и два месяца. Течка была 2.5 месяца назад, на этот же период пришлась и юниорская линька (если я правильно поняла). Собака выставочная и с тех пор никак не обрастет (климат у нас сейчас...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/6189/">
+            Ester Alène
+           </a>
+          </span>
+          <span class="vopros-date">
+           2 года назад
+          </span>
+          <span class="vopros-smotr">
+           1031 просмотр
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/4877/">
+          <div class="ava-med">
+           <div class="noava fill7">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/avstraliyskaya-ovcharka-v-odnom-dome-s-olergikom-2681/">
+           Австралийская овчарка в одном доме с олергиком
+          </a>
+         </div>
+         <div class="forum-text">
+          Хотим завести собаку  нам понравилась австралийская овчарка  , поэтому хотим заранее узнать олергенна эта парода или нет?
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/4877/">
+            Александр Соколов
+           </a>
+          </span>
+          <span class="vopros-date">
+           3 года назад
+          </span>
+          <span class="vopros-smotr">
+           2806 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/avstraliyskaya-ovcharka-aussi/forum/">
+        Перейти на
+        форум австралийской овчарки
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Австралийская овчарка (аусси)" src="/upload/iblock/2ca/2ca744cbcd97469ed86860852ace4f40.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/avstraliyskaya-ovcharka-aussi/">
+          Австралийская овчарка (аусси)
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/avstraliyskaya-ovcharka-aussi/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/avstraliyskaya-ovcharka-aussi/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/avstraliyskaya-ovcharka-aussi/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/avstraliyskaya-ovcharka-aussi/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/avstraliyskaya-ovcharka-aussi/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/avstraliyskaya-ovcharka-aussi/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/rotveyler/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Ротвейлер" data-original="/upload/resize_cache/iblock/2ba/100_100_1/2ba727577729810222fac27e266e04ef.jpg">
+          <noscript data-alt="Ротвейлер" data-original="/upload/resize_cache/iblock/2ba/100_100_1/2ba727577729810222fac27e266e04ef.jpg">
+           <img alt="Ротвейлер" src="/upload/resize_cache/iblock/2ba/100_100_1/2ba727577729810222fac27e266e04ef.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Ротвейлер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/amerikanskiy-buldog/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Американский бульдог" data-original="/upload/resize_cache/iblock/856/100_100_1/856f06d45a5b3b2ab7a1e6f4bf080a8a.jpg">
+          <noscript data-alt="Американский бульдог" data-original="/upload/resize_cache/iblock/856/100_100_1/856f06d45a5b3b2ab7a1e6f4bf080a8a.jpg">
+           <img alt="Американский бульдог" src="/upload/resize_cache/iblock/856/100_100_1/856f06d45a5b3b2ab7a1e6f4bf080a8a.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Американский бульдог
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/mittelshnautser/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Миттельшнауцер" data-original="/upload/resize_cache/iblock/075/100_100_1/07530c91362e094d1e47898176bbda4e.jpg">
+          <noscript data-alt="Миттельшнауцер" data-original="/upload/resize_cache/iblock/075/100_100_1/07530c91362e094d1e47898176bbda4e.jpg">
+           <img alt="Миттельшнауцер" src="/upload/resize_cache/iblock/075/100_100_1/07530c91362e094d1e47898176bbda4e.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Миттельшнауцер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/irlandskiy-setter/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Ирландский сеттер" data-original="/upload/resize_cache/iblock/70f/100_100_1/70fbd421205fd3f451af3a9cefb4cf3b.jpg">
+          <noscript data-alt="Ирландский сеттер" data-original="/upload/resize_cache/iblock/70f/100_100_1/70fbd421205fd3f451af3a9cefb4cf3b.jpg">
+           <img alt="Ирландский сеттер" src="/upload/resize_cache/iblock/70f/100_100_1/70fbd421205fd3f451af3a9cefb4cf3b.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Ирландский сеттер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Favstraliyskaya-ovcharka-aussi%252F%253Fcheck_key%253D2214271e763b26dfdde5ee8d340d7ebf%2526ANIMAL_CODE%253Davstraliyskaya-ovcharka-aussi%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Favstraliyskaya-ovcharka-aussi%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmF2c3RyYWxpeXNrYXlhLW92Y2hhcmthLWF1c3NpJTJGJTNGY2hlY2tfa2V5JTNEMjIxNDI3MWU3NjNiMjZkZmRkZTVlZThkMzQwZDdlYmYlMjZBTklNQUxfQ09ERSUzRGF2c3RyYWxpeXNrYXlhLW92Y2hhcmthLWF1c3NpJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmF2c3RyYWxpeXNrYXlhLW92Y2hhcmthLWF1c3NpJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Favstraliyskaya-ovcharka-aussi%252F%253Fcheck_key%253D2214271e763b26dfdde5ee8d340d7ebf%2526ANIMAL_CODE%253Davstraliyskaya-ovcharka-aussi%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Favstraliyskaya-ovcharka-aussi%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Favstraliyskaya-ovcharka-aussi%252F%253Fcheck_key%253D2214271e763b26dfdde5ee8d340d7ebf%2526ANIMAL_CODE%253Davstraliyskaya-ovcharka-aussi%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Favstraliyskaya-ovcharka-aussi%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "194.31.174.233"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--603dee74770b5e3d760edd955209725f-->

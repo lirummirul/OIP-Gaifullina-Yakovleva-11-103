@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'02ce9d0f80b5'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Грюнендаль, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Грюнендаль – длинношерстная собака сплошного черного окраса. Принадлежит к группе бельгийских овчарок. Разводится как универсальная пастушья и семейная порода." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/b33/cdntv2szwtbdodglkhcz2k4af8tutbmt.jpg" property="og:image"/>
+     <title>
+      Грюнендаль: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/gryunendal/" property="og:url"/>
+     <meta content="Грюнендаль: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Грюнендаль – длинношерстная собака сплошного черного окраса. Принадлежит к группе бельгийских овчарок. Разводится как универсальная пастушья и семейная порода." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/gryunendal/" itemprop="url">
+         <span itemprop="title">
+          Грюнендаль
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Грюнендаль
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/gryunendal/">
+          Описание
+         </a>
+         <a href="/dog/gryunendal/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/gryunendal/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/gryunendal/photo/">
+          Фото
+         </a>
+         <a href="/dog/gryunendal/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Грюнендаль" src="/upload/iblock/679/24cpab66go4l6d9wbhu0siueoeih3wbp.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Грюнендаль – длинношерстная собака сплошного черного окраса. Принадлежит к группе бельгийских овчарок. Разводится как универсальная пастушья и семейная порода.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="Niby czort, a jednak ma coś z anioła.Miał być koniec wrzosów, ale uderzyło mnie, że zapomniałam o moim transcendentalnym spotkaniu z parą czortów w józefowskiej puszczy." data-fancybox="images" data-link="https://www.instagram.com/p/DBp-bTHoYaC/" data-type="image" data-username="fotki_z_pieca" href="/upload/uf/318/nsruk584cjvalxah99k004e6langyiwk.jpg">
+            <img alt="Грюнендаль" src="/upload/resize_cache/uf/318/293_293_2/nsruk584cjvalxah99k004e6langyiwk.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="Berger belge Groenendael" data-fancybox="images" data-link="https://www.flickr.com/photos/197697137@N06/53893837466/" data-type="image" data-username="Gregory Verheyen" href="/upload/uf/4e1/7kwrhb4rybtl8slcktrfbu3clhsfhuuv.jpg">
+            <img alt="Грюнендаль" src="/upload/resize_cache/uf/4e1/293_293_2/7kwrhb4rybtl8slcktrfbu3clhsfhuuv.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="Luna Puppies" data-fancybox="images" data-link="https://www.flickr.com/photos/frankwise/48707201212/" data-type="image" data-username="Frank Wisneski" href="/upload/uf/7d6/j7184awau9x0ugsgb75noymhuwab39wy.jpg">
+            <img alt="Грюнендаль" src="/upload/resize_cache/uf/7d6/293_293_2/j7184awau9x0ugsgb75noymhuwab39wy.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/gryunendal/photo/">
+         Все
+            фото грюнендаля
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <style>
+        .podvidi h2 {
+                text-align: left;
+                margin: 0 0 40px;
+            }
+            .podvidi h2 a{
+                color: #000;
+                border-bottom: 1px solid #bbb;
+            }
+            .podvidi .pop-porodi-block{
+                text-align:left;
+            }
+       </style>
+       <div class="pop-porodi podvidi">
+        <div class="pop-porodi-block">
+         <h2 id="info">
+          Разновидности бельгийских овчарок
+         </h2>
+         <a class="poroda-element" href="/dog/malinua/">
+          <div class="ava-poroda">
+           <img alt="Малинуа" class="article_pic" src="/upload/resize_cache/iblock/7b9/100_100_1/wtxfkvslz9flskh3k0rncon10e0em3gy.jpg"/>
+          </div>
+          <span>
+           Малинуа
+          </span>
+         </a>
+         <a class="poroda-element" href="/dog/gryunendal/">
+          <div class="ava-poroda">
+           <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/679/100_100_1/24cpab66go4l6d9wbhu0siueoeih3wbp.jpg"/>
+          </div>
+          <span>
+           Грюнендаль
+          </span>
+         </a>
+        </div>
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт грюнендаля
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер грюнендаля
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена грюнендаля
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Грюнендаль
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Бельгия
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         1891 год
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 25-30 кг, суки 20-25 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 60-66 см, суки 56-62 см
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         По интеллектуальным показателям грюнендаль занимает 15-е место в списке самых умных пород Стэнли Корена.
+        </li>
+        <li>
+         Собака нуждается в ранней интеллектуальной стимуляции. Наверстать упущенное время обучения со взрослым животным не получится.
+        </li>
+        <li>
+         FCI позиционирует грюнендалей как одну из разновидностей бельгийских овчарок, а не как независимую породу.
+        </li>
+        <li>
+         Грюнендаль очень активный, но менее взрывной и неугомонный, чем его сородич – малинуа.
+        </li>
+        <li>
+         Порода имеет общего предка с немецкими и голландскими овчарками, хотя по характеру отличается от своих сородичей.
+        </li>
+        <li>
+         Двойной шерсти животного необходим систематический и тщательный уход, так как она склонна к сваливанию.
+        </li>
+        <li>
+         Как и все бельгийские овчарки, грюнендали отлично зарекомендовали себя в качестве собак-поводырей, служебников и поисковиков-спасателей.
+        </li>
+        <li>
+         Порода относительно легко привыкает к условиям жизни в квартире, но категорически не подходит для содержания на цепи и в вольере.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Грюнендаль" data-original="/upload/iblock/b33/cdntv2szwtbdodglkhcz2k4af8tutbmt.jpg">
+          <noscript data-alt="Грюнендаль" data-original="/upload/iblock/b33/cdntv2szwtbdodglkhcz2k4af8tutbmt.jpg">
+           <img alt="Грюнендаль" src="/upload/iblock/b33/cdntv2szwtbdodglkhcz2k4af8tutbmt.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Грюнендаль
+          </strong>
+          – активный, спортивный и трудолюбивый интеллектуал, поглощенный преданным служением хозяину. Да, эта собака не позволит сделать из себя носителя тапочек. Зато она охотно станет партнером сильного лидера, чтобы вместе работать над выполнением сложных и опасных задач.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Ниже среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средний (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошие (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Грюнендаль основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Фото овчарки грюнендаль сделанное в 1920 году" data-fancybox="gallery" href="/upload/iblock/ead/azwaxr5o8etebnj0z2hskwbaecqgko3l.jpg" title="Фото овчарки грюнендаль сделанное в 1920 году">
+          <div class="lazy-load" data-alt="Фото овчарки грюнендаль сделанное в 1920 году" data-class="article_pic" data-original="/upload/resize_cache/iblock/ead/412_2150_1/azwaxr5o8etebnj0z2hskwbaecqgko3l.jpg">
+           <noscript data-alt="Фото овчарки грюнендаль сделанное в 1920 году" data-class="article_pic" data-original="/upload/resize_cache/iblock/ead/412_2150_1/azwaxr5o8etebnj0z2hskwbaecqgko3l.jpg">
+            <img alt="Фото овчарки грюнендаль сделанное в 1920 году" class="article_pic" height="655" src="/upload/resize_cache/iblock/ead/412_2150_1/azwaxr5o8etebnj0z2hskwbaecqgko3l.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Фото овчарки грюнендаль сделанное в 1920 году
+         </div>
+        </div>
+        <p>
+         У всех бельгийских овчарок, к которым относится и грюнендаль, общее прошлое. Пастушьих собак разводили в Бельгии с незапамятных времен, причем исключительно для рабочих целей. Псы-пастухи не экспонировались на выставках, вязались без всяких правил и к ХХ столетию практически выродились.
+        </p>
+        <p>
+         Первым спохватился профессор ветеринарной школы Куперхейма – Адольф Рёль. Собрав группу энтузиастов, он начал поиски уцелевших бельгийских овчарок. Всех найденных особей Рёль разделил на шесть разновидностей, различающихся структурой шерсти и окрасами. Именно благодаря стараниям профессора, в 1892 г. Клуб бельгийской овчарки опубликовал первый стандарт породы.
+        </p>
+        <p>
+         Что касается конкретно грюнендалей, то их родиной принято считать одноименное бельгийское поместье. Там в 1885 г. собаковод Николас Роуз скрестил черную суку-овчарку Петит с пастушьим кобелем по кличке Пиккар д'Укль. Потомство пары и стало прародителями всех сегодняшних грюнендалей.
+        </p>
+        <p>
+         В годы Первой мировой войны порода активно работала на фронтах. Собаки Роуза носили почту на передовую, разыскивали раненых и помогали их транспортировать, чем очень удивили американских военных. В итоге несколько овчарок отправилось в США, где их задействовали в выведении уже американских линий «бельгийцев».
+        </p>
+        <p>
+         <strong>
+          К сведению.
+         </strong>
+         Несмотря на то что часть кинологических ассоциаций рассматривает грюнендаля, малинуа, лакенуа и тервюрена, как единую породу, скрещивать их между собой стандарт строго запрещает.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="4-х месячный щенок грюнендаля" data-fancybox="gallery" href="/upload/iblock/2ec/35jglw5uhk944kxkoemayhdyijtymdcb.jpg" title="4-х месячный щенок грюнендаля">
+          <div class="lazy-load" data-alt="4-х месячный щенок грюнендаля" data-class="article_pic" data-original="/upload/resize_cache/iblock/2ec/1024_2150_1/35jglw5uhk944kxkoemayhdyijtymdcb.jpg">
+           <noscript data-alt="4-х месячный щенок грюнендаля" data-class="article_pic" data-original="/upload/resize_cache/iblock/2ec/1024_2150_1/35jglw5uhk944kxkoemayhdyijtymdcb.jpg">
+            <img alt="4-х месячный щенок грюнендаля" class="article_pic" src="/upload/resize_cache/iblock/2ec/1024_2150_1/35jglw5uhk944kxkoemayhdyijtymdcb.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          4-х месячный щенок грюнендаля
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт грюнендаля
+        </h2>
+        <p>
+         Правильный представитель породы – гармонично сложенная собака средних габаритов. Как и любая рабочая овчарка, этот «джентльмен в черном» должен производить впечатление выносливого и сильного питомца, одновременно сохраняя элегантность силуэта и не выглядя бруталом.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         У всех «бельгийцев» головы высокого постава, точеной удлиненной формы, без выделяющихся надбровий и затылочного бугра. Щеки породы плоские. Черепная коробка и морда имеют одинаковую длину.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Мочка нормального размера, окрашена в угольно-черный цвет.
+        </p>
+        <h3>
+         Губы и зубы
+        </h3>
+        <p>
+         Плотные, полностью пигментированные губы выглядят тонкими. Зубы грюнендаля крепкие и стоят в челюсти вплотную. Рекомендованный стандартом прикус – ножницеобразный. Однако для рабочих особей, задействованных в пастьбе, предпочтительнее прикус «клещи».
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Миндалевидные глаза не отличаются большим размером. Идеальный оттенок радужки – темно-карий.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Посажены достаточно высоко и находятся в стоячем положении, когда животное чем-то заинтересовано. Сами уши при этом небольшие, треугольной формы, с острым кончиком.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Высоко поставленная и удлиненная, без подвеса. Присутствует небольшая выпуклость в зоне загривка.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда грюнендаля" data-fancybox="gallery" href="/upload/iblock/7cd/agsy1j3cmczii3wifxrenvmkf23l9539.jpg" title="Морда грюнендаля">
+          <div class="lazy-load" data-alt="Морда грюнендаля" data-class="article_pic" data-original="/upload/resize_cache/iblock/7cd/1024_2150_1/agsy1j3cmczii3wifxrenvmkf23l9539.jpg">
+           <noscript data-alt="Морда грюнендаля" data-class="article_pic" data-original="/upload/resize_cache/iblock/7cd/1024_2150_1/agsy1j3cmczii3wifxrenvmkf23l9539.jpg">
+            <img alt="Морда грюнендаля" class="article_pic" src="/upload/resize_cache/iblock/7cd/1024_2150_1/agsy1j3cmczii3wifxrenvmkf23l9539.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда грюнендаля
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело грюнендаля отличает атлетическое сложение. Линия спины горизонтальная, с мускулистой поясницей, хорошо опущенной грудью и покатым широким крупом.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Крепкие, но без тяжести, с сухой мускулатурой. Бедра широкие и плотные. Лапы передней пары ног округлой формы, задней – овальные. Подушечки толстые.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвост не очень длинный, но пушистый. У расслабленного животного держится книзу, с легким изгибом на конце. Если пес возбужден, хвост поднимается до спины или чуть выше.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Шерстный покров на большей части тела прилегающе-длинный. Зоны с коротким волосом – голова, внутренняя часть ушей, низ ног, кроме тыльной части передних конечностей, где растут очесы. Вокруг шеи с переходом на грудь ость формирует пышное «жабо». Бедра собаки скрыты под мягкими «штанами».
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Эталонный грюнендаль – это сплошной черный окрас. Однако особи с белыми пятнами на шерсти стандартом не отбраковываются.
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <ul>
+         <li>
+          Недокус или перекус прикуса.
+         </li>
+         <li>
+          Шерсть без подшерстка.
+         </li>
+         <li>
+          Депигментированные веки, нос и губы.
+         </li>
+         <li>
+          Висячие уши.
+         </li>
+         <li>
+          Отсутствие следующих зубов – Р4, М1, Р3.
+         </li>
+         <li>
+          Хвост – купированный, укороченный, в форме кольца или винта.
+         </li>
+         <li>
+          Нетипичный окрас, слишком большие белые пятна на груди.
+         </li>
+        </ul>
+        <h2>
+         Фото грюнендалей
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8c0/vyu6pia17012wf76iqfszs4xq4bo2v7j.jpg" title="">
+           <div class="lazy-load" data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/8c0/380_264_2/vyu6pia17012wf76iqfszs4xq4bo2v7j.jpg">
+            <noscript data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/8c0/380_264_2/vyu6pia17012wf76iqfszs4xq4bo2v7j.jpg">
+             <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/8c0/380_264_2/vyu6pia17012wf76iqfszs4xq4bo2v7j.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a5f/06jsag4kepu32kz3fqjpuyn79kyiag6b.jpg" title="">
+           <div class="lazy-load" data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/a5f/380_264_2/06jsag4kepu32kz3fqjpuyn79kyiag6b.jpg">
+            <noscript data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/a5f/380_264_2/06jsag4kepu32kz3fqjpuyn79kyiag6b.jpg">
+             <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/a5f/380_264_2/06jsag4kepu32kz3fqjpuyn79kyiag6b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/712/hp3a4himb75n71nwi3b8qqmm37hk2kty.jpg" title="">
+           <div class="lazy-load" data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/712/380_264_2/hp3a4himb75n71nwi3b8qqmm37hk2kty.jpg">
+            <noscript data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/712/380_264_2/hp3a4himb75n71nwi3b8qqmm37hk2kty.jpg">
+             <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/712/380_264_2/hp3a4himb75n71nwi3b8qqmm37hk2kty.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/0a3/cdojz6jpl1go0rc4b54d7w0ak8k1lf0t.jpg" title="">
+           <div class="lazy-load" data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/0a3/380_264_2/cdojz6jpl1go0rc4b54d7w0ak8k1lf0t.jpg">
+            <noscript data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/0a3/380_264_2/cdojz6jpl1go0rc4b54d7w0ak8k1lf0t.jpg">
+             <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/0a3/380_264_2/cdojz6jpl1go0rc4b54d7w0ak8k1lf0t.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a4d/lrj1nfb5wldaqyl3u27so6p2658rdoys.jpg" title="">
+           <div class="lazy-load" data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/a4d/380_264_2/lrj1nfb5wldaqyl3u27so6p2658rdoys.jpg">
+            <noscript data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/a4d/380_264_2/lrj1nfb5wldaqyl3u27so6p2658rdoys.jpg">
+             <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/a4d/380_264_2/lrj1nfb5wldaqyl3u27so6p2658rdoys.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ca7/2rhj8vwi66je7miaex5kncopfkr7vgd6.jpg" title="">
+           <div class="lazy-load" data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/ca7/380_264_2/2rhj8vwi66je7miaex5kncopfkr7vgd6.jpg">
+            <noscript data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/ca7/380_264_2/2rhj8vwi66je7miaex5kncopfkr7vgd6.jpg">
+             <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/ca7/380_264_2/2rhj8vwi66je7miaex5kncopfkr7vgd6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f47/nogd9o88pyj4buy803chc0j1wbqhfn32.jpg" title="">
+           <div class="lazy-load" data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/f47/380_264_2/nogd9o88pyj4buy803chc0j1wbqhfn32.jpg">
+            <noscript data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/f47/380_264_2/nogd9o88pyj4buy803chc0j1wbqhfn32.jpg">
+             <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/f47/380_264_2/nogd9o88pyj4buy803chc0j1wbqhfn32.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e5b/pgdcsjlfs6rri5ppp6qy4si3dvlsil3k.jpg" title="">
+           <div class="lazy-load" data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/e5b/380_264_2/pgdcsjlfs6rri5ppp6qy4si3dvlsil3k.jpg">
+            <noscript data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/e5b/380_264_2/pgdcsjlfs6rri5ppp6qy4si3dvlsil3k.jpg">
+             <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/e5b/380_264_2/pgdcsjlfs6rri5ppp6qy4si3dvlsil3k.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/756/lpj2gh0l51dtxewgp4nzc7sh9ko0y5ze.jpg" title="">
+           <div class="lazy-load" data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/756/380_264_2/lpj2gh0l51dtxewgp4nzc7sh9ko0y5ze.jpg">
+            <noscript data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/756/380_264_2/lpj2gh0l51dtxewgp4nzc7sh9ko0y5ze.jpg">
+             <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/756/380_264_2/lpj2gh0l51dtxewgp4nzc7sh9ko0y5ze.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер грюнендаля
+        </h2>
+        <p>
+         Психологический портрет породы противоречив, что объясняется специфическим подходом к разведению. В некоторых российских линиях до сих пор культивируются нетипичные для «бельгийцев» черты характера. Отсюда – разочарованные отзывы о нервных, пугливых и легко возбудимых собаках.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Грюнендаль нежится с сомалийской кошкой" data-fancybox="gallery" href="/upload/iblock/f89/g34uwkkkdyiqz994ucvybom54loful47.jpg" title="Грюнендаль нежится с сомалийской кошкой">
+          <div class="lazy-load" data-alt="Грюнендаль нежится с сомалийской кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/f89/412_2150_1/g34uwkkkdyiqz994ucvybom54loful47.jpg">
+           <noscript data-alt="Грюнендаль нежится с сомалийской кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/f89/412_2150_1/g34uwkkkdyiqz994ucvybom54loful47.jpg">
+            <img alt="Грюнендаль нежится с сомалийской кошкой" class="article_pic" height="412" src="/upload/resize_cache/iblock/f89/412_2150_1/g34uwkkkdyiqz994ucvybom54loful47.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Грюнендаль нежится с сомалийской кошкой
+         </div>
+        </div>
+        <p>
+         Настоящий грюнендаль – ни в коем случае не истерик и не трус. Более того, он умница и храбрец, преданный своему лидеру до кончика хвоста. Пытаться пристроить взрослых кобеля или суку в добрые руки практически невозможно, не сломав животным психику.
+        </p>
+        <p>
+         В отношениях с незнакомцами порода предпочитает вежливый игнор, но ровно до того момента, пока не возникает угроза жизни хозяину. С соплеменниками грюнендаль подчеркнуто терпелив, конфликты не инициирует и легко вливается в собачьи коллективы. Исключение – доминантные породы. Подчиняться кому бы то ни было бельгийская овчарка не любит. Как сторожевая собака, грюнендаль себя не оправдывает. Он не прочь полаять на нежданного гостя, но если злоумышленник не проявит агрессию, вряд ли снизойдет до битвы за территорию.
+        </p>
+        <p>
+         По сравнению с малинуа, его черный «кузен» более вынослив в работе и имеет не такой ураганный характер. При этом энергии у него более чем достаточно. Это значит, что к потребности питомца в систематических тренировках стоит относиться как к необходимости, а не капризу. В отдельных ситуациях грюнендаль способен сам себя «разгрузить». Достаточно создать для этого соответствующие условия, чтобы пес мог попрыгать и подурачиться.
+        </p>
+        <p class="legenda">
+         <strong>
+          К сведению.
+         </strong>
+         Дети для собаки – существа более низкого порядка, чем хозяин, но все же достойные доброжелательного отношения. Овчарка охотно поддержит любые детские игры, примет участие в пробежках и терпеливо отнесется к не самым приятным для нее вещам.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Грюнендаль с ребенком" data-fancybox="gallery" href="/upload/iblock/e8b/nl54j5cwoz28ylngzj0b2ra4rgnc161v.jpg" title="Грюнендаль с ребенком">
+          <div class="lazy-load" data-alt="Грюнендаль с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/e8b/1024_2150_1/nl54j5cwoz28ylngzj0b2ra4rgnc161v.jpg">
+           <noscript data-alt="Грюнендаль с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/e8b/1024_2150_1/nl54j5cwoz28ylngzj0b2ra4rgnc161v.jpg">
+            <img alt="Грюнендаль с ребенком" class="article_pic" src="/upload/resize_cache/iblock/e8b/1024_2150_1/nl54j5cwoz28ylngzj0b2ra4rgnc161v.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Грюнендаль с ребенком
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Грюнендалю интересно учиться. Он мгновенно схватывают новую информацию и сохраняет ее в памяти навсегда. Причем собака старается не просто выполнить команду, чтобы от нее отстали, а полностью проникается процессом. По этой причине идеальной спортивной дисциплиной для породы остается шутцхунд. В ней животное может полностью раскрыть интеллектуальный потенциал, продемонстрировать храбрость и психическую стабильность.
+        </p>
+        <p>
+         Учиться бельгийская овчарка будет только с тем, чей авторитет для нее непререкаем. Запрещено заниматься дрессировкой грюнендаля детям, подросткам, людям, не имевшим опыта воспитания доминантных собак. Ни в коем случае нельзя воздействовать на животное физически. Порода известна своей агрессией в ответ на применяемую к ее представителям силу.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важный момент:
+         </strong>
+         социализироваться и учиться «хвост» должен как можно раньше. Воспитывать грюнендаля-переростка крайне сложно, взрослую особь – практически невозможно.
+        </p>
+        <p>
+         Помимо классической учебной программы, на «бельгийца» придется потратить время и в других сферах. Общеизвестный факт: грюнендали используют силу своих голосовых связок по поводу и без. Если питомец обитает в городской квартире, придется предусмотреть и этот момент. Прибегать к таким радикальным мерам, как ветрикулокордэктомия, не нужно. Грюнендаль в состоянии управлять своим голосом, если хозяин вовремя донесет до него мысль, что беспричинный лай и вой – зло.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/919/mmxfbpsfwsbfvzs4hx1pxzh64tfw9cp9.jpg" title="">
+          <div class="lazy-load" data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/919/1024_2150_1/mmxfbpsfwsbfvzs4hx1pxzh64tfw9cp9.jpg">
+           <noscript data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/919/1024_2150_1/mmxfbpsfwsbfvzs4hx1pxzh64tfw9cp9.jpg">
+            <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/919/1024_2150_1/mmxfbpsfwsbfvzs4hx1pxzh64tfw9cp9.jpg"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         Грюнендаль – это прежде всего энергия. На прогулки с «бельгийцем» необходимо тратить от 2 ч. в день. За это время с животным можно позаниматься, а можно отпустить его в «свободное плавание». Обычно отпущенная с поводка собака разряжается путем бега и разнообразных игр. В людных местах, вроде парков, скверов и пляжей, грюнендаль развлекает себя, не реагируя на окружающих. Как итог: конфликты с прохожими и велосипедистами хозяину «хвоста» не грозят.
+        </p>
+        <p>
+         Лучший дом для породы – загородный. Собака может жить в помещении и во дворе, если позволяет температурный режим. В морозы питомца лучше забрать в дом. Кстати, выгулы в холодную погоду не отменяются. Гиперактивный грюнендаль прекрасно согревается во время беготни и тренировок.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Есть вкусняшка?" data-fancybox="gallery" href="/upload/iblock/68c/krglekz5wx6enx7gmxn6ql73eg8daq9f.jpg" title="Есть вкусняшка?">
+          <div class="lazy-load" data-alt="Есть вкусняшка?" data-class="article_pic" data-original="/upload/resize_cache/iblock/68c/412_2150_1/krglekz5wx6enx7gmxn6ql73eg8daq9f.jpg">
+           <noscript data-alt="Есть вкусняшка?" data-class="article_pic" data-original="/upload/resize_cache/iblock/68c/412_2150_1/krglekz5wx6enx7gmxn6ql73eg8daq9f.jpg">
+            <img alt="Есть вкусняшка?" class="article_pic" height="549" src="/upload/resize_cache/iblock/68c/412_2150_1/krglekz5wx6enx7gmxn6ql73eg8daq9f.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Есть вкусняшка?
+         </div>
+        </div>
+        <p>
+         Роскошный черные «мантии» породы требуют ухода, а квартира, в которой обитает грюнендаль, – мощного пылесоса. Раз в 1-2 дня собаку нужно расчесать редким гребнем, чтобы предотвратить формирование колтунов. Во время линьки чесать шерсть необходимо дважды в день, чередуя расчески с частыми и редкими зубьями. Можно использовать специальные спреи, облегчающие расчесывание.
+        </p>
+        <p>
+         Частое мытье негативно сказывается на шерсти грюнендаля – она становится мягче, пухлявее и теряет природную жесткость. Полностью купать собаку лучше раз в полгода – накануне выставки либо по факту загрязнения. Шампунь рекомендуется использовать для жесткошерстных пород.
+        </p>
+        <p>
+         Раз в 6-7 дней необходимо проверять уши и убирать обнаруженные внутри выделения. Для этой цели подойдут гигиенические лосьоны из ветаптеки. Убрать пыль из глаз можно тканевой салфеткой, увлажненной холодной кипяченой водой либо чайным отваром.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Молодой, ведущий активную жизнь грюнендаль нуждается в рационе с хорошим количеством мясного белка. Поскольку порода склонна к набору веса, калораж порции тщательно рассчитывают. Выбор, сухой корм или «натуралка»,– владелец собаки делает сам. У каждой из этих систем питания есть как поклонники, так и противники.
+        </p>
+        <p>
+         Поскольку грюнендаль – собака подвижная, в рацион должны входить продукты и БАДы-хондропротекторы, поддерживающие здоровье суставов и связок. Щенкам обычно варят желе из суставов копытных – коров, телят, лошадей. Взрослым особям дают добавки с костной мукой, ушные хрящи, копыта. Если у питомца нет противопоказаний по здоровью, можно попробовать кормление по системе BARF, предполагающее рацион из необработанных натуральных продуктов.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни породы
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бельгийский красавец" data-fancybox="gallery" href="/upload/iblock/f41/kgkvropb3qj0twgiq8e7fiaf19rf720p.jpg" title="Бельгийский красавец">
+          <div class="lazy-load" data-alt="Бельгийский красавец" data-class="article_pic" data-original="/upload/resize_cache/iblock/f41/412_2150_1/kgkvropb3qj0twgiq8e7fiaf19rf720p.jpg">
+           <noscript data-alt="Бельгийский красавец" data-class="article_pic" data-original="/upload/resize_cache/iblock/f41/412_2150_1/kgkvropb3qj0twgiq8e7fiaf19rf720p.jpg">
+            <img alt="Бельгийский красавец" class="article_pic" height="619" src="/upload/resize_cache/iblock/f41/412_2150_1/kgkvropb3qj0twgiq8e7fiaf19rf720p.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бельгийский красавец
+         </div>
+        </div>
+        <p>
+         Грюнендаль – выносливая и крепкая овчарка без особых проблем. Присущих породе заболеваний не так много. Среди них – дисплазия тазобедренных суставов, эпилепсия, болезни глаз. В некоторых линиях разведения собаки наследуют от родителей склонность к аллергии.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Выбор надежного питомника/заводчика грюнендалей – половина успеха покупки. Как показывает опыт последних лет, российские линии породы часто имеют низкую ценность. Причина такой репутации: слишком большое количество неуравновешенных, нервных и агрессивных животных.
+        </p>
+        <ul>
+         <li>
+          Обязательно знакомство с родословными производителей помета, а также ими самими. Лучше, если кобель и сука будут импортированы из Бельгии.
+         </li>
+         <li>
+          Низкая цена на щенка грюнендаля – негативный показатель. Вязки с перспективными производителями, актировка помета, содержание суки с ее потомством обходятся недешево. Обычно сниженная стоимость свидетельствует о дефектности щенков либо примеси кровей других пород.
+         </li>
+         <li>
+          Кормящие суки, особенно если помет большой, могут выглядеть утомленными, иметь тусклую шерсть. Это абсолютно нормально. Но если собака истощена и имеет проплешины, это сигнализирует о плохом уходе и питании.
+         </li>
+         <li>
+          Излишне смелые и напористые щенки – будущие лидеры стаи. Брать такую собаку – значит быть готовым к суровым испытаниям в будущем, когда наступит время полового созревания.
+         </li>
+        </ul>
+        <p>
+         Здоровье щенков – забота заводчика. Маленькие грюнендали должны быть привиты по возрасту и содержаться на качественном корме. Щенок, выставленный на продажу, должен обязательно иметь клеймо питомника и щенячью метрику.
+        </p>
+        <h2>
+         Фото щенков грюнендаля
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a52/5e6oj4dgc2z1fwxaizhb5wlrat301ned.jpg" title="">
+           <div class="lazy-load" data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/a52/380_264_2/5e6oj4dgc2z1fwxaizhb5wlrat301ned.jpg">
+            <noscript data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/a52/380_264_2/5e6oj4dgc2z1fwxaizhb5wlrat301ned.jpg">
+             <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/a52/380_264_2/5e6oj4dgc2z1fwxaizhb5wlrat301ned.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/260/z5rhgjkffaeqhxtign8n4gbjt3b4gwle.jpg" title="">
+           <div class="lazy-load" data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/260/380_264_2/z5rhgjkffaeqhxtign8n4gbjt3b4gwle.jpg">
+            <noscript data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/260/380_264_2/z5rhgjkffaeqhxtign8n4gbjt3b4gwle.jpg">
+             <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/260/380_264_2/z5rhgjkffaeqhxtign8n4gbjt3b4gwle.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1fe/bbi0i0mrjjgxaw53g31hr1t736edazbr.jpg" title="">
+           <div class="lazy-load" data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/1fe/380_264_2/bbi0i0mrjjgxaw53g31hr1t736edazbr.jpg">
+            <noscript data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/1fe/380_264_2/bbi0i0mrjjgxaw53g31hr1t736edazbr.jpg">
+             <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/1fe/380_264_2/bbi0i0mrjjgxaw53g31hr1t736edazbr.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2a9/j2hhbvf1j1lqqvim6jvkfk58hdsydekl.jpg" title="">
+           <div class="lazy-load" data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/2a9/380_264_2/j2hhbvf1j1lqqvim6jvkfk58hdsydekl.jpg">
+            <noscript data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/2a9/380_264_2/j2hhbvf1j1lqqvim6jvkfk58hdsydekl.jpg">
+             <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/2a9/380_264_2/j2hhbvf1j1lqqvim6jvkfk58hdsydekl.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a54/krs9edxqcjfngtvzzn3qlvnjnul0jgcg.jpg" title="">
+           <div class="lazy-load" data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/a54/380_264_2/krs9edxqcjfngtvzzn3qlvnjnul0jgcg.jpg">
+            <noscript data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/a54/380_264_2/krs9edxqcjfngtvzzn3qlvnjnul0jgcg.jpg">
+             <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/a54/380_264_2/krs9edxqcjfngtvzzn3qlvnjnul0jgcg.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ca3/aki5nuv0y1lv0sjjas2j471pa5zql70p.jpg" title="">
+           <div class="lazy-load" data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/ca3/380_264_2/aki5nuv0y1lv0sjjas2j471pa5zql70p.jpg">
+            <noscript data-alt="Грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/ca3/380_264_2/aki5nuv0y1lv0sjjas2j471pa5zql70p.jpg">
+             <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/ca3/380_264_2/aki5nuv0y1lv0sjjas2j471pa5zql70p.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Цена грюнендаля
+        </h2>
+        <p>
+         В России порода пользуется меньшей популярностью, чем в Соединенных Штатах и Европе. Поголовье грюнендалей в стране небольшое, как и количество монопородных питомников, что сказывается на стоимости щенков. Цены на них начинаются с 30 000 и могут достигать 125 000 руб. На ценник влияют также линии производителей, класс самого щенка (пет, шоу, брид) и «громкое имя» заводчика.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения грюнендаля на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/gryunendal/forum/">
+        Перейти на
+        форум грюнендаля
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Грюнендаль" src="/upload/iblock/679/24cpab66go4l6d9wbhu0siueoeih3wbp.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/gryunendal/">
+          Грюнендаль
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/gryunendal/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/gryunendal/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/gryunendal/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/gryunendal/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/gryunendal/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/entlebukher-zennenkhund/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Энтлебухер зенненхунд" data-original="/upload/resize_cache/iblock/f94/100_100_1/f94335dbdd1645812f4a6229dd643a38.jpg">
+          <noscript data-alt="Энтлебухер зенненхунд" data-original="/upload/resize_cache/iblock/f94/100_100_1/f94335dbdd1645812f4a6229dd643a38.jpg">
+           <img alt="Энтлебухер зенненхунд" src="/upload/resize_cache/iblock/f94/100_100_1/f94335dbdd1645812f4a6229dd643a38.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Энтлебухер зенненхунд
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/border-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бордер-терьер" data-original="/upload/resize_cache/iblock/aab/100_100_1/aab34a0f98d67e5b7160bfea9b0e6159.jpg">
+          <noscript data-alt="Бордер-терьер" data-original="/upload/resize_cache/iblock/aab/100_100_1/aab34a0f98d67e5b7160bfea9b0e6159.jpg">
+           <img alt="Бордер-терьер" src="/upload/resize_cache/iblock/aab/100_100_1/aab34a0f98d67e5b7160bfea9b0e6159.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бордер-терьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/bankhar/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Банхар" data-original="/upload/resize_cache/iblock/caf/100_100_1/33re4sdhjdjehk1yg1hq4f9eafkrvwis.jpg">
+          <noscript data-alt="Банхар" data-original="/upload/resize_cache/iblock/caf/100_100_1/33re4sdhjdjehk1yg1hq4f9eafkrvwis.jpg">
+           <img alt="Банхар" src="/upload/resize_cache/iblock/caf/100_100_1/33re4sdhjdjehk1yg1hq4f9eafkrvwis.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Банхар
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/tsvergshnautser/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Цвергшнауцер" data-original="/upload/resize_cache/iblock/ba8/100_100_1/ba827c035a3530306f737c3a2e2b4740.jpg">
+          <noscript data-alt="Цвергшнауцер" data-original="/upload/resize_cache/iblock/ba8/100_100_1/ba827c035a3530306f737c3a2e2b4740.jpg">
+           <img alt="Цвергшнауцер" src="/upload/resize_cache/iblock/ba8/100_100_1/ba827c035a3530306f737c3a2e2b4740.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Цвергшнауцер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fgryunendal%252F%253Fcheck_key%253D1fd1349f5751cb98f93da81a3c7d8b3c%2526ANIMAL_CODE%253Dgryunendal%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fgryunendal%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmdyeXVuZW5kYWwlMkYlM0ZjaGVja19rZXklM0QxZmQxMzQ5ZjU3NTFjYjk4ZjkzZGE4MWEzYzdkOGIzYyUyNkFOSU1BTF9DT0RFJTNEZ3J5dW5lbmRhbCUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZncnl1bmVuZGFsJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fgryunendal%252F%253Fcheck_key%253D1fd1349f5751cb98f93da81a3c7d8b3c%2526ANIMAL_CODE%253Dgryunendal%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fgryunendal%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fgryunendal%252F%253Fcheck_key%253D1fd1349f5751cb98f93da81a3c7d8b3c%2526ANIMAL_CODE%253Dgryunendal%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fgryunendal%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "46.146.126.63"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--e22989252212c49856dd44ead976973b-->

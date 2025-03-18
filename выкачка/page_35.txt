@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'05611b8d9b77'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Бельгийская овчарка, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Бельгийская овчарка уникальна во всех отношениях. Эта порода насчитывает четыре разновидности, каждая из которых имеет свои черты – яркие, примечательные и оттого ценимые многими собаководами." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/0b7/0b7527aa23c45f443aacbc0888f8ea5b.jpg" property="og:image"/>
+     <title>
+      Бельгийская овчарка: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/belgiyskaya-ovcharka/" property="og:url"/>
+     <meta content="Бельгийская овчарка: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Бельгийская овчарка уникальна во всех отношениях. Эта порода насчитывает четыре разновидности, каждая из которых имеет свои черты – яркие, примечательные и оттого ценимые многими собаководами." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/belgiyskaya-ovcharka/" itemprop="url">
+         <span itemprop="title">
+          Бельгийская овчарка
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Бельгийская овчарка
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/belgiyskaya-ovcharka/">
+          Описание
+         </a>
+         <a href="/dog/belgiyskaya-ovcharka/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/belgiyskaya-ovcharka/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/belgiyskaya-ovcharka/photo/">
+          Фото
+         </a>
+         <a href="/dog/belgiyskaya-ovcharka/video/">
+          Видео
+         </a>
+         <a href="/dog/belgiyskaya-ovcharka/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Бельгийская овчарка" src="/upload/iblock/139/139d3d3ac38deaf8ec80dac1ee2e70e6.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Бельгийская овчарка уникальна во всех отношениях. Эта порода насчитывает четыре разновидности, каждая из которых имеет свои черты – яркие, примечательные и оттого ценимые многими собаководами.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/420/42017285522146cd0f0fb92b8137f020.jpg" data-cap="Vince" data-fancybox="images" data-link="https://www.flickr.com/photos/phobe08/36492701244/" data-type="image" data-username="Nicole Trenker Fotografie" href="/upload/uf/27f/27f55c682e7d5fd1121b76ccc9f61e22.jpg">
+            <img alt="Бельгийская овчарка" src="/upload/resize_cache/uf/27f/293_293_2/27f55c682e7d5fd1121b76ccc9f61e22.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/90c/90c48783c0efe4b0807aad8c23cc173b.jpg" data-cap="Aada and Roy" data-fancybox="images" data-link="https://www.flickr.com/photos/132791784@N08/38700283410/" data-type="image" data-username="Mira Sinisalo" href="/upload/uf/8fd/8fd90944e44da23c1adcccbe40e2c7d3.jpg">
+            <img alt="Бельгийская овчарка" src="/upload/resize_cache/uf/8fd/293_293_2/8fd90944e44da23c1adcccbe40e2c7d3.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/b6a/b6a4690ab5ccc1d563923bab7bb74762.jpg" data-cap="Tom" data-fancybox="images" data-link="https://www.flickr.com/photos/65854166@N05/28315258023/" data-type="image" data-username="ginachillin" href="/upload/uf/bed/bed53d76cfcaa9da0fe52dadf89d56a3.jpg">
+            <img alt="Бельгийская овчарка" src="/upload/resize_cache/uf/bed/293_293_2/bed53d76cfcaa9da0fe52dadf89d56a3.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/belgiyskaya-ovcharka/photo/">
+         Все
+            фото бельгийской овчарки
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <style>
+        .podvidi h2 {
+                text-align: left;
+                margin: 0 0 40px;
+            }
+            .podvidi h2 a{
+                color: #000;
+                border-bottom: 1px solid #bbb;
+            }
+            .podvidi .pop-porodi-block{
+                text-align:left;
+            }
+       </style>
+       <div class="pop-porodi podvidi">
+        <div class="pop-porodi-block">
+         <h2 id="info">
+          Разновидности бельгийских овчарок
+         </h2>
+         <a class="poroda-element" href="/dog/malinua/">
+          <div class="ava-poroda">
+           <img alt="Малинуа" class="article_pic" src="/upload/resize_cache/iblock/7b9/100_100_1/wtxfkvslz9flskh3k0rncon10e0em3gy.jpg"/>
+          </div>
+          <span>
+           Малинуа
+          </span>
+         </a>
+         <a class="poroda-element" href="/dog/gryunendal/">
+          <div class="ava-poroda">
+           <img alt="Грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/679/100_100_1/24cpab66go4l6d9wbhu0siueoeih3wbp.jpg"/>
+          </div>
+          <span>
+           Грюнендаль
+          </span>
+         </a>
+        </div>
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы бельгийская овчарка
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность бельгийской овчарки
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер бельгийской овчарки
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни бельгийской овчарки
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Сколько стоит бельгийская овчарка
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Бельгийская овчарка
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Бельгия
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         1891 год
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 25-30 кг, суки 20-25 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 60-66 см, суки 56-62 см
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Бельгийские овчарки – идеальные сторожа во всех отношениях. Собаки бесстрашно защищают вверенное им имущество и при надобности поднимают звонкий лай.
+        </li>
+        <li>
+         Представители породы славятся подвижностью и оттого нуждаются в регулярных активных прогулках не менее одного часа в день.
+        </li>
+        <li>
+         Собака неплохо уживается с другими животными, однако в случае с кошками и мелкими декоративными грызунами проблемы всё же могут возникнуть.
+        </li>
+        <li>
+         Бельгийская овчарка вполне подойдёт для семьи, в которой есть дети, но не ждите от питомца воодушевлённого участия в играх.
+        </li>
+        <li>
+         Собаки нуждаются в ранней социализации и правильном воспитании, которые лучше проводить под чутким руководством профессионала.
+        </li>
+        <li>
+         Бельгийские овчарки обладают высоким интеллектом и прекрасно поддаются дрессировке, если хозяин достаточно твёрд характером.
+        </li>
+        <li>
+         Из всех категорий породы только малинуа не нуждается в тщательном уходе за шерстью.
+        </li>
+        <li>
+         Овчарка не подходит начинающим собаководам.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Бельгийская овчарка" data-original="/upload/iblock/0b7/0b7527aa23c45f443aacbc0888f8ea5b.jpg">
+          <noscript data-alt="Бельгийская овчарка" data-original="/upload/iblock/0b7/0b7527aa23c45f443aacbc0888f8ea5b.jpg">
+           <img alt="Бельгийская овчарка" src="/upload/iblock/0b7/0b7527aa23c45f443aacbc0888f8ea5b.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Бельгийская овчарка
+          </strong>
+          воплощает в себе любовь к свободе и неукротимую жажду жизни, которые заметны невооружённым глазом. Эти черты были присущи породе с начала её существования, когда овчарки использовались в качестве сторожей и пастухов, при этом отлично справляясь с поставленной задачей. По сей день животные успешно реализуют свой потенциал во многих сферах общественной жизни. Одновременно с этим собаки снискали славу дружелюбных компаньонов, которые будут сопровождать своего хозяина во время прогулок, утреннего бега или же просто похода в магазин. Эта порода не самая лёгкая в обращении, но если за вашими плечами колоссальный опыт собаководства, дерзайте!
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Ниже среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средний (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Бельгийская овчарка основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы бельгийская овчарка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бельгийская овчарка" data-fancybox="gallery" href="/upload/iblock/cbc/cbc49b13b97569881f6c54ac552323e5.jpg" title="Бельгийская овчарка">
+          <div class="lazy-load" data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/cbc/412_2150_1/cbc49b13b97569881f6c54ac552323e5.jpg">
+           <noscript data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/cbc/412_2150_1/cbc49b13b97569881f6c54ac552323e5.jpg">
+            <img alt="Бельгийская овчарка" class="article_pic" height="515" src="/upload/resize_cache/iblock/cbc/412_2150_1/cbc49b13b97569881f6c54ac552323e5.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бельгийская овчарка
+         </div>
+        </div>
+        <p>
+         Казалось бы, история этой пастушьей собаки должна уходить корнями в древность. И действительно: ещё в письменных источниках XVII века встречаются упоминания четвероногих помощников пастухов, которые следили за многочисленными отарами. Так, первое описание бельгийских овчарок (или, по крайней мере, очень похожих на них собак) датируется 1650 годом. Однако на самом же деле порода сравнительно молода и существует чуть больше ста лет. Как это возможно?
+        </p>
+        <p>
+         Объясняется всё тем, что в древние времена не было людей, которые целенаправленно занимались бы выведением овчарок. Более того, порода не считалась престижной. Представители европейской аристократии не утруждали себя созданием кинологических клубов, в то время как их благоверные предпочитали держать в качестве питомцев представителей других пород. Львиная доля разведения овчарок приходилась на крестьян, которые придавали огромное значение рабочим качествам собак, а не их привлекательному экстерьеру.
+        </p>
+        <p>
+         Ко второй половине XIX века овчарки уже отличались огромной палитрой окрасов, но всё ещё ценились лишь за своё предназначение – умение пасти отару, при необходимости собирать овец вместе и защищать их от нападения диких зверей. Не исключением стало и отношение бельгийских фермеров к этим невероятно умным собакам. Всё изменилось с началом индустриальной революции.
+        </p>
+        <p>
+         Тот момент стал переломным: экономика Бельгии создавалась заново, а ускоренные темпы урбанизации вынуждали сельских жителей переезжать в более крупные города. Это отрицательно сказалось на популярности пастушьих пород собак, утративших значение.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Морда щенка бельгийской овчарки тервюрен" data-fancybox="gallery" href="/upload/iblock/a40/a40ed6c2c09f09ac0c35d386bb7c6ffa.jpg" title="Морда щенка бельгийской овчарки тервюрен">
+          <div class="lazy-load" data-alt="Морда щенка бельгийской овчарки тервюрен" data-class="article_pic" data-original="/upload/resize_cache/iblock/a40/412_2150_1/a40ed6c2c09f09ac0c35d386bb7c6ffa.jpg">
+           <noscript data-alt="Морда щенка бельгийской овчарки тервюрен" data-class="article_pic" data-original="/upload/resize_cache/iblock/a40/412_2150_1/a40ed6c2c09f09ac0c35d386bb7c6ffa.jpg">
+            <img alt="Морда щенка бельгийской овчарки тервюрен" class="article_pic" height="585" src="/upload/resize_cache/iblock/a40/412_2150_1/a40ed6c2c09f09ac0c35d386bb7c6ffa.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда щенка бельгийской овчарки тервюрен
+         </div>
+        </div>
+        <p>
+         Своим появлением бельгийская овчарка обязана волне национализма, которая захлестнула Европу в XIX веке. В то время многие страны стремились к созданию такой породы собак, которая стала бы их национальным достоянием и кардинально отличалась от других. Конец сентября 1891 года ознаменовался созданием в Брюсселе кинологической организации BSDC – Клуба любителей бельгийской овчарки. В ноябре того же года в городе Кюргаме прошла первая выставка собак, на которой представили более сотни животных. Среди гостей мероприятия был и профессор Адольф Рийул, который занимался изучением собак и в дальнейшем планировал представить для каждого региона Бельгии определённую породу.
+        </p>
+        <p>
+         Лишь треть овчарок, присутствующих на выставке, была рекомендована учёным для дальнейшего разведения. Рийул отбирал животных среднего размера, при этом не обращая внимания на длину и структуру шерсти – имело значение лишь её качество. В 1892 году профессор представил миру первый стандарт породы бельгийская овчарка. Селекция собак длилась около двух десятков лет. Изначально кинологи выделяли три разновидности породы в зависимости от окраса. Это побудило собаководов, чьи подопечные не соответствовали ни одной из трёх категорий, создать отдельный кинологический кружок и продолжать независимое разведение животных. Противостояние длилось несколько лет, пока не произошло слияние клубов и как следствие изменение стандарта породы. По сей день он предусматривает четыре категории собак:
+        </p>
+        <p>
+         1. Грюнендаль – чёрного окраса с шерстью средней длины. Обязаны своим названием небольшой деревушке неподалёку от Брюсселя.
+        </p>
+        <p>
+         2. Лакенуа – пепельно-серого окраса с длинной шерстью. Разновидность породы названа в честь исторического района Лакен на севере столицы.
+        </p>
+        <p>
+         3. Малинуа – угольного или коричнево-жёлтого окраса с короткой шерстью. Унаследовали имя от городка Малина (Мехелена).
+        </p>
+        <p>
+         4. Тервюрен – угольно-рыжего окраса с длинной шерстью. Название этой категории породы произошло от города Тервюрена в 8 км от столицы.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бельгийская овчарка грюнендаль" data-fancybox="gallery" href="/upload/iblock/9d8/9d82d178f4b33d3de5639b3894284047.jpg" title="Бельгийская овчарка грюнендаль">
+           <div class="lazy-load" data-alt="Бельгийская овчарка грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/9d8/512_342_2/9d82d178f4b33d3de5639b3894284047.jpg">
+            <noscript data-alt="Бельгийская овчарка грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/9d8/512_342_2/9d82d178f4b33d3de5639b3894284047.jpg">
+             <img alt="Бельгийская овчарка грюнендаль" class="article_pic" src="/upload/resize_cache/iblock/9d8/512_342_2/9d82d178f4b33d3de5639b3894284047.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бельгийская овчарка грюнендаль
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бельгийская овчарка тервюрен" data-fancybox="gallery" href="/upload/iblock/7b1/7b106b9b17e28fbe53a4cf95ce670ebf.jpg" title="Бельгийская овчарка тервюрен">
+           <div class="lazy-load" data-alt="Бельгийская овчарка тервюрен" data-class="article_pic" data-original="/upload/resize_cache/iblock/7b1/512_342_2/7b106b9b17e28fbe53a4cf95ce670ebf.jpg">
+            <noscript data-alt="Бельгийская овчарка тервюрен" data-class="article_pic" data-original="/upload/resize_cache/iblock/7b1/512_342_2/7b106b9b17e28fbe53a4cf95ce670ebf.jpg">
+             <img alt="Бельгийская овчарка тервюрен" class="article_pic" src="/upload/resize_cache/iblock/7b1/512_342_2/7b106b9b17e28fbe53a4cf95ce670ebf.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бельгийская овчарка тервюрен
+          </div>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бельгийская овчарка малинуа" data-fancybox="gallery" href="/upload/iblock/dfc/dfc8002e336462348f0705b706b45cb1.jpg" title="Бельгийская овчарка малинуа">
+           <div class="lazy-load" data-alt="Бельгийская овчарка малинуа" data-class="article_pic" data-original="/upload/resize_cache/iblock/dfc/512_342_2/dfc8002e336462348f0705b706b45cb1.jpg">
+            <noscript data-alt="Бельгийская овчарка малинуа" data-class="article_pic" data-original="/upload/resize_cache/iblock/dfc/512_342_2/dfc8002e336462348f0705b706b45cb1.jpg">
+             <img alt="Бельгийская овчарка малинуа" class="article_pic" src="/upload/resize_cache/iblock/dfc/512_342_2/dfc8002e336462348f0705b706b45cb1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бельгийская овчарка малинуа
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бельгийская овчарка лакенуа" data-fancybox="gallery" href="/upload/iblock/1af/1afdce9a3bee9a7764e95f2d1b0b089a.jpg" title="Бельгийская овчарка лакенуа">
+           <div class="lazy-load" data-alt="Бельгийская овчарка лакенуа" data-class="article_pic" data-original="/upload/resize_cache/iblock/1af/512_342_2/1afdce9a3bee9a7764e95f2d1b0b089a.jpg">
+            <noscript data-alt="Бельгийская овчарка лакенуа" data-class="article_pic" data-original="/upload/resize_cache/iblock/1af/512_342_2/1afdce9a3bee9a7764e95f2d1b0b089a.jpg">
+             <img alt="Бельгийская овчарка лакенуа" class="article_pic" src="/upload/resize_cache/iblock/1af/512_342_2/1afdce9a3bee9a7764e95f2d1b0b089a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бельгийская овчарка лакенуа
+          </div>
+         </div>
+        </div>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок бельгийской овчарки грюнендаль" data-fancybox="gallery" href="/upload/iblock/5f6/5f6112723ccf4010d3f180979a349d60.jpg" title="Щенок бельгийской овчарки грюнендаль">
+          <div class="lazy-load" data-alt="Щенок бельгийской овчарки грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/5f6/412_2150_1/5f6112723ccf4010d3f180979a349d60.jpg">
+           <noscript data-alt="Щенок бельгийской овчарки грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/5f6/412_2150_1/5f6112723ccf4010d3f180979a349d60.jpg">
+            <img alt="Щенок бельгийской овчарки грюнендаль" class="article_pic" height="617" src="/upload/resize_cache/iblock/5f6/412_2150_1/5f6112723ccf4010d3f180979a349d60.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок бельгийской овчарки грюнендаль
+         </div>
+        </div>
+        <p>
+         Споры касательно бельгийских овчарок не утихают до сих пор. Некоторые заводчики считают, что это разные породы собак, Федерация кинологов – что одна и та же. В целом принято придерживаться второй точки зрения.
+        </p>
+        <p>
+         Следующим этапом на пути к становлению породы стало обращение селекционеров в одну из крупнейших кинологических организаций того времени – Королевское общество Святого Губерта (RSSH). Заявка на признание породы была отклонена. Лишь после окончательной модернизации стандартов в 1901 году бельгийскую овчарку официально признали и зарегистрировали члены RSSH. Для каждой из четырёх разновидностей были сформулированы стандарты, которые закрепляли преимущественно окрас и длину шерсти.
+        </p>
+        <p>
+         С начала XX века представители породы одними из первых поступили на службу в полицию Бельгии. Одновременно с этим овчарок использовали для патрулирования границ государства и ловли контрабандистов. В 1907 году грюнендали появились на территории США. Год спустя представители породы уже активно патрулировали и улицы Франции.
+        </p>
+        <p>
+         Во время Первой мировой войны бельгийские овчарки играли не менее важную роль. Животные ответственно несли караульную службу, были военными почтальонами, помогали забрать раненых с поля боя. Именно в то время люди по-другому взглянули на породу и разглядели в ней важные черты: смелость, верность и силу. Постепенно бельгийские овчарки заслужили любовь всего мира. Однако стоит отметить, что популярность породы неравномерна. Наиболее предпочитаемыми остаются грюнендаль и малинуа.
+        </p>
+        <h2>
+         Видео: Бельгийская овчарка
+        </h2>
+        <div class="video-informer">
+         <iframe class="iframe_max" height="" src="//player.vimeo.com/video/143181399?title=0&amp;byline=0&amp;portrait=0">
+         </iframe>
+        </div>
+        <div id="bxdynamic_SyEEG1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_SyEEG1_end" style="display:none">
+        </div>
+        <h2 id="gl2">
+         Внешность бельгийской овчарки
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бельгийская овчарка малинуа" data-fancybox="gallery" href="/upload/iblock/1b0/1b02db0364502d1cff0af55c9f888d57.jpg" title="Бельгийская овчарка малинуа">
+          <div class="lazy-load" data-alt="Бельгийская овчарка малинуа" data-class="article_pic" data-original="/upload/resize_cache/iblock/1b0/412_2150_1/1b02db0364502d1cff0af55c9f888d57.jpg">
+           <noscript data-alt="Бельгийская овчарка малинуа" data-class="article_pic" data-original="/upload/resize_cache/iblock/1b0/412_2150_1/1b02db0364502d1cff0af55c9f888d57.jpg">
+            <img alt="Бельгийская овчарка малинуа" class="article_pic" height="629" src="/upload/resize_cache/iblock/1b0/412_2150_1/1b02db0364502d1cff0af55c9f888d57.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бельгийская овчарка малинуа
+         </div>
+        </div>
+        <p>
+         Бельгийская овчарка относится к большим породам собак. Эти животные выглядят элегантно и слаженно, невзирая на довольно крупные габариты. Так, высота кобелей в холке достигает 61-66 см, в то время как суки обычно вырастают до 56-61 см.
+        </p>
+        <p>
+         Масса бельгийских овчарок варьируется в пределах 20-30 кг. Допустимы незначительные отклонения от этого стандарта.
+        </p>
+        <h3>
+         Голова и череп
+        </h3>
+        <p>
+         Голова собаки сложена гармонично, но вместе с тем выглядит достаточно суховато. В меру удлинена, высоко поставлена. Череп пропорционален голове по всем параметрам. Лоб животного уплощён и не имеет ярко выраженной средней линии. Когда голова бельгийской овчарки повёрнута в профиль, становится заметно, что линии морды и лба параллельны друг другу. Скулы слабо очерчены, но одновременно с этим отличаются развитой мускулатурой. То же самое касается и надбровных дуг животного.
+        </p>
+        <h3>
+         Морда
+        </h3>
+        <p>
+         Морда овчарки ненамного длиннее черепа и плавно сужается к концу. Стоп умеренный. Ноздри широко раскрыты, мочка носа имеет насыщенную чёрную пигментацию. Тонкие губы плотно прижаты к челюстям, для слизистой характерно отсутствие розовых участков.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бельгийская овчарка тервюрен" data-fancybox="gallery" href="/upload/iblock/444/4447faabf1fd406bd991479b0d4a7a53.jpg" title="Бельгийская овчарка тервюрен">
+          <div class="lazy-load" data-alt="Бельгийская овчарка тервюрен" data-class="article_pic" data-original="/upload/resize_cache/iblock/444/412_2150_1/4447faabf1fd406bd991479b0d4a7a53.jpg">
+           <noscript data-alt="Бельгийская овчарка тервюрен" data-class="article_pic" data-original="/upload/resize_cache/iblock/444/412_2150_1/4447faabf1fd406bd991479b0d4a7a53.jpg">
+            <img alt="Бельгийская овчарка тервюрен" class="article_pic" height="617" src="/upload/resize_cache/iblock/444/412_2150_1/4447faabf1fd406bd991479b0d4a7a53.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бельгийская овчарка тервюрен
+         </div>
+        </div>
+        <p>
+         Посажены высоко, имеют почти идеальную треугольную форму. Их кончики заостряются, в то время как ушные раковины плавно скруглены у основания. Когда бельгийская овчарка чем-то встревожена, уши стоят вертикально и прямо.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Отличаются средними размерами и миндалевидной формой. Пигментация радужки коричневая, и чем она насыщеннее, тем лучше. Веки «подведены» чёрным цветом. Бельгийским овчаркам присущ оживлённый и пытливый взгляд, от которого не ускользнёт ни одна важная деталь.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Белые зубы плотно утоплены в хорошо развитых челюстях. Стандарт предусматривает ножницеобразный и прямой прикусы (при этом последний менее предпочтителен, однако всё чаще выбирается пастухами). Зубная формула полная. Отсутствие первых премоляров не считается дефектом.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Прямая и довольно удлинённая шея бельгийской овчарки поставлена высоко и характеризуется отсутствием подвеса. Расширяется к лопаткам, имеет плавно изогнутый загривок.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда овчарки малинуа" data-fancybox="gallery" href="/upload/iblock/c71/c7186639f20049e949f78c8738ed854c.jpg" title="Морда овчарки малинуа">
+          <div class="lazy-load" data-alt="Морда овчарки малинуа" data-class="article_pic" data-original="/upload/iblock/c71/c7186639f20049e949f78c8738ed854c.jpg">
+           <noscript data-alt="Морда овчарки малинуа" data-class="article_pic" data-original="/upload/iblock/c71/c7186639f20049e949f78c8738ed854c.jpg">
+            <img alt="Морда овчарки малинуа" class="article_pic" src="/upload/iblock/c71/c7186639f20049e949f78c8738ed854c.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда овчарки малинуа
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Массивное туловище животного не выглядит тяжёлым и отличается соблюдением определённых пропорций. Так, у кобелей длина корпуса соответствует высоте; у сук первый параметр может быть несколько больше. Грудная клетка отличается умеренной шириной, но вместе с тем она объёмная, как и у всех собак, которые характеризуются прекрасной выносливостью. Рёбра плавно изогнуты. Выраженная холка переходит в прямую линию верха. Живот сравнительно подтянут, круп расположен под незначительным наклоном. Мускулатура рельефная.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бельгийская овчарка грюнендаль" data-fancybox="gallery" href="/upload/iblock/cf2/cf2e8b09f16a835a18b0c5cb6cf4b3f5.jpg" title="Бельгийская овчарка грюнендаль">
+          <div class="lazy-load" data-alt="Бельгийская овчарка грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/cf2/412_2150_1/cf2e8b09f16a835a18b0c5cb6cf4b3f5.jpg">
+           <noscript data-alt="Бельгийская овчарка грюнендаль" data-class="article_pic" data-original="/upload/resize_cache/iblock/cf2/412_2150_1/cf2e8b09f16a835a18b0c5cb6cf4b3f5.jpg">
+            <img alt="Бельгийская овчарка грюнендаль" class="article_pic" height="627" src="/upload/resize_cache/iblock/cf2/412_2150_1/cf2e8b09f16a835a18b0c5cb6cf4b3f5.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бельгийская овчарка грюнендаль
+         </div>
+        </div>
+        <p>
+         Средней длины, имеет широкое основание. В спокойном состоянии животное держит хвост опущенным, лишь кончик слегка изогнут вверх на уровне скакательных суставов. В движении же хвост приподнимается, при этом не искривляясь и не принимая форму крючка.
+        </p>
+        <h3>
+         Передние конечности
+        </h3>
+        <p>
+         Сильные конечности овчарки имеют прочный костяк и отлично развитую мускулатуру. Длинные лопатки и плечи образуют довольно широкий угол для движения локтей. Предплечья окружены крепкими мышцами. Короткие пясти переходят в округлые лапы с изогнутыми и плотно сжатыми пальцами. Прочные когти имеют насыщенную тёмную пигментацию.
+        </p>
+        <h3>
+         Задние конечности
+        </h3>
+        <p>
+         Расположены перпендикулярно по отношению к земле. Широкие бёдра и голени отличаются умеренной мускулатурой. При этом последние изогнуты к скакательным суставам в достаточной мере. Наличие прибылых пальцев нежелательно. Лапы имеют почти овальную форму за счёт сжатых пальцев, которые заканчиваются мясистыми подушечками.
+        </p>
+        <h3>
+         Манера движения
+        </h3>
+        <p>
+         Бельгийская овчарка весьма активна и в движении имеет привычку захватывать значительное пространство. При этом ввиду своего темперамента собака не придерживается прямого направления. Предпочитаемый темп – спокойный шаг и рысь, реже – галоп. Движения пружинистые и оживлённые.
+        </p>
+        <h3>
+         Шерстяной покров
+        </h3>
+        <p>
+         Несмотря на существование четырёх категорий породы, во всех случаях шерсть собак отличается плотностью и густотой. На этом сходства разновидностей бельгийской овчарки заканчиваются:
+        </p>
+        <p>
+         1. Грюнендаль – обладатель длинной гладкой шерсти с густым подшёрстком, который защищает собаку от неблагоприятной погоды. Глянцевый блеск волосков отсутствует.
+        </p>
+        <p>
+         2. Лакенуа отличается жёсткой и грубоватой на ощупь шерстью, которая при этом часто взъерошена. На конечностях и морде животного шерстяной покров значительно короче.
+        </p>
+        <p>
+         3. Малинуа – короткошёрстный тип породы. Более длинная шерсть допустима вокруг шеи животного (где образует небольшой воротник от ушей до горла), на бёдрах (очёсы) и хвосте.
+        </p>
+        <p>
+         4. Тервюрен по типу шерсти похож на грюнендаля, однако на голове и нижней части конечностей шерстяной покров значительно короче. На морде заметны брови, усы и борода.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бельгийская овчарка тервюрен" data-fancybox="gallery" href="/upload/iblock/fba/fba8186f3b85966887429e202a637626.jpg" title="Бельгийская овчарка тервюрен">
+           <div class="lazy-load" data-alt="Бельгийская овчарка тервюрен" data-class="article_pic" data-original="/upload/resize_cache/iblock/fba/512_342_2/fba8186f3b85966887429e202a637626.jpg">
+            <noscript data-alt="Бельгийская овчарка тервюрен" data-class="article_pic" data-original="/upload/resize_cache/iblock/fba/512_342_2/fba8186f3b85966887429e202a637626.jpg">
+             <img alt="Бельгийская овчарка тервюрен" class="article_pic" src="/upload/resize_cache/iblock/fba/512_342_2/fba8186f3b85966887429e202a637626.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бельгийская овчарка тервюрен
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бельгийская овчарка малинуа" data-fancybox="gallery" href="/upload/iblock/0b7/0b7ddb1fc213d8857eaafb84a466cb4c.jpg" title="Бельгийская овчарка малинуа">
+           <div class="lazy-load" data-alt="Бельгийская овчарка малинуа" data-class="article_pic" data-original="/upload/resize_cache/iblock/0b7/512_342_2/0b7ddb1fc213d8857eaafb84a466cb4c.jpg">
+            <noscript data-alt="Бельгийская овчарка малинуа" data-class="article_pic" data-original="/upload/resize_cache/iblock/0b7/512_342_2/0b7ddb1fc213d8857eaafb84a466cb4c.jpg">
+             <img alt="Бельгийская овчарка малинуа" class="article_pic" src="/upload/resize_cache/iblock/0b7/512_342_2/0b7ddb1fc213d8857eaafb84a466cb4c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бельгийская овчарка малинуа
+          </div>
+         </div>
+        </div>
+        <h3>
+         Окрас
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок овчарки тервюрен" data-fancybox="gallery" href="/upload/iblock/9b8/9b87fd7b2bbab9d78e91af7f68074333.jpg" title="Щенок овчарки тервюрен">
+          <div class="lazy-load" data-alt="Щенок овчарки тервюрен" data-class="article_pic" data-original="/upload/resize_cache/iblock/9b8/412_2150_1/9b87fd7b2bbab9d78e91af7f68074333.jpg">
+           <noscript data-alt="Щенок овчарки тервюрен" data-class="article_pic" data-original="/upload/resize_cache/iblock/9b8/412_2150_1/9b87fd7b2bbab9d78e91af7f68074333.jpg">
+            <img alt="Щенок овчарки тервюрен" class="article_pic" height="577" src="/upload/resize_cache/iblock/9b8/412_2150_1/9b87fd7b2bbab9d78e91af7f68074333.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок овчарки тервюрен
+         </div>
+        </div>
+        <p>
+         Окрас животного зависит от его принадлежности к той или иной категории:
+        </p>
+        <p>
+         1. Шерсть грюнендаля насыщенного чёрного цвета. При этом на груди и пальцах могут присутствовать белые поинты.
+        </p>
+        <p>
+         2. Лакенуа имеет рыжеватый с вкраплениями белого окрас. На морде и хвосте допустим более тёмный оттенок шерсти.
+        </p>
+        <p>
+         3. Малинуа – обладатели шерсти рыже-угольного цвета. Морда и уши животного обрамлены чёрной «маской».
+        </p>
+        <p>
+         4. Окрас тервюрена похож на малинуа, но шерсть собаки такая же длинная, как и у грюнендаля. Грудь и пальцы могут быть отмечены белым цветом.
+        </p>
+        <h3>
+         Возможные пороки
+        </h3>
+        <p>
+         Дефектом считают любое отклонение от стандарта породы. Среди самых распространённых:
+        </p>
+        <ul>
+         <li>
+          частичная пигментация век, мочки носа и губ;
+         </li>
+         <li>
+          трусливое или агрессивное поведение;
+         </li>
+         <li>
+          ослабленные скакательные суставы;
+         </li>
+         <li>
+          светлая пигментация радужки глаз;
+         </li>
+         <li>
+          асимметричная «маска» на морде;
+         </li>
+         <li>
+          отсутствие густого подшёрстка;
+         </li>
+         <li>
+          незначительный недокус;
+         </li>
+         <li>
+          крючкообразный хвост;
+         </li>
+         <li>
+          прямые плечи.
+         </li>
+        </ul>
+        <h3>
+         К дисквалифицирующим порокам бельгийских овчарок относят:
+        </h3>
+        <ul>
+         <li>
+          купированный хвост или его отсутствие с рождения;
+         </li>
+         <li>
+          чрезмерно агрессивный или трусливый характер;
+         </li>
+         <li>
+          белые поинты по телу (кроме пальцев и груди);
+         </li>
+         <li>
+          искусственно поставленные или висячие уши;
+         </li>
+         <li>
+          ярко выраженный перекус или недокус;
+         </li>
+         <li>
+          отсутствие трёх премоляров;
+         </li>
+         <li>
+          крипторхизм.
+         </li>
+        </ul>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/328/32872135730c563a20abeb543354bfe3.jpg" title="">
+          <div class="lazy-load" data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/328/1024_2150_1/32872135730c563a20abeb543354bfe3.jpg">
+           <noscript data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/328/1024_2150_1/32872135730c563a20abeb543354bfe3.jpg">
+            <img alt="Бельгийская овчарка" class="article_pic" src="/upload/resize_cache/iblock/328/1024_2150_1/32872135730c563a20abeb543354bfe3.jpg"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер бельгийской овчарки
+        </h2>
+        <p>
+         Бельгийская овчарка – весьма многогранная порода по той причине, что каждая из четырёх категорий отличается своим неповторимым характером. Сначала это не бросается в глаза. Однако при непосредственном общении с бельгийскими овчарками всех типов вы без труда заметите, что они ведут себя немного по-разному, хотя в целом и сочетают отдельные характеристики друг друга.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бельгийская овчарка с телочками" data-fancybox="gallery" href="/upload/iblock/211/211f5f19cf6d20820142a7c9552701f4.jpg" title="Бельгийская овчарка с телочками">
+          <div class="lazy-load" data-alt="Бельгийская овчарка с телочками" data-class="article_pic" data-original="/upload/resize_cache/iblock/211/412_2150_1/211f5f19cf6d20820142a7c9552701f4.jpg">
+           <noscript data-alt="Бельгийская овчарка с телочками" data-class="article_pic" data-original="/upload/resize_cache/iblock/211/412_2150_1/211f5f19cf6d20820142a7c9552701f4.jpg">
+            <img alt="Бельгийская овчарка с телочками" class="article_pic" height="309" src="/upload/resize_cache/iblock/211/412_2150_1/211f5f19cf6d20820142a7c9552701f4.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бельгийская овчарка с телочками
+         </div>
+        </div>
+        <p>
+         Грюнендаль идеально подходит на роль сторожевой собаки. От пристального внимания овчарки не ускользнёт ни один правонарушитель, о появлении которого она известит окружающих громогласным лаем. Чувство страха или робости по отношению к незнакомым людям грюнендалю не присуще. Впрочем, в присутствии семьи овчарка проявляет осторожность и не сразу проникается доверием к человеку, которого видит впервые в жизни. В остальном грюнендаль – подвижное животное, которое славится склонностью опекать и заботиться о каждом члене своей семьи. Идеальным окружением для этой бельгийской овчарки станут люди, предпочитающие вести активный образ жизни и тем самым предоставляющие ей возможность вдоволь размять свои лапы. В противном случае грюнендаль будет выплёскивать накопившуюся энергию самостоятельно – и не всегда в правильное русло. Подарите своему питомцу игру с мячом или фрисби, займите его отработкой пастушьих и поисковых навыков – и счастью вашего бельгийца не будет границ!
+        </p>
+        <p>
+         Лакенуа сочетает в себе противоречивые качества: игривость и серьёзность, бдительность и отрешённость, стремление свернуть горы и желание улечься калачиком у ног хозяина. Подобно грюнендалю, эта разновидность бельгийской овчарки прекрасно справляется со своими сторожевыми обязанностями и в случае надобности вступит в яростную схватку с противником, желая защитить хозяина. Лакенуа прекрасно ладит с другими домашними животными в том случае, если вырос бок о бок с ними. Впрочем, от декоративных крыс, шиншилл, хомяков или попугаев лучше воздержаться. Что касается времяпровождения, бельгийские лакенуа предпочитают активные прогулки на свежем воздухе, во время которых необходимо давать животному определённые физические нагрузки.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бельгийская овчарка с ребенком" data-fancybox="gallery" href="/upload/iblock/9df/9df56f58680cf4a0cc4208d3879440d3.jpg" title="Бельгийская овчарка с ребенком">
+          <div class="lazy-load" data-alt="Бельгийская овчарка с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/9df/412_2150_1/9df56f58680cf4a0cc4208d3879440d3.jpg">
+           <noscript data-alt="Бельгийская овчарка с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/9df/412_2150_1/9df56f58680cf4a0cc4208d3879440d3.jpg">
+            <img alt="Бельгийская овчарка с ребенком" class="article_pic" height="274" src="/upload/resize_cache/iblock/9df/412_2150_1/9df56f58680cf4a0cc4208d3879440d3.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бельгийская овчарка с ребенком
+         </div>
+        </div>
+        <p>
+         Малинуа, как и его собратья, нуждается в регулярной «встряске» для выплеска накопившейся энергии. В остальном это вполне уравновешенная и послушная собака, которая будет следовать за хозяином по пятам и жадно ловить каждое его слово. Бельгийский малинуа не тот питомец, который предпочтёт одиночество и умиротворённый сон в отдалённом уголке апартаментов. Владелец овчарки должен уделять ей как можно больше внимания, оставаясь при этом строгим, но любящим хозяином. Впрочем, первое может и не понадобиться: среди всех разновидностей породы малинуа снискал славу собаки с самым покладистым характером.
+        </p>
+        <p>
+         Тервюрен же, напротив, известен своим импульсивным и живым темпераментом. Примечателен тот факт, что изначально эти животные отличались робким и застенчивым характером, который удалось искоренить практически полностью в результате правильного племенного отбора. Бельгийские тервюрены активно реагируют на любой стимул, поэтому в мгновение ока ввязываются в весёлую игру с хозяином или же в погоню за его обидчиком. К слову, эта овчарка испытывает крайнюю степень привязанности лишь к одному из членов семьи, поэтому стать этим самым человеком – ваша главная задача. Тервюрены не переносят одиночества и всегда стараются компенсировать его разорванными комнатными тапочками или разбитой вазой.
+        </p>
+        <p>
+         Из общих черт характера, присущих всем разновидностям породы, выделяют:
+        </p>
+        <ul>
+         <li>
+          умение собаки самостоятельно принимать решения;
+         </li>
+         <li>
+          чувствительность – бельгийская овчарка остро реагирует на любое критическое замечание хозяина;
+         </li>
+         <li>
+          отличную адаптацию к новым условиям;
+         </li>
+         <li>
+          склонность доминировать над другими животными.
+         </li>
+        </ul>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Бельгийская овчарка относится к тем породам собак, которые нуждаются в должной социализации. При этом её нужно начинать со щенячьего возраста. Вооружитесь проницательностью: именно она поможет прочувствовать и понять психологию питомца. Если вы не уверены в своих силах, обратитесь за консультацией к собаководу с многолетним опытом разведения и содержания бельгийских овчарок. Заметьте: суки более покладистые и спокойные, нежели кобели, которые любят демонстрировать независимый характер.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Тренировка бельгийской овчарка" data-fancybox="gallery" href="/upload/iblock/903/903ff231bc71c61713fd4ca84154c857.jpg" title="Тренировка бельгийской овчарка">
+          <div class="lazy-load" data-alt="Тренировка бельгийской овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/903/412_2150_1/903ff231bc71c61713fd4ca84154c857.jpg">
+           <noscript data-alt="Тренировка бельгийской овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/903/412_2150_1/903ff231bc71c61713fd4ca84154c857.jpg">
+            <img alt="Тренировка бельгийской овчарка" class="article_pic" height="578" src="/upload/resize_cache/iblock/903/412_2150_1/903ff231bc71c61713fd4ca84154c857.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Тренировка бельгийской овчарка
+         </div>
+        </div>
+        <p>
+         Рекомендуется начинать воспитание щенка с самого первого дня его появления в доме. Поначалу не стоит утомлять малыша долгими прогулками и активными играми. Если бельгиец блаженно растянулся на любимой подстилке и предвкушает долгожданный отдых, не нужно понапрасну беспокоить малыша. Ему ещё предстоит научиться отзываться на кличку, шагать рядом с вами на шлейке и не справлять нужду раньше установленного времени.
+        </p>
+        <p>
+         Кличка вашего питомца должна быть краткой и ассоциироваться только с положительными эмоциями. Не обращайтесь к щенку по имени, делая замечание или ругая за испорченные вещи. В этом случае малыш с неохотой отзовётся на кличку, поскольку заранее будет ожидать от вас неприятных действий.
+        </p>
+        <p>
+         Что касается дрессировки бельгийской овчарки, здесь присутствуют свои нюансы, которые зависят от разновидности породы.
+        </p>
+        <p>
+         Для грюнендаля нет занятия лучше, чем выполнять поставленные перед ним задачи. Собака воспринимает дрессировку как игру с пользой, поэтому не создаёт дополнительных проблем. Впрочем, независимый характер животного может стать препятствием на пути к достижению цели (особенно для мягкого человека). Начните дрессировку в как можно более раннем возрасте и воздержитесь от длительных перерывов, иначе никогда не добьётесь послушания от вашего питомца. В редких случаях может потребоваться вмешательство профессионала, который направит деятельность бельгийской овчарки в нужное русло.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/15d/15ded21d40fa279f14911e972abfa914.jpg" title="">
+          <div class="lazy-load" data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/15d/412_2150_1/15ded21d40fa279f14911e972abfa914.jpg">
+           <noscript data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/15d/412_2150_1/15ded21d40fa279f14911e972abfa914.jpg">
+            <img alt="Бельгийская овчарка" class="article_pic" height="452" src="/upload/resize_cache/iblock/15d/412_2150_1/15ded21d40fa279f14911e972abfa914.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Лакенуа поддаётся многим типам дрессировки и с радостью берётся за предложенную хозяином деятельность, будь то бег с препятствиями или погоня за добычей. Эта собака славится своей неутомимостью: скорее, вам надоест изобретать для питомца новые задания. Положительные методы дрессировки – ваше главное оружие. Излишняя настойчивость и строгий тон возымеют обратный эффект: животное не будет прислушиваться к вашим командам. Бельгийский лакенуа – самый податливый материал: из него можно воспитать полицейскую собаку, отважного спасателя или замечательного охранника.
+        </p>
+        <p>
+         Помимо грамотной дрессировки, малинуа нуждается в регулярных тренировках на площадке молодняка. Так собака не только привыкнет к общению со своими сородичами, но и научится правильно выполнять команды под руководством профессионального тренера. Малинуа быстро усваивают новую информацию благодаря своей наблюдательности и высокоразвитому интеллекту. Впрочем, эти же черты могут сыграть с владельцем животного злую шутку, если он не сможет уделять достаточно времени овчарке. Как в случае с грюнендалем и лакенуа, бельгийские малинуа нуждаются в ранней дрессировке.
+        </p>
+        <p>
+         Тервюрен стремится к доминированию и самостоятельности больше остальных разновидностей бельгийских овчарок. Эти собаки нуждаются в интенсивном курсе дрессировки послушания. Необходимо избегать чрезмерного деспотизма и грубости: животное воспримет такое поведение хозяина в штыки – и о беспрекословном послушании можно забыть. Последовательность, терпение и справедливость – ваши верные спутники в дрессировке питомца.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Бельгийская овчарка тервюрен" data-fancybox="gallery" href="/upload/iblock/af9/af9b8b58e7d0671a658cf6e6a1bb66c1.jpg" title="Бельгийская овчарка тервюрен">
+          <div class="lazy-load" data-alt="Бельгийская овчарка тервюрен" data-class="article_pic" data-original="/upload/resize_cache/iblock/af9/1024_2150_1/af9b8b58e7d0671a658cf6e6a1bb66c1.jpg">
+           <noscript data-alt="Бельгийская овчарка тервюрен" data-class="article_pic" data-original="/upload/resize_cache/iblock/af9/1024_2150_1/af9b8b58e7d0671a658cf6e6a1bb66c1.jpg">
+            <img alt="Бельгийская овчарка тервюрен" class="article_pic" src="/upload/resize_cache/iblock/af9/1024_2150_1/af9b8b58e7d0671a658cf6e6a1bb66c1.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бельгийская овчарка тервюрен
+         </div>
+        </div>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <p>
+         Уход за бельгийской овчаркой весьма трудоёмкий – в основном из-за шерсти собаки. Представители породы линяют дважды в год – летом и зимой, поэтому в этот период необходимо тщательнее расчёсывать собаку. В остальное время достаточно повторять процедуру один-два раза в неделю в зависимости от возраста животного. При этом не рекомендуется приобретать гребень с частыми зубьями: эти приспособления не обеспечат деликатного удаления отмерших волосков. Расчёсывая собаку, ведите гребень неторопливо и по направлению шерсти: это поможет избежать вырванных клоков.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Я тут немного испачкался" data-fancybox="gallery" href="/upload/iblock/903/90382689f539dd1621d2d287e53bf0bc.jpg" title="Я тут немного испачкался">
+          <div class="lazy-load" data-alt="Я тут немного испачкался" data-class="article_pic" data-original="/upload/resize_cache/iblock/903/412_2150_1/90382689f539dd1621d2d287e53bf0bc.jpg">
+           <noscript data-alt="Я тут немного испачкался" data-class="article_pic" data-original="/upload/resize_cache/iblock/903/412_2150_1/90382689f539dd1621d2d287e53bf0bc.jpg">
+            <img alt="Я тут немного испачкался" class="article_pic" height="317" src="/upload/resize_cache/iblock/903/412_2150_1/90382689f539dd1621d2d287e53bf0bc.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Я тут немного испачкался
+         </div>
+        </div>
+        <p>
+         Обратите внимание: уход за бельгийской овчаркой варьируется в зависимости от того, к какой категории относится собака.
+        </p>
+        <p>
+         Грюнендаль склонен к очень обильной линьке, поэтому будьте готовы находить шерсть везде: на одежде, в постели и даже на кухонном столе. В этот период следует расчёсывать собаку каждый день.
+        </p>
+        <p>
+         Лакенуа – счастливого обладателя курчавой шерсти – необходимо подстригать дважды в год, чтобы животное выглядело аккуратным и ухоженным. Для расчёсывания лучше приобрести массажную щётку с жёсткими и редкими зубьями.
+        </p>
+        <p>
+         Из всех типов бельгийских овчарок, малинуа – самый неприхотливый в уходе, поскольку его шерсть короткая и гладкая. Расчёсывайте вашего питомца один раз в неделю. Этого достаточно для того, чтобы удалить отмершие волоски и придать собаке презентабельный вид.
+        </p>
+        <p>
+         Двойная шерсть тервюрена склонна к частому образованию колтунов, поэтому рекомендуется расчёсывать овчарку, по крайней мере, дважды в неделю. К тому же вам придётся периодически выстригать шерсть на лапах между пальцами.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мне нужны витамины!" data-fancybox="gallery" href="/upload/iblock/f19/f1984d0f3abae1ac402cb6b8a5c7fd98.jpg" title="Мне нужны витамины!">
+          <div class="lazy-load" data-alt="Мне нужны витамины!" data-class="article_pic" data-original="/upload/resize_cache/iblock/f19/412_2150_1/f1984d0f3abae1ac402cb6b8a5c7fd98.jpg">
+           <noscript data-alt="Мне нужны витамины!" data-class="article_pic" data-original="/upload/resize_cache/iblock/f19/412_2150_1/f1984d0f3abae1ac402cb6b8a5c7fd98.jpg">
+            <img alt="Мне нужны витамины!" class="article_pic" height="274" src="/upload/resize_cache/iblock/f19/412_2150_1/f1984d0f3abae1ac402cb6b8a5c7fd98.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мне нужны витамины!
+         </div>
+        </div>
+        <p>
+         Старайтесь купать бельгийскую овчарку как можно реже: даже специальные шампуни могут привести к тому, что шерсть животного утратит жёсткость и приятную матовость. Если вам кажется, что питомец воняет «псиной», используйте специальные средства для ликвидации неприятного запаха.
+        </p>
+        <p>
+         Регулярно осматривайте глаза и уши собаки на предмет выделений. Для их удаления необходимо использовать ватный тампон, смоченный в тёплой воде или чайной заварке. В случае инфекционных заболеваний следует немедленно обратиться к ветеринару.
+        </p>
+        <p>
+         Поскольку бельгийская овчарка проводит много времени на свежем воздухе, её когти стачиваются самостоятельно. В редких случаях вам может понадобиться когтерез для крупных пород. После укорачивания когтей пройдитесь по их острым краям пилочкой, чтобы убрать зазубрины.
+        </p>
+        <p>
+         Уход за ротовой полостью животного не менее важен. Для чистки зубов необходимо приобрести специальную щётку или насадку на палец. Категорически не рекомендуется использовать «человеческую» зубную пасту: гигиенические средства для собак продаются практически в каждом зоомагазине.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Меня так сильно любят ❤" data-fancybox="gallery" href="/upload/iblock/420/420864061965f35f030b7e2bb4cc8a92.jpg" title="Меня так сильно любят ❤">
+          <div class="lazy-load" data-alt="Меня так сильно любят ❤" data-class="article_pic" data-original="/upload/resize_cache/iblock/420/412_2150_1/420864061965f35f030b7e2bb4cc8a92.jpg">
+           <noscript data-alt="Меня так сильно любят ❤" data-class="article_pic" data-original="/upload/resize_cache/iblock/420/412_2150_1/420864061965f35f030b7e2bb4cc8a92.jpg">
+            <img alt="Меня так сильно любят ❤" class="article_pic" height="578" src="/upload/resize_cache/iblock/420/412_2150_1/420864061965f35f030b7e2bb4cc8a92.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Меня так сильно любят ❤
+         </div>
+        </div>
+        <p>
+         Что касается рациона бельгийской овчарки, он должен отличаться разнообразием. Полноценное развитие собаки обеспечивают белки животного и растительного происхождения. Не менее важны и углеводы – главный источник энергии вашего любимца. Аналогичную роль играют и жиры. Если вы предпочитаете кормить собаку натуральной пищей, необходимо «разбавить» её витаминно-минеральным комплексом, без которого организм животного не будет функционировать в должной степени. Обратите внимание и на то, что сухие корма плохо усваиваются пищеварительной системой овчарки и могут вызывать вздутие или спазмы.
+        </p>
+        <p>
+         В кормлении животного важно придерживаться определённого режима. Постарайтесь наполнять миску любимца в строго установленное время – и вам не придётся чувствовать себя чёрствым человеком, игнорируя жалобный взгляд собаки, направленный на очередное лакомство.
+        </p>
+        <h3>
+         Не стоит угощать бельгийскую овчарку:
+        </h3>
+        <ul>
+         <li>
+          речной рыбой в любом виде;
+         </li>
+         <li>
+          молочными продуктами;
+         </li>
+         <li>
+          сырым мясом и яйцами;
+         </li>
+         <li>
+          плодами с косточками;
+         </li>
+         <li>
+          трубчатыми костями;
+         </li>
+         <li>
+          дрожжевым тестом;
+         </li>
+         <li>
+          сладостями;
+         </li>
+         <li>
+          бобовыми.
+         </li>
+        </ul>
+        <p>
+         В миске животного всегда должна находиться чистая вода, которую необходимо регулярно менять. Нежелательно давать воду прямо из-под крана; дайте ей настояться в течение 6-8 часов.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Бельгийская овчарка малинуа" data-fancybox="gallery" href="/upload/iblock/a4c/a4c1e681a9ca5f291dcb4329c69d0dee.jpg" title="Бельгийская овчарка малинуа">
+          <div class="lazy-load" data-alt="Бельгийская овчарка малинуа" data-class="article_pic" data-original="/upload/iblock/a4c/a4c1e681a9ca5f291dcb4329c69d0dee.jpg">
+           <noscript data-alt="Бельгийская овчарка малинуа" data-class="article_pic" data-original="/upload/iblock/a4c/a4c1e681a9ca5f291dcb4329c69d0dee.jpg">
+            <img alt="Бельгийская овчарка малинуа" class="article_pic" src="/upload/iblock/a4c/a4c1e681a9ca5f291dcb4329c69d0dee.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бельгийская овчарка малинуа
+         </div>
+        </div>
+        <h2 id="gl6">
+         Здоровье и болезни бельгийской овчарки
+        </h2>
+        <p>
+         Бельгийская овчарка – обладатель крепкого иммунитета, который поддерживается своевременной вакцинацией животного и регулярными осмотрами у ветеринара. Однако некоторые заболевания всё же встречаются чаще остальных. Среди них можно выделить:
+        </p>
+        <ul>
+         <li>
+          дефицит гормонов щитовидки;
+         </li>
+         <li>
+          спазмы и вздутие живота;
+         </li>
+         <li>
+          дисплазию суставов;
+         </li>
+         <li>
+          заворот кишок;
+         </li>
+         <li>
+          эпилепсию;
+         </li>
+         <li>
+          катаракту.
+         </li>
+        </ul>
+        <p>
+         Бельгийские овчарки подвержены ожирению, поэтому не стоит перекармливать своего любимца, как бы слезливо он ни просил наполнить миску.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Выбор четверолапого карапуза – ответственный шаг независимо от того, какой породе вы в итоге отдали предпочтение. В первую очередь попросите заводчика познакомить вас с родителями щенков. Это позволит понять, на какие качества и черты характера можно рассчитывать, беря малыша из этого помёта. Обратите внимание и на возраст щенков. В идеале их отлучают от матери в два месяца. К тому времени у бельгийской овчарки уже сформирована целостная картина мира, а психическое здоровье не вызывает сомнений.
+        </p>
+        <p>
+         Теперь можно приступать к знакомству с мохнатыми карапузами. Ищите самого активного и бойкого: он определённо не доставит вам хлопот, часто болея или не желая принимать участие в играх и воспитании. Излишняя пугливость и вялое поведение должны насторожить потенциального владельца бельгийской овчарки.
+        </p>
+        <p>
+         И напоследок: не стоит покупать щенка на одном из птичьих рынков, где непременно постараются привлечь невысокой ценой. В будущем вы потратите намного больше денег, путешествуя по лучшим ветеринарным клиникам города.
+        </p>
+        <h2>
+         Фото щенков бельгийской овчарки
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4bf/4bf531b7cf0fa58f6231f0a918441e06.jpg" title="">
+           <div class="lazy-load" data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/4bf/380_264_2/4bf531b7cf0fa58f6231f0a918441e06.jpg">
+            <noscript data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/4bf/380_264_2/4bf531b7cf0fa58f6231f0a918441e06.jpg">
+             <img alt="Бельгийская овчарка" class="article_pic" src="/upload/resize_cache/iblock/4bf/380_264_2/4bf531b7cf0fa58f6231f0a918441e06.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/051/05104d1ad602d50f6e010d7ab2203517.jpg" title="">
+           <div class="lazy-load" data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/051/380_264_2/05104d1ad602d50f6e010d7ab2203517.jpg">
+            <noscript data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/051/380_264_2/05104d1ad602d50f6e010d7ab2203517.jpg">
+             <img alt="Бельгийская овчарка" class="article_pic" src="/upload/resize_cache/iblock/051/380_264_2/05104d1ad602d50f6e010d7ab2203517.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a94/a94502a2b11b6794f6dbf8a407a04d80.jpg" title="">
+           <div class="lazy-load" data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/a94/380_264_2/a94502a2b11b6794f6dbf8a407a04d80.jpg">
+            <noscript data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/a94/380_264_2/a94502a2b11b6794f6dbf8a407a04d80.jpg">
+             <img alt="Бельгийская овчарка" class="article_pic" src="/upload/resize_cache/iblock/a94/380_264_2/a94502a2b11b6794f6dbf8a407a04d80.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/272/272bd3ba84709efed733d92d55d1d265.jpg" title="">
+           <div class="lazy-load" data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/272/380_264_2/272bd3ba84709efed733d92d55d1d265.jpg">
+            <noscript data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/272/380_264_2/272bd3ba84709efed733d92d55d1d265.jpg">
+             <img alt="Бельгийская овчарка" class="article_pic" src="/upload/resize_cache/iblock/272/380_264_2/272bd3ba84709efed733d92d55d1d265.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5ea/5eaa8975c3a3a191054871bc8a10b2d7.jpg" title="">
+           <div class="lazy-load" data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/5ea/380_264_2/5eaa8975c3a3a191054871bc8a10b2d7.jpg">
+            <noscript data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/5ea/380_264_2/5eaa8975c3a3a191054871bc8a10b2d7.jpg">
+             <img alt="Бельгийская овчарка" class="article_pic" src="/upload/resize_cache/iblock/5ea/380_264_2/5eaa8975c3a3a191054871bc8a10b2d7.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/472/472ba6849d9d382e885407fd627cd05a.jpg" title="">
+           <div class="lazy-load" data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/472/380_264_2/472ba6849d9d382e885407fd627cd05a.jpg">
+            <noscript data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/472/380_264_2/472ba6849d9d382e885407fd627cd05a.jpg">
+             <img alt="Бельгийская овчарка" class="article_pic" src="/upload/resize_cache/iblock/472/380_264_2/472ba6849d9d382e885407fd627cd05a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d08/d0867afe13b94c8bbd40cb5661f0401e.jpg" title="">
+           <div class="lazy-load" data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/d08/380_264_2/d0867afe13b94c8bbd40cb5661f0401e.jpg">
+            <noscript data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/d08/380_264_2/d0867afe13b94c8bbd40cb5661f0401e.jpg">
+             <img alt="Бельгийская овчарка" class="article_pic" src="/upload/resize_cache/iblock/d08/380_264_2/d0867afe13b94c8bbd40cb5661f0401e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/890/890b2dd463321c113735e5971d0642d7.jpg" title="">
+           <div class="lazy-load" data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/890/380_264_2/890b2dd463321c113735e5971d0642d7.jpg">
+            <noscript data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/890/380_264_2/890b2dd463321c113735e5971d0642d7.jpg">
+             <img alt="Бельгийская овчарка" class="article_pic" src="/upload/resize_cache/iblock/890/380_264_2/890b2dd463321c113735e5971d0642d7.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/eeb/eeb976b93d069c37a75557e0003e4525.jpg" title="">
+           <div class="lazy-load" data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/eeb/380_264_2/eeb976b93d069c37a75557e0003e4525.jpg">
+            <noscript data-alt="Бельгийская овчарка" data-class="article_pic" data-original="/upload/resize_cache/iblock/eeb/380_264_2/eeb976b93d069c37a75557e0003e4525.jpg">
+             <img alt="Бельгийская овчарка" class="article_pic" src="/upload/resize_cache/iblock/eeb/380_264_2/eeb976b93d069c37a75557e0003e4525.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Сколько стоит бельгийская овчарка
+        </h2>
+        <p>
+         Эта порода примечательна тем, что цена собаки определяется не только классом (шоу, брид или пэт), но и разновидностью, к которой принадлежит овчарка. Щенки бельгийского грюнендаля обходятся своим будущим владельцам в 25 тысяч рублей и выше. Цена малинуа достигает 40 тысяч, а тервюрена – до 60 тысяч рублей. При этом щенки лакенуа требуют поистине баснословных денег: это наименее распространённый тип бельгийской овчарки на территории России.
+        </p>
+        <p>
+         Ценовые показатели изменяются в зависимости от региона и питомника, где разводят собак, поэтому не отчаивайтесь: вам наверняка встретится то предложение, которое идеально соответствует ожиданиям!
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения бельгийской овчарки на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/belgiyskaya-ovcharka/forum/">
+        Перейти на
+        форум бельгийской овчарки
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Бельгийская овчарка" src="/upload/iblock/139/139d3d3ac38deaf8ec80dac1ee2e70e6.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/belgiyskaya-ovcharka/">
+          Бельгийская овчарка
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/belgiyskaya-ovcharka/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/belgiyskaya-ovcharka/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/belgiyskaya-ovcharka/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/belgiyskaya-ovcharka/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/belgiyskaya-ovcharka/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/belgiyskaya-ovcharka/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/toy-foksterer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Той-фокстерьер" data-original="/upload/resize_cache/iblock/7d7/100_100_1/8fyyjzdkhdtafij2cxsa66dp03kfmjxy.jpg">
+          <noscript data-alt="Той-фокстерьер" data-original="/upload/resize_cache/iblock/7d7/100_100_1/8fyyjzdkhdtafij2cxsa66dp03kfmjxy.jpg">
+           <img alt="Той-фокстерьер" src="/upload/resize_cache/iblock/7d7/100_100_1/8fyyjzdkhdtafij2cxsa66dp03kfmjxy.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Той-фокстерьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/kokapu/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Кокапу" data-original="/upload/resize_cache/iblock/aa4/100_100_1/octqp7b7eis2l972tlwifol826ij62w8.jpg">
+          <noscript data-alt="Кокапу" data-original="/upload/resize_cache/iblock/aa4/100_100_1/octqp7b7eis2l972tlwifol826ij62w8.jpg">
+           <img alt="Кокапу" src="/upload/resize_cache/iblock/aa4/100_100_1/octqp7b7eis2l972tlwifol826ij62w8.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Кокапу
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/angliyskiy-setter/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Английский сеттер" data-original="/upload/resize_cache/iblock/bfb/100_100_1/bfb0ef31133662f4b0def167b5b75477.jpg">
+          <noscript data-alt="Английский сеттер" data-original="/upload/resize_cache/iblock/bfb/100_100_1/bfb0ef31133662f4b0def167b5b75477.jpg">
+           <img alt="Английский сеттер" src="/upload/resize_cache/iblock/bfb/100_100_1/bfb0ef31133662f4b0def167b5b75477.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Английский сеттер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/maltiyskaya-bolonka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Мальтийская болонка" data-original="/upload/resize_cache/iblock/e7c/100_100_1/e7c3e3033da09dcdab93ef01e60138fc.jpg">
+          <noscript data-alt="Мальтийская болонка" data-original="/upload/resize_cache/iblock/e7c/100_100_1/e7c3e3033da09dcdab93ef01e60138fc.jpg">
+           <img alt="Мальтийская болонка" src="/upload/resize_cache/iblock/e7c/100_100_1/e7c3e3033da09dcdab93ef01e60138fc.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Мальтийская болонка
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbelgiyskaya-ovcharka%252F%253Fcheck_key%253D692ff99b9990d8ca5aaa13db9fc00c0b%2526ANIMAL_CODE%253Dbelgiyskaya-ovcharka%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbelgiyskaya-ovcharka%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmJlbGdpeXNrYXlhLW92Y2hhcmthJTJGJTNGY2hlY2tfa2V5JTNENjkyZmY5OWI5OTkwZDhjYTVhYWExM2RiOWZjMDBjMGIlMjZBTklNQUxfQ09ERSUzRGJlbGdpeXNrYXlhLW92Y2hhcmthJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmJlbGdpeXNrYXlhLW92Y2hhcmthJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbelgiyskaya-ovcharka%252F%253Fcheck_key%253D692ff99b9990d8ca5aaa13db9fc00c0b%2526ANIMAL_CODE%253Dbelgiyskaya-ovcharka%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fbelgiyskaya-ovcharka%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbelgiyskaya-ovcharka%252F%253Fcheck_key%253D692ff99b9990d8ca5aaa13db9fc00c0b%2526ANIMAL_CODE%253Dbelgiyskaya-ovcharka%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbelgiyskaya-ovcharka%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "57.128.179.150"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--d47681365ea198b698f6a59e8ef084a0-->

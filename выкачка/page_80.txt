@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'d7ec0786b200'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Ирландский терьер, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Ирландский терьер – самый быстрый в группе терьеров. Отличительные характеристики: гармоничное телосложение, жесткая шерсть всех оттенков рыжего, скромная бородка." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/e1e/e1e68d5d14ed40951cd58a23b8ccdfad.jpg" property="og:image"/>
+     <title>
+      Ирландский терьер: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/irlandskiy-terer/" property="og:url"/>
+     <meta content="Ирландский терьер: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Ирландский терьер – самый быстрый в группе терьеров. Отличительные характеристики: гармоничное телосложение, жесткая шерсть всех оттенков рыжего, скромная бородка." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/irlandskiy-terer/" itemprop="url">
+         <span itemprop="title">
+          Ирландский терьер
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Ирландский терьер
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/irlandskiy-terer/">
+          Описание
+         </a>
+         <a href="/dog/irlandskiy-terer/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/irlandskiy-terer/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/irlandskiy-terer/photo/">
+          Фото
+         </a>
+         <a href="/dog/irlandskiy-terer/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Ирландский терьер" src="/upload/iblock/e06/e062171e91b865eb8ff42fa515f5885f.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/irlandskiy-terer/">
+           Ирландец
+          </a>
+         </span>
+         <p>
+          Ирландский терьер – самый быстрый в группе терьеров. Отличительные характеристики: гармоничное телосложение, жесткая шерсть всех оттенков рыжего, скромная бородка.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/a8b/a8bd0aea1bc7fa87c3d913fb7e96d5d0.jpg" data-cap="Nice walk in the woods this more, only met a handful of people.
+
+#irishterrierlove #irishterrierlovers #irishterrier #irishterriersofinstagram #irishterriers4life #irishterriers #irishterrierworld" data-fancybox="images" data-link="https://www.instagram.com/p/B-xcuZwD_e1/" data-type="image" data-username="rafferty_irishterrier" href="/upload/uf/4e8/4e896a50249b8475d5b42c236dd248a6.jpg">
+            <img alt="Ирландский терьер" src="/upload/resize_cache/uf/4e8/293_293_2/4e896a50249b8475d5b42c236dd248a6.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/ed6/ed600b969d39bd0da9cad27c16b1eac2.jpg" data-cap="What a perfect afternoon 
+.
+.
+.
+#irishterrier #irishterriersofinstagram #irishterrierlovers #terrier #spring #outdoors #walk #nature #love #daisy #dog #dogsofinstagram #cute" data-fancybox="images" data-link="https://www.instagram.com/p/B-xQsZOD3-G/" data-type="image" data-username="fizz_theirishterrier" href="/upload/uf/f29/f296f337793ab751a8afd031afbb79f9.jpg">
+            <img alt="Ирландский терьер" src="/upload/resize_cache/uf/f29/293_293_2/f296f337793ab751a8afd031afbb79f9.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/759/7591bc80743c0c1ec3feec4a2affecd5.jpg" data-cap="Happy happy happy 
+.
+.
+.
+#joulespickmypet #irishterrier #terrier #irishterriersofinstagram #irishterrierlovers #spring #walk #outdoors #cute #happy #dog #dogsofinstagram #love #nature" data-fancybox="images" data-link="https://www.instagram.com/p/B-xQODdpa57/" data-type="image" data-username="hennyd91" href="/upload/uf/4a9/4a9de75e86810dfe7931a0335157edbb.jpg">
+            <img alt="Ирландский терьер" src="/upload/resize_cache/uf/4a9/293_293_2/4a9de75e86810dfe7931a0335157edbb.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/irlandskiy-terer/photo/">
+         Все
+            фото ирландского терьера
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы ирландский терьер
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы ирландский терьер
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер ирландского терьера
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Здоровье и болезни ирландских терьеров
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Цена ирландского терьера
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Ирландский терьер
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Ирландия
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 12,25 кг, суки 11,4 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         45-48 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         13-14 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         В Ирландии эту разновидность терьеров называют «рыжими дьяволами» и «сорвиголовами».
+        </li>
+        <li>
+         Как и все представители терьерной группы, «ирландцы» довольно вспыльчивы. Тем не менее рассказы о них, как о свирепых драчунах и провокаторах, сильно преувеличены.
+        </li>
+        <li>
+         Ирландский терьер – настоящий «универсальный солдат», способный не только гоняться по лесу за кабанами, но и сторожить усадьбу, работать поисковиком и даже ставить спортивные рекорды.
+        </li>
+        <li>
+         Породу никогда особенно не пиарили, поэтому коммерческое разведение обошло ее стороной. Как результат: у всех ирландских терьеров отменное здоровье и стабильная психика.
+        </li>
+        <li>
+         Невзирая на взрывной темперамент и азартность, ирландские терьеры – смышленые ученики, быстро усваивающие даже самый сложный материал и успешно применяющие его на практике.
+        </li>
+        <li>
+         С ирландскими терьерами удобно путешествовать: порода мобильна и легко адаптируется к любым условиям окружающей среды.
+        </li>
+        <li>
+         Молодые ирландские терьеры очень энергичны, поэтому им необходим продолжительный выгул: не менее 2,5-3 часов в день.
+        </li>
+        <li>
+         Эти рыжие «сорвиголовы» сохранили в себе все присущие терьерам качества, так что будьте морально готовы к рытью траншей на газонах, гонкам за бродячими кошками и прочим собачьим «диверсиям».
+        </li>
+        <li>
+         Порода нуждается в систематическом тримминге, поскольку сезонная линька – это не про ирландских терьеров.
+        </li>
+        <li>
+         Для тех, кто заводит свою первую собаку, «ирландец» – худший вариант из возможных, потому что выдрессировать столь своенравного питомца можно только при наличии опыта работы с терьерами.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Ирландский терьер" data-original="/upload/iblock/e1e/e1e68d5d14ed40951cd58a23b8ccdfad.jpg">
+          <noscript data-alt="Ирландский терьер" data-original="/upload/iblock/e1e/e1e68d5d14ed40951cd58a23b8ccdfad.jpg">
+           <img alt="Ирландский терьер" src="/upload/iblock/e1e/e1e68d5d14ed40951cd58a23b8ccdfad.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Ирландский терьер
+          </strong>
+          – собака, как перчатки меняющая настроение и стиль поведения, но до невероятности стабильная в собственной любви к владельцу. Темпераментный, заводящийся с полуоборота, этот рыжик – настоящий гений перевоплощения, легко овладевающий основными собачьими профессиями. Какую бы важную миссию ему ни поручили, «ирландец» обязательно постарается перевыполнить план, чтобы заработать вожделенную похвалу. При этом ирландский терьер далеко не простачок, а иногда и совершенно непредсказуемый интриган, способный на самые неожиданные выпады. И все же обуздать и направить энергию животного в нужное русло – задача вполне посильная, особенно, если вы уже имели дело с терьерами и в курсе их породных «фишек».
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Сложно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Минимальная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средний (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Ирландский терьер основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы ирландский терьер
+        </h2>
+        <p>
+         Ирландия дала путевку в жизнь четырем разновидностям терьеров, каждая из которых обладает уникальным экстерьером и совсем не похожа на своих английских сородичей. Что касается непосредственно ирландского терьера, то письменных источников, способных пролить свет на истоки породы, почти не сохранилось. Да, теоретически «ирландцы» остаются самыми древними питомцами, появившимися в «стране трилистников и лепреконов» чуть ли не на заре нашей эры. Однако доказательством этого утверждения служат расплывчатые выдержки из старинных манускриптов, которые зачастую слишком субъективно-оценочны, чтобы принимать их за документальные описания.
+        </p>
+        <p>
+         По-настоящему развиваться порода начала со второй половины XIX века. Так, в 1875 г. ее представители засветились на выставке в Глазго, а год спустя – на аналогичном мероприятии в английском Брайтоне. В 1879 году животные обзавелись собственным клубом со штаб-квартирой в Дублине, что добавило им баллов в глазах заводчиков. При этом важно понимать, что собаки тех лет уступали сегодняшним особям по внешним показателям. Например, шеи первых «ирландцев» были более массивными, морды объемными, а тела не столь спортивными. Кроме того, поначалу животным купировали не только хвосты, но и уши.
+        </p>
+        <p>
+         В конце XIX века ирландские терьеры получили признание Английского Кеннел-клуба, что уравняло их в правах с другими породами. Однако настоящий звездный час ждал уроженцев Изумрудного острова на фронтах Первой мировой, где их использовали как связных. В царившей на полях сумятице, сбивавшей с толку даже самых спокойных собак, ирландские терьеры никогда не теряли выдержки и идеально подходили на роль искателей мин и помощников санитаров.
+        </p>
+        <p>
+         После войны популярность терьеров начала снижаться, и к началу 30-х годов отыскать на выставках эталонного «ирландца» стало почти невозможно. Предельно сократились и племенные базы европейских питомников – главных поставщиков чистокровных производителей. Обеспокоенные надвигающейся деградацией породы, кинологи и любители попытались вернуть к ней обывательский интерес. Так, в 1933 году коммерсант Гордон Селфридж даже организовал выставку ирландских терьеров в павильонах собственного универмага.
+        </p>
+        <p>
+         В Россию ирландские терьеры попали после Великой Отечественной войны. В частности, первая представительница этого семейства была привезена в СССР в конце 1940-х. Раздобыть соответствующего кобеля для рыжей «эмигрантки» оказалось непросто, поэтому поначалу суку вязали с керри-блю- и вельш-фокстерьерами. Но уже в 50-х годах проблему разведения породы в российских реалиях решил польский питомник. Именно он передал в союз пару «ирландцев» мужского пола, к которым позднее присоединились особи из ГДР. На протяжении нескольких десятилетий кровь отечественного поголовья систематически освежалась, однако на международных выставках ирландские терьеры «советского разлива» все равно не котировались. Лишь после того, как в 1997 году в страну импортировали британских производителей, порода приобрела более утонченный облик, получив допуск на европейские ринги.
+        </p>
+        <h2>
+         Видео: Ирландский терьер
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="Vs6oOgsfML0">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы ирландский терьер
+        </h2>
+        <p>
+         У ирландских терьеров внешность классических легкоатлетов: плотное мускулистое туловище, сильные, в меру длинные ноги, прочная спина. Они, безусловно, не имиджевые питомцы, скорее прирожденные работяги, в которых каждая мышца заточена под одно-единственное действие – стремительный бег. Еще одна отличительная черта породы ирландский терьер – уникальный шерстный покров, выполняющий функцию спортивного костюма и кольчуги одновременно. Именно жесткая псовина оберегает тело собаки от царапин и мелких травм на охоте, а также обладает грязе- и водоотталкивающей функциями. Ирландский терьер относится к средним по размеру породам, высота в холке взрослых собак – 45-48 см, средний вес – 11-13 кг.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Плоский, длинный череп ирландского терьера плавно сужается по направлению к морде. Стоп слабовыраженный, заметный только при осмотре животного в профиль. Скулы без явной рельефности.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Сильные, крепкие челюсти обеспечивают хорошую хватку. Зубы ирландского терьера белые, здоровые. Желательная форма прикуса: верхние резцы слегка перекрывают нижние.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Мочка среднего размера и обязательно черного цвета.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         У ирландского терьера маленькие и очень темные глаза. Взгляд собаки живой, сообразительный. Крайне не приветствуются: осветленный или желтоватый окрасы радужки.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Миниатюрные треугольные уши собаки смотрят вперед и свисают вниз, близко к скулам. Ушное полотно умеренной толщины, сгиб хряща располагается над линией лба.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Шею ирландского терьера отличают хорошая длина и высокий, гордый постав. Традиционного подвеса у представителей этой породы нет, но по бокам шеи имеются небольшие складки-оборки из шерсти, доходящие до нижней линии черепа.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         У собак этой породы гармоничное тело: не короткое, но и не чрезмерно растянутое. Спина очень крепкая, с хорошо омускуленной, ровной поясницей. Грудь «ирландца» производит впечатление сильной и глубокой, однако ширина и объем у нее небольшие.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Ноги ирландских терьеров выглядят стройными и элегантными, но при этом лишены излишней хрупкости. Плечи животного удлиненные, поставленные под правильным наклоном. Предплечья костистые, умеренно вытянутые и прямые, пясти малозаметные, короткие и ровные. Задние конечности собаки отличают массивность и основательность. Бедра крепкие, мясистые. Колени с очень умеренными углами, плюсны опущены низко. Лапы у представителей этой породы сравнительно маленькие, но сильные. Форма лапы скорее округлая, с изогнутыми пальцами, заканчивающимися крепкими черными когтями.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Некупированный хвост ирландского терьера сильный, хорошей длины. У чистопородных особей хвост высоко посажен, заметно приподнят (не выше линии спины) и не образует крутого изгиба. Невзирая на запрет купирования европейскими кинологическими ассоциациями, отдельные приверженцы традиций продолжают укорачивать эту часть тела своим подопечным. По негласному закону, купируется хвост не более чем на ⅓.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Жесткая шерсть ирландского терьера лежит ровно, не топорщится, но имеет характерный излом. Волос растет густо, поэтому, даже раздвинув его руками, увидеть кожу собаки получается не всегда. По стандарту шерсть не должна быть длинной или выраженно кудрявой и скрывать очертания силуэта животного. Волос на голове терьера значительно короче, чем на остальных частях тела. На морде присутствует небольшая бородка.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Традиционные масти породы – рыжая, рыжевато-золотистая, пшенично-рыжая. Небольшие отметины из белой шерсти на груди не рассматриваются как серьезный недостаток.
+        </p>
+        <p>
+         Дисквалифицирующие пороки породы
+        </p>
+        <ul>
+         <li>
+          Дефекты прикуса: сильный перекус или, наоборот, недокус.
+         </li>
+         <li>
+          Светлая (депигментированная) мочка носа.
+         </li>
+         <li>
+          Любой окрас шерсти, кроме утвержденных стандартом.
+         </li>
+         <li>
+          Подушечки лап, покрытые мозолистыми наростами или с растрескавшейся кожей.
+         </li>
+        </ul>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер ирландского терьера
+        </h2>
+        <p>
+         Как истинный уроженец «края лепреконов и рыжеволосых задир», ирландский терьер вспыльчив, энергичен и неистощим на всевозможные выдумки. Поклонники породы утверждают, что в ее представителях уживается как минимум три собачьих личности, каждая из которых является полной противоположностью остальным. В частности, в плане работы ирландские терьеры – беспримерные трудяги, не понаслышке знакомые с такими понятиями, как ответственность и исполнительность. Охрана дома или поиск психотропных веществ, травля барсука или нарезание кругов по кинодрому – ирландский терьер берется за все перечисленное с первозданным рвением и абсолютно одинаковым запалом.
+        </p>
+        <p>
+         Но как только со служебными задачами покончено, поведение собаки кардинально меняется. Внимательный работник и охотник тут же уступает место озорному клоуну и актеру, чьи «номера» иногда вызывают смех, а иногда и желание хорошенько всыпать неугомонному приколисту. Так, например, ирландские терьеры не только непревзойденные бегуны, но и невероятные прыгуны, поэтому тихонько стащить со стола печеньку или сосиску для породы не то что не проблема, а примитивнейший трюк. Всевозможные щеколды и крючки для «ирландцев» – забавные головоломки, с которыми необходимо как можно скорее разобраться. Конечный результат подобного квеста, как правило, одинаков: распахнутые настежь двери и скрывшийся в неизвестном направлении питомец.
+        </p>
+        <p>
+         В свободное от работы и развлечений время рыжие пройдохи предпочитают мимикрировать с окружающей средой, так что если вы не заметили в комнате ирландского терьера, это еще не означает, что его там нет. Скорее всего, он успешно слился с интерьером и вальяжно полеживает себе в уголке. Ирландский терьер – порода самодостаточная и гордая, поэтому не ждите, что питомец будет нуждаться в вашем одобрении прежде чем что-то сделать. С другой стороны, эти энергичные спортсмены сильно привязаны к человеку, которого считают своим хозяином. Более того, они готовы полностью адаптироваться под стиль жизни владельца, даже если тот не всегда отвечает их природным наклонностям. Любите автопутешествия? Ваш «ирландец» охотно развалится на переднем сиденье и будет с упоением высовывать морду в боковое стекло, ловя ветер ртом. Предпочитаете более полезный для здоровья отдых? Рыжий умник не откажется пробежаться и за велосипедом.
+        </p>
+        <p>
+         Ирландский терьер снисходителен к детям, при условии, что с ними он жил и воспитывался со щенячьего возраста. Нет, он не безотказная супернянька, но вполне неплохой аниматор, умеющий поддержать игру или секретную вылазку за пределы квартиры. Кроме того, он способен вытерпеть не самое бережное обращение со стороны малышни, например дерганье за хвост или нечаянно прижатую лапу. Правда, сдерживать негатив собака будет только в том случае, если это разовый «бонус», а не систематические издевательства. А вот с другими четверолапиками у «ирландцев», к сожалению, не складывается. Кошки для них – цель №1, подлежащая немедленному уничтожению; собаки – потенциальные соперники, которых необходимо как можно чаще ставить на место. Так что подыскать для ирландского терьера приятного компаньона среди соплеменников – та еще задачка.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Способности к обучению у ирландских терьеров, если не феноменальные, то очень впечатляющие. Проблема лишь в том, чтобы пробудить у животного желание заниматься. Опытные кинологи советуют опираться на природное любопытство породы и ее заинтересованность в новых видах деятельности. За компанию с любимым хозяином собака свернет горы, особенно если владелец не поленился разнообразить учебный процесс игровыми моментами. С другой стороны, в откровенное панибратство с представителями этого семейства лучше не скатываться. Ирландские терьеры в курсе, что такое лидерство, и очень к нему стремятся. Если «ирландец» – единственный питомец в доме, то за неимением под боком более подходящих конкурентов он охотно поборется за сферы влияния с собственным хозяином.
+        </p>
+        <p>
+         Подбирать программу дрессировки для ирландского терьера придется в зависимости от вида деятельности, осуществляемой животным. Так, например, курс для поисково-спасательных собак сильно отличается от комплекса занятий, которые посещают караульные особи. Что касается спортивных тренировок, то с ирландскими терьерами можно освоить курсинг, аджилити, дог-фризби и скиджоринг. На охоте сегодняшних «ирландцев» встретишь нечасто, но это скорее из-за непопулярности породы в целом, чем из-за утраченных преследовательских навыков. При необходимости натаскать пса на работу по кровяному следу, выуживание подбитой птицы из водоема и ее последующую апортировку – задача вполне выполнимая.
+        </p>
+        <p>
+         С обучением и воспитанием собаки лучше не затягивать, поскольку в первые месяцы жизни щенки ирландского терьера податливее, послушнее, да и хозяин для них пока – непререкаемый авторитет. Так что немного подрастите подопечного и приступайте к изучению основ ОКД. Кстати, дрессировка в классическом виде «ирландцам» не подойдет. Выполнять команду только потому, что этого требует человек, животные считают ниже собственного достоинства. Обычно заводчики рекомендуют больше разговаривать с питомцами, объясняя им целесообразность того или иного требования. Ходить с ирландским терьером на тренировочные площадки тоже не запрещено, но на выдающиеся успехи от занятий рассчитывать не приходится. Рыжие хитрецы быстро соображают, что к чему, и начинают всячески увиливать от «обязаловки». Учтите, эта порода стремится работать полноценно, а не понарошку, поэтому любые групповые занятия воспринимает как никому не нужный спектакль.
+        </p>
+        <p>
+         Считается, что ирландские терьеры неплохо справляются с ЗКС, но здесь важно трезво оценивать ситуацию. В силу достаточно скромных габаритов полноценного секьюрити из собаки не выйдет. Впрочем, если ваша цель – отпугивание мелких хулиганов, почему бы и не попробовать. Главное, чтобы питомец быстро и правильно реагировал на подзыв. Не забываем, что ирландский терьер – собака азартная, часто входящая в раж и игнорирующая любые внешние раздражители. Оптимально, если есть возможность делегировать обучение животного профи, который разработает для него индивидуальную программу ЗКС. Дело в том, что стандартные нормативы, утвержденные для служебных пород, «ирландцам» не подойдут – комплекция не та.
+        </p>
+        <p>
+         Предельно осторожно следует относиться к наказаниям питомца. Разумеется, в воспитании любого животного одним методом пряника не обойтись, но в случае с ирландскими терьерами иногда лучше закрыть глаза на вредную проделку, чем вызвать в собаке негативные эмоции. Тем более что память у породы отличная, и все несправедливости «ирландец» фиксирует в сознании надолго. Соответственно, как бы тщательно и эффективно вы ни работали с собакой, выдрессировать из нее примерного служаку, на автомате выполняющего любую команду, не получится. В конце концов ирландских терьеров не для этого выводили. Лучше предоставьте подопечному больше свободы, и он обязательно ответит вам уважительным отношением и исполнительностью.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         Ирландских терьеров приобретают не для того, чтобы сажать на цепь и селить в будку. Конечно, полностью декоративной порода не стала, но ее рабочий статус давно трансформировался в спортивно-компаньонский. Если же вести речь об идеальном собачьем жилье, то для «ирландцев» – это загородные коттеджи с просторным огороженным участком. Причем забор лучше ставить повыше – в прыжке терьеры могут преодолевать планку в 1,5 метра. Собака привыкает и к типовой квартире, если владелец не ограничивает любимца в выгулах и не ленится полноценно потренироваться с ним в парке.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Чтобы ирландский терьер не выглядел запущенным растрепой и не терял породных черт, его полагается тримминговать. Высший пилотаж – это, безусловно, ручная щипка. Однако для новичков подобная техника за гранью реальности, так как даже у опытного «щипальщика» на обработку одной собаки может уходить по 5 и более часов. Поэтому, если уж решили экономить на профессиональном груминге, то хотя бы запаситесь комплектом тримминговочных ножей, с которыми процедура пройдет быстрее и легче. Понятно, что при отсутствии практики результат первого тримминга вряд ли будет впечатляющим, но порода в ирландском терьере угадываться должна. В частности, неплохим подспорьем грумеру-самоучке станут тримминговочные схемы, наглядно демонстрирующие варианты щипки на конкретных участках тела.
+        </p>
+        <p>
+         Инструменты, которые потребуются для щипки ирландского терьера:
+        </p>
+        <ul>
+         <li>
+          стриппинг;
+         </li>
+         <li>
+          щетка-пуходерка;
+         </li>
+         <li>
+          тримминговочный нож;
+         </li>
+         <li>
+          филировочные ножницы;
+         </li>
+         <li>
+          машинка для стрижки шерсти.
+         </li>
+        </ul>
+        <p>
+         Первый тримминг проводится в 2,5-3 месяца: процедура помогает избавить щенячью псовину от ненужной пухлявости и мягкости. Усы и бородку обычно не трогают, как и ноги, но для придания этим зонам аккуратного вида шерсть на них слегка подравнивают ножницами. Волоски в ушном проходе тоже выщипывают, чтобы обеспечить внутри циркуляцию воздуха. Что касается частоты процедуры, то выставочных ирландских терьеров пощипывают раз в 1,5-2 месяца, а накануне мероприятия просто доводят начатое до совершенства. Домашних питомцев можно тримминговать раз в полгода, в промежутках между щипками ограничиваясь стандартным прочесыванием псовины щеткой.
+        </p>
+        <p class="legenda">
+         Важно: щипка осуществляется только по чистому, предварительно расчесанному и разобранному от колтунов волосу.
+        </p>
+        <p>
+         Регулярные ванны ирландскому терьеру не нужны в принципе, тем более что летом представители этой породы охотно плещутся в открытых водоемах. Если же собака всерьез испачкалась, банный день придется устроить. Только используйте правильный шампунь для жесткошерстных пород и не пускайте питомца на улицу, пока он окончательно не просохнет.
+        </p>
+        <p>
+         Уход за глазами и ушами собаки проходит по классическому сценарию: систематическая чистка мягкой тряпочкой, увлажненной фитоотваром или чистящим лосьоном. С ушами щенка придется повозиться дополнительно: чтобы сформировать правильный постав, ушное полотно фиксируют пластырем (клеем) на картонном или пластиковом каркасе.
+        </p>
+        <p>
+         Зубы ирландского терьера должны сверкать белизной, поэтому раз в неделю проходитесь по ним зубной щеткой или силиконовой насадкой, а также давайте собаке грызть твердые лакомства. Когти «ирландцам» стригут только когда в этом возникает необходимость. Например, если собака много бегает по улице и активно тренируется, подрезать ороговевший пласт придется примерно раз в полтора месяца, а то и реже.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Рацион ирландского терьера традиционный: мясо и субпродукты, приправленные крупяными кашами, тушеными или свежими овощами, фруктами и зеленью.
+        </p>
+        <p>
+         Дополнительными источниками белка собакам служат кисломолочная продукция и морская рыба без костей. Попутно с едой «ирландцам» полезно давать витаминные подкормки. Особое предпочтение – кальцийсодержащим добавкам и комплексам с хондроитином и глюкозамином в период, когда щенок интенсивно растет. Сухие промышленные корма тоже станут хорошим вариантом, если это разновидности для средних пород класса не ниже премиум.
+        </p>
+        <h2 id="gl8">
+         Здоровье и болезни ирландских терьеров
+        </h2>
+        <p>
+         Ирландский терьер – сравнительно здоровая порода, и «хвост» неизлечимых генетических заболеваний за ней не тянется. Тем не менее собаки могут страдать от дисплазии тазобедренных суставов, гипотиреоза и болезни Виллебранда-Диана. Неприятной боленью, обусловленной наследственностью, является гиперкератоз подушечек лап. Некоторое время породный недуг не проявлял себя, что дало заводчикам надежду на его полное исчезновение. Однако в последние годы на свет все чаще появляются особи с подушечками, «украшенными» мозолистыми и шиповидными наростами. Кстати, наследуется заболевание аутосомно-рецессивным путем, что требует присутствия гена гиперкератоза у обоих родителей.
+        </p>
+        <h2 id="gl6">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Главная проблема при выборе щенка ирландского терьера – дефицит зарегистрированных питомников, поэтому иногда за малышами приходится чуть ли не становиться в очередь.
+        </p>
+        <ul>
+         <li>
+          Щенков ирландского терьера раздают в 2-2,5 месяца, но знакомиться с ними лучше пораньше, например в 4-недельном возрасте.
+         </li>
+         <li>
+          Оцените реакцию суки на ваш приход. Если собака пытается собрать детенышей в кучку и прикрыть телом – это нормально. Явная трусливость, агрессия по отношению к незнакомцу – тревожный сигнал.
+         </li>
+         <li>
+          Выставочный потенциал у щенков ирландского терьера обнаруживает себя примерно на пятом месяце жизни, поэтому, если планируете заполучить животное шоу-класса, подольше тяните с покупкой.
+         </li>
+         <li>
+          При появлении незнакомого человека щенки не должны со всех ног удирать. Это говорит о том, что животные воспитываются в изоляции и не контактируют ни с кем, кроме владельца питомника.
+         </li>
+         <li>
+          Правильный щенок ирландского терьера общителен и отзывчив на ласку. Он охотно идет на руки, подставляет пузико для почесывания, позволяет себя ощупывать.
+         </li>
+        </ul>
+        <h2 id="gl7">
+         Цена ирландского терьера
+        </h2>
+        <p>
+         Клубный щенок ирландского терьера с пакетом документов и прививок по определению не может стоить дешево. Если вы встретите объявления с символическим для породы ценником в 10 000 - 15 000 рублей, лучше пройти мимо. Обычно здоровые малыши от высококлассных производителей обходятся в 30 000 - 40 000 руб., и это далеко не предел. Цена на щенков пет-категории может быть значительно ниже средней рыночной стоимости, но и она почти никогда не опускается ниже 20 000 рублей.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения ирландского терьера на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/26760/">
+          <div class="ava-med">
+           <div class="noava fill0">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/sbylas-moya-mechta-i-ya-nikogda-ne-pozhalela-4954/">
+           Сбылась моя мечта, и я никогда не пожалела.
+          </a>
+         </div>
+         <div class="forum-text">
+          Об ирландце я узнала, прочитав в 13 лет "Джерри - островитянин" Джека Лондона. Я никогда не видела эту породу, могла только представить пса - среднее между эрделем и фоксом рыжего цвета. Я влюбилась в эту породу...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/26760/">
+            Марина Альдер
+           </a>
+          </span>
+          <span class="vopros-date">
+           8 месяцев назад
+          </span>
+          <span class="vopros-smotr">
+           87 просмотров
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/irlandskiy-terer/forum/">
+        Перейти на
+        форум ирландского терьера
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Ирландский терьер" src="/upload/iblock/e06/e062171e91b865eb8ff42fa515f5885f.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/irlandskiy-terer/">
+          Ирландский терьер
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/irlandskiy-terer/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-terer/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-terer/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-terer/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-terer/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/rodeziyskiy-ridzhbek/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Родезийский риджбек" data-original="/upload/resize_cache/iblock/0bb/100_100_1/0bbce853e55731960fcb2f15ea3d12c3.jpg">
+          <noscript data-alt="Родезийский риджбек" data-original="/upload/resize_cache/iblock/0bb/100_100_1/0bbce853e55731960fcb2f15ea3d12c3.jpg">
+           <img alt="Родезийский риджбек" src="/upload/resize_cache/iblock/0bb/100_100_1/0bbce853e55731960fcb2f15ea3d12c3.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Родезийский риджбек
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/komondor/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Комондор" data-original="/upload/resize_cache/iblock/e9b/100_100_1/e9bef998846267b87fd4feae9aa2524c.jpg">
+          <noscript data-alt="Комондор" data-original="/upload/resize_cache/iblock/e9b/100_100_1/e9bef998846267b87fd4feae9aa2524c.jpg">
+           <img alt="Комондор" src="/upload/resize_cache/iblock/e9b/100_100_1/e9bef998846267b87fd4feae9aa2524c.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Комондор
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/russkaya-gonchaya/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Русская гончая" data-original="/upload/resize_cache/iblock/636/100_100_1/63605f99871b193015fab8fe132d1f96.jpg">
+          <noscript data-alt="Русская гончая" data-original="/upload/resize_cache/iblock/636/100_100_1/63605f99871b193015fab8fe132d1f96.jpg">
+           <img alt="Русская гончая" src="/upload/resize_cache/iblock/636/100_100_1/63605f99871b193015fab8fe132d1f96.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Русская гончая
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/pti-brabanson/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Пти-брабансон" data-original="/upload/resize_cache/iblock/0e6/100_100_1/0e62c17933c771a85a0546211950d579.jpg">
+          <noscript data-alt="Пти-брабансон" data-original="/upload/resize_cache/iblock/0e6/100_100_1/0e62c17933c771a85a0546211950d579.jpg">
+           <img alt="Пти-брабансон" src="/upload/resize_cache/iblock/0e6/100_100_1/0e62c17933c771a85a0546211950d579.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Пти-брабансон
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Firlandskiy-terer%252F%253Fcheck_key%253D6fa18fceecacc988d0ce7de2c0866f33%2526ANIMAL_CODE%253Dirlandskiy-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Firlandskiy-terer%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmlybGFuZHNraXktdGVyZXIlMkYlM0ZjaGVja19rZXklM0Q2ZmExOGZjZWVjYWNjOTg4ZDBjZTdkZTJjMDg2NmYzMyUyNkFOSU1BTF9DT0RFJTNEaXJsYW5kc2tpeS10ZXJlciUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZpcmxhbmRza2l5LXRlcmVyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Firlandskiy-terer%252F%253Fcheck_key%253D6fa18fceecacc988d0ce7de2c0866f33%2526ANIMAL_CODE%253Dirlandskiy-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Firlandskiy-terer%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Firlandskiy-terer%252F%253Fcheck_key%253D6fa18fceecacc988d0ce7de2c0866f33%2526ANIMAL_CODE%253Dirlandskiy-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Firlandskiy-terer%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "188.64.165.18"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--8d52cd2ef5e45c84ea993e859fdeb645-->

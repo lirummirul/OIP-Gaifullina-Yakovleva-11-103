@@ -1,0 +1,1857 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'d88a91314b6c'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Вельш-корги кардиган, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Вельш-корги кардиган – небольшая пастушья овчарка с вытянутым корпусом и короткими, крепкими ножками, имеющая сильное внешнее сходство с вельш-корги пемброком. Порода выведена в Англии, обладает невозмутимым и доброжелательным характером." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/182/182b1aa4e556fa80234ea516f1656c3b.jpg" property="og:image"/>
+     <title>
+      Вельш-корги кардиган: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/velsh-korgi-kardigan/" property="og:url"/>
+     <meta content="Вельш-корги кардиган: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Вельш-корги кардиган – небольшая пастушья овчарка с вытянутым корпусом и короткими, крепкими ножками, имеющая сильное внешнее сходство с вельш-корги пемброком. Порода выведена в Англии, обладает невозмутимым и доброжелательным характером." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/velsh-korgi-kardigan/" itemprop="url">
+         <span itemprop="title">
+          Вельш-корги кардиган
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Вельш-корги кардиган
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/velsh-korgi-kardigan/">
+          Описание
+         </a>
+         <a href="/dog/velsh-korgi-kardigan/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/velsh-korgi-kardigan/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/velsh-korgi-kardigan/photo/">
+          Фото
+         </a>
+         <a href="/dog/velsh-korgi-kardigan/video/">
+          Видео
+         </a>
+         <a href="/dog/velsh-korgi-kardigan/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Вельш-корги кардиган" src="/upload/iblock/c0b/c0b931451d53ccc8eb5719cf559cfcf2.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Вельш-корги кардиган – небольшая пастушья овчарка с вытянутым корпусом и короткими, крепкими ножками, имеющая сильное внешнее сходство с вельш-корги пемброком. Порода выведена в Англии, обладает невозмутимым и доброжелательным характером.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/2a0/2a0db796d4feeecce0a32f768af3bbfe.jpg" data-cap="Butterflies" data-fancybox="images" data-link="https://www.flickr.com/photos/143847133@N02/33163065871/" data-type="image" data-username="Giulia Cibrario" href="/upload/uf/058/0587ac73d11862b75bce97740f66fb58.jpg">
+            <img alt="Вельш-корги кардиган" src="/upload/resize_cache/uf/058/293_293_2/0587ac73d11862b75bce97740f66fb58.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a "="" a="" castle."="" class="wf-insta__link" corg's="" data-avatar="/upload/uf/9d6/9d6b84d80f9920371268bf75e1615012.jpg" data-cap="" data-fancybox="images" data-link="https://www.instagram.com/p/76g9wYypgU/" data-type="image" data-username="conniethecorgi" his="" home="" href="/upload/uf/93e/93e539f8a445211800c3bc0be628f441.jpg" is="">
+            <img alt="Вельш-корги кардиган" src="/upload/resize_cache/uf/93e/293_293_2/93e539f8a445211800c3bc0be628f441.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/eb5/eb52b7af8524cce53643b3178da1f857.jpg" data-cap="Ida Brauner" data-fancybox="images" data-link="https://www.flickr.com/photos/138686011@N03/38565417320/" data-type="image" data-username="Welsh Corgi Cardigan" href="/upload/uf/996/996f6a29f7fd4ea4292c742a50617bc5.jpg">
+            <img alt="Вельш-корги кардиган" src="/upload/resize_cache/uf/996/293_293_2/996f6a29f7fd4ea4292c742a50617bc5.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/velsh-korgi-kardigan/photo/">
+         Все
+            фото вельш-корги-кардигана
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <style>
+        .podvidi h2 {
+                text-align: left;
+                margin: 0 0 40px;
+            }
+            .podvidi h2 a{
+                color: #000;
+                border-bottom: 1px solid #bbb;
+            }
+            .podvidi .pop-porodi-block{
+                text-align:left;
+            }
+       </style>
+       <div class="pop-porodi podvidi">
+        <div class="pop-porodi-block">
+         <h2 id="info">
+          Разновидности корги
+         </h2>
+         <a class="poroda-element" href="/dog/velsh-korgi-pembrok/">
+          <div class="ava-poroda">
+           <img alt="Вельш-корги пемброк" class="article_pic" src="/upload/resize_cache/iblock/9af/100_100_1/9af916d1cf3fb7990d7618dd6861ec43.jpg"/>
+          </div>
+          <span>
+           Вельш-корги пемброк
+          </span>
+         </a>
+         <a class="poroda-element" href="/dog/velsh-korgi-kardigan/">
+          <div class="ava-poroda">
+           <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/c0b/100_100_1/c0b931451d53ccc8eb5719cf559cfcf2.jpg"/>
+          </div>
+          <span>
+           Вельш-корги кардиган
+          </span>
+         </a>
+        </div>
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы вельш-корги кардиган
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Почему у вельш-корги кардигана такие короткие лапки
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Внешность вельш-корги кардигана и его отличия от пемброка
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Характер вельш-корги кардигана
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Здоровье и болезни вельш-корги кардигана
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Сколько стоит вельш-корги кардиган
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Вельш-корги кардиган
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 14-17 кг, суки 12-15 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 27-32 см, суки 25-30 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         12-15 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         В целях удобства отечественные заводчики и фанаты породы сильно сократили ее название, именуя всех вельш-корги кардиганов просто – карди.
+        </li>
+        <li>
+         Короткие лапки вельш-корги кардиганов совершенно не мешают им вести активный образ жизни и демонстрировать блестящие результаты в аджилити.
+        </li>
+        <li>
+         Как и большинство овчарок, кардиган слабо представляет свою жизнь без пастьбы, поэтому будет бдительно следить за перемещениями всех членов семьи, в которой живет.
+        </li>
+        <li>
+         Вельш-корги кардиганы – прирожденные юмористы и трюкачи, несколько столетий назад пользовавшиеся особой популярностью у бродячих цирковых трупп.
+        </li>
+        <li>
+         Вельш-корги кардиган – универсальная порода, которую можно содержать как в квартире, так и в условиях загородного дома. Эти коротколапые обаяшки совершенно не требовательны к габаритам жилья и не делают трагедии из того, что их выгуляли чуть меньше положенного.
+        </li>
+        <li>
+         Долгое время кардиганы не котировались у заводчиков, предпочитавших заниматься раскручиванием другой ветви вельш-корги –
+         <a class="ph" href="/dog/velsh-korgi-pembrok/">
+          пемброков
+         </a>
+         .
+        </li>
+        <li>
+         В 2006 году порода была отмечена кинологическими ассоциациями, как находящаяся на грани исчезновения. Однако уже к 2016 году численность животных резко возросла, что сняло с вельш-корги кардиганов статус живой диковинки.
+        </li>
+        <li>
+         Правильно воспитанные карди вполне миролюбивы и не конфликтуют с кошками и другими домашними питомцами за место под солнцем.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Вельш-корги кардиган" data-original="/upload/iblock/182/182b1aa4e556fa80234ea516f1656c3b.jpg">
+          <noscript data-alt="Вельш-корги кардиган" data-original="/upload/iblock/182/182b1aa4e556fa80234ea516f1656c3b.jpg">
+           <img alt="Вельш-корги кардиган" src="/upload/iblock/182/182b1aa4e556fa80234ea516f1656c3b.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          Вельш-корги кардиган – скромный уроженец Уэльса, издревле зарабатывавший свою тарелку похлебки пастьбой крупного рогатого скота и не утративший рабочих качеств и по сей день. Добродушный и неконфликтный, этот артистичный симпатяга охотно идет на контакт, но при этом не страдает излишней навязчивостью. Как и полагается настоящей овчарке, вельш-корги кардиган бесконечно предан хозяину и очень скучает, если вынужден на какое-то время лишаться его общества. А еще карди чрезвычайно любознательный и компанейский «парень», умудряющийся заводить друзей даже во время обычной прогулки.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Ниже среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средний (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Вельш-корги кардиган основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы вельш-корги кардиган
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Вельш-корги кардиган" data-fancybox="gallery" href="/upload/iblock/b16/b16b6bc0d49af2b404ff32307db5ef13.jpg" title="Вельш-корги кардиган">
+          <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/b16/412_2150_1/b16b6bc0d49af2b404ff32307db5ef13.jpg">
+           <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/b16/412_2150_1/b16b6bc0d49af2b404ff32307db5ef13.jpg">
+            <img alt="Вельш-корги кардиган" class="article_pic" height="619" src="/upload/resize_cache/iblock/b16/412_2150_1/b16b6bc0d49af2b404ff32307db5ef13.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Вельш-корги кардиган
+         </div>
+        </div>
+        <p>
+         История породы вельш-корги – это несколько гипотез, масса домыслов, парочка легенд и почти ни одного достоверного факта. Так, например, одни специалисты считают, что предки сегодняшних собак объявились на Британских островах вместе со скандинавскими переселенцами в бронзовом веке. Другие приписывают разведение животных кельтам, населявшим территорию Англии около 1500 г. до н. э.
+        </p>
+        <p>
+         С генетической базой тоже не все ясно, поэтому кто-то называет прародителями вельш-корги исландских собак, а кто-то относит их к потомками шведских вальхундов. Впрочем, валлийцы не были бы валлийцами, если бы не дали этому явлению свое, чисто мистическое обоснование. На родине породы до сих верят в то, что вельш-корги жителям Уэльса подарили сказочные существа (фейри), которые использовали животных в качестве лошадок, катаясь на них и перевозя с их помощью собственные пожитки.
+        </p>
+        <p>
+         Что касается конкретно вельш-корги кардиганов, то эта ветвь появилась на свет стараниями энтузиастов уэльского графства Кардиганшир (Кередигион). Принято считать, что для того, чтобы вывести непритязательную пастушью овчарку, местные фермеры скрещивали предков вельш-корги с таксообразными собаками, что очень сильно сказалось на экстерьере животных. В частности, тело овчарок стало длиннее, а их лапки – существенно короче.
+        </p>
+        <p>
+         Появление породы
+         <a class="ph" href="/dog/velsh-korgi-pembrok/">
+          вельш-корги пемброк
+         </a>
+         в XIII веке резко снизило популярность кардиганов, так как ее представители имели не только такие же короткие лапки, но и отличались более приятной внешностью. В частности, в конце XIX столетия на племенных выставках «зажигали» в основном уроженцы Пембрукшира, что крайне раздражало фанатов кередигионских овчарок. Дальше – больше: противостояние заводчиков кардиганов и пемброков переросло в потасовки за выставочные места, так что в 1934 году KC (Английский Кеннел-клуб) пришлось разделить животных на две самостоятельных породы. В этом же году было решено купировать пемброкам хвосты, что стало дополнительным разграничивающим фактором между обоими семействами вельш-корги.
+        </p>
+        <p>
+         Тем не менее, невзирая на долгожданную независимость и возможность отдельно экспонироваться на выставках, вельш-корги кардиганы долго оставались недооцененной породой, прятавшейся в тени своего более эффектного и успешного родственника. И если в другие страны Европы эти забавные коротконожки проникли спустя несколько десятилетий после официального анонсирования, то в России о них заговорили только в начале 2000-х годов.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/98b/98babe30e5686a53b3286236fe1e48ef.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/98b/512_342_2/98babe30e5686a53b3286236fe1e48ef.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/98b/512_342_2/98babe30e5686a53b3286236fe1e48ef.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/98b/512_342_2/98babe30e5686a53b3286236fe1e48ef.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5b7/5b7c564913a10dd6609cd8ad0c85f83d.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/5b7/512_342_2/5b7c564913a10dd6609cd8ad0c85f83d.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/5b7/512_342_2/5b7c564913a10dd6609cd8ad0c85f83d.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/5b7/512_342_2/5b7c564913a10dd6609cd8ad0c85f83d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2>
+         Видео: Вельш-корги кардиган
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="X2p87pVFVxM">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Почему у вельш-корги кардигана такие короткие лапки
+        </h2>
+        <p>
+         Изначально работа собаки заключалась в том, чтобы не дать животному отбиться от стада, и сделать она это могла только одним способом: слегка укусив корову или теленка за ногу. Неудивительно, что ответной реакцией на такие действия со стороны травоядного был удар копытом в лоб. А поскольку вельш-корги кардиган всегда отличался экстремально низкой посадкой, корова неизменно промахивалась.
+        </p>
+        <h2 id="gl3">
+         Внешность вельш-корги кардигана и его отличия от пемброка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Вельш-корги пемброк" data-fancybox="gallery" href="/upload/iblock/5ae/5ae2638473c6fcbae621e7ac37e9ed09.jpg" title="Вельш-корги пемброк">
+          <div class="lazy-load" data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/5ae/412_2150_1/5ae2638473c6fcbae621e7ac37e9ed09.jpg">
+           <noscript data-alt="Вельш-корги пемброк" data-class="article_pic" data-original="/upload/resize_cache/iblock/5ae/412_2150_1/5ae2638473c6fcbae621e7ac37e9ed09.jpg">
+            <img alt="Вельш-корги пемброк" class="article_pic" height="274" src="/upload/resize_cache/iblock/5ae/412_2150_1/5ae2638473c6fcbae621e7ac37e9ed09.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Вельш-корги пемброк
+         </div>
+        </div>
+        <p>
+         Вельш-корги кардиганы – подвижные, длиннотелые «джентльмены» с мягкой линией верха и миниатюрными, крепкими лапками. Внешне эти приземистые симпатяги заметно крупнее и костистее вельш-корги пемброков. Как пример: среднестатистический пемброк весит 10-12 кг, в то время как масса тела уроженцев Кередигиона может достигать 14-17 кг. Вообще отличий между этими двумя породами гораздо больше, чем кажется на первый взгляд. Так, например, в карди преобладают гены
+         <a class="ph" href="/dog/taksa/">
+          таксы
+         </a>
+         , поэтому у них слегка изогнутые ноги, массивная грудная клетка и более плавная линия силуэта.
+        </p>
+        <p>
+         Вельш-корги кардиганы – это собаки-работяги, выводившиеся не для выставок, а для серых трудовых будней. Неудивительно, что пемброки, которые появились на свет несколько позже и являлись «продуктом» скрещивания
+         <a class="ph" href="/dog/pomeranskiy-shpits/">
+          шпица
+         </a>
+         с вельш-корги, уступают им в рабочих характеристиках и выносливости, но при этом выигрывают в плане внешнего обаяния.
+        </p>
+        <p class="legenda">
+         Любопытный факт: до недавнего времени кардигана можно было идентифицировать по пышному лисьему хвосту, который пемброкам традиционно укорачивали. Однако после того как европейские заводчики отказались от купирования, различать животных стало сложнее. Впрочем, если внимательно присмотреться, то можно заметить, что у овчарок из Пембрукшира хвост более короткий (многолетнее скрещивание короткохвостых особей с бесхвостыми дало о себе знать) и менее роскошный.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенки вельш-корги кардигана" data-fancybox="gallery" href="/upload/iblock/19d/19dfefed6a9904f1128465a82e092052.jpg" title="Щенки вельш-корги кардигана">
+          <div class="lazy-load" data-alt="Щенки вельш-корги кардигана" data-class="article_pic" data-original="/upload/resize_cache/iblock/19d/412_2150_1/19dfefed6a9904f1128465a82e092052.jpg">
+           <noscript data-alt="Щенки вельш-корги кардигана" data-class="article_pic" data-original="/upload/resize_cache/iblock/19d/412_2150_1/19dfefed6a9904f1128465a82e092052.jpg">
+            <img alt="Щенки вельш-корги кардигана" class="article_pic" height="271" src="/upload/resize_cache/iblock/19d/412_2150_1/19dfefed6a9904f1128465a82e092052.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенки вельш-корги кардигана
+         </div>
+        </div>
+        <p>
+         У вельш-корги кардиганов очень пропорциональная голова с в меру вытянутой мордой и широковатым, суженным по направлению к глазам черепом.
+        </p>
+        <h3>
+         Зубы и челюсти
+        </h3>
+        <p>
+         Челюсти вельш-корги кардигана крепкие, сильные, с ножницеобразным либо горизонтальным прикусом (первый вариант предпочтительнее).
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Мочка черная, не слишком крупная, но и не миниатюрная.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза овчарки широко посаженные, с хорошо вырисовывающимися углами, не круглые. Оттенок радужки – темный. Для особей с шерстью мраморного окраса допустимы голубой либо голубовато-пятнистый цвет глаз.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         У вельш-корги кардигана большие стоячие уши с закругленными кончиками, которые у настороженной собаки наклонены вперед, а у находящейся в состоянии покоя – немного разведены в стороны.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Приличной длины, мускулистая, переходящая в рельефные плечи.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Мордочка вельш-корги кардигана" data-fancybox="gallery" href="/upload/iblock/6b3/6b397db0a4bf3ac56c2a9a6caad07585.jpg" title="Мордочка вельш-корги кардигана">
+          <div class="lazy-load" data-alt="Мордочка вельш-корги кардигана" data-class="article_pic" data-original="/upload/iblock/6b3/6b397db0a4bf3ac56c2a9a6caad07585.jpg">
+           <noscript data-alt="Мордочка вельш-корги кардигана" data-class="article_pic" data-original="/upload/iblock/6b3/6b397db0a4bf3ac56c2a9a6caad07585.jpg">
+            <img alt="Мордочка вельш-корги кардигана" class="article_pic" src="/upload/iblock/6b3/6b397db0a4bf3ac56c2a9a6caad07585.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мордочка вельш-корги кардигана
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело карди должно быть длинным, с хорошо очерченной линией поясницы, без выпуклости или провислости.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бегущие кардиганы" data-fancybox="gallery" href="/upload/iblock/021/0213106ad462589b1c4c518259685bcf.jpg" title="Бегущие кардиганы">
+          <div class="lazy-load" data-alt="Бегущие кардиганы" data-class="article_pic" data-original="/upload/resize_cache/iblock/021/412_2150_1/0213106ad462589b1c4c518259685bcf.jpg">
+           <noscript data-alt="Бегущие кардиганы" data-class="article_pic" data-original="/upload/resize_cache/iblock/021/412_2150_1/0213106ad462589b1c4c518259685bcf.jpg">
+            <img alt="Бегущие кардиганы" class="article_pic" height="274" src="/upload/resize_cache/iblock/021/412_2150_1/0213106ad462589b1c4c518259685bcf.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бегущие кардиганы
+         </div>
+        </div>
+        <p>
+         Несмотря на то, что ноги представителей этой породы производят впечатление игрушечных, они обладают достаточной силой и обеспечивают неплохой толчок при беге. Лапки вельш-корги кардиганов крупные, округлые, с пухлыми подушечками. Передние лапы немного вывернуты наружу, что особенно заметно при осмотре собаки спереди.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Правильный хвост для вельш-корги кардигана – низко посаженный, опущенный вниз. У возбужденной собаки хвост может быть слегка приподнят (оптимальный вариант – до уровня крупа или чуть выше), при этом он не должен сворачиваться в бублик и забрасываться на спину.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Окрасы кардиганов" data-fancybox="gallery" href="/upload/iblock/9af/9af95d0427e97b3d2b9939c04d2d5e5b.jpg" title="Окрасы кардиганов">
+          <div class="lazy-load" data-alt="Окрасы кардиганов" data-class="article_pic" data-original="/upload/resize_cache/iblock/9af/412_2150_1/9af95d0427e97b3d2b9939c04d2d5e5b.jpg">
+           <noscript data-alt="Окрасы кардиганов" data-class="article_pic" data-original="/upload/resize_cache/iblock/9af/412_2150_1/9af95d0427e97b3d2b9939c04d2d5e5b.jpg">
+            <img alt="Окрасы кардиганов" class="article_pic" height="540" src="/upload/resize_cache/iblock/9af/412_2150_1/9af95d0427e97b3d2b9939c04d2d5e5b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Окрасы кардиганов
+         </div>
+        </div>
+        <p>
+         Гладкие, плотно прилегающие «шубки» вельш-корги кардиганов образованы в меру жестким волосом средней длины и толстым слоем подшерстка. Шерсть собаки должна быть гладкой, но не шелковистой и уж тем более не жесткой, как проволока. Овчарка, у которой шерстный покров слишком пышный и мягкий, считается дефектной и именуется флаффи.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         К окрасу шерсти кардиганов породные стандарты менее требовательны, чем к окрасу пемброков. Проще говоря, представители этой разновидности вельш-корги имеют право на любой тип окраса, включая тигровый и блю мерль. Наличие белых отметин на корпусе выставочными специалистами тоже не карается. Главное, чтобы они не доминировали над основным оттенком.
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <ul>
+         <li>
+          Опущенные вниз или висячие уши.
+         </li>
+         <li>
+          Белые пятна на туловище, преобладающие над основным окрасом.
+         </li>
+         <li>
+          Полностью голубая или неравномерно окрашенная радужка (не действует в случае с особями мраморного окраса).
+         </li>
+         <li>
+          Мочка любого цвета, кроме черного.
+         </li>
+        </ul>
+        <h2>
+         Фото вельш-корги кардиганов
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/562/5622826ea762f153ae317cec38a38543.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/562/380_264_2/5622826ea762f153ae317cec38a38543.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/562/380_264_2/5622826ea762f153ae317cec38a38543.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/562/380_264_2/5622826ea762f153ae317cec38a38543.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/972/9725a6ba01b9865c6a15c43dacd2e8b6.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/972/380_264_2/9725a6ba01b9865c6a15c43dacd2e8b6.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/972/380_264_2/9725a6ba01b9865c6a15c43dacd2e8b6.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/972/380_264_2/9725a6ba01b9865c6a15c43dacd2e8b6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/aac/aac159470762a8c518d3eb8fa2060f92.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/aac/380_264_2/aac159470762a8c518d3eb8fa2060f92.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/aac/380_264_2/aac159470762a8c518d3eb8fa2060f92.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/aac/380_264_2/aac159470762a8c518d3eb8fa2060f92.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/07c/07c6164b69dd63058ffb74caa42d575a.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/07c/380_264_2/07c6164b69dd63058ffb74caa42d575a.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/07c/380_264_2/07c6164b69dd63058ffb74caa42d575a.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/07c/380_264_2/07c6164b69dd63058ffb74caa42d575a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5a9/5a9e99337a3e276bb5f6b9246211633c.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/5a9/380_264_2/5a9e99337a3e276bb5f6b9246211633c.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/5a9/380_264_2/5a9e99337a3e276bb5f6b9246211633c.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/5a9/380_264_2/5a9e99337a3e276bb5f6b9246211633c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d2a/d2a4b7df396d4af9aee379897b5e49bc.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/d2a/380_264_2/d2a4b7df396d4af9aee379897b5e49bc.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/d2a/380_264_2/d2a4b7df396d4af9aee379897b5e49bc.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/d2a/380_264_2/d2a4b7df396d4af9aee379897b5e49bc.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/202/202f30f9147c415af93b7cc8399c1c63.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/202/380_264_2/202f30f9147c415af93b7cc8399c1c63.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/202/380_264_2/202f30f9147c415af93b7cc8399c1c63.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/202/380_264_2/202f30f9147c415af93b7cc8399c1c63.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/792/7921a1e1f7cb9102c43813d9d3510f36.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/792/380_264_2/7921a1e1f7cb9102c43813d9d3510f36.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/792/380_264_2/7921a1e1f7cb9102c43813d9d3510f36.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/792/380_264_2/7921a1e1f7cb9102c43813d9d3510f36.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a86/a86c23dfa9e7f21275b1cd7cd5eaf921.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/a86/380_264_2/a86c23dfa9e7f21275b1cd7cd5eaf921.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/a86/380_264_2/a86c23dfa9e7f21275b1cd7cd5eaf921.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/a86/380_264_2/a86c23dfa9e7f21275b1cd7cd5eaf921.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl4">
+         Характер вельш-корги кардигана
+        </h2>
+        <p>
+         Спокойствие, граничащее с легкой флегматичностью, добродушие, отменное чувство юмора – вот три основных качества, определяющие характер вельш-корги кардиганов. Эти миловидные коротконожки легко уживаются с кем бы то ни было, и им почти не знакомо такое чувство, как ревность. Единственное, в отличие от тех же пемброков, карди не очень-то доверяют незнакомцам и иногда совсем не прочь их облаять. При этом в обычной жизни овчарки, если они правильно воспитаны, шумят редко и исключительно по уважительным причинам.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Команда кардиганов" data-fancybox="gallery" href="/upload/iblock/66a/66af3ec440921cd84c7ff99aae3589f8.jpg" title="Команда кардиганов">
+          <div class="lazy-load" data-alt="Команда кардиганов" data-class="article_pic" data-original="/upload/resize_cache/iblock/66a/412_2150_1/66af3ec440921cd84c7ff99aae3589f8.jpg">
+           <noscript data-alt="Команда кардиганов" data-class="article_pic" data-original="/upload/resize_cache/iblock/66a/412_2150_1/66af3ec440921cd84c7ff99aae3589f8.jpg">
+            <img alt="Команда кардиганов" class="article_pic" height="274" src="/upload/resize_cache/iblock/66a/412_2150_1/66af3ec440921cd84c7ff99aae3589f8.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Команда кардиганов
+         </div>
+        </div>
+        <p>
+         На фоне импульсивных пемброков, вельш-корги кардиганы – сама сдержанность. Они достаточно энергичны, но не гиперактивны, контактны, но не навязчивы, покладисты, но не в ущерб чувству собственного достоинства. Лучшие друзья для собаки – это члены семьи, в которой она живет, поэтому вельш-корги кардиган всегда рад пошалить с малышами, поваляться рядом с хозяином на диване за просмотром сериала или побегать с ним по парку. Вообще карди очень зависимы от собственного владельца, но не стоит связывать эту особенность с недостатком интеллектуальных способностей. На самом деле вельш-корги кардиганы – умные и проницательные создания, просто веками работая бок о бок с человеком, они практически утратили стремление к самостоятельности. Зато этим симпатягам не свойственна амбициозность, и они никогда не попытаются поставить себя выше хозяина.
+        </p>
+        <p>
+         Несмотря на то что сегодняшние вельш-корги кардиганы практически распрощались с пастушеской деятельностью, инстинкты предков нет-нет да и напомнят о себе. В частности, современные карди теперь сторожат не коров и овечек, а членов семьи. Особенно ярко это проявляется в отношениях с детьми. Малыша, отклонившегося от нужной траектории и вышедшего за пределы существующей в воображении собаки границы, ждет легкое покусывание за ноги. Со стороны это выглядит потешно, но лучше не забывать, что пока вы смеетесь и снимаете «великое противостояние» на видео, вельш-корги кардиган воспринимает это как поощрение и в следующий раз будет стараться и кусаться еще больше.
+        </p>
+        <h2 id="gl5">
+         Воспитание и дрессировка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Дрессировка вельш-корги кардигана" data-fancybox="gallery" href="/upload/iblock/f13/f13c09e6c5f608d41b6cdd1f49355b3a.jpg" title="Дрессировка вельш-корги кардигана">
+          <div class="lazy-load" data-alt="Дрессировка вельш-корги кардигана" data-class="article_pic" data-original="/upload/resize_cache/iblock/f13/412_2150_1/f13c09e6c5f608d41b6cdd1f49355b3a.jpg">
+           <noscript data-alt="Дрессировка вельш-корги кардигана" data-class="article_pic" data-original="/upload/resize_cache/iblock/f13/412_2150_1/f13c09e6c5f608d41b6cdd1f49355b3a.jpg">
+            <img alt="Дрессировка вельш-корги кардигана" class="article_pic" height="576" src="/upload/resize_cache/iblock/f13/412_2150_1/f13c09e6c5f608d41b6cdd1f49355b3a.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Дрессировка вельш-корги кардигана
+         </div>
+        </div>
+        <p>
+         В учебе вельш-корги кардиганы проявляют себя с самой положительной стороны. Главное – не перебарщивать с серьезностью и монотонностью. В силу своего умеренно-живого темперамента карди с удовольствием учатся тому, что преподносится им в непринужденной, развлекательной форме и быстро теряют интерес к командам и действиям, подразумевающим тупое исполнение хозяйских требований. Не забывайте, что вельш-корги кардиган – это узкоспециализированная пастушья овчарка, которая совершенно не предназначена для служебной и охранной деятельности.
+        </p>
+        <p>
+         Начинайте воспитывать и социализировать щенка с первых минут его появления в вашем доме, а не в 6-месячном возрасте, как это советуют делать горе-специалисты с интернет-форумов. Обучение 2-месячного малыша выстраивается приблизительно в такой последовательности:
+        </p>
+        <ul>
+         <li>
+          знакомство с домашним туалетом (лоток, пеленка) и умение им пользоваться;
+         </li>
+         <li>
+          приучение к поводку и ошейнику;
+         </li>
+         <li>
+          воспитание послушания и установление границ дозволенного.
+         </li>
+        </ul>
+        <p>
+         В 3 месяца щенка можно и нужно начинать знакомить с окружающим миром, чтобы у него не сложилось впечатление, что он единственное четырехлапое создание на планете. Для этого почаще прогуливайтесь в местах, где бегают другие животные (кошки, собаки), а также устраивайте питомцу встречи с людьми. Заодно доходчиво объясните малышу, что теперь туалет для него – это не только лоток и пеленка, но и ближайшие кустики.
+        </p>
+        <p>
+         В 4-5 месяцев вельш-корги кардиган достаточно умен для того, чтобы усвоить минимальный набор команд: «Рядом!», «Сидеть!», «Лежать!». Кроме того, 4-месячный щенок должен понимать, что лай без повода – верх невоспитанности, а поднимание с земли посторонних предметов, пусть даже и соблазнительно пахнущих, – занятие, недостойное настоящей уэльской овчарки.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Тренировка вельш-корги кардигана" data-fancybox="gallery" href="/upload/iblock/579/5790e01c5a4edf2296d45951a0ce39fa.jpg" title="Тренировка вельш-корги кардигана">
+          <div class="lazy-load" data-alt="Тренировка вельш-корги кардигана" data-class="article_pic" data-original="/upload/resize_cache/iblock/579/412_2150_1/5790e01c5a4edf2296d45951a0ce39fa.jpg">
+           <noscript data-alt="Тренировка вельш-корги кардигана" data-class="article_pic" data-original="/upload/resize_cache/iblock/579/412_2150_1/5790e01c5a4edf2296d45951a0ce39fa.jpg">
+            <img alt="Тренировка вельш-корги кардигана" class="article_pic" height="274" src="/upload/resize_cache/iblock/579/412_2150_1/5790e01c5a4edf2296d45951a0ce39fa.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Тренировка вельш-корги кардигана
+         </div>
+        </div>
+        <p class="legenda">
+         Важно: учить кардигана цирковым и акробатическим номерам не запрещено, если только это не прыжки. Забираться на горизонтальные поверхности и пикировать с них вниз представителям этой породы строго противопоказано (у них лапки, если вы помните).
+        </p>
+        <p>
+         В процессе дрессировки полугодовалых особей учитывайте особенности переходного возраста. В этот период вельш-корги кардиган может умышленно вас не слушаться и притворяться непонимайкой. К доминированию эта порода не склонна, но кое-какие послабления 6-месячный щенок обязательно попытается себе выторговать. Помимо того, он может снова начать портить обувь, хотя три месяца назад демонстрировал полное равнодушие к подобным вещам.
+        </p>
+        <h2 id="gl6">
+         Содержание и уход
+        </h2>
+        <p>
+         Как и любая овчарка, вельш-корги кардиган, безусловно, предпочтет деревенский домик с лужайкой самой благоустроенной квартире. С другой стороны, если поселить представителя этой породы в скромной двушке, он не будет на вас в обиде, при условии, что вы не поленитесь пару раз в день сходить с ним в парк или за грибами в ближайшую рощицу.
+        </p>
+        <p>
+         Обустраивая уголок для собаки в доме или квартире, учитывайте анатомические особенности породы. Например, матрас-лежанка для вельш-корги кардигана должна быть строго ортопедической, а миска для еды – оснащенной регулируемой подставкой, чтобы животному не пришлось слишком наклоняться.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Моем, моем кардигана..." data-fancybox="gallery" href="/upload/iblock/f1d/f1d3495ccc6f572bcc9c5c1cce7b68e2.jpg" title="Моем, моем кардигана...">
+          <div class="lazy-load" data-alt="Моем, моем кардигана..." data-class="article_pic" data-original="/upload/resize_cache/iblock/f1d/1024_2150_1/f1d3495ccc6f572bcc9c5c1cce7b68e2.jpg">
+           <noscript data-alt="Моем, моем кардигана..." data-class="article_pic" data-original="/upload/resize_cache/iblock/f1d/1024_2150_1/f1d3495ccc6f572bcc9c5c1cce7b68e2.jpg">
+            <img alt="Моем, моем кардигана..." class="article_pic" src="/upload/resize_cache/iblock/f1d/1024_2150_1/f1d3495ccc6f572bcc9c5c1cce7b68e2.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Моем, моем кардигана...
+         </div>
+        </div>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Гладкая, жесткая шерсть вельш-корги кардигана обладает грязе- и водоотталкивающей функциями, поэтому полноценными купаниями с этой породой лучше не злоупотреблять. Банные дни рекомендуется устраивать не чаще, чем раз в три месяца (если у вас не выставочная собака), а шампунь для мытья подбирать специально для жестких волос.
+        </p>
+        <p>
+         Два раза в год вельш-корги кардиганы интенсивно линяют. Особенно впечатляет своими масштабами первый взрослый «шерстепад» щенка-подростка, зачастую повергающий неопытного владельца в состояние шока. Не стоит этого пугаться: с возрастом все устаканится, и кардиган будет линять не больше и не меньше среднестатистической овчарки. Что касается ежедневного ухода за волосом питомца, то арсенал расчесок вам в помощь. Массажная щетка, пуходерка-грабельки, гребень с длинными зубцами – потратиться на эти предметы придется уже потому, что расчесывать представителей этой породы придется ежедневно. Кроме того, раз в неделю карди полагается еще и хорошенько проработать подшерсток.
+        </p>
+        <p>
+         Уши чистят по мере необходимости старым добрым ветеринарным лосьоном и ватными палочками. А вот когти вельш-корги кардиганам придется стричь почаще (оптимально – 2 раза в месяц), так как они у них быстро растут и часто слоятся. Не стоит забрасывать такую малоприятную и для владельца, и для собаки процедуру, как чистка зубов. Но проводить ее лучше максимально осторожно, так как зубы у овчарок очень чувствительные.
+        </p>
+        <h3>
+         Выгул и физические нагрузки
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок вельш-корги кардигана на первой прогулке с хозяином" data-fancybox="gallery" href="/upload/iblock/55f/55f919f9aa7771b45923eb57ebca60a3.jpg" title="Щенок вельш-корги кардигана на первой прогулке с хозяином">
+          <div class="lazy-load" data-alt="Щенок вельш-корги кардигана на первой прогулке с хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/55f/412_2150_1/55f919f9aa7771b45923eb57ebca60a3.jpg">
+           <noscript data-alt="Щенок вельш-корги кардигана на первой прогулке с хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/55f/412_2150_1/55f919f9aa7771b45923eb57ebca60a3.jpg">
+            <img alt="Щенок вельш-корги кардигана на первой прогулке с хозяином" class="article_pic" height="617" src="/upload/resize_cache/iblock/55f/412_2150_1/55f919f9aa7771b45923eb57ebca60a3.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок вельш-корги кардигана на первой прогулке с хозяином
+         </div>
+        </div>
+        <p>
+         Вельш-корги кардиган – энергичная и подвижная собака, но даже ее внутренняя «батарейка» имеет свой лимит, так что не доводите питомца до изнеможения ежедневными тренировками. Оптимальный вариант нагрузки: прогулки в живом, непринужденном темпе два раза в день и три раза в неделю занятия аджилити, фристайлом или просто активные игры на свежем воздухе.
+        </p>
+        <p>
+         Летом придется присмотреть более тенистое место для выгула, так как из-за слишком густой и плотной шерсти карди могут перегреваться на солнцепеке. В период межсезонья вылезает другая проблема – грязь, скапливающаяся на животе собаки во время прогулок (спасибо коротким лапкам). Так что если не хотите таскать своего подопечного в ванную после каждого выхода на улицу, сшейте для него попонку-дождевик по индивидуальным размерам – в зоомагазинах ассортимент одежек для представителей этой породы крайне бедный.
+        </p>
+        <p>
+         Выбирая для своего вельш-корги кардигана четырехлапых друзей по игровой площадке, проследите, чтобы это были собаки некрупных пород. Дело в том, что кардиганы очень смелые от природы, и в случае конфликта габариты противника их абсолютно не сдерживают. Соответственно, если ваш подопечный гуляет в компании «кавказца», вы рискуете по-крупному, так как для волкодава такой коротконожка – досадное недоразумение, которое легко убрать с пути одним щелчком челюстей.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Вельш-корги кардиганы с удовольствием поглощают сухой корм, поэтому если у хозяина нет ни времени, ни желания заниматься составлением сбалансированного рациона для своего питомца, такой вариант может неплохо выручить. Правда, в отдельных случаях организм собаки может отреагировать на магазинную «сушку» аллергией, изменением окраса шерсти (белый волос приобретает розовый оттенок) и проблемами с кишечником.
+        </p>
+        <p>
+         С натуральной пищей дела обстоят проще. Кормите кардигана постным промороженным мясом из расчета – 20 г продукта на килограмм массы тела собаки, а также жидкими крупяными кашами, сваренными на мясном бульоне, и ваш подопечный будет здоров и счастлив. Только не переусердствуйте, потому что вельш-корги кардиганы – те еще обжорки, обожающие набивать желудок сверх меры и просить добавки.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Ой спасииибо, так приятно!" data-fancybox="gallery" href="/upload/iblock/10a/10a01d3f63d68a93f95768a373b3e08d.jpg" title="Ой спасииибо, так приятно!">
+          <div class="lazy-load" data-alt="Ой спасииибо, так приятно!" data-class="article_pic" data-original="/upload/resize_cache/iblock/10a/412_2150_1/10a01d3f63d68a93f95768a373b3e08d.jpg">
+           <noscript data-alt="Ой спасииибо, так приятно!" data-class="article_pic" data-original="/upload/resize_cache/iblock/10a/412_2150_1/10a01d3f63d68a93f95768a373b3e08d.jpg">
+            <img alt="Ой спасииибо, так приятно!" class="article_pic" height="549" src="/upload/resize_cache/iblock/10a/412_2150_1/10a01d3f63d68a93f95768a373b3e08d.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Ой спасииибо, так приятно!
+         </div>
+        </div>
+        <p>
+         Продукты, которые должны входить в рацион вельш-корги кардигана:
+        </p>
+        <ul>
+         <li>
+          обезжиренные кефир, ряженка, творог;
+         </li>
+         <li>
+          овощи (морковь, кабачок);
+         </li>
+         <li>
+          яблоки;
+         </li>
+         <li>
+          растительное масло (в качестве добавки, но не более 1 ст. л. в сутки);
+         </li>
+         <li>
+          рисовая и гречневая крупы.
+         </li>
+        </ul>
+        <p>
+         1-2 раза в неделю меню кардигана можно разнообразить субпродуктами, отварной курочкой, рыбным филе, яйцом и хлебными сухариками.
+        </p>
+        <p>
+         Под запретом:
+        </p>
+        <ul>
+         <li>
+          томаты, баклажаны, виноград;
+         </li>
+         <li>
+          грибы;
+         </li>
+         <li>
+          выпечка;
+         </li>
+         <li>
+          орехи;
+         </li>
+         <li>
+          колбасные изделия;
+         </li>
+         <li>
+          сметана и любая жирная кисломолочная продукция;
+         </li>
+         <li>
+          пшенная и манная крупы;
+         </li>
+         <li>
+          птичьи кости;
+         </li>
+         <li>
+          макароны;
+         </li>
+         <li>
+          сладости.
+         </li>
+        </ul>
+        <h2 id="gl7">
+         Здоровье и болезни вельш-корги кардигана
+        </h2>
+        <p>
+         Одно из самых слабых мест породы – это зубы, которые часто поражает пародонтоз. Обмен веществ у вельш-корги кардиганов тоже не самый выдающийся, поэтому они частенько объедаются и, как следствие, быстро жиреют. Что касается генетических недугов, то их у овчарок немного. В основном животные наследуют от своих родителей заболевания глаз (катаракта, вывих хрусталика, глаукома, кератит), а также дисплазию тазобедренных суставов. Помимо всего прочего, у вельш-корги кардиганов отмечается предрасположенность к пищевой аллергии и различного рода экземам.
+        </p>
+        <h2 id="gl8">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Вельш-корги кардиганы несколько уступают в распиаренности и востребованности пемброкам, поэтому питомников, занимающихся их разведением, не так много. Примите этот факт к сведению и подходите к выбору питомца осторожно, вооружившись стандартом внешности, а еще лучше, заручившись поддержкой специалиста из кинологической ассоциации.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Вельш-корги кардиган на пеньке" data-fancybox="gallery" href="/upload/iblock/469/4691f9973c21c1abbf10224da7c4fd67.jpg" title="Вельш-корги кардиган на пеньке">
+          <div class="lazy-load" data-alt="Вельш-корги кардиган на пеньке" data-class="article_pic" data-original="/upload/resize_cache/iblock/469/412_2150_1/4691f9973c21c1abbf10224da7c4fd67.jpg">
+           <noscript data-alt="Вельш-корги кардиган на пеньке" data-class="article_pic" data-original="/upload/resize_cache/iblock/469/412_2150_1/4691f9973c21c1abbf10224da7c4fd67.jpg">
+            <img alt="Вельш-корги кардиган на пеньке" class="article_pic" height="618" src="/upload/resize_cache/iblock/469/412_2150_1/4691f9973c21c1abbf10224da7c4fd67.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Вельш-корги кардиган на пеньке
+         </div>
+        </div>
+        <p>
+         При выборе щенка кардигана рекомендуем руководствоваться несколькими правилами.
+        </p>
+        <ul>
+         <li>
+          Кобели вельш-корги кардигана более доверчивы и исполнительны и охотнее учатся. Суки более хитрые и гибкие, поэтому им проще подстроиться под настроение хозяина.
+         </li>
+         <li>
+          Карди наследуют спортивные способности своих родителей, поэтому если вам необходим будущий чемпион по аджилити, требуйте у заводчика рабочие дипломы его предков.
+         </li>
+         <li>
+          Ответственные заводчики обычно тестируют на дисплазию суку и кобеля, которых планируют повязать. Подстрахуйтесь и попросите у продавца результаты тестирования, чтобы обезопасить себя от покупки щенка с плохой наследственностью.
+         </li>
+         <li>
+          Оптимальный возраст для продажи/покупки щенка вельш-корги – 8-12 недель. Несмотря на то, что кинологические клубы разрешают выставлять на продажу 45-дневных малышей, уважающие себя питомники такой привилегией не пользуются, предпочитая подержать собаку у себя чуть дольше, чтобы та получила необходимые прививки и окрепла.
+         </li>
+         <li>
+          Лучше всего брать щенков в питомниках, практикующих загородное выращивание. Это значит, что малыши не будут заперты в тесных клетках и у них останется достаточно места для того, чтобы играть и развиваться.
+         </li>
+        </ul>
+        <p class="legenda">
+         Помните: опытные заводчики и питомники подходят к продаже своих подопечных очень серьезно и крайне редко предлагают торг или щенков к резервированию. Предложение продавца «договориться» насчет стоимости – тревожный сигнал, потому что на такие уступки обычно идут в том случае, если собака имеет серьезные дефекты, которые вы пока не успели разглядеть.
+        </p>
+        <h2>
+         Фото щенков вельш-корги кардигана
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fad/fad69998c1a05232af152e9b94f002e1.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/fad/380_264_2/fad69998c1a05232af152e9b94f002e1.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/fad/380_264_2/fad69998c1a05232af152e9b94f002e1.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/fad/380_264_2/fad69998c1a05232af152e9b94f002e1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/31d/31d942d8286ba63723d01f39669fdfc1.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/31d/380_264_2/31d942d8286ba63723d01f39669fdfc1.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/31d/380_264_2/31d942d8286ba63723d01f39669fdfc1.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/31d/380_264_2/31d942d8286ba63723d01f39669fdfc1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b12/b12ab9d5fac2724ddb37d17ad11e034a.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/b12/380_264_2/b12ab9d5fac2724ddb37d17ad11e034a.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/b12/380_264_2/b12ab9d5fac2724ddb37d17ad11e034a.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/b12/380_264_2/b12ab9d5fac2724ddb37d17ad11e034a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7f6/7f634f6f97bcba6ae51b45fa1ef7b729.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/7f6/380_264_2/7f634f6f97bcba6ae51b45fa1ef7b729.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/7f6/380_264_2/7f634f6f97bcba6ae51b45fa1ef7b729.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/7f6/380_264_2/7f634f6f97bcba6ae51b45fa1ef7b729.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/186/186e3d62826b69f9a2903bf340cc5d48.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/186/380_264_2/186e3d62826b69f9a2903bf340cc5d48.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/186/380_264_2/186e3d62826b69f9a2903bf340cc5d48.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/186/380_264_2/186e3d62826b69f9a2903bf340cc5d48.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e17/e17c905deb5053130323fbf1b95e62c0.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/e17/380_264_2/e17c905deb5053130323fbf1b95e62c0.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/e17/380_264_2/e17c905deb5053130323fbf1b95e62c0.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/e17/380_264_2/e17c905deb5053130323fbf1b95e62c0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7f8/7f8d3c69bcd83edde5252c65cffa09da.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/7f8/380_264_2/7f8d3c69bcd83edde5252c65cffa09da.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/7f8/380_264_2/7f8d3c69bcd83edde5252c65cffa09da.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/7f8/380_264_2/7f8d3c69bcd83edde5252c65cffa09da.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5bf/5bf160b6ec7f8399876b015109994e96.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/5bf/380_264_2/5bf160b6ec7f8399876b015109994e96.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/5bf/380_264_2/5bf160b6ec7f8399876b015109994e96.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/5bf/380_264_2/5bf160b6ec7f8399876b015109994e96.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/347/3472cb1a505c4369c7192fe442626964.jpg" title="">
+           <div class="lazy-load" data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/347/380_264_2/3472cb1a505c4369c7192fe442626964.jpg">
+            <noscript data-alt="Вельш-корги кардиган" data-class="article_pic" data-original="/upload/resize_cache/iblock/347/380_264_2/3472cb1a505c4369c7192fe442626964.jpg">
+             <img alt="Вельш-корги кардиган" class="article_pic" src="/upload/resize_cache/iblock/347/380_264_2/3472cb1a505c4369c7192fe442626964.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl9">
+         Сколько стоит вельш-корги кардиган
+        </h2>
+        <p>
+         Вельш-корги кардиган с нормальной родословной, всеми необходимыми прививками и чипом (клеймом) по определению не может стоить дешево. Придется привыкнуть к тому, что цены на эту породу стартуют от 40 000 рублей и заканчиваются где-то в районе 80 000 - 100 000 руб.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения вельш-корги-кардигана на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/25497/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Ильяс _" data-original="/upload/main/bd1/ldfk840ylw5l9cvprrew91u6sse8l32v.jpg">
+            <noscript data-alt="Ильяс _" data-original="/upload/main/bd1/ldfk840ylw5l9cvprrew91u6sse8l32v.jpg">
+             <img alt="Ильяс _" src="/upload/main/bd1/ldfk840ylw5l9cvprrew91u6sse8l32v.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/na-stranitsakh-korzhey-pembrokov-i-kardiganov-pereputany-fotografii-4225/">
+           на страницах Коржей Пемброков и Кардиганов перепутаны фотографии
+          </a>
+         </div>
+         <div class="forum-text">
+          Я, конечно, не экперт, но по ушам и окрасу / блеску шерсти отличить легко
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/25497/">
+            Ильяс _
+           </a>
+          </span>
+          <span class="vopros-date">
+           Год назад
+          </span>
+          <span class="vopros-smotr">
+           609 просмотров
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/25119/">
+          <div class="ava-med">
+           <div class="noava fill9">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/korgi-agressivnyy-pomogite-4044/">
+           корги агрессивный. помогите!
+          </a>
+         </div>
+         <div class="forum-text">
+          здравствуйте, очень нужна помощь. был в отпуске, полетел домой, с собой взял своего корги (10 мес), кинолог перед отлётом посоветовал давать собаке успокоительные, чтобы он перенес полет легче. в последнюю неделю...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/25119/">
+            Феликс Беловед
+           </a>
+          </span>
+          <span class="vopros-date">
+           Год назад
+          </span>
+          <span class="vopros-smotr">
+           1218 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/24889/">
+          <div class="ava-med">
+           <div class="noava fill9">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/skazhite-pozhaluysta-eto-korgi-ili-kakaya-to-drugaya-poroda-3936/">
+           Скажите пожалуйста это корги или какая то другая порода?
+          </a>
+         </div>
+         <div class="forum-text">
+          Хочу узнать правда ли это корги или обман, сам не разбираюсь в этом.
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/24889/">
+            Сергей Жорович
+           </a>
+          </span>
+          <span class="vopros-date">
+           Год назад
+          </span>
+          <span class="vopros-smotr">
+           1349 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/5650/">
+          <div class="ava-med">
+           <div class="noava fill0">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/eto-korgi-3066/">
+           Это корги?
+          </a>
+         </div>
+         <div class="forum-text">
+          Подскажите пожалуйста, это корги? Или какая смешанная пароль?
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/5650/">
+            Диана  Грибеник
+           </a>
+          </span>
+          <span class="vopros-date">
+           2 года назад
+          </span>
+          <span class="vopros-smotr">
+           2504 просмотра
+          </span>
+          <span class="vopros-otvet">
+           8 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/velsh-korgi-kardigan/forum/">
+        Перейти на
+        форум вельш-корги-кардигана
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Вельш-корги кардиган" src="/upload/iblock/c0b/c0b931451d53ccc8eb5719cf559cfcf2.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/velsh-korgi-kardigan/">
+          Вельш-корги кардиган
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/velsh-korgi-kardigan/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/velsh-korgi-kardigan/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/velsh-korgi-kardigan/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/velsh-korgi-kardigan/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/velsh-korgi-kardigan/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/velsh-korgi-kardigan/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/frantsuzskiy-buldog/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Французский бульдог" data-original="/upload/resize_cache/iblock/5c0/100_100_1/5c0c7393a5e5d42c33c23efc28a52f84.jpg">
+          <noscript data-alt="Французский бульдог" data-original="/upload/resize_cache/iblock/5c0/100_100_1/5c0c7393a5e5d42c33c23efc28a52f84.jpg">
+           <img alt="Французский бульдог" src="/upload/resize_cache/iblock/5c0/100_100_1/5c0c7393a5e5d42c33c23efc28a52f84.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Французский бульдог
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/kavkazskaya-ovcharka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Кавказская овчарка" data-original="/upload/resize_cache/iblock/ad2/100_100_1/ad2252f439c32c723e5d065ee89dafdf.jpg">
+          <noscript data-alt="Кавказская овчарка" data-original="/upload/resize_cache/iblock/ad2/100_100_1/ad2252f439c32c723e5d065ee89dafdf.jpg">
+           <img alt="Кавказская овчарка" src="/upload/resize_cache/iblock/ad2/100_100_1/ad2252f439c32c723e5d065ee89dafdf.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Кавказская овчарка
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/rotveyler/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Ротвейлер" data-original="/upload/resize_cache/iblock/2ba/100_100_1/2ba727577729810222fac27e266e04ef.jpg">
+          <noscript data-alt="Ротвейлер" data-original="/upload/resize_cache/iblock/2ba/100_100_1/2ba727577729810222fac27e266e04ef.jpg">
+           <img alt="Ротвейлер" src="/upload/resize_cache/iblock/2ba/100_100_1/2ba727577729810222fac27e266e04ef.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Ротвейлер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/shi-ttsu/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Ши-тцу" data-original="/upload/resize_cache/iblock/b0b/100_100_1/b0b0364aa02f21000841862330af0792.jpg">
+          <noscript data-alt="Ши-тцу" data-original="/upload/resize_cache/iblock/b0b/100_100_1/b0b0364aa02f21000841862330af0792.jpg">
+           <img alt="Ши-тцу" src="/upload/resize_cache/iblock/b0b/100_100_1/b0b0364aa02f21000841862330af0792.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Ши-тцу
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fvelsh-korgi-kardigan%252F%253Fcheck_key%253Dab19c80b02997860e06f2353e4cbc359%2526ANIMAL_CODE%253Dvelsh-korgi-kardigan%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fvelsh-korgi-kardigan%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRnZlbHNoLWtvcmdpLWthcmRpZ2FuJTJGJTNGY2hlY2tfa2V5JTNEYWIxOWM4MGIwMjk5Nzg2MGUwNmYyMzUzZTRjYmMzNTklMjZBTklNQUxfQ09ERSUzRHZlbHNoLWtvcmdpLWthcmRpZ2FuJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRnZlbHNoLWtvcmdpLWthcmRpZ2FuJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fvelsh-korgi-kardigan%252F%253Fcheck_key%253Dab19c80b02997860e06f2353e4cbc359%2526ANIMAL_CODE%253Dvelsh-korgi-kardigan%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fvelsh-korgi-kardigan%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fvelsh-korgi-kardigan%252F%253Fcheck_key%253Dab19c80b02997860e06f2353e4cbc359%2526ANIMAL_CODE%253Dvelsh-korgi-kardigan%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fvelsh-korgi-kardigan%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "128.204.71.211"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--ae9a6968bb0fc2d6edb024ba5598ed8b-->

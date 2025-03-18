@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'9ec2b0ce48fe'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Карельская медвежья собака, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Карельская медвежья собака – разновидность лаек для охоты на лося, медведя и кабана, выведенная в Финляндии. Обладает самолюбивым характером и сверхразвитым чутьем." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/8bc/os1m30a1vvxsnv90m0j5qv2fgwoamarc.jpg" property="og:image"/>
+     <title>
+      Карельская медвежья собака: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/karelskaya-medvezhya-sobaka/" property="og:url"/>
+     <meta content="Карельская медвежья собака: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Карельская медвежья собака – разновидность лаек для охоты на лося, медведя и кабана, выведенная в Финляндии. Обладает самолюбивым характером и сверхразвитым чутьем." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/karelskaya-medvezhya-sobaka/" itemprop="url">
+         <span itemprop="title">
+          Карельская медвежья собака
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Карельская медвежья собака
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/karelskaya-medvezhya-sobaka/">
+          Описание
+         </a>
+         <a href="/dog/karelskaya-medvezhya-sobaka/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/karelskaya-medvezhya-sobaka/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/karelskaya-medvezhya-sobaka/photo/">
+          Фото
+         </a>
+         <a href="/dog/karelskaya-medvezhya-sobaka/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Карельская медвежья собака" src="/upload/iblock/539/0d9mctr1ynfv9vr93vkpy6dxc71qzcbb.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/karelskaya-medvezhya-sobaka/">
+           КМС
+          </a>
+          ,
+          <a href="/dog/karelskaya-medvezhya-sobaka/">
+           карьяланкархукойра
+          </a>
+          ,
+          <a href="/dog/karelskaya-medvezhya-sobaka/">
+           карельская медвежья лайка
+          </a>
+         </span>
+         <p>
+          Карельская медвежья собака – разновидность лаек для охоты на лося, медведя и кабана, выведенная в Финляндии. Обладает самолюбивым характером и сверхразвитым чутьем.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/karelskaya-medvezhya-sobaka/photo/">
+         Все
+            фото карельской медвежьей собаки
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы карельская медвежья собака
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы карельская медвежья собака
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Рабочая техника породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Характер карельской медвежьей собаки
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Здоровье и болезни карельских медвежьих собак
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Цена карельской медвежьей собаки
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Карельская медвежья собака
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Финляндия
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         1936 год
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 25-28 см, суки 17-20 см
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 57 ± 3 см, суки 52 ± 3 см
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Не нужно путать карельскую медвежью собаку с карело-финской лайкой. Это две отдельные породы, представители которых имеют разный внешний облик и охотничью «специализацию».
+        </li>
+        <li>
+         Карельские медвежьи активно используются природоохранными службами США. Обычно их привлекают для отпугивания медведей, имеющих привычку выходить к человеческому жилью и нападать на домашних животных.
+        </li>
+        <li>
+         Основная часть поголовья породы сосредоточена в Финляндии, хотя ее представители нередко встречаются и в странах Северной Европы.
+        </li>
+        <li>
+         Этот тип лайки не подходит для домашнего и квартирного содержания. Без возможности регулярно выезжать на охоту животное начинает вести себя деструктивно.
+        </li>
+        <li>
+         Карельские медвежьи собаки крайне самолюбивы и требуют к себе соответствующего отношения. Подчинить питомца своей воле криками и угрозами не получится.
+        </li>
+        <li>
+         Порода сверхэнергичная, поэтому обзаводиться карельской медвежьей собакой стоит лишь в том случае, если вы готовы к долгим продуктивным прогулкам, а также участию в охотничьих мероприятиях.
+        </li>
+        <li>
+         На финском название породы звучит как карьяланкархукойра.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Карельская медвежья собака" data-original="/upload/iblock/8bc/os1m30a1vvxsnv90m0j5qv2fgwoamarc.jpg">
+          <noscript data-alt="Карельская медвежья собака" data-original="/upload/iblock/8bc/os1m30a1vvxsnv90m0j5qv2fgwoamarc.jpg">
+           <img alt="Карельская медвежья собака" src="/upload/iblock/8bc/os1m30a1vvxsnv90m0j5qv2fgwoamarc.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Карельская медвежья лайка
+          </strong>
+          – увлеченный и безжалостный охотник, которому не нужны постоянные подсказки и руководство. Работа по зверю с породой всегда успешна и добычлива. Правда, и подход к ее представителям требуется особый. Впрочем, если любите собак-лидеров с яркой харизмой, подружиться с этим самодостаточным и немного упрямым трудоголиком будет несложно.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Ниже среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Длительные периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Карельская медвежья собака основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы карельская медвежья собака
+        </h2>
+        <p>
+         Предки карельской медвежьей собаки обитали на территориях Финляндии и Карелии задолго до их полноценного заселения. Есть мнение, что современный тип породы произошел от древних финских и охотничьих архангельских лаек. Однако официальным родоначальником этого собачьего клана принято считать зырянскую лайку. Именно она указывается в породном стандарте как максимально родственная «карелам» разновидность.
+        </p>
+        <p>
+         Полноценно разводить породу в Финляндии начали в конце 30-х годов прошлого столетия. Затем процесс пришлось приостановить из-за русско-финской войны. По этой же причине пройти стандартизацию карельским медвежьим лайкам удалось только в 1945 году.
+        </p>
+        <p>
+         Начиная со второй половины XX столетия КМС активно экспортировались в страны Скандинавии. При этом их популярность на родине сохранялась. В России разведением животных занимаются до сих пор, но не настолько массово, как в Финляндии. Причина – невысокая востребованность породы. Несмотря на поразительную работоспособность «финнов», большинство российских охотников предпочитает работать с их главными конкурентами –
+         <a class="ph" href="/dog/russko-evropeyskaya-layka/">
+          русско-европейскими лайками (РЕЛ)
+         </a>
+         .
+        </p>
+        <h2>
+         Видео: Карельская медвежья собака
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="gYGLl8fIw4U">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы карельская медвежья собака
+        </h2>
+        <p>
+         Внешнее сходство между «карелами» и
+         <a class="ph" href="/dog/russko-evropeyskaya-layka/">
+          русско-европейскими лайками
+         </a>
+         поразительное. Впрочем, по рабочим показателям различий между ними тоже не много. Типичная карельская медвежья – это физически развитый шпицеподобный крепыш ростом 54-60 см в холке и массой тела 25-28 кг. Своими черно-белыми «одежками» уроженцы Финляндии тоже сильно смахивают на
+         <a class="ph" href="/dog/russko-evropeyskaya-layka/">
+          русско-европейских лаек
+         </a>
+         . Без достаточного опыта спутать представителей обеих пород можно очень легко.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Широкий череп с выпуклым профилем. Надбровные дуги без сильного выступа. Стоп затянутый и без крутости. Морда с прямой спинкой и едва заметным сужением к носу. Скулы отчетливые. Мочка черная и довольно крупная.
+        </p>
+        <h3>
+         Губы, зубы, челюсти
+        </h3>
+        <p>
+         Крепкие челюсти закрываются полностью тонкими плотными губами. Зубы стоят симметрично и тесно друг к другу, смыкаясь в ножницеобразный прикус.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Относительно размеров морды глаза маленькие. Радужная оболочка всех оттенков карего цвета. Взгляду карельской медвежьей собаки присущи внимательность и экспрессия.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Уши стоят высоко и имеют закругленный кончик. Они не крупные, но и не миниатюрные, с ровно стоячим ушным полотном.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Мышечная ткань на этой части тела хорошо развита, из-за чего шея выглядит крепкой и сильной. Верхняя линия с изгибом.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело карельской медвежьей – это сила и крепкий мышечный корсет. Холка четко прорисована. Поясница мускулистая и короткая при ровной спине и мощном широком крупе. Объемную длинную грудь дополняют слегка изогнутые ребра. Нижняя линия лишь слегка подобрана.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Передвигаться легко, с хорошим захватом пространства породе помогают крепкие и выносливые ноги. Как для передней, так и задней пары лап животного характерен прямой параллельный постав. Лопатки и плечевые кости выраженно наклонные. Локти отведены назад, тогда как колени смотрят вперед. Бедренная часть ног широкая и сильная. Низко опущенные скакательные суставы отличаются хорошо раскрытыми углами. Лапы собранные, с характерным сводом; задние всегда чуть длиннее передних.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвост карельской медвежьей собаки занимает предельно высокое положение, свернут в кольцо, кончиком которого касается либо спины, либо любого из боков.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Грубость и жесткость покровного волоса компенсируется пушистостью и мягкостью подшерстка. На спине, загривке и бедрах шерсть всегда длиннее, чем на остальных участках тела.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Классический черный либо с бурым подтоном. Крупные белые отметины на голове, ногах, животе, груди есть у большинства кобелей и сук.
+        </p>
+        <h3>
+         Дефекты экстерьера и дисквалифицирующие пороки
+        </h3>
+        <p>
+         Нехватка зубов, слишком мягкое ушное полотно, желтая радужка, крапчатость белых меток сильно снижают выставочную отметку за экстерьер. Преобладание белого окраса над черным и прямой хвост тоже серьезные дефекты. Что касается полной дисквалификации, то для ее присуждения лайке достаточно иметь прикус с перекусом либо недокусом, полустоячие (висячие) уши или голубые глаза.
+        </p>
+        <h2 id="gl3">
+         Рабочая техника породы
+        </h2>
+        <p>
+         Карельскую медвежью собаку выводили как охотника на крупного зверя – лося, медведя, кабана. Отличительная черта породы – исключительная злобность к добыче, которая может распространяться на соплеменников, а также остальных домашних животных. Собственно, поэтому КМС заводят не так часто, как их сородичей –
+         <a class="ph" href="/dog/russko-evropeyskaya-layka/">
+          русско-европейских лаек
+         </a>
+         . На охоте сук и кобелей используют для поиска медвежьих берлог и работы по так называемому ходовому зверю. В ситуации с кабаном задача породы – выследить и задержать парнокопытное облаиванием, а также покусыванием за задние ноги. Это позволяет охотнику выиграть время и незаметно подобраться к цели, чтобы произвести выстрел с максимально близкого расстояния.
+        </p>
+        <h2 id="gl4">
+         Характер карельской медвежьей собаки
+        </h2>
+        <p>
+         Порода очень хорошо умеет разделять работу и повседневную жизнь. В лесу карельская медвежья собака – азартный и бескомпромиссный охотник, а дома – преданный и надежный друг. Сторожевой инстинкт у «карелов» выражен слабо, поэтому максимум, на что с ними можно рассчитывать, – это характерный лай, уведомляющий о нарушении территориальных границ чужаками. При этом ни к каким более решительным действиям пес переходить не будет.
+        </p>
+        <p>
+         Вообще, обладание таким четвероногим другом накладывает на владельца некоторые обязательства. Например, устроить дома мини-зверинец с лайкой точно не получится. Куры, кошки, грызуны, а также любые другие пернатые и хвостатые страдать от такого соседства будут сильно, но недолго. Помочь КМС провести четкую границу между диким зверем и домашними питомцами не получится, как бы вы ни старались, поэтому делайте выбор в пользу этой породы осознанно. Няньки из «финнов» тоже не выйдет. Более того, кинологи вообще не рекомендуют тесные контакты собак-охотников с детьми.
+        </p>
+        <p>
+         Практически все кобели КМС – сильнейшие доминанты. На охоте эта особенность позволяет им действовать и принимать важные решений в отрыве от хозяина, что считается хорошим показателем. В домашних условиях неукротимое лидерство может стать проблемой. Например, если кобель увлечен погоней, его практически невозможно остановить. Из-за этого на охоте лайки часто теряются, а из дома периодически сбегают. Кстати, женщин-хозяек кобели и суки слушаются на порядок хуже, поэтому если нужна «чисто мужская порода» – это она.
+        </p>
+        <h2 id="gl5">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Основная цель воспитания карельской медвежьей собаки – подготовка к охоте. В данном случае нет смысла изучать кучу команд и отрабатывать умения, которые не пригодятся в работе. Опытные лайчатники на первых порах рекомендуют свести обучение щенка к системе «можно-нельзя», то есть оказавшись в новом доме, малыш сразу учится понимать, где его сфера влияния начинается, а где заканчивается.
+        </p>
+        <ul>
+         <li>
+          Управляйте действиями щенка интонационно. Ни в коем случае не бейте питомца – карельская медвежья вам этого не простит.
+         </li>
+         <li>
+          Тщательно дозируйте ласку и тактильный контакт. Конечно, подопечный нуждается в вашем поощрении, но постоянное затискивание животного в объятиях негативно влияет на его рабочую квалификацию.
+         </li>
+         <li>
+          Не дразните и не обманывайте питомца, даже если ваша цель – просто пошутить. Отношения с карельской медвежьей лайкой должны выстраиваться на взаимном доверии.
+         </li>
+         <li>
+          Для особенно упрямых и пытающихся верховодить кобелей допустимо использование умеренно болевых приемов. Но это исключительная мера, к которой прибегают только с подросшими особями, не ранее, чем им исполнится полгода.
+         </li>
+         <li>
+          Воспитывайте в щенке недоверие к посторонним. Конечно, в подозрительного сторожа карельская медвежья собака не превратится, но отучить ее брать еду у незнакомцев и тянуться к ним за лаской – вполне реально.
+         </li>
+        </ul>
+        <p>
+         Этап дрессировки, следующий за социализацией и воспитанием, – это натаска. Учить карельскую медвежью работать по зверю несложно, если изначально видеть ее природную склонность. Не слушайте живодеров из Сети и не натаскивайте лайку на кошках. Такие методы уже давно себя изжили. Также имейте в виду, что техники натаскивания могут различаться в зависимости от вида зверя. Например, ходить на лося нужно в ветреную прохладную погоду, чтобы сохатый не мог учуять присутствие охотника.
+        </p>
+        <p class="legenda">
+         Важно: приступать к гону крупной добычи можно только с собаками, которым исполнилось 1-1,5 года. Более молодая лайка с крупногабаритной целью элементарно не справится.
+        </p>
+        <h2 id="gl6">
+         Содержание и уход
+        </h2>
+        <p>
+         Попрощайтесь с мечтой адаптировать карельскую медвежью собаку к условиям квартиры. Пользы от этого не будет ни вам, ни ей, зато нервотрепки, раздражающего воя и погромов интерьера – сколько угодно. Представителям породы полезно не просто загородное содержание, но и регулярная работа по зверю. В свободное от охоты время КМС должна обитать в вольере или на территории тщательно огороженного двора. Запрещено держать охотничью собаку на цепи и в закрытом сарае.
+        </p>
+        <p>
+         Выходы на прогулки между охотничьими сезонами тоже никто не отменял. Дважды в день выходите с питомцем в локации, удаленные от жилья, и активно занимайтесь. Помните, что кобели карельской медвежьей необыкновенно конфликтны, поэтому встреч с другими «хвостами» на прогулках нужно максимально избегать.
+        </p>
+        <p class="legenda">
+         <strong>
+          Лайфхак от опытных охотников:
+         </strong>
+         прогулочные маршруты лучше постоянно менять. Это способствует развитию ориентировочных навыков и приучает лайку к поиску.
+        </p>
+        <h3>
+         Гигиена и уход за шерстью
+        </h3>
+        <p>
+         Щенков карельской медвежьей собаки не моют. Взрослых особей без повода тоже лучше не купать, чтобы не уничтожать защитную жировую смазку на шерсти. Поверхностные свежие загрязнения с тела можно просто счистить влажной тряпкой. Испачканные лапы и живот разрешается ополоснуть в теплой воде. Поскольку порода рабочая и ее представители часто бывают в лесу, важно своевременно проводить обработку от клещей.
+        </p>
+        <p>
+         Линька у карельской медвежьей собаки происходит дважды в год. Ускорить ее прохождение поможет ежедневное вычесывание шерсти и хороший фурминатор, который уберет обильный подшерсток. Лапы тоже требуют внимания – после каждой охоты осматривайте подушечки на предмет порезов и заноз. Все ранки своевременно обрабатывайте антисептиками, а трещинки – питательным кремом или растительным маслом.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Пожалуй, самая большая статья расходов в бюджете любого лайчатника – питание питомца. У активно работающих по зверю животных обмен веществ идет на пределе возможностей. Вот почему в сезон охоты четвероногий друг нуждается в увеличенных порциях еды и большем количестве калорий. Основу рациона должно составлять нежирное мясо и внутренние органы млекопитающих (печень, сердце, почки, легкие). Все это можно давать как в сыром, так и в отварном виде.
+        </p>
+        <p>
+         Каши на мясном бульоне допускаются. Главное – не делать их основой меню, тем самым пытаясь уменьшить траты на содержание лайки. Полезны овощи, кроме бобовых, а также ягоды и фрукты. Желательно приучать питомца с раннего возраста потреблять их сырыми. Обязательно несколько раз в неделю угощать «хвоста» нежирной кисломолочкой.
+        </p>
+        <p>
+         <strong>
+          Важный нюанс:
+         </strong>
+         морская рыба с удаленными костями возможна как дополнение, но не как постоянная основа рациона.
+        </p>
+        <p>
+         К вкусными бонусам, которыми обязательно нужно поощрять карельскую медвежью собаку, относятся яичный желток, сыр, кусочки сливочного масла. Некоторые заводчики рекомендуют не избегать сырых костей и хрящей, которые также полезны для породы. Но если решите побаловать песика косточкой, пусть это будет не трубчатая и не птичья разновидность.
+        </p>
+        <p>
+         Собакам, питающимся «натуралкой», обязательно нужны витаминно-минеральные подкормки. По поводу наиболее оптимальных вариантов можно посоветоваться с ветеринаром или заводчиком.
+        </p>
+        <h2 id="gl7">
+         Здоровье и болезни карельских медвежьих собак
+        </h2>
+        <p>
+         В основной своей массе карельские медвежьи собаки – здоровые и неприхотливые питомцы. Единственное, придется чуть больше внимания уделять состоянию суставов. Тазобедренная дисплазия среди представителей породы, увы, нередкое явление.
+        </p>
+        <h2 id="gl8">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Суки карельской медвежьей собаки более аккуратны в работе, чем кобели. А еще у них сильный инстинкт самосохранения. Так что если в планах охота на крупных и опасных зверей, лучше выбрать «девочку».
+         </li>
+         <li>
+          Для кобелей характерны высокая увлеченность процессом преследования и злобность к добыче. Обычно именно щенков-мальчиков рекомендуют для работы по кабану.
+         </li>
+         <li>
+          Важно, чтобы оба производителя помета обладали хорошим набором охотничьих способностей. Чтобы получить действительно чутьистого щенка, ищите потомство пар, регулярно работающих по зверю в естественной среде.
+         </li>
+         <li>
+          Производители, имеющие дипломы по вольерно-подсадной дичи, – это не всегда знак качества помета. Данный вид испытаний проводится в искусственно воссозданных условиях (зверь сидит на цепи или в клетке), поэтому полноценной охотой такое тестирование не является.
+         </li>
+         <li>
+          Продавец предоставляет возможность посмотреть всех щенков? Не отказывайтесь и примите предложение. Если между малышами большой разброс в весовых категориях, это свидетельствует о не очень хорошем племенном потенциале суки.
+         </li>
+         <li>
+          Самый активный и задиристый малыш в помете – это будущий доминант. По мере взросления такой кобель потребует к себе особого отношения. Не ищете сложных путей и хотите собаку попроще? Тогда присмотритесь к менее шустрым соплеменникам маленького лидера.
+         </li>
+         <li>
+          Для КМС важно хорошее чутье. Находясь в питомнике, не стесняйтесь попросить владельца провести тест на обоняние. Происходит это так: в отдалении от играющих щенков ставится миска с едой и ведется наблюдение. Собака, которая первой обнаружит источник съедобного запаха, и будет лучшим «нюхачом».
+         </li>
+        </ul>
+        <h2 id="gl9">
+         Цена карельской медвежьей собаки
+        </h2>
+        <p>
+         В России финских лаек разводят достаточно активно, так что больших усилий для поиска щенка прилагать не придется. Стандартный ценник на карельскую медвежью собаку с документами от дипломированных производителей – 30 000 – 40 000 ₽. Особи попроще, не имеющие выдающихся родословных, обычно предлагаются по 10 000 – 15 000 ₽.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения карельской медвежьей собаки на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/karelskaya-medvezhya-sobaka/forum/">
+        Перейти на
+        форум карельской медвежьей собаки
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Карельская медвежья собака" src="/upload/iblock/539/0d9mctr1ynfv9vr93vkpy6dxc71qzcbb.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/karelskaya-medvezhya-sobaka/">
+          Карельская медвежья собака
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/karelskaya-medvezhya-sobaka/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/karelskaya-medvezhya-sobaka/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/karelskaya-medvezhya-sobaka/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/karelskaya-medvezhya-sobaka/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/karelskaya-medvezhya-sobaka/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/maremma-abrutstskaya-ovcharka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Маремма-абруццкая овчарка" data-original="/upload/resize_cache/iblock/24a/100_100_1/24a1848f520299b6b7fb457fbe53ef7c.jpg">
+          <noscript data-alt="Маремма-абруццкая овчарка" data-original="/upload/resize_cache/iblock/24a/100_100_1/24a1848f520299b6b7fb457fbe53ef7c.jpg">
+           <img alt="Маремма-абруццкая овчарка" src="/upload/resize_cache/iblock/24a/100_100_1/24a1848f520299b6b7fb457fbe53ef7c.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Маремма-абруццкая овчарка
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/nemetskaya-ovcharka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Немецкая овчарка" data-original="/upload/resize_cache/iblock/212/100_100_1/212adec96be4631fe2fa0584225b83ff.jpg">
+          <noscript data-alt="Немецкая овчарка" data-original="/upload/resize_cache/iblock/212/100_100_1/212adec96be4631fe2fa0584225b83ff.jpg">
+           <img alt="Немецкая овчарка" src="/upload/resize_cache/iblock/212/100_100_1/212adec96be4631fe2fa0584225b83ff.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Немецкая овчарка
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/peterburgskaya-orkhideya/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Петербургская орхидея" data-original="/upload/resize_cache/iblock/bee/100_100_1/bee557f2a7bf4f9ee238d5c310a3d5f3.jpg">
+          <noscript data-alt="Петербургская орхидея" data-original="/upload/resize_cache/iblock/bee/100_100_1/bee557f2a7bf4f9ee238d5c310a3d5f3.jpg">
+           <img alt="Петербургская орхидея" src="/upload/resize_cache/iblock/bee/100_100_1/bee557f2a7bf4f9ee238d5c310a3d5f3.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Петербургская орхидея
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/yaponskiy-shpits/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Японский шпиц" data-original="/upload/resize_cache/iblock/a9f/100_100_1/a9f6004878eea81bc3aac1ca4426c15e.jpg">
+          <noscript data-alt="Японский шпиц" data-original="/upload/resize_cache/iblock/a9f/100_100_1/a9f6004878eea81bc3aac1ca4426c15e.jpg">
+           <img alt="Японский шпиц" src="/upload/resize_cache/iblock/a9f/100_100_1/a9f6004878eea81bc3aac1ca4426c15e.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Японский шпиц
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkarelskaya-medvezhya-sobaka%252F%253Fcheck_key%253D7e10b02f915f69eebfcb92946d1f8836%2526ANIMAL_CODE%253Dkarelskaya-medvezhya-sobaka%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkarelskaya-medvezhya-sobaka%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmthcmVsc2theWEtbWVkdmV6aHlhLXNvYmFrYSUyRiUzRmNoZWNrX2tleSUzRDdlMTBiMDJmOTE1ZjY5ZWViZmNiOTI5NDZkMWY4ODM2JTI2QU5JTUFMX0NPREUlM0RrYXJlbHNrYXlhLW1lZHZlemh5YS1zb2Jha2ElMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGa2FyZWxza2F5YS1tZWR2ZXpoeWEtc29iYWthJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkarelskaya-medvezhya-sobaka%252F%253Fcheck_key%253D7e10b02f915f69eebfcb92946d1f8836%2526ANIMAL_CODE%253Dkarelskaya-medvezhya-sobaka%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fkarelskaya-medvezhya-sobaka%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkarelskaya-medvezhya-sobaka%252F%253Fcheck_key%253D7e10b02f915f69eebfcb92946d1f8836%2526ANIMAL_CODE%253Dkarelskaya-medvezhya-sobaka%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkarelskaya-medvezhya-sobaka%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "213.87.146.244"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--893c50bba47cb47a0d63807de9a143c7-->

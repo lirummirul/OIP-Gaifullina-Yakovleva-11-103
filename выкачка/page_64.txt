@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'1c659f07a92d'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Гаванский бишон, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Гаванский бишон – коммуникабельная собака-компаньон из группы болонок с гладкой длинной шерстью. " name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/38b/38bdd46b55629ace2a3eb79a35f5e529.jpg" property="og:image"/>
+     <title>
+      Гаванский бишон (Хаванез): все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/gavanskiy-bishon/" property="og:url"/>
+     <meta content="Гаванский бишон (Хаванез): все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Гаванский бишон – коммуникабельная собака-компаньон из группы болонок с гладкой длинной шерстью. " property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/gavanskiy-bishon/" itemprop="url">
+         <span itemprop="title">
+          Гаванский бишон
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Гаванский бишон
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/gavanskiy-bishon/">
+          Описание
+         </a>
+         <a href="/dog/gavanskiy-bishon/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/gavanskiy-bishon/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/gavanskiy-bishon/photo/">
+          Фото
+         </a>
+         <a href="/dog/gavanskiy-bishon/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Гаванский бишон" src="/upload/iblock/78b/78b814ae542931089a3f2ad50e4c30f9.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/gavanskiy-bishon/">
+           хаванез
+          </a>
+         </span>
+         <p>
+          Гаванский бишон – коммуникабельная собака-компаньон из группы болонок с гладкой длинной шерстью.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/957/957b4eda3ff271089af9190fdc78883b.jpg" data-cap="(English further down " data-fancybox="images" data-link="https://www.instagram.com/p/CCd0iC0Jc6l/" data-type="image" data-username="havaneser_pablo" href="/upload/uf/85c/85cfb54cb6619f56c11a1188baf951c2.jpg">
+            <img alt="Гаванский бишон" src="/upload/resize_cache/uf/85c/293_293_2/85cfb54cb6619f56c11a1188baf951c2.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/df4/df4d639b1d3506e4b37b3449e57dfa75.jpg" data-cap="summer cut" data-fancybox="images" data-link="https://www.instagram.com/p/CCg1Ea5DdiW/" data-type="image" data-username="iggythehav" href="/upload/uf/519/519c9aeadade0b1701f103eaea4ec1a8.jpg">
+            <img alt="Гаванский бишон" src="/upload/resize_cache/uf/519/293_293_2/519c9aeadade0b1701f103eaea4ec1a8.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/969/9696f15775e4589fd1f6dc53d42de9ed.jpg" data-cap="It’s finally fri-YAY!" data-fancybox="images" data-link="https://www.instagram.com/p/CCd6m2pJEkw/" data-type="image" data-username="havasbenjiandcharlie" href="/upload/uf/148/148a04a6a30ae76a45ca4d2cc5cd2678.jpg">
+            <img alt="Гаванский бишон" src="/upload/resize_cache/uf/148/293_293_2/148a04a6a30ae76a45ca4d2cc5cd2678.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/gavanskiy-bishon/photo/">
+         Все
+            фото гаванского бишона
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы хаванез
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы гаванский бишон
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер гаванского бишона
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни хаванезов
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена гаванского бишона
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Гаванский бишон
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Куба
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         3-5,5 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         23-29 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         13-15 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Порода имеет статус редкой и эксклюзивной. О ней мало информации на русскоязычных форумах, а отечественных питомников, занимающихся разведением чистокровных хаванезов, – единицы.
+        </li>
+        <li>
+         Самый редкий окрас гаванского бишона – белый, самый распространенный – табачный.
+        </li>
+        <li>
+         Фирменная черта породы – феноменальная контактность, поэтому хаванезов рекомендуют к содержанию людям пенсионного возраста, а также владельцам, страдающим от одиночества и панических атак.
+        </li>
+        <li>
+         Бишонов легко дрессировать, поэтому найти контакт с питомцами смогут даже владельцы без опыта работы с декоративными собаками.
+        </li>
+        <li>
+         Гаванских бишонов не стригут, но постигать азы профессионального ухода за шерстью все равно придется – у животных слабовыраженная линька, отмершие волоски необходимо вычесывать.
+        </li>
+        <li>
+         Одиночество даже в течение нескольких часов для гаванского бишона – сильнейший стресс. Прежде чем брать собаку, подумайте над тем, кто скрасит ее будни, пока вы будете на работе.
+        </li>
+        <li>
+         В США хаванезы имеют репутацию «сигнальных» песиков, рекомендованных в качестве домашних питомцев в семьи, где есть слабослышащие дети.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Гаванский бишон" data-original="/upload/iblock/38b/38bdd46b55629ace2a3eb79a35f5e529.jpg">
+          <noscript data-alt="Гаванский бишон" data-original="/upload/iblock/38b/38bdd46b55629ace2a3eb79a35f5e529.jpg">
+           <img alt="Гаванский бишон" src="/upload/iblock/38b/38bdd46b55629ace2a3eb79a35f5e529.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Гаванский бишон
+          </strong>
+          – потешный миниатюрный милашка, способный утопить в море любви и обаяния любого, кто готов его ласково потискать или почесать за ушком. В российских квартирах кубинский хаванез пока еще редкий гость, но это не означает, что порода не котируется у заводчиков. Просто в силу исторических обстоятельств животные долго не могли прорваться на выставки и в племенные списки кинологических ассоциаций. Сегодня «гаванец» – один из самых имиджевых и эксклюзивных питомцев в мире, на приобретение которого потребуется не только кругленькая сумма, но также месяцы поисков и ожидания.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средний (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средние (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Гаванский бишон основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы хаванез
+        </h2>
+        <p>
+         Гаванские бишоны – национальные собаки Кубы, начавшие свое триумфальное шествие по миру с Канарских островов. Согласно официальной версии, в Европу миниатюрных питомцев привезли кубинские переселенцы. Однако на самом деле имел место обратный процесс. В XVI веке на Остров свободы подались испанские мореплаватели, вместе с которыми туда приплыли первые бишоноподобные собаки.
+        </p>
+        <p>
+         Постепенно, скрещиваясь с аборигенными кубинскими породами, испанские питомцы оформились в уникальный породный тип, который местные жители окрестили бланкито-де-ла-Абана – «маленькая белая собака из Гаваны». В течение нескольких столетий животные пользовались любовью кубинской знати. Их селили в богатых покоях, всячески баловали и вывозили за границу в качестве живой диковинки.
+        </p>
+        <p>
+         К сожалению, до наших дней первоначальный тип бланкито-де-ла-Абана не дожил. Во многом исчезновению удивительной породы способствовала Кубинская революция: во второй половине XX века псов массово истребляли просто за то, что те оказались в почете у местной аристократии. В итоге из всего клана гаванских собак смену политического режима пережило лишь несколько особей, часть из которых уже была метисами.
+        </p>
+        <p>
+         Бытует мнение, что во время военных событий на Острове свободы с него контрабандой вывезли одиннадцать бланкито в США. Во всяком случае, когда американские заводчики начали продвигать идею восстановления породы, в стране нашлось несколько здоровых и относительно чистокровных производителей. В 70-х годах проживавшим в Америке «гаванцам» прилили крови других декоративных пород, в результате чего на свет появились первые представители семейства гаванских бишонов.
+        </p>
+        <p>
+         Если вести речь о признании породы кинологическими ассоциациями, то оно пришло к хаванезам только в 1996 году. В России первые щенки появились и того позже – лишь в начале 2000-х в страну начали импортировать первых кубинских пушистиков. По сей день численность отечественных бишонов крайне невелика, что затрудняет возможность выбора здорового и эффектного щенка в шоу- или брид-типе.
+        </p>
+        <h2>
+         Видео: Гаванский бишон
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="xOfKbjDfGgk">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы гаванский бишон
+        </h2>
+        <p>
+         Хаванез – очаровательный резвый волосатик, с первого взгляда западающий в душу из-за своей непосредственности и миловидной внешности. Рост среднестатистического представителя породы – 23-27 см без привязки к полу. Если вы питаете тайную страсть к «сумочным» питомцам, обзаводитесь гаванским бишоном без лишних раздумий!
+        </p>
+        <p>
+         Обладая обширной палитрой окрасов, эти лохматые «кубинцы» выглядят так, будто только что сбежали с красной дорожки, выскользнув из рук голливудской дивы. Собственно, в гламурном экстерьере и заключается половина успеха породы, в то время как оставшаяся часть по праву принадлежит компанейскому, незлобливому характеру «гаванца».
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Длина головы хаванеза составляет примерно ⅓ от длины его тела. Черепная коробка может иметь как слегка округленные очертания, так и уплощенную форму. Если рассматривать собаку спереди или с боков, то череп производит впечатление квадратного, при этом скулы лишены объемности. Морда не тупая и не зауженная, стоп очень легкий.
+        </p>
+        <h3>
+         Зубы, губы, челюсти
+        </h3>
+        <p>
+         Смычка челюстей ножницеобразная. Желательно наличие полной зубной формулы, но вариант, когда отсутствуют третьи моляры и первые премоляры, все еще приемлем. Губы у гаванских бишонов не мясистые, тесно прилегающие к деснам.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Аккуратная мочка черного либо коричневого цвета.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза в форме крупных миндалин с обводкой черного либо коричневого оттенка, а также с окрашенной в темно-коричневый тон радужкой. У гаванского бишона позитивно-доброжелательный взгляд.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Покрытые эффектными очесами уши висят вдоль скул и имеют складку, слегка приподнимающую ушное полотно. Постав в меру высокий, кончики округленные. Не касающиеся скул или полустоячие уши нежелательны.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Шея хаванеза имеет умеренную длину, кожа хорошо натянута.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело крепкое, с ровной и чуть выпуклой в пояснице спиной. Круп характеризуется сильным наклоном, живот подтянут, ребра отличает хороший изгиб.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Ноги гаванского бишона отличаются прочным костяком, параллельным поставом относительно друг друга и общей сухостью очертаний. Важный нюанс: длина передних конечностей до локтя не должна превышать половину высоты собаки в холке. Лапы удлиненного типа, но компактные, с плотно собранными пальцами. Движения собаки прямолинейные, пружинистые и энергичные.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         У породистого хаванеза хвост заброшен на спину либо изогнут и несется высоко. Главное украшение этой части тела – роскошный подвес из длинного атласного волоса.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Подшерсток у гаванского бишона либо отсутствует как таковой, либо слабо развит. Покровная шерсть имеет прямую или чуть волнистую структуру и у зрелых особей может достигать в длину 12-18 см. Укорачивать собаке волос любым способом запрещается. Исключения допускаются для шерсти на лапах и голове, которая может сковывать движения и заслонять обзор.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Традиционные масти хаванезов – белая, бело-бисквитная, черная, коричневая гавана, палевая любой степени насыщенности, соболиная, табачная, красно-коричневая. Во всех типах окрасов приемлемы белые пятна и небольшой подпал.
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <ul>
+         <li>
+          Рост, не укладывающийся в заданные стандартом границы (отклонения в пределах 2 см допустимы).
+         </li>
+         <li>
+          Перекус либо недокус.
+         </li>
+         <li>
+          Мочка носа с выраженной депигментацией.
+         </li>
+         <li>
+          Энтропия или эктропия. Депигментированные веки.
+         </li>
+         <li>
+          Любые поведенческие аномалии, включая необоснованную агрессию и робость.
+         </li>
+         <li>
+          Крипторхизм.
+         </li>
+        </ul>
+        <h2 id="gl3">
+         Характер гаванского бишона
+        </h2>
+        <p>
+         В душе хаванез – это типичный кубинец с его позитивно-расслабленным отношением к жизни и маниакальной любовью к общению в любом виде. Солнечный климат Острова свободы и столетия пребывания в статусе декоративной породы сформировали в гаванских бишонах ряд качеств, отличающих их от других миниатюрных соплеменников. Например, за необыкновенную тягу к постоянному контакту с хозяином «гаванцев» частенько зовут липучками. Хождение по пятам, сование любопытного носа во все секреты семьи, периодические выпрашивания ласки и вкусных поощрений – все это классические повадки гаванского бишона, без которых он сразу же перестает быть истинным кубинцем.
+        </p>
+        <p>
+         Одна из изюминок породы – способность зеркалить поведение и настроение хозяина. Собака веселого и активного владельца вряд ли будет меланхоликом, а питомец сдержанного в эмоциональном плане хозяина быстро переймет его отношение к жизни. Что касается черт характера породы в целом, то можно сказать, что гаванский бишон – это настоящее цунами дружелюбия и нежности. Пушистый товарищ способен ладить с любым созданием, устраивая гонки с ошалевшим котофеем либо принимая участие в забавных приключениях, придуманных ребятней.
+        </p>
+        <p>
+         Кстати, невзирая на внешнюю пушистость и детскую игривость, последним на иерархической лестнице хаванез себя не считает. Эта черта характера особенно ярко проявляется в повседневном общении. Контактируя с обожаемым хозяином, собака всегда старается куда-нибудь вскарабкаться – на кресло, чьи-то колени или хотя бы на пуфик в углу. Все эти манипуляции проделываются с одной-единственной целью – оказаться на одном уровне с человеком. Однако не стоит путать такие попытки завоевать авторитет с поползновениями к доминированию. Конкуренция за лидерство – то, про что гаванские бишоны никогда не слышали и чем они ни за что не захотят заниматься.
+        </p>
+        <p>
+         Звонкий, потешный лай «гаванцев» может стать отличным заменителем домашней сигнализации. По своей природе порода не слишком «болтлива», но встречать на пороге тех, кто не является членом семьи, предпочитает голосом. Единственный нюанс – облаивать ваших друзей и злоумышленников хаванез будет с одинаковым беззлобным упорством, так что понять по интонации, кто именно нарушил территориальные границы, не удастся.
+        </p>
+        <p>
+         Тайная страсть породы – бумага. Пока не удалось выяснить, что именно подпитывает у животных этот интерес, но оставляя хаванеза наедине с кипой документов или рулоном туалетной бумаги, готовьтесь к локальному хаосу и последующему собиранию целлюлозных обрывков по всем углам квартиры.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Относиться к дрессировке породы лучше серьезно, учитывая, что хаванезы – смышленые питомцы, которым по плечу сложные учебные задачи. Подготовкой щенка к воспитанию и дрессировке является его социализация. Здесь все просто: малыш должен привыкнуть к новым условиям проживания, познакомиться с членами семьи и научиться считать их лидерами стаи. Помните, что несмотря на отсутствие доминантских замашек, «гаванцы» – довольно хитрые создания, воспринимающие любую разовую уступку как закономерность, которая непременно должна повториться.
+        </p>
+        <p>
+         Дисциплинируйте хаванеза с тех самых минут, как только выйдете с ним за пределы питомника. В первый месяц после переезда гаванский бишон должен привыкнуть к своей лежанке, научиться воспринимать собственную кличку и питаться по установленному хозяином режиму. Вопрос с «туалетными делами» лучше не откладывать на потом, поэтому одноразовыми пеленками на первое время, конечно, запаситесь, но на лоток щенка высаживайте почаще.
+        </p>
+        <p>
+         Заниматься воспитанием и дрессировкой хаванеза лучше дома, на садовом участке или во дворе. На тренировочную площадку мелких представителей декоративных пород водить бессмысленно. Игра на контрастах тоже не поощряется. По мнению кинологов, метод кнута в случае с миниатюрными собачками не только не работает, но и подвергает их чувствительную психику серьезному стрессу, поэтому хвалите и угощайте питомца за успехи, а на промахи закрывайте глаза.
+        </p>
+        <p>
+         Если хотите, чтобы хаванез откликался на зов всех домочадцев, введите в его лексикон имена членов семьи. Стандартная методика: сунуть бишону в зубы любой мелкий предмет, выдав команду «Отнеси Саше!» (называется имя того лица, которому адресована находящаяся в пасти игрушка). Если подопечный вас понял и выполнил требование, обязательно его похвалите, а впоследствии закрепите новый навык. Затем начинайте обучение с самого начала, но уже с участием другого члена семьи. Не удивляйтесь, гаванский бишон легко запоминает человеческие имена, просто в качестве стимулирующей подпитки ему необходимы похвала, лакомства и в меру требовательный учитель.
+        </p>
+        <p>
+         Хаванез не служебная порода, монотонные занятия ему в тягость. Временной предел уроков дрессуры для бишонов – 5 минут. На более продолжительную концентрацию внимания на одном действии «гаванцы» просто не способны. То же относится и к командам. Произносить одно требование больше трех раз подряд настоятельно не рекомендуется. Помните, чем чаще вы просите собаку, тем меньше ей хочется вас слушать.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         Гаванский бишон проводит в квартире большую часть своей жизни, поэтому постарайтесь обеспечить ему комфортные и безопасные условия обитания. Подумайте над тем, как исключить выход питомца на балкон – возможно, это будет специальная сетка или высокое ограждение перед дверью. То же правило действует в отношении бытовой химии и мусорного ведра, в котором щенок может покопаться. Искорените также в себе привычку оставлять моющие средства на полу, где питомец сможет попробовать их на вкус.
+        </p>
+        <p>
+         Хаванез – идеальная собака для домоседов. Чтобы сбросить «энергетический груз», ему хватает пробежек по территории приусадебного участка либо двух получасовых прогулок в день. Не рекомендуется «истязать» породу упражнениями – среднестатистический гаванский бишон способен покрыть потребность в двигательной активности простой пробежкой в компании хозяина. Кстати, в зимнее время собаку лучше выгуливать одетой в утепленный комбинезон. В морозную погоду бишоны быстро мерзнут и могут подхватить простуду. В то же время летом защита от ультрафиолета собакам не требуется – их длинные мягкие и хорошо вентилируемые «шубки» являются надежной защитой от перегрева.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Гаванский бишон – это живая игрушка-антистресс, которую нужно почаще обнимать, тискать и, конечно же, вычесывать. Поскольку порода лишена подшерстка, линька у ее представителей слабо выраженная, так что за опрятность ковровых покрытий и обивки можно не волноваться. Это, впрочем, не означает, что с хаванезом можно позволить себе полениться. Если не расчесывать волос собаки хотя бы раз в неделю, очень скоро придется вооружаться бритвой и удалять с тела подопечного шерстяные «дреды».
+        </p>
+        <p>
+         Купать потомков бланкито рекомендуется только в случае насущной необходимости, например, когда животное выглядит неопрятно. Сложный груминг породе не требуется, но если заметили, что волос на лбу начал заслонять собаке обзор, его лучше собрать в хвостик или слегка укоротить ножницами. Раз в месяц сделайте подопечному «педикюр», укоротив коготки на пару миллиметров. Поскольку избыточной активностью хаванезы не страдают, когтевая пластина у них не стачивается при контакте с землей. Первый сигнал к тому, что питомцу пора стричь когти, – характерная «цокающая» походка.
+        </p>
+        <p>
+         Избыточное слезотечение – проблема всего клана гаванских бишонов, так что почаще проходитесь по области век животного чистой тряпочкой, смоченной в крепком ромашковом либо чайном настое. У белых хаванезов волос под глазами часто меняет цвет от слез. Соответственно, если являетесь обладателем блондинистого шоу-питомца, прикупите осветляющие тальки и пудры для шерсти.
+        </p>
+        <p>
+         Осмотр ушей «кубинца» лучше производить раз в неделю. Не поленитесь выщипать длинные волоски, находящиеся внутри ушной воронки собаки, иначе проход полностью зарастет шерстью, что приведет к глухоте. Убрать из ушей серные комочки можно с помощью кусочка чистой ткани и гигиенического лосьона из зоомагазина.
+        </p>
+        <p>
+         2-3 раза в неделю хаванезу чистят зубы. Важно приучить питомца к этому неприятному процессу со щенячьего возраста. Если чистящая силиконовая насадка вызывает у пса сильнейший стресс, можно воспользоваться пастами, которые наносятся на зубы без щетки. Или как вариант – почаще угощать собаку твердыми мясными лакомствами, выполняющими функцию щадящего абразива.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Заводчики США делают ставку на качественные сухие корма, мотивируя свой выбор тем, что питающимся «сушкой» бишонам не нужно дополнительно подбирать витамины и БАДы. Строгих норм кормления породы не существует, но в среднем взрослый «гаванец» поглощает от половины до целой чашки корма в день. Если же делать более точные расчеты, то взрослая особь весом 4,5 кг обязана получать с пищей не менее 400 ккал в день. Для игривых щенков в возрасте до полугода с массой тела до 3 кг суточный калораж рациона составляет 467 ккал.
+        </p>
+        <p>
+         При этом важно контролировать вес пушистика, поскольку порода склонна наращивать бока. Сигналом к тому, что хаванезу пора садиться на диету, считаются невыраженная талия (при взгляде на собаку сверху) и непрощупывающиеся ребра. Частота кормления для здоровых взрослых особей – два раза в день. Щенки в возрасте от 6 месяцев едят три раза, но к году их необходимо перевести на двухразовое питание.
+        </p>
+        <p>
+         В России гаванских бишонов часто кормят натуральной едой. В список собачьих предпочтений обычно входят все те продукты, которые рекомендованы к употреблению любой породе. А именно: постное мясо, потроха и субпродукты, бескостное филе тресковых рыб, низкокалорийные творог и кефир, куриный желток, овощи (кроме бобовых, капусты и картофеля), фрукты (виноград и экзотические плоды под запретом).
+        </p>
+        <p>
+         Давать бишону крупяные каши, чтобы увеличить питательность порции, необязательно. Ест эта порода мало, а энергии затрачивает не так уж много. Мясо хаванезам режут маленькими кусочками, подавая его сырым или слегка ошпаренным. При этом важно понимать, что при таком подходе к питанию покупка готовых витаминно-минеральных комплексов – неизбежная процедура. Каким бы разнообразным натуральное меню ни было, полностью восполнить потребность организма в минералах и микроэлементах с его помощью не получится.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни хаванезов
+        </h2>
+        <p>
+         Гаванские бишоны – собаки-долгожители, часто отмечающие собственное 14- и 16-летие. Эксперты, следящие за развитием породы, продолжают работать над искоренением у ее представителей генетических заболеваний, однако пока что наследственные недуги побеждены не до конца. Например, самая распространенная проблема сегодняшних «гаванцев» – вывих коленной чашечки. Передаются по наследству и такие болезни, как дисплазия сетчатки, катаракта, патологии сердца и печени, болезнь Пертеса, глухота, хондродисплазия.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Поголовье хаванезов в России пока невелико, поэтому уделите большое внимание выбору питомника. Как вариант – прокатитесь по странам Прибалтики, где породу начали разводить немного раньше.
+         </li>
+         <li>
+          Постарайтесь пообщаться с родительницей щенков и остальными малышами в помете. Обратите внимание, как понравившийся бишон ведет себя с соплеменниками – лидерствует или подчиняется.
+         </li>
+         <li>
+          Протестируйте щенков на дружелюбность. Приподнимите маленького пушистика от пола и оцените его действия. Если малыш визжит и пытается вас укусить – это признак нестабильной психики. Помните, хаванез не «служебник», и агрессию ему проявлять несвойственно.
+         </li>
+         <li>
+          Требуйте у продавца не только родословные производителей, но и результаты их обследования на наследственные болезни. В частности, на дисплазию локтя и тазобедренного сустава.
+         </li>
+         <li>
+          Всегда придавайте значение внешнему виду потомства. Щенки должны быть упитанными, с чистой гладкой шерсткой, без признаков пупочной грыжи и следов диареи под хвостиком. Однородность помета приветствуется, при этом один щенок всегда будет крупнее остальных.
+         </li>
+        </ul>
+        <h2 id="gl8">
+         Цена гаванского бишона
+        </h2>
+        <p>
+         Считается, что самых перспективных хаванезов нужно искать в США, хотя американские заводчики не горят желанием отдавать за границу щенков с отличными экстерьерными задатками. Что касается стоимости, то менее чем за 1000-1500 долларов приобрести чистопородного гаванского бишона в Штатах не получится. Хаванезы из российских питомников стоят дешевле – от 30 000 рублей за щенка пет-класса. На предложения с более низким ценником, которые встречаются на виртуальных досках объявлений, лучше не откликаться. В большинстве случаев их размещают продавцы метисов и животных без документов.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения гаванского бишона на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/gavanskiy-bishon/forum/">
+        Перейти на
+        форум гаванского бишона
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Гаванский бишон" src="/upload/iblock/78b/78b814ae542931089a3f2ad50e4c30f9.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/gavanskiy-bishon/">
+          Гаванский бишон
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/gavanskiy-bishon/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/gavanskiy-bishon/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/gavanskiy-bishon/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/gavanskiy-bishon/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/gavanskiy-bishon/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/skotch-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Скотч-терьер" data-original="/upload/resize_cache/iblock/dc1/100_100_1/dc1145c66f561e1c2a3ef13f49c53c7c.jpg">
+          <noscript data-alt="Скотч-терьер" data-original="/upload/resize_cache/iblock/dc1/100_100_1/dc1145c66f561e1c2a3ef13f49c53c7c.jpg">
+           <img alt="Скотч-терьер" src="/upload/resize_cache/iblock/dc1/100_100_1/dc1145c66f561e1c2a3ef13f49c53c7c.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Скотч-терьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/gladkoshyerstnyy-foksterer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Гладкошёрстный фокстерьер" data-original="/upload/resize_cache/iblock/f5e/100_100_1/x63dm3t6k3wocudqkjdmoww1meh2mo1p.jpg">
+          <noscript data-alt="Гладкошёрстный фокстерьер" data-original="/upload/resize_cache/iblock/f5e/100_100_1/x63dm3t6k3wocudqkjdmoww1meh2mo1p.jpg">
+           <img alt="Гладкошёрстный фокстерьер" src="/upload/resize_cache/iblock/f5e/100_100_1/x63dm3t6k3wocudqkjdmoww1meh2mo1p.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Гладкошёрстный фокстерьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/bryusselskiy-griffon/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Брюссельский гриффон" data-original="/upload/resize_cache/iblock/f7a/100_100_1/f7a2fe2890315c592510483d8de8f002.jpg">
+          <noscript data-alt="Брюссельский гриффон" data-original="/upload/resize_cache/iblock/f7a/100_100_1/f7a2fe2890315c592510483d8de8f002.jpg">
+           <img alt="Брюссельский гриффон" src="/upload/resize_cache/iblock/f7a/100_100_1/f7a2fe2890315c592510483d8de8f002.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Брюссельский гриффон
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/alabay-sredneaziatskaya-ovcharka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Алабай (Среднеазиатская овчарка)" data-original="/upload/resize_cache/iblock/609/100_100_1/609708aa8ba6a6e5eccecc9a058c1b65.jpg">
+          <noscript data-alt="Алабай (Среднеазиатская овчарка)" data-original="/upload/resize_cache/iblock/609/100_100_1/609708aa8ba6a6e5eccecc9a058c1b65.jpg">
+           <img alt="Алабай (Среднеазиатская овчарка)" src="/upload/resize_cache/iblock/609/100_100_1/609708aa8ba6a6e5eccecc9a058c1b65.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Алабай (Среднеазиатская овчарка)
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fgavanskiy-bishon%252F%253Fcheck_key%253D90993442b269a8c5932947f96d7bcce1%2526ANIMAL_CODE%253Dgavanskiy-bishon%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fgavanskiy-bishon%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmdhdmFuc2tpeS1iaXNob24lMkYlM0ZjaGVja19rZXklM0Q5MDk5MzQ0MmIyNjlhOGM1OTMyOTQ3Zjk2ZDdiY2NlMSUyNkFOSU1BTF9DT0RFJTNEZ2F2YW5za2l5LWJpc2hvbiUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZnYXZhbnNraXktYmlzaG9uJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fgavanskiy-bishon%252F%253Fcheck_key%253D90993442b269a8c5932947f96d7bcce1%2526ANIMAL_CODE%253Dgavanskiy-bishon%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fgavanskiy-bishon%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fgavanskiy-bishon%252F%253Fcheck_key%253D90993442b269a8c5932947f96d7bcce1%2526ANIMAL_CODE%253Dgavanskiy-bishon%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fgavanskiy-bishon%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "176.59.55.113"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--043687a11b530c40f8abda7924166167-->

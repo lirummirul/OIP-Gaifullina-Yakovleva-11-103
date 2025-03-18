@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'8546fa3e063a'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Ка-де-бо, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Ка-де-бо – благородный рыцарь испанского происхождения. Его характер сочетает сдержанность, отвагу и преданность – лучшие качества питомца, которому суждено стать незаменимым другом!" name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/20c/20cdbde3f354170f05063f5762008c09.jpg" property="og:image"/>
+     <title>
+      Ка-де-бо: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/ka-de-bo/" property="og:url"/>
+     <meta content="Ка-де-бо: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Ка-де-бо – благородный рыцарь испанского происхождения. Его характер сочетает сдержанность, отвагу и преданность – лучшие качества питомца, которому суждено стать незаменимым другом!" property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/ka-de-bo/" itemprop="url">
+         <span itemprop="title">
+          Ка-де-бо
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Ка-де-бо
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/ka-de-bo/">
+          Описание
+         </a>
+         <a href="/dog/ka-de-bo/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/ka-de-bo/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/ka-de-bo/photo/">
+          Фото
+         </a>
+         <a href="/dog/ka-de-bo/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Ка-де-бо" src="/upload/iblock/7ad/7adfbe6945424abf65d429d392ffe470.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/ka-de-bo/">
+           Майорский мастиф
+          </a>
+          ,
+          <a href="/dog/ka-de-bo/">
+           майоркский бульдог
+          </a>
+          ,
+          <a href="/dog/ka-de-bo/">
+           перро дого мальоркин
+          </a>
+         </span>
+         <p>
+          Ка-де-бо – благородный рыцарь испанского происхождения. Его характер сочетает сдержанность, отвагу и преданность – лучшие качества питомца, которому суждено стать незаменимым другом!
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/1cb/1cb21702341ed92b27a04fc0d276da08.jpg" data-cap="Мои улыбаки
+Espada Del Conquistador Toughguy (6 y.) Astro Del Barcelona Aksinya (3 y.)
+#cadebou #perrodogomallorquin #majorcamastiff #lnstadog #doglovers #dogsofinstagram #кадебо #кадебошка #кадебошечка #новороссийскийкинологическийцентр 
+фото @el_corazon_del_mar_cadebou" data-fancybox="images" data-link="https://www.instagram.com/p/B-eESILoHQd/" data-type="image" data-username="el_corazon_del_mar_cadebou" href="/upload/uf/184/18493c6fdecceec15f927db256962c78.jpg">
+            <img alt="Ка-де-бо" src="/upload/resize_cache/uf/184/293_293_2/18493c6fdecceec15f927db256962c78.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/177/1773785779a7de6fb5289bc9e131b111.jpg" data-cap="  !   ’     ! •
+•
+•
+•
+#cadebou #cadeboumallorca #cadeboumallorquin #perrodogomallorquin #perrodepresamallorquin #presamallorquin #mallorquin #majorcamastiff #mallorcamastiff #molosser #molosserdogs #molossersofinstagram #mastiffsofinstagram #bullybreedsofinsta #bullybreedsofinstagram #myverybestgirl #caveamarejippi #tongueoutthursday" data-fancybox="images" data-link="https://www.instagram.com/p/B-d9_gWqHqX/" data-type="image" data-username="jippi_cadebou" href="/upload/uf/a8e/a8e9fd647967ff075e7282ad39335e94.jpg">
+            <img alt="Ка-де-бо" src="/upload/resize_cache/uf/a8e/293_293_2/a8e9fd647967ff075e7282ad39335e94.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/0ad/0ad5403f0396f000ff3031d61cdc8275.jpg" data-cap=" #maserati #cadebou #happydoghappyme #treusteseele #loveu" data-fancybox="images" data-link="https://www.instagram.com/p/B-dBwpQgCJZ/" data-type="image" data-username="vlntnlpp" href="/upload/uf/26e/26edfaf50e9b74038e45db45377f8635.jpg">
+            <img alt="Ка-де-бо" src="/upload/resize_cache/uf/26e/293_293_2/26edfaf50e9b74038e45db45377f8635.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/ka-de-bo/photo/">
+         Все
+            фото Ка-де-бо
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы ка-де-бо
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы ка-де-бо
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер ка-де-бо
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни ка-де-бо
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена ка-де-бо
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Ка-де-бо
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Испания
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         от 30 до 38 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 55-58 см, суки 52-55 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         10-12 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Майоркский мастиф – уникальная порода: грозный внешний вид причудливо сочетается с добрым сердцем и покладистым нравом.
+        </li>
+        <li>
+         Ка-де-бо не склонны выделять любимчиков и проявляют нежность по отношению к каждому члену семьи, какой бы многочисленной она ни была.
+        </li>
+        <li>
+         Флегматичный характер собаки помогает ей смириться с вынужденным одиночеством: она просто ляжет спать в ожидании хозяина.
+        </li>
+        <li>
+         Благодаря великолепным сторожевым качествам представители породы легко справляются с обязанностями охранника.
+        </li>
+        <li>
+         Ка-де-бо любят общество детей. С не меньшей снисходительностью они относятся и к домашним питомцам.
+        </li>
+        <li>
+         Майоркские мастифы нуждаются в сильном и ответственном лидере, который способен правильно организовать процессы воспитания и дрессировки.
+        </li>
+        <li>
+         Вопреки распространённому заблуждению, эти молоссы весьма активны и подвижны, поэтому требуют длительных прогулок.
+        </li>
+        <li>
+         Ка-де-бо не подходят для содержания начинающими собаководами.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Ка-де-бо" data-original="/upload/iblock/20c/20cdbde3f354170f05063f5762008c09.jpg">
+          <noscript data-alt="Ка-де-бо" data-original="/upload/iblock/20c/20cdbde3f354170f05063f5762008c09.jpg">
+           <img alt="Ка-де-бо" src="/upload/iblock/20c/20cdbde3f354170f05063f5762008c09.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Ка-де-бо
+          </strong>
+          – представительные и серьёзные молоссы, которым под силу произвести неизгладимое впечатление. Лишь немногие догадываются: под мощными габаритами собаки скрывается характер добродушного здоровяка. Эти животные неагрессивны к незнакомцам, с нежностью относятся к детям, с терпением – к питомцам. Вместе с тем из ка-де-бо получаются великолепные телохранители. Несмотря на бойцовское прошлое, собаки склонны трезво оценивать обстановку, прежде чем атаковать противника. Правильно воспитанного молосса тяжело спровоцировать, но если им всё же овладеет ярость, пёс превратится в бомбу замедленного действия. Обидчику едва ли удастся выйти победителем из неравной схватки с таким выносливым животным.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Сложно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дорогое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Почти не слышно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Ка-де-бо основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы ка-де-бо
+        </h2>
+        <p>
+         История происхождения испанских молоссов восходит к первой половине XIII века, когда арагонский король Хайме I Завоеватель одержал победу над альмохадскими маврами. Те вынужденно освободили Балеарский архипелаг – огромную территорию, включавшую пятнадцать островов (четыре крупных и одиннадцать небольших по размеру). На крупнейшем участке суши основали королевство Мальорка (Майорка), которое стало арагонским вассалом. Согласно общепринятой теории, именно здесь появились первые предки ка-де-бо – молосские собаки, привезённые арагонцами, а в дальнейшем – и жителями других государств.
+        </p>
+        <p>
+         К числу возможных прародителей породы относят испанских мастифов и бульдогов,
+         <a class="ph" href="/dog/bordoskiy-dog/">
+          бордоских догов
+         </a>
+         , пиренейских мастифов и
+         <a class="ph" href="/dog/angliyskiy-buldog/">
+          английских бульдогов
+         </a>
+         . Среди потенциальных предков молоссов упоминаются и мастифы, завезённые на Балеары армией Хайме I. Неконтролируемые вязки привели к возникновению новых собак охранно-бойцового типа. Их нарекли ка-де-бестиар. Часто кинологи сопоставляют это название со словом «бестия» (плут, пройдоха), но такое суждение ошибочно. В переводе с каталанского языка «ка-де-бестиар» – «собака, которая перегоняет крупный рогатый скот».
+        </p>
+        <p>
+         Помимо главной функции, животные успешно справлялись с охраной портовых складов и жилых помещений. Физические качества этих собак высоко ценились местными аристократами, которые использовали молоссов для охоты на кабанов, медведей и прочую крупную дичь. Несмотря на то что собаки отличались друг от друга размерами и едва ли выделялись в одну породу, их популярность не уменьшалась. В начале XVIII века она приобрела более жестокий смысл.
+        </p>
+        <p>
+         Утрехтский договор, подписанный в 1713 году, положил конец крупному европейскому конфликту – Войне за испанское наследство. Балеарские острова стали колонией Великобритании. Англичане «делились» с местными жителями идеями досуга. Тогда он славился жестокостью и подразумевал участие в подпольном тотализаторе во время собачьих боёв и травли крупных животных. Жители Мальорки переняли кровавый опыт англичан, и уже к концу XVIII века жестокие представления переросли в фанатичную любовь к корриде.
+        </p>
+        <p>
+         В отличие от современного шоу, которое заключается в сражении тореадора и быка, первоначальный вариант представлял большую опасность и оттого почитался испанцами. Так, на арену к разъярённому животному выходил безоружный человек в сопровождении собаки, от которой требовалось одно – защитить хозяина ценой собственной жизни. Майоркские молоссы оказались неприспособленными для кровавого развлечения. Они погибали от ран в первые минуты корриды или наносили быку тяжёлые увечья, делая шоу менее зрелищным. Так возникла необходимость в разведении собак для травли.
+        </p>
+        <p>
+         Староанглийские бульдоги стали бы идеальными участниками кровавых представлений, если бы не их озлобленный и неконтролируемый характер. Для создания уравновешенной породы испанцы скрестили бульдогов с собаками ка-де-бестиар. Результатом селекции стали животные, которые очень напоминали современных майоркских молоссов. Их использовали как четвероногих гладиаторов до середины XX века (сначала в травле быков, а после её запрета в 1883 г. – и в собачьих боях).
+        </p>
+        <p>
+         Первые представители породы подвергались жестокому отбору. Во время проблемных родов суки чаще всего умирали, не получая помощи от хозяина. Ослабевших щенков не выхаживали, а крепких и здоровых никак не оберегали от вирусных заболеваний. Испанцы не утруждали себя и воспитанием питомцев: эту задачу полностью возлагали на суку, которая прививала щенкам навыки социализации. Агрессивных или трусливых собак уничтожали; не оставляли в живых молоссов, получивших тяжёлые увечья в боях.
+        </p>
+        <p>
+         Столь радикальный подход привёл к закономерным последствиям. С одной стороны, современные представители породы славятся крепким здоровьем, недюжинной силой и спокойным характером: генофонд со временем лишился отрицательных качеств. С другой стороны, безответственность и небрежное отношение испанцев к собакам поставили под угрозу их дальнейшее существование. Так, к началу XX века поголовье травильных молоссов ограничилось несколькими десятками.
+        </p>
+        <p>
+         Помимо бойцовых ям, животным всё ещё находили применение в немногочисленных скотоводческих хозяйствах. Универсальность собак стала главной причиной, по которой испанские селекционеры задумались над увеличением их численности. Племенная программа, как и прежде, предусматривала вязку ка-де-бестиар (преимущественно тигрового окраса) и староанглийских бульдогов. На этот раз заводчики уделили внимание и экстерьеру животных. Некрупные размеры указывали на доминирование генов «англичан», а внушительные габариты – на близкое родство с молоссами-пастухами.
+        </p>
+        <p>
+         Подходящим материалом для селекции были экземпляры средних размеров, которые встречались довольно редко. Несмотря на это, племенная работа принесла достойные плоды: в 1923 году майоркских молоссов вписали в реестр Племенной книги Испании как ка-де-бо. Название породы появилось ещё в начале столетия, когда президент клуба бордоских собак отзывался о животных как о довольно перспективных участниках травли. В 1929 году на выставке в Барселоне впервые появился представитель новой породы.
+        </p>
+        <p>
+         Через год после окончания Второй мировой войны разработали стандарт ка-де-бо, но регистрация майоркских собак организацией FCI состоялась лишь в 1964 г. Во-первых, балеарских селекционеров всё ещё интересовали физические данные молоссов, поэтому животные с полным соответствием стандарту встречались довольно редко. Во-вторых, в XX веке на пике популярности расположились другие породы: немецкие овчарка и дог, а также ротвейлер. Собаководы проявили интерес к ка-де-бо после 80-х гг. При этом большинство любителей майоркских молоссов проживало на территории Польши и России: так, в Москве к 1990 году зарегистрировали свыше 2 тысяч ка-де-бо.
+        </p>
+        <p>
+         В других европейских странах – Швеции, Финляндии, Дании – заводчики этих собак встречались значительно реже. В США и Канаде популярность молоссов была ничтожно мала. Аналогичная ситуация наблюдается и сейчас: ка-де-бо встречаются преимущественно в Европе (менее всего – в её западной части).
+        </p>
+        <h3>
+         Видео: Ка-де-бо
+        </h3>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="l4RakGgeYCc">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы ка-де-бо
+        </h2>
+        <p>
+         Будучи породой средних размеров, ка-де-бо примечательны сильным телосложением и слегка удлинённым форматом корпуса. Собаки впечатляют своей подвижностью и пластичностью – особенно тех, кто видит майоркских молоссов впервые.
+        </p>
+        <p>
+         Высота в холке и масса животного закреплены стандартом FCI. Рост кобелей и сук достигает 55-58 см и 52-55 см соответственно. Разница между особями мужского и женского пола заметна и в массе: 35-38 кг и 30-34 кг. Половой диморфизм прослеживается не только в размерах животного: обхват головы у сук значительно меньше, чем у кобелей.
+        </p>
+        <h3>
+         Голова и череп
+        </h3>
+        <p>
+         У ка-де-бо голова квадратного формата; её окружность совпадает с окружностью в области холки. Форма черепа также приближена к квадрату, задней части не видно при взгляде спереди. Лоб разделён бороздой и выглядит шире едва выраженного затылочного бугра. Скулы мощные, жевательные мышцы достигают уровня глаз. Верхние линии черепа и морды параллельны.
+        </p>
+        <h3>
+         Морда
+        </h3>
+        <p>
+         Морда имеет форму конуса, не заострена; основание широкое. Длина равна трети длины черепа. Допустимы кожные складки в любом количестве. Стоп кажется резким, когда голова повёрнута в профиль; незаметен спереди, и виной тому – надбровные дуги. Спинка носа бывает прямой или слегка вздёрнутой. Мочка пигментирована в чёрный цвет. Верхняя губа сухая и тугая, нижняя – более рыхлая, образующая в середине небольшую складку. Зубы, включая передние резцы, не видны даже при сомкнутой пасти животного. Слизистая окрашена в красный цвет, на нёбе заметны расположенные поперечно гребни. Дёсны имеют чёрную окантовку.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Виден широкий и высокий постав, а также розовидная форма: уши надломлены в хряще и обнажают слуховой проход. Большую часть времени закруглённые кончики расположены на линии глаз или ниже. Если животное встревожено, уши приподнимаются и слегка разворачиваются вперёд.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Довольно крупные глаза ка-де-бо овальной формы, имеют косой разрез. Посажены «по-бульдожьи»: глубоко и на большом расстоянии. Когда голова собаки повёрнута анфас, белки глаз скрыты плотными веками с чёрной окантовкой. Предпочтителен тёмный цвет радужки, соответствующий окрасу шерсти. Брови выражены слабо.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Челюсти майоркского мастифа формируют бульдогообразный прикус (перекус). Зазор между зубами не превышает 10 мм. Резцы расположены на одной линии, клыки отдалены друг от друга.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Мощная и крепкая, пропорциональна корпусу собаки, плавно переходит в выраженную холку. Кожа неплотная, допустимо наличие небольшого подвеса. Диаметры основания шеи и головы совпадают.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Туловище ка-де-бо прямоугольного формата (что типично для молосских пород), умеренно вытянуто, с крепкой мускулатурой. Массивная грудная клетка имеет форму цилиндра, достигает уровня локтей и расширяется в области холки. Спина практически параллельна земле. Короткая и широкая поясница переходит в наклонный круп, поставленный под углом 30° и возвышающийся над уровнем холки на 1-2 см. Линия живота умеренно подтянута (как у борзых пород собак, но меньше), пах подобран.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Сужается от основания к кончику, посажен довольно низко. Обычно опущен, не достигая скакательных суставов. При движении собаки хвост поднимается до линии спины, образуя плавный изгиб.
+        </p>
+        <h3>
+         Передние конечности
+        </h3>
+        <p>
+         Примечательны широким поставом из-за массивной груди, параллельны. Плечи ка-де-бо слегка выпуклые и короткие, расположены под небольшим наклоном. В области предплечий заметна рельефная мускулатура. Локти не прилегают к грудной клетке, но и не вывернуты в стороны. Лапы крепкие и округлые, с собранными в комок пальцами. Пигментация подушечек выражена слабо.
+        </p>
+        <h3>
+         Задние конечности
+        </h3>
+        <p>
+         Примечательны более мощной мускулатурой в сравнении с передними. Бёдра средних размеров, весьма широкие; колени поставлены под естественным углом. Короткие голени переходят в прямые плюсны. Последние заканчиваются овальными лапами с удлинёнными пальцами. Подушечки окрашены в тёмный оттенок. Наличие прибылых пальцев не приветствуется.
+        </p>
+        <h3>
+         Манера движения
+        </h3>
+        <p>
+         Ка-де-бо передвигаются рысью, поочерёдно переставляя пары конечностей, расположенные по диагонали.
+        </p>
+        <h3>
+         Шёрстный покров
+        </h3>
+        <p>
+         Короткая и жестковатая шерсть плотно прилегает к корпусу животного. Подшёрсток отсутствует.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Выделяют три основных окраса ка-де-бо:
+        </p>
+        <ul>
+         <li>
+          тигровый – допустимы и тёмный, и более светлый (мраморный) варианты;
+         </li>
+         <li>
+          красный (палевый, олений) – желательны глубокие насыщенные оттенки;
+         </li>
+         <li>
+          чёрный.
+         </li>
+        </ul>
+        <p>
+         Стандартом допускаются белые поинты, если они занимают не более трети площади тела. У некоторых майоркских мастифов заметна «маска», обрамляющая морду.
+        </p>
+        <h3>
+         Возможные пороки
+        </h3>
+        <p>
+         Согласно определению, дефект породы – малейшее отклонение от её стандарта. В случае с ка-де-бо называют:
+        </p>
+        <ul>
+         <li>
+          неполную зубную формулу с отсутствующими премолярами;
+         </li>
+         <li>
+          разницу между высотой в холке и крестце в пользу первой;
+         </li>
+         <li>
+          зазор между верхними и нижними зубами более 10 мм;
+         </li>
+         <li>
+          нетипичные для породы уши (стоячие или висячие);
+         </li>
+         <li>
+          ножницеобразный или прямой прикус;
+         </li>
+         <li>
+          бульдожью форму хвоста.
+         </li>
+        </ul>
+        <p>
+         Майоркских мастифов дисквалифицируют по следующим признакам:
+        </p>
+        <ul>
+         <li>
+          светлая или жёлтая пигментация радужки глаз;
+         </li>
+         <li>
+          белые пятна, покрывающие более 30% тела;
+         </li>
+         <li>
+          агрессивное или робкое поведение;
+         </li>
+         <li>
+          купированные уши или хвост;
+         </li>
+         <li>
+          поинты любого цвета;
+         </li>
+         <li>
+          неопущение яичек;
+         </li>
+         <li>
+          недокус.
+         </li>
+        </ul>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер ка-де-бо
+        </h2>
+        <p>
+         Бойцовское происхождение породы привело к появлению многочисленных стереотипов, связанных с ка-де-бо. Пугающие истории о кровожадности собак – результат отсутствия социализации или неправильного воспитания (в том числе и намеренной выработки агрессии). На самом деле это психологически устойчивые, сдержанные и спокойные животные, которые не настаивают на постоянном общении. Дружелюбный великан с радостью займёт место возле хозяина и, прикрыв глаза, отправится во сне на поиски любимого лакомства.
+        </p>
+        <p>
+         Майоркские мастифы легко вливаются в коллектив под названием «семья». Собаки одинаково уважают и любят близких людей, тонко чувствуют воцарившуюся атмосферу, проявляют удивительное умение радоваться и сопереживать случайным событиям. Ка-де-бо не склонны отдавать очевидное предпочтение одному человеку, тем самым награждая его почётным титулом хозяина. Это качество делает животных подходящими для содержания в любой «компании» – будь то семейная пара с ребёнком или пожилая супружеская чета.
+        </p>
+        <p>
+         Будучи флегматиками по темпераменту, майоркские мастифы не видят ничего дурного в вынужденном одиночестве. Собака терпеливо дождётся вашего возвращения с работы, не побеспокоив при этом соседей громким лаем или, что хуже, воем. Удобный лежак, наполненная кормом миска и любимая игрушка – три верных «товарища» помогут ка-де-бо скоротать день в ожидании хозяина!
+        </p>
+        <p>
+         Представители молосской породы нуждаются в опытном и ответственном лидере, который последовательно выстроит доверительные отношения с питомцем. Майоркские мастифы бывают довольно своенравны и настойчивы. Владельцы собак отмечают, что пик строптивости ка-де-бо выпадает на переходный возраст и так называемую половую охоту – одобрительную реакцию суки на присутствие кобеля. Мастиф склонен отстаивать свою «точку зрения» до последнего: если кровать покажется ему более удобной в сравнении с лежаком, вам предстоит приложить колоссальные усилия, чтобы избавиться от нежеланного соседа.
+        </p>
+        <p>
+         Недоверчивость и склонность защищать свою территорию – подходящий фундамент для развития охранных качеств ка-де-бо. Из представителей породы можно воспитать бдительных и мужественных защитников. Молосс не нападёт на чужака, если тот вторгнется в личное пространство семьи по разрешению хозяина. Отсутствие владельца – весомый повод устроить незнакомцу игру в «гляделки» и при необходимости броситься в атаку. Усовершенствовать сторожевые качества собаки поможет курс занятий с профессиональным кинологом – в том случае, если у вас недостаточно опыта.
+        </p>
+        <p>
+         Несмотря на потенциальную опасность, которую таят в себе мастифы-охранники, рядом с ребёнком их доброе сердце оттаивает. Ка-де-бо отличаются железным терпением и оттого принимают посильное участие в играх с маленьким другом – и пусть это чревато болезненными тычками. Впрочем, следить за весёлой компанией всё же стоит: резвясь, собака может случайно толкнуть ребёнка – довольно болезненно, учитывая внушительные размеры животного.
+        </p>
+        <p>
+         Майоркские мастифы лояльно относятся к своим сородичам (исключение – кобели, которые делят территорию между собой). Не менее дружелюбны они и по отношению к кошкам, а вот от компании декоративных птиц и грызунов лучше воздержаться. Хотя ка-де-бо и не проявляют охотничьи инстинкты, «общение» с питомцами небольших размеров может закончиться неприятными последствиями. Если маленькие животные появились раньше молосса, по возможности сведите их контакт к минимуму.
+        </p>
+        <p>
+         Представители породы весьма подвижны, любят длительные прогулки и весёлые игры на свежем воздухе. В идеале хозяином майоркского мастифа должен стать активный человек, которого не пугает ежедневный променад по городскому парку. Не забудьте взять с собой мячик или фрисби – и ка-де-бо покажет всё, на что он способен!
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Будущим владельцам майоркских молоссов стоит запомнить: «работу» над поведением четвероногого друга принято начинать с первого дня его появления в доме. Запаситесь огромным количеством терпения и времени – в воспитании и грамотной социализации без них не обойтись. Первичные навыки взаимодействия с окружающим миром ка-де-бо получают ещё в питомниках. Именно в это время собакам предстоит научиться строить доверительные отношения, а не диктовать свои условия посредством ультиматума.
+        </p>
+        <p>
+         Кинологи рекомендуют совместить «человеческое» воспитание щенка с «собачьим». Для этого малышей необходимо периодически оставлять в компании других, более взрослых собак. В случае с кобелями это может обернуться дракой: даже полугодовалый самец способен на выяснение отношений посредством зубов и когтей.
+        </p>
+        <p>
+         Воспитывая щенка, не позволяйте ему делать то, чего не хотели бы видеть во взрослой собаке. Поведение ка-де-бо лучше всего корректируется в первый год жизни. Более зрелые особи практически не поддаются перевоспитанию и стремятся занять доминирующую позицию в вашей «стае». Если вы чувствуете, что совладать со строптивым питомцем всё сложнее, обратитесь за помощью к кинологу.
+        </p>
+        <p>
+         Успешная дрессировка майоркских мастифов возможна при правильном подходе к делу. Людям с опытом содержания собак не составит труда обучить питомца базовым командам, новичкам же потребуется вмешательство специалиста. Владельцы ка-де-бо рекомендуют пройти курс ЗКС (защитно-караульной службы), что поможет развить охранные качества животного.
+        </p>
+        <p class="legenda">
+         Важно: поощрение агрессии – прямой путь к воспитанию озлобленного питомца. Поскольку предки молоссов использовались как универсальные «солдаты» для бойцовых ям, стоит отказаться от грубых методов дрессировки.
+        </p>
+        <p>
+         Будущим участникам шоу нужно задуматься о хэндлинге – искусстве показа собаки во время выставки. Курс дрессировки позволит сделать акцент на достоинствах ка-де-бо и тем самым скрыть возможные недостатки животного. В зависимости от стиля хэндлинга (английского, американского или немецкого) специалист сможет «собрать» майоркского мастифа по частям, словно конструктор. Это значительно увеличит шансы собаки на победу.
+        </p>
+        <p class="legenda">
+         Обратите внимание: прибегая к услугам хэндлера, проследите за тем, чтобы он обучил вашего питомца передвигаться слаженной рысью и терпеливо относиться к осмотру. Последний чаще всего включает ощупывание, а также проверку на крипторхизм и наличие полной зубной формулы.
+        </p>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <p>
+         Майоркские мастифы не требуют тщательного ухода. Как и все короткошёрстные породы собак, ка-де-бо долго сохраняют презентабельный внешний вид. Эффект усилит регулярное вычёсывание «шубки» животного: не чаще двух раз в неделю. В качестве вспомогательного средства используйте массажную щётку с густой натуральной щетиной (подойдёт и аналог из резины). Шерсть молосса вычёсывают чаще в период линьки. Эту процедуру можно проводить и на улице, если позволяет погода. Так вы избавите себя от влажной уборки в попытке ликвидировать многочисленные шерстинки.
+        </p>
+        <p>
+         Купание – камень преткновения владельцев ка-де-бо. Желая предотвратить возможное появление запаха «псины», хозяева майоркских мастифов еженедельно устраивают своим питомцам банный день (а то и не один). Из-за частых водных процедур с шерсти собаки смывается тонкий защитный слой, а работа желёз активизируется, нарушая естественный жировой баланс кожи. Это приводит к быстрому загрязнению шёрстного покрова, а оно, в свою очередь, – к возникновению неприятного запаха.
+        </p>
+        <p class="legenda">
+         Запомните: купать питомца необходимо как можно реже! Желательно избегать этого, в крайнем случае минимизируйте количество процедур до одной-двух в месяц. Используйте средства гигиены с низким содержанием кислот и щелочей, обращая внимание на линию для жесткошёрстных пород собак. В редких случаях подойдёт и сухой шампунь, который втирается в шерсть и затем вычёсывается с помощью щётки.
+        </p>
+        <p>
+         Анатомия ка-де-бо – главная причина, по которой представители породы редко сталкиваются с ушными инфекциями, однако профилактический осмотр всё же обязателен. Ежедневно проверяйте и очищайте (по мере необходимости) ушные раковины собаки. Помощниками в этом деле станут ватные тампоны или диски, смоченные подсушивающим средством из зоомагазина. Не рекомендуется использовать специальные палочки: неосторожное движение рукой может повредить барабанные перепонки.
+        </p>
+        <p>
+         Ежедневному осмотру подвергаются и глаза животного. При наличии инородных частиц осторожно удалите их смахивающими движениями в направлении внутренних уголков. В роли вспомогательного средства выступает специальный лосьон; подойдёт и крепко заваренный чай. В случае покраснения глаз, слезоточивости или закисания необходимо обратиться к ветеринару.
+        </p>
+        <p>
+         Ротовая полость ка-де-бо нуждается в более тщательном уходе. Причина тому – перекус, который благоприятствует образованию налёта и зубного камня. Этого можно избежать благодаря профилактической чистке – как в ветеринарной клинике, так и дома. В последнем случае понадобятся твёрдые лакомства из спрессованных косточек и резиновые игрушки.
+        </p>
+        <p>
+         Для полноценного удаления налёта необходимо чистить зубы животного не чаще двух раз в месяц. Более частые процедуры чреваты повреждением эмали. Используйте старую щётку или компактную насадку на палец. Выбирая средство гигиены, остановитесь на специальных зоопастах с нейтральным вкусом. Использование «человеческих» аналогов способно вызвать у ка-де-бо аллергию.
+        </p>
+        <p class="legenda">
+         К сведению: сухие корма также способствует механической чистке зубов.
+        </p>
+        <p>
+         Не менее распространённое заблуждение собаководов-новичков касается когтей животного, которые якобы стачиваются естественным путём. На самом деле вмешательство хозяина обязательно: длинный «маникюр» меняет походку собаки, затрудняя движение. Отдельные случаи чреваты деформацией пальцев передних и задних конечностей. Во избежание проблем укорачивайте когти питомца с помощью когтереза гильотинного типа. Сгладить заусеницы и зазубренные края поможет пилочка.
+        </p>
+        <p>
+         Внушительную нишу в уходе за ка-де-бо занимает кормление. Заводчики, которые специализируются на разведении породы, рекомендуют выбрать один из двух вариантов: промышленный корм (классов премиум и супер-премиум) или диетическую натуральную пищу. Рацион особенно важен в щенячьем возрасте, когда мальорский мастиф склонен к ускоренному набору веса.
+        </p>
+        <p class="legenda">
+         Обратите внимание: употребление натуральных продуктов всегда сочетают с приёмом витаминных подкормок. При этом период смены зубов требует более тщательной дозировки. Чередование нескольких витаминных комплексов обязательно, так что перед приобретением той или иной добавки стоит проконсультироваться со специалистом.
+        </p>
+        <p>
+         Натуральный рацион ка-де-бо должен состоять на одну-две трети из мяса: нежирной телятины или говядины, курицы или индейки. Выбирайте жилистые кусочки – они благоприятно влияют на пищеварение животного. В качестве источника белка подойдут субпродукты и сырая промороженная рыба – морская или океаническая.
+        </p>
+        <p>
+         Дополнением к натуральному «меню» мальорского мастифа служат сезонные фрукты и овощи, кисломолочные продукты и яйца. Для улучшения состояния шерсти и кожи собаки необходимо ежедневно добавлять в пищу столовую ложку растительного масла (льняного, подсолнечного, кукурузного или оливкового).
+        </p>
+        <p>
+         Обязательно исключите из рациона:
+        </p>
+        <ul>
+         <li>
+          жирное мясо (допустима варёная свинина в небольших количествах);
+         </li>
+         <li>
+          сырую капусту, фасоль и горох (вызывают вздутие);
+         </li>
+         <li>
+          продукты с высоким содержанием углеводов;
+         </li>
+         <li>
+          соленья и продукты со специями;
+         </li>
+         <li>
+          жареную и копчёную пищу;
+         </li>
+         <li>
+          речную рыбу в любом виде;
+         </li>
+         <li>
+          ягоды с косточками;
+         </li>
+         <li>
+          сладкое и мучное;
+         </li>
+         <li>
+          трубчатые кости;
+         </li>
+         <li>
+          цельное молоко.
+         </li>
+        </ul>
+        <p>
+         Предоставьте ка-де-бо регулярный доступ к свежей питьевой воде – желательно бутилированной. Её можно заменить проточной, предварительно настояв более 6 часов. Использование кипячёной воды не рекомендуется.
+        </p>
+        <p>
+         Средние размеры майоркских мастифов делают их универсальными в плане содержания. Собаки комфортно чувствуют себя как в квартире, так и в частном доме с огороженным участком. В последнем случае ка-де-бо удовлетворяет свои потребности в физических нагрузках. Содержание животного в квартире подразумевает ежедневный выгул (около часа не реже двух раз в день). Прогулки должны быть умеренно активными – с элементами аджилити и более привычных спортивных игр.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни ка-де-бо
+        </h2>
+        <p>
+         Жестокий естественный отбор среди майоркских мастифов привёл к появлению здоровой породы с крепким иммунитетом и минимальной склонностью к распространённым заболеваниям. Впрочем, ка-де-бо всё же имеют предрасположенность к некоторым недугам. Среди них:
+        </p>
+        <ul>
+         <li>
+          чувствительность пищеварительного тракта;
+         </li>
+         <li>
+          аллергия на продукты питания;
+         </li>
+         <li>
+          дисплазия суставов;
+         </li>
+         <li>
+          гепатопатия;
+         </li>
+         <li>
+          демодекоз;
+         </li>
+         <li>
+          миозит.
+         </li>
+        </ul>
+        <p>
+         Своевременное обращение в ветеринарную клинику – залог долголетия вашего питомца. Не менее важный момент – профилактика: позаботьтесь о вакцинации, обработке от внешних паразитов и дегельминтизации.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Поиск будущего четвероногого друга необходимо начинать с официальных питомников, которые специализируются на разведении ка-де-бо. Стоит проверить и репутацию заводчика, поскольку вам придётся поддерживать с ним обратную связь в вопросах содержания собаки. Определитесь с тем, какую цель преследуете: приобретение верного компаньона или же будущего чемпиона. В последнем случае потребуется помощь эксперта, который установит соответствие животного стандарту породы.
+        </p>
+        <p>
+         Второй этап – знакомство с родителями щенков. Более тесный контакт со взрослыми ка-де-бо поможет определить наличие дефектов, которые проявятся в будущем и у помёта. Ознакомьтесь с условиями содержания собак, спросите заводчика о наградах и титулах (если это важно). Лишь после уточнения нюансов можно приступать к осмотру кандидатов на роль вашего друга.
+        </p>
+        <p>
+         При выборе ориентируйтесь на отдельные моменты.
+        </p>
+        <ul>
+         <li>
+          Подходящий возраст щенка для принятия в новую семью – 1,5-2 месяца. У малыша уже сформированы базовые навыки взаимодействия с окружающим миром. Стоит отметить, что все щенки подвергаются первичному осмотру заводчиком не ранее 30-40 дней. Уже в это время можно установить соответствие ка-де-бо стандарту.
+         </li>
+         <li>
+          Шишка на голове животного – один из «показателей» будущего роста. Чем она крупнее, тем выше будет ваш питомец.
+         </li>
+         <li>
+          Шёрстный покров молосса должен быть равномерным и чистым, глаза и ушки – без выделений, хвост – без заломов.
+         </li>
+         <li>
+          Здоровый щенок активен, проявляет интерес к окружающему миру и с радостью «знакомится» с новыми для него вещами. Агрессия или трусоватость – тревожные звоночки: из такого малыша не вырастет уравновешенная собака.
+         </li>
+         <li>
+          Поведение ка-де-бо во многом зависит от половой принадлежности. Кобели чаще проявляют своенравие и независимость в сравнении с суками – более ласковыми и покладистыми.
+         </li>
+        </ul>
+        <p>
+         При покупке щенка заводчик должен предоставить ветеринарный паспорт и сопутствующие справки о дегельминтизации и своевременной вакцинации. При желании можно получить племенной сертификат, в котором закреплена родословная вашего питомца. Это актуально для собак шоу-класса, которые планируют участвовать в выставках.
+        </p>
+        <h2 id="gl8">
+         Цена ка-де-бо
+        </h2>
+        <p>
+         Майоркский мастиф относится к породам средней ценовой категории. В основном стоимость ка-де-бо варьируется в пределах 25 000 - 35 000 рублей. Собаки с элитной родословной обойдутся будущему владельцу в 50 000 рублей и выше. Метисы и выбракованные животные стоят значительно дешевле: около 10 000 - 15 000 рублей. Независимо от того, какую сумму вы отдадите, приятным бонусом станет мощный, сильный и при этом невероятно чуткий пёс – преданный друг на долгие годы!
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения Ка-де-бо на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/ka-de-bo/forum/">
+        Перейти на
+        форум Ка-де-бо
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Ка-де-бо" src="/upload/iblock/7ad/7adfbe6945424abf65d429d392ffe470.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/ka-de-bo/">
+          Ка-де-бо
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/ka-de-bo/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/ka-de-bo/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/ka-de-bo/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/ka-de-bo/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/ka-de-bo/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/appentseller-zennenkhund/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Аппенцеллер зенненхунд" data-original="/upload/resize_cache/iblock/924/100_100_1/mw23ta7pjmpaq6z7op2au0bn2tfajseb.jpg">
+          <noscript data-alt="Аппенцеллер зенненхунд" data-original="/upload/resize_cache/iblock/924/100_100_1/mw23ta7pjmpaq6z7op2au0bn2tfajseb.jpg">
+           <img alt="Аппенцеллер зенненхунд" src="/upload/resize_cache/iblock/924/100_100_1/mw23ta7pjmpaq6z7op2au0bn2tfajseb.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Аппенцеллер зенненхунд
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/karelo-finskaya-layka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Карело-финская лайка" data-original="/upload/resize_cache/iblock/413/100_100_1/413b151ced68d1caa779ab522acbc2b8.jpg">
+          <noscript data-alt="Карело-финская лайка" data-original="/upload/resize_cache/iblock/413/100_100_1/413b151ced68d1caa779ab522acbc2b8.jpg">
+           <img alt="Карело-финская лайка" src="/upload/resize_cache/iblock/413/100_100_1/413b151ced68d1caa779ab522acbc2b8.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Карело-финская лайка
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/amerikanskiy-buldog/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Американский бульдог" data-original="/upload/resize_cache/iblock/856/100_100_1/856f06d45a5b3b2ab7a1e6f4bf080a8a.jpg">
+          <noscript data-alt="Американский бульдог" data-original="/upload/resize_cache/iblock/856/100_100_1/856f06d45a5b3b2ab7a1e6f4bf080a8a.jpg">
+           <img alt="Американский бульдог" src="/upload/resize_cache/iblock/856/100_100_1/856f06d45a5b3b2ab7a1e6f4bf080a8a.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Американский бульдог
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/pomeranskiy-shpits/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Померанский шпиц" data-original="/upload/resize_cache/iblock/ae6/100_100_1/ae61432957b8583f7c9952f15937c586.jpg">
+          <noscript data-alt="Померанский шпиц" data-original="/upload/resize_cache/iblock/ae6/100_100_1/ae61432957b8583f7c9952f15937c586.jpg">
+           <img alt="Померанский шпиц" src="/upload/resize_cache/iblock/ae6/100_100_1/ae61432957b8583f7c9952f15937c586.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Померанский шпиц
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fka-de-bo%252F%253Fcheck_key%253Df5ca72a04145fe75b56b2e1990bf4f93%2526ANIMAL_CODE%253Dka-de-bo%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fka-de-bo%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmthLWRlLWJvJTJGJTNGY2hlY2tfa2V5JTNEZjVjYTcyYTA0MTQ1ZmU3NWI1NmIyZTE5OTBiZjRmOTMlMjZBTklNQUxfQ09ERSUzRGthLWRlLWJvJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmthLWRlLWJvJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fka-de-bo%252F%253Fcheck_key%253Df5ca72a04145fe75b56b2e1990bf4f93%2526ANIMAL_CODE%253Dka-de-bo%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fka-de-bo%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fka-de-bo%252F%253Fcheck_key%253Df5ca72a04145fe75b56b2e1990bf4f93%2526ANIMAL_CODE%253Dka-de-bo%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fka-de-bo%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "176.117.202.67"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--4d5d7d20640ac3a7c13a980c94a4741e-->

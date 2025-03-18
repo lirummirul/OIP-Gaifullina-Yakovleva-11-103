@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'26f5fa91840a'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Бедлингтон-терьер, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Бедлингтон-терьер – английская порода собак, напоминающая гибрид ягненка и пуделя. Исторически бедлингтоны разводились для охоты на некрупную дичь и грызунов, а сегодня чаще встречаются в роли семейных питомцев. " name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/d55/d55a54c26bd52e36eb1ca92071640832.jpg" property="og:image"/>
+     <title>
+      Бедлингтон-терьер: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/bedlington-terer/" property="og:url"/>
+     <meta content="Бедлингтон-терьер: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Бедлингтон-терьер – английская порода собак, напоминающая гибрид ягненка и пуделя. Исторически бедлингтоны разводились для охоты на некрупную дичь и грызунов, а сегодня чаще встречаются в роли семейных питомцев. " property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/bedlington-terer/" itemprop="url">
+         <span itemprop="title">
+          Бедлингтон-терьер
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Бедлингтон-терьер
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/bedlington-terer/">
+          Описание
+         </a>
+         <a href="/dog/bedlington-terer/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/bedlington-terer/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/bedlington-terer/photo/">
+          Фото
+         </a>
+         <a href="/dog/bedlington-terer/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Бедлингтон-терьер" src="/upload/iblock/83e/83eeac68250073efa9c144d031d9b5c2.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Бедлингтон-терьер – английская порода собак, напоминающая гибрид ягненка и пуделя. Исторически бедлингтоны разводились для охоты на некрупную дичь и грызунов, а сегодня чаще встречаются в роли семейных питомцев.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/46c/46c53ac6255c9b877da4dca0e07db87a.jpg" data-cap="Füge 
+Showgrooming  #showdog #bedlingtonterriersofinstagram #bedlingtonterrier #bedlingtonterrierlover #bedlingtonterriergrooming #bedlingtonsofinstagram #bedlingtonterriers #dogshow #dogsoninstagram #budapestdogs #budapestgram #hungary #doggram #dogsofinstagram #stylist #styleoftheday #fashionstyle #nyc #nycphotographer #picoftheday #photography #photo #kutyasbagazs #kutya #kutyakozmetikus #scissorswork #doggroomersofinstagram" data-fancybox="images" data-link="https://www.instagram.com/p/B_koazWBrAA/" data-type="image" data-username="szormokkutyakozmetika" href="/upload/uf/e9a/e9aaad03eff3b998633401a2f9b269e1.jpg">
+            <img alt="Бедлингтон-терьер" src="/upload/resize_cache/uf/e9a/293_293_2/e9aaad03eff3b998633401a2f9b269e1.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/af6/af69bdaa4df94f4d39155a06e2b6a782.jpg" data-cap="Bedlington Terrier grooming.  My go to products and equipment  #bedlingtonterrier #bedlington #beddies #bedlingtonsofinstagram #bedlingtonterrieruk #bedlington #bedlingtongrooming #simpsonsgroomingsupplies #totalgroomingmagazine #totalgrooming #doggrooming #doggroominglife #doggroomingofinstagram #dog #doggroomer #doggroomingproducts #doggroomingtips #banish #thegroomersspotlight #louisasgroomingsalon #whippetmedia #thegroomerslockdown" data-fancybox="images" data-link="https://www.instagram.com/p/B_kgTsUFgcn/" data-type="image" data-username="louisa_tandy" href="/upload/uf/38b/38bf9158c4c7163caab8800273b07ff8.jpg">
+            <img alt="Бедлингтон-терьер" src="/upload/resize_cache/uf/38b/293_293_2/38bf9158c4c7163caab8800273b07ff8.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/9cc/9cc5fa500e433b573983c6195d857ef2.jpg" data-cap="#bedlingtonterrier #bedlington #beddies #bedlingtonsofinstagram #bedlingtonterrieruk #bedlington #bedlingtongrooming #simpsonsgroomingsupplies #totalgroomingmagazine #totalgrooming #doggrooming #doggroominglife #doggroomingofinstagram #dog #doggroomer #doggroomingproducts #doggroomingtips #banish #thegroomersspotlight #louisasgroomingsalon #whippetmedia #thegroomerslockdown" data-fancybox="images" data-link="https://www.instagram.com/p/B_kfd54F477/" data-type="image" data-username="louisa_tandy" href="/upload/uf/dd3/dd3484e1cdb0dbd29edbebbadc8b164e.jpg">
+            <img alt="Бедлингтон-терьер" src="/upload/resize_cache/uf/dd3/293_293_2/dd3484e1cdb0dbd29edbebbadc8b164e.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/bedlington-terer/photo/">
+         Все
+            фото Бедлингтон-терьера
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы бедлингтон-терьер
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы бедлингтон-терьер
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер бедлингтон-терьера
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни бедлингтон-терьеров
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена бедлингтон-терьера
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Бедлингтон-терьер
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         8-10 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         около 41 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         11-16 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Несмотря на то, что современные бедлингтон-терьеры – преимущественно выставочные собаки и городские компаньоны, представители породы не утратили охотничьи инстинкты.
+        </li>
+        <li>
+         Чтобы бедлингтон выглядел максимально эффектно, его придется стричь с периодичностью раз в два месяца, что при отсутствии грумерского опыта сделать непросто.
+        </li>
+        <li>
+         Порода любит полаять, поэтому из собак получаются неплохие сторожа, способные вовремя предупредить хозяина о присутствии в доме посторонних.
+        </li>
+        <li>
+         Типичные терьерские черты характера у бедлингтонов проявляются не так ярко, как у их сородичей по группе, хотя они не прочь «порулить» вместо хозяина, а также погонять мелких зверьков.
+        </li>
+        <li>
+         Порода считается редкой, поэтому в отечественных питомниках выбор щенков невелик, а цены на них достаточно высокие.
+        </li>
+        <li>
+         Бедлингтон-терьер – идеальная собака для перфекционистов в вопросах чистоты. Линька у представителей этого семейства очень умеренная, кроме того, их волос не выпадает, а значит не прилипает к ковровым покрытиям и одежде.
+        </li>
+        <li>
+         У бедлингтонов посредственные способности к обучению и 39-е место в списке самых интеллектуально развитых пород Стэнли Корена.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Бедлингтон-терьер" data-original="/upload/iblock/d55/d55a54c26bd52e36eb1ca92071640832.jpg">
+          <noscript data-alt="Бедлингтон-терьер" data-original="/upload/iblock/d55/d55a54c26bd52e36eb1ca92071640832.jpg">
+           <img alt="Бедлингтон-терьер" src="/upload/iblock/d55/d55a54c26bd52e36eb1ca92071640832.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Бедлингтон-терьер
+          </strong>
+          – преданный друг и увлеченный путешественник, обладающий толикой здорового эгоизма и приличным запасом добродушия. В компаньоны породу рекомендуют тогда, когда хочется иметь терьера, но нет желания обзаводиться упрямым доминантом, управляемым исключительно охотничьими инстинктами. Бедлингтоны в меру резвы, но не агрессивны, готовы подчиняться более сильному лидеру, но не растворяться в нем, любят погонять мелкую живность, но не входят в раж и в состоянии обуздывать собственный гнев. А еще у этих пушистиков эталонно-глянцевая внешность, поэтому с таким питомцем вы точно не затеряетесь в толпе.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Бедлингтон-терьер основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2>
+         Видео: Бедлингтон-терьер
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="y2MIwsPYKHo">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl1">
+         История породы бедлингтон-терьер
+        </h2>
+        <p>
+         Первые бедлингтоны появились в северных графствах Англии в XVIII столетии. Тогда порода была известна под названием ротбери-терьер, а разведением ее представителей занимались цыгане и бродячие цирковые труппы. Предки сегодняшних бедлингтонов выглядели не слишком презентабельно, зато демонстрировали поразительную добычливость, круглогодично обеспечивая цыганские семейства кроличьим рагу. Животных привлекали к работе и английские забойщики. Собак спускали в шахту, чтобы те расправлялись с полчищами крыс и мышей, обитавших внутри и уничтожавших скудные обеды работяг.
+        </p>
+        <p>
+         В XIX веке обзаводиться ротбери-терьерами начали британские эсквайры. Одними из первых это сделали Уильям Аллан и Эдвард Донкин, проживавшие в окрестностях Нортумберленда и содержавшие в своих владениях множество племенных особей, которых скрещивали с другими породами. Что касается современного названия, то оно пришло к терьерам в 1825 году, когда нортумберлендские псы поучаствовали в показательной охоте в окрестностях города Бедлингтона.
+        </p>
+        <p>
+         С 1859 года порода завоевывала собачьи выставки, а потомство её представителей регистрировали в племенных книгах графства Нортумберленд. Уже в 1893 году у бедлингтонов появился собственный национальный клуб, а спустя четыре года для них написали отдельный стандарт. Дальше – больше: потомки ротбери-терьеров отправились покорять Северную Америку, где их радушно приняли и даже зарегистрировали в АКС. Кстати, в эпоху «бурных 20-х» в США особенно прославились породные линии полковника Гуггенхайма и Уильяма Рокфеллера, вырастивших первых американских бедлингтонов-чемпионов.
+        </p>
+        <h2 id="gl2">
+         Стандарт породы бедлингтон-терьер
+        </h2>
+        <p>
+         Современный бедлингтон-терьер – это гламурная фотомодель с непередаваемой пластикой движений и благородным изяществом силуэта. Завязавший с рабочей специальностью еще в прошлом веке, этот очаровашка быстро трансформировался в завсегдатая выставок и элегантного компаньона, с которым не стыдно показаться на светской тусовке. Немаловажную роль в аристократическом имидже бедлингтонов играет шерсть. Пушистая, образующая стильные колечки на мордочке, она напоминает причудливый микс «шубок» ягненка и пуделя.
+        </p>
+        <p>
+         Половой диморфизм у породы выраженный. Суки ниже ростом и в целом изящнее кобелей. Представители мужского пола имеют более фактурную внешность и подкачанные фигуры, но при этом сохраняют природную грациозность и легкую подсушенность типа. Диапазон высоты собак в холке – от 37 до 45 см, вес варьируется от 8 до 10 кг.
+        </p>
+        <p>
+         Легкий космический шик бедлингтон-терьерам придает стрижка с плавными переходами. Благодаря такой технике, голова собаки приобретает подчеркнуто яйцевидную форму, напоминающую череп инопланетного создания.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         У бедлингтон-терьера узкий, округлый череп хорошей глубины и без выраженного стопа. Верх головы прикрывает пышная белая шапочка-хохолок. Линия, идущая к носу от затылка, ровная, без выпуклостей и углублений.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Мочка черного или коричневого оттенка, в зависимости от окраса шерсти. Ноздри хорошо обрисованные, крупного размера.
+        </p>
+        <h3>
+         Губы, челюсти, зубы
+        </h3>
+        <p>
+         Губы собаки плотно прилегают к длинным, узким челюстям. Зубы крупные и крепкие, смыкающиеся в правильные «ножницы».
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Блестящие небольшие глаза бедлингтон-терьера посажены глубоко. Обязательный нюанс – угловатый разрез век, из-за которого глаза выглядят треугольными. Окрас радужки напрямую зависит от оттенка шерсти. У особей голубого окраса темные глаза, у подпало-голубых – коричнево-янтарные, у собак печеночной и песочной мастей – светло-орехового оттенка.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Ушное полотно бедлингтона средней величины, очень тонкое, напоминающее очертаниями лист ореха. Уши посажены низко и опущены книзу вдоль скул. Кожа с внешней стороны покрыта короткой бархатистой шерстью и имеет аккуратные бахромчатые кисточки на ушных кончиках.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Низко поставленная шея бедлингтон-терьера лишена подбрудка, отличается хорошей длиной и расширяется в области плеч.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело собаки мускулистое, гибкое, в длину превышающее высоту животного в холке. Отличительная особенность силуэта – сводистая спина с куполообразным изгибом в районе поясницы. Грудь бедлингтон-терьера глубокая с плоскими ребрами. Низ живота и линия паха хорошо подтянуты.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Передние ноги без кривизны, но расстояние между ними на уровне груди больше, чем на уровне лап. Плечи у представителей породы уплощенные, поставленные косо; пясти чуть наклонные. Задние конечности бедлингтон-терьера мускулистее и длиннее передних. Скакательные суставы хорошо обозначенные, без выворота. Внушительно смотрятся длинные заячьи лапы с пухлыми, плотно сжатыми подушечками пальцев. В спокойной обстановке бедлингтон-терьер движется пружинистым семенящим шагом, но при необходимости ускориться может переходить на раскачивающийся галоп.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвост бедлингтона имеет нормальную длину, изогнутую форму. Он крепкий у основания, плавно переходящий в тонкий кончик. Обязательное условие – хвост не должен держаться выше спины.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Шелковистая густая шерсть не прилегает плотно к коже, но и не топорщится в стороны. Кроме того, волос может завиваться в кольца, что особенно заметно в области морды и головы.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Стандартные масти: голубая, подпало-голубая, печеночная и песочная (с подпалом или без).
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <p>
+         Серьезными недостатками бедлингтон-терьеров считаются:
+        </p>
+        <ul>
+         <li>
+          крипторхизм;
+         </li>
+         <li>
+          нестандартные окрас и структура шерстного покрова;
+         </li>
+         <li>
+          коричневые мочка, губы и веки при голубой или голубой с подпалом шерсти;
+         </li>
+         <li>
+          недокус или перекус;
+         </li>
+         <li>
+          депигментированная кожа век, мочки носа, губ.
+         </li>
+        </ul>
+        <p>
+         Поведенческие отклонения от нормы тоже являются достаточным поводом для дисквалификации. Если животное ведет себя трусливо или агрессивно, оно не будет допущено на ринг.
+        </p>
+        <h2 id="gl3">
+         Характер бедлингтон-терьера
+        </h2>
+        <p>
+         Под ангельской внешностью бедлингтона скрывается классическая «терьеристая» собака, периодически примеряющая корону лидера и под настроение терроризирующая мелких пушистиков. И все же, десятилетия выставочного разведения даром не прошли, поэтому охотничьи инстинкты у породы, конечно, имеются, но не в таком обостренном состоянии, как, например, у ягдтерьеров. Бедлингтон-терьера можно назвать мастером перевоплощений. Этот стильный симпатяга с одинаковым успехом трансформируется как в интеллигентного добрячка, так и в хитрого эгоиста, яростно отстаивающего собственную позицию.
+        </p>
+        <p>
+         Бедлингтонам не свойственно проявлять агрессию в отношении человека, но иногда питомец в состоянии сделать проверочный «кусь», если владелец перешел границы дозволенного и замыслил экзекуцию вроде плановой прививки или стрижки когтей. В общество других собак бедлингтон-терьер интегрируется без особых проблем, но это не значит, что он готов прислуживать в стае. Наоборот, на каждую провокацию со стороны соплеменников этот товарищ непременно ответит, не забыв применить в драке фирменные увертки и внезапные покусывания за «тылы».
+        </p>
+        <p>
+         В домашней обстановке бедлингтон – практически паинька. Он в меру игрив, не приставуч и всегда в отличном настроении. Переворачивать квартиру вверх дном порода тоже не станет, хотя ее представители и отличаются повышенной энергичностью. А вот поревновать хозяина к котейкам для бедлингтон-терьера – святое дело, поэтому в присутствии песика с мурлыками лучше лишний раз не нежничать. Если в доме есть дети, собака готова принять этот факт как данность, но только на условиях вежливого соседства. Если же маленькие шалуны регулярно достают животное, причиняя ему дискомфорт, бедлингтон-терьер может дать сдачи. Имейте это в виду и постарайтесь ограничить общение питомца и детей, если последние видят в четвероногом создании живую игрушку.
+        </p>
+        <p>
+         Что касается знаменитой терьерской строптивости, то бедлингтонов она не обошла стороной. Ну а чтобы познакомиться с этой чертой характера собаки, достаточно хорошенько на нее прикрикнуть или ущемить в правах и сложившихся привычках. На такую «вселенскую несправедливость» пес ответит умеренным непослушанием, а то и спланированной исподтишка местью. В остальном бедлингтон-терьер – в меру спокойный и дружелюбный компаньон, обожающий совместные вылазки на природу и автопутешествия. Да, иногда он не прочь взрыхлить соседскую клумбу и продемонстрировать остроту зубов на мебельной обивке, но все это больше от скуки и безделья, чем из вредности.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Важно с самого начала ответить себе на вопрос: для какой цели приобретена собака? Если это представитель рабочих линий, с которым планируется полноценная охота, то учебный процесс придется сочетать с элементами натаски. Кстати, однажды пробудив в бедлингтон-терьере охотничьи инстинкты, усмирить их не получится, так что либо не начинайте охотиться с породой вообще, либо делайте это на постоянной основе. Что касается домашних и шоу-особей, которых в России подавляющее большинство, то их можно обучать по классическому сценарию: социализация – воспитание – дрессировка. Владельцам выставочных питомцев дополнительно придется постигать азы хендлинга (выставочная демонстрация животного), либо поручать это дело специалисту, который обучит собаку ринговой стойке и правильным движениям.
+        </p>
+        <p>
+         Домашние занятия можно сочетать с выездами на тренировочные площадки, но взаимоисключать друг друга такие уроки не должны. Помните, собака обязана исполнять команды в любой ситуации, а не только когда над ней нависает фигура профессионального тренера. Прогулки тоже лучше использовать с пользой для отработки базовых умений из курса ОКД. Правда, прежде чем приступать к занятиям на свежем воздухе, питомцу нужно дать возможность побегать и выпустить пар.
+        </p>
+        <p>
+         В остальном бедлингтон-терьеров дрессируют по той же схеме, что и остальных представителей группы, то есть дают четко понять, что доминирование над владельцем не пройдет. Поданная человеком команда должна быть непременно исполнена. Начинать уроки послушания нужно с двухмесячного возраста, когда щенок готов к усвоению требований «Ко мне!» и «Место!». В четыре месяца можно вводить более сложные команды «Рядом!» и «Сидеть!». Кстати, о последней команде: специалисты не рекомендуют вводить её в навыки шоу-собак, поскольку на ринге животные экспонируются исключительно в стоячем положении.
+        </p>
+        <p>
+         В первый год жизни бедлингтон-терьеры наиболее активны и горазды на шалости, поэтому готовьтесь прятать провода, дорогую обувь, а также зачехлять мягкую мебель. Заменить все эти предметы лучше игрушками, которые собака будет покусывать, грызть и царапать. Если же питомец допустил промашку, кричать на него нельзя. Бедлингтон-терьеры согласны признавать в хозяине вожака стаи, но не терпеть истерическую ругань. Для того чтобы щенок осознал ошибку, достаточно строгого тона. Ну и конечно, никаких наказаний задним числом – животные просто не способны осознать их целесообразность.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         В российском климате бедлингтон-терьеров содержат в квартирах и домах. При этом выгуливать собаку допустимо в любую погоду – за полтора-два часа хождений по паркам и скверам животное не замерзнет. Если хотите сохранить презентабельный облик подопечного, купите защитный комбинезон на период межсезонья. Несмотря на то, что бедлингтоны от рождения аккуратисты, от грязных брызг, разлетающихся из-под автомобильных колес, не застрахованы даже они. Впрочем, соблюдать меру нужно и здесь. Продолжительное ношение непромокаемых одежек чревато образованием на теле собаки шерстяных колтунов, которые её совершенно не украшают.
+        </p>
+        <h3>
+         Гигиена и уход за шерстью
+        </h3>
+        <p>
+         У бедлингтон-терьеров растет обильная шерсть не только по корпусу, но и в ушной воронке. В связи с этим раз в неделю слуховой проход требуется очищать от выделений, попутно выщипывая волоски, мешающие естественной вентиляции и накапливающие серный секрет. Самый удобный способ удаления шерсти из уха – выщипывание вручную либо пинцетом. Если собака чересчур остро реагирует на «эпиляцию», допустимо использовать ножницы с закругленными краями.
+        </p>
+        <p>
+         Раз в месяц бедлингтон-терьеру стоит подстричь когти клиппером или любым другим когтерезом. Если этого не делать, когтевая пластина будет загибаться внутрь, мешая ходьбе и искажая постав ног, что особенно губительно для шоу-питомцев. Владельцам, гуляющим с животными по дорогам, посыпанным реагентами, разумнее обуть подопечных в специальные непромокаемые носочки. В противном случае после каждого такого выхода бедлингтону придется залечивать потрескавшуюся кожу подушечек. Как альтернативу прогулочным носочкам разрешается использовать защитные воски и бальзамы для лап типа «Айда гулять!», «Вединол». Эти средства препятствуют впитыванию химических соединений в кожу, предохраняя ее от шелушений и трещин.
+        </p>
+        <p>
+         Зубы у породы здоровые, поэтому для профилактики зубного налета и камня достаточно давать питомцу твердое лакомство вроде сушеных говяжьих ушей, хрящиков или сухих витаминизированных крокетов. Неплохие результаты дают смазывание зубов свежим томатным соком и чистка зоопастой, но к таким процедурам собаку приучают со щенячьего возраста.
+        </p>
+        <p>
+         Сезонная линька у бедлингтон-терьеров отсутствует. Волос постепенно обновляется в течение года, так что основной уход за питомцем – это периодическое прочесывание тела резиновой варежкой или щеткой во избежание образования колтунов. Щенков до года вычесывать нужно чаще, так как у них более интенсивная линька. Юниорская шерсть меняется на взрослую, а потому быстрее сваливается. Кроме того, начиная с трехмесячного возраста, бедлингтон-терьеров стригут. Если не планируете доверять данную процедуру грумеру, обзаведитесь парикмахерскими ножницами, машинкой для стрижки и щеткой-пуходеркой. Последний инструмент пригодится, чтобы начесать пышный волос собаки перед обработкой машинкой и ножницами.
+        </p>
+        <p>
+         Большинство заводчиков предпочитает классический вариант стрижки бедлингтона с плавными переходами и оформлением пышной шапочки на голове. Однако существует и американская техника, когда собака стрижется максимально коротко, а шерсть на нижней части хвоста, щеках и горле выбривается. Выглядят подстриженные по такому типу бедлингтоны очень необычно за счет просвечивающей кожи и узкой «кепочки» на черепе. Что касается схем собачьих «причесок», то их легко найти на форумах породы. Однако пользоваться шаблонами придется минимум четыре раза в год – если стричь животное реже, есть риск заполучить безнадежно заросшего питомца в неопрятных колтунах.
+        </p>
+        <p>
+         Купать бедлингтон-терьеров нужно каждые 2-3 недели. Вдобавок после каждой прогулки придется протирать животному лапки и нижнюю часть живота. Чтобы шерсть выглядела блестящей и лучше расчесывалась, необходимо использовать в комплекте с шампунем кондиционеры. Более частые купания проводятся, когда стоит задача быстрее отрастить шерстный покров – использование смягчающих масок и бальзамов, а также регулярные расчесывания делают волос податливее и стимулируют кровообращение. Полезно также прикупить тальк либо детскую присыпку. Со временем прядки возле пасти, под глазами, хвостом и на животе собаки приобретают буроватый подтон, который легко нейтрализовать, если обработать шерсть тальковой пудрой.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важно:
+         </strong>
+         в течение жизни, особенно в период беременности и кормления щенков, шерсть бедлингтон-терьера меняет интенсивность окраса, становясь то темнее, то светлее. Это нормальное и проходящее явление, с которым не нужно бороться.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         В натуральное меню бедлингтон-терьера входит любое постное мясо, промороженное рыбное филе, обезжиренные кисломолочные продукты, фруктово-овощная составляющая и крупы (рис). Сделать рацион оптимально сбалансированным помогут витаминные комплексы и БАДы, которые лучше подбирать по рекомендации ветеринара. Заводчики часто рекомендуют и качественные промышленные корма, начиная с супер-премиум-класса и выше. Правда, чтобы найти своего идеального производителя «сушки», придется потратить некоторое время.
+        </p>
+        <p>
+         <strong>
+          Важный нюанс:
+         </strong>
+         многие минеральные компоненты, входящие в состав готовых кормов, окрашивают шерсть бедлингтон-терьеров, однако заранее предугадать, как организм собаки отреагирует на ту или иную марку, – нереально.
+        </p>
+        <p>
+         Недопустимо кормить питомца остатками с собственного стола. Кроме того, породе противопоказаны сладости, копчености, бобовые культуры и капуста, сырая морковь, орехи, шоколад, гречневая крупа, сладкие фрукты, а также субпродукты (печень, почки). Трубчатые кости бедлингтонам тоже не дают, как и листовую зелень.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни бедлингтон-терьеров
+        </h2>
+        <p>
+         Бедлингтон-терьер не самая болезненная порода, но имеет предрасположенность к некоторым проблемам со здоровьем. Чаще всего её представители страдают от глазных болезней (глаукома, атрофия сетчатки, дистихиаз), протрузии, а также дисплазии тазобедренных суставов и эктопии мочеточников. У бедлингтонов есть и уникальный генетический недуг под названием «медный токсикоз». Болезнь проявляется в юном возрасте и обусловлена избыточным накоплением меди в печени. К тому же, если патологию своевременно не лечить, дело закачивается интоксикацией организма и летальным исходом.
+        </p>
+        <p>
+         В качестве профилактики токсикоза рекомендуется пересмотреть меню питомца и исключить богатые медью продукты, а также промышленные корма, в которых содержание меди превышает 10 мг/кг. Воду бедлингтон-терьерам со склонностью к заболеванию лучше давать дистиллированную и деионизированную, а животный белок заменить легкоусваиваемым кисломолочным (творог, кефир). Кроме того, при медном токсикозе полезно вводить в рацион мультивитаминные комплексы с витамином К.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Обязательно познакомьтесь с производителями помета. Посмотрите их родословные, а также результаты тестирования на генетический медный токсикоз, если таковые имеются. Помните, особи, у которых диагностирован данный недуг, официально не допускаются к разведению.
+         </li>
+         <li>
+          Выбирайте «девочку», если не уверены в своих педагогических способностях – суки бедлингтон-терьера более управляемы и легче дрессируются.
+         </li>
+         <li>
+          Имейте в виду, что щенки бедлингтон-терьера появляются на свет с темно-шоколадным либо черным окрасом шерсти, который становится светлее по мере взросления животного.
+         </li>
+         <li>
+          Если важны титулы родителей малыша, походите по собачьим выставкам, где можно познакомиться с владельцами бедлингтонов-чемпионов и договориться о покупке щенка.
+         </li>
+         <li>
+          Гуляя по выставкам и выбирая племенных особей, от которых хотелось бы приобрести потомство, обратите внимание, сколько бедлингтон-терьеров выставляется на ринге. Замечательно, если производитель получил титул и отличную оценку в ходе здоровой конкуренции. Если же на мероприятии экспонировались один или пара конкурсантов, есть вероятность того, что судьи завысили участникам оценки.
+         </li>
+         <li>
+          Старайтесь приобретать бедлингтонов в монопородных питомниках либо у заводчиков, специализирующихся только на одной породе, – так больше шансов получить здоровое животное, которому уделялось достаточно внимания.
+         </li>
+        </ul>
+        <h2 id="gl8">
+         Цена бедлингтон-терьера
+        </h2>
+        <p>
+         В России бедлингтон-терьеры – довольно редкие питомцы, а это значит, что поиски монопородного питомника придется вести не только внутри страны, но и по бывшим союзным республикам. Что касается стоимости щенков, то у европейских заводчиков приобрести клубного малыша от протестированных на медный токсикоз производителей получится за 800-1100 евро. В питомниках стран СНГ расценки чуть ниже – 400-700 евро (примерно 34 000 – 60 000 рублей), в зависимости от класса щенка и чистоты его родословной.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения Бедлингтон-терьера на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/bedlington-terer/forum/">
+        Перейти на
+        форум Бедлингтон-терьера
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Бедлингтон-терьер" src="/upload/iblock/83e/83eeac68250073efa9c144d031d9b5c2.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/bedlington-terer/">
+          Бедлингтон-терьер
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/bedlington-terer/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/bedlington-terer/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/bedlington-terer/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/bedlington-terer/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/bedlington-terer/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/peruanskaya-golaya-sobaka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Перуанская голая собака" data-original="/upload/resize_cache/iblock/558/100_100_1/kvicyyh9ffs2zagi5skzqr36w6dootpp.jpg">
+          <noscript data-alt="Перуанская голая собака" data-original="/upload/resize_cache/iblock/558/100_100_1/kvicyyh9ffs2zagi5skzqr36w6dootpp.jpg">
+           <img alt="Перуанская голая собака" src="/upload/resize_cache/iblock/558/100_100_1/kvicyyh9ffs2zagi5skzqr36w6dootpp.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Перуанская голая собака
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/portugalskaya-vodyanaya-sobaka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Португальская водяная собака" data-original="/upload/resize_cache/iblock/778/100_100_1/2o85in8u2ku5r22vy0tp78er011fip3k.jpg">
+          <noscript data-alt="Португальская водяная собака" data-original="/upload/resize_cache/iblock/778/100_100_1/2o85in8u2ku5r22vy0tp78er011fip3k.jpg">
+           <img alt="Португальская водяная собака" src="/upload/resize_cache/iblock/778/100_100_1/2o85in8u2ku5r22vy0tp78er011fip3k.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Португальская водяная собака
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/velsh-korgi-kardigan/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Вельш-корги кардиган" data-original="/upload/resize_cache/iblock/c0b/100_100_1/c0b931451d53ccc8eb5719cf559cfcf2.jpg">
+          <noscript data-alt="Вельш-корги кардиган" data-original="/upload/resize_cache/iblock/c0b/100_100_1/c0b931451d53ccc8eb5719cf559cfcf2.jpg">
+           <img alt="Вельш-корги кардиган" src="/upload/resize_cache/iblock/c0b/100_100_1/c0b931451d53ccc8eb5719cf559cfcf2.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Вельш-корги кардиган
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/veymaraner/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Веймаранер" data-original="/upload/resize_cache/iblock/eaf/100_100_1/eaf324ea66f56d3f3d5d2d35d821768e.jpg">
+          <noscript data-alt="Веймаранер" data-original="/upload/resize_cache/iblock/eaf/100_100_1/eaf324ea66f56d3f3d5d2d35d821768e.jpg">
+           <img alt="Веймаранер" src="/upload/resize_cache/iblock/eaf/100_100_1/eaf324ea66f56d3f3d5d2d35d821768e.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Веймаранер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbedlington-terer%252F%253Fcheck_key%253D514ef1075578f32195ba7c2e9006800f%2526ANIMAL_CODE%253Dbedlington-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbedlington-terer%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmJlZGxpbmd0b24tdGVyZXIlMkYlM0ZjaGVja19rZXklM0Q1MTRlZjEwNzU1NzhmMzIxOTViYTdjMmU5MDA2ODAwZiUyNkFOSU1BTF9DT0RFJTNEYmVkbGluZ3Rvbi10ZXJlciUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZiZWRsaW5ndG9uLXRlcmVyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbedlington-terer%252F%253Fcheck_key%253D514ef1075578f32195ba7c2e9006800f%2526ANIMAL_CODE%253Dbedlington-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fbedlington-terer%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbedlington-terer%252F%253Fcheck_key%253D514ef1075578f32195ba7c2e9006800f%2526ANIMAL_CODE%253Dbedlington-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbedlington-terer%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "185.30.41.2"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--aa7689e1a478f22e84e6d194778aeeea-->

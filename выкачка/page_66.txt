@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'960151389278'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Гладкошёрстный фокстерьер, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Гладкошерстный фокстерьер – охотничья собака с короткой, прилегающей шерстью, предназначенная для работы по лисе и барсуку в норе. Выведена в Великобритании, и долгое время объединялась в одну породу с жесткошерстными фокстерьерами." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/908/qbtgd7miz8z6d3cs1qts6u4mbp5lncr2.jpg" property="og:image"/>
+     <title>
+      Гладкошёрстный фокстерьер: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/gladkoshyerstnyy-foksterer/" property="og:url"/>
+     <meta content="Гладкошёрстный фокстерьер: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Гладкошерстный фокстерьер – охотничья собака с короткой, прилегающей шерстью, предназначенная для работы по лисе и барсуку в норе. Выведена в Великобритании, и долгое время объединялась в одну породу с жесткошерстными фокстерьерами." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/gladkoshyerstnyy-foksterer/" itemprop="url">
+         <span itemprop="title">
+          Гладкошёрстный фокстерьер
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Гладкошёрстный фокстерьер
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/gladkoshyerstnyy-foksterer/">
+          Описание
+         </a>
+         <a href="/dog/gladkoshyerstnyy-foksterer/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/gladkoshyerstnyy-foksterer/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/gladkoshyerstnyy-foksterer/photo/">
+          Фото
+         </a>
+         <a href="/dog/gladkoshyerstnyy-foksterer/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Гладкошёрстный фокстерьер" src="/upload/iblock/f5e/x63dm3t6k3wocudqkjdmoww1meh2mo1p.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Гладкошерстный фокстерьер – охотничья собака с короткой, прилегающей шерстью, предназначенная для работы по лисе и барсуку в норе. Выведена в Великобритании, и долгое время объединялась в одну породу с жесткошерстными фокстерьерами.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/gladkoshyerstnyy-foksterer/photo/">
+         Все
+            фото гладкошерстного фокстерьера
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Гладкошёрстный фокстерьер
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         XIX век
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 7,5-8 кг, суки 7-7,5 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         33-41 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         13-15 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Гладкошерстный фокс сочетает в себе охотничьи и компаньонские задатки. При отсутствии возможности ходить за трофеями он безболезненно переключается на другие занятия – игры, спорт, сторожевую деятельность.
+        </li>
+        <li>
+         Как и у всех представителей терьерской группы, у этих «хвостов» проблемы с принятием других домашних питомцев – собак, кошек, грызунов.
+        </li>
+        <li>
+         Порода склонна к побегам и бродяжничеству, если своевременно не отучить ее представителей от этой привычки.
+        </li>
+        <li>
+         В общении с людьми гладкошерстный фокстерьер позитивен, игрив и добродушен. Животное легко находит подход и к детям, с которыми охотно проводит время.
+        </li>
+        <li>
+         Фоксы от природы довольно голосисты и эмоциональны, особенно если их потребность в общении игнорируется.
+        </li>
+        <li>
+         Порода требует определенных усилий и опыта в плане дрессировки, поэтому не рекомендуется в качестве первой собаки.
+        </li>
+        <li>
+         Известные владельцы гладкошерстных фокстерьеров – путешественник Марк А. Стейн, полярный исследователь Ричард Бэрд, модельер Том Форд.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Гладкошёрстный фокстерьер" data-original="/upload/iblock/908/qbtgd7miz8z6d3cs1qts6u4mbp5lncr2.jpg">
+          <noscript data-alt="Гладкошёрстный фокстерьер" data-original="/upload/iblock/908/qbtgd7miz8z6d3cs1qts6u4mbp5lncr2.jpg">
+           <img alt="Гладкошёрстный фокстерьер" src="/upload/iblock/908/qbtgd7miz8z6d3cs1qts6u4mbp5lncr2.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Гладкошерстный фокстерьер
+          </strong>
+          – собака, в теле которой одновременно уживаются неутомимый тусовщик, бесстрашный охотник на лис и коммуникабельный компаньон. Управлять этим вечным двигателем может быть непросто, но это вполне умеренная плата за веселье, позитив и охотничьи трофеи, которыми фокс одаривает каждого, кто ему дорог.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Сложно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличное (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Плохой охранник (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Гладкошёрстный фокстерьер основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2>
+         История породы
+        </h2>
+        <p>
+         Прародители гладкошерстных фоксов обитали на британских островах с незапамятных времен. Это были небольшие норные собаки, бесконтрольно плодившиеся и добывавшие себе пропитание охотой на лис. Что касается гладкошерстных фокстерьеров, то уже к XVIII столетию английские аристократы их успешно разводили для отлова мелкой живности.
+        </p>
+        <p>
+         Самый известный питомец той эпохи – пес по кличке Питч. Собака принадлежала полковнику и страстному любителю охоты Томасу Торнтону, заказавшему портрет своего «хвоста» анималисту Соури Гилпину. На нем гладкошерстный пятнистый пес запечатлен в игривой позе на фоне живописного пейзажа.
+        </p>
+        <p class="legenda">
+         <strong>
+          Интересный факт.
+         </strong>
+         Жесткошерстные и гладкошерстные фокстерьеры ошибочно позиционировались как одна порода. На самом деле у них разные корни. Предположительный предок жесткошерстных фоксов – вельштерьер; гладкошерстных – староанглийский черно-подпалый терьер, которого скрещивали с биглями и бультерьерами. Разделение животных на отдельные породные группы осуществили только в 80-х годах XX века.
+        </p>
+        <p>
+         Признание породы Английским Кеннел-клубом произошло в 1875 г. Сначала ее представители фигурировали в племенных списках под названием «фокстерьеры». Спустя десятилетие животных зарегистрировал AKC. В России с этой разновидностью фоксов познакомились в середине XIX столетия. Породу сильно популяризировал князь Голицын, обожавший ее представителей за выдающиеся охотничьи характеристики и живой темперамент.
+        </p>
+        <h2>
+         Стандарт гладкошерстного фокстерьера
+        </h2>
+        <p>
+         В силуэте собаки угадываются классические терьерские черты. С одной стороны, фокс – достаточно небольшое создание, с другой, – выносливый охотник с приятной основательностью сложения. Важная характеристика породы – общая компактность тела. Животное должно свободно пробираться в лисью нору и не застревать внутри.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Плоский череп дополняют нерезкая выемка стопа и слабовыраженные скулы. Морда одинаковой длины с черепной коробкой, хорошо заполненная, слегка суженная в районе носа. Обязательное требование – морда не должна иметь очертания, как у грейхаунда и манчестера.
+        </p>
+        <h3>
+         Зубы, челюсти, прикус
+        </h3>
+        <p>
+         Резцы стоят в одну линию в мощных челюстях. Смыкаются зубы в ножницеобразную конструкцию.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Ушное полотно гладкошерстного фокстерьера маленькое, V-образных очертаний. Основание уха приподнято и на уровне черепа образует сгиб, поэтому ушной кончик свисает вперед и книзу.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         У породы задорный, умный взгляд и глаза правильной, слегка округлой формы. Радужка максимально темного окраса. Светлые и желтые глаза – дефект.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Недлинная, сухая и мускулистая, утолщается по мере приближения к плечам. Подвеса нет, но ярко выражен загривок, особенно у кобелей.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Лопатки внушительной длины, хорошей глубины грудь, прямая спина. Поясница крепкая и немного выпуклая, с развитым мышечным корсетом. Мускулистый круп и подтянутый живот.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Предплечья ровные, костистые, с переходом в короткие пясти. Бедра животного удлиненные, скакательные суставы расположены низко. Лапы круглые, усиленные жесткими подушечками и собранными в комок пальцами. Важно, чтобы собака двигалась правильно – конечности при беге и ходьбе должны оставаться прямыми.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Постав этой части тела предельно высокий. Идеально, когда хвост поднят вверх. Недопустимо, когда он заброшен на спину или свернут кольцом.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Волос короткий и гладкий, растет густо и отличается жесткостью. На животе и тыльной стороне бедер шерсть менее обильная.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Белый сплошной, бело-черный, бело-рыжий. Белый оттенок шерсти является преобладающим, остальные цвета присутствуют на теле в виде пятен. Особи бело-черной масти имеют небольшие зоны подпала. Иногда это несколько рыжих волосков в зоне скул и над глазами.
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <p>
+         Исключаются из разведения и дисквалифицируются на выставках особи с розовой или депигментированной мочкой носа, перекусом/недокусом прикуса, стоячими либо висячими ушами. Шрамы, которые животное получило на охоте, на судейскую оценку не влияют при одном условии –  травмы не искажают движения собаки.
+        </p>
+        <h2>
+         Характер гладкошерстного фокстерьера
+        </h2>
+        <p>
+         С людьми и представителями фауны собака общается на разных языках. В отношениях с хозяином животное демонстрирует исключительно свою «светлую» сторону. Гладкошерстному фоксу далеко не все равно, какого о нем мнения лидер, и совершенно плевать на то, что думают о таком поведении другие питомцы.
+        </p>
+        <p>
+         С себе подобными порода общается с позиции силы, выплескивая все негативное, что скопилось внутри. С незнакомыми кошками гладкошерстный фокстерьер злобен и беспощаден, с соплеменниками – умеренно-агрессивен и часто выступает инициатором конфликта. При должном воспитании «хвост» согласен терпеть кошачьих и других мелких пушистиков в доме, но в друзья их, конечно, не запишет.
+        </p>
+        <p class="legenda">
+         <strong>
+          К сведению.
+         </strong>
+         Не рекомендуется брать гладкошерстного фокса второй собакой в семью с пекинесами, мопсами, шитцу, той-пуделями и той-терьерами. В играх порода ведет себя брутально, что обернется травмой для карликового питомца. Идеальные соседи для фокса – таксы, шнауцеры и борзые.
+        </p>
+        <p>
+         Порода расположена к детям и тем, кого принимает хозяин. Умеренная подозрительность к незнакомцам тут же выключается, если «хвост» видит, что «его человек» мило болтает с чужаком. По типу темперамента гладкошерстные фокстерьеры – сангвиники и неисправимые оптимисты. Как итог: у них всегда достаточно задора для любых подвигов.
+        </p>
+        <p>
+         Живя с такой энергичной собакой на одной территории, стоит приготовиться к нескольким вещам. В частности, к постоянному любопытству питомца. Гладкошерстный фокстерьер не выносит «секретиков» – он всегда должен быть в курсе происходящего, касается это его персоны или нет. А еще он неизлечимый игроман, чью страсть необходимо постоянно разделять, и умелый организатор дерзких побегов из дома.
+        </p>
+        <h2>
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         При всех нюансах характера гладкошерстный фокстерьер – не худший ученик и сделать из него послушного помощника реально. Специалисты подразделяют обучение фоксов на дрессировку и натаску. Первую необходимо пройти всем особям, вторую – лишь тем, которым предстоит охотится. Воспитание и обучение щенка начинают с момента переезда от суки к новому владельцу.
+        </p>
+        <p>
+         Если будущее собаки определено как компаньонское, то ей достаточно курса УГС. Опытные охотники рекомендуют дрессировать/натаскивать фокса с учетом характера. Задиристых и независимых особей нужно держать строго, с более застенчивыми обращаться ласковее. Базовые команды для разучивания с городским питомцем: «Сидеть!», «Лежать!», «Рядом!» «Ко мне!».
+        </p>
+        <p class="legenda">
+         <strong>
+          Важно!
+         </strong>
+         Обязательны тренировка выдержки и безразличия. Оставленный на привязи у супермаркета пес не должен поднимать «вой на болотах». На прогулке он обязан спокойно проходить мимо разбросанных на земле «вкусняшек» догхантеров.
+        </p>
+        <p>
+         Спокойное отношение к неприятным процедурам (стрижка когтей) и выставочным манипуляциям (осмотр зубов) тоже тренируются не одним и не парой повторов. Рабочий гладкошерстный фокстерьер должен пройти приучение к ошейнику, работе в своре, по свистку и звуку выстрела. Натаскивать породу на работу в искусственной норе можно с 10-12 месяцев.
+        </p>
+        <p>
+         Натаска в норе состоит из двух этапов. Первый – собака ощущает зверя, сидящего за заслонкой, и привыкает работать в условиях ограниченного пространства. Второй – фоксу дают возможность «попробовать зубы» на добыче. Обычно для этого используют неопытных лисят, которых сажают в нору.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важный момент.
+         </strong>
+         На своей первой охоте молодой фокстерьер должен работать в паре с другой, более профессиональной собакой во избежание схватки с матерым зверем под землей.
+        </p>
+        <h2>
+         Содержание и уход
+        </h2>
+        <p>
+         Гладкошерстный фокстерьер хоть иногда и раздражает чрезмерной энергичностью, особых хлопот в быту не доставляет. Самое трудозатратное занятие для заводчика – выгулы. Они должны быть продолжительными, разнообразными и интересными для «хвоста».
+        </p>
+        <p>
+         За двухчасовую прогулку в сочетании со спортивными упражнениями собака вполне успевает выложиться настолько, чтобы потом не устраивать светопреставление в квартире. Однако таких променадов должно быть минимум два в день.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Короткая, самоочищающаяся шубка гладкошерстного фокстерьера – лучшее что можно придумать для нелюбителей возиться с расческами и пуходерками. Обычно уход за шерстью породы сводится к сбору отмерших волосков силиконовой варежкой или щеткой раз в неделю. Злоупотреблять мытьем не нужно. Купать необходимо, если собака испачкалась настолько, что обычным протиранием влажным полотенцем не обойтись.
+        </p>
+        <p>
+         Когти у гладкошерстных фокстерьером могут слоиться и расщепляться, поэтому их регулярно подстригают. Следить за чистотой ушей собаки рекомендуется в штатном режиме: раз в неделю проверка слухового прохода и чистка серных отложений гигиеническим лосьоном. После охоты глаза и уши проверяют дополнительно, чтобы удалить из них пыль и мусор.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Щенков гладкошерстного фокстерьера кормят с той же частотой, что и представителей остальных пород. До 3 месяцев – 6 раз, с четырех месяцев до полугода – четырежды в день, с 8-месячного возраста – 2 раза.
+        </p>
+        <p>
+         Тип кормления подбирается, исходя из активности и состояния здоровья подопечного, рекомендаций ветеринара и возможностей владельца. Сухой корм – это удобно, чисто, быстро, но не всегда полезно. Натуральное меню более приближено к естественному питанию, лучше усваивается, но требует временных затрат.
+        </p>
+        <p>
+         Во избежание аллергических реакций на некачественные сухие корма, лучше подбирать беззерновую «сушку». Для «хвоста», питающегося натуральными продуктами, есть свои правила:
+        </p>
+        <ul>
+         <li>
+          мясо давать по возможности сырым (если нет противопоказаний по здоровью);
+         </li>
+         <li>
+          периодически заменять мясной белок морской рыбой с удаленными костями;
+         </li>
+         <li>
+          включать в меню нежирную кисломолочку, натуральные добавки в виде отрубей, нерафинированного подсолнечного масла, ламинарии.
+         </li>
+        </ul>
+        <p>
+         Овощи и фрукты из рациона фокса тоже не исключаются. Главное, избегать продуктов, запрещенных всем собакам, – винограда, цитрусовых, гранатов, авокадо. Расчет калорийности порции для питомца, находящегося на натуральном меню, можно сделать здесь.
+        </p>
+        <h2>
+         Здоровье и болезни породы
+        </h2>
+        <p>
+         Гладкошерстные фоксы не относятся к числу хрупких, болезненных питомцев. И все же в некоторых линиях выявлены генетические недуги, наследуемые щенками от родителей. Среди них:
+        </p>
+        <ul>
+         <li>
+          гипотиреоз;
+         </li>
+         <li>
+          дисплазия тазобедренного сустава;
+         </li>
+         <li>
+          заболевания пищеварительной системы;
+         </li>
+         <li>
+          медный токсикоз;
+         </li>
+         <li>
+          болезнь Пертеса.
+         </li>
+        </ul>
+        <p>
+         Не распространены, но встречаются у отдельных особей: атопические и контактные дерматиты, эктопия мочеточников, судороги, нарушения сердечно-сосудистой системы.
+        </p>
+        <h2>
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Для охоты выбирают потомство от суки и кобеля, не просто имеющих рабочие дипломы, но и регулярно охотящихся со своим владельцем.
+         </li>
+         <li>
+          Слишком трусливый фокс, как и чрезмерно напористый – не лучшее приобретение. Щенок должен иметь стабильную психику, отличаться веселостью, умеренным любопытством, но не безбашенностью.
+         </li>
+         <li>
+          Перед покупкой питомца стоит познакомиться с его матерью. Если сука демонстрирует явные поведенческие отклонения, ведет себя агрессивно и враждебно, лучше выбрать потомство от другой производительницы.
+         </li>
+         <li>
+          Родителей будущих шоу-чемпионов лучше искать на выставках. Там же можно пообщаться с экспертами, которые дадут рекомендации по поиску питомников и достойных племенных линий.
+         </li>
+         <li>
+          В продажу щенки гладкошерстного фокстерьера поступают в 1,5-2-месячном возрасте. Для выставок лучше брать особей постарше, так как у малышей хуже определяется соответствие шоу-классу.
+         </li>
+        </ul>
+        <h2>
+         Цена гладкошерстного фокстерьера
+        </h2>
+        <p>
+         Щенки из рабочих и выставочных линий – это разные ценовые категории. Питомец от родителей с охотничьими дипломами, как правило, дешевле. На сайтах объявлений таких особей можно приобрести за 5000-7000 руб. Гладкошерстный фокстерьер с потенциалом шоу-звезды, хорошей родословной и клеймом крупного питомника стоит не менее 30 000 руб.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения гладкошерстного фокстерьера на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/25579/">
+          <div class="ava-med">
+           <div class="noava fill9">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/byvaet-li-takoe-4263/">
+           Бывает ли такое
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте. Подскажите пожалуйста,у нас 7.11 родились щенки фоксики,1девочка была черно шоколадная полностью а 3 щенка черные с белыми пятнами на пальчиках. Сейчас щенки стремительно меняют окрас. Девочка шоколадная...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/25579/">
+            Антонина Казазаева
+           </a>
+          </span>
+          <span class="vopros-date">
+           Год назад
+          </span>
+          <span class="vopros-smotr">
+           281 просмотр
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/142/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Мария Елизарова" data-original="/upload/resize_cache/main/578/200_200_2/578d0704339605b2c913ea5ffc9a1562.jpg">
+            <noscript data-alt="Мария Елизарова" data-original="/upload/resize_cache/main/578/200_200_2/578d0704339605b2c913ea5ffc9a1562.jpg">
+             <img alt="Мария Елизарова" src="/upload/resize_cache/main/578/200_200_2/578d0704339605b2c913ea5ffc9a1562.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/igrushki-dlya-shchenka-foksa-142/">
+           Игрушки для щенка фокса
+          </a>
+         </div>
+         <div class="forum-text">
+          Итак, щенку 4 месяца, только будем забирать. Я пока готовлюсь к его приезду, возник вопрос об игрушках, что покупать? Итак, на выбор – фрисби, резиновые игрушки, грызунки. Можно и нужно ли давать щенку сахарные...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/142/">
+            Мария Елизарова
+           </a>
+          </span>
+          <span class="vopros-date">
+           6 лет назад
+          </span>
+          <span class="vopros-smotr">
+           1659 просмотров
+          </span>
+          <span class="vopros-otvet">
+           3 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/gladkoshyerstnyy-foksterer/forum/">
+        Перейти на
+        форум гладкошерстного фокстерьера
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Гладкошёрстный фокстерьер" src="/upload/iblock/f5e/x63dm3t6k3wocudqkjdmoww1meh2mo1p.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/gladkoshyerstnyy-foksterer/">
+          Гладкошёрстный фокстерьер
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/gladkoshyerstnyy-foksterer/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/gladkoshyerstnyy-foksterer/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/gladkoshyerstnyy-foksterer/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/gladkoshyerstnyy-foksterer/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/gladkoshyerstnyy-foksterer/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/coton-de-tulear/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Котон-де-тулеар" data-original="/upload/resize_cache/iblock/c7e/100_100_1/9e0fars86n0gc3w7ta5ry3et4x1qff4l.jpg">
+          <noscript data-alt="Котон-де-тулеар" data-original="/upload/resize_cache/iblock/c7e/100_100_1/9e0fars86n0gc3w7ta5ry3et4x1qff4l.jpg">
+           <img alt="Котон-де-тулеар" src="/upload/resize_cache/iblock/c7e/100_100_1/9e0fars86n0gc3w7ta5ry3et4x1qff4l.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Котон-де-тулеар
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/kern-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Керн-терьер" data-original="/upload/resize_cache/iblock/e00/100_100_1/e00878f7ff3ef8efa2f9b4932cc2199b.jpg">
+          <noscript data-alt="Керн-терьер" data-original="/upload/resize_cache/iblock/e00/100_100_1/e00878f7ff3ef8efa2f9b4932cc2199b.jpg">
+           <img alt="Керн-терьер" src="/upload/resize_cache/iblock/e00/100_100_1/e00878f7ff3ef8efa2f9b4932cc2199b.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Керн-терьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/bladkhaund/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бладхаунд" data-original="/upload/resize_cache/iblock/c60/100_100_1/c6035673cdcf3119e45483914d43b623.jpg">
+          <noscript data-alt="Бладхаунд" data-original="/upload/resize_cache/iblock/c60/100_100_1/c6035673cdcf3119e45483914d43b623.jpg">
+           <img alt="Бладхаунд" src="/upload/resize_cache/iblock/c60/100_100_1/c6035673cdcf3119e45483914d43b623.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бладхаунд
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/border-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бордер-терьер" data-original="/upload/resize_cache/iblock/aab/100_100_1/aab34a0f98d67e5b7160bfea9b0e6159.jpg">
+          <noscript data-alt="Бордер-терьер" data-original="/upload/resize_cache/iblock/aab/100_100_1/aab34a0f98d67e5b7160bfea9b0e6159.jpg">
+           <img alt="Бордер-терьер" src="/upload/resize_cache/iblock/aab/100_100_1/aab34a0f98d67e5b7160bfea9b0e6159.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бордер-терьер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fgladkoshyerstnyy-foksterer%252F%253Fcheck_key%253Dfbc6e4c3b8f548d8a9e7cdf2841402b7%2526ANIMAL_CODE%253Dgladkoshyerstnyy-foksterer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fgladkoshyerstnyy-foksterer%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmdsYWRrb3NoeWVyc3RueXktZm9rc3RlcmVyJTJGJTNGY2hlY2tfa2V5JTNEZmJjNmU0YzNiOGY1NDhkOGE5ZTdjZGYyODQxNDAyYjclMjZBTklNQUxfQ09ERSUzRGdsYWRrb3NoeWVyc3RueXktZm9rc3RlcmVyJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmdsYWRrb3NoeWVyc3RueXktZm9rc3RlcmVyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fgladkoshyerstnyy-foksterer%252F%253Fcheck_key%253Dfbc6e4c3b8f548d8a9e7cdf2841402b7%2526ANIMAL_CODE%253Dgladkoshyerstnyy-foksterer%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fgladkoshyerstnyy-foksterer%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fgladkoshyerstnyy-foksterer%252F%253Fcheck_key%253Dfbc6e4c3b8f548d8a9e7cdf2841402b7%2526ANIMAL_CODE%253Dgladkoshyerstnyy-foksterer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fgladkoshyerstnyy-foksterer%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "85.90.217.222"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--3fe83ed604e78f28aa14887bfc6d0c45-->

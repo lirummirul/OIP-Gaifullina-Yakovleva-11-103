@@ -1,0 +1,1898 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'bc44d2721296'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Кавалер-кинг-чарльз-спаниель, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Кавалер-кинг-чарльз-спаниель – развеселый лохматый непоседа, обладающий выразительной, кокетливой внешностью и добродушным характером. Оживит собственным присутствием любой дом и отлично справится с ролью надежного компаньона." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/92f/92fcceadf689a6234854b839782287c7.jpg" property="og:image"/>
+     <title>
+      Кавалер-кинг-чарльз-спаниель: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/kavaler-king-charlz-spaniel/" property="og:url"/>
+     <meta content="Кавалер-кинг-чарльз-спаниель: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Кавалер-кинг-чарльз-спаниель – развеселый лохматый непоседа, обладающий выразительной, кокетливой внешностью и добродушным характером. Оживит собственным присутствием любой дом и отлично справится с ролью надежного компаньона." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/kavaler-king-charlz-spaniel/" itemprop="url">
+         <span itemprop="title">
+          Кавалер-кинг-чарльз-спаниель
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Кавалер-кинг-чарльз-спаниель
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/kavaler-king-charlz-spaniel/">
+          Описание
+         </a>
+         <a href="/dog/kavaler-king-charlz-spaniel/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/kavaler-king-charlz-spaniel/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/kavaler-king-charlz-spaniel/photo/">
+          Фото
+         </a>
+         <a href="/dog/kavaler-king-charlz-spaniel/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/kavaler-king-charlz-spaniel/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Кавалер-кинг-чарльз-спаниель" src="/upload/iblock/b48/b485acd675a27aac77d3a42829a213ed.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/kavaler-king-charlz-spaniel/">
+           кавалер
+          </a>
+         </span>
+         <p>
+          Кавалер-кинг-чарльз-спаниель – развеселый лохматый непоседа, обладающий выразительной, кокетливой внешностью и добродушным характером. Оживит собственным присутствием любой дом и отлично справится с ролью надежного компаньона.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/b61/b61838bab9a9c0820ea05a1db2382a0e.jpg" data-cap="dreamer" data-fancybox="images" data-link="https://www.flickr.com/photos/finnipeani/19344820784/" data-type="image" data-username="Aleksandra Kielreuter - Fotografie" href="/upload/uf/d81/d815d16630d85caa25ed542836b88caa.jpg">
+            <img alt="Кавалер-кинг-чарльз-спаниель" src="/upload/resize_cache/uf/d81/293_293_2/d815d16630d85caa25ed542836b88caa.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/2e0/2e0baecacc9644349ca00878955ce211.jpg" data-cap="Ready for a walk? Let's go!" data-fancybox="images" data-link="https://www.flickr.com/photos/mollyandstitch/37479599146/" data-type="image" data-username="Molly &amp; Stitch" href="/upload/uf/8ab/8ab0886f5bb0d184a98dac2ccacafb52.jpg">
+            <img alt="Кавалер-кинг-чарльз-спаниель" src="/upload/resize_cache/uf/8ab/293_293_2/8ab0886f5bb0d184a98dac2ccacafb52.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/cd5/cd5be42efe1f6c40342f8af2f0b0bad9.jpg" data-cap="Щенок кавалер-кинг-чарльз-спаниеля" data-fancybox="images" data-link="https://www.instagram.com/p/BlEDuzOlM0g/" data-type="image" data-username="lapkins.ru" href="/upload/uf/97e/97ea86893fe74cf1f9897f60e02b1253.jpg">
+            <img alt="Кавалер-кинг-чарльз-спаниель" src="/upload/resize_cache/uf/97e/293_293_2/97ea86893fe74cf1f9897f60e02b1253.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/kavaler-king-charlz-spaniel/photo/">
+         Все
+            фото кавалер-кинг-чарльз-спаниеля
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы кавалер-кинг-чарльз-спаниель
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность кавалер-кинг-чарльз-спаниеля
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер кавалер-кинг-чарльз-спаниеля
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Здоровье и болезни кавалер-кинг-чарльз-спаниелей
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Сколько стоит кавалер-кинг-чарльз-спаниель
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Кавалер-кинг-чарльз-спаниель
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         XVII век
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         5,4-8 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         30-33 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         11-12 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Кавалер-кинг-чарльз-спаниели практически не подвержены спадам настроения. Ласковые и заводные, они пребывают на волне позитива 24 часа в сутки.
+        </li>
+        <li>
+         И взрослые собаки, и щенки крайне зависимы от человека. Особи, испытывающие дефицит хозяйского внимания и надолго остающиеся в одиночестве, могут пакостить и устраивать кавардак. Частично решает проблему покупка второго «кавалера» – вдвоем животным проще справиться со скукой.
+        </li>
+        <li>
+         Лидерство и желание доминировать – качества, о которых кавалер-кинги никогда не слышали, поэтому они никогда не воюют с другими собаками за «сферы влияния».
+        </li>
+        <li>
+         Представители этой породы – типичные экстраверты, видящие в каждом встречном будущего приятеля, которому счастливы доверить любые секреты.
+        </li>
+        <li>
+         Питомцы обожают тактильный контакт. Гладить, трепать, почесывать кавалер-кинг-чарльз-спаниеля не только допустимо, но и очень желательно. По этой причине собаки близко сходятся с детьми. Их не раздражают чересчур крепкие объятья малышей, более того, животные им искренне рады.
+        </li>
+        <li>
+         Кавалер-кинг-чарльз-спаниели легко уживаются с кошками. Вот только представители мурлыкающей братии не всегда готовы мириться с присутствием на своей территории этих назойливых симпатяг.
+        </li>
+        <li>
+         Большинство кавалер-кингов сохранило охотничьи инстинкты, доставшиеся в наследство от предков, так что не возмущайтесь, если на прогулке песик начнет активно преследовать ящерицу или котенка.
+        </li>
+        <li>
+         Несколько лет назад популярность породы в Британии начала плавно снижаться. А вот в России дела обстоят с точностью до наоборот: интерес отечественных заводчиков к кавалер-кинг-чарльз-спаниелям резко возрос именно за последние пару-тройку лет.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-original="/upload/iblock/92f/92fcceadf689a6234854b839782287c7.jpg">
+          <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-original="/upload/iblock/92f/92fcceadf689a6234854b839782287c7.jpg">
+           <img alt="Кавалер-кинг-чарльз-спаниель" src="/upload/iblock/92f/92fcceadf689a6234854b839782287c7.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Кавалер-кинг-чарльз-спаниель
+          </strong>
+          – приветливый умница с проникновенным взглядом и длинной атласной шерсткой, готовый «утопить» в море собственного обаяния любого, кто окажется в поле зрения. Из этих энергичных, общительных симпатяг получаются исключительные приятели. Поднять настроение, рассмешить, снять напряжение – все это собаки готовы проделывать для хозяина каждый день в обмен лишь на доброе слово и ласку. Недаром на родине породы, в Англии, за кавалер-кингами давно утвердилась репутация профессиональных утешителей.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Может лизнуть вора :) (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Кавалер-кинг-чарльз-спаниель основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/kavaler-king-charlz-spaniel/razmeri-porodi/">
+         размеры кавалер-кинг-чарльз-спаниеля
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы кавалер-кинг-чарльз-спаниель
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кавалер-кинг-чарльз-спаниель" data-fancybox="gallery" href="/upload/iblock/b06/b06b96659649519080dc25af67f8a932.jpg" title="Кавалер-кинг-чарльз-спаниель">
+          <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/b06/412_2150_1/b06b96659649519080dc25af67f8a932.jpg">
+           <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/b06/412_2150_1/b06b96659649519080dc25af67f8a932.jpg">
+            <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" height="619" src="/upload/resize_cache/iblock/b06/412_2150_1/b06b96659649519080dc25af67f8a932.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кавалер-кинг-чарльз-спаниель
+         </div>
+        </div>
+        <p>
+         Из-за схожести названий кавалер-кинг-чарльз-спаниеля нередко отождествляют с кинг-чарльз-спаниелем. И все же, несмотря на общего азиатского предка, это две самостоятельные породы, имеющие существенные различия в фенотипе. Если не вдаваться в тонкости селекции, то кавалер-кинг – это основательно «перекроенный» кинг-чарльз, появившийся на свет как дань британским кинологическим традициям. При этом прародителями обеих пород считают тибетских спаниелей.
+        </p>
+        <p>
+         Приблизительно с середины IX века предками сегодняшних «кингов» и «кавалеров» заинтересовалась европейская знать. Той-спаниели заседали в будуарах баронесс и герцогинь, Тициан и Ван Дейк наперегонки писали их портреты, а кровожадный тиран Генрих VIII даже признал за животными право нахождения при дворе. С восхождением на британский трон Карла II порода прибавила к своему названию префиксы кинг- и чарльз- и начала пользоваться почти неограниченным списком привилегий. Да что там, спаниелей даже пускали в святая святых – Британский парламент!
+        </p>
+        <p>
+         Неотвратимо угасать род кинг-чарльзов стал с приходом к власти Вильгельма III Оранского. Новый монарх завел при дворе собственные порядки, заселив в свои покои «партию» мопсов, которых искренне обожал. Подражать пристрастиям венценосной особы тут же бросился остальной лондонский бомонд, в результате чего в моду вошли короткомордые, пучеглазые собачки. Заводчики той-спаниелей тоже не остались в стороне: чтобы угодить придирчивым аристократам, они принялись скрещивать собственных питомцев с мопсами и японскими хинами. В конечном итоге к XX столетию экстерьер животных настолько изменился, что рассмотреть в курносых глазастых собачонках прежних кинг-чарльзов мог разве что самый искушенный специалист.
+        </p>
+        <p>
+         В середине 20-х годов европейские бридеры решили возродить старый тип английских той-спаниелей. Примерно в это же время Британский Кеннел клуб утвердил денежную премию для заводчика, которому в течение пяти ближайших лет удастся вывести классическую разновидность кинг-чарльза. Как и ожидалось, обещание награды подогрело интерес племенных специалистов, и уже в 1928 году на суд кинологической комиссии был представлен первый «экземпляр» кинг-чарльз-спаниеля традиционной европейской внешности. Животное имело удлиненную мордочку и нормально посаженные глаза, приближавшие его к собакам с полотен Эдвина Ландсира.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/795/79550f8cd4ee821bdce3e72ce4b75300.jpg" title="">
+          <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/795/1024_2150_1/79550f8cd4ee821bdce3e72ce4b75300.jpg">
+           <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/795/1024_2150_1/79550f8cd4ee821bdce3e72ce4b75300.jpg">
+            <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/795/1024_2150_1/79550f8cd4ee821bdce3e72ce4b75300.jpg"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b92/b9220acaa113e4f4669773dae2053dce.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/b92/512_342_2/b9220acaa113e4f4669773dae2053dce.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/b92/512_342_2/b9220acaa113e4f4669773dae2053dce.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/b92/512_342_2/b9220acaa113e4f4669773dae2053dce.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/13f/13f946d02a77f75b9e1879e8bb80178c.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/13f/512_342_2/13f946d02a77f75b9e1879e8bb80178c.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/13f/512_342_2/13f946d02a77f75b9e1879e8bb80178c.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/13f/512_342_2/13f946d02a77f75b9e1879e8bb80178c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <p>
+         Чтобы избежать путаницы в дальнейшем, возрожденной породе дали новое название. Таким образом от племени кинг-чарльзов отпочковался клан кавалер-кинг-чарльз-спаниелей. Кстати, приставка кавалер- была выбрана неслучайно. Во времена Английской революции так именовали сторонников короля Чарльза I, при котором порода по-настоящему процветала. В 1945 году кавалер-кинги были внесены в реестры КС, после чего стали завоевывать популярность в других странах Европы. В Россию любимцы британских монархов пробрались еще до революции, хотя полноценно разводить их начали только с 1986 года.
+        </p>
+        <p class="legenda">
+         К сведению: в разные годы поклонниками породы кавалер-кинг-чарльз-спаниель являлись Рональд Рейган, Джонни Депп, Фрэнк Синатра, Тэри Хэтчер, Натали Вуд и Хью Хефнер.
+        </p>
+        <h2>
+         Видео: Кавалер-кинг-чарльз-спаниель
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="j1NGIvUZYIA">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность кавалер-кинг-чарльз-спаниеля
+        </h2>
+        <p>
+         И кинг-чарльзы, и кавалер-кинги относятся к секции английских той-спаниелей, но, как уже говорилось ранее, имеют существенные различия в экстерьере. Кавалер-кинг-чарльз-спаниели более крупные (от 5,5 до 8 кг) и высокие (до 32 см в холке). Мордочки собак в меру вытянуты, а глаза лишены той выпученности, которую их сородичи унаследовали от мопсов и других азиатских пород.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок кавалер-кинг-чарльз-спаниеля" data-fancybox="gallery" href="/upload/iblock/fe6/fe6a37ecb6fb7e6d700a7c3ede62106e.jpg" title="Щенок кавалер-кинг-чарльз-спаниеля">
+          <div class="lazy-load" data-alt="Щенок кавалер-кинг-чарльз-спаниеля" data-class="article_pic" data-original="/upload/resize_cache/iblock/fe6/412_2150_1/fe6a37ecb6fb7e6d700a7c3ede62106e.jpg">
+           <noscript data-alt="Щенок кавалер-кинг-чарльз-спаниеля" data-class="article_pic" data-original="/upload/resize_cache/iblock/fe6/412_2150_1/fe6a37ecb6fb7e6d700a7c3ede62106e.jpg">
+            <img alt="Щенок кавалер-кинг-чарльз-спаниеля" class="article_pic" height="554" src="/upload/resize_cache/iblock/fe6/412_2150_1/fe6a37ecb6fb7e6d700a7c3ede62106e.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок кавалер-кинг-чарльз-спаниеля
+         </div>
+        </div>
+        <p>
+         Если «кинги» притягивают своей ярко-выраженной ориентальностью, то «кавалеры» – неповторимым изяществом и истинно европейским обаянием. Шелковистая, прямая или чуть волнистая шерстка, искрящийся взгляд и элегантность движений делают из них идеальных питомцев для всех любителей гламурных пород. Кроме того, кавалер-кинги – прирожденные фотомодели. Их можно снимать спящими, рассекающими по одуванчиковой лужайке или восседающими на руках собственного хозяина и не волноваться о том, что кадр получится неудачным. Эти «британские аристократы» фотогеничны в любом месте, в любое время и в любом настроении.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Небольшой, плоский между ушами череп с неглубоким стопом. Морда в форме конуса. Расстояние от кончика морды до стопа не более 3,8 см.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         У кавалер-кинг-чарльз-спаниеля длинные, высоко посаженные уши. Внешнюю сторону ушного полотна покрывает обильная уборная шерсть шелковистого типа.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Круглые, но без заметной выпученности. Большие и очень темные.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Мочка крупная, равномерного черного окраса.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         У кавалер-кинг-чарльз-спаниелей мощные челюсти с прикусом «ножницы» (нижние зубы полностью перекрыты верхними).
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Нормальной длины, с легким изгибом.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Мордочка кавалер-кинг-чарльз-спаниэля" data-fancybox="gallery" href="/upload/iblock/47b/47b971452a2908ea2d67f3ae83e3c957.jpg" title="Мордочка кавалер-кинг-чарльз-спаниэля">
+          <div class="lazy-load" data-alt="Мордочка кавалер-кинг-чарльз-спаниэля" data-class="article_pic" data-original="/upload/resize_cache/iblock/47b/1024_2150_1/47b971452a2908ea2d67f3ae83e3c957.jpg">
+           <noscript data-alt="Мордочка кавалер-кинг-чарльз-спаниэля" data-class="article_pic" data-original="/upload/resize_cache/iblock/47b/1024_2150_1/47b971452a2908ea2d67f3ae83e3c957.jpg">
+            <img alt="Мордочка кавалер-кинг-чарльз-спаниэля" class="article_pic" src="/upload/resize_cache/iblock/47b/1024_2150_1/47b971452a2908ea2d67f3ae83e3c957.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мордочка кавалер-кинг-чарльз-спаниэля
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Компактное туловище с короткой поясничной зоной, ровной спиной и нормальной ширины грудью.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Передние и задние ноги в меру костистые и ровные. Лапы кавалер-кинга миниатюрные, очень мягкие, с пальцами почти полностью скрытыми длинным уборным волосом.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Держится на уровне спины или чуть выше. Ранее купировался на ⅓, что в наши дни почти не практикуется.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Шелковистая на ощупь и очень длинная. Эталонным считается прямой волос, но легкая волнистость шерсти тоже вполне допустима.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Кавалер-кинг-чарльз-спаниэль рубинового окраса" data-fancybox="gallery" href="/upload/iblock/186/1868287948d476011deac12ab44f8c18.jpg" title="Кавалер-кинг-чарльз-спаниэль рубинового окраса">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниэль рубинового окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/186/512_342_2/1868287948d476011deac12ab44f8c18.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниэль рубинового окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/186/512_342_2/1868287948d476011deac12ab44f8c18.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниэль рубинового окраса" class="article_pic" src="/upload/resize_cache/iblock/186/512_342_2/1868287948d476011deac12ab44f8c18.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Кавалер-кинг-чарльз-спаниэль рубинового окраса
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Кавалер-кинг-чарльз-спаниэль окраса триколор" data-fancybox="gallery" href="/upload/iblock/107/107971dbe123567bea3654f03a243c41.jpg" title="Кавалер-кинг-чарльз-спаниэль окраса триколор">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниэль окраса триколор" data-class="article_pic" data-original="/upload/resize_cache/iblock/107/512_342_2/107971dbe123567bea3654f03a243c41.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниэль окраса триколор" data-class="article_pic" data-original="/upload/resize_cache/iblock/107/512_342_2/107971dbe123567bea3654f03a243c41.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниэль окраса триколор" class="article_pic" src="/upload/resize_cache/iblock/107/512_342_2/107971dbe123567bea3654f03a243c41.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Кавалер-кинг-чарльз-спаниэль окраса триколор
+          </div>
+         </div>
+        </div>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Официально утвержденными являются следующие типы окрасов кавалер-кинг-чарльз-спаниелей:
+        </p>
+        <ul>
+         <li>
+          бленхейм (выразительные каштановые пятна на белом фоне);
+         </li>
+         <li>
+          черный с подпалом;
+         </li>
+         <li>
+          рубиновый (насыщенный рыжий оттенок);
+         </li>
+         <li>
+          триколор (черный с белым и рыжими подпалинами на бровях, скулах, тыльной поверхности ног, ушах и под хвостом).
+         </li>
+        </ul>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Кавалер-кинг-чарльз-спаниэля черно-подпалого окраса" data-fancybox="gallery" href="/upload/iblock/38e/38e115c6b2eb2dc2bda39ddecb6ffd30.jpg" title="Кавалер-кинг-чарльз-спаниэля черно-подпалого окраса">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниэля черно-подпалого окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/38e/512_342_2/38e115c6b2eb2dc2bda39ddecb6ffd30.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниэля черно-подпалого окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/38e/512_342_2/38e115c6b2eb2dc2bda39ddecb6ffd30.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниэля черно-подпалого окраса" class="article_pic" src="/upload/resize_cache/iblock/38e/512_342_2/38e115c6b2eb2dc2bda39ddecb6ffd30.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Кавалер-кинг-чарльз-спаниэля черно-подпалого окраса
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Кавалер-кинг-чарльз-спаниэль окраса бленхейм" data-fancybox="gallery" href="/upload/iblock/72d/72da58084948d3cf016aac4863015a24.jpg" title="Кавалер-кинг-чарльз-спаниэль окраса бленхейм">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниэль окраса бленхейм" data-class="article_pic" data-original="/upload/resize_cache/iblock/72d/512_342_2/72da58084948d3cf016aac4863015a24.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниэль окраса бленхейм" data-class="article_pic" data-original="/upload/resize_cache/iblock/72d/512_342_2/72da58084948d3cf016aac4863015a24.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниэль окраса бленхейм" class="article_pic" src="/upload/resize_cache/iblock/72d/512_342_2/72da58084948d3cf016aac4863015a24.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Кавалер-кинг-чарльз-спаниэль окраса бленхейм
+          </div>
+         </div>
+        </div>
+        <h3>
+         Недостатки и возможные пороки
+        </h3>
+        <p>
+         Дефектными разрешено считать всех особей, у которых выявлены отклонения от породного стандарта. Конечно, большинство внешних недостатков не перекрывает животному доступ к выставочным мероприятиям, но шансы на получение им отличной отметки сводит практически к нулю.
+        </p>
+        <p>
+         Другое дело – пороки развития. Собака, у которой они обнаружены, не будет принята ни на одной выставке. Если говорить конкретно о кавалер-кингах, то их дисквалифицируют за недостаточный/избыточный вес, нестандартные окрасы и депигментированную мочку носа. Животным с заячьей губой, нетипичным прикусом и неправильной походкой (хэкни, иноходь) о выставочной карьере тоже придется забыть.
+        </p>
+        <h2>
+         Фото кавалер-кинг-чарльз-спаниеля
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/047/0477794bd8eb7e3296304c467fa3172c.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/047/380_264_2/0477794bd8eb7e3296304c467fa3172c.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/047/380_264_2/0477794bd8eb7e3296304c467fa3172c.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/047/380_264_2/0477794bd8eb7e3296304c467fa3172c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/dd4/dd4cdc02d51d9671365d1ef3855f2037.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/dd4/380_264_2/dd4cdc02d51d9671365d1ef3855f2037.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/dd4/380_264_2/dd4cdc02d51d9671365d1ef3855f2037.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/dd4/380_264_2/dd4cdc02d51d9671365d1ef3855f2037.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/200/20026acfc67c2380861a44f856ea34c0.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/200/380_264_2/20026acfc67c2380861a44f856ea34c0.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/200/380_264_2/20026acfc67c2380861a44f856ea34c0.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/200/380_264_2/20026acfc67c2380861a44f856ea34c0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/610/61010be71e0563df475444a6f89f4e15.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/610/380_264_2/61010be71e0563df475444a6f89f4e15.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/610/380_264_2/61010be71e0563df475444a6f89f4e15.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/610/380_264_2/61010be71e0563df475444a6f89f4e15.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f0a/f0a9bf908c78f64b23afaa2e718f9144.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/f0a/380_264_2/f0a9bf908c78f64b23afaa2e718f9144.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/f0a/380_264_2/f0a9bf908c78f64b23afaa2e718f9144.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/f0a/380_264_2/f0a9bf908c78f64b23afaa2e718f9144.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c2a/c2a18731e4692f02efb7c0699f82ffef.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/c2a/380_264_2/c2a18731e4692f02efb7c0699f82ffef.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/c2a/380_264_2/c2a18731e4692f02efb7c0699f82ffef.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/c2a/380_264_2/c2a18731e4692f02efb7c0699f82ffef.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9cf/9cf528a624ff7c28548fc2454ce891ea.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/9cf/380_264_2/9cf528a624ff7c28548fc2454ce891ea.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/9cf/380_264_2/9cf528a624ff7c28548fc2454ce891ea.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/9cf/380_264_2/9cf528a624ff7c28548fc2454ce891ea.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b53/b53c73bff6087560b8a59f018860e429.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/b53/380_264_2/b53c73bff6087560b8a59f018860e429.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/b53/380_264_2/b53c73bff6087560b8a59f018860e429.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/b53/380_264_2/b53c73bff6087560b8a59f018860e429.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1f9/1f95d26e69c88e67ada9dbb90ab35132.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/1f9/380_264_2/1f95d26e69c88e67ada9dbb90ab35132.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/1f9/380_264_2/1f95d26e69c88e67ada9dbb90ab35132.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/1f9/380_264_2/1f95d26e69c88e67ada9dbb90ab35132.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер кавалер-кинг-чарльз-спаниеля
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="О, да! Почесульки" data-fancybox="gallery" href="/upload/iblock/2de/2de379115a50e59031461fb319657d05.jpg" title="О, да! Почесульки">
+          <div class="lazy-load" data-alt="О, да! Почесульки" data-class="article_pic" data-original="/upload/resize_cache/iblock/2de/412_2150_1/2de379115a50e59031461fb319657d05.jpg">
+           <noscript data-alt="О, да! Почесульки" data-class="article_pic" data-original="/upload/resize_cache/iblock/2de/412_2150_1/2de379115a50e59031461fb319657d05.jpg">
+            <img alt="О, да! Почесульки" class="article_pic" height="274" src="/upload/resize_cache/iblock/2de/412_2150_1/2de379115a50e59031461fb319657d05.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          О, да! Почесульки
+         </div>
+        </div>
+        <p>
+         Кавалер-кинг-чарльз-спаниели – лучшие лекари хандры и плохого настроения. Они в буквальном смысле «повернуты» на общении с человеком и совершенно не готовы исполнять роль стороннего наблюдателя в семье, в которой живут. Невзирая на в целом не самые выдающиеся габариты, «кавалеров» в доме всегда много, так как они крайне любопытны и стараются вникать во все, что происходит не только на их глазах, но и за спиной.
+        </p>
+        <p>
+         Потребность породы в человеческом внимании может слегка досаждать владельцу, не имеющему возможности постоянно контактировать с питомцем или уставшему от переизбытка общения с ним. Именно поэтому заводчики рекомендуют кавалер-кинг-чарльз-спаниелей для больших семей, в которых проживает несколько поколений родственников. Так собаке будет проще подобрать себе компанию, не перегружая своей коммуникабельностью кого-то одного.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кавалер-кинг-чарльз-спаниель с детьми" data-fancybox="gallery" href="/upload/iblock/652/652c442e805b27d66b1fb0bd58c90816.jpg" title="Кавалер-кинг-чарльз-спаниель с детьми">
+          <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель с детьми" data-class="article_pic" data-original="/upload/resize_cache/iblock/652/412_2150_1/652c442e805b27d66b1fb0bd58c90816.jpg">
+           <noscript data-alt="Кавалер-кинг-чарльз-спаниель с детьми" data-class="article_pic" data-original="/upload/resize_cache/iblock/652/412_2150_1/652c442e805b27d66b1fb0bd58c90816.jpg">
+            <img alt="Кавалер-кинг-чарльз-спаниель с детьми" class="article_pic" height="273" src="/upload/resize_cache/iblock/652/412_2150_1/652c442e805b27d66b1fb0bd58c90816.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кавалер-кинг-чарльз-спаниель с детьми
+         </div>
+        </div>
+        <p>
+         В силу природного любопытства и доброжелательности «кавалер» хорошо относится к любому, даже малознакомому человеку, поэтому доверять ему охрану собственного жилья – заведомо неудачная затея. Подкупить этого резвого «англичанина» проще простого: достаточно ласково поболтать с ним или немного поиграть. Такая особенность породы, как звонкий лай, тоже мало чем помогает животному в охранной деятельности. Свои вокальные таланты кавалер-кинги чаще демонстрируют в играх, чем в случае реальной опасности, так что забудьте о том, чтобы воспитать из этого гламурного мажора приличного сторожа.
+        </p>
+        <p>
+         По отношению к другим домашним питомцам кавалер-кинг-чарльз-спаниели – беспримерные обаяшки. Они напрочь лишены лидерских замашек и желания доминировать над всем, что движется, поэтому с удовольствием передадут «бразды правления» любому четверолапому существу, которое этого пожелает. Чистопородный «кавалер» без проблем поладит с другой собакой, кошкой или каким-нибудь экзотическим созданием, при условии, что они не будут пытаться отнять у него статус всеобщего любимца.
+        </p>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ee8/ee8e422356d77bd4fda6563a7ae769df.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/ee8/380_264_2/ee8e422356d77bd4fda6563a7ae769df.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/ee8/380_264_2/ee8e422356d77bd4fda6563a7ae769df.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/ee8/380_264_2/ee8e422356d77bd4fda6563a7ae769df.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="Кавалер-кинг-чарльз-спаниель с кошкой" data-fancybox="gallery" href="/upload/iblock/1ec/1ecaaec87ece19cef5e492a68b27a1e8.jpg" title="Кавалер-кинг-чарльз-спаниель с кошкой">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель с кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/1ec/380_264_2/1ecaaec87ece19cef5e492a68b27a1e8.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель с кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/1ec/380_264_2/1ecaaec87ece19cef5e492a68b27a1e8.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель с кошкой" class="article_pic" src="/upload/resize_cache/iblock/1ec/380_264_2/1ecaaec87ece19cef5e492a68b27a1e8.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Кавалер-кинг-чарльз-спаниель с кошкой
+          </div>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/866/8668d1001dac2cd4e9c89b7d4f42b713.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/866/380_264_2/8668d1001dac2cd4e9c89b7d4f42b713.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/866/380_264_2/8668d1001dac2cd4e9c89b7d4f42b713.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/866/380_264_2/8668d1001dac2cd4e9c89b7d4f42b713.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Кавалер-кинг-чарльз-спаниели очень умны и легко постигают все тонкости учебного процесса, что не мешает им время от времени включать режим «непонимайки». Часто владельцы ведутся на эту собачью хитрость и засыпают специализированные форумы вопросами в стиле: «Почему кавалер-кинг не выполняет команды?». Причина такого поведения кроется не в строптивости характера, а в банальной скуке. Возможно, вы просто переборщили с серьезностью и продолжительностью обучения, утомив собаку. Или просто не учли особенности ее темперамента.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кавалер-кинг-чарльз-спаниель на поводке" data-fancybox="gallery" href="/upload/iblock/a38/a38ee0d1af1f0b43b56188f3ad469349.jpg" title="Кавалер-кинг-чарльз-спаниель на поводке">
+          <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель на поводке" data-class="article_pic" data-original="/upload/resize_cache/iblock/a38/412_2150_1/a38ee0d1af1f0b43b56188f3ad469349.jpg">
+           <noscript data-alt="Кавалер-кинг-чарльз-спаниель на поводке" data-class="article_pic" data-original="/upload/resize_cache/iblock/a38/412_2150_1/a38ee0d1af1f0b43b56188f3ad469349.jpg">
+            <img alt="Кавалер-кинг-чарльз-спаниель на поводке" class="article_pic" height="274" src="/upload/resize_cache/iblock/a38/412_2150_1/a38ee0d1af1f0b43b56188f3ad469349.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кавалер-кинг-чарльз-спаниель на поводке
+         </div>
+        </div>
+        <p>
+         Кинологи уверяют: дрессировать кавалер-кинг-чарльз-спаниеля необходимо в игре и по возможности ласково. Большинство этих британских «аристократов» отличается врожденной робостью, поэтому если в ходе обучения на питомца повысить голос, он может навсегда отказаться от участия в занятиях. Подогреть интерес к дрессировке тоже не возбраняется. Для этого достаточно запаса любимых собакой вкусняшек.
+        </p>
+        <p>
+         «Кавалеры», невзирая на достаточно мягкий и миролюбивый характер, в душе не чужды некоторых разбойничьих привычек. Например, встретив на прогулке кошку или грызуна, собака обязательно попытается за ним погоняться. Более того, далеко не каждая такая «охота» заканчивается счастливым возвращением питомца. Охваченный азартом преследования, кавалер-кинг может запросто потеряться, поэтому команды «Фу!» и «Рядом!» с питомцем следует выучить заранее и как можно тверже.
+        </p>
+        <p>
+         С 4-5 месяцев кавалер-кинг-чарльз-спаниелей шоу-класса начинают приучать к выставочной стойке. Сначала успехи животного поощряют лакомством. И лишь после того, как у щенка сформируется устойчивая ассоциация: стойка = угощение, можно пускать в ход команду «Стоять!».
+        </p>
+        <p class="legenda">
+         На заметку: опытные хендлеры не рекомендуют разучивать с кавалер-кинг-чарльз-спаниелем команду «Сидеть!» до тех пор, пока животное не поучаствует в выставочных мероприятиях. Стушевавшись в незнакомой обстановке, питомец может перепутать значение команд и вместо требуемой от него стойки выдать обратное действие.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Любитель полежать на диване" data-fancybox="gallery" href="/upload/iblock/8f2/8f2e22252fbc2c92f3ade3c3a03798cb.jpg" title="Любитель полежать на диване">
+           <div class="lazy-load" data-alt="Любитель полежать на диване" data-class="article_pic" data-original="/upload/resize_cache/iblock/8f2/512_342_2/8f2e22252fbc2c92f3ade3c3a03798cb.jpg">
+            <noscript data-alt="Любитель полежать на диване" data-class="article_pic" data-original="/upload/resize_cache/iblock/8f2/512_342_2/8f2e22252fbc2c92f3ade3c3a03798cb.jpg">
+             <img alt="Любитель полежать на диване" class="article_pic" src="/upload/resize_cache/iblock/8f2/512_342_2/8f2e22252fbc2c92f3ade3c3a03798cb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Любитель полежать на диване
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/bac/bacc9bd86d3594a326ec42c9943a3ea4.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/bac/512_342_2/bacc9bd86d3594a326ec42c9943a3ea4.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/bac/512_342_2/bacc9bd86d3594a326ec42c9943a3ea4.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/bac/512_342_2/bacc9bd86d3594a326ec42c9943a3ea4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         Первое, на что стоит обратить внимание хозяевам будущих чемпионов, – это материалы напольного покрытия в доме. На скользком паркете или ламинате лапы щенка будут разъезжаться, что станет предпосылкой для формирования неправильной походки и постава конечностей. Лучше всего, если пол в помещении будет прикрыт толстым ковром или половиками, поскольку кавалер-кинг-чарльз-спаниели – исключительно квартирные обитатели. На улице они только гуляют и ходят в туалет.
+        </p>
+        <p>
+         Если вам иногда приходится оставлять питомца одного, купите ему вольер и приучите его сидеть в нем. Так животное будет лишено соблазна погрызть в ваше отсутствие обувь или покусать компьютерные провода. Транспортируют собак этой породы в клетках, к которым питомца тоже придется приучать.
+        </p>
+        <p class="legenda">
+         Важно: не используйте клетку и вольер в качестве наказания в случаях, когда кавалер-кинг-чарльз-спаниель слишком «достал» вас чрезмерной общительностью. Собака быстро сообразит, в чем истинное предназначение этого аксессуара, и заработает себе дополнительную фобию.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Кавалер-кинг-чарльз-спаниелей не принято стричь. Слишком часто расчесывать их тоже не стоит: шерсть у представителей данной породы имеет шелковистую структуру и почти не путается. Просто пройдитесь щеткой по «шубке» малыша и наслаждайтесь свободой от этой обязанности в течение 5-7 дней. Другое дело – период линьки. В это время волос «кавалеров» нуждается в ежедневном расчесывании.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мытье кавалер-кинг-чарльз-спаниеля" data-fancybox="gallery" href="/upload/iblock/d7f/d7f974ce1b931bd578f6e12ad1d7d159.jpg" title="Мытье кавалер-кинг-чарльз-спаниеля">
+          <div class="lazy-load" data-alt="Мытье кавалер-кинг-чарльз-спаниеля" data-class="article_pic" data-original="/upload/resize_cache/iblock/d7f/412_2150_1/d7f974ce1b931bd578f6e12ad1d7d159.jpg">
+           <noscript data-alt="Мытье кавалер-кинг-чарльз-спаниеля" data-class="article_pic" data-original="/upload/resize_cache/iblock/d7f/412_2150_1/d7f974ce1b931bd578f6e12ad1d7d159.jpg">
+            <img alt="Мытье кавалер-кинг-чарльз-спаниеля" class="article_pic" height="616" src="/upload/resize_cache/iblock/d7f/412_2150_1/d7f974ce1b931bd578f6e12ad1d7d159.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мытье кавалер-кинг-чарльз-спаниеля
+         </div>
+        </div>
+        <p>
+         Можно разглаживать шерсть животного варежкой: так с нее удаляются загрязнения, пыль и перхоть. С пушистыми «следами», оставленными кавалер-кинг-чарльз-спаниелями на диванах и ковровых покрытиях, справиться тоже несложно. Волос этих собачек без проблем всасывает даже не самый мощный пылесос. Кроме того, шерсть «кавалеров» практически не пахнет псиной.
+        </p>
+        <p>
+         Частота купаний собаки определяется ее классом. Шоу-особей моют раз в неделю с применением целого арсенала средств по разглаживанию и питанию волоса, а также придания ему благородного блеска. Домашним любимцам достаточно устраивать ванну раз в месяц с шампунем и кондиционером для облегчения расчесывания шерсти. И не забывайте: максимально допустимая температура воды для кавалер-кинг-чарльз-спаниеля – 39 °С. Вымытое животное вытирают полотенцем и сушат феном. Категорически не рекомендуется заворачивать собаку в пеленку и оставлять ее в ней сохнуть. Такие эксперименты приводят к выпреванию волоса и его последующему выпадению.
+        </p>
+        <p>
+         Самый проблемный орган кавалер-кинг-чарльз-спаниелей – уши. В силу своего висячего положения они плохо вентилируются, зато активно накапливают серу и загрязнения, поэтому осматривать и чистить их лучше почаще. Глаза питомца положено проверять каждый день, убирая скапливающиеся в их уголках мусор и слизь ватным спонжем. При воспалениях глаза можно протереть ромашковым отваром. Если же воспаление ярко выражено, не возбраняется капнуть на слизистую пару капель альбумина. А вот от чайного настоя и раствора борной кислоты, которые рекомендуют использовать «доморощенные офтальмологи» на кинологических форумах, лучше полностью отказаться.
+        </p>
+        <p>
+         Зубы представителям этой породы чистят дважды в неделю, когти подрезают раз в две недели. После прогулки лапы кавалер-кинг-чарльз-спаниеля обязательно моют, а в зимнее время смазывают растительным маслом или кремом, чтобы уберечь от ядовитого действия реагентов.
+        </p>
+        <h3>
+         Прогулки
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Я тут тебе желудей нашел" data-fancybox="gallery" href="/upload/iblock/960/960ec9257938f7bcb0d5a00c56ca853e.jpg" title="Я тут тебе желудей нашел">
+          <div class="lazy-load" data-alt="Я тут тебе желудей нашел" data-class="article_pic" data-original="/upload/resize_cache/iblock/960/412_2150_1/960ec9257938f7bcb0d5a00c56ca853e.jpg">
+           <noscript data-alt="Я тут тебе желудей нашел" data-class="article_pic" data-original="/upload/resize_cache/iblock/960/412_2150_1/960ec9257938f7bcb0d5a00c56ca853e.jpg">
+            <img alt="Я тут тебе желудей нашел" class="article_pic" height="309" src="/upload/resize_cache/iblock/960/412_2150_1/960ec9257938f7bcb0d5a00c56ca853e.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Я тут тебе желудей нашел
+         </div>
+        </div>
+        <p>
+         До 4 месяцев кавалер-кинг-чарльз-спаниелей водят гулять как можно чаще, чтобы приучить их ходить в туалет на улице. Начиная с 4-го месяца жизни, количество прогулок сокращают, зато увеличивают их продолжительность. Важно помнить, что кавалер-кинги не нуждаются в интенсивных физических нагрузках и слишком длительных променадах, но и просто постоять с питомцем под деревцем тоже не получится.
+        </p>
+        <p>
+         Собаку лучше выгуливать в зонах, где нет асфальта. Там животное может как следует побегать без риска переутомиться и травмировать лапки. Если очень хочется походить с «кавалером» по тротуарам, не превышайте оптимальный для таких прогулок лимит в 40 минут.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="На прогулке" data-fancybox="gallery" href="/upload/iblock/f20/f205231ab8345f64dc2572b64dd9c527.jpg" title="На прогулке">
+          <div class="lazy-load" data-alt="На прогулке" data-class="article_pic" data-original="/upload/resize_cache/iblock/f20/1024_2150_1/f205231ab8345f64dc2572b64dd9c527.jpg">
+           <noscript data-alt="На прогулке" data-class="article_pic" data-original="/upload/resize_cache/iblock/f20/1024_2150_1/f205231ab8345f64dc2572b64dd9c527.jpg">
+            <img alt="На прогулке" class="article_pic" src="/upload/resize_cache/iblock/f20/1024_2150_1/f205231ab8345f64dc2572b64dd9c527.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          На прогулке
+         </div>
+        </div>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         «Натуралка», «сушка» или и то, и другое – все эти типы кормления считаются допустимыми для кавалер-кингов. И все же большинство специалистов отдает предпочтение натуральному рациону, как более полезному. Работая над составлением меню для собственного питомца, учитывайте тот факт, что кавалер-кинг-чарльз-спаниель – порода, склонная к ожирению. При избыточном количестве калорийной пищи собака моментально наберет вес, а вот сбросить его сможет далеко не всегда.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мы ждем вкусняшку!" data-fancybox="gallery" href="/upload/iblock/04e/04ebf1167da3dad62b8ee6bcdcf831e0.jpg" title="Мы ждем вкусняшку!">
+          <div class="lazy-load" data-alt="Мы ждем вкусняшку!" data-class="article_pic" data-original="/upload/resize_cache/iblock/04e/412_2150_1/04ebf1167da3dad62b8ee6bcdcf831e0.jpg">
+           <noscript data-alt="Мы ждем вкусняшку!" data-class="article_pic" data-original="/upload/resize_cache/iblock/04e/412_2150_1/04ebf1167da3dad62b8ee6bcdcf831e0.jpg">
+            <img alt="Мы ждем вкусняшку!" class="article_pic" height="617" src="/upload/resize_cache/iblock/04e/412_2150_1/04ebf1167da3dad62b8ee6bcdcf831e0.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мы ждем вкусняшку!
+         </div>
+        </div>
+        <p>
+         Необходимые, с точки зрения пользы, продукты для «кавалеров» – это постные сорта мяса, крупы, а также нежирная кисломолочка. Кстати, к «веганским» блюдам эта порода очень неравнодушна, так что в летний сезон почаще вводите в рацион питомца овощное рагу, фруктовую нарезку и салатики. Кроме того, многие кавалер-кинги охотно едят ягоды, грунтовые огурцы и кабачки. Время от времени собакам полезно давать желток или перепелиное яичко.
+        </p>
+        <p>
+         Запрещенные продукты:
+        </p>
+        <ul>
+         <li>
+          сладости;
+         </li>
+         <li>
+          колбасные изделия;
+         </li>
+         <li>
+          соленые и пряные блюда;
+         </li>
+         <li>
+          трубчатые кости;
+         </li>
+         <li>
+          свинина и любые жирные сорта мяса;
+         </li>
+         <li>
+          сметана и сливки;
+         </li>
+         <li>
+          грибы;
+         </li>
+         <li>
+          лук и чеснок;
+         </li>
+         <li>
+          бобовые;
+         </li>
+         <li>
+          выпечка и белый хлеб;
+         </li>
+         <li>
+          речная рыба;
+         </li>
+         <li>
+          перловка.
+         </li>
+        </ul>
+        <p>
+         Хозяевам, решившим потчевать животное промышленным кормом, не стоит забывать о предрасположенности породы к пищевой аллергии. Обезопасить питомца в таком случае можно лишь внимательным изучением состава корма, поэтому сразу отметайте разновидности, в которых обнаружились «следы присутствия» курицы или злаковых культур.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Навернок это мне" data-fancybox="gallery" href="/upload/iblock/1e8/1e87cf6043195960467847ea0aa2958b.jpg" title="Навернок это мне">
+           <div class="lazy-load" data-alt="Навернок это мне" data-class="article_pic" data-original="/upload/resize_cache/iblock/1e8/512_342_2/1e87cf6043195960467847ea0aa2958b.jpg">
+            <noscript data-alt="Навернок это мне" data-class="article_pic" data-original="/upload/resize_cache/iblock/1e8/512_342_2/1e87cf6043195960467847ea0aa2958b.jpg">
+             <img alt="Навернок это мне" class="article_pic" src="/upload/resize_cache/iblock/1e8/512_342_2/1e87cf6043195960467847ea0aa2958b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Навернок это мне
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Ням-ням" data-fancybox="gallery" href="/upload/iblock/cd2/cd2a8bb32dc7c7757bd73f8ad06c427e.jpg" title="Ням-ням">
+           <div class="lazy-load" data-alt="Ням-ням" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd2/512_342_2/cd2a8bb32dc7c7757bd73f8ad06c427e.jpg">
+            <noscript data-alt="Ням-ням" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd2/512_342_2/cd2a8bb32dc7c7757bd73f8ad06c427e.jpg">
+             <img alt="Ням-ням" class="article_pic" src="/upload/resize_cache/iblock/cd2/512_342_2/cd2a8bb32dc7c7757bd73f8ad06c427e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Ням-ням
+          </div>
+         </div>
+        </div>
+        <h3>
+         Туалет
+        </h3>
+        <p>
+         Кавалер-кинг-чарльз-спаниелей сложно приучить к лотку, поэтому для отправления «нужд» у представителей этой породы остается два варианта: улица или пеленка. Чтобы привить питомцу привычку ходить в туалет во время прогулки, его выводят на улицу сразу же после еды или сна. Если метод оказывается неэффективным, к нему можно присовокупить газету или кусочек ткани, на которые собака сходила «по-маленькому» дома. Заинтересованное знакомым запахом животное обычно вспоминает о собственных потребностях и присаживается рядом с мокрой пеленкой. Никогда не ругайте кавалер-кинга за лужицы в квартире, при этом преувеличенно хвалить собаку за то, что она сделала свои «дела» вне дома очень полезно.
+        </p>
+        <h2 id="gl8">
+         Здоровье и болезни кавалер-кинг-чарльз-спаниелей
+        </h2>
+        <p>
+         Все наследственные болезни кавалер-кинг-чарльз-спаниелей – конечный результат так называемого линейного разведения и слишком ограниченной генетической базы. Первой в списке недугов, которыми страдает около половины «кавалеров» в возрасте от 5 лет, стоит миксоматозная дегенерация клапана или пролапс. Второй бич породы – сирингомиелия (синдром Киари). Животное, унаследовавшее эту болезнь, испытывает дискомфорт и сильные боли в области шейного отдела позвоночника, при отсутствии своевременного лечения ведущие к «скручиванию шеи».
+        </p>
+        <p>
+         Синдром эпизодического падения диагностировать сложнее, чем два предыдущих недуга, что совершенно не мешает ему поражать огромное число животных. Поведение кавалер-кингов, страдающих данной болезнью, в чем-то схоже с повадками собак, получивших травму спины. Они надолго замирают на месте, выгибают спину при беге и подтягивают конечности в положении лежа на боку. Еще одно слабое место породы – суставы. С возрастом у многих «кавалеров» прогрессирует пателлярная нестабильность, причем чаще всего это происходит у сук. Изрядно портят жизнь питомцам синдромы сухого глаза и курчавой шерсти, которые очень плохо поддаются лечению.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b9c/b9c3a9a98b5b00a756ce4d975425cf99.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/b9c/512_342_2/b9c3a9a98b5b00a756ce4d975425cf99.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/b9c/512_342_2/b9c3a9a98b5b00a756ce4d975425cf99.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/b9c/512_342_2/b9c3a9a98b5b00a756ce4d975425cf99.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ddb/ddb9c9d64e14b4c9f915e4d38b1d1f45.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/ddb/512_342_2/ddb9c9d64e14b4c9f915e4d38b1d1f45.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/ddb/512_342_2/ddb9c9d64e14b4c9f915e4d38b1d1f45.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/ddb/512_342_2/ddb9c9d64e14b4c9f915e4d38b1d1f45.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl6">
+         Как выбрать щенка
+        </h2>
+        <p>
+         При выборе щенка кавалер-кинг-чарльз-спаниеля можно руководствоваться теми же принципами, что и при покупке любой другой породистой собаки.
+        </p>
+        <ul>
+         <li>
+          Не берите малышей из питомников, в которых царят антисанитария и беспорядок.
+         </li>
+         <li>
+          Чтобы застраховать себя от покупки больного животного, потребуйте у заводчика результаты тестов, направленных на выявление у щенка генетических заболеваний (синдромы сухого глаза, курчавой шерсти, эпизодического падения).
+         </li>
+         <li>
+          Темперамент кавалер-кинг-чарльз-спаниелей не зависит от пола. И суки, и кобели этой породы одинаково ласковы и привязаны к хозяину, так что выбирайте животное в соответствии с собственными предпочтениями.
+         </li>
+         <li>
+          Познакомьтесь с родителями щенка и их родословной, чтобы избежать покупки животного от инбридинговой вязки (от состоящих в близком родстве особей).
+         </li>
+         <li>
+          Выбирайте резвого, любознательного малыша, проявляющего живой интерес к игрушкам. Вялость и нерешительность у щенков кавалер-кинг-чарльз-спаниеля свидетельствуют об их физическом и психологическом истощении.
+         </li>
+        </ul>
+        <h2>
+         Фото щенков кавалер-кинг-чарльз-спаниеля
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/265/26523b1bb22665d0a61c89e7b5fd81ea.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/265/380_264_2/26523b1bb22665d0a61c89e7b5fd81ea.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/265/380_264_2/26523b1bb22665d0a61c89e7b5fd81ea.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/265/380_264_2/26523b1bb22665d0a61c89e7b5fd81ea.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/396/3964c0d365ad3833bed7775c915adb00.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/396/380_264_2/3964c0d365ad3833bed7775c915adb00.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/396/380_264_2/3964c0d365ad3833bed7775c915adb00.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/396/380_264_2/3964c0d365ad3833bed7775c915adb00.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/488/48877f81c18e9e5e69f16c10b3821177.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/488/380_264_2/48877f81c18e9e5e69f16c10b3821177.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/488/380_264_2/48877f81c18e9e5e69f16c10b3821177.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/488/380_264_2/48877f81c18e9e5e69f16c10b3821177.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1ff/1fffdd173acf8c7c4d3c3ef52d88488d.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/1ff/380_264_2/1fffdd173acf8c7c4d3c3ef52d88488d.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/1ff/380_264_2/1fffdd173acf8c7c4d3c3ef52d88488d.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/1ff/380_264_2/1fffdd173acf8c7c4d3c3ef52d88488d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/11b/11b8b1fdf299e9e1b25bd43091e70bd1.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/11b/380_264_2/11b8b1fdf299e9e1b25bd43091e70bd1.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/11b/380_264_2/11b8b1fdf299e9e1b25bd43091e70bd1.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/11b/380_264_2/11b8b1fdf299e9e1b25bd43091e70bd1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/58e/58e7d58e9327159e04146ccbe4998db9.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/58e/380_264_2/58e7d58e9327159e04146ccbe4998db9.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/58e/380_264_2/58e7d58e9327159e04146ccbe4998db9.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/58e/380_264_2/58e7d58e9327159e04146ccbe4998db9.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/49d/49d05c9fcb40b4c7b1f6aa417db1a276.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/49d/380_264_2/49d05c9fcb40b4c7b1f6aa417db1a276.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/49d/380_264_2/49d05c9fcb40b4c7b1f6aa417db1a276.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/49d/380_264_2/49d05c9fcb40b4c7b1f6aa417db1a276.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/658/65811af90b71e9ce58ebca2371edfe92.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/658/380_264_2/65811af90b71e9ce58ebca2371edfe92.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/658/380_264_2/65811af90b71e9ce58ebca2371edfe92.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/658/380_264_2/65811af90b71e9ce58ebca2371edfe92.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2df/2df7d7825b63da5d46300241805a3fcb.jpg" title="">
+           <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/2df/380_264_2/2df7d7825b63da5d46300241805a3fcb.jpg">
+            <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-class="article_pic" data-original="/upload/resize_cache/iblock/2df/380_264_2/2df7d7825b63da5d46300241805a3fcb.jpg">
+             <img alt="Кавалер-кинг-чарльз-спаниель" class="article_pic" src="/upload/resize_cache/iblock/2df/380_264_2/2df7d7825b63da5d46300241805a3fcb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl7">
+         Сколько стоит кавалер-кинг-чарльз-спаниель
+        </h2>
+        <p>
+         Стоимость щенков кавалер-кинг-чарльз-спаниеля напрямую зависит от их родословной и внешних параметров (класса). У отечественных заводчиков средний ценник на малыша с ветпаспортом и метрикой РКФ – 30 000 - 35 000 руб. Расценки на особей с эталонной внешностью, обещающих в будущем собрать все мыслимые и немыслимые чемпионские титулы, начинаются от 50 000 руб. Самыми дорогими, по традиции, остаются щенки от интервязки (кобель и сука – из разных стран). Такие питомцы могут стоить 65 000 рублей и выше.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения кавалер-кинг-чарльз-спаниеля на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27896/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Екатерина Какаржинская" data-original="/upload/resize_cache/main/5b1/200_200_2/0qib2fxe48i3vmdu7n2pscfnzddcu7mf.jpg">
+            <noscript data-alt="Екатерина Какаржинская" data-original="/upload/resize_cache/main/5b1/200_200_2/0qib2fxe48i3vmdu7n2pscfnzddcu7mf.jpg">
+             <img alt="Екатерина Какаржинская" src="/upload/resize_cache/main/5b1/200_200_2/0qib2fxe48i3vmdu7n2pscfnzddcu7mf.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/sobaka-ignoriruet-5569/">
+           Собака игнорирует
+          </a>
+         </div>
+         <div class="forum-text">
+          Пол года назад собака родила первый раз. Роды прошли мягко сказать не удачно. Так получилось что рожать собака начала в одиночестве. В итоге погибло 5 щенков из 6. После родов собака начала игнорировать всех. Мы...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27896/">
+            Екатерина Какаржинская
+           </a>
+          </span>
+          <span class="vopros-date">
+           Месяц назад
+          </span>
+          <span class="vopros-smotr">
+           481 просмотр
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/26387/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Елена Бычкова" data-original="/upload/main/bcc/hb7npslnsa4g3i0bqtu1n3acga5x1cup.jpg">
+            <noscript data-alt="Елена Бычкова" data-original="/upload/main/bcc/hb7npslnsa4g3i0bqtu1n3acga5x1cup.jpg">
+             <img alt="Елена Бычкова" src="/upload/main/bcc/hb7npslnsa4g3i0bqtu1n3acga5x1cup.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/otnoshenie-k-shumu-kotoryy-izdayut-sosedi-v-mnogokvartironom-dome-4704/">
+           Отношение к шуму который издают соседи в многоквартироном доме
+          </a>
+         </div>
+         <div class="forum-text">
+          Будет ли собака реагировать на каждый посторонний звук громким лаем? И можно ли ее от этого отучить. За стенкой живет семья с взрослым сыном, инвалидом-колясочником, поэтому звуки от коляски и гомкое и частое хлопанье...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/26387/">
+            Елена Бычкова
+           </a>
+          </span>
+          <span class="vopros-date">
+           10 месяцев назад
+          </span>
+          <span class="vopros-smotr">
+           2195 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/24947/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Ксеня Кени" data-original="/upload/resize_cache/main/898/200_200_2/5e0kv8v0xi3b6lqxqcndursyjnwyywyy.jpg">
+            <noscript data-alt="Ксеня Кени" data-original="/upload/resize_cache/main/898/200_200_2/5e0kv8v0xi3b6lqxqcndursyjnwyywyy.jpg">
+             <img alt="Ксеня Кени" src="/upload/resize_cache/main/898/200_200_2/5e0kv8v0xi3b6lqxqcndursyjnwyywyy.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/otnoshenie-k-drugim-pitomtsam-3967/">
+           Отношение к другим питомцам
+          </a>
+         </div>
+         <div class="forum-text">
+          Будут они хорошо относится к коту и кошке?И как лучше их знакомить
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/24947/">
+            Ксеня Кени
+           </a>
+          </span>
+          <span class="vopros-date">
+           Год назад
+          </span>
+          <span class="vopros-smotr">
+           2206 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/kavaler-king-charlz-spaniel/forum/">
+        Перейти на
+        форум кавалер-кинг-чарльз-спаниеля
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Кавалер-кинг-чарльз-спаниель" src="/upload/iblock/b48/b485acd675a27aac77d3a42829a213ed.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/kavaler-king-charlz-spaniel/">
+          Кавалер-кинг-чарльз-спаниель
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/kavaler-king-charlz-spaniel/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/kavaler-king-charlz-spaniel/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/kavaler-king-charlz-spaniel/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/kavaler-king-charlz-spaniel/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/kavaler-king-charlz-spaniel/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/nyufaundlend/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Ньюфаундленд" data-original="/upload/resize_cache/iblock/4a8/100_100_1/4a86cff4ab81d72fe1dea71242323a8c.jpg">
+          <noscript data-alt="Ньюфаундленд" data-original="/upload/resize_cache/iblock/4a8/100_100_1/4a86cff4ab81d72fe1dea71242323a8c.jpg">
+           <img alt="Ньюфаундленд" src="/upload/resize_cache/iblock/4a8/100_100_1/4a86cff4ab81d72fe1dea71242323a8c.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Ньюфаундленд
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/dirkhaund/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Дирхаунд" data-original="/upload/resize_cache/iblock/2ac/100_100_1/lcjdjhtgh2slq2pohp4p1mfqgn80lxa7.jpg">
+          <noscript data-alt="Дирхаунд" data-original="/upload/resize_cache/iblock/2ac/100_100_1/lcjdjhtgh2slq2pohp4p1mfqgn80lxa7.jpg">
+           <img alt="Дирхаунд" src="/upload/resize_cache/iblock/2ac/100_100_1/lcjdjhtgh2slq2pohp4p1mfqgn80lxa7.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Дирхаунд
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/argentinskiy-dog/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Аргентинский дог" data-original="/upload/resize_cache/iblock/24a/100_100_1/24a7c7d93848692d34fe702f292ae9d5.jpg">
+          <noscript data-alt="Аргентинский дог" data-original="/upload/resize_cache/iblock/24a/100_100_1/24a7c7d93848692d34fe702f292ae9d5.jpg">
+           <img alt="Аргентинский дог" src="/upload/resize_cache/iblock/24a/100_100_1/24a7c7d93848692d34fe702f292ae9d5.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Аргентинский дог
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/angliyskiy-mastif/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Английский мастиф" data-original="/upload/resize_cache/iblock/8fa/100_100_1/8fa0685444078808ed14bdf5b03d7ec7.jpg">
+          <noscript data-alt="Английский мастиф" data-original="/upload/resize_cache/iblock/8fa/100_100_1/8fa0685444078808ed14bdf5b03d7ec7.jpg">
+           <img alt="Английский мастиф" src="/upload/resize_cache/iblock/8fa/100_100_1/8fa0685444078808ed14bdf5b03d7ec7.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Английский мастиф
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkavaler-king-charlz-spaniel%252F%253Fcheck_key%253Daf16054cde8e81e9d27d95f2095153d6%2526ANIMAL_CODE%253Dkavaler-king-charlz-spaniel%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkavaler-king-charlz-spaniel%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmthdmFsZXIta2luZy1jaGFybHotc3BhbmllbCUyRiUzRmNoZWNrX2tleSUzRGFmMTYwNTRjZGU4ZTgxZTlkMjdkOTVmMjA5NTE1M2Q2JTI2QU5JTUFMX0NPREUlM0RrYXZhbGVyLWtpbmctY2hhcmx6LXNwYW5pZWwlMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGa2F2YWxlci1raW5nLWNoYXJsei1zcGFuaWVsJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkavaler-king-charlz-spaniel%252F%253Fcheck_key%253Daf16054cde8e81e9d27d95f2095153d6%2526ANIMAL_CODE%253Dkavaler-king-charlz-spaniel%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fkavaler-king-charlz-spaniel%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkavaler-king-charlz-spaniel%252F%253Fcheck_key%253Daf16054cde8e81e9d27d95f2095153d6%2526ANIMAL_CODE%253Dkavaler-king-charlz-spaniel%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkavaler-king-charlz-spaniel%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "185.135.148.11"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--2fa9148d6c96a40bb7d47d1bf219b390-->

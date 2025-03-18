@@ -1,0 +1,1873 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'7a1d2f656e19'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Английский сеттер, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Английский сеттер – дружелюбное и ласковое создание, чей характер сочетает детскую игривость и манеры аристократа. Ни то, ни другое не мешает животному быть великолепным охотником." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/dd9/dd97f02c452391790debd393ad232310.jpg" property="og:image"/>
+     <title>
+      Английский сеттер: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/angliyskiy-setter/" property="og:url"/>
+     <meta content="Английский сеттер: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Английский сеттер – дружелюбное и ласковое создание, чей характер сочетает детскую игривость и манеры аристократа. Ни то, ни другое не мешает животному быть великолепным охотником." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/angliyskiy-setter/" itemprop="url">
+         <span itemprop="title">
+          Английский сеттер
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Английский сеттер
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/angliyskiy-setter/">
+          Описание
+         </a>
+         <a href="/dog/angliyskiy-setter/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/angliyskiy-setter/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/angliyskiy-setter/photo/">
+          Фото
+         </a>
+         <a href="/dog/angliyskiy-setter/video/">
+          Видео
+         </a>
+         <a href="/dog/angliyskiy-setter/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Английский сеттер" src="/upload/iblock/bfb/bfb0ef31133662f4b0def167b5b75477.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Английский сеттер – дружелюбное и ласковое создание, чей характер сочетает детскую игривость и манеры аристократа. Ни то, ни другое не мешает животному быть великолепным охотником.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/c31/c314f28179ecb4e483282673cfdcd7ca.jpg" data-cap="Now I like my house big and my grass soft " data-fancybox="images" data-link="https://www.instagram.com/p/Bkf8HhVAq7K/" data-type="image" data-username="bustadahustla" href="/upload/uf/586/586d9b1fec7e1377a2cd8e0349ce2b7c.jpg">
+            <img alt="Английский сеттер" src="/upload/resize_cache/uf/586/293_293_2/586d9b1fec7e1377a2cd8e0349ce2b7c.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/019/019c0321e29b25bd6bbcedbf8d0a6911.jpg" data-cap="The scene of the crime has been undisturbed, just had to take a photo when I saw the headline!" data-fancybox="images" data-link="https://www.flickr.com/photos/33122834@N06/4904521389/" data-type="image" data-username="Rhys Davenport" href="/upload/uf/fe0/fe050639bb69806efd56b5ef9dbfd0a4.jpg">
+            <img alt="Английский сеттер" src="/upload/resize_cache/uf/fe0/293_293_2/fe050639bb69806efd56b5ef9dbfd0a4.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/d30/d30c739987a08bf829d892662a9d22a8.jpg" data-cap="I will take this one again when she is older. Puppies don't really dig being posed." data-fancybox="images" data-link="https://www.flickr.com/photos/be_still/8696126989/" data-type="image" data-username="M Black" href="/upload/uf/7be/7bed1d6f8808aa64ecca7a686935ef27.jpg">
+            <img alt="Английский сеттер" src="/upload/resize_cache/uf/7be/293_293_2/7bed1d6f8808aa64ecca7a686935ef27.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/angliyskiy-setter/photo/">
+         Все
+            фото английского сеттера
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы английский сеттер
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность английского сеттера
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер английского сеттера
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни английского сеттера
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Сколько стоит английский сеттер
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Английский сеттер
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 25-36 кг, суки 20-32 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 65-68 см, суки 61-65 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         10-12 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Несмотря на развитые инстинкты, английские сеттеры не проявляют агрессию ни к незнакомым людям, ни к четвероногим собратьям.
+        </li>
+        <li>
+         Представители породы не могут жить без активного участия в будничной суете хозяина. Эти животные – вовсе не одиночки, а весьма компанейские существа.
+        </li>
+        <li>
+         Из «англичанина» сложно воспитать внимательного и ответственного сторожа: скорее, собака «зацелует» незнакомца, чем предостерегающе зарычит на него.
+        </li>
+        <li>
+         Английский сеттер – идеальный вариант для семей с детьми: сложно найти хвостатую няньку лучше!
+        </li>
+        <li>
+         Представители породы не привыкли соперничать за территорию и внимание хозяина, поэтому с радостью примут нового друга: собаку, кошку и даже кролика.
+        </li>
+        <li>
+         Выставочная линия сеттеров подходит для проживания в квартире; рабочая же нуждается в большем пространстве и возможности размять лапы в огороженном дворе.
+        </li>
+        <li>
+         Обучение новым командам может быть затруднительным из-за упрямства, присущего некоторым английским сеттерам.
+        </li>
+        <li>
+         Порода нуждается в ежедневном тщательном уходе, что не всегда нравится начинающим собаководам.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Английский сеттер" data-original="/upload/iblock/dd9/dd97f02c452391790debd393ad232310.jpg">
+          <noscript data-alt="Английский сеттер" data-original="/upload/iblock/dd9/dd97f02c452391790debd393ad232310.jpg">
+           <img alt="Английский сеттер" src="/upload/iblock/dd9/dd97f02c452391790debd393ad232310.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Английский сеттер
+          </strong>
+          славится своей выносливостью. Элегантная внешность, достойная королевской особы, скрывает задорный характер и неиссякаемый оптимизм. Сообразительность и развитый интеллект – главные причины, по которым английский сеттер любим как охотниками, так и обычными собаководами. Несмотря на энергичность и нежелание сидеть на одном месте, животное редко навязывает своё общество окружающим. Более понимающего и преданного друга, чем сеттер, сложно найти даже среди его четвероногих собратьев. Это уравновешенная и в меру общительная собака, которая с радостью составит компанию во время прогулки в парке или просмотра вечернего выпуска новостей.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средние (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Английский сеттер основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы английский сеттер
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Английский сеттер" data-fancybox="gallery" href="/upload/iblock/ec7/ec752f7c028d4377b22437f321a4d836.jpg" title="Английский сеттер">
+          <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ec7/412_2150_1/ec752f7c028d4377b22437f321a4d836.jpg">
+           <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ec7/412_2150_1/ec752f7c028d4377b22437f321a4d836.jpg">
+            <img alt="Английский сеттер" class="article_pic" height="618" src="/upload/resize_cache/iblock/ec7/412_2150_1/ec752f7c028d4377b22437f321a4d836.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английский сеттер
+         </div>
+        </div>
+        <p>
+         Происхождение английского сеттера противоречиво и вызывает оживлённую дискуссию среди селекционеров. Одни приписывают роль прародителей породы «испанцам», другие – предкам современных спаниелей. Подлинные же корни сеттеров неизвестны. Неоспорим лишь тот факт, что это английская порода, кем бы ни были её далёкие предки.
+        </p>
+        <p>
+         В последнее время собаководы всё чаще склоняются ко второй версии. В эпоху Возрождения спаниели пользовались огромной популярностью в странах Западной Европы. В то время существовало два основных типа этой породы: для охоты в заболоченной местности («вотер») и на суше («филд»). Самым известным на то время оставался сеттинг-спаниель. Представители этой породы руководствовались уникальным способом охоты на птицу. Заметив её, собака подкрадывалась и становилась в стойку, чем привлекала внимание. Охотник осторожно приближался к добыче и набрасывал на неё сеть: огнестрельные ружья появились гораздо позже.
+        </p>
+        <p>
+         Поведение животного во время охоты определило название будущей породы. Слово произошло от английского set – устанавливать. И вправду: заметив добычу, собака указывала хозяину её местоположение с помощью условного сигнала – стойки. Иногда название «сеттер» ошибочно переводится как «приседающий». Несмотря на это, версия имеет право на существование: во время охоты животное и впрямь «приседает» к земле, чтобы незаметно приблизиться к дичи.
+        </p>
+        <p>
+         Изначально селекция сеттеров ориентировалась исключительно на сохранение рабочих качеств собак. Экстерьер не вызывал интереса и оттого был чрезвычайно разнообразен – ровным счётом как и породы, с которыми скрещивали сеттинг-спаниелей: ретриверы,
+         <a class="ph" href="/dog/borzie-porodi/">
+          борзые
+         </a>
+         ,
+         <a class="ph" href="/dog/gonchie-porodi/">
+          гончие
+         </a>
+         и даже
+         <a class="ph" href="/dog/pudel/">
+          пудели
+         </a>
+         . Полученные экземпляры были довольно разношёрстными, но это не умаляло их охотничьих качеств.
+        </p>
+        <p>
+         Внешний вид сеттеров привлёк собаководов лишь в первой половине XIX века. Тогда же и выявили интересную особенность: несмотря на то, что все собаки относились к одной породе, их окрас варьировался в строгой зависимости от территории. Шотландия «приютила» чёрных сеттеров с рыжим подпалом; Ирландия – животных красно-пегого и каштаново-красного окрасов; южная часть Англии – белых собак с оранжевым, чёрным или коричневым крапом.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/693/6937355dd4ba589f26890b326b82ea99.jpg" title="">
+          <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/693/412_2150_1/6937355dd4ba589f26890b326b82ea99.jpg">
+           <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/693/412_2150_1/6937355dd4ba589f26890b326b82ea99.jpg">
+            <img alt="Английский сеттер" class="article_pic" height="617" src="/upload/resize_cache/iblock/693/412_2150_1/6937355dd4ba589f26890b326b82ea99.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Эта закономерность побудила селекционеров выделить три независимые ветви: шотландскую (гордон-сеттеры), ирландскую (
+         <a class="ph" href="/dog/irlandskiy-setter/">
+          красные сеттеры
+         </a>
+         ) и английскую (с соответствующим названием). Работой над экстерьером последней ветви занялся Эдвард Лаверак. Он был страстным охотником – именно эта черта привлекла внимание к сеттерам.
+        </p>
+        <p>
+         Сэр Лаверак начал работы по селекции с двух экземпляров, приобретённых у пастора Гаррисона, – Олд-Молл и Понто. Заводчик планировал улучшить породу посредством инбриндинга – скрещивания животных, которые состояли в родственных связях. Он вложил душу в пятьдесят лет селекции, которая принесла плоды – грациозный и элегантный экстерьер английского сеттера.
+        </p>
+        <p>
+         Дело сэра Эдварда поддержал и его соотечественник Ричард Льюэллин. В отличие от своего коллеги, заводчик не придерживался стратегии инбриндинга, посчитав нужным разбавить генофонд сеттеров другими породами. Это стало причиной конфликта, из-за которого англичане продолжили работать над разведением собак, но уже независимо друг от друга. Так сформировались две ветви породы: линии Лаверака и Льюэллина.
+        </p>
+        <p>
+         В 1859 году английские сеттеры впервые появились на выставке в Ньюкасл-апон-Тайне. Чем чаще представители породы участвовали в подобных шоу, тем сильнее росла их популярность. Переломным моментом в истории сеттеров стали 70-е годы XIX века. Английский кинологический клуб признал породу и начал вести её родословную книгу. В то же время первые собаки ступили на земли Нового Света, вызвав очередную волну популяризации сеттеров. Уже через десять лет Американский клуб кинологов официально признал четвероногих английских аристократов, которые со временем образовали новую линию породы – на этот раз американскую.
+        </p>
+        <p>
+         На территории России собаки были известны как лаверак-сеттеры. Нередко их называли «ловираками» – на русский манер; подшучивая над тем, что животные отказываются ловить раков, но с охотой на птиц справляются великолепно. Собаки пользовались популярностью у аристократов, содержавших огромные псарни. Исторические факты подтверждают: сеттер входил в число любимых пород Николая II. Этих животных предпочитали и многие представители интеллигенции: Александр Куприн, Иван Бунин и Александр Блок. Революция 1917 года едва не поставила крест на развитии породы. Она обрела второе дыхание лишь в конце XX века.
+        </p>
+        <p>
+         Английские сеттеры сохраняют свою популярность. Ввиду многолетней селекции и отделения шоу-класса охотничьи инстинкты собак слегка притупились. Лавры победителя перешли другим породам (в частности, бретонскому эпаньолу). Несмотря на это, «англичан» всё ещё используют в качестве подружейных собак, однако всё чаще их заводят как дружелюбных и активных компаньонов, умеющих скрасить самые однообразные будни.
+        </p>
+        <h2>
+         Видео: Английский сеттер
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="_FMitEhi3fM">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность английского сеттера
+        </h2>
+        <p>
+         Английский сеттер – порода средних размеров. У этих собак чётко прослеживается половой диморфизм: суки выглядят изящнее и утончённее кобелей. Однако в обоих случаях сеттеры отличаются пропорциональным и сухим телосложением.
+        </p>
+        <p>
+         Стандарт породы определяет параметры животных. Так, высота кобеля в холке достигает 65-68 см, суки – 61-65 см. Вес английского сеттера – 25-36 кг и 20-32 кг соответственно. Особи мужского пола более тяжёлые и массивные.
+        </p>
+        <h3>
+         Голова и череп
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Английский сеттер в лесу" data-fancybox="gallery" href="/upload/iblock/daa/daa67d8c3f30bf3f4fabdfb78799aa95.jpg" title="Английский сеттер в лесу">
+          <div class="lazy-load" data-alt="Английский сеттер в лесу" data-class="article_pic" data-original="/upload/resize_cache/iblock/daa/412_2150_1/daa67d8c3f30bf3f4fabdfb78799aa95.jpg">
+           <noscript data-alt="Английский сеттер в лесу" data-class="article_pic" data-original="/upload/resize_cache/iblock/daa/412_2150_1/daa67d8c3f30bf3f4fabdfb78799aa95.jpg">
+            <img alt="Английский сеттер в лесу" class="article_pic" height="617" src="/upload/resize_cache/iblock/daa/412_2150_1/daa67d8c3f30bf3f4fabdfb78799aa95.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английский сеттер в лесу
+         </div>
+        </div>
+        <p>
+         Лёгкая голова английского сеттера отличается умеренной длиной, несётся высоко и гордо. В профиль заметны параллельные линии лба и нижней челюсти. Череп овальной формы имеет выраженный затылочный бугор и широкую лобную часть – они обеспечивают достаточно пространства для мозга. Надбровные дуги придают голове собаки рельеф, ненамного выдаваясь вперёд.
+        </p>
+        <h3>
+         Морда
+        </h3>
+        <p>
+         При взгляде на голову животного сверху становится заметно, что прямая морда более узкая в сравнении с черепной коробкой. При этом её длина совпадает с длиной от стопа до затылка (квадратный тип). Под глазами хорошо заполнена. Переход ото лба к носу с прямой спинкой чёткий. Плоские щёки сеттера практически не выделяются. Подвижная мочка носа имеет широкие ноздри – главное достоинство охотничьей собаки, – пигментирована в чёрный или коричневый оттенок. Губы плотно прилегают к челюстям, при этом верхняя слегка нависает над нижней. В уголках рта образуются складки, но слизистая не обнажена. Цвет окантовки губ совпадает с окрасом.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Уши английского сеттера поставлены на уровне линии глаз и слегка направлены к затылку собаки. Мягкие и бархатистые на ощупь, тонкие и неширокие. Форма приближена к треугольной; прилегающие к скулам кончики закруглены. Покрыты длинной шерстью.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза посажены глубоко и довольно далеко друг от друга. Овальной формы, небольшие. Веки сухие и плотно прилегающие. Разрез прямой. Радужка окрашена коричневым (предпочительны тёмные оттенки). При этом у крапчатых сеттеров встречается более светлая пигментация глаз. Взгляд умный и выразительный.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Охотничьи породы собак отличают мощные челюсти – и английский сеттер не исключение. Предпочтителен равномерный ножницеобразный прикус. Его прямой формат у животных старше шести лет не считается дефектом. Крепкие зубы имеют здоровый белый цвет. Резцы расположены на одном уровне, клыки ярко выражены. Насчитывается полная формула – 42 зуба.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Гибкая шея расширяется к плечам и поставлена довольно высоко. Заметно её овальное сечение при взгляде на собаку спереди. Подвес отсутствует, загривок выпуклый.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда английского сеттера" data-fancybox="gallery" href="/upload/iblock/b6f/b6f2a694e192e6f5df60ebd9ddc41e5f.jpg" title="Морда английского сеттера">
+          <div class="lazy-load" data-alt="Морда английского сеттера" data-class="article_pic" data-original="/upload/resize_cache/iblock/b6f/1024_2150_1/b6f2a694e192e6f5df60ebd9ddc41e5f.jpg">
+           <noscript data-alt="Морда английского сеттера" data-class="article_pic" data-original="/upload/resize_cache/iblock/b6f/1024_2150_1/b6f2a694e192e6f5df60ebd9ddc41e5f.jpg">
+            <img alt="Морда английского сеттера" class="article_pic" src="/upload/resize_cache/iblock/b6f/1024_2150_1/b6f2a694e192e6f5df60ebd9ddc41e5f.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда английского сеттера
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Туловище животного великолепно сбалансировано, поэтому кажется элегантным и лёгким. Крепкая спина отличается плавными изгибами в области лопаток и крупа. Грудная клетка сухая, мускулатура приобретает чёткие очертания у более взрослых собак (от трёх лет и старше). Рёбра выпуклые и удлинённые, – особенно сзади, – благодаря чему грудь сеттера кажется наполненной. Прямая и короткая спина переходит в умеренно выпуклую поясницу. Круп скошенный, с плавными очертаниями. Линия низа сглажена, живот подобран в меру.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Английский сеттер с ребенком" data-fancybox="gallery" href="/upload/iblock/59f/59fc9eded65473126ee56236d8c78f95.jpg" title="Английский сеттер с ребенком">
+          <div class="lazy-load" data-alt="Английский сеттер с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/59f/412_2150_1/59fc9eded65473126ee56236d8c78f95.jpg">
+           <noscript data-alt="Английский сеттер с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/59f/412_2150_1/59fc9eded65473126ee56236d8c78f95.jpg">
+            <img alt="Английский сеттер с ребенком" class="article_pic" height="561" src="/upload/resize_cache/iblock/59f/412_2150_1/59fc9eded65473126ee56236d8c78f95.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английский сеттер с ребенком
+         </div>
+        </div>
+        <p>
+         Хвост английского сеттера посажен незначительно ниже линии спины, тем самым продолжая её. Отличается средней длиной, а также прямолинейной или саблевидной формой. Сужается от основания к кончику. В состоянии спокойствия собака держит хвост опущенным, при возбуждении поднимает его почти параллельно земле. Волнистая шерсть в нижней части хвоста придаёт ему сходство с пером.
+        </p>
+        <h3>
+         Передние конечности
+        </h3>
+        <p>
+         Плечевые кости сочленены под прямым углом с отведёнными назад лопатками. Между локтями и грудной клеткой сеттера практически нет зазора. Овальные предплечья плавно переходят в пясти незначительной длины. Пальцы собраны в «комок» и заканчиваются крепкими когтями. Развитые подушечки лап грубоваты на ощупь.
+        </p>
+        <h3>
+         Задние конечности
+        </h3>
+        <p>
+         В стойке направлены назад. Прекрасно омускуленные ноги удлинены. Широкие бёдра сочленены с крупом под углом в 90°; голени мускулистые. Суставы конечностей суховатые. Короткие плюсны переходят в округлые лапы с умеренно выпуклыми подушечками. Пространство между пальцами заполнено шерстью, которая может выстригаться перед участием в выставочных шоу.
+        </p>
+        <h3>
+         Манера движения
+        </h3>
+        <p>
+         Английским сеттерам присущи грациозные и лёгкие движения с сильным толчком задних лап. Собака сохраняет горделивую осанку, при этом высоко неся голову. Передние конечности далеко выносятся вперёд при движении рысью. Увеличивая скорость и темп, животное ставит лапы ближе к средней линии.
+        </p>
+        <h3>
+         Шёрстный покров
+        </h3>
+        <p>
+         Для породы характерно «обрастание» роскошной шубкой к двум-трём годам. Длина волосков варьируется в зависимости от их расположения. Голова и передние поверхности конечностей покрыты короткой шерстью, которая незначительно удлинена по всему корпусу собаки. В области ушей, грудной клетки, конечностей и хвоста более густые и длинные волоски образуют очёсы, «штанишки» и «перо» на хвосте.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Английский сеттер лимонного окраса" data-fancybox="gallery" href="/upload/iblock/d6f/d6f24e1531647420d9739f8b9da25db0.jpg" title="Английский сеттер лимонного окраса">
+          <div class="lazy-load" data-alt="Английский сеттер лимонного окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/d6f/412_2150_1/d6f24e1531647420d9739f8b9da25db0.jpg">
+           <noscript data-alt="Английский сеттер лимонного окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/d6f/412_2150_1/d6f24e1531647420d9739f8b9da25db0.jpg">
+            <img alt="Английский сеттер лимонного окраса" class="article_pic" height="274" src="/upload/resize_cache/iblock/d6f/412_2150_1/d6f24e1531647420d9739f8b9da25db0.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английский сеттер лимонного окраса
+         </div>
+        </div>
+        <p>
+         Для определения крапчатого окраса сеттера традиционно используют слово «бельтон», присоединяя к нему приставку и тем самым конкретизируя цвет:
+        </p>
+        <ul>
+         <li>
+          коричневый – ливер;
+         </li>
+         <li>
+          оранжевый – оранж;
+         </li>
+         <li>
+          лимонный – лимон;
+         </li>
+         <li>
+          чёрный – блю.
+         </li>
+        </ul>
+        <p>
+         Встречается и трёхцветный вариант – коричнево- или чёрно-крапчатый с подпалом. Для породы обязательно равномерное расположение крапа без крупных пятен.
+        </p>
+        <h3>
+         Возможные пороки
+        </h3>
+        <p>
+         Дефектом считают даже малейшее отклонение от стандарта. Среди основных выделяют:
+        </p>
+        <ul>
+         <li>
+          чрезмерно волнистую и образующую колечки шерсть;
+         </li>
+         <li>
+          высокую посадку ушей, их нехарактерный размер;
+         </li>
+         <li>
+          округлость черепа в области между ушами;
+         </li>
+         <li>
+          чрезмерно короткий или длинный хвост;
+         </li>
+         <li>
+          косо и/или широко поставленные глаза;
+         </li>
+         <li>
+          острую и короткую морду с брылями;
+         </li>
+         <li>
+          плоскую или бочкообразную грудь;
+         </li>
+         <li>
+          светлую пигментацию радужки;
+         </li>
+         <li>
+          прямоватые плечи и/или пясти;
+         </li>
+         <li>
+          серповидную форму хвоста;
+         </li>
+         <li>
+          узкую и горбатую спину;
+         </li>
+         <li>
+          слаборазвитый круп.
+         </li>
+        </ul>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Английский сеттер на выставке собак" data-fancybox="gallery" href="/upload/iblock/575/575119e618614e6a7ae06eb2b71d4e50.jpg" title="Английский сеттер на выставке собак">
+          <div class="lazy-load" data-alt="Английский сеттер на выставке собак" data-class="article_pic" data-original="/upload/resize_cache/iblock/575/412_2150_1/575119e618614e6a7ae06eb2b71d4e50.jpg">
+           <noscript data-alt="Английский сеттер на выставке собак" data-class="article_pic" data-original="/upload/resize_cache/iblock/575/412_2150_1/575119e618614e6a7ae06eb2b71d4e50.jpg">
+            <img alt="Английский сеттер на выставке собак" class="article_pic" height="618" src="/upload/resize_cache/iblock/575/412_2150_1/575119e618614e6a7ae06eb2b71d4e50.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английский сеттер на выставке собак
+         </div>
+        </div>
+        <p>
+         К дисквалифицирующим порокам английского сеттера относят:
+        </p>
+        <ul>
+         <li>
+          сплошной рыжий, коричневый или чёрный окрас без крапа;
+         </li>
+         <li>
+          провислую и чрезмерно горбатую спину;
+         </li>
+         <li>
+          агрессивное или пугливое поведение;
+         </li>
+         <li>
+          толстую, круглую и короткую шею;
+         </li>
+         <li>
+          иноходь или тяжёлые движения;
+         </li>
+         <li>
+          клинообразную форму головы;
+         </li>
+         <li>
+          наличие прибылых пальцев;
+         </li>
+         <li>
+          жёлтую пигментацию глаз;
+         </li>
+         <li>
+          узкий постав конечностей;
+         </li>
+         <li>
+          слабо выраженный стоп;
+         </li>
+         <li>
+          крючкообразный хвост;
+         </li>
+         <li>
+          крипторхизм;
+         </li>
+         <li>
+          косолапость.
+         </li>
+        </ul>
+        <h2>
+         Фото английского сеттера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a3e/a3e41d322d2300e5170c5f48531d13ee.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a3e/380_264_2/a3e41d322d2300e5170c5f48531d13ee.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a3e/380_264_2/a3e41d322d2300e5170c5f48531d13ee.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/a3e/380_264_2/a3e41d322d2300e5170c5f48531d13ee.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/290/290ce5220388561cd14c5255e1f05838.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/290/380_264_2/290ce5220388561cd14c5255e1f05838.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/290/380_264_2/290ce5220388561cd14c5255e1f05838.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/290/380_264_2/290ce5220388561cd14c5255e1f05838.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/118/118bbd58d5926e839809fb904ee89df5.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/118/380_264_2/118bbd58d5926e839809fb904ee89df5.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/118/380_264_2/118bbd58d5926e839809fb904ee89df5.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/118/380_264_2/118bbd58d5926e839809fb904ee89df5.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/aab/aab54d7abcfa0ca79866b93a92219ab6.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/aab/380_264_2/aab54d7abcfa0ca79866b93a92219ab6.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/aab/380_264_2/aab54d7abcfa0ca79866b93a92219ab6.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/aab/380_264_2/aab54d7abcfa0ca79866b93a92219ab6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/99b/99b51d9fc40b77e69e9d12a0124b76eb.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/99b/380_264_2/99b51d9fc40b77e69e9d12a0124b76eb.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/99b/380_264_2/99b51d9fc40b77e69e9d12a0124b76eb.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/99b/380_264_2/99b51d9fc40b77e69e9d12a0124b76eb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c4c/c4c4c3560c5d134c406c47280837462d.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c4c/380_264_2/c4c4c3560c5d134c406c47280837462d.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c4c/380_264_2/c4c4c3560c5d134c406c47280837462d.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/c4c/380_264_2/c4c4c3560c5d134c406c47280837462d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/747/747f0dce70ae8becf7f9c79d3cefe839.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/747/380_264_2/747f0dce70ae8becf7f9c79d3cefe839.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/747/380_264_2/747f0dce70ae8becf7f9c79d3cefe839.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/747/380_264_2/747f0dce70ae8becf7f9c79d3cefe839.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a12/a127a8b0e1ae2ad787701d54b6292249.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a12/380_264_2/a127a8b0e1ae2ad787701d54b6292249.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a12/380_264_2/a127a8b0e1ae2ad787701d54b6292249.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/a12/380_264_2/a127a8b0e1ae2ad787701d54b6292249.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/392/392dca21f1681bc544dd7bc0a4fc1216.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/392/380_264_2/392dca21f1681bc544dd7bc0a4fc1216.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/392/380_264_2/392dca21f1681bc544dd7bc0a4fc1216.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/392/380_264_2/392dca21f1681bc544dd7bc0a4fc1216.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер английского сеттера
+        </h2>
+        <p>
+         Владельцы английских сеттеров отмечают: это одна из самых дружелюбных и ласковых охотничьих пород. Животные ориентированы на человека – иногда даже слишком. Вместо продолжительного сна на любимой подстилке сеттер предпочтёт крутиться под ногами, давая о себе знать периодическим лаем и принимая посильное участие в деятельности хозяина. Неважно, планируете ли вы поход в магазин или просмотр телевизионных передач, – собака всегда составит приятную компанию.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Английский сеттер на пробежке с хозяином" data-fancybox="gallery" href="/upload/iblock/cd2/cd2b66eee748b7ab9907d82e4255db70.jpg" title="Английский сеттер на пробежке с хозяином">
+          <div class="lazy-load" data-alt="Английский сеттер на пробежке с хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd2/412_2150_1/cd2b66eee748b7ab9907d82e4255db70.jpg">
+           <noscript data-alt="Английский сеттер на пробежке с хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd2/412_2150_1/cd2b66eee748b7ab9907d82e4255db70.jpg">
+            <img alt="Английский сеттер на пробежке с хозяином" class="article_pic" height="311" src="/upload/resize_cache/iblock/cd2/412_2150_1/cd2b66eee748b7ab9907d82e4255db70.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английский сеттер на пробежке с хозяином
+         </div>
+        </div>
+        <p>
+         Гиперобщительность «англичан» – главная причина, по которой животные страдают от одиночества и постоянно испытывают страх разлуки. Для сохранения здоровой и уравновешенной психики питомца не рекомендуется оставлять его без присмотра на целый день. Сеттеры обожают проводить время в компании хозяина и с не меньшим счастьем относятся к гостям в доме. Животное может без труда прыгнуть на грудь и «зацеловать», чему не все будут рады.
+        </p>
+        <p>
+         Из этого следует, что порода не подходит для охраны дома. В каждом незнакомце собака видит потенциального друга и не стремится защищать вверенную территорию. Впрочем, при правильном воспитании можно сделать английского сеттера умеренно дружелюбным, но не ждите от любимца ревностной охраны имущества. Для этого лучше выбрать другую породу –
+         <a class="ph" href="/dog/rizenshnautser/">
+          ризеншнауцера
+         </a>
+         ,
+         <a class="ph" href="/dog/erdelterer/">
+          эрдельтерьера
+         </a>
+         или же более крупного
+         <a class="ph" href="/dog/kane-korso/">
+          кане-корсо
+         </a>
+         .
+        </p>
+        <p>
+         Неконфликтность и добродушие сеттера делают его отличной собакой для семей с детьми. В играх с маленькими друзьями питомец проявит мягкость и терпение, не обнажит клыки в ответ на неосторожный тычок и с радостью ввяжется в детские авантюры. Такого рода компания – лучшая для активной и общительной собаки. Впрочем, не стоит оставлять её наедине с маленьким ребёнком: любимец может не рассчитать силы и случайно толкнуть ваше чадо во время игры.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Сеттер знакомится с котенком" data-fancybox="gallery" href="/upload/iblock/4ca/4ca98eee6a9400d17eff0ba97f1f33be.jpg" title="Сеттер знакомится с котенком">
+          <div class="lazy-load" data-alt="Сеттер знакомится с котенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/4ca/412_2150_1/4ca98eee6a9400d17eff0ba97f1f33be.jpg">
+           <noscript data-alt="Сеттер знакомится с котенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/4ca/412_2150_1/4ca98eee6a9400d17eff0ba97f1f33be.jpg">
+            <img alt="Сеттер знакомится с котенком" class="article_pic" height="275" src="/upload/resize_cache/iblock/4ca/412_2150_1/4ca98eee6a9400d17eff0ba97f1f33be.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Сеттер знакомится с котенком
+         </div>
+        </div>
+        <p>
+         Английские сеттеры прекрасно уживаются с другими домашними животными. Эта порода не склонна к проявлению ревности, доминантности и желания отстоять свои права на территорию. Напротив, любимец будет рад четвероногому собрату, который поможет скрасить одиночество в ваше отсутствие. «Англичанин» нуждается в таком же энергичном и темпераментном друге, который не придёт в ужас от неукротимой энергии и поддержит любое приключение – будь то охота за мухой или погоня за солнечным «зайчиком».
+        </p>
+        <p>
+         При грамотной социализации сеттер проживает на одной территории и с питомцами небольших размеров. Печальными последствиями может обернуться игра собаки с декоративными грызунами и птицами, но лишь по случайности. В остальном инстинкты «англичанина» не предусматривают погоню за добычей, ведь задача сеттера – указать местоположение дичи при помощи стойки, а не поймать её.
+        </p>
+        <p>
+         Эта порода делится на две линии – рабочую и выставочную, но в активных прогулках нуждаются и те, и другие. При этом собаки шоу-категории могут довольствоваться длительными променадами и возможностью побегать на свежем воздухе. Рабочих же собак желательно содержать в частном доме с просторным огороженным двором: эти питомцы могут загонять до полусмерти даже самых тренированных атлетов.
+        </p>
+        <p>
+         Логично предположить, что рабочая линия английских сеттеров не подходит для содержания в квартире. Недостаток физической активности сделает собаку неуправляемой. В попытке выплеснуть накопившуюся энергию питомец может устроить настоящий погром в ваше отсутствие, поэтому готовьтесь к неприятному сюрпризу.
+        </p>
+        <p>
+         Что касается выставочных экземпляров, им вполне комфортно проживать в апартаментах. Более того: после прогулки сеттер волшебным образом трансформируется в лежебоку и проведёт на диване рядом с хозяином весь оставшийся день.
+        </p>
+        <p>
+         Как и подобает охотничьей собаке, «англичанин» обожает охоту настолько сильно, что готов пожертвовать пищей и сном ради возможности следовать своим инстинктам и находить добычу в высокой траве. Чутьё и великолепные навыки выслеживания делают сеттера универсальной подружейной собакой, талант которой признаётся охотниками из разных уголков мира.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Бегущий английский сеттер" data-fancybox="gallery" href="/upload/iblock/3c3/3c3a0b6e1a33c9db5ce8d6696ee91987.jpg" title="Бегущий английский сеттер">
+          <div class="lazy-load" data-alt="Бегущий английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/3c3/1024_2150_1/3c3a0b6e1a33c9db5ce8d6696ee91987.jpg">
+           <noscript data-alt="Бегущий английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/3c3/1024_2150_1/3c3a0b6e1a33c9db5ce8d6696ee91987.jpg">
+            <img alt="Бегущий английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/3c3/1024_2150_1/3c3a0b6e1a33c9db5ce8d6696ee91987.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бегущий английский сеттер
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок английского сеттера на поводке" data-fancybox="gallery" href="/upload/iblock/e12/e125f878d9ac5dbcba30d6ab5016b8bc.jpg" title="Щенок английского сеттера на поводке">
+          <div class="lazy-load" data-alt="Щенок английского сеттера на поводке" data-class="article_pic" data-original="/upload/resize_cache/iblock/e12/412_2150_1/e125f878d9ac5dbcba30d6ab5016b8bc.jpg">
+           <noscript data-alt="Щенок английского сеттера на поводке" data-class="article_pic" data-original="/upload/resize_cache/iblock/e12/412_2150_1/e125f878d9ac5dbcba30d6ab5016b8bc.jpg">
+            <img alt="Щенок английского сеттера на поводке" class="article_pic" height="617" src="/upload/resize_cache/iblock/e12/412_2150_1/e125f878d9ac5dbcba30d6ab5016b8bc.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок английского сеттера на поводке
+         </div>
+        </div>
+        <p>
+         Представителей породы характеризуют как весьма дрессируемых и послушных животных, но без трудностей всё же не обойтись. Ввиду своего бурного темперамента «англичанин» может казаться непослушным, поэтому хозяину придётся приложить усилия к воспитанию и дрессировке, не забыв предварительно запастись железным терпением.
+        </p>
+        <p>
+         Выбор сеттера в качестве домашнего питомца подразумевает строгую иерархию в семье. Щенок должен понимать, что его кормлением и воспитанием занимается только один человек – его хозяин, которого нужно слушаться. Предъявляйте последовательные и твёрдые требования своему любимцу: в противном случае животное не поймёт, какой реакции вы от него ждёте. При этом не стоит вдаваться в крайности: повышать голос на собаку или, напротив, умиляться каждой его шалости.
+        </p>
+        <p>
+         Установите правила, за рамки которых не должен выходить щенок. Необходимо придерживаться единодушия в воспитании сеттера. Если один член семьи будет ругать малыша за испорченные тапочки, а другой – хвалить и тайком угощать лакомством, животное никогда не вырастет послушным.
+        </p>
+        <p>
+         Английские сеттеры – обладатели развитого интеллекта, что позволяет им выучить большинство команд, причём в кратчайшие сроки. Главное – не ждать от питомца беспрекословного подчинения: эта порода не настолько послушная, как
+         <a class="ph" href="/dog/avstraliyskaya-ovcharka-aussi/">
+          аусси
+         </a>
+         или
+         <a class="ph" href="/dog/border-kolli/">
+          бордер-колли
+         </a>
+         . Если ваша команда пришлась не по душе сеттеру, будет сложно заставить питомца сделать то, что вы хотите. При этом некоторые представители породы боятся огорчить хозяина и предпочтут бездействовать, а не плохо выполнить команду.
+        </p>
+        <p>
+         Молодые сеттеры склонны увлекаться игрой и не всегда прислушиваются к вашим словам. Придётся позаботиться о том, чтобы установить с любимцем контакт. Следующий шаг – ненавязчиво и мягко вернуть внимание «англичанина» к процессу дрессировки. Представьте, что перед вами маленький ребёнок, на которого нельзя повышать голос, и действуйте. В этой породе заложена незначительная доля упрямства, поэтому стоит научиться одерживать над ней верх.
+        </p>
+        <p>
+         Английские сеттеры любят ловить фрисби, бегать и догонять брошенный хозяином мяч. Если хотите занять своего питомца чем-то более увлекательным, обратите внимание на бег с препятствиями или обидиенс.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/537/537690a04f1181a0fec4588fae6d8627.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/537/512_342_2/537690a04f1181a0fec4588fae6d8627.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/537/512_342_2/537690a04f1181a0fec4588fae6d8627.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/537/512_342_2/537690a04f1181a0fec4588fae6d8627.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8b6/8b6667fae0ac0b09ddd5c4e5a23ef0a3.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8b6/512_342_2/8b6667fae0ac0b09ddd5c4e5a23ef0a3.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8b6/512_342_2/8b6667fae0ac0b09ddd5c4e5a23ef0a3.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/8b6/512_342_2/8b6667fae0ac0b09ddd5c4e5a23ef0a3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Английский сеттер играет с мячом" data-fancybox="gallery" href="/upload/iblock/c83/c832ecd68ca1b0db98e250352bf292ad.jpg" title="Английский сеттер играет с мячом">
+          <div class="lazy-load" data-alt="Английский сеттер играет с мячом" data-class="article_pic" data-original="/upload/resize_cache/iblock/c83/412_2150_1/c832ecd68ca1b0db98e250352bf292ad.jpg">
+           <noscript data-alt="Английский сеттер играет с мячом" data-class="article_pic" data-original="/upload/resize_cache/iblock/c83/412_2150_1/c832ecd68ca1b0db98e250352bf292ad.jpg">
+            <img alt="Английский сеттер играет с мячом" class="article_pic" height="624" src="/upload/resize_cache/iblock/c83/412_2150_1/c832ecd68ca1b0db98e250352bf292ad.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английский сеттер играет с мячом
+         </div>
+        </div>
+        <p>
+         Английский сеттер нуждается в ежедневном и тщательном уходе. Виной тому – длинная и густая шерсть, главный объект гордости породы. Эти собаки обильно линяют, что особенно заметно у владельцев питомцев белого окраса. Перед приобретением «англичанина» удостоверьтесь в том, что члены вашей семьи не страдают от аллергии на шерсть. Будьте готовы и к тому, что регулярная влажная уборка станет неотъемлемой частью жизни вместе с появлением сеттера.
+        </p>
+        <p>
+         Шерсть животного нуждается в ежедневном тщательном вычёсывании. Используйте гребень или щётку с натуральной щетиной: помимо удаления отмерших волосков и пыли, это приспособление обеспечит вашему любимцу приятный массаж. При расчёсывании сеттера уделяйте особое внимание длинной шерсти на лапах и хвосте собаки: именно здесь чаще всего образуются колтуны.
+        </p>
+        <p>
+         Тримминг шёрстного покрова не будет лишним. При этом рекомендуется обратиться к специалисту, а не устраивать салон красоты на дому. Представители выставочной линии сеттеров нуждаются в этой процедуре каждые пять-шесть недель, рабочей же – намного чаще.
+        </p>
+        <p>
+         Шёрстный покров английского сеттера покрыт тонкой жировой оболочкой, которая защищает волоски от грязи и служит водоотталкивающим барьером. Не стоит регулярно купать питомца: даже мягкие шампуни для собак способны «вымыть» естественную защиту. Достаточно устраивать сеттеру банные процедуры раз в десять дней или же по мере необходимости. Отправляясь на прогулку осенью или зимой, рекомендуется одеть животное в непромокаемый комбинезон.
+        </p>
+        <p>
+         Длинные и висячие уши собаки накапливают жир и грязь, что может стать причиной отита, со временем перерастающего в хронический. Минимум раз в неделю очищайте ушные раковины «англичанина» с помощью ватного диска. В качестве вспомогательного средства можно использовать борную кислоту или же другое вещество с подсушивающим эффектом.
+        </p>
+        <p>
+         Промывание глаз сеттера – не менее обязательная процедура, при этом лучше всего использовать заваренный чай. В крайнем случае подойдёт и проточная вода. Если глаза слезятся, внимательно осмотрите их и тщательно промойте в случае обнаружения инородных частиц.
+        </p>
+        <p>
+         Невзирая на чрезмерную активность, английские сеттеры редко стачивают когти в достаточной степени. Причина кроется в том, что животные предпочитают бегать по земле, а не по асфальту. Отрастая, когти могут создавать дискомфортные ощущения и вынуждать вашего питомца хромать. Используйте когтерез для крупных пород собак и укорачивайте когти раз в месяц. Пилочка поможет сгладить острые края и зазубрины.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Красавица, хоть и испачкалась" data-fancybox="gallery" href="/upload/iblock/120/120e260c77dd3332ff96e8f74e032165.jpg" title="Красавица, хоть и испачкалась">
+          <div class="lazy-load" data-alt="Красавица, хоть и испачкалась" data-class="article_pic" data-original="/upload/resize_cache/iblock/120/412_2150_1/120e260c77dd3332ff96e8f74e032165.jpg">
+           <noscript data-alt="Красавица, хоть и испачкалась" data-class="article_pic" data-original="/upload/resize_cache/iblock/120/412_2150_1/120e260c77dd3332ff96e8f74e032165.jpg">
+            <img alt="Красавица, хоть и испачкалась" class="article_pic" height="536" src="/upload/resize_cache/iblock/120/412_2150_1/120e260c77dd3332ff96e8f74e032165.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Красавица, хоть и испачкалась
+         </div>
+        </div>
+        <p>
+         Ротовая полость «англичанина» не менее требовательна в уходе. Зубы сеттера чистят с помощью специальной насадки на палец, используя пасту для собак. Ни в коем случае не делитесь с любимцем собственным средством гигиены! Вещества, которые содержатся в «человеческой» зубной пасте, могут вызвать аллергическую реакцию и даже отравление.
+        </p>
+        <p>
+         Английские сеттеры восприимчивы к сквознякам. Позаботьтесь об оборудовании уютного уголка, защищённого от любых дуновений ветра. Прекрасно подойдёт мягкая лежанка или детский ортопедический матрас небольших размеров.
+        </p>
+        <p>
+         Говоря о питании собаки, стоит отметить: сеттеры не склонны к ожирению, поскольку инстинктивно ограничивают себя в пище. Определив точный размер порции, вы никогда не будете испытывать трудностей с кормлением любимца. Если животное опустошило миску и продолжает вылизывать её, значит, оно всё ещё испытывает чувство голода. Не бойтесь выдать дополнительную порцию: сеттер никогда не будет поглощать пищу от жадности, словно он и впрямь английский аристократ. Лучший вариант для кормления питомца – грамотное сочетание натуральной пищи и корма премиум-марки.
+        </p>
+        <p>
+         Английский сеттер нуждается в большом количестве белка, поэтому обязательно включите в его рацион мясо и морскую рыбу без костей. Оба продукта необходимо подавать в сыром виде, предварительно ошпарив кипятком и нарезав на кусочки. Сочетайте мясо с рисовой и гречневой кашами; не забывайте угощать любимца овощами и фруктами. В качестве завтрака рекомендуется давать сеттеру кисломолочные продукты.
+        </p>
+        <p>
+         Выбирая элитный корм, обращайте внимание на варианты с полным отсутствием растительных белков, консервантов и красителей. Они хороши и тем, что содержат витаминно-минеральный комплекс, необходимый животному для поддержания крепкого здоровья. Если вы предпочитаете кормить собаку в основном сухим кормом, не забудьте обеспечить круглосуточный доступ к чистой воде. Лучше всего подойдёт бутилированная или предварительно отстоянная в течение 6-8 часов.
+        </p>
+        <p>
+         Исключите из рациона английского сеттера следующие продукты:
+        </p>
+        <ul>
+         <li>
+          молоко (актуально для собак в возрасте от 4 месяцев);
+         </li>
+         <li>
+          жирное мясо (в частности, свинину);
+         </li>
+         <li>
+          трубчатые кости любых размеров;
+         </li>
+         <li>
+          варёную и сырую речную рыбу;
+         </li>
+         <li>
+          шоколад и прочие сладости;
+         </li>
+         <li>
+          сырое дрожжевое тесто;
+         </li>
+         <li>
+          грибы в любом виде;
+         </li>
+         <li>
+          ягоды с косточками;
+         </li>
+         <li>
+          бобовые культуры;
+         </li>
+         <li>
+          сырые яйца.
+         </li>
+        </ul>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="О, да... Продолжай" data-fancybox="gallery" href="/upload/iblock/ebd/ebdf2ab38da5cf6099bc6066219c5edc.jpg" title="О, да... Продолжай">
+           <div class="lazy-load" data-alt="О, да... Продолжай" data-class="article_pic" data-original="/upload/resize_cache/iblock/ebd/512_342_2/ebdf2ab38da5cf6099bc6066219c5edc.jpg">
+            <noscript data-alt="О, да... Продолжай" data-class="article_pic" data-original="/upload/resize_cache/iblock/ebd/512_342_2/ebdf2ab38da5cf6099bc6066219c5edc.jpg">
+             <img alt="О, да... Продолжай" class="article_pic" src="/upload/resize_cache/iblock/ebd/512_342_2/ebdf2ab38da5cf6099bc6066219c5edc.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           О, да... Продолжай
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Мой хозяин самый лучший" data-fancybox="gallery" href="/upload/iblock/c0b/c0b3f35aa6d6a29c209230249b62f564.jpg" title="Мой хозяин самый лучший">
+           <div class="lazy-load" data-alt="Мой хозяин самый лучший" data-class="article_pic" data-original="/upload/resize_cache/iblock/c0b/512_342_2/c0b3f35aa6d6a29c209230249b62f564.jpg">
+            <noscript data-alt="Мой хозяин самый лучший" data-class="article_pic" data-original="/upload/resize_cache/iblock/c0b/512_342_2/c0b3f35aa6d6a29c209230249b62f564.jpg">
+             <img alt="Мой хозяин самый лучший" class="article_pic" src="/upload/resize_cache/iblock/c0b/512_342_2/c0b3f35aa6d6a29c209230249b62f564.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Мой хозяин самый лучший
+          </div>
+         </div>
+        </div>
+        <h2 id="gl6">
+         Здоровье и болезни английского сеттера
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Английский сеттер плывет в пруду" data-fancybox="gallery" href="/upload/iblock/d18/d18281e363b8f4d037b5f4bed2fa39ac.jpg" title="Английский сеттер плывет в пруду">
+          <div class="lazy-load" data-alt="Английский сеттер плывет в пруду" data-class="article_pic" data-original="/upload/resize_cache/iblock/d18/412_2150_1/d18281e363b8f4d037b5f4bed2fa39ac.jpg">
+           <noscript data-alt="Английский сеттер плывет в пруду" data-class="article_pic" data-original="/upload/resize_cache/iblock/d18/412_2150_1/d18281e363b8f4d037b5f4bed2fa39ac.jpg">
+            <img alt="Английский сеттер плывет в пруду" class="article_pic" height="300" src="/upload/resize_cache/iblock/d18/412_2150_1/d18281e363b8f4d037b5f4bed2fa39ac.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английский сеттер плывет в пруду
+         </div>
+        </div>
+        <p>
+         Отменное здоровье представителей породы обусловлено тем, что заводчики всегда отбирали для разведения самых крепких собак без наследственных пороков. Несмотря на это, английские сеттеры всё же подвержены некоторым заболеваниям:
+        </p>
+        <ul>
+         <li>
+          врождённому расширению пищевода;
+         </li>
+         <li>
+          гнойному воспалению матки;
+         </li>
+         <li>
+          тазобедренной дисплазии;
+         </li>
+         <li>
+          опухоли костной ткани;
+         </li>
+         <li>
+          параличу конечностей;
+         </li>
+         <li>
+          врождённой глухоте;
+         </li>
+         <li>
+          пищевой аллергии;
+         </li>
+         <li>
+          атрофии сетчатки;
+         </li>
+         <li>
+          завороту кишок;
+         </li>
+         <li>
+          вывороту века;
+         </li>
+         <li>
+          дерматиту;
+         </li>
+         <li>
+          эпилепсии;
+         </li>
+         <li>
+          отиту.
+         </li>
+        </ul>
+        <p>
+         В остальном «англичане» считаются собаками с хорошим иммунитетом, который способен сопротивляться большинству распространённых заболеваний.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок английского сеттера с еще несформировавшимися пятнами" data-fancybox="gallery" href="/upload/iblock/5d0/5d0da22f3f930c183b2e0058dfca5607.jpg" title="Щенок английского сеттера с еще несформировавшимися пятнами">
+          <div class="lazy-load" data-alt="Щенок английского сеттера с еще несформировавшимися пятнами" data-class="article_pic" data-original="/upload/resize_cache/iblock/5d0/412_2150_1/5d0da22f3f930c183b2e0058dfca5607.jpg">
+           <noscript data-alt="Щенок английского сеттера с еще несформировавшимися пятнами" data-class="article_pic" data-original="/upload/resize_cache/iblock/5d0/412_2150_1/5d0da22f3f930c183b2e0058dfca5607.jpg">
+            <img alt="Щенок английского сеттера с еще несформировавшимися пятнами" class="article_pic" height="388" src="/upload/resize_cache/iblock/5d0/412_2150_1/5d0da22f3f930c183b2e0058dfca5607.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок английского сеттера с еще несформировавшимися пятнами
+         </div>
+        </div>
+        <p>
+         Вы обзаведётесь чистокровным английским сеттером лишь в специализированных питомниках или у заводчика, который занимается разведением породы. В попытках сэкономить многие часто приобретают щенка с рук или на птичьем рынке, и это неправильно. Скупой платит дважды, и в случае с сеттером вы можете получить питомца с отклонениями от стандарта или букетом наследственных заболеваний.
+        </p>
+        <p class="legenda">
+         Щенки английского сеттера рождаются без крапа, который начинает проявляться и усиливаться с возрастом.
+        </p>
+        <p>
+         Не стоит торопиться с выбором щенка и в питомнике. Попросите заводчика показать вам четвероногую пару, от которой произошёл помёт, понаблюдайте за всеми щенками. Постарайтесь определить, есть ли среди их числа бракованные малыши: глухие, слепые, с явными дефектами породы. Если такие щенки присутствуют, не потрудитесь уточнить, может ли заводчик показать фотографии выросших сеттеров из прошлого помёта. Так можно определить, насколько «стандартный» и здоровый питомец вас ждёт.
+        </p>
+        <p>
+         Как выбрать одного малыша среди всей очаровательной оравы? Сделайте выборку (желаемые пол, окрас и степень соответствия стандарту породы) и понаблюдайте за щенками. Оценивайте поведение сеттера в целом, его манеру игры и даже походку. Здоровый малыш должен быть активным и в меру любопытным.
+        </p>
+        <h2>
+         Фото щенков английского сеттера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c8a/c8adabbdc0b1237efe471b5d6e42d37f.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c8a/380_264_2/c8adabbdc0b1237efe471b5d6e42d37f.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c8a/380_264_2/c8adabbdc0b1237efe471b5d6e42d37f.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/c8a/380_264_2/c8adabbdc0b1237efe471b5d6e42d37f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/939/939f77319f1fb6b0ce3c611305c3cb2c.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/939/380_264_2/939f77319f1fb6b0ce3c611305c3cb2c.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/939/380_264_2/939f77319f1fb6b0ce3c611305c3cb2c.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/939/380_264_2/939f77319f1fb6b0ce3c611305c3cb2c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1d5/1d510eaa3b52161dd9ccda863a6eb481.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1d5/380_264_2/1d510eaa3b52161dd9ccda863a6eb481.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1d5/380_264_2/1d510eaa3b52161dd9ccda863a6eb481.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/1d5/380_264_2/1d510eaa3b52161dd9ccda863a6eb481.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/44a/44a045078ea5863fa9791d04579facb3.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/44a/380_264_2/44a045078ea5863fa9791d04579facb3.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/44a/380_264_2/44a045078ea5863fa9791d04579facb3.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/44a/380_264_2/44a045078ea5863fa9791d04579facb3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b09/b091ba567d0d48d4ba21db059027dff1.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b09/380_264_2/b091ba567d0d48d4ba21db059027dff1.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b09/380_264_2/b091ba567d0d48d4ba21db059027dff1.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/b09/380_264_2/b091ba567d0d48d4ba21db059027dff1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/0cc/0ccaea7cdeebe9217ba52ad26b870a4e.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/0cc/380_264_2/0ccaea7cdeebe9217ba52ad26b870a4e.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/0cc/380_264_2/0ccaea7cdeebe9217ba52ad26b870a4e.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/0cc/380_264_2/0ccaea7cdeebe9217ba52ad26b870a4e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/311/311f149b973eb4b910953b2c248e7482.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/311/380_264_2/311f149b973eb4b910953b2c248e7482.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/311/380_264_2/311f149b973eb4b910953b2c248e7482.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/311/380_264_2/311f149b973eb4b910953b2c248e7482.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ef2/ef2f5c6da89f2a90e614f871a78f64bd.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ef2/380_264_2/ef2f5c6da89f2a90e614f871a78f64bd.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ef2/380_264_2/ef2f5c6da89f2a90e614f871a78f64bd.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/ef2/380_264_2/ef2f5c6da89f2a90e614f871a78f64bd.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2b7/2b741733b88f101c773f0cad94a6ce62.jpg" title="">
+           <div class="lazy-load" data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/2b7/380_264_2/2b741733b88f101c773f0cad94a6ce62.jpg">
+            <noscript data-alt="Английский сеттер" data-class="article_pic" data-original="/upload/resize_cache/iblock/2b7/380_264_2/2b741733b88f101c773f0cad94a6ce62.jpg">
+             <img alt="Английский сеттер" class="article_pic" src="/upload/resize_cache/iblock/2b7/380_264_2/2b741733b88f101c773f0cad94a6ce62.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Сколько стоит английский сеттер
+        </h2>
+        <p>
+         Цена представителей охотничьей породы весьма условна, поскольку зависит от множества факторов: титулованности родителей (если это выставочный экземпляр), популярности питомника и его географического положения, возраста и пола собаки, соответствия животного стандарту. В среднем щенки английского сеттера обходятся будущим владельцам в 25 000 - 30 000 рублей. За элитных собак шоу-класса – потенциальных призёров выставок – заводчики могут требовать 70 000 - 80 000 рублей.
+        </p>
+        <p class="legenda">
+         Обратите внимание: приобретая английского сеттера в питомнике, вы получите ветеринарный паспорт щенка с пометками о вакцинации и обработке от глистов. Заводчик предоставляет и подтверждение родословной малыша в том случае, если это важно.
+        </p>
+        <p>
+         Неважно, к какой линии относится собака – к рабочей или выставочной. В любом случае вы обзаведётесь игривым и преданным другом, который скрасит вашу жизнь!
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения английского сеттера на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/angliyskiy-setter/forum/">
+        Перейти на
+        форум английского сеттера
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Английский сеттер" src="/upload/iblock/bfb/bfb0ef31133662f4b0def167b5b75477.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/angliyskiy-setter/">
+          Английский сеттер
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/angliyskiy-setter/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-setter/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-setter/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-setter/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-setter/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-setter/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/avstraliyskaya-ovcharka-aussi/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-original="/upload/resize_cache/iblock/2ca/100_100_1/2ca744cbcd97469ed86860852ace4f40.jpg">
+          <noscript data-alt="Австралийская овчарка (аусси)" data-original="/upload/resize_cache/iblock/2ca/100_100_1/2ca744cbcd97469ed86860852ace4f40.jpg">
+           <img alt="Австралийская овчарка (аусси)" src="/upload/resize_cache/iblock/2ca/100_100_1/2ca744cbcd97469ed86860852ace4f40.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Австралийская овчарка (аусси)
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/shipperke/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Шипперке" data-original="/upload/resize_cache/iblock/c5c/100_100_1/c5c1594a601b85b342a002625c159559.jpg">
+          <noscript data-alt="Шипперке" data-original="/upload/resize_cache/iblock/c5c/100_100_1/c5c1594a601b85b342a002625c159559.jpg">
+           <img alt="Шипперке" src="/upload/resize_cache/iblock/c5c/100_100_1/c5c1594a601b85b342a002625c159559.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Шипперке
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/gavanskiy-bishon/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Гаванский бишон" data-original="/upload/resize_cache/iblock/78b/100_100_1/78b814ae542931089a3f2ad50e4c30f9.jpg">
+          <noscript data-alt="Гаванский бишон" data-original="/upload/resize_cache/iblock/78b/100_100_1/78b814ae542931089a3f2ad50e4c30f9.jpg">
+           <img alt="Гаванский бишон" src="/upload/resize_cache/iblock/78b/100_100_1/78b814ae542931089a3f2ad50e4c30f9.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Гаванский бишон
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/mops/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Мопс" data-original="/upload/resize_cache/iblock/130/100_100_1/1309222f033fb6928ea065578276ab44.jpg">
+          <noscript data-alt="Мопс" data-original="/upload/resize_cache/iblock/130/100_100_1/1309222f033fb6928ea065578276ab44.jpg">
+           <img alt="Мопс" src="/upload/resize_cache/iblock/130/100_100_1/1309222f033fb6928ea065578276ab44.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Мопс
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-setter%252F%253Fcheck_key%253De2a47af0e02a43ba01d9faa03d152dbe%2526ANIMAL_CODE%253Dangliyskiy-setter%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fangliyskiy-setter%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmFuZ2xpeXNraXktc2V0dGVyJTJGJTNGY2hlY2tfa2V5JTNEZTJhNDdhZjBlMDJhNDNiYTAxZDlmYWEwM2QxNTJkYmUlMjZBTklNQUxfQ09ERSUzRGFuZ2xpeXNraXktc2V0dGVyJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmFuZ2xpeXNraXktc2V0dGVyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-setter%252F%253Fcheck_key%253De2a47af0e02a43ba01d9faa03d152dbe%2526ANIMAL_CODE%253Dangliyskiy-setter%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fangliyskiy-setter%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-setter%252F%253Fcheck_key%253De2a47af0e02a43ba01d9faa03d152dbe%2526ANIMAL_CODE%253Dangliyskiy-setter%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fangliyskiy-setter%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "192.166.101.86"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--37d0a2144d26daebd0cf71a714b4a025-->

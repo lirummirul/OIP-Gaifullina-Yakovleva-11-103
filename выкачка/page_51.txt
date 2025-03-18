@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'b05eb26cbb2d'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Бриар, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Бриар – французская пастушья овчарка с длинной шерстью по всему корпусу и стильной лохматой челкой на лбу, скрывающей глаза. Среди заводчиков ценится за острый ум, живость характера и самостоятельность в принятии решений." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/4b1/4b1196b19bef957c75cb050e70c99ca7.jpg" property="og:image"/>
+     <title>
+      Бриар: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/briar/" property="og:url"/>
+     <meta content="Бриар: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Бриар – французская пастушья овчарка с длинной шерстью по всему корпусу и стильной лохматой челкой на лбу, скрывающей глаза. Среди заводчиков ценится за острый ум, живость характера и самостоятельность в принятии решений." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/briar/" itemprop="url">
+         <span itemprop="title">
+          Бриар
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Бриар
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/briar/">
+          Описание
+         </a>
+         <a href="/dog/briar/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/briar/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/briar/photo/">
+          Фото
+         </a>
+         <a href="/dog/briar/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Бриар" src="/upload/iblock/cdc/cdc6b0c8519a0234b35ed2713e199bde.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/briar/">
+           французская овчарка
+          </a>
+          ,
+          <a href="/dog/briar/">
+           бриарская овчарка
+          </a>
+         </span>
+         <p>
+          Бриар – французская пастушья овчарка с длинной шерстью по всему корпусу и стильной лохматой челкой на лбу, скрывающей глаза. Среди заводчиков ценится за острый ум, живость характера и самостоятельность в принятии решений.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/209/20920581b9c72cbbbbfc5e1e831ece9a.jpg" data-cap="Winter walk in the snow ❄️" data-fancybox="images" data-link="https://www.flickr.com/photos/135719751@N02/38124152165/" data-type="image" data-username="marieke zwartjes" href="/upload/uf/5b5/5b5bc698ead1138c8cb11e0c1a8527a0.jpg">
+            <img alt="Бриар" src="/upload/resize_cache/uf/5b5/293_293_2/5b5bc698ead1138c8cb11e0c1a8527a0.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/888/888ae5eb9951763293334ec31aa5c361.jpg" data-cap="" data-fancybox="images" data-link="https://www.flickr.com/photos/epskamp/15249258759/" data-type="image" data-username="Epskamp" href="/upload/uf/9d0/9d003d43bb148e711d856d9e674022bc.jpg">
+            <img alt="Бриар" src="/upload/resize_cache/uf/9d0/293_293_2/9d003d43bb148e711d856d9e674022bc.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/c63/c63cc594e984d9ba35502a81e312d2db.jpg" data-cap="Lady in the black hat " data-fancybox="images" data-link="https://www.instagram.com/p/Bne-BtslxZE/" data-type="image" data-username="jannetta29" href="/upload/uf/38e/38ec084523e1508b8a42f05f06dd3073.jpg">
+            <img alt="Бриар" src="/upload/resize_cache/uf/38e/293_293_2/38ec084523e1508b8a42f05f06dd3073.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/briar/photo/">
+         Все
+            фото бриара
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы бриар
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность бриара
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер бриара
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни бриаров
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена бриара
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Бриар
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Франция
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 30-40 кг, суки 25-35 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 62-68 см, суки 56-64 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         11-13 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Бриар умен, смекалист и отлично осознает собственную силу, поэтому в процессе обучения частенько норовит настоять на своем.
+        </li>
+        <li>
+         Длинная, сухая шерсть собаки почти не линяет, зато интенсивно сбивается в колтуны. Так что если не хотите, чтобы тело питомца превратилось в сплошной неопрятный «валенок», не пренебрегайте его ежедневным расчесыванием.
+        </li>
+        <li>
+         Невзирая на несколько утяжеленную комплекцию, бриары – очень резвые создания. Бегущая овчарка стремительно-элегантна и демонстрирует в движении почти кошачью грацию.
+        </li>
+        <li>
+         В быту представители этой породы спокойны и доброжелательны, но только если их хозяин – человек с выраженными лидерскими качествами. Хозяевам, не имеющим опыта воспитания собак с доминантным характером, тренироваться на бриарских овчарках не стоит.
+        </li>
+        <li>
+         При правильной дрессировке бриар из пастуха легко трансформируется в ответственного сторожа, который никогда не сдаст позиций и будет до последнего защищать жилище хозяина и его имущество.
+        </li>
+        <li>
+         С другими собаками бриары не церемонятся, поэтому если в поле зрения животного попал другой «хвост», готовьтесь к конфликту, а то и серьезной драке. С кошками дела обстоят почти так же, исключение – котофей, с которым собака провела детство и юность.
+        </li>
+        <li>
+         Худшее, что можно придумать для бриара, – заставить его конкурировать за хозяйскую ласку с другими питомцами. Для домашних животных, уступающих овчарке в размерах и хитрости, такие опыты заканчиваются, как правило, печально.
+        </li>
+        <li>
+         Бриар – очень энергичная порода, сохраняющая интерес к активным развлечениям до старости, поэтому не ждите от собаки «пенсионного» возраста степенности и вальяжности.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Бриар" data-original="/upload/iblock/4b1/4b1196b19bef957c75cb050e70c99ca7.jpg">
+          <noscript data-alt="Бриар" data-original="/upload/iblock/4b1/4b1196b19bef957c75cb050e70c99ca7.jpg">
+           <img alt="Бриар" src="/upload/iblock/4b1/4b1196b19bef957c75cb050e70c99ca7.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          Бриар – энергичная собака с ярким, запоминающимся имиджем и по-настоящему сильным характером. Сделавший репутацию на своих выдающихся способностях к пастушескому делу, лохматый интеллектуал всегда отличался потрясающим жизнелюбием, развитой интуицией и умением расположить к себе человека. Поладить с бриаром – значит не пытаться воспитывать из него исполнителя своих сиюминутных капризов, потому что этот стильный симпатяга готов служить, но никак не прислуживать. Кроме того, придется учитывать и собственнические замашки породы: бриар – это та собака, которая не оставит в вашем сердце места для другого пушистика.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Длительные периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средний (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Бриар основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы бриар
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бриар" data-fancybox="gallery" href="/upload/iblock/488/4883f826edf43ed0fe56c7b730f5052d.jpg" title="Бриар">
+          <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/488/412_2150_1/4883f826edf43ed0fe56c7b730f5052d.jpg">
+           <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/488/412_2150_1/4883f826edf43ed0fe56c7b730f5052d.jpg">
+            <img alt="Бриар" class="article_pic" height="576" src="/upload/resize_cache/iblock/488/412_2150_1/4883f826edf43ed0fe56c7b730f5052d.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бриар
+         </div>
+        </div>
+        <p>
+         Уже в XII веке французские фермеры тесно контактировали с предками бриаров, которых привлекали для выпаса овечьих отар. Правда, в те времена представители этого собачьего семейства именовались бриарскими овчарками – по названию провинции Бри, в которой их якобы разводили. Крупные, массивные животные ценились крестьянами в основном за самостоятельность и умение руководить стадом без оглядки на хозяина. Например, правильно обученная собака могла в одиночку справляться с овечьим гуртом, утром выгоняя его на выпас, а вечером собирая скот и провожая его с поля.
+        </p>
+        <p>
+         Первое более или менее правдивое описание внешности и характера бриарских овчарок было составлено в 1809 году аббатом Ронье. В своем сельскохозяйственном трактате священнослужитель охарактеризовал собак как превосходных пастырей и неутомимых защитников фермерского имущества. К 1885 году работоспособность и интеллект бриаров настолько их разрекламировали, что животным был пожалован статус самостоятельной породы, а два года спустя для них утвердили и отдельный стандарт внешности. Но настоящая популярность настигла овчарок в годы Второй мировой. В условиях затяжной войны эти лохматые крепыши зарекомендовали себя в роли дешевой тягловой силы, поэтому на протяжении нескольких лет вывозили с поля раненых, а также доставляли снаряды в окопы, из-за чего едва не исчезли как порода.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бриары различных окрасов" data-fancybox="gallery" href="/upload/iblock/09b/09b5bba546d2c61602b43f224f3c93e7.jpg" title="Бриары различных окрасов">
+          <div class="lazy-load" data-alt="Бриары различных окрасов" data-class="article_pic" data-original="/upload/resize_cache/iblock/09b/412_2150_1/09b5bba546d2c61602b43f224f3c93e7.jpg">
+           <noscript data-alt="Бриары различных окрасов" data-class="article_pic" data-original="/upload/resize_cache/iblock/09b/412_2150_1/09b5bba546d2c61602b43f224f3c93e7.jpg">
+            <img alt="Бриары различных окрасов" class="article_pic" height="254" src="/upload/resize_cache/iblock/09b/412_2150_1/09b5bba546d2c61602b43f224f3c93e7.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бриары различных окрасов
+         </div>
+        </div>
+        <p>
+         В 1924 году французские специалисты задались целью восстановить численность бриаров и основали первый клуб любителей овчарок. С этого же времени животных перестали рассматривать исключительно в качестве крестьянских собак, благодаря чему они перешли в более элитную «касту» компаньонов и спортсменов. В середине XX столетия бриары принялись расширять границы собственной популярности, эмигрируя в страны остальной Европы и Северную Америку. Однако Новый Свет породой по неизвестным причинам не заинтересовался, поэтому подавляющее большинство ее представителей продолжило проживать в странах Западной Европы. В Советском Союзе о бриарах узнали с некоторым опозданием, в конце 80-х, но ударными темпами наверстали упущенное. В частности, уже в 1991 году отечественные заводчики вовсю хвастались перед зарубежными коллегами первыми щенками «made in Russia».
+        </p>
+        <p>
+         Знаменитые владельцы бриаров:
+        </p>
+        <ul>
+         <li>
+          Наполеон Бонапарт;
+         </li>
+         <li>
+          Карл Великий;
+         </li>
+         <li>
+          Александр Масляков.
+         </li>
+        </ul>
+        <h2>
+         Видео: Бриар
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="J6XBuANLk_8">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность бриара
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок бриара" data-fancybox="gallery" href="/upload/iblock/1bd/1bd034006eadf8927343b299c3d792cf.jpg" title="Щенок бриара">
+          <div class="lazy-load" data-alt="Щенок бриара" data-class="article_pic" data-original="/upload/resize_cache/iblock/1bd/412_2150_1/1bd034006eadf8927343b299c3d792cf.jpg">
+           <noscript data-alt="Щенок бриара" data-class="article_pic" data-original="/upload/resize_cache/iblock/1bd/412_2150_1/1bd034006eadf8927343b299c3d792cf.jpg">
+            <img alt="Щенок бриара" class="article_pic" height="617" src="/upload/resize_cache/iblock/1bd/412_2150_1/1bd034006eadf8927343b299c3d792cf.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок бриара
+         </div>
+        </div>
+        <p>
+         Бриар – обаятельный растрепа с хипстерской челкой, закутанный в длинную, лохматую «шубу». Половой тип у представителей этой породы выражен ярко, поэтому суки бриара заметно мельче (средний рост – 56-64 см) и изящнее кобелей. При этом мальчики тоже не отличаются излишней мешковатостью и достаточно грациозны.
+        </p>
+        <p>
+         Обманчивые небрежность и простоватость внешнего вида бриаров на самом деле результат многолетней работы племенных специалистов. Да что там! Французские заводчики трясутся над своими подопечными, как над настоящим живым раритетом, в попытках сохранить первозданный облик собак и всеми способами избежать малейших изменений в их имидже. Возможно именно поэтому в породном стандарте больше места отводится перечислению возможных дефектов и пороков бриарских овчарок, чем описанию их экстерьерных особенностей.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Голова бриара удлиненная, с округлым лбом и достаточно крутым стопом.
+        </p>
+        <h3>
+         Зубы и челюсти
+        </h3>
+        <p>
+         У чистопородной овчарки полный комплект из 42 белоснежных, крепких зубов. Стандартный тип прикуса для породы бриар – «ножницы».
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Довольный бриар" data-fancybox="gallery" href="/upload/iblock/bd4/bd4e11d4483bd8f8309996e7c99e3629.jpg" title="Довольный бриар">
+          <div class="lazy-load" data-alt="Довольный бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/bd4/412_2150_1/bd4e11d4483bd8f8309996e7c99e3629.jpg">
+           <noscript data-alt="Довольный бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/bd4/412_2150_1/bd4e11d4483bd8f8309996e7c99e3629.jpg">
+            <img alt="Довольный бриар" class="article_pic" height="618" src="/upload/resize_cache/iblock/bd4/412_2150_1/bd4e11d4483bd8f8309996e7c99e3629.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Довольный бриар
+         </div>
+        </div>
+        <p>
+         Прямой, без горбинки или провала нос бриара заканчивается квадратной мочкой черного цвета.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Большие, темные глаза собаки поставлены прямо, без наклона. Стальной окрас радужки допустим только для особей с серой шерстью.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Уши бриарских овчарок издревле купировались, из-за чего ушное полотно принимало стоячее положение. Сегодня страны Евросоюза отказались от этой процедуры, поэтому современные французские бриары имеют короткие, высоко поставленные и чуть прилегающие к голове уши. В России купирование пока не изжило себя, но приобретая щенка, над ушами которого уже потрудился ветеринар, помните: на европейских выставках с таким бриаром лучше не показываться.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Крепкая, мускулистая шея бриара напоминает формой усеченный конус и плавно перерастает в плечи.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда бриара" data-fancybox="gallery" href="/upload/iblock/721/7213a2bd809fc062c647ea5a19f5ddf7.jpg" title="Морда бриара">
+          <div class="lazy-load" data-alt="Морда бриара" data-class="article_pic" data-original="/upload/resize_cache/iblock/721/1024_2150_1/7213a2bd809fc062c647ea5a19f5ddf7.jpg">
+           <noscript data-alt="Морда бриара" data-class="article_pic" data-original="/upload/resize_cache/iblock/721/1024_2150_1/7213a2bd809fc062c647ea5a19f5ddf7.jpg">
+            <img alt="Морда бриара" class="article_pic" src="/upload/resize_cache/iblock/721/1024_2150_1/7213a2bd809fc062c647ea5a19f5ddf7.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда бриара
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Туловище собаки несколько растянутого формата, с массивной грудной клеткой, прямой спиной и наклонным, округлым крупом.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         И передние, и задние ноги бриара очень сильные, мускулистые, поставленные строго вертикально. Скакательные суставы с умеренными углами, расположены не слишком низко. Лапы сильные, напоминающие кошачьи, с упругими подушечками. Когти черные. Отличительная особенность породы – двойные прибылые пальцы на обеих задних конечностях.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мокрый бриар" data-fancybox="gallery" href="/upload/iblock/312/312232720abb8b7c264939969b541a00.jpg" title="Мокрый бриар">
+          <div class="lazy-load" data-alt="Мокрый бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/312/412_2150_1/312232720abb8b7c264939969b541a00.jpg">
+           <noscript data-alt="Мокрый бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/312/412_2150_1/312232720abb8b7c264939969b541a00.jpg">
+            <img alt="Мокрый бриар" class="article_pic" height="620" src="/upload/resize_cache/iblock/312/412_2150_1/312232720abb8b7c264939969b541a00.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мокрый бриар
+         </div>
+        </div>
+        <p>
+         Хвост бриара несется низко, загибаясь на конце в крючок.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Сухой, длинный волос овчарки напоминает по структуре козью шерсть.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Бриар может иметь любой сплошной тип окраса, кроме белого, шоколадного и оттенка красного дерева. При этом на выставках предпочтение всегда отдается более темным особям. Допустимо, если шерсть на ногах собаки имеет более светлый цвет, чем волос на остальных частях тела.
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <ul>
+         <li>
+          Рост выше или ниже оговоренного стандартом более чем на 2 см.
+         </li>
+         <li>
+          Коричневая или розовая мочка.
+         </li>
+         <li>
+          Сильный недокус.
+         </li>
+         <li>
+          Отсутствие трех любых зубов либо двух нижних четвертых премоляров.
+         </li>
+         <li>
+          Разноглазие. Глаза слишком светлого оттенка.
+         </li>
+         <li>
+          Чересчур низко посаженные уши со складками либо сросшимися хрящами.
+         </li>
+         <li>
+          Непараллельный постав задних ног.
+         </li>
+         <li>
+          Вертикальное положение хвоста или заброшенный на спину хвост.
+         </li>
+         <li>
+          Когти белого окраса.
+         </li>
+         <li>
+          Неполный комплект прибылых пальцев или полное их отсутствие.
+         </li>
+         <li>
+          Длина шерсти менее 7 см, волос с выраженным завитком, чересчур мягкий.
+         </li>
+         <li>
+          Присутствие белых пятен на теле и белых волосков на лапах.
+         </li>
+         <li>
+          Палевый с черным окрас, наличие черного «плаща» на корпусе овчарки.
+         </li>
+        </ul>
+        <h2>
+         Фото бриара
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8dc/8dc0a4254fa738c090dac5a1f33518da.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/8dc/380_264_2/8dc0a4254fa738c090dac5a1f33518da.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/8dc/380_264_2/8dc0a4254fa738c090dac5a1f33518da.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/8dc/380_264_2/8dc0a4254fa738c090dac5a1f33518da.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/cc8/cc82619716d8e91942b6ef8bf61947b1.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/cc8/380_264_2/cc82619716d8e91942b6ef8bf61947b1.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/cc8/380_264_2/cc82619716d8e91942b6ef8bf61947b1.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/cc8/380_264_2/cc82619716d8e91942b6ef8bf61947b1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2f0/2f0a2fb1e0072b9c318eebc3173d5604.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/2f0/380_264_2/2f0a2fb1e0072b9c318eebc3173d5604.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/2f0/380_264_2/2f0a2fb1e0072b9c318eebc3173d5604.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/2f0/380_264_2/2f0a2fb1e0072b9c318eebc3173d5604.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/eb9/eb9c4c41c5ff86dc89149b1b1c98a3c0.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/eb9/380_264_2/eb9c4c41c5ff86dc89149b1b1c98a3c0.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/eb9/380_264_2/eb9c4c41c5ff86dc89149b1b1c98a3c0.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/eb9/380_264_2/eb9c4c41c5ff86dc89149b1b1c98a3c0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6f7/6f708229568b10992d6c961b64832078.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/6f7/380_264_2/6f708229568b10992d6c961b64832078.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/6f7/380_264_2/6f708229568b10992d6c961b64832078.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/6f7/380_264_2/6f708229568b10992d6c961b64832078.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4b7/4b763d36ed760f6ebff12d88b79bd7b4.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/4b7/380_264_2/4b763d36ed760f6ebff12d88b79bd7b4.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/4b7/380_264_2/4b763d36ed760f6ebff12d88b79bd7b4.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/4b7/380_264_2/4b763d36ed760f6ebff12d88b79bd7b4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/706/7068bf7818f2f7fcdf13306cba09c751.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/706/380_264_2/7068bf7818f2f7fcdf13306cba09c751.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/706/380_264_2/7068bf7818f2f7fcdf13306cba09c751.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/706/380_264_2/7068bf7818f2f7fcdf13306cba09c751.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/0a3/0a3a229382a11d5ac69bb7460b5df3dd.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/0a3/380_264_2/0a3a229382a11d5ac69bb7460b5df3dd.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/0a3/380_264_2/0a3a229382a11d5ac69bb7460b5df3dd.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/0a3/380_264_2/0a3a229382a11d5ac69bb7460b5df3dd.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/268/26899d944ecf81719aff90add9c27679.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/268/380_264_2/26899d944ecf81719aff90add9c27679.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/268/380_264_2/26899d944ecf81719aff90add9c27679.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/268/380_264_2/26899d944ecf81719aff90add9c27679.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер бриара
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Хозяйка с двумя черными бриарами" data-fancybox="gallery" href="/upload/iblock/e08/e08167c845efc2645cd65c4ba81cf7f8.jpg" title="Хозяйка с двумя черными бриарами">
+          <div class="lazy-load" data-alt="Хозяйка с двумя черными бриарами" data-class="article_pic" data-original="/upload/resize_cache/iblock/e08/412_2150_1/e08167c845efc2645cd65c4ba81cf7f8.jpg">
+           <noscript data-alt="Хозяйка с двумя черными бриарами" data-class="article_pic" data-original="/upload/resize_cache/iblock/e08/412_2150_1/e08167c845efc2645cd65c4ba81cf7f8.jpg">
+            <img alt="Хозяйка с двумя черными бриарами" class="article_pic" height="617" src="/upload/resize_cache/iblock/e08/412_2150_1/e08167c845efc2645cd65c4ba81cf7f8.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Хозяйка с двумя черными бриарами
+         </div>
+        </div>
+        <p>
+         Бриар – собака, сложная во всех отношениях. С одной стороны, это преданный питомец, души не чающий в собственном хозяине, а с другой – величайший манипулятор, который никогда не согласится на второстепенную роль в вашей жизни. Внешнее обаяние бриаров – это что-то, не поддающееся описанию! Просящие взгляды, кокетливые ужимки, полная комического очарования мимика – в запасе у этих французских пройдох целый арсенал разнообразных ухищрений, позволяющих им получить желаемое. Кстати, именно на зашкаливающей мимишности породы и погорело большинство неопытных владельцев, потому что как только бриар поймет, что вас веселит его умелая пантомима, он превратится в хитрого и непослушного баловня.
+        </p>
+        <p>
+         Как ни странно, но выраженно авторитарный стиль в общении с этими лохматыми питомцами тоже не прокатывает. Бриар категорически не выносит, когда пытаются подавлять его волю или, того хуже, начинают им понукать. В глазах собаки такое поведение выглядит форменным издевательством, которое она вам никогда не простит. Да, питомец совершенно не против, чтобы ему указали на положенное место, но это не должно выглядеть ущемлением его личного достоинства, которое у представителей этой породы несколько гипертрофировано.
+        </p>
+        <p>
+         Бриары превосходно чувствуют настроение владельца и частенько копируют его поведение, поэтому если вы привыкли выяснять отношения с домашними на повышенных тонах, не удивляйтесь тому, что лохматый «месье» будет посильно стараться в них участвовать, то есть ворчать и громко лаять. Что касается интеллекта собаки, то подобно человеческому, ему требуется постоянное развитие, так что почаще нагружайте питомца полезными занятиями, требующими определенной сообразительности. Например, поручите бриару приносить вам мобильный всякий раз, когда тот зазвонит, или научите его доставать из почтового ящика утреннюю газету.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бриар с ребенком" data-fancybox="gallery" href="/upload/iblock/75f/75f2139401a5da11675f82638e426cc4.jpg" title="Бриар с ребенком">
+          <div class="lazy-load" data-alt="Бриар с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/75f/412_2150_1/75f2139401a5da11675f82638e426cc4.jpg">
+           <noscript data-alt="Бриар с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/75f/412_2150_1/75f2139401a5da11675f82638e426cc4.jpg">
+            <img alt="Бриар с ребенком" class="article_pic" height="274" src="/upload/resize_cache/iblock/75f/412_2150_1/75f2139401a5da11675f82638e426cc4.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бриар с ребенком
+         </div>
+        </div>
+        <p>
+         Если же вам лень заниматься интеллектуальным воспитанием бриара, готовьтесь к тому, что он разработает для себя собственный «обучающий курс», причем последствия таких упражнений вы будете разгребать еще очень долго. Например, бриарские овчарки превосходно справляются с открыванием всевозможных шкафчиков и извлечением их содержимого, а еще они всегда готовы помериться силами с другими кобелями или погонять кошек.
+        </p>
+        <p>
+         Бриары ревнивы и обидчивы. Примите это как данность и не провоцируйте животное без всякого на то повода. Этот «француз» простит своему хозяину многое, но только не показушную любовь к какому-нибудь котейке или мопсу. И кстати, даже если вы приведете в дом второго бриара, это нисколько не улучшит ситуацию, так как каждая из собак будет пытаться перетянуть хозяйское внимание на себя. Готовы 24 часа в сутки разрываться между двумя лохматыми «хипстерами»? Тогда вперед! В общении с чужаками и малознакомыми людьми бриары сдержанны, если не сказать подозрительны, поэтому завидев на улице одного из таких лохматых симпатяг, не спешите трепать его по голове – вдруг он сегодня в плохом настроении.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Мы такие разные, но все-таки мы вместе" data-fancybox="gallery" href="/upload/iblock/07d/07d44b18d5fec4b01b8c1f6b6d8c4512.jpg" title="Мы такие разные, но все-таки мы вместе">
+           <div class="lazy-load" data-alt="Мы такие разные, но все-таки мы вместе" data-class="article_pic" data-original="/upload/resize_cache/iblock/07d/512_342_2/07d44b18d5fec4b01b8c1f6b6d8c4512.jpg">
+            <noscript data-alt="Мы такие разные, но все-таки мы вместе" data-class="article_pic" data-original="/upload/resize_cache/iblock/07d/512_342_2/07d44b18d5fec4b01b8c1f6b6d8c4512.jpg">
+             <img alt="Мы такие разные, но все-таки мы вместе" class="article_pic" src="/upload/resize_cache/iblock/07d/512_342_2/07d44b18d5fec4b01b8c1f6b6d8c4512.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Мы такие разные, но все-таки мы вместе
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бриар впервые видит улитку" data-fancybox="gallery" href="/upload/iblock/5fe/5fe9abf61d60854654b870ab0010c0a5.jpg" title="Бриар впервые видит улитку">
+           <div class="lazy-load" data-alt="Бриар впервые видит улитку" data-class="article_pic" data-original="/upload/resize_cache/iblock/5fe/512_342_2/5fe9abf61d60854654b870ab0010c0a5.jpg">
+            <noscript data-alt="Бриар впервые видит улитку" data-class="article_pic" data-original="/upload/resize_cache/iblock/5fe/512_342_2/5fe9abf61d60854654b870ab0010c0a5.jpg">
+             <img alt="Бриар впервые видит улитку" class="article_pic" src="/upload/resize_cache/iblock/5fe/512_342_2/5fe9abf61d60854654b870ab0010c0a5.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бриар впервые видит улитку
+          </div>
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Дрессировка бриара" data-fancybox="gallery" href="/upload/iblock/adc/adc413c0d0ff8e4519a9df7f9b2b9875.jpg" title="Дрессировка бриара">
+          <div class="lazy-load" data-alt="Дрессировка бриара" data-class="article_pic" data-original="/upload/iblock/adc/adc413c0d0ff8e4519a9df7f9b2b9875.jpg">
+           <noscript data-alt="Дрессировка бриара" data-class="article_pic" data-original="/upload/iblock/adc/adc413c0d0ff8e4519a9df7f9b2b9875.jpg">
+            <img alt="Дрессировка бриара" class="article_pic" height="500" src="/upload/iblock/adc/adc413c0d0ff8e4519a9df7f9b2b9875.jpg" width="381"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Дрессировка бриара
+         </div>
+        </div>
+        <p>
+         Бриары необычайно памятливые, понятливые, но не лишенные упрямства ученики, к которым необходим особенный ключик. Кстати, применять к ним наказания, особенно физические, – значит только ухудшить дело и навсегда лишиться их доверия. В душе вы можете ругать овчарку сколько угодно, но вымещать на ней раздражение себе не позволяйте. Бриар не рожден для того, чтобы слепо подчиняться указаниям. Это думающая собака, с собственными взглядами на жизнь в общем и на дрессировку в частности. Но если питомец хоть однажды выполнил команду так, как того требуют правила, не сомневайтесь, он этого не забудет и с легкостью повторит «подвиг» даже через 2-3 месяца.
+        </p>
+        <p>
+         Желание доминировать и занять место хозяина для бриаров – совершенно нормальное явление. Причем если кобели сразу идут напролом, утверждая собственный авторитет, то суки действуют обманом, придумывая хитроумные стратегии обхода правил. Если вы заметили, что справляться с собакой становится трудно, доверьте ее дрессировку профессионалу – себе нервы сохраните и животное не запустите.
+        </p>
+        <p>
+         Если вести речь об обучающих курсах, то с бриарами чаще всего проходят ОКД (Общий курс дрессировки) и УГС (Управляемая городская собака). Кроме того, у овчарок явная склонность к спортивным дисциплинам типа аджилити, фристайла, скиджоринга и вейтпуллинга. Курс ИПО (Международная система послушания) бриары тоже щелкают, как семечки, причем, в отличие от большинства других пород, эти «французы» в состоянии овладевать новыми знаниями в любом возрасте. Ну и конечно, не забываем про главную квалификацию породы – пастушью службу, испытания по которой бриары обычно проходят с наивысшим баллом.
+        </p>
+        <p>
+         Водить собаку на тренировочную площадку можно с 6-7 месяцев, а обучение элементарным правилам поведения и простейшим командам разрешается начинать уже в 4-месячном возрасте. Оптимальный способ социализировать щенка бриара – гулять с ним по оживленным улицам, чтобы малыш перестал бояться. Заставить питомца любить остальных собак таким образом, конечно, не получится, но помочь ему смириться с неизбежностью их присутствия в его жизни вполне реально. Хозяевам бриаров рекомендуется наматывать поводок на руку и выгуливать своих подопечных в местах максимального скопления собачников и их четверолапых воспитанников.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бриар и его любимый бегемотик" data-fancybox="gallery" href="/upload/iblock/50e/50edda8d55d976cbdcabd7fd3ae3c66b.jpg" title="Бриар и его любимый бегемотик">
+          <div class="lazy-load" data-alt="Бриар и его любимый бегемотик" data-class="article_pic" data-original="/upload/resize_cache/iblock/50e/412_2150_1/50edda8d55d976cbdcabd7fd3ae3c66b.jpg">
+           <noscript data-alt="Бриар и его любимый бегемотик" data-class="article_pic" data-original="/upload/resize_cache/iblock/50e/412_2150_1/50edda8d55d976cbdcabd7fd3ae3c66b.jpg">
+            <img alt="Бриар и его любимый бегемотик" class="article_pic" height="274" src="/upload/resize_cache/iblock/50e/412_2150_1/50edda8d55d976cbdcabd7fd3ae3c66b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бриар и его любимый бегемотик
+         </div>
+        </div>
+        <p>
+         Невзирая на достаточно внушительные габариты, бриар не дворовая овчарка и жить в будке, особенно в холодное время года, ему противопоказано. Привычка к мягкому французскому климату у породы никуда не делась. На лето животное можно переселить в вольер, где ему будет вполне комфортно. По поводу квартирного содержания: все не так сложно, как кажется на первый взгляд. Правильно воспитанный бриар не носится сломя голову по квартире и не учиняет беспорядка, а значит и занимает не так много места. Правда, выгуливать такую собаку стоит подольше, а еще лучше – записать ее на какой-нибудь тренировочный курс, где она сможет побегать в свое удовольствие.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Длинный, сухой волос бриара не линяет в полном смысле этого слова, он просто образует колтуны. Но поскольку тримминговать представителей этой породы среди собачников не принято, их придется часто и основательно расчесывать. Сначала шерсть прорабатывают редким гребнем, чтобы удалить запутавшийся в ней мусор и частично разбить свалявшиеся участки, после чего по «шубе» проходятся массажной расческой или гребешком с частыми зубчиками. Если момент упущен, и колтуны все-таки появились, постарайтесь их разобрать. Вооружайтесь колтунорезом только в самом крайнем случае, когда свалявшаяся шерсть уже не поддается распутыванию.
+        </p>
+        <p class="legenda">
+         Важно: расчесывание бриара «на сухую» может испортить структуру его шерсти и подвергнуть собаку дополнительному стрессу. Необходимо использовать кондиционер, предназначенный для облегчения этой процедуры.
+        </p>
+        <p>
+         Усы и бородку собаки тоже регулярно вычесывают. Кроме того, придется постоянно следить за их чистотой, так как во время кормления они неизменно пачкаются. Стильную челку на голове овчарки не стригут, но если волос слишком уж интенсивно растет, его слегка филируют (прореживают) парикмахерскими ножницами и стягивают резиночкой. Впрочем, если вы держите собаку для души и не собираетесь штурмовать выставки, волос можно немного укоротить. Главное, чтобы после стрижки в собаке угадывался бриар, а не болонка-переросток. Следует выстригать и шерсть между пальцами, которая быстро пачкается, сбивается в комки, мешая животному при ходьбе.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бриары на выставке собак" data-fancybox="gallery" href="/upload/iblock/2df/2df56e7a91f1efa411802807ca621915.jpg" title="Бриары на выставке собак">
+          <div class="lazy-load" data-alt="Бриары на выставке собак" data-class="article_pic" data-original="/upload/resize_cache/iblock/2df/412_2150_1/2df56e7a91f1efa411802807ca621915.jpg">
+           <noscript data-alt="Бриары на выставке собак" data-class="article_pic" data-original="/upload/resize_cache/iblock/2df/412_2150_1/2df56e7a91f1efa411802807ca621915.jpg">
+            <img alt="Бриары на выставке собак" class="article_pic" height="274" src="/upload/resize_cache/iblock/2df/412_2150_1/2df56e7a91f1efa411802807ca621915.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бриары на выставке собак
+         </div>
+        </div>
+        <p>
+         Частые купания бриарам не рекомендованы, поскольку ведут к неконтролируемому сбросу подшерстка, поэтому если ваш подопечный обитает в доме, периодически посиживая в дворовом вольере, мойте его раз в пару месяцев. Капризных «горожан», проживающих в квартирах, купать можно чаще, примерно раз-два в месяц. Кстати, заодно приготовьтесь обонять специфический запах, так как мокрый волос бриара сильно отдает овчиной. Что касается выставочных особей, то мыть их лучше не накануне мероприятия, а хотя бы за неделю до него.
+        </p>
+        <p>
+         Не забываем и про качественную косметику, без которой шерсть этих харизматичных «месье» не будет такой воздушной и блестящей. Это значит, что периодически придется отстегивать не самые маленькие суммы на шампунь, кондиционер, крем для облегчения расчесывания и прочие грумерские примочки, которые придают волосу собаки глянец и необходимую мягкость.
+        </p>
+        <p>
+         Глаза и уши бриаров в специфическом уходе не нуждаются. Просто следите за их чистотой, используя стандартный арсенал средств: лосьон для чистки ушной раковины, ватные палочки, настой ромашки для снятия незначительных глазных воспалений. Исключение – собаки с некупированным висячим ушным полотном, имеющие склонность к отитам. Для таких особей стандартной чистки будет мало, поэтому для улучшения вентиляции придется прореживать им волосы в ушном проходе. Когти бриарским овчаркам стригут по мере их отрастания, когтерезкой гильотинного типа, с которой меньше шансов травмировать собаку.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Эта собака определенно любит прокатится с ветерком" data-fancybox="gallery" href="/upload/iblock/59f/59f9e2137bd020213f693f1369f674df.jpg" title="Эта собака определенно любит прокатится с ветерком">
+          <div class="lazy-load" data-alt="Эта собака определенно любит прокатится с ветерком" data-class="article_pic" data-original="/upload/resize_cache/iblock/59f/412_2150_1/59f9e2137bd020213f693f1369f674df.jpg">
+           <noscript data-alt="Эта собака определенно любит прокатится с ветерком" data-class="article_pic" data-original="/upload/resize_cache/iblock/59f/412_2150_1/59f9e2137bd020213f693f1369f674df.jpg">
+            <img alt="Эта собака определенно любит прокатится с ветерком" class="article_pic" height="549" src="/upload/resize_cache/iblock/59f/412_2150_1/59f9e2137bd020213f693f1369f674df.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Эта собака определенно любит прокатится с ветерком
+         </div>
+        </div>
+        <p>
+         В еде бриары не придирчивы и в деликатесах не нуждаются. Здоровая, получающая правильные нагрузки собака готова довольствоваться жилистыми мясными обрезками и субпродуктами, подмешанными в гречневую, геркулесовую или рисовую каши. Морскую рыбу семейства тресковых бриарам тоже можно, но не чаще, чем раз в неделю. Отличным дополнением к основному рациону собаки станут нежирные кисломолочные продукты, овощи (морковь, кабачок, тыква), зелень с огорода. В качестве дополнительных источников макро- и микроэлементов подойдут ламинария и растительное масло (1 ст. ложка).
+        </p>
+        <p>
+         Естественно, надо понимать, что при таком однообразии меню бриару потребуются минеральные подкормки из ветаптеки. В частности, хозяева животных, не отличающихся богатством и качеством шерстного покрова, останавливают свой выбор на комплексах с витамином B, биотином и метионином. Не стоит бросаться и в другую крайность, закармливая бриара всеми существующими витаминами. Превратить питомца в идеальную собаку мешки БАДов не помогут, зато легко и быстро посадят ему печень.
+        </p>
+        <h3>
+         Сколько раз кормить
+        </h3>
+        <p>
+         Двухмесячного бриара кормят до 6 раз в день, по мере его взросления сокращая количество приемов пищи. В 8 месяцев щенков полностью переводят на взрослый рацион и двухразовое питание. Малоподвижным взрослым особям (от 2 лет) тоже можно слегка урезать паек, например, кормить их только раз в сутки.
+        </p>
+        <p class="legenda">
+         Важно: бриары склонны к завороту желудка, поэтому есть собака должна не менее чем за два часа до прогулки. Если у вас сложилась традиция кормить своего подопечного после гуляний, выждите хотя бы один час и только тогда давайте животному корм.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни бриаров
+        </h2>
+        <p>
+         Большинство недугов, сваливающихся на бриаров, обусловлены наследственностью. К таковым, относятся: дисплазия тазобедренного сустава, прогрессирующая атрофия сетчатки, куриная слепота, аутоиммунный тиреоидит, рак, болезнь Виллебранда-Диана. Склонность к завороту желудка у бриаров тоже генетическая. Обычно животные, страдающие данной болезнью, одышливы, часто отрыгивают и испытывают беспричинные позывы к рвоте. Реже у бриаров диагностируют аллергию, которая может возникать на укусы насекомых либо еду.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Нормар – знаменитый пес породы бриар, который умеет кататься на самокате!" data-fancybox="gallery" href="/upload/iblock/58b/58b9ab571ff62df1792c5ca9353a4b0e.jpg" title="Нормар – знаменитый пес породы бриар, который умеет кататься на самокате!">
+          <div class="lazy-load" data-alt="Нормар – знаменитый пес породы бриар, который умеет кататься на самокате!" data-class="article_pic" data-original="/upload/resize_cache/iblock/58b/1024_2150_1/58b9ab571ff62df1792c5ca9353a4b0e.jpg">
+           <noscript data-alt="Нормар – знаменитый пес породы бриар, который умеет кататься на самокате!" data-class="article_pic" data-original="/upload/resize_cache/iblock/58b/1024_2150_1/58b9ab571ff62df1792c5ca9353a4b0e.jpg">
+            <img alt="Нормар – знаменитый пес породы бриар, который умеет кататься на самокате!" class="article_pic" src="/upload/resize_cache/iblock/58b/1024_2150_1/58b9ab571ff62df1792c5ca9353a4b0e.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Нормар – знаменитый пес породы бриар, который умеет кататься на самокате!
+         </div>
+        </div>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Проверьте наличие у щенка двух прибылых пальцев на каждой из задних лап.
+         </li>
+         <li>
+          Не поддавайтесь соблазну выбрать самого крупного и толстого малыша в помете, скорее всего, повзрослев, он не впишется в параметры стандарта по росту.
+         </li>
+         <li>
+          Наибольшего доверия заслуживают питомники и заводчики, проверяющие свой племенной фонд на дисплазию тазобедренного сустава. После прохождения осмотра у рентгенолога будущие производители потомства должны получить отметку А или В.
+         </li>
+         <li>
+          Обычно бриары брид-класса сдают нормативы по системе IPO-1. Если родители щенка смогли набрать на испытаниях IPO хотя бы 17 баллов из 20 возможных, их потомство считается перспективным.
+         </li>
+         <li>
+          В первые месяцы жизни щенки смахивают на дворняжек и очень мало походят на настоящих бриаров. Пусть вас это не смущает. По мере взросления лохматых комочков, их облик существенно изменится.
+         </li>
+         <li>
+          Внешний вид матери и отца щенков играет не последнюю роль, поэтому акцентируйте внимание на качестве и густоте их шерстного покрова, который малыши унаследуют в 99 случаях из 100.
+         </li>
+         <li>
+          Выбирайте опрятных, веселых щенков, без признаков пупочной грыжи, а также следов диареи под хвостиком.
+         </li>
+        </ul>
+        <h2>
+         Фото щенков бриара
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/99b/99ba4530a0d130a7e9c253e499554f2f.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/99b/380_264_2/99ba4530a0d130a7e9c253e499554f2f.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/99b/380_264_2/99ba4530a0d130a7e9c253e499554f2f.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/99b/380_264_2/99ba4530a0d130a7e9c253e499554f2f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/80f/80fbe168aeb066ff39bc841fd7703c24.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/80f/380_264_2/80fbe168aeb066ff39bc841fd7703c24.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/80f/380_264_2/80fbe168aeb066ff39bc841fd7703c24.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/80f/380_264_2/80fbe168aeb066ff39bc841fd7703c24.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e63/e635269e3889d69aff7f98fb12bde544.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/e63/380_264_2/e635269e3889d69aff7f98fb12bde544.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/e63/380_264_2/e635269e3889d69aff7f98fb12bde544.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/e63/380_264_2/e635269e3889d69aff7f98fb12bde544.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e44/e442e1ec37f45d32a0cb61dd0e808235.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/e44/380_264_2/e442e1ec37f45d32a0cb61dd0e808235.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/e44/380_264_2/e442e1ec37f45d32a0cb61dd0e808235.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/e44/380_264_2/e442e1ec37f45d32a0cb61dd0e808235.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/468/468faa83533ca9e9e97cd3ef08694500.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/468/380_264_2/468faa83533ca9e9e97cd3ef08694500.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/468/380_264_2/468faa83533ca9e9e97cd3ef08694500.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/468/380_264_2/468faa83533ca9e9e97cd3ef08694500.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/302/3022232a2d242f8f53e06bd0ed9bfac5.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/302/380_264_2/3022232a2d242f8f53e06bd0ed9bfac5.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/302/380_264_2/3022232a2d242f8f53e06bd0ed9bfac5.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/302/380_264_2/3022232a2d242f8f53e06bd0ed9bfac5.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/29f/29f832bda726d6f46a33a4f188abd391.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/29f/380_264_2/29f832bda726d6f46a33a4f188abd391.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/29f/380_264_2/29f832bda726d6f46a33a4f188abd391.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/29f/380_264_2/29f832bda726d6f46a33a4f188abd391.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/830/830b12c1bbd0faa7538c689874d7d3d9.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/830/380_264_2/830b12c1bbd0faa7538c689874d7d3d9.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/830/380_264_2/830b12c1bbd0faa7538c689874d7d3d9.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/830/380_264_2/830b12c1bbd0faa7538c689874d7d3d9.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/504/50453706e41726a37aa7aeb677da5747.jpg" title="">
+           <div class="lazy-load" data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/504/380_264_2/50453706e41726a37aa7aeb677da5747.jpg">
+            <noscript data-alt="Бриар" data-class="article_pic" data-original="/upload/resize_cache/iblock/504/380_264_2/50453706e41726a37aa7aeb677da5747.jpg">
+             <img alt="Бриар" class="article_pic" src="/upload/resize_cache/iblock/504/380_264_2/50453706e41726a37aa7aeb677da5747.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Цена бриара
+        </h2>
+        <p>
+         Мода на бриаров пока обходит нашу страну стороной, что и к лучшему: порода практически не пострадала от коммерческого разведения, а значит и шансы приобрести бракованного щенка сравнительно невелики. Чтобы обзавестись собственным стильным лохматиком, потенциальному покупателю придется основательно поколесить по стране, так как питомники, специализирующиеся на бриарах, имеются далеко не в каждом регионе. Что касается цен на щенков, то в них наблюдается приличный разброс, поэтому заполучить собаку своей мечты можно как за 20 000 руб., так и за 40 000 руб.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения бриара на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/briar/forum/">
+        Перейти на
+        форум бриара
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Бриар" src="/upload/iblock/cdc/cdc6b0c8519a0234b35ed2713e199bde.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/briar/">
+          Бриар
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/briar/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/briar/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/briar/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/briar/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/briar/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/zapadno-sibirskaya-layka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Западно-сибирская лайка" data-original="/upload/resize_cache/iblock/268/100_100_1/268f6329d344730d964f02654a74d1cc.jpg">
+          <noscript data-alt="Западно-сибирская лайка" data-original="/upload/resize_cache/iblock/268/100_100_1/268f6329d344730d964f02654a74d1cc.jpg">
+           <img alt="Западно-сибирская лайка" src="/upload/resize_cache/iblock/268/100_100_1/268f6329d344730d964f02654a74d1cc.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Западно-сибирская лайка
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/kerri-blyu-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Керри-блю-терьер" data-original="/upload/resize_cache/iblock/a0f/100_100_1/a0f0bff9e06765b34824d3848c6a119a.jpg">
+          <noscript data-alt="Керри-блю-терьер" data-original="/upload/resize_cache/iblock/a0f/100_100_1/a0f0bff9e06765b34824d3848c6a119a.jpg">
+           <img alt="Керри-блю-терьер" src="/upload/resize_cache/iblock/a0f/100_100_1/a0f0bff9e06765b34824d3848c6a119a.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Керри-блю-терьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/siba-inu/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Сиба-ину" data-original="/upload/resize_cache/iblock/11e/100_100_1/11ea73b02406f137742271272c2812e5.jpg">
+          <noscript data-alt="Сиба-ину" data-original="/upload/resize_cache/iblock/11e/100_100_1/11ea73b02406f137742271272c2812e5.jpg">
+           <img alt="Сиба-ину" src="/upload/resize_cache/iblock/11e/100_100_1/11ea73b02406f137742271272c2812e5.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Сиба-ину
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/pti-brabanson/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Пти-брабансон" data-original="/upload/resize_cache/iblock/0e6/100_100_1/0e62c17933c771a85a0546211950d579.jpg">
+          <noscript data-alt="Пти-брабансон" data-original="/upload/resize_cache/iblock/0e6/100_100_1/0e62c17933c771a85a0546211950d579.jpg">
+           <img alt="Пти-брабансон" src="/upload/resize_cache/iblock/0e6/100_100_1/0e62c17933c771a85a0546211950d579.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Пти-брабансон
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbriar%252F%253Fcheck_key%253D183879c5637068cc4f076261572431e3%2526ANIMAL_CODE%253Dbriar%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbriar%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmJyaWFyJTJGJTNGY2hlY2tfa2V5JTNEMTgzODc5YzU2MzcwNjhjYzRmMDc2MjYxNTcyNDMxZTMlMjZBTklNQUxfQ09ERSUzRGJyaWFyJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmJyaWFyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbriar%252F%253Fcheck_key%253D183879c5637068cc4f076261572431e3%2526ANIMAL_CODE%253Dbriar%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fbriar%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbriar%252F%253Fcheck_key%253D183879c5637068cc4f076261572431e3%2526ANIMAL_CODE%253Dbriar%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbriar%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "89.222.155.99"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--b60b1c387ac8bdb7b917e215425bd694-->

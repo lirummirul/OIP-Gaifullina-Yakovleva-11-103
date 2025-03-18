@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'72be67d76115'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Керри-блю-терьер, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Керри-блю-терьер – собака средних габаритов с изысканным голубым окрасом шерсти. Порода получила название в честь своей родины – ирландского графства Керри." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/850/850119d9ad3c58d4b7a31a85461a1e55.jpg" property="og:image"/>
+     <title>
+      Керри-блю-терьер: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/kerri-blyu-terer/" property="og:url"/>
+     <meta content="Керри-блю-терьер: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Керри-блю-терьер – собака средних габаритов с изысканным голубым окрасом шерсти. Порода получила название в честь своей родины – ирландского графства Керри." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/kerri-blyu-terer/" itemprop="url">
+         <span itemprop="title">
+          Керри-блю-терьер
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Керри-блю-терьер
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/kerri-blyu-terer/">
+          Описание
+         </a>
+         <a href="/dog/kerri-blyu-terer/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/kerri-blyu-terer/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/kerri-blyu-terer/photo/">
+          Фото
+         </a>
+         <a href="/dog/kerri-blyu-terer/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Керри-блю-терьер" src="/upload/iblock/a0f/a0f0bff9e06765b34824d3848c6a119a.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Керри-блю-терьер – собака средних габаритов с изысканным голубым окрасом шерсти. Порода получила название в честь своей родины – ирландского графства Керри.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="Веньечко  #керриблютерьер  #kerryblueterrier" data-fancybox="images" data-link="https://www.instagram.com/p/CA2yi80pC1v/" data-type="image" data-username="" href="/upload/uf/652/652520f706c5e1572fe90e379e36f76b.jpg">
+            <img alt="Керри-блю-терьер" src="/upload/resize_cache/uf/652/293_293_2/652520f706c5e1572fe90e379e36f76b.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="Dad will build this fence. They brought it yesterday, so I had to check to see if the material was OK! 
+.
+.
+#kerryblueterrier #terriersofinstagram #dogsofinstagram #dog #terrier #irish #blue #doglover #doglife #darling #dogphotography #garden #kbt #animals #cutedogs #portrait #posing #handsome #dogstagram #petstagram #fence #concretefence #concrete #watchingpoint" data-fancybox="images" data-link="https://www.instagram.com/p/CA2m9JGD2jA/" data-type="image" data-username="" href="/upload/uf/c55/c554e0cb9a510f1e77fbb2af0829c1d9.jpg">
+            <img alt="Керри-блю-терьер" src="/upload/resize_cache/uf/c55/293_293_2/c554e0cb9a510f1e77fbb2af0829c1d9.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="Vi fick fart på onkel Woody igår! Sen kunde han ju tydligen skälla också och då blev jag genast medveten om storleksskillnaden mellan oss! /Linus
+
+#järngänget #dvärgschnauzer #kerryblueterrier #bichonhavanais" data-fancybox="images" data-link="https://www.instagram.com/p/CA2fGa-jM6h/" data-type="image" data-username="" href="/upload/uf/9f3/9f32a8143b7a43a264b7b4359cd20504.jpg">
+            <img alt="Керри-блю-терьер" src="/upload/resize_cache/uf/9f3/293_293_2/9f32a8143b7a43a264b7b4359cd20504.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/kerri-blyu-terer/photo/">
+         Все
+            фото Керри-блю-терьера
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы керри-блю-терьер
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы керри-блю-терьер
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер керри-блю-терьера
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни керри-блю-терьеров
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена керри-блю-терьера
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Керри-блю-терьер
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Ирландия
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         15-18 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 45,5-49,5 см, суки 44,5-48 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         12-15 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Хозяевам керри-блю-терьера придется постигать азы профессионального груминга, поскольку линька, сопровождающаяся поэтапным выпадением псовины, для породы не характерна.
+        </li>
+        <li>
+         Охотничий инстинкт у голубошерстных «ирландцев» достаточно острый, что мешает собакам мирно сосуществовать с соплеменниками, а также любыми животными, уступающими им в размерах.
+        </li>
+        <li>
+         Представители этого семейства игривы, но не страдают гиперактивностью и избыточным трудоголизмом. Оптимальные подвижные развлечения для питомца – фрисби, апортировка предметов, плавание.
+        </li>
+        <li>
+         Порода особенно понравится людям, мечтающим о «семейной» собаке, одинаково любящей всех домочадцев и не зацикленной на ком-то одном.
+        </li>
+        <li>
+         У большинства керри-блю-терьеров присутствуют классические терьерские привычки – мания к отлову грызунов, ведению раскопок на огородах и клумбах.
+        </li>
+        <li>
+         Задатки лидера и руководителя присущи всем представителям породы, поэтому у чересчур мягких владельцев, не утруждающих себя дрессировкой щенка, керри трансформируются в нагловатых и разрушительных питомцев.
+        </li>
+        <li>
+         Керри-блю-терьер сохраняет хорошую физическую форму, а также интерес к жизни и играм до преклонного возраста.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Керри-блю-терьер" data-original="/upload/iblock/850/850119d9ad3c58d4b7a31a85461a1e55.jpg">
+          <noscript data-alt="Керри-блю-терьер" data-original="/upload/iblock/850/850119d9ad3c58d4b7a31a85461a1e55.jpg">
+           <img alt="Керри-блю-терьер" src="/upload/iblock/850/850119d9ad3c58d4b7a31a85461a1e55.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Керри-блю-терьер
+          </strong>
+          – темпераментный бородач с хипстерской челкой, вносящий смуту и хаос в любую собачью стаю, но излучающий бесконечное добродушие в компании хозяина. Чтобы подружиться с лохматым «ирландцем», никаких сверхспособностей не требуется – представители этой породы лояльны к любому человеку, с которым приходится делить территорию. Однако если вы впервые навещаете керри-блю-терьера, меры предосторожности не помешают – с незнакомцами собаки сдержанно-холодноваты в общении и подозрительность к чужакам маскировать не пытаются.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Минимальная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Ниже среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Керри-блю-терьер основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы керри-блю-терьер
+        </h2>
+        <p>
+         Керри-блю-терьер – собака с внушительной, но не очень внятной историей. Специалисты до сих пор не могут установить настоящих предков животных и ограничиваются неподтвержденными догадками относительно степени родства керри-блю-терьеров с другими породами. Например, принято считать, что первые собаки-бородачи родились от вязки
+         <a class="ph" href="/dog/irlandskiy-volkodav/">
+          ирландских волкодавов
+         </a>
+         с черно-подпалыми английскими терьерами, которых потом сменили бедлингтоны и пшеничные терьеры. В то же время падкие на легенды и сенсации ирландцы продолжают верить в то, что прародителем породы была португальская водяная собака голубого окраса, спасшаяся с тонущего испанского корабля и подобранная фермерами Изумрудного острова.
+        </p>
+        <p>
+         В XIX веке обладание керри-блю-терьером было для ирландских крестьян делом обязательным. Однако содержать животных «за красивые глаза» практичные селяне не желали, поэтому четвероногим питомцам навязывали любую посильную работу – отлов водяных крыс, пастьбу овечьих отар, охрану хозяйского имущества. Осваивать породные выставки керри-блю-терьеры начали в самом конце XIX столетия. Попутно псы привлекались к прохождению полевых испытаний, в которых достигали неплохих результатов. В итоге дошло до того, что собака, не показавшая свои успехи по добыче и подаче зверя на выставке, не могла претендовать на чемпионский титул. Но предприимчивые заводчики и здесь сориентировались, начав намеренно культивировать в своих подопечных злобность, за которую керри получили прозвище «голубые дьяволы».
+        </p>
+        <p>
+         В 20-е годы XX века керри-блю-терьеров стандартизировали, а их владельцы стали объединяться в клубы. В 1922 г. «ирландцев» зарегистрировали в Англии, спустя два года ту же процедуру проделал Американский Кеннел-клуб. В СССР порода проникла в 60-х годах. В основном это были особи из Германии, которые периодически мелькали на всесоюзных выставках и даже приносили потомство. Что касается становления и прокачки именно российских линий керри, первопроходцем принято называть советского племенного специалиста А. И. Козловского. По его инициативе был создан первый в СССР коллективный питомник породы «Айриш Хиппи», из которого вышло несколько поколений здоровых, эффектных внешне и психически стабильных чемпионов.
+        </p>
+        <h2>
+         Видео: Керри-блю-терьер
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="0Vy8nbCSMGM">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы керри-блю-терьер
+        </h2>
+        <p>
+         Исторически керри-блю-терьеры были типичными фермерскими собаками, которых держали не за чистоту кровей, а за помощь в хозяйственных делах. Поэтому, невзирая на столетие выставочного разведения, в облике породы все еще проскальзывает крестьянская основательность, а иногда и откровенная грубоватость сложения. Скрадывать анатомические несовершенства помогает обильная волнистая шерсть, благодаря которой керри выглядят франтовато-элегантно и неординарно.
+        </p>
+        <p>
+         Половой диморфизм для дымчатых «ирландцев» тоже типичное явление – обычно кобели имеют более мощную мускулатуру и массивные головы. Отставание в росте у сук небольшое: если эталонный «мальчик» обязан быть не ниже 45,5-49,5 см в холке, то для «девочек» идеальными показателями являются 44,5-48 см. На выставках строгие требования предъявляются к форме головы и структуре шерсти керри-блю-терьеров. За них же назначается самый высокий балл. Кстати, если не рассматривать животное пристально, то может показаться, что его шерсть кудрявая. На деле же чрезмерная «пуделистость» псовины – серьезный недостаток. У истинного керри волос волнистый и мягкий, но ни в коем случае не курчавый.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Череп довольно крупный, сбалансированный, с легким стопом. Морда средних размеров.
+        </p>
+        <h3>
+         Зубы и челюсти
+        </h3>
+        <p>
+         Правильного представителя породы отличают крупные сильные зубы и прикус ножницеобразного типа. Допускается также прямая смычка зубных рядов. Челюсти собаки крепкие и хваткие. Пасть, а также верхняя и нижняя десны должны быть черными.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Гармонично развитая мочка окрашена в угольно-черный тон и имеет большие, широко распахнутые ноздри.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза средней величины, нормальной неглубокой посадки, с темно-ореховой либо просто темной радужкой. Взгляд керри-блю-терьера пронзительно-умный.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Аккуратные тонкие уши держатся по бокам головы, в средней своей части образуя складку и спадая вперед. Чтобы ушное полотно принимало правильное положение, щенкам керри-блю-терьера его подклеивают. Уши начинают клеить с трехмесячного возраста и заканчивают, когда животному исполнится семь месяцев. У некоторых особей процесс формирования хрящевой ткани может затянуться. Это тоже нормально, но подклеивать такие «упрямые» уши приходится дольше.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Шеи керри-блю-терьеров не слишком вытянутые, но и не короткие, с сильными основаниями.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Породистый керри-блю-терьер – статный питомец, с рельефной мускулатурой и прочным костяком. Идеально горизонтальная, нормальной длины спина «усилена» крепкой поясницей. Грудь животного отличается нормальной шириной и выраженной глубиной при округленных ребрах.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Для передних ног собаки в стойке характерны прямое положение, а также гармоничная основательность костяка и мускулатуры. Лопатки косые, с четкими очертаниями и хорошим прилеганием к бокам. Задние конечности отличают постав под телом, крупные бедра и выносливые скакательные суставы. У керри-блю-терьеров маленькие лапы, но с очень развитыми плотными подушечками. Животное движется легко, широко вынося передние ноги и делая мощный толчок задними конечностями. При этом голова и хвост бегущего керри несутся максимально высоко, а спина остается прямой.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         У представителей породы очень тонкий, выпрямленный, хорошо посаженный хвост.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Волос пышный, в меру мягкий и волнистый. Особенно развит шерстный покров на голове и морде.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Шерсть взрослых керри-блю-терьеров окрашена во все оттенки голубого, а также может иметь черные метки на корпусе. При этом все особи рождаются черными, постепенно «светлея» к 1-1,5 годам.
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <p>
+         Животные не могут экспонироваться на выставочных рингах, если имеют ярко выраженные дефекты экстерьера:
+        </p>
+        <ul>
+         <li>
+          перекус или недокус прикуса;
+         </li>
+         <li>
+          десны «мясного» цвета;
+         </li>
+         <li>
+          желтый или осветленный тон радужки;
+         </li>
+         <li>
+          выпуклую или седловидную спину;
+         </li>
+         <li>
+          чрезмерно узкую грудь;
+         </li>
+         <li>
+          отстоящие от корпуса локти;
+         </li>
+         <li>
+          прибылые пальцы на задних лапах, даже если они были когда-то удалены;
+         </li>
+         <li>
+          коровью или ходульную походку, не свойственную породе;
+         </li>
+         <li>
+          любой окрас шерсти, кроме оговоренного стандартом;
+         </li>
+         <li>
+          жесткую, щетинистую псовину.
+         </li>
+        </ul>
+        <p>
+         Особи с неустойчивой психикой, демонстрирующие агрессию либо ведущие себя трусливо, выставочный отбор не проходят и дисквалифицируются. Кроме того, штрафы налагаются на собак, которым во время экспонирования приходится помогать делать правильную стойку (приподнимать хвост и голову).
+        </p>
+        <h2 id="gl3">
+         Характер керри-блю-терьера
+        </h2>
+        <p>
+         Описывая характер керри-блю-терьеров, принято цитировать Э. С. Монтгомери, утверждавшего, что от жителей Ирландии породу отличает лишь тот факт, что ее представители не курят трубки. По всем остальным параметрам «искристый» темперамент животных полностью копирует менталитет жителей Изумрудного острова. Игривые, заводящиеся с полуоборота, обожающие разудалое веселье и такие же драки, керри-блю-терьеры относятся к тому типу домашних питомцев, с которыми вся жизнь проходит в ожидании сюрприза.
+        </p>
+        <p>
+         Настоящий керри-блю-терьер – это, в первую очередь, человекоориентированное создание. Принесенный в дом щенок быстро вливается в семью и учится ладить с каждым ее членом, не назначая доверенным лицом кого-то одного. Дети для животного – приятные компаньоны и товарищи по играм. Кстати, в отличие от собак крупных пород, керри не видят в детях и подростках низшую касту, к представителям которой нужно относиться снисходительно, но на чьи требования не стоит реагировать. Более того, уроженцы зеленого Эрина охотно пойдут с вашими наследниками на тренировочную площадку и прислушаются к командам, поданным юными хозяевами.
+        </p>
+        <p>
+         А вот с соплеменниками у керри-блю-терьеров взаимопонимание «на троечку». Может быть, потому что, увидев другую собаку, «ирландец» не упустит возможности покрасоваться и продемонстрировать собственную непобедимость. Собственно, с таких провокаций и начинается 90% конфликтов с четвероногими собратьями: керри поддразнивает, противник делает предупреждающий «Р-р-р!» – и бессмысленная схватка разгорается. Бытует мнение, что керри-блю-терьеры – отчаянные кошконенавистники, но здесь требуется уточнение: гоняют псы только незнакомых кис. Мурлыка, с ранних лет делящий с собакой жилплощадь, вправе рассчитывать на снисхождение.
+        </p>
+        <p>
+         Что касается сторожевых способностей породы, то на них вполне можно положиться. Истинные керри-блю-терьеры не страдают пустобрехством и если лают, то действительно по поводу. Разумеется, речь не идет о невоспитанных питомцах, использующих голос скуки ради. Некоторые керри способны впустить незнакомца в дом, но уж точно не выпустить из него. Обычно собака блокирует выходы из помещения и внимательно изучает поведение чужака. Реакция на любой угрожающий жест (взмах рукой, попытка отодвинуть хвостатого сторожа пинком ноги) следует жесткая и незамедлительная. Кстати, укусы породы болезненные и глубокие.
+        </p>
+        <p>
+         Керри-блю-терьер невероятно прыгуч и болезненно любопытен, поэтому для него нет запретных мест в квартире, есть просто недоисследованные. При этом он аккуратен в быту и даже несмотря на привычку погрызть на досуге что-нибудь твердое, деструктивным поведением не страдает и подвыванием не развлекается. В отсутствие хозяина питомец способен найти себе мирное занятие или сладко подремать на ковре, пока в доме не появится кто-нибудь из членов семьи. А еще керри-блю-терьер – прирожденный юморист, легко трансформирующийся в клоуна с буйным воображением и неиссякаемым запасом розыгрышей. Будьте морально готовы к забавным проделкам, странноватым трюкам с окружающими предметами и потешной пантомиме с участием четвероногого баловня.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Каждый керри-блю-терьер – это яркая индивидуальность, поэтому предсказать, насколько легко будет обучаться конкретный щенок, не сможет даже кинолог со стажем. Однако практически все тренеры отмечают врожденную упертость породы, когда дело доходит до принуждения к занятиям. Причина упрямства кроется в том, что керри сложно концентрироваться на вещах, кажущихся ему заведомо скучными. Кроме того, этот товарищ постоянно переключается на внешние раздражители вроде прошмыгнувшей мыши или замаячившего на горизонте соплеменника. Так что отрабатывать команды и спортивные умения с породой нужно быстро (10-минутное упражнение – предел), настойчиво, но без лишнего авторитаризма.
+        </p>
+        <p>
+         Границы социализации и знакомства питомца с окружающей реальностью на прогулке должен корректировать поводок (не шлейка). Не забывайте, «ирландцы» любят провоцировать конфликтные ситуации с другими собаками. Воспитывают керри-блю-терьеров, опираясь на стандартные методики. Сначала щенка приучают к единому распорядку дня, умению откликаться на собственную кличку и элементам этикета. Попытки наскоков на человека, кусание, рычание и вообще любая демонстрация превосходства должны пресекаться. Керри – типичные доминанты, которым достаточно уступить единственный раз, чтобы они успели сесть владельцу на голову.
+        </p>
+        <p>
+         Первые команды в жизни каждого керри-блю-терьера – «Место!», «Нельзя!» и «Ко мне!». Самый простой способ научить щенка уходить в свой уголок – относить его туда после еды и, удерживая животное руками на лежанке, негромко, но убедительно проговаривать команду («Место!»). О том, как правильно отрабатывать подзыв и другие базовые приказы, можно прочитать в книгах по дрессуре «Не рычите на собаку» К. Прайор, «Идеальная собака не выгуливает хозяина» М. Рюттера, «Собака без проблем», а также «Послушание собаки» В. Гриценко. Помните и о том, что в начале обучения подзывать животное для наказания или чтобы увести его с прогулки – грубейшая ошибка. Керри-блю-терьер не такой простак, чтобы подчиняться команде, ограничивающей его в развлечениях.
+        </p>
+        <p>
+         Наказания в жизни питомца должны иметь место тогда, когда он пойман с поличным. Никаких «репрессий» задним числом и битья быть не должно. Не наказывают также за непонимание требований, боязнь чего-либо, а также за слишком медленное исполнение команд. Не рекомендуется отлавливать керри-блю-терьера, чтобы запретить ему делать то, что вам не нравится, а также шлепать пса поводком. В первом случае животное воспримет «догонялки» как забавную игру, не забыв списать сто очков с вашего авторитета. А во втором – быстро поймет, что в ремешке таится опасность для боков, и в дальнейшем не позволит себя пристегивать.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         Современные керри-блю-терьеры – во всех смыслах домашние обитатели. Они не требовательны к пространству и довольствуются скромной лежанкой где-нибудь в уголке, при условии, что туда проникает солнце и не задувает сквозняк. Как в щенячьем, так и во вполне солидном возрасте, «ирландцы» любят поточить зубы о предметы. Для этого накупите питомцу специальных игрушек и периодически их обновляйте – резиновые мячики и пищалки противостоять остроте собачьих зубов долго не могут. Периодически игрушки можно заменять сырыми овощами – морковью, капустным листом и прочими «полезностями».
+        </p>
+        <p>
+         Важно следить за ногами и осанкой щенка. В первые 6 месяцев жизни керри-блю-терьерам не позволяется самостоятельно подниматься и спускаться по лестнице. Нельзя также играть с собакой в «перетягивание» – исказить животному прикус во время таких развлечений просто, а вот исправить почти невозможно. Выгуливать взрослых особей нужно дважды в день, затрачивая на променады и спортивные упражнения не менее двух-трех часов. Щенков выносят подышать и удовлетворить туалетные потребности до 5 раз в сутки. По достижении питомцем 6-месячного возраста количество экскурсий сокращают до трех.
+        </p>
+        <h3>
+         Стрижка шерсти и гигиена
+        </h3>
+        <p>
+         Шерсти керри-блю-терьера не вредят частые купания, поэтому в теплое время года плавать с собакой в открытых водоемах можно хоть каждый день. Что касается полноценного мытья с шампунями и кондиционирующими составами, то его допустимо устраивать раз в неделю или две. Расчесывать керри желательно почаще. Заводчики рекомендуют проходиться расческой по шерсти щенков ежедневно, чтобы ускорить процесс смены юниорского волоса. Взрослых особей рекомендуется массировать металлическим гребнем не реже двух раз в неделю.
+        </p>
+        <p>
+         Для поддержания гламурного вида собачьей «шубки» волос полагается регулярно состригать – тримминг породе противопоказан. Процесс стрижки осуществляется в такой последовательности:
+        </p>
+        <ul>
+         <li>
+          шерсть расчесать, разбирая колтуны, если таковые есть;
+         </li>
+         <li>
+          вымыть собаку с использованием шампуня для сухих волос;
+         </li>
+         <li>
+          позволить питомцу высохнуть естественным путем – фен не используется вовсе, либо используется, но волос в процессе сушки не расчесывается;
+         </li>
+         <li>
+          начесать полностью высохшую шерсть против роста.
+         </li>
+        </ul>
+        <p>
+         В идеале керри-блю-терьер должен принять выставочную стойку, что облегчит стрижку, но на практике можно обойтись и без нее. Главное – приучить собаку спокойно реагировать на процедуру. Первую стрижку щенкам делают в 3-месячном возрасте, а затем по мере отрастания волоса.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важно:
+         </strong>
+         керри-блю-терьеров не стригут накануне выставки. Осуществлять процедуру необходимо минимум за 3 недели до выхода на ринг, чтобы шерсть успела отрасти, а переходы выровняться.
+        </p>
+        <p>
+         Стричь собаку начинают с головы. Сначала машинкой выстригаются внешняя и внутренняя части ушей, а их края аккуратно обрабатываются ножницами. Над глазами формируется густая челка. Шерсть теменной зоны укорачивают либо машинкой, либо ножницами, оставляя на лбу аккуратную волну псовины длиной не более 1 см. Области висков, горла и зоны с боков глаз стригутся очень коротко.
+        </p>
+        <p>
+         Волос на спине снимают ножницами, приподнимая его против роста металлическим гребнем. Оптимальная длина шерстного покрова на этой части тела от 2 до 5 см. Такая же длина предпочтительна на боках и груди. Шею тоже обрабатывают ножницами по направлению от затылка к холке. При этом важно сделать максимально плавный переход, поскольку по мере приближения шеи к предплечьям длина волоса должна увеличиваться.
+        </p>
+        <p>
+         Внешняя часть хвоста продолжает линию спины и стрижется по тому же принципу. А вот на внутренней его части псовину необходимо предельно укоротить. Особое внимание – зоне под хвостом. Шерсть вокруг анального отверстия должна быть очень короткой. В противном случае продукты жизнедеятельности будут прилипать к отросшим завиткам.
+        </p>
+        <p>
+         Шоу-особям шерсть на ногах и нижней части груди не стригут, лишь тщательно начесывают сначала вниз, затем против роста. Хотя домашним питомцам, особенно молодым, стрижка конечностей не помешает. Особого ухода требуют борода и усы, которые у керри-блю-терьеров весьма пышные. Волос в уголках пасти обычно удаляют, а чересчур густую шерсть на морде филируют ножницами. Волоски между пальцами и на нижней части лап убирают, формируя округлый контур. На внешней части пальцев шерсть не снимают.
+        </p>
+        <p>
+         Грубые грумерские ошибки:
+        </p>
+        <ul>
+         <li>
+          выстригание шерсти под глазами керри-блю-терьера;
+         </li>
+         <li>
+          выстригание пахов;
+         </li>
+         <li>
+          оставление длинной шерсти на голове, боках, морде и животе.
+         </li>
+        </ul>
+        <p>
+         Повышенное внимание необходимо органам зрения питомца. Как и у большинства пород с «шерстяными» мордашками, глаза у керри слегка подтекают, что особенно проявляется в щенячьем возрасте, а также у особей с чересчур отросшей неухоженной челкой. Ежедневно складки век и глазные яблоки собаки необходимо протирать тканью, смоченной в теплой воде. Допустимо также использовать капли от избыточного слезотечения, например «Бриллиантовые глаза».
+        </p>
+        <p>
+         Раз в неделю нужно проверить уши керри-блю-терьера и удалить из них избытки серы, если они есть. Для процедуры потребуются чистая ткань (никаких ватных палочек) и любой гигиенический лосьон для ушей собак. Кроме того, готовьтесь систематически выдергивать из ушной воронки обильно разросшуюся шерсть, снижающую остроту слуха и провоцирующую воспаления. Делать это придется вручную, в несколько приемов.
+        </p>
+        <p>
+         Гигиена бородки и усов керри – обязательный пункт в уходе за породой. В домашней обстановке волос на подбородке лучше нетуго стянуть резинкой. Так его будет удобнее протирать после каждого кормления. Раз в две недели собаке полагается «педикюр». После стрижки когтей полезно также пошлифовать пластину пилочкой.
+        </p>
+        <p>
+         Зубы керри-блю-терьера необходимо чистить щеткой и ветеринарной зубной пастой. Но если животное к такой процедуре не приучено, проблему придется решать альтернативными способами. Например, добавлением в пищу любимца томатного сока либо жевательными лакомствами из зоомагазина.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Кормить керри-блю-терьера лучше по режиму, организуя питание так, чтобы собака была в плотной кондиции, но не жирела. Из натуральных продуктов для породы оптимально подходят:
+        </p>
+        <ul>
+         <li>
+          сырое постное мясо – говядина, конина, козлятина, баранина;
+         </li>
+         <li>
+          сырая или припущенная в масле рыба без костей – хек, навага, треска, но не чаще 2 раз в неделю;
+         </li>
+         <li>
+          нежирные кефир, творог, изредка сыр;
+         </li>
+         <li>
+          раз в неделю куриное яйцо – вареный белок и сырой желток;
+         </li>
+         <li>
+          овощи и фрукты, кроме бобовых;
+         </li>
+         <li>
+          крупяные каши – гречневая, рисовая;
+         </li>
+         <li>
+          молодая зелень – крапива, листья одуванчика, салат, петрушка;
+         </li>
+         <li>
+          витаминные добавки и лакомства – морская капуста, квашеная белокочанная капуста, сухофрукты.
+         </li>
+        </ul>
+        <p>
+         Запрещено угощать щенка трубчатыми и птичьими костями, но иногда можно позволить маленькое баловство в виде бараньих ребрышек. Мясо для керри-блю-терьеров всегда рубят на куски, но никогда не проворачивают в фарш. Дают мясную нарезку на завтрак и ужин.
+        </p>
+        <p>
+         Кроме того, важно помнить, что до года керри-блю-терьерам требуются минеральные подкормки и готовые витаминные комплексы. Не покупают БАДы только особям, с первых месяцев жизни питающимся сухими кормами (разумеется, высококачественными). Периодичность кормления керри-блю-терьера: до 4 месяцев – четыре раза в день, с 4 месяцев до полугода – трижды в день, с 6 месяцев и далее – двухразовое питание.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни керри-блю-терьеров
+        </h2>
+        <p>
+         Средняя продолжительность жизни представителей породы – 13 лет. Однако при условии хорошего ухода многие особи способны преодолевать эту возрастную планку. Известны также случаи, когда «ирландцы» заканчивали жизненный путь в 18-летнем возрасте. Наследственным заболеваниям керри подвержены в меньшей степени, чем большинство породистых соплеменников. Например, дисплазия суставов, которой страдают многие крупные и средние собаки, встречается у очень небольшого числа керри-блю-терьеров. Зато у «ирландцев» периодически случается подвывих суставов, который может быть обусловлен как последствиями травмы, так и генетически.
+        </p>
+        <p>
+         Гипотиреоз, а также болезни Виллебранда и Аддисона среди выходцев с Изумрудного острова тоже встречаются, но не так часто, как можно было бы ожидать. Настоящей проблемой для породы является прогрессирующая нервная абиотрофия. Болезнь не лечится, передается по наследству, но определить ее носителя пока невозможно. Проявляется недуг у 2-6-месячных щенков, а к году животные оказываются полностью обездвиженными.
+        </p>
+        <p>
+         Выявляют у керри-блю-терьеров и сухой кератоконъюнктивит, а также склонность покровов к образованию эпидермальных кист. В первом случае болезнь может стать хронической, а во втором – наросты на коже часто инфицируются. Не совсем заболевание, но достаточно неприятная вещь – мозоли на подушечках и между пальцами лап. Они у «ирландцев» образуются чаще, чем у других собак, провоцируя хромоту.
+        </p>
+        <p>
+         Из глазных патологий керри-блю-терьерам «достались» энтропион и ювенильная катаракта. Воспаление среднего уха – еще одна распространенная болезнь породы. Чаще всего ей страдают особи, чьи хозяева ленятся систематически чистить питомцам уши и выщипывать из них разросшуюся шерсть.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Не забывайте, что все представители породы рождаются с черным окрасом шерсти. Если боитесь обмана со стороны продавца, готовьтесь покупать полуторагодовалых особей – к этому возрасту керри-блю-терьеры приобретают традиционную голубую масть.
+        </p>
+        <ul>
+         <li>
+          Выбирайте загородные питомники, где собаки ведут относительно свободный образ жизни, а не заперты в четырех стенах безжалостными продавцами-разведенцами.
+         </li>
+         <li>
+          Уточните, какой корм дает своим подопечным заводчик. Если это дешевая «сушка», не надейтесь приобрести у такого «экономного» специалиста здоровое животное.
+         </li>
+         <li>
+          Оцените общую ухоженность помета. Не худые ли щенки, насколько чистые у них шерстка и зоны под хвостом, нет ли на теле блох.
+         </li>
+         <li>
+          Даже если керри-блю-терьер покупается не для выставок, ознакомьтесь с родословной его родителей. Это позволит лучше узнать потенциал будущего питомца.
+         </li>
+         <li>
+          Не всегда предрасположенность к наследственным заболеваниям можно заранее диагностировать. Но если заводчик сообщает, что его производители протестированы хотя бы на генетическую дисплазию суставов – это большой плюс.
+         </li>
+        </ul>
+        <h2 id="gl8">
+         Цена керри-блю-терьера
+        </h2>
+        <p>
+         Клубный щенок керри-блю-терьера в России стоит порядка 30 000 рублей. Выходец из европейских питомников (Англия, Шотландия) обойдется в 1200-1500 евро, в зависимости от экстерьерных качеств и состояния здоровья.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения Керри-блю-терьера на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/kerri-blyu-terer/forum/">
+        Перейти на
+        форум Керри-блю-терьера
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Керри-блю-терьер" src="/upload/iblock/a0f/a0f0bff9e06765b34824d3848c6a119a.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/kerri-blyu-terer/">
+          Керри-блю-терьер
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/kerri-blyu-terer/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/kerri-blyu-terer/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/kerri-blyu-terer/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/kerri-blyu-terer/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/kerri-blyu-terer/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/rotveyler/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Ротвейлер" data-original="/upload/resize_cache/iblock/2ba/100_100_1/2ba727577729810222fac27e266e04ef.jpg">
+          <noscript data-alt="Ротвейлер" data-original="/upload/resize_cache/iblock/2ba/100_100_1/2ba727577729810222fac27e266e04ef.jpg">
+           <img alt="Ротвейлер" src="/upload/resize_cache/iblock/2ba/100_100_1/2ba727577729810222fac27e266e04ef.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Ротвейлер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/bolshoy-shveytsarskiy-zennenkhund/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Большой швейцарский зенненхунд" data-original="/upload/resize_cache/iblock/554/100_100_1/k4gofuguxmwv8aluv90vbq9pk7a4bkht.jpeg">
+          <noscript data-alt="Большой швейцарский зенненхунд" data-original="/upload/resize_cache/iblock/554/100_100_1/k4gofuguxmwv8aluv90vbq9pk7a4bkht.jpeg">
+           <img alt="Большой швейцарский зенненхунд" src="/upload/resize_cache/iblock/554/100_100_1/k4gofuguxmwv8aluv90vbq9pk7a4bkht.jpeg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Большой швейцарский зенненхунд
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/vostochnoevropeyskaya-ovcharka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Восточноевропейская овчарка" data-original="/upload/resize_cache/iblock/27e/100_100_1/27eb172b86a8aa90c74bf7f989003b59.jpg">
+          <noscript data-alt="Восточноевропейская овчарка" data-original="/upload/resize_cache/iblock/27e/100_100_1/27eb172b86a8aa90c74bf7f989003b59.jpg">
+           <img alt="Восточноевропейская овчарка" src="/upload/resize_cache/iblock/27e/100_100_1/27eb172b86a8aa90c74bf7f989003b59.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Восточноевропейская овчарка
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/dirkhaund/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Дирхаунд" data-original="/upload/resize_cache/iblock/2ac/100_100_1/lcjdjhtgh2slq2pohp4p1mfqgn80lxa7.jpg">
+          <noscript data-alt="Дирхаунд" data-original="/upload/resize_cache/iblock/2ac/100_100_1/lcjdjhtgh2slq2pohp4p1mfqgn80lxa7.jpg">
+           <img alt="Дирхаунд" src="/upload/resize_cache/iblock/2ac/100_100_1/lcjdjhtgh2slq2pohp4p1mfqgn80lxa7.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Дирхаунд
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkerri-blyu-terer%252F%253Fcheck_key%253D198dc4d49b93d765b83703dc373eff4f%2526ANIMAL_CODE%253Dkerri-blyu-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkerri-blyu-terer%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmtlcnJpLWJseXUtdGVyZXIlMkYlM0ZjaGVja19rZXklM0QxOThkYzRkNDliOTNkNzY1YjgzNzAzZGMzNzNlZmY0ZiUyNkFOSU1BTF9DT0RFJTNEa2VycmktYmx5dS10ZXJlciUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZrZXJyaS1ibHl1LXRlcmVyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkerri-blyu-terer%252F%253Fcheck_key%253D198dc4d49b93d765b83703dc373eff4f%2526ANIMAL_CODE%253Dkerri-blyu-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fkerri-blyu-terer%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkerri-blyu-terer%252F%253Fcheck_key%253D198dc4d49b93d765b83703dc373eff4f%2526ANIMAL_CODE%253Dkerri-blyu-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkerri-blyu-terer%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "95.24.73.227"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--254823b62e50e7c0f49be18f24e23c14-->

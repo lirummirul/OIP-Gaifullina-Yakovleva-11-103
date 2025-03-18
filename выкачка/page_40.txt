@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'1832bae4043b'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Бишон фризе, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Бишон фризе (французская болонка) – миниатюрный плюшевый «антидепрессант» и обаятельный шалун, с которым не придется скучать." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/cc7/r5ea466vgmvmnqgv2zq4ttp1f5z1gfh9.jpeg" property="og:image"/>
+     <title>
+      Бишон фризе (Французская болонка) – описание породы, фото, характер
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/bishon-frize/" property="og:url"/>
+     <meta content="Бишон фризе (Французская болонка) – описание породы, фото, характер" property="og:title"/>
+     <meta content="Бишон фризе (французская болонка) – миниатюрный плюшевый «антидепрессант» и обаятельный шалун, с которым не придется скучать." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/bishon-frize/" itemprop="url">
+         <span itemprop="title">
+          Бишон фризе
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Бишон фризе
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/bishon-frize/">
+          Описание
+         </a>
+         <a href="/dog/bishon-frize/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/bishon-frize/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/bishon-frize/photo/">
+          Фото
+         </a>
+         <a href="/dog/bishon-frize/video/">
+          Видео
+         </a>
+         <a href="/dog/bishon-frize/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/bishon-frize/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Бишон фризе" src="/upload/iblock/6f3/6f3dac95ba1fea52efed069f2e512b1f.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/bishon-frize/">
+           французская болонка
+          </a>
+          ,
+          <a href="/dog/bishon-frize/">
+           кудрявый бишон
+          </a>
+         </span>
+         <p>
+          Бишон фризе (французская болонка) – миниатюрный плюшевый «антидепрессант» и обаятельный шалун, с которым не придется скучать.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/cf5/cf5b128379cc8a4c8957f01348b3c285.jpg" data-cap="Бишон фризе" data-fancybox="images" data-link="https://www.instagram.com/lapkins.ru/" data-type="image" data-username="lapkins.ru" href="/upload/uf/6c1/6c1facc9d52dfc6fb5ef7210d4408a58.jpg">
+            <img alt="Бишон фризе" src="/upload/resize_cache/uf/6c1/293_293_2/6c1facc9d52dfc6fb5ef7210d4408a58.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/eae/eae307d9eb1b72e5d356450189ffa5d0.jpg" data-cap="My girlfriends dog being a little poser!" data-fancybox="images" data-link="https://www.flickr.com/photos/matographic/16575590148/" data-type="image" data-username="Matthew Overton" href="/upload/uf/884/8847d87ad716fcd9f8440ecdfccae916.jpg">
+            <img alt="Бишон фризе" src="/upload/resize_cache/uf/884/293_293_2/8847d87ad716fcd9f8440ecdfccae916.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/986/98636f6bcab4cf37f00f8f9e6733585d.jpg" data-cap="" data-fancybox="images" data-link="https://www.instagram.com/p/BlFun4ahnCZ/" data-type="image" data-username="jeje_byul" href="/upload/uf/422/42214d7512131fff971b71c02bb6ea1e.jpg">
+            <img alt="Бишон фризе" src="/upload/resize_cache/uf/422/293_293_2/42214d7512131fff971b71c02bb6ea1e.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/bishon-frize/photo/">
+         Все
+            фото бишон фризе
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы бишон фризе
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность бишонов фризе
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер бишонов фризе
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье бишонов фризе
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Сколько стоит бишон фризе
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Бишон фризе
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Франция, Бельгия
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         3-6 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         25-30 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         12-15 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Французские болонки не имеют специфического собачьего запаха и не линяют, поэтому относятся к категории гипоаллергенных пород.
+        </li>
+        <li>
+         В дрессировке проявляют себя как способные, но несколько недисциплинированные ученики, требующие особого подхода.
+        </li>
+        <li>
+         Собаки этой породы – отличные компаньоны, рекомендованные для проживания в семьях с детьми.
+        </li>
+        <li>
+         Несмотря на миниатюрные размеры и в целом незащищенный вид, бишоны не нуждаются в излишней опеке. Хозяева, грешащие подобным, рискуют получить трусливое, капризное и избалованное животное, неспособное выстраивать адекватный диалог с другими собаками.
+        </li>
+        <li>
+         В силу своего общительного характера французские болонки не подходят для занятых и часто отлучающихся из дома людей.
+        </li>
+        <li>
+         Бишоны фризе – большие озорники и неугомонные проказники.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Бишон фризе" data-original="/upload/iblock/cc7/r5ea466vgmvmnqgv2zq4ttp1f5z1gfh9.jpeg">
+          <noscript data-alt="Бишон фризе" data-original="/upload/iblock/cc7/r5ea466vgmvmnqgv2zq4ttp1f5z1gfh9.jpeg">
+           <img alt="Бишон фризе" src="/upload/iblock/cc7/r5ea466vgmvmnqgv2zq4ttp1f5z1gfh9.jpeg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Бишоны фризе
+          </strong>
+          – декоративные собаки с кудрявой белоснежной шерсткой, состоящие в тесном родстве с болонками. Мягкая воздушная «шубка» придает бишонам сильное сходство с пуховкой для пудры, что наделяет животных неповторимым шармом. Моду на эту породу ввели в эпоху сумрачного Средневековья французские короли. В результате, на протяжении длительного периода времени ласковые и чрезвычайно активные бишоны оставались неизменными спутниками монархов, подчеркивающими высокий социальный статус своих владельцев.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средний (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средние (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Бишон фризе основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/bishon-frize/razmeri-porodi/">
+         размеры бишон фризе
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы бишон фризе
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бишон фризе" data-fancybox="gallery" href="/upload/iblock/a96/a96f98670c01e6cd4eafdbcfc0238ff6.jpg" title="Бишон фризе">
+          <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/a96/412_2150_1/a96f98670c01e6cd4eafdbcfc0238ff6.jpg">
+           <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/a96/412_2150_1/a96f98670c01e6cd4eafdbcfc0238ff6.jpg">
+            <img alt="Бишон фризе" class="article_pic" height="617" src="/upload/resize_cache/iblock/a96/412_2150_1/a96f98670c01e6cd4eafdbcfc0238ff6.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бишон фризе
+         </div>
+        </div>
+        <p>
+         Прошлое французских болонок, если не покрыто тайной и мраком, то основательно запутано. Как утверждают специалисты, далекими предками бишонов фризе были небольшие белые собачки, в свою очередь являвшиеся потомками водяных барбетов. Кучерявые пушистики населяли побережье и острова Средиземного моря и весьма успешно промышляли ловлей крыс, за что их часто селили на кораблях. Первое название породы звучало как «бар-бишон». «Бар», сокращенное от «барбет», и «бишон» в переводе с французского означают «бархатная подушечка».
+        </p>
+        <p>
+         Со временем род белых собачек с кудряшками основательно разросся, в результате чего от него «отпочковались» такие ветви, как болоньез (итальянская болонка),
+         <a class="ph" href="/dog/maltiyskaya-bolonka/">
+          мальтезе (мальтийская болонка)
+         </a>
+         и тенерифский бишон. Последняя разновидность была особенно популярна среди европейской элиты в эпоху Ренессанса и, по сути, дала начало современной породе французских болонок.
+        </p>
+        <p>
+         К XIII веку бишоны приобрели статус элемента роскоши. Щенка французской болонки можно было преподнести в качестве эксклюзивного подарка, либо использовать его как живую валюту при заключении сделки. Особой популяризации породы способствовал  Франциск I. Король-рыцарь держал при своем дворе неисчислимое количество болонок, к которым в те времена приклеилось новое прозвище: «собаки-инфанты».
+        </p>
+        <p>
+         После Французской революции интерес к бишонам плавно сошел на нет. Из дворцовых покоев собаки быстро переселились на парижские улицы, откуда перекочевали в бродячие цирковые труппы. Официальное название «бишон фризе» породе дала Международная кинологическая ассоциация в 1933 году. Год спустя были сформулированы и общие стандарты внешности французских болонок. Что касается распространения породы, то до США любимцы Франциска I добрались только в 50-х годах прошлого столетия, а в Англии бишонов стали разводить только в середине 70-х.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Я так люблю лежать на травке!" data-fancybox="gallery" href="/upload/iblock/75e/75e2875e5e70bd25775632b6595008c6.jpg" title="Я так люблю лежать на травке!">
+           <div class="lazy-load" data-alt="Я так люблю лежать на травке!" data-class="article_pic" data-original="/upload/resize_cache/iblock/75e/512_342_2/75e2875e5e70bd25775632b6595008c6.jpg">
+            <noscript data-alt="Я так люблю лежать на травке!" data-class="article_pic" data-original="/upload/resize_cache/iblock/75e/512_342_2/75e2875e5e70bd25775632b6595008c6.jpg">
+             <img alt="Я так люблю лежать на травке!" class="article_pic" src="/upload/resize_cache/iblock/75e/512_342_2/75e2875e5e70bd25775632b6595008c6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Я так люблю лежать на травке!
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Два друга-бишона, один мокрый, другой сухой" data-fancybox="gallery" href="/upload/iblock/305/305503acee8503e2c397a23459c2ca05.jpg" title="Два друга-бишона, один мокрый, другой сухой">
+           <div class="lazy-load" data-alt="Два друга-бишона, один мокрый, другой сухой" data-class="article_pic" data-original="/upload/resize_cache/iblock/305/512_342_2/305503acee8503e2c397a23459c2ca05.jpg">
+            <noscript data-alt="Два друга-бишона, один мокрый, другой сухой" data-class="article_pic" data-original="/upload/resize_cache/iblock/305/512_342_2/305503acee8503e2c397a23459c2ca05.jpg">
+             <img alt="Два друга-бишона, один мокрый, другой сухой" class="article_pic" src="/upload/resize_cache/iblock/305/512_342_2/305503acee8503e2c397a23459c2ca05.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Два друга-бишона, один мокрый, другой сухой
+          </div>
+         </div>
+        </div>
+        <h2>
+         Видео: Бишон фризе
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="Nci43RaXt4I">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность бишонов фризе
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок бишон фризе" data-fancybox="gallery" href="/upload/iblock/502/502b07d758123654e07fd63cfa4a3eac.jpg" title="Щенок бишон фризе">
+          <div class="lazy-load" data-alt="Щенок бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/502/412_2150_1/502b07d758123654e07fd63cfa4a3eac.jpg">
+           <noscript data-alt="Щенок бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/502/412_2150_1/502b07d758123654e07fd63cfa4a3eac.jpg">
+            <img alt="Щенок бишон фризе" class="article_pic" height="285" src="/upload/resize_cache/iblock/502/412_2150_1/502b07d758123654e07fd63cfa4a3eac.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок бишон фризе
+         </div>
+        </div>
+        <p>
+         Трудно найти более умилительное существо, чем французские болонки. Утопающие в своих воздушных «шубках», они напоминают невесомые белые облачка, в то время как миниатюрные габариты животных придают им сходство с мягкой заводной игрушкой. Как и подавляющее большинство представителей комнатно-декоративной породы, бишоны фризе обладают неистощимым запасом обаяния. Размеры взрослой особи обычно не превышают 30 см, а вес – 3-5 кг.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Пропорциональная, с плоской формой черепа (округлый вид голове придает пушистая шерсть животного) и такими же плоскими скулами. Мочка носа круглая, с черной кожей. Мордочка с широким основанием, постепенно сужающимся по направлению к носу. Переход от лобной части к морде выражен неярко.
+        </p>
+        <h3>
+         Губы
+        </h3>
+        <p>
+         Тонкие, черного цвета. При закрытой пасти нижняя губа обычно не видна.
+        </p>
+        <h3>
+         Челюсти
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бишон фризе с любимой хозяйкой" data-fancybox="gallery" href="/upload/iblock/6d4/6d46516c23542966951fbfce0b52f0cd.jpg" title="Бишон фризе с любимой хозяйкой">
+          <div class="lazy-load" data-alt="Бишон фризе с любимой хозяйкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/6d4/412_2150_1/6d46516c23542966951fbfce0b52f0cd.jpg">
+           <noscript data-alt="Бишон фризе с любимой хозяйкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/6d4/412_2150_1/6d46516c23542966951fbfce0b52f0cd.jpg">
+            <img alt="Бишон фризе с любимой хозяйкой" class="article_pic" height="274" src="/upload/resize_cache/iblock/6d4/412_2150_1/6d46516c23542966951fbfce0b52f0cd.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бишон фризе с любимой хозяйкой
+         </div>
+        </div>
+        <p>
+         Идеальным параметром считается ножницевидный прикус, но некоторыми фелинологическими ассоциациями допускается и прямой. Челюсти широкие, с ровными резцами.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Круглые черные (иногда коричневые), расположены по прямой линии, белки не видны. Кожа области вокруг глаз пигментирована в черный цвет, подчеркивающий контраст между светлой шерстью и органами зрения.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Уши у бишон фризе висячие, повторяющие форму равнобедренного треугольника. Образцовая длина в вытянутом состоянии – до уголков губ. Покрыты длинной, волнистой шерстью.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Длинная (1/3 от длины всего корпуса), высоко поставленная, тонкая у основания черепа и с плавным утолщением по мере приближения к холке.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Мордочка бишон фризе" data-fancybox="gallery" href="/upload/iblock/2f8/2f8482296eb4702aa18e3f405167f4dd.jpg" title="Мордочка бишон фризе">
+          <div class="lazy-load" data-alt="Мордочка бишон фризе" data-class="article_pic" data-original="/upload/iblock/2f8/2f8482296eb4702aa18e3f405167f4dd.jpg">
+           <noscript data-alt="Мордочка бишон фризе" data-class="article_pic" data-original="/upload/iblock/2f8/2f8482296eb4702aa18e3f405167f4dd.jpg">
+            <img alt="Мордочка бишон фризе" class="article_pic" src="/upload/iblock/2f8/2f8482296eb4702aa18e3f405167f4dd.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мордочка бишон фризе
+         </div>
+        </div>
+        <h3>
+         Тело
+        </h3>
+        <p>
+         Компактного размера, с крепкой ровной спиной и широкой, слегка изогнутой поясницей. Грудь умеренной ширины, глубоко опущенная, с выраженной грудиной.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кто тут хороший мальчик? Я!" data-fancybox="gallery" href="/upload/iblock/707/7076759f2cb8df0770588037f2ab5d6a.jpg" title="Кто тут хороший мальчик? Я!">
+          <div class="lazy-load" data-alt="Кто тут хороший мальчик? Я!" data-class="article_pic" data-original="/upload/resize_cache/iblock/707/412_2150_1/7076759f2cb8df0770588037f2ab5d6a.jpg">
+           <noscript data-alt="Кто тут хороший мальчик? Я!" data-class="article_pic" data-original="/upload/resize_cache/iblock/707/412_2150_1/7076759f2cb8df0770588037f2ab5d6a.jpg">
+            <img alt="Кто тут хороший мальчик? Я!" class="article_pic" height="617" src="/upload/resize_cache/iblock/707/412_2150_1/7076759f2cb8df0770588037f2ab5d6a.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кто тут хороший мальчик? Я!
+         </div>
+        </div>
+        <p>
+         Отличительные черты передних конечностей – тонкий костяк. Ноги прямые, локти смотрят назад. Плечи косые, не выступающие. Задние конечности ровные, с мускулистой и широкой бедренной частью. Форма лап округлая, с упругими черными подушечками и собранными в «комок» пальцами.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвост бишон фризе обильно покрыт пышной шерстью, расположен значительно ниже спины и равен половине длины корпуса. Не купируется. Испытывающее положительные эмоции животное поднимает хвост вверх и удерживает его параллельно позвоночнику. При этом остевой волос (подвес) может соприкасаться со спиной, но сам хвост – нет.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Кудрявая, воздушная, не склонная к сбиванию в так называемые «шнуры», длиной от 7 до 10 см. Подшерсток густой, плотный и пружинящий. Попавшее под дождь животное обычно не промокает, так как из-за густоты подшерстка влага не проникает вглубь «шубки». Чисто вымытая шерсть бишона фризе более объемная, поэтому после принятия ванны и сушки животное превращается в плотно сбитый «одуванчик». Для придания силуэту некоторой завершенности бишонов обычно стригут.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Взрослые особи имеют снежно-белый окрас, но у щенков оттенок шерсти может иметь бежевый или желтоватый подтон, который по мере взросления исчезает. Согласно стандартам, участки шерсти с желтоватым оттенком должны занимать не более 10% поверхности тела щенка.
+        </p>
+        <h3>
+         Пороки
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бишон фризе на выставке" data-fancybox="gallery" href="/upload/iblock/2a6/2a64d65449a2a164ecff1d76e7836384.jpg" title="Бишон фризе на выставке">
+          <div class="lazy-load" data-alt="Бишон фризе на выставке" data-class="article_pic" data-original="/upload/resize_cache/iblock/2a6/412_2150_1/2a64d65449a2a164ecff1d76e7836384.jpg">
+           <noscript data-alt="Бишон фризе на выставке" data-class="article_pic" data-original="/upload/resize_cache/iblock/2a6/412_2150_1/2a64d65449a2a164ecff1d76e7836384.jpg">
+            <img alt="Бишон фризе на выставке" class="article_pic" height="300" src="/upload/resize_cache/iblock/2a6/412_2150_1/2a64d65449a2a164ecff1d76e7836384.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бишон фризе на выставке
+         </div>
+        </div>
+        <p>
+         В список наиболее частых дефектов бишон фризе входят:
+        </p>
+        <ul>
+         <li>
+          пигментация шерстяного покрова (рыжие и черные пятна);
+         </li>
+         <li>
+          слишком короткая, прямая или сбивающаяся в «шнуры» шерсть;
+         </li>
+         <li>
+          неправильный прикус (перекус или недокус).
+         </li>
+        </ul>
+        <p>
+         Основные дисквалифицирующие пороки особей шоу-класса:
+        </p>
+        <ul>
+         <li>
+          окрашенная в розовый цвет мочка носа;
+         </li>
+         <li>
+          хвост, закрученный в «баранку» или по спирали;
+         </li>
+         <li>
+          светлый оттенок радужки;
+         </li>
+         <li>
+          крипторхизм;
+         </li>
+         <li>
+          агрессивный и, наоборот, слишком трусливый характер.
+         </li>
+        </ul>
+        <h2>
+         Фото бишон фризе
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/970/9704e99ad9ce0d42e788b2a0aaa6f0df.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/970/380_264_2/9704e99ad9ce0d42e788b2a0aaa6f0df.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/970/380_264_2/9704e99ad9ce0d42e788b2a0aaa6f0df.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/970/380_264_2/9704e99ad9ce0d42e788b2a0aaa6f0df.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ad7/ad72bf5f6d20dca5b58d27d942b236d5.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/ad7/380_264_2/ad72bf5f6d20dca5b58d27d942b236d5.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/ad7/380_264_2/ad72bf5f6d20dca5b58d27d942b236d5.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/ad7/380_264_2/ad72bf5f6d20dca5b58d27d942b236d5.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/66b/66bda5cb897a210670ad23529cd2d041.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/66b/380_264_2/66bda5cb897a210670ad23529cd2d041.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/66b/380_264_2/66bda5cb897a210670ad23529cd2d041.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/66b/380_264_2/66bda5cb897a210670ad23529cd2d041.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d66/d6646c3268a15a8ac8256600932013c9.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/d66/380_264_2/d6646c3268a15a8ac8256600932013c9.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/d66/380_264_2/d6646c3268a15a8ac8256600932013c9.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/d66/380_264_2/d6646c3268a15a8ac8256600932013c9.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/38a/38aa29cada105b59e83ce59e01e3c606.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/38a/380_264_2/38aa29cada105b59e83ce59e01e3c606.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/38a/380_264_2/38aa29cada105b59e83ce59e01e3c606.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/38a/380_264_2/38aa29cada105b59e83ce59e01e3c606.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d03/d03dcce2673987c63c05b4ce82ba37f9.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/d03/380_264_2/d03dcce2673987c63c05b4ce82ba37f9.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/d03/380_264_2/d03dcce2673987c63c05b4ce82ba37f9.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/d03/380_264_2/d03dcce2673987c63c05b4ce82ba37f9.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6e9/6e9d6ff080f9c929bc9e5850f2306b25.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/6e9/380_264_2/6e9d6ff080f9c929bc9e5850f2306b25.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/6e9/380_264_2/6e9d6ff080f9c929bc9e5850f2306b25.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/6e9/380_264_2/6e9d6ff080f9c929bc9e5850f2306b25.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ac7/ac74eb5d159f30893b8564e660b1a438.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/ac7/380_264_2/ac74eb5d159f30893b8564e660b1a438.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/ac7/380_264_2/ac74eb5d159f30893b8564e660b1a438.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/ac7/380_264_2/ac74eb5d159f30893b8564e660b1a438.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/77e/77e53335dace3823a58b3b3da65e7897.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/77e/380_264_2/77e53335dace3823a58b3b3da65e7897.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/77e/380_264_2/77e53335dace3823a58b3b3da65e7897.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/77e/380_264_2/77e53335dace3823a58b3b3da65e7897.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер бишонов фризе
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Ты кто? Я хочу с тобой поиграть!" data-fancybox="gallery" href="/upload/iblock/7cb/7cb4b12125a81304dd50391412444550.jpg" title="Ты кто? Я хочу с тобой поиграть!">
+          <div class="lazy-load" data-alt="Ты кто? Я хочу с тобой поиграть!" data-class="article_pic" data-original="/upload/resize_cache/iblock/7cb/412_2150_1/7cb4b12125a81304dd50391412444550.jpg">
+           <noscript data-alt="Ты кто? Я хочу с тобой поиграть!" data-class="article_pic" data-original="/upload/resize_cache/iblock/7cb/412_2150_1/7cb4b12125a81304dd50391412444550.jpg">
+            <img alt="Ты кто? Я хочу с тобой поиграть!" class="article_pic" height="335" src="/upload/resize_cache/iblock/7cb/412_2150_1/7cb4b12125a81304dd50391412444550.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Ты кто? Я хочу с тобой поиграть!
+         </div>
+        </div>
+        <p>
+         Французские болонки – настоящие маленькие «энерджайзеры», которые ни минуты не сидят на месте. Это чрезвычайно дружелюбные, активные и потешные существа, легко приживающиеся как в просторных домах, так и в малогабаритных квартирах. Бишоны очень коммуникабельны и будут рады поселиться в семьях, что даст им возможность вовлечь в свои игры как можно большее количество людей.
+        </p>
+        <p>
+         Из-за доброжелательного характера и бездны обаяния французских болонок часто привлекают к пет-терапии. Умильные белоснежные комочки – частые гости в детских больницах и домах престарелых. Помимо того, из этих декоративных собачек получаются надежные сторожа. Бишоны фризе имеют звонкий голос, которым с удовольствием пользуются каждый раз, когда на пороге квартиры появляется незнакомое существо.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бишон фризе с ребенком" data-fancybox="gallery" href="/upload/iblock/969/969f18b93cc41657e92339a302113b96.jpg" title="Бишон фризе с ребенком">
+           <div class="lazy-load" data-alt="Бишон фризе с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/969/512_342_2/969f18b93cc41657e92339a302113b96.jpg">
+            <noscript data-alt="Бишон фризе с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/969/512_342_2/969f18b93cc41657e92339a302113b96.jpg">
+             <img alt="Бишон фризе с ребенком" class="article_pic" src="/upload/resize_cache/iblock/969/512_342_2/969f18b93cc41657e92339a302113b96.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бишон фризе с ребенком
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бишон фризе с кошкой" data-fancybox="gallery" href="/upload/iblock/418/41863fa711b9a39079dc8874ae3949eb.jpg" title="Бишон фризе с кошкой">
+           <div class="lazy-load" data-alt="Бишон фризе с кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/418/512_342_2/41863fa711b9a39079dc8874ae3949eb.jpg">
+            <noscript data-alt="Бишон фризе с кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/418/512_342_2/41863fa711b9a39079dc8874ae3949eb.jpg">
+             <img alt="Бишон фризе с кошкой" class="article_pic" src="/upload/resize_cache/iblock/418/512_342_2/41863fa711b9a39079dc8874ae3949eb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бишон фризе с кошкой
+          </div>
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бишон фризе гуляет с хозяином" data-fancybox="gallery" href="/upload/iblock/51d/51d778b251fa408f6771e715e23e519e.jpg" title="Бишон фризе гуляет с хозяином">
+          <div class="lazy-load" data-alt="Бишон фризе гуляет с хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/51d/412_2150_1/51d778b251fa408f6771e715e23e519e.jpg">
+           <noscript data-alt="Бишон фризе гуляет с хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/51d/412_2150_1/51d778b251fa408f6771e715e23e519e.jpg">
+            <img alt="Бишон фризе гуляет с хозяином" class="article_pic" height="621" src="/upload/resize_cache/iblock/51d/412_2150_1/51d778b251fa408f6771e715e23e519e.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бишон фризе гуляет с хозяином
+         </div>
+        </div>
+        <p>
+         Дрессировать французских болонок не так уж сложно. Миниатюрные собачки легко усваивают не только элементарные, но и достаточно сложные команды, именно поэтому бишонов можно часто встретить на арене цирка. Начинать тренировать животных лучше с раннего возраста, но делать это стоит с учетом особенностей породы. Простейшие команды вроде «Фу!», «Место!», «Ко мне!» щенки бишонов фризе осваивают быстро, а вот над формированием более сложных навыков придется поработать чуть дольше.
+        </p>
+        <p>
+         Во время игр с людьми щенки, да и взрослые собаки, часто позволяют себе такую вольность, как покусывание. Чтобы минимизировать риск случайных травм, от этой привычки животное следует начать отучать как можно раньше.
+        </p>
+        <p>
+         Французские болонки обладают несколько ветреным характером и не любят долго концентрироваться на одном виде деятельности. Длительные и однообразные уроки им быстро надоедают, чего не скажешь о шалостях и озорных проделках.
+        </p>
+        <p>
+         Бишоны категорически не приемлют грубое обращение, грозные окрики, поэтому применять во время дрессировок силу и принуждать животное выполнять команды «из-под палки» – заведомо провальная затея. В идеале воспитание собаки должно базироваться на ее заинтересованности в процессе обучения.
+        </p>
+        <p>
+         Пытаться ставить себя на одну ступень с животным тоже не стоит. Бишон должен понимать, что главный в доме не он, а хозяин. В противном случае есть риск обзавестись избалованным и неуправляемым питомцем.
+        </p>
+        <p>
+         Занимаясь дрессировкой бишонов фризе, следует запастись терпением и всевозможными вкусняшками, которые станут для животного дополнительным стимулом к учебе. Ведите себя с собакой ласково, но твердо, осуществляя занятия в непринужденной игровой форме с непременным поощрением питомца в конце процесса. Если животное плохо вело себя во время тренировки, ему можно «прочитать нотацию» строгим тоном (не путать с криком).
+        </p>
+        <p>
+         Хозяевам, желающим приобщить питомца к волонтерской деятельности, рекомендуется подыскать для своего четвероногого друга канистерапевтическую обучающую программу. Прохождение подобных курсов предоставит собаке и ее владельцу возможность участвовать в пет-терапевтических мероприятиях.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бишон в теплой курточке" data-fancybox="gallery" href="/upload/iblock/eb3/eb3144fa334c47d4dbec740e9863d3a0.jpg" title="Бишон в теплой курточке">
+           <div class="lazy-load" data-alt="Бишон в теплой курточке" data-class="article_pic" data-original="/upload/resize_cache/iblock/eb3/512_342_2/eb3144fa334c47d4dbec740e9863d3a0.jpg">
+            <noscript data-alt="Бишон в теплой курточке" data-class="article_pic" data-original="/upload/resize_cache/iblock/eb3/512_342_2/eb3144fa334c47d4dbec740e9863d3a0.jpg">
+             <img alt="Бишон в теплой курточке" class="article_pic" src="/upload/resize_cache/iblock/eb3/512_342_2/eb3144fa334c47d4dbec740e9863d3a0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бишон в теплой курточке
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Этот малыш явно чем-то недоволен" data-fancybox="gallery" href="/upload/iblock/63b/63b0457ccc7f1eee14e90d3ad186dfb6.jpg" title="Этот малыш явно чем-то недоволен">
+           <div class="lazy-load" data-alt="Этот малыш явно чем-то недоволен" data-class="article_pic" data-original="/upload/resize_cache/iblock/63b/512_342_2/63b0457ccc7f1eee14e90d3ad186dfb6.jpg">
+            <noscript data-alt="Этот малыш явно чем-то недоволен" data-class="article_pic" data-original="/upload/resize_cache/iblock/63b/512_342_2/63b0457ccc7f1eee14e90d3ad186dfb6.jpg">
+             <img alt="Этот малыш явно чем-то недоволен" class="article_pic" src="/upload/resize_cache/iblock/63b/512_342_2/63b0457ccc7f1eee14e90d3ad186dfb6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Этот малыш явно чем-то недоволен
+          </div>
+         </div>
+        </div>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Подстриженный бишон фризе" data-fancybox="gallery" href="/upload/iblock/d5e/d5e97e5d11d34aa7dc47f72391642436.jpg" title="Подстриженный бишон фризе">
+          <div class="lazy-load" data-alt="Подстриженный бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/d5e/412_2150_1/d5e97e5d11d34aa7dc47f72391642436.jpg">
+           <noscript data-alt="Подстриженный бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/d5e/412_2150_1/d5e97e5d11d34aa7dc47f72391642436.jpg">
+            <img alt="Подстриженный бишон фризе" class="article_pic" height="620" src="/upload/resize_cache/iblock/d5e/412_2150_1/d5e97e5d11d34aa7dc47f72391642436.jpg" width="411"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Подстриженный бишон фризе
+         </div>
+        </div>
+        <p>
+         Бишон фризе не та порода, с которой можно позволить себе немного полениться. Несмотря на то, что французские болонки практически не линяют, их пышная шерстка нуждается в тщательном уходе. Расчесывать животное необходимо каждый день (желательно после прогулок, чтобы удалить мусор и песчинки, запутавшиеся в шерсти), а также использовать пуходерку для придания «шубке» воздушности.
+        </p>
+        <p>
+         Если питомец пришел с улицы, ему обычно обмывают лапки, мордочку и гениталии. Французских болонок полагается купать с периодичностью раз в месяц. При мытье обязательно использование мягкого шампуня и кондиционера для облегчения расчесывания шерсти. Посещать грумера желательно раз в 2-3 месяца. Впрочем, если вы не воспитываете животное шоу-класса, на груминге можно немного сэкономить и постричь животное самостоятельно.
+        </p>
+        <p>
+         Глаза бишона фризе необходимо проверять каждый день и, при необходимости, очищать их ватной палочкой, смоченной в прохладной кипяченой воде. То же правило действует и в отношении чистоты ушей. Когти бишонам подстригают дважды в месяц когтерезом или щипчиками. Образовавшиеся после процедуры неровности когтевой пластины подпиливают. Зубы и ротовую полость полагается чистить с применением специальной зубной пасты не реже одного раза в неделю.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Потчевать французскую болонку натуральными продуктами, предпочесть комбинированный вариант кормления или ограничиться сухим кормом – вопрос, который каждый хозяин решает по-своему. Из обязательных «блюд», которые должны присутствовать в рационе «собаки-одуванчика», стоит назвать сырое мясо (для смягчения продукта его можно слегка обдать кипятком), отварные и сырые овощи, морскую рыбу, из которой предварительно удалены косточки, заваренные гречневую и овсяную крупы. Поскольку взрослых бишонов фризе кормят дважды в день, мясо им лучше давать с вечерним приемом пищи и в тщательно измельченном виде (очень желательно, чтобы это была не свинина).
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кусь" data-fancybox="gallery" href="/upload/iblock/958/958ceccfdc25419427210cd7611892a0.jpg" title="Кусь">
+          <div class="lazy-load" data-alt="Кусь" data-class="article_pic" data-original="/upload/resize_cache/iblock/958/412_2150_1/958ceccfdc25419427210cd7611892a0.jpg">
+           <noscript data-alt="Кусь" data-class="article_pic" data-original="/upload/resize_cache/iblock/958/412_2150_1/958ceccfdc25419427210cd7611892a0.jpg">
+            <img alt="Кусь" class="article_pic" height="274" src="/upload/resize_cache/iblock/958/412_2150_1/958ceccfdc25419427210cd7611892a0.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кусь
+         </div>
+        </div>
+        <p>
+         Включение в меню бишонов молока допустимо лишь для щенков. Взрослым особям достаточно небольшого количества любого кисломолочного напитка раз в неделю. Крайне не рекомендуется угощать питомца жирными, острыми и солеными деликатесами. Сладости, колбаса, выпечка, макароны, бобовые и картофель тоже под строгим запретом, не говоря о мясных и куриных косточках.
+        </p>
+        <p>
+         Особям, находящимся на натуральном кормлении, показан прием витаминных комплексов. Обязательно проследите, чтобы это были препараты не на основе морковного и водорослевых экстрактов, которые обычно ярко пигментированы и способны заметно изменить окрас шерсти питомца.
+        </p>
+        <p>
+         Щенков французских болонок кормят по 5-6 раз в сутки. По мере взросления собаки частота кормлений уменьшается, а к 9 месяцам животное полностью переходит на «взрослое» двухразовое питание.
+        </p>
+        <h3>
+         Туалет
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Игривый бишон" data-fancybox="gallery" href="/upload/iblock/51b/51b927011a9d0b8efdb8137a0f93745c.jpg" title="Игривый бишон">
+          <div class="lazy-load" data-alt="Игривый бишон" data-class="article_pic" data-original="/upload/resize_cache/iblock/51b/412_2150_1/51b927011a9d0b8efdb8137a0f93745c.jpg">
+           <noscript data-alt="Игривый бишон" data-class="article_pic" data-original="/upload/resize_cache/iblock/51b/412_2150_1/51b927011a9d0b8efdb8137a0f93745c.jpg">
+            <img alt="Игривый бишон" class="article_pic" height="588" src="/upload/resize_cache/iblock/51b/412_2150_1/51b927011a9d0b8efdb8137a0f93745c.jpg" width="411"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Игривый бишон
+         </div>
+        </div>
+        <p>
+         Бишоны фризе достаточно активно сопротивляются такой науке, как пользование уличным туалетом. Первое время выводите питомца почаще на прогулку: щенков – каждые полчаса, взрослых особей – раз в 2 часа. Так у него сформируется четкий ассоциативный ряд: прогулка – туалет.
+        </p>
+        <p>
+         Оптимальным временем для выгула бишона с целью совершения туалета считается время после принятия собакой пищи (через 10-15 минут). Для особо упорных «товарищей», которые категорически не желают использовать выход на улицу для отправления своих нужд и предпочитают пачкать пол и ковер, можно найти другой компромисс. В таких случаях собаку приучают ходить на расстеленную на полу газету или одноразовую пеленку (метод не подходит для кобелей).
+        </p>
+        <h3>
+         Клетка
+        </h3>
+        <p>
+         Шаловливые и непоседливые болонки способны устроить в квартире эпический беспорядок, поэтому иногда владельцам бишонов приходится прибегать к услугам клетки. Это крайняя, но эффективная мера, рассчитанная на случаи, когда за питомцем некому присмотреть. Приучать собаку к клетке необходимо с раннего возраста, чтобы животное не рассматривало это ограничение свободы как разновидность наказания.
+        </p>
+        <h2 id="gl6">
+         Здоровье бишонов фризе
+        </h2>
+        <p>
+         Средняя продолжительность жизни французских болонок – 12-15 лет. При правильном уходе некоторые особи способны доживать до 19 лет, при этом большая часть животных умирает не от неизлечимых недугов, а от старости. Генетические заболевания среди бишонов фризе почти не встречаются. К наиболее часто диагностируемым болезням породы относятся:
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кто-то немного испачкался" data-fancybox="gallery" href="/upload/iblock/673/67346663ebbad14270a43b3604d5917b.jpg" title="Кто-то немного испачкался">
+          <div class="lazy-load" data-alt="Кто-то немного испачкался" data-class="article_pic" data-original="/upload/resize_cache/iblock/673/412_2150_1/67346663ebbad14270a43b3604d5917b.jpg">
+           <noscript data-alt="Кто-то немного испачкался" data-class="article_pic" data-original="/upload/resize_cache/iblock/673/412_2150_1/67346663ebbad14270a43b3604d5917b.jpg">
+            <img alt="Кто-то немного испачкался" class="article_pic" height="274" src="/upload/resize_cache/iblock/673/412_2150_1/67346663ebbad14270a43b3604d5917b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кто-то немного испачкался
+         </div>
+        </div>
+        <ul>
+         <li>
+          гипотрихоз;
+         </li>
+         <li>
+          дерматит;
+         </li>
+         <li>
+          эпилепсия;
+         </li>
+         <li>
+          аксиальная нестабильность;
+         </li>
+         <li>
+          мочекаменная болезнь;
+         </li>
+         <li>
+          аллергия;
+         </li>
+         <li>
+          болезни глаз: катаракта, энтропион, дистрофия роговицы;
+         </li>
+         <li>
+          диабет.
+         </li>
+        </ul>
+        <p>
+         У некоторых особей встречается деформация слезных протоков, признаками которой являются избыточная слезливость животного, либо полное отсутствие слезных выделений (вторую разновидность патологии поможет исправить операция). Помимо того, у бишонов фризе наблюдается повышенная чувствительность к прививкам, поэтому, если после вакцинации замечены изменения в поведении животного и аллергические высыпания на коже, лучше сразу же обратиться к ветеринару.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мама с тремя щенками бишон фризе" data-fancybox="gallery" href="/upload/iblock/24d/24d1a8b615d9d44bc786ee7cab65813a.jpg" title="Мама с тремя щенками бишон фризе">
+          <div class="lazy-load" data-alt="Мама с тремя щенками бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/24d/412_2150_1/24d1a8b615d9d44bc786ee7cab65813a.jpg">
+           <noscript data-alt="Мама с тремя щенками бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/24d/412_2150_1/24d1a8b615d9d44bc786ee7cab65813a.jpg">
+            <img alt="Мама с тремя щенками бишон фризе" class="article_pic" height="309" src="/upload/resize_cache/iblock/24d/412_2150_1/24d1a8b615d9d44bc786ee7cab65813a.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мама с тремя щенками бишон фризе
+         </div>
+        </div>
+        <p>
+         Основная сложность при выборе щенка бишона фризе заключается в отсутствии у юных особей ярких признаков породы. Часто под видом французской болонки можно купить обычного белого пушистика, не имеющего никакого отношения к данной ветви. Если ваша цель – приобретение эталонного животного шоу-класса, не говоря уже о представителях брид-разновидности, стоит привлечь к этому делу опытного специалиста.
+        </p>
+        <p>
+         При знакомстве с будущим питомцем сразу же отметайте излишне нервных, агрессивных и трусливых особей. Вряд ли с возрастом их характер улучшится. В остальном соблюдайте те же правила, что и при выборе любого породистого животного. Познакомьтесь с условиями проживания собак в питомнике, не стесняйтесь попросить заводчика познакомить вас с родителями щенка, тщательно изучите ветпаспорт будущего питомца. А вот на вес и непропорциональную голову бишона обращать внимание не стоит: в процессе роста животное очень быстро набирает мышечную массу, и форма черепа постепенно выравнивается.
+        </p>
+        <p>
+         Оптимальный для продажи возраст щенков бишона фризе – 3-3,5 месяца.
+        </p>
+        <h2>
+         Фото щенков бишон фризе
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/728/728224ed93449c39c10285bb3947621c.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/728/380_264_2/728224ed93449c39c10285bb3947621c.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/728/380_264_2/728224ed93449c39c10285bb3947621c.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/728/380_264_2/728224ed93449c39c10285bb3947621c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/378/378ea4efec171e6203a3321968ca748e.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/378/380_264_2/378ea4efec171e6203a3321968ca748e.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/378/380_264_2/378ea4efec171e6203a3321968ca748e.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/378/380_264_2/378ea4efec171e6203a3321968ca748e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7ff/7ff5343603ad8d933eb36fb01a6da40e.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/7ff/380_264_2/7ff5343603ad8d933eb36fb01a6da40e.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/7ff/380_264_2/7ff5343603ad8d933eb36fb01a6da40e.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/7ff/380_264_2/7ff5343603ad8d933eb36fb01a6da40e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/614/6145b68b8c651153154ad649f16eba1c.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/614/380_264_2/6145b68b8c651153154ad649f16eba1c.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/614/380_264_2/6145b68b8c651153154ad649f16eba1c.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/614/380_264_2/6145b68b8c651153154ad649f16eba1c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/bc3/bc34d56b706555d2b3aa1ff7fd2f514f.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/bc3/380_264_2/bc34d56b706555d2b3aa1ff7fd2f514f.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/bc3/380_264_2/bc34d56b706555d2b3aa1ff7fd2f514f.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/bc3/380_264_2/bc34d56b706555d2b3aa1ff7fd2f514f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/cd7/cd7f24c1f46338326493e4814da12e0d.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd7/380_264_2/cd7f24c1f46338326493e4814da12e0d.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd7/380_264_2/cd7f24c1f46338326493e4814da12e0d.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/cd7/380_264_2/cd7f24c1f46338326493e4814da12e0d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/82e/82e76b2a85be06c13c21a008655eb111.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/82e/380_264_2/82e76b2a85be06c13c21a008655eb111.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/82e/380_264_2/82e76b2a85be06c13c21a008655eb111.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/82e/380_264_2/82e76b2a85be06c13c21a008655eb111.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7cb/7cb58f82dbd5b41b37bd1906abbcfc74.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/7cb/380_264_2/7cb58f82dbd5b41b37bd1906abbcfc74.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/7cb/380_264_2/7cb58f82dbd5b41b37bd1906abbcfc74.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/7cb/380_264_2/7cb58f82dbd5b41b37bd1906abbcfc74.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/108/10862565cf11a6e251854d3376209de7.jpg" title="">
+           <div class="lazy-load" data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/108/380_264_2/10862565cf11a6e251854d3376209de7.jpg">
+            <noscript data-alt="Бишон фризе" data-class="article_pic" data-original="/upload/resize_cache/iblock/108/380_264_2/10862565cf11a6e251854d3376209de7.jpg">
+             <img alt="Бишон фризе" class="article_pic" src="/upload/resize_cache/iblock/108/380_264_2/10862565cf11a6e251854d3376209de7.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Сколько стоит бишон фризе
+        </h2>
+        <p>
+         Цены на щенков бишона фризе начинаются от 40 000 руб. Крошечное создание от родителей-чемпионов обойдется на порядок дороже – от 70 000 до 100 000 руб. Если вы наткнулись на объявление в стиле: «Бишоны фризе недорого!», означать это может только одно – заводчику хочется побыстрее избавиться от животных с дефектами. Это, конечно, не преступление, и такие щенки тоже могут стать отличными товарищами и компаньонами, но об участии в выставках и дог-шоу в таком случае можно забыть.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения бишон фризе на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/25142/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Маша Даниленко" data-original="/upload/resize_cache/main/caa/200_200_2/pj3mcr1j4gpjsc2mycqwkw978v3s641s.jpg">
+            <noscript data-alt="Маша Даниленко" data-original="/upload/resize_cache/main/caa/200_200_2/pj3mcr1j4gpjsc2mycqwkw978v3s641s.jpg">
+             <img alt="Маша Даниленко" src="/upload/resize_cache/main/caa/200_200_2/pj3mcr1j4gpjsc2mycqwkw978v3s641s.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/strannaya-reaktsiya-na-kapli-ot-kleshchey-ataksa-4056/">
+           Странная реакция на капли от клещей "Атакса"
+          </a>
+         </div>
+         <div class="forum-text">
+          Недавно капали на холку капли  от клещей под названием"атакса", сейчас заметили, что  кожа раздражена. Сбрили шерсть и увидели вот такое. Раздражение + гнойник.  Сталкивались ли с таким? что делать?
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/25142/">
+            Маша Даниленко
+           </a>
+          </span>
+          <span class="vopros-date">
+           Год назад
+          </span>
+          <span class="vopros-smotr">
+           672 просмотра
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/3373/">
+          <div class="ava-med">
+           <div class="noava fill3">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/bishon-frize-dlya-allergika-2098/">
+           Бишон фризе для аллергика
+          </a>
+         </div>
+         <div class="forum-text">
+          Добрый день! Я - аллергик, но очень хочу завести собаку. Проживаю в квартире, поэтому присматриваюсь к небольшим породам.
+Вычитала, что Бишон фризе подходит для аллергиков. 
+Владельцы данной породы, страдающие...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/3373/">
+            Анна Шевченко
+           </a>
+          </span>
+          <span class="vopros-date">
+           3 года назад
+          </span>
+          <span class="vopros-smotr">
+           4974 просмотра
+          </span>
+          <span class="vopros-otvet">
+           4 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/382/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Ольга Канатьева" data-original="/upload/resize_cache/main/11e/200_200_2/11ee2b8bca0e4cb435071e494dec2a2b.jpg">
+            <noscript data-alt="Ольга Канатьева" data-original="/upload/resize_cache/main/11e/200_200_2/11ee2b8bca0e4cb435071e494dec2a2b.jpg">
+             <img alt="Ольга Канатьева" src="/upload/resize_cache/main/11e/200_200_2/11ee2b8bca0e4cb435071e494dec2a2b.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/bishon-frize-plyusy-i-minusy-porody-253/">
+           Бишон фризе плюсы и минусы породы
+          </a>
+         </div>
+         <div class="forum-text">
+          Муж хочет купить щенка бишон фризе. Но у нас дома дети и взрослый кот. Чего ждать от нового питомца? Буду благодарна за отзывы о положительных и отрицательных чертах собак этой породы.
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/382/">
+            Ольга Канатьева
+           </a>
+          </span>
+          <span class="vopros-date">
+           6 лет назад
+          </span>
+          <span class="vopros-smotr">
+           7969 просмотров
+          </span>
+          <span class="vopros-otvet">
+           3 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/bishon-frize/forum/">
+        Перейти на
+        форум бишон фризе
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Бишон фризе" src="/upload/iblock/6f3/6f3dac95ba1fea52efed069f2e512b1f.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/bishon-frize/">
+          Бишон фризе
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/bishon-frize/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/bishon-frize/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/bishon-frize/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/bishon-frize/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/bishon-frize/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/bishon-frize/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/tibetskiy-spaniel/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Тибетский спаниель" data-original="/upload/resize_cache/iblock/0fc/100_100_1/rgkz030nqf43gt36t7jvnk2bh5cjib8w.jpg">
+          <noscript data-alt="Тибетский спаниель" data-original="/upload/resize_cache/iblock/0fc/100_100_1/rgkz030nqf43gt36t7jvnk2bh5cjib8w.jpg">
+           <img alt="Тибетский спаниель" src="/upload/resize_cache/iblock/0fc/100_100_1/rgkz030nqf43gt36t7jvnk2bh5cjib8w.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Тибетский спаниель
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/taksa/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Такса" data-original="/upload/resize_cache/iblock/53b/100_100_1/53b92eec713e2c552ebc1f1001a0a350.jpg">
+          <noscript data-alt="Такса" data-original="/upload/resize_cache/iblock/53b/100_100_1/53b92eec713e2c552ebc1f1001a0a350.jpg">
+           <img alt="Такса" src="/upload/resize_cache/iblock/53b/100_100_1/53b92eec713e2c552ebc1f1001a0a350.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Такса
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/gampr/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Гампр" data-original="/upload/resize_cache/iblock/8fd/100_100_1/8fd84d87328462a570e8b18a8430488e.jpg">
+          <noscript data-alt="Гампр" data-original="/upload/resize_cache/iblock/8fd/100_100_1/8fd84d87328462a570e8b18a8430488e.jpg">
+           <img alt="Гампр" src="/upload/resize_cache/iblock/8fd/100_100_1/8fd84d87328462a570e8b18a8430488e.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Гампр
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/novoshotlandskiy-retriver/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Новошотландский ретривер" data-original="/upload/resize_cache/iblock/c7c/100_100_1/zamzc361qyc7rcwdvgbxb60sapntr3s2.jpg">
+          <noscript data-alt="Новошотландский ретривер" data-original="/upload/resize_cache/iblock/c7c/100_100_1/zamzc361qyc7rcwdvgbxb60sapntr3s2.jpg">
+           <img alt="Новошотландский ретривер" src="/upload/resize_cache/iblock/c7c/100_100_1/zamzc361qyc7rcwdvgbxb60sapntr3s2.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Новошотландский ретривер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbishon-frize%252F%253Fcheck_key%253D430c12104457a58b48757f4f2567f8c1%2526ANIMAL_CODE%253Dbishon-frize%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbishon-frize%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmJpc2hvbi1mcml6ZSUyRiUzRmNoZWNrX2tleSUzRDQzMGMxMjEwNDQ1N2E1OGI0ODc1N2Y0ZjI1NjdmOGMxJTI2QU5JTUFMX0NPREUlM0RiaXNob24tZnJpemUlMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGYmlzaG9uLWZyaXplJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbishon-frize%252F%253Fcheck_key%253D430c12104457a58b48757f4f2567f8c1%2526ANIMAL_CODE%253Dbishon-frize%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fbishon-frize%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbishon-frize%252F%253Fcheck_key%253D430c12104457a58b48757f4f2567f8c1%2526ANIMAL_CODE%253Dbishon-frize%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbishon-frize%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "46.112.66.59"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--b5bc991dc1449ef2c6db546dee305cc3-->

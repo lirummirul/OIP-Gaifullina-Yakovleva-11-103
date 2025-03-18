@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'f7f2af21e471'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Американская акита, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Американская акита – сравнительно молодая порода. Это крупная собака с серьезным нравом. Тем, кто найдет к ней подход, станет верным другом." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/79e/79e15804d70ff807307b7f9891ff7f48.jpg" property="og:image"/>
+     <title>
+      Американская акита: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/amerikanskaya-akita/" property="og:url"/>
+     <meta content="Американская акита: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Американская акита – сравнительно молодая порода. Это крупная собака с серьезным нравом. Тем, кто найдет к ней подход, станет верным другом." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/amerikanskaya-akita/" itemprop="url">
+         <span itemprop="title">
+          Американская акита
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Американская акита
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/amerikanskaya-akita/">
+          Описание
+         </a>
+         <a href="/dog/amerikanskaya-akita/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/amerikanskaya-akita/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/amerikanskaya-akita/photo/">
+          Фото
+         </a>
+         <a href="/dog/amerikanskaya-akita/video/">
+          Видео
+         </a>
+         <a href="/dog/amerikanskaya-akita/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/amerikanskaya-akita/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Американская акита" src="/upload/iblock/e88/e881aa3e59df6650a093dd15e28deb9d.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Американская акита – сравнительно молодая порода. Это крупная собака с серьезным нравом. Тем, кто найдет к ней подход, станет верным другом.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/2ed/2ed2b8ec5ec975a05ff2357ef545f14b.jpg" data-cap="American Akita" data-fancybox="images" data-link="https://www.flickr.com/photos/127381232@N05/15127969961/" data-type="image" data-username="RedDragonsoul" href="/upload/uf/fc2/fc2f6446b8a2df9597a4f37bbea872f1.jpg">
+            <img alt="Американская акита" src="/upload/resize_cache/uf/fc2/293_293_2/fc2f6446b8a2df9597a4f37bbea872f1.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/966/966df7834f031e21a867f43fa9d627b6.jpg" data-cap="Красивый щенок американской акиты" data-fancybox="images" data-link="https://www.instagram.com/p/BjZ1ssOAgsx/" data-type="image" data-username="lapkins.ru" href="/upload/uf/0c2/0c2cdd8ba68bf066cc27354f96f82646.jpg">
+            <img alt="Американская акита" src="/upload/resize_cache/uf/0c2/293_293_2/0c2cdd8ba68bf066cc27354f96f82646.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/b7d/b7dbbf8152659a80b10cf06772b78754.jpg" data-cap="American Akita" data-fancybox="images" data-link="https://www.flickr.com/photos/127937735@N07/28215414133/" data-type="image" data-username="Markus Kiili" href="/upload/uf/e43/e4329b9d39b482b3db2ba8abd82ce802.jpg">
+            <img alt="Американская акита" src="/upload/resize_cache/uf/e43/293_293_2/e4329b9d39b482b3db2ba8abd82ce802.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/amerikanskaya-akita/photo/">
+         Все
+            фото американской акиты
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <style>
+        .podvidi h2 {
+                text-align: left;
+                margin: 0 0 40px;
+            }
+            .podvidi h2 a{
+                color: #000;
+                border-bottom: 1px solid #bbb;
+            }
+            .podvidi .pop-porodi-block{
+                text-align:left;
+            }
+       </style>
+       <div class="pop-porodi podvidi">
+        <div class="pop-porodi-block">
+         <h2 id="info">
+          Разновидности акиты
+         </h2>
+         <a class="poroda-element" href="/dog/akita-inu/">
+          <div class="ava-poroda">
+           <img alt="Акита-ину" class="article_pic" src="/upload/resize_cache/iblock/923/100_100_1/923124829b0781ae065bff0951917c74.jpg"/>
+          </div>
+          <span>
+           Акита-ину
+          </span>
+         </a>
+         <a class="poroda-element" href="/dog/amerikanskaya-akita/">
+          <div class="ava-poroda">
+           <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/e88/100_100_1/e881aa3e59df6650a093dd15e28deb9d.jpg"/>
+          </div>
+          <span>
+           Американская акита
+          </span>
+         </a>
+        </div>
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История американской акиты
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Особенности американской акиты
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Внешность породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Характер американской акиты
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Дрессировка и воспитание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Здоровье и болезни американской акиты
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Сколько стоит американская акита
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Американская акита
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Япония, США
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         1955 год
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 32-59 кг, суки 30-45 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 65-71 см, суки 61-66 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         10-14 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Отличные сторожевые качества – визитная карточка американской акиты. С такой надежной охраной можно чувствовать себя спокойно и в безопасности.
+        </li>
+        <li>
+         Сохраняя верность хозяину и признавая за ним лидерство, акита может пытаться над ним доминировать. Приступы «зазнайства» чаще всего случаются в период полового созревания.
+        </li>
+        <li>
+         При правильном воспитании из представителя этой породы можно «слепить» не только превосходного компаньона, но также охотника, поводыря или охранника.
+        </li>
+        <li>
+         Американская акита обладает очень устойчивой психикой. Агрессию она проявляет только при наличии опасности.
+        </li>
+        <li>
+         Дрессировка породы – нелегкий труд. Собака чрезвычайно умна и беспрекословно подчиняется хозяину только в том случае, если считает его безусловным лидером.
+        </li>
+        <li>
+         Американская акита – собака воспитанная и легко переносит визуальный контакт. Однако если вы смотрите ей в глаза, наклоняться при этом не рекомендуется: она может воспринять это как агрессию по отношению к себе.
+        </li>
+        <li>
+         Порода не терпит долгой разлуки с хозяином. Одиночество может спровоцировать у нее поведенческие проблемы и стать источником сильного стресса.
+        </li>
+        <li>
+         Несмотря на открытый и общительный характер, с незнакомцами акита достаточно холодна, пока не решит для себя, можно ли доверять тому или иному человеку.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Американская акита" data-original="/upload/iblock/79e/79e15804d70ff807307b7f9891ff7f48.jpg">
+          <noscript data-alt="Американская акита" data-original="/upload/iblock/79e/79e15804d70ff807307b7f9891ff7f48.jpg">
+           <img alt="Американская акита" src="/upload/iblock/79e/79e15804d70ff807307b7f9891ff7f48.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Американская акита
+          </strong>
+          – красавица с плюшевой шерстью и характерной темной маской. Порода сочетает в себе смелость, агрессию и дружелюбие. Собаки обладают прекрасными охотничьими качествами и оберегают дом хозяина, бесстрашно становясь на защиту его обитателей при возникновении угрозы. В то же время американской аките присущи миролюбие и терпимость, но при условии правильной дрессировки. Доброжелательна акита и к детям, но рассчитывать на нее как на няньку не стоит: будучи представителем крупной породы, она потенциально опасна.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Почти не слышно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошие (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Американская акита основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/amerikanskaya-akita/razmeri-porodi/">
+         размеры американской акиты
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История американской акиты
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Американская акита" data-fancybox="gallery" href="/upload/iblock/2ac/2ac2848c945495abaadf614a6c6945f2.jpg" title="Американская акита">
+          <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/2ac/412_2150_1/2ac2848c945495abaadf614a6c6945f2.jpg">
+           <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/2ac/412_2150_1/2ac2848c945495abaadf614a6c6945f2.jpg">
+            <img alt="Американская акита" class="article_pic" height="617" src="/upload/resize_cache/iblock/2ac/412_2150_1/2ac2848c945495abaadf614a6c6945f2.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Американская акита
+         </div>
+        </div>
+        <p>
+         Слово «американская» в названии породы может сбить с толку, когда речь заходит о ее происхождении. Второе название – большая японская собака – в этом плане более красноречиво: ее родина – Страна восходящего солнца. Но как получилось, что акита вдруг стала американской?
+        </p>
+        <p>
+         Предками американской акиты являются японские
+         <a class="ph" href="/dog/akita-inu/">
+          акита-ину
+         </a>
+         , изначально использовавшиеся в охотничьих и охранных целях. Несколько столетий назад они и назывались иначе: матаги-акита. Позже их стали использовать в собачьих боях, ставших особенно популярными на рубеже XIX-XX веков. В погоне за денежной выгодой владельцы стремились «усовершенствовать» своих псов, сделать их крупнее и сильнее. Для этой цели их скрещивали с такими завезенными на острова породами, как
+         <a class="ph" href="/dog/tibetskiy-mastif/">
+          мастифы
+         </a>
+         и
+         <a class="ph" href="/dog/nemetskaya-ovcharka/">
+          овчарки
+         </a>
+         .
+        </p>
+        <p>
+         Однако в результате этих манипуляций классические черты породы стали смазываться, ухудшаться, а то и вовсе теряться. Ущерб, который был причинен матаги-акита, заметили на выставке собак, которая проходила в Токио в 1914 году. Вскоре чистых представителей породы объявили памятниками природы, и их скрещивание с представителями других видов подпало под категорический запрет. Добавилось работы селекционерам: они делали всё возможное, чтобы вернуть матаги-акита их первоначальные характеристики.
+        </p>
+        <p>
+         Не успели эти великолепные собаки, ставшие предметом национальной гордости японцев, оправиться от удара, нанесенного породе неуёмной человеческой жадностью, как грянула Вторая мировой война. По указанию правительства все заводчики сдали своих питомцев на нужды фронта. Точку в войне, как известно, поставила капитуляция Японии в 1945 году. Возвращаясь на родину, военнослужащие США решили взять с собой несколько приглянувшихся щенков. Они-то и стали спустя несколько лет прародителями новой породы. А собственно классических акита-ину на Японских островах после войны оставалось не более 20 особей.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Японская акита-ину" data-fancybox="gallery" href="/upload/iblock/251/251fe22fc5ee49794a36d38183749af1.jpg" title="Японская акита-ину">
+          <div class="lazy-load" data-alt="Японская акита-ину" data-class="article_pic" data-original="/upload/resize_cache/iblock/251/412_2150_1/251fe22fc5ee49794a36d38183749af1.jpg">
+           <noscript data-alt="Японская акита-ину" data-class="article_pic" data-original="/upload/resize_cache/iblock/251/412_2150_1/251fe22fc5ee49794a36d38183749af1.jpg">
+            <img alt="Японская акита-ину" class="article_pic" height="274" src="/upload/resize_cache/iblock/251/412_2150_1/251fe22fc5ee49794a36d38183749af1.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Японская акита-ину
+         </div>
+        </div>
+        <p>
+         В то же самое время за океаном порода стала завоевывать широкое признание и развивалась стремительными темпами. Сначала она называлась большая японская собака. Но в Штатах работу над породой с японцами не синхронизировали – она шла параллельно и, что называется, своим путем. Японские заводчики пытались договориться с американскими коллегами относительно ее общей родословной, но тщетно. Они даже не позволяли вывозить в США собак, объявленных на островах памятниками природы. Все эти меры американцев не остановили. Как следствие, со временем заокеанская акита стала отличаться от японской и внешностью, и характером. А потом и вовсе получила новое название – американская акита.
+        </p>
+        <p>
+         В 1956 году был создан клуб новообразованной породы, признанный Американским клубом собаководства только в 1972 году. С Японией «война пород» продолжалась вплоть до 1992 года: два десятилетия собаководческие клубы обеих стран не признавали друг друга – в Международной кинологической федерации (FCI) регистрацию прошла только японская акита-ину. Официальное разделение пород произошло только в 2000 году, когда FCI утвердила стандарт для заокеанской акиты.
+        </p>
+        <h2>
+         Видео: Американская акита
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="8FFf0ysQZQ4">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Особенности американской акиты
+        </h2>
+        <p>
+         Американская акита – прекрасный охотник. Если в собаке подавлять это заложенное природой качество, оно все равно так или иначе будет проявляться, и не с самой приятной для хозяина стороны. Например, ваш питомец на прогулке начнет бросаться на более мелких собак или «задирать» живущую с ней в одном доме кошку.
+        </p>
+        <p>
+         Американскую акиту еще называют собакой одного хозяина. Она очень тяжело переносит смену владельца и зачастую до конца жизни не может адаптироваться к существованию в другом месте. Классический пример – знаменитый Хатико, пес породы акита-ину, получивший известность в 1932 году на всю Японию после публикации в одной из крупнейших токийских газет статьи «Преданный старый пёс ожидает возвращения своего хозяина, умершего семь лет назад». По мотивам этой истории, тронувшей сердца миллионов людей во всем мире, в 2009 году был снят фильм с Ричардом Гиром в главной роли.
+        </p>
+        <p>
+         Как видим, американская акита унаследовала от своих японских собратьев это качество – преданность. Особенно трудно будет найти точки соприкосновения со взрослой собакой тем из новых хозяев, кто до этого не имел опыта общения с крупными молоссами.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d03/d03cb720d9b90adf3607df9071da3646.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/d03/512_342_2/d03cb720d9b90adf3607df9071da3646.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/d03/512_342_2/d03cb720d9b90adf3607df9071da3646.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/d03/512_342_2/d03cb720d9b90adf3607df9071da3646.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8a1/8a146607b13396e69eba61e5061a3c9d.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/8a1/512_342_2/8a146607b13396e69eba61e5061a3c9d.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/8a1/512_342_2/8a146607b13396e69eba61e5061a3c9d.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/8a1/512_342_2/8a146607b13396e69eba61e5061a3c9d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl3">
+         Внешность породы
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок американской акиты" data-fancybox="gallery" href="/upload/iblock/90d/90d289204a5595e61e1c6d056e097d7f.jpg" title="Щенок американской акиты">
+          <div class="lazy-load" data-alt="Щенок американской акиты" data-class="article_pic" data-original="/upload/resize_cache/iblock/90d/412_2150_1/90d289204a5595e61e1c6d056e097d7f.jpg">
+           <noscript data-alt="Щенок американской акиты" data-class="article_pic" data-original="/upload/resize_cache/iblock/90d/412_2150_1/90d289204a5595e61e1c6d056e097d7f.jpg">
+            <img alt="Щенок американской акиты" class="article_pic" height="536" src="/upload/resize_cache/iblock/90d/412_2150_1/90d289204a5595e61e1c6d056e097d7f.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок американской акиты
+         </div>
+        </div>
+        <p>
+         Американская акита – собака очень крупная. В каждом ее движении читаются сила и мощь. Постепенно охотничьи навыки этих псов уходят в прошлое, что во многом обусловлено их крупным размером, мешающим заокеанским «японцам» оставаться быстрыми и подвижными охотниками.
+        </p>
+        <p>
+         Благодаря особенным чертам внешности, а именно эффектному окрасу и совершенству линий, американская акита давно «прописалась» на собачьих выставках в разных странах мира, в том числе и в России. Представители породы часто лидируют в БЕСТах пятой группы, нередко выигрывая целые конкурсы.
+        </p>
+        <h3>
+         Общее описание
+        </h3>
+        <p>
+         Перепутать американскую акиту с другой породой очень тяжело – практически невозможно, даже если до «личного знакомства» вы видели ее только на фото. Первое, что бросится в глаза, помимо внушительных размеров, – это крепкий корпус с развитой мускулатурой и массивный костяк. Обязательно обратят на себя внимание морда «медвежьего» типа с небольшими глазами и относительно короткой переносицей.
+        </p>
+        <p>
+         Рост и вес американской акиты, а также пропорции корпуса, различаются в зависимости от половой принадлежности. Высота кобелей в холке варьируется от 66 до 71 см, сук – от 61 до 66 см. Вес взрослых особей обычно составляет: кобели 45-65 кг, суки 32-45 кг.
+        </p>
+        <p>
+         У кобелей соотношение высоты в холке к длине корпуса составляет 9:10, у сук – 9:11. Расстояние от стопы до кончика носа соотносится с расстоянием от стопы до затылочного бугра в пропорции 2:3.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Морда американской акиты" data-fancybox="gallery" href="/upload/iblock/944/944d08d2268b5788bdd68986bd0c97f2.jpg" title="Морда американской акиты">
+          <div class="lazy-load" data-alt="Морда американской акиты" data-class="article_pic" data-original="/upload/resize_cache/iblock/944/412_2150_1/944d08d2268b5788bdd68986bd0c97f2.jpg">
+           <noscript data-alt="Морда американской акиты" data-class="article_pic" data-original="/upload/resize_cache/iblock/944/412_2150_1/944d08d2268b5788bdd68986bd0c97f2.jpg">
+            <img alt="Морда американской акиты" class="article_pic" height="412" src="/upload/resize_cache/iblock/944/412_2150_1/944d08d2268b5788bdd68986bd0c97f2.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда американской акиты
+         </div>
+        </div>
+        <p>
+         Голова является визитной карточкой породы. Массивная, но в то же время гармонирует с корпусом. Складки кожи (морщины) отсутствуют – при условии, что ваш питомец находится в спокойном состоянии. При осмотре сверху форма головы напоминает тупой треугольник.
+        </p>
+        <p>
+         Череп широкий и плоский, по лбу вверх проходит неглубокая бороздка. Переход ото лба к носу (стоп) выражен хорошо, но не резко.
+        </p>
+        <p>
+         Широкая и объемная морда с мощными, квадратной формы челюстями. Подвес челюстей лёгкий. Соотношение длины морды к длине черепа 2:3.
+        </p>
+        <h3>
+         Зубы
+        </h3>
+        <p>
+         Прикус характеризуется как правильный ножницевидный. При этом стандарт породы также допускает прямой прикус. Зубы крепкие, зубная формула должна присутствовать полностью.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза акиты относительно размеров головы маленькие, почти треугольной формы, глубоко посаженные. Цвет – тёмно-коричневый. Веки черные, прилегают плотно.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/61e/61ed71ab8a60b7c5942d22ae4082cf46.jpg" title="">
+          <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/iblock/61e/61ed71ab8a60b7c5942d22ae4082cf46.jpg">
+           <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/iblock/61e/61ed71ab8a60b7c5942d22ae4082cf46.jpg">
+            <img alt="Американская акита" class="article_pic" src="/upload/iblock/61e/61ed71ab8a60b7c5942d22ae4082cf46.jpg"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         В соотношении с остальной частью головы уши также являются маленькими. Стоячие, форма – треугольная. Имеют широкое основание на крепких хрящах, слегка на концах закругленные. Постановка не слишком низкая. Над глазами, на уровне загривка, несколько наклонены вперед.
+        </p>
+        <p>
+         При вытягивании уха вперед его кончик в идеале должен коснуться края верхнего века. Если смотреть на уши акиты сбоку, то ими как бы продолжается верхняя линия шеи.
+        </p>
+        <h3>
+         Нос и губы
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/361/361aad816d24bfffa75a2faaca89a336.jpg" title="">
+          <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/361/412_2150_1/361aad816d24bfffa75a2faaca89a336.jpg">
+           <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/361/412_2150_1/361aad816d24bfffa75a2faaca89a336.jpg">
+            <img alt="Американская акита" class="article_pic" height="618" src="/upload/resize_cache/iblock/361/412_2150_1/361aad816d24bfffa75a2faaca89a336.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Мочка носа черная, широкая, ноздри хорошо открыты. Допускается печеночный цвет, но только у американской акиты белого окраса. Хотя предпочтительнее всё же «классика» породы, то есть черный цвет мочки носа.
+        </p>
+        <p>
+         Губы тоже чёрные, сухие, прилегают плотно. Язык розового цвета.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Массивная, толстая и относительно короткая, с минимальным подвесом. Мускулистая, расширяется к плечам. Загривок отличается хорошей выпуклостью, плавно переходит в основание черепа и сливается с ним.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Длина корпуса американской акиты превышает высоту собаки в холке. Грудная клетка широкая, объёмная и глубокая.
+        </p>
+        <p>
+         Глубина груди равняется половине высоты животного в холке. Ребра отличаются достаточной выпуклостью (сводистые).
+        </p>
+        <p>
+         Живот умеренно подобранный. Спина прямая, поясница мускулистая и крепкая, отличается лёгкой выпуклостью. Кожа упругая, прилегает плотно.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Покрыт прямой, густой и грубой шерстью, не образует подвеса. Его основание большое и мощное. Хвост посажен высоко, акита несет его над спиной. Либо, как вариант, хвост касается бока. Кончик обязательно доходит до спины или опускается ниже ее уровня.
+        </p>
+        <p>
+         Хвост загнут в кольцо, иногда двойное, образует три четверти окружности. Последним позвонком при условии полной развернутости достаёт до скакательных суставов.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4e8/4e8540c1c118c64fa61c80ef1c0a280c.jpg" title="">
+          <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/4e8/412_2150_1/4e8540c1c118c64fa61c80ef1c0a280c.jpg">
+           <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/4e8/412_2150_1/4e8540c1c118c64fa61c80ef1c0a280c.jpg">
+            <img alt="Американская акита" class="article_pic" height="617" src="/upload/resize_cache/iblock/4e8/412_2150_1/4e8540c1c118c64fa61c80ef1c0a280c.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Передние конечности имеют мощный костяк, при осмотре сбоку выглядят прямыми. Плечи умеренно наклонены назад, сильные и крепкие. Локти должны смотреть строго назад, не быть вывернутыми наружу либо вовнутрь. Пясти имеют легкий наклон, около 15 градусов к вертикали. Лапы круглой формы «кошачьего» типа, направление – прямое. Подушечки толстые и упругие, пальцы сводистые с крепкими когтями.
+        </p>
+        <p>
+         Задние конечности также отличают крепкий костяк и мощная мускулатура. Бедра хорошо развиты, сильные. Плюсны имеют достаточно низкое расположение, наружу либо вовнутрь не вывернуты. Коленные суставы, если смотреть сзади, параллельные, характеризуются умеренно выраженными углами. Лапы прямонаправленные, с упругими подушечками, круглые (тип «кошачьи»). Пальцы выпуклые (сводистые), оснащены крепкими когтями. Так называемые прибылые пальцы, то есть пятые по счёту, принято удалять.
+        </p>
+        <p>
+         Для походки американской акиты характерны сильные, свободные движения. Их также отличают умеренный выпад и толчок. Движение передних и задних конечностей осуществляется в одной плоскости.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Шерстный покров двойной, имеет плотный подшерсток. Остевая шерсть грубая, прямая, в то время как подшерсток мягкий и густой и в сравнении с покровным волосом несколько короче.
+        </p>
+        <p>
+         На голове, ушах и конечностях шерсть короткая. Ее длина на крестце и холке примерно 5 см, что несколько длиннее, чем на остальных участках корпуса, за исключением хвоста. На нём шерсть самая длинная и обильная – свыше 6 см.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Белая американская акита" data-fancybox="gallery" href="/upload/iblock/7e7/7e7906438bc49b1b406a00f67039c608.jpg" title="Белая американская акита">
+          <div class="lazy-load" data-alt="Белая американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/7e7/412_2150_1/7e7906438bc49b1b406a00f67039c608.jpg">
+           <noscript data-alt="Белая американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/7e7/412_2150_1/7e7906438bc49b1b406a00f67039c608.jpg">
+            <img alt="Белая американская акита" class="article_pic" height="309" src="/upload/resize_cache/iblock/7e7/412_2150_1/7e7906438bc49b1b406a00f67039c608.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Белая американская акита
+         </div>
+        </div>
+        <p>
+         Стандарт породы здесь весьма демократичен, допускает любые варианты окраса, включая белый, палево-белый, рыжий и тигровый. Американские акиты могут быть даже пегими, то есть пятнистыми (пинто) – с маской или без. Вместо маски может быть пятно на лбу или проточина на морде. Маска полностью исключена только у особей белого окраса. У белых особей губы, нос и подушечки чёрные.
+        </p>
+        <p>
+         Цвета собак этой породы ясные, чистые. Пятна имеют четкие контуры, расположены равномерно. У пинто пятна на белом фоне равномерно распределены, покрывая голову и более чем одну треть корпуса собаки, допускается маска темного окраса.
+        </p>
+        <p>
+         Цвет подшерстка от окраса шерсти может отличаться.
+        </p>
+        <h3>
+         Возможные пороки
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e88/e888e1b82bdd16c3e37db86f798ad4b8.jpg" title="">
+          <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/e88/412_2150_1/e888e1b82bdd16c3e37db86f798ad4b8.jpg">
+           <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/e88/412_2150_1/e888e1b82bdd16c3e37db86f798ad4b8.jpg">
+            <img alt="Американская акита" class="article_pic" height="556" src="/upload/resize_cache/iblock/e88/412_2150_1/e888e1b82bdd16c3e37db86f798ad4b8.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <ul>
+         <li>
+          Отсутствие любого зуба, за исключением 2 РМ-1 и/или М3.
+         </li>
+         <li>
+          Короткий хвост.
+         </li>
+         <li>
+          Светлые глаза.
+         </li>
+         <li>
+          Кобели сучьего типа и, соответственно, суки кобелиного типа.
+         </li>
+         <li>
+          Язык синий или с черными пятнами.
+         </li>
+         <li>
+          Наличие воротника либо очёсов.
+         </li>
+         <li>
+          Выворот локтей (внутрь или наружу).
+         </li>
+         <li>
+          Злобность или, наоборот, пугливость.
+         </li>
+         <li>
+          Облегчённый костяк.
+         </li>
+         <li>
+          Недостаточная масса тела.
+         </li>
+        </ul>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <ul>
+         <li>
+          Частично или полностью отсутствующая пигментация мочки носа (так называемый нос-бабочка).
+         </li>
+         <li>
+          Перекус или недокус.
+         </li>
+         <li>
+          Полустоячие или полностью висячие уши, наличие складок.
+         </li>
+         <li>
+          Хвост прямой или серповидной формы.
+         </li>
+         <li>
+          Высота кобелей в холке менее 63,5 сантиметра, а сук – менее 58 см.
+         </li>
+         <li>
+          Агрессивность либо трусость.
+         </li>
+        </ul>
+        <p>
+         Любые явно выраженные физические отклонения либо проблемное поведение – повод для дисквалификации американской акиты.
+        </p>
+        <p class="legenda">
+         К сведению: кобели должны обладать двумя здоровыми, развитыми семенниками, полностью опущенными в мошонку.
+        </p>
+        <h2>
+         Фото взрослой американской акиты
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a5f/a5f6c11a69d2b251db169cdf80569b3e.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/a5f/380_264_2/a5f6c11a69d2b251db169cdf80569b3e.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/a5f/380_264_2/a5f6c11a69d2b251db169cdf80569b3e.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/a5f/380_264_2/a5f6c11a69d2b251db169cdf80569b3e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/43b/43bce4352f1259daf6b49fdd86b6d536.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/43b/380_264_2/43bce4352f1259daf6b49fdd86b6d536.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/43b/380_264_2/43bce4352f1259daf6b49fdd86b6d536.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/43b/380_264_2/43bce4352f1259daf6b49fdd86b6d536.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1b2/1b2b1494ff2386106c45e4071f1f520f.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/1b2/380_264_2/1b2b1494ff2386106c45e4071f1f520f.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/1b2/380_264_2/1b2b1494ff2386106c45e4071f1f520f.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/1b2/380_264_2/1b2b1494ff2386106c45e4071f1f520f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fbe/fbee86952524b513f5a48e9de522b70d.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/fbe/380_264_2/fbee86952524b513f5a48e9de522b70d.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/fbe/380_264_2/fbee86952524b513f5a48e9de522b70d.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/fbe/380_264_2/fbee86952524b513f5a48e9de522b70d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9e8/9e885243353e2febecc6900638c6bd68.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/9e8/380_264_2/9e885243353e2febecc6900638c6bd68.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/9e8/380_264_2/9e885243353e2febecc6900638c6bd68.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/9e8/380_264_2/9e885243353e2febecc6900638c6bd68.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2ae/2ae1b7718f85c1735cf52ddaf10c2fef.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/2ae/380_264_2/2ae1b7718f85c1735cf52ddaf10c2fef.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/2ae/380_264_2/2ae1b7718f85c1735cf52ddaf10c2fef.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/2ae/380_264_2/2ae1b7718f85c1735cf52ddaf10c2fef.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/aee/aee1ca2478ddcdeac0a27f79a74c4a93.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/aee/380_264_2/aee1ca2478ddcdeac0a27f79a74c4a93.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/aee/380_264_2/aee1ca2478ddcdeac0a27f79a74c4a93.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/aee/380_264_2/aee1ca2478ddcdeac0a27f79a74c4a93.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ff0/ff06c2a1cb05549bec5b47cb9ad453b1.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/ff0/380_264_2/ff06c2a1cb05549bec5b47cb9ad453b1.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/ff0/380_264_2/ff06c2a1cb05549bec5b47cb9ad453b1.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/ff0/380_264_2/ff06c2a1cb05549bec5b47cb9ad453b1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c4c/c4c7cc97f40a3385a8e41bb77b4857d0.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/c4c/380_264_2/c4c7cc97f40a3385a8e41bb77b4857d0.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/c4c/380_264_2/c4c7cc97f40a3385a8e41bb77b4857d0.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/c4c/380_264_2/c4c7cc97f40a3385a8e41bb77b4857d0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl4">
+         Характер американской акиты
+        </h2>
+        <p>
+         Американскую акиту отличает независимый и свободолюбивый нрав. Но вместе с тем это спокойная собака, ласковая, уравновешенная. Благодаря зрелой, устойчивой психике в любых ситуациях она ведёт себя достойно и проявляет сдержанность.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="В ожидании хозяина" data-fancybox="gallery" href="/upload/iblock/6f9/6f91498c3450b3583f9c8871ddaedfbf.jpg" title="В ожидании хозяина">
+          <div class="lazy-load" data-alt="В ожидании хозяина" data-class="article_pic" data-original="/upload/resize_cache/iblock/6f9/412_2150_1/6f91498c3450b3583f9c8871ddaedfbf.jpg">
+           <noscript data-alt="В ожидании хозяина" data-class="article_pic" data-original="/upload/resize_cache/iblock/6f9/412_2150_1/6f91498c3450b3583f9c8871ddaedfbf.jpg">
+            <img alt="В ожидании хозяина" class="article_pic" height="617" src="/upload/resize_cache/iblock/6f9/412_2150_1/6f91498c3450b3583f9c8871ddaedfbf.jpg" width="411"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          В ожидании хозяина
+         </div>
+        </div>
+        <p>
+         У представителей породы никогда не бывает беспричинных реакций на внешние раздражители. По пустякам она не лает, без веских оснований не бросается на всё, что движется, только потому, что оно движется. Аките – умной, сдержанной, воспитанной и благородной – такое поведение совершенно несвойственно.
+        </p>
+        <p>
+         Содержа своего питомца в обычной городской квартире, можете не опасаться, что американская акита доставит какие-то неудобства соседям. Жалоб на постоянный лай и вой уж точно не будет. Но если акита начинает подавать голос, можете не сомневаться: на то есть веская причина! Лай вашего питомца является верным сигналом того, что на вашу территорию или на вашу собственность посягнул недоброжелатель.
+        </p>
+        <p>
+         Собаки этой породы, как настоящие самураи, любят всё держать под своим контролем – по всей видимости, так проявляют себя доставшиеся от японских предков гены. Это качество в американской аките можно назвать одним из фундаментальных, ведь оно помогает ей в выполнении заложенной природой миссии – быть отличным сторожем. Присмотритесь к вашему псу, когда он обозревает свои владения: в его взгляде присутствует нечто завораживающее, недоступное человеческому пониманию.
+        </p>
+        <p>
+         Американская акита отличается безграничной преданностью хозяину и членам его семьи. Подобно кане-корсо, с детьми она ладит очень хорошо, зачастую даже ухаживает за ними, как нянька. Но, в отличие от «итальянца», нашему «американцу» слишком маленьких детей доверять нельзя. Вовсе не потому, что он способен их обидеть. Наоборот, когда он чувствует угрозу, то, не раздумывая, бросится на защиту маленьких домочадцев. Полноценной нянькой акита не может быть по причине своих размеров. Оставляя малыша с ней наедине, нельзя быть полностью уверенным в том, что собака нечаянно не толкнет его или не нанесет ему какое-то увечье. Для кого из младших членов семьи акита станет настоящим другом, так это для детей подросткового возраста. Лучшего компаньона в активных играх и разных шалостях им не найти!
+        </p>
+        <p>
+         Вместе с тем породе абсолютно не присущи такие черты, как навязчивость и назойливость. Хотя акиту специально разводили для совместного проживания с человеком, она всё же нуждается в личном пространстве. «Американец» никогда не будет путаться у вас под ногами, но в то же время и вы не должны лишний раз навязываться ему.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Американская акита с ребенком" data-fancybox="gallery" href="/upload/iblock/ee4/ee4fa317c065ae27ce20514c67090091.jpg" title="Американская акита с ребенком">
+          <div class="lazy-load" data-alt="Американская акита с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/ee4/412_2150_1/ee4fa317c065ae27ce20514c67090091.jpg">
+           <noscript data-alt="Американская акита с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/ee4/412_2150_1/ee4fa317c065ae27ce20514c67090091.jpg">
+            <img alt="Американская акита с ребенком" class="article_pic" height="309" src="/upload/resize_cache/iblock/ee4/412_2150_1/ee4fa317c065ae27ce20514c67090091.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Американская акита с ребенком
+         </div>
+        </div>
+        <p>
+         К особенностям «внутреннего мира» породы относится и нетерпимость к грубости со стороны хозяина и других домочадцев. Если на американскую акиту накричать или несправедливо ее наказать, она очень обижается. Никогда не повышайте голос на своего питомца, не обижайте его и уж тем более не применяйте к нему физические наказания.
+        </p>
+        <p>
+         Американская акита великолепно чувствует себя в загородном доме с просторным двором. Большая территория – это ее стихия: есть что охранять, и есть где почувствовать себя хозяином. Содержа собаку в квартире, ни в коем случае не превращайте своего питомца в «узника» ваших квадратных метров. Представитель этой породы нуждается не только в регулярных, но и продолжительных прогулках. Причём выгуливать его нужно дважды в день как минимум 1-2 часа. Прогулки просто «для галочки» аките не подходят. Они должны быть интересными, насыщенными, активными, с элементами игры и дрессировки. Все эти моменты помогут поддержать физическое и психическое здоровье собаки на должном уровне.
+        </p>
+        <p>
+         Американская акита отличается замечательной памятью и доверяет своему хозяину, поэтому очень важно не обманывать собаку, она этого не любит и такие моменты запоминает на будущее. То есть если вы, например, заманили ее лакомством или отдали команду «Кушать!» или «Гулять!», но при этом ничего не предприняли, то рискуете потерять доверие питомца: он перестанет воспринимать вас как своего вожака.
+        </p>
+        <p>
+         Довольно часто в поведении акиты возникает такая проблема, как агрессия по отношению к другим собакам, что может доставить хозяину некоторые неприятности. Именно к собакам: к кошкам она зачастую проявляет лояльность, но только к «своим» – посторонних на контролируемой ею территории попросту не будет. Что же касается чужих собак, взрослые акиты, особенно кобели, практически никогда не принимают в свое общество других псов. На прогулках нередко показывают свой характер далеко не с лучшей стороны, провоцируя ссоры и драки. Из этого делаем простой вывод: оказавшись со своим питомцем в местах выгула собак, ни в коем случае не спускайте его с поводка.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Американская акита с хозяином" data-fancybox="gallery" href="/upload/iblock/8cd/8cd58372e3eb33b6ca83284728bf209e.jpg" title="Американская акита с хозяином">
+          <div class="lazy-load" data-alt="Американская акита с хозяином" data-class="article_pic" data-original="/upload/iblock/8cd/8cd58372e3eb33b6ca83284728bf209e.jpg">
+           <noscript data-alt="Американская акита с хозяином" data-class="article_pic" data-original="/upload/iblock/8cd/8cd58372e3eb33b6ca83284728bf209e.jpg">
+            <img alt="Американская акита с хозяином" class="article_pic" src="/upload/iblock/8cd/8cd58372e3eb33b6ca83284728bf209e.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Американская акита с хозяином
+         </div>
+        </div>
+        <h2 id="gl5">
+         Дрессировка и воспитание
+        </h2>
+        <p>
+         Воспитанием и дрессировкой американской акиты должен заниматься только взрослый человек, имеющий опыт, волю и твердую руку. Порода не подходит слабохарактерным людям, не говоря уже о пожилых и лицах с ограниченными возможностями.
+        </p>
+        <p>
+         Дрессировка акиты для многих, даже опытных владельцев, может превратиться в тяжелую работу. Но это вовсе не потому, что собака этой породы является «тугодумом». Наоборот, от природы она обладает незаурядным умом, и прежде чем выполнять отданную ей команду, сначала подумает, а стоит ли это делать. Со стороны же это может выглядеть так, что акита не поняла, чего от неё хотят. Имеет значение и то обстоятельство, насколько хозяин авторитетен в ее глазах. Повиноваться «американец» будет только тому, кого считает своим вожаком, лидером.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Дрессировка американской акиты" data-fancybox="gallery" href="/upload/iblock/aa3/aa33776c049f3624853f95372c1d88f5.jpg" title="Дрессировка американской акиты">
+          <div class="lazy-load" data-alt="Дрессировка американской акиты" data-class="article_pic" data-original="/upload/resize_cache/iblock/aa3/412_2150_1/aa33776c049f3624853f95372c1d88f5.jpg">
+           <noscript data-alt="Дрессировка американской акиты" data-class="article_pic" data-original="/upload/resize_cache/iblock/aa3/412_2150_1/aa33776c049f3624853f95372c1d88f5.jpg">
+            <img alt="Дрессировка американской акиты" class="article_pic" height="274" src="/upload/resize_cache/iblock/aa3/412_2150_1/aa33776c049f3624853f95372c1d88f5.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Дрессировка американской акиты
+         </div>
+        </div>
+        <p>
+         В большинстве своем американские акиты очень активные, обучаются, если говорить в целом, быстро. Но их, как и людей, может «заедать» рутина. В том смысле, что пёс от выполнения одних и тех же команд может элементарно заскучать, поэтому в процессе дрессировки и воспитания очень важна мотивация. На начальном этапе легко будет обойтись лишь похвалой и лакомством. В последующем придется проявить фантазию, чем ещё заинтересовать своего воспитанника.
+        </p>
+        <p>
+         Бывает, что щенок начинает демонстрировать характер: упрямится, не желает выполнять команды. Вот тут-то и надо показать, кто является главным. Сделать это довольно просто: прижмите капризулю спиной к полу и держите в таком положении, пока он не перестанет оказывать сопротивление. Или возьмите щенка за холку и придавите его к полу – этот метод тоже эффективен. На первый взгляд может показаться, что такими действиями хозяин проявляет к собаке насилие. Однако на самом деле это действенные способы донести до собаки, что он ее вожак, и что он сильнее. В будущем акита еще не раз будет пытаться занять лидерские позиции, проверяя посредством непослушания, а не ослабил ли хозяин «хватку», не начнет ли ей уступать. Не поддавайтесь на такие уловки!
+        </p>
+        <p>
+         Основное предназначение американской акиты – защита хозяина, и она будет стараться всегда находиться рядом. Чтобы такая «опека» со стороны питомца не стала доставлять неудобства, в процессе обучения и воспитания щенка необходимо уделять особое внимание команде «Место!». В противном случае собака будет дежурить возле закрытой двери, ожидая вас с работы, спать у вашей постели и настойчиво караулить возле запертой двери в ванную комнату.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/63b/63b37c8b1023d082bd7103fe6be62604.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/63b/512_342_2/63b37c8b1023d082bd7103fe6be62604.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/63b/512_342_2/63b37c8b1023d082bd7103fe6be62604.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/63b/512_342_2/63b37c8b1023d082bd7103fe6be62604.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e89/e8975fe446870f19581186989fc259fd.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/e89/512_342_2/e8975fe446870f19581186989fc259fd.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/e89/512_342_2/e8975fe446870f19581186989fc259fd.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/e89/512_342_2/e8975fe446870f19581186989fc259fd.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl6">
+         Уход и содержание
+        </h2>
+        <p>
+         Ухаживать за американской акитой нетрудно, но делать это нужно обязательно. Гигиенические процедуры помогут поддержать в вашем питомце здоровье и красоту. Кроме того, ежедневный уход – это единственный способ своевременно обнаружить различные заболевания на раннем этапе и принять необходимые меры.
+        </p>
+        <p>
+         Порода обладает густой «шубой» с мягким подшерстком, не склонной к сваливанию в колтуны. В стрижке шерсть не нуждается, зато ее нужно регулярно мыть и расчёсывать металлической расческой 1-2 раза в неделю. Шерстный покров подвержен линьке. Процесс линьки обильный, проходит он дважды в год – весной и осенью. В этот период собаку вычесывать нужно ежедневно, используя пуходерку или фурминатор.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Американская акита на выставке" data-fancybox="gallery" href="/upload/iblock/53b/53b2afb88019cdc6542327ebe9125eb9.jpg" title="Американская акита на выставке">
+          <div class="lazy-load" data-alt="Американская акита на выставке" data-class="article_pic" data-original="/upload/resize_cache/iblock/53b/412_2150_1/53b2afb88019cdc6542327ebe9125eb9.jpg">
+           <noscript data-alt="Американская акита на выставке" data-class="article_pic" data-original="/upload/resize_cache/iblock/53b/412_2150_1/53b2afb88019cdc6542327ebe9125eb9.jpg">
+            <img alt="Американская акита на выставке" class="article_pic" height="406" src="/upload/resize_cache/iblock/53b/412_2150_1/53b2afb88019cdc6542327ebe9125eb9.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Американская акита на выставке
+         </div>
+        </div>
+        <p>
+         В регулярном осмотре нуждаются глаза. Если заметите в уголках глаз серые комочки небольшого размера, то особо переживать не стоит, они легко убираются мягкой тканью без ворса. Заметив же обильное закисание глаз, отёки век, постоянные слезовыделения, немедленно обращайтесь к специалисту. Самолечение в таких случаях недопустимо.
+        </p>
+        <p>
+         Уши подлежат тщательному осмотру один раз в неделю. В здоровом ухе избытка серы не наблюдается, оно красивого розового цвета. Поводом для обращения к ветеринару должно стать обилие серы, покраснение уха и неприятный запах из него, а также высыпка. Только специалист может определить, в чём тут причина. А причин может быть много: ушной клещ, отит, аллергия на те или иные компоненты рациона.
+        </p>
+        <p>
+         Зубы акиты необходимо чистить 3-4 раза в неделю, используя пасту для собак. Можно использовать щетку или ограничиться насадкой на палец. Важно предотвратить появление зубного камня, поэтому состояние ротовой полости собаки нужно контролировать постоянно, регулярно водить своего питомца на осмотр к ветеринару.
+        </p>
+        <p>
+         После прогулок обязательно протирайте американской аките лапы, используя влажные полотенца, и осматривайте их на наличие трещин и травм. В подушечки лап необходимо втирать растительное масло и включать его в рацион, достаточно одной чайной ложки в день. Такая нехитрая профилактическая мера позволит предотвратить появление трещин. Для обрезки когтей (эту процедуру следует проводить раз в месяц) используйте когтерез для больших пород. Во избежание сколов и заусенцев острые концы сглаживаются пилочкой.
+        </p>
+        <h2 id="gl7">
+         Здоровье и болезни американской акиты
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Американская акита гуляет в лесу" data-fancybox="gallery" href="/upload/iblock/956/956ef3e549e74420e3e0b247b3a26658.jpg" title="Американская акита гуляет в лесу">
+          <div class="lazy-load" data-alt="Американская акита гуляет в лесу" data-class="article_pic" data-original="/upload/resize_cache/iblock/956/412_2150_1/956ef3e549e74420e3e0b247b3a26658.jpg">
+           <noscript data-alt="Американская акита гуляет в лесу" data-class="article_pic" data-original="/upload/resize_cache/iblock/956/412_2150_1/956ef3e549e74420e3e0b247b3a26658.jpg">
+            <img alt="Американская акита гуляет в лесу" class="article_pic" height="617" src="/upload/resize_cache/iblock/956/412_2150_1/956ef3e549e74420e3e0b247b3a26658.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Американская акита гуляет в лесу
+         </div>
+        </div>
+        <p>
+         Американская акита от природы наделена крепким здоровьем и неплохим иммунитетом. Ее щенки, в отличие от представителей некоторых других пород, в меньшей степени подвержены инфекциям. Однако есть недуги, к которым представители этой породы предрасположены генетически: дисплазия тазобедренного сустава, прогрессирующая атрофия сетчатки, эпилепсия, вздутие живота, заворот и выворот век, бесплодие.
+        </p>
+        <p>
+         Дисплазия тазобедренного сустава может развиваться, прежде всего, из-за завышенных физических нагрузок в период взросления и по причине неправильного питания. То есть, несмотря на генетическую предрасположенность, это заболевание может и не развиться, если обеспечить аките сбалансированный рацион и не перегружать ее во время дрессировки. Бесплодие же у некоторых собак может наблюдаться вследствие гормональных нарушений.
+        </p>
+        <p>
+         Кроме того, представители породы могут страдать аллергическими реакциями, себорейным аденитом, гипотиреозом, дерматитами, заворотом желудка, пузырчаткой, непереносимостью наркоза, а также синдромом Кушинга (известен также под названием гиперадренокортицизм). Это заболевание поражает органы эндокринной системы вследствие избыточного продуцирования адренокортикотропного гормона гипофизом и гормона кортизола – надпочечниками.
+        </p>
+        <p>
+         Средняя продолжительность жизни американской акиты составляет 10-14 лет.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/80c/80ce55c96d6600279915d559ed782388.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/80c/512_342_2/80ce55c96d6600279915d559ed782388.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/80c/512_342_2/80ce55c96d6600279915d559ed782388.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/80c/512_342_2/80ce55c96d6600279915d559ed782388.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/364/36499415301d8160b3abc96d6f0d5099.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/364/512_342_2/36499415301d8160b3abc96d6f0d5099.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/364/512_342_2/36499415301d8160b3abc96d6f0d5099.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/364/512_342_2/36499415301d8160b3abc96d6f0d5099.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Покупать щенка американской акиты следует у проверенных заводчиков, которые уже несколько лет на рынке. Нелишним будет найти в интернете всю возможную информацию о продавце, прочитать отзывы. Опытный заводчик, дорожащий своей репутацией, обязательно подскажет, какой щенок лучше всего подойдет именно вам. Одним нужен хороший охотник, другим – потенциальный победитель всех возможных выставок, а третьим – просто хороший и верный друг для себя и детей, и чтобы охранял дом.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок американской акиты с мамой" data-fancybox="gallery" href="/upload/iblock/29e/29e689800cbf79d184158d9947edc88a.jpg" title="Щенок американской акиты с мамой">
+          <div class="lazy-load" data-alt="Щенок американской акиты с мамой" data-class="article_pic" data-original="/upload/resize_cache/iblock/29e/412_2150_1/29e689800cbf79d184158d9947edc88a.jpg">
+           <noscript data-alt="Щенок американской акиты с мамой" data-class="article_pic" data-original="/upload/resize_cache/iblock/29e/412_2150_1/29e689800cbf79d184158d9947edc88a.jpg">
+            <img alt="Щенок американской акиты с мамой" class="article_pic" height="274" src="/upload/resize_cache/iblock/29e/412_2150_1/29e689800cbf79d184158d9947edc88a.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок американской акиты с мамой
+         </div>
+        </div>
+        <p>
+         Обязательно посмотрите на родителей будущего питомца. Это очень важно, поскольку потомство наследует их внешность и поведение. Если окажется, что мать или отец трусливы или, наоборот, агрессивны, то выбранный вами щенок может с большой долей вероятности оказаться таким же.
+        </p>
+        <p>
+         Обязательно обратите внимание на внешность щенка американской акиты. Он должен быть обладателем блестящей шерсти, мягкой на ощупь. Гладя такого щенка, невольно возникает ассоциация с плюшевой игрушкой. Если же он слишком худой, у него вздутый животик, красные и слезящиеся глаза или вывернутые локти и колени, то лучше не рискуйте и не берите. Не следует брать и слишком юного по возрасту щенка, так как до 9 месяцев профессионалы выставочных классов собакам не присваивают.
+        </p>
+        <p>
+         Ваш будущий питомец должен быть активным. Вялость в поведении – признак угнетенности, которая в свою очередь может свидетельствовать о том или ином заболевании. По возможности, чтобы исключить скрытые недуги, могущие проявить себя в будущем, обратите внимание на кал щенка. Его консистенция и цвет вас могут смутить. В таком случае от покупки следует воздержаться.
+        </p>
+        <h2>
+         Фото щенков американской акиты
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c42/c4282be4ef649e21f9f35e5e0a595926.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/c42/380_264_2/c4282be4ef649e21f9f35e5e0a595926.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/c42/380_264_2/c4282be4ef649e21f9f35e5e0a595926.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/c42/380_264_2/c4282be4ef649e21f9f35e5e0a595926.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/158/158a93c8742672e984ccaacfde504ef2.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/158/380_264_2/158a93c8742672e984ccaacfde504ef2.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/158/380_264_2/158a93c8742672e984ccaacfde504ef2.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/158/380_264_2/158a93c8742672e984ccaacfde504ef2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4cc/4cc2f0bd86dc67e1e54e6ab1cdde6b98.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/4cc/380_264_2/4cc2f0bd86dc67e1e54e6ab1cdde6b98.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/4cc/380_264_2/4cc2f0bd86dc67e1e54e6ab1cdde6b98.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/4cc/380_264_2/4cc2f0bd86dc67e1e54e6ab1cdde6b98.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9bd/9bd584b5738656731c6812e78972b235.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/9bd/380_264_2/9bd584b5738656731c6812e78972b235.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/9bd/380_264_2/9bd584b5738656731c6812e78972b235.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/9bd/380_264_2/9bd584b5738656731c6812e78972b235.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e6c/e6c2e662c59522dda529acd5fe9af97a.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/e6c/380_264_2/e6c2e662c59522dda529acd5fe9af97a.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/e6c/380_264_2/e6c2e662c59522dda529acd5fe9af97a.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/e6c/380_264_2/e6c2e662c59522dda529acd5fe9af97a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d15/d15085b90fcf8af9079d71c8fea06ab9.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/d15/380_264_2/d15085b90fcf8af9079d71c8fea06ab9.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/d15/380_264_2/d15085b90fcf8af9079d71c8fea06ab9.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/d15/380_264_2/d15085b90fcf8af9079d71c8fea06ab9.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a75/a752fb8e6eefcbd66debd84f6bddc95a.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/a75/380_264_2/a752fb8e6eefcbd66debd84f6bddc95a.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/a75/380_264_2/a752fb8e6eefcbd66debd84f6bddc95a.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/a75/380_264_2/a752fb8e6eefcbd66debd84f6bddc95a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/08e/08ee3050fe20d45e64358c7e6df71d29.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/08e/380_264_2/08ee3050fe20d45e64358c7e6df71d29.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/08e/380_264_2/08ee3050fe20d45e64358c7e6df71d29.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/08e/380_264_2/08ee3050fe20d45e64358c7e6df71d29.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/409/4099d45bd3a9be73d24b26b5fe6e0b0b.jpg" title="">
+           <div class="lazy-load" data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/409/380_264_2/4099d45bd3a9be73d24b26b5fe6e0b0b.jpg">
+            <noscript data-alt="Американская акита" data-class="article_pic" data-original="/upload/resize_cache/iblock/409/380_264_2/4099d45bd3a9be73d24b26b5fe6e0b0b.jpg">
+             <img alt="Американская акита" class="article_pic" src="/upload/resize_cache/iblock/409/380_264_2/4099d45bd3a9be73d24b26b5fe6e0b0b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl9">
+         Сколько стоит американская акита
+        </h2>
+        <p>
+         Американская акита в России широкого распространения не имеет. Она встречается даже реже, чем ее японский собрат акита-ину. Но в крупных городах можно отыскать питомники по разведению этих величественных красавцев. Между стоимостью щенка и классом, к которому он относится, имеется прямая зависимость.
+        </p>
+        <ul>
+         <li>
+          Щенок без родословной стоит сравнительно недорого, от 10 000 до 12 000 рублей. Однако такая экономия сопряжена с риском заиметь нечистокровную акиту или, что еще хуже, питомца с пороками развития.
+         </li>
+         <li>
+          Приобрести щенка пет-класса, по причине каких-либо отклонений от стандарта породы не подходящего для разведения, но при этом здорового, можно за 15 000 руб.
+         </li>
+         <li>
+          От 20 000 до 30 000 руб. стоят щенки с родословной и допуском к вязкам, но при этом не имеющие шансов стать победителями выставок из-за некоторых мелких отклонений.
+         </li>
+         <li>
+          Ну, а если вы «замахнулись» на высокопородную акиту, будущую победительницу выставок и обладательницу самых разных титулов, то выбирайте щенка шоу-класса – потомка титулованных родителей. Такой малыш может стоить 50 000 рублей, причём эта цена минимальная.
+         </li>
+        </ul>
+        <p>
+         Правильно выбрав себе питомца, можете быть уверенными, что в будущем вы станете с ним крепким тандемом, обреченным на удачное взаимодействие. А со временем, по мере взросления, ваша американская акита превратится в полноценного члена семьи – послушного и преданного.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения американской акиты на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/28089/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Екатерина Гладких" data-original="/upload/resize_cache/main/657/200_200_2/est9x6encymiwoz672cmlp93kxj688b1.jpg">
+            <noscript data-alt="Екатерина Гладких" data-original="/upload/resize_cache/main/657/200_200_2/est9x6encymiwoz672cmlp93kxj688b1.jpg">
+             <img alt="Екатерина Гладких" src="/upload/resize_cache/main/657/200_200_2/est9x6encymiwoz672cmlp93kxj688b1.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/prodam-sereniyu-5655/">
+           Продам серению
+          </a>
+         </div>
+         <div class="forum-text">
+          Продам серению для собак и кошек, покупали для акиты в вет клинике, но не пригодилось есть 3 шприца по 4 мл каждый отдам за 1000. Хранится в холодильнике сроки хорошие.
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/28089/">
+            Екатерина Гладких
+           </a>
+          </span>
+          <span class="vopros-date">
+           7 дней назад
+          </span>
+          <span class="vopros-smotr">
+           18 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/amerikanskaya-akita/forum/">
+        Перейти на
+        форум американской акиты
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Американская акита" src="/upload/iblock/e88/e881aa3e59df6650a093dd15e28deb9d.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/amerikanskaya-akita/">
+          Американская акита
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/amerikanskaya-akita/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/amerikanskaya-akita/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/amerikanskaya-akita/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/amerikanskaya-akita/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/amerikanskaya-akita/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/amerikanskaya-akita/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/vest-khaylend-uayt-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Вест-хайленд-уайт-терьер" data-original="/upload/resize_cache/iblock/09f/100_100_1/09f78d0c57156a58c3cad34c111f059c.jpg">
+          <noscript data-alt="Вест-хайленд-уайт-терьер" data-original="/upload/resize_cache/iblock/09f/100_100_1/09f78d0c57156a58c3cad34c111f059c.jpg">
+           <img alt="Вест-хайленд-уайт-терьер" src="/upload/resize_cache/iblock/09f/100_100_1/09f78d0c57156a58c3cad34c111f059c.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Вест-хайленд-уайт-терьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/zolotistyy-retriver/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Золотистый ретривер" data-original="/upload/resize_cache/iblock/249/100_100_1/249483cc29c8f7316027872ed67ca526.jpg">
+          <noscript data-alt="Золотистый ретривер" data-original="/upload/resize_cache/iblock/249/100_100_1/249483cc29c8f7316027872ed67ca526.jpg">
+           <img alt="Золотистый ретривер" src="/upload/resize_cache/iblock/249/100_100_1/249483cc29c8f7316027872ed67ca526.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Золотистый ретривер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/tibetskiy-spaniel/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Тибетский спаниель" data-original="/upload/resize_cache/iblock/0fc/100_100_1/rgkz030nqf43gt36t7jvnk2bh5cjib8w.jpg">
+          <noscript data-alt="Тибетский спаниель" data-original="/upload/resize_cache/iblock/0fc/100_100_1/rgkz030nqf43gt36t7jvnk2bh5cjib8w.jpg">
+           <img alt="Тибетский спаниель" src="/upload/resize_cache/iblock/0fc/100_100_1/rgkz030nqf43gt36t7jvnk2bh5cjib8w.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Тибетский спаниель
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/pagl/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Пагль" data-original="/upload/resize_cache/iblock/27c/100_100_1/g03ybu975jvkzcb5520wd1if364byzaa.jpg">
+          <noscript data-alt="Пагль" data-original="/upload/resize_cache/iblock/27c/100_100_1/g03ybu975jvkzcb5520wd1if364byzaa.jpg">
+           <img alt="Пагль" src="/upload/resize_cache/iblock/27c/100_100_1/g03ybu975jvkzcb5520wd1if364byzaa.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Пагль
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Famerikanskaya-akita%252F%253Fcheck_key%253D2b74e6acc6f34bfcd8e1f9e46e0d9404%2526ANIMAL_CODE%253Damerikanskaya-akita%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Famerikanskaya-akita%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmFtZXJpa2Fuc2theWEtYWtpdGElMkYlM0ZjaGVja19rZXklM0QyYjc0ZTZhY2M2ZjM0YmZjZDhlMWY5ZTQ2ZTBkOTQwNCUyNkFOSU1BTF9DT0RFJTNEYW1lcmlrYW5za2F5YS1ha2l0YSUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZhbWVyaWthbnNrYXlhLWFraXRhJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Famerikanskaya-akita%252F%253Fcheck_key%253D2b74e6acc6f34bfcd8e1f9e46e0d9404%2526ANIMAL_CODE%253Damerikanskaya-akita%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Famerikanskaya-akita%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Famerikanskaya-akita%252F%253Fcheck_key%253D2b74e6acc6f34bfcd8e1f9e46e0d9404%2526ANIMAL_CODE%253Damerikanskaya-akita%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Famerikanskaya-akita%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "89.113.149.172"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--d87d1978cbfc80e994935f570c45402a-->

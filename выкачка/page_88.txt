@@ -1,0 +1,1805 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'77887aedaca4'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Кане-корсо, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Кане-корсо – крупная порода, потомок боевых собак Древнего Рима. На протяжении веков эти умные и послушные псы служили своим хозяевам, охраняя их дома, помогая на охоте и в поле." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/b96/b969c81e0f0e57bdf693886a961a425f.jpg" property="og:image"/>
+     <title>
+      Кане-корсо: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/kane-korso/" property="og:url"/>
+     <meta content="Кане-корсо: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Кане-корсо – крупная порода, потомок боевых собак Древнего Рима. На протяжении веков эти умные и послушные псы служили своим хозяевам, охраняя их дома, помогая на охоте и в поле." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/kane-korso/" itemprop="url">
+         <span itemprop="title">
+          Кане-корсо
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Кане-корсо
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/kane-korso/">
+          Описание
+         </a>
+         <a href="/dog/kane-korso/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/kane-korso/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/kane-korso/photo/">
+          Фото
+         </a>
+         <a href="/dog/kane-korso/video/">
+          Видео
+         </a>
+         <a href="/dog/kane-korso/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/kane-korso/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Кане-корсо" src="/upload/iblock/48d/48d5bdc12f48db8a57c0bb14ef0b32c8.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/kane-korso/">
+           итальянский кане-корсо
+          </a>
+          ,
+          <a href="/dog/kane-korso/">
+           итальянский мастиф
+          </a>
+         </span>
+         <p>
+          Кане-корсо – крупная порода, потомок боевых собак Древнего Рима. На протяжении веков эти умные и послушные псы служили своим хозяевам, охраняя их дома, помогая на охоте и в поле.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/f67/f67c40d3b48566134b519933a811fe04.jpg" data-cap="Cane Corso" data-fancybox="images" data-link="https://www.flickr.com/photos/66970193@N02/33626154125/" data-type="image" data-username="Alexandremqs" href="/upload/uf/3c9/3c99278a0280263798318ffb2e08893c.jpg">
+            <img alt="Кане-корсо" src="/upload/resize_cache/uf/3c9/293_293_2/3c99278a0280263798318ffb2e08893c.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/7f3/7f3d6c62d92f73e4b719b1839b6ed6f4.jpg" data-cap="" data-fancybox="images" data-link="https://www.flickr.com/photos/painted_black/24881719935/" data-type="image" data-username="Ivi Triin V. fotod" href="/upload/uf/0a3/0a32b591f9aa0e51485053d7eef18a45.jpg">
+            <img alt="Кане-корсо" src="/upload/resize_cache/uf/0a3/293_293_2/0a32b591f9aa0e51485053d7eef18a45.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/771/7718c12dd8a5528c65fc4ecde4d3e656.jpg" data-cap="Cane Corso" data-fancybox="images" data-link="https://www.flickr.com/photos/134034908@N02/28178222546/" data-type="image" data-username="sam lati" href="/upload/uf/276/27669c96ad4ea1d0b041a4a09b221a6b.jpg">
+            <img alt="Кане-корсо" src="/upload/resize_cache/uf/276/293_293_2/27669c96ad4ea1d0b041a4a09b221a6b.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/kane-korso/photo/">
+         Все
+            фото кане-корсо
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы кане-корсо
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Особенности кане-корсо
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Внешность и особые черты породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Характер кане-корсо
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Дрессировка и воспитание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Здоровье и болезни кане-корсо
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Сколько стоит кане-корсо
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Кане-корсо
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Италия
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 45-50 кг, суки 40-45 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 64-68 см, суки 60-64 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         9-11 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Эта собака обладает отличными охранными качествами. Территорию, на которой обитают хозяин и члены его семьи, считает своим пространством и охраняет с особой тщательностью.
+        </li>
+        <li>
+         Кане-корсо по своей природе не агрессивен, но если заявятся непрошеные гости, они непременно почувствуют на себе суровый нрав «итальянца».
+        </li>
+        <li>
+         Представители породы крепки и выносливы, отличаются умом и сообразительностью, нуждаются в постоянной физической и умственной активности.
+        </li>
+        <li>
+         В стае кане-корсо проявляет доминантные черты характера, стараясь верховодить. Некоторая властность пса может оказаться трудным испытанием для неопытных владельцев, поэтому, если вы впервые решили завести себе четвероногого друга, начинайте с представителя иной породы.
+        </li>
+        <li>
+         К другим собакам и животным кане-корсо могут проявлять агрессию, и чтобы держать подобные эмоции в узде, социализацию щенков необходимо проводить с самого раннего возраста.
+        </li>
+        <li>
+         Внешне выглядят вальяжными и неторопливыми, но такое впечатление обманчиво. Как настоящие «темпераментные итальянцы», они охотно включаются в игры, любят бегать и, вообще, активно проводить время.
+        </li>
+        <li>
+         Отлично уживаются с детьми, становясь для них надежной нянькой. Так дают о себе знать гены далеких предков – пастушьих собак, для которых хозяин и его семья, включая домашних животных, были объектами контроля.
+        </li>
+        <li>
+         Кане-корсо присущи доброта и внимательность, они ласковы с хозяином и требуют взаимности.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Кане-корсо" data-original="/upload/iblock/b96/b969c81e0f0e57bdf693886a961a425f.jpg">
+          <noscript data-alt="Кане-корсо" data-original="/upload/iblock/b96/b969c81e0f0e57bdf693886a961a425f.jpg">
+           <img alt="Кане-корсо" src="/upload/iblock/b96/b969c81e0f0e57bdf693886a961a425f.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          Современные
+          <strong>
+           кане-корсо
+          </strong>
+          – потомки собак-гладиаторов, от них веет природной силой и величием. С виду они суровые, даже могут внушать страх, но на самом деле становятся верными друзьями для своих хозяев и остаются ими на протяжении всей жизни. Будучи четырнадцатой по счёту породой, выведенной в Италии, кане-корсо являются гордостью и национальным достоянием этой страны. В характере собак удивительным образом переплелись самоотверженность пастушьих и отважность боевых пород, а также нашел свое отражение живой темперамент самих итальянцев.
+          <br/>
+          <br/>
+          Кане-корсо обладают чуткостью и интуицией, они готовы оберегать хозяина и его семью в любое время и в любой ситуации, что делает их непревзойденными охранниками. Если в вашем доме проживает собака этой породы, отпадает всякая необходимость в системах сигнализации. Проникшего в дом вора они не будут встречать агрессией, чем отличаются от других охранных собак, но грабитель очень пожалеет о знакомстве с уроженцем солнечных Апеннин. Агрессивную реакцию кане-корсо оставляет на крайний случай, когда почувствует, что над хозяином и его имуществом нависла реальная угроза.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дорогое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Кане-корсо основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/kane-korso/razmeri-porodi/">
+         размеры кане-корсо
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы кане-корсо
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кане-корсо" data-fancybox="gallery" href="/upload/iblock/f6f/f6f7962ce11a09b0d7fdc46ed2765e93.jpg" title="Кане-корсо">
+          <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/f6f/412_2150_1/f6f7962ce11a09b0d7fdc46ed2765e93.jpg">
+           <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/f6f/412_2150_1/f6f7962ce11a09b0d7fdc46ed2765e93.jpg">
+            <img alt="Кане-корсо" class="article_pic" height="621" src="/upload/resize_cache/iblock/f6f/412_2150_1/f6f7962ce11a09b0d7fdc46ed2765e93.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кане-корсо
+         </div>
+        </div>
+        <p>
+         Кане-корсо имеет долгую и славную летопись, исчисляемую многими столетиями. Их самыми дальними предками являлись тибетские доги времен античности. В те суровые времена, когда нужно было защищаться от множества врагов и диких животных, такие собаки особенно ценились. Неподдельное уважение и даже какое-то благоговение эти псы вызывают и сегодня.
+        </p>
+        <p>
+         Известно, что первый предок современных «итальянцев» на территории современной Евразии появился за 1 тысячу лет до нашей эры. Это был агрессивный тибетский дог, которого подарили китайскому императору, оценившему в нём такой навык, как способность отлавливать людей. С того времени они достаточно быстро стали распространяться по материку, став родоначальниками и некоторых других пород. Новых псов выводили для вполне конкретных целей. В той же Римской империи их использовали для собачьих боёв, в военных походах и, конечно, как охранников.
+        </p>
+        <p>
+         Первые письменные упоминания о гигантских собаках корсо датированы XIV-XV веками. В обнаруженных историками документах говорится, что они участвовали в охотах и травлях. В некоторых местностях этих псов использовали для выпаса и охраны скота. Что же касается официальной истории породы, то ее обычно ведут с периода расцвета Римской империи. До наших дней дошли археологические памятники с множественными изображениями этих величественных собак. Корсо сопровождали своих хозяев в боевые походы, приглядывали за рабами и охраняли целые дворцовые комплексы. После падения Древнего Рима собак стали скрещивать с кельтскими борзыми, тем самым влив в породу «новую кровь». Одновременно с этим их стали больше использовать не как боевых псов, а на охоте, для охраны сельхозугодий и перегона скота. Всё это продолжалось на протяжении длительного времени, поэтому преданность одному хозяину у них буквально в крови, это заложено на генетическом уровне.
+        </p>
+        <p>
+         Выполнение собаками самых разных задач сделало породу многопрофильной, что остается неизменным и в наши дни. Поскольку кане-корсо всегда ценились очень высоко, за качеством их генофонда тщательно следили. Однако, несмотря на это, печальных страниц в истории породы избежать и не удалось. Во время Второй мировой войны кане-корсо, как и многие другие породы, находилась на грани вымирания. Этих гигантов активно использовали на передовой, что вкупе с недокормом, а нередко и голодом, подкосило породу.
+        </p>
+        <p>
+         Но кане-корсо не исчезли, и за это человечество должно быть благодарно Джованни Бонатти Ниццоли, проявившему настойчивость и приложившему титанические усилия для возрождения этих гордых, умных и величественных псов. Неоценимую помощь ему оказали единомышленники, в 1983 году собравшие по всей Италии всех чистокровных кане-корсо, сохранившихся каким-то чудом. Спустя четыре года появился стандарт породы – первый, утвержденный на официальном уровне. В этом документе давалось точное описание собак и делался акцент на чертах, отличавших корсо от других потомков мастифов. И хотя племенную регистрацию порода получила только в 1994 году, до этого события признания экспертов и положительных оценок с их стороны добились более 500 производителей и несколько сотен щенков. Всё это дало зелёный свет развитию и распространению кане-корсо: численность собак стала расти и за короткое время перевалила за 3 000 особей. На международной выставке, прошедшей в 1996 году, представитель возрождённой итальянской породы стал победителем.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Кане-корсо оленьего окраса" data-fancybox="gallery" href="/upload/iblock/8f8/8f8d4b174ccf0d8f7c8eae6bc3691b6a.jpg" title="Кане-корсо оленьего окраса">
+           <div class="lazy-load" data-alt="Кане-корсо оленьего окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/8f8/512_342_2/8f8d4b174ccf0d8f7c8eae6bc3691b6a.jpg">
+            <noscript data-alt="Кане-корсо оленьего окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/8f8/512_342_2/8f8d4b174ccf0d8f7c8eae6bc3691b6a.jpg">
+             <img alt="Кане-корсо оленьего окраса" class="article_pic" src="/upload/resize_cache/iblock/8f8/512_342_2/8f8d4b174ccf0d8f7c8eae6bc3691b6a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Кане-корсо оленьего окраса
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Черный кане-корсо" data-fancybox="gallery" href="/upload/iblock/e57/e573a9ab52ff8d1911c14e34899235d0.jpg" title="Черный кане-корсо">
+           <div class="lazy-load" data-alt="Черный кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/e57/512_342_2/e573a9ab52ff8d1911c14e34899235d0.jpg">
+            <noscript data-alt="Черный кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/e57/512_342_2/e573a9ab52ff8d1911c14e34899235d0.jpg">
+             <img alt="Черный кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/e57/512_342_2/e573a9ab52ff8d1911c14e34899235d0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Черный кане-корсо
+          </div>
+         </div>
+        </div>
+        <h2>
+         Видео: Кане-корсо
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="Soj304vohG0">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Особенности кане-корсо
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок кане-корсо" data-fancybox="gallery" href="/upload/iblock/d8e/d8e0721f6b1033ef09e19c550416c997.jpg" title="Щенок кане-корсо">
+          <div class="lazy-load" data-alt="Щенок кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/d8e/412_2150_1/d8e0721f6b1033ef09e19c550416c997.jpg">
+           <noscript data-alt="Щенок кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/d8e/412_2150_1/d8e0721f6b1033ef09e19c550416c997.jpg">
+            <img alt="Щенок кане-корсо" class="article_pic" height="618" src="/upload/resize_cache/iblock/d8e/412_2150_1/d8e0721f6b1033ef09e19c550416c997.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок кане-корсо
+         </div>
+        </div>
+        <p>
+         Охранные качества заложены в кане-корсо на генетическом уровне, поэтому эту функцию они выполняют даже без специальной дрессировки. Пес будет охранять хозяина, членов его семьи, а также всю придомовую территорию. С домашними животными этот гигант ладит неплохо, даже с теми, кто не слишком обрадуется его появлению в доме. У него в «друзьях» могут быть не только другие собаки, включая мелкие породы, но и кошки и даже птички.
+        </p>
+        <p>
+         Уравновешенность у этих собак в крови. Видя, что гость дружелюбен с хозяином, «итальянец» будет сохранять спокойствие. Он не будет активничать, если почувствует скрытую угрозу, но даст понять, что ситуация под его контролем. Пес нападает только в двух случаях: если по отношению к нему будет проявлена прямая агрессия или если получит соответствующую команду от хозяина.
+        </p>
+        <p>
+         Особенно бережно корсо относятся к младшим членам семьи, это пошло еще с тех времен, когда они скитались с отарами и выработали в себе инстинкт охранять всех, кто меньше и слабее. Эти большие собаки никогда не обидят ребенка, даже чужого, а, наоборот, будут опекать его едва ли не с материнским усердием. Дети отвечают этим псам взаимностью и часто вовлекают их в свои игры, например во врачей и парикмахеров. Невозможно наблюдать без умиления и смеха, как маленькая кроха «лечит» пса или пытается сделать ему причёску, а корсо смиренно терпит. Правда, в самом начале он попытается улизнуть от маленького «доктора», но если это ему не удаётся, то безропотно сносит все «процедуры». Во время игр кане-корсо может нечаянно, совершенно без злого умысла слегка толкнуть ребенка. Если вы переживаете, что очередной такой толчок может привести к падению малыша, то скомандуйте собаке «Сидеть!» или «Лежать!», и она обязательно выполнит требуемое, причем с первого раза.
+        </p>
+        <h2 id="gl3">
+         Внешность и особые черты породы
+        </h2>
+        <p>
+         Кане-корсо или итальянский мастиф – крупная собака, обладающая рельефной мускулатурой. Корпус характеризуется так называемым растянутым форматом, когда длина больше, чем высота в холке. Показатель последней составляет для кобелей 64-68 см, для сук – 60-64 см. Взрослые псы весят в зависимости от пола, соответственно, 45-50 кг и 40-45 кг. Размеры собаки не должны удивлять, ведь порода выводилась для охранных, охотничьих и боевых нужд.
+        </p>
+        <p>
+         Кане-корсо итальяно впечатляют силой, красотой и мощностью, они невероятно харизматичны. Представители этой породы грациозно передвигаются, своей походкой напоминая пантер. Находясь рядом с псом, чувствуешь себя защищенным и точно знаешь, что тебя не предадут. Самобытность кане-корсо, особенности их внешности и удивительные навыки передавались из поколения в поколение на протяжении многих столетий. От молосских догов, их ближайших предков, в итальянских мастифах сохранилось очень многое, однако селекционная деятельность внесла свои коррективы. Эти псы не только надежные телохранители, но и, несмотря на суровый вид, верные и добрые друзья.
+        </p>
+        <h3>
+         Общее описание
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Атлетичный красавец" data-fancybox="gallery" href="/upload/iblock/d35/d35e5a52289e2dfe639c1e8ae0c6a94e.jpg" title="Атлетичный красавец">
+          <div class="lazy-load" data-alt="Атлетичный красавец" data-class="article_pic" data-original="/upload/resize_cache/iblock/d35/412_2150_1/d35e5a52289e2dfe639c1e8ae0c6a94e.jpg">
+           <noscript data-alt="Атлетичный красавец" data-class="article_pic" data-original="/upload/resize_cache/iblock/d35/412_2150_1/d35e5a52289e2dfe639c1e8ae0c6a94e.jpg">
+            <img alt="Атлетичный красавец" class="article_pic" height="273" src="/upload/resize_cache/iblock/d35/412_2150_1/d35e5a52289e2dfe639c1e8ae0c6a94e.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Атлетичный красавец
+         </div>
+        </div>
+        <p>
+         Кане-корсо обладают атлетическим сложением, внешность выдаёт в них бескомпромиссных охранников и настоящих защитников. Они выглядят презентабельно и одновременно элегантно: мощный корпус, широкая грудь, развитые плечи, типичная для всех молоссов морда, уверенная походка. Собаки этой породы бывают преимущественно чёрного, коричневого и тигрового окрасов.
+        </p>
+        <p>
+         Характер «итальянца» состоит из сплошных достоинств: он психически уравновешен, предсказуем, легко поддается дрессировке, очень предан своему хозяину и никогда не проявляет беспричинную агрессию. Такие качества присущи многим представителям группы молоссов, например, английскому бульдогу и бордосскому догу. Если в поведении пса стали обнаруживаться плохие черты, причину следует искать в плохом воспитании, но никак не в природной предрасположенности.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Голова кане-корсо в большей степени широкая, чем длинная. Обтянута плотной кожей, складки на морде отсутствуют. Морда, в свою очередь, соотносится с черепом в пропорции 1:2, то есть является короткой. Но в то же время она широкая и объёмная, квадратной формы, плоская и крепкая.
+        </p>
+        <h3>
+         Зубы
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кане-корсо тигрового окраса" data-fancybox="gallery" href="/upload/iblock/49d/49daa85ec599225c2aab4508d6b12fcd.jpg" title="Кане-корсо тигрового окраса">
+          <div class="lazy-load" data-alt="Кане-корсо тигрового окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/49d/412_2150_1/49daa85ec599225c2aab4508d6b12fcd.jpg">
+           <noscript data-alt="Кане-корсо тигрового окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/49d/412_2150_1/49daa85ec599225c2aab4508d6b12fcd.jpg">
+            <img alt="Кане-корсо тигрового окраса" class="article_pic" height="272" src="/upload/resize_cache/iblock/49d/412_2150_1/49daa85ec599225c2aab4508d6b12fcd.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кане-корсо тигрового окраса
+         </div>
+        </div>
+        <p>
+         У собаки этой породы 42 зуба, они белые и крепкие. Челюсти крупные, мощные, изогнутые. Ввиду того, что нижняя челюсть несколько выступает вперед, прикус характеризуется как легкий перекус.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Овальной формы, имеют широкую расстановку на морде. Их цвет зависит от окраса собаки, однако чем он будет темнее, тем лучше. Веки имеют черную пигментацию.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         От природы уши кане-корсо немного большие и широко расположенные, с плотным прилеганием к голове. Покрытые гладкой и блестящей шерстью, они, сужаясь к концам, свисают, прилегая к щекам собаки. Их можно купировать, придав форму равностороннего треугольника.
+        </p>
+        <h3>
+         Нос и губы
+        </h3>
+        <p>
+         Нос черный и крупный, ноздри широко раскрыты. Губы плотные и не слишком обвисшие. Верхние губы покрывают нижнюю челюсть, тем самым полностью определяя нижнюю часть профиля морды.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Шея кане-корсо сильная, мускулистая, пропорциональная корпусу, но не слишком объемная, придающая собаке некоторую элегантность. По длине она равна длине головы.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда кане-корсо" data-fancybox="gallery" href="/upload/iblock/4d1/4d196e5f390a61644b555cb316cf36d3.jpg" title="Морда кане-корсо">
+          <div class="lazy-load" data-alt="Морда кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/4d1/1024_2150_1/4d196e5f390a61644b555cb316cf36d3.jpg">
+           <noscript data-alt="Морда кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/4d1/1024_2150_1/4d196e5f390a61644b555cb316cf36d3.jpg">
+            <img alt="Морда кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/4d1/1024_2150_1/4d196e5f390a61644b555cb316cf36d3.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда кане-корсо
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Телосложение кане-корсо крепкое, туловище в сравнении с высотой в холке несколько длиннее. Холка явно выраженная, она выступает над длинным, широким и несколько наклоненным крупом. Грудная клетка достигает уровня локтей, она широкая и отлично развита. Спина прямая, имеет выраженную мускулистость. Выпуклость рёбер умеренная.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f40/f40461b63a0a7c396ee778964db10c48.jpg" title="">
+          <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/f40/412_2150_1/f40461b63a0a7c396ee778964db10c48.jpg">
+           <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/f40/412_2150_1/f40461b63a0a7c396ee778964db10c48.jpg">
+            <img alt="Кане-корсо" class="article_pic" height="617" src="/upload/resize_cache/iblock/f40/412_2150_1/f40461b63a0a7c396ee778964db10c48.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Хвост кане-корсо от природы длинный и достигающий скакательных суставов, он высоко посажен, у основания толстый. Вертикально не поднимается и не загибается. Купирование хвоста производится по четвёртому позвонку.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Передние конечности характеризуются длинными, наклонными и очень развитыми лопатками. Плечи и предплечья крепкие, пясть и запястье эластичные. Передние лапы кошачьего типа с упругими подушечками  и крепкими когтями. Лапы овальной формы, пальцы собраны в комок.
+        </p>
+        <p>
+         Задние конечности в бедре широкие и длинные, задняя линия бёдер выпуклая. Крепкие голени и немного угловатый скакательный сустав. Мощные и жилистые плюсны. Задние лапы тоже овальные, с упругими подушечками и крепкими когтями, пальцы собраны комком.
+        </p>
+        <p>
+         Благодаря таким характеристикам кане-корсо двигаются широким шагом, у них крупная и размашистая рысь.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Кожа толстая и плотно прилегает к телу. Шерсть у кане-корсо очень густая, но с редким подшерстком, короткая и лоснится. Если она средней длины, лишена жесткости и волнистая, то это относится к серьёзным недостаткам породы.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Здесь стандарт породы допускает значительное разнообразие. Помимо традиционных черного, светло-рыжего, темно-рыжего и тигрового окраса, кане-корсо могут быть светло-серыми, свинцовыми (средне-серыми) и шиферными (темно-серыми), а также красными (оленьего окраса). Допускаются небольшие белые вкрапления, но только на груди, носу и концах лап.
+        </p>
+        <p class="legenda">
+         На заметку: у рыжих и тигровых кане-корсо на морде должна быть черная или серая маска, не заходящая за линию глаз.
+        </p>
+        <h3>
+         Возможные пороки
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Тренировка кане-корсе" data-fancybox="gallery" href="/upload/iblock/8f7/8f77c33d193933c69c937022e994f39b.jpg" title="Тренировка кане-корсе">
+          <div class="lazy-load" data-alt="Тренировка кане-корсе" data-class="article_pic" data-original="/upload/resize_cache/iblock/8f7/412_2150_1/8f77c33d193933c69c937022e994f39b.jpg">
+           <noscript data-alt="Тренировка кане-корсе" data-class="article_pic" data-original="/upload/resize_cache/iblock/8f7/412_2150_1/8f77c33d193933c69c937022e994f39b.jpg">
+            <img alt="Тренировка кане-корсе" class="article_pic" height="274" src="/upload/resize_cache/iblock/8f7/412_2150_1/8f77c33d193933c69c937022e994f39b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Тренировка кане-корсе
+         </div>
+        </div>
+        <p>
+         Если сходятся продольные оси морды и черепа, а также боковые поверхности морды, это считается серьезным пороком. Сюда же относится и параллельное расположение продольных осей морды и черепа.
+        </p>
+        <p>
+         К портящим породу недостаткам причисляют, в том числе, рост ниже или выше нормы, частичную депигментацию носа, постоянно переходящие в иноходь движения, ножницеобразный прикус, свернутый бубликом или стоящий вертикально хвост, перекус со значительным отходом.
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <p>
+         Ваш любимец проявляет агрессивность? Это серьёзный порок, за который ему будет грозить дисквалификация. Такой же вердикт будет вынесен пугливому или откровенно трусливому животному.
+        </p>
+        <p>
+         Вообще, дисквалифицирован должен быть любой итальянский мастиф, у которого поведенческие либо физиологические аномалии выражены очень четко. К таковым также относятся недокус, так называемый бараний нос, впалая переносица, косоглазие, бельмо на глазу, фрагментарная либо полная депигментация глазных век, длинная или мягкая шерсть, с недопустимым окрасом и большими белыми пятнами.
+        </p>
+        <p>
+         Признаком здоровья кане-корсо считаются развитые семенники кобелей. Их два, и они должны быть полностью опустившимися в мошонку.
+        </p>
+        <h2>
+         Фотографии кане-корсо
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d02/d020af3c8b5126541b9a2bc6b24b7fcb.jpg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/d02/380_264_2/d020af3c8b5126541b9a2bc6b24b7fcb.jpg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/d02/380_264_2/d020af3c8b5126541b9a2bc6b24b7fcb.jpg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/d02/380_264_2/d020af3c8b5126541b9a2bc6b24b7fcb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/82d/82d469bcf8f5190f1e1be759ebc8d649.jpg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/82d/380_264_2/82d469bcf8f5190f1e1be759ebc8d649.jpg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/82d/380_264_2/82d469bcf8f5190f1e1be759ebc8d649.jpg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/82d/380_264_2/82d469bcf8f5190f1e1be759ebc8d649.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ac3/ac3bbce8e9b668865bfcb470dce4b248.jpg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/ac3/380_264_2/ac3bbce8e9b668865bfcb470dce4b248.jpg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/ac3/380_264_2/ac3bbce8e9b668865bfcb470dce4b248.jpg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/ac3/380_264_2/ac3bbce8e9b668865bfcb470dce4b248.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/99e/99ed702f909da1f8e74b3ff9ba3d297a.jpg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/99e/380_264_2/99ed702f909da1f8e74b3ff9ba3d297a.jpg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/99e/380_264_2/99ed702f909da1f8e74b3ff9ba3d297a.jpg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/99e/380_264_2/99ed702f909da1f8e74b3ff9ba3d297a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/da8/da86d58cdf2d16595622b34303dbfd59.jpg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/da8/380_264_2/da86d58cdf2d16595622b34303dbfd59.jpg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/da8/380_264_2/da86d58cdf2d16595622b34303dbfd59.jpg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/da8/380_264_2/da86d58cdf2d16595622b34303dbfd59.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/381/3816e2c7a25aca4173440dc694681805.jpg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/381/380_264_2/3816e2c7a25aca4173440dc694681805.jpg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/381/380_264_2/3816e2c7a25aca4173440dc694681805.jpg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/381/380_264_2/3816e2c7a25aca4173440dc694681805.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4c4/4c44dffc4dbf2442558ecee21e3af58d.jpg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/4c4/380_264_2/4c44dffc4dbf2442558ecee21e3af58d.jpg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/4c4/380_264_2/4c44dffc4dbf2442558ecee21e3af58d.jpg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/4c4/380_264_2/4c44dffc4dbf2442558ecee21e3af58d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/3c6/3c66afefb0e1e11015198149d2c775cc.jpg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/3c6/380_264_2/3c66afefb0e1e11015198149d2c775cc.jpg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/3c6/380_264_2/3c66afefb0e1e11015198149d2c775cc.jpg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/3c6/380_264_2/3c66afefb0e1e11015198149d2c775cc.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7a1/7a14cce767e36fbf743ce32d99770827.jpg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/7a1/380_264_2/7a14cce767e36fbf743ce32d99770827.jpg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/7a1/380_264_2/7a14cce767e36fbf743ce32d99770827.jpg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/7a1/380_264_2/7a14cce767e36fbf743ce32d99770827.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl4">
+         Характер кане-корсо
+        </h2>
+        <p>
+         Говорить об этих красивых, смышленых «итальянцах» критически или с опаской могут лишь те, кто совершенно не знает породу или судит о ней по довольно грозному внешнему виду. А люди знающие отзываются о кане-корсо исключительно положительно, потому что более преданного, доброго и хорошего друга не найти.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кане-корсо играет с боксером" data-fancybox="gallery" href="/upload/iblock/43b/43b475236c44404844c759fe77a8838d.jpg" title="Кане-корсо играет с боксером">
+          <div class="lazy-load" data-alt="Кане-корсо играет с боксером" data-class="article_pic" data-original="/upload/resize_cache/iblock/43b/412_2150_1/43b475236c44404844c759fe77a8838d.jpg">
+           <noscript data-alt="Кане-корсо играет с боксером" data-class="article_pic" data-original="/upload/resize_cache/iblock/43b/412_2150_1/43b475236c44404844c759fe77a8838d.jpg">
+            <img alt="Кане-корсо играет с боксером" class="article_pic" height="274" src="/upload/resize_cache/iblock/43b/412_2150_1/43b475236c44404844c759fe77a8838d.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кане-корсо играет с боксером
+         </div>
+        </div>
+        <p>
+         Среди всех остальных пород этих уроженцев итальянского «сапога» называют золотой серединой, и для этого есть немало оснований. Кане-корсо не гиганты, но в то же время и не мелковаты. Они всегда подтянуты, и чтобы ваш пес всегда сохранял хорошую форму, его физическому развитию нужно уделять значительное внимание. Эти собаки от природы очень умны и легко поддаются дрессировке. Главным условием является правильный подход. Многие хозяева не уверены в своих педагогических способностях, поэтому обращаются к профессиональным кинологам.
+        </p>
+        <p>
+         Кане-корсо действительно выглядит несколько сурово, так что если пройтись с ним по городу, то немало прохожих наверняка захочет перейти на другую сторону улицы. Неосведомлённым людям трудно представить, что за маской свирепого зверя прячется доброе, ласковое и понимающее существо. Помните: внезапная агрессия этим собакам абсолютно не присуща. Однако они не выпускают из поля зрения людей, возле которых находится хозяин, и наблюдают, как он с ними общается.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кане-корсо на поводке" data-fancybox="gallery" href="/upload/iblock/90c/90cf7de18a46b332833360bc6394e25c.jpg" title="Кане-корсо на поводке">
+          <div class="lazy-load" data-alt="Кане-корсо на поводке" data-class="article_pic" data-original="/upload/resize_cache/iblock/90c/412_2150_1/90cf7de18a46b332833360bc6394e25c.jpg">
+           <noscript data-alt="Кане-корсо на поводке" data-class="article_pic" data-original="/upload/resize_cache/iblock/90c/412_2150_1/90cf7de18a46b332833360bc6394e25c.jpg">
+            <img alt="Кане-корсо на поводке" class="article_pic" height="274" src="/upload/resize_cache/iblock/90c/412_2150_1/90cf7de18a46b332833360bc6394e25c.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кане-корсо на поводке
+         </div>
+        </div>
+        <p>
+         Кане-корсо очень игривые и с готовностью включаются в любое развлечение. Особенно эта игривость проявляется в молодом возрасте. Порой собака бывает настолько увлечена игрой, что иногда не реагирует на команду хозяина, что вполне простительно – ну с кем не бывает! По мере взросления итальянские мастифы становятся спокойными и размеренными. По характеру псы совершенно не эгоистичны. Нет в них и такой черты, как ревность.
+        </p>
+        <p>
+         Если кане-корсо такие добродушные, игривые, неагрессивные, то как со всеми этими чертами сочетаются охранные качества? Очень даже гармонично и одно другому не мешает. На опасность они реагируют быстро, практически молниеносно. Сильные челюсти обеспечивают железную хватку, так что вору, проникшему в ваше жилище, при встрече с этой собакой не поздоровится. В отношении к непрошеным гостям, которых он воспринимает как нарушителей своей территории, пес может начать действовать по собственному усмотрению, иногда даже не слушаясь хозяев.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кане-корсе с ребенком" data-fancybox="gallery" href="/upload/iblock/4a7/4a71a0ab0d9c371dc204ac6f55abfdff.jpg" title="Кане-корсе с ребенком">
+          <div class="lazy-load" data-alt="Кане-корсе с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/4a7/412_2150_1/4a71a0ab0d9c371dc204ac6f55abfdff.jpg">
+           <noscript data-alt="Кане-корсе с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/4a7/412_2150_1/4a71a0ab0d9c371dc204ac6f55abfdff.jpg">
+            <img alt="Кане-корсе с ребенком" class="article_pic" height="274" src="/upload/resize_cache/iblock/4a7/412_2150_1/4a71a0ab0d9c371dc204ac6f55abfdff.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кане-корсе с ребенком
+         </div>
+        </div>
+        <p>
+         Ради своих владельцев корсо готов на всё. В присутствии этой собаки чужим людям следует воздерживаться от резких движений. Нет, она сходу не набросится на вас, но мимикой покажет, что продолжать не стоит. А еще представитель этой породы никогда не возьмет что-либо из рук постороннего человека, включая лакомства. Отвлечь его от охраны хозяина, членов его семьи или какого-нибудь объекта, входящего в его территорию, практически невозможно. Эти собаки прекрасно понимают, кто свой, а кто чужой. Порой даже кажется, что они каким-то чудом, интуитивно могут предугадать недобрые намерения человека до того, как он их начнет проявлять, то есть чувство опасности в этих собаках развито превосходно. Мастиф может начать действовать задолго до того, как опасность начнёт реально угрожать его хозяевам, всячески пытаясь их предупредить. Глядя в глаза этой умной собаке, словно читаешь ее мысли. Если бы кане-корсо умели говорить, то лучшего собеседника, наверное, было бы не найти.
+        </p>
+        <p>
+         Многие состоятельные люди заводят собаку этой породы для престижа (ведь корсо стоят дорого), не особенно воспринимая ее как полноправного члена семьи. Например, могут надолго уезжать, оставляя пса на чьем-то попечении. Так делать нельзя, потому что разлуку, а уж тем более предательство, эти псы переносят крайне болезненно. В отсутствие хозяина «итальянец» может загрустить, перестать есть и попросту погибнуть. Настоящий хозяин, который относится к своему питомцу с любовью, будет всячески показывать ему всю свою любовь и никогда не оставит на длительное время одного.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Кане-корсо с хозяином" data-fancybox="gallery" href="/upload/iblock/81a/81a9d7109ef6b9c822ff140428ab5cc1.jpg" title="Кане-корсо с хозяином">
+          <div class="lazy-load" data-alt="Кане-корсо с хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/81a/1024_2150_1/81a9d7109ef6b9c822ff140428ab5cc1.jpg">
+           <noscript data-alt="Кане-корсо с хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/81a/1024_2150_1/81a9d7109ef6b9c822ff140428ab5cc1.jpg">
+            <img alt="Кане-корсо с хозяином" class="article_pic" src="/upload/resize_cache/iblock/81a/1024_2150_1/81a9d7109ef6b9c822ff140428ab5cc1.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кане-корсо с хозяином
+         </div>
+        </div>
+        <h2 id="gl5">
+         Дрессировка и воспитание
+        </h2>
+        <p>
+         Склонность доминировать не в характере кане-корсо, а это значит, что дрессировке они поддаются легко. Будучи покладистыми по характеру и от природы преданными хозяину, авторитет последнего они признают очень быстро. А вот взрослеть представители этой породы не спешат.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Тренировка кане-корсе" data-fancybox="gallery" href="/upload/iblock/8f7/8f77c33d193933c69c937022e994f39b.jpg" title="Тренировка кане-корсе">
+          <div class="lazy-load" data-alt="Тренировка кане-корсе" data-class="article_pic" data-original="/upload/resize_cache/iblock/8f7/412_2150_1/8f77c33d193933c69c937022e994f39b.jpg">
+           <noscript data-alt="Тренировка кане-корсе" data-class="article_pic" data-original="/upload/resize_cache/iblock/8f7/412_2150_1/8f77c33d193933c69c937022e994f39b.jpg">
+            <img alt="Тренировка кане-корсе" class="article_pic" height="274" src="/upload/resize_cache/iblock/8f7/412_2150_1/8f77c33d193933c69c937022e994f39b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Тренировка кане-корсе
+         </div>
+        </div>
+        <p>
+         Многие владельцы по разным причинам не хотят обращаться к услугам кинологов (например, из-за дороговизны их услуг) и предпочитают воспитывать щенков самостоятельно. На что в таком случае следует обратить внимание?
+        </p>
+        <p>
+         Процесс воспитания щенка кане-корсо должен начинаться с первого же дня его появления в доме. Прежде всего, приучайте малыша к элементарной чистоплотности и туалету. Самыми необходимыми командами являются: «Ко мне!», «Фу!», «Сидеть!», «Рядом!», «Стоять!», «Лежать!», «Место!». Им своего любимца следует обучить в первую очередь. Если в поведении щенка вам что-то не нравится, старайтесь корректировать его, желательно на ранних этапах. Непослушание не должно влечь за собой физическое наказание. Гуляя с ним в парке или за городом, заполняйте досуг любыми спортивными видами дрессуры.
+        </p>
+        <p>
+         Дрессировка собаки должна проходить на голодный желудок. Это простимулирует ее точно выполнять все команды, чтобы получить поощрение – вкусное лакомство. Не забывайте также хвалить своего любимца, что станет для него дополнительным выражением вашей любви.
+        </p>
+        <p class="legenda">
+         К сведению: посторонние люди в воспитании кане-корсо принимать участия не должны. Все команды должны произноситься четко и понятно. Будьте последовательными в дрессировке, требуйте от питомца выполнения всех поставленных перед ним задач.
+        </p>
+        <h2 id="gl6">
+         Уход и содержание
+        </h2>
+        <p>
+         Считается, что в обычной городской квартире неудобства своим хозяевам могут создавать даже небольшие собаки, не говоря уже о мало-мальски крупных. Кане-корсо полностью опровергают этот устоявшийся стереотип. Несмотря на то, что они собаки не маленькие, в большом пространстве ввиду своей малоподвижности не нуждаются. Если вы живете в частном доме, это вовсе не означает, что своего любимца можете поселить в будку и посадить на цепь. По своему характеру «итальянцы» слишком свободолюбивы и нуждаются в постоянном нахождении возле хозяина. К тому же, лёгкий подшерсток собаки не в состоянии согревать ее в сильные морозы, так что «дворовым жителем» кане-корсо всё же не быть.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Два товарища" data-fancybox="gallery" href="/upload/iblock/581/58163f9a6c8e9bb973b692f3385db3d1.jpg" title="Два товарища">
+          <div class="lazy-load" data-alt="Два товарища" data-class="article_pic" data-original="/upload/resize_cache/iblock/581/412_2150_1/58163f9a6c8e9bb973b692f3385db3d1.jpg">
+           <noscript data-alt="Два товарища" data-class="article_pic" data-original="/upload/resize_cache/iblock/581/412_2150_1/58163f9a6c8e9bb973b692f3385db3d1.jpg">
+            <img alt="Два товарища" class="article_pic" height="274" src="/upload/resize_cache/iblock/581/412_2150_1/58163f9a6c8e9bb973b692f3385db3d1.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Два товарища
+         </div>
+        </div>
+        <p>
+         Вы должны регулярно гулять со своим питомцем, не лишайте его радости активного отдыха. Выходя с собакой за пределы домовладения и тем самым меняя обстановку, вы вносите в ее жизнь необходимое разнообразие, что положительно влияет на нервную систему, помогает ей не ослабевать. Одновременно с этим совместные прогулки укрепляют взаимопонимание хозяина и его четвероногого друга. Гулять с псом следует не меньше часа как минимум дважды в день. Кане-корсо итальяно, как и их собратья по другим крупным породам, склонны к заболеваниям опорно-двигательного аппарата. Если вашему питомцу меньше двух лет, не загружайте его длительными пробежками, не говоря уже о частом преодолении высоких барьеров.
+        </p>
+        <p>
+         Повседневный уход за псом не составит вам никакой сложности, и всё благодаря его короткой шерсти и тонкому подшерстку. Он линяет дважды в год, весной и осенью, и весь этот процесс практически незаметен. Радует и то, что от корсо по дому запах псины не распространяется. Правда, у него выделяются слюни, что беспокоит владельцев. Для таких случаев под рукой нужно иметь полотенце.
+        </p>
+        <p>
+         Расчесывать пса достаточно один или два раза в неделю, используя резиновую расчёску или массажную рукавицу. Это поможет не только убрать отмершую шерсть, но и улучшить кровообращение. В период сезонной линьки его рекомендуется вычесывать ежедневно. Купая своего любимца, используйте резиновую перчатку, что тоже поможет быстрее избавиться от отмершей шерсти. Шерстяной покров собаки имеет защитную жировую пленку, и если корсо часто купать, используя различные моющие средства, то пленка смоется и шерсть потускнеет. Устраивать для пса банные процедуры следует раз в месяц или по мере сильного загрязнения. Опытные заводчики рекомендуют регулярную сухую чистку. Для этой цели применяются специальные сухие шампуни. Купить их можно в любом зоомагазине.
+        </p>
+        <p>
+         В регулярном осмотре нуждаются уши собаки, чтобы не пропустить начало возможного воспаления. Они также нуждаются в проветривании. Возьмитесь за висящие концы пальцами и помашите ушками, как крыльями бабочки. В здоровых ушах кане-корсо отсутствует избыток серы, нет коричневых выделений и, соответственно, неприятных запахов. Для удаления скопившейся грязи используйте сухой ватный диск, глубоко в ушной проход не проникая. При наличии гнойных или других выделений обязательно следует обратиться к ветеринару.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенки кане-корсо с мамой" data-fancybox="gallery" href="/upload/iblock/3ca/3caa953306e6d9f34fa6922ba0d1ef36.jpg" title="Щенки кане-корсо с мамой">
+          <div class="lazy-load" data-alt="Щенки кане-корсо с мамой" data-class="article_pic" data-original="/upload/resize_cache/iblock/3ca/412_2150_1/3caa953306e6d9f34fa6922ba0d1ef36.jpg">
+           <noscript data-alt="Щенки кане-корсо с мамой" data-class="article_pic" data-original="/upload/resize_cache/iblock/3ca/412_2150_1/3caa953306e6d9f34fa6922ba0d1ef36.jpg">
+            <img alt="Щенки кане-корсо с мамой" class="article_pic" height="257" src="/upload/resize_cache/iblock/3ca/412_2150_1/3caa953306e6d9f34fa6922ba0d1ef36.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенки кане-корсо с мамой
+         </div>
+        </div>
+        <p>
+         Не меньшее внимание следует уделять зубам питомца. Чтобы они сохранились на долгие годы здоровыми, не давайте ему грызть чрезмерно твердые предметы и уж тем более камни. Для чистки зубов используются специальные лакомства и игрушки-канаты. На поверхность последних наносят средства, удаляющие налет. А вот зубной камень может снять только ветеринар. Для профилактики камнеобразования чистить зубы собаке следует три-четыре раза в неделю, используя специальную зубную пасту с функцией растворения образующих камень отложений.
+        </p>
+        <p>
+         В регулярном осмотре нуждаются и глаза. У здорового пса органы зрения блестящие, лишенные слезных дорожек и выделений. Периодически промывайте глаза кане-корсо ромашковым отваром, что предотвратит закисание. Для протирания глаз используйте влажную тряпочку без ворса, причём каждый протирайте отдельным лоскутком.
+        </p>
+        <p>
+         После прогулок вытирайте лапы своего питомца влажной тряпкой или помойте их под душем. Не оставляйте без внимания подушечки лап, что поможет своевременно обнаруживать трещины или раны. Для их обработки применяется антисептик. В качестве профилактики трещин используется обычное растительное масло. Его дают собаке по чайной ложке в день, а также регулярно втирают в подушечки лап.
+        </p>
+        <p>
+         И, конечно, не забываем о клещах и блохах, которые способны нанести огромный вред здоровью и жизни вашего кане-корсо. Однако «самодеятельностью» в этом важном вопросе заниматься не стоит. Средство от эктопаразитов должен подобрать ветеринар, исходя из возраста собаки, ее веса и состояния здоровья. Должен быть составлен график обработки собаки выбранным препаратом, придерживаться которого следует неукоснительно.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кане-корсо грызет косточку" data-fancybox="gallery" href="/upload/iblock/77c/77c787c985256ecf79612efa2f02fa1a.jpg" title="Кане-корсо грызет косточку">
+          <div class="lazy-load" data-alt="Кане-корсо грызет косточку" data-class="article_pic" data-original="/upload/resize_cache/iblock/77c/412_2150_1/77c787c985256ecf79612efa2f02fa1a.jpg">
+           <noscript data-alt="Кане-корсо грызет косточку" data-class="article_pic" data-original="/upload/resize_cache/iblock/77c/412_2150_1/77c787c985256ecf79612efa2f02fa1a.jpg">
+            <img alt="Кане-корсо грызет косточку" class="article_pic" height="274" src="/upload/resize_cache/iblock/77c/412_2150_1/77c787c985256ecf79612efa2f02fa1a.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кане-корсо грызет косточку
+         </div>
+        </div>
+        <p>
+         Теперь о кормлении собаки. Вы можете давать ей как натуральные продукты, так и готовый корм, но только премиум-класса. Главное преимущество готового корма в том, что он позволяет экономить время, однако стоит дорого. Качественные продукты тоже недешевы, к тому же приходится тратить время на их приготовление. Но зато в процессе готовки вы видите, из чего именно составляется рацион кане-корсо, чего не скажешь о готовых кормах. Свои плюсы и минусы имеются у каждого вида кормления, и какой подойдет непосредственно вашему питомцу, решать вам. Главное, чтобы от этого не пострадало самочувствие и здоровье вашей собаки.
+        </p>
+        <p class="legenda">
+         Важно: собакам породы кане-корсо не рекомендуется давать мясо жирных сортов (например, свинину), копчености, острую пищу, речную рыбу, жирные молокопродукты (сметану, творог, сливки), некоторые крупы (пшено и перловку из-за их плохой усвояемости), жирные бульоны и жидкие супы. В этом же перечне различные сладости, орехи, лук, чеснок и дешевые низкосортные корма.
+        </p>
+        <h2 id="gl7">
+         Здоровье и болезни кане-корсо
+        </h2>
+        <p>
+         Кане-корсо итальяно – это воплощение силы и выносливости и, казалось бы, никаких болезней он иметь не может. Однако это не так. Представители данной породы страдают рядом наследственных недугов, самым распространенным среди которых можно назвать дисплазию тазобедренного сустава. Эта болезнь лечению практически не поддается и в ряде случаев, как это ни печально, пса приходится усыплять. К названному заболеванию существует наследственная предрасположенность, но распознать ее в щенке зачастую не могут даже опытные заводчики. Перед покупкой щенка вы можете поинтересоваться, делали ли ему рентген, что, впрочем, от болезни полностью не страхует. Для большей гарантии следует приобретать уже подращенного щенка. Стоимость его будет значительно выше, но она окупится минимальным риском развития наследственных заболеваний.
+        </p>
+        <p>
+         Помимо дисплазии тазобедренного сустава представители породы могут страдать различными видами аллергии, вздутием живота, вишневым глазом, эпилепсией, заболеваниями щитовидной железы (гипертиреоз), болезнями век (их выворотом или заворотом).
+        </p>
+        <h2 id="gl8">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Перед тем как сделать выбор, изучите стандарт породы. Нелишним будет побывать на моновыставках: это позволит узнать о кане-корсо, что называется, из первых уст и выбрать родителей щенка. Обязательно  присмотритесь к экстерьеру и поведению матери. С какой бы целью вы ни приобретали щенка, покупайте его не с рук, а у заводчиков или в питомнике. Это позволит быть спокойным относительно чистоты породы, физического и психического здоровья питомца. Малыш должен быть упитанным, очень активным. Поспрашивайте заводчика о характере выбранного вами щенка, попросите сделать акцент на особенностях его поведения. При покупке вам обязательно должны выдать ветеринарный паспорт.
+        </p>
+        <h2>
+         Фотографии щенков кане-корсо
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/bc3/bc32202350a0101aebfe3e4a5305acc3.jpg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/bc3/380_264_2/bc32202350a0101aebfe3e4a5305acc3.jpg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/bc3/380_264_2/bc32202350a0101aebfe3e4a5305acc3.jpg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/bc3/380_264_2/bc32202350a0101aebfe3e4a5305acc3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b8b/b8b8acbad5c801946e53980963bd4961.jpg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/b8b/380_264_2/b8b8acbad5c801946e53980963bd4961.jpg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/b8b/380_264_2/b8b8acbad5c801946e53980963bd4961.jpg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/b8b/380_264_2/b8b8acbad5c801946e53980963bd4961.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/0d5/0d536510d713d3571499ac525e844459.jpg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/0d5/380_264_2/0d536510d713d3571499ac525e844459.jpg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/0d5/380_264_2/0d536510d713d3571499ac525e844459.jpg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/0d5/380_264_2/0d536510d713d3571499ac525e844459.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a7b/a7bbeba3054f70386dd85436afee73b8.jpg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/a7b/380_264_2/a7bbeba3054f70386dd85436afee73b8.jpg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/a7b/380_264_2/a7bbeba3054f70386dd85436afee73b8.jpg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/a7b/380_264_2/a7bbeba3054f70386dd85436afee73b8.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b1f/b1fcd2f0490f24ffa9ceb3ca490e32c1.jpg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/b1f/380_264_2/b1fcd2f0490f24ffa9ceb3ca490e32c1.jpg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/b1f/380_264_2/b1fcd2f0490f24ffa9ceb3ca490e32c1.jpg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/b1f/380_264_2/b1fcd2f0490f24ffa9ceb3ca490e32c1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e3b/e3bfd209113f991e89b66457dc76c7c5.jpg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/e3b/380_264_2/e3bfd209113f991e89b66457dc76c7c5.jpg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/e3b/380_264_2/e3bfd209113f991e89b66457dc76c7c5.jpg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/e3b/380_264_2/e3bfd209113f991e89b66457dc76c7c5.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d61/d61f705d7d3968da7c414edf9a4c0d94.jpeg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/d61/380_264_2/d61f705d7d3968da7c414edf9a4c0d94.jpeg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/d61/380_264_2/d61f705d7d3968da7c414edf9a4c0d94.jpeg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/d61/380_264_2/d61f705d7d3968da7c414edf9a4c0d94.jpeg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/36f/36fd4ef4cf347858dbe07a428d4b126b.jpg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/36f/380_264_2/36fd4ef4cf347858dbe07a428d4b126b.jpg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/36f/380_264_2/36fd4ef4cf347858dbe07a428d4b126b.jpg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/36f/380_264_2/36fd4ef4cf347858dbe07a428d4b126b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7f1/7f18de5a6bff1e4a002f2622c84efbfb.jpg" title="">
+           <div class="lazy-load" data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/7f1/380_264_2/7f18de5a6bff1e4a002f2622c84efbfb.jpg">
+            <noscript data-alt="Кане-корсо" data-class="article_pic" data-original="/upload/resize_cache/iblock/7f1/380_264_2/7f18de5a6bff1e4a002f2622c84efbfb.jpg">
+             <img alt="Кане-корсо" class="article_pic" src="/upload/resize_cache/iblock/7f1/380_264_2/7f18de5a6bff1e4a002f2622c84efbfb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl9">
+         Сколько стоит кане-корсо
+        </h2>
+        <p>
+         Стоимость кане-корсо варьируется от 150-200 до 800-1000 долларов. Самых дешёвых щенков обычно приобретают в отдаленных регионах России. На «ценовую» удачу можно рассчитывать и в крупных городах. Это не значит, что задешево вам обязательно подсунут «метиса» или «корсоподобного» пса, однако низкая цена не гарантирует психическое и физическое здоровье даже подлинного представителя породы. К тому же, вы его приобретете без документов и прививок.
+        </p>
+        <p>
+         Отсюда простой вывод: покупать кане-корсо следует в питомниках или у элитных заводчиков с безупречной репутацией. Здорового щенка с отклонением от стандарта (пэт-класс) можно приобрести за 700-900 долларов. Щенок брид-класса (племенное использование) стоит от 900 до 1300 долларов. Ну а представителя шоу-класса, то есть щенка с задатками чемпиона для участия в выставках, вам продадут за 1300-2000 долларов. Для сравнения: средняя цена у заводчиков Москвы составляет 1000 долларов и выше. Опытные владельцы рекомендуют: лучше заплатить эти деньги, чем сэкономить, но потом долгие годы мучиться, пытаясь перевоспитать собаку или бегая с ней по ветеринарам.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения кане-корсо на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27902/">
+          <div class="ava-med">
+           <div class="noava fill2">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/glistogonka-pered-privivkoy-5665/">
+           Глистогонка перед прививкой
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте. Нужна консультация по следующему вопросу.. Щенку 2.6 месяца. Когда и чем лучше проглистогонить его перед первой прививкой... Спасибо
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27902/">
+            Роман Александрович
+           </a>
+          </span>
+          <span class="vopros-date">
+           2 дня назад
+          </span>
+          <span class="vopros-smotr">
+           18 просмотров
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/28054/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Tatiana Sokolova" data-original="/upload/resize_cache/main/920/200_200_2/ktnveiokmwhibbcr2bb15afrwg5w6x53.jpg">
+            <noscript data-alt="Tatiana Sokolova" data-original="/upload/resize_cache/main/920/200_200_2/ktnveiokmwhibbcr2bb15afrwg5w6x53.jpg">
+             <img alt="Tatiana Sokolova" src="/upload/resize_cache/main/920/200_200_2/ktnveiokmwhibbcr2bb15afrwg5w6x53.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/vyazka-kobelya-kane-korso-4-let-5629/">
+           Вязка кобеля Кане Корсо 4 лет.
+          </a>
+         </div>
+         <div class="forum-text">
+          Всем добрый день! 
+Интересует вопрос: первая вязка кобеля Кане-корсо, 4 года,  с родословной , но без выставок. 
+Подскажите, пожалуйста, куда обратиться за помощью. Хочу повязать своего кобеля. Собака с родословной...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/28054/">
+            Tatiana Sokolova
+           </a>
+          </span>
+          <span class="vopros-date">
+           2 недели назад
+          </span>
+          <span class="vopros-smotr">
+           46 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27929/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Радмир Салаватович" data-original="/upload/resize_cache/main/c63/200_200_2/7dlbu6f5plrkrmea2g8inoy0rv7e5lll.jpg">
+            <noscript data-alt="Радмир Салаватович" data-original="/upload/resize_cache/main/c63/200_200_2/7dlbu6f5plrkrmea2g8inoy0rv7e5lll.jpg">
+             <img alt="Радмир Салаватович" src="/upload/resize_cache/main/c63/200_200_2/7dlbu6f5plrkrmea2g8inoy0rv7e5lll.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/nuzhen-sovet-5579/">
+           НУЖЕН СОВЕТ)))
+          </a>
+         </div>
+         <div class="forum-text">
+          доброго времени суток) очень нуждаюсь в консультации приема в семью с детьми, 3-х летней девочки кане корсо. ватсап 89631304669.
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27929/">
+            Радмир Салаватович
+           </a>
+          </span>
+          <span class="vopros-date">
+           Месяц назад
+          </span>
+          <span class="vopros-smotr">
+           39 просмотров
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27902/">
+          <div class="ava-med">
+           <div class="noava fill2">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/shchenki-kane-korso-5576/">
+           Щенки Кане корсо
+          </a>
+         </div>
+         <div class="forum-text">
+          За символическую плату СРОЧНО пристраиваются 4 щенка (1 мес) 2 мальчика и девочки Кане Корсо. Оба родителя с родословной. Калужская область. Вотсап 89005786039
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27902/">
+            Роман Александрович
+           </a>
+          </span>
+          <span class="vopros-date">
+           Месяц назад
+          </span>
+          <span class="vopros-smotr">
+           57 просмотров
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/kane-korso/forum/">
+        Перейти на
+        форум кане-корсо
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Кане-корсо" src="/upload/iblock/48d/48d5bdc12f48db8a57c0bb14ef0b32c8.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/kane-korso/">
+          Кане-корсо
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/kane-korso/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/kane-korso/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/kane-korso/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/kane-korso/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/kane-korso/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/kane-korso/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/rizenshnautser/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Ризеншнауцер" data-original="/upload/resize_cache/iblock/709/100_100_1/709009659acc154ee0df9db563bcebed.jpg">
+          <noscript data-alt="Ризеншнауцер" data-original="/upload/resize_cache/iblock/709/100_100_1/709009659acc154ee0df9db563bcebed.jpg">
+           <img alt="Ризеншнауцер" src="/upload/resize_cache/iblock/709/100_100_1/709009659acc154ee0df9db563bcebed.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Ризеншнауцер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/vengerskaya-vyzhla/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Венгерская выжла" data-original="/upload/resize_cache/iblock/8b9/100_100_1/8b980d5f59e40d4d0236188483a97269.jpg">
+          <noscript data-alt="Венгерская выжла" data-original="/upload/resize_cache/iblock/8b9/100_100_1/8b980d5f59e40d4d0236188483a97269.jpg">
+           <img alt="Венгерская выжла" src="/upload/resize_cache/iblock/8b9/100_100_1/8b980d5f59e40d4d0236188483a97269.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Венгерская выжла
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/yuzhnorusskaya-ovcharka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Южнорусская овчарка" data-original="/upload/resize_cache/iblock/254/100_100_1/254d591f1140197ca737aceef59259db.jpg">
+          <noscript data-alt="Южнорусская овчарка" data-original="/upload/resize_cache/iblock/254/100_100_1/254d591f1140197ca737aceef59259db.jpg">
+           <img alt="Южнорусская овчарка" src="/upload/resize_cache/iblock/254/100_100_1/254d591f1140197ca737aceef59259db.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Южнорусская овчарка
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/velsh-korgi-kardigan/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Вельш-корги кардиган" data-original="/upload/resize_cache/iblock/c0b/100_100_1/c0b931451d53ccc8eb5719cf559cfcf2.jpg">
+          <noscript data-alt="Вельш-корги кардиган" data-original="/upload/resize_cache/iblock/c0b/100_100_1/c0b931451d53ccc8eb5719cf559cfcf2.jpg">
+           <img alt="Вельш-корги кардиган" src="/upload/resize_cache/iblock/c0b/100_100_1/c0b931451d53ccc8eb5719cf559cfcf2.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Вельш-корги кардиган
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkane-korso%252F%253Fcheck_key%253D7584b147aca07d12e65d0694040f6582%2526ANIMAL_CODE%253Dkane-korso%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkane-korso%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmthbmUta29yc28lMkYlM0ZjaGVja19rZXklM0Q3NTg0YjE0N2FjYTA3ZDEyZTY1ZDA2OTQwNDBmNjU4MiUyNkFOSU1BTF9DT0RFJTNEa2FuZS1rb3JzbyUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZrYW5lLWtvcnNvJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkane-korso%252F%253Fcheck_key%253D7584b147aca07d12e65d0694040f6582%2526ANIMAL_CODE%253Dkane-korso%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fkane-korso%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkane-korso%252F%253Fcheck_key%253D7584b147aca07d12e65d0694040f6582%2526ANIMAL_CODE%253Dkane-korso%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkane-korso%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "46.159.56.168"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--c493f1d77dc22456a0c0a86ae46f47c8-->

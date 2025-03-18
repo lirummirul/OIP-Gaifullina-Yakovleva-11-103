@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'ee2458405cd3'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Далматин, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Далматин – энергичный и жизнерадостный питомец. Благодаря его яркой внешности, вы точно не останетесь незамеченными во время прогулок в парке и на собачьих площадках." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/389/3891a7d163b0684ef612866c80eac282.jpg" property="og:image"/>
+     <title>
+      Далматин (Далматинец) — описание породы собаки с фото
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/dalmatinets/" property="og:url"/>
+     <meta content="Далматин (Далматинец) — описание породы собаки с фото" property="og:title"/>
+     <meta content="Далматин – энергичный и жизнерадостный питомец. Благодаря его яркой внешности, вы точно не останетесь незамеченными во время прогулок в парке и на собачьих площадках." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/dalmatinets/" itemprop="url">
+         <span itemprop="title">
+          Далматин
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Далматин
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/dalmatinets/">
+          Описание
+         </a>
+         <a href="/dog/dalmatinets/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/dalmatinets/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/dalmatinets/photo/">
+          Фото
+         </a>
+         <a href="/dog/dalmatinets/video/">
+          Видео
+         </a>
+         <a href="/dog/dalmatinets/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/dalmatinets/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Далматин" src="/upload/iblock/5ed/5edaf287f878b54d13e1894789bd0db6.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/dalmatinets/">
+           далматинец
+          </a>
+         </span>
+         <p>
+          Далматин – энергичный и жизнерадостный питомец. Благодаря его яркой внешности, вы точно не останетесь незамеченными во время прогулок в парке и на собачьих площадках.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/473/4738b031f8f05d99c32e5953e95b96c2.jpg" data-cap="" data-fancybox="images" data-link="https://www.flickr.com/photos/135045855@N08/41484281462/" data-type="image" data-username="Calis Pictures" href="/upload/uf/35a/35a860cc374563dd16a36bdde92e7bb6.jpg">
+            <img alt="Далматин" src="/upload/resize_cache/uf/35a/293_293_2/35a860cc374563dd16a36bdde92e7bb6.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/ecc/eccd3024c13a0d28bb28fe67aa2bca9a.jpg" data-cap="You don’t need the whole world to love you, maybe you need just one person. Finding myself in the middle of family ♥️ Picture @pandorya.photo" data-fancybox="images" data-link="https://www.instagram.com/p/BhD7-2yjen1/" data-type="image" data-username="katestedlife" href="/upload/uf/1ff/1ff41b33d55c347d50fc2e37d6fe7773.jpg">
+            <img alt="Далматин" src="/upload/resize_cache/uf/1ff/293_293_2/1ff41b33d55c347d50fc2e37d6fe7773.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/29b/29bbcfaad31bca59ed320a9a8f70f90e.jpg" data-cap="A Handful" data-fancybox="images" data-link="https://www.flickr.com/photos/28057482@N05/15186379860/" data-type="image" data-username="Jillian" href="/upload/uf/1c5/1c5c4154af13afec31c4c79aef380f19.jpg">
+            <img alt="Далматин" src="/upload/resize_cache/uf/1c5/293_293_2/1c5c4154af13afec31c4c79aef380f19.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/dalmatinets/photo/">
+         Все
+            фото далматина
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы далматин
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность далматинца
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер далматинца
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни далматина
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Сколько стоит щенок далматинца
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Далматин
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Хорватия
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         1791 год
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 27-32 кг, суки 24-29 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 56-62 см, суки 54-60 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         10-13 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Это довольно крупные и очень активные животные, поэтому предпочтительным является содержание в частном доме с возможностью свободного выгула на огороженном участке.
+        </li>
+        <li>
+         Далматинам необходима ранняя социализация и правильное воспитание.
+        </li>
+        <li>
+         Без достаточных физических нагрузок превращаются в неуправляемых деструктивных собак.
+        </li>
+        <li>
+         Далматины не подходят для домоседов и семей с маленькими детьми.
+        </li>
+        <li>
+         Несмотря на короткую шерсть, интенсивно линяют и нуждаются в постоянном уходе.
+        </li>
+        <li>
+         Около 12% щенков рождаются глухими.
+        </li>
+        <li>
+         Рисунок пятен на теле уникален для каждой особи.
+        </li>
+        <li>
+         К участию в выставках допускаются только собаки с черными или коричневыми пятнами на белом фоне, но существуют и другие варианты окрасов.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Далматин" data-original="/upload/iblock/389/3891a7d163b0684ef612866c80eac282.jpg">
+          <noscript data-alt="Далматин" data-original="/upload/iblock/389/3891a7d163b0684ef612866c80eac282.jpg">
+           <img alt="Далматин" src="/upload/iblock/389/3891a7d163b0684ef612866c80eac282.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Далматин
+          </strong>
+          принадлежит к числу пород, которым «медийность» и сиюминутная популярность принесли больше вреда, чем пользы. Собаки с непростым характером и высокими потребностями к ежедневным упражнениям уживаются далеко не с каждым поклонником диснеевского мультфильма. Зато опытные и ответственные владельцы найдут в энергичном создании преданного друга и прекрасного компаньона.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Ниже среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не переносит (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средние (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Далматин основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/dalmatinets/razmeri-porodi/">
+         размеры далматина
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы далматин
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Далматин" data-fancybox="gallery" href="/upload/iblock/d9e/d9e8a4137b80d38d80af08a9253a3dde.jpg" title="Далматин">
+          <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/d9e/412_2150_1/d9e8a4137b80d38d80af08a9253a3dde.jpg">
+           <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/d9e/412_2150_1/d9e8a4137b80d38d80af08a9253a3dde.jpg">
+            <img alt="Далматин" class="article_pic" height="617" src="/upload/resize_cache/iblock/d9e/412_2150_1/d9e8a4137b80d38d80af08a9253a3dde.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Далматин
+         </div>
+        </div>
+        <p>
+         Упоминание пятнистых псов встречается в дошедших до нас документах разных эпох и государств, начиная от древнеегипетских папирусных свитков. Однако на основании скупых словесных описаний обоснованно судить, кто именно был предком современных далматинов, попросту невозможно.
+        </p>
+        <p>
+         Первые более или менее достоверные доказательства существования породы относятся к XVI–XVII столетиям. Белые собаки с небольшими темными отметинами изображены на сохранившихся религиозных и светских произведениях искусства тех времен: росписи алтаря в церкви Святой Марии (также известной как «Gospe od anđela») в небольшом городе на курортном острове Лошинь, фреске в монастыре францисканцев в Заостроге, фресках церкви Санта-Мария Новелла во Флоренции, парадных портретах кисти венецианских и тосканских художников, где изображены влиятельные вельможи – например, Козимо II Медичи. Поскольку многие самые ранние свидетельства обнаружены на территории исторической области Далмация, которая ныне является частью Хорватии, именно отсюда принято выводить корни брида. Да и очевидное созвучие названий говорит в пользу этой версии, официально принятой FCI.
+        </p>
+        <p>
+         Там же, на теплых берегах Адриатического моря, увидели свет и некоторые «теоретические» работы. Римско-католическая Джяково-Осиековская архиепархия сохранила в своих архивах хроники епископа Петара Бакича (1719 год) и Андреаса Кечкеметы (1739 год), оба говорят о специфичных для Хорватии собаках Canis Dalmaticus. В 1771 году натуралист из Уэльса Томас Пеннант написал книгу «Синопсис четвероногих», где впервые назвал породу Dalmatian. В 1790 году английский исследователь естественной истории Томас Бьюик включил далматинцев в «Общую историю четвероногих».
+        </p>
+        <p>
+         Вообще следует сказать, что именно в Британии выходцы из Далмации обрели особую популярность. Исследователи предполагают, что здесь при разведении использовали представителей других пород, в частности, пойнтеров черного окраса и белых английских терьеров. Последние вымерли более сотни лет назад, но приложили лапу к созданию многих современных бридов: бостон-терьера,
+         <a class="ph" href="/dog/amerikanskiy-buldog/">
+          американского бульдога
+         </a>
+         ,
+         <a class="ph" href="/dog/bulterer/">
+          бультерьера
+         </a>
+         , американского стаффордширского терьера и других. Усилиями заводчиков Туманного Альбиона ко второй половине XVIII века сформировалась узнаваемая сегодня внешность далматинов.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок далматинца" data-fancybox="gallery" href="/upload/iblock/949/949fb61c6f665c88a8864b278fbc05a9.jpg" title="Щенок далматинца">
+          <div class="lazy-load" data-alt="Щенок далматинца" data-class="article_pic" data-original="/upload/resize_cache/iblock/949/412_2150_1/949fb61c6f665c88a8864b278fbc05a9.jpg">
+           <noscript data-alt="Щенок далматинца" data-class="article_pic" data-original="/upload/resize_cache/iblock/949/412_2150_1/949fb61c6f665c88a8864b278fbc05a9.jpg">
+            <img alt="Щенок далматинца" class="article_pic" height="515" src="/upload/resize_cache/iblock/949/412_2150_1/949fb61c6f665c88a8864b278fbc05a9.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок далматинца
+         </div>
+        </div>
+        <p>
+         Тогда же за «итальянскими собаками», как их изначально называли британцы, заметили удивительную способность почти без устали бежать на значительные расстояния, не уступая в скорости конным экипажам. Быстроногих псов сделали охранниками ценного «движимого имущества» в городских поездках и длительных путешествиях – своеобразным прообразом современных автомобильных сигнализаций. Кроме того, во время поездки четвероногие погонщики следовали за лошадьми и легкими укусами заставляли уставших или ленящихся животных поддерживать заданный кучером темп. С тех пор на несколько десятилетий за ними закрепилось определение каретных псов.
+        </p>
+        <p>
+         Хотя этим функции далматинцев не ограничивались. Они сторожили дома, помогали охотникам на мелкую и крупную дичь, служили «телохранителями» для прогуливающихся без мужской компании благородных дам. В эпоху регентства пятнистые питомцы стали признаком высокого социального статуса владельца.
+        </p>
+        <p>
+         Оказавшись за океаном, необычные собаки сменили амплуа и вместо богатых дворян сопровождали добровольные пожарные отряды, которым до массового внедрения двигателей внутреннего сгорания было не обойтись без реальных «лошадиных сил». Заметные издали белые «звоночки» служили для других участников движения оповещением о приближении борцов с огнем и помогали расчистить путь не хуже сирен и световых сигналов. Но и после того, как кареты для тушения пламени стали музейными экспонатами, многие не пожелали расстаться со своими живыми талисманами. Сегодня харизматичные псы являются узнаваемым символом пожарных США.
+        </p>
+        <p>
+         Что касается выставочной истории, впервые на суд профессионального жюри и публики собаки из Далмации были представлены в 1860 году в Бирмингеме. Тридцать лет спустя был создан клуб заводчиков и сформулирован официальный стандарт породы. Двумя годами ранее ее признал American Kennel Club. Международная кинологическая организация FCI зарегистрировала далматинов в 1926 году.
+        </p>
+        <p>
+         В Москве первые представители пятнистой братии появились в 1982 году, но разведение на территории СССР продвигалось очень медленно из-за нехватки свежей крови. Да и спрос на щенков был небольшим, поскольку о существовании породы многие любители собак попросту понятия не имели. Монопородные клубы возникли лишь на заре 90-х. Сегодня наибольшая концентрация питомников и владельцев далматинцев в столице, Санкт-Петербурге, Нижнем Новгороде, Екатеринбурге, Новосибирске и некоторых других городах.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ff8/ff83f8ec7139cbf8b8249b5b9594217c.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/ff8/512_342_2/ff83f8ec7139cbf8b8249b5b9594217c.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/ff8/512_342_2/ff83f8ec7139cbf8b8249b5b9594217c.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/ff8/512_342_2/ff83f8ec7139cbf8b8249b5b9594217c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/77b/77bcc7f87e56ad2a1c926c6d6f1cc8ea.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/77b/512_342_2/77bcc7f87e56ad2a1c926c6d6f1cc8ea.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/77b/512_342_2/77bcc7f87e56ad2a1c926c6d6f1cc8ea.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/77b/512_342_2/77bcc7f87e56ad2a1c926c6d6f1cc8ea.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2>
+         Видео: Далматин
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="U3JxaqIE7m4">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность далматинца
+        </h2>
+        <p>
+         Атлетичные и выносливые, элегантные собаки от среднего до крупного размера. Кобели в среднем весят 18-27 кг при росте в холке 58-61 см, суки – 16-24 кг и 56-58 см соответственно.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Морда далматинца" data-fancybox="gallery" href="/upload/iblock/455/455d8e840810ea04ba643b86bb66b673.jpg" title="Морда далматинца">
+          <div class="lazy-load" data-alt="Морда далматинца" data-class="article_pic" data-original="/upload/resize_cache/iblock/455/412_2150_1/455d8e840810ea04ba643b86bb66b673.jpg">
+           <noscript data-alt="Морда далматинца" data-class="article_pic" data-original="/upload/resize_cache/iblock/455/412_2150_1/455d8e840810ea04ba643b86bb66b673.jpg">
+            <img alt="Морда далматинца" class="article_pic" height="308" src="/upload/resize_cache/iblock/455/412_2150_1/455d8e840810ea04ba643b86bb66b673.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда далматинца
+         </div>
+        </div>
+        <p>
+         Голова далматина пропорциональна телу. Удлиненная, плоская, не слишком широкая между ушами. Морда с выраженным стопом, по длине равна или чуть короче затылочной части. Складки кожи на голове отсутствуют.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Умеренно большие, широко поставлены на голове, прижаты к ней по бокам. Треугольной формы, кончики немного закруглены. Окрас обязательно пятнистый, соответствует общей расцветке.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза у далматинцев среднего размера, овальной формы. Цвет соответствует окрасу: темно-коричневый для собак с черными пятнами, янтарный – с коричневыми. Взгляд ясный и умный. Веки хорошо прилегают к глазному яблоку. Края их хорошо пигментированы (в зависимости от окраса – черным или коричневым).
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Мочка широкая, полностью пигментирована (черная или коричневая в соответствии с основным окрасом), ноздри широко открыты.
+        </p>
+        <h3>
+         Губы и зубы
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/768/76879ed56d6b553145183577936f61a6.jpg" title="">
+          <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/768/412_2150_1/76879ed56d6b553145183577936f61a6.jpg">
+           <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/768/412_2150_1/76879ed56d6b553145183577936f61a6.jpg">
+            <img alt="Далматин" class="article_pic" height="622" src="/upload/resize_cache/iblock/768/412_2150_1/76879ed56d6b553145183577936f61a6.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Губы плотно прилегают к челюсти. Челюсти сильные. Прикус ножницеобразный, верхние зубы полностью перекрывают нижние.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Сильная, довольно длинная.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело далматина хорошо сложено, плечи мускулистые, с глубокой грудью и хорошо сводчатыми ребрами. Спина ровная, мощная. Поясница и круп мускулистые, наклон незначителен.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Передние ноги прямые, локти прижаты к корпусу. Задние ноги мускулистые, колени сильные и хорошо развитые. Лапы напоминают кошачьи: компактные и округлые, пальцы сводчатые. Когти могут быть пигментированы в зависимости от основного окраса.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвост далматинца довольно длинный, пятнистый, прямой. У основания толще, сужается к кончику.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Короткая, плотная, гладкая, глянцевая, жесткая.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/322/322b41cbe502b7ecad779501d2853c05.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/322/512_342_2/322b41cbe502b7ecad779501d2853c05.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/322/512_342_2/322b41cbe502b7ecad779501d2853c05.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/322/512_342_2/322b41cbe502b7ecad779501d2853c05.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c2c/c2c4d781037c3f44839fc2f85dbfe6a0.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/c2c/512_342_2/c2c4d781037c3f44839fc2f85dbfe6a0.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/c2c/512_342_2/c2c4d781037c3f44839fc2f85dbfe6a0.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/c2c/512_342_2/c2c4d781037c3f44839fc2f85dbfe6a0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Далматин с коричневыми пятнами" data-fancybox="gallery" href="/upload/iblock/b14/b14a3c05165a62fe533454b54814ea96.jpg" title="Далматин с коричневыми пятнами">
+           <div class="lazy-load" data-alt="Далматин с коричневыми пятнами" data-class="article_pic" data-original="/upload/resize_cache/iblock/b14/512_342_2/b14a3c05165a62fe533454b54814ea96.jpg">
+            <noscript data-alt="Далматин с коричневыми пятнами" data-class="article_pic" data-original="/upload/resize_cache/iblock/b14/512_342_2/b14a3c05165a62fe533454b54814ea96.jpg">
+             <img alt="Далматин с коричневыми пятнами" class="article_pic" src="/upload/resize_cache/iblock/b14/512_342_2/b14a3c05165a62fe533454b54814ea96.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Далматин с коричневыми пятнами
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Далматин с черными пятнами" data-fancybox="gallery" href="/upload/iblock/802/8020bca790cff7a5869570218623ae76.jpg" title="Далматин с черными пятнами">
+           <div class="lazy-load" data-alt="Далматин с черными пятнами" data-class="article_pic" data-original="/upload/resize_cache/iblock/802/512_342_2/8020bca790cff7a5869570218623ae76.jpg">
+            <noscript data-alt="Далматин с черными пятнами" data-class="article_pic" data-original="/upload/resize_cache/iblock/802/512_342_2/8020bca790cff7a5869570218623ae76.jpg">
+             <img alt="Далматин с черными пятнами" class="article_pic" src="/upload/resize_cache/iblock/802/512_342_2/8020bca790cff7a5869570218623ae76.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Далматин с черными пятнами
+          </div>
+         </div>
+        </div>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         На основном белом фоне черные или коричневые (строго одного цвета!) пятна с четкими контурами, которые расположены симметрично по корпусу, на голове, ушах и хвосте.
+        </p>
+        <h2>
+         Фото взрослого далматинца
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/96a/96a2b25e2a693310469c11c0d88407e2.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/96a/380_264_2/96a2b25e2a693310469c11c0d88407e2.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/96a/380_264_2/96a2b25e2a693310469c11c0d88407e2.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/96a/380_264_2/96a2b25e2a693310469c11c0d88407e2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9d1/9d1194045d0864cf5bc600e34a2fd27a.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/9d1/380_264_2/9d1194045d0864cf5bc600e34a2fd27a.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/9d1/380_264_2/9d1194045d0864cf5bc600e34a2fd27a.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/9d1/380_264_2/9d1194045d0864cf5bc600e34a2fd27a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/43e/43ec32a5bab36a901cdcaaaf1d2da6fb.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/43e/380_264_2/43ec32a5bab36a901cdcaaaf1d2da6fb.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/43e/380_264_2/43ec32a5bab36a901cdcaaaf1d2da6fb.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/43e/380_264_2/43ec32a5bab36a901cdcaaaf1d2da6fb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/0a7/0a7d3f3c737ea8f5f52f01d4f71d6f25.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/0a7/380_264_2/0a7d3f3c737ea8f5f52f01d4f71d6f25.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/0a7/380_264_2/0a7d3f3c737ea8f5f52f01d4f71d6f25.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/0a7/380_264_2/0a7d3f3c737ea8f5f52f01d4f71d6f25.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b1f/b1f5558be4f50fad6e7604a1f2c26d7a.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/b1f/380_264_2/b1f5558be4f50fad6e7604a1f2c26d7a.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/b1f/380_264_2/b1f5558be4f50fad6e7604a1f2c26d7a.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/b1f/380_264_2/b1f5558be4f50fad6e7604a1f2c26d7a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c5f/c5f8c23c526b24b593ef09e10127f409.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/c5f/380_264_2/c5f8c23c526b24b593ef09e10127f409.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/c5f/380_264_2/c5f8c23c526b24b593ef09e10127f409.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/c5f/380_264_2/c5f8c23c526b24b593ef09e10127f409.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/20b/20b30c0caa0a4988729eecbc7141b1aa.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/20b/380_264_2/20b30c0caa0a4988729eecbc7141b1aa.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/20b/380_264_2/20b30c0caa0a4988729eecbc7141b1aa.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/20b/380_264_2/20b30c0caa0a4988729eecbc7141b1aa.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a2a/a2ab494e0b73864377adfb6b543c9fa1.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/a2a/380_264_2/a2ab494e0b73864377adfb6b543c9fa1.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/a2a/380_264_2/a2ab494e0b73864377adfb6b543c9fa1.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/a2a/380_264_2/a2ab494e0b73864377adfb6b543c9fa1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ee4/ee40bc9bb035b027a87df7a17796246f.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/ee4/380_264_2/ee40bc9bb035b027a87df7a17796246f.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/ee4/380_264_2/ee40bc9bb035b027a87df7a17796246f.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/ee4/380_264_2/ee40bc9bb035b027a87df7a17796246f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер далматинца
+        </h2>
+        <p>
+         Далматинцы не подходят неопытным владельцам и людям, которые нуждаются в обществе флегматичной «диванной» собаки. Невероятно активные от природы, без должных физических нагрузок они направляют неизрасходованную энергию на разрушительные шалости, нанося вред жилищу. В подобной ситуации животное становится неуправляемым, оно не подчиняется командам и полностью игнорирует запреты.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Далматин играет с ребенком" data-fancybox="gallery" href="/upload/iblock/010/010839d6e0d87cfe9147fa037e6ed341.jpg" title="Далматин играет с ребенком">
+          <div class="lazy-load" data-alt="Далматин играет с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/010/412_2150_1/010839d6e0d87cfe9147fa037e6ed341.jpg">
+           <noscript data-alt="Далматин играет с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/010/412_2150_1/010839d6e0d87cfe9147fa037e6ed341.jpg">
+            <img alt="Далматин играет с ребенком" class="article_pic" height="274" src="/upload/resize_cache/iblock/010/412_2150_1/010839d6e0d87cfe9147fa037e6ed341.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Далматин играет с ребенком
+         </div>
+        </div>
+        <p>
+         Непонимание подоплеки такого поведения привело к формированию ошибочного мнения о низком интеллекте. Если далматинец не реагирует на «Нельзя!» и «Ко мне!», это вовсе не значит, что он глуп. Дело всего-навсего в том, что хозяин при воспитании допустил серьезные промахи, не утвердил свой авторитет и продолжает цепь ошибок, не удовлетворяя естественные потребности домашнего любимца в физических упражнениях.
+        </p>
+        <p>
+         Правильная дрессировка, уравновешенное и спокойное выстраивание отношений с щенком, ранняя социализация способствуют формированию здоровой и крепкой психики. Такие собаки прекрасно чувствуют настроение человека и подстраиваются под него, они с удовольствием выполняют команды, не затевают драк на площадках для выгула, сдержаны с незнакомцами, дружелюбны по отношению к животным.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Хозяин, ты самый лучший!" data-fancybox="gallery" href="/upload/iblock/12b/12b0951a6ad6987e920fbcdd10c4ab85.jpg" title="Хозяин, ты самый лучший!">
+          <div class="lazy-load" data-alt="Хозяин, ты самый лучший!" data-class="article_pic" data-original="/upload/resize_cache/iblock/12b/412_2150_1/12b0951a6ad6987e920fbcdd10c4ab85.jpg">
+           <noscript data-alt="Хозяин, ты самый лучший!" data-class="article_pic" data-original="/upload/resize_cache/iblock/12b/412_2150_1/12b0951a6ad6987e920fbcdd10c4ab85.jpg">
+            <img alt="Хозяин, ты самый лучший!" class="article_pic" height="270" src="/upload/resize_cache/iblock/12b/412_2150_1/12b0951a6ad6987e920fbcdd10c4ab85.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Хозяин, ты самый лучший!
+         </div>
+        </div>
+        <p>
+         Далматины не привязываются к одному «своему» человеку, они одинаково любят и защищают всех домочадцев, при этом стремятся принимать самое активное участие во всем, что делают люди. Хорошо уживаются с другими питомцами, особенно если растут вместе с ними. В генах живет давняя тяга к компании лошадей, но мало кто сегодня владеет конюшней, поэтому подходящим будет общество пса или кошки.
+        </p>
+        <p>
+         Для семьи с маленькими детьми появление энергичного «плам-пудинга», как ласково называют этих собак англичане, может стать проблемой. Но не потому, что от природы они агрессивны и способны сознательно причинить вред карапузу. С одной стороны, порывистые и резкие по натуре далматины не соизмеряют сил и часто сбивают с ног некстати оказавшихся на пути малышей. С другой, животные с проблемным слухом инстинктивно защищаются от «угрозы», когда к ним незаметно приближаются сзади или беспокоят во сне, а крохам сложно сразу усвоить тонкости обращения с особенным членом семьи.
+        </p>
+        <p>
+         Зато с детьми постарше и подростками далматинцы в большинстве случаев ладят просто прекрасно, чувствуя родственную непоседливую душу.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e61/e6161b09deb1f7c759255f5aeab59db9.jpg" title="">
+          <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/iblock/e61/e6161b09deb1f7c759255f5aeab59db9.jpg">
+           <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/iblock/e61/e6161b09deb1f7c759255f5aeab59db9.jpg">
+            <img alt="Далматин" class="article_pic" src="/upload/iblock/e61/e6161b09deb1f7c759255f5aeab59db9.jpg"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Далматины принадлежат к числу пород, для которых правильная дрессировка и ранняя социализация невероятно важны. Свободолюбивый характер, необузданная энергия, инстинкты охотника без сформированных в детстве механизмов управления и сдерживания приводят к появлению неуправляемого, деструктивного взрослого животного.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Тренировка далматина" data-fancybox="gallery" href="/upload/iblock/712/71244ef2ad877f3c26d81cfd50f39631.jpg" title="Тренировка далматина">
+          <div class="lazy-load" data-alt="Тренировка далматина" data-class="article_pic" data-original="/upload/resize_cache/iblock/712/412_2150_1/71244ef2ad877f3c26d81cfd50f39631.jpg">
+           <noscript data-alt="Тренировка далматина" data-class="article_pic" data-original="/upload/resize_cache/iblock/712/412_2150_1/71244ef2ad877f3c26d81cfd50f39631.jpg">
+            <img alt="Тренировка далматина" class="article_pic" height="274" src="/upload/resize_cache/iblock/712/412_2150_1/71244ef2ad877f3c26d81cfd50f39631.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Тренировка далматина
+         </div>
+        </div>
+        <p>
+         Обучение основным командам и взаимодействию с внешним миром нельзя откладывать в долгий ящик. С первых дней появления щенка в вашем доме должна стартовать программа воспитания. Маленький далматинец обязан четко понимать границы дозволенного и знать, что неподчинение будет иметь последствия. Конечно, проявлять агрессию и применять физическую силу недопустимо, но твердый и суровый голос хозяина, в котором четко выражено недовольство, сам по себе является достаточным наказанием.
+        </p>
+        <p>
+         Не стоит забывать, что визиты на площадки для выгула и участие в групповых занятиях с кинологом можно начинать только тогда, когда щенок получил положенные дозы обязательных вакцин и прошло достаточное время для формирования иммунитета к опасным для питомца заболеваниям. Уточнить это лучше у вашего ветеринара.
+        </p>
+        <p>
+         Хорошо обученные собаки уже в полгода знают и без труда выполняют более десятка команд, включая как стандартные, так и «артистические» вроде последовательных переворотов, «Дай пять!» или поклонов. Вообще нужно сказать, что пятнистые циркачи обожают внимание и готовы прилагать немало усилий, чтобы вызвать улыбку у своих владельцев.
+        </p>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <p>
+         Идеальным вариантом для содержания далматина станет просторный частный дом с надежно огороженным участком, где он сможет свободно гулять в течение дня. Однако необходимо помнить, что постоянно жить в вольере в наших климатических условиях представителям этой породы нельзя – короткая шерсть не защищает от низких температур.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/40b/40bab803652ce3162c4caabda98345c7.jpg" title="">
+          <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/40b/412_2150_1/40bab803652ce3162c4caabda98345c7.jpg">
+           <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/40b/412_2150_1/40bab803652ce3162c4caabda98345c7.jpg">
+            <img alt="Далматин" class="article_pic" height="273" src="/upload/resize_cache/iblock/40b/412_2150_1/40bab803652ce3162c4caabda98345c7.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Если же вы обладатель городской квартиры, обязательным условием мирного существования являются длительные прогулки. Причем важна не только продолжительность (минимум час в день), но и насыщенность нагрузками. Лучше всего, если пес на поводке будет сопровождать вас во время пробежки или велосипедной поездки – двигаясь в быстром темпе, он сожжет достаточно энергии, чтобы не искать приключений по возвращении. Альтернативой могут стать упражнения на оборудованной полосе препятствий, только правильно соизмеряйте физические кондиции собаки и высоту барьеров.
+        </p>
+        <p>
+         Далматины не требуют сложного и утомительного ухода. Их «шубка» не сваливается и не нуждается в стрижке или частом мытье, однако линька происходит обильно и практически непрерывно, а на границе теплых и холодных сезонов становится особенно сильной. Чтобы шерстяной покров в доме был минимальным, рекомендуется как можно чаще (не реже 2-3 раз в неделю) расчесывать питомца щеткой или специальной рукавицей.
+        </p>
+        <p>
+         В остальном достаточно стандартных процедур: следите за состоянием ушных раковин и глаз, длиной когтей, регулярно чистите зубы ветеринарной пастой. Питание должно быть сбалансированным и здоровым. Проще всего этого добиться с помощью готовых кормов класса премиум и супер-премиум. Помните, что переедание в сочетании с низкой физической активностью чревато ожирением.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/08c/08c365e3baf93444aca7219b8f014f21.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/08c/512_342_2/08c365e3baf93444aca7219b8f014f21.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/08c/512_342_2/08c365e3baf93444aca7219b8f014f21.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/08c/512_342_2/08c365e3baf93444aca7219b8f014f21.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/84c/84cb03ca2d1804d16f2a5fb86517b926.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/84c/512_342_2/84cb03ca2d1804d16f2a5fb86517b926.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/84c/512_342_2/84cb03ca2d1804d16f2a5fb86517b926.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/84c/512_342_2/84cb03ca2d1804d16f2a5fb86517b926.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl6">
+         Здоровье и болезни далматина
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Далматинец с гетерохромией глаз" data-fancybox="gallery" href="/upload/iblock/280/28090c56e46646c1be732a998bf6441d.jpg" title="Далматинец с гетерохромией глаз">
+          <div class="lazy-load" data-alt="Далматинец с гетерохромией глаз" data-class="article_pic" data-original="/upload/resize_cache/iblock/280/412_2150_1/28090c56e46646c1be732a998bf6441d.jpg">
+           <noscript data-alt="Далматинец с гетерохромией глаз" data-class="article_pic" data-original="/upload/resize_cache/iblock/280/412_2150_1/28090c56e46646c1be732a998bf6441d.jpg">
+            <img alt="Далматинец с гетерохромией глаз" class="article_pic" height="558" src="/upload/resize_cache/iblock/280/412_2150_1/28090c56e46646c1be732a998bf6441d.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Далматинец с гетерохромией глаз
+         </div>
+        </div>
+        <p>
+         Средняя продолжительность жизни далматинов составляет 10-13 лет.
+        </p>
+        <p>
+         Самая большая беда породы – глухота. Проблемы со слухом различной тяжести встречаются почти у трети собак. 12% далматинцев рождаются полностью глухими. Эффективное решение пока не найдено. Хотя в разведение допускаются только здоровые животные, но и у них появляются больные щенки. Последние, впрочем, ведут полноценную жизнь в качестве домашних любимцев. Выявить этот недостаток можно в первые недели с помощью современных тестов.
+        </p>
+        <p>
+         Из-за особенностей метаболизма у далматинов часто встречаются камни в мочевом пузыре. Также они склонны к кожным аллергиям и дисплазии тазобедренных суставов. Реже регистрируются эпилепсия, аутоиммунные болезни печени, остеохондроз плечевого сустава, остеомиелит, дилатационная кардиомиопатия, гипотиреоз, паралич гортани и другие неспецифические заболевания.
+        </p>
+        <p>
+         Поскольку многие болезни носят наследственный или врожденный характер, их появление можно предугадать с учетом родословной. Ответственные заводчики всегда предоставляют исчерпывающую информацию о состоянии здоровья родителей, а также «бабушек» и «дедушек».
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Ключ к удачному приобретению – взвешенный и тщательно продуманный выбор бридера. Только питомники с безупречной репутацией могут гарантировать, что новый член вашей семьи будет здоров физически и стабилен психологически. Поскольку щенков далматина отдают постоянным владельцам не ранее, чем в 10-12 недель, они успевают пройти необходимые медицинские обследования и проявить особенности своего характера.
+        </p>
+        <p>
+         Хороший заводчик задаст вам не меньше вопросов, чем вы ему, ведь для него каждый четвероногий малыш – не живой товар, а личность, поэтому важно понять, в какой семье он будет жить, в каких условиях.
+        </p>
+        <p>
+         А вы, в свою очередь, имеете полное право на знакомство с родителями и изучение их документов, заключения ветеринара о состоянии здоровья щенка и результатов BAER-теста (Brainstem Auditory Evoked Response) – электродиагностического исследования слуха.
+        </p>
+        <p>
+         Важно увидеть условия, в которых содержатся мама с малышами, узнать о питании и лично пообщаться с приглянувшимся щенком, чтобы оценить его умение идти на контакт с человеком и адекватно реагировать на внешний мир.
+        </p>
+        <h2>
+         Фото щенков далматина
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8d4/8d42e455efed9a545817895a1af16ba4.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/8d4/380_264_2/8d42e455efed9a545817895a1af16ba4.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/8d4/380_264_2/8d42e455efed9a545817895a1af16ba4.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/8d4/380_264_2/8d42e455efed9a545817895a1af16ba4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b28/b286371af7125add470d1d5d8368e020.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/b28/380_264_2/b286371af7125add470d1d5d8368e020.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/b28/380_264_2/b286371af7125add470d1d5d8368e020.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/b28/380_264_2/b286371af7125add470d1d5d8368e020.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/18b/18bf5d6d258f9c1440f99c41645bdadf.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/18b/380_264_2/18bf5d6d258f9c1440f99c41645bdadf.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/18b/380_264_2/18bf5d6d258f9c1440f99c41645bdadf.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/18b/380_264_2/18bf5d6d258f9c1440f99c41645bdadf.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/993/99303a27eb17197bdb2fbab5cd33b9c7.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/993/380_264_2/99303a27eb17197bdb2fbab5cd33b9c7.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/993/380_264_2/99303a27eb17197bdb2fbab5cd33b9c7.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/993/380_264_2/99303a27eb17197bdb2fbab5cd33b9c7.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e59/e5994d98c687b20b393d6b5d0bf02d58.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/e59/380_264_2/e5994d98c687b20b393d6b5d0bf02d58.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/e59/380_264_2/e5994d98c687b20b393d6b5d0bf02d58.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/e59/380_264_2/e5994d98c687b20b393d6b5d0bf02d58.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c0a/c0ade0b2e0fa022ea1cf8bcef8acff9e.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/c0a/380_264_2/c0ade0b2e0fa022ea1cf8bcef8acff9e.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/c0a/380_264_2/c0ade0b2e0fa022ea1cf8bcef8acff9e.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/c0a/380_264_2/c0ade0b2e0fa022ea1cf8bcef8acff9e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/0f8/0f88f834b31b83e111b1c8f29ad5f9a1.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/0f8/380_264_2/0f88f834b31b83e111b1c8f29ad5f9a1.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/0f8/380_264_2/0f88f834b31b83e111b1c8f29ad5f9a1.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/0f8/380_264_2/0f88f834b31b83e111b1c8f29ad5f9a1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/11b/11b5228cb501f775a0c95b3115b95dec.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/11b/380_264_2/11b5228cb501f775a0c95b3115b95dec.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/11b/380_264_2/11b5228cb501f775a0c95b3115b95dec.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/11b/380_264_2/11b5228cb501f775a0c95b3115b95dec.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/bdf/bdf91d8899eb00012ad91b549a1d0978.jpg" title="">
+           <div class="lazy-load" data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/bdf/380_264_2/bdf91d8899eb00012ad91b549a1d0978.jpg">
+            <noscript data-alt="Далматин" data-class="article_pic" data-original="/upload/resize_cache/iblock/bdf/380_264_2/bdf91d8899eb00012ad91b549a1d0978.jpg">
+             <img alt="Далматин" class="article_pic" src="/upload/resize_cache/iblock/bdf/380_264_2/bdf91d8899eb00012ad91b549a1d0978.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Сколько стоит щенок далматинца
+        </h2>
+        <p>
+         На сайтах частных объявлений за юного далматинца «без документов» просят от 4 до 8 тысяч рублей. Но вы должны понимать, что в этом случае невозможно узнать, действительно ли оба родителя были представителями интересующей вас породы. И что еще важнее, нет никаких гарантий, что у животного со временем не обнаружится тех или иных патологий, опасных для жизни или существенно влияющих на ее качество.
+        </p>
+        <p>
+         Цена далматинов в питомниках варьируется в различных регионах и еще более существенно колеблется исходя из того, к какому классу принадлежит конкретный щенок. В зависимости от индивидуальных особенностей и соответствия стандарту породы, щенки из одного помета, имеющие документы FCI и ветеринарные паспорта, будут стоить от 15-20 до 40-50 тысяч рублей. И тут уже вам решать, планируется ли участие в выставках с перспективой громких побед или достаточно того, что в вашем доме появится преданный и озорной друг.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения далматина на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/26938/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Karina Nazarova" data-original="/upload/resize_cache/main/625/200_200_2/4hdofadn6v906szlboburi3qckymgxr4.jpg">
+            <noscript data-alt="Karina Nazarova" data-original="/upload/resize_cache/main/625/200_200_2/4hdofadn6v906szlboburi3qckymgxr4.jpg">
+             <img alt="Karina Nazarova" src="/upload/resize_cache/main/625/200_200_2/4hdofadn6v906szlboburi3qckymgxr4.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/allergiya-na-belok-5121/">
+           Аллергия на белок
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте! Такая проблема у нас. далматинец 2 года резко перестает есть корма. Сходили к ветеринару, сказали аллергия на белок. Хорошо, купили гипоаллергенный корм (корвуд) поел меньше 4 месяцев и опять началось...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/26938/">
+            Karina Nazarova
+           </a>
+          </span>
+          <span class="vopros-date">
+           7 месяцев назад
+          </span>
+          <span class="vopros-smotr">
+           116 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/26325/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Ксения Петровочкина" data-original="/upload/main/df2/o9dopra156kjsc34rdqe0ariaz6fb9p0.jpg">
+            <noscript data-alt="Ксения Петровочкина" data-original="/upload/main/df2/o9dopra156kjsc34rdqe0ariaz6fb9p0.jpg">
+             <img alt="Ксения Петровочкина" src="/upload/main/df2/o9dopra156kjsc34rdqe0ariaz6fb9p0.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/pomogite-opredelit-porodu-4651/">
+           Помогите определить породу!
+          </a>
+         </div>
+         <div class="forum-text">
+          Купили щенка далматина, подскажите, породистый ли? Документы и метрику не предоставили, нам не нужны были, сказали, можно будет сделать ркф нулевую. Брали для себя, не для разведения, но хотелось породистую. Можно...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/26325/">
+            Ксения Петровочкина
+           </a>
+          </span>
+          <span class="vopros-date">
+           11 месяцев назад
+          </span>
+          <span class="vopros-smotr">
+           265 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/23987/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Кристина Айткенова" data-original="/upload/main/cb3/35skydn0a4ihxijkp2vklys8x5u4zgt8.jpg">
+            <noscript data-alt="Кристина Айткенова" data-original="/upload/main/cb3/35skydn0a4ihxijkp2vklys8x5u4zgt8.jpg">
+             <img alt="Кристина Айткенова" src="/upload/main/cb3/35skydn0a4ihxijkp2vklys8x5u4zgt8.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/ochen-silno-linyaet-3533/">
+           Очень сильно линяет
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте, подскажите пожалуйста, у всех ли Далматинов такая сильная линька? У нас девочка почти два года, мучаемся очень сильно, делали экспресс линьку хватило на три дня, обычное вычёсывание абсолютно не помогает...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/23987/">
+            Кристина Айткенова
+           </a>
+          </span>
+          <span class="vopros-date">
+           2 года назад
+          </span>
+          <span class="vopros-smotr">
+           855 просмотров
+          </span>
+          <span class="vopros-otvet">
+           2 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/6342/">
+          <div class="ava-med">
+           <div class="noava fill2">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/pyes-ne-ponimaet-zachem-gulyaet-3389/">
+           Пёс не понимает зачем гуляет.
+          </a>
+         </div>
+         <div class="forum-text">
+          Всем добрый день.  Подскажите пожалуйста как быть. И что не так (((. Щенку 5 мес.   Живет со мной 2. За 2 мес ни разу не сходил в туалет на улицу.  ГулЯем в 7 утра.  Потом в 9.  В 3 дня. В 5 и в 9/10. Видит что...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/6342/">
+            Ольга  Антипина
+           </a>
+          </span>
+          <span class="vopros-date">
+           2 года назад
+          </span>
+          <span class="vopros-smotr">
+           1423 просмотра
+          </span>
+          <span class="vopros-otvet">
+           3 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/dalmatinets/forum/">
+        Перейти на
+        форум далматина
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Далматин" src="/upload/iblock/5ed/5edaf287f878b54d13e1894789bd0db6.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/dalmatinets/">
+          Далматин
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/dalmatinets/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/dalmatinets/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/dalmatinets/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/dalmatinets/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/dalmatinets/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/dalmatinets/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/kern-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Керн-терьер" data-original="/upload/resize_cache/iblock/e00/100_100_1/e00878f7ff3ef8efa2f9b4932cc2199b.jpg">
+          <noscript data-alt="Керн-терьер" data-original="/upload/resize_cache/iblock/e00/100_100_1/e00878f7ff3ef8efa2f9b4932cc2199b.jpg">
+           <img alt="Керн-терьер" src="/upload/resize_cache/iblock/e00/100_100_1/e00878f7ff3ef8efa2f9b4932cc2199b.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Керн-терьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/bulmastif/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бульмастиф" data-original="/upload/resize_cache/iblock/a0a/100_100_1/a0a5d60d572e841f0ed6243471d1042f.jpg">
+          <noscript data-alt="Бульмастиф" data-original="/upload/resize_cache/iblock/a0a/100_100_1/a0a5d60d572e841f0ed6243471d1042f.jpg">
+           <img alt="Бульмастиф" src="/upload/resize_cache/iblock/a0a/100_100_1/a0a5d60d572e841f0ed6243471d1042f.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бульмастиф
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/kavaler-king-charlz-spaniel/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Кавалер-кинг-чарльз-спаниель" data-original="/upload/resize_cache/iblock/b48/100_100_1/b485acd675a27aac77d3a42829a213ed.jpg">
+          <noscript data-alt="Кавалер-кинг-чарльз-спаниель" data-original="/upload/resize_cache/iblock/b48/100_100_1/b485acd675a27aac77d3a42829a213ed.jpg">
+           <img alt="Кавалер-кинг-чарльз-спаниель" src="/upload/resize_cache/iblock/b48/100_100_1/b485acd675a27aac77d3a42829a213ed.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Кавалер-кинг-чарльз-спаниель
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/belaya-shveytsarskaya-ovcharka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Белая швейцарская овчарка" data-original="/upload/resize_cache/iblock/86d/100_100_1/86d3aeb0ac330511ea104c3bee701e9e.jpg">
+          <noscript data-alt="Белая швейцарская овчарка" data-original="/upload/resize_cache/iblock/86d/100_100_1/86d3aeb0ac330511ea104c3bee701e9e.jpg">
+           <img alt="Белая швейцарская овчарка" src="/upload/resize_cache/iblock/86d/100_100_1/86d3aeb0ac330511ea104c3bee701e9e.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Белая швейцарская овчарка
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fdalmatinets%252F%253Fcheck_key%253Db48a76a6ae01a874f3252123245a4ca5%2526ANIMAL_CODE%253Ddalmatinets%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fdalmatinets%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmRhbG1hdGluZXRzJTJGJTNGY2hlY2tfa2V5JTNEYjQ4YTc2YTZhZTAxYTg3NGYzMjUyMTIzMjQ1YTRjYTUlMjZBTklNQUxfQ09ERSUzRGRhbG1hdGluZXRzJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmRhbG1hdGluZXRzJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fdalmatinets%252F%253Fcheck_key%253Db48a76a6ae01a874f3252123245a4ca5%2526ANIMAL_CODE%253Ddalmatinets%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fdalmatinets%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fdalmatinets%252F%253Fcheck_key%253Db48a76a6ae01a874f3252123245a4ca5%2526ANIMAL_CODE%253Ddalmatinets%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fdalmatinets%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "46.20.76.108"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--00833cc5f8d589a57eabcfcf6e84da97-->

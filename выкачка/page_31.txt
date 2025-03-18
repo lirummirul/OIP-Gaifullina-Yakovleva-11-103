@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'40892f99e9dc'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Басенджи, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Басенджи — очень древняя порода, которая дошла до наших дней, не претерпев никаких изменений. Эта собака – прекрасный охотник и чуткий преданный друг." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/f60/f608e712750929627adf73d8603204ea.jpg" property="og:image"/>
+     <title>
+      Басенджи: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/basendzhi/" property="og:url"/>
+     <meta content="Басенджи: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Басенджи — очень древняя порода, которая дошла до наших дней, не претерпев никаких изменений. Эта собака – прекрасный охотник и чуткий преданный друг." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/basendzhi/" itemprop="url">
+         <span itemprop="title">
+          Басенджи
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Басенджи
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/basendzhi/">
+          Описание
+         </a>
+         <a href="/dog/basendzhi/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/basendzhi/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/basendzhi/photo/">
+          Фото
+         </a>
+         <a href="/dog/basendzhi/video/">
+          Видео
+         </a>
+         <a href="/dog/basendzhi/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/basendzhi/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Басенджи" src="/upload/iblock/a24/a24a876545492f6bf12ab1fdfd303c08.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/basendzhi/">
+           африканская нелающая собака
+          </a>
+          ,
+          <a href="/dog/basendzhi/">
+           конголезская кустарниковая собака
+          </a>
+          ,
+          <a href="/dog/basendzhi/">
+           лесная собака из Конго
+          </a>
+          ,
+          <a href="/dog/basendzhi/">
+           конго-терьер
+          </a>
+          ,
+          <a href="/dog/basendzhi/">
+           ньям-ньям-терьер
+          </a>
+          ,
+          <a href="/dog/basendzhi/">
+           собака занде
+          </a>
+         </span>
+         <p>
+          Басенджи — очень древняя порода, которая дошла до наших дней, не претерпев никаких изменений. Эта собака – прекрасный охотник и чуткий преданный друг.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/1a5/1a526b54539ca82884dea2ec9dc09a6a.jpg" data-cap="Ready for winter walks :)" data-fancybox="images" data-link="https://www.flickr.com/photos/47270151@N05/16684956205/" data-type="image" data-username="Victor Yakimov" href="/upload/uf/813/813b0a727a6c6beb81fee32a981a656b.jpg">
+            <img alt="Басенджи" src="/upload/resize_cache/uf/813/293_293_2/813b0a727a6c6beb81fee32a981a656b.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/8bb/8bb95d3324e4c5ae5ace57cbe34270f4.jpg" data-cap="4weeks puppy" data-fancybox="images" data-link="https://www.flickr.com/photos/rscherzinger/5405891176/" data-type="image" data-username="Rich S" href="/upload/uf/8e2/8e21fd78e16206882bddd5e5ffcc030b.jpg">
+            <img alt="Басенджи" src="/upload/resize_cache/uf/8e2/293_293_2/8e21fd78e16206882bddd5e5ffcc030b.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/3b9/3b9c92d9dde97c4c677bc5c5a8c8a454.jpg" data-cap="" data-fancybox="images" data-link="https://www.flickr.com/photos/104648132@N02/37100879101/" data-type="image" data-username="Mairead Bhrollachain" href="/upload/uf/2e3/2e3ed7f6c1bea7544a8b118be50afcae.jpg">
+            <img alt="Басенджи" src="/upload/resize_cache/uf/2e3/293_293_2/2e3ed7f6c1bea7544a8b118be50afcae.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/basendzhi/photo/">
+         Все
+            фото басенджи
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы басенджи
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешний вид басенджи
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер басенджи
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни басенджи
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Сколько стоит басенджи
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Басенджи
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Центральная Африка
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         около 3000 до н. э.
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 11 кг, суки 9,5 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 43 см, суки 40 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         12-16 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Одной из основных отличительных черт басенджи является то, что она практически не лает. Легенда гласит, что однажды вожак стаи «существ из зарослей» (так еще называют этих собак на их родине) случайно узнал важную тайну, которую хранило одно из туземных племен. Понимая, что может проговориться, он и его стая дали людям клятву навсегда замолчать. С тех пор конго-терьеры общаются между собой и с людьми, используя урчание, фырканье, вздохи, звуки, напоминающие сдавленный смех или ворчание под нос недовольного человека.
+        </li>
+        <li>
+         Среди характерных внешних признаков – морщинистый лоб, особенно когда собака чем-то заинтересована или возбуждена, и туго закрученный хвост.
+        </li>
+        <li>
+         Басенджи – социальные животные, привыкшие в естественных условиях к стайной жизни, поэтому они ладят с другими псами, хотя высоко ценят и хорошее отношение человека, искренне привязываясь к хозяину.
+        </li>
+        <li>
+         Представители породы очень активны, отличаются живым умом, поразительной смекалкой и самостоятельностью. Взять под контроль их охотничий инстинкт невозможно – кустарниковая собака (еще одно из многочисленных названий басенджи) не задумываясь начинает преследовать все, что движется. Лучшим средством контроля будет длинный крепкий поводок.
+        </li>
+        <li>
+         Удивительно, но «бася» не только не лает, но еще и почти не пахнет. Но при всей своей чистоплотности эти собаки не любят воду. Возможно, их генетическая память хранит истории о сложных взаимоотношениях с африканскими крокодилами. Купать басенджи не нужно, с гигиеной они справляются сами, умываясь как кошки.
+        </li>
+        <li>
+         Поражает контраст в поведении собаки дома и на улице. Они очень любят спать и в квартире ведут себя «тише воды, ниже травы». А вот на прогулке — это неуемный сгусток энергии.
+        </li>
+        <li>
+         Африканцы по происхождению, басенджи не любят и плохо переносят холод. Поэтому следует приобрести необходимые предметы гардероба для прогулок в зимнее время. Место в квартире для питомца тоже выберите потеплее.
+        </li>
+        <li>
+         Что касается дрессировки, то здесь возможны только партнерские взимоотношения. Заставить, навязать свою волю просто не выйдет. Поэтому специалисты не рекомендуют заводить представителей породы начинающим собаководам. В качестве первой собаки «существо из зарослей» не подойдет.
+        </li>
+        <li>
+         Басенджи в нашей стране еще очень редкая и поэтому дорогая порода. Решение приобрести именно такого питомца следует принимать, лишь тщательно взвесив все «за» и «против». Только в этом случае вы сможете выстроить правильные отношения, получив в награду удивительно преданного и умного друга.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Басенджи" data-original="/upload/iblock/f60/f608e712750929627adf73d8603204ea.jpg">
+          <noscript data-alt="Басенджи" data-original="/upload/iblock/f60/f608e712750929627adf73d8603204ea.jpg">
+           <img alt="Басенджи" src="/upload/iblock/f60/f608e712750929627adf73d8603204ea.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Басенджи
+          </strong>
+          – животное, пришедшее к нам из самого сердца африканского континента. Сформировалась порода безо всякого человеческого вмешательства. Все черты характера, манера поведения, способность быстро мыслить, природная смекалка и даже типичные для других собак любовь и привязанность к человеку – результат естественного отбора, а не каких-либо селекционных экспериментов. В этом заключается главная ценность басенджи, и надо научиться принимать, понимать и любить это существо таким, каким его создала природа. Удивительная собака еще очень редка в наших краях, но популярность породы постоянно растет.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошие (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Басенджи основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/basendzhi/razmeri-porodi/">
+         размеры басенджи
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы басенджи
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Басенджи" data-fancybox="gallery" href="/upload/iblock/f12/f1254b10eb2cfe97cc1b2be996a0d726.jpg" title="Басенджи">
+          <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/f12/412_2150_1/f1254b10eb2cfe97cc1b2be996a0d726.jpg">
+           <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/f12/412_2150_1/f1254b10eb2cfe97cc1b2be996a0d726.jpg">
+            <img alt="Басенджи" class="article_pic" height="617" src="/upload/resize_cache/iblock/f12/412_2150_1/f1254b10eb2cfe97cc1b2be996a0d726.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Басенджи
+         </div>
+        </div>
+        <p>
+         История породы насчитывает минимум 6000 лет. Свидетельством столь древнего происхождения можно считать многочисленные изображения, статуэтки, шкатулки для драгоценностей в форме собак, очень похожих на современных басенджи, которые ученые выявили при исследовании древнеегипетских захоронений. А в гробнице Тутанхамона были обнаружены даже забальзамированные, богато убранные мумии таких животных. Исследователи считают, что родиной «африканской нелающей собаки» являются земли Центральной Африки. Туземные племена Конго, Либерии, Судана широко использовали этих псов в охотничьих целях. Хотя и до сегодняшнего дня ведутся споры относительно того, является ли неумение басенджи лаять первопричиной или следствием такого применения.
+        </p>
+        <p>
+         Именно из этих краев первые «скачущие вверх и вниз» (а именно так туземцы называют этих собак) в качестве даров были завезены в Египет, где к ним относились с большим почтением. Считалось, что такая собака охраняла хозяина от злых сил и черного колдовства. Столь почетное место басенджи занимали долго, вплоть до начала упадка древнеегипетской цивилизации.
+        </p>
+        <p>
+         На родине породы она по-прежнему оставалась очень востребованной и высоко ценимой за ум, отвагу, преданность и прекрасные охотничьи способности, уникальной в ряду которых оказалось умение молчать.
+        </p>
+        <p>
+         Знакомство остального мира с этими удивительными животными началось с 1895 года. К сожалению, первая встреча оказалась печальной. Измученные длительным путешествием, маленькие собачки вскоре околели. Однако рассказы путешественников о конголезском терьере, собаке Занде, ньям-ньям-ньяме, африканской лесной собаке (и это еще не все названия басенджи) не могли оставить равнодушными, и в 1937 году эти животные были официально представлены английской публике на выставке Крафта, в этот же год их увидела и Америка.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок басенджи" data-fancybox="gallery" href="/upload/iblock/117/117e03a3195516a9a44f4d15826b08e5.jpg" title="Щенок басенджи">
+          <div class="lazy-load" data-alt="Щенок басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/117/412_2150_1/117e03a3195516a9a44f4d15826b08e5.jpg">
+           <noscript data-alt="Щенок басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/117/412_2150_1/117e03a3195516a9a44f4d15826b08e5.jpg">
+            <img alt="Щенок басенджи" class="article_pic" height="291" src="/upload/resize_cache/iblock/117/412_2150_1/117e03a3195516a9a44f4d15826b08e5.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок басенджи
+         </div>
+        </div>
+        <p>
+         Широкое распространение породы началось после Второй мировой войны. Выставочный успех басенджи превзошел все ожидания. Практически ни один финал самых престижных выставок в номинации «Лучший в шоу» не обходился без очаровательного «африканского пришельца». Популярности породе добавили изданная в 1942 году книга Джеймса Стрита «Прощай, моя леди» и одноименный голливудский фильм, снятый четырнадцать лет спустя.
+        </p>
+        <p>
+         Не обошли «молчунью» своим вниманием и сильные мира сего. Король Египта Фарук, королева Нидерландов Джулиана, представители королевского дома Румынии, принцесса княжества Монако – далеко не полный перечень монарших особ, которые относились к этой породе с особой любовью.
+        </p>
+        <p>
+         Разведение басенджи в России началось в 1997 году. Первые завезенные производители были очень высокого класса, и сегодня их потомки способны составить серьезную конкуренцию даже собакам из престижных зарубежных питомников. Хотя ради справедливости стоит заметить, что у нас эта порода пока еще редкая и малочисленная.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f49/f493acca10fe0ec93cf52f17c1a67e49.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/f49/512_342_2/f493acca10fe0ec93cf52f17c1a67e49.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/f49/512_342_2/f493acca10fe0ec93cf52f17c1a67e49.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/f49/512_342_2/f493acca10fe0ec93cf52f17c1a67e49.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a5b/a5b35286c9d086a126e984f85bc02db0.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/a5b/512_342_2/a5b35286c9d086a126e984f85bc02db0.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/a5b/512_342_2/a5b35286c9d086a126e984f85bc02db0.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/a5b/512_342_2/a5b35286c9d086a126e984f85bc02db0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2>
+         Видео: Басенджи
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="b76cWphldME">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешний вид басенджи
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Басенджи черно-белого окраса с подпалом" data-fancybox="gallery" href="/upload/iblock/bbd/bbd01480c64d319868d5dfd9ccbcf37e.jpg" title="Басенджи черно-белого окраса с подпалом">
+          <div class="lazy-load" data-alt="Басенджи черно-белого окраса с подпалом" data-class="article_pic" data-original="/upload/resize_cache/iblock/bbd/412_2150_1/bbd01480c64d319868d5dfd9ccbcf37e.jpg">
+           <noscript data-alt="Басенджи черно-белого окраса с подпалом" data-class="article_pic" data-original="/upload/resize_cache/iblock/bbd/412_2150_1/bbd01480c64d319868d5dfd9ccbcf37e.jpg">
+            <img alt="Басенджи черно-белого окраса с подпалом" class="article_pic" height="618" src="/upload/resize_cache/iblock/bbd/412_2150_1/bbd01480c64d319868d5dfd9ccbcf37e.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Басенджи черно-белого окраса с подпалом
+         </div>
+        </div>
+        <p>
+         Порода зарегистрирована FCI под номером 43. По этой классификации отнесена к группе 5 – шпицы и примитивные виды, секция 6 – примитивные виды. Басенджи – гармонично сложенное, хорошо сбалансированное животное.
+        </p>
+        <p>
+         Идеальные показатели роста и веса:
+        </p>
+        <ul>
+         <li>
+          кобели – 43 см в холке, массой 11 кг;
+         </li>
+         <li>
+          суки – 40 см и 9,5 кг соответственно.
+         </li>
+        </ul>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Череп достаточно плоский, средней ширины, в длину немного больше, чем морда. Красиво выточенная голова, скулы постепенно и равномерно сужаются к носу. Стоп выражен умеренно. Характерной особенностью являются складки-морщины на лбу, наиболее четко проявляющиеся, если басенджи насторожен.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза басенджи косо посажены, миндалевидной формы, темного цвета. Взгляд умный и очень выразительный.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Уши басенджи небольшого размера, изящные, с острыми концами. Посажены высоко и слегка наклонены вперед. Кончики находятся ближе к центру головы, чем основания.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Мочка среднего размера, желательно черного цвета.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Достаточно длинная, сильная, но никак не толстая. Поставлена высоко. К основанию немного расширяется. Грациозный изгиб шеи хорошо подчеркивает загривок.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Басенджи тигрового окраса" data-fancybox="gallery" href="/upload/iblock/7eb/7ebc86dc557753807c8e5b07d61d655f.jpg" title="Басенджи тигрового окраса">
+          <div class="lazy-load" data-alt="Басенджи тигрового окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/7eb/412_2150_1/7ebc86dc557753807c8e5b07d61d655f.jpg">
+           <noscript data-alt="Басенджи тигрового окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/7eb/412_2150_1/7ebc86dc557753807c8e5b07d61d655f.jpg">
+            <img alt="Басенджи тигрового окраса" class="article_pic" height="274" src="/upload/resize_cache/iblock/7eb/412_2150_1/7ebc86dc557753807c8e5b07d61d655f.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Басенджи тигрового окраса
+         </div>
+        </div>
+        <p>
+         Гармонично сбалансирован. Спина прямая, короткая. Грудная клетка с выпуклыми ребрами имеет овальную форму. Глубокая грудь плавно переходит в хорошо подтянутый живот. Поясница короткая.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвост у басенджи поставлен высоко, закручен в одинарное или двойное кольцо и уложен на круп. Ягодицы заметно выступают за линию основания хвоста, от чего создается впечатление переразвитых ягодичных мышц.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Передние: костяк утонченный с длинными предплечьями. Пясти прямые и гибкие. Лопатки мускулистые, но не утяжеленные. Локти направлены строго назад.
+        </p>
+        <p>
+         Задние: сильные и мускулистые, голени длинные. Скакательные суставы параллельные, низко опущенные.
+        </p>
+        <h3>
+         Лапы
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Лапы басенджи" data-fancybox="gallery" href="/upload/iblock/50b/50b052e22ebf8724306deec14d4e63b4.jpg" title="Лапы басенджи">
+          <div class="lazy-load" data-alt="Лапы басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/50b/412_2150_1/50b052e22ebf8724306deec14d4e63b4.jpg">
+           <noscript data-alt="Лапы басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/50b/412_2150_1/50b052e22ebf8724306deec14d4e63b4.jpg">
+            <img alt="Лапы басенджи" class="article_pic" height="549" src="/upload/resize_cache/iblock/50b/412_2150_1/50b052e22ebf8724306deec14d4e63b4.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Лапы басенджи
+         </div>
+        </div>
+        <p>
+         Лапы басенджи овальные, небольшого размера, собранные в комок. Подушечки толстые, когти короткие.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Шерсть басенджи короткая, хорошо прилегающая к телу, блестящая. Волос мягкий на ощупь и тонкий.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Окрас басенджи чистый черно-белый и красно-белый, черно-белый с подпалом цвета дынных семечек, черный и коричнево-белый. С 2000 года признан также тигровый окрас, причем чем ярче выражены черные полосы, тем лучше. Белый цвет должен обязательно присутствовать на лапах, кончике хвоста и грудной клетке.
+        </p>
+        <h3>
+         Недостатки
+        </h3>
+        <p>
+         Любое отклонение от стандарта оценивается как порок и становится дисквалифицирующим признаком. К наиболее часто встречающимся недостаткам басенджи относятся:
+        </p>
+        <ul>
+         <li>
+          крипторхизм;
+         </li>
+         <li>
+          длинная шерсть;
+         </li>
+         <li>
+          депигментированные мочка носа, веки, губы;
+         </li>
+         <li>
+          висячие или полустоячие уши;
+         </li>
+         <li>
+          свисающий вниз хвост.
+         </li>
+        </ul>
+        <h2>
+         Фото взрослых басенджи
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/3fb/3fbd96dd9e8c2925dc33ebf1eea5f930.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/3fb/380_264_2/3fbd96dd9e8c2925dc33ebf1eea5f930.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/3fb/380_264_2/3fbd96dd9e8c2925dc33ebf1eea5f930.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/3fb/380_264_2/3fbd96dd9e8c2925dc33ebf1eea5f930.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/262/262b9a9baca10ad427a20d69cb54c6e3.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/262/380_264_2/262b9a9baca10ad427a20d69cb54c6e3.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/262/380_264_2/262b9a9baca10ad427a20d69cb54c6e3.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/262/380_264_2/262b9a9baca10ad427a20d69cb54c6e3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2e9/2e93eecb0b80d511b67585178087c892.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/2e9/380_264_2/2e93eecb0b80d511b67585178087c892.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/2e9/380_264_2/2e93eecb0b80d511b67585178087c892.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/2e9/380_264_2/2e93eecb0b80d511b67585178087c892.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a65/a6543e939314385c35d533406e17e54f.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/a65/380_264_2/a6543e939314385c35d533406e17e54f.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/a65/380_264_2/a6543e939314385c35d533406e17e54f.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/a65/380_264_2/a6543e939314385c35d533406e17e54f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/007/00735cb3dd3adc3b2be4ce0dfee35f39.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/007/380_264_2/00735cb3dd3adc3b2be4ce0dfee35f39.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/007/380_264_2/00735cb3dd3adc3b2be4ce0dfee35f39.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/007/380_264_2/00735cb3dd3adc3b2be4ce0dfee35f39.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4db/4db0f16fe09ca4af84c2b625c5a2fbce.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/4db/380_264_2/4db0f16fe09ca4af84c2b625c5a2fbce.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/4db/380_264_2/4db0f16fe09ca4af84c2b625c5a2fbce.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/4db/380_264_2/4db0f16fe09ca4af84c2b625c5a2fbce.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/066/06643193a968544f05e05932bc0e489a.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/066/380_264_2/06643193a968544f05e05932bc0e489a.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/066/380_264_2/06643193a968544f05e05932bc0e489a.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/066/380_264_2/06643193a968544f05e05932bc0e489a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/09e/09eeaeac9c3ce7c8d7a1e8a2806e9087.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/09e/380_264_2/09eeaeac9c3ce7c8d7a1e8a2806e9087.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/09e/380_264_2/09eeaeac9c3ce7c8d7a1e8a2806e9087.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/09e/380_264_2/09eeaeac9c3ce7c8d7a1e8a2806e9087.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/eb7/eb72d38fae8650e2dc1ff8f08b64af53.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/eb7/380_264_2/eb72d38fae8650e2dc1ff8f08b64af53.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/eb7/380_264_2/eb72d38fae8650e2dc1ff8f08b64af53.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/eb7/380_264_2/eb72d38fae8650e2dc1ff8f08b64af53.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер басенджи
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9c7/9c7202c974be572ed078728a03313a92.jpg" title="">
+          <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/9c7/412_2150_1/9c7202c974be572ed078728a03313a92.jpg">
+           <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/9c7/412_2150_1/9c7202c974be572ed078728a03313a92.jpg">
+            <img alt="Басенджи" class="article_pic" height="638" src="/upload/resize_cache/iblock/9c7/412_2150_1/9c7202c974be572ed078728a03313a92.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Басенджи – охотничья собака, поэтому главными особенностями ее темперамента являются энергичность и постоянная готовность к активным действиям.
+        </p>
+        <p>
+         Верность также характерна для этих животных: хотя завоевать доверие «баси» непросто, но если уж собака признала вас, то более надежного друга трудно представить. А вот к незнакомцам питомец всегда будет относиться с настороженностью, хотя агрессивность первым никогда не проявит.
+        </p>
+        <p>
+         Басенджи относят к примитивным собакам – человек никогда не вносил никаких корректив в породу. Умение адаптироваться в любых условиях, сообразительность, природная смекалка, независимость и даже некоторая самоуверенность – все это результаты естественного отбора.
+        </p>
+        <p>
+         Знатоки, характеризуя басенджи, говорят, что практически каждый представитель породы – яркая индивидуальность, что, в определенной мере, может усложнить процесс воспитания и дрессировки. Но эта же индивидуальность находит свое проявление в удивительно высоком развитии интеллекта. Благодаря ему становится возможным установление тесной эмоциональной связи между собакой и человеком, которая сохраняется навсегда. В этом смысле очень важно, чтобы человек не злоупотреблял доверием животного и относился к своему питомцу с любовью и пониманием.
+        </p>
+        <p>
+         Рассчитывать, что басенджи мирно уживется с хомячком или попугаем, не приходится. С кошкой дружба вполне возможна, при условии что щенок приезжает в дом вторым. А вот с другими собаками «бася» поладит без проблем.
+        </p>
+        <p>
+         Представители породы неплохо справляются с функцией защитника, но няньки из них никакие. Они, конечно, очень любят детей, но достаточным терпением, чтобы стоически выносить шалости, не обладают.
+        </p>
+        <p>
+         Одной из не самых лучших черт басенджи является их природная привычка «шакалить». Отучить собаку подбирать и поедать все, что ей хочется, непросто, а гарантировать безвредность бесконтрольно съеденного невозможно, поэтому, гуляя с питомцем в городе, всегда держите его на поводке.
+        </p>
+        <p>
+         Басенджи называют еще «африканской нелающей собакой». Эта особенность никак не связана ни с какой патологией голосового аппарата, просто «бася» действительно не умеет лаять. Свои чувства она передает своеобразным урчанием. Для жизни в городской многоэтажке – качество очень ценное. Однако совсем бесшумными басенджи назвать нельзя – собаки могут достаточно громко выть, особенно когда остаются в одиночестве.
+        </p>
+        <p>
+         При всех своих особенностях басенджи остается собакой – существом, которое будет предано вам всю свою жизнь. Взамен понадобятся лишь ваши любовь и терпение.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Басенджи" data-fancybox="gallery" href="/upload/iblock/3e2/3e23c9a93c64067a1e7670811a63ffbe.jpg" title="Басенджи">
+          <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/3e2/1024_2150_1/3e23c9a93c64067a1e7670811a63ffbe.jpg">
+           <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/3e2/1024_2150_1/3e23c9a93c64067a1e7670811a63ffbe.jpg">
+            <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/3e2/1024_2150_1/3e23c9a93c64067a1e7670811a63ffbe.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Басенджи
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Многие специалисты считают басенджи собаками, которые с трудом поддаются дрессировке. Дескать, они плохо концентрируются на требованиях хозяина и нехотя выполняют команды. В качестве основного аргумента выдвигается тот факт, что животные относятся к группе примитивных, то есть выведенных самой природой, без всякого вмешательства человека. Но ведь примитивность не синоним глупости. То, что «бася» в состоянии решать все свои проблемы без участия человека, совсем не означает, что хозяин априори не в состоянии будет ее воспитать и обучить.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Дрессировка басенджи" data-fancybox="gallery" href="/upload/iblock/349/34943222a82e63f5bcfc668056661a35.jpg" title="Дрессировка басенджи">
+          <div class="lazy-load" data-alt="Дрессировка басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/349/412_2150_1/34943222a82e63f5bcfc668056661a35.jpg">
+           <noscript data-alt="Дрессировка басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/349/412_2150_1/34943222a82e63f5bcfc668056661a35.jpg">
+            <img alt="Дрессировка басенджи" class="article_pic" height="309" src="/upload/resize_cache/iblock/349/412_2150_1/34943222a82e63f5bcfc668056661a35.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Дрессировка басенджи
+         </div>
+        </div>
+        <p>
+         Зная особенности породы, проявив терпение и любовь к своему питомцу, вы наверняка сможете достичь очень неплохих результатов.
+        </p>
+        <p>
+         Басенджи – самостоятельные собаки, основное внимание надо направить на достижение устойчивой правильной реакции на подзыв любимца. Добиться этого непросто. Ваш щенок изначально уверен, что он лучше знает, где ему гулять, за кем погнаться, какую «вкусняшку» подобрать и съесть на улице. Вашим подспорьем в отработке команды «Ко мне!» может стать самый обычный поводок-рулетка. Отпускать собаку с него не рекомендуется. «Бася» постоянно готова преследовать все, что движется, и делает это с такой скоростью, что человеку ее не догнать. Выход один – дать понять питомцу, что ему может быть интересно и рядом с хозяином. Играйте с четверолапым другом, поощряйте лакомствами, просто не давайте ему скучать.
+        </p>
+        <p>
+         Нужно также научиться без применения насилия ограничивать свободу выбора собаки. Отпустив рулетку, дождитесь, когда пес отойдет от вас на максимальное расстояние, и остановитесь. Ваш любимец отреагирует мгновенно – он прекратит движение и ослабит натяжение поводка, а услышав команду – побежит к вам. Таким способом вы достигнете сразу нескольких целей – отработаете подзыв, ограничите свободу выбора для животного, не прибегая к мерам физического воздействия, и продемонстрируете, кто же доминирует в ваших взаимоотношениях. Басенджи очень умна и быстро сообразит, что к чему. Ограничивая выбор, вы получаете возможность контролировать то, что собака хочет сделать, и тем самым берете под контроль все ее поведение, поощряя лаской и угощением то, что ваш питомец делает правильно.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Я тебя внимательно слушаю" data-fancybox="gallery" href="/upload/iblock/6d0/6d0d70914547f7b6a421db9d313b6874.jpg" title="Я тебя внимательно слушаю">
+          <div class="lazy-load" data-alt="Я тебя внимательно слушаю" data-class="article_pic" data-original="/upload/resize_cache/iblock/6d0/412_2150_1/6d0d70914547f7b6a421db9d313b6874.jpg">
+           <noscript data-alt="Я тебя внимательно слушаю" data-class="article_pic" data-original="/upload/resize_cache/iblock/6d0/412_2150_1/6d0d70914547f7b6a421db9d313b6874.jpg">
+            <img alt="Я тебя внимательно слушаю" class="article_pic" height="549" src="/upload/resize_cache/iblock/6d0/412_2150_1/6d0d70914547f7b6a421db9d313b6874.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Я тебя внимательно слушаю
+         </div>
+        </div>
+        <p>
+         К основным принципам работы с басенджи можно отнести:
+        </p>
+        <ul>
+         <li>
+          справедливость. Вы отдаете команду и обязательно благодарите за ее выполнение;
+         </li>
+         <li>
+          регулярность. Отработка навыков должна вестись постоянно, в разных условиях и обстоятельствах;
+         </li>
+         <li>
+          терпение и понимание. Наказывать физически собаку ни в коем случае нельзя. Представьте, что пес вернулся к вам после побега, а вы его ударили. За что? За то, что он прибежал обратно?! Тогда в следующий раз вы можете его и не дождаться;
+         </li>
+         <li>
+          дрессируя басенджи, важно сочетать индивидуальные занятия с работой в группе.
+         </li>
+        </ul>
+        <p>
+         Теперь пара воспитательных моментов. С самого раннего возраста периодически залезайте щенку в пасть и забирайте пищу. Попытки рычать и огрызаться сразу пресекайте – без грубости, но твердо. С приученным таким образом животным будет меньше проблем, когда оно вырастет, ведь не секрет, что «баси» любят во время прогулок тянуть в рот все, что попало.
+        </p>
+        <p>
+         Никогда не обходите свою собаку и не перешагивайте через нее, если она оказалась у вас на пути. Вы – главный, и животное должно уступить дорогу.
+        </p>
+        <p>
+         Не давайте питомцу скучать. Домашние погромы, в которых обвиняют этих милых собак, имеют место быть, но в большинстве случаев их причина – недостаток внимания и скука.
+        </p>
+        <p>
+         Басенджи – собаки, остро нуждающиеся в вашей любви и готовые взамен подарить настоящую собачью преданность.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f5f/f5f8ea3a4590e22e6e9c4e9653f0f8a2.jpg" title="">
+          <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/iblock/f5f/f5f8ea3a4590e22e6e9c4e9653f0f8a2.jpg">
+           <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/iblock/f5f/f5f8ea3a4590e22e6e9c4e9653f0f8a2.jpg">
+            <img alt="Басенджи" class="article_pic" src="/upload/iblock/f5f/f5f8ea3a4590e22e6e9c4e9653f0f8a2.jpg"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <p>
+         Басенджи – собака, которую можно держать как в условиях городской квартиры, так и в загородном доме.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Басенджи с ребенком" data-fancybox="gallery" href="/upload/iblock/445/4451a8fadc0b8f566ad62ce08c8f0b63.jpg" title="Басенджи с ребенком">
+          <div class="lazy-load" data-alt="Басенджи с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/445/412_2150_1/4451a8fadc0b8f566ad62ce08c8f0b63.jpg">
+           <noscript data-alt="Басенджи с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/445/412_2150_1/4451a8fadc0b8f566ad62ce08c8f0b63.jpg">
+            <img alt="Басенджи с ребенком" class="article_pic" height="364" src="/upload/resize_cache/iblock/445/412_2150_1/4451a8fadc0b8f566ad62ce08c8f0b63.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Басенджи с ребенком
+         </div>
+        </div>
+        <p>
+         Ухаживать за ней совсем не сложно. Гладкошерстная «африканка» не нуждается в том, чтобы ее чистили и вычесывали, ее шерсть совершенно не имеет характерного собачьего запаха, даже если ее намочить. Чуть больше внимания потребуют щенки – их шкурку надо время от времени вычесывать, удаляя отмершие волосинки.
+        </p>
+        <p>
+         Прогулки, причем активные и подвижные, очень нужны «конголезцу» для гармоничного развития и роста.
+        </p>
+        <p>
+         И у взрослых собак, и у щенков не забывайте постоянно контролировать состояние когтей и ушей. Ушные раковины регулярно очищайте от грязи и выделений ватной палочкой, а коготки по мере необходимости подрезайте или аккуратно спиливайте.
+        </p>
+        <p>
+         Басенджи любят умываться и делают это почти по-кошачьи, так что их мордочки всегда чистые и ухоженные (даже если недавно они залезли во что-то липкое), а за чистоту мягкой мебели или ковров в доме можете не переживать. А вот воду эти собаки не любят, поэтому купать их не рекомендуется. Стойкое неприятие водных процедур связывают с генетической памятью породы, а именно боязнью крокодилов, которые водятся практически в любой африканской реке.
+        </p>
+        <p>
+         Басенджи обладают удивительным талантом взбираться (причем очень быстро) на любую высоту. Если щенок поймет, что обеденный стол – это источник лакомств и вкусняшек, уследить за ним и удержать от проказ будет невозможно. Сразу приучайте шустрого и активного «африканца» принимать пищу в строго определенном месте. Ни в коем случае не поддавайтесь на попытки выклянчить у вас еду, какие бы уморительные и милые физиономии ни строил щенок.
+        </p>
+        <p>
+         Правильный уход за собакой подразумевает организацию сбалансированного питания.
+        </p>
+        <p>
+         Рацион басенджи не должен быть однообразным. Старайтесь по мере возможности вносить в меню новые продукты. К полуторамесячному возрасту малыш «кустарниковой собаки» должен кушать телятину, сырые перепелиные яйца, кефир, овсяную кашу, из овощей – тертую морковь. Чередовать натуральные продукты можно со специализированными и подходящими по  возрасту сухими кормами премиум-класса.
+        </p>
+        <p>
+         Не забывайте и о миске с чистой свежей водой. Собака не должна испытывать жажду.
+        </p>
+        <p>
+         Взрослому животному, равно как и щенку, противопоказана еда с нашего стола. Сладости, пряная пища, рыбьи и трубчатые кости могут нанести здоровью вашего питомца серьезный вред. Перекармливать собаку нельзя. Басенджи от природы охотник, и чувство легкого недоедания для него абсолютно естественно.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9af/9afaa326fa8baf6501184b6c4c6160af.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/9af/512_342_2/9afaa326fa8baf6501184b6c4c6160af.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/9af/512_342_2/9afaa326fa8baf6501184b6c4c6160af.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/9af/512_342_2/9afaa326fa8baf6501184b6c4c6160af.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/125/125c9a3adc201a1c1d12664ab1aef3b1.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/125/512_342_2/125c9a3adc201a1c1d12664ab1aef3b1.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/125/512_342_2/125c9a3adc201a1c1d12664ab1aef3b1.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/125/512_342_2/125c9a3adc201a1c1d12664ab1aef3b1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl6">
+         Здоровье и болезни басенджи
+        </h2>
+        <p>
+         Средняя продолжительность жизни собак этой породы – 12-16 лет. Басенджи отличаются неплохим здоровьем, но это совсем не означает, что контроль за самочувствием вашего питомца можно пустить на самотек.
+        </p>
+        <p>
+         Существует ряд болезней, которые наиболее часто встречаются у этих собак. К ним можно отнести:
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Басенджи в профиль" data-fancybox="gallery" href="/upload/iblock/7ac/7ac51ad8ca64ff69ce590b9e31fdbc55.jpg" title="Басенджи в профиль">
+          <div class="lazy-load" data-alt="Басенджи в профиль" data-class="article_pic" data-original="/upload/resize_cache/iblock/7ac/412_2150_1/7ac51ad8ca64ff69ce590b9e31fdbc55.jpg">
+           <noscript data-alt="Басенджи в профиль" data-class="article_pic" data-original="/upload/resize_cache/iblock/7ac/412_2150_1/7ac51ad8ca64ff69ce590b9e31fdbc55.jpg">
+            <img alt="Басенджи в профиль" class="article_pic" height="549" src="/upload/resize_cache/iblock/7ac/412_2150_1/7ac51ad8ca64ff69ce590b9e31fdbc55.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Басенджи в профиль
+         </div>
+        </div>
+        <ul>
+         <li>
+          синдром Фанкони. Это заболевание почек, которое проявляется в нарушении фильтрационной функции органа. Жизненно важные соединения (аминокислоты, соли, витамины) вместо того, чтобы поступать из почек в организм, выводятся с мочой. Как результат – потеря веса, атрофия мышц и обезвоживание организма. При отсутствии лечения неизбежен летальный исход. Если вы заметили у вашей собаки неуемную жажду, частые обильные мочеиспускания – немедленно к врачу. Выявлению заболевания на ранних стадиях способствует проведение специальных исследований (на уровень сахара в моче, степень превышения показателя кислотности крови). Помните, чем раньше вы начнете лечение – тем больше шансов на то, что ваша собака выживет. Заболевание передается на генетическом уровне. Наиболее часто проявляется у животных в возрасте от 5 до 7 лет;
+         </li>
+         <li>
+          гипотиреоз. Это болезнь щитовидной железы, выражающаяся в ее сниженной функции. Симптомы: лишний вес, пониженная температура тела, плохое состояние шерсти и кожных покровов, отечность лап и головы, резкое снижение репродуктивной функции;
+         </li>
+         <li>
+          прогрессивная атрофия сетчатки глаза. Заболевание имеет генетическую природу, для его выявления и правильного подбора партнеров для вязки применяется ДНК-тест. Болезнь проявляется, в основном, у взрослых басенджи;
+         </li>
+         <li>
+          расстройства пищеварения. Для профилактики нежелательных последствий уделите разработке рациона собаки особое внимание.
+         </li>
+        </ul>
+        <p>
+         Учитывая предрасположенность басенджи к подбиранию и поеданию различного рода отбросов, очень велики риски отравления животных. Опытные заводчики рекомендуют иметь в домашней ветеринарной аптечке набор необходимых антидотов (перманганат калия, глауберову соль, аломорфин для инъекций, раствор окиси магнезии) и знать, в каких случаях, что и как применять.
+        </p>
+        <p>
+         Следует также четко придерживаться графика прививок и проводить дегельминтизацию.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b3d/b3d108a2b62722db6c3a3fca5db9410f.jpg" title="">
+          <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/iblock/b3d/b3d108a2b62722db6c3a3fca5db9410f.jpg">
+           <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/iblock/b3d/b3d108a2b62722db6c3a3fca5db9410f.jpg">
+            <img alt="Басенджи" class="article_pic" src="/upload/iblock/b3d/b3d108a2b62722db6c3a3fca5db9410f.jpg"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/cd0/cd04f04b4edeec682c505d6421c4638b.jpg" title="">
+          <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd0/412_2150_1/cd04f04b4edeec682c505d6421c4638b.jpg">
+           <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd0/412_2150_1/cd04f04b4edeec682c505d6421c4638b.jpg">
+            <img alt="Басенджи" class="article_pic" height="494" src="/upload/resize_cache/iblock/cd0/412_2150_1/cd04f04b4edeec682c505d6421c4638b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Учитывая редкость породы, рассчитывать на то, что вы сможете купить породистого малыша басенджи на рынке или через Интернет, по меньшей мере, наивно.
+        </p>
+        <p>
+         Сразу связывайтесь с заводчиком или питомником. Хотя продажа щенков возможна примерно с 45-го дня от их рождения, после того, как помет актируют, первое знакомство лучше немного отложить – хотя бы до достижения собакой 8-недельного возраста.
+        </p>
+        <p>
+         Здоровый малыш басенджи должен выглядеть крепеньким в меру упитанным карапузом. Под глазками и носиком не должно быть следов выделений, ушки – чистые.
+        </p>
+        <p>
+         Очень важно немного понаблюдать за поведением «баси». Обратите внимание на его взаимоотношения с матерью, с другими щенками. Постарайтесь определить самого дружелюбного песика – это будет лучшим выбором. Вырастая, такие животные имеют более устойчивую психику, и с ними вам будет легче найти общий язык.
+        </p>
+        <p>
+         Обратите внимание на родителей. Они должны быть хорошо ухожены и воспитаны. Если папа с мамой проявляют излишнюю агрессию, ведут себя неадекватно, то, возможно, такие же черты характера они передали и малышам.
+        </p>
+        <p>
+         Добросовестный заводчик должен предоставить необходимые документы – ветеринарный паспорт и щенячью карточку.
+        </p>
+        <p>
+         Не стесняйтесь задавать при покупке щенка любые интересующие вас вопросы: чем кормили и в каких условиях содержали щенную суку, как проходили роды, какой по счету родился выбранный вами малыш, как он реагирует на различные внешние раздражители, как перенес первые прививки, проводилась ли дегельминтизация. Уважающий себя и свое дело заводчик предоставит вам полную информацию и даст множество дополнительных советов и рекомендаций.
+        </p>
+        <h2>
+         Фото щенков басенджи
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/41e/41e152db77500e7a36b07ded8990568c.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/41e/380_264_2/41e152db77500e7a36b07ded8990568c.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/41e/380_264_2/41e152db77500e7a36b07ded8990568c.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/41e/380_264_2/41e152db77500e7a36b07ded8990568c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6e4/6e4610587dfc84b6cf82d5843d7f2d87.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/6e4/380_264_2/6e4610587dfc84b6cf82d5843d7f2d87.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/6e4/380_264_2/6e4610587dfc84b6cf82d5843d7f2d87.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/6e4/380_264_2/6e4610587dfc84b6cf82d5843d7f2d87.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/940/9404669031ac88577c888186a6de6e77.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/940/380_264_2/9404669031ac88577c888186a6de6e77.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/940/380_264_2/9404669031ac88577c888186a6de6e77.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/940/380_264_2/9404669031ac88577c888186a6de6e77.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/771/77133e98eb73ad817a2e290829c904e4.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/771/380_264_2/77133e98eb73ad817a2e290829c904e4.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/771/380_264_2/77133e98eb73ad817a2e290829c904e4.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/771/380_264_2/77133e98eb73ad817a2e290829c904e4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2be/2beef53d7a7e7909b6624f74fccf1302.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/2be/380_264_2/2beef53d7a7e7909b6624f74fccf1302.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/2be/380_264_2/2beef53d7a7e7909b6624f74fccf1302.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/2be/380_264_2/2beef53d7a7e7909b6624f74fccf1302.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8f0/8f0fa20a15538b93254722495503a940.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/8f0/380_264_2/8f0fa20a15538b93254722495503a940.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/8f0/380_264_2/8f0fa20a15538b93254722495503a940.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/8f0/380_264_2/8f0fa20a15538b93254722495503a940.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/274/2747fdc1f6f6378345acf2a03765a7d6.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/274/380_264_2/2747fdc1f6f6378345acf2a03765a7d6.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/274/380_264_2/2747fdc1f6f6378345acf2a03765a7d6.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/274/380_264_2/2747fdc1f6f6378345acf2a03765a7d6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/94c/94c96728c6738aa85704fcaf17c8e7b4.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/94c/380_264_2/94c96728c6738aa85704fcaf17c8e7b4.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/94c/380_264_2/94c96728c6738aa85704fcaf17c8e7b4.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/94c/380_264_2/94c96728c6738aa85704fcaf17c8e7b4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/186/1865d084d4275add1f37d3ccc516cc9e.jpg" title="">
+           <div class="lazy-load" data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/186/380_264_2/1865d084d4275add1f37d3ccc516cc9e.jpg">
+            <noscript data-alt="Басенджи" data-class="article_pic" data-original="/upload/resize_cache/iblock/186/380_264_2/1865d084d4275add1f37d3ccc516cc9e.jpg">
+             <img alt="Басенджи" class="article_pic" src="/upload/resize_cache/iblock/186/380_264_2/1865d084d4275add1f37d3ccc516cc9e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Сколько стоит басенджи
+        </h2>
+        <p>
+         Популярность породы в России не очень высока, но если вы хотите купить именно басенджи, то питомники, занимающиеся их разведением, найти можно. Стоить собака будет достаточно дорого, но взамен вы получаете гарантии того, что ваш питомец – действительно представитель той породы, о которой вы мечтали.
+        </p>
+        <p>
+         Цена на басенджи в питомниках составляет 80 000 – 90 000 рублей. На итоговую сумму влияет класс собаки, экстерьерные характеристики, именитость родителей, известность заводчика.
+        </p>
+        <p>
+         Щенки этой породы в Интернете выставляются на продажу по более скромным расценкам, до 50 000 рублей. Но, скорее всего, животное передадут без документов. Будет ли это басенджи или просто похожая внешне собака – большой вопрос.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения басенджи на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27731/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Лиза Ефимовская" data-original="/upload/resize_cache/main/2ce/200_200_2/z6tcvy3conamu5fdpre9j3bgdoguszrr.jpg">
+            <noscript data-alt="Лиза Ефимовская" data-original="/upload/resize_cache/main/2ce/200_200_2/z6tcvy3conamu5fdpre9j3bgdoguszrr.jpg">
+             <img alt="Лиза Ефимовская" src="/upload/resize_cache/main/2ce/200_200_2/z6tcvy3conamu5fdpre9j3bgdoguszrr.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/isprazhnenie-na-divan-5504/">
+           испражнение на диван
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте! Познакомилась с молодым человеком, оказалось у него есть собака. Выяснилось, что я первый человек помимо него, которого она знает. Отношения с собакой вроде неплохие, но я совершенно не знаю как к...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27731/">
+            Лиза Ефимовская
+           </a>
+          </span>
+          <span class="vopros-date">
+           2 месяца назад
+          </span>
+          <span class="vopros-smotr">
+           445 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/3708/">
+          <div class="ava-med">
+           <div class="noava fill8">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/tyemnye-pyatna-na-beloy-shersti-2228/">
+           Тёмные пятна на белой шерсти
+          </a>
+         </div>
+         <div class="forum-text">
+          Хотим взять басенджи. Нашли объявление. Щенок 7 месяцев, бело-рыжий. 
+У него на груди и на носу тёмные пятна на белом. Почему так? Нормально ли это? 
+Снимок из объявления.
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/3708/">
+            Андрей  Ильиных
+           </a>
+          </span>
+          <span class="vopros-date">
+           3 года назад
+          </span>
+          <span class="vopros-smotr">
+           4388 просмотров
+          </span>
+          <span class="vopros-otvet">
+           2 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/1717/">
+          <div class="ava-med">
+           <div class="noava fill7">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/gipoallergennost-1198/">
+           Гипоаллергенность
+          </a>
+         </div>
+         <div class="forum-text">
+          Подскажите, пожалуйста, действительно ли басенджи - это гипоаллергенная собака? Я аллергик, но, вроде как пишут, что собака безвредна, но я в сомнениях
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/1717/">
+            Полина М
+           </a>
+          </span>
+          <span class="vopros-date">
+           4 года назад
+          </span>
+          <span class="vopros-smotr">
+           5460 просмотров
+          </span>
+          <span class="vopros-otvet">
+           3 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/1168/">
+          <div class="ava-med">
+           <div class="noava fill8">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/pitomnik-basendzhi-919/">
+           Питомник басенджи
+          </a>
+         </div>
+         <div class="forum-text">
+          Добрый день, можете порекомендовать питомник басенджи в Москве или Московской области?
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/1168/">
+            Александр Олейник
+           </a>
+          </span>
+          <span class="vopros-date">
+           5 лет назад
+          </span>
+          <span class="vopros-smotr">
+           6046 просмотров
+          </span>
+          <span class="vopros-otvet">
+           3 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/basendzhi/forum/">
+        Перейти на
+        форум басенджи
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Басенджи" src="/upload/iblock/a24/a24a876545492f6bf12ab1fdfd303c08.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/basendzhi/">
+          Басенджи
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/basendzhi/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/basendzhi/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/basendzhi/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/basendzhi/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/basendzhi/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/basendzhi/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/estonskaya-gonchaya/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Эстонская гончая" data-original="/upload/resize_cache/iblock/fcc/100_100_1/fcc2e4db742cfe3125dff431c50d47d3.jpg">
+          <noscript data-alt="Эстонская гончая" data-original="/upload/resize_cache/iblock/fcc/100_100_1/fcc2e4db742cfe3125dff431c50d47d3.jpg">
+           <img alt="Эстонская гончая" src="/upload/resize_cache/iblock/fcc/100_100_1/fcc2e4db742cfe3125dff431c50d47d3.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Эстонская гончая
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/bishon-frize/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бишон фризе" data-original="/upload/resize_cache/iblock/6f3/100_100_1/6f3dac95ba1fea52efed069f2e512b1f.jpg">
+          <noscript data-alt="Бишон фризе" data-original="/upload/resize_cache/iblock/6f3/100_100_1/6f3dac95ba1fea52efed069f2e512b1f.jpg">
+           <img alt="Бишон фризе" src="/upload/resize_cache/iblock/6f3/100_100_1/6f3dac95ba1fea52efed069f2e512b1f.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бишон фризе
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/border-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бордер-терьер" data-original="/upload/resize_cache/iblock/aab/100_100_1/aab34a0f98d67e5b7160bfea9b0e6159.jpg">
+          <noscript data-alt="Бордер-терьер" data-original="/upload/resize_cache/iblock/aab/100_100_1/aab34a0f98d67e5b7160bfea9b0e6159.jpg">
+           <img alt="Бордер-терьер" src="/upload/resize_cache/iblock/aab/100_100_1/aab34a0f98d67e5b7160bfea9b0e6159.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бордер-терьер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/russkaya-psovaya-borzaya/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Русская псовая борзая" data-original="/upload/resize_cache/iblock/3ea/100_100_1/3ea1f19fedb872f465ab48774e95886d.jpg">
+          <noscript data-alt="Русская псовая борзая" data-original="/upload/resize_cache/iblock/3ea/100_100_1/3ea1f19fedb872f465ab48774e95886d.jpg">
+           <img alt="Русская псовая борзая" src="/upload/resize_cache/iblock/3ea/100_100_1/3ea1f19fedb872f465ab48774e95886d.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Русская псовая борзая
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbasendzhi%252F%253Fcheck_key%253D70594adf871a34acca638b9c8118f938%2526ANIMAL_CODE%253Dbasendzhi%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbasendzhi%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmJhc2VuZHpoaSUyRiUzRmNoZWNrX2tleSUzRDcwNTk0YWRmODcxYTM0YWNjYTYzOGI5YzgxMThmOTM4JTI2QU5JTUFMX0NPREUlM0RiYXNlbmR6aGklMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGYmFzZW5kemhpJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbasendzhi%252F%253Fcheck_key%253D70594adf871a34acca638b9c8118f938%2526ANIMAL_CODE%253Dbasendzhi%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fbasendzhi%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbasendzhi%252F%253Fcheck_key%253D70594adf871a34acca638b9c8118f938%2526ANIMAL_CODE%253Dbasendzhi%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbasendzhi%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "85.174.201.41"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--352291ca9ece9a1ab7c01ae6a1daba68-->

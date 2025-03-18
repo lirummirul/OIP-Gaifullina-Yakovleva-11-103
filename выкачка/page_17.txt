@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'99dfb8ab5bf5'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Американский стаффордширский терьер, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Американский стаффордширский терьер — воин без страха и упрека, сильный, умный и преданный пес, способный без раздумий встать на вашу защиту и биться до конца." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/c75/c7584a75088129386cda950c24b3fabf.jpg" property="og:image"/>
+     <title>
+      Стаффордширский терьер: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/amerikanskiy-staffordshirskiy-terer/" property="og:url"/>
+     <meta content="Стаффордширский терьер: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Американский стаффордширский терьер — воин без страха и упрека, сильный, умный и преданный пес, способный без раздумий встать на вашу защиту и биться до конца." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/amerikanskiy-staffordshirskiy-terer/" itemprop="url">
+         <span itemprop="title">
+          Американский стаффордширский терьер
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Американский стаффордширский терьер
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/amerikanskiy-staffordshirskiy-terer/">
+          Описание
+         </a>
+         <a href="/dog/amerikanskiy-staffordshirskiy-terer/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/amerikanskiy-staffordshirskiy-terer/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/amerikanskiy-staffordshirskiy-terer/photo/">
+          Фото
+         </a>
+         <a href="/dog/amerikanskiy-staffordshirskiy-terer/video/">
+          Видео
+         </a>
+         <a href="/dog/amerikanskiy-staffordshirskiy-terer/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/amerikanskiy-staffordshirskiy-terer/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Американский стаффордширский терьер" src="/upload/iblock/8d4/8d4956413c8aa7492902161b5cb397f6.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/amerikanskiy-staffordshirskiy-terer/">
+           АСТ
+          </a>
+          ,
+          <a href="/dog/amerikanskiy-staffordshirskiy-terer/">
+           амстафф
+          </a>
+          ,
+          <a href="/dog/amerikanskiy-staffordshirskiy-terer/">
+           стаффордширский терьер
+          </a>
+         </span>
+         <p>
+          Американский стаффордширский терьер — воин без страха и упрека, сильный, умный и преданный пес, способный без раздумий встать на вашу защиту и биться до конца.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/c7e/c7eef79e9843dc1c61f301026ff7559c.jpg" data-cap="We can't get enough of Elsi &amp; Vilu." data-fancybox="images" data-link="https://www.flickr.com/photos/mollyandstitch/39140688505/" data-type="image" data-username="Molly &amp; Stitch" href="/upload/uf/b40/b401fae5b5513e49112e02926506a381.jpg">
+            <img alt="Американский стаффордширский терьер" src="/upload/resize_cache/uf/b40/293_293_2/b401fae5b5513e49112e02926506a381.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/d26/d262f3c85a3cff2fdf2c16c7b1490a85.jpg" data-cap="Love" data-fancybox="images" data-link="https://www.flickr.com/photos/karmen_gallego/25987637795/" data-type="image" data-username="CarmenGallego" href="/upload/uf/396/3969cc0e139801ad9285671c5e25bf60.jpg">
+            <img alt="Американский стаффордширский терьер" src="/upload/resize_cache/uf/396/293_293_2/3969cc0e139801ad9285671c5e25bf60.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/d90/d903305ced476d0a5519a6c7ca1e62a8.jpg" data-cap="" data-fancybox="images" data-link="https://www.instagram.com/p/BllGn6DlVcd/" data-type="image" data-username="amstaff_ukraine" href="/upload/uf/7c7/7c739941e1a8f48826afb420f766e6dc.jpg">
+            <img alt="Американский стаффордширский терьер" src="/upload/resize_cache/uf/7c7/293_293_2/7c739941e1a8f48826afb420f766e6dc.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/amerikanskiy-staffordshirskiy-terer/photo/">
+         Все
+            фото стаффордширского терьера
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы американский стаффордширский терьер
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность амстаффа
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер американского стаффордширского терьера
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание амстаффа
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни американского стаффордширского терьера
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Сколько стоит американский стаффордширский терьер
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Американский стаффордширский терьер
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         США
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         1936 год
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 25-32 кг, суки 22-26 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 46-48 см, суки 43-46 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         10-12 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Амстаффы достаточно компактны и хорошо подходят для содержания в условиях городской квартиры.
+        </li>
+        <li>
+         Это очень мощные и сильные животные, которые к тому же на удивление проворны и подвижны.
+        </li>
+        <li>
+         Любители породы отмечают поразительную сообразительность и высокий интеллект собак. Они очень легко дрессируются, а правильно воспитанный стаффордширский терьер способен понимать своего хозяина без слов. Стоит оговориться, что вырастить настоящего друга из щенка этой породы можно только при положительной мотивировке. Грубость, физические наказания, злость недопустимы.
+        </li>
+        <li>
+         Характерной чертой стаффордшира является очень высокий порог раздражительности — вывести собаку из себя достаточно сложно.
+        </li>
+        <li>
+         Универсальность амстаффа заключается и в том, что он одинаково хорошо справляется как с задачей защитника и охранника, так и с ролью прекрасного душевного компаньона.
+        </li>
+        <li>
+         Собаки этой породы всегда готовы принять участие в затеянной игре, их энергия просто бьет ключом. Отмечено, что в отношениях с хозяйскими детьми они проявляют достаточно терпения, с удовольствием подключаются к их шалостям и развлечениям. При этом амстафф всегда готов быстро отреагировать на изменившуюся ситуацию. Чуять опасность на подсознательном уровне — врожденная особенность этих собак.
+        </li>
+        <li>
+         Американский стаффордширский терьер хорошо приспособлен к городской жизни. Благодаря уравновешенной психике, он спокойно реагирует на суету, не испытывает нужды в длительных прогулках.
+        </li>
+        <li>
+         Содержать этих собак несложно. Особых проблем со здоровьем, при условии постоянного контроля за самочувствием вашего питомца, тоже не возникнет.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-original="/upload/iblock/c75/c7584a75088129386cda950c24b3fabf.jpg">
+          <noscript data-alt="Американский стаффордширский терьер" data-original="/upload/iblock/c75/c7584a75088129386cda950c24b3fabf.jpg">
+           <img alt="Американский стаффордширский терьер" src="/upload/iblock/c75/c7584a75088129386cda950c24b3fabf.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Американский стаффордширский терьер
+          </strong>
+          — собака, воплотившая в себе все то лучшее, что хотел видеть в ней человек. Любовь и неподкупность, отчаянная смелость и рассудительность, игривость и солидность, безудержная сила и тонкость натуры, физическая мощь и легкость движений – эти, казалось бы, абсолютно несочетаемые черты сделали амстаффа собакой-легендой.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Минимальная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не переносит (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Почти не слышно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Американский стаффордширский терьер основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/amerikanskiy-staffordshirskiy-terer/razmeri-porodi/">
+         размеры стаффордширского терьера
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы американский стаффордширский терьер
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Американский стаффордширский терьер" data-fancybox="gallery" href="/upload/iblock/733/733b1ad300ef11387e7ab8599399e0e8.jpg" title="Американский стаффордширский терьер">
+          <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/733/412_2150_1/733b1ad300ef11387e7ab8599399e0e8.jpg">
+           <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/733/412_2150_1/733b1ad300ef11387e7ab8599399e0e8.jpg">
+            <img alt="Американский стаффордширский терьер" class="article_pic" height="617" src="/upload/resize_cache/iblock/733/412_2150_1/733b1ad300ef11387e7ab8599399e0e8.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Американский стаффордширский терьер
+         </div>
+        </div>
+        <p>
+         Желание лицезреть жестокие и кровавые сцены наблюдается за человеком с незапамятных времен. Не исключением были и средневековые англичане, которые любили развлекаться, устраивая схватки собак с быками, медведями и дикими кабанами. Чаще всего для этих целей использовались бульдоги и мастифы. Проблема заключалась в том, что собаки этих пород были очень крупные и недостаточно проворные, из-за чего часто погибали от ударов копыт или рогов разъяренных противников.
+        </p>
+        <p>
+         Желание «модернизировать» бойцовые качества псов заставило владельцев заняться селекционной работой. Лучшей кандидатурой для скрещивания с бульдогами оказались терьеры: собаки активные, подвижные и, что важно, очень умные. Так, в самом начале XIX века появились
+         <a class="ph" href="/dog/bulterer/">
+          бультерьеры
+         </a>
+         , которые прекрасно сочетали в себе лучшие черты пород-предшественников. После запрета на бои с быками, которые английский парламент принял в 1835 году, в моду вошли собачьи драки, и оправдавшая себя «терьеризация» породы позволила получить фенотип, как нельзя лучше подходивший именно для этой цели. Варианты названия породы – стаффордширский терьер, питбультерьер – постепенно трансформировались и закрепились в едином названии английской ветви «стаффордширский бультерьер».
+        </p>
+        <p>
+         Английские мигранты, ринувшиеся в Америку после победы Севера над Югом в Гражданской войне, привезли на континент большое количество животных. Жестокие собачьи бои, к этому времени уже запрещенные на островах Туманного Альбиона, получили в Новом Свете особую популярность. Основным направлением селекционной работы оставалось развитие и закрепление бойцовых качеств собак. Объединенный кинологический клуб, созданный в самом конце XIX века в штате Мичиган, основным направлением своей деятельности избрал развитие и совершенствование породы питбультерьер. Псы, выведенные здесь, не только принимали участие в боях, но также с успехом использовались для охраны домов, фермерских хозяйств, в охоте на волков.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок американского стаффордширского терьера" data-fancybox="gallery" href="/upload/iblock/fc1/fc174c2c8bd1bb79de67ba1ca6a6dbbc.jpg" title="Щенок американского стаффордширского терьера">
+          <div class="lazy-load" data-alt="Щенок американского стаффордширского терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/fc1/412_2150_1/fc174c2c8bd1bb79de67ba1ca6a6dbbc.jpg">
+           <noscript data-alt="Щенок американского стаффордширского терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/fc1/412_2150_1/fc174c2c8bd1bb79de67ba1ca6a6dbbc.jpg">
+            <img alt="Щенок американского стаффордширского терьера" class="article_pic" height="274" src="/upload/resize_cache/iblock/fc1/412_2150_1/fc174c2c8bd1bb79de67ba1ca6a6dbbc.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок американского стаффордширского терьера
+         </div>
+        </div>
+        <p>
+         В то же время, все громче и громче раздавались голоса тех любителей животных, которые не разделяли страсти к собачьим боям и больше внимания уделяли выставочной работе. Они занялись разработкой стандарта и усовершенствованием экстерьера питбуля. Как результат, была получена собака, внешне очень похожая на
+         <a class="ph" href="/dog/pitbul/">
+          питбультерьера
+         </a>
+         , но вполне пригодная для «мирной жизни». Назвали ее стаффордширским терьером, и именно под этим наименованием порода была признана Американским кинологическим клубом в 1936 году. Это привело к разделению заводчиков на два лагеря. Одни регистрировали своих питомцев исключительно как бойцовых американских питбулей, другие отдали предпочтение стаффордширским терьерам и напрочь не признавали питбультерьеров.
+        </p>
+        <p>
+         FCI в мае 1971 года официально зарегистрировала амстаффов в своем реестре под № 286. В следующем году Американский кинологический клуб изменил название породы на «американский стаффордширский терьер», подчеркивая тем самым, что ветви имеют определенные различия – «американец» в среднем на 8 см выше в холке и на 5 кг тяжелее «англичанина».
+        </p>
+        <p>
+         В Россию первые амстаффы попали в 80-х годах прошлого века и очень быстро завоевали популярность. Высокий спрос привел к тому, что недобросовестные заводчики не удосуживались контролировать ни внешний вид полученных собак, ни их психическую устойчивость. Именно в этом кроется причина того, что стаффордширских терьеров стали считать «собаками-убийцами». Такая дурная слава целиком и полностью лежит на совести владельцев, которые либо по глупости и неумению, либо осознанно воспитали агрессивных и свирепых псов. Сегодня тенденция поменялась, стаффорды уверенно занимают нишу собак-компаньонов.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/895/8958874a22fa5fa5ddee74a8a62f4ccc.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/895/512_342_2/8958874a22fa5fa5ddee74a8a62f4ccc.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/895/512_342_2/8958874a22fa5fa5ddee74a8a62f4ccc.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/895/512_342_2/8958874a22fa5fa5ddee74a8a62f4ccc.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a50/a50692ce9c59cd96a9cdcc2e286315c8.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a50/512_342_2/a50692ce9c59cd96a9cdcc2e286315c8.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a50/512_342_2/a50692ce9c59cd96a9cdcc2e286315c8.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/a50/512_342_2/a50692ce9c59cd96a9cdcc2e286315c8.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2>
+         Видео: Американский стаффордширский терьер
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="YmwH83UVixA">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность амстаффа
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Американский стаффордширский терьер с некупированными ушами" data-fancybox="gallery" href="/upload/iblock/086/086565e1cc018d3fb683eddfbede4372.jpg" title="Американский стаффордширский терьер с некупированными ушами">
+          <div class="lazy-load" data-alt="Американский стаффордширский терьер с некупированными ушами" data-class="article_pic" data-original="/upload/resize_cache/iblock/086/412_2150_1/086565e1cc018d3fb683eddfbede4372.jpg">
+           <noscript data-alt="Американский стаффордширский терьер с некупированными ушами" data-class="article_pic" data-original="/upload/resize_cache/iblock/086/412_2150_1/086565e1cc018d3fb683eddfbede4372.jpg">
+            <img alt="Американский стаффордширский терьер с некупированными ушами" class="article_pic" height="617" src="/upload/resize_cache/iblock/086/412_2150_1/086565e1cc018d3fb683eddfbede4372.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Американский стаффордширский терьер с некупированными ушами
+         </div>
+        </div>
+        <p>
+         Американский стаффордширский терьер – крепкая, с хорошо развитым костяком и ярко выраженной атлетической мускулатурой, собака.
+        </p>
+        <p>
+         Высота кобелей в холке составляет 46-48 см, сук – 43-46 см. Масса тела – 25-30 кг и 22-25 кг соответственно.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Средней длины, но очень объемная и широкая. Череп практически плоский, широкий между ушами, почти квадратной формы. Затылочный бугор выражен слабо. Переход от морды к слегка выпуклому лбу хорошо просматривается. Морда средней длины, соотношение к длине черепа – 1:1. Жевательные, щечные и теменные мышцы рельефные, плотные. Губы прикрывают челюсти, но не выглядят отвисшими.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Мочка черная, скорее крупного размера с хорошо раскрытыми ноздрями.
+        </p>
+        <h3>
+         Челюсти
+        </h3>
+        <p>
+         Челюсти американского стаффордширского терьера очень мощные, крепкие, плотные.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Расположены высоко и широко. У амстаффов возможны варианты как остро и коротко купированных, так и некупированных ушей. Последний вариант оценивается выше, если раковины от природы короткие и очень устойчиво стоят на хряще (так называемая «роза»).
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Поставлены низко и широко расставлены, круглой формы. Цвет радужной оболочки – темный. Веки пигментированные.
+        </p>
+        <h3>
+         Зубы
+        </h3>
+        <p>
+         Зубы американского стаффордширского терьера крупного размера, белые. Резцы на нижней челюсти расположены линейно. Прикус ножницеобразный.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Крепкая, с хорошо развитой мускулатурой, равномерно расширяется к холке. Длина – средняя. Складки и отвислости не наблюдаются.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда американского стаффордширского терьера" data-fancybox="gallery" href="/upload/iblock/0c1/0c1c3affcd1614c1c44cee41bc660b51.jpg" title="Морда американского стаффордширского терьера">
+          <div class="lazy-load" data-alt="Морда американского стаффордширского терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/0c1/1024_2150_1/0c1c3affcd1614c1c44cee41bc660b51.jpg">
+           <noscript data-alt="Морда американского стаффордширского терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/0c1/1024_2150_1/0c1c3affcd1614c1c44cee41bc660b51.jpg">
+            <img alt="Морда американского стаффордширского терьера" class="article_pic" src="/upload/resize_cache/iblock/0c1/1024_2150_1/0c1c3affcd1614c1c44cee41bc660b51.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда американского стаффордширского терьера
+         </div>
+        </div>
+        <h3>
+         Холка
+        </h3>
+        <p>
+         Холка у амстаффа явно выражена, мускулистая, с плавным переходом в линию спины. Лопатки длинные, прижатые к спине.
+        </p>
+        <h3>
+         Спина
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бегущий амстафф" data-fancybox="gallery" href="/upload/iblock/677/6778b28c506ebcec0812af41cb0aaf04.jpg" title="Бегущий амстафф">
+          <div class="lazy-load" data-alt="Бегущий амстафф" data-class="article_pic" data-original="/upload/resize_cache/iblock/677/412_2150_1/6778b28c506ebcec0812af41cb0aaf04.jpg">
+           <noscript data-alt="Бегущий амстафф" data-class="article_pic" data-original="/upload/resize_cache/iblock/677/412_2150_1/6778b28c506ebcec0812af41cb0aaf04.jpg">
+            <img alt="Бегущий амстафф" class="article_pic" height="274" src="/upload/resize_cache/iblock/677/412_2150_1/6778b28c506ebcec0812af41cb0aaf04.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бегущий амстафф
+         </div>
+        </div>
+        <p>
+         Короткая, прямая, линия немного понижается к крупу. Мускулатура хорошо развита.
+        </p>
+        <h3>
+         Круп
+        </h3>
+        <p>
+         Слегка скошенный, умеренно округлый. Широкий и мускулистый.
+        </p>
+        <h3>
+         Грудная клетка
+        </h3>
+        <p>
+         Широкая и глубокая, ребра округлые.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвост амстаффа прямой и короткий. Поставлен низко, слегка сужается к концу. В состоянии возбуждения держится прямо.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Передние конечности при взгляде спереди параллельные и прямые, поставлены широко. Наблюдается умеренная высокопередость. Костяк мощный, мускулатура рельефная и атлетичная. Локти смотрят строго назад и прижаты к корпусу.
+        </p>
+        <p>
+         Задние конечности амстаффа при осмотре сзади прямые и параллельные, с хорошо развитой (но не чрезмерно) мускулатурой. Углы суставов хорошо выражены.
+        </p>
+        <h3>
+         Лапы
+        </h3>
+        <p>
+         Сводистые, не крупные, круглые и собранные.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="амстафф на выставке" data-fancybox="gallery" href="/upload/iblock/fd6/fd6320824816b0941ded7bc2615a7504.jpg" title="амстафф на выставке">
+          <div class="lazy-load" data-alt="амстафф на выставке" data-class="article_pic" data-original="/upload/resize_cache/iblock/fd6/412_2150_1/fd6320824816b0941ded7bc2615a7504.jpg">
+           <noscript data-alt="амстафф на выставке" data-class="article_pic" data-original="/upload/resize_cache/iblock/fd6/412_2150_1/fd6320824816b0941ded7bc2615a7504.jpg">
+            <img alt="амстафф на выставке" class="article_pic" height="274" src="/upload/resize_cache/iblock/fd6/412_2150_1/fd6320824816b0941ded7bc2615a7504.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          амстафф на выставке
+         </div>
+        </div>
+        <p>
+         Шерсть американского стаффордширского терьера короткая, в меру густая, жесткая на ощупь, плотно прилегает к телу. Прямая и блестящая на вид.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Однотонный – от кремового до черного, но не белый, а также двухцветный, пятнистый, тигровый или пегий. Возможны белые отметины, если они составляют не более 20% от основного тона окраса амстаффа.
+        </p>
+        <p>
+         Половая принадлежность собаки ярко проявляется в ее внешнем виде.
+        </p>
+        <h3>
+         Возможные пороки
+        </h3>
+        <p>
+         Любые отклонения от стандарта в зависимости от степени их выраженности могут считаться либо недостатками, либо пороками.
+        </p>
+        <p>
+         К дисквалифицирующим порокам американских стаффордширских терьеров относят: крипторхизм, телесный цвет мочки носа, перекос нижней челюсти, перекус, глухоту, длинный или купированный хвост, светлые глаза, а также движение иноходью.
+        </p>
+        <h2>
+         Фото амстаффа
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ea8/ea83ad75e00746a0751cb5b1e0910f60.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ea8/380_264_2/ea83ad75e00746a0751cb5b1e0910f60.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ea8/380_264_2/ea83ad75e00746a0751cb5b1e0910f60.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/ea8/380_264_2/ea83ad75e00746a0751cb5b1e0910f60.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/345/3456b10a8b62a2f56f9b21e7078d8f1e.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/345/380_264_2/3456b10a8b62a2f56f9b21e7078d8f1e.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/345/380_264_2/3456b10a8b62a2f56f9b21e7078d8f1e.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/345/380_264_2/3456b10a8b62a2f56f9b21e7078d8f1e.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c8f/c8f1dbe7a0174c2bbe12ecd60b32b309.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c8f/380_264_2/c8f1dbe7a0174c2bbe12ecd60b32b309.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c8f/380_264_2/c8f1dbe7a0174c2bbe12ecd60b32b309.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/c8f/380_264_2/c8f1dbe7a0174c2bbe12ecd60b32b309.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a24/a24e437794fd8416f7d204a766888e98.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a24/380_264_2/a24e437794fd8416f7d204a766888e98.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a24/380_264_2/a24e437794fd8416f7d204a766888e98.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/a24/380_264_2/a24e437794fd8416f7d204a766888e98.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/dea/dead6a80cf1a9cc94b86512a8dde5e0c.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/dea/380_264_2/dead6a80cf1a9cc94b86512a8dde5e0c.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/dea/380_264_2/dead6a80cf1a9cc94b86512a8dde5e0c.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/dea/380_264_2/dead6a80cf1a9cc94b86512a8dde5e0c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/481/4818440f8cd7b1c3600083cbc08fbe45.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/481/380_264_2/4818440f8cd7b1c3600083cbc08fbe45.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/481/380_264_2/4818440f8cd7b1c3600083cbc08fbe45.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/481/380_264_2/4818440f8cd7b1c3600083cbc08fbe45.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ac1/ac1fb6f1d625226037e877bcaee4f558.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ac1/380_264_2/ac1fb6f1d625226037e877bcaee4f558.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ac1/380_264_2/ac1fb6f1d625226037e877bcaee4f558.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/ac1/380_264_2/ac1fb6f1d625226037e877bcaee4f558.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/914/9146e6957d61d0df46ae8684d2ffc83b.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/914/380_264_2/9146e6957d61d0df46ae8684d2ffc83b.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/914/380_264_2/9146e6957d61d0df46ae8684d2ffc83b.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/914/380_264_2/9146e6957d61d0df46ae8684d2ffc83b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a3c/a3c9482d004afb2db179fdfb680c79a1.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a3c/380_264_2/a3c9482d004afb2db179fdfb680c79a1.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a3c/380_264_2/a3c9482d004afb2db179fdfb680c79a1.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/a3c/380_264_2/a3c9482d004afb2db179fdfb680c79a1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер американского стаффордширского терьера
+        </h2>
+        <p>
+         Если говорить о характере амстаффа, то вряд ли еще найдется порода собак, характер которой описывался бы столь разноплановыми, а иногда совершенно противоположными эпитетами.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Амстафф с хозяином" data-fancybox="gallery" href="/upload/iblock/ac4/ac4baaf22b53be8434c8cc31d23cff4c.jpg" title="Амстафф с хозяином">
+          <div class="lazy-load" data-alt="Амстафф с хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/ac4/412_2150_1/ac4baaf22b53be8434c8cc31d23cff4c.jpg">
+           <noscript data-alt="Амстафф с хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/ac4/412_2150_1/ac4baaf22b53be8434c8cc31d23cff4c.jpg">
+            <img alt="Амстафф с хозяином" class="article_pic" height="617" src="/upload/resize_cache/iblock/ac4/412_2150_1/ac4baaf22b53be8434c8cc31d23cff4c.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Амстафф с хозяином
+         </div>
+        </div>
+        <p>
+         Надежный, умный, преданный, наделенный немалой долей веселья и даже некоторой шаловливости, уравновешенный и выдержанный – так говорят о стаффордшире любители породы. Агрессивный и злобный – такую оценку дают критики породы. Но последние черты характера связаны практически во всех случаях либо с неумелым, либо с направленным на формирование именно отрицательных качеств воспитанием.
+        </p>
+        <p>
+         Любому, кто хочет завести такое животное, стоит твердо уяснить, что американский стаффордширский терьер – очень мощная собака с ярко выраженными сторожевыми и бойцовскими качествами. Она до конца будет защищать не только членов семьи, в которой живет, но и целостность вверенной ей территории от любых посягательств. При таких задатках правильно воспитанный амстафф будет проявлять агрессию только в случае, если почувствует угрозу со стороны. Интуиция собаки настолько сильна, что иногда создается впечатление, что она читает мысли вашего недоброжелателя. Атакует стаффордширский терьер очень часто без «объявления войны». Лай и рычание – это для слабаков. Бой пес ведет до полной победы, остановить его практически невозможно. В «пиковых» ситуациях это вполне допустимо, а вот в обыденной жизни такое поведение может принести немало проблем, поэтому правильное воспитание и умелая социализация собаки очень важны. Дав понять щенку, что все члены вашей семьи – это его друзья, вы со временем получите любящего, внимательного и преданного друга.
+        </p>
+        <p>
+         Изначально одной из задач при выведении породы стаффордширский терьер было получение пса, наилучшим образом подходящего для выполнения функции защитника семьи. Общий язык с амстаффом без труда найдут люди самых разных возрастов. Для детей собака станет нежной внимательной нянькой, которая терпеливо вынесет все шалости малышей. Но оставлять наедине с совсем маленькими детьми пса все же не стоит.
+        </p>
+        <p>
+         Американский стаффордширский терьер в спокойной домашней обстановке может быть милейшим созданием, стремящимся всячески развеселить и порадовать своего хозяина. Но авторитет последнего должен быть непререкаемым, а справиться с такой сильной духом и телом собакой сможет только достаточно опытный владелец. Для того, чтобы контролировать амстаффа и управлять его природными инстинктами, одного желания недостаточно – без профессиональных знаний и умений тут не обойтись.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Американский стаффордширский терьер с кошкой" data-fancybox="gallery" href="/upload/iblock/42c/42c0cc1aec84c649ef2b4156782f8f3d.jpg" title="Американский стаффордширский терьер с кошкой">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер с кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/42c/512_342_2/42c0cc1aec84c649ef2b4156782f8f3d.jpg">
+            <noscript data-alt="Американский стаффордширский терьер с кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/42c/512_342_2/42c0cc1aec84c649ef2b4156782f8f3d.jpg">
+             <img alt="Американский стаффордширский терьер с кошкой" class="article_pic" src="/upload/resize_cache/iblock/42c/512_342_2/42c0cc1aec84c649ef2b4156782f8f3d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Американский стаффордширский терьер с кошкой
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Амстафф гуляет с ребенком" data-fancybox="gallery" href="/upload/iblock/f45/f45d537414fbb3196312dcd3d213edf4.jpg" title="Амстафф гуляет с ребенком">
+           <div class="lazy-load" data-alt="Амстафф гуляет с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/f45/512_342_2/f45d537414fbb3196312dcd3d213edf4.jpg">
+            <noscript data-alt="Амстафф гуляет с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/f45/512_342_2/f45d537414fbb3196312dcd3d213edf4.jpg">
+             <img alt="Амстафф гуляет с ребенком" class="article_pic" src="/upload/resize_cache/iblock/f45/512_342_2/f45d537414fbb3196312dcd3d213edf4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Амстафф гуляет с ребенком
+          </div>
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Американский стаффордширский терьер – собака, воспитание и дрессировку которой ни в коем случае нельзя пускать на самотек. С самого первого дня появления щенка в вашем доме нужно четко осознать всю ответственность, которую вы приняли на себя, заведя именно эту породу.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Поймал!" data-fancybox="gallery" href="/upload/iblock/bd8/bd86c6753fe209da485f4624912643ba.jpg" title="Поймал!">
+          <div class="lazy-load" data-alt="Поймал!" data-class="article_pic" data-original="/upload/resize_cache/iblock/bd8/412_2150_1/bd86c6753fe209da485f4624912643ba.jpg">
+           <noscript data-alt="Поймал!" data-class="article_pic" data-original="/upload/resize_cache/iblock/bd8/412_2150_1/bd86c6753fe209da485f4624912643ba.jpg">
+            <img alt="Поймал!" class="article_pic" height="618" src="/upload/resize_cache/iblock/bd8/412_2150_1/bd86c6753fe209da485f4624912643ba.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Поймал!
+         </div>
+        </div>
+        <p>
+         Главное на первом этапе правильно организовать социализацию животного. Приступать можно сразу же после окончания «прививочного карантина». Особое внимание уделите знакомству вашего малыша с  другими домашними животными. Маленький нюанс – для этой цели лучше выбирать наиболее добродушных и ласковых питомцев (вы ведь наверняка знаете таких в своем дворе или поблизости). Щенок очень любопытен, и важно, чтобы от новых знакомств у него оставались только приятные воспоминания, так как пережитый испуг надолго запомнится и со временем перерастет в агрессию. Удивительно, но маленький амстафф может даже запомнить породу своего обидчика. В будущем это чревато проблемами.
+        </p>
+        <p>
+         Часто владельцы стаффордширских терьеров, воспитывая питомца, прибегают к двум крайностям. Они либо все разрешают, либо все запрещают. И то, и другое – ошибочно. В первом случае, когда собака вырастет, вы на прогулках с ней будете выглядеть, мягко говоря, курьезно. Вид хозяина, тщетно пытающегося удержать рвущегося с поводка (даже с мирными целями) мощного амстаффа, просто жалок. Во втором случае вы вырастите труса. А от трусости до злобы – один шаг. И когда ваш любимец его сделает – не знает никто.
+        </p>
+        <p>
+         Очевидно, что некоторые люди считают американского стаффордширского терьера небезопасной собакой. Вы должны быть готовы к тому, что во время прогулок реакция прохожих может быть не всегда адекватной. Не вступайте в пререкания и объяснения на повышенных тонах, собака почувствует вашу агрессию и подумает, что ваш оппонент представляет опасность. Последствия такой оценки ситуации предугадать нетрудно. Лучший выход – пройти мимо с соблюдением всех норм мирного сосуществования.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Игра с канатом" data-fancybox="gallery" href="/upload/iblock/e70/e70980437e26968d6fd6bf00a86d57a3.jpg" title="Игра с канатом">
+          <div class="lazy-load" data-alt="Игра с канатом" data-class="article_pic" data-original="/upload/resize_cache/iblock/e70/412_2150_1/e70980437e26968d6fd6bf00a86d57a3.jpg">
+           <noscript data-alt="Игра с канатом" data-class="article_pic" data-original="/upload/resize_cache/iblock/e70/412_2150_1/e70980437e26968d6fd6bf00a86d57a3.jpg">
+            <img alt="Игра с канатом" class="article_pic" height="309" src="/upload/resize_cache/iblock/e70/412_2150_1/e70980437e26968d6fd6bf00a86d57a3.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Игра с канатом
+         </div>
+        </div>
+        <p>
+         В остальном воспитание амстаффа мало чем отличается от взаимодействия с собаками других пород. Заниматься им нужно с самого первого дня появления малыша дома. Принцип очень прост. Он гласит: «То, что можно – можно всегда; то, что нельзя – нельзя ни при каких условиях». Что такое хорошо и что такое плохо нужно объяснять терпеливо и настойчиво, но ни в коем случае не применяя насилие и наказания, не изменяя по ходу правил игры.
+        </p>
+        <p>
+         Не балуйте своего любимца хотя бы до тех пор, пока не выработаете у него устойчивого поведенческого стереотипа.
+        </p>
+        <p>
+         Амстаффы очень сообразительны и хорошо поддаются дрессировке. Наилучших результатов можно достичь, посещая специальные площадки.
+        </p>
+        <p>
+         И последнее: не нужно растить из собаки монстра. Круче «крутого Уокера» вас это не сделает. Не превращайте питомца в инструмент для самоутверждения.
+        </p>
+        <h2 id="gl5">
+         Уход и содержание амстаффа
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Где мое пиво?" data-fancybox="gallery" href="/upload/iblock/0c1/0c15060c46255273ab2fa418ade6499e.jpg" title="Где мое пиво?">
+          <div class="lazy-load" data-alt="Где мое пиво?" data-class="article_pic" data-original="/upload/resize_cache/iblock/0c1/412_2150_1/0c15060c46255273ab2fa418ade6499e.jpg">
+           <noscript data-alt="Где мое пиво?" data-class="article_pic" data-original="/upload/resize_cache/iblock/0c1/412_2150_1/0c15060c46255273ab2fa418ade6499e.jpg">
+            <img alt="Где мое пиво?" class="article_pic" height="617" src="/upload/resize_cache/iblock/0c1/412_2150_1/0c15060c46255273ab2fa418ade6499e.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Где мое пиво?
+         </div>
+        </div>
+        <p>
+         Амстафф – собака неприхотливая, и соблюдение несложных правил позволит избежать многих проблем или, по крайней мере, минимизировать их.
+        </p>
+        <p>
+         Начиная со щенячьего возраста, вы должны систематически, в установленные сроки, проводить профилактические мероприятия по борьбе с паразитами. Обработка от блох, клещей, дегельминтизация выполняются с применением специальных препаратов, подобранных в зависимости от возраста и веса вашей собаки. Вакцинация – еще одна процедура, которая крайне необходима и которой ни в коем случае нельзя пренебрегать. Отметки обо всех прививках должны быть обязательно внесены в ветеринарный паспорт американского стаффордширского терьера.
+        </p>
+        <p>
+         Уход за шерстью животного несложен. Для вычесывания применяется специальная щетка, которая не только убирает отмершие волоски, но и хорошо массирует кожу. Для ежедневных гигиенических процедур можно использовать влажные салфетки (желательно без ароматизаторов и гипоаллергенные) или просто обтирать любимца смоченным в воде чистым полотенцем. А вот часто купать американского стаффордширского терьера не рекомендуют. Это может навредить как коже, так и шерсти собаки. Не забывайте о необходимости использовать специальные гели и шампуни, предназначенные для этой породы.
+        </p>
+        <p>
+         Ежемесячно подстригайте собаке когти. Амстаффы не очень любят делать «маникюр», поэтому будет лучше, если эту манипуляцию будет проводить хозяин. Да и чистку зубов специальной щеткой тоже постороннему не доверишь. Не забывайте следить за чистотой ушей и состоянием мочки носа. Сухость и трещинки на этом месте говорят о проблемах со здоровьем у собаки.
+        </p>
+        <p>
+         Американский стаффордширский терьер – собака по своей природе достаточно активная, поэтому будьте готовы уделять общению с ней достаточно времени.
+        </p>
+        <p>
+         Что касается кормления, то следует выделить ряд важных моментов.
+        </p>
+        <ul>
+         <li>
+          Крепкий скелет требует повышенного содержания в пище «строительного материала» – кальция, поэтому витамины, содержащие этот элемент, должны обязательно присутствовать в рационе стаффордширского терьера.
+         </li>
+         <li>
+          Преобладать в меню должно мясо, которое можно давать как в вареном, так и в сыром виде. Использование исключительно сухих кормов не рекомендуется.
+         </li>
+         <li>
+          Количество пищи должно соответствовать как возрасту и полу, так и физическому состоянию собаки.
+         </li>
+         <li>
+          В рацион амстаффа должны входить творог, молоко, вареные яйца. В каши и супы рекомендуется добавлять овощи. Полезны мясокостная мука и кости (только не трубчатые).
+         </li>
+         <li>
+          Щенков нужно кормить особенно хорошо, чтобы они активно набирали мышечную массу.
+         </li>
+        </ul>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Амстафф гуляет с хозяином" data-fancybox="gallery" href="/upload/iblock/a90/a902aa8488c942bc4ffa011c7989f794.jpg" title="Амстафф гуляет с хозяином">
+          <div class="lazy-load" data-alt="Амстафф гуляет с хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/a90/1024_2150_1/a902aa8488c942bc4ffa011c7989f794.jpg">
+           <noscript data-alt="Амстафф гуляет с хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/a90/1024_2150_1/a902aa8488c942bc4ffa011c7989f794.jpg">
+            <img alt="Амстафф гуляет с хозяином" class="article_pic" src="/upload/resize_cache/iblock/a90/1024_2150_1/a902aa8488c942bc4ffa011c7989f794.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Амстафф гуляет с хозяином
+         </div>
+        </div>
+        <h2 id="gl6">
+         Здоровье и болезни американского стаффордширского терьера
+        </h2>
+        <p>
+         Американский стаффордширский терьер – порода, отличающаяся неплохим здоровьем. Эти собаки активны и выносливы. Однако есть ряд заболеваний, к которым они имеют некоторую склонность.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Постановка ушей у щенка американского стаффордширского терьера" data-fancybox="gallery" href="/upload/iblock/cd7/cd7d734e44c3699a003680478d77379e.jpg" title="Постановка ушей у щенка американского стаффордширского терьера">
+          <div class="lazy-load" data-alt="Постановка ушей у щенка американского стаффордширского терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd7/412_2150_1/cd7d734e44c3699a003680478d77379e.jpg">
+           <noscript data-alt="Постановка ушей у щенка американского стаффордширского терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd7/412_2150_1/cd7d734e44c3699a003680478d77379e.jpg">
+            <img alt="Постановка ушей у щенка американского стаффордширского терьера" class="article_pic" height="616" src="/upload/resize_cache/iblock/cd7/412_2150_1/cd7d734e44c3699a003680478d77379e.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Постановка ушей у щенка американского стаффордширского терьера
+         </div>
+        </div>
+        <p>
+         Прежде всего, речь может идти о дисплазии тазобедренных суставов. Проблема характерна почти для всех крупных собак. Это вовсе не означает, что все амстаффы страдают дисплазией, так как очень многое зависит от режима питания, интенсивности физических нагрузок, а также от генетической предрасположенности. Покупая щенка, поинтересуйтесь в питомнике о наследственности вашего избранника. Узнайте, как часто у его предков возникала эта болезнь, каково было ее развитие. Никто не скажет однозначно, будет болеть ваша собака или нет, но какой-то приблизительный прогноз, исходя из полученной информации, можно будет составить.
+        </p>
+        <p>
+         Вздутие живота, связанное с нарушением пищеварения, – еще одна проблема, возникающая у американских стаффордов. Обратившись к специалисту, вы узнаете, какие продукты нужно исключить из рациона (или, наоборот, добавить), чтобы нормализовать обмен веществ у вашего питомца. Правильное питание поможет избежать и сложностей, связанных с ожирением.
+        </p>
+        <p>
+         Генетически амстаффам может передаваться и склонность к аллергическим реакциям на самые разные раздражители. Чаще всего это проявляется покраснением кожи и сильным зудом. В большинстве случаев точно определить агент удается только в условиях ветеринарной клиники.
+        </p>
+        <p>
+         Болезни глаз – атрофия сетчатки и катаракта – тоже могут поражать американских стаффордширских терьеров.
+        </p>
+        <p>
+         Современная ветеринарная медицина позволяет вылечить или, по крайней мере, минимизировать последствия очень большого числа заболеваний. Важно лишь вовремя их обнаружить. Внимательно следите за состоянием вашего любимца: как выглядит его шерсть, чистые ли у него уши и глаза, насколько он активен, хороший ли у него аппетит, нет ли проблем с отправлением естественных надобностей. Сверхусилий это не потребует, а вот нужный эффект обязательно принесет.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Оговоримся сразу: если вы хотите купить породистого амстаффа, то варианты птичьего рынка или объявления в интернете отметаются сразу и безоговорочно.
+        </p>
+        <p>
+         Процедура покупки в специализированном питомнике давно и хорошо отработана, и вас обязательно должны подробно с ней ознакомить, если речь, конечно, идет о месте с хорошей репутацией. В этом случае важно знать, что при покупке собаки лучше заключать официальный договор. Иногда предлагаемая клиентам форма приобретения щенка «по контракту» имеет ряд нюансов, которые могут ущемить права владельца как на саму собаку, так и на ее будущее потомство.
+        </p>
+        <p>
+         Третий вариант – самостоятельно купить щенка американского стаффордширского терьера у опытного и проверенного заводчика. В этом случае специалисты рекомендуют обратить внимание на следующие моменты.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мордочка щенка американского стаффордширского терьера" data-fancybox="gallery" href="/upload/iblock/84d/84de7f4c0b09d4836f71a77cd597f33d.jpg" title="Мордочка щенка американского стаффордширского терьера">
+          <div class="lazy-load" data-alt="Мордочка щенка американского стаффордширского терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/84d/412_2150_1/84de7f4c0b09d4836f71a77cd597f33d.jpg">
+           <noscript data-alt="Мордочка щенка американского стаффордширского терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/84d/412_2150_1/84de7f4c0b09d4836f71a77cd597f33d.jpg">
+            <img alt="Мордочка щенка американского стаффордширского терьера" class="article_pic" height="549" src="/upload/resize_cache/iblock/84d/412_2150_1/84de7f4c0b09d4836f71a77cd597f33d.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мордочка щенка американского стаффордширского терьера
+         </div>
+        </div>
+        <ul>
+         <li>
+          Планируя для своей собаки выставочную карьеру, попросите хозяина суки дать вам возможность понаблюдать за развитием малышей. Лучше всего будущие черты амстаффа проявляются при рождении, на третий день жизни и в возрасте одного месяца. Вряд ли вы успеете увидеть малыша в первый и третий дни, а вот месячного стоит изучить повнимательнее. Именно в возрасте тридцати дней маленький американский стаффордширский терьер представляет из себя точную миниатюрную копию того, что из него может вырасти при соблюдении всех правил и условий взращивания собак этой породы. Рассказам о том, что видимые в этом возрасте недостатки можно исправить с помощью массажа, особого режима питания или каких-нибудь «танцев с бубнами» серьезно не воспринимайте.
+         </li>
+         <li>
+          У щенков американского стаффордширского терьера, в окрасе которых много белого цвета, могут быть не полностью окрашены мочка носа, веки и губы, но частичный прокрас должен наблюдаться обязательно. Окончательно это процесс завершается к 8-месячному возрасту (иногда чуть позже). Цвет радужки глаз приобретает финальный оттенок и того позже, поэтому нужно быть очень внимательным к глазкам нежно-голубого цвета, особенно если щенок имеет палево-голубой или рыже-голубой окрас шерсти.
+         </li>
+         <li>
+          Шерстка щенка должна быть короткой, «велюровой», без проплешин. Кожа без язвочек и гнойничков.
+         </li>
+         <li>
+          Ушки должны быть чистыми, без неприятного запаха. Глазки ясные, без признаков закисания. Под хвостиком – чисто и сухо.
+         </li>
+         <li>
+          Если вы заметили при осмотре животе небольшую грыжу – не расстраивайтесь. С этой проблемой можно справиться путем несложных процедур.
+         </li>
+         <li>
+          Щенок стаффордширского терьера в этом возрасте должен весить от 2,5 до 5 кг, выглядеть достаточно упитанным, без торчащих ребер и маклаков. В рационе малыша, помимо собственно материнского молока, уже должны быть и иные блюда: кефир, крупяные каши, скобленое мясо, творог.
+         </li>
+        </ul>
+        <p>
+         Интересен факт, что сука иногда отрыгивает своим щенкам недавно съеденную пищу, и малыши с удовольствием набрасываются на такое угощение. Это абсолютно нормально и объясняется природными инстинктами. Более того, такое поведение свидетельствует о хорошо развитом материнском инстинкте, который с высокой долей вероятности достанется всем щенкам-девочкам в этом помете.
+        </p>
+        <p>
+         Приглянувшегося вам малыша вы вряд ли тут же купите. Продажа амстаффа разрешается после достижения им возраста 45 дней и выполнения владельцем суки обязательных процедур клеймения и экспертной оценки. Ваш первый визит в питомник будет иметь скорее ознакомительный характер, но основательно к нему подготовиться, собрав максимальное количество информации, будет совсем нелишним.
+        </p>
+        <h2>
+         Фото щенков амстаффа
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/961/96114f457462efcb0650603ae2686c9b.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/961/380_264_2/96114f457462efcb0650603ae2686c9b.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/961/380_264_2/96114f457462efcb0650603ae2686c9b.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/961/380_264_2/96114f457462efcb0650603ae2686c9b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/026/0269e33db83617a739cc9a64b644d4bb.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/026/380_264_2/0269e33db83617a739cc9a64b644d4bb.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/026/380_264_2/0269e33db83617a739cc9a64b644d4bb.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/026/380_264_2/0269e33db83617a739cc9a64b644d4bb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/eef/eef9e15e105affc59982210ef13f40b8.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/eef/380_264_2/eef9e15e105affc59982210ef13f40b8.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/eef/380_264_2/eef9e15e105affc59982210ef13f40b8.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/eef/380_264_2/eef9e15e105affc59982210ef13f40b8.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e76/e76d83f1cfd559fc17f385643f3ef9a0.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e76/380_264_2/e76d83f1cfd559fc17f385643f3ef9a0.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e76/380_264_2/e76d83f1cfd559fc17f385643f3ef9a0.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/e76/380_264_2/e76d83f1cfd559fc17f385643f3ef9a0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/adb/adbfe53f3ed54857caa80f21a8af0cda.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/adb/380_264_2/adbfe53f3ed54857caa80f21a8af0cda.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/adb/380_264_2/adbfe53f3ed54857caa80f21a8af0cda.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/adb/380_264_2/adbfe53f3ed54857caa80f21a8af0cda.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/acf/acf04beae91286fbc41fea26a248d21a.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/acf/380_264_2/acf04beae91286fbc41fea26a248d21a.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/acf/380_264_2/acf04beae91286fbc41fea26a248d21a.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/acf/380_264_2/acf04beae91286fbc41fea26a248d21a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d67/d6735498b1889b06cfe9815de000f529.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/d67/380_264_2/d6735498b1889b06cfe9815de000f529.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/d67/380_264_2/d6735498b1889b06cfe9815de000f529.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/d67/380_264_2/d6735498b1889b06cfe9815de000f529.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ed0/ed042acf384d21dc2e6dee1d9815c327.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ed0/380_264_2/ed042acf384d21dc2e6dee1d9815c327.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ed0/380_264_2/ed042acf384d21dc2e6dee1d9815c327.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/ed0/380_264_2/ed042acf384d21dc2e6dee1d9815c327.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1d5/1d538f8ed1fe05b3837f02fb4968473a.jpg" title="">
+           <div class="lazy-load" data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1d5/380_264_2/1d538f8ed1fe05b3837f02fb4968473a.jpg">
+            <noscript data-alt="Американский стаффордширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1d5/380_264_2/1d538f8ed1fe05b3837f02fb4968473a.jpg">
+             <img alt="Американский стаффордширский терьер" class="article_pic" src="/upload/resize_cache/iblock/1d5/380_264_2/1d538f8ed1fe05b3837f02fb4968473a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Сколько стоит американский стаффордширский терьер
+        </h2>
+        <p>
+         Как и у большинства других пород собак, стоимость щенка амстаффа напрямую зависит от того, к какому классу он отнесен.
+        </p>
+        <p>
+         Цены на животных шоу-класса, которые имеют хорошие задатки для успешной выставочной карьеры, находятся в диапазоне от 25 000 - 35 000 рублей и выше. Градация в этом случае связана с именитостью родителей, а также персональными задатками щенка, степенью выраженности лучших черт породы.
+        </p>
+        <p>
+         Представители брид-класса стоят дешевле – 18 000 - 25 000 рублей. Эти щенки американского стаффордширского терьера вполне соответствуют стандартам породы или имеют незначительные недостатки. Они вряд ли станут чемпионами, но для разведения породы вполне пригодны.
+        </p>
+        <p>
+         Пит-класс самый дешевый. Цены колеблются в диапазоне от 12 000 до 18 000 рублей. Если вы не планируете становиться заводчиком или тратить время и средства, готовя собаку к чемпионским выставкам, а просто хотите иметь надежного друга и защитника – американский стаффордширский терьер пит-класса станет правильным выбором.
+        </p>
+        <p>
+         В любом случае, какого бы щенка вы ни выбрали, ответственность за его счастливое будущее целиком и полностью лежит на вас.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения стаффордширского терьера на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27899/">
+          <div class="ava-med">
+           <div class="noava fill9">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/amerikanskiy-staffordshirskiy-terer-5570/">
+           Американский стаффордширский терьер
+          </a>
+         </div>
+         <div class="forum-text">
+          Всех приветствую!Мне 15 лет,у меня два брата 7 и 5 лет,есть собаки чихуахуа и немка(живёт на улице в вольере),обе девочки,хочу завести амстаффа,потому что нужна очень преданная собака,которая будет верным другом...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27899/">
+            Илья  Романов
+           </a>
+          </span>
+          <span class="vopros-date">
+           Месяц назад
+          </span>
+          <span class="vopros-smotr">
+           224 просмотра
+          </span>
+          <span class="vopros-otvet">
+           2 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27663/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Дима Дмитриев" data-original="/upload/resize_cache/main/874/200_200_2/isjvnm1lr0lxce9vi8u88zbe4gswrqb1.jpg">
+            <noscript data-alt="Дима Дмитриев" data-original="/upload/resize_cache/main/874/200_200_2/isjvnm1lr0lxce9vi8u88zbe4gswrqb1.jpg">
+             <img alt="Дима Дмитриев" src="/upload/resize_cache/main/874/200_200_2/isjvnm1lr0lxce9vi8u88zbe4gswrqb1.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/vybor-shchenka-5475/">
+           Выбор щенка
+          </a>
+         </div>
+         <div class="forum-text">
+          Всех рад приветствовать!
+Хотим поплнить нашу семью стаффом, есть ребенок (маленький) и кошка.Было бы интересно услышать советы,как лучше.
+
+Для себя пока понял важность характера,что следует выбирать с уже проведенным...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27663/">
+            Дима Дмитриев
+           </a>
+          </span>
+          <span class="vopros-date">
+           2 месяца назад
+          </span>
+          <span class="vopros-smotr">
+           428 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27380/">
+          <div class="ava-med">
+           <div class="noava fill0">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/novorozhdennye-shchenyata-zhidkiy-stul-5271/">
+           Новорожденные щенята, жидкий стул
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте так получилось, что осталась с 2 щенятами амстафа  на данный момент им 5 сутки. Вчера перед кормлением взвешивала мальчик набрал за сутки 5гр весит 324гр 
+Девочка потеряла в веси 3г, на данный момент...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27380/">
+            Наталия Серегина
+           </a>
+          </span>
+          <span class="vopros-date">
+           4 месяца назад
+          </span>
+          <span class="vopros-smotr">
+           263 просмотра
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27364/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Владимир Збурлюк" data-original="/upload/resize_cache/main/d6f/200_200_2/bqkm4wwgnhvie0zmurnajrmjpef2pvr3.jpg">
+            <noscript data-alt="Владимир Збурлюк" data-original="/upload/resize_cache/main/d6f/200_200_2/bqkm4wwgnhvie0zmurnajrmjpef2pvr3.jpg">
+             <img alt="Владимир Збурлюк" src="/upload/resize_cache/main/d6f/200_200_2/bqkm4wwgnhvie0zmurnajrmjpef2pvr3.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/sotsializatsiya-amstaff-5267/">
+           Социализация амстафф
+          </a>
+         </div>
+         <div class="forum-text">
+          Стафф 2 года девочка, в парке для собак она активна очень даже но хватает один лаи от  собаке и она больше не играется (шерьстт становитя дыбом,прижатая и седит рядом со мнои) еще лна стерелизованна но кабели прыгают...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27364/">
+            Владимир Збурлюк
+           </a>
+          </span>
+          <span class="vopros-date">
+           4 месяца назад
+          </span>
+          <span class="vopros-smotr">
+           326 просмотров
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/amerikanskiy-staffordshirskiy-terer/forum/">
+        Перейти на
+        форум стаффордширского терьера
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Американский стаффордширский терьер" src="/upload/iblock/8d4/8d4956413c8aa7492902161b5cb397f6.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/amerikanskiy-staffordshirskiy-terer/">
+          Американский стаффордширский терьер
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/amerikanskiy-staffordshirskiy-terer/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/amerikanskiy-staffordshirskiy-terer/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/amerikanskiy-staffordshirskiy-terer/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/amerikanskiy-staffordshirskiy-terer/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/amerikanskiy-staffordshirskiy-terer/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/amerikanskiy-staffordshirskiy-terer/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/bobteyl/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бобтейл" data-original="/upload/resize_cache/iblock/041/100_100_1/041f4abbca28dd07dae255b64ca37836.jpg">
+          <noscript data-alt="Бобтейл" data-original="/upload/resize_cache/iblock/041/100_100_1/041f4abbca28dd07dae255b64ca37836.jpg">
+           <img alt="Бобтейл" src="/upload/resize_cache/iblock/041/100_100_1/041f4abbca28dd07dae255b64ca37836.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бобтейл
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/pkhunsan/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Пхунсан" data-original="/upload/resize_cache/iblock/e0c/100_100_1/k9fcn7rfbsn1m2u6nhc9d9odxit4hehr.jpg">
+          <noscript data-alt="Пхунсан" data-original="/upload/resize_cache/iblock/e0c/100_100_1/k9fcn7rfbsn1m2u6nhc9d9odxit4hehr.jpg">
+           <img alt="Пхунсан" src="/upload/resize_cache/iblock/e0c/100_100_1/k9fcn7rfbsn1m2u6nhc9d9odxit4hehr.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Пхунсан
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/yaponskiy-shpits/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Японский шпиц" data-original="/upload/resize_cache/iblock/a9f/100_100_1/a9f6004878eea81bc3aac1ca4426c15e.jpg">
+          <noscript data-alt="Японский шпиц" data-original="/upload/resize_cache/iblock/a9f/100_100_1/a9f6004878eea81bc3aac1ca4426c15e.jpg">
+           <img alt="Японский шпиц" src="/upload/resize_cache/iblock/a9f/100_100_1/a9f6004878eea81bc3aac1ca4426c15e.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Японский шпиц
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/estonskaya-gonchaya/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Эстонская гончая" data-original="/upload/resize_cache/iblock/fcc/100_100_1/fcc2e4db742cfe3125dff431c50d47d3.jpg">
+          <noscript data-alt="Эстонская гончая" data-original="/upload/resize_cache/iblock/fcc/100_100_1/fcc2e4db742cfe3125dff431c50d47d3.jpg">
+           <img alt="Эстонская гончая" src="/upload/resize_cache/iblock/fcc/100_100_1/fcc2e4db742cfe3125dff431c50d47d3.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Эстонская гончая
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Famerikanskiy-staffordshirskiy-terer%252F%253Fcheck_key%253Dfd7ee16af6deed8fc48e9071e5a9e505%2526ANIMAL_CODE%253Damerikanskiy-staffordshirskiy-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Famerikanskiy-staffordshirskiy-terer%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmFtZXJpa2Fuc2tpeS1zdGFmZm9yZHNoaXJza2l5LXRlcmVyJTJGJTNGY2hlY2tfa2V5JTNEZmQ3ZWUxNmFmNmRlZWQ4ZmM0OGU5MDcxZTVhOWU1MDUlMjZBTklNQUxfQ09ERSUzRGFtZXJpa2Fuc2tpeS1zdGFmZm9yZHNoaXJza2l5LXRlcmVyJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmFtZXJpa2Fuc2tpeS1zdGFmZm9yZHNoaXJza2l5LXRlcmVyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Famerikanskiy-staffordshirskiy-terer%252F%253Fcheck_key%253Dfd7ee16af6deed8fc48e9071e5a9e505%2526ANIMAL_CODE%253Damerikanskiy-staffordshirskiy-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Famerikanskiy-staffordshirskiy-terer%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Famerikanskiy-staffordshirskiy-terer%252F%253Fcheck_key%253Dfd7ee16af6deed8fc48e9071e5a9e505%2526ANIMAL_CODE%253Damerikanskiy-staffordshirskiy-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Famerikanskiy-staffordshirskiy-terer%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "89.113.154.45"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--79ccf9db0b9e549d981ed67ae2f0d9ac-->

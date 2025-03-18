@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'12dd69e844b7'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Бостон-терьер, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Бостон-терьер – небольшая декоративная порода собак со сплющенной мордочкой, большими глазами и пятнистым окрасом шерсти, выведенная в США путем скрещивания английского бульдога с английским терьером." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/df3/df353998edf81c94390eb216266e4f63.jpg" property="og:image"/>
+     <title>
+      Бостон-терьер: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/boston-terer/" property="og:url"/>
+     <meta content="Бостон-терьер: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Бостон-терьер – небольшая декоративная порода собак со сплющенной мордочкой, большими глазами и пятнистым окрасом шерсти, выведенная в США путем скрещивания английского бульдога с английским терьером." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/boston-terer/" itemprop="url">
+         <span itemprop="title">
+          Бостон-терьер
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Бостон-терьер
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/boston-terer/">
+          Описание
+         </a>
+         <a href="/dog/boston-terer/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/boston-terer/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/boston-terer/photo/">
+          Фото
+         </a>
+         <a href="/dog/boston-terer/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Бостон-терьер" src="/upload/iblock/51b/51bfa62f60d3ffb22ed9b145cf71e7d8.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/boston-terer/">
+           бостонский терьер
+          </a>
+          ,
+          <a href="/dog/boston-terer/">
+           бостонский буль
+          </a>
+         </span>
+         <p>
+          Бостон-терьер – небольшая декоративная порода собак со сплющенной мордочкой, большими глазами и пятнистым окрасом шерсти, выведенная в США путем скрещивания английского бульдога с английским терьером.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/d17/d17527afc117ad1ae0e9285008d43ef6.jpg" data-cap="Springtime, Yay!" data-fancybox="images" data-link="https://www.flickr.com/photos/shining_blowball/13080311505/" data-type="image" data-username="Tereza Jancikova" href="/upload/uf/b51/b51bcade533de3b1ae95222b03913ca9.jpg">
+            <img alt="Бостон-терьер" src="/upload/resize_cache/uf/b51/293_293_2/b51bcade533de3b1ae95222b03913ca9.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/7d6/7d65542de5c7a4cfc0c0743d6ee4e114.jpg" data-cap="She was keeping a pretty close eye on me as I took this to make sure that I wasn't going to steal her ball." data-fancybox="images" data-link="https://www.flickr.com/photos/412photo/24770242904/" data-type="image" data-username="Tony Ramirez" href="/upload/uf/083/08318eef8da1659d3611c4dcd2990e1a.jpg">
+            <img alt="Бостон-терьер" src="/upload/resize_cache/uf/083/293_293_2/08318eef8da1659d3611c4dcd2990e1a.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/81b/81ba72ccda0824f4348b8e86f77c98ae.jpg" data-cap="Blackdown, Haslemere" data-fancybox="images" data-link="https://www.flickr.com/photos/greenypics/32314235642/" data-type="image" data-username="Flamenco Sun" href="/upload/uf/e66/e66b20faa569482ef4e619b8b38c84e7.jpg">
+            <img alt="Бостон-терьер" src="/upload/resize_cache/uf/e66/293_293_2/e66b20faa569482ef4e619b8b38c84e7.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/boston-terer/photo/">
+         Все
+            фото бостон-терьера
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы бостон-терьер
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы бостон-терьер
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер бостон-терьера
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни бостон-терьеров
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена бостон-терьера
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Бостон-терьер
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         США
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         3-11 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         23-38 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         11-15 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Самочувствие бостон-терьеров сильно зависит от погоды, так как теплообменные процессы в организме животных несколько заторможены. Например, они быстро переохлаждаются, а в знойные дни могут получить тепловой удар.
+        </li>
+        <li>
+         В отличие от других собак-брахицефалов «бостоны» не страдают избыточным слюноотделением, и их мордочки всегда остаются сухими и опрятными.
+        </li>
+        <li>
+         Порода славится удивительной деликатностью и вежливостью, поэтому ее представителей часто называют «американскими джентльменами».
+        </li>
+        <li>
+         Бостон-терьеры имеют статус официального живого символа штата Массачусетс.
+        </li>
+        <li>
+         Большинство служебных обязанностей бостон-терьерам чуждо, однако территориальный инстинкт у них присутствует, так что в случае острой необходимости собаке можно доверить охрану квартиры.
+        </li>
+        <li>
+         Представители этой породы – существа приветливые, дружелюбные и податливые, поэтому их часто рекомендуют малоопытным владельцам, семьям с детьми, а также пожилым людям.
+        </li>
+        <li>
+         Бостон-терьеры выражают эмоции лаем только в особенных случаях, так что соседи вряд ли будут жаловаться на чрезмерную «музыкальность» питомца.
+        </li>
+        <li>
+         И щенки, и взрослые собаки забавно храпят во сне, а в периоды бодрствования издают характерное фырканье и смешно повизгивают. Кроме того, они довольно прыгучи и часто наскакивают на владельца, выражая таким образом собственное расположение и привязанность.
+        </li>
+        <li>
+         У бостон-терьеров потешная мимика. Особенно этим симпатягам удаются обиженные гримасы, а также выражение вселенской скорби и сожаления – последнее обычно следует сразу за совершенной пакостью.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Бостон-терьер" data-original="/upload/iblock/df3/df353998edf81c94390eb216266e4f63.jpg">
+          <noscript data-alt="Бостон-терьер" data-original="/upload/iblock/df3/df353998edf81c94390eb216266e4f63.jpg">
+           <img alt="Бостон-терьер" src="/upload/iblock/df3/df353998edf81c94390eb216266e4f63.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Бостон-терьеры
+          </strong>
+          – ультрапозитивные «глазастики», которые с одинаковым удовольствием будут гулять с вами по магазинам и дремать на диване под бормотание любимого сериала. В кинологических кругах «бостоны» считаются самыми отзывчивыми и неконфликтными питомцами, легко идущими на контакт, иногда даже в ущерб собственной безопасности. Они никогда не диктуют свои условия и не устраивают беспредел в рамках отдельно взятой квартиры. К тому же эти нарядные симпатяги – большие юмористы, стремящиеся наполнить жизнь владельца яркими и смешными моментами.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не переносит (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средний (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средние (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Бостон-терьер основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы бостон-терьер
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бостон-терьер" data-fancybox="gallery" href="/upload/iblock/1cc/1cc1ebeb73b539c29de126250827c117.jpg" title="Бостон-терьер">
+          <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1cc/412_2150_1/1cc1ebeb73b539c29de126250827c117.jpg">
+           <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1cc/412_2150_1/1cc1ebeb73b539c29de126250827c117.jpg">
+            <img alt="Бостон-терьер" class="article_pic" height="549" src="/upload/resize_cache/iblock/1cc/412_2150_1/1cc1ebeb73b539c29de126250827c117.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бостон-терьер
+         </div>
+        </div>
+        <p>
+         История породы началась в конце XIX века, в Америке. В 1870 году житель Бостона Роберт Хупер прикупил у своего знакомого Уильяма О`Брайена необычного пса. По словам самого продавца, коренастый, крепкий кобель являлся помесью английского терьера и
+         <a class="ph" href="/dog/angliyskiy-buldog/">
+          английского бульдога
+         </a>
+         , что и спровоцировало Хупера на спонтанное приобретение. Долго не раздумывая, бостонец окрестил своего подопечного Джаджем и отвез его на случку к суке по кличке Джип, принадлежавшей Эдварду Бернетту. Через положенный срок Джип произвела на свет симпатичного кобеля, получившего кличку Уэллс Эф, и изящную «девочку» – Тобин Кейт. Когда щенки подросли, их повязали сначала друг с другом, а потом – с родителями, тем самым заложив основу генофонда будущей породы.
+        </p>
+        <p>
+         На протяжении следующих десятилетий массачусетскими заводчиками, включая того же Роберта Хупера, велась целенаправленная работа по улучшению экстерьерных показателей собак. Так, например, первым поколениям животных несколько раз приливалась кровь староанглийского белого терьера, которая помогла сделать их фигуры менее брутальными. Постепенно стала отчетливее вырисовываться еще одна отличительная особенность потомков Джаджа – округлая форма черепа, в связи с чем собак стали именовать круглоголовыми булли. Позднее название трансформировалось в американских булли, а затем и в американских бультерьеров – именно под этим словосочетанием первые «бостоны» засветились на выставках. Продолжалось это недолго, так как против названия взбунтовались заводчики популярных на тот момент английских бультерьеров. Разозленные владельцы требовали немедленного переименования массачусетских метисов во избежание путаницы в определении пород. Так потомки Джаджа стали бостон-терьерами.
+        </p>
+        <p>
+         Первый клуб поклонников породы сформировался на ее родине, в Бостоне, в 1889 г. Два года спустя организацию переименовали в Американский клуб любителей бостон-терьеров, а еще через пару лет она вошла в AKC. Что касается внесения животных в племенные книги, то впервые это было проделано в 1893 году, после чего бостон-терьеры стали самыми востребованными питомцами у американцев среднего класса. Однако уже в годы Великой депрессии популярность породы пошла на спад. Усугубила положение и Вторая мировая, после которой в США стали завозить собак из Европы. Тем не менее на грани исчезновения «бостоны» никогда не были.
+        </p>
+        <h2>
+         Видео: Бостон-терьер
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="d9w2RRLxrPY">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы бостон-терьер
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок бостон-терьера" data-fancybox="gallery" href="/upload/iblock/7d7/7d7de76b14a0f8b8cb1fa9d7ec682ae1.jpg" title="Щенок бостон-терьера">
+          <div class="lazy-load" data-alt="Щенок бостон-терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/7d7/412_2150_1/7d7de76b14a0f8b8cb1fa9d7ec682ae1.jpg">
+           <noscript data-alt="Щенок бостон-терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/7d7/412_2150_1/7d7de76b14a0f8b8cb1fa9d7ec682ae1.jpg">
+            <img alt="Щенок бостон-терьера" class="article_pic" height="549" src="/upload/resize_cache/iblock/7d7/412_2150_1/7d7de76b14a0f8b8cb1fa9d7ec682ae1.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок бостон-терьера
+         </div>
+        </div>
+        <p>
+         Классический бостон-терьер – обладатель по-бульдожьи сплющенной мордочки, расставленных передних лап, сочетающихся с мускулистым телом и стремительными движениями. Основательный, но пропорционально сложенный, этот некрупный «американец» напрочь лишен бульдожьей коренастости и неповоротливости, к тому же, у него не имеется складок на морде у него, в отличие от английского предка.
+        </p>
+        <p>
+         По весовым категориям бостон-терьеры разделяются на три класса: меньше 6,8 кг; 6,8-9 кг; 9-11,35 кг. Высота собаки в холке должна быть равна длине корпуса. «Бостоны» отличаются крепким костяком, при этом не смотрятся грубо.
+        </p>
+        <p>
+         Половой диморфизм у бостон-терьеров выражен незначительно, поэтому единственное, что отличает «девочек» от «мальчиков», – это более изящный костяк и общая утонченность облика. Бостон-терьеры соответствуют образу стильных «денди», чему способствуют гордая осанка собак и уникальный окрас, напоминающий элегантный фрак с белоснежной «манишкой» на груди.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Бостон-терьеры – типичные брахицефалы с квадратным, плоским между ушами черепом и ультракороткой, массивной мордочкой. Длина морды не должна превышать одну треть длины черепной части. Надбровья и стоп у представителей этой породы отчетливо прорисованные, скулы плоские. Взгляд решительный, сообразительный и, вместе с тем, доброжелательный.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Челюсти бостонских терьеров квадратные, массивные, сомкнутые в прямом прикусе (допустим перекус). Зубы некрупные, с расположенными по одной линии резцами.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Мочка растянутая в ширину, с хорошо прорисованной средней линией между ноздрями.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         У правильного бостон-терьера глаза широко расставленные, округло-выпуклые, темного окраса. Наружный угол находится на уровне щек.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Уши собаки прямостоячие, широко и высоко поставленные. Стандартом допускается и купированная форма уха.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Шея бостонского терьера высокого постава, чуть сводистая, мягко переходящая в холку.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда бостон-терьера" data-fancybox="gallery" href="/upload/iblock/1ba/1ba866b6af08e3ccfb03a02309aaa6c1.jpg" title="Морда бостон-терьера">
+          <div class="lazy-load" data-alt="Морда бостон-терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/1ba/1024_2150_1/1ba866b6af08e3ccfb03a02309aaa6c1.jpg">
+           <noscript data-alt="Морда бостон-терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/1ba/1024_2150_1/1ba866b6af08e3ccfb03a02309aaa6c1.jpg">
+            <img alt="Морда бостон-терьера" class="article_pic" src="/upload/resize_cache/iblock/1ba/1024_2150_1/1ba866b6af08e3ccfb03a02309aaa6c1.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда бостон-терьера
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело собаки отличается квадратным, но не растянутым форматом. Линия спины «бостона» ровная, с короткой поясницей и покатым крупом. Грудь широкая, достаточно глубокая.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бостон-терьер со спины" data-fancybox="gallery" href="/upload/iblock/895/895bc5c55df80152c4832786414f2958.jpg" title="Бостон-терьер со спины">
+          <div class="lazy-load" data-alt="Бостон-терьер со спины" data-class="article_pic" data-original="/upload/resize_cache/iblock/895/412_2150_1/895bc5c55df80152c4832786414f2958.jpg">
+           <noscript data-alt="Бостон-терьер со спины" data-class="article_pic" data-original="/upload/resize_cache/iblock/895/412_2150_1/895bc5c55df80152c4832786414f2958.jpg">
+            <img alt="Бостон-терьер со спины" class="article_pic" height="615" src="/upload/resize_cache/iblock/895/412_2150_1/895bc5c55df80152c4832786414f2958.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бостон-терьер со спины
+         </div>
+        </div>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Отличительные особенности передних ног бостон-терьера – это широкий постав, косые лопатки, отвечающие за грацию животного в движении, и короткие, крепкие пясти. Задние ноги собаки ровные, с наклонными мясистыми бедрами, отчетливыми углами сочленений и короткими и прямыми плюснами. Лапы бостон-терьера – сбитые в комок, со сводистыми пальцами, заканчивающимися короткими, массивными когтями. Присутствуют у представителей этой породы и прибылые пальцы, которые лучше своевременно удалять. Движения животного прямолинейные, ритмичные, без скованности.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Куцые, тонкие хвостики бостонских терьеров держатся прямо либо закручиваются в штопор и не приподнимаются над линией спины. Оптимальная длина хвоста – ¼ расстояния от крупа до скакательного сустава.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Короткая глянцевая псовина хорошо прилегает к коже и практически лишена подшерстка.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Традиционные оттенки шерсти бостон-терьеров – темно-бурые (котиковые), черные и тигровые, причем все они должны быть разбавлены белыми пятнами. Стандартом утверждены белые отметины: широкая полоса между глазами, обводка мордочки, пятно, занимающее всю грудь. Очень желательно, чтобы у животного были белыми передние конечности, «воротник» и задние лапы (не выше уровня скакательных суставов).
+        </p>
+        <h3>
+         Дефекты и дисквалифицирующие пороки
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бостон-терьер коричневого окраса (печеночный)" data-fancybox="gallery" href="/upload/iblock/67d/67d772317e816aeb633c109f1ea874ac.jpg" title="Бостон-терьер коричневого окраса (печеночный)">
+          <div class="lazy-load" data-alt="Бостон-терьер коричневого окраса (печеночный)" data-class="article_pic" data-original="/upload/resize_cache/iblock/67d/412_2150_1/67d772317e816aeb633c109f1ea874ac.jpg">
+           <noscript data-alt="Бостон-терьер коричневого окраса (печеночный)" data-class="article_pic" data-original="/upload/resize_cache/iblock/67d/412_2150_1/67d772317e816aeb633c109f1ea874ac.jpg">
+            <img alt="Бостон-терьер коричневого окраса (печеночный)" class="article_pic" height="274" src="/upload/resize_cache/iblock/67d/412_2150_1/67d772317e816aeb633c109f1ea874ac.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бостон-терьер коричневого окраса (печеночный)
+         </div>
+        </div>
+        <p>
+         Идеальные в экстерьерном плане «бостоны» – явление скорее исключительное, чем массовое. Обычно у животных присутствует пара-тройка дефектов различной степени выраженности, не влияющих на здоровье, но мешающих собаке получить чемпионский диплом на выставках. Таковыми являются: глаза с видимыми белками, перекошенная нижняя челюсть, большие/несоразмерно маленькие уши, несущийся вертикально хвост, спина с прогибом или горбатая. Животным с распущенными лапами, распрямленными скакательными суставами, двигающимся вразвалочку и иноходью, рассчитывать на отличные оценки тоже не приходится.
+        </p>
+        <p>
+         Дисквалифицирующие пороки:
+        </p>
+        <ul>
+         <li>
+          полное отсутствие белых отметин на шерсти;
+         </li>
+         <li>
+          голубые глаза;
+         </li>
+         <li>
+          серый и печеночный окрасы;
+         </li>
+         <li>
+          купированные хвосты;
+         </li>
+         <li>
+          светлые мочки.
+         </li>
+        </ul>
+        <h2>
+         Фото бостон-терьера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b7b/b7b473a1e4ee9e975fe7a55c5b00dd26.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b7b/380_264_2/b7b473a1e4ee9e975fe7a55c5b00dd26.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b7b/380_264_2/b7b473a1e4ee9e975fe7a55c5b00dd26.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/b7b/380_264_2/b7b473a1e4ee9e975fe7a55c5b00dd26.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/42c/42cffbca6190d12a0ea24c7470824a93.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/42c/380_264_2/42cffbca6190d12a0ea24c7470824a93.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/42c/380_264_2/42cffbca6190d12a0ea24c7470824a93.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/42c/380_264_2/42cffbca6190d12a0ea24c7470824a93.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/eef/eef23a5804b421feb1491b515ecca1d4.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/eef/380_264_2/eef23a5804b421feb1491b515ecca1d4.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/eef/380_264_2/eef23a5804b421feb1491b515ecca1d4.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/eef/380_264_2/eef23a5804b421feb1491b515ecca1d4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/af9/af94dacb10c8de30116375a5398d5f62.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/af9/380_264_2/af94dacb10c8de30116375a5398d5f62.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/af9/380_264_2/af94dacb10c8de30116375a5398d5f62.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/af9/380_264_2/af94dacb10c8de30116375a5398d5f62.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8b0/8b00b10cd10058f8910848f821fa7636.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8b0/380_264_2/8b00b10cd10058f8910848f821fa7636.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8b0/380_264_2/8b00b10cd10058f8910848f821fa7636.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/8b0/380_264_2/8b00b10cd10058f8910848f821fa7636.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7f4/7f440be9de6b9c02c923285ebbdc9545.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/7f4/380_264_2/7f440be9de6b9c02c923285ebbdc9545.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/7f4/380_264_2/7f440be9de6b9c02c923285ebbdc9545.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/7f4/380_264_2/7f440be9de6b9c02c923285ebbdc9545.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d34/d341c60b6c478be5dce0d826f0c392c6.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/d34/380_264_2/d341c60b6c478be5dce0d826f0c392c6.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/d34/380_264_2/d341c60b6c478be5dce0d826f0c392c6.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/d34/380_264_2/d341c60b6c478be5dce0d826f0c392c6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e11/e113556704cdd5cb75bbc804102b20e3.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e11/380_264_2/e113556704cdd5cb75bbc804102b20e3.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e11/380_264_2/e113556704cdd5cb75bbc804102b20e3.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/e11/380_264_2/e113556704cdd5cb75bbc804102b20e3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7b3/7b3bd69858473e30164fc2710327503b.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/7b3/380_264_2/7b3bd69858473e30164fc2710327503b.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/7b3/380_264_2/7b3bd69858473e30164fc2710327503b.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/7b3/380_264_2/7b3bd69858473e30164fc2710327503b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер бостон-терьера
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Любовь" data-fancybox="gallery" href="/upload/iblock/8cc/8cc4dfff93af72324f50b3154604d0cf.jpg" title="Любовь">
+          <div class="lazy-load" data-alt="Любовь" data-class="article_pic" data-original="/upload/resize_cache/iblock/8cc/412_2150_1/8cc4dfff93af72324f50b3154604d0cf.jpg">
+           <noscript data-alt="Любовь" data-class="article_pic" data-original="/upload/resize_cache/iblock/8cc/412_2150_1/8cc4dfff93af72324f50b3154604d0cf.jpg">
+            <img alt="Любовь" class="article_pic" height="549" src="/upload/resize_cache/iblock/8cc/412_2150_1/8cc4dfff93af72324f50b3154604d0cf.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Любовь
+         </div>
+        </div>
+        <p>
+         Бостонский терьер – добродушный домашний клоун, строящий потешные рожицы, по-детски дурачащийся и заряжающий окружающее пространство позитивной энергетикой. Дружелюбный, неугомонный, готовый дарить внимание всем и каждому, он абсолютно лишен таких качеств, как агрессивность и подозрительность. Так, например, бостон-терьеру совершенно без разницы, кем на самом деле является двуногое создание, появившееся на пороге вашей квартиры, – представителем сетевого маркетинга или другом семьи. Этот «уроженец Массачусетса» лоялен в отношении любого человека, если только тот не нарушает территориальных границ и не пытается применять физическое насилие.
+        </p>
+        <p>
+         С детьми у собак мир и взаимопонимание. Бостон-терьеры не пытаются конкурировать с представителями младшего поколения за хозяйское внимание, предпочитая вливаться в их компанию, чтобы вместе попроказничать. Не третируют они и пернато-пушистых питомцев, живущих с ними в доме. Безусловно, попытки наскочить на потерявшего бдительность котофея были, есть и будут иметь место. Но обычно, получив отрезвляющий шлепок лапой, большинство псов успокаивается и перестает донимать мурлык.
+        </p>
+        <p>
+         К вынужденному одиночеству бостон-терьеры относятся философски. Они не устраивают сцен и не громят квартиру, если поблизости не наблюдается существа хоть сколько-нибудь напоминающего человека. Главное, хорошенько выгулять питомца перед тем как оставить его наедине с собственными мыслями. Избавившись от энергетического и эмоционального груза, «бостон» будет мирно отлеживаться в ваше отсутствие, с головой погрузившись в мир собачьих грез и сновидений. Ну а тем, кто планирует систематические отлучки, стоит завести животному компанию в лице второго бостон-терьера: вдвоем «джентльменам» будет веселее коротать часы в ожидании хозяина.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Бостон-терьер с ребенком" data-fancybox="gallery" href="/upload/iblock/145/1456e7b8d68519337981c57d63b5ad1f.jpg" title="Бостон-терьер с ребенком">
+           <div class="lazy-load" data-alt="Бостон-терьер с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/145/512_342_2/1456e7b8d68519337981c57d63b5ad1f.jpg">
+            <noscript data-alt="Бостон-терьер с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/145/512_342_2/1456e7b8d68519337981c57d63b5ad1f.jpg">
+             <img alt="Бостон-терьер с ребенком" class="article_pic" src="/upload/resize_cache/iblock/145/512_342_2/1456e7b8d68519337981c57d63b5ad1f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Бостон-терьер с ребенком
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Безудержное веселье" data-fancybox="gallery" href="/upload/iblock/165/1650ed218238ee222672568882eb2859.jpg" title="Безудержное веселье">
+           <div class="lazy-load" data-alt="Безудержное веселье" data-class="article_pic" data-original="/upload/resize_cache/iblock/165/512_342_2/1650ed218238ee222672568882eb2859.jpg">
+            <noscript data-alt="Безудержное веселье" data-class="article_pic" data-original="/upload/resize_cache/iblock/165/512_342_2/1650ed218238ee222672568882eb2859.jpg">
+             <img alt="Безудержное веселье" class="article_pic" src="/upload/resize_cache/iblock/165/512_342_2/1650ed218238ee222672568882eb2859.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Безудержное веселье
+          </div>
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Все статьи и книги, описывающие характер породы бостон-терьер, делают акцент на управляемости и покладистости ее представителей. Однако в реальности «бостоны» не такие уж тюфячки, какими их любят выставлять. Да, они не считаются трудновоспитуемыми, но упрямиться умеют очень даже неплохо. Интеллектуальные способности у собак тоже не сверхвыдающиеся, так что привыкайте к тому, что учебный материал, которые подается питомцу, будет доходить до него со второго, а то и третьего раза.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Хороший мальчик" data-fancybox="gallery" href="/upload/iblock/53d/53d5c8ba16fbb0334e45d42a780dfc71.jpg" title="Хороший мальчик">
+          <div class="lazy-load" data-alt="Хороший мальчик" data-class="article_pic" data-original="/upload/resize_cache/iblock/53d/412_2150_1/53d5c8ba16fbb0334e45d42a780dfc71.jpg">
+           <noscript data-alt="Хороший мальчик" data-class="article_pic" data-original="/upload/resize_cache/iblock/53d/412_2150_1/53d5c8ba16fbb0334e45d42a780dfc71.jpg">
+            <img alt="Хороший мальчик" class="article_pic" height="274" src="/upload/resize_cache/iblock/53d/412_2150_1/53d5c8ba16fbb0334e45d42a780dfc71.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Хороший мальчик
+         </div>
+        </div>
+        <p>
+         Бостон-терьеры ничего не слышали о доминировании, поэтому в ходе обучения не пытаются переиначивать требования и команды и давить на хозяина. Тем не менее дрессировка породе нужна хотя бы потому, что доверчивость ее представителей может выйти боком как им самим, так и владельцу. Например, любой незнакомец с угощением в руках и ласковым голосом способен переманить «бостона» и увести в неизвестном направлении.
+        </p>
+        <p>
+         С базовыми командами УГС и ОКД большинство бостон-терьеров справляется быстро. Вообще эти «массачусетские джентльмены» неплохо относятся к любым дисциплинам послушания, что позволяет им успешно сдавать нормативы по обидиенс и аджилити. Однако не стоит перегибать палку. Бостон-терьеры – существа ранимые, и любая грубость провоцирует появление на их мордочках гримасы разочарования, так что применять к ним силовые приемы не то что нежелательно, а строго противопоказано. Куда эффективнее подкупать внимание собаки лакомствами, за которые «бостоны» не только собственную душу, но и хозяина заложат. Угощать питомца деликатесами необходимо после того, как тот худо-бедно выполнил предъявленное требование. В таком случае у животного будет стимул совершенствоваться далее.
+        </p>
+        <p>
+         Обучая бостон-терьера пользованию уличным туалетом или лотком, не упускайте из виду тот факт, что данная порода не может долго сдерживать естественные потребности. Соответственно, как бы ответственно вы ни подходили к формированию у собаки «туалетного» этикета, периодически «бостон» будет делать лужи там, где придется. Не из вредности, не потому что не понимает, просто по необходимости. Готовы адекватно реагировать на внезапные «озерца» на ламинате? В таком случае бостон-терьер – ваш питомец.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Про нас, похоже, забыли" data-fancybox="gallery" href="/upload/iblock/a8f/a8f1bb5b3616f24591c8e309dd67b058.jpg" title="Про нас, похоже, забыли">
+           <div class="lazy-load" data-alt="Про нас, похоже, забыли" data-class="article_pic" data-original="/upload/resize_cache/iblock/a8f/512_342_2/a8f1bb5b3616f24591c8e309dd67b058.jpg">
+            <noscript data-alt="Про нас, похоже, забыли" data-class="article_pic" data-original="/upload/resize_cache/iblock/a8f/512_342_2/a8f1bb5b3616f24591c8e309dd67b058.jpg">
+             <img alt="Про нас, похоже, забыли" class="article_pic" src="/upload/resize_cache/iblock/a8f/512_342_2/a8f1bb5b3616f24591c8e309dd67b058.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Про нас, похоже, забыли
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="«Где наслаждение там я»" data-fancybox="gallery" href="/upload/iblock/33c/33c938ecad8ae1a1c9478db5ea782cd2.jpg" title="«Где наслаждение там я»">
+           <div class="lazy-load" data-alt="«Где наслаждение там я»" data-class="article_pic" data-original="/upload/resize_cache/iblock/33c/512_342_2/33c938ecad8ae1a1c9478db5ea782cd2.jpg">
+            <noscript data-alt="«Где наслаждение там я»" data-class="article_pic" data-original="/upload/resize_cache/iblock/33c/512_342_2/33c938ecad8ae1a1c9478db5ea782cd2.jpg">
+             <img alt="«Где наслаждение там я»" class="article_pic" src="/upload/resize_cache/iblock/33c/512_342_2/33c938ecad8ae1a1c9478db5ea782cd2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           «Где наслаждение там я»
+          </div>
+         </div>
+        </div>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         В жаркие дни порода страдает от перегрева, а в холода короткая, лишенная подшерстка шерсть не может обеспечить четверолапого друга достаточным количеством тепла, поэтому жить бостон-терьер должен в доме или квартире. Желательно обустроить для собаки отдельное место отдыха в уединенном уголке, разместив в нем мягкий матрасик или корзинку. Кстати, бостон-терьеры крайне зависимы от мягких перинок, поэтому предпочитают лежанкам обычные кровати, где охотно релаксируют вместе с хозяином. И все же к подобным излишествам их лучше не приучать, поскольку подавляющий процент «бостонов» страдает метеоризмом. Вряд ли вы будете в восторге от стопроцентной «загазованности» собственной спальни, которая станет непременным дополнением к развалившемуся на кровати питомцу.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Собака-улыбака" data-fancybox="gallery" href="/upload/iblock/cdf/cdfea0c04f60f0e37b2b7a13b047db60.jpg" title="Собака-улыбака">
+          <div class="lazy-load" data-alt="Собака-улыбака" data-class="article_pic" data-original="/upload/resize_cache/iblock/cdf/412_2150_1/cdfea0c04f60f0e37b2b7a13b047db60.jpg">
+           <noscript data-alt="Собака-улыбака" data-class="article_pic" data-original="/upload/resize_cache/iblock/cdf/412_2150_1/cdfea0c04f60f0e37b2b7a13b047db60.jpg">
+            <img alt="Собака-улыбака" class="article_pic" height="586" src="/upload/resize_cache/iblock/cdf/412_2150_1/cdfea0c04f60f0e37b2b7a13b047db60.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Собака-улыбака
+         </div>
+        </div>
+        <p>
+         С бостон-терьерами можно неплохо сэкономить на услугах грумера. Шерсть у представителей этой породы короткая, и ей достаточно эпизодического расчесывания прорезиненной варежкой. Хотя в период линьки (дважды в год) прочесывать тело питомца следует тщательнее и через день, чтобы ускорить процесс обновления шерстного покрова. Купать бостон-терьеров можно постольку-поскольку. Если собака не измеряла глубину луж на прогулке и не каталась спиной по давно почившим и успевшим основательно разложиться зверькам, затаскивать ее в ванную нет смысла.
+        </p>
+        <p>
+         Мордочки «американских джентльменов» потребуют более пристального внимания. За едой собаки часто пачкаются, поэтому протирать область вокруг носа и стопную складочку необходимо почаще. Глаза у представителей этой породы выпуклые, легко «цепляющие» инфекции, так что следить за ними придется в оба. По утрам слизистую век бостон-терьера протирают влажной хлопчатобумажной тканью (для каждого глаза – отдельная салфетка). Если заметили, что веко наполовину закрывает глаз, из которого постоянно текут слезы, скорее всего, у питомца воспаление. Постоянное чесание животным области глаз тоже повод заглянуть в ветеринарный кабинет.
+        </p>
+        <p>
+         С периодичностью два раза в месяц бостон-терьерам чистят слуховые проходы и стригут когти. Специальных тонкостей выполнения данных процедур нет, здесь действует тот же принцип, что и для других пород. В 3-4 месяца щенкам начинают подклеивать уши на самодельные пластиковые или картонные каркасы, чтобы придать им правильное положение (не дольше чем на 5 дней). В этот период желательно поменьше гладить питомца по голове, хотя многие заводчики утверждают, что легкие прикосновения к ушам не влияют на их постав. Пару раз в неделю «бостону» устраивают осмотр ротовой полости, попутно снимая желтоватый налет с зубов специальной силиконовой насадкой и чистящей пастой для собак.
+        </p>
+        <h3>
+         Выгул
+        </h3>
+        <p>
+         Несмотря на то, что бостон-терьер – порода на 99% декоративная, ее представители далеко не интроверты и не могут обходиться без выгула. Выводят (или выносят, если это щенок) собаку на улицу дважды в день с непременной оглядкой на погоду. Если за окном бушует метель или палит солнце, променад лучше отложить или перенести на более позднее/ранее время суток. В жару разумнее брать с собой бутылку с водой и легкую пластиковую мисочку, чтобы во время выгула напоить питомца, тем самым остудив его.
+        </p>
+        <p>
+         На улице собаки предпочитают активные игры с мячом и непродолжительные побегушки. Если же вам достался ультрастатичный питомец, а на дворе зима, его лучше приодеть в плотную фетровую попонку. Также важно отучить бостон-терьера поднимать с земли любые, даже самые безобидные и соблазнительные кусочки еды. Догхантеры не дремлют, об этом стоит помнить.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2af/2afd26ff2c8bd91dc2088a3c7613b1e1.jpg" title="">
+          <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/2af/1024_2150_1/2afd26ff2c8bd91dc2088a3c7613b1e1.jpg">
+           <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/2af/1024_2150_1/2afd26ff2c8bd91dc2088a3c7613b1e1.jpg">
+            <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/2af/1024_2150_1/2afd26ff2c8bd91dc2088a3c7613b1e1.jpg"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <h3>
+         Кормление
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Бостон-терьер грызет косточку" data-fancybox="gallery" href="/upload/iblock/652/652cec41198f388e497c3b5b13537b0e.jpg" title="Бостон-терьер грызет косточку">
+          <div class="lazy-load" data-alt="Бостон-терьер грызет косточку" data-class="article_pic" data-original="/upload/resize_cache/iblock/652/412_2150_1/652cec41198f388e497c3b5b13537b0e.jpg">
+           <noscript data-alt="Бостон-терьер грызет косточку" data-class="article_pic" data-original="/upload/resize_cache/iblock/652/412_2150_1/652cec41198f388e497c3b5b13537b0e.jpg">
+            <img alt="Бостон-терьер грызет косточку" class="article_pic" height="264" src="/upload/resize_cache/iblock/652/412_2150_1/652cec41198f388e497c3b5b13537b0e.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бостон-терьер грызет косточку
+         </div>
+        </div>
+        <p>
+         Вкусовые пристрастия бостон-терьеров вполне традиционны. Представители этой породы уважают сырое нежирное мясо, субпродукты, филе океанических рыб, а также нежирную кисломолочку. Гораздо меньше собакам нравятся всевозможные клетчаткосодержащие добавки вроде круп (гречка, рис) и овощей, но и к ним питомцы быстро привыкают. Раз в неделю бостон-терьера полагается побаловать куриным желтком, а вот перепелиные яйца можно давать целиком каждый день. В первый год жизни, когда у бостон-терьеров идет активное формирование скелета, в рацион следует включать богатые коллагеном продукты, например, хрящики, а также витаминные комплексы с хондроитином. Кстати, чем больше в меню щенка будет такой пищи, тем быстрее «встанут» его уши.
+        </p>
+        <p>
+         Запрещенные продукты:
+        </p>
+        <ul>
+         <li>
+          сладости и кондитерские изделия;
+         </li>
+         <li>
+          мороженое (можно изредка пару ложек);
+         </li>
+         <li>
+          любое жирное мясо;
+         </li>
+         <li>
+          бобовые;
+         </li>
+         <li>
+          перловая и пшенная крупы;
+         </li>
+         <li>
+          картофель;
+         </li>
+         <li>
+          речная рыба;
+         </li>
+         <li>
+          трубчатые кости.
+         </li>
+        </ul>
+        <p>
+         Среднестатистический бостон-терьер никогда не откажется от добавки, которая по факту может оказаться абсолютно лишней. Тем не менее «американский джентльмен» с радостью отыщет в собственном желудке местечко для дополнительной вкусняшки. Выглядит такой фуд-фетишизм потешно, но специально стимулировать его не стоит. Во-первых, переедание и, как следствие, лишний вес сгубили не одну собаку. А во-вторых, вслед за праздником живота следует неизменная расплата в виде «газовой атаки», страдать от которой будут именно ваши обонятельные рецепторы.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни бостон-терьеров
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Два друга" data-fancybox="gallery" href="/upload/iblock/bd9/bd921fb1d2f25ebc96cff9c4c66c3d97.jpg" title="Два друга">
+          <div class="lazy-load" data-alt="Два друга" data-class="article_pic" data-original="/upload/resize_cache/iblock/bd9/412_2150_1/bd921fb1d2f25ebc96cff9c4c66c3d97.jpg">
+           <noscript data-alt="Два друга" data-class="article_pic" data-original="/upload/resize_cache/iblock/bd9/412_2150_1/bd921fb1d2f25ebc96cff9c4c66c3d97.jpg">
+            <img alt="Два друга" class="article_pic" height="618" src="/upload/resize_cache/iblock/bd9/412_2150_1/bd921fb1d2f25ebc96cff9c4c66c3d97.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Два друга
+         </div>
+        </div>
+        <p>
+         По наследству от предков к бостон-терьерам перешла генетическая предрасположенность к следующим заболеваниям:
+        </p>
+        <ul>
+         <li>
+          атопия;
+         </li>
+         <li>
+          глухота;
+         </li>
+         <li>
+          меланома;
+         </li>
+         <li>
+          катаракта;
+         </li>
+         <li>
+          гидроцефалия;
+         </li>
+         <li>
+          мастоцитома;
+         </li>
+         <li>
+          пилоростеноз;
+         </li>
+         <li>
+          брахицефальный синдром (проблемы с дыханием);
+         </li>
+         <li>
+          опухоль головного мозга.
+         </li>
+        </ul>
+        <p>
+         Но особенно «бостоны» уязвимы перед простудами и вирусными инфекциями. Так, например, переохладившись на прогулке, собака способна подхватить ларинготрахеобронхит, он же кашель псарен. Больше всего инфекции подвержены обитатели питомников, живущие в стесненных условиях. Домашние животные обычно «ловят» вирус на выставках или под дверью ветеринарного кабинета.
+        </p>
+        <p>
+         Как и всех собак, бостон-терьеров обязательно вакцинируют. Первая прививка ставится в питомнике, в возрасте до 2-х месяцев. Повторно вакцину вводят через две недели. После смены молочных зубов, ориентировочно в 6-7 месяцев, «бостонам» делают прививку против бешенства.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок и мама" data-fancybox="gallery" href="/upload/iblock/dce/dced256368374bf28b4241b3aafe2c33.jpg" title="Щенок и мама">
+          <div class="lazy-load" data-alt="Щенок и мама" data-class="article_pic" data-original="/upload/resize_cache/iblock/dce/412_2150_1/dced256368374bf28b4241b3aafe2c33.jpg">
+           <noscript data-alt="Щенок и мама" data-class="article_pic" data-original="/upload/resize_cache/iblock/dce/412_2150_1/dced256368374bf28b4241b3aafe2c33.jpg">
+            <img alt="Щенок и мама" class="article_pic" height="274" src="/upload/resize_cache/iblock/dce/412_2150_1/dced256368374bf28b4241b3aafe2c33.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок и мама
+         </div>
+        </div>
+        <ul>
+         <li>
+          Верьте только предоставленным продавцом документам: щенячьим метрикам, ветпаспортам, чемпионским дипломам родителей. Если вместо документальных подтверждений заводчик ссылается на восторженные отзывы прошлых покупателей и собственную компетентность в вопросах разведения, забудьте к нему дорогу.
+         </li>
+         <li>
+          Суки чистокровных бостон-терьеров малоплодны, поэтому в их пометах обычно 3-4 щенка.
+         </li>
+         <li>
+          Заинтересованные в качестве потомства заводчики тестируют бостонов-производителей на наследственные заболевания: глухоту, сердечные патологии, пателлу. Если владелец питомника открыто заявляет, что финансово «не тянет» медицинские обследования и в подтверждение здоровья щенков приносит собственные клятвенные заверения, от покупки лучше отказаться.
+         </li>
+         <li>
+          Присмотритесь, как понравившийся щенок бостон-терьера ведет себя в коллективе. Если малыш озлоблен и драчлив, брать его определенно не стоит, так как агрессивных представителей этой породы в природе существовать не должно.
+         </li>
+         <li>
+          У щенков бостон-терьера часто бывают горбатые спинки. У одних малышей дефект проходит по мере взросления и укрепления мышц ног, у других остается навсегда, перекрывая животным доступ к выставкам.
+         </li>
+         <li>
+          Щенок традиционного «бостона» должен иметь квадратный формат туловища и большие глаза, хотя в последние годы появилось несколько породных линий, представителей которых отличают маленькие глазки и сравнительно длинный корпус.
+         </li>
+         <li>
+          И не забывайте: некоммерческий заводчик всегда придерживает лучших щенков для себя, так как его главная цель – дальнейшее развитие породы. Кроме того, истинному специалисту небезразлична дальнейшая судьба малышей, поэтому после покупки он в течение года «ведет» щенка, бесплатно консультируя нового владельца по вопросам здоровья, питания и ухода за питомцем.
+         </li>
+        </ul>
+        <h2>
+         Фото щенков бостон-терьера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/bd3/bd38a448329b1240669b7d72583c2488.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/bd3/380_264_2/bd38a448329b1240669b7d72583c2488.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/bd3/380_264_2/bd38a448329b1240669b7d72583c2488.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/bd3/380_264_2/bd38a448329b1240669b7d72583c2488.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/da7/da7d01f790aacce212c445ba99adb61c.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/da7/380_264_2/da7d01f790aacce212c445ba99adb61c.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/da7/380_264_2/da7d01f790aacce212c445ba99adb61c.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/da7/380_264_2/da7d01f790aacce212c445ba99adb61c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/320/320f01311e6d9f17e71acd7c94612f60.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/320/380_264_2/320f01311e6d9f17e71acd7c94612f60.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/320/380_264_2/320f01311e6d9f17e71acd7c94612f60.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/320/380_264_2/320f01311e6d9f17e71acd7c94612f60.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b1d/b1d3a1e3feb0c863625f54fc0f06ea9f.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b1d/380_264_2/b1d3a1e3feb0c863625f54fc0f06ea9f.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b1d/380_264_2/b1d3a1e3feb0c863625f54fc0f06ea9f.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/b1d/380_264_2/b1d3a1e3feb0c863625f54fc0f06ea9f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/3d0/3d03c8f06908b582a00d91cecc8bebf4.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/3d0/380_264_2/3d03c8f06908b582a00d91cecc8bebf4.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/3d0/380_264_2/3d03c8f06908b582a00d91cecc8bebf4.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/3d0/380_264_2/3d03c8f06908b582a00d91cecc8bebf4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a00/a0027ed42236181ba679be674eef21ce.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a00/380_264_2/a0027ed42236181ba679be674eef21ce.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a00/380_264_2/a0027ed42236181ba679be674eef21ce.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/a00/380_264_2/a0027ed42236181ba679be674eef21ce.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6b7/6b7b79a4427ea6826bccb88cdf24e7b6.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/6b7/380_264_2/6b7b79a4427ea6826bccb88cdf24e7b6.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/6b7/380_264_2/6b7b79a4427ea6826bccb88cdf24e7b6.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/6b7/380_264_2/6b7b79a4427ea6826bccb88cdf24e7b6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/932/93211ffdb564883e5f53c2537a616f01.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/932/380_264_2/93211ffdb564883e5f53c2537a616f01.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/932/380_264_2/93211ffdb564883e5f53c2537a616f01.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/932/380_264_2/93211ffdb564883e5f53c2537a616f01.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9c1/9c195a9fd6a20c1e20c96fd4fb7593e6.jpg" title="">
+           <div class="lazy-load" data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9c1/380_264_2/9c195a9fd6a20c1e20c96fd4fb7593e6.jpg">
+            <noscript data-alt="Бостон-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9c1/380_264_2/9c195a9fd6a20c1e20c96fd4fb7593e6.jpg">
+             <img alt="Бостон-терьер" class="article_pic" src="/upload/resize_cache/iblock/9c1/380_264_2/9c195a9fd6a20c1e20c96fd4fb7593e6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Цена бостон-терьера
+        </h2>
+        <p>
+         В России бостон-терьеры не так широко распространены, как на своей родине, тем не менее в стране действует несколько питомников, занимающихся разведением и популяризацией породы. Что касается цен, то они обусловлены в основном репутацией заводчика и классом щенка (шоу, пет, брид). В частности, искать в питомниках перспективных малышей стоимостью менее 40 000 рублей – занятие пустое и бессмысленное, потому что среднерыночная стоимость щенка бостон-терьера с идеальным экстерьером – 50 000 - 80 000 руб. Неамбициозным любителям животных и разумной экономии целесообразнее приобретать питомцев пет-категории. Конечно, внешность таких «бостонов» далека от эталонной, зато и цена на них вдвое ниже – 25 000 - 35 000 рублей.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения бостон-терьера на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/boston-terer/forum/">
+        Перейти на
+        форум бостон-терьера
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Бостон-терьер" src="/upload/iblock/51b/51bfa62f60d3ffb22ed9b145cf71e7d8.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/boston-terer/">
+          Бостон-терьер
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/boston-terer/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/boston-terer/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/boston-terer/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/boston-terer/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/boston-terer/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/bladkhaund/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бладхаунд" data-original="/upload/resize_cache/iblock/c60/100_100_1/c6035673cdcf3119e45483914d43b623.jpg">
+          <noscript data-alt="Бладхаунд" data-original="/upload/resize_cache/iblock/c60/100_100_1/c6035673cdcf3119e45483914d43b623.jpg">
+           <img alt="Бладхаунд" src="/upload/resize_cache/iblock/c60/100_100_1/c6035673cdcf3119e45483914d43b623.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бладхаунд
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/siba-inu/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Сиба-ину" data-original="/upload/resize_cache/iblock/11e/100_100_1/11ea73b02406f137742271272c2812e5.jpg">
+          <noscript data-alt="Сиба-ину" data-original="/upload/resize_cache/iblock/11e/100_100_1/11ea73b02406f137742271272c2812e5.jpg">
+           <img alt="Сиба-ину" src="/upload/resize_cache/iblock/11e/100_100_1/11ea73b02406f137742271272c2812e5.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Сиба-ину
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/vengerskaya-vyzhla/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Венгерская выжла" data-original="/upload/resize_cache/iblock/8b9/100_100_1/8b980d5f59e40d4d0236188483a97269.jpg">
+          <noscript data-alt="Венгерская выжла" data-original="/upload/resize_cache/iblock/8b9/100_100_1/8b980d5f59e40d4d0236188483a97269.jpg">
+           <img alt="Венгерская выжла" src="/upload/resize_cache/iblock/8b9/100_100_1/8b980d5f59e40d4d0236188483a97269.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Венгерская выжла
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/labradudl/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Лабрадудль" data-original="/upload/resize_cache/iblock/d4d/100_100_1/1ik6hem35wat4q4bcqa3ceksaudcqyvs.jpg">
+          <noscript data-alt="Лабрадудль" data-original="/upload/resize_cache/iblock/d4d/100_100_1/1ik6hem35wat4q4bcqa3ceksaudcqyvs.jpg">
+           <img alt="Лабрадудль" src="/upload/resize_cache/iblock/d4d/100_100_1/1ik6hem35wat4q4bcqa3ceksaudcqyvs.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Лабрадудль
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fboston-terer%252F%253Fcheck_key%253Db0a531fd6a3390d6d01a33e03cde4efe%2526ANIMAL_CODE%253Dboston-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fboston-terer%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmJvc3Rvbi10ZXJlciUyRiUzRmNoZWNrX2tleSUzRGIwYTUzMWZkNmEzMzkwZDZkMDFhMzNlMDNjZGU0ZWZlJTI2QU5JTUFMX0NPREUlM0Rib3N0b24tdGVyZXIlMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGYm9zdG9uLXRlcmVyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fboston-terer%252F%253Fcheck_key%253Db0a531fd6a3390d6d01a33e03cde4efe%2526ANIMAL_CODE%253Dboston-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fboston-terer%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fboston-terer%252F%253Fcheck_key%253Db0a531fd6a3390d6d01a33e03cde4efe%2526ANIMAL_CODE%253Dboston-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fboston-terer%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "176.213.59.209"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--9dcccd9f3576d43e11548ee0327d3b79-->

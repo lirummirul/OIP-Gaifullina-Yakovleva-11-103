@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'8e93213b19a8'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Боксер, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Немецкий боксёр, или просто боксер – представитель крупной, коренастой и гладкошерстной породы. Выведенный в Германии, он получил широкую известность благодаря отличным охранным качествам. Боксер становится для своего хозяина прекрасным компаньоном и настоящим другом." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/62f/62f85a1fbf0f6ccc46e60304af530c72.jpg" property="og:image"/>
+     <title>
+      Немецкий боксер — описание породы собаки от А до Я
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/bokser/" property="og:url"/>
+     <meta content="Немецкий боксер — описание породы собаки от А до Я" property="og:title"/>
+     <meta content="Немецкий боксёр, или просто боксер – представитель крупной, коренастой и гладкошерстной породы. Выведенный в Германии, он получил широкую известность благодаря отличным охранным качествам. Боксер становится для своего хозяина прекрасным компаньоном и настоящим другом." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/bokser/" itemprop="url">
+         <span itemprop="title">
+          Боксер
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Боксер
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/bokser/">
+          Описание
+         </a>
+         <a href="/dog/bokser/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/bokser/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/bokser/photo/">
+          Фото
+         </a>
+         <a href="/dog/bokser/video/">
+          Видео
+         </a>
+         <a href="/dog/bokser/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/bokser/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Боксер" src="/upload/iblock/0d3/0d330b90f354e0aa5941e40c39a40e2f.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/bokser/">
+           немецкий боксёр
+          </a>
+         </span>
+         <p>
+          Немецкий боксёр, или просто боксер – представитель крупной, коренастой и гладкошерстной породы. Выведенный в Германии, он получил широкую известность благодаря отличным охранным качествам. Боксер становится для своего хозяина прекрасным компаньоном и настоящим другом.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/92d/92d4cc0480544b7e33b650d0b1419123.jpg" data-cap="My heart melts for these two " data-fancybox="images" data-link="https://www.instagram.com/p/BimiNajgrtP/" data-type="image" data-username="claire_kearney80" href="/upload/uf/8ed/8ed951a02c74f425151731cd5d03463e.jpg">
+            <img alt="Боксер" src="/upload/resize_cache/uf/8ed/293_293_2/8ed951a02c74f425151731cd5d03463e.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/6a7/6a7b578b73f324f9865c5f067d454365.jpg" data-cap="Unconditional love" data-fancybox="images" data-link="https://www.flickr.com/photos/tamasszarka/37040936161/" data-type="image" data-username="Tamás Szarka" href="/upload/uf/b86/b867f53f8ea4bd33d92e3c65ac3a51fd.jpg">
+            <img alt="Боксер" src="/upload/resize_cache/uf/b86/293_293_2/b867f53f8ea4bd33d92e3c65ac3a51fd.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/649/64920f052dd5c64b92070d58577ef59d.jpg" data-cap="Mayko (bébé bobox)" data-fancybox="images" data-link="https://www.instagram.com/pierre_guerin_photographe/" data-type="image" data-username="Guerin Pierre Photographe" href="/upload/uf/284/284072d8050baaba6d36ae17384d770d.jpg">
+            <img alt="Боксер" src="/upload/resize_cache/uf/284/293_293_2/284072d8050baaba6d36ae17384d770d.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/bokser/photo/">
+         Все
+            фото боксера
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы боксер
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Особенности немецкого боксера
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Внешность и особые черты породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Фото взрослого боксера
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Характер боксера
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Дрессировка и воспитание
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Здоровье и болезни боксера
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl10">
+           Фото щенков боксера
+          </a>
+         </li>
+         <li>
+          <a href="#gl11">
+           Сколько стоит боксер
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Боксер
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Германия
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         1850 год
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 30-32 кг, суки 25-27 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 57-63 см, суки 53-59 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         11-12 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Яркий темперамент и одновременно покладистый характер и крепкая нервная система – эти черты в немецких боксерах наиболее полно выражены.
+        </li>
+        <li>
+         Боксёр – отличный сторож, и всё благодаря его отважности и бесстрашию.
+        </li>
+        <li>
+         Собаки этой породы в кругу семьи очень коммуникабельны, любят, когда хозяева к ним внимательны, проявляют дружелюбие ко всем домочадцам.
+        </li>
+        <li>
+         Ласковый боксёр – настоящая находка для семей с маленькими детьми. Он с удовольствием с ними поиграет, а затем охотно приляжет на диван (в том числе и со взрослыми), чтобы вместе отдохнуть.
+        </li>
+        <li>
+         К посторонним боксёры нередко относятся с недоверием: при появлении в доме гостей начинают громко лаять. Социализация животного с раннего возраста поможет в решении этой проблемы.
+        </li>
+        <li>
+         Правильное воспитание боксера – залог того, что из щенка вырастет верный и преданный друг.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Боксер" data-original="/upload/iblock/62f/62f85a1fbf0f6ccc46e60304af530c72.jpg">
+          <noscript data-alt="Боксер" data-original="/upload/iblock/62f/62f85a1fbf0f6ccc46e60304af530c72.jpg">
+           <img alt="Боксер" src="/upload/iblock/62f/62f85a1fbf0f6ccc46e60304af530c72.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Немецких боксеров
+          </strong>
+          используют в качестве собак-телохранителей, как сторожевых псов и для работы в правоохранительных органах. Представители этой породы умны и уравновешены, что позволяет использовать их в качестве поводырей для слепых. Собака-боксер по своей природе очень подвижна, любит бывать на свежем воздухе, подолгу гулять, резвиться под открытым небом. Несмотря на коммуникабельность и дружелюбие по отношению к хозяину и членам семьи, к чужим людям отношение у нее опасливое, проявляет к ним настороженность.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средний (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Боксер основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/bokser/razmeri-porodi/">
+         размеры боксера
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы боксер
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Сука и кобель немецкого боксера" data-fancybox="gallery" href="/upload/iblock/ffc/ffc4dbf4edf57c3cdfe0efb91216e6d1.jpg" title="Сука и кобель немецкого боксера">
+          <div class="lazy-load" data-alt="Сука и кобель немецкого боксера" data-class="article_pic" data-original="/upload/resize_cache/iblock/ffc/412_2150_1/ffc4dbf4edf57c3cdfe0efb91216e6d1.jpg">
+           <noscript data-alt="Сука и кобель немецкого боксера" data-class="article_pic" data-original="/upload/resize_cache/iblock/ffc/412_2150_1/ffc4dbf4edf57c3cdfe0efb91216e6d1.jpg">
+            <img alt="Сука и кобель немецкого боксера" class="article_pic" height="617" src="/upload/resize_cache/iblock/ffc/412_2150_1/ffc4dbf4edf57c3cdfe0efb91216e6d1.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Сука и кобель немецкого боксера
+         </div>
+        </div>
+        <p>
+         Предками немецкого боксера являются бульдоги, мастифы и булленбейсеры. Именно вследствие смешения их кровей и появилась на свет эта порода, начавшая покорять мир с 1896 года.
+        </p>
+        <p>
+         Боксеры образца конца XIX века и боксеры современные – это не совсем одно и то же. В те далекие годы их использовали в качестве пастухов, для перевозки грузов и охоты на диких кабанов и бизонов. Нередко ранние представители породы становились участниками собачьих боев и даже боев с быками. Во время Первой мировой войны германская армия с успехом использовала их как почтальонов и разведчиков. Тогда же немецкие боксеры проявили себя и в качестве собак-поводырей. Позже собаки этой породы раскрыли и свои «творческие» таланты, с успехом выступая в цирковых и театральных представлениях.
+        </p>
+        <p>
+         Интересна версия и более раннего происхождения боксеров. Некоторые исследователи утверждают, что их прямыми предками являются тибетские доги, оказавшиеся в Риме и Греции еще в античные времена. Считается, что древние боксеры были крупнее и агрессивнее. Присущая им кровожадность помогала отлично справляться с задачами военного характера. Их использовали для охраны и как травильную собаку во время охоты на крупную лесную дичь, а также в популярных развлечениях тех времен – собачьих боях, которые по накалу страстей практически не уступали гладиаторским.
+        </p>
+        <p>
+         С конца позапрошлого века немецкий боксер начал покорять мир, у него появлялось много поклонников в разных уголках планеты, даже открывавших клубы, посвященные этой невероятно статной, осанистой и красивой собаке. Ее внешность кажется агрессивной (иной раз может показаться, что она готова броситься на чужака и разорвать его), но за ней скрываются добродушие и покладистый характер. В этом большая заслуга селекционеров, сделавших все возможное, чтобы к ловкости, выносливости и быстроте реакции добавились и такие черты, как доброта и уравновешенность.
+        </p>
+        <p>
+         Когда собаке хочется поиграть, она начинает перебирать в воздухе лапами, будто боксируя. Такая особенная манера, делающая ее непохожей на других псов, и предопределила название породы. По отзывам владельцев, боксеры обладают всеми необходимыми качествами для проживания в семье, поэтому они – лучшие!
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5e4/5e45d322f16adddde4b66ecf479281fb.jpg" title="">
+          <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/iblock/5e4/5e45d322f16adddde4b66ecf479281fb.jpg">
+           <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/iblock/5e4/5e45d322f16adddde4b66ecf479281fb.jpg">
+            <img alt="Боксер" class="article_pic" src="/upload/iblock/5e4/5e45d322f16adddde4b66ecf479281fb.jpg"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d37/d37d0a6ddeb1072dc286df897551a781.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/d37/512_342_2/d37d0a6ddeb1072dc286df897551a781.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/d37/512_342_2/d37d0a6ddeb1072dc286df897551a781.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/d37/512_342_2/d37d0a6ddeb1072dc286df897551a781.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e97/e97fa79475de1d9b2e72c4e6a87be595.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e97/512_342_2/e97fa79475de1d9b2e72c4e6a87be595.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e97/512_342_2/e97fa79475de1d9b2e72c4e6a87be595.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/e97/512_342_2/e97fa79475de1d9b2e72c4e6a87be595.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2>
+         Видео: Немецкий боксер
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="o_lihkpXWoQ">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Особенности немецкого боксера
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок боксера" data-fancybox="gallery" href="/upload/iblock/532/53274b2a820f602942a20f8a6295fc0f.jpg" title="Щенок боксера">
+          <div class="lazy-load" data-alt="Щенок боксера" data-class="article_pic" data-original="/upload/resize_cache/iblock/532/412_2150_1/53274b2a820f602942a20f8a6295fc0f.jpg">
+           <noscript data-alt="Щенок боксера" data-class="article_pic" data-original="/upload/resize_cache/iblock/532/412_2150_1/53274b2a820f602942a20f8a6295fc0f.jpg">
+            <img alt="Щенок боксера" class="article_pic" height="620" src="/upload/resize_cache/iblock/532/412_2150_1/53274b2a820f602942a20f8a6295fc0f.jpg" width="411"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок боксера
+         </div>
+        </div>
+        <p>
+         Немецкий боксёр в возрасте 18 месяцев – это уже взрослая собака, вполне сформировавшаяся физически. Однако внутренний мир к полутора годам всё ещё остаётся «детским». По этой причине попытки обучать пса в период его эмоциональной незрелости – дело практически бесперспективное, то есть на команды он не реагирует, хозяину даже начинает казаться, что он общается с глухим. Но в один прекрасный момент в обучении наступает прорыв, и ваш домашний любимец вдруг начинает понимать всё, чему его раньше пытались научить, но тщетно.
+        </p>
+        <p>
+         Боксёр – собака коммуникабельная, с другими четвероногими обитателями дома уживается легко, но иногда задиристость в характере берёт верх и она начинает гонять дворовых котов. Бывает, что пес этой породы легко ввязывается в драку с другими собаками, причём потасовки зачастую провоцирует он сам. По своей природе боксёр – настоящий боец, он ловок, смел и силен. Если его правильно дрессировать, то можно воспитать превосходного охранника. Детская непосредственность, присущая боксеру, остаётся с ним всю жизнь. Пёс проявляет завидное упрямство, но своей цели никогда не добивается агрессией. Главное его оружие – юмор и очарование, перед которым не устоит ни один любящий хозяин.
+        </p>
+        <p>
+         Представители этой породы обладают удивительной чуткостью, они очень умные и хитрые. Иногда бывают шумными, что воспринимается некоторыми владельцами как недостаток, поэтому, чтобы развить лучшие черты характера и минимизировать недостатки, дрессировать боксеров нужно обязательно. При правильном подходе к этой задаче вы можете добиться потрясающих результатов, так как боксеры воспринимают дрессировку как игру и легко ей поддаются.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Бегущий боксер" data-fancybox="gallery" href="/upload/iblock/14d/14d5f4a1fde2267910f8813647f529f2.jpg" title="Бегущий боксер">
+          <div class="lazy-load" data-alt="Бегущий боксер" data-class="article_pic" data-original="/upload/iblock/14d/14d5f4a1fde2267910f8813647f529f2.jpg">
+           <noscript data-alt="Бегущий боксер" data-class="article_pic" data-original="/upload/iblock/14d/14d5f4a1fde2267910f8813647f529f2.jpg">
+            <img alt="Бегущий боксер" class="article_pic" src="/upload/iblock/14d/14d5f4a1fde2267910f8813647f529f2.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бегущий боксер
+         </div>
+        </div>
+        <h2 id="gl3">
+         Внешность и особые черты породы
+        </h2>
+        <p>
+         Боксеры имеют коренастое телосложение. Их еще называют «квадратными» собаками, поскольку их высота и длина имеют примерно одинаковые значения. Широкая и глубокая грудная клетка вкупе с крепкой спиной с небольшим уклоном в тазовой области вполне соответствует такому типу телосложения. Вместе с тем представители этой породы приземисто не смотрятся – скорее наоборот. Псы выглядят статно, у них гордая осанка, и всё благодаря сухой мускулатуре и поджарому животу. Конечности у них массивные, правильно поставлены, без кривизны, поэтому «фигуру» не портят. Шея у боксера средней длины, крепкая и мускулистая, а хвост длинный и ровный.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Два боксера играются" data-fancybox="gallery" href="/upload/iblock/a5a/a5adf22e9ddbc90af9247716de602451.jpg" title="Два боксера играются">
+          <div class="lazy-load" data-alt="Два боксера играются" data-class="article_pic" data-original="/upload/resize_cache/iblock/a5a/412_2150_1/a5adf22e9ddbc90af9247716de602451.jpg">
+           <noscript data-alt="Два боксера играются" data-class="article_pic" data-original="/upload/resize_cache/iblock/a5a/412_2150_1/a5adf22e9ddbc90af9247716de602451.jpg">
+            <img alt="Два боксера играются" class="article_pic" height="273" src="/upload/resize_cache/iblock/a5a/412_2150_1/a5adf22e9ddbc90af9247716de602451.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Два боксера играются
+         </div>
+        </div>
+        <p>
+         Отличительной чертой породы является слегка выдающаяся вперед нижняя челюсть, немного вздернутый нос и высоко расположенные уши – тонкие, немного висящие вперёд. При обрезании (купировании) обретают заостренную форму, которая придает им правильную постановку. Глаза у боксера тёмные, умные, они очень многое могут рассказать о породе. Во взгляде можно прочитать любознательность, он светится энергией, но никак не агрессией.
+        </p>
+        <p>
+         Кожа у боксеров, за исключением лба и щек, прилегает плотно и никаких складок не образует. Шерсть – короткая, жесткая – тоже прилегает плотно. Классическими для немецких боксеров считаются только два окраса: рыжий и тигровый. Первый может варьироваться от насыщенно-красных до светло-желтых оттенков. У тигрового свои «крайности»: от золотистого до мрачно-тёмного. Стандарт породы предполагает, что полосы должны иметь вид четких линий.
+        </p>
+        <p>
+         Каким бы ни был окрас, своеобразная темная маска – неизменный атрибут на морде собаки. Допустимым является присутствие белых отметин, придающих породе эстетичности. «Бракованными» считаются белые, черные, серые собаки с большим количеством полос и пятен. И еще: если вы планируете отправить своего любимца на выставку, то купированием ушей и хвоста придётся пожертвовать. Специалисты проводить подобные манипуляции с боксером категорически не рекомендуют.
+        </p>
+        <h3>
+         Общее описание
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/66b/66b84aa833bfff9055e7291bd8ab03c7.jpg" title="">
+          <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/66b/412_2150_1/66b84aa833bfff9055e7291bd8ab03c7.jpg">
+           <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/66b/412_2150_1/66b84aa833bfff9055e7291bd8ab03c7.jpg">
+            <img alt="Боксер" class="article_pic" height="290" src="/upload/resize_cache/iblock/66b/412_2150_1/66b84aa833bfff9055e7291bd8ab03c7.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <ul>
+         <li>
+          Рост немецкого боксера средний, примерно 60 см в холке. Весит взрослый пес от 25 до 32 кг.
+         </li>
+         <li>
+          Собаки этой породы обладают великолепно развитой и объемной мускулатурой. Их движения активны, энергичны, наполнены благородством и силой.
+         </li>
+         <li>
+          Боксеры, несмотря на «квадратное» телосложение, обладают достаточной субстанцией. То есть неуклюжими, тяжеловесными или, наоборот, слишком легкими их не назовешь.
+         </li>
+         <li>
+          Им присуща уравновешенность, они часто служат в качестве поводырей для слепых людей.
+         </li>
+         <li>
+          Кобели крупнее сук. У породистых родителей на свет может появляться до 7 щенков за один помет.
+         </li>
+        </ul>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Голова соответствует пропорциям корпуса и, придавая псу особую самобытность, не выглядит слишком массивной или чрезмерно лёгкой. Морда, в идеале, максимально широкая и мощная. Правильное соотношение черепной части и морды обеспечивает боксеру гармоничность его головы. Откуда бы вы ни посмотрели – спереди, сбоку или сверху – морда относительно черепной части остаётся в нужной пропорции и слишком маленькой не выглядит.
+        </p>
+        <p>
+         Голова боксера сухая, складки и морщины на ней отсутствуют. Последние образуются, и это допускается, лишь в случаях, если собаку что-то насторожило. На морде, по обе ее стороны, располагаются природные морщины. Но не везде, а только на участке от основания переносицы вниз. На общем фоне морды отчетливо видна чёрная маска. Несмотря на мрачный оттенок, угрюмости облику собаки она отнюдь не придает.
+        </p>
+        <p>
+         Верхняя область черепа не широкая, не плоская и предельно угловатая. Ее форма несколько выпуклая, но не укороченная и не шарообразная. Выраженность бугра в затылочной области не чрезмерная. Борозда на лбу (прежде всего участок между глаз), глубиной не отличается и просматривается лишь слегка. Участок ото лба до спинки носа имеет уступ, который просматривается отчетливо. Спинка носа не опущена и, в отличие от бульдогов, не вздернута.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда боксера" data-fancybox="gallery" href="/upload/iblock/94a/94a7a7f7bdf05b2f380107007814212a.jpg" title="Морда боксера">
+          <div class="lazy-load" data-alt="Морда боксера" data-class="article_pic" data-original="/upload/iblock/94a/94a7a7f7bdf05b2f380107007814212a.jpg">
+           <noscript data-alt="Морда боксера" data-class="article_pic" data-original="/upload/iblock/94a/94a7a7f7bdf05b2f380107007814212a.jpg">
+            <img alt="Морда боксера" class="article_pic" src="/upload/iblock/94a/94a7a7f7bdf05b2f380107007814212a.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда боксера
+         </div>
+        </div>
+        <h3>
+         Зубы
+        </h3>
+        <p>
+         Нижняя челюсть, если сопоставить ее с верхней, чуть длиннее. Ее отличительная особенность – изогнутость кверху. Основание верхней челюсти широкое, сужающееся к концу. Зубы боксера отличаются отменным здоровьем, очень крепкие. Клыки впечатляют крупностью, широко расставлены. Резцы располагаются на одной линии, очень ровно. Форма прикуса собаки – перекус.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза боксеров немаленькие, темного цвета, не посажены глубоко и выпуклостью не отличаются. Края век тоже темные. Собаки смотрят интеллигентно и одновременно энергично, их взгляд добрый и не несет в себе никакой угрозы.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Немецкий боксер" data-fancybox="gallery" href="/upload/iblock/def/def87e96c7ad00421b4b459e026b2d80.jpg" title="Немецкий боксер">
+          <div class="lazy-load" data-alt="Немецкий боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/def/412_2150_1/def87e96c7ad00421b4b459e026b2d80.jpg">
+           <noscript data-alt="Немецкий боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/def/412_2150_1/def87e96c7ad00421b4b459e026b2d80.jpg">
+            <img alt="Немецкий боксер" class="article_pic" height="621" src="/upload/resize_cache/iblock/def/412_2150_1/def87e96c7ad00421b4b459e026b2d80.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Немецкий боксер
+         </div>
+        </div>
+        <p>
+         Находятся по бокам в верхней области черепа, их посадка высокая, величина соразмерна. В состоянии, когда пса ничего не беспокоит, и нет необходимости прислушиваться к звукам, прилегают к скулам. Если ваш любимец насторожится, то уши тут же развернутся вперёд, образуя чёткий перегиб.
+        </p>
+        <h3>
+         Нос и губы
+        </h3>
+        <p>
+         Благодаря носу морда собаки имеет завершенный вид, его кончик находится несколько выше основания. Мочка чуть-чуть вздернута, она широкая, цвет – черный, ноздри тоже широкие.
+        </p>
+        <p>
+         Верхняя губа выраженная, мясистая. Она закрывает свободный участок, образуемый вследствие того, что нижняя челюсть длиннее. Поддерживают верхнюю губу нижние клыки.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Шея боксера сухая, мускулистая и одновременно округлая и длинная (но не чрезмерно). От бугра на затылке в направлении холки верхняя граница шеи образует изящную дугу.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Холка у боксера явно выраженная, опорой корпусу служат сильные, развитые конечности. Спина широкая, с «накачанной» мышечной системой, но короткая и ровная. Круп отличается некоторой округлостью, широкий, чуть наклонен. Таз, прежде всего это относится к особям женского пола, широкий и длинный.
+        </p>
+        <p>
+         Область грудной клетки настолько глубока, что доходит вплоть до локтей и равняется половине роста собаки в холке. Передняя ее часть мощная, великолепно развита.
+        </p>
+        <p>
+         Линия низа имеет элегантный изгиб в направлении седалищного бугра. Пах длиной похвастать не может, умеренно подтянутый.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Боксер с некупированными ушами и хвостом" data-fancybox="gallery" href="/upload/iblock/781/7813dcd768affb73667e3def6a0f25b7.jpg" title="Боксер с некупированными ушами и хвостом">
+          <div class="lazy-load" data-alt="Боксер с некупированными ушами и хвостом" data-class="article_pic" data-original="/upload/resize_cache/iblock/781/412_2150_1/7813dcd768affb73667e3def6a0f25b7.jpg">
+           <noscript data-alt="Боксер с некупированными ушами и хвостом" data-class="article_pic" data-original="/upload/resize_cache/iblock/781/412_2150_1/7813dcd768affb73667e3def6a0f25b7.jpg">
+            <img alt="Боксер с некупированными ушами и хвостом" class="article_pic" height="309" src="/upload/resize_cache/iblock/781/412_2150_1/7813dcd768affb73667e3def6a0f25b7.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Боксер с некупированными ушами и хвостом
+         </div>
+        </div>
+        <p>
+         Имеет достаточно высокую посадку. Обычно его не купируют, то есть оставляют неизменным – таким, каким он является от природы.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Если стоять перед собакой, то можно увидеть, что передние лапы расположены параллельно друг другу. Костяк конечностей крепкий.
+        </p>
+        <p>
+         Лопатки прочно соединены с корпусом, отличаются длиной и имеют наклон. Плечи тоже длинные, расположены относительно лопаток под правильным углом. Локти прижаты к груди не слишком плотно.
+        </p>
+        <p>
+         Предплечья тоже отнюдь не короткие, расположены вертикально, мускулистые. Пясти, наоборот, короткие, практически отвесные. Запястья обозначены чётко: они крепкие, но не слишком массивные.
+        </p>
+        <p>
+         Передние лапы имеют округлую форму, они небольшого размера, компактные, подушечки твердые и упругие. Задние ноги от природы хорошо «подкачаны», прямые, бедра выраженно широкие и длинные.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Команда боксеров" data-fancybox="gallery" href="/upload/iblock/66b/66b462f05e7bd0a805ca0b6e8adc9bdc.jpg" title="Команда боксеров">
+          <div class="lazy-load" data-alt="Команда боксеров" data-class="article_pic" data-original="/upload/resize_cache/iblock/66b/412_2150_1/66b462f05e7bd0a805ca0b6e8adc9bdc.jpg">
+           <noscript data-alt="Команда боксеров" data-class="article_pic" data-original="/upload/resize_cache/iblock/66b/412_2150_1/66b462f05e7bd0a805ca0b6e8adc9bdc.jpg">
+            <img alt="Команда боксеров" class="article_pic" height="309" src="/upload/resize_cache/iblock/66b/412_2150_1/66b462f05e7bd0a805ca0b6e8adc9bdc.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Команда боксеров
+         </div>
+        </div>
+        <p>
+         Задние лапы по длине несколько превосходят передние. Они тоже компактны, подушечки твердые и упругие.
+        </p>
+        <p>
+         Когда боксер спокоен, его коленные суставы настолько отчетливо выдвигаются вперед, что даже доходят до условного перпендикуляра, очерченного в направлении поверхности от подвздошных бугров.
+        </p>
+        <p>
+         Мускулистость присуща и голеням. Скакательные суставы хотя и не отличаются массивностью, но при этом крепкие и хорошо выражены.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Волос к коже прилегает плотно, он короткий и жесткий, блестит.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Боксеры бывают рыжего либо тигрового окраса. Оттенки первого допускаются любые, начиная от светло-желтого и заканчивая красно-коричневым. Наиболее типичными для породы или, другими словами, предпочтительными являются красно-рыжие тона.
+        </p>
+        <p>
+         Тигровый окрас имеет вид темных или черных полос на рыжем фоне. Они должны быть четко очерчены и контрастировать с фоном. Белые участки не возбраняются и, соответственно, «браком» породы не считаются – наоборот, они собаку могут даже украсить.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Боксер рыжего окраса" data-fancybox="gallery" href="/upload/iblock/0ce/0ce86aead71607a02cf36320ee1c37cc.jpg" title="Боксер рыжего окраса">
+           <div class="lazy-load" data-alt="Боксер рыжего окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/0ce/512_342_2/0ce86aead71607a02cf36320ee1c37cc.jpg">
+            <noscript data-alt="Боксер рыжего окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/0ce/512_342_2/0ce86aead71607a02cf36320ee1c37cc.jpg">
+             <img alt="Боксер рыжего окраса" class="article_pic" src="/upload/resize_cache/iblock/0ce/512_342_2/0ce86aead71607a02cf36320ee1c37cc.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Боксер рыжего окраса
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Боксер тигрового окраса" data-fancybox="gallery" href="/upload/iblock/99c/99cb2191e0e18a1c99096e1f475555fd.jpg" title="Боксер тигрового окраса">
+           <div class="lazy-load" data-alt="Боксер тигрового окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/99c/512_342_2/99cb2191e0e18a1c99096e1f475555fd.jpg">
+            <noscript data-alt="Боксер тигрового окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/99c/512_342_2/99cb2191e0e18a1c99096e1f475555fd.jpg">
+             <img alt="Боксер тигрового окраса" class="article_pic" src="/upload/resize_cache/iblock/99c/512_342_2/99cb2191e0e18a1c99096e1f475555fd.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Боксер тигрового окраса
+          </div>
+         </div>
+        </div>
+        <h3>
+         Возможные пороки
+        </h3>
+        <p>
+         Различные вариации, не соответствующие перечисленным выше стандартам породы, рассматриваются как недостатки. Оценка данных недостатков должна проводиться согласно степени их выраженности, а также по тому, насколько они влияют на повседневный образ жизни собаки и ее здоровье.
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Белый боксер, считается редкостью и может стоить дороже, чем собаки, соответствующие стандарту породы." data-fancybox="gallery" href="/upload/iblock/bea/bea0622bbf881cbe890ffa3c4dfac7a4.jpg" title="Белый боксер, считается редкостью и может стоить дороже, чем собаки, соответствующие стандарту породы.">
+          <div class="lazy-load" data-alt="Белый боксер, считается редкостью и может стоить дороже, чем собаки, соответствующие стандарту породы." data-class="article_pic" data-original="/upload/resize_cache/iblock/bea/412_2150_1/bea0622bbf881cbe890ffa3c4dfac7a4.jpg">
+           <noscript data-alt="Белый боксер, считается редкостью и может стоить дороже, чем собаки, соответствующие стандарту породы." data-class="article_pic" data-original="/upload/resize_cache/iblock/bea/412_2150_1/bea0622bbf881cbe890ffa3c4dfac7a4.jpg">
+            <img alt="Белый боксер, считается редкостью и может стоить дороже, чем собаки, соответствующие стандарту породы." class="article_pic" height="274" src="/upload/resize_cache/iblock/bea/412_2150_1/bea0622bbf881cbe890ffa3c4dfac7a4.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Белый боксер, считается редкостью и может стоить дороже, чем собаки, соответствующие стандарту породы.
+         </div>
+        </div>
+        <p>
+         Физические: врожденная куцехвостость. Поведенческие: трусость или, наоборот, агрессивность.
+        </p>
+        <p>
+         Дефекты семенников: у здоровых кобелей они должны быть нормально развиты, полностью опущены в мошонку.
+        </p>
+        <p>
+         Любой представитель породы, показывающий явные физические недостатки либо отклонения в поведении, должен быть дисквалифицирован.
+        </p>
+        <h3>
+         Продолжительность жизни
+        </h3>
+        <p>
+         Немецкий боксер в среднем живет 11-12 лет. Из этого правила бывают и счастливые исключения.
+        </p>
+        <h2 id="gl4">
+         Фото взрослого боксера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/781/781e5888e194594032b85af56cb77b23.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/781/380_264_2/781e5888e194594032b85af56cb77b23.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/781/380_264_2/781e5888e194594032b85af56cb77b23.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/781/380_264_2/781e5888e194594032b85af56cb77b23.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4d2/4d23df793842b9470e609966eb842892.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/4d2/380_264_2/4d23df793842b9470e609966eb842892.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/4d2/380_264_2/4d23df793842b9470e609966eb842892.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/4d2/380_264_2/4d23df793842b9470e609966eb842892.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/dd4/dd4f685780b16930950d9cc5b045dfb6.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/dd4/380_264_2/dd4f685780b16930950d9cc5b045dfb6.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/dd4/380_264_2/dd4f685780b16930950d9cc5b045dfb6.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/dd4/380_264_2/dd4f685780b16930950d9cc5b045dfb6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1fb/1fb835ea95a96e7c840aad45185be23f.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1fb/380_264_2/1fb835ea95a96e7c840aad45185be23f.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1fb/380_264_2/1fb835ea95a96e7c840aad45185be23f.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/1fb/380_264_2/1fb835ea95a96e7c840aad45185be23f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f4a/f4a7ca9b37a95ff4c87c3bf40278ebe6.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f4a/380_264_2/f4a7ca9b37a95ff4c87c3bf40278ebe6.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f4a/380_264_2/f4a7ca9b37a95ff4c87c3bf40278ebe6.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/f4a/380_264_2/f4a7ca9b37a95ff4c87c3bf40278ebe6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/bf6/bf64fd4e31c32ca23688115f91335c97.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/bf6/380_264_2/bf64fd4e31c32ca23688115f91335c97.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/bf6/380_264_2/bf64fd4e31c32ca23688115f91335c97.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/bf6/380_264_2/bf64fd4e31c32ca23688115f91335c97.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2ec/2ecc2427ef934741e63d9f20ab06cac9.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/2ec/380_264_2/2ecc2427ef934741e63d9f20ab06cac9.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/2ec/380_264_2/2ecc2427ef934741e63d9f20ab06cac9.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/2ec/380_264_2/2ecc2427ef934741e63d9f20ab06cac9.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8cb/8cbabba0e0bcb791249baa66665b16fc.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8cb/380_264_2/8cbabba0e0bcb791249baa66665b16fc.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8cb/380_264_2/8cbabba0e0bcb791249baa66665b16fc.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/8cb/380_264_2/8cbabba0e0bcb791249baa66665b16fc.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c1f/c1fc0548d9221488b4585a8b14767029.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c1f/380_264_2/c1fc0548d9221488b4585a8b14767029.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c1f/380_264_2/c1fc0548d9221488b4585a8b14767029.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/c1f/380_264_2/c1fc0548d9221488b4585a8b14767029.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl5">
+         Характер боксера
+        </h2>
+        <p>
+         Жизнерадостные, игривые, любопытные, веселые, энергичные – эти черты в полной мере характеризуют немецких боксеров. А еще эти собаки верные, к своему владельцу и членам его семьи привязывающиеся очень сильно. Позитивные черты остаются с боксером всю его жизнь, ему нравится, когда вокруг много людей и шума.
+        </p>
+        <p>
+         Боксер, прошедший хорошую школу дрессировки, отлично ладит с маленькими членами семьи, относится к ним бережно, никогда не обижает и с удовольствием с ними играет. Он не только станет для вашего ребенка отличным компаньоном, но также и надежным охранником.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Боксер с ребенком" data-fancybox="gallery" href="/upload/iblock/ebd/ebd01643de116072f869a8d9ac570236.jpg" title="Боксер с ребенком">
+          <div class="lazy-load" data-alt="Боксер с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/ebd/412_2150_1/ebd01643de116072f869a8d9ac570236.jpg">
+           <noscript data-alt="Боксер с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/ebd/412_2150_1/ebd01643de116072f869a8d9ac570236.jpg">
+            <img alt="Боксер с ребенком" class="article_pic" height="412" src="/upload/resize_cache/iblock/ebd/412_2150_1/ebd01643de116072f869a8d9ac570236.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Боксер с ребенком
+         </div>
+        </div>
+        <p>
+         Представитель этой породы при условии хорошего воспитания и социальной адаптации отлично будет ладить не только с другими собаками, проживающими в доме, но даже с кошками. Однако настоящим «соблазном» для них являются мелкие животные и птицы. Вашего любимца можно научить их не трогать, и при вас он этого делать не будет. Но, как говорится, от греха подальше лучше не оставлять боксера с ними наедине.
+        </p>
+        <p>
+         Боксер любит дурачиться, радушно приветствуют всех знакомых ему людей. Бдительности же он никогда не теряет и потому защитником для своих домочадцев будет хорошим. Великолепные охранные и сторожевые качества эта храбрая, спортивная порода сохраняет порой до глубокой старости. Для того, чтобы пес не проявлял свои не самые лучшие качества – излишнюю шумность, упрямство, а порой и неуправляемость – ему нужен хозяин, которые будет над ним доминировать.
+        </p>
+        <p>
+         Взрослые особи обладают спокойным темпераментом, что есть прямой результат правильного обучения в раннем возрасте. Популярность породы как раз и обусловлена этой самой уравновешенностью вкупе с природным умом и толерантностью к людям и другим домашним питомцам. По отношению к своему хозяину боксер проявляет самые нежные чувства и всем видом показывает, что находиться рядом ему очень нравится. Если не воспитывать в нем коммуникативные качества, собака всю жизнь будет проявлять подозрительность к незнакомцам, лаять на них, отказываться подпускать их к хозяину.
+        </p>
+        <p>
+         Детскую активность и непосредственность боксер сохраняет до 2-3-летнего возраста, хотя в физическом плане он взрослеет уже к полутора годам. Многие хозяева, не осведомленные в тонкостях породы, сетуют, что боксер не понимает команд, которым его обучают. На самом деле собаке требуется время, чтобы усвоить и закрепить новую информацию. В том, что это так, хозяева потом убеждаются: в один прекрасный момент пес начинает выполнять всё то, чему его, казалось бы, без толку учили на протяжении длительного времени.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fe7/fe7ab3d39be3a0ba867849724fc8cdf3.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/fe7/512_342_2/fe7ab3d39be3a0ba867849724fc8cdf3.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/fe7/512_342_2/fe7ab3d39be3a0ba867849724fc8cdf3.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/fe7/512_342_2/fe7ab3d39be3a0ba867849724fc8cdf3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b39/b39fbc6e2c82b5addf7f0d86a0cca432.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b39/512_342_2/b39fbc6e2c82b5addf7f0d86a0cca432.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b39/512_342_2/b39fbc6e2c82b5addf7f0d86a0cca432.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/b39/512_342_2/b39fbc6e2c82b5addf7f0d86a0cca432.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl6">
+         Дрессировка и воспитание
+        </h2>
+        <p>
+         Боксеры – собаки умные, хорошо обучаемые. В то же время они отличаются упрямством и новую для себя информацию воспринимают избирательно. Многие команды они выполнять отказываются, предпочитая подчиняться лишь тем, которые им нравятся.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Дай пять!" data-fancybox="gallery" href="/upload/iblock/f8e/f8e318d9f36b562134cd61c98b661bb4.jpg" title="Дай пять!">
+          <div class="lazy-load" data-alt="Дай пять!" data-class="article_pic" data-original="/upload/resize_cache/iblock/f8e/412_2150_1/f8e318d9f36b562134cd61c98b661bb4.jpg">
+           <noscript data-alt="Дай пять!" data-class="article_pic" data-original="/upload/resize_cache/iblock/f8e/412_2150_1/f8e318d9f36b562134cd61c98b661bb4.jpg">
+            <img alt="Дай пять!" class="article_pic" height="274" src="/upload/resize_cache/iblock/f8e/412_2150_1/f8e318d9f36b562134cd61c98b661bb4.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Дай пять!
+         </div>
+        </div>
+        <p>
+         Некоторые владельцы полагают, что дрессировать представителя этой породы нужно методом «кнута и пряника», то есть наказывая за непослушание и поощряя за точное выполнение команд. Однако «кнут» в этой методике будет лишним, так как на наказание боксеры реагируют плохо. Различные же поощрения (похвала, угощения, награды) делают их более восприимчивыми к тренировкам. Используя определенный набор команд, в процессе дрессировки вы обязательно добьетесь отличных результатов. При правильной и внятной постановке задач выученные команды боксер запоминает надолго.
+        </p>
+        <p>
+         Воспитание боксера обычно начинают с того момента, как щенок оказался в доме, а полноценную дрессировку – с трех месяцев. Первым делом собаку обучают базовым командам, таким как «Сидеть!», «Лежать!», «Рядом!». Когда ваш любимец их усвоит, можно приступать к обучению команде «Ко мне!». Эта команда считается главной, боксер должен выполнять ее в любой ситуации и с первого раза.
+        </p>
+        <p>
+         Боксер очень любит раздолье, поэтому сельская местность подходит ему как нельзя лучше. Но и в квартире ваш четвероногий друг будет чувствовать себя неплохо, если регулярно будете выводить его на прогулки в большой парк, где он сможет подолгу гулять. Отличным компаньоном пес станет для хозяина, любящего утренние или вечерние пробежки. Он готов проводить на свежем воздухе хоть целый день.
+        </p>
+        <p>
+         Собак этой породы часто оставляют резвиться во внутренних двориках домов, перед этим убеждаясь в прочности ограждения. Последнее нелишне: известно немало случаев, когда немецкие боксеры перепрыгивали через забор и убегали. Челюсть у них настолько мощная, что, оставленные одни дома, даже могут перекусить замок на двери.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/063/0636cfbce17769de136704046e3ba501.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/063/512_342_2/0636cfbce17769de136704046e3ba501.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/063/512_342_2/0636cfbce17769de136704046e3ba501.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/063/512_342_2/0636cfbce17769de136704046e3ba501.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/96c/96cd9106c5845444756c9e351fd7183d.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/96c/512_342_2/96cd9106c5845444756c9e351fd7183d.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/96c/512_342_2/96cd9106c5845444756c9e351fd7183d.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/96c/512_342_2/96cd9106c5845444756c9e351fd7183d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl7">
+         Уход и содержание
+        </h2>
+        <p>
+         Где бы вы ни поселили своего любимца, в квартире или загородном доме, он прекрасно приживется везде. Комфортно ему будет даже в обычной конуре, но при условии, что эту «жилплощадь» с ним разделит другая собака.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/44c/44c54d3497385e8c1d197a3d5b5eb7f6.jpg" title="">
+          <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/44c/412_2150_1/44c54d3497385e8c1d197a3d5b5eb7f6.jpg">
+           <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/44c/412_2150_1/44c54d3497385e8c1d197a3d5b5eb7f6.jpg">
+            <img alt="Боксер" class="article_pic" height="626" src="/upload/resize_cache/iblock/44c/412_2150_1/44c54d3497385e8c1d197a3d5b5eb7f6.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         В целом, немецкие боксеры в уходе достаточно неприхотливы, однако они плохо переносят холода и высокую влажность.
+        </p>
+        <p>
+         Поскольку шерсть у боксеров короткая, она, в отличие от длинношерстных пород, не сбивается и не запутывается, соответственно, не нуждается и в частом расчесывании.
+        </p>
+        <p>
+         Боксеров часто купать не рекомендуется. Если во время активных игр ваш любимец испачкается, просто протрите грязное место влажной тряпочкой.
+        </p>
+        <p>
+         Так как боксер по своей природе очень активен, малоподвижный образ жизни ему противопоказан, он должен получать максимальные физические нагрузки. Для здорового развития собаки этой породы требуется и сбалансированное питание.
+        </p>
+        <p>
+         Особого внимания требуют глаза собаки. На их уголках нередко скапливаются слезный секрет или пыль, для удаления которых достаточно мягкого платочка. Если глаза собаки покраснели, поможет успокаивающая мазь. Однако самолечением не занимайтесь: препарат должен назначить ветеринар.
+        </p>
+        <p>
+         Может накапливаться грязь в ушах. Чтобы удалить из ушной раковины серу и пыль, достаточно протереть ее намотанным на палец платочком или протереть влажным тампоном. Чистка ушей боксера ватной палочкой или закапывание в них спирта категорически запрещается.
+        </p>
+        <p>
+         Когти боксера при ходьбе касаться пола не должны. В противном случае их нужно состричь. Для этой цели используются специальные щипцы. Процедуру следует проводить не чаще, чем два раза в месяц, иначе вы доставите своему любимцу дискомфорт и боль.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Боксер в квартире" data-fancybox="gallery" href="/upload/iblock/18b/18b6c711c4ecb7d83fc834c0a066734f.jpg" title="Боксер в квартире">
+          <div class="lazy-load" data-alt="Боксер в квартире" data-class="article_pic" data-original="/upload/iblock/18b/18b6c711c4ecb7d83fc834c0a066734f.jpg">
+           <noscript data-alt="Боксер в квартире" data-class="article_pic" data-original="/upload/iblock/18b/18b6c711c4ecb7d83fc834c0a066734f.jpg">
+            <img alt="Боксер в квартире" class="article_pic" src="/upload/iblock/18b/18b6c711c4ecb7d83fc834c0a066734f.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Боксер в квартире
+         </div>
+        </div>
+        <h2 id="gl8">
+         Здоровье и болезни боксера
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Два боксера на поводке" data-fancybox="gallery" href="/upload/iblock/fe9/fe9e4356034738ade1a8f840b6a397c2.jpg" title="Два боксера на поводке">
+          <div class="lazy-load" data-alt="Два боксера на поводке" data-class="article_pic" data-original="/upload/resize_cache/iblock/fe9/412_2150_1/fe9e4356034738ade1a8f840b6a397c2.jpg">
+           <noscript data-alt="Два боксера на поводке" data-class="article_pic" data-original="/upload/resize_cache/iblock/fe9/412_2150_1/fe9e4356034738ade1a8f840b6a397c2.jpg">
+            <img alt="Два боксера на поводке" class="article_pic" height="309" src="/upload/resize_cache/iblock/fe9/412_2150_1/fe9e4356034738ade1a8f840b6a397c2.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Два боксера на поводке
+         </div>
+        </div>
+        <p>
+         Несмотря на то, что природой боксерам отмерено 11-12 лет жизни, в среднем они редко доживают до 10 лет. Причина кроется в слабой иммунной системе. Поскольку этим собакам некомфортно при низких температурах, они склонны к переохлаждениям, простудным и аллергическим заболеваниям. Для того чтобы их здоровью ничего не угрожало, помещения, в которых содержатся немецкие боксеры, должны быть сухими и без сквозняков. В сырую и ветреную погоду от прогулок лучше воздерживаться.
+        </p>
+        <p>
+         К наиболее распространенным заболеваниям представителей этой породы относятся следующие: непереносимость жары, аллергии, глухота, доброкачественные и злокачественные опухоли, скручивание желудка, гипотиреоз (снижение функции щитовидной железы), артрит, проблемы с сердцем, дисплазии (тазобедренного и локтевого суставов), дегенеративная миелопатия (вследствие этого недуга возможен паралич нижних конечностей).
+        </p>
+        <h2 id="gl9">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Помимо соответствия стандарту породы, немаловажным критерием выбора будущего любимца должно стать соответствие его характера вашему. Также вы должны изначально определиться, с какой целью выбираете именно немецкого боксера. Если не ставите целью участие собаки в различных выставках и хотите просто заниматься разведением, общительная собака-компаньон подойдет в самый раз. Щенок должен проявлять свою игривость, дружелюбие и желание общаться с вами.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мама и щенок боксера" data-fancybox="gallery" href="/upload/iblock/318/318fa651b53cf6cf7a35d963ece27f30.jpg" title="Мама и щенок боксера">
+          <div class="lazy-load" data-alt="Мама и щенок боксера" data-class="article_pic" data-original="/upload/resize_cache/iblock/318/412_2150_1/318fa651b53cf6cf7a35d963ece27f30.jpg">
+           <noscript data-alt="Мама и щенок боксера" data-class="article_pic" data-original="/upload/resize_cache/iblock/318/412_2150_1/318fa651b53cf6cf7a35d963ece27f30.jpg">
+            <img alt="Мама и щенок боксера" class="article_pic" height="274" src="/upload/resize_cache/iblock/318/412_2150_1/318fa651b53cf6cf7a35d963ece27f30.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мама и щенок боксера
+         </div>
+        </div>
+        <p>
+         Боксер отлично подходит активным, жизнерадостным людям, ведь это спортивная собака. Даже если выберете «не элитного» щенка, общение с ним и дрессировка принесут массу удовольствия. Для него не проблема многокилометровые пробежки, он составит вам хорошую компанию в походах и экскурсиях по труднодоступным местам.
+        </p>
+        <p>
+         Многие хотели бы стать заводчиками боксеров, чтобы в будущем реализовывать щенков. Для этой цели не поскупитесь на хорошую суку, которая станет исходной базой для разведения. Она должна соответствовать следующим критериям: быть потомком известного семейства с отличными титулами. Чтобы не ошибиться в выборе, племенного щенка лучше приобретать в известных питомниках, гарантирующих, что вы купите не «подделку». Также следует обратить внимание на качества родителей щенка: они должны обладать превосходными характеристиками, присущими данной породе, быть психически уравновешенными.
+        </p>
+        <p>
+         Обязательно следует поинтересоваться состоянием здоровья будущего любимца, прошел ли он проверку на деформирующий спондилез, дисплазию тазобедренного сустава, отклонения в поведении и заболевания глаз. Любой из этих недугов несет боксерам реальную опасность и даже может стать причиной смерти собаки. Нелишне будет истребовать у заводчика документ, в котором зафиксированы результаты обследования помета, чтобы выяснить, сколько щенков забраковала комиссия. Если количество таковых окажется высоким, щенка лучше не брать, так как есть риск передачи дефектов потомству.
+        </p>
+        <h2 id="gl10">
+         Фото щенков боксера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2c2/2c211301f4d8cab62a25e014d6dfe406.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/2c2/380_264_2/2c211301f4d8cab62a25e014d6dfe406.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/2c2/380_264_2/2c211301f4d8cab62a25e014d6dfe406.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/2c2/380_264_2/2c211301f4d8cab62a25e014d6dfe406.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1f5/1f5e62d8f48026a43f7fdd5ab580bcad.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1f5/380_264_2/1f5e62d8f48026a43f7fdd5ab580bcad.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1f5/380_264_2/1f5e62d8f48026a43f7fdd5ab580bcad.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/1f5/380_264_2/1f5e62d8f48026a43f7fdd5ab580bcad.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fd2/fd26e6cb07685c5ad8eebebcff27a9db.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/fd2/380_264_2/fd26e6cb07685c5ad8eebebcff27a9db.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/fd2/380_264_2/fd26e6cb07685c5ad8eebebcff27a9db.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/fd2/380_264_2/fd26e6cb07685c5ad8eebebcff27a9db.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/678/678b04ae586dc3d8b58c6410c60578eb.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/678/380_264_2/678b04ae586dc3d8b58c6410c60578eb.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/678/380_264_2/678b04ae586dc3d8b58c6410c60578eb.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/678/380_264_2/678b04ae586dc3d8b58c6410c60578eb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b6b/b6baf5e6fbb6d294496e1bc59eefb053.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b6b/380_264_2/b6baf5e6fbb6d294496e1bc59eefb053.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b6b/380_264_2/b6baf5e6fbb6d294496e1bc59eefb053.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/b6b/380_264_2/b6baf5e6fbb6d294496e1bc59eefb053.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/aef/aef6e0731d815661e9f0a44b13c5f206.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/aef/380_264_2/aef6e0731d815661e9f0a44b13c5f206.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/aef/380_264_2/aef6e0731d815661e9f0a44b13c5f206.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/aef/380_264_2/aef6e0731d815661e9f0a44b13c5f206.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8a6/8a65f11bd28f5f216879f88bdfa37776.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8a6/380_264_2/8a65f11bd28f5f216879f88bdfa37776.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8a6/380_264_2/8a65f11bd28f5f216879f88bdfa37776.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/8a6/380_264_2/8a65f11bd28f5f216879f88bdfa37776.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/670/6703a70aab73ae99e4dbe283081a871a.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/670/380_264_2/6703a70aab73ae99e4dbe283081a871a.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/670/380_264_2/6703a70aab73ae99e4dbe283081a871a.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/670/380_264_2/6703a70aab73ae99e4dbe283081a871a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e24/e24ac8d83b9dc1c8bee20dd9ec2bb9d9.jpg" title="">
+           <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e24/380_264_2/e24ac8d83b9dc1c8bee20dd9ec2bb9d9.jpg">
+            <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e24/380_264_2/e24ac8d83b9dc1c8bee20dd9ec2bb9d9.jpg">
+             <img alt="Боксер" class="article_pic" src="/upload/resize_cache/iblock/e24/380_264_2/e24ac8d83b9dc1c8bee20dd9ec2bb9d9.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl11">
+         Сколько стоит боксер
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/78c/78c150b83de25d2e0a6a696f8afb1831.jpg" title="">
+          <div class="lazy-load" data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/78c/412_2150_1/78c150b83de25d2e0a6a696f8afb1831.jpg">
+           <noscript data-alt="Боксер" data-class="article_pic" data-original="/upload/resize_cache/iblock/78c/412_2150_1/78c150b83de25d2e0a6a696f8afb1831.jpg">
+            <img alt="Боксер" class="article_pic" height="648" src="/upload/resize_cache/iblock/78c/412_2150_1/78c150b83de25d2e0a6a696f8afb1831.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Боксеры стоят относительно недорого, приобрести их можно практически в любом регионе нашей страны. К будущей покупке следует отнестись ответственно, досконально изучить стандарт породы, чтобы при самостоятельном выборе не оказаться обманутым. Тем, у кого опыта и знаний не хватает, рекомендуется обратиться за консультацией к специалистам.
+        </p>
+        <p>
+         На стоимость немецкого боксера влияют такие факторы, как класс щенка, титулованность его родителей, известность питомника. Цены начинаются от 35 000 рублей. Это будет питомец пет-класса, без возможности участвовать в выставках и разведении. Брид- и шоу-щенки стоят дороже – 60 000 руб. и выше.
+        </p>
+        <p>
+         Щенки, помимо ветеринарного паспорта, должны иметь клеймо и щенячью карточку. Обязательно обратите внимание на содержание названных документов. В ветеринарном паспорте должны содержаться отметки о прививках и профилактике паразитов. Не забывайте, что все необходимые прививки щенку делаются в возрасте с 2 до 3 месяцев.
+        </p>
+        <p>
+         Щенячья карточка – это как метрика для ребенка, на ее основании вы в будущем получите родословную на вашего любимца. В каждой такой карточке содержатся следующие данные: дата рождения, информация о родителях, у какого заводчика приобретен, окрас шерсти, номер клейма и кличка. Клеймо ставится в момент продажи на ухо или в паховую область. Щенячья карточка – документ очень серьезный. Без акта осмотра щенков племенной комиссией, в состав которой входят уполномоченные кинологи, она не может быть оформлена.
+        </p>
+        <p>
+         Неопытным владельцам рекомендуется быть в тесном контакте с заводчиками, консультироваться с ним. Специалисты, болеющие за свое дело, никогда не откажут в совете и постараются помочь в решении возможных проблем с щенком еще на стадии их возникновения. Это поможет боксеру правильно развиваться, учиться ладить с хозяевами и познавать мир. И каким ваш любимец вырастет, зависит только от вас.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения боксера на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/26031/">
+          <div class="ava-med">
+           <div class="noava fill1">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/nemetskiy-bokser-i-navernoe-glisty-4502/">
+           Немецкий боксер и наверное глисты
+          </a>
+         </div>
+         <div class="forum-text">
+          Собаке 11 лет, с недавнего времени его начало трясти, отказывают задние лапы, падает на попу. Периодами плачет и скулит. Много кушает. Две недели назад были судороги с пеной, поставили несколько уколов, теперь просто...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/26031/">
+            Сью Мика
+           </a>
+          </span>
+          <span class="vopros-date">
+           Год назад
+          </span>
+          <span class="vopros-smotr">
+           413 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/2346/">
+          <div class="ava-med">
+           <div class="noava fill6">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/beda-s-tualetom-1645/">
+           Беда с туалетом
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте!
+
+Взяли малышку боксёра, адаптировалась сразу, без скулежа по "родным",ест нормально. И тут же столкнулись с проблемой туалета.На пелёнку ходит раз через раз бывает промахивается ( ну, это не так...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/2346/">
+            Андрей Еремин
+           </a>
+          </span>
+          <span class="vopros-date">
+           4 года назад
+          </span>
+          <span class="vopros-smotr">
+           2492 просмотра
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/1896/">
+          <div class="ava-med">
+           <div class="noava fill6">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/shchenok-nemetskogo-boksera-somneniya-1312/">
+           Щенок немецкого боксера. Сомнения
+          </a>
+         </div>
+         <div class="forum-text">
+          Доброго времени суток . Есть ли здесь специалисты по немецким боксерам? Помогите рассеять сомнения . Супруг говорит , что зря переживаю.  В инете полазила, вроде увидела похожих. В общем , приобрели малышку . Опасаюсь...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/1896/">
+            Елена Ко
+           </a>
+          </span>
+          <span class="vopros-date">
+           4 года назад
+          </span>
+          <span class="vopros-smotr">
+           4376 просмотров
+          </span>
+          <span class="vopros-otvet">
+           2 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/834/">
+          <div class="ava-med">
+           <div class="noava fill4">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/ves-moego-boksyera-636/">
+           Вес моего боксёра
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте. Пару месяцев назад забрал боксёра сучка сейчас нам 10 месяцев прошлому хозяину некогда было с ней заниматься вовремя кормить ну и.т.д. меня она знала так что проблем не было ни каких. У меня вопрос...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/834/">
+            Александр Кошель
+           </a>
+          </span>
+          <span class="vopros-date">
+           5 лет назад
+          </span>
+          <span class="vopros-smotr">
+           2607 просмотров
+          </span>
+          <span class="vopros-otvet">
+           2 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/bokser/forum/">
+        Перейти на
+        форум боксера
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Боксер" src="/upload/iblock/0d3/0d330b90f354e0aa5941e40c39a40e2f.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/bokser/">
+          Боксер
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/bokser/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/bokser/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/bokser/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/bokser/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/bokser/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/bokser/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/greyhound/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Грейхаунд" data-original="/upload/resize_cache/iblock/4af/100_100_1/4af20db77d745c640f94d918d4b45ff6.jpg">
+          <noscript data-alt="Грейхаунд" data-original="/upload/resize_cache/iblock/4af/100_100_1/4af20db77d745c640f94d918d4b45ff6.jpg">
+           <img alt="Грейхаунд" src="/upload/resize_cache/iblock/4af/100_100_1/4af20db77d745c640f94d918d4b45ff6.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Грейхаунд
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/dalmatinets/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Далматин" data-original="/upload/resize_cache/iblock/5ed/100_100_1/5edaf287f878b54d13e1894789bd0db6.jpg">
+          <noscript data-alt="Далматин" data-original="/upload/resize_cache/iblock/5ed/100_100_1/5edaf287f878b54d13e1894789bd0db6.jpg">
+           <img alt="Далматин" src="/upload/resize_cache/iblock/5ed/100_100_1/5edaf287f878b54d13e1894789bd0db6.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Далматин
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/tosa-inu/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Тоса-ину" data-original="/upload/resize_cache/iblock/b22/100_100_1/b22046f8cf6760f4ca836a61272fedd2.jpg">
+          <noscript data-alt="Тоса-ину" data-original="/upload/resize_cache/iblock/b22/100_100_1/b22046f8cf6760f4ca836a61272fedd2.jpg">
+           <img alt="Тоса-ину" src="/upload/resize_cache/iblock/b22/100_100_1/b22046f8cf6760f4ca836a61272fedd2.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Тоса-ину
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/velsh-korgi-kardigan/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Вельш-корги кардиган" data-original="/upload/resize_cache/iblock/c0b/100_100_1/c0b931451d53ccc8eb5719cf559cfcf2.jpg">
+          <noscript data-alt="Вельш-корги кардиган" data-original="/upload/resize_cache/iblock/c0b/100_100_1/c0b931451d53ccc8eb5719cf559cfcf2.jpg">
+           <img alt="Вельш-корги кардиган" src="/upload/resize_cache/iblock/c0b/100_100_1/c0b931451d53ccc8eb5719cf559cfcf2.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Вельш-корги кардиган
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbokser%252F%253Fcheck_key%253Dee76b9f5424ae73b7840b0db18402ed4%2526ANIMAL_CODE%253Dbokser%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbokser%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmJva3NlciUyRiUzRmNoZWNrX2tleSUzRGVlNzZiOWY1NDI0YWU3M2I3ODQwYjBkYjE4NDAyZWQ0JTI2QU5JTUFMX0NPREUlM0Rib2tzZXIlMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGYm9rc2VyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbokser%252F%253Fcheck_key%253Dee76b9f5424ae73b7840b0db18402ed4%2526ANIMAL_CODE%253Dbokser%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fbokser%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbokser%252F%253Fcheck_key%253Dee76b9f5424ae73b7840b0db18402ed4%2526ANIMAL_CODE%253Dbokser%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbokser%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "178.121.28.254"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--3b47b5af9dfb9f729881289be71470ca-->

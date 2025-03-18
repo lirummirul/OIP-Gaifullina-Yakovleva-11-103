@@ -1,0 +1,1696 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'f7f78ee61e53'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Веймаранер, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Веймаранер – гончая, выделяющаяся аристократической красотой и атлетическим телосложением. Собака обладает универсальными охотничьими качествами и добрым нравом, снискавшим ей славу превосходного компаньона." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/8b4/8b487adcf05a498847f36ff23381f0e5.jpg" property="og:image"/>
+     <title>
+      Веймаранер: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/veymaraner/" property="og:url"/>
+     <meta content="Веймаранер: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Веймаранер – гончая, выделяющаяся аристократической красотой и атлетическим телосложением. Собака обладает универсальными охотничьими качествами и добрым нравом, снискавшим ей славу превосходного компаньона." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/veymaraner/" itemprop="url">
+         <span itemprop="title">
+          Веймаранер
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Веймаранер
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/veymaraner/">
+          Описание
+         </a>
+         <a href="/dog/veymaraner/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/veymaraner/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/veymaraner/photo/">
+          Фото
+         </a>
+         <a href="/dog/veymaraner/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Веймаранер" src="/upload/iblock/eaf/eaf324ea66f56d3f3d5d2d35d821768e.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/veymaraner/">
+           веймарская легавая
+          </a>
+         </span>
+         <p>
+          Веймаранер – гончая, выделяющаяся аристократической красотой и атлетическим телосложением. Собака обладает универсальными охотничьими качествами и добрым нравом, снискавшим ей славу превосходного компаньона.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/861/86180ec6280b988e5fb577e0d3439aab.jpg" data-cap="Веймаранер" data-fancybox="images" data-link="https://www.instagram.com/lapkins.ru/" data-type="image" data-username="lapkins.ru" href="/upload/uf/f18/f18d7b5dac3f410781ca34d0ccb5f31b.jpg">
+            <img alt="Веймаранер" src="/upload/resize_cache/uf/f18/293_293_2/f18d7b5dac3f410781ca34d0ccb5f31b.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/697/6971041f69b2a776c48a24bc66cdf13d.jpg" data-cap="Day 6: chair" data-fancybox="images" data-link="https://www.flickr.com/photos/phuzylogik/7518190786/" data-type="image" data-username="Cherie Bosela" href="/upload/uf/484/4849f7cc81b1e4e1b03be4624ec6b8e2.jpg">
+            <img alt="Веймаранер" src="/upload/resize_cache/uf/484/293_293_2/4849f7cc81b1e4e1b03be4624ec6b8e2.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/030/030b4eda179a301348fada289339d380.jpg" data-cap="Кусь" data-fancybox="images" data-link="https://www.flickr.com/photos/ryanchronister/6252702008/" data-type="image" data-username="Ryan Chronister" href="/upload/uf/ec7/ec7c27539be25cdc0014bb25d0866cef.jpg">
+            <img alt="Веймаранер" src="/upload/resize_cache/uf/ec7/293_293_2/ec7c27539be25cdc0014bb25d0866cef.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/veymaraner/photo/">
+         Все
+            фото веймаранера
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы веймаранер
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность веймаранера
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер веймаранера
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни веймаранеров
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Сколько стоит веймаранер
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Веймаранер
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Германия
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 25-32 кг, суки 23-29 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 59-70 см, суки 57-65 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         10-13 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Веймаранеры выносливы, азартны, обладают великолепным чутьем. Собаки способны принимать деятельное участие во всех видах охоты.
+        </li>
+        <li>
+         Наиболее солидные по размерам представители породы относятся к числу крупнейших среди европейских легавых.
+        </li>
+        <li>
+         В ряду прочих европейских гончих они выделяются своим оригинальным серебристо-серым окрасом и своеобразным цветом глаз.
+        </li>
+        <li>
+         Дружелюбные, оптимистичные, преданные, веймаранеры являются превосходными компаньонами.
+        </li>
+        <li>
+         Достаточно темпераментны, но характер демонстрируют уравновешенный, стабильный.
+        </li>
+        <li>
+         Нежны и ласковы со всеми членами семьи, в том числе с детьми, но хозяина выбирают себе одного, к которому очень привязываются.
+        </li>
+        <li>
+         К другим домашним питомцам относятся избирательно: с собаками приятельствуют, а кошек с недовольством терпят. Незнакомые мелкие животные рассматриваются веймаранерами в качестве потенциальных жертв.
+        </li>
+        <li>
+         К чужим людям относятся настороженно, но агрессии не проявляют.
+        </li>
+        <li>
+         Требуют внимания к себе и совершенно не выносят одиночества. Содержать их в вольере, без контакта с людьми, недопустимо.
+        </li>
+        <li>
+         Веймаранеры нуждаются в интенсивных физических нагрузках, поэтому заводить их могут лишь люди, ведущие активный образ жизни.
+        </li>
+        <li>
+         С легкостью поддаются дрессировке, однако в процессе обучения способны проявлять упрямство и своенравие.
+        </li>
+        <li>
+         Лучшие условия для проживания собаки – загородный дом с просторным огражденным участком. Питомец, живущий в городской квартире, должен иметь возможность прогуливаться не менее двух часов ежедневно.
+        </li>
+        <li>
+         Веймаранер очень чистоплотен, уход за его шерстью много времени не займет.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Веймаранер" data-original="/upload/iblock/8b4/8b487adcf05a498847f36ff23381f0e5.jpg">
+          <noscript data-alt="Веймаранер" data-original="/upload/iblock/8b4/8b487adcf05a498847f36ff23381f0e5.jpg">
+           <img alt="Веймаранер" src="/upload/iblock/8b4/8b487adcf05a498847f36ff23381f0e5.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Веймаранер
+          </strong>
+          обладает великолепной внешностью. Эта элегантная собака с утонченными формами словно спрыгнула с полотен живописцев эпохи Ренессанса. Ее стремительный облик красноречиво демонстрирует, что она в любой момент готова умчаться за горизонт и вернуться, держа в пасти добычу. Однако в стенах своего жилища веймаранер с легкостью забывает о своем охотничьем предназначении, перевоплощаясь в ласкового, нежного друга, любящего свое семейство и постоянно норовящего занять место у ног обожаемого хозяина.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Ниже среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не переносит (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средние (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Веймаранер основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы веймаранер
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Веймаранеры" data-fancybox="gallery" href="/upload/iblock/4f2/4f29f74b02262e56b87fbb58d19b5dcf.jpg" title="Веймаранеры">
+          <div class="lazy-load" data-alt="Веймаранеры" data-class="article_pic" data-original="/upload/resize_cache/iblock/4f2/412_2150_1/4f29f74b02262e56b87fbb58d19b5dcf.jpg">
+           <noscript data-alt="Веймаранеры" data-class="article_pic" data-original="/upload/resize_cache/iblock/4f2/412_2150_1/4f29f74b02262e56b87fbb58d19b5dcf.jpg">
+            <img alt="Веймаранеры" class="article_pic" height="576" src="/upload/resize_cache/iblock/4f2/412_2150_1/4f29f74b02262e56b87fbb58d19b5dcf.jpg" width="411"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Веймаранеры
+         </div>
+        </div>
+        <p>
+         Веймаранер, или веймарская легавая, является весьма редким представителем в когорте охотничьих собак. Этот аристократичный пес предположительно ведет свою родословную со времен Средневековья, хотя сегодняшние стандарты породы развились лишь на рубеже XVIII-XIX столетий.
+        </p>
+        <p>
+         Веймаранер относится к группе наследников европейских (или континентальных) бракков – короткошерстных легавых собак, издавна распространенных на европейском континенте и имеющих сходные характеристики как экстерьера, так и рабочих качеств. Среди своих близких сородичей эта собака резко выделяется оригинальным серым окрасом с эффектными отливами, что делает популярной версию о ее давнем родстве с так называемыми собаками Людовика Святого (Chiens gris de St-Loi), описание которых можно найти в старинных рукописных источниках легендарной эпохи Крестовых походов. В хрониках, относящихся к XIII столетию, повествуется о том, что при дворе французского короля Людовика IX, известного как Людовик Святой, серые серебристые собаки появились в 1254 году, после его возвращения на родину из очередного похода на Восток.
+        </p>
+        <p>
+         В средневековых литературных источниках есть упоминания о том, что эти собаки были родом из Тартарии – так в латиноязычных странах называли территорию, простиравшуюся от рубежей Центральной Азии до ее северных пределов. Возможно, животные были подарены Людовику кем-то из азиатских правителей, с которыми французский монарх решил наладить связи, находясь в Палестине. Наиболее подробное описание легавых содержится в «Книге об охоте» – одном из лучших средневековых трактатов об этом развлечении королей и аристократов. Ее автор – граф Гастон де Фуа, один из военачальников времен Столетней войны и страстный охотник.
+        </p>
+        <p>
+         Уже к концу XIV века серые гончие собаки стали весьма популярными среди французской знати, так как демонстрировали превосходные качества в охоте на крупного зверя – оленя, кабана, медведя. Позже псы также проявили и недюжинные способности в охоте на лис, кроликов, апортировании птицы. Вслед за французской аристократией, этой замечательной породой увлеклись венценосные особы из других стран феодальной Европы, а за ними – и их вассалы. На сохранившихся средневековых гобеленах и картинах с изображениями сцен охоты можно увидеть своры серых легавых – столь же благородных, как и их титулованные хозяева. Эти животные запечатлены и на полотнах мастеров XVII века, к примеру, на картинах фламандского живописца Антониса ван Дейка.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок веймаранера" data-fancybox="gallery" href="/upload/iblock/9bc/9bc7089ab318f8bf4e7aef7d2491ed57.jpg" title="Щенок веймаранера">
+          <div class="lazy-load" data-alt="Щенок веймаранера" data-class="article_pic" data-original="/upload/resize_cache/iblock/9bc/412_2150_1/9bc7089ab318f8bf4e7aef7d2491ed57.jpg">
+           <noscript data-alt="Щенок веймаранера" data-class="article_pic" data-original="/upload/resize_cache/iblock/9bc/412_2150_1/9bc7089ab318f8bf4e7aef7d2491ed57.jpg">
+            <img alt="Щенок веймаранера" class="article_pic" height="622" src="/upload/resize_cache/iblock/9bc/412_2150_1/9bc7089ab318f8bf4e7aef7d2491ed57.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок веймаранера
+         </div>
+        </div>
+        <p>
+         Среди возможных прародителей веймаранера называют также гончих собак Святого Хуберта, выведенных во времена раннего Средневековья в аббатстве Сен-Хуберт (Бельгия). Животные этой породы, ныне не существующей, считаются прародителями многих современных гончих. Они имели различный окрас, среди которого встречался и серый.
+        </p>
+        <p>
+         Как отдельная порода веймаранер начал формироваться в начале XIX века. По неподтвержденным данным, инициатором ее создания был герцог Веймарский Карл Август. По преданию, в своих владениях, Саксен-Веймаре, что на востоке современной Германии, герцог занимался выведением универсальной породы гончих – выносливых, стремительных, обладающих к тому же качествами собаки-компаньона. К слову, в этих местах собаку обычно называют «Серебряный призрак». Такое имя она получила благодаря своему окрасу, отливающему серебром, способностью быстро и бесшумно красться в полях, оставаясь для добычи невидимой.
+        </p>
+        <p>
+         Многие современные кинологи, признавая, что порода была выведена в окрестностях Веймара, полагают, что Великий Веймарский герцог не имел никакого отношения к ее возникновению, а легенда о родстве веймаранера с серыми собаками Святого Людовика начала популяризироваться поклонниками породы в конце XIX века ради ее признания в качестве отдельной и независимой. Дело в том, что долгое время веймаранера считали серой разновидностью немецкой короткошерстной легавой либо помесью крупных немецких гончих и английских пойнтеров. Видимо, эти утверждения были обоснованы, поскольку на выставке в Берлине в 1880 году этих собак отнесли к метисам, не найдя в них самобытных породных черт. По некоторым данным, в дальнейшей селекционной деятельности задействовали бургосскую легавую, хюгенхунда, швайсхунда. Планомерная работа, а также многочисленные публикации увлекательных повествований о древнем благородном происхождении породы и ее родстве с королевскими французскими собаками сделали свое дело, и в 1896 году комиссия делегатов от различных германских охотничьих обществ наконец-то назвала веймаранера самостоятельной породой. На сегодняшний день ее признают все именитые кинологические организации.
+        </p>
+        <p>
+         В 1897 году был основан Немецкий охотничий клуб веймаранеров, и долгое время эта порода была своеобразной охраняемой привилегией среди немецкой аристократии. Изначально приобретать собаку разрешалось только членам Клуба. И если купить веймаранера было крайне затруднительно даже на его родине, то за пределами Германии это было вообще невозможно.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Короткошерстный веймаранер" data-fancybox="gallery" href="/upload/iblock/bcd/bcdfb1e6d0881ff80030f01ce7f5c22d.jpg" title="Короткошерстный веймаранер">
+           <div class="lazy-load" data-alt="Короткошерстный веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/bcd/512_342_2/bcdfb1e6d0881ff80030f01ce7f5c22d.jpg">
+            <noscript data-alt="Короткошерстный веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/bcd/512_342_2/bcdfb1e6d0881ff80030f01ce7f5c22d.jpg">
+             <img alt="Короткошерстный веймаранер" class="article_pic" src="/upload/resize_cache/iblock/bcd/512_342_2/bcdfb1e6d0881ff80030f01ce7f5c22d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Короткошерстный веймаранер
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Длинношерстный веймаранер" data-fancybox="gallery" href="/upload/iblock/2b1/2b1aca73499b37e61d2f3be81d541daf.jpg" title="Длинношерстный веймаранер">
+           <div class="lazy-load" data-alt="Длинношерстный веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/2b1/512_342_2/2b1aca73499b37e61d2f3be81d541daf.jpg">
+            <noscript data-alt="Длинношерстный веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/2b1/512_342_2/2b1aca73499b37e61d2f3be81d541daf.jpg">
+             <img alt="Длинношерстный веймаранер" class="article_pic" src="/upload/resize_cache/iblock/2b1/512_342_2/2b1aca73499b37e61d2f3be81d541daf.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Длинношерстный веймаранер
+          </div>
+         </div>
+        </div>
+        <p>
+         В 20-х года прошлого столетия интерес к серым гончим из Старого Света возник в США, но первых особей, отправляемых за океан, предварительно стерилизовали, делая невозможным их разведение в Америке. В 1929 году Клуб принял в свои ряды первого иностранца – им стал американец Ховард Найт, которому удалось убедить немецких коллег продать несколько племенных собак для разведения в Новом Свете. В 1941 году он создал клуб веймаранеров в США и стал его президентом. В 50-х годах веймаранеры приобрели невероятную популярность за океаном, став питомцами таких знаменитых людей, как президент Эйзенхауэр и кинозвезда Грейс Келли. Позже дополнительный интерес публики к ним подогрел фотограф и художник Уильям Вегман, сам, к слову, ставший всемирно известным благодаря своим удачным изображениям этих собак.
+        </p>
+        <p>
+         Массовое, буквально ажиотажное, увлечение элегантными веймаранерами – как в США, так и в Европе – привело к тому, что сегодня их все чаще рассматривают в качестве собак-компаньонов, домашних любимцев, участников выставок и престижных чемпионатов. При этом охотничьи качества многих из них являются весьма заурядными. Однако хорошую рабочую собаку найти можно. В основном они представляют немецкую и американскую линии, так как в Германии и США заводчики по-прежнему ставят во главу угла рабочие качества животного, правда, иногда в ущерб экстерьеру.
+        </p>
+        <p class="legenda">
+         Не так давно некоторые европейские заводчики и их коллеги из США приступили к выведению голубых веймаранеров. Эти собаки отличаются оригинальным синевато-серым цветом шерсти. Сегодня их разводят в основном как собак-компаньонов, хотя рабочие качества голубых легавых идентичны выдающимся способностям их серых собратьев. В 2009 году в США энтузиасты создали специализированный клуб, и с тех пор целенаправленно, но пока что безуспешно, добиваются признания голубых веймаранеров и наделения их статусом самостоятельной породы.
+        </p>
+        <h2>
+         Видео: Веймаранер
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="0uziyh1-HCI">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность веймаранера
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Прогулка с веймаранером на лодке" data-fancybox="gallery" href="/upload/iblock/90f/90f947c755797c2b92795e034937693b.jpg" title="Прогулка с веймаранером на лодке">
+          <div class="lazy-load" data-alt="Прогулка с веймаранером на лодке" data-class="article_pic" data-original="/upload/resize_cache/iblock/90f/412_2150_1/90f947c755797c2b92795e034937693b.jpg">
+           <noscript data-alt="Прогулка с веймаранером на лодке" data-class="article_pic" data-original="/upload/resize_cache/iblock/90f/412_2150_1/90f947c755797c2b92795e034937693b.jpg">
+            <img alt="Прогулка с веймаранером на лодке" class="article_pic" height="617" src="/upload/resize_cache/iblock/90f/412_2150_1/90f947c755797c2b92795e034937693b.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Прогулка с веймаранером на лодке
+         </div>
+        </div>
+        <p>
+         Веймаранер – довольно крупная собака атлетического сложения, жилистая, откровенно мускулистая. У кобелей высота в холке может составлять от 59 до 70 см, вес – от 30 до 40 кг. Суки, как правило, миниатюрнее: их рост – от 57 до 65 см, вес – от 25 до 35 кг. Согласно стандарту, крайние пределы являются нежелательными.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Веймаранер сложен пропорционально, его спина широкая, основательная, прочная, без прогиба. Холка хорошо развита и явно обозначена. Грудь глубокая, крепкая, почти достигающая локтей. Она очевидно массивна, но широкой ее назвать нельзя. Таз удлиненный, чуть наклонный. Ребра длинные, выпуклые, без бочкообразности. Живот подтянут, но не надмерно.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Голова, при осмотре сверху имеющая клиновидное очертание, пропорциональна туловищу. Череп немного выпуклый, неширокий, затылочный бугор проявлен слабо. Лоб разделяет бороздка; когда пес напряжен, лобная область покрывается складками. Линия перехода ото лба к морде плавная, едва обозначенная. Нос прямой, с миниатюрной горбинкой у мочки. Сама мочка, выступающая над нижней челюстью, крупная. Она окрашена в темно-телесный цвет, плавно переходящий к серому ближе к переносице. Губы подтянуты, верхняя прикрывает нижнюю и чуть свисает, образуя маленькие складочки в уголках рта. Краешки губ, небо, десны однотонного розовато-телесного цвета.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Челюсти с полным комплектом зубов выглядят внушительно, ярко демонстрируя способность веймаранера удержать приличного размера дичь при апортировании. Верхние и нижние клыки надежно смыкаются в ножницеобразном прикусе. Мускулистые, четко очерченные скулы выражены явно.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Веймаранер в профиль" data-fancybox="gallery" href="/upload/iblock/30d/30da9d93b176839dcd510aeefc79a73e.jpg" title="Веймаранер в профиль">
+          <div class="lazy-load" data-alt="Веймаранер в профиль" data-class="article_pic" data-original="/upload/resize_cache/iblock/30d/412_2150_1/30da9d93b176839dcd510aeefc79a73e.jpg">
+           <noscript data-alt="Веймаранер в профиль" data-class="article_pic" data-original="/upload/resize_cache/iblock/30d/412_2150_1/30da9d93b176839dcd510aeefc79a73e.jpg">
+            <img alt="Веймаранер в профиль" class="article_pic" height="274" src="/upload/resize_cache/iblock/30d/412_2150_1/30da9d93b176839dcd510aeefc79a73e.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Веймаранер в профиль
+         </div>
+        </div>
+        <p>
+         Округлые, среднего размера, поставлены чуть косо. Их внешние уголки немного приподнимаются ближе к ушам. Цвет глаз у щенков лазурно-голубой, у подросших гончих – янтарный, разной степени интенсивности и тона: от светлого до темного. Выражение глаз выдает ум и внимательность. Веки плотно прилегают к глазному яблоку, их цвет может быть телесным или соответствовать тону шерсти.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Большие, широкие, закругленные на кончиках и свисающие точно до уголков рта. Посажены высоко. У легавой, которую что-то насторожило, уши приподнимаются у основания и поворачиваются вперед.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Силуэт сильной, мускулистой, царственного вида шеи гармонично сливается с линией верха и грудью.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда веймаранера" data-fancybox="gallery" href="/upload/iblock/370/3708652d007ebce281de8e1a2354803e.jpg" title="Морда веймаранера">
+          <div class="lazy-load" data-alt="Морда веймаранера" data-class="article_pic" data-original="/upload/resize_cache/iblock/370/1024_2150_1/3708652d007ebce281de8e1a2354803e.jpg">
+           <noscript data-alt="Морда веймаранера" data-class="article_pic" data-original="/upload/resize_cache/iblock/370/1024_2150_1/3708652d007ebce281de8e1a2354803e.jpg">
+            <img alt="Морда веймаранера" class="article_pic" src="/upload/resize_cache/iblock/370/1024_2150_1/3708652d007ebce281de8e1a2354803e.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда веймаранера
+         </div>
+        </div>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Высокие, сухопарые, жилистые, с выразительной мускулатурой. Передние конечности прямые, параллельные друг другу, поставлены нешироко. Плечи мускулистые, словно вылепленные, локти не вывернуты ни внутрь, ни наружу. Запястья крепкие; изящные, жилистые пясти поставлены слегка наклонно.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Ох, какое чудо! ^_^" data-fancybox="gallery" href="/upload/iblock/d8c/d8c45d8c6906cbc73396bc0cf436fb22.jpg" title="Ох, какое чудо! ^_^">
+          <div class="lazy-load" data-alt="Ох, какое чудо! ^_^" data-class="article_pic" data-original="/upload/resize_cache/iblock/d8c/412_2150_1/d8c45d8c6906cbc73396bc0cf436fb22.jpg">
+           <noscript data-alt="Ох, какое чудо! ^_^" data-class="article_pic" data-original="/upload/resize_cache/iblock/d8c/412_2150_1/d8c45d8c6906cbc73396bc0cf436fb22.jpg">
+            <img alt="Ох, какое чудо! ^_^" class="article_pic" height="620" src="/upload/resize_cache/iblock/d8c/412_2150_1/d8c45d8c6906cbc73396bc0cf436fb22.jpg" width="411"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Ох, какое чудо! ^_^
+         </div>
+        </div>
+        <p>
+         Задние, прямо поставленные конечности демонстрируют основательный костяк. Бедра удлиненные, очень мускулистые, колени крепкие, скакательные суставы выражены явно. Плюсны жилистые, поставлены почти вертикально.
+        </p>
+        <p>
+         Овальной формы лапы прочные, устойчивые. Пальцы сжаты в комок. Средние пальцы на передних лапах заметно длиннее прочих, что является характерной породной особенностью. У длинношерстных легавых между пальцами торчат пучки шерсти. Подушечки жесткие, когти мощные, окрашены в серый тон – от светлого до темного. Прибылые пальцы на задних конечностях удаляются у веймаранеров в щенячьем возрасте.
+        </p>
+        <h3>
+         Движение
+        </h3>
+        <p>
+         Все аллюры собаки размашисты, размеренны, плавны. Галопируя, она совершает длинные прыжки. Перемещаясь рысью, спину держит ровно. Задние и передние конечности в движении ставятся параллельно друг другу.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Сильный, утолщенный у основания хвост поставлен достаточно низко, что не свойственно большинству родственных веймаранеру пород. Он густо покрыт шерстью и сужается к кончику. Когда пес расслаблен и умиротворен, он держит его опущенным вниз, а настораживаясь, приподнимает до горизонтального положения или выше.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мордочка длинношерстного веймаранера" data-fancybox="gallery" href="/upload/iblock/877/8776b2ddb096267b9d81ac2b68779dc4.jpg" title="Мордочка длинношерстного веймаранера">
+          <div class="lazy-load" data-alt="Мордочка длинношерстного веймаранера" data-class="article_pic" data-original="/upload/resize_cache/iblock/877/412_2150_1/8776b2ddb096267b9d81ac2b68779dc4.jpg">
+           <noscript data-alt="Мордочка длинношерстного веймаранера" data-class="article_pic" data-original="/upload/resize_cache/iblock/877/412_2150_1/8776b2ddb096267b9d81ac2b68779dc4.jpg">
+            <img alt="Мордочка длинношерстного веймаранера" class="article_pic" height="274" src="/upload/resize_cache/iblock/877/412_2150_1/8776b2ddb096267b9d81ac2b68779dc4.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мордочка длинношерстного веймаранера
+         </div>
+        </div>
+        <p>
+         Длина шерсти определяет две породные разновидности: короткошерстную и длинношерстную. Первая характеризуется короткой, однако не настолько, как у большей части идентичных пород, шерстью, очень густой, жесткой, гладкой. Подшерсток весьма редкий либо же его нет вовсе.
+        </p>
+        <p>
+         Длинношерстные веймаранеры покрыты шелковистой, достаточно длинной шерстью, с подшерстком или без него. Шерсть может быть прямой либо чуть завиваться. На боках ее длина составляет от 3 до 5 см, чуть длиннее шерсть на нижней части шеи, передней части груди, животе. Конечности украшены очесами и «штанишками», хвост – «бахромой». Длинная ниспадающая шерсть присутствует в основании ушей, легкая шелковистая шерстка окаймляет их кончики.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок веймаранера темно-серого окраса" data-fancybox="gallery" href="/upload/iblock/884/884d2fbc47e5fdb789234dc662cc73be.jpg" title="Щенок веймаранера темно-серого окраса">
+          <div class="lazy-load" data-alt="Щенок веймаранера темно-серого окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/884/412_2150_1/884d2fbc47e5fdb789234dc662cc73be.jpg">
+           <noscript data-alt="Щенок веймаранера темно-серого окраса" data-class="article_pic" data-original="/upload/resize_cache/iblock/884/412_2150_1/884d2fbc47e5fdb789234dc662cc73be.jpg">
+            <img alt="Щенок веймаранера темно-серого окраса" class="article_pic" height="257" src="/upload/resize_cache/iblock/884/412_2150_1/884d2fbc47e5fdb789234dc662cc73be.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок веймаранера темно-серого окраса
+         </div>
+        </div>
+        <p>
+         Стандартом допускаются три вариации окраса веймаранера: серебристо-серый, светло-серый, темно-серый (мышиный). Они могут иметь легкие оттенки, например, медный, проявлять едва заметную коричневатость. Шерсть на голове и ушах, как правило, чуть светлее, чем на остальных частях тела. Допустимы миниатюрные белые отметины на груди и пальцах. Присутствие прочих пятен, подпалин считается недостатком. У некоторых особей может наблюдаться темная полоса, «ремень», вдоль позвоночника. По цвету она контрастирует с доминирующим окрасом животного. Таких собак используют в племенном разведении только при наличии у них выдающихся охотничьих качеств.
+        </p>
+        <h3>
+         Возможные пороки
+        </h3>
+        <ul>
+         <li>
+          Слишком грубая либо облегченная конституция.
+         </li>
+         <li>
+          Проваленная или сгорбленная спина, высокозадость.
+         </li>
+         <li>
+          Бочкообразная или недоразвитая грудь.
+         </li>
+         <li>
+          Чрезмерно подтянутый живот.
+         </li>
+         <li>
+          Вывернутые локти, плоские лапы.
+         </li>
+         <li>
+          Скованность движений.
+         </li>
+         <li>
+          Голова бульдожьего типа, короткая или узкая заостренная морда.
+         </li>
+         <li>
+          Вогнутая спинка носа.
+         </li>
+         <li>
+          Перекус, недокус.
+         </li>
+         <li>
+          Чрезмерно пушистая шерсть у короткошерстных собак и отсутствие очесов у длинношерстных.
+         </li>
+         <li>
+          Слишком интенсивные оттенки окраса, вытесняющие серый цвет. Подпалины.
+         </li>
+         <li>
+          Трусость, нервозность, недостаточная темпераментность.
+         </li>
+        </ul>
+        <h2>
+         Фото веймаранера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c80/c80408e75e79d5374598c1bf4a451247.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c80/380_264_2/c80408e75e79d5374598c1bf4a451247.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c80/380_264_2/c80408e75e79d5374598c1bf4a451247.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/c80/380_264_2/c80408e75e79d5374598c1bf4a451247.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e20/e20986af742eb1cf0f9636e5310cef0a.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e20/380_264_2/e20986af742eb1cf0f9636e5310cef0a.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e20/380_264_2/e20986af742eb1cf0f9636e5310cef0a.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/e20/380_264_2/e20986af742eb1cf0f9636e5310cef0a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ccd/ccd9ec4b414467fe059221ae93f69861.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ccd/380_264_2/ccd9ec4b414467fe059221ae93f69861.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ccd/380_264_2/ccd9ec4b414467fe059221ae93f69861.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/ccd/380_264_2/ccd9ec4b414467fe059221ae93f69861.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/cb3/cb39b39afaca99bd7c43f63d7991984d.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/cb3/380_264_2/cb39b39afaca99bd7c43f63d7991984d.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/cb3/380_264_2/cb39b39afaca99bd7c43f63d7991984d.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/cb3/380_264_2/cb39b39afaca99bd7c43f63d7991984d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/658/6581b5ccef71308a5b779a06ea4c0eee.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/658/380_264_2/6581b5ccef71308a5b779a06ea4c0eee.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/658/380_264_2/6581b5ccef71308a5b779a06ea4c0eee.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/658/380_264_2/6581b5ccef71308a5b779a06ea4c0eee.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1cc/1cc042667d2fcb6e51da082e2b34f85d.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1cc/380_264_2/1cc042667d2fcb6e51da082e2b34f85d.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1cc/380_264_2/1cc042667d2fcb6e51da082e2b34f85d.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/1cc/380_264_2/1cc042667d2fcb6e51da082e2b34f85d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/af7/af7c7d3ddbd203c21c280eaadfd42a47.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/af7/380_264_2/af7c7d3ddbd203c21c280eaadfd42a47.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/af7/380_264_2/af7c7d3ddbd203c21c280eaadfd42a47.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/af7/380_264_2/af7c7d3ddbd203c21c280eaadfd42a47.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/89e/89eb8bfd1b720023683570483d7b7d8a.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/89e/380_264_2/89eb8bfd1b720023683570483d7b7d8a.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/89e/380_264_2/89eb8bfd1b720023683570483d7b7d8a.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/89e/380_264_2/89eb8bfd1b720023683570483d7b7d8a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f0e/f0ee657939d278cd8a6efdd393acca16.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f0e/380_264_2/f0ee657939d278cd8a6efdd393acca16.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f0e/380_264_2/f0ee657939d278cd8a6efdd393acca16.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/f0e/380_264_2/f0ee657939d278cd8a6efdd393acca16.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер веймаранера
+        </h2>
+        <p>
+         Веймаранеры – энергичные, веселые и дружелюбные собаки. Они беззаветно преданы семье, в которой живут, и нуждаются в постоянном контакте с человеком. Содержать этих животных в вольере, как других охотничьих собак, не следует, ведь это заставляет их страдать. Одиночество в домашних стенах веймаранеры также переносят тяжело, и компания другого питомца не избавляет их от тоски по хозяину. Стоит учесть, что собака, надолго предоставленная сама себе, может впасть в панику, «разнести» мебель в квартире и даже навредить себе в попытке вырваться из дома. Беспокоясь, веймаранер принимается лаять, скулить, подвывать и даже копать. Пес угомонится лишь тогда, когда домочадцы появятся на пороге. За своими любимыми хозяевами эти питомцы любят следовать по пятам, обожают располагаться у их ног и вести с ними «беседы», к которым весьма склонны.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Какое скучное День Рождение" data-fancybox="gallery" href="/upload/iblock/b81/b818265eecf1ee1bbd330f79aea122ce.jpg" title="Какое скучное День Рождение">
+          <div class="lazy-load" data-alt="Какое скучное День Рождение" data-class="article_pic" data-original="/upload/resize_cache/iblock/b81/412_2150_1/b818265eecf1ee1bbd330f79aea122ce.jpg">
+           <noscript data-alt="Какое скучное День Рождение" data-class="article_pic" data-original="/upload/resize_cache/iblock/b81/412_2150_1/b818265eecf1ee1bbd330f79aea122ce.jpg">
+            <img alt="Какое скучное День Рождение" class="article_pic" height="274" src="/upload/resize_cache/iblock/b81/412_2150_1/b818265eecf1ee1bbd330f79aea122ce.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Какое скучное День Рождение
+         </div>
+        </div>
+        <p>
+         Веймаранер – достаточно уравновешенный пес. К незнакомцам он относится с настороженностью, но агрессии не демонстрирует, если уверен, что его хозяевам опасность не угрожает. Благодаря своей недоверчивости к чужим людям, внимательности, сообразительности, способности облаять все подозрительные звуки и шорохи за дверьми, собака может стать неплохим сторожем, однако караульно-сторожевая служба – явно не ее призвание.
+        </p>
+        <p>
+         С детьми, особенно старшего возраста, у этих псов устанавливаются дружеские, партнерские отношения. К малышам они относятся толерантно, но, затеяв с теми игру, могут случайно их травмировать.
+        </p>
+        <p>
+         Веймаранеры дружелюбно относятся к сородичам, особенно если выросли рядом с ними, а вот с кошками хорошие отношения у них складываются редко. Если живущую с ней в одном доме хозяйскую любимицу эта собака еще способна терпеть, то опрометчиво забредшей на ее территорию представительнице кошачьего племени точно не поздоровится. Собственно, все мелкие животные, а также птицы, пробуждают в веймаранере неукротимый охотничий инстинкт, становясь его потенциальными жертвами.
+        </p>
+        <p>
+         Во время охоты веймарские легавые проявляют себя сообразно врожденному темпераменту и персональным качествам. Есть чрезвычайно послушные подружейные собаки, но достаточно часто встречаются совершенно «безбашенные» особи, моментально выходящие из-под контроля во время работы.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Веймаранер с кошкой" data-fancybox="gallery" href="/upload/iblock/8f8/8f833679dea8e543d98e1347f99ab8a2.jpg" title="Веймаранер с кошкой">
+           <div class="lazy-load" data-alt="Веймаранер с кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/8f8/512_342_2/8f833679dea8e543d98e1347f99ab8a2.jpg">
+            <noscript data-alt="Веймаранер с кошкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/8f8/512_342_2/8f833679dea8e543d98e1347f99ab8a2.jpg">
+             <img alt="Веймаранер с кошкой" class="article_pic" src="/upload/resize_cache/iblock/8f8/512_342_2/8f833679dea8e543d98e1347f99ab8a2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Веймаранер с кошкой
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Веймаранер с ребенком" data-fancybox="gallery" href="/upload/iblock/aab/aab7c320ace80ebfb24938b518e622db.jpg" title="Веймаранер с ребенком">
+           <div class="lazy-load" data-alt="Веймаранер с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/aab/512_342_2/aab7c320ace80ebfb24938b518e622db.jpg">
+            <noscript data-alt="Веймаранер с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/aab/512_342_2/aab7c320ace80ebfb24938b518e622db.jpg">
+             <img alt="Веймаранер с ребенком" class="article_pic" src="/upload/resize_cache/iblock/aab/512_342_2/aab7c320ace80ebfb24938b518e622db.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Веймаранер с ребенком
+          </div>
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Тренировка веймаранера" data-fancybox="gallery" href="/upload/iblock/b50/b50af0d6ec48426c444bd43f667d49f6.jpg" title="Тренировка веймаранера">
+          <div class="lazy-load" data-alt="Тренировка веймаранера" data-class="article_pic" data-original="/upload/resize_cache/iblock/b50/412_2150_1/b50af0d6ec48426c444bd43f667d49f6.jpg">
+           <noscript data-alt="Тренировка веймаранера" data-class="article_pic" data-original="/upload/resize_cache/iblock/b50/412_2150_1/b50af0d6ec48426c444bd43f667d49f6.jpg">
+            <img alt="Тренировка веймаранера" class="article_pic" height="274" src="/upload/resize_cache/iblock/b50/412_2150_1/b50af0d6ec48426c444bd43f667d49f6.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Тренировка веймаранера
+         </div>
+        </div>
+        <p>
+         Веймаранер – чрезвычайно умный, внимательный и понятливый пес. Дрессуре он поддается великолепно, но, пребывая в плохом расположении духа, может проявлять своенравие и упрямство. Учитывая эти черты его характера, а также склонность собаки к доминированию, хозяину следует демонстрировать твердость и терпение при воспитании животного. Обучать питомца послушанию необходимо с самого раннего возраста, но, если авторитаризм в воспитании допустим, то методы, включающие в себя грубые окрики и применение физической силы в качестве наказания, должны быть исключены. Брутальность хозяина приведет к тому, что пес станет недоверчивым, команды будет выполнять неуверенно, с опаской. Доверие собаки вернуть будет очень сложно. А вот лакомства и похвала будут стимулировать веймаранера проявлять свои лучшие качества.
+        </p>
+        <p>
+         При воспитании собаки, которая приобретена для охоты, хозяину нужно найти золотую середину, так как ее беспрекословное подчинение и стремление угодить могут лишить гончую инициативности, необходимой ей во время работы.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Веймаранер принес куропатку" data-fancybox="gallery" href="/upload/iblock/d15/d15ae5dbe94213b22b55423c090379cd.jpg" title="Веймаранер принес куропатку">
+          <div class="lazy-load" data-alt="Веймаранер принес куропатку" data-class="article_pic" data-original="/upload/resize_cache/iblock/d15/1024_2150_1/d15ae5dbe94213b22b55423c090379cd.jpg">
+           <noscript data-alt="Веймаранер принес куропатку" data-class="article_pic" data-original="/upload/resize_cache/iblock/d15/1024_2150_1/d15ae5dbe94213b22b55423c090379cd.jpg">
+            <img alt="Веймаранер принес куропатку" class="article_pic" src="/upload/resize_cache/iblock/d15/1024_2150_1/d15ae5dbe94213b22b55423c090379cd.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Веймаранер принес куропатку
+         </div>
+        </div>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <p>
+         Идеальное условие для содержания веймаранера – просторный дом с обширным огороженным приусадебным участком, собственным прудом или близлежащим водоемом. В этом случае собака сможет регулярно реализовывать свою потребность в активной деятельности. В городской квартире пес будет чувствовать себя не менее комфортно, если хозяева смогут обеспечить ему интенсивные физические нагрузки – это могут быть частые прогулки, во время которых собака будет иметь возможность побегать без поводка, занятия на площадках, обустроенных полосой препятствий. В общей сложности веймаранер должен полноценно и активно двигаться не менее двух часов в день.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Три друга" data-fancybox="gallery" href="/upload/iblock/664/664ce33ed11fb710c44a281f201904bc.jpg" title="Три друга">
+          <div class="lazy-load" data-alt="Три друга" data-class="article_pic" data-original="/upload/resize_cache/iblock/664/412_2150_1/664ce33ed11fb710c44a281f201904bc.jpg">
+           <noscript data-alt="Три друга" data-class="article_pic" data-original="/upload/resize_cache/iblock/664/412_2150_1/664ce33ed11fb710c44a281f201904bc.jpg">
+            <img alt="Три друга" class="article_pic" height="274" src="/upload/resize_cache/iblock/664/412_2150_1/664ce33ed11fb710c44a281f201904bc.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Три друга
+         </div>
+        </div>
+        <p>
+         Собака, прогуливающаяся на поводке, должна четко исполнять команду «Рядом!».  В противном случае она будет сама тащить вас туда, куда ей заблагорассудится. Строгий ошейник, однако, использовать недопустимо. Спуская веймаранера с поводка, убедитесь, что рядом нет маленьких песиков и кошек, иначе они могут стать его трофеями.
+        </p>
+        <p>
+         Уход за шерстью собаки не представляет никакой сложности. Ее достаточно вычесывать массажной щеткой пару раз в неделю, а в период линьки это желательно делать ежедневно.
+        </p>
+        <p>
+         Купать питомца следует по необходимости, но не чаще, чем раз в месяц. После прогулки в непогоду песьи лапы нужно хорошенько помыть. Морозной зимой подушечки и когти необходимо обрабатывать особенно тщательно, чтобы в организм собаки не попали противолёдные реагенты, когда она начнет вылизывать свои лапы. В холодную пору, даже несмотря на то, что короткая шерсть веймаранера высыхает очень быстро, купание лучше заменить обработкой шерстного покрова специальным сухим шампунем.
+        </p>
+        <p>
+         Желательно раз в неделю протирать влажной тканевой салфеткой уголки глаз животного и область вокруг них. С такой же периодичностью следует ухаживать за висячими ушами питомца – это позволит вовремя обнаружить возможные воспаления. Ушные раковины удобно обрабатывать салфеткой, смоченной хлоргексидином.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Ммм... Чую что-то вкусное... и не очень..." data-fancybox="gallery" href="/upload/iblock/37b/37b1e1b53ca1fa972de890ea5ae2d169.jpg" title="Ммм... Чую что-то вкусное... и не очень...">
+          <div class="lazy-load" data-alt="Ммм... Чую что-то вкусное... и не очень..." data-class="article_pic" data-original="/upload/resize_cache/iblock/37b/412_2150_1/37b1e1b53ca1fa972de890ea5ae2d169.jpg">
+           <noscript data-alt="Ммм... Чую что-то вкусное... и не очень..." data-class="article_pic" data-original="/upload/resize_cache/iblock/37b/412_2150_1/37b1e1b53ca1fa972de890ea5ae2d169.jpg">
+            <img alt="Ммм... Чую что-то вкусное... и не очень..." class="article_pic" height="617" src="/upload/resize_cache/iblock/37b/412_2150_1/37b1e1b53ca1fa972de890ea5ae2d169.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Ммм... Чую что-то вкусное... и не очень...
+         </div>
+        </div>
+        <p>
+         Частота обрезки когтей собаки зависти от условий ее содержания. У некоторых псов когти стачиваются естественным образом, а те, кто не имеет возможности вдоволь побегать, нуждаются в их обрезке. Обычно ее осуществляют раз в месяц, используя специальную когтерезку для собак крупных пород.
+        </p>
+        <p>
+         Веймаранеры – отменные едоки. Съев порцию из своей посуды, они непременно поинтересуются, нет ли чего-либо вкусненького в чужих тарелках. В своих притязаниях на дополнительный подкорм они могут быть достаточно настойчивы, но такие их устремления следует пресекать и стараться кормить животное два раза в день. Порции должны быть приблизительно одинаковыми.
+        </p>
+        <p>
+         Выбирая мясные продукты для питомца, следует остановить выбор на говядине, баранине, крольчатине, птице. Полезна для собаки и рыба, она должна быть нежирной и малокостистой. Из круп предпочтительны рисовая, гречневая, их следует отварить на воде. Овсяные хлопья также будут нелишними в рационе веймаранера. В ежедневном меню должны присутствовать отварные или сырые овощи и фрукты, однако от экзотических, ярко окрашенных плодов следует отказаться. Из кисломолочных продуктов лучшим вариантом станут нежирные творог и кефир.
+        </p>
+        <p>
+         Хозяевам, предпочитающим кормить питомца готовым кормом, следует покупать продукцию класса премиум, супер-премиум, холистик.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Мне так удобно" data-fancybox="gallery" href="/upload/iblock/e3e/e3ee58cf2f063677795336c622e38442.jpg" title="Мне так удобно">
+           <div class="lazy-load" data-alt="Мне так удобно" data-class="article_pic" data-original="/upload/resize_cache/iblock/e3e/512_342_2/e3ee58cf2f063677795336c622e38442.jpg">
+            <noscript data-alt="Мне так удобно" data-class="article_pic" data-original="/upload/resize_cache/iblock/e3e/512_342_2/e3ee58cf2f063677795336c622e38442.jpg">
+             <img alt="Мне так удобно" class="article_pic" src="/upload/resize_cache/iblock/e3e/512_342_2/e3ee58cf2f063677795336c622e38442.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Мне так удобно
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Самое время, чтобы почистить уши" data-fancybox="gallery" href="/upload/iblock/b0c/b0cdbf5741f7d8e709d8512b8fc9b866.jpg" title="Самое время, чтобы почистить уши">
+           <div class="lazy-load" data-alt="Самое время, чтобы почистить уши" data-class="article_pic" data-original="/upload/resize_cache/iblock/b0c/512_342_2/b0cdbf5741f7d8e709d8512b8fc9b866.jpg">
+            <noscript data-alt="Самое время, чтобы почистить уши" data-class="article_pic" data-original="/upload/resize_cache/iblock/b0c/512_342_2/b0cdbf5741f7d8e709d8512b8fc9b866.jpg">
+             <img alt="Самое время, чтобы почистить уши" class="article_pic" src="/upload/resize_cache/iblock/b0c/512_342_2/b0cdbf5741f7d8e709d8512b8fc9b866.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Самое время, чтобы почистить уши
+          </div>
+         </div>
+        </div>
+        <h2 id="gl6">
+         Здоровье и болезни веймаранеров
+        </h2>
+        <p>
+         Крепкие и выносливые веймаранеры отличаются отменным здоровьем, однако наследственная предрасположенность к некоторым болезням может представлять для них потенциальную опасность. В зоне риска у этих животных находится желудочно-кишечный тракт, а такое заболевание, как заворот кишок, свойственное собакам с глубокой грудью, может закончиться для них фатально. Заметив у своего питомца первые признаки расстройства желудка, следует немедленно обратиться к ветеринару, который назначит ему специальное диетическое питание. Обычно в этих случаях собаку рекомендуют кормить несколько раз в день малыми порциями. Для профилактики заворота кишок специалисты советуют ставить посуду с едой для пса на возвышенную поверхность. Это будет препятствовать быстрому заглатыванию пищи и попаданию воздуха в желудок.
+        </p>
+        <p>
+         Веймаранеры склонны к дерматозам, также угрозу для них может представлять болезнь фон Виллебранда – наследственное расстройство свертывания крови. У этих собак могут возникать и офтальмологические проблемы: атрофия роговицы, заворот века, дистихиаз – появление дополнительного ряда ресниц. В 24% случаев преждевременной смерти собаки причиной становятся онкологические заболевания, в основном это фибросаркома, мастоцитома, меланома. У веймаранеров присутствует также предрасположенность к дисплазии тазобедренного и локтевого суставов.
+        </p>
+        <p>
+         Некоторые питомцы страдают обсессивно-компульсивным расстройством – испытывая тревогу, животные время от времени начинают сосать подстилки, одеяла.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мама с щенком веймаранера" data-fancybox="gallery" href="/upload/iblock/231/2313cf6e5ad0bf30128d605173934b90.jpg" title="Мама с щенком веймаранера">
+          <div class="lazy-load" data-alt="Мама с щенком веймаранера" data-class="article_pic" data-original="/upload/resize_cache/iblock/231/412_2150_1/2313cf6e5ad0bf30128d605173934b90.jpg">
+           <noscript data-alt="Мама с щенком веймаранера" data-class="article_pic" data-original="/upload/resize_cache/iblock/231/412_2150_1/2313cf6e5ad0bf30128d605173934b90.jpg">
+            <img alt="Мама с щенком веймаранера" class="article_pic" height="274" src="/upload/resize_cache/iblock/231/412_2150_1/2313cf6e5ad0bf30128d605173934b90.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мама с щенком веймаранера
+         </div>
+        </div>
+        <p>
+         Веймаранер не слишком известная в России порода. Разводить их в наших краях начали лишь в 80-х годах прошлого века. Сегодня питомники есть в нескольких российских городах, среди них  – Москва, Санкт-Петербург, Волгоград, Новосибирск, Тамбов. Именно в питомниках и следует приобретать щенков веймарской легавой. В противном случае здоровье и чистопородность вашего питомца окажутся под вопросом.
+        </p>
+        <p>
+         Предварительно ознакомившись со стандартом породы, посетите питомник и убедитесь, что щенки обитают в опрятном помещении, их мать ухожена, упитана, не изнурена родами и кормлениями. Пообщайтесь с заводчиком, добросовестный профессионал всегда охотно ответит на любой ваш вопрос. Ознакомьтесь с родословной малыша, убедитесь, что ему были сделаны все необходимые в его возрасте прививки. Желательно, чтобы вам предоставили результаты теста на дисплазию тазобедренного и локтевого суставов.
+        </p>
+        <p>
+         Проверьте, все ли щенки из одного помета веселы, игривы, активны. Затем внимательно осмотрите веймаранера, который понравился вам больше всех. Такие факторы, как худоба, вздутый животик, закисшие глаза, высыпания на коже, следы укусов блох, залысины, должны вас насторожить. Неприемлемо, если песик ведет себя апатично, не реагирует на ваши заигрывания.
+        </p>
+        <p>
+         Помните, что у щенков веймаранера глазки голубые, их цвет меняется с возрастом. Окрас должен быть тотально серым, небольшие белые отметинки могут быть только на груди и лапах. Если вы выбираете собаку для охоты, смело останавливайте свой выбор на самом активном малыше, но если вы просто ищете себе четверолапого друга, супершустрый малыш может создать вам в будущем массу проблем, потому что веймаранеру и без того активности не занимать.
+        </p>
+        <h2>
+         Фото щенков веймаранера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/737/737de1b515c01bfba68b540b91bd37e6.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/737/380_264_2/737de1b515c01bfba68b540b91bd37e6.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/737/380_264_2/737de1b515c01bfba68b540b91bd37e6.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/737/380_264_2/737de1b515c01bfba68b540b91bd37e6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f0f/f0f3e9d814e5a4ae9cd0350bf00d4e5c.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f0f/380_264_2/f0f3e9d814e5a4ae9cd0350bf00d4e5c.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f0f/380_264_2/f0f3e9d814e5a4ae9cd0350bf00d4e5c.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/f0f/380_264_2/f0f3e9d814e5a4ae9cd0350bf00d4e5c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5f6/5f65a63516a433b16a17d0ed7c9dbc1a.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/5f6/380_264_2/5f65a63516a433b16a17d0ed7c9dbc1a.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/5f6/380_264_2/5f65a63516a433b16a17d0ed7c9dbc1a.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/5f6/380_264_2/5f65a63516a433b16a17d0ed7c9dbc1a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f7e/f7ef7d652fb66b54f33753fd62a8ea74.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f7e/380_264_2/f7ef7d652fb66b54f33753fd62a8ea74.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f7e/380_264_2/f7ef7d652fb66b54f33753fd62a8ea74.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/f7e/380_264_2/f7ef7d652fb66b54f33753fd62a8ea74.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/dd8/dd84675d41085b013edb6dffd3e47657.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/dd8/380_264_2/dd84675d41085b013edb6dffd3e47657.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/dd8/380_264_2/dd84675d41085b013edb6dffd3e47657.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/dd8/380_264_2/dd84675d41085b013edb6dffd3e47657.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9ac/9acf14b618d3b06c00d5c00165f4f438.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9ac/380_264_2/9acf14b618d3b06c00d5c00165f4f438.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9ac/380_264_2/9acf14b618d3b06c00d5c00165f4f438.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/9ac/380_264_2/9acf14b618d3b06c00d5c00165f4f438.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/83f/83f86ba35d28b3903e5c98d1a0d2756d.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/83f/380_264_2/83f86ba35d28b3903e5c98d1a0d2756d.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/83f/380_264_2/83f86ba35d28b3903e5c98d1a0d2756d.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/83f/380_264_2/83f86ba35d28b3903e5c98d1a0d2756d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ac1/ac1a8de73819f4890f4dd84566fbcd4b.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ac1/380_264_2/ac1a8de73819f4890f4dd84566fbcd4b.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ac1/380_264_2/ac1a8de73819f4890f4dd84566fbcd4b.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/ac1/380_264_2/ac1a8de73819f4890f4dd84566fbcd4b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8ef/8ef6494e5c675088022512f451b58632.jpg" title="">
+           <div class="lazy-load" data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8ef/380_264_2/8ef6494e5c675088022512f451b58632.jpg">
+            <noscript data-alt="Веймаранер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8ef/380_264_2/8ef6494e5c675088022512f451b58632.jpg">
+             <img alt="Веймаранер" class="article_pic" src="/upload/resize_cache/iblock/8ef/380_264_2/8ef6494e5c675088022512f451b58632.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Сколько стоит веймаранер
+        </h2>
+        <p>
+         Цена чистокровного щенка веймаранера колеблется в пределах 35 000 - 65 000 рублей, а наследники выдающихся производителей могут стоить еще дороже. Иногда стоимость увеличивается, если для вязки специально привозят эксклюзивных животных из других стран. К слову, в Европе щенок веймарской легавой стоит от 1000 до 1500 евро.
+        </p>
+        <p>
+         Если вам предложат малыша за сумму менее 30 000 руб., насторожитесь и с особой внимательностью ознакомьтесь с его родословной и документами, касающимися здоровья будущего питомца.
+        </p>
+        <p>
+         Бюджетный вариант за 7 000 - 10 000 рублей подразумевает покупку щенка без документов и почти стопроцентно гарантирует проблемы с питомцем в будущем. Иногда, если повезет, за такую сумму можно приобрести родовитого песика у хорошего заводчика, если у последнего сложилась какая-либо экстраординарная ситуация. Недорого чистопородных щенков веймаранера периодически продают профессиональные охотники. К ним можно обратиться по рекомендации хороших знакомых.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения веймаранера на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/veymaraner/forum/">
+        Перейти на
+        форум веймаранера
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Веймаранер" src="/upload/iblock/eaf/eaf324ea66f56d3f3d5d2d35d821768e.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/veymaraner/">
+          Веймаранер
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/veymaraner/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/veymaraner/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/veymaraner/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/veymaraner/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/veymaraner/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/zolotistyy-retriver/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Золотистый ретривер" data-original="/upload/resize_cache/iblock/249/100_100_1/249483cc29c8f7316027872ed67ca526.jpg">
+          <noscript data-alt="Золотистый ретривер" data-original="/upload/resize_cache/iblock/249/100_100_1/249483cc29c8f7316027872ed67ca526.jpg">
+           <img alt="Золотистый ретривер" src="/upload/resize_cache/iblock/249/100_100_1/249483cc29c8f7316027872ed67ca526.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Золотистый ретривер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/novoshotlandskiy-retriver/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Новошотландский ретривер" data-original="/upload/resize_cache/iblock/c7c/100_100_1/zamzc361qyc7rcwdvgbxb60sapntr3s2.jpg">
+          <noscript data-alt="Новошотландский ретривер" data-original="/upload/resize_cache/iblock/c7c/100_100_1/zamzc361qyc7rcwdvgbxb60sapntr3s2.jpg">
+           <img alt="Новошотландский ретривер" src="/upload/resize_cache/iblock/c7c/100_100_1/zamzc361qyc7rcwdvgbxb60sapntr3s2.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Новошотландский ретривер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/angliyskiy-mastif/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Английский мастиф" data-original="/upload/resize_cache/iblock/8fa/100_100_1/8fa0685444078808ed14bdf5b03d7ec7.jpg">
+          <noscript data-alt="Английский мастиф" data-original="/upload/resize_cache/iblock/8fa/100_100_1/8fa0685444078808ed14bdf5b03d7ec7.jpg">
+           <img alt="Английский мастиф" src="/upload/resize_cache/iblock/8fa/100_100_1/8fa0685444078808ed14bdf5b03d7ec7.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Английский мастиф
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/russkiy-chernyy-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Русский черный терьер" data-original="/upload/resize_cache/iblock/b1f/100_100_1/b1f2a39155ff41379b0c49fc1f751303.jpg">
+          <noscript data-alt="Русский черный терьер" data-original="/upload/resize_cache/iblock/b1f/100_100_1/b1f2a39155ff41379b0c49fc1f751303.jpg">
+           <img alt="Русский черный терьер" src="/upload/resize_cache/iblock/b1f/100_100_1/b1f2a39155ff41379b0c49fc1f751303.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Русский черный терьер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fveymaraner%252F%253Fcheck_key%253D7584b147aca07d12e65d0694040f6582%2526ANIMAL_CODE%253Dveymaraner%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fveymaraner%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRnZleW1hcmFuZXIlMkYlM0ZjaGVja19rZXklM0Q3NTg0YjE0N2FjYTA3ZDEyZTY1ZDA2OTQwNDBmNjU4MiUyNkFOSU1BTF9DT0RFJTNEdmV5bWFyYW5lciUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZ2ZXltYXJhbmVyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fveymaraner%252F%253Fcheck_key%253D7584b147aca07d12e65d0694040f6582%2526ANIMAL_CODE%253Dveymaraner%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fveymaraner%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fveymaraner%252F%253Fcheck_key%253D7584b147aca07d12e65d0694040f6582%2526ANIMAL_CODE%253Dveymaraner%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fveymaraner%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "46.159.56.168"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--4f86f9b8398ad60aed2553988e7edabc-->

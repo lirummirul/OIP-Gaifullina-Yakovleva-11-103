@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'00d4a5e7ad1e'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Аляскинский кли-кай, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Аляскинский кли-кай – миниатюрная копия хаски и счастливый обладатель недюжинного обаяния, которое растопит ваше сердце! Вы не сдержите улыбку, глядя на столь харизматичного питомца." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/b64/b64763b0f11c2c958153573810e38c11.jpg" property="og:image"/>
+     <title>
+      Аляскинский кли-кай (мини-хаски) – описание породы с фото
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/alyaskinskiy-kli-kay/" property="og:url"/>
+     <meta content="Аляскинский кли-кай (мини-хаски) – описание породы с фото" property="og:title"/>
+     <meta content="Аляскинский кли-кай – миниатюрная копия хаски и счастливый обладатель недюжинного обаяния, которое растопит ваше сердце! Вы не сдержите улыбку, глядя на столь харизматичного питомца." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/alyaskinskiy-kli-kay/" itemprop="url">
+         <span itemprop="title">
+          Аляскинский кли-кай
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Аляскинский кли-кай
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/alyaskinskiy-kli-kay/">
+          Описание
+         </a>
+         <a href="/dog/alyaskinskiy-kli-kay/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/alyaskinskiy-kli-kay/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/alyaskinskiy-kli-kay/photo/">
+          Фото
+         </a>
+         <a href="/dog/alyaskinskiy-kli-kay/video/">
+          Видео
+         </a>
+         <a href="/dog/alyaskinskiy-kli-kay/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Аляскинский кли-кай" src="/upload/iblock/711/711575948caea27bae92a180a7853756.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/alyaskinskiy-kli-kay/">
+           мини-хаски
+          </a>
+          ,
+          <a href="/dog/alyaskinskiy-kli-kay/">
+           миниатюрный хаски
+          </a>
+         </span>
+         <p>
+          Аляскинский кли-кай – миниатюрная копия хаски и счастливый обладатель недюжинного обаяния, которое растопит ваше сердце! Вы не сдержите улыбку, глядя на столь харизматичного питомца.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/d2a/d2afbec5b130375d9aeb079b387a1a54.jpg" data-cap="Freyja at 4.5 weeks - Taken by Jay." data-fancybox="images" data-link="https://www.flickr.com/photos/alexandrakimbrough/4680667693/" data-type="image" data-username="Alexandra Kimbrough" href="/upload/uf/e4d/e4d7b25c33f617820185d6f4fc55a91b.jpg">
+            <img alt="Аляскинский кли-кай" src="/upload/resize_cache/uf/e4d/293_293_2/e4d7b25c33f617820185d6f4fc55a91b.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/e5e/e5e309863e22df0fbf68e8196f1e8f63.jpg" data-cap="Аляскинские кли-каи" data-fancybox="images" data-link="https://www.instagram.com/lapkins.ru/" data-type="image" data-username="lapkins.ru" href="/upload/uf/0e5/0e52946bb38223f198cb6bf153b67a2d.jpg">
+            <img alt="Аляскинский кли-кай" src="/upload/resize_cache/uf/0e5/293_293_2/0e52946bb38223f198cb6bf153b67a2d.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/759/759b66444e4f1cf7c700cc21899749c1.jpg" data-cap="" data-fancybox="images" data-link="https://www.instagram.com/p/Bl8kUk7lne_/" data-type="image" data-username="myloveonpaws" href="/upload/uf/e6b/e6b9c6b1af61914adf7f26d73223ea93.jpg">
+            <img alt="Аляскинский кли-кай" src="/upload/resize_cache/uf/e6b/293_293_2/e6b9c6b1af61914adf7f26d73223ea93.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/alyaskinskiy-kli-kay/photo/">
+         Все
+            фото аляскинского кли-кая
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы аляскинский кли-кай
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность аляскинского кли-кая
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер аляскинского кли-кая
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни аляскинского кли-кая
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Сколько стоит аляскинский кли-кай
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Аляскинский кли-кай
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         США
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         1970-е годы
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         стандартный – 10 кг, мини – 7 кг, той – 4,3 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         стандартный 38 – 43 см, мини 33 – 38 см, той менее 33 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         13 – 14 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Аляскинский кли-кай – относительно молодая порода, которая славится дружелюбным характером с пикантной долей упрямства.
+        </li>
+        <li>
+         Существует три типа собак: стандарт, мини и той, – которые отличаются размерами и массой тела.
+        </li>
+        <li>
+         Кли-каи любят резвиться на свежем воздухе, поэтому выбор между сном на диване и прогулкой в городском парке очевиден.
+        </li>
+        <li>
+         Выходцы из Аляски отличаются коммуникабельностью, поэтому не стоит оставлять их в одиночестве на целый день, если не хотите увидеть вместо дома «руины».
+        </li>
+        <li>
+         Лай кли-каев больше напоминает неразборчивую человеческую речь, поэтому «общение» с любимцем станет ещё более занятным.
+        </li>
+        <li>
+         Представители породы прекрасно уживаются с другими питомцами и легко находят общий язык с детьми.
+        </li>
+        <li>
+         Из аляскинского кли-кая может получиться неплохой сторож, но не ждите от него остервенелой защиты вверенного имущества.
+        </li>
+        <li>
+         Животные прекрасно поддаются дрессировке: всё, что от вас требуется, – обзавестись терпением и желанием научить любимца чему-то новому.
+        </li>
+        <li>
+         Аляскинский кли-кай не подходит начинающим собаководам и людям, которые ведут чрезмерно или же недостаточно активный образ жизни.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Аляскинский кли-кай" data-original="/upload/iblock/b64/b64763b0f11c2c958153573810e38c11.jpg">
+          <noscript data-alt="Аляскинский кли-кай" data-original="/upload/iblock/b64/b64763b0f11c2c958153573810e38c11.jpg">
+           <img alt="Аляскинский кли-кай" src="/upload/iblock/b64/b64763b0f11c2c958153573810e38c11.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Аляскинский кли-кай
+          </strong>
+          уникален во всех отношениях. Во-первых, его можно считать идеальной альтернативой более крупным собратьям –
+          <a class="ah" href="/dog/sibirskiy-khaski/">
+           сибирским хаски
+          </a>
+          . Эта компактная собака как нельзя лучше подходит для содержания в квартире. Во-вторых, представители породы отличаются покладистым характером, который позволяет им уживаться с любым четвероногим «коллективом». Аляскинский кли-кай – миниатюрный джентльмен, который привнесёт в жизнь своего хозяина только положительные эмоции. Отдалённое сходство с ручным волчонком придаёт ему особую изюминку, которая придётся по душе даже самому взыскательному собаководу.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Может лизнуть вора :) (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Аляскинский кли-кай основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы аляскинский кли-кай
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Аляскинский кли-кай" data-fancybox="gallery" href="/upload/iblock/0ec/0ecaf7ee49435f501703e06950251db9.jpg" title="Аляскинский кли-кай">
+          <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/0ec/412_2150_1/0ecaf7ee49435f501703e06950251db9.jpg">
+           <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/0ec/412_2150_1/0ecaf7ee49435f501703e06950251db9.jpg">
+            <img alt="Аляскинский кли-кай" class="article_pic" height="617" src="/upload/resize_cache/iblock/0ec/412_2150_1/0ecaf7ee49435f501703e06950251db9.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Аляскинский кли-кай
+         </div>
+        </div>
+        <p>
+         В сравнении с другими выходцами с Севера аляскинских кли-каев можно считать довольно молодыми. История породы берёт начало в 70-х годах прошлого столетия и связана с жительницей Аляски – Линдой Спарлинг. Однажды она вместе с мужем решила навестить родственников, проживающих в Оклахоме. Супругов встретило настоящее чудо – очаровательная и необычайно миниатюрная хаски, которая следовала за гостями по пятам и проявляла оживлённый интерес. Кличка животного вполне соответствовала его характеру: Кьюэриэс (Curious) в переводе с английского означает «любопытный, необычный, чудной». Несмотря на то, что собака была меньше своих сородичей, в её внешности прослеживались все признаки хаски – окрас и экстерьер.
+        </p>
+        <p>
+         Уже тогда Линде пришла в голову идея создать новую миниатюрную породу, и женщина уговорила родственников отдать ей собаку. В ее родном городе прогулки с Кьюэриэс постоянно привлекали внимание прохожих. Они нередко останавливались, желая рассмотреть животное поближе, и интересовались, не щенок ли это. Причина оживлённого любопытства была проста: на тот момент пришёлся пик интереса к ездовым собакам. Многие американцы желали обзавестись этими удивительными питомцами, но не все могли содержать в квартирах собаку больших размеров, которая к тому же требовала продолжительных активных прогулок и отличалась довольно непростым характером.
+        </p>
+        <p>
+         Линда Спарлинг разработала жёсткую программу разведения, кропотливо отбирая особей для вязки. Задействовали
+         <a class="ph" href="/dog/sibirskiy-khaski/">
+          хаски
+         </a>
+         , эскимосских собак,
+         <a class="ph" href="/dog/alyaskinskiy-malamut/">
+          аляскинских маламутов
+         </a>
+         и лаек. Понадобилось почти двадцать лет упорной селекции, чтобы в итоге получить собаку, которая выглядела как уменьшенная хаски. Всё это время Линда никому не сообщала о направленности своей работы. Первым человеком, который смог не просто познакомиться с новой породой, но и получить разрешение на фотосъёмку, стала мать одного из товарищей Линды – журналистка Эйлин Грегори. Именно она настояла на том, что собак пора «выводить в свет».
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок аляскинского кли-кая" data-fancybox="gallery" href="/upload/iblock/7d9/7d92acf64cebbb122dd7a0b8b3ee87ad.jpg" title="Щенок аляскинского кли-кая">
+          <div class="lazy-load" data-alt="Щенок аляскинского кли-кая" data-class="article_pic" data-original="/upload/resize_cache/iblock/7d9/412_2150_1/7d92acf64cebbb122dd7a0b8b3ee87ad.jpg">
+           <noscript data-alt="Щенок аляскинского кли-кая" data-class="article_pic" data-original="/upload/resize_cache/iblock/7d9/412_2150_1/7d92acf64cebbb122dd7a0b8b3ee87ad.jpg">
+            <img alt="Щенок аляскинского кли-кая" class="article_pic" height="549" src="/upload/resize_cache/iblock/7d9/412_2150_1/7d92acf64cebbb122dd7a0b8b3ee87ad.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок аляскинского кли-кая
+         </div>
+        </div>
+        <p>
+         Появление на людях в 1987 году одного из щенков, который был подарен Спарлинг близким друзьям на Рождество, произвело эффект разорвавшейся бомбы. Посыпались сотни писем и телефонных звонков: многие люди захотели стать обладателями такого четвероногого друга. Постоянно появлялись сообщения в новостях на телевидении и радио, статьи и фотографии в СМИ. Всё это способствовало такому наплыву посетителей, что Линде пришлось даже завести специальную гостевую книгу и записывать каждого желающего на определённое время. Дом заводчицы Спарлинг стал местной достопримечательностью для туристов, приезжающих на Аляску.
+        </p>
+        <p>
+         Со всеми потенциальными хозяевами проводилось собеседование. Они соглашались предоставлять фотографии и информацию, связанную с развитием питомца и изменениями в его поведении по мере взросления. Поскольку порода стремительно становилась популярной и новые хозяева сами превращались в заводчиков, Линда предприняла ответные меры, направленные на сохранение и закрепление признаков. После описания стандарта был создан Американский клуб кли-каев.
+        </p>
+        <p>
+         Значительную помощь в признании породы кинологическим сообществом оказала Эйлин Грегори, которая сама стала обладательницей пары милых щенков. Благодаря её усилиям Британский клуб собаководов, а вместе с ним – и Международная кинологическая организация, признали кли-каев. В 1988 году Американский кинологический союз внёс животных в свой реестр. В 1994 году на выставке домашних питомцев в Денвере впервые приняли участие аляскинские кли-каи (такое официальное название в итоге получили собаки). Они настолько понравились публике, что они получили приглашение и на следующую выставку.
+        </p>
+        <p>
+         Американская ассоциация редких пород внесла пушистых красавцев с Аляски в свой реестр в 1995 году, а двумя годами позже то же самое сделал и Объединённый кинологический союз. Новая порода наконец-то получила мировое признание.
+        </p>
+        <p>
+         По мере роста популярности кли-каев увеличивалось и число людей, желающих приобрести представителя удивительной породы. Некоторые заводчики в угоду количеству оказывали давление на миссис Спарлинг, предлагая смягчить высокие требования. Длительное время она была непреклонна, тщательно проверяя щенков из каждого помёта. Выбракованные особи подвергались стерилизации. К середине 90-х годов XX века давление возросло настолько, что Линда Спарлинг была вынуждена добровольно оставить клуб после двух десятилетий работы над новой породой. Тем не менее её идея всё же воплотилась в жизнь: мир получил миниатюрную копию сибирских хаски.
+        </p>
+        <h2>
+         Видео: Аляскинский кли-кай
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="cYBzZ0AnPgk">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность аляскинского кли-кая
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Той, мини, стандарт" data-fancybox="gallery" href="/upload/iblock/634/6341cb687fb112aa70a4c300c30555fc.jpg" title="Той, мини, стандарт">
+          <div class="lazy-load" data-alt="Той, мини, стандарт" data-class="article_pic" data-original="/upload/resize_cache/iblock/634/412_2150_1/6341cb687fb112aa70a4c300c30555fc.jpg">
+           <noscript data-alt="Той, мини, стандарт" data-class="article_pic" data-original="/upload/resize_cache/iblock/634/412_2150_1/6341cb687fb112aa70a4c300c30555fc.jpg">
+            <img alt="Той, мини, стандарт" class="article_pic" height="413" src="/upload/resize_cache/iblock/634/412_2150_1/6341cb687fb112aa70a4c300c30555fc.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Той, мини, стандарт
+         </div>
+        </div>
+        <p>
+         Аляскинский кли-кай относится к породам собак средних размеров, сложен гармонично и компактно. Это очаровательный малыш с выразительным взглядом, «карнавальной» маской на мордочке и хвостом, игриво завёрнутым в бублик.
+        </p>
+        <p>
+         Стандарт предусматривает три разновидности собак.
+        </p>
+        <ul>
+         <li>
+          Стандарт. Высота животного в холке варьируется в пределах 38-45 см, масса – 7-10 кг.
+         </li>
+         <li>
+          Мини. Рост собаки достигает 33-39 см. Весят же кли-каи от 5 до 7 кг.
+         </li>
+         <li>
+          Той. Высота животного удивительно мала: до 33 см. Масса этих живых игрушек соответствует их параметрам и не превышает 4 кг.
+         </li>
+        </ul>
+        <h3>
+         Голова и череп
+        </h3>
+        <p>
+         Форма головы больше приближена к треугольнику, нежели ко клину. Её покровы отличаются отсутствием кожных складок. Лоб округлый, затылочный бугор выражен умеренно. Череп сужается к носу.
+        </p>
+        <h3>
+         Морда
+        </h3>
+        <p>
+         Морда аляскинского кли-кая незначительно вытянута. Её главный отличительный признак – «маска», которая контрастирует с основным окрасом. Лоб кли-кая незначительно длиннее переносицы. В сравнении с последней форма носа довольно ровная, а сама мочка кажется выпуклой. Пигментирована в чёрный оттенок (иногда – с нежно-розовой полоской). Стоп характеризуется умеренной глубиной и плавностью очертаний. Щёки пухловатые и плотные. Губы прилегают к челюстям, поэтому животное не кажется брылястым. Допустима пигментация в чёрный или печёночный оттенок. Последний возможен лишь для собак бело-рыжего окраса.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Аляскинский маламут и аляскинский кли-кай" data-fancybox="gallery" href="/upload/iblock/e7c/e7ce90eda5bac545fc8c349722bf0849.jpg" title="Аляскинский маламут и аляскинский кли-кай">
+          <div class="lazy-load" data-alt="Аляскинский маламут и аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/e7c/412_2150_1/e7ce90eda5bac545fc8c349722bf0849.jpg">
+           <noscript data-alt="Аляскинский маламут и аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/e7c/412_2150_1/e7ce90eda5bac545fc8c349722bf0849.jpg">
+            <img alt="Аляскинский маламут и аляскинский кли-кай" class="article_pic" height="549" src="/upload/resize_cache/iblock/e7c/412_2150_1/e7ce90eda5bac545fc8c349722bf0849.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Аляскинский маламут и аляскинский кли-кай
+         </div>
+        </div>
+        <p>
+         Уши аляскинского кли-кая – два аккуратных треугольника, поставленные близко и довольно высоко. Их кончики плавно закруглены. При взгляде на собаку создаётся впечатление, что её ушки непропорционально большие в сравнении с головой, но так и должно быть. Ушные раковины открытые и широкие, отличаются плотным шёрстным покровом с наружной стороны.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Невыпуклые, среднего размера. Имеют овальную, миндалевидную или круглую форму. Радужка может быть пигментирована в различные цвета, но янтарный, голубой или карий – самые предпочтительные варианты. Часто встречаются кли-каи с разными глазами (проявление гетерохромии), но это отнюдь не дефект породы. Тёмная обводка век обязательна.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Нижняя челюсть более крепкая и мощная в сравнении с верхней. Прикус ножницеобразный. Зубы плотно сидят в челюсти. Эмаль крепкая и белая.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Шея собаки выглядит грациозно, отличается плавным изгибом и средней длиной. В движении аляскинский кли-кай держит её вытянутой, тем самым вынося голову вперёд. В остальное время шея «поставлена» ровно.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Мордочка аляскинского кли-кая" data-fancybox="gallery" href="/upload/iblock/e55/e552c6ba0a4ba7828b4ae305e84e8c31.jpg" title="Мордочка аляскинского кли-кая">
+          <div class="lazy-load" data-alt="Мордочка аляскинского кли-кая" data-class="article_pic" data-original="/upload/resize_cache/iblock/e55/1024_2150_1/e552c6ba0a4ba7828b4ae305e84e8c31.jpg">
+           <noscript data-alt="Мордочка аляскинского кли-кая" data-class="article_pic" data-original="/upload/resize_cache/iblock/e55/1024_2150_1/e552c6ba0a4ba7828b4ae305e84e8c31.jpg">
+            <img alt="Мордочка аляскинского кли-кая" class="article_pic" src="/upload/resize_cache/iblock/e55/1024_2150_1/e552c6ba0a4ba7828b4ae305e84e8c31.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мордочка аляскинского кли-кая
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Корпус имеет прямоугольный формат. В профиль становится заметно, что высота животного меньше длины туловища. Ровная спина переходит в сильную поясницу (в этом месте заметен незначительный изгиб). Грудная клетка благодаря овальной передней части выдаётся вперёд. В сравнении с линией плеч таз кли-кая выглядит уже. Живот подтянут.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Белые кли-каи" data-fancybox="gallery" href="/upload/iblock/6f3/6f32868ae0898c8e28e2bfa983701264.jpg" title="Белые кли-каи">
+          <div class="lazy-load" data-alt="Белые кли-каи" data-class="article_pic" data-original="/upload/resize_cache/iblock/6f3/412_2150_1/6f32868ae0898c8e28e2bfa983701264.jpg">
+           <noscript data-alt="Белые кли-каи" data-class="article_pic" data-original="/upload/resize_cache/iblock/6f3/412_2150_1/6f32868ae0898c8e28e2bfa983701264.jpg">
+            <img alt="Белые кли-каи" class="article_pic" height="549" src="/upload/resize_cache/iblock/6f3/412_2150_1/6f32868ae0898c8e28e2bfa983701264.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Белые кли-каи
+         </div>
+        </div>
+        <p>
+         Поставлен довольно высоко по отношению к пояснице и закручен в полноценное кольцо. Предпочтительно, чтобы кончик хвоста был окрашен в тёмный цвет. Лежит перпендикулярно линии позвоночника или же слегка склонён набок. Покрыт густой шерстью.
+        </p>
+        <h3>
+         Передние конечности
+        </h3>
+        <p>
+         Конечности довольно изящные и тонкие, выглядят пропорциональными относительно туловища. Гибкие и сильные суставы обеспечивают мощный толчок. Локти поставлены параллельно корпусу собаки. Овальные лапы имеют развитые подушечки, пространство между которыми «занято» густой шерстью.
+        </p>
+        <h3>
+         Задние конечности
+        </h3>
+        <p>
+         Бёдра умеренно мускулистые, угол коленных суставов хорошо очерчен. Лапы плотно собраны в овал; имеют крепкие пальцы, которые заканчиваются шероховатыми подушечками. Пространство между ними заполнено длинной шерстью.
+        </p>
+        <h3>
+         Манера движения
+        </h3>
+        <p>
+         Аляскинский кли-кай движется плавно и одновременно с этим проворно, не прилагая лишних усилий.
+        </p>
+        <h3>
+         Шёрстный покров
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Аляскинский кли-кай с основным черным окрасом" data-fancybox="gallery" href="/upload/iblock/61b/61b7e770d429b1dd7956de0794dd6771.jpg" title="Аляскинский кли-кай с основным черным окрасом">
+          <div class="lazy-load" data-alt="Аляскинский кли-кай с основным черным окрасом" data-class="article_pic" data-original="/upload/resize_cache/iblock/61b/412_2150_1/61b7e770d429b1dd7956de0794dd6771.jpg">
+           <noscript data-alt="Аляскинский кли-кай с основным черным окрасом" data-class="article_pic" data-original="/upload/resize_cache/iblock/61b/412_2150_1/61b7e770d429b1dd7956de0794dd6771.jpg">
+            <img alt="Аляскинский кли-кай с основным черным окрасом" class="article_pic" height="618" src="/upload/resize_cache/iblock/61b/412_2150_1/61b7e770d429b1dd7956de0794dd6771.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Аляскинский кли-кай с основным черным окрасом
+         </div>
+        </div>
+        <p>
+         Длинная шерсть досталась кли-каю в наследство от хаски. Обязателен густой подшёрсток, который поддерживает остевой волос в приподнятом положении. Его отсутствие допустимо только во время сезонной линьки. Воротник и очаровательный «фартук» на груди образованы более «набитым» подшёрстком. Допустимо наличие удлинённой шерсти на ушах, нижней части тела и хвоста, а также на задней стороне лап.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Стандарт породы аляскинский кли-кай допускает различные окрасы шерсти. Самыми распространёнными вариантами считаются:
+        </p>
+        <ul>
+         <li>
+          серый – от светлого до тёмного;
+         </li>
+         <li>
+          красный, включая «масть оленёнка»;
+         </li>
+         <li>
+          чёрный.
+         </li>
+        </ul>
+        <p>
+         Независимо от основного цвета шея, грудная клетка, живот и лапы собаки преимущественно окрашены в белый. «Маска» на морде на тон-два темнее основного окраса – ещё одна метка, характерная для кли-каев. Симметричный и замкнутый рисунок предпочтителен. Белая полоса, которая визуально делит лоб (и частично переносицу) на две части, и светлые «брови» над глазами приветствуются.
+        </p>
+        <h3>
+         Возможные пороки
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Аляскинский кли-кай на выставке собак" data-fancybox="gallery" href="/upload/iblock/293/29373d89cb7425740ebbf9d80fbf9067.jpg" title="Аляскинский кли-кай на выставке собак">
+          <div class="lazy-load" data-alt="Аляскинский кли-кай на выставке собак" data-class="article_pic" data-original="/upload/resize_cache/iblock/293/412_2150_1/29373d89cb7425740ebbf9d80fbf9067.jpg">
+           <noscript data-alt="Аляскинский кли-кай на выставке собак" data-class="article_pic" data-original="/upload/resize_cache/iblock/293/412_2150_1/29373d89cb7425740ebbf9d80fbf9067.jpg">
+            <img alt="Аляскинский кли-кай на выставке собак" class="article_pic" height="275" src="/upload/resize_cache/iblock/293/412_2150_1/29373d89cb7425740ebbf9d80fbf9067.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Аляскинский кли-кай на выставке собак
+         </div>
+        </div>
+        <p>
+         К дефектам породы аляскинский кли-кай относят любое отклонение от стандарта. Среди самых распространённых называют:
+        </p>
+        <ul>
+         <li>
+          «разорванную» и/или асимметричную маску на морде;
+         </li>
+         <li>
+          выпученные и/или близко посаженные глаза;
+         </li>
+         <li>
+          слаборазвитую грудную клетку;
+         </li>
+         <li>
+          чрезмерно длинную шерсть;
+         </li>
+         <li>
+          наличие кожных складок;
+         </li>
+         <li>
+          светлую пигментацию век;
+         </li>
+         <li>
+          обвисшую линию живота;
+         </li>
+         <li>
+          прямой формат прикуса;
+         </li>
+         <li>
+          скованные движения;
+         </li>
+         <li>
+          брылястые губы;
+         </li>
+         <li>
+          тупую морду;
+         </li>
+         <li>
+          резкий стоп.
+         </li>
+        </ul>
+        <p>
+         Дисквалифицирующие пороки – те же дефекты, но в более усугублённой форме. Помимо этого, к ним причисляют агрессивное или трусливое поведение, а также крипторхизм (неопущение яичек у кобелей).
+        </p>
+        <h2>
+         Фото аляскинского кли-кая
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f32/f321c32cb35928654e2243593f330103.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/f32/380_264_2/f321c32cb35928654e2243593f330103.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/f32/380_264_2/f321c32cb35928654e2243593f330103.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/f32/380_264_2/f321c32cb35928654e2243593f330103.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/764/7649c7e1af1bfa44c4424004a7beb78c.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/764/380_264_2/7649c7e1af1bfa44c4424004a7beb78c.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/764/380_264_2/7649c7e1af1bfa44c4424004a7beb78c.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/764/380_264_2/7649c7e1af1bfa44c4424004a7beb78c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fc3/fc3d8f1488a7c03ca87cc2a9a16b38d3.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/fc3/380_264_2/fc3d8f1488a7c03ca87cc2a9a16b38d3.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/fc3/380_264_2/fc3d8f1488a7c03ca87cc2a9a16b38d3.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/fc3/380_264_2/fc3d8f1488a7c03ca87cc2a9a16b38d3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2ea/2eae652c878d19a4d953f53609709356.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/2ea/380_264_2/2eae652c878d19a4d953f53609709356.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/2ea/380_264_2/2eae652c878d19a4d953f53609709356.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/2ea/380_264_2/2eae652c878d19a4d953f53609709356.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1e7/1e70f5cfd061df9be8bf2c3a5a5b411a.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/1e7/380_264_2/1e70f5cfd061df9be8bf2c3a5a5b411a.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/1e7/380_264_2/1e70f5cfd061df9be8bf2c3a5a5b411a.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/1e7/380_264_2/1e70f5cfd061df9be8bf2c3a5a5b411a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d90/d90a33ddb761ce419823fb535b33f7be.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/d90/380_264_2/d90a33ddb761ce419823fb535b33f7be.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/d90/380_264_2/d90a33ddb761ce419823fb535b33f7be.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/d90/380_264_2/d90a33ddb761ce419823fb535b33f7be.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f51/f5172d7b0015ca36daf30f508b27d896.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/f51/380_264_2/f5172d7b0015ca36daf30f508b27d896.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/f51/380_264_2/f5172d7b0015ca36daf30f508b27d896.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/f51/380_264_2/f5172d7b0015ca36daf30f508b27d896.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2a1/2a104f5f7e42f8e9c5b3999df629bd3d.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/2a1/380_264_2/2a104f5f7e42f8e9c5b3999df629bd3d.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/2a1/380_264_2/2a104f5f7e42f8e9c5b3999df629bd3d.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/2a1/380_264_2/2a104f5f7e42f8e9c5b3999df629bd3d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/69e/69ec25d812c8e25cb0861f836b443e10.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/69e/380_264_2/69ec25d812c8e25cb0861f836b443e10.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/69e/380_264_2/69ec25d812c8e25cb0861f836b443e10.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/69e/380_264_2/69ec25d812c8e25cb0861f836b443e10.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер аляскинского кли-кая
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Аляскинский кли-кай с ребенком" data-fancybox="gallery" href="/upload/iblock/d74/d740d4cf526c736c0b4d701ad8163a4f.jpg" title="Аляскинский кли-кай с ребенком">
+          <div class="lazy-load" data-alt="Аляскинский кли-кай с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/d74/412_2150_1/d740d4cf526c736c0b4d701ad8163a4f.jpg">
+           <noscript data-alt="Аляскинский кли-кай с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/d74/412_2150_1/d740d4cf526c736c0b4d701ad8163a4f.jpg">
+            <img alt="Аляскинский кли-кай с ребенком" class="article_pic" height="274" src="/upload/resize_cache/iblock/d74/412_2150_1/d740d4cf526c736c0b4d701ad8163a4f.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Аляскинский кли-кай с ребенком
+         </div>
+        </div>
+        <p>
+         Характер – одна из главных особенностей, которая наряду с размерами отличает аляскинского кли-кая от хаски. Темперамент этой миниатюрной копии совсем не такой, как у её прародителей – ездовых собак. Если хаски отличаются рассудительностью, вальяжностью движений, своенравием, а иногда и упёртостью, то аляскинские кли-каи – маленькие весельчаки, которые предпочитают активные игры и любят порезвиться во время прогулок.
+        </p>
+        <p>
+         Компанейские и жизнерадостные собаки плохо переносят одиночество. Из этого следует закономерный вывод: аляскинские кли-каи не подойдут тем людям, которые подолгу отсутствуют дома. Оставите мини-хаски на весь день без внимания – и от скуки животное выплеснет свою энергию на вещи и предметы обихода. Приготовьтесь столкнуться с такими последствиями одиночества кли-кая, как погрызанная мебель или, например, разорванные туфли.
+        </p>
+        <p class="legenda">
+         Запомните: если ваше отсутствие всё же неизбежно, обеспечьте питомца игрушками. Он переключит своё внимание с предметов интерьера на более безобидные мячи и «косточки».
+        </p>
+        <p>
+         Эти собаки настолько общительны, что после возвращения хозяина в течение нескольких минут постараются «рассказать», что происходило в его отсутствие. Лай аляскинских кли-каев очень похож на речевые звуки, своеобразный собачий язык, и это ещё одна отличительная способность породы. Подобную коммуникабельность и дружелюбие четвероногие друзья проявляют и в отношении других домашних питомцев, прекрасно уживаясь с собаками, кошками и прочей живностью. Однако от компании декоративных грызунов и птиц лучше воздержаться.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кто тут хороший мальчик?" data-fancybox="gallery" href="/upload/iblock/464/4647fafbe06cb0782a2231a8f8ff8bd2.jpg" title="Кто тут хороший мальчик?">
+          <div class="lazy-load" data-alt="Кто тут хороший мальчик?" data-class="article_pic" data-original="/upload/resize_cache/iblock/464/412_2150_1/4647fafbe06cb0782a2231a8f8ff8bd2.jpg">
+           <noscript data-alt="Кто тут хороший мальчик?" data-class="article_pic" data-original="/upload/resize_cache/iblock/464/412_2150_1/4647fafbe06cb0782a2231a8f8ff8bd2.jpg">
+            <img alt="Кто тут хороший мальчик?" class="article_pic" height="368" src="/upload/resize_cache/iblock/464/412_2150_1/4647fafbe06cb0782a2231a8f8ff8bd2.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кто тут хороший мальчик?
+         </div>
+        </div>
+        <p>
+         Представители породы ладят и с детворой, а малышей и вовсе обожают! Аляскинский кли-кай станет великолепной нянькой для ребёнка. Впрочем, следует помнить, что эти собаки не любят грубого отношения от детей постарше. Кли-каи могут слабо оскалиться в ответ на щипки или пинки (хотя их прародители хаски терпят подобные шалости). Впрочем, этих инцидентов можно легко избежать, если объяснить детям, как правильно вести себя с питомцем. Нельзя забывать, что собака – не игрушка, а живое существо.
+        </p>
+        <p>
+         Аляскинские кли-каи очень преданы хозяину и стремятся разными способами проявить свою любовь. Важно помнить, что это чувство должно быть взаимным, иначе ваше равнодушие негативно отразится на характере собаки и её дальнейшем поведении. Животное будет ходить следом, требовать внимания, скулить и пытаться «пожаловаться» вам на свою нелёгкую собачью жизнь.
+        </p>
+        <p>
+         В отличие от хаски, которые не боятся незнакомцев и всегда приветствуют гостей, аляскинские кли-каи проявляют осторожность в отношении посторонних людей в доме и стараются держаться подальше, оставаясь начеку. Однако при виде расслабленного и позитивно настроенного к чужаку хозяина настороженность животного сменяется доверительно-дружелюбным отношением.
+        </p>
+        <p>
+         Хотя кли-каи и обзавелись умением находить общий язык с незнакомцами, это не отразилось на их охранных качествах. Маленькие размеры не позволят собакам дать достойный отпор непрошеным гостям, но поднять шум и привлечь внимание им не составит труда.
+        </p>
+        <p>
+         Если вы проживаете в частном доме и планируете выпускать питомца побегать по двору, учитывайте тот факт, что аляскинские кли-каи любят покопаться в земле и могут очень легко прорыть ход под забором, что чревато побегом и потерей друга. Повинуясь частично сохранившимся инстинктам, собаки могут разрывать норы грызунов. Имейте это в виду и не забывайте учитывать, что мыши и крысы – разносчики инфекции, которые вместе с укусом за нос могут «наградить» любопытного охотника и поводом для визита к ветеринару.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/da7/da7bfedd6bf98b1bdc6f3852144c69d6.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/da7/512_342_2/da7bfedd6bf98b1bdc6f3852144c69d6.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/da7/512_342_2/da7bfedd6bf98b1bdc6f3852144c69d6.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/da7/512_342_2/da7bfedd6bf98b1bdc6f3852144c69d6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/3c7/3c785a6237071c2522f8c89f0bd69966.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/3c7/512_342_2/3c785a6237071c2522f8c89f0bd69966.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/3c7/512_342_2/3c785a6237071c2522f8c89f0bd69966.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/3c7/512_342_2/3c785a6237071c2522f8c89f0bd69966.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Аляскинские кли-каи нуждаются в социализации уже с первых дней жизни в новом доме. Эта порода не из пугливых, поэтому при отсутствии должного воспитания собака отличается склонностью проявлять агрессию и отстаивать свою территорию.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Эту собаку ждет слава!" data-fancybox="gallery" href="/upload/iblock/d1f/d1f7d35db3a027c53cc1d274ca51d3cc.jpg" title="Эту собаку ждет слава!">
+          <div class="lazy-load" data-alt="Эту собаку ждет слава!" data-class="article_pic" data-original="/upload/resize_cache/iblock/d1f/412_2150_1/d1f7d35db3a027c53cc1d274ca51d3cc.jpg">
+           <noscript data-alt="Эту собаку ждет слава!" data-class="article_pic" data-original="/upload/resize_cache/iblock/d1f/412_2150_1/d1f7d35db3a027c53cc1d274ca51d3cc.jpg">
+            <img alt="Эту собаку ждет слава!" class="article_pic" height="282" src="/upload/resize_cache/iblock/d1f/412_2150_1/d1f7d35db3a027c53cc1d274ca51d3cc.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Эту собаку ждет слава!
+         </div>
+        </div>
+        <p>
+         Лучший способ усвоить правила поведения в обществе – игра. Ставьте перед пушистым малышом задачи, хвалите за их успешное выполнение или, наоборот, давайте питомцу понять, что результат вам не нравится. Главное – не заигрываться: это чревато потерей авторитета в глазах животного, а вернуть звание вожака будет довольно сложно.
+        </p>
+        <p>
+         Пытливый ум аляскинского кли-кая облегчает процесс дрессировки в той же мере, в которой и затрудняет. Собака умна и независима одновременно: с радостью выучит новую команду, но захочет ли её выполнить – это уже риторический вопрос. Не стоит выдавать желаемое за действительное и ждать, что кли-кай беспрекословно сделает всё, о чём вы его попросите: принесёт тапочки или газету, залает три раза или трагично «умрёт» получше любого актёра Голливуда. Хаски всё же наделили своих «потомков» внушительной долей упрямства, поэтому проявление слабости чревато тем, что аляскинский кли-кай сам примется за вашу дрессировку.
+        </p>
+        <p>
+         Представители породы нуждаются в знаниях, поэтому не забывайте учить питомца новым командам. Придерживайтесь чёткого порядка, иначе кли-кай ничего не запомнит. Аналогичный результат ждёт и в том случае, если в процессе дрессировки вы проявляете агрессию. Строгого взгляда и нахмуренных бровей достаточно: кли-кай без труда распознает ваше недовольство. Крик и попытки поднять на питомца руку не ускорят усвоение команды и лишь настроят собаку против вас.
+        </p>
+        <p>
+         Рекомендуется чередовать дрессировку со спортивными мероприятиями. Самыми популярными вариантами до сих пор остаются погоня за фрисби, полоса препятствий и пробежка рядом с велосипедистом (байкджоринг). Не менее полезным признают и фристайл – повторение команд в такт задорной музыке.
+        </p>
+        <p>
+         Приучение аляскинского кли-кая к поводку – ещё один важный момент в дрессировке. Стоит научить собаку отзываться на собственную кличку, иначе спускать питомца с привязи категорически запрещено! Представители породы слывут мастерами побега, поэтому не стоит прятать поводок в ящик, если вы не хотите лишиться любимца.
+        </p>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Выгул аляскинского кли-кая" data-fancybox="gallery" href="/upload/iblock/b86/b8603af857240b3c16f330675b2345b2.jpg" title="Выгул аляскинского кли-кая">
+          <div class="lazy-load" data-alt="Выгул аляскинского кли-кая" data-class="article_pic" data-original="/upload/resize_cache/iblock/b86/412_2150_1/b8603af857240b3c16f330675b2345b2.jpg">
+           <noscript data-alt="Выгул аляскинского кли-кая" data-class="article_pic" data-original="/upload/resize_cache/iblock/b86/412_2150_1/b8603af857240b3c16f330675b2345b2.jpg">
+            <img alt="Выгул аляскинского кли-кая" class="article_pic" height="618" src="/upload/resize_cache/iblock/b86/412_2150_1/b8603af857240b3c16f330675b2345b2.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Выгул аляскинского кли-кая
+         </div>
+        </div>
+        <p>
+         Небольшие по размеру аляскинские кли-каи отлично подходят для содержания как в загородном доме, так и в апартаментах. Правильное кормление избавит вас от характерного запаха «псины» – и это несмотря на длинную шерсть, которая в большинстве случаев источает неприятный «аромат». Плюс в карму породы добавляет и чистоплотность собак: кли-кай всегда обходит дурно пахнущий мусор и не испытывает желания вываляться в нём, что в большинстве своём делают его сородичи.
+        </p>
+        <p>
+         Уход за шерстью питомца не составит особого труда, поскольку эти собаки тратят львиную долю времени на поддержание чистоты собственной шёрстки. Порой аляскинских кли-каев сравнивают с кошками за уникальное умение умываться передними лапами. Как и представители кошачьих, миниатюрные хаски любят ухаживать за собой: вытирать мордочку после плотного завтрака или смывать пыль после чрезмерно активной прогулки. Кли-каи не нуждаются в частых водных процедурах – достаточно купать собак два-три раза в год, используя специальный зоошампунь.
+        </p>
+        <p>
+         Для вычёсывания шерсти рекомендуется приобрести рукавички с силиконовыми наростами или жёсткую щётку. Процедура проводится раз в неделю. Конечно, во время линьки, которая происходит два раза в год (весной и осенью), придётся делать это через день или даже чаще. Это поможет избежать образования колтунов из отходящего подпушка. Вопреки всеобщему заблуждению аляскинские кли-каи не нуждаются в регулярном тримминге. Природа наградила этих собак умением по максимуму обходиться без вмешательства человека. Впрочем, это не даёт вам право поставить крест на уходе за любимцем.
+        </p>
+        <p>
+         В целом кли-каи не подвержены простудам, так что зимнюю одежду лучше припрятать для других пород. Эти собаки с радостью «искупаются» в снегу и оближут первую же сосульку, до которой смогут дотянуться. А вот сквозняков лучше избегать, особенно после водных процедур, поскольку плохой иммунитет отдельных животных ещё никто не отменял.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кли-кай на лавочке" data-fancybox="gallery" href="/upload/iblock/007/007c26296442f378e95614b2f5f6cd02.jpg" title="Кли-кай на лавочке">
+          <div class="lazy-load" data-alt="Кли-кай на лавочке" data-class="article_pic" data-original="/upload/resize_cache/iblock/007/412_2150_1/007c26296442f378e95614b2f5f6cd02.jpg">
+           <noscript data-alt="Кли-кай на лавочке" data-class="article_pic" data-original="/upload/resize_cache/iblock/007/412_2150_1/007c26296442f378e95614b2f5f6cd02.jpg">
+            <img alt="Кли-кай на лавочке" class="article_pic" height="620" src="/upload/resize_cache/iblock/007/412_2150_1/007c26296442f378e95614b2f5f6cd02.jpg" width="411"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кли-кай на лавочке
+         </div>
+        </div>
+        <p>
+         Многие начинающие собаководы уделяют внимание ушам питомцев в последнюю очередь, и в случае с аляскинскими кли-каями – это ошибка. Представители породы обожают рыться в земле, поэтому после прогулки потрудитесь осмотреть ушные раковины животного. Туда может попасть грязь, а это вызовет развитие воспалительного процесса. Протрите уши любимца пальцем, обёрнутым влажной марлей. Ни в коем случае не используйте ватные палочки: одно неосторожное движение – и вы повредите барабанные перепонки собаки.
+        </p>
+        <p>
+         Регулярно проверяйте глаза аляскинского кли-кая на наличие инородных частиц. Для их удаления используйте влажную ткань без ворса или ватный диск. В качестве вспомогательного средства подойдёт отвар ромашки или охлаждённый крепкий чай.
+        </p>
+        <p>
+         Не забывайте и о ротовой полости питомца. Мягкая пища может способствовать образованию зубного камня и проблемам с дёснами. Используйте специальные палочки для чистки зубов, которые, помимо основного назначения, послужат и неплохим лакомством для собаки. В особо запущенных случаях поможет специальная паста, которую можно приобрести в зоомагазине.
+        </p>
+        <p>
+         Когти кли-каев стоит подстригать по мере необходимости при помощи специального когтереза. В среднем, к этой процедуре придётся прибегать один-два раза в месяц. Не забывайте использовать пилочку для сглаживания неровных краёв.
+        </p>
+        <p>
+         Жёсткие подушечки лап склонны трескаться при отсутствии должного ухода, поэтому не забывайте регулярно смазывать их жирным кремом. При образовании ранок используйте антисептик, чтобы предотвратить воспаление.
+        </p>
+        <p>
+         Аляскинских кли-каев можно назвать всеядными и абсолютно непривередливыми в питании. Выбирайте сами: сбалансированное меню из натуральных продуктов или соответствующий сухой корм высокого качества. Сочетать оба варианта крайне нежелательно – это провоцирует проблемы с пищеварением у отдельных собак.
+        </p>
+        <p>
+         Исключите из рациона аляскинского кли-кая:
+        </p>
+        <ul>
+         <li>
+          сырые яйца и термически не обработанное мясо;
+         </li>
+         <li>
+          молочные продукты (к щенкам не относится);
+         </li>
+         <li>
+          острую, жирную и солёную пищу;
+         </li>
+         <li>
+          баранину и свинину;
+         </li>
+         <li>
+          бобовые культуры;
+         </li>
+         <li>
+          дрожжевое тесто;
+         </li>
+         <li>
+          трубчатые кости;
+         </li>
+         <li>
+          речную рыбу;
+         </li>
+         <li>
+          сырые грибы;
+         </li>
+         <li>
+          сладости.
+         </li>
+        </ul>
+        <p>
+         Обратите внимание: малыши отличаются ускоренным метаболизмом, поэтому будьте готовы к неприятным «сюрпризам». Постарайтесь выгуливать малышей раз в час, после еды и сна. Это уменьшит вероятность внеплановой уборки.
+        </p>
+        <p>
+         В миске питомца всегда должна находиться питьевая вода. Рекомендуется использовать бутилированную. Можно давать и воду из-под крана, предварительно настояв её в течение 6-8 часов.
+        </p>
+        <p>
+         Аляскинские кли-каи требуют постоянной физической нагрузки, причём это должна быть не просто пробежка во дворе без поводка, ведь однотипное расписание вынуждает собаку скучать. Постарайтесь чаще выбираться с питомцем на природу: здесь можно и разучить новую команду, и повторить старые, и просто насладиться совместным досугом.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни аляскинского кли-кая
+        </h2>
+        <p>
+         Ввиду тщательного отбора животных для разведения, аляскинские кли-каи отличаются отменным здоровьем, как у их прародителей-сибиряков. У породы отсутствуют и генетические заболевания. Исключение составляет врождённая плохая свёртываемость крови. К счастью, она встречается довольно редко – заболеванию подвержена одна собака из сотни.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок кли-кая под охраной мамы" data-fancybox="gallery" href="/upload/iblock/f78/f7895f62cc6c3c86cffab9a59e34c2dd.jpg" title="Щенок кли-кая под охраной мамы">
+          <div class="lazy-load" data-alt="Щенок кли-кая под охраной мамы" data-class="article_pic" data-original="/upload/resize_cache/iblock/f78/412_2150_1/f7895f62cc6c3c86cffab9a59e34c2dd.jpg">
+           <noscript data-alt="Щенок кли-кая под охраной мамы" data-class="article_pic" data-original="/upload/resize_cache/iblock/f78/412_2150_1/f7895f62cc6c3c86cffab9a59e34c2dd.jpg">
+            <img alt="Щенок кли-кая под охраной мамы" class="article_pic" height="275" src="/upload/resize_cache/iblock/f78/412_2150_1/f7895f62cc6c3c86cffab9a59e34c2dd.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок кли-кая под охраной мамы
+         </div>
+        </div>
+        <p>
+         Прежде всего, выбор зависит от целей, которые преследует его будущий хозяин. Если вы планируете заниматься разведением породы или участвовать в выставках и конкурсах, то, вне всяких сомнений, нужно подыскивать щенка в проверенных и надёжных питомниках. В этом случае вам предоставят все необходимые документы и справки. Проверьте, чтобы в родословной не было никаких «белых пятен».
+        </p>
+        <p>
+         Ответственные заводчики следят за чистотой породы. Щенков, достигших восьмимесячного возраста, проверяют на соответствие стандарту. Если вы хотите, чтобы в будущем ваш любимец стал чемпионом на выставках, приобретайте кли-кая только в специализированных питомниках. Хотите просто заполучить четверолапого пушистого друга, который будет радовать ваше семейство? Награды и медали не интересуют вас? Можно попытать счастье и купить щенка с рук по объявлению. Правда, гарантия чистоты породы в этом случае будет под большим сомнением, а выявить несоответствие стандартам у малыша практически невозможно. К тому же не факт, что вы обзаведётесь здоровым и крепким питомцем.
+        </p>
+        <p>
+         Выбирать щенка аляскинского кли-кая желательно из небольшого помёта. Обратите внимание, как он ведёт себя среди сородичей в естественных условиях, как общается или играет с ними. Проследите за поведением малыша во время кормления. Возможно, приглянувшийся щенок ответит взаимностью и проявит к вам интерес как к потенциальному хозяину. Если это произошло, не медлите с покупкой: этим вы лишь отдалите шанс получить преданного друга и компаньона для активных игр!
+        </p>
+        <h2>
+         Фото щенков аляскинского кли-кая
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/173/1733e2045076e3263f9d8661e337f794.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/173/380_264_2/1733e2045076e3263f9d8661e337f794.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/173/380_264_2/1733e2045076e3263f9d8661e337f794.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/173/380_264_2/1733e2045076e3263f9d8661e337f794.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/32e/32e47690a07f5a90bc19126a714841d4.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/32e/380_264_2/32e47690a07f5a90bc19126a714841d4.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/32e/380_264_2/32e47690a07f5a90bc19126a714841d4.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/32e/380_264_2/32e47690a07f5a90bc19126a714841d4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/40f/40f78db8655cd036031dbcf8e1203cf3.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/40f/380_264_2/40f78db8655cd036031dbcf8e1203cf3.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/40f/380_264_2/40f78db8655cd036031dbcf8e1203cf3.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/40f/380_264_2/40f78db8655cd036031dbcf8e1203cf3.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/505/50588831fda1c669cff791cd79768512.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/505/380_264_2/50588831fda1c669cff791cd79768512.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/505/380_264_2/50588831fda1c669cff791cd79768512.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/505/380_264_2/50588831fda1c669cff791cd79768512.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/52b/52b589e6273a049ff59318ba41c2aac1.JPG" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/52b/380_264_2/52b589e6273a049ff59318ba41c2aac1.JPG">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/52b/380_264_2/52b589e6273a049ff59318ba41c2aac1.JPG">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/52b/380_264_2/52b589e6273a049ff59318ba41c2aac1.JPG"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8a7/8a79be84074850b079f09c0d69d8eedf.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/8a7/380_264_2/8a79be84074850b079f09c0d69d8eedf.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/8a7/380_264_2/8a79be84074850b079f09c0d69d8eedf.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/8a7/380_264_2/8a79be84074850b079f09c0d69d8eedf.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c16/c16e8e13744b5dc3e069b231d6a980e0.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/c16/380_264_2/c16e8e13744b5dc3e069b231d6a980e0.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/c16/380_264_2/c16e8e13744b5dc3e069b231d6a980e0.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/c16/380_264_2/c16e8e13744b5dc3e069b231d6a980e0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/944/944f06d69c404fa279c4d217f1cd1db4.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/944/380_264_2/944f06d69c404fa279c4d217f1cd1db4.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/944/380_264_2/944f06d69c404fa279c4d217f1cd1db4.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/944/380_264_2/944f06d69c404fa279c4d217f1cd1db4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e28/e28866496afb9632ae461d8ca98ff723.jpg" title="">
+           <div class="lazy-load" data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/e28/380_264_2/e28866496afb9632ae461d8ca98ff723.jpg">
+            <noscript data-alt="Аляскинский кли-кай" data-class="article_pic" data-original="/upload/resize_cache/iblock/e28/380_264_2/e28866496afb9632ae461d8ca98ff723.jpg">
+             <img alt="Аляскинский кли-кай" class="article_pic" src="/upload/resize_cache/iblock/e28/380_264_2/e28866496afb9632ae461d8ca98ff723.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Сколько стоит аляскинский кли-кай
+        </h2>
+        <p>
+         Миниатюрная копия хаски относится к довольно редким породам, и спрос на её представителей превышает предложение. Дело в том, что Американский клуб кли-каев тщательно контролирует процесс разведения собак и следит за их популяцией, предпочитая качество количеству. Представители породы с отклонениями от установленного стандарта подлежат стерилизации. Всё это отражается на цене щенка: за него придётся отдать около 350 тысяч рублей и больше.
+        </p>
+        <p>
+         Если вы решите приобрести аляскинского кли-кая в питомнике (которых, к слову, не так уж и много), возможно, придётся «постоять» в очереди. Если эти трудности не лишают вас желания стать обладателем пушистого и симпатичного друга, – к тому же ещё и преданного, – ищите подходящий питомник и заключайте договор!
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения аляскинского кли-кая на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/26512/">
+          <div class="ava-med">
+           <div class="noava fill2">
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/alyaskinskiy-klikay-i-odinochestvo-45h-4780/">
+           Аляскинский кли-кай и одиночество 4-5h
+          </a>
+         </div>
+         <div class="forum-text">
+          Думаем завести собаку не большого размера и один из вариантов это "Аляскинский кли Кай". Нас интересует как эта порода относится к нахождению дома с кошкой пока ни кого нет дома, примерно с 9-13 часов дня? Может...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/26512/">
+            Marta Aleksejeva
+           </a>
+          </span>
+          <span class="vopros-date">
+           9 месяцев назад
+          </span>
+          <span class="vopros-smotr">
+           242 просмотра
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/alyaskinskiy-kli-kay/forum/">
+        Перейти на
+        форум аляскинского кли-кая
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Аляскинский кли-кай" src="/upload/iblock/711/711575948caea27bae92a180a7853756.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/alyaskinskiy-kli-kay/">
+          Аляскинский кли-кай
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/alyaskinskiy-kli-kay/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/alyaskinskiy-kli-kay/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/alyaskinskiy-kli-kay/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/alyaskinskiy-kli-kay/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/alyaskinskiy-kli-kay/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/alyaskinskiy-kli-kay/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/moskovskiy-vodolaz/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Московский водолаз" data-original="/upload/resize_cache/iblock/fe3/100_100_1/h8ufmb6ua9tvnmf70wv3enxg1g5au7b0.jpg">
+          <noscript data-alt="Московский водолаз" data-original="/upload/resize_cache/iblock/fe3/100_100_1/h8ufmb6ua9tvnmf70wv3enxg1g5au7b0.jpg">
+           <img alt="Московский водолаз" src="/upload/resize_cache/iblock/fe3/100_100_1/h8ufmb6ua9tvnmf70wv3enxg1g5au7b0.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Московский водолаз
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/sibirskiy-khaski/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Сибирский хаски" data-original="/upload/resize_cache/iblock/325/100_100_1/325283728e9b607099b05b329accfe28.jpg">
+          <noscript data-alt="Сибирский хаски" data-original="/upload/resize_cache/iblock/325/100_100_1/325283728e9b607099b05b329accfe28.jpg">
+           <img alt="Сибирский хаски" src="/upload/resize_cache/iblock/325/100_100_1/325283728e9b607099b05b329accfe28.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Сибирский хаски
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/foksterer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Фокстерьер" data-original="/upload/resize_cache/iblock/e97/100_100_1/e97ccbc887266f59553f392341b9fe64.jpg">
+          <noscript data-alt="Фокстерьер" data-original="/upload/resize_cache/iblock/e97/100_100_1/e97ccbc887266f59553f392341b9fe64.jpg">
+           <img alt="Фокстерьер" src="/upload/resize_cache/iblock/e97/100_100_1/e97ccbc887266f59553f392341b9fe64.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Фокстерьер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/shi-ttsu/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Ши-тцу" data-original="/upload/resize_cache/iblock/b0b/100_100_1/b0b0364aa02f21000841862330af0792.jpg">
+          <noscript data-alt="Ши-тцу" data-original="/upload/resize_cache/iblock/b0b/100_100_1/b0b0364aa02f21000841862330af0792.jpg">
+           <img alt="Ши-тцу" src="/upload/resize_cache/iblock/b0b/100_100_1/b0b0364aa02f21000841862330af0792.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Ши-тцу
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Falyaskinskiy-kli-kay%252F%253Fcheck_key%253D6fa18fceecacc988d0ce7de2c0866f33%2526ANIMAL_CODE%253Dalyaskinskiy-kli-kay%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Falyaskinskiy-kli-kay%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmFseWFza2luc2tpeS1rbGkta2F5JTJGJTNGY2hlY2tfa2V5JTNENmZhMThmY2VlY2FjYzk4OGQwY2U3ZGUyYzA4NjZmMzMlMjZBTklNQUxfQ09ERSUzRGFseWFza2luc2tpeS1rbGkta2F5JTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmFseWFza2luc2tpeS1rbGkta2F5JTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Falyaskinskiy-kli-kay%252F%253Fcheck_key%253D6fa18fceecacc988d0ce7de2c0866f33%2526ANIMAL_CODE%253Dalyaskinskiy-kli-kay%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Falyaskinskiy-kli-kay%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Falyaskinskiy-kli-kay%252F%253Fcheck_key%253D6fa18fceecacc988d0ce7de2c0866f33%2526ANIMAL_CODE%253Dalyaskinskiy-kli-kay%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Falyaskinskiy-kli-kay%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "188.64.165.18"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--6b7f50e66cf15707de47d64779af5c5f-->

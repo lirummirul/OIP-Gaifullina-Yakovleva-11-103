@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'175d6eb2681f'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Английский той-терьер, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Английский той-терьер – гладкошерстная порода мелких терьеров черно-подпалой масти родом из Великобритании. " name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/eaa/p4p3qqzw4ecvl4mtgc40q3cmkyfv8dlr.jpg" property="og:image"/>
+     <title>
+      Английский той-терьер: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/angliyskiy-toy-terer/" property="og:url"/>
+     <meta content="Английский той-терьер: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Английский той-терьер – гладкошерстная порода мелких терьеров черно-подпалой масти родом из Великобритании. " property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/angliyskiy-toy-terer/" itemprop="url">
+         <span itemprop="title">
+          Английский той-терьер
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Английский той-терьер
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/angliyskiy-toy-terer/">
+          Описание
+         </a>
+         <a href="/dog/angliyskiy-toy-terer/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/angliyskiy-toy-terer/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/angliyskiy-toy-terer/photo/">
+          Фото
+         </a>
+         <a href="/dog/angliyskiy-toy-terer/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/angliyskiy-toy-terer/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Английский той-терьер" src="/upload/iblock/aa5/kjcm7a5hmznogw7rntxtsqsjte2axjxt.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/angliyskiy-toy-terer/">
+           чёрно-подпалый той-терьер
+          </a>
+          ,
+          <a href="/dog/angliyskiy-toy-terer/">
+           той-манчестер-терьер
+          </a>
+         </span>
+         <p>
+          Английский той-терьер – гладкошерстная порода мелких терьеров черно-подпалой масти родом из Великобритании.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/dd4/fg05vab3shelx8k88k3upvu8x0hwpix0.jpg" data-cap="今年もいつもの公園で 河津桜と一緒に" data-fancybox="images" data-link="https://www.instagram.com/p/CpJ6BBRSpZ-/" data-type="image" data-username="pecochan705" href="/upload/uf/c39/5f9gxdzknz4jwke9y22da73mkvc99lib.jpg">
+            <img alt="Английский той-терьер" src="/upload/resize_cache/uf/c39/293_293_2/5f9gxdzknz4jwke9y22da73mkvc99lib.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/796/rqb5c635xwwn0xjgsizo19i423p0fwd5.jpg" data-cap="" data-fancybox="images" data-link="https://www.instagram.com/p/Co7f1gmsS_-/" data-type="image" data-username="marieogmilo" href="/upload/uf/195/fu4kbowr715uye2ltgmifxlzm5r67if5.jpg">
+            <img alt="Английский той-терьер" src="/upload/resize_cache/uf/195/293_293_2/fu4kbowr715uye2ltgmifxlzm5r67if5.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/7bf/zyc67cgen6z63uqr68hg4qecxb5tzfhg.jpg" data-cap="ぺこちゃん&amp;ママさん、ラルフ君&amp;ママさん、ありがとうございました" data-fancybox="images" data-link="https://www.instagram.com/p/Co4WN74yacy/" data-type="image" data-username="toyman.alice.0408" href="/upload/uf/42d/aav5a7r2us2v6inzrvhx7yhqlff2qeuh.jpg">
+            <img alt="Английский той-терьер" src="/upload/resize_cache/uf/42d/293_293_2/aav5a7r2us2v6inzrvhx7yhqlff2qeuh.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/angliyskiy-toy-terer/photo/">
+         Все
+            фото английского той-терьера
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы английский той-терьер
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы английский той-терьер
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер английского той-терьера
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни английских той-терьеров
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена английского той-терьера
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Английский той-терьер
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         XIX век
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         2,7-3,6 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         25-30 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         10-13 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Порода относится к редким, находящимся под угрозой исчезновения, поэтому имеет очень ограниченный генофонд.
+        </li>
+        <li>
+         Согласно статистике Британского Кеннел-клуба, в 2021 году в мире родился и был зарегистрирован всего 101 щенок английского той-терьера.
+        </li>
+        <li>
+         Самый известный потомок английского черно-подпалого той-терьера – русский той.
+        </li>
+        <li>
+         Несмотря на компаньонскую «направленность» породы, ее представители сохранили основные терьерские качества – охотничью смекалку, неутолимое любопытство, желание периодически оспаривать хозяйский авторитет.
+        </li>
+        <li>
+         Животные комфортно чувствуют себя в условиях стандартной квартиры, но в полной мере декоративными питомцами не являются. Отсюда – страсть собак к прогулкам, физической активности и длительным путешествиям.
+        </li>
+        <li>
+         В отличие от своих потомков, русских тоев, «англичане» имеют более стабильную психику, что освобождает владельца от необходимости постоянно подстраиваться под питомца.
+        </li>
+        <li>
+         Английский той-терьер – достаточно шумная порода, которую обычно рекомендуют людям, мечтающим, чтобы дом был наполнен самыми разнообразными звуками.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Английский той-терьер" data-original="/upload/iblock/eaa/p4p3qqzw4ecvl4mtgc40q3cmkyfv8dlr.jpg">
+          <noscript data-alt="Английский той-терьер" data-original="/upload/iblock/eaa/p4p3qqzw4ecvl4mtgc40q3cmkyfv8dlr.jpg">
+           <img alt="Английский той-терьер" src="/upload/iblock/eaa/p4p3qqzw4ecvl4mtgc40q3cmkyfv8dlr.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Английский той-терьер
+          </strong>
+          – сгусток позитивной энергии, который обязательно найдет, чем заполнить самый серый и скучный день. Да, иногда с ним не так просто, как хотелось бы, но зато всегда весело, шумно и невероятно уютно. Недаром на западе представители породы работают в тесной связке с канистерапевтами и практически не вылезают из детских больниц, социальных пансионатов и других учреждений, где так необходимы их задорные проказы и психологическая поддержка.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средние (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Английский той-терьер основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/angliyskiy-toy-terer/razmeri-porodi/">
+         размеры английского той-терьера
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы английский той-терьер
+        </h2>
+        <p>
+         Порода ведет свое начало от манчестер-терьеров, имевших репутацию первоклассных крысоловов еще в эпоху правления королевы Виктории. А поскольку от нашествий грызунов тогда одинаково страдали и знать, и бедняки, черно-подпалых собак можно было встретить в самых неожиданных местах Старой Англии. Например, в каюте флагманского британского парусника «Мэри Роуз», затонувшего в 1545 году, был также обнаружен скелет манчестер-терьера. Английские вельможи носили собак с собой в кожаных мешочках-кисетах, которые фиксировали на поясе. Как только в поле зрения дворянина попадала крыса, он выпускал песика из сумки, и тот виртуозно расправлялся с грызуном.
+        </p>
+        <p class="legenda">
+         <strong>
+          Интересный факт:
+         </strong>
+         по-настоящему породу прославила не умелая ловля мышей, а крысиные бои, несколько столетий остававшиеся главным развлечением британских низов. Манчестер-терьерам в этом шоу отводилась роль истребителей грызунов. Собаку выпускали на ринг, где ее ждали сотни хвостатых жертв, а присутствующие зеваки тут же делали «ставки на спорт».
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Взрослый английский той-терьер и щенок австралийской овчарки" data-fancybox="gallery" href="/upload/iblock/db6/tqqpo5t4vx153nn58vr8wzjct3x5tin1.jpg" title="Взрослый английский той-терьер и щенок австралийской овчарки">
+          <div class="lazy-load" data-alt="Взрослый английский той-терьер и щенок австралийской овчарки" data-class="article_pic" data-original="/upload/resize_cache/iblock/db6/412_2150_1/tqqpo5t4vx153nn58vr8wzjct3x5tin1.jpg">
+           <noscript data-alt="Взрослый английский той-терьер и щенок австралийской овчарки" data-class="article_pic" data-original="/upload/resize_cache/iblock/db6/412_2150_1/tqqpo5t4vx153nn58vr8wzjct3x5tin1.jpg">
+            <img alt="Взрослый английский той-терьер и щенок австралийской овчарки" class="article_pic" height="515" src="/upload/resize_cache/iblock/db6/412_2150_1/tqqpo5t4vx153nn58vr8wzjct3x5tin1.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Взрослый английский той-терьер и щенок австралийской овчарки
+         </div>
+        </div>
+        <p>
+         Что же касается английских той-терьеров, то изначально это были всего лишь «манчестеры» более мелких габаритов. Официально породу анонсировали только в 1934 году. К тому времени варварское развлечение с участием крыс утратило свою популярность, заставив англичан переключиться на более мирные хобби. Так возникла мода на содержание миниатюрных собак с терьерскими повадками.
+        </p>
+        <p>
+         Очень много животных было вывезено в США и Канаду. Там миниатюрных и классических манчестер-терьеров поначалу разводили раздельно. Однако со временем род стандартных особей стал угасать, поэтому, чтобы сохранить остатки поголовья, американские заводчики объявили английских тоев разновидностью «манчестеров». Поступок заокеанских коллег тут же вызвал волну негодования среди бридеров Европы, которые были категорически против смешивания двух пород.
+        </p>
+        <p>
+         На сегодняшний день племенная база английских той-терьеров крайне невелика, в связи с чем уже британские селекционеры пошли на крайние меры. А именно: для увеличения численности животных породные клубы Великобритании открыли племенные книги для североамериканских манчестер-терьеров – потомков вывезенных из Англии стандартных «манчестеров». Теперь для внесения животного в племенные списки достаточно, чтобы оно имело официальную регистрацию в породных клубах США с пометкой «той-особь».
+        </p>
+        <h2>
+         Видео: Английский той-терьер
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="GAW66moEQbI">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы английский той-терьер
+        </h2>
+        <p>
+         За элегантный сбалансированный силуэт и внешний аристократизм английского той-терьера часто называют «собакой джентльмена». Не последнюю роль в этом сыграла и стабильность окраса породы. Эбонитово-черная «шубка» животного выглядит как дорогой классический костюм, сдержанно украшенный блестящим каштановым подпалом.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок английского той-терьера" data-fancybox="gallery" href="/upload/iblock/d28/5e11e8q3ku6mlb4pe8pso6bo1263bza0.jpg" title="Щенок английского той-терьера">
+          <div class="lazy-load" data-alt="Щенок английского той-терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/d28/412_2150_1/5e11e8q3ku6mlb4pe8pso6bo1263bza0.jpg">
+           <noscript data-alt="Щенок английского той-терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/d28/412_2150_1/5e11e8q3ku6mlb4pe8pso6bo1263bza0.jpg">
+            <img alt="Щенок английского той-терьера" class="article_pic" height="523" src="/upload/resize_cache/iblock/d28/412_2150_1/5e11e8q3ku6mlb4pe8pso6bo1263bza0.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок английского той-терьера
+         </div>
+        </div>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Узкий, длинный и достаточно плоский череп собаки переходит в клиновидную морду с незначительным углублением стопа.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Обе челюсти крепкие, плотно сомкнутые в классические «ножницы». Зубы без кривизны, стоят в ряду вертикально.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         У английских той-терьеров маленькие глаза, без намека на выпученность, с блестящей темной радужкой. Постав выраженно косой.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Форму органов слуха представителей породы характеризуют как «пламя свечи». Основание располагается высоко сзади, кончик уха заостренный. Согнутое вперед ушное полотно не должно доходить до линии глаз. Само ухо тонкое, принимает стоячее положение только у особей не моложе 9 месяцев.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         С грациозным изгибом, длинная, с плавным переходом в плечи.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Мордочка английского той-терьера" data-fancybox="gallery" href="/upload/iblock/88c/sipho61met29fj1zjw2z183nzmzvm0hh.jpg" title="Мордочка английского той-терьера">
+          <div class="lazy-load" data-alt="Мордочка английского той-терьера" data-class="article_pic" data-original="/upload/iblock/88c/sipho61met29fj1zjw2z183nzmzvm0hh.jpg">
+           <noscript data-alt="Мордочка английского той-терьера" data-class="article_pic" data-original="/upload/iblock/88c/sipho61met29fj1zjw2z183nzmzvm0hh.jpg">
+            <img alt="Мордочка английского той-терьера" class="article_pic" src="/upload/iblock/88c/sipho61met29fj1zjw2z183nzmzvm0hh.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мордочка английского той-терьера
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело английского той-терьера небольшое, в хорошем балансе, с чуть изогнутым верхом на участке между поясницей и холкой. Узкая и глубокая грудь дополнена сильно изогнутыми ребрами.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвост имеет тенденцию к утолщению в направлении от кончика к основанию. Длина – до скакательных суставов или ниже.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Передние ноги стоят прямо. Отведенные назад лопатки дополняют плотно прилегающие к бокам локти. Коленные и скакательные суставы отменно развитые, без вывернутости, с хорошими углами. Передние лапы собаки компактные, задние – заячьей формы. Сводистые пальцы не должны быть срощенными. Цвет когтей всегда насыщенный черный. Движения плавные, рысистые.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Английский той-терьер на выставке собак" data-fancybox="gallery" href="/upload/iblock/885/b86bh3f9q6ealtp7l94g2zevlu04v1u2.jpg" title="Английский той-терьер на выставке собак">
+          <div class="lazy-load" data-alt="Английский той-терьер на выставке собак" data-class="article_pic" data-original="/upload/resize_cache/iblock/885/412_2150_1/b86bh3f9q6ealtp7l94g2zevlu04v1u2.jpg">
+           <noscript data-alt="Английский той-терьер на выставке собак" data-class="article_pic" data-original="/upload/resize_cache/iblock/885/412_2150_1/b86bh3f9q6ealtp7l94g2zevlu04v1u2.jpg">
+            <img alt="Английский той-терьер на выставке собак" class="article_pic" height="412" src="/upload/resize_cache/iblock/885/412_2150_1/b86bh3f9q6ealtp7l94g2zevlu04v1u2.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английский той-терьер на выставке собак
+         </div>
+        </div>
+        <p>
+         У породного английского той-терьера черный и каштановый окрасы имеют четкие границы и никогда не наслаиваются друг на друга. Месторасположение подпала:
+        </p>
+        <ul>
+         <li>
+          передние ноги – спереди до суставов и сзади чуть не доходя до локтей;
+          <li>
+           задние конечности – подпал с внешней и внутренней сторон, по центру каждую голень разделяет тонкая черная полоса;
+          </li>
+          <li>
+           морда – над глазами, на скулах, нижней челюсти, горле;
+          </li>
+          <li>
+           грудь – небольшие пятна по обе стороны;
+          </li>
+          <li>
+           область вокруг анального отверстия;
+          </li>
+          <li>
+           внутренняя часть ушей – шерстинки имеют оттенок, идентичный подпалу.
+          </li>
+         </li>
+        </ul>
+        <h3>
+         Дефекты и дисквалифицирующие пороки
+        </h3>
+        <p>
+         Отклонения от утвержденных стандартом норм считаются недостатками и могут существенно снизить оценку той-терьера на породной выставке. Основной повод для дисквалификации – это, как правило, нестабильная психика собаки, стимулирующая ее на неадекватное поведение. Также запрет выхода на ринг и последующее разведение получают особи, демонстрирующие необоснованную агрессию в отношении людей, либо патологическую трусливость.
+        </p>
+        <h2>
+         Фотографии английского той-терьера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/db4/1b7p662z2qo4rhog18mtwrwwbrva1oam.jpg" title="">
+           <div class="lazy-load" data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/db4/380_264_2/1b7p662z2qo4rhog18mtwrwwbrva1oam.jpg">
+            <noscript data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/db4/380_264_2/1b7p662z2qo4rhog18mtwrwwbrva1oam.jpg">
+             <img alt="Английский той-терьер" class="article_pic" src="/upload/resize_cache/iblock/db4/380_264_2/1b7p662z2qo4rhog18mtwrwwbrva1oam.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e7b/w17orp8du0w11x2g662gcdpexg21yh31.jpg" title="">
+           <div class="lazy-load" data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e7b/380_264_2/w17orp8du0w11x2g662gcdpexg21yh31.jpg">
+            <noscript data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/e7b/380_264_2/w17orp8du0w11x2g662gcdpexg21yh31.jpg">
+             <img alt="Английский той-терьер" class="article_pic" src="/upload/resize_cache/iblock/e7b/380_264_2/w17orp8du0w11x2g662gcdpexg21yh31.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6b0/8qrt5z8znzf04qj681z46wqgf8mjwpfv.jpg" title="">
+           <div class="lazy-load" data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/6b0/380_264_2/8qrt5z8znzf04qj681z46wqgf8mjwpfv.jpg">
+            <noscript data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/6b0/380_264_2/8qrt5z8znzf04qj681z46wqgf8mjwpfv.jpg">
+             <img alt="Английский той-терьер" class="article_pic" src="/upload/resize_cache/iblock/6b0/380_264_2/8qrt5z8znzf04qj681z46wqgf8mjwpfv.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7be/s8e8xsekb4rwb01ofswn1hssyu0g9z8d.jpg" title="">
+           <div class="lazy-load" data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/7be/380_264_2/s8e8xsekb4rwb01ofswn1hssyu0g9z8d.jpg">
+            <noscript data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/7be/380_264_2/s8e8xsekb4rwb01ofswn1hssyu0g9z8d.jpg">
+             <img alt="Английский той-терьер" class="article_pic" src="/upload/resize_cache/iblock/7be/380_264_2/s8e8xsekb4rwb01ofswn1hssyu0g9z8d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9af/len9bu96dv85a4nf9hvwbs22mcy93pnx.jpg" title="">
+           <div class="lazy-load" data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9af/380_264_2/len9bu96dv85a4nf9hvwbs22mcy93pnx.jpg">
+            <noscript data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9af/380_264_2/len9bu96dv85a4nf9hvwbs22mcy93pnx.jpg">
+             <img alt="Английский той-терьер" class="article_pic" src="/upload/resize_cache/iblock/9af/380_264_2/len9bu96dv85a4nf9hvwbs22mcy93pnx.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1af/y6j35r8uddrndhitggqvwi5dt3e9umrc.jpg" title="">
+           <div class="lazy-load" data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1af/380_264_2/y6j35r8uddrndhitggqvwi5dt3e9umrc.jpg">
+            <noscript data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/1af/380_264_2/y6j35r8uddrndhitggqvwi5dt3e9umrc.jpg">
+             <img alt="Английский той-терьер" class="article_pic" src="/upload/resize_cache/iblock/1af/380_264_2/y6j35r8uddrndhitggqvwi5dt3e9umrc.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер английского той-терьера
+        </h2>
+        <p>
+         Большая собака в мини-упаковке – такую характеристику породе дает Британский клуб любителей английских той-терьеров. Не слишком умиляйтесь игрушечным габаритам питомца. Все это лишь обманчивая «обертка», внутри которой находится классический терьер – заводной, активный и невероятно импульсивный. Не забывайте также, что этот компактный товарищ находится в перманентном поиске приключений, так что скучное времяпрепровождение его владельцу точно не угрожает.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Английский той-терьер с ребенком" data-fancybox="gallery" href="/upload/iblock/27b/kpw1boe4ms5riexarizh2wvb88zfoa9n.jpg" title="Английский той-терьер с ребенком">
+          <div class="lazy-load" data-alt="Английский той-терьер с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/27b/412_2150_1/kpw1boe4ms5riexarizh2wvb88zfoa9n.jpg">
+           <noscript data-alt="Английский той-терьер с ребенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/27b/412_2150_1/kpw1boe4ms5riexarizh2wvb88zfoa9n.jpg">
+            <img alt="Английский той-терьер с ребенком" class="article_pic" height="412" src="/upload/resize_cache/iblock/27b/412_2150_1/kpw1boe4ms5riexarizh2wvb88zfoa9n.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английский той-терьер с ребенком
+         </div>
+        </div>
+        <p>
+         Английские тои считаются одной из самых человекоориентированных разновидностей терьеров. Что касается шалостей и проказ, то их собака предпочитает делать сообща, на что недвусмысленно указывает и компаньонский статус породы. Соответственно, готовьтесь регулярно получать от «хвоста» приглашения к разного рода активностям.
+        </p>
+        <p class="legenda">
+         <strong>
+          Интересный факт:
+         </strong>
+         у большинства английских той-терьеров сохранилась необычная поведенческая особенность. Они обожают слегка покусывать носы других собак, кошек и даже людей.
+        </p>
+        <p>
+         Английский той-терьер – собака, которая легко приживается и в больших семьях, и у владельцев-одиночек. Правда, по-настоящему любить черно-подпалый хитрец будет кого-то одного, что однако не помешает ему выстроить добрососедские отношения с остальными домочадцами. Других животных, несмотря на серьезное «боевое» прошлое, английские тои способны потерпеть. Вопрос лишь в своевременной социализации. Если же в доме живет уже взрослая собака, приносить туда котенка не только нежелательно, но и опасно. Затерроризировать пушистика до полного изнеможения терьеру ничего не стоит.
+        </p>
+        <p>
+         Порода любит тактильный контакт и всевозможные укромные уголки, поэтому, каждый раз садясь на кровать, будьте предельно аккуратны. Вполне возможно, что под подушкой или покрывалом уже уютно расположился хитроватый питомец. Страсть делать себе «норы» в самых неподходящих местах присуща практически любому представителю клана. Различия будут разве что в степени изобретательности каждой отдельной собаки.
+        </p>
+        <p class="legenda">
+         <strong>
+          К сведению владельца:
+         </strong>
+         английские той-терьеры ненавидят воду и сырость. Прогулки под дождем, хождения по лужам и простые купания – неприятные испытания, которые собаки всеми силами постараются избежать.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Чтобы обучить представителя данной породы, достаточно вооружиться любым пособием по дрессировке терьеров. Единственное отличие английских той-терьеров от крупных сородичей по группе – чуть более сниженный уровень энергичности. В остальном они продолжают оставаться маленькими самодостаточными упрямцами, которые все отлично понимают, но далеко не всегда хотят исполнять.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Готов к холодам" data-fancybox="gallery" href="/upload/iblock/0fb/ob7ohr68z1ocm2ryr9s6tcgw5eevgjrt.jpg" title="Готов к холодам">
+          <div class="lazy-load" data-alt="Готов к холодам" data-class="article_pic" data-original="/upload/resize_cache/iblock/0fb/412_2150_1/ob7ohr68z1ocm2ryr9s6tcgw5eevgjrt.jpg">
+           <noscript data-alt="Готов к холодам" data-class="article_pic" data-original="/upload/resize_cache/iblock/0fb/412_2150_1/ob7ohr68z1ocm2ryr9s6tcgw5eevgjrt.jpg">
+            <img alt="Готов к холодам" class="article_pic" height="417" src="/upload/resize_cache/iblock/0fb/412_2150_1/ob7ohr68z1ocm2ryr9s6tcgw5eevgjrt.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Готов к холодам
+         </div>
+        </div>
+        <p>
+         Для достижения наиболее заметных результатов в учебе специалисты рекомендуют заниматься с собакой по чуть-чуть, но часто. Оптимальная продолжительность одного сеанса занятий – 2 минуты. Не волнуйтесь, что коротенькие уроки не отложатся в памяти питомца. Просто не забывайте следовать главному принципу кинолога: не переходить к обучению новым умениям, не отработав до автоматизма предыдущие.
+        </p>
+        <ul>
+         <li>
+          Не перебарщивайте с повторами – английские той-терьеры от этого быстро устают.
+         </li>
+         <li>
+          Сразу устанавливайте границы дозволенного. Собака, конечно, неоднократно попытается их расширить, но поддаваться на такие провокации не стоит, если вам нужен воспитанный послушный друг, а не самодовольный баловень-управленец.
+         </li>
+         <li>
+          При обучении опирайтесь на главные породные «слабости» английских той-терьеров – стремление угодить вам и ожидание позитивного подкрепления.
+         </li>
+        </ul>
+        <p>
+         Обязательно хвалите и поощряйте питомца за успехи и не заостряйте внимание на неудачах. Не работайте с животным, если чувствуете усталость и внутреннее раздражение. Представители данной породы очень хорошо считывают человеческие эмоции и вряд ли обрадуются занятиям в компании срывающегося на крик хозяина.
+        </p>
+        <p>
+         Английские той-терьеры – комфортозависимые существа, поэтому в сырое и холодное время года предпочитают пожертвовать прогулкой в пользу домашнего тепла и уюта. Это может спровоцировать сложности в отработке такого навыка, как хождение в туалет на улице. Достаточно пару раз вынести щенка для «мокрых дел» в ненастье, чтобы у него сформировалась негативная установка, мешающая справлять нужду за пределами дома.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Маникюрный салон на дому" data-fancybox="gallery" href="/upload/iblock/ec3/23ju0qpe4lwfnldv38jxwyx71gqoo8mx.jpg" title="Маникюрный салон на дому">
+          <div class="lazy-load" data-alt="Маникюрный салон на дому" data-class="article_pic" data-original="/upload/resize_cache/iblock/ec3/412_2150_1/23ju0qpe4lwfnldv38jxwyx71gqoo8mx.jpg">
+           <noscript data-alt="Маникюрный салон на дому" data-class="article_pic" data-original="/upload/resize_cache/iblock/ec3/412_2150_1/23ju0qpe4lwfnldv38jxwyx71gqoo8mx.jpg">
+            <img alt="Маникюрный салон на дому" class="article_pic" height="412" src="/upload/resize_cache/iblock/ec3/412_2150_1/23ju0qpe4lwfnldv38jxwyx71gqoo8mx.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Маникюрный салон на дому
+         </div>
+        </div>
+        <p>
+         Английский той-терьер не просто энергичный, но и потрясающе выносливый живчик, которому недостаточно ленивых променадов по торговым центрам. Выводите собаку на выгул в те места, где с ней можно позаниматься. Английские бридеры настоятельно рекомендуют задействовать породу в аджилити, брать с собой в походы, привлекать к активным играм на свежем воздухе. Можно, конечно, обойтись и минимальными усилиями, но тогда не удивляйтесь, если собака начнет умышленно уничтожать дизайнерский ремонт вашей квартиры.
+        </p>
+        <p>
+         Кстати, о жилье: английский той-терьер должен иметь собственный уголок в доме. Помните, что порода очень чувствительна как к высоким, так и пониженным температурам, поэтому на улице она может появляться только эпизодически. Лежанку для собаки лучше подобрать с капюшоном или карманом – вы же не забыли, что той обожает закапываться и устраивать себе «норы»? Шерсть у породы очень умеренная и плохо защищающая, поэтому для прогулок в сырую ненастную погоду стоит приобрести защитную обувь и непромокаемый утепленный комбинезон, которые сведут к минимуму неприятные впечатления от выхода из дома.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Английский той-терьер в 8 месяцев" data-fancybox="gallery" href="/upload/iblock/951/sjnj7lvxnowuacs92a46f7ujutozbt82.jpg" title="Английский той-терьер в 8 месяцев">
+          <div class="lazy-load" data-alt="Английский той-терьер в 8 месяцев" data-class="article_pic" data-original="/upload/resize_cache/iblock/951/412_2150_1/sjnj7lvxnowuacs92a46f7ujutozbt82.jpg">
+           <noscript data-alt="Английский той-терьер в 8 месяцев" data-class="article_pic" data-original="/upload/resize_cache/iblock/951/412_2150_1/sjnj7lvxnowuacs92a46f7ujutozbt82.jpg">
+            <img alt="Английский той-терьер в 8 месяцев" class="article_pic" height="309" src="/upload/resize_cache/iblock/951/412_2150_1/sjnj7lvxnowuacs92a46f7ujutozbt82.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Английский той-терьер в 8 месяцев
+         </div>
+        </div>
+        <p>
+         Линяют той-манчестеры по сезонам и не слишком обильно, так что обременительным уход за питомцем не будет. В промежутках между линьками достаточно раз в неделю вычесывать отмершие волоски силиконовой рукавицей, чтобы собака выглядела опрятно. В идеале купать той-манчестер-терьеров нужно как можно реже, поскольку «мокрые» процедуры они искренне ненавидят. Проблема лишь в том, что, как и все терьеры, эти «хвосты» безумно рады поваляться в попавшихся на пути экскрементах. В связи с этим, как бы питомец ни возмущался, периодически мыть его все же необходимо.
+        </p>
+        <p>
+         Борьбу с зубным налетом нужно осуществлять хотя бы пару раз в неделю. Чистить зубы «англичанину» необходимо в течение 2-4 минут. В промежутках между гигиеническими процедурами можно использовать твердые лакомства и жиловые косточки. Стрижка когтей может быть заменена их подпиливанием. Для этого купите стандартную пилочку и обработайте ей край когтя, когда животное отдыхает.
+        </p>
+        <p>
+         Периодически увлажняйте подушечки лап собаки питательным кремом или кокосовым маслом. Следите за чистотой ушей, убирая из них скопившуюся серу чистой, чуть влажной тканью. Осматривайте глаза на предмет загрязнений. Для профилактики краешки век можно протирать охлажденным настоем ромашки аптечной.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мечта той-терьера" data-fancybox="gallery" href="/upload/iblock/6ca/158tbqsyl23d7x0ctbau1dj48g562vbc.jpg" title="Мечта той-терьера">
+          <div class="lazy-load" data-alt="Мечта той-терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/6ca/412_2150_1/158tbqsyl23d7x0ctbau1dj48g562vbc.jpg">
+           <noscript data-alt="Мечта той-терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/6ca/412_2150_1/158tbqsyl23d7x0ctbau1dj48g562vbc.jpg">
+            <img alt="Мечта той-терьера" class="article_pic" height="515" src="/upload/resize_cache/iblock/6ca/412_2150_1/158tbqsyl23d7x0ctbau1dj48g562vbc.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мечта той-терьера
+         </div>
+        </div>
+        <p>
+         Западные заводчики рекомендуют для английских той-терьеров питание по системе БАРФ, исключающей употребление злаков и термическую обработку продуктов. Так называемый «сухой» рацион тоже востребован. В этом случае специалисты советуют отдавать предпочтение монобелковой «сушке» (только один вид мяса в составе) без вкусоароматических добавок, консервантов и подсластителей.
+        </p>
+        <p>
+         Что касается «натуралки», то здесь породных ограничений нет. Если питомец не страдает аллергией, в его повседневное меню могут входить:
+        </p>
+        <ul>
+         <li>
+          любые виды постного мяса;
+         </li>
+         <li>
+          гречневая, рисовая и овсяная крупы;
+         </li>
+         <li>
+          субпродукты;
+         </li>
+         <li>
+          рыбное филе (морские виды рыб);
+         </li>
+         <li>
+          овощи, фрукты, молодая зелень.
+         </li>
+        </ul>
+        <p>
+         Никакой едой со своего стола баловать собаку нельзя. Под запретом любые сладости, соленья, копчености, орехи, некоторые виды овощей и фруктов, например, бобовые, баклажаны, картофель, виноград. Как улучшающие качество шерсти добавки полезно использовать рыбий жир, сушеную ламинарию, кокосовое, нерафинированное подсолнечное и оливковое масло. При этом не нужно отказываться от готовых минерально-витаминных комплексов, поскольку полноценно сбалансировать питание собаки без БАДов и подкормок почти невозможно.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Я и моя тень" data-fancybox="gallery" href="/upload/iblock/f6d/3kj3tp7u8c8frqm22em21knqk4h6mw4v.jpg" title="Я и моя тень">
+           <div class="lazy-load" data-alt="Я и моя тень" data-class="article_pic" data-original="/upload/resize_cache/iblock/f6d/512_342_2/3kj3tp7u8c8frqm22em21knqk4h6mw4v.jpg">
+            <noscript data-alt="Я и моя тень" data-class="article_pic" data-original="/upload/resize_cache/iblock/f6d/512_342_2/3kj3tp7u8c8frqm22em21knqk4h6mw4v.jpg">
+             <img alt="Я и моя тень" class="article_pic" src="/upload/resize_cache/iblock/f6d/512_342_2/3kj3tp7u8c8frqm22em21knqk4h6mw4v.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Я и моя тень
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Манчестерские терьеры должны каждый день разминать свои маленькие лапки" data-fancybox="gallery" href="/upload/iblock/c61/t924g57s1pmuap2ywb1amzh2s4cdjrpm.jpg" title="Манчестерские терьеры должны каждый день разминать свои маленькие лапки">
+           <div class="lazy-load" data-alt="Манчестерские терьеры должны каждый день разминать свои маленькие лапки" data-class="article_pic" data-original="/upload/resize_cache/iblock/c61/512_342_2/t924g57s1pmuap2ywb1amzh2s4cdjrpm.jpg">
+            <noscript data-alt="Манчестерские терьеры должны каждый день разминать свои маленькие лапки" data-class="article_pic" data-original="/upload/resize_cache/iblock/c61/512_342_2/t924g57s1pmuap2ywb1amzh2s4cdjrpm.jpg">
+             <img alt="Манчестерские терьеры должны каждый день разминать свои маленькие лапки" class="article_pic" src="/upload/resize_cache/iblock/c61/512_342_2/t924g57s1pmuap2ywb1amzh2s4cdjrpm.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Манчестерские терьеры должны каждый день разминать свои маленькие лапки
+          </div>
+         </div>
+        </div>
+        <h2 id="gl6">
+         Здоровье и болезни английских той-терьеров
+        </h2>
+        <p>
+         Генетически английский той-терьер – здоровая порода, хоть и не лишенная предрасположенности к некоторым типичным собачьим недугам. Основные заболевания, которые могут встречаться у животных:
+        </p>
+        <ul>
+         <li>
+          вывих надколенника;
+         </li>
+         <li>
+          дилатационная кардиомиопатия;
+         </li>
+         <li>
+          болезнь Виллебранда (нарушения механизма свертываемости крови);
+         </li>
+         <li>
+          ксантинурия;
+         </li>
+         <li>
+          наследственная глухота.
+         </li>
+        </ul>
+        <p>
+         Практически все перечисленные заболевания легко «вычисляются» посредством генетического тестирования, что позволяет исключить носителей «плохих» генов из разведения. К более редким, но иногда напоминающим о себе породным недугам принято относить болезнь Легга-Кальве-Пертеса, а также различные патологии зрения – катаракту, глаукому.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мама с новорожденными щенками" data-fancybox="gallery" href="/upload/iblock/c4d/5wwdd0tx4v78aaccd3e1fass8j1q0x2t.jpg" title="Мама с новорожденными щенками">
+          <div class="lazy-load" data-alt="Мама с новорожденными щенками" data-class="article_pic" data-original="/upload/resize_cache/iblock/c4d/412_2150_1/5wwdd0tx4v78aaccd3e1fass8j1q0x2t.jpg">
+           <noscript data-alt="Мама с новорожденными щенками" data-class="article_pic" data-original="/upload/resize_cache/iblock/c4d/412_2150_1/5wwdd0tx4v78aaccd3e1fass8j1q0x2t.jpg">
+            <img alt="Мама с новорожденными щенками" class="article_pic" height="412" src="/upload/resize_cache/iblock/c4d/412_2150_1/5wwdd0tx4v78aaccd3e1fass8j1q0x2t.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мама с новорожденными щенками
+         </div>
+        </div>
+        <ul>
+         <li>
+          Отдавайте предпочтение потомству от производителей, импортированных из Великобритании, так как именно там сосредоточен основной генофонд английских той-терьеров.
+         </li>
+         <li>
+          Самые низкие ценники продавцы выставляют на щенков, которые не прошли процедуру актировки (плембрак). Если решите рискнуть, уточните заранее, по какому недостатку животное было отбраковано. Если на дефекты окраса еще можно закрыть глаза, то на более серьезные физические и поведенческие аномалии лучше обратить серьезное внимание.
+         </li>
+         <li>
+          Не забывайте, что самый шустрый и любознательный щенок в помете сохранит свои повадки и во взрослом возрасте. Так что если требуется относительно сдержанный питомец, выбирайте более флегматичных малышей.
+         </li>
+         <li>
+          Оцените условия содержания животных у заводчика. Щенки и их мать не должны сидеть по клеткам. Нездоровые, психически нестабильные, неопрятные особи – повод для отказа от сделки.
+         </li>
+         <li>
+          В серьезных питомниках перед продажей покупатель получает подробную консультацию о кормлении и содержании собаки. Если продавец отказывается оказывать консультационную поддержку после покупки щенка, задумайтесь. Скорее всего, разведением породы этот человек занимается также без следования правилам и нормам.
+         </li>
+         <li>
+          Не пугайтесь висячих ушей юных тойчиков. Ушное полотно у представителей данной породы поднимается только к годовалому возрасту.
+         </li>
+         <li>
+          Не покупайте собаку, если есть малейшие сомнения в честности питомника или бридера.
+         </li>
+        </ul>
+        <h2>
+         Фото щенков английского той-терьера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/414/lv4d8iqtocl316d4m18lqsnfi06uckyc.jpg" title="">
+           <div class="lazy-load" data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/414/380_264_2/lv4d8iqtocl316d4m18lqsnfi06uckyc.jpg">
+            <noscript data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/414/380_264_2/lv4d8iqtocl316d4m18lqsnfi06uckyc.jpg">
+             <img alt="Английский той-терьер" class="article_pic" src="/upload/resize_cache/iblock/414/380_264_2/lv4d8iqtocl316d4m18lqsnfi06uckyc.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/88a/sybn4gc6fqcut5u3n25eql599ur30h2s.jpg" title="">
+           <div class="lazy-load" data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/88a/380_264_2/sybn4gc6fqcut5u3n25eql599ur30h2s.jpg">
+            <noscript data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/88a/380_264_2/sybn4gc6fqcut5u3n25eql599ur30h2s.jpg">
+             <img alt="Английский той-терьер" class="article_pic" src="/upload/resize_cache/iblock/88a/380_264_2/sybn4gc6fqcut5u3n25eql599ur30h2s.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/85a/07qdzm9fj1t6ymrzc34ra5eotz3npmak.jpg" title="">
+           <div class="lazy-load" data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/85a/380_264_2/07qdzm9fj1t6ymrzc34ra5eotz3npmak.jpg">
+            <noscript data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/85a/380_264_2/07qdzm9fj1t6ymrzc34ra5eotz3npmak.jpg">
+             <img alt="Английский той-терьер" class="article_pic" src="/upload/resize_cache/iblock/85a/380_264_2/07qdzm9fj1t6ymrzc34ra5eotz3npmak.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/356/888q67v52mhg3c8ijpqmv85b3l69wtit.jpg" title="">
+           <div class="lazy-load" data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/356/380_264_2/888q67v52mhg3c8ijpqmv85b3l69wtit.jpg">
+            <noscript data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/356/380_264_2/888q67v52mhg3c8ijpqmv85b3l69wtit.jpg">
+             <img alt="Английский той-терьер" class="article_pic" src="/upload/resize_cache/iblock/356/380_264_2/888q67v52mhg3c8ijpqmv85b3l69wtit.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/10a/th1y2jkwm639ff3jmrzgdy0dtfse8qr0.jpg" title="">
+           <div class="lazy-load" data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/10a/380_264_2/th1y2jkwm639ff3jmrzgdy0dtfse8qr0.jpg">
+            <noscript data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/10a/380_264_2/th1y2jkwm639ff3jmrzgdy0dtfse8qr0.jpg">
+             <img alt="Английский той-терьер" class="article_pic" src="/upload/resize_cache/iblock/10a/380_264_2/th1y2jkwm639ff3jmrzgdy0dtfse8qr0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ded/r5xrp84py0uuf1kq101yg4eesvet8dww.jpg" title="">
+           <div class="lazy-load" data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ded/380_264_2/r5xrp84py0uuf1kq101yg4eesvet8dww.jpg">
+            <noscript data-alt="Английский той-терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ded/380_264_2/r5xrp84py0uuf1kq101yg4eesvet8dww.jpg">
+             <img alt="Английский той-терьер" class="article_pic" src="/upload/resize_cache/iblock/ded/380_264_2/r5xrp84py0uuf1kq101yg4eesvet8dww.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Цена английского той-терьера
+        </h2>
+        <p>
+         В ситуации с этой породой спрос на щенков на несколько порядков превышает предложение, поэтому на виртуальных досках объявлений доступных к покупке английских той-терьеров можно не искать – их там просто нет. Что касается цен, то среднестатистический щенок от российских заводчиков обойдется в 50 000 – 60 000 ₽. Собака, купленная в Великобритании – это минимум 1000 €, без учета расходов на доставку и оформление необходимой документации.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения английского той-терьера на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/angliyskiy-toy-terer/forum/">
+        Перейти на
+        форум английского той-терьера
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Английский той-терьер" src="/upload/iblock/aa5/kjcm7a5hmznogw7rntxtsqsjte2axjxt.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/angliyskiy-toy-terer/">
+          Английский той-терьер
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/angliyskiy-toy-terer/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-toy-terer/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-toy-terer/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-toy-terer/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-toy-terer/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/skye-terrier/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Скай-терьер" data-original="/upload/resize_cache/iblock/abe/100_100_1/ghbh6cmw1ahjt2u1mlj2btb4o5rl8wo9.jpg">
+          <noscript data-alt="Скай-терьер" data-original="/upload/resize_cache/iblock/abe/100_100_1/ghbh6cmw1ahjt2u1mlj2btb4o5rl8wo9.jpg">
+           <img alt="Скай-терьер" src="/upload/resize_cache/iblock/abe/100_100_1/ghbh6cmw1ahjt2u1mlj2btb4o5rl8wo9.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Скай-терьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/komondor/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Комондор" data-original="/upload/resize_cache/iblock/e9b/100_100_1/e9bef998846267b87fd4feae9aa2524c.jpg">
+          <noscript data-alt="Комондор" data-original="/upload/resize_cache/iblock/e9b/100_100_1/e9bef998846267b87fd4feae9aa2524c.jpg">
+           <img alt="Комондор" src="/upload/resize_cache/iblock/e9b/100_100_1/e9bef998846267b87fd4feae9aa2524c.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Комондор
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/avstraliyskaya-ovcharka-aussi/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Австралийская овчарка (аусси)" data-original="/upload/resize_cache/iblock/2ca/100_100_1/2ca744cbcd97469ed86860852ace4f40.jpg">
+          <noscript data-alt="Австралийская овчарка (аусси)" data-original="/upload/resize_cache/iblock/2ca/100_100_1/2ca744cbcd97469ed86860852ace4f40.jpg">
+           <img alt="Австралийская овчарка (аусси)" src="/upload/resize_cache/iblock/2ca/100_100_1/2ca744cbcd97469ed86860852ace4f40.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Австралийская овчарка (аусси)
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/irlandskiy-setter/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Ирландский сеттер" data-original="/upload/resize_cache/iblock/70f/100_100_1/70fbd421205fd3f451af3a9cefb4cf3b.jpg">
+          <noscript data-alt="Ирландский сеттер" data-original="/upload/resize_cache/iblock/70f/100_100_1/70fbd421205fd3f451af3a9cefb4cf3b.jpg">
+           <img alt="Ирландский сеттер" src="/upload/resize_cache/iblock/70f/100_100_1/70fbd421205fd3f451af3a9cefb4cf3b.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Ирландский сеттер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-toy-terer%252F%253Fcheck_key%253D29fa487be4a3bba230efb1d37bedcb07%2526ANIMAL_CODE%253Dangliyskiy-toy-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fangliyskiy-toy-terer%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmFuZ2xpeXNraXktdG95LXRlcmVyJTJGJTNGY2hlY2tfa2V5JTNEMjlmYTQ4N2JlNGEzYmJhMjMwZWZiMWQzN2JlZGNiMDclMjZBTklNQUxfQ09ERSUzRGFuZ2xpeXNraXktdG95LXRlcmVyJTI2U0VDVElPTl9DT0RFJTNEZG9nJTI2cHV0aSUzRDEmcmVkaXJlY3RfdXJsPSUyRmRvZyUyRmFuZ2xpeXNraXktdG95LXRlcmVyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-toy-terer%252F%253Fcheck_key%253D29fa487be4a3bba230efb1d37bedcb07%2526ANIMAL_CODE%253Dangliyskiy-toy-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fangliyskiy-toy-terer%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-toy-terer%252F%253Fcheck_key%253D29fa487be4a3bba230efb1d37bedcb07%2526ANIMAL_CODE%253Dangliyskiy-toy-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fangliyskiy-toy-terer%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "176.117.145.17"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--1d2ca6d3324c2b9db5823e15e8b246bd-->

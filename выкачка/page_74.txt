@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'292f445cdfcb'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Дратхаар, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Дратхаар или немецкая жесткошерстная легавая – лучший друг охотника, отлично зарекомендовавший себя при работе как с мелкой, так и крупной дичью." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/a61/a6117deb23316f7b80bca7b527642a40.jpg" property="og:image"/>
+     <title>
+      Дратхаар: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/dratkhaar/" property="og:url"/>
+     <meta content="Дратхаар: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Дратхаар или немецкая жесткошерстная легавая – лучший друг охотника, отлично зарекомендовавший себя при работе как с мелкой, так и крупной дичью." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/dratkhaar/" itemprop="url">
+         <span itemprop="title">
+          Дратхаар
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Дратхаар
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/dratkhaar/">
+          Описание
+         </a>
+         <a href="/dog/dratkhaar/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/dratkhaar/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/dratkhaar/photo/">
+          Фото
+         </a>
+         <a href="/dog/dratkhaar/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/dratkhaar/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Дратхаар" src="/upload/iblock/918/9187cde6276bfec8b445d7bab68989cd.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/dratkhaar/">
+           немецкий дратхаар
+          </a>
+          ,
+          <a href="/dog/dratkhaar/">
+           немецкая жесткошёрстная легавая
+          </a>
+         </span>
+         <p>
+          Дратхаар или немецкая жесткошерстная легавая – лучший друг охотника, отлично зарекомендовавший себя при работе как с мелкой, так и крупной дичью.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/ca0/ca00b4c611ff008a62d412df7cc40c30.jpg" data-cap="Happy Sunday" data-fancybox="images" data-link="https://www.instagram.com/p/CB-_tvXntjR/" data-type="image" data-username=" haannasphotos" href="/upload/uf/983/983fbf3999d16d778579cbfdbe69519d.jpg">
+            <img alt="Дратхаар" src="/upload/resize_cache/uf/983/293_293_2/983fbf3999d16d778579cbfdbe69519d.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/845/8457d7f5f411e59e9a0e36dc07fddc75.jpg" data-cap="Baby boy " data-fancybox="images" data-link="https://www.instagram.com/p/CCHyZg2A3g3/" data-type="image" data-username="vom_rodebaugh" href="/upload/uf/547/5470fca9372531629fef7227cdd49a2e.jpg">
+            <img alt="Дратхаар" src="/upload/resize_cache/uf/547/293_293_2/5470fca9372531629fef7227cdd49a2e.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/f21/f2194554e7a1e2a0fa18c53c70b949aa.jpg" data-cap="Im Revier unterwegs." data-fancybox="images" data-link="https://www.instagram.com/p/CCMAprxKdV8/" data-type="image" data-username="huntergermany" href="/upload/uf/211/211af7ecc8e3ff839a23b9b1882d32d7.jpg">
+            <img alt="Дратхаар" src="/upload/resize_cache/uf/211/293_293_2/211af7ecc8e3ff839a23b9b1882d32d7.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/dratkhaar/photo/">
+         Все
+            фото дратхаара
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы дратхаар
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность дратхаара
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер дратхаара
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Сколько стоит дратхаар
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Дратхаар
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Германия
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         конец XIX века
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 25-32 кг, суки 23-30 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 61-68 см, суки 57-64 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         12-14 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         У дратхааров выдающиеся способности к запоминанию. Они быстро овладевают командами, на которые у других охотничьих собак уходит по несколько недель. При этом среди специалистов порода не считается легковоспитуемой.
+        </li>
+        <li>
+         Немецкие жесткошерстные легавые испытывают искреннюю симпатию ко всем членам семьи, но по-настоящему служить будут только одному из домочадцев. Кроме того, они немного ревнивы и косо смотрят на любое четырехлапое существо, пользующееся благосклонностью «его величества хозяина».
+        </li>
+        <li>
+         В каждом дратхааре чутко спит неутомимый преследователь дичи, поэтому он никогда не пропустит встретившуюся на пути кошку или другое мелкое животное. На домашних питомцев, с которыми приходится делить одну территорию, собачья агрессия, как правило, не распространяется.
+        </li>
+        <li>
+         Жесткошерстные легавые – охотники-универсалы, с которыми одинаково удобно ходить и на зайца, и на кабана. Помимо того, они превосходно отыскивают и апортируют подбитую птицу, даже если та упала в водоем.
+        </li>
+        <li>
+         Кобели дратхаара – типичные доминанты, обладающие острым умом и сильным характером, так что не надейтесь вырастить из питомца мужского пола развеселого диванного баловня.
+        </li>
+        <li>
+         Эти неутомимые охотники совершенно не агрессивны по отношению к человеку. Они, безусловно, недолюбливают незнакомцев, но никогда не вступят с ними в открытый конфликт.
+        </li>
+        <li>
+         Дратхаарам свойственна повышенная подвижность, граничащая с гиперактивностью. Если вы не планируете водить собаку на охоту, готовьтесь проводить с ней на улице по несколько часов в день, дополняя прогулки комплексом физических упражнений.
+        </li>
+        <li>
+         Худшее, что можно сделать с немецкой жесткошерстной легавой, – это поселить ее в городской квартире, заставив коротать дни в ожидании возвращения припозднившегося хозяина.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Дратхаар" data-original="/upload/iblock/a61/a6117deb23316f7b80bca7b527642a40.jpg">
+          <noscript data-alt="Дратхаар" data-original="/upload/iblock/a61/a6117deb23316f7b80bca7b527642a40.jpg">
+           <img alt="Дратхаар" src="/upload/iblock/a61/a6117deb23316f7b80bca7b527642a40.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Дратхаары
+          </strong>
+          – «усатые энерджайзеры», ловко управляющиеся с самыми разными видами дичи и бесконечно обожающие собственного хозяина. Обладая острым умом и незлобливым характером, они никогда не проявят агрессии по отношению к человеку, какие бы негативные эмоции тот у них ни вызывал. При этом во всем остальном дратхаары не такие уж паиньки. Дайте им малейший повод усомниться в ваших лидерских качествах, и эти бородатые следопыты тут же начнут эксплуатировать вашу лояльность в собственных целях.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Минимальная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Дратхаар основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/dratkhaar/razmeri-porodi/">
+         размеры дратхаара
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы дратхаар
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Дратхаар" data-fancybox="gallery" href="/upload/iblock/d16/d1685af5f45f1bb0ee1d5bf2776ca4c3.jpg" title="Дратхаар">
+          <div class="lazy-load" data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/d16/412_2150_1/d1685af5f45f1bb0ee1d5bf2776ca4c3.jpg">
+           <noscript data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/d16/412_2150_1/d1685af5f45f1bb0ee1d5bf2776ca4c3.jpg">
+            <img alt="Дратхаар" class="article_pic" height="622" src="/upload/resize_cache/iblock/d16/412_2150_1/d1685af5f45f1bb0ee1d5bf2776ca4c3.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Дратхаар
+         </div>
+        </div>
+        <p>
+         Дратхаары – целиком и полностью «продукт» деятельности немецких селекционеров, на что намекает и название породы: «draht» (нем.) – «проволока», «haar» – «волос». В середине XIX века бридеры тогда еще не объединенной Германии вознамерились вывести новую разновидность легавой, которая вобрала бы в себя лучшие рабочие качества своих предшественников. Будущий «образец» должен был обладать выносливостью, отменным чутьем и умением одинаково хорошо работать как с болотной, так и с полевой дичью.
+        </p>
+        <p>
+         В ходе экспериментальных вязок специалистам удалось наконец получить поколение охотничьих собак с многообещающим потенциалом и грубой, жесткой шерстью. Генетическим материалом в конкретном случае послужили хорошо знакомые европейским охотникам штихельхаары, гриффоны Кортальса, а также сметливые умницы – пудели пойнтеры. По мнению заводчиков, именно скрещивание представителей вышеуказанных пород сделало из дратхаара идеального охотника, способного работать даже в неблагоприятных погодных условиях.
+        </p>
+        <p>
+         Что касается общественного признания, то оно пришло к немецким жесткошерстным легавым уже в 70-х годах позапрошлого века. Тридцать лет спустя, в 1902 году, в Германии был основан первый клуб любителей дратхааров, а ровно через 22 года животных внесла в свои реестры и Международная кинологическая федерация. К началу XX столетия порода успела завоевать популярность во многих странах западной Европы, включая Англию. А вот в Новом Свете дратхаары далеко не сразу нашли свою нишу, так как привыкшие к узкоспециализированным собакам американские охотники еще долго относились к бородатым немецким «эмигрантам» с толикой недоверия.
+        </p>
+        <h2>
+         Видео: Дратхаар
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="-TjlSZhsXlE">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность дратхаара
+        </h2>
+        <p>
+         Внешность у жесткошерстных легавых оригинальная и запоминающаяся. Строгую, почти военную выправку собаки дополняет так называемая брудастая морда, придающая животному импозантный и чересчур серьезный вид. Так, например, взрослый дратхаар имеет вислые «усы» и реденькую «бородку», которые в сочетании с пытливым взглядом слегка «старят» его.
+        </p>
+        <p>
+         Немецкие жесткошерстные легавые – собаки средней комплекции, поэтому вес среднестатистического представителя породы не должен выходить за рамки утвержденных стандартом 23-32 кг. Кстати, в силу несколько «подсушенной» конституции, дратхаары почти не страдают ожирением, хотя при обильном рационе и недостатке физической активности способны «наесть» несколько дополнительных килограммов.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенки дратхаара" data-fancybox="gallery" href="/upload/iblock/192/192269e9c1da67333feecea26fb6a90d.jpg" title="Щенки дратхаара">
+          <div class="lazy-load" data-alt="Щенки дратхаара" data-class="article_pic" data-original="/upload/resize_cache/iblock/192/412_2150_1/192269e9c1da67333feecea26fb6a90d.jpg">
+           <noscript data-alt="Щенки дратхаара" data-class="article_pic" data-original="/upload/resize_cache/iblock/192/412_2150_1/192269e9c1da67333feecea26fb6a90d.jpg">
+            <img alt="Щенки дратхаара" class="article_pic" height="417" src="/upload/resize_cache/iblock/192/412_2150_1/192269e9c1da67333feecea26fb6a90d.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенки дратхаара
+         </div>
+        </div>
+        <p>
+         Широкий, чуть выпуклый в боковых частях череп с массивными надбровными дугами и плоским затылком. Морда с легкой горбинкой, крепкая, достаточной длины и ширины. Стоп (переход от лобной части к морде) хорошо выражен.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Мочка с широкими ноздрями, окрашена в тон оттенка шерсти дратхаара.
+        </p>
+        <h3>
+         Губы
+        </h3>
+        <p>
+         Мясистые, упругие, плотно прилегающие к деснам. Цвет губ соответствует основному окрасу шерсти.
+        </p>
+        <h3>
+         Челюсти и зубы
+        </h3>
+        <p>
+         Зубы у дратхаара крупные, в количестве 42 шт. При смыкании челюстей нижние резцы перекрываются верхними (ножницеобразный тип прикуса).
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Не очень большие, невыпуклые, посажены неглубоко. Веки хорошо прикрывают глазное яблоко. Окрас радужной оболочки – темно-коричневый. Для щенков считается допустимым золотистый оттенок радужки, который с возрастом становится темнее.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Небольшие. Основания ушей широко поставлены и располагаются чуть выше линии глаз (высокая посадка).
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда дратхаара" data-fancybox="gallery" href="/upload/iblock/62d/62d1c3b909a354a1693248b14e8736f9.jpg" title="Морда дратхаара">
+          <div class="lazy-load" data-alt="Морда дратхаара" data-class="article_pic" data-original="/upload/resize_cache/iblock/62d/1024_2150_1/62d1c3b909a354a1693248b14e8736f9.jpg">
+           <noscript data-alt="Морда дратхаара" data-class="article_pic" data-original="/upload/resize_cache/iblock/62d/1024_2150_1/62d1c3b909a354a1693248b14e8736f9.jpg">
+            <img alt="Морда дратхаара" class="article_pic" src="/upload/resize_cache/iblock/62d/1024_2150_1/62d1c3b909a354a1693248b14e8736f9.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда дратхаара
+         </div>
+        </div>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Шея у дратхаара умеренной длины, мускулистая, с рельефным загривком и четко очерченной линией горла.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Слегка растянутый, с покатой спиной и сильной, мускулистой поясницей. Круповая часть широкая, с легким наклоном. Грудная клетка дратхаара глубокая, заметно раздавшаяся вширь. Нижняя часть корпуса образует единую изогнутую линию за счет подобранного живота и подтянутых паховых зон.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Передние ноги ровные, с косыми лопатками и прижатыми к корпусу локтями. Запястья сильные, пясти поставлены под наклоном. Задние конечности стоят параллельно друг другу. Бедра дратхаара массивные, с хорошей мускулатурой. Голени удлиненной формы, сухие; скакательные суставы крепкие. Все четыре лапы стоят параллельно, сохраняя свое положение и при движении животного. Подушечки лап жесткие, насыщенного окраса.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Купированный хвост у дратхаара" data-fancybox="gallery" href="/upload/iblock/637/6378e9187208caf516c84f1ce6c89f36.jpg" title="Купированный хвост у дратхаара">
+          <div class="lazy-load" data-alt="Купированный хвост у дратхаара" data-class="article_pic" data-original="/upload/resize_cache/iblock/637/412_2150_1/6378e9187208caf516c84f1ce6c89f36.jpg">
+           <noscript data-alt="Купированный хвост у дратхаара" data-class="article_pic" data-original="/upload/resize_cache/iblock/637/412_2150_1/6378e9187208caf516c84f1ce6c89f36.jpg">
+            <img alt="Купированный хвост у дратхаара" class="article_pic" height="328" src="/upload/resize_cache/iblock/637/412_2150_1/6378e9187208caf516c84f1ce6c89f36.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Купированный хвост у дратхаара
+         </div>
+        </div>
+        <p>
+         Умеренной толщины, продолжает линию крупа и держится в горизонтальном или слегка приподнятом положении. Практически у всех чистопородных особей хвост купирован. Исключения – дратхаары, живущие в странах, где данная процедура запрещена законом.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Шерсть состоит из «проволочного» покровного волоса и обильного водонепроницаемого подшерстка, обеспечивающих животному надежную защиту от непогоды и случайных травм. Оптимальная длина шерстного покрова дратхаара – 2-4 см. На ушах, голове и животе шерсть более короткая, чем на остальных частях тела.
+        </p>
+        <p>
+         На морде собаки волос образует выразительные «брови» и «бородку».
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Для дратхааров типичны густо-краповые окрасы черного и коричневого тонов, которые иногда дополняются пятнами. Редко-крапчатые варианты, как и полностью коричневые, тоже допустимы. Особям коричневого окраса разрешается иметь на груди белую отметину.
+        </p>
+        <h3>
+         Дефекты и дисквалифицирующие пороки
+        </h3>
+        <p>
+         К дефектами внешности, мешающим выставочным особям получить высший балл, относят неполную зубную формулу, короткую и чрезмерно заостренную морду и редкую шерсть со слабо выраженным подшерстком. Дратхаарам с отвислыми веками, горбатой или, наоборот, вогнутой спиной и искривленными конечностями оценка «отлично» тоже не светит.
+        </p>
+        <p>
+         Предъявляется ряд требований и к походке собаки. Так, например, немецкие жесткошерстные легавые не должны передвигаться иноходью или семенить.
+        </p>
+        <p>
+         Если вести речь о дисквалификации, то под нее подпадают животные с такими пороками развития, как:
+        </p>
+        <ul>
+         <li>
+          неправильный прикус (недокус/перекус);
+         </li>
+         <li>
+          перекос одной из челюстей;
+         </li>
+         <li>
+          разноглазие;
+         </li>
+         <li>
+          энтропия/эктропия;
+         </li>
+         <li>
+          излом или утолщение хвоста;
+         </li>
+         <li>
+          дефектный окрас.
+         </li>
+        </ul>
+        <p>
+         Девиации поведения тоже входят в список пороков, соответственно, при их обнаружении, вопрос выставочной карьеры для питомца будет закрыт навсегда. Чаще всего дратхааров дисквалифицируют за трусость (боязнь выстрела, дичи) и повышенную агрессивность.
+        </p>
+        <h2>
+         Фото дратхаара
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/675/6755f4e300b29e7b9c022c8f98d3e4c4.jpg" title="">
+           <div class="lazy-load" data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/675/380_264_2/6755f4e300b29e7b9c022c8f98d3e4c4.jpg">
+            <noscript data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/675/380_264_2/6755f4e300b29e7b9c022c8f98d3e4c4.jpg">
+             <img alt="Дратхаар" class="article_pic" src="/upload/resize_cache/iblock/675/380_264_2/6755f4e300b29e7b9c022c8f98d3e4c4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f24/f24e420dfa98940c177588adf629e76d.jpg" title="">
+           <div class="lazy-load" data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/f24/380_264_2/f24e420dfa98940c177588adf629e76d.jpg">
+            <noscript data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/f24/380_264_2/f24e420dfa98940c177588adf629e76d.jpg">
+             <img alt="Дратхаар" class="article_pic" src="/upload/resize_cache/iblock/f24/380_264_2/f24e420dfa98940c177588adf629e76d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e6a/e6aa1e62f7fe5b7e41f50886452f3320.jpg" title="">
+           <div class="lazy-load" data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/e6a/380_264_2/e6aa1e62f7fe5b7e41f50886452f3320.jpg">
+            <noscript data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/e6a/380_264_2/e6aa1e62f7fe5b7e41f50886452f3320.jpg">
+             <img alt="Дратхаар" class="article_pic" src="/upload/resize_cache/iblock/e6a/380_264_2/e6aa1e62f7fe5b7e41f50886452f3320.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2b5/2b54d22bee79407db4421ecb67a3577a.jpg" title="">
+           <div class="lazy-load" data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/2b5/380_264_2/2b54d22bee79407db4421ecb67a3577a.jpg">
+            <noscript data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/2b5/380_264_2/2b54d22bee79407db4421ecb67a3577a.jpg">
+             <img alt="Дратхаар" class="article_pic" src="/upload/resize_cache/iblock/2b5/380_264_2/2b54d22bee79407db4421ecb67a3577a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fa8/fa8b7ebc4ea0c4511b7a6e1fca058041.jpg" title="">
+           <div class="lazy-load" data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/fa8/380_264_2/fa8b7ebc4ea0c4511b7a6e1fca058041.jpg">
+            <noscript data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/fa8/380_264_2/fa8b7ebc4ea0c4511b7a6e1fca058041.jpg">
+             <img alt="Дратхаар" class="article_pic" src="/upload/resize_cache/iblock/fa8/380_264_2/fa8b7ebc4ea0c4511b7a6e1fca058041.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/65b/65be2582318062cc29202960c3de90f2.jpg" title="">
+           <div class="lazy-load" data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/65b/380_264_2/65be2582318062cc29202960c3de90f2.jpg">
+            <noscript data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/65b/380_264_2/65be2582318062cc29202960c3de90f2.jpg">
+             <img alt="Дратхаар" class="article_pic" src="/upload/resize_cache/iblock/65b/380_264_2/65be2582318062cc29202960c3de90f2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6f8/6f893946af713915957013b31176f4db.jpg" title="">
+           <div class="lazy-load" data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/6f8/380_264_2/6f893946af713915957013b31176f4db.jpg">
+            <noscript data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/6f8/380_264_2/6f893946af713915957013b31176f4db.jpg">
+             <img alt="Дратхаар" class="article_pic" src="/upload/resize_cache/iblock/6f8/380_264_2/6f893946af713915957013b31176f4db.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fe3/fe33347d911f05a435d41b5b85041f6b.jpg" title="">
+           <div class="lazy-load" data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/fe3/380_264_2/fe33347d911f05a435d41b5b85041f6b.jpg">
+            <noscript data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/fe3/380_264_2/fe33347d911f05a435d41b5b85041f6b.jpg">
+             <img alt="Дратхаар" class="article_pic" src="/upload/resize_cache/iblock/fe3/380_264_2/fe33347d911f05a435d41b5b85041f6b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/281/28171d4a7cdd24b57c98d5a6df9249c1.jpg" title="">
+           <div class="lazy-load" data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/281/380_264_2/28171d4a7cdd24b57c98d5a6df9249c1.jpg">
+            <noscript data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/281/380_264_2/28171d4a7cdd24b57c98d5a6df9249c1.jpg">
+             <img alt="Дратхаар" class="article_pic" src="/upload/resize_cache/iblock/281/380_264_2/28171d4a7cdd24b57c98d5a6df9249c1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер дратхаара
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Дратхаар с хозяином" data-fancybox="gallery" href="/upload/iblock/726/7269341ebe24c9658c1706cc824eb99d.jpg" title="Дратхаар с хозяином">
+          <div class="lazy-load" data-alt="Дратхаар с хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/726/412_2150_1/7269341ebe24c9658c1706cc824eb99d.jpg">
+           <noscript data-alt="Дратхаар с хозяином" data-class="article_pic" data-original="/upload/resize_cache/iblock/726/412_2150_1/7269341ebe24c9658c1706cc824eb99d.jpg">
+            <img alt="Дратхаар с хозяином" class="article_pic" height="292" src="/upload/resize_cache/iblock/726/412_2150_1/7269341ebe24c9658c1706cc824eb99d.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Дратхаар с хозяином
+         </div>
+        </div>
+        <p>
+         Немецкие жесткошерстные легавые – на 80% охотники и лишь на 20% домашние питомцы. Как истинные трудоголики, эти неугомонные «бородачи» готовы сутками рассекать в компании хозяина по лесным просекам и болотным топям, чтобы завладеть заветным трофеем. И в этом нет ничего удивительного. Породой в первую очередь правят охотничьи инстинкты, которым необходимо давать выход. Лишенное возможности побегать за вожделенной дичью или хотя бы полевой мышью животное довольно скоро превращается в бледную тень самого себя. Так что, если вы не особенно жалуете охоту и вылазки в дикие местечки, обзаводиться дратхааром нет смысла.
+        </p>
+        <p>
+         По отношению к незнакомцам представители этой породы испытывают подозрительность и легкое недоверие, поэтому жесткошерстных легавых легко «переквалифицировать» в сторожей. Кстати, компаньоны из них тоже получаются неплохие. Детей дратхаары не обижают, охотно играя с ними в догонялки и прочие активные игры. При отсутствии возможности вывести животное на полноценную прогулку оставьте его на часок с малышней, которая с удовольствием «нагрузит» собаку разнообразными физическими упражнениями.
+        </p>
+        <p>
+         Среди основных достоинств породы владельцы дратхааров обычно отмечают живой ум, исполнительность и ответственность ее представителей. Жесткошерстные легавые очень тонко чувствуют настроение хозяина и прекрасно осознают, чего от них хотят. Единственный недостаток, который может стать причиной взаимного недопонимания между собакой и ее владельцем, – это врожденная тяга животного к доминированию. При достаточно дружелюбном характере эти бородатые охотники совершенно не прочь подмять под себя человека, превратив его в исполнителя собственных желаний.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Дрессировка дратхааров" data-fancybox="gallery" href="/upload/iblock/b22/b220440bf8e044a71d12e924f50fa21d.jpg" title="Дрессировка дратхааров">
+          <div class="lazy-load" data-alt="Дрессировка дратхааров" data-class="article_pic" data-original="/upload/resize_cache/iblock/b22/412_2150_1/b220440bf8e044a71d12e924f50fa21d.jpg">
+           <noscript data-alt="Дрессировка дратхааров" data-class="article_pic" data-original="/upload/resize_cache/iblock/b22/412_2150_1/b220440bf8e044a71d12e924f50fa21d.jpg">
+            <img alt="Дрессировка дратхааров" class="article_pic" height="412" src="/upload/resize_cache/iblock/b22/412_2150_1/b220440bf8e044a71d12e924f50fa21d.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Дрессировка дратхааров
+         </div>
+        </div>
+        <p>
+         Воспитывать дратхааров не сложнее чем любую другую охотничью породу. Как и большинство легавых, эти добродушные «немцы» нуждаются в серьезном наставнике, который не будет злоупотреблять авторитарным стилем в обращении с ними, но и манипулировать собой не позволит. С первых дней появления щенка дратхаара в доме в нем начинают воспитывать смелость. Малыш не должен бояться звуков выстрелов и вида диких животных, какими бы внушительными габаритами те ни обладали. Приучать собаку к запаху пороха и оружейным залпам лучше где-нибудь подальше от цивилизации. Поначалу выстрелы производят на расстоянии 200 м от животного. Если у дратхаара не наблюдается признаков паники и волнения, промежуток постепенно сокращают.
+        </p>
+        <p>
+         Тем, кто собирается вырастить из питомца профессионального апортировщика битой птицы, придется провести с ним курс занятий по плаванию в открытых водоемах. Приучать щенка к купанию следует плавно, поскольку многие из них побаиваются воды. Ни в коем случае не бросайте дратхаара в реку, чтобы развить в нем смелость и безрассудство. Утонуть он, конечно, не утонет, но доверие и уважение к вам потеряет навсегда.
+        </p>
+        <p>
+         «Нельзя!» и «Ко мне!» – команды, смысл которых представитель породы жесткошерстных легавых должен усвоить как можно ранее. Лишь после того, как щенок научится быстро и правильно реагировать на повелительный тон хозяина, можно переходить к знакомству с апортировкой. Натаскивать собаку на ношение предметов желательно с пятимесячного возраста. Традиционно дрессировку дратхаара начинают с того, что к его носу подносят чучело птицы. Животное должно схватить предложенную «добычу» и положить ее на пол, как только услышит от хозяина команду «Апорт!».
+        </p>
+        <p>
+         Немецкие жесткошерстные легавые очень не любят монотонность во всем, поэтому в ходе обучения лучше сочетать несколько видов деятельности. Позвольте питомцу проявить себя во всей красе, «нагрузив» его различными заданиями на смекалку и поиск предметов, не забывая перемежать уроки пробежками и играми.
+        </p>
+        <h3>
+         Охота с дратхааром
+        </h3>
+        <p>
+         Страсть к охоте заложена в дратхаарах на генетическом уровне, поэтому они способны ловить живность даже не проходя соответствующего курса дрессировки. Например, собаки, живущие в частных домах, частенько преподносят хозяевам «презенты» в виде крыс или полевых грызунов. Дополнительным «усилителем» охотничьих талантов дратхааров служит их плотная, непромокаемая шерсть, предохраняющая животных от шипов и острых веток. В гонках через кустарник, где другие легавые основательно исполосуют себе бока, эти харизматичные «бородачи» лишь нацепляют колючек и репея.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Охота с дратхааром" data-fancybox="gallery" href="/upload/iblock/e52/e521ce81bd778c9ad2116f76caac20bd.jpg" title="Охота с дратхааром">
+          <div class="lazy-load" data-alt="Охота с дратхааром" data-class="article_pic" data-original="/upload/resize_cache/iblock/e52/1024_2150_1/e521ce81bd778c9ad2116f76caac20bd.jpg">
+           <noscript data-alt="Охота с дратхааром" data-class="article_pic" data-original="/upload/resize_cache/iblock/e52/1024_2150_1/e521ce81bd778c9ad2116f76caac20bd.jpg">
+            <img alt="Охота с дратхааром" class="article_pic" src="/upload/resize_cache/iblock/e52/1024_2150_1/e521ce81bd778c9ad2116f76caac20bd.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Охота с дратхааром
+         </div>
+        </div>
+        <p>
+         По мнению отечественных охотников, дратхаара лучше натаскивать на какой-нибудь один вид добычи. Хотя на родине породы, в Германии, жесткошерстных легавых обучают работе одновременно с тремя-четырьмя разновидностями дичи.
+        </p>
+        <p>
+         Что касается техники дрессировки, то неплохих результатов можно добиться обычной имитацией охоты. Как пример: перед сидящей рядом с хозяином собакой открывают ящик, из которого выпускают птицу или кого-нибудь из лесных обитателей. Питомец при этом должен проявить усидчивость, принять стойку и ждать команды человека, а не мчаться со всех ног за улепетывающей живностью.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Добыча" data-fancybox="gallery" href="/upload/iblock/b76/b76c1f54874ec1359abee61ae3b1bdcc.jpg" title="Добыча">
+          <div class="lazy-load" data-alt="Добыча" data-class="article_pic" data-original="/upload/resize_cache/iblock/b76/412_2150_1/b76c1f54874ec1359abee61ae3b1bdcc.jpg">
+           <noscript data-alt="Добыча" data-class="article_pic" data-original="/upload/resize_cache/iblock/b76/412_2150_1/b76c1f54874ec1359abee61ae3b1bdcc.jpg">
+            <img alt="Добыча" class="article_pic" height="309" src="/upload/resize_cache/iblock/b76/412_2150_1/b76c1f54874ec1359abee61ae3b1bdcc.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Добыча
+         </div>
+        </div>
+        <p>
+         Специфика охоты с дратхааром на водоплавающих зависит от сезона. Если поход за утками пришелся на холодное время года, собаку перед ним следует накормить. За подбитой добычей, упавшей в ледяную осеннюю воду, легавую посылают в самую последнюю очередь, перед тем как отправиться домой. Если же пес успешно выудил и принес дичь, ему дают вволю побегать, чтобы согреться. Летом, когда вода уже относительно теплая, этих правил можно не придерживаться. Но позволять собаке плавать за раненой птицей по болотам и озерам более 15 минут определенно не стоит. Подранок все равно далеко не убежит, в то время как подобные заплывы только вымотают питомца.
+        </p>
+        <p>
+         Помимо охоты на водоплавающих, с дратхааром можно успешно ходить на зайцев и фазанов. Благодаря феноменальному чутью и слуху, представители этой породы способны унюхать не только перемещающегося, но и неподвижно лежащего косого. Как только длинноухий объект обнаружен, собака подает голос, который служит охотнику своеобразным ориентиром. Фазанов жесткошерстные легавые отыскивают тоже без особых усилий. Почуяв птицу, собака выгоняет ее из кустарника навстречу хозяину, чтобы тот мог как следует прицелиться.
+        </p>
+        <p>
+         Теоретически с дратхаарами можно ходить и на кабана, но, как показывает опыт, травильщики из них получаются не самые лучшие. Не обладая достаточной пружинистостью и легкостью движений, жесткошерстные легавые часто становятся мишенью для раненого обозленного зверя. Если вам очень хочется испытать питомца на крупной дичи, приучите его удерживать добычу голосом, не нападая на нее. В противном случае, первая охота вашего дратхаара станет последней.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         Немецкие жесткошерстные легавые – собаки подвижные и энергичные, поэтому содержание в городской квартире для них нежелательно. Домом мечты для питомца станет дача или коттедж с участком, садом или лесной чащей в шаговой доступности. У дратхааров плотная шерсть, и они легко переносят небольшие морозы, поэтому представителей этой породы можно поселить во дворе, при условии, что вы снабдите любимца теплой конурой с двойными стенами. Но не забывайте, что при резких понижениях температуры (–20 °С) собаку надлежит забрать в дом.
+        </p>
+        <p>
+         Особям, вынужденным обитать в квартирах, необходим хороший выгул в сочетании с достаточными физическими нагрузками. Обычно дратхааров выгуливают дважды в день, причем каждая из таких «экскурсий» должна длиться не менее 2-3 часов. В прогулку можно включать элементы дрессировки. Например, собаке будет полезно пробежать пару-тройку километров.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Два товарища" data-fancybox="gallery" href="/upload/iblock/7a0/7a0c87869d12d0063ac247dc54a713f4.jpg" title="Два товарища">
+          <div class="lazy-load" data-alt="Два товарища" data-class="article_pic" data-original="/upload/resize_cache/iblock/7a0/412_2150_1/7a0c87869d12d0063ac247dc54a713f4.jpg">
+           <noscript data-alt="Два товарища" data-class="article_pic" data-original="/upload/resize_cache/iblock/7a0/412_2150_1/7a0c87869d12d0063ac247dc54a713f4.jpg">
+            <img alt="Два товарища" class="article_pic" height="582" src="/upload/resize_cache/iblock/7a0/412_2150_1/7a0c87869d12d0063ac247dc54a713f4.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Два товарища
+         </div>
+        </div>
+        <p>
+         Владельцу дратхаара не придется каждый день «плясать» вокруг своего питомца с расческой и пуходеркой. Шерсть у этой породы не самая длинная и практически не путается, так что достаточно раз в неделю пройтись по ней щеткой, чтобы удалить отмершие волоски. А вот в период линьки такую процедуру придется осуществлять чаще, особенно если животное обитает в квартире. Для этого купите щетку с металлическими зубьями, поскольку другие разновидности с жестким «проволочным» волосом собаки просто не справятся. Полезно причесать дратхаара и после забега по лесам и болотам, чтобы освободить шерсть от семян растений и колючек. Кроме того, для дополнительной защиты собачьей «шубки» можно прикупить пару попон и надевать их питомцу каждый раз, когда выходите с ним на прогулку.
+        </p>
+        <p>
+         С «усами» и «бородкой» дратхаара придется повозиться. Во время еды собака часто окунает их в миску, в итоге в шерсти застревают частички пищи, придающие животному неопрятный вид. Соответственно, после каждого кормления морду питомца необходимо вытирать ветошью, а в особо запущенных случаях еще и мыть. Если же вам не хочется превращаться в лакея для своего четвероногого друга, укоротите ему шерсть вокруг морды. Харизма дратхаара от этого, конечно, пострадает, зато вы будет избавлены от необходимости дежурить возле пса с салфеткой.
+        </p>
+        <p>
+         Купать немецких жесткошерстных легавых можно до двух раз в год, но по факту животное принимает ванны гораздо чаще, например во время охоты на водоплавающую птицу. Уши и глаза собаки необходимо регулярно осматривать на предмет наличия воспалений. Если ушная воронка дратхаара запачкана, ее протирают влажной тряпочкой или салфеткой. Не будет лишним приподнять и расправить висячее ушное полотно питомца, чтобы слегка проветрить внутреннюю часть раковины.
+        </p>
+        <p>
+         Особи, которых часто берут на охоту, нуждаются в регулярном осмотре лап. В пылу преследования собаки нередко наступают на острые сучья, загоняя в мягкую поверхность подушечек частички древесины. Если же на лапах обнаружились трещины – это сигнал о нехватке жиров в рационе вашего любимца. В таком случае обработайте подушечки любым питательным кремом, дополнительно включив в меню собаки растительное масло.
+        </p>
+        <p>
+         Раз в месяц дратхааров обрабатывают противопаразитарными средствами, что особенно актуально для животных, которые находятся на вольерном содержании. В период с марта по октябрь процедуру можно проводить чаще, так как в это время активизируются клещи.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мама кормит щенков" data-fancybox="gallery" href="/upload/iblock/77e/77e2c715ee5c0746fb5e3f442067d553.jpg" title="Мама кормит щенков">
+          <div class="lazy-load" data-alt="Мама кормит щенков" data-class="article_pic" data-original="/upload/resize_cache/iblock/77e/412_2150_1/77e2c715ee5c0746fb5e3f442067d553.jpg">
+           <noscript data-alt="Мама кормит щенков" data-class="article_pic" data-original="/upload/resize_cache/iblock/77e/412_2150_1/77e2c715ee5c0746fb5e3f442067d553.jpg">
+            <img alt="Мама кормит щенков" class="article_pic" height="274" src="/upload/resize_cache/iblock/77e/412_2150_1/77e2c715ee5c0746fb5e3f442067d553.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мама кормит щенков
+         </div>
+        </div>
+        <p>
+         В то время как отечественные кинологи продолжают ратовать за натуральное вскармливание жесткошерстных легавых, европейские заводчики успешно потчуют своих питомцев «сушкой». Если вы выбрали второй способ, как менее трудозатратный, учтите, что корм для дратхаара должен быть беззерновым и содержать большое количество белка (от 30%). Некоторые владельцы практикуют смешанное кормление, когда в один прием пищи животное получает «сушку», а во второй – натуральную пищу. Такой вариант не считается идеальным, но допускается большинством заводчиков.
+        </p>
+        <p>
+         Основу натурального питания дратхаара составляют сырое нежирное мясо и субпродукты. При этом совершенно не обязательно кормить собаку вырезкой: немецкие жесткошерстные легавые охотно довольствуются обрезками или мясными отходами. Разбавить животные белки в рационе питомца можно гречневой, рисовой или овсяной кашами, а также кисломолочными продуктами. К сезонным овощам пищеварение собаки тоже относится вполне благосклонно, если это не картофель, горох или фасоль. Иногда дратхаара можно побаловать куриным яйцом.
+        </p>
+        <h3>
+         Здоровье и болезни дратхаара
+        </h3>
+        <p>
+         Активный образ жизни и природная выносливость не страхуют немецких жесткошерстных легавых от предрасположенности к ряду заболеваний. Чаще всего у представителей этого племени выявляют дисплазию тазобедренных суставов, диабет и гипотиреоз. Стеноз аорты, меланома и катаракта тоже считаются достаточно распространенными недугами породы. Помимо того, дратхаары нередко страдают от разлизанной гранулемы, экземы и отита.
+        </p>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5ed/5ed9f1b3d709d26f4d990da600971e0c.jpg" title="">
+           <div class="lazy-load" data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/5ed/380_264_2/5ed9f1b3d709d26f4d990da600971e0c.jpg">
+            <noscript data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/5ed/380_264_2/5ed9f1b3d709d26f4d990da600971e0c.jpg">
+             <img alt="Дратхаар" class="article_pic" src="/upload/resize_cache/iblock/5ed/380_264_2/5ed9f1b3d709d26f4d990da600971e0c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/17a/17a8ee170e96946c5d07dbf9c92f82e6.jpg" title="">
+           <div class="lazy-load" data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/17a/380_264_2/17a8ee170e96946c5d07dbf9c92f82e6.jpg">
+            <noscript data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/17a/380_264_2/17a8ee170e96946c5d07dbf9c92f82e6.jpg">
+             <img alt="Дратхаар" class="article_pic" src="/upload/resize_cache/iblock/17a/380_264_2/17a8ee170e96946c5d07dbf9c92f82e6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/58e/58e1a1be0fb804d0adf8e9aa37f8e005.jpg" title="">
+           <div class="lazy-load" data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/58e/380_264_2/58e1a1be0fb804d0adf8e9aa37f8e005.jpg">
+            <noscript data-alt="Дратхаар" data-class="article_pic" data-original="/upload/resize_cache/iblock/58e/380_264_2/58e1a1be0fb804d0adf8e9aa37f8e005.jpg">
+             <img alt="Дратхаар" class="article_pic" src="/upload/resize_cache/iblock/58e/380_264_2/58e1a1be0fb804d0adf8e9aa37f8e005.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl6">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Перед тем как приступить к выбору будущего питомца, посетите клуб или секцию породы, контролирующие племенную деятельность питомников, чтобы получить полную информацию о вязках и истинных титулах родителей щенков.
+         </li>
+         <li>
+          Если у понравившегося вам щенка слабо выражены «усы» и «бородка», покупку лучше отложить на несколько месяцев. Возможно, через какое-то время шерсть на мордочке подрастет. Если же такого не случилось, отказывайтесь от малыша, поскольку «фейс-контроль» ни на одной выставке такой питомец не пройдет.
+         </li>
+         <li>
+          Тем, кто планирует приобрести способного охотника, стоит поинтересоваться наличием у родителей щенка соответствующего опыта. Оптимальный вариант – малыш от суки и кобеля, имеющих как минимум по два диплома по болотной и полевой дичи.
+         </li>
+         <li>
+          Следите за тем, как щенок дратхаара ведет себя в стае. Отдавайте предпочтение любопытным особям, пытающимся доминировать над своими собратьями.
+         </li>
+         <li>
+          Малоопытным владельцам лучше выбирать девочек. Они более контактны и податливы. Кобели дратхаара упрямее и независимее, им необходим строгий и уверенный в собственных силах наставник.
+         </li>
+        </ul>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Щенки дратхаара" data-fancybox="gallery" href="/upload/iblock/f00/f00c056d28b569ffc73a54c8e9f60f8f.jpg" title="Щенки дратхаара">
+          <div class="lazy-load" data-alt="Щенки дратхаара" data-class="article_pic" data-original="/upload/resize_cache/iblock/f00/1024_2150_1/f00c056d28b569ffc73a54c8e9f60f8f.jpg">
+           <noscript data-alt="Щенки дратхаара" data-class="article_pic" data-original="/upload/resize_cache/iblock/f00/1024_2150_1/f00c056d28b569ffc73a54c8e9f60f8f.jpg">
+            <img alt="Щенки дратхаара" class="article_pic" src="/upload/resize_cache/iblock/f00/1024_2150_1/f00c056d28b569ffc73a54c8e9f60f8f.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенки дратхаара
+         </div>
+        </div>
+        <h2 id="gl7">
+         Сколько стоит дратхаар
+        </h2>
+        <p>
+         Купить щенка дратхаара в российских питомниках можно за 20 000 - 25 000 руб. Если у родителей малыша имеются рабочие (охотничьи) дипломы, его стоимость автоматически возрастает: в среднем ценники на таких особей стартуют от 30 000 руб. Самые экономичные варианты предлагают сайты бесплатных объявлений. Гарантий по поводу чистоты породы виртуальные продавцы, конечно, не дают, зато у них можно приобрести дратхааров по очень соблазнительным расценкам: от 4000 до 7000 руб.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения дратхаара на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/dratkhaar/forum/">
+        Перейти на
+        форум дратхаара
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Дратхаар" src="/upload/iblock/918/9187cde6276bfec8b445d7bab68989cd.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/dratkhaar/">
+          Дратхаар
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/dratkhaar/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/dratkhaar/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/dratkhaar/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/dratkhaar/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/dratkhaar/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/bryusselskiy-griffon/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Брюссельский гриффон" data-original="/upload/resize_cache/iblock/f7a/100_100_1/f7a2fe2890315c592510483d8de8f002.jpg">
+          <noscript data-alt="Брюссельский гриффон" data-original="/upload/resize_cache/iblock/f7a/100_100_1/f7a2fe2890315c592510483d8de8f002.jpg">
+           <img alt="Брюссельский гриффон" src="/upload/resize_cache/iblock/f7a/100_100_1/f7a2fe2890315c592510483d8de8f002.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Брюссельский гриффон
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/bordoskiy-dog/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бордоский дог" data-original="/upload/resize_cache/iblock/ff2/100_100_1/ff21f972bce919225702325884516c17.jpg">
+          <noscript data-alt="Бордоский дог" data-original="/upload/resize_cache/iblock/ff2/100_100_1/ff21f972bce919225702325884516c17.jpg">
+           <img alt="Бордоский дог" src="/upload/resize_cache/iblock/ff2/100_100_1/ff21f972bce919225702325884516c17.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бордоский дог
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/pomeranskiy-shpits/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Померанский шпиц" data-original="/upload/resize_cache/iblock/ae6/100_100_1/ae61432957b8583f7c9952f15937c586.jpg">
+          <noscript data-alt="Померанский шпиц" data-original="/upload/resize_cache/iblock/ae6/100_100_1/ae61432957b8583f7c9952f15937c586.jpg">
+           <img alt="Померанский шпиц" src="/upload/resize_cache/iblock/ae6/100_100_1/ae61432957b8583f7c9952f15937c586.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Померанский шпиц
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/bigl/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бигль" data-original="/upload/resize_cache/iblock/c35/100_100_1/c354befe4fd9dc1c6f7baaf41fa80d74.jpg">
+          <noscript data-alt="Бигль" data-original="/upload/resize_cache/iblock/c35/100_100_1/c354befe4fd9dc1c6f7baaf41fa80d74.jpg">
+           <img alt="Бигль" src="/upload/resize_cache/iblock/c35/100_100_1/c354befe4fd9dc1c6f7baaf41fa80d74.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бигль
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fdratkhaar%252F%253Fcheck_key%253D0c3cea503b4d7f9423d5b1341b008939%2526ANIMAL_CODE%253Ddratkhaar%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fdratkhaar%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmRyYXRraGFhciUyRiUzRmNoZWNrX2tleSUzRDBjM2NlYTUwM2I0ZDdmOTQyM2Q1YjEzNDFiMDA4OTM5JTI2QU5JTUFMX0NPREUlM0RkcmF0a2hhYXIlMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGZHJhdGtoYWFyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fdratkhaar%252F%253Fcheck_key%253D0c3cea503b4d7f9423d5b1341b008939%2526ANIMAL_CODE%253Ddratkhaar%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fdratkhaar%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fdratkhaar%252F%253Fcheck_key%253D0c3cea503b4d7f9423d5b1341b008939%2526ANIMAL_CODE%253Ddratkhaar%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fdratkhaar%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "185.205.236.45"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--e98146deea9e26cc454fb2618583629a-->

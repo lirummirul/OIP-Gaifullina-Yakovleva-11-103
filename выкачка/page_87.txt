@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'020cf1f3c4af'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Кангал, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Кангал – турецкая порода крупных пастушьих собак с темной маской на морде. Выведена для охраны и защиты сельскохозяйственных животных от диких хищников." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/c9d/erdm4grzbgajqs3i8p9wd23out6jes6y.jpg" property="og:image"/>
+     <title>
+      Кангал (анатолийская овчарка): все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/kangal/" property="og:url"/>
+     <meta content="Кангал (анатолийская овчарка): все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Кангал – турецкая порода крупных пастушьих собак с темной маской на морде. Выведена для охраны и защиты сельскохозяйственных животных от диких хищников." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/kangal/" itemprop="url">
+         <span itemprop="title">
+          Кангал
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Кангал
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/kangal/">
+          Описание
+         </a>
+         <a href="/dog/kangal/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/kangal/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/kangal/photo/">
+          Фото
+         </a>
+         <a href="/dog/kangal/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/kangal/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Кангал" src="/upload/iblock/94d/useii4q9qiwq8p2elw8gi5aqvo170pi3.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/kangal/">
+           анатолийская овчарка
+          </a>
+          ,
+          <a href="/dog/kangal/">
+           кангальский карабаш
+          </a>
+          ,
+          <a href="/dog/kangal/">
+           кангальская овчарка
+          </a>
+         </span>
+         <p>
+          Кангал – турецкая порода крупных пастушьих собак с темной маской на морде. Выведена для охраны и защиты сельскохозяйственных животных от диких хищников.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/448/qpmgam8qrll7uhh0kay3hxpoqduqfpdq.jpg" data-cap="Puppy Kangal" data-fancybox="images" data-link="https://www.flickr.com/photos/ehanoglu/14879733963/" data-type="image" data-username="Emre Hanoğlu" href="/upload/uf/6fe/1in8c1ty7z5m3wj736ld7ikko9g7fyjw.jpg">
+            <img alt="Кангал" src="/upload/resize_cache/uf/6fe/293_293_2/1in8c1ty7z5m3wj736ld7ikko9g7fyjw.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/ed4/6rz4h8p63tk0b5jm2e6upt2tpg5ea36j.jpg" data-cap="jolan" data-fancybox="images" data-link="https://www.flickr.com/photos/stejoe/49000126652/" data-type="image" data-username="steff joe" href="/upload/uf/daf/3p5w0jrtbeuovhpeff4kxyq7gq4fxayb.jpg">
+            <img alt="Кангал" src="/upload/resize_cache/uf/daf/293_293_2/3p5w0jrtbeuovhpeff4kxyq7gq4fxayb.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/9fd/ng111d5rw8cfy3atrzouftcrj3tq1tgy.jpg" data-cap="DSCF1598-Bearbeitet.jpg" data-fancybox="images" data-link="https://www.flickr.com/photos/chickel-photography/48509968752/" data-type="image" data-username="www.altglas-container.de" href="/upload/uf/f21/s7mpulr0m3qsp4d0xmv2e0jgacaqzovk.jpg">
+            <img alt="Кангал" src="/upload/resize_cache/uf/f21/293_293_2/s7mpulr0m3qsp4d0xmv2e0jgacaqzovk.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/kangal/photo/">
+         Все
+            фото кангала
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы кангал
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы анатолийская овчарка
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер кангала
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни кангалов
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена кангала
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Кангал
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Турция
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 50-65 кг, суки 40-55 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 70-80 см, суки 63-75 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         10-15 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         В Турции название «анатолийская овчарка» в отношении кангалов не употребляют, поскольку считают его слишком общим и не отражающим уникальность породы.
+        </li>
+        <li>
+         Высокие охранные качества и внешняя суровость кангалов не мешают им быть заботливыми и трепетными няньками для маленьких детей.
+        </li>
+        <li>
+         Анатолийская овчарка – одна из самых молчаливых пород. Лай собаки можно услышать только по очень серьезному поводу.
+        </li>
+        <li>
+         Из-за мощных, плотно смыкающихся челюстей кангала считается, что его укусы имеют рекордную травматичность.
+        </li>
+        <li>
+         Клан анатолийских овчарок делится на три породных ветви – акбаши, карабаши и кангалы. При этом у каждой есть своя отличительная черта, помогающая не спутать собаку с другими сородичами.
+        </li>
+        <li>
+         Порода названа в честь города Кангала, а также имеет статус национального достояния Турции, из-за которого вывоз животных из страны был запрещен до последнего времени.
+        </li>
+        <li>
+         Как и большинство рабочих собак, кангалы крайне неприхотливы в быту.
+        </li>
+        <li>
+         Все представители породы нуждаются в ранней социализации и обучении ОКД. Они обладают сильной склонностью к доминированию над человеком.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Кангал" data-original="/upload/iblock/c9d/erdm4grzbgajqs3i8p9wd23out6jes6y.jpg">
+          <noscript data-alt="Кангал" data-original="/upload/iblock/c9d/erdm4grzbgajqs3i8p9wd23out6jes6y.jpg">
+           <img alt="Кангал" src="/upload/iblock/c9d/erdm4grzbgajqs3i8p9wd23out6jes6y.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Кангальская овчарка
+          </strong>
+          – гиперответственный охранник, которому не страшно доверить все самое дорогое. Уверенные в себе и серьезные, кангалы покоряют, прежде всего, врожденным благоразумием. Порода не страдает чрезмерной злобностью и не срывается без повода, чему есть логичное объяснение: собака таких габаритов способна внушить уважение одним только видом. Ну а если вдруг возникнет необходимость ответить на агрессию, «анатолиец» и здесь не подведет, пустив в ход свой главный довод – массивные челюсти.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Сложно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Ниже среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Длительные периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Почти не слышно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Кангал основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/kangal/razmeri-porodi/">
+         размеры кангала
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы кангал
+        </h2>
+        <p>
+         Кангалы – один из старейших собачьих кланов Малой Азии. Есть сведения, что на Анатолийском плато породу разводили еще во времена Вавилонского царства. Изначально крупные, но подвижные собаки использовались для охоты на львов. Позднее животных приобщили к охранной деятельности. С древнейших времен и по сей день кангалы остаются лучшими защитниками для овечьих отар, поскольку способны расправиться не только со средними хищниками вроде шакалов и волков, но и с медведями.
+        </p>
+        <p>
+         Рабочая техника породы: кангал, охраняющий стадо, всегда занимает выжидательную позицию на возвышенности. При приближении хищника собака моментально активизируется, развивая экстремально высокую для ее конституции скорость. Если за это время враг не успевает ретироваться или продолжает попытки атаковать овцу, овчарка вступает с ним в схватку.
+        </p>
+        <p>
+         Наибольшее распространение анатолийские овчарки получили в сельскохозяйственных районах Турции. Также порода популярна в странах Африки, где ее представителей привлекают к борьбе с местными хищниками – гепардами и львами. Именно кангалы помогли африканским животноводам сократить ежегодные потери скота, вызванные нападением диких кошек.
+        </p>
+        <p class="legenda">
+         <strong>
+          Интересный факт:
+         </strong>
+         ближайшими родственниками кангалов считаются аборигенные собаки территорий Афганистана, Казахстана, Узбекистана и Таджикистана. В результате некоторые специалисты склонны считать, что предков анатолийских овчарок завезли в Малую Азию кочевые тюркские племена.
+        </p>
+        <h2>
+         Видео: Кангал
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="_Wf0-rqljVY">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы анатолийская овчарка
+        </h2>
+        <p>
+         Выразительным брутальным обликом кангалы обязаны предкам-молоссам, хотя в целом анатолийские овчарки легче на подъем и подвижнее своих сородичей. Например, в движении собака может развивать скорость до 56 км/ч, что считается почти рекордным показателем для пород данной группы. Общий вид животного компактный и крепкий.
+        </p>
+        <p>
+         Рабочим особям купируют уши, чтобы в случае схватки с хищником у собаки было меньше уязвимых зон. Но поскольку во многих странах данная процедура под запретом, встретить кангала с нормальными ушами можно даже чаще. Половой диморфизм среди представителей породы тоже имеет место, поэтому кобели анатолийской овчарки весят от 48 до 60 кг, а суки – в пределах 40-50 кг.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенки кангалов нуждаются в ранней социализации и последовательной дрессировке, чтобы вырасти в хорошо приспособленных и уверенных в себе собак." data-fancybox="gallery" href="/upload/iblock/591/e5fd1tqz9axx0jc05v3cm5xzxm76qhiv.jpg" title="Щенки кангалов нуждаются в ранней социализации и последовательной дрессировке, чтобы вырасти в хорошо приспособленных и уверенных в себе собак.">
+          <div class="lazy-load" data-alt="Щенки кангалов нуждаются в ранней социализации и последовательной дрессировке, чтобы вырасти в хорошо приспособленных и уверенных в себе собак." data-class="article_pic" data-original="/upload/resize_cache/iblock/591/412_2150_1/e5fd1tqz9axx0jc05v3cm5xzxm76qhiv.jpg">
+           <noscript data-alt="Щенки кангалов нуждаются в ранней социализации и последовательной дрессировке, чтобы вырасти в хорошо приспособленных и уверенных в себе собак." data-class="article_pic" data-original="/upload/resize_cache/iblock/591/412_2150_1/e5fd1tqz9axx0jc05v3cm5xzxm76qhiv.jpg">
+            <img alt="Щенки кангалов нуждаются в ранней социализации и последовательной дрессировке, чтобы вырасти в хорошо приспособленных и уверенных в себе собак." class="article_pic" height="275" src="/upload/resize_cache/iblock/591/412_2150_1/e5fd1tqz9axx0jc05v3cm5xzxm76qhiv.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенки кангалов нуждаются в ранней социализации и последовательной дрессировке, чтобы вырасти в хорошо приспособленных и уверенных в себе собак.
+         </div>
+        </div>
+        <p>
+         Массивный, широкий между ушами череп плавно сужается в районе слабовыраженного стопа. Ширина выпуклой черепной коробки заметно меньше длины. Морда кангала короче головы и составляет порядка 44% от длины черепа. Профиль тупой, линия между стопом и мочкой носа чуть покатая. Губы немного отвисшие. В углах рта нет карманов. Стандартный тип прикуса – ножницы. Прямой прикус и обратные ножницы недопустимы.
+        </p>
+        <p>
+         Размер глаз анатолийской овчарки – от среднего до крупного. Форма – приближенная к миндалевидной. Окрас радужки может быть светло- или темно-коричневым, причем более темные оттенки всегда предпочтительнее. Веки и обводка глаз черные. Висячие плоские уши собаки отличают треугольные очертания и мягко закругленный кончик. У возбужденного животного оба уха принимают чуть приподнятое положение. Передний край ушного полотна соприкасается со скуловой зоной. Доступ к выставкам открыт как особям с купированными, так и естественными ушами.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Толстая и мощная шея кангала по высоте практически равна длине его головы. Допускается наличие незначительного подвеса. Обязательное требование: собака должна держать шею в вертикальном положении, а не опускать книзу.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда кангала" data-fancybox="gallery" href="/upload/iblock/417/kaoc2020dcrblh9vfduu1lxvgzb8tcnb.jpg" title="Морда кангала">
+          <div class="lazy-load" data-alt="Морда кангала" data-class="article_pic" data-original="/upload/resize_cache/iblock/417/1024_2150_1/kaoc2020dcrblh9vfduu1lxvgzb8tcnb.jpg">
+           <noscript data-alt="Морда кангала" data-class="article_pic" data-original="/upload/resize_cache/iblock/417/1024_2150_1/kaoc2020dcrblh9vfduu1lxvgzb8tcnb.jpg">
+            <img alt="Морда кангала" class="article_pic" src="/upload/resize_cache/iblock/417/1024_2150_1/kaoc2020dcrblh9vfduu1lxvgzb8tcnb.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда кангала
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         У кангала мускулистое мощное тело с чуть выпуклыми боками и поясницей. Средней длины круп располагается под наклоном, но всегда чуть выше холки. Глубина груди хорошая, как и длина грудной клетки. Ребра с достаточным изгибом. Все представители породы имеют подтянутые животы. Длина тела собаки примерно на 10% больше, чем ее рост в холке.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвосты кангалов длинные, образующие единую линию с круповой зоной и спускающиеся ниже скакательных суставов. У спокойной овчарки хвост опущен книзу, а его кончик свернут завитком. У возбужденного животного хвост поднят, свернут в тугое кольцо и уложен на спину. Особенно это заметно у кобелей. Хвосты сук часто принимают более расслабленное положение.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Анатолийские овчарки были выведены в качестве рабочих собак, и они до сих пор отменно выполняют эту роль" data-fancybox="gallery" href="/upload/iblock/678/nmsqrcn7g67xj2k8y62175mtjaqgm3rx.jpg" title="Анатолийские овчарки были выведены в качестве рабочих собак, и они до сих пор отменно выполняют эту роль">
+          <div class="lazy-load" data-alt="Анатолийские овчарки были выведены в качестве рабочих собак, и они до сих пор отменно выполняют эту роль" data-class="article_pic" data-original="/upload/resize_cache/iblock/678/412_2150_1/nmsqrcn7g67xj2k8y62175mtjaqgm3rx.jpg">
+           <noscript data-alt="Анатолийские овчарки были выведены в качестве рабочих собак, и они до сих пор отменно выполняют эту роль" data-class="article_pic" data-original="/upload/resize_cache/iblock/678/412_2150_1/nmsqrcn7g67xj2k8y62175mtjaqgm3rx.jpg">
+            <img alt="Анатолийские овчарки были выведены в качестве рабочих собак, и они до сих пор отменно выполняют эту роль" class="article_pic" height="275" src="/upload/resize_cache/iblock/678/412_2150_1/nmsqrcn7g67xj2k8y62175mtjaqgm3rx.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Анатолийские овчарки были выведены в качестве рабочих собак, и они до сих пор отменно выполняют эту роль
+         </div>
+        </div>
+        <p>
+         Для передних ног кангала типичны хорошая длина, мощный костяк и широкий постав. Лопатки с крепкими мышцами под наклоном. Плечи такие же мускулистые с плотно прижимающимися к бокам локтями – движению собаки такое положение не мешает. Запястья крепкие, пясти наклонные, если смотреть на животное сбоку. Сильные лапы с выгнутыми пальцами «поставлены» на толстые упругие подушечки.
+        </p>
+        <p>
+         Задние ноги не такие мускулистые, как передние. Удлиненные бедра переходят в крепкие колени с отчетливо вырисовывающимися углами. Голень сильная, углы скакательных суставов средних значений. Плюсны параллельны между собой, по отношению к земле поставлены вертикально. Кангал перемещается крадущимися движениями. Характерное положение тела для идущей собаки – когда голова, шея и спина вытягиваются в единую линию.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         У представителей породы двойная «одежка», образованная покровным волосом от 3 до 7 см и пухлым, хорошо набитым подшерстком. Самый обильный покров можно увидеть в области бедер и шеи.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Масть кангала может варьироваться от палевого (светло-желто-коричневого) до волчьего оттенков. Главное условие – однородный окрас на всех участках тела. Допускается присутствие осветленного (белого) пятнышка на груди, если его размер не более 10 см, а также белый кончик хвоста. Не оспаривается наличие белого пигмента на лапах, но чем меньше, тем лучше. Обязательная экстерьерная фишка анатолийских овчарок – уши темного окраса и черная маска на морде, которая постепенно осветляется в районе черепной зоны.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Рост кангала относительно других пород" data-fancybox="gallery" href="/upload/iblock/23c/78xumq3aew76zmhui1vrzifx43duh4px.jpg" title="Рост кангала относительно других пород">
+          <div class="lazy-load" data-alt="Рост кангала относительно других пород" data-class="article_pic" data-original="/upload/resize_cache/iblock/23c/1024_2150_1/78xumq3aew76zmhui1vrzifx43duh4px.jpg">
+           <noscript data-alt="Рост кангала относительно других пород" data-class="article_pic" data-original="/upload/resize_cache/iblock/23c/1024_2150_1/78xumq3aew76zmhui1vrzifx43duh4px.jpg">
+            <img alt="Рост кангала относительно других пород" class="article_pic" src="/upload/resize_cache/iblock/23c/1024_2150_1/78xumq3aew76zmhui1vrzifx43duh4px.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Рост кангала относительно других пород
+         </div>
+        </div>
+        <h3>
+         Дефекты и дисквалифицирующие пороки
+        </h3>
+        <p>
+         Серьезными породными недостатками считаются: белая линия на морде собаки, непропорционально широкий череп, высокий или чрезмерно низкий круп, облегченное или грубое телосложение. Дисквалифицирующие пороки, обладателям которых недоступно участие в породных выставках:
+        </p>
+        <ul>
+         <li>
+          агрессия, трусливость;
+         </li>
+         <li>
+          недокус, перекус прикуса;
+         </li>
+         <li>
+          короткая морда;
+         </li>
+         <li>
+          шерсть без подшерстка, либо слишком короткая и гладкая;
+         </li>
+         <li>
+          разноглазие;
+         </li>
+         <li>
+          коричневая мочка;
+         </li>
+         <li>
+          отсутствие маски.
+         </li>
+        </ul>
+        <p class="legenda">
+         <strong>
+          Информация к размышлению:
+         </strong>
+         кангалов часто называют карабашами, которые также считаются анатолийскими овчарками и носят точно такую же маску на морде. Однако в Турции представителей этих двух линий не вяжут между собой, так как считают слишком разными. Отличить животных можно по цвету шерсти – для карабашей допустимы все виды окрасов, включая тигровые вариации. Поэтому будет правильнее сказать, что кангал – это один из типов карабаша.
+        </p>
+        <h2>
+         Фото кангала
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5d8/hrosmwwkwoapshedeyb6zhbm8s1enaiu.jpg" title="">
+           <div class="lazy-load" data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/5d8/380_264_2/hrosmwwkwoapshedeyb6zhbm8s1enaiu.jpg">
+            <noscript data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/5d8/380_264_2/hrosmwwkwoapshedeyb6zhbm8s1enaiu.jpg">
+             <img alt="Кангал" class="article_pic" src="/upload/resize_cache/iblock/5d8/380_264_2/hrosmwwkwoapshedeyb6zhbm8s1enaiu.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/40a/lripvc4spnkzxmr534s4cn1jwpqpgoel.jpg" title="">
+           <div class="lazy-load" data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/40a/380_264_2/lripvc4spnkzxmr534s4cn1jwpqpgoel.jpg">
+            <noscript data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/40a/380_264_2/lripvc4spnkzxmr534s4cn1jwpqpgoel.jpg">
+             <img alt="Кангал" class="article_pic" src="/upload/resize_cache/iblock/40a/380_264_2/lripvc4spnkzxmr534s4cn1jwpqpgoel.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7c7/onk1y1tl289z16ffpzhwnr7j7l0dqio1.jpg" title="">
+           <div class="lazy-load" data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/7c7/380_264_2/onk1y1tl289z16ffpzhwnr7j7l0dqio1.jpg">
+            <noscript data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/7c7/380_264_2/onk1y1tl289z16ffpzhwnr7j7l0dqio1.jpg">
+             <img alt="Кангал" class="article_pic" src="/upload/resize_cache/iblock/7c7/380_264_2/onk1y1tl289z16ffpzhwnr7j7l0dqio1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8d4/uhnazd9q70jy64rhor33m6lkzif2pk65.jpg" title="">
+           <div class="lazy-load" data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/8d4/380_264_2/uhnazd9q70jy64rhor33m6lkzif2pk65.jpg">
+            <noscript data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/8d4/380_264_2/uhnazd9q70jy64rhor33m6lkzif2pk65.jpg">
+             <img alt="Кангал" class="article_pic" src="/upload/resize_cache/iblock/8d4/380_264_2/uhnazd9q70jy64rhor33m6lkzif2pk65.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c81/f3d8rs1761ucsdo32ed9uqzpkj859q6f.jpg" title="">
+           <div class="lazy-load" data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/c81/380_264_2/f3d8rs1761ucsdo32ed9uqzpkj859q6f.jpg">
+            <noscript data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/c81/380_264_2/f3d8rs1761ucsdo32ed9uqzpkj859q6f.jpg">
+             <img alt="Кангал" class="article_pic" src="/upload/resize_cache/iblock/c81/380_264_2/f3d8rs1761ucsdo32ed9uqzpkj859q6f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5d1/oopelbrfsrn4vdu4wyj8fnjicke8117f.jpg" title="">
+           <div class="lazy-load" data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/5d1/380_264_2/oopelbrfsrn4vdu4wyj8fnjicke8117f.jpg">
+            <noscript data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/5d1/380_264_2/oopelbrfsrn4vdu4wyj8fnjicke8117f.jpg">
+             <img alt="Кангал" class="article_pic" src="/upload/resize_cache/iblock/5d1/380_264_2/oopelbrfsrn4vdu4wyj8fnjicke8117f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/854/3f62bwjpbol7a5yc5hrz3twz7dzdnjlz.jpg" title="">
+           <div class="lazy-load" data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/854/380_264_2/3f62bwjpbol7a5yc5hrz3twz7dzdnjlz.jpg">
+            <noscript data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/854/380_264_2/3f62bwjpbol7a5yc5hrz3twz7dzdnjlz.jpg">
+             <img alt="Кангал" class="article_pic" src="/upload/resize_cache/iblock/854/380_264_2/3f62bwjpbol7a5yc5hrz3twz7dzdnjlz.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/65a/5uqkge0f1a1szii38aq8nd42lp9wbm4d.jpg" title="">
+           <div class="lazy-load" data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/65a/380_264_2/5uqkge0f1a1szii38aq8nd42lp9wbm4d.jpg">
+            <noscript data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/65a/380_264_2/5uqkge0f1a1szii38aq8nd42lp9wbm4d.jpg">
+             <img alt="Кангал" class="article_pic" src="/upload/resize_cache/iblock/65a/380_264_2/5uqkge0f1a1szii38aq8nd42lp9wbm4d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a28/qb2w6wyjocvqibaeu9nss4x4cmhdyk45.jpg" title="">
+           <div class="lazy-load" data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/a28/380_264_2/qb2w6wyjocvqibaeu9nss4x4cmhdyk45.jpg">
+            <noscript data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/a28/380_264_2/qb2w6wyjocvqibaeu9nss4x4cmhdyk45.jpg">
+             <img alt="Кангал" class="article_pic" src="/upload/resize_cache/iblock/a28/380_264_2/qb2w6wyjocvqibaeu9nss4x4cmhdyk45.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер кангала
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кангалам нужно много места как в доме, так и на улице" data-fancybox="gallery" href="/upload/iblock/19f/hwnix1k1w5sgpmwh6pzdv02upqalbfjj.jpg" title="Кангалам нужно много места как в доме, так и на улице">
+          <div class="lazy-load" data-alt="Кангалам нужно много места как в доме, так и на улице" data-class="article_pic" data-original="/upload/resize_cache/iblock/19f/412_2150_1/hwnix1k1w5sgpmwh6pzdv02upqalbfjj.jpg">
+           <noscript data-alt="Кангалам нужно много места как в доме, так и на улице" data-class="article_pic" data-original="/upload/resize_cache/iblock/19f/412_2150_1/hwnix1k1w5sgpmwh6pzdv02upqalbfjj.jpg">
+            <img alt="Кангалам нужно много места как в доме, так и на улице" class="article_pic" height="275" src="/upload/resize_cache/iblock/19f/412_2150_1/hwnix1k1w5sgpmwh6pzdv02upqalbfjj.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кангалам нужно много места как в доме, так и на улице
+         </div>
+        </div>
+        <p>
+         Анатолийская овчарка – серьезный и спокойный питомец со стабильной психикой. Не стоит соотносить «рабочее» поведение кангала с повседневной жизнью. Да, собака легко разберется с самым опасным хищником, но эта агрессия никак не переносится на человека. Особенностью породы является умение моментально активизировать охранные функции в случае опасности и так же быстро гасить свирепость, если тревога оказалась ложной.
+        </p>
+        <p>
+         У кангалов развит мощнейший территориальный инстинкт, поэтому если ваша собака не пасет овечьи отары и не охраняет крупный рогатый скот, с большой долей вероятности она возьмет на себя сторожевую функцию. В течение дня овчарка будет степенно обходить вверенную ей территорию, периодически взбираясь на всевозможные возвышения, чтобы было проще контролировать владения. Кстати, «собственностью» собака считает не только площадь двора или дома, но и всех ее обитателей. Так что если соседскому Шарику вздумается потрепать вашего котофея, кангал быстро поставит зарвавшегося соплеменника на место.
+        </p>
+        <p>
+         Подозрительность в отношении незнакомцев – врожденная черта породы, бороться с ней бессмысленно. В Турции популярно мнение, что кангалы чувствуют намерения, с которыми чужак или гость входит в дом, и рекомендуют расценивать угрожающее поведение собаки как повод задуматься. Что касается взаимоотношений карабаша и остальных домашних питомцев, то они могут быть вполне мирными, если животные вместе росли. Таких «хвостов» овчарка считает членами своей стаи.
+        </p>
+        <p>
+         Кангалы – чуткие, ответственные родители, причем как в отношении собственных щенков, так и детей. Обманчиво суровый облик собаки не мешает ей быть первоклассным бэбиситтером, готовым терпеть любые неудобства и надоедливые приставания. Но поскольку порода габаритная, а взмах хвоста овчарки легко сбивает с ног годовалого карапуза, отношения ребятни и питомца лучше держать под контролем. Особенно, если речь идет о совсем маленьких детях.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Тысячи лет анатолийских овчарок воспитывали и обучали выслеживать стада и кочевые племена, блуждающие по равнинам и пустыням. Эти собаки достаточно умны, чтобы быстро схватывать инструкции и обучаться: поговорите с анатолийцем, и он вас поймет." data-fancybox="gallery" href="/upload/iblock/1f0/hn8065rscxv5b36uv31fr2pqeyg1tu12.jpg" title="Тысячи лет анатолийских овчарок воспитывали и обучали выслеживать стада и кочевые племена, блуждающие по равнинам и пустыням. Эти собаки достаточно умны, чтобы быстро схватывать инструкции и обучаться: поговорите с анатолийцем, и он вас поймет.">
+          <div class="lazy-load" data-alt="Тысячи лет анатолийских овчарок воспитывали и обучали выслеживать стада и кочевые племена, блуждающие по равнинам и пустыням. Эти собаки достаточно умны, чтобы быстро схватывать инструкции и обучаться: поговорите с анатолийцем, и он вас поймет." data-class="article_pic" data-original="/upload/resize_cache/iblock/1f0/412_2150_1/hn8065rscxv5b36uv31fr2pqeyg1tu12.jpg">
+           <noscript data-alt="Тысячи лет анатолийских овчарок воспитывали и обучали выслеживать стада и кочевые племена, блуждающие по равнинам и пустыням. Эти собаки достаточно умны, чтобы быстро схватывать инструкции и обучаться: поговорите с анатолийцем, и он вас поймет." data-class="article_pic" data-original="/upload/resize_cache/iblock/1f0/412_2150_1/hn8065rscxv5b36uv31fr2pqeyg1tu12.jpg">
+            <img alt="Тысячи лет анатолийских овчарок воспитывали и обучали выслеживать стада и кочевые племена, блуждающие по равнинам и пустыням. Эти собаки достаточно умны, чтобы быстро схватывать инструкции и обучаться: поговорите с анатолийцем, и он вас поймет." class="article_pic" height="275" src="/upload/resize_cache/iblock/1f0/412_2150_1/hn8065rscxv5b36uv31fr2pqeyg1tu12.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Тысячи лет анатолийских овчарок воспитывали и обучали выслеживать стада и кочевые племена, блуждающие по равнинам и пустыням. Эти собаки достаточно умны, чтобы быстро схватывать инструкции и обучаться: поговорите с анатолийцем, и он вас поймет.
+         </div>
+        </div>
+        <p>
+         Кангала легко обучать, если не сбрасывать со счетов важность ранней социализации и склонность породы к лидерству, которая наиболее ярко выражена у кобелей. Первое и главное правило дрессировки – «номер один» в доме человек, а не собака. Как только питомец убедится, что его планы стать большим боссом рухнули, он тут же примет правила игры. Обязательно обучите кангала базовым командам послушания, а лучше пройдите с ним ОКД (Общий курс дрессировки). Помните, порода не приемлет грубого к себе отношения. Так что если пытаетесь показать свое превосходство над животным путем физического угнетения, расценивайте это как тупиковый путь и полную потерю доверия питомца.
+        </p>
+        <h3>
+         Социализация щенка
+        </h3>
+        <p>
+         Сразу после переезда в новый дом щенок может бояться и избегать контактов с людьми. Это нормально. Дайте животному освоиться и не навязывайте ему свое общество. Обязательно подготовьте для малыша изолированный уголок отдыха, где ему не будет никто докучать. По ночам многие отлученные от сук щенки скулят. Чтобы период отвыкания от матери прошел наименее болезненно, подкладывайте питомцу на время сна резиновую грелочку – это успокоит и расслабит маленького кангала.
+        </p>
+        <p>
+         Как только щенок привыкнет к своему окружению, ставьте ему новые задачи на развитие. Приучайте собаку общаться не только с вами, но и с остальными членами семьи, знакомыми, родственниками. Познакомьте щенка с неожиданными звуками – гудением транспорта, музыкой, телепередачами, голосами животных. Как можно чаще выводите питомца в места, где он может видеть других собак.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важно:
+         </strong>
+         малыши анатолийской овчарки не в состоянии попроситься в туалет, но и не могут терпеть, так что будьте снисходительны к лужицам на полу. Попутно приучайте щенка совершать туалет правильно – выносите его сразу после сна на улицу (если собака живет в доме) или относите подальше от лежанки. Как только животное начинает топтаться на месте и принимать характерную позу, берите его в руки и высаживает на пеленку или газеты.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         Кангалы – рабочие собаки, квартирное существование им категорически противопоказано. У анатолийских овчарок внушительная «шуба», усиленная плотным подшерстком, поэтому они вполне комфортно чувствуют себя в вольерах и обычной конуре. Забирать собаку в дом нужно только на период сильных морозов. Вообще шерсть кангалов – это что-то вроде костюма супергероя. Она хорошо отталкивает воду и пыль, практически не пахнет, защищает животное от теплового удара в зной и не позволяет клыкам хищников добраться до тела.
+        </p>
+        <h3>
+         Выгул и другие виды активности
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кангал с человеком" data-fancybox="gallery" href="/upload/iblock/86e/f1rpzj2rlfdzax22u18swus56i33ljgo.jpg" title="Кангал с человеком">
+          <div class="lazy-load" data-alt="Кангал с человеком" data-class="article_pic" data-original="/upload/resize_cache/iblock/86e/412_2150_1/f1rpzj2rlfdzax22u18swus56i33ljgo.jpg">
+           <noscript data-alt="Кангал с человеком" data-class="article_pic" data-original="/upload/resize_cache/iblock/86e/412_2150_1/f1rpzj2rlfdzax22u18swus56i33ljgo.jpg">
+            <img alt="Кангал с человеком" class="article_pic" height="732" src="/upload/resize_cache/iblock/86e/412_2150_1/f1rpzj2rlfdzax22u18swus56i33ljgo.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кангал с человеком
+         </div>
+        </div>
+        <p>
+         Недопустимо сажать кангала на цепь. Ни к чему хорошему, кроме усиливающейся агрессивности и издерганности животного, такой шаг не приведет. Ну и конечно, будьте готовы к тому, что гулять с турецким карабашом придется по 3-4 раза. И речь не о 15-минутных вылазках для совершения туалетных дел. 1,5, а лучше 2 часа – столько времени потребуется питомцу, чтобы разрядиться и не докучать вам какую-то часть дня. Именно из-за этого на сайтах питомников часто вывешиваются предупреждения и просьбы не обращаться за щенками, если не готовы посвящать собаке такое количество времени.
+        </p>
+        <p>
+         Неплохой выход из ситуации – сократить продолжительность прогулки за счет увеличения ее продуктивности. Например, можно вывести собаку погулять на часок, нагрузив ее утяжелителями, – это поможет кангалу физически выложиться, а хозяину сэкономит время. Много энергии отнимает и плавание. Анатолийские овчарки не боятся воды и охотно купаются, так что чаще отдыхайте с питомцем вблизи водоемов.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Как и полагается рабочей, проживающей вне дома породе, кангалы линяют по сезонам. «Волосопад» получается обильным из-за наличия толстого слоя подшерстка. Так что заранее купите себе качественный фурминатор или пуходерку, расческу-гребень и щетку из натуральной щетины. В перерывах между линьками проходиться по «шубе» овчарки желательно хотя бы раз в неделю, чтобы убрать отмершие шерстинки.
+        </p>
+        <p>
+         Примерно с таким же интервалом проверяйте состояние ушей и глаз питомца. Ушную серу из воронки можно убрать чистой хлопчатобумажной тканью. В случаях, когда выделения слишком сухие, можно дополнительно смочить тряпочку перекисью водорода. Веки и глаза кангалам лучше протирать крепкой чайной заваркой (обязательно остывшей) или отваром ромашки.
+        </p>
+        <p>
+         Чистка зубов обязательна раз в неделю. Когти стригутся ежемесячно. Для этого купите когтерез для крупных пород. Мытье с шампунем для собак рекомендуется исключительно по мере необходимости, но не чаще, чем раз в 1-2 месяца.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Мордочка щенка кангала" data-fancybox="gallery" href="/upload/iblock/e69/jajjitiik60jkxjwwux13vyjfj2cw3dm.jpg" title="Мордочка щенка кангала">
+          <div class="lazy-load" data-alt="Мордочка щенка кангала" data-class="article_pic" data-original="/upload/resize_cache/iblock/e69/1024_2150_1/jajjitiik60jkxjwwux13vyjfj2cw3dm.jpg">
+           <noscript data-alt="Мордочка щенка кангала" data-class="article_pic" data-original="/upload/resize_cache/iblock/e69/1024_2150_1/jajjitiik60jkxjwwux13vyjfj2cw3dm.jpg">
+            <img alt="Мордочка щенка кангала" class="article_pic" src="/upload/resize_cache/iblock/e69/1024_2150_1/jajjitiik60jkxjwwux13vyjfj2cw3dm.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мордочка щенка кангала
+         </div>
+        </div>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         В отношении еды кангал не лакомка и не капризуля, поэтому проблем с его кормлением обычно не возникает. Более того, у взрослых особей нет склонности к перееданию: если собака не ощущает острого голода, она скорее откажется от ужина, чем будет «заправляться» про запас. Что касается рациона, то держать представителей породы исключительно на «сушке» заводчики не рекомендуют. Существуют две основных схемы кормления овчарок – смешанное питание и полностью натуральное, приближенное к системе BARF.
+        </p>
+        <p>
+         Основные правила смешанного типа кормления
+        </p>
+        <ul>
+         <li>
+          Не накладывать в одну миску сухой корм и мясо. Разделите эти продукты на два кормления. Например, утром – «сушка», вечером – мясо и субпродукты.
+         </li>
+         <li>
+          Для смешанного питания нужно выбирать корма с максимально простым составом, с невысоким содержанием жиров и белков. Это необходимо для того, чтобы не перегружать организм, ведь белков и жиров достаточно в мясе.
+         </li>
+         <li>
+          Устраивайте кангалу дни натурпитания, полностью исключив из них «сушку».
+         </li>
+         <li>
+          Не дополняйте смешанный рацион витаминами и подкормками без назначения ветеринара и анализа на биохимию – есть риск переборщить или включить в меню не те микро- и макроэлементы, которые нужны организму.
+         </li>
+        </ul>
+        <div class="img-right">
+         <a class="fancybox" data-caption="На страже дома" data-fancybox="gallery" href="/upload/iblock/726/bmivym73ei3p1izbe6vu8tu9cifbamy9.jpg" title="На страже дома">
+          <div class="lazy-load" data-alt="На страже дома" data-class="article_pic" data-original="/upload/resize_cache/iblock/726/412_2150_1/bmivym73ei3p1izbe6vu8tu9cifbamy9.jpg">
+           <noscript data-alt="На страже дома" data-class="article_pic" data-original="/upload/resize_cache/iblock/726/412_2150_1/bmivym73ei3p1izbe6vu8tu9cifbamy9.jpg">
+            <img alt="На страже дома" class="article_pic" height="275" src="/upload/resize_cache/iblock/726/412_2150_1/bmivym73ei3p1izbe6vu8tu9cifbamy9.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          На страже дома
+         </div>
+        </div>
+        <p>
+         Натуральный рацион кангала базируется на животном белке (постные виды мяса и субпродуктов), небольшом количестве углеводов (гречневая, овсяная каши), овощах, а также нежирной кисломолочке, то есть породе можно все те же продукты, что и любой другой собаке. Посмотреть подробные схемы кормления взрослых и маленьких карабашей можно на сайтах породных питомников.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важно:
+         </strong>
+         щенки кангала едят с аппетитом и очень быстро растут. При этом специалисты рекомендуют тщательно следить за массой тела растущих питомцев и соблюдать баланс кальция в рационе. Переизбыток макроэлемента ведет к размету конечностей – типичной проблеме всех «тяжелых» пород; недостаток – к неправильному формированию костей.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Шайка кангалов" data-fancybox="gallery" href="/upload/iblock/fe8/iddckiytz4q4dc1ym3zye2hkucoq0djv.jpg" title="Шайка кангалов">
+          <div class="lazy-load" data-alt="Шайка кангалов" data-class="article_pic" data-original="/upload/resize_cache/iblock/fe8/1024_2150_1/iddckiytz4q4dc1ym3zye2hkucoq0djv.jpg">
+           <noscript data-alt="Шайка кангалов" data-class="article_pic" data-original="/upload/resize_cache/iblock/fe8/1024_2150_1/iddckiytz4q4dc1ym3zye2hkucoq0djv.jpg">
+            <img alt="Шайка кангалов" class="article_pic" src="/upload/resize_cache/iblock/fe8/1024_2150_1/iddckiytz4q4dc1ym3zye2hkucoq0djv.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Шайка кангалов
+         </div>
+        </div>
+        <h2 id="gl6">
+         Здоровье и болезни кангалов
+        </h2>
+        <p>
+         У чистокровных кангальских овчарок несокрушимое здоровье. Проблем, снижающих качество жизни собаки, не так уж много. Как и большинство крупных пород, кангальские карабаши имеют предрасположенность к дисплазии тазобедренных и локтевых суставов. Также из-за внушительных габаритов породы возрастает риск развития заворота желудка.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Покупайте животных, которых разводят в официальных питомниках, имеющих регистрацию РКФ и FCI. Во-первых, на таких щенков вы получите все необходимые документы. А во-вторых, питомники обычно не отказывают в консультациях после переезда щенка в новый дом.
+         </li>
+         <li>
+          Постарайтесь получить максимум информации о производителях. Кто это – рабочие или выставочные особи, какие у них родословные, есть ли нюансы по состоянию здоровья.
+         </li>
+         <li>
+          Полезно поинтересоваться типом темперамента суки и кобеля, от которых планируете брать щенка. Животные не должны быть нервными и подавать голос при вашем появлении в питомнике. Если все происходит с точностью до наоборот, скорее всего малыши унаследуют взрывной характер родителей.
+         </li>
+         <li>
+          Покупка щенка от двух чемпионов – далеко не гарантия того, что ваш питомец сделает выставочную карьеру. Рассмотреть шоу-потенциал в малыше можно только по мере его взросления. Так что если не готовы расставаться с мечтой о кангале-медалисте, ищите объявления о продаже взрослых особей.
+         </li>
+         <li>
+          У некоторых заводчиков кангалы сдают испытания на рабочие характеристики и постоянно контактируют с с/х животными. Так что если планируете использовать собаку по ее прямой «специальности», старайтесь искать питомники, уделяющие внимание именно рабочим качествам породы.
+         </li>
+        </ul>
+        <h2>
+         Фото щенков кангала
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/bec/1g7zqb844wy45h0wp25zcnscjpfflb7b.jpg" title="">
+           <div class="lazy-load" data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/bec/380_264_2/1g7zqb844wy45h0wp25zcnscjpfflb7b.jpg">
+            <noscript data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/bec/380_264_2/1g7zqb844wy45h0wp25zcnscjpfflb7b.jpg">
+             <img alt="Кангал" class="article_pic" src="/upload/resize_cache/iblock/bec/380_264_2/1g7zqb844wy45h0wp25zcnscjpfflb7b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/669/uo91q4hkdhtaw6qfhfrw9drbncwn5tbs.jpeg" title="">
+           <div class="lazy-load" data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/669/380_264_2/uo91q4hkdhtaw6qfhfrw9drbncwn5tbs.jpeg">
+            <noscript data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/669/380_264_2/uo91q4hkdhtaw6qfhfrw9drbncwn5tbs.jpeg">
+             <img alt="Кангал" class="article_pic" src="/upload/resize_cache/iblock/669/380_264_2/uo91q4hkdhtaw6qfhfrw9drbncwn5tbs.jpeg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5b3/oegleskatckdw27q0qo0salw2mb6ghs2.jpg" title="">
+           <div class="lazy-load" data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/5b3/380_264_2/oegleskatckdw27q0qo0salw2mb6ghs2.jpg">
+            <noscript data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/5b3/380_264_2/oegleskatckdw27q0qo0salw2mb6ghs2.jpg">
+             <img alt="Кангал" class="article_pic" src="/upload/resize_cache/iblock/5b3/380_264_2/oegleskatckdw27q0qo0salw2mb6ghs2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e0d/9vm1835sqqps9kqsbfxe3j18ql1r2xxv.jpg" title="">
+           <div class="lazy-load" data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/e0d/380_264_2/9vm1835sqqps9kqsbfxe3j18ql1r2xxv.jpg">
+            <noscript data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/e0d/380_264_2/9vm1835sqqps9kqsbfxe3j18ql1r2xxv.jpg">
+             <img alt="Кангал" class="article_pic" src="/upload/resize_cache/iblock/e0d/380_264_2/9vm1835sqqps9kqsbfxe3j18ql1r2xxv.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/63f/1sdklogzruulcpodezp2i31ekkhw3sf2.jpg" title="">
+           <div class="lazy-load" data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/63f/380_264_2/1sdklogzruulcpodezp2i31ekkhw3sf2.jpg">
+            <noscript data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/63f/380_264_2/1sdklogzruulcpodezp2i31ekkhw3sf2.jpg">
+             <img alt="Кангал" class="article_pic" src="/upload/resize_cache/iblock/63f/380_264_2/1sdklogzruulcpodezp2i31ekkhw3sf2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f4e/9hfa0qj9gs2jbpd1dvo692j0gpuuihyf.jpg" title="">
+           <div class="lazy-load" data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/f4e/380_264_2/9hfa0qj9gs2jbpd1dvo692j0gpuuihyf.jpg">
+            <noscript data-alt="Кангал" data-class="article_pic" data-original="/upload/resize_cache/iblock/f4e/380_264_2/9hfa0qj9gs2jbpd1dvo692j0gpuuihyf.jpg">
+             <img alt="Кангал" class="article_pic" src="/upload/resize_cache/iblock/f4e/380_264_2/9hfa0qj9gs2jbpd1dvo692j0gpuuihyf.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Цена кангала
+        </h2>
+        <p>
+         В России есть несколько зарегистрированных монопородных питомников, занимающихся разведением и продажей анатолийских овчарок. К таковым относятся: «Звезда кангала» (Московская обл.), «V.K.Кangal Turk kan» (Тверь), «Анталкая» (Москва). Стоимость здорового щенка анатолийской овчарки в таких местах может достигать 50 000 – 60 000 ₽. Иногда в Сети встречаются объявления о продаже взрослых особей, ценник на которых уже выше – в районе 100 000 ₽.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения кангала на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/kangal/forum/">
+        Перейти на
+        форум кангала
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Кангал" src="/upload/iblock/94d/useii4q9qiwq8p2elw8gi5aqvo170pi3.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/kangal/">
+          Кангал
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/kangal/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/kangal/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/kangal/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/kangal/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/kangal/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/pomeranskiy-shpits/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Померанский шпиц" data-original="/upload/resize_cache/iblock/ae6/100_100_1/ae61432957b8583f7c9952f15937c586.jpg">
+          <noscript data-alt="Померанский шпиц" data-original="/upload/resize_cache/iblock/ae6/100_100_1/ae61432957b8583f7c9952f15937c586.jpg">
+           <img alt="Померанский шпиц" src="/upload/resize_cache/iblock/ae6/100_100_1/ae61432957b8583f7c9952f15937c586.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Померанский шпиц
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/nyufaundlend/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Ньюфаундленд" data-original="/upload/resize_cache/iblock/4a8/100_100_1/4a86cff4ab81d72fe1dea71242323a8c.jpg">
+          <noscript data-alt="Ньюфаундленд" data-original="/upload/resize_cache/iblock/4a8/100_100_1/4a86cff4ab81d72fe1dea71242323a8c.jpg">
+           <img alt="Ньюфаундленд" src="/upload/resize_cache/iblock/4a8/100_100_1/4a86cff4ab81d72fe1dea71242323a8c.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Ньюфаундленд
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/foksterer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Фокстерьер" data-original="/upload/resize_cache/iblock/e97/100_100_1/e97ccbc887266f59553f392341b9fe64.jpg">
+          <noscript data-alt="Фокстерьер" data-original="/upload/resize_cache/iblock/e97/100_100_1/e97ccbc887266f59553f392341b9fe64.jpg">
+           <img alt="Фокстерьер" src="/upload/resize_cache/iblock/e97/100_100_1/e97ccbc887266f59553f392341b9fe64.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Фокстерьер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/vest-khaylend-uayt-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Вест-хайленд-уайт-терьер" data-original="/upload/resize_cache/iblock/09f/100_100_1/09f78d0c57156a58c3cad34c111f059c.jpg">
+          <noscript data-alt="Вест-хайленд-уайт-терьер" data-original="/upload/resize_cache/iblock/09f/100_100_1/09f78d0c57156a58c3cad34c111f059c.jpg">
+           <img alt="Вест-хайленд-уайт-терьер" src="/upload/resize_cache/iblock/09f/100_100_1/09f78d0c57156a58c3cad34c111f059c.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Вест-хайленд-уайт-терьер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkangal%252F%253Fcheck_key%253D7920001887f75f63c23cbad692f484ce%2526ANIMAL_CODE%253Dkangal%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkangal%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmthbmdhbCUyRiUzRmNoZWNrX2tleSUzRDc5MjAwMDE4ODdmNzVmNjNjMjNjYmFkNjkyZjQ4NGNlJTI2QU5JTUFMX0NPREUlM0RrYW5nYWwlMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGa2FuZ2FsJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkangal%252F%253Fcheck_key%253D7920001887f75f63c23cbad692f484ce%2526ANIMAL_CODE%253Dkangal%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fkangal%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkangal%252F%253Fcheck_key%253D7920001887f75f63c23cbad692f484ce%2526ANIMAL_CODE%253Dkangal%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkangal%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "85.249.18.34"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--c8686a74c90d2f8ba35ac0a6e0ff420f-->

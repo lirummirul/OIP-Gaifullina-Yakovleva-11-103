@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'9c26a560e55b'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Йоркширский терьер, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Йоркширский терьер – одна из самых популярных в мире комнатно-декоративных пород собак. Йорк очарователен внешне, энергичен, ласков и является отличным компаньоном." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/bd9/bd909ac4aaff2cedd0134ccc5c00e6d6.jpg" property="og:image"/>
+     <title>
+      Йоркширский терьер: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/yorkshirskiy-terer/" property="og:url"/>
+     <meta content="Йоркширский терьер: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Йоркширский терьер – одна из самых популярных в мире комнатно-декоративных пород собак. Йорк очарователен внешне, энергичен, ласков и является отличным компаньоном." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/yorkshirskiy-terer/" itemprop="url">
+         <span itemprop="title">
+          Йоркширский терьер
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Йоркширский терьер
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/yorkshirskiy-terer/">
+          Описание
+         </a>
+         <a href="/dog/yorkshirskiy-terer/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/yorkshirskiy-terer/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/yorkshirskiy-terer/photo/">
+          Фото
+         </a>
+         <a href="/dog/yorkshirskiy-terer/video/">
+          Видео
+         </a>
+         <a href="/dog/yorkshirskiy-terer/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/yorkshirskiy-terer/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Йоркширский терьер" src="/upload/iblock/305/3052ffceecb0392a4bd66c672ac78a71.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/yorkshirskiy-terer/">
+           йорк
+          </a>
+         </span>
+         <p>
+          Йоркширский терьер – одна из самых популярных в мире комнатно-декоративных пород собак. Йорк очарователен внешне, энергичен, ласков и является отличным компаньоном.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/704/7041bde458d0f08fc6f98fba6051d6a8.jpg" data-cap="Pet dog yorkie " data-fancybox="images" data-link="https://www.flickr.com/photos/crazyshin/26235780231/" data-type="image" data-username="Shinichiro Saka" href="/upload/uf/636/6367da7439d95743740b9bfbaed34706.jpg" santa""="">
+            <img alt="Йоркширский терьер" src="/upload/resize_cache/uf/636/293_293_2/6367da7439d95743740b9bfbaed34706.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/92c/92cd795e95ddbf0aac5f8ec22112fdb8.jpg" data-cap="Bright Eyes" data-fancybox="images" data-link="https://www.flickr.com/photos/cajunyorkies/8885195062/" data-type="image" data-username="Em Johnson" href="/upload/uf/cfc/cfc945d2334dfe3855363da0ebd19c48.jpg">
+            <img alt="Йоркширский терьер" src="/upload/resize_cache/uf/cfc/293_293_2/cfc945d2334dfe3855363da0ebd19c48.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/ccf/ccf158dd9cde8a63d798942a5b25912d.jpg" data-cap="Halloween!" data-fancybox="images" data-link="https://www.flickr.com/photos/48742199@N07/37268713344/" data-type="image" data-username="hugoluciano" href="/upload/uf/8e6/8e69ead0b6f354d5328ba11ccf6f0e73.jpg">
+            <img alt="Йоркширский терьер" src="/upload/resize_cache/uf/8e6/293_293_2/8e69ead0b6f354d5328ba11ccf6f0e73.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/yorkshirskiy-terer/photo/">
+         Все
+            фото йоркширского терьера
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы йоркширский терьер
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Внешность йоркширского терьера
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер йоркширского терьера
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Уход и содержание
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни йоркширского терьера
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Сколько стоит йоркширский терьер
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Йоркширский терьер
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Англия
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         конец XIX века
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         2-3,2 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         18-23 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         12-15 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Йоркширский терьер – превосходная собака, в характере которой смелость, резвость, выносливость сочетаются с удивительной деликатностью, интеллигентностью и сообразительностью.
+        </li>
+        <li>
+         Отличный друг для всех членов семьи, но хозяином считает одного, кому и предан беззаветно.
+        </li>
+        <li>
+         Йорк – веселый товарищ для детей и подростков, готовый в любой момент со всей своей энергией присоединиться к играм и забавам.
+        </li>
+        <li>
+         Для пожилых людей, особенно одиноких, он станет хорошим компаньоном, преданным и бескорыстным.
+        </li>
+        <li>
+         Комфортно чувствует себя как в малогабаритных квартирах, так и в загородных домах.
+        </li>
+        <li>
+         Благодаря своей сообразительности, йорк легко поддается дрессировке, однако процесс осложняет его неусидчивость.
+        </li>
+        <li>
+         Йоркширский терьер, как любая декоративная собака, требует внимания к своей внешности. Длинношерстые собаки нуждаются в еженедельном купании, короткошерстых йорков купают раз в 2-3 недели. Стандартные стрижки можно научиться делать самостоятельно, а модельные прически создают груминг-мастера. Во время процедур собака любит покапризничать.
+        </li>
+        <li>
+         Йорк требователен к еде и переборчив. Многие продукты ему противопоказаны.
+        </li>
+        <li>
+         К здоровью этой крошечной собаки нужно относиться с особым вниманием и стараться уберечь ее от травм.
+        </li>
+        <li>
+         Чтобы купить гарантированно чистокровного йоркширского терьера, следует обратиться к заводчику с проверенной репутацией.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Йоркширский терьер" data-original="/upload/iblock/bd9/bd909ac4aaff2cedd0134ccc5c00e6d6.jpg">
+          <noscript data-alt="Йоркширский терьер" data-original="/upload/iblock/bd9/bd909ac4aaff2cedd0134ccc5c00e6d6.jpg">
+           <img alt="Йоркширский терьер" src="/upload/iblock/bd9/bd909ac4aaff2cedd0134ccc5c00e6d6.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Йоркширский терьер
+          </strong>
+          – очаровательная собака с великолепной шелковистой шерстью, похожая на живую игрушку и обладающая уникальными качествами. В ее миниатюрном и грациозном теле бьется храброе сердце, а беззаветная преданность своим хозяевам и готовность защищать свой дом вызывают бесконечное уважение и умиление. Веселый, умный, дружелюбный йорк, всегда готовый поделиться с окружающими своим хорошим настроением, обожаем миллионами людей и входит в десятку самых популярных в мире пород.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Минимальная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не переносит (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошие (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Йоркширский терьер основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/yorkshirskiy-terer/razmeri-porodi/">
+         размеры йоркширского терьера
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы йоркширский терьер
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Йоркширский терьер" data-fancybox="gallery" href="/upload/iblock/a66/a66eb2391dbe225ebf3a352249d320b3.jpg" title="Йоркширский терьер">
+          <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a66/412_2150_1/a66eb2391dbe225ebf3a352249d320b3.jpg">
+           <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a66/412_2150_1/a66eb2391dbe225ebf3a352249d320b3.jpg">
+            <img alt="Йоркширский терьер" class="article_pic" height="509" src="/upload/resize_cache/iblock/a66/412_2150_1/a66eb2391dbe225ebf3a352249d320b3.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Йоркширский терьер
+         </div>
+        </div>
+        <p>
+         Йоркширские терьеры ведут родословную от разных видов шотландских терьеров, а своим наименованием эта порода обязана местности, где была выведена, – графству Йоркшир. Терьеры из Шотландии, миниатюрные, но выносливые собаки с решительным характером и мощными челюстями, были завезены в Англию рабочими-шотландцами, прибывшими в Йоркшир в поисках заработков в середине XIX века.
+        </p>
+        <p>
+         Прежде чем превратиться из храброго и беспощадного охотника за грызунами в респектабельную изящную собачку-компаньона, йоркширский терьер прошел длинный путь генетических преобразований. Достоверно неизвестно, какие именно породы шотландских терьеров стали прародителями йорка, однако в их сегодняшнем облике отчетливо видны черты клайдесдейл-терьера, пейсли-терьера, скай-терьера. Предположительно в числе основателей породы были также уотерсайдские терьеры, популярные у йоркширских крестьян собаки – охотники на лис, барсуков и мелких грызунов. Некоторые кинологи предполагают, что на конечном этапе формирования породы в скрещивании участвовали
+         <a class="ph" href="/dog/maltiyskaya-bolonka/">
+          мальтийские болонки
+         </a>
+         , которым йорки якобы обязаны своей шелковистой шерсткой.
+        </p>
+        <p>
+         На выставках собак в Великобритании йорки начали демонстрироваться в 1861 году сначала под именем «Rough and Broken-coated», «Broken-haired Scotch». В 1874 г. новая порода получила официальное название – йоркширский терьер. В 1886 году «Кеннел-клуб» (английских клуб собаководов) внес йорка в племенную книгу в качестве самостоятельной породы. В 1898 г. заводчиками были приняты ее стандарты, не изменившиеся и сегодня.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок йоркширского терьера" data-fancybox="gallery" href="/upload/iblock/98e/98ededafaec9f9ddabe50e9a10b7c08d.jpg" title="Щенок йоркширского терьера">
+          <div class="lazy-load" data-alt="Щенок йоркширского терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/98e/412_2150_1/98ededafaec9f9ddabe50e9a10b7c08d.jpg">
+           <noscript data-alt="Щенок йоркширского терьера" data-class="article_pic" data-original="/upload/resize_cache/iblock/98e/412_2150_1/98ededafaec9f9ddabe50e9a10b7c08d.jpg">
+            <img alt="Щенок йоркширского терьера" class="article_pic" height="499" src="/upload/resize_cache/iblock/98e/412_2150_1/98ededafaec9f9ddabe50e9a10b7c08d.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок йоркширского терьера
+         </div>
+        </div>
+        <p>
+         На Северо-Американский континент эта порода начала проникать в начале 70-х годов позапрошлого столетия. В Американском кинологическом клубе (АКС) первый йоркширский терьер был зарегистрирован в 1885 году. К слову, спустя 100 лет йорк сам стал прародителем новой, очень редкой породы – The Biewer Terrier, которая сначала называлась Biewer Yorkshire Terrier.
+        </p>
+        <p>
+         Слава об этих милых энергичных собачках, обладающих веселым нравом, достигла своего расцвета в викторианскую эпоху. Подражая королеве Виктории, обожавшей собак, дамы из аристократических кругов Британии и Нового Света повсюду носили своих питомцев, наряжая их и балуя, как любимых чад.
+        </p>
+        <p>
+         Считается, что в России первый йоркширский терьер появился в 1971 году. Он был преподнесен в подарок балерине Ольге Лепешинской. Первый питомник по разведению йорков появился в 1991 году в Мытищах.
+        </p>
+        <p>
+         И в нашем столетии йоркширские терьеры остаются в мейнстриме, входя в десятку популярнейших в мире пород. Три года подряд, с 2006 по 2008 гг., в рейтинге АКС они удерживались на почетном 2 месте.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ca7/ca7b551d098773fcfd4c72d637ad481f.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ca7/512_342_2/ca7b551d098773fcfd4c72d637ad481f.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ca7/512_342_2/ca7b551d098773fcfd4c72d637ad481f.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/ca7/512_342_2/ca7b551d098773fcfd4c72d637ad481f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/9d3/9d351bd6e19c1f7f180ed4939e6bc412.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9d3/512_342_2/9d351bd6e19c1f7f180ed4939e6bc412.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/9d3/512_342_2/9d351bd6e19c1f7f180ed4939e6bc412.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/9d3/512_342_2/9d351bd6e19c1f7f180ed4939e6bc412.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2>
+         Видео: Йоркширский терьер
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="uj0cVkiOiek">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Внешность йоркширского терьера
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/759/759ba20969686764b74906b764dbfef7.jpg" title="">
+          <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/759/412_2150_1/759ba20969686764b74906b764dbfef7.jpg">
+           <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/759/412_2150_1/759ba20969686764b74906b764dbfef7.jpg">
+            <img alt="Йоркширский терьер" class="article_pic" height="617" src="/upload/resize_cache/iblock/759/412_2150_1/759ba20969686764b74906b764dbfef7.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Эта миниатюрная собака довольно крепкая и осанистая. Ее рост от пола до холки – от 15,24 до 23 см. Стандартный вес – от 1,81 до 3,17 кг (не более 3 кг для выставочных экземпляров).
+        </p>
+        <p>
+         Шерсть щенков окрашена в черно-коричневые цвета, которые могут быть скомбинированы по-разному. По мере взросления (обычно в возрасте 5-6 месяцев) черный цвет постепенно начинает приобретать синеватые оттенки, а коричневый – светлеет. К полутора годам шерсть йоркширского терьера от загривка до основания хвоста уже имеет темный синевато-стальной цвет, а морда, грудь и лапы окрашены в насыщенный золотисто-палевый.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Йоркширский терьер сложен гармонично, его туловище имеет пропорциональное строение. Он достаточно мускулист и одновременно элегантен. Спина собаки довольно короткая, горизонтальная. Высота в холке соответствует высоте крупа. Осанка йорка горделивая, иногда эта кроха выглядит умилительно важно.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Голова у собаки маленькая, с плоским сводом, мордочка слегка вытянута.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза у йорка средней величины, блестящие, выражающие любопытство и выдающие сообразительность.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мордочка йорка" data-fancybox="gallery" href="/upload/iblock/21d/21d578f63a11ce00897aa88e49341bc8.jpg" title="Мордочка йорка">
+          <div class="lazy-load" data-alt="Мордочка йорка" data-class="article_pic" data-original="/upload/resize_cache/iblock/21d/412_2150_1/21d578f63a11ce00897aa88e49341bc8.jpg">
+           <noscript data-alt="Мордочка йорка" data-class="article_pic" data-original="/upload/resize_cache/iblock/21d/412_2150_1/21d578f63a11ce00897aa88e49341bc8.jpg">
+            <img alt="Мордочка йорка" class="article_pic" height="619" src="/upload/resize_cache/iblock/21d/412_2150_1/21d578f63a11ce00897aa88e49341bc8.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мордочка йорка
+         </div>
+        </div>
+        <p>
+         Уши миниатюрные, V-образные, стоячие, расположены не слишком далеко друг от друга, покрыты мягкой короткой шерсткой. Цвет шерсти – светло-золотистый.
+        </p>
+        <h3>
+         Зубы
+        </h3>
+        <p>
+         Для йоркширского терьера характерен ножницеобразный прикус: верхние клыки чуть прикрывают нижние, а резцы нижней челюсти вплотную прилегают к задней стороне верхней, образовывая своеобразный замок.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Передние лапы йорков должны быть стройными, прямыми, без выпирания локтевых костей ни внутрь, ни наружу. Задние конечности, если смотреть на собаку сзади, должны выглядеть прямыми, при виде сбоку заметен небольшой изгиб. Когти на лапах – черные.
+        </p>
+        <p>
+         Прибылые пальцы (dewclaus) на задних лапах принято удалять, на передних – по желанию хозяев.
+        </p>
+        <h3>
+         Движение
+        </h3>
+        <p>
+         В движении йоркширского терьера ощущается энергичность, свобода. Скованность собаке не присуща.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвост традиционно купируется до средней длины. Само купирование не обязательно. Хвост густо покрыт шерстью, цвет которой более темный и насыщенный, чем та, что укрывает корпус.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Гордость йоркширского терьера – его тончайшая, блестящая, шелковистая, совершенно прямая шерсть, которую часто называют волосами. В классическом варианте она должна быть разделена от основания черепа до кончика хвоста и ниспадать совершенно равномерно и прямо по обе стороны тела, доходя до пола. Чтобы такой красавец или красавица всегда выглядели безукоризненно, потребуется ежедневно уделять им немалое количество времени. Это имеет смысл, если йорк является участником выставок, героем телепередач или его приглашают на фотосессии. Впрочем, среди владельцев таких «super star» много людей, которые просто беззаветно преданы этой породе собак.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Йоркширский терьер после груминга" data-fancybox="gallery" href="/upload/iblock/8cc/8cc640283734b3ffd7c8699f75fe2c20.jpg" title="Йоркширский терьер после груминга">
+          <div class="lazy-load" data-alt="Йоркширский терьер после груминга" data-class="article_pic" data-original="/upload/resize_cache/iblock/8cc/412_2150_1/8cc640283734b3ffd7c8699f75fe2c20.jpg">
+           <noscript data-alt="Йоркширский терьер после груминга" data-class="article_pic" data-original="/upload/resize_cache/iblock/8cc/412_2150_1/8cc640283734b3ffd7c8699f75fe2c20.jpg">
+            <img alt="Йоркширский терьер после груминга" class="article_pic" height="274" src="/upload/resize_cache/iblock/8cc/412_2150_1/8cc640283734b3ffd7c8699f75fe2c20.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Йоркширский терьер после груминга
+         </div>
+        </div>
+        <p>
+         Большинство хозяев йоркширских терьеров предпочитает их стричь. Существует несколько десятков моделей стрижки: от простых до невероятно изысканных. Процедуры проходят в груминг-салонах или на дому с приглашением мастера. Иногда коротко стриженные йоркширские терьеры производят фурор не меньший, чем их длинноволосые сородичи, похожие на аристократов.
+        </p>
+        <p>
+         Время от времени в природе йоркширского терьера случается генетический прыжок. Это называется «геном возврата» или просто «возвратом». В этом редком случае шерсть вашего черно-коричневого питомца не станет, как положено, синевато-золотистой. Черный цвет таковым и останется, без всякого намека на синий, а коричневый превратится в золотисто-красный. Такого йорка называют Red Legged Yorkies, дословно – красноногий йоркширский терьер.
+        </p>
+        <h2>
+         Фото йоркширского терьера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ee7/ee7d20cd548772068c00984dcac70872.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ee7/380_264_2/ee7d20cd548772068c00984dcac70872.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ee7/380_264_2/ee7d20cd548772068c00984dcac70872.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/ee7/380_264_2/ee7d20cd548772068c00984dcac70872.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/8fd/8fdfe880a050dbb36f441b92fc114522.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8fd/380_264_2/8fdfe880a050dbb36f441b92fc114522.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/8fd/380_264_2/8fdfe880a050dbb36f441b92fc114522.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/8fd/380_264_2/8fdfe880a050dbb36f441b92fc114522.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/683/683aba502251ddc76f8089e2e5e71ac1.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/683/380_264_2/683aba502251ddc76f8089e2e5e71ac1.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/683/380_264_2/683aba502251ddc76f8089e2e5e71ac1.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/683/380_264_2/683aba502251ddc76f8089e2e5e71ac1.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/2f4/2f440475d1337697573630719617ff24.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/2f4/380_264_2/2f440475d1337697573630719617ff24.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/2f4/380_264_2/2f440475d1337697573630719617ff24.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/2f4/380_264_2/2f440475d1337697573630719617ff24.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/720/72075e6d1f215b1bc82e4efba213682b.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/720/380_264_2/72075e6d1f215b1bc82e4efba213682b.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/720/380_264_2/72075e6d1f215b1bc82e4efba213682b.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/720/380_264_2/72075e6d1f215b1bc82e4efba213682b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/13c/13c924d316256165fcb12c490ee7bcaf.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/13c/380_264_2/13c924d316256165fcb12c490ee7bcaf.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/13c/380_264_2/13c924d316256165fcb12c490ee7bcaf.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/13c/380_264_2/13c924d316256165fcb12c490ee7bcaf.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c00/c00c8db8c47373aec4f00ce51d743a51.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c00/380_264_2/c00c8db8c47373aec4f00ce51d743a51.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/c00/380_264_2/c00c8db8c47373aec4f00ce51d743a51.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/c00/380_264_2/c00c8db8c47373aec4f00ce51d743a51.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a3c/a3c646470589f749576bf53b867cab72.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a3c/380_264_2/a3c646470589f749576bf53b867cab72.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a3c/380_264_2/a3c646470589f749576bf53b867cab72.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/a3c/380_264_2/a3c646470589f749576bf53b867cab72.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/32b/32b021a58ce2340f1a849cd9fc4083fb.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/32b/380_264_2/32b021a58ce2340f1a849cd9fc4083fb.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/32b/380_264_2/32b021a58ce2340f1a849cd9fc4083fb.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/32b/380_264_2/32b021a58ce2340f1a849cd9fc4083fb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер йоркширского терьера
+        </h2>
+        <p>
+         Йоркширские терьеры считают себя хозяевами дома, испытывая при этом самые нежные чувства к своему владельцу и нуждаясь в его внимании. Как и все терьеры, они весьма энергичны, выносливы, обладают хорошей реакцией. Йорки – весьма отважные псы, без раздумий готовые встать на защиту своего дома и хозяина. Они смышленые, хорошо поддаются дрессировке.
+        </p>
+        <p>
+         Походка йоркширского терьера выражает уверенность в себе и даже некоторую самонадеянность. Гуляя без поводка, на воле, он с любопытством исследует мир, любит все тщательно обнюхивать, а к незнакомым звукам прислушивается с видимой тревожностью. Несмотря на показную независимость, йорки стараются держать своего хозяина в поле зрения, и если не обнаруживают его, беспокоятся.
+        </p>
+        <p>
+         Эти милые псы весьма доброжелательны и легко находят «общий язык» с другими животными, проживающими в доме. В общении с чужаками проявляются индивидуальные черты и особенности воспитания каждого йоркширского терьера: некоторые готовы облаять любого незнакомца, другие – чуть ли не «расцеловать» подбежавшую к нему собаку, особенно сородича.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Йоркширский терьер" data-fancybox="gallery" href="/upload/iblock/87c/87c87ed33e0fa44a981d94550f97bd3c.jpg" title="Йоркширский терьер">
+          <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/87c/1024_2150_1/87c87ed33e0fa44a981d94550f97bd3c.jpg">
+           <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/87c/1024_2150_1/87c87ed33e0fa44a981d94550f97bd3c.jpg">
+            <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/87c/1024_2150_1/87c87ed33e0fa44a981d94550f97bd3c.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Йоркширский терьер
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Интеллект у йоркширского терьера выше среднего, и обучить его «хорошему тону» несложно. Воспитывать вашего питомца нужно с детства, и в первую очередь его нужно социализировать. Приучать йорка к домашним шумам следует постепенно: старайтесь сначала говорить при нем на пониженных тонах, не включайте громко телевизор или приемник, тем более, не делайте это одновременно с работающей стиральной машиной или пылесосом.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Дрессировка йорка" data-fancybox="gallery" href="/upload/iblock/dc8/dc8adaa3b089fe5c083abab47c8e8f5d.jpg" title="Дрессировка йорка">
+          <div class="lazy-load" data-alt="Дрессировка йорка" data-class="article_pic" data-original="/upload/resize_cache/iblock/dc8/412_2150_1/dc8adaa3b089fe5c083abab47c8e8f5d.jpg">
+           <noscript data-alt="Дрессировка йорка" data-class="article_pic" data-original="/upload/resize_cache/iblock/dc8/412_2150_1/dc8adaa3b089fe5c083abab47c8e8f5d.jpg">
+            <img alt="Дрессировка йорка" class="article_pic" height="274" src="/upload/resize_cache/iblock/dc8/412_2150_1/dc8adaa3b089fe5c083abab47c8e8f5d.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Дрессировка йорка
+         </div>
+        </div>
+        <p>
+         Не набрасывайтесь на питомца сразу с объятиями и поцелуями – к ласкам он также должен привыкать постепенно. Когда пес освоится в вашей семье и доме, его уже можно будет знакомить с другими людьми, вывозить в незнакомые места, постепенно расширяя его кругозор. Если все делать шаг за шагом, не давая щенку поводов для беспокойства, он вырастет уверенной в себе, доброжелательной и уравновешенной собакой, не испытывающей застенчивости и робости даже при встрече с внушительных размеров соплеменником.
+        </p>
+        <p>
+         Некоторые сложности в приучении йорка к командам и порядку возникают из-за его упрямого, независимого характера и неусидчивости, поэтому дрессировка должна быть непродолжительной, а за успехи пса нужно поощрять. Выберите для похвалы определенное слово или фразу, которое вы всегда будете использовать. Наготове должны быть и поощрительные лакомства.
+        </p>
+        <p>
+         Забавам йоркширских терьеров специально обучать не нужно, иногда они сами придумывают сюжеты для игр. А вот умение этого пса превратить в игрушку любой домашний предмет следует контролировать и пресекать его претензии на неподходящие для этой цели вещи.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Ребенок с йоркширским терьером" data-fancybox="gallery" href="/upload/iblock/895/8951d0ed4c07b6937d50734b634e8d59.jpg" title="Ребенок с йоркширским терьером">
+          <div class="lazy-load" data-alt="Ребенок с йоркширским терьером" data-class="article_pic" data-original="/upload/resize_cache/iblock/895/412_2150_1/8951d0ed4c07b6937d50734b634e8d59.jpg">
+           <noscript data-alt="Ребенок с йоркширским терьером" data-class="article_pic" data-original="/upload/resize_cache/iblock/895/412_2150_1/8951d0ed4c07b6937d50734b634e8d59.jpg">
+            <img alt="Ребенок с йоркширским терьером" class="article_pic" height="617" src="/upload/resize_cache/iblock/895/412_2150_1/8951d0ed4c07b6937d50734b634e8d59.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Ребенок с йоркширским терьером
+         </div>
+        </div>
+        <p>
+         Если собака шкодит: грызет тапочки, обои, занимается популярным среди терьеров делом – копанием, где только придется, – покаранием может быть только слово «фу» и суровый тон, физическое наказание неприемлемо. Свое недовольство выражайте только в том случае, если застанете пса на месте преступления, иначе он не поймет, что, собственно, вы от него хотите.
+        </p>
+        <p>
+         Для йоркширского терьера желательно разработать ежедневный график. В одно и то же время кормите его, выгуливайте. Выделите определенные часы для игр, ухода за ним, сна. Йорк не станет возражать против режима. Напротив, это позволит ему чувствовать себя в безопасности и с удовольствием ожидать очередного проявления внимания к собственной персоне. Йоркширского терьера достаточно легко приучить к домашнему туалету, что удобно для пожилых людей, которым сложно несколько раз в день выгуливать собаку.
+        </p>
+        <p>
+         Как каждая маленькая собачка, йоркширские терьеры испытывают панический страх перед трафиком, который у них выражается в истерическом лае и суетливых перебежках. Это создает проблемы во время прогулок или поездки на автомобиле, но вы можете помочь ему преодолеть подобное состояние. Выберитесь с собакой поздним вечером на прогулку вдоль тротуара, когда количество автомобилей минимально. При приближении машины крепко держите поводок, уменьшив по возможности его длину, уверенным и спокойным голосом заведите со свои питомцем «разговор», отвлекая его от шума. Продолжайте неспеша идти в том же темпе, как будто ничего не происходит. В тот раз, когда собака не проявит ярко выраженной суеты при появлении автомобиля, угостите ее припасенным гостинцем. Через месяц-два вы сможете спокойно прогуливаться с вашим йорком в любом оживленном шумном месте. К слову, в самом автомобиле этих хрупких пассажиров лучше возить на специальном съемном собачьем сиденье.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Йорк отдыхает на подушке" data-fancybox="gallery" href="/upload/iblock/a98/a98438dd09d42e266763c6d7a72bed74.jpg" title="Йорк отдыхает на подушке">
+           <div class="lazy-load" data-alt="Йорк отдыхает на подушке" data-class="article_pic" data-original="/upload/resize_cache/iblock/a98/512_342_2/a98438dd09d42e266763c6d7a72bed74.jpg">
+            <noscript data-alt="Йорк отдыхает на подушке" data-class="article_pic" data-original="/upload/resize_cache/iblock/a98/512_342_2/a98438dd09d42e266763c6d7a72bed74.jpg">
+             <img alt="Йорк отдыхает на подушке" class="article_pic" src="/upload/resize_cache/iblock/a98/512_342_2/a98438dd09d42e266763c6d7a72bed74.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Йорк отдыхает на подушке
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Два друга" data-fancybox="gallery" href="/upload/iblock/4b1/4b190636dfc5254ab07e3bdf32b1c988.jpg" title="Два друга">
+           <div class="lazy-load" data-alt="Два друга" data-class="article_pic" data-original="/upload/resize_cache/iblock/4b1/512_342_2/4b190636dfc5254ab07e3bdf32b1c988.jpg">
+            <noscript data-alt="Два друга" data-class="article_pic" data-original="/upload/resize_cache/iblock/4b1/512_342_2/4b190636dfc5254ab07e3bdf32b1c988.jpg">
+             <img alt="Два друга" class="article_pic" src="/upload/resize_cache/iblock/4b1/512_342_2/4b190636dfc5254ab07e3bdf32b1c988.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Два друга
+          </div>
+         </div>
+        </div>
+        <h2 id="gl5">
+         Уход и содержание
+        </h2>
+        <p>
+         Как только вы принесете щенка йоркширского терьера в дом, сразу обустройте ему места для еды и туалета. Они должны быть постоянными, иначе песик начнет нервничать. Выберите ему теплую зону в комнате, и разместите там небольшой манеж с подстилкой и импровизированную уютную кроватку.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Йоркширский терьер и кот" data-fancybox="gallery" href="/upload/iblock/90d/90d7fb2683ddf99346c5f2eb6da66578.jpg" title="Йоркширский терьер и кот">
+          <div class="lazy-load" data-alt="Йоркширский терьер и кот" data-class="article_pic" data-original="/upload/resize_cache/iblock/90d/412_2150_1/90d7fb2683ddf99346c5f2eb6da66578.jpg">
+           <noscript data-alt="Йоркширский терьер и кот" data-class="article_pic" data-original="/upload/resize_cache/iblock/90d/412_2150_1/90d7fb2683ddf99346c5f2eb6da66578.jpg">
+            <img alt="Йоркширский терьер и кот" class="article_pic" height="392" src="/upload/resize_cache/iblock/90d/412_2150_1/90d7fb2683ddf99346c5f2eb6da66578.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Йоркширский терьер и кот
+         </div>
+        </div>
+        <p>
+         Щенка нужно обязательно вакцинировать. Первые прививки делаются в возрасте около 2-х месяцев. Прогулки можно совершать только после того, как сделаны все необходимые прививки. На первых порах щенка желательно выносить на улицу 1-2 раза в день в теплую, но не жаркую погоду на 10-15 минут. Увеличивать количество выгулов и времени на воздухе следует постепенно. Взрослую собаку желательно выводить на прогулку не менее 3 раз в день на полчаса.
+        </p>
+        <p>
+         Йоркширские терьеры, живущие в загородных домах, проводят на природе, конечно, гораздо больше времени, и обычно сами осознают, когда им пора отдохнуть. Но если вы заметите, что ваш питомец чересчур разыгрался и перевозбудился, отнесите его в помещение, дайте воду комнатной температуры и постарайтесь ненавязчиво, с помощью ласки, завлечь собаку в зону ее отдыха.
+        </p>
+        <p>
+         Йоркширские терьеры нуждаются в регулярной стрижке когтей, промывании глаз, чистке зубов, ушей и купании. Ни одна из этих процедур не обходится без их капризов, так что вам понадобятся настойчивость и уверенность в собственных действиях.
+        </p>
+        <p>
+         Коготки собаки следует стричь каждые 2-3 месяца. Лучше это делать после купания. Используйте качественные ножницы, предназначенные специально для этой процедуры. У вас всегда под рукой должен быть кровоостанавливающий карандаш или нитрат серебра. Если вы случайно пораните своего питомца, они помогут заживить ранку. Тем, кто не уверен в своем профессионализме, лучше обратиться в груминг-салон. Там все сделают качественно и бережно.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мытье йорка" data-fancybox="gallery" href="/upload/iblock/cd9/cd93f65e3f279691ba86fdc5ee152a7e.jpg" title="Мытье йорка">
+          <div class="lazy-load" data-alt="Мытье йорка" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd9/412_2150_1/cd93f65e3f279691ba86fdc5ee152a7e.jpg">
+           <noscript data-alt="Мытье йорка" data-class="article_pic" data-original="/upload/resize_cache/iblock/cd9/412_2150_1/cd93f65e3f279691ba86fdc5ee152a7e.jpg">
+            <img alt="Мытье йорка" class="article_pic" height="330" src="/upload/resize_cache/iblock/cd9/412_2150_1/cd93f65e3f279691ba86fdc5ee152a7e.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мытье йорка
+         </div>
+        </div>
+        <p>
+         Утром и вечером уголки глаз собаки очищайте влажной салфеткой или специальной ватной палочкой. Она же подойдет и для чистки ушей. К чистке зубов вашего питомца отнеситесь со всей серьезностью, в противном случае у йорка образовывается зубной камень, развивается кариес. Это грозит тем, что к трем годам его зубки расшатаются, а к пяти он может остаться совершенно беззубым.
+        </p>
+        <p>
+         Йоркширскому терьеру необходим постоянный и тщательный уход за его необыкновенной шелковистой шерсткой. Купание, расчесывание, стрижка – эти процедуры йорки почему-то особенно не любят. Купать длинношерстых собак следует раз в неделю, короткошерстых – раз в 2-3 недели, расчесывать соответственно 2-3 раза в день и раз в два дня. Все это не очень сложно осуществить самостоятельно, но если за купанием следует фигурная стрижка, то можно поручить весь комплекс работ груминг-мастеру.
+        </p>
+        <p>
+         Перед тем, как искупать собаку, ее следует тщательно причесать, затем поместить в ванную с водой температуры 34-35 °С. На дно ванной положите резиновый коврик, чтобы пес не поскользнулся. Мыть питомца лучше специальным «собачьим» шампунем. После процедуры закутайте йорка в полотенце и отнесите в теплую комнату. Когда он чуть обсохнет, его снова следует расчесать и, вооружившись острыми ножницами, обрезать постоянно отрастающие волосы в области подушек и анального отверстия (для гигиены), аккуратно укоротить волосяной покров на острие ушей. Если ваш йоркширский терьер длинношерстый, распределите его расчесанные волосы пропорционально по обоим бокам и укоротите их кончики чуть выше уровня пола. Преимуществом йорков перед многими другими породами собак является тот факт, что они практически не линяют.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="О, печеньки" data-fancybox="gallery" href="/upload/iblock/f70/f70a5c86af91f0817291815c5cc89a02.jpg" title="О, печеньки">
+          <div class="lazy-load" data-alt="О, печеньки" data-class="article_pic" data-original="/upload/resize_cache/iblock/f70/412_2150_1/f70a5c86af91f0817291815c5cc89a02.jpg">
+           <noscript data-alt="О, печеньки" data-class="article_pic" data-original="/upload/resize_cache/iblock/f70/412_2150_1/f70a5c86af91f0817291815c5cc89a02.jpg">
+            <img alt="О, печеньки" class="article_pic" height="332" src="/upload/resize_cache/iblock/f70/412_2150_1/f70a5c86af91f0817291815c5cc89a02.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          О, печеньки
+         </div>
+        </div>
+        <p>
+         У йоркширского терьера собственное отношение к еде. Ему вполне свойственно не вылизывать до дна посуду с едой, как это делает большинство собак, а съесть ровно столько, сколько он считает нужным.
+        </p>
+        <p>
+         Йорка можно кормить домашней едой или покупать корм в специализированных магазинах. Домашняя пища должна включать в себя говядину и курятину (сырые, но ошпаренные кипятком), субпродукты, гречку, рис. Среди кисломолочных продуктов, а их йоркширские терьеры не очень-то и приветствуют, – рекомендуются кефир, творог, ряженка. Лакомством для этих собак являются овощи и фрукты, как в сыром, так и в отваренном виде.
+        </p>
+        <p>
+         Есть ряд продуктов, которые следует исключить из рациона йоркширского терьера. Среди них – жареные, жирные, копченые изделия, манная и геркулесовая каши, сдоба, колбаса, жирный сыр, сливочное масло, грибы, капуста, шоколад, цитрусовые, орехи.
+        </p>
+        <p>
+         Йорки частенько страдают отсутствием аппетита. Желание поесть у собаки может пропасть совершенно, если вы по какой-то причине резко изменили состав еды. Привычную пищу сразу не отменяйте, просто постепенно, небольшими порциями вытесняйте ее другими ингредиентами. Кормить йоркширского терьера лучше 2-3 раза в сутки, не считая символических лакомств, которыми его можно угостить за достойное поведение.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d19/d19b417e66da16102cd95f43ca92bd0f.jpg" title="">
+          <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/iblock/d19/d19b417e66da16102cd95f43ca92bd0f.jpg">
+           <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/iblock/d19/d19b417e66da16102cd95f43ca92bd0f.jpg">
+            <img alt="Йоркширский терьер" class="article_pic" src="/upload/iblock/d19/d19b417e66da16102cd95f43ca92bd0f.jpg"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <h2 id="gl6">
+         Здоровье и болезни йоркширского терьера
+        </h2>
+        <p>
+         Йоркширский терьер, как и любая другая порода собак, подвержен определенным заболеваниям – врожденным или приобретенным. К некоторым болезням у этих песиков есть предрасположенность. Так, уже в самом раннем возрасте (от рождения до 4-х месяцев) йорка может поджидать такой опаснейший и распространенный среди этой породы недуг, как гипогликемия – стремительное снижение сахара в крови. Ее симптомы – сонливость, дрожь, смутное поведение, судороги, слабость, снижение температуры тела. Щенок может впасть в кому. Как только вы заметите хотя бы один из таких симптомов, стабилизируйте состояние собаки, натерев десны щенка медом, и немедленно обращайтесь к ветеринару. Гипогликемия встречается и у взрослых собак, но гораздо реже.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/929/929273b3ae70f7eba35425d727c792f2.jpg" title="">
+          <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/929/412_2150_1/929273b3ae70f7eba35425d727c792f2.jpg">
+           <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/929/412_2150_1/929273b3ae70f7eba35425d727c792f2.jpg">
+            <img alt="Йоркширский терьер" class="article_pic" height="617" src="/upload/resize_cache/iblock/929/412_2150_1/929273b3ae70f7eba35425d727c792f2.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Йорки, как и все терьеры, предрасположены ко многим раковым заболеваниям (особенно раку крови, желудка). Исследования показали, что раком чаще всего заболевают суки старше 11 лет. В среднем йоркширские терьеры живут до 12-15 лет.
+        </p>
+        <p>
+         У этих крошечных собачек хрупкие кости, что увеличивает риск травмы шеи, бедра и колена. Генетически они также предрасположены к дисплазии сетчатки.
+        </p>
+        <p>
+         Еще одно неприятное заболевание – нейродермит, грозящий испортить роскошную шерсть вашего питомца. Заболевший пес непрерывно вылизывает себя, вследствие чего волосы начинают выпадать. Такое состояние может быть вызвано стрессом, нервозностью или крайней скукой. Для начала смените домашнюю обстановку, измените образ жизни собаки. В некоторых случаях ветеринар прописывает мелатонин.
+        </p>
+        <p>
+         Йорки легко перегреваются в жару, после чего плохо себя чувствуют. В холодную погоду им потребуется защита. В морозы их лучше нарядить в теплую одежку, которую можно приобрести в специализированных магазинах.
+        </p>
+        <p>
+         Владельцам йоркширских терьеров, относящихся к разряду «мини» (или «игрушка»), чей вес менее 1,8 кг, нужно быть готовым к тому, что они более болезненны, чем собаки стандартных размеров, так как у них ослаблена иммунная система. Срок жизни таких йорков – 7-9 лет.
+        </p>
+        <p>
+         Некоторых хозяев беспокоит, что их питомец слишком крупный. Это может быть связано как с широкой костью собаки, так и с ожирением, хотя последнее встречается редко. Если йоркширский терьер весит более 4,3 кг, лучше обратиться к ветеринару, чтобы он соотнес его вес и пропорции.
+        </p>
+        <p>
+         Если все-таки дело в ожирении, вашему йорку придется «сесть» на диету. Количество пищи нужно оставить тем же, но часть калорийных продуктов замените овощами (брокколи, морковью). Можно приобрести специальные корма с низким содержанием калорий. Все изменения в питании должны происходить постепенно. Одновременно нужно увеличить количество физических нагрузок. Например, если собака привыкла гулять 20 минут, увеличьте продолжительность моциона до получаса.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/26a/26ac7b409bc301fa4a6ee462d4cb218f.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/26a/512_342_2/26ac7b409bc301fa4a6ee462d4cb218f.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/26a/512_342_2/26ac7b409bc301fa4a6ee462d4cb218f.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/26a/512_342_2/26ac7b409bc301fa4a6ee462d4cb218f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6e9/6e9aa175a20ad623aa056af765d8cc1c.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/6e9/512_342_2/6e9aa175a20ad623aa056af765d8cc1c.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/6e9/512_342_2/6e9aa175a20ad623aa056af765d8cc1c.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/6e9/512_342_2/6e9aa175a20ad623aa056af765d8cc1c.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Несмотря на то, что в Интернете нет недостатка объявлений о продаже йоркширских терьеров, выбирать щенков по фотографиям непредусмотрительно. Чтобы приобрести здорового жизнерадостного йорка с настоящей родословной нужно во всем удостовериться лично, отправившись непосредственно в питомник, к заводчику. Профессионального, ответственного заводчика сразу найти не так просто. Будет лучше, если его вам порекомендует ветеринар, которому вы доверяете, или приятели, уже пользовавшиеся его услугами. Познакомиться с заводчиком можно и на выставке собак.
+        </p>
+        <p>
+         Приехав в питомник, составьте в первую очередь представление о самом собаководе. Если перед вами человек, готовый подробно и со знанием дела ответить на любые ваши вопросы с нескрываемым энтузиазмом, в его речи чувствуется неподдельная любовь к животным, он сам интересуется, в каких условиях будет жить его питомец, – можете смело приступать к выбору щенка.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ef1/ef1f7b911307fab77908e17d25d91135.jpg" title="">
+          <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ef1/412_2150_1/ef1f7b911307fab77908e17d25d91135.jpg">
+           <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ef1/412_2150_1/ef1f7b911307fab77908e17d25d91135.jpg">
+            <img alt="Йоркширский терьер" class="article_pic" height="273" src="/upload/resize_cache/iblock/ef1/412_2150_1/ef1f7b911307fab77908e17d25d91135.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+        </div>
+        <p>
+         Собственно щенки в возрасте 2,5-3 месяцев мало чем отличаются друг от друга, так что хорошенько рассмотрите его маму, которая должна быть рядом. Если она вызвала чувство прекрасного, посмотрите на фотографию папы. У обоих родителей должны быть документы, выданные Российской Кинологической Федерацией, где подтверждается их родословная, а также представлено не менее трех поколений предков.
+        </p>
+        <p>
+         Если с документами все в порядке, понаблюдайте за самими щенками йоркширского терьера. Вам нужен активный крепыш, проявляющий интерес ко всему, что его окружает. Двигаться он должен уверенно, при этом его спина должна оставаться прямой. Носу положено быть черным, холодным и влажным (теплым, если он только проснулся), деснам – сочно-розовыми. Проверьте животик – в области пупка не должно быть вздутий. Шерсти следует быть прямой, черной с коричнево-золотистыми отметинами, в ее фактуре уже должна ощущаться шелковистость.
+        </p>
+        <p>
+         После осмотра своего избранника, вам останется только удостовериться, что у щенка есть клеймо. Как правило, оно находится в области паха либо на внутренней поверхности уха и состоит из букв и шести цифр, обозначающих, в каком питомнике он был рожден и под каким номером зарегистрирован в клубе. Номер клейма должен значиться в документах собаки. Также у щенка должен быть ветеринарный паспорт с отметками о комплексе прививок, которые положено иметь к его возрасту.
+        </p>
+        <p>
+         Особенно внимательными нужно быть при покупке мини-йорков. Больше всего махинаций происходит именно с этими щенками. Под видом мини-йорка часто продают просто нездоровых маленьких собачек, а некоторых щенков недобросовестные заводчики специально недокармливают. Таких малышей можно покупать только у собаководов, в репутации которых вы абсолютно уверены.
+        </p>
+        <h2>
+         Фото щенков йоркширского терьера
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ab7/ab78cd853b068d8ab6b8e67c723825a2.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ab7/380_264_2/ab78cd853b068d8ab6b8e67c723825a2.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/ab7/380_264_2/ab78cd853b068d8ab6b8e67c723825a2.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/ab7/380_264_2/ab78cd853b068d8ab6b8e67c723825a2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a82/a828debd328714b82832e96efbfed86a.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a82/380_264_2/a828debd328714b82832e96efbfed86a.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/a82/380_264_2/a828debd328714b82832e96efbfed86a.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/a82/380_264_2/a828debd328714b82832e96efbfed86a.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/640/6406b50687b889a7eac308b27d6af9d4.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/640/380_264_2/6406b50687b889a7eac308b27d6af9d4.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/640/380_264_2/6406b50687b889a7eac308b27d6af9d4.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/640/380_264_2/6406b50687b889a7eac308b27d6af9d4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/679/679ce85055bf332a53a634eea0f48b04.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/679/380_264_2/679ce85055bf332a53a634eea0f48b04.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/679/380_264_2/679ce85055bf332a53a634eea0f48b04.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/679/380_264_2/679ce85055bf332a53a634eea0f48b04.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b86/b86a186ba823568116b4cde0d176e9b5.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b86/380_264_2/b86a186ba823568116b4cde0d176e9b5.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/b86/380_264_2/b86a186ba823568116b4cde0d176e9b5.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/b86/380_264_2/b86a186ba823568116b4cde0d176e9b5.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6c0/6c03004cc4dbc419d8bc1cc0a88493b5.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/6c0/380_264_2/6c03004cc4dbc419d8bc1cc0a88493b5.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/6c0/380_264_2/6c03004cc4dbc419d8bc1cc0a88493b5.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/6c0/380_264_2/6c03004cc4dbc419d8bc1cc0a88493b5.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f9b/f9bf6692d73d03162e28f32d4021cb97.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f9b/380_264_2/f9bf6692d73d03162e28f32d4021cb97.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/f9b/380_264_2/f9bf6692d73d03162e28f32d4021cb97.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/f9b/380_264_2/f9bf6692d73d03162e28f32d4021cb97.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/cb7/cb74c1b6f5acd18254ac9cf6594f5ce6.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/cb7/380_264_2/cb74c1b6f5acd18254ac9cf6594f5ce6.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/cb7/380_264_2/cb74c1b6f5acd18254ac9cf6594f5ce6.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/cb7/380_264_2/cb74c1b6f5acd18254ac9cf6594f5ce6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/49b/49b62a90f908f50b405b8f19b356df9b.jpg" title="">
+           <div class="lazy-load" data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/49b/380_264_2/49b62a90f908f50b405b8f19b356df9b.jpg">
+            <noscript data-alt="Йоркширский терьер" data-class="article_pic" data-original="/upload/resize_cache/iblock/49b/380_264_2/49b62a90f908f50b405b8f19b356df9b.jpg">
+             <img alt="Йоркширский терьер" class="article_pic" src="/upload/resize_cache/iblock/49b/380_264_2/49b62a90f908f50b405b8f19b356df9b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Сколько стоит йоркширский терьер
+        </h2>
+        <p>
+         Стоимость йоркширского терьера с родословной и всеми необходимыми документами в питомниках России – от 14 000 до 30 000 рублей. В разных регионах цены варьируются.
+        </p>
+        <p>
+         Щенок именитых родителей с чемпионскими титулами может обойтись вам и в 60 000 рублей.
+        </p>
+        <p>
+         Откликнувшись на предложение «купить йоркширского терьера недорого», вы сможете приобрести щенка за цену от 4 000 до 12 000 рублей, но является ли он настоящим йоркширским терьером, вы узнаете, лишь когда собака подрастет.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения йоркширского терьера на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/28088/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Наталья Н." data-original="/upload/main/7e9/qmds5o2q6pwspfajo962hbpefmfo3udu.jpg">
+            <noscript data-alt="Наталья Н." data-original="/upload/main/7e9/qmds5o2q6pwspfajo962hbpefmfo3udu.jpg">
+             <img alt="Наталья Н." src="/upload/main/7e9/qmds5o2q6pwspfajo962hbpefmfo3udu.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/kamni-v-mochevom-puzyre-5654/">
+           Камни в мочевом пузыре
+          </a>
+         </div>
+         <div class="forum-text">
+          Добрый день. Йорку 10 лет, образовались камни в мочевом пузыре, попадают в мочевой канал. Лечение не помогает. Есть кто удалял оперативно?
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/28088/">
+            Наталья Н.
+           </a>
+          </span>
+          <span class="vopros-date">
+           7 дней назад
+          </span>
+          <span class="vopros-smotr">
+           69 просмотров
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/28022/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Елизавета Челак" data-original="/upload/resize_cache/main/8ab/200_200_2/jhut8dsg39v0dfnwdm1g03g03303ser9.jpg">
+            <noscript data-alt="Елизавета Челак" data-original="/upload/resize_cache/main/8ab/200_200_2/jhut8dsg39v0dfnwdm1g03g03303ser9.jpg">
+             <img alt="Елизавета Челак" src="/upload/resize_cache/main/8ab/200_200_2/jhut8dsg39v0dfnwdm1g03g03303ser9.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/gryzyet-vse-igrushki-5617/">
+           Грызёт все игрушки
+          </a>
+         </div>
+         <div class="forum-text">
+          Здравствуйте, моему йорку уже 3,6 года - начал грызть все игрушки. И пластиковые, и силиконовые, даже те которые считаются крепкими. Про плюшевые или тряпочные - молчу. Их уже давно нет у нас. Просто очень страшно...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/28022/">
+            Елизавета Челак
+           </a>
+          </span>
+          <span class="vopros-date">
+           3 недели назад
+          </span>
+          <span class="vopros-smotr">
+           65 просмотров
+          </span>
+          <span class="vopros-otvet">
+           0 ответов
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27980/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Анастасия Артуровна" data-original="/upload/resize_cache/main/0c3/200_200_2/bhvd4rb18bpfevxckhy36yb5tivm618i.jpg">
+            <noscript data-alt="Анастасия Артуровна" data-original="/upload/resize_cache/main/0c3/200_200_2/bhvd4rb18bpfevxckhy36yb5tivm618i.jpg">
+             <img alt="Анастасия Артуровна" src="/upload/resize_cache/main/0c3/200_200_2/bhvd4rb18bpfevxckhy36yb5tivm618i.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/otravlenie-bornoy-kislotoy-5602/">
+           Отравление борной кислотой
+          </a>
+         </div>
+         <div class="forum-text">
+          собака Йорк, 3 месяца. Отравилась борной кислотой с яйцом, после чего её долго тошнило. После приема раствора воды с содой тошнить перестало, но слабость усилилась. Что делать? Ветеринарные клиники все закрыты
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27980/">
+            Анастасия Артуровна
+           </a>
+          </span>
+          <span class="vopros-date">
+           Месяц назад
+          </span>
+          <span class="vopros-smotr">
+           90 просмотров
+          </span>
+          <span class="vopros-otvet">
+           2 ответа
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="forum-prew">
+        <div class="forum-ava-block">
+         <a href="/u/27811/">
+          <div class="ava-med">
+           <div class="lazy-load" data-alt="Анна Пашкевич" data-original="/upload/resize_cache/main/c1a/200_200_2/2kzbfd9pm2yhfgho3bu9izo8cigqwi2b.jpg">
+            <noscript data-alt="Анна Пашкевич" data-original="/upload/resize_cache/main/c1a/200_200_2/2kzbfd9pm2yhfgho3bu9izo8cigqwi2b.jpg">
+             <img alt="Анна Пашкевич" src="/upload/resize_cache/main/c1a/200_200_2/2kzbfd9pm2yhfgho3bu9izo8cigqwi2b.jpg"/>
+            </noscript>
+           </div>
+          </div>
+         </a>
+        </div>
+        <div class="forum-text-block">
+         <div class="forum-href">
+          <a class="fh" href="/f/pro-zdorove-5532/">
+           Про здоровье
+          </a>
+         </div>
+         <div class="forum-text">
+          Добрый день, у нас такая ситуация 13 декабря была 2 вязка. На сегодняшний день уже 38 день. Такое ощущение, что собака. Не беременна никаких признаков, нету, кроме как того, что она отказывается от еды. Собаку вязали...
+         </div>
+         <span class="vopros-stat">
+          <span class="ava-med-name">
+           <a class="fha" href="/u/27811/">
+            Анна Пашкевич
+           </a>
+          </span>
+          <span class="vopros-date">
+           Месяц назад
+          </span>
+          <span class="vopros-smotr">
+           87 просмотров
+          </span>
+          <span class="vopros-otvet">
+           1 ответ
+          </span>
+         </span>
+        </div>
+       </div>
+       <a class="big-button" href="/dog/yorkshirskiy-terer/forum/">
+        Перейти на
+        форум йоркширского терьера
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Йоркширский терьер" src="/upload/iblock/305/3052ffceecb0392a4bd66c672ac78a71.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/yorkshirskiy-terer/">
+          Йоркширский терьер
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/yorkshirskiy-terer/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/yorkshirskiy-terer/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/yorkshirskiy-terer/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/yorkshirskiy-terer/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/yorkshirskiy-terer/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/yorkshirskiy-terer/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/pagl/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Пагль" data-original="/upload/resize_cache/iblock/27c/100_100_1/g03ybu975jvkzcb5520wd1if364byzaa.jpg">
+          <noscript data-alt="Пагль" data-original="/upload/resize_cache/iblock/27c/100_100_1/g03ybu975jvkzcb5520wd1if364byzaa.jpg">
+           <img alt="Пагль" src="/upload/resize_cache/iblock/27c/100_100_1/g03ybu975jvkzcb5520wd1if364byzaa.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Пагль
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/russkiy-okhotnichiy-spaniel/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Русский охотничий спаниель" data-original="/upload/resize_cache/iblock/5e4/100_100_1/5e4114477c547d94166e4bca7e364af6.jpg">
+          <noscript data-alt="Русский охотничий спаниель" data-original="/upload/resize_cache/iblock/5e4/100_100_1/5e4114477c547d94166e4bca7e364af6.jpg">
+           <img alt="Русский охотничий спаниель" src="/upload/resize_cache/iblock/5e4/100_100_1/5e4114477c547d94166e4bca7e364af6.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Русский охотничий спаниель
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/alyaskinskiy-malamut/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Аляскинский маламут" data-original="/upload/resize_cache/iblock/6d0/100_100_1/6d0c636ec1391c4a92b1fa82b7fb9be6.jpg">
+          <noscript data-alt="Аляскинский маламут" data-original="/upload/resize_cache/iblock/6d0/100_100_1/6d0c636ec1391c4a92b1fa82b7fb9be6.jpg">
+           <img alt="Аляскинский маламут" src="/upload/resize_cache/iblock/6d0/100_100_1/6d0c636ec1391c4a92b1fa82b7fb9be6.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Аляскинский маламут
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/vengerskaya-vyzhla/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Венгерская выжла" data-original="/upload/resize_cache/iblock/8b9/100_100_1/8b980d5f59e40d4d0236188483a97269.jpg">
+          <noscript data-alt="Венгерская выжла" data-original="/upload/resize_cache/iblock/8b9/100_100_1/8b980d5f59e40d4d0236188483a97269.jpg">
+           <img alt="Венгерская выжла" src="/upload/resize_cache/iblock/8b9/100_100_1/8b980d5f59e40d4d0236188483a97269.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Венгерская выжла
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fyorkshirskiy-terer%252F%253Fcheck_key%253Dbfc67c07b52261cd86bc70d25a7510fe%2526ANIMAL_CODE%253Dyorkshirskiy-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fyorkshirskiy-terer%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRnlvcmtzaGlyc2tpeS10ZXJlciUyRiUzRmNoZWNrX2tleSUzRGJmYzY3YzA3YjUyMjYxY2Q4NmJjNzBkMjVhNzUxMGZlJTI2QU5JTUFMX0NPREUlM0R5b3Jrc2hpcnNraXktdGVyZXIlMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGeW9ya3NoaXJza2l5LXRlcmVyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fyorkshirskiy-terer%252F%253Fcheck_key%253Dbfc67c07b52261cd86bc70d25a7510fe%2526ANIMAL_CODE%253Dyorkshirskiy-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fyorkshirskiy-terer%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fyorkshirskiy-terer%252F%253Fcheck_key%253Dbfc67c07b52261cd86bc70d25a7510fe%2526ANIMAL_CODE%253Dyorkshirskiy-terer%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fyorkshirskiy-terer%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "78.36.123.196"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--5f3392dd9b50b1f94fdca8d1deeb6db4-->

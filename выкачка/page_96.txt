@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'ed2043ef0565'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Коикерхондье, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Коикерхондье – голландская порода маленьких охотничьих собак бело-рыжего окраса, относящихся к группе спаниелей. Предположительно являются предками новошотландского ретривера." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/90e/3ty5oivp0j1loe7zt5edxlv68h6x9isk.jpg" property="og:image"/>
+     <title>
+      Коикерхондье: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/koikerkhonde/" property="og:url"/>
+     <meta content="Коикерхондье: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Коикерхондье – голландская порода маленьких охотничьих собак бело-рыжего окраса, относящихся к группе спаниелей. Предположительно являются предками новошотландского ретривера." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/koikerkhonde/" itemprop="url">
+         <span itemprop="title">
+          Коикерхондье
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Коикерхондье
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/koikerkhonde/">
+          Описание
+         </a>
+         <a href="/dog/koikerkhonde/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/koikerkhonde/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/koikerkhonde/photo/">
+          Фото
+         </a>
+         <a href="/dog/koikerkhonde/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/koikerkhonde/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Коикерхондье" src="/upload/iblock/b8f/etj7y5leh1qw03e0dl8vggckbq6tq89o.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/koikerkhonde/">
+           нидерландский койкерхондье
+          </a>
+          ,
+          <a href="/dog/koikerkhonde/">
+           коикер
+          </a>
+          ,
+          <a href="/dog/koikerkhonde/">
+           голландский спаниель
+          </a>
+         </span>
+         <p>
+          Коикерхондье – голландская порода маленьких охотничьих собак бело-рыжего окраса, относящихся к группе спаниелей. Предположительно являются предками новошотландского ретривера.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="15-year-old Ennie" data-fancybox="images" data-link="https://www.flickr.com/photos/kromi_karlie/24279621885/" data-type="image" data-username="KromiKarlie" href="/upload/uf/a81/8nqv5k2fnzfo6uh67m3j2k0vq1s1ohwk.jpg">
+            <img alt="Коикерхондье" src="/upload/resize_cache/uf/a81/293_293_2/8nqv5k2fnzfo6uh67m3j2k0vq1s1ohwk.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="" data-fancybox="images" data-link="https://www.instagram.com/p/DE3n-JuS9OD/?img_index=1" data-type="image" data-username="wanwan.trimming" href="/upload/uf/526/szo1e6fk6g455z13btnzhe5v1eqmolqu.jpg">
+            <img alt="Коикерхондье" src="/upload/resize_cache/uf/526/293_293_2/szo1e6fk6g455z13btnzhe5v1eqmolqu.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="I like = 1 boop to the snoot ❤️" data-fancybox="images" data-link="https://www.instagram.com/p/DDrC36GiD4m/" data-type="image" data-username="adventuresofmulderandscully" href="/upload/uf/974/oi3lopsqzcwucblohoux4tmlvanl0moc.jpg">
+            <img alt="Коикерхондье" src="/upload/resize_cache/uf/974/293_293_2/oi3lopsqzcwucblohoux4tmlvanl0moc.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/koikerkhonde/photo/">
+         Все
+            фото коикерхондье
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы коикерхондье
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Рабочая техника нидерландского коикерхондье
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Стандарт породы коикерхондье
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Характер коикерхондье
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Здоровье и болезни коикерхондье
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Цена нидерландского коикерхондье
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Коикерхондье
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Нидерланды
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         9-14 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         36-41 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         12-14 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         На родине, в Нидерландах, порода ценится за участие в сохранении природных угодий, поскольку ее представителей задействуют в мероприятиях по учету и кольцеванию дикой птицы.
+        </li>
+        <li>
+         Несмотря на достаточно живой темперамент, голландский спаниель легко приспосабливается к жизни в городской среде.
+        </li>
+        <li>
+         В зарубежных линиях разведения охотничьи качества в коикерах не культивируются. Как итог: порода постепенно превращается в компаньонскую.
+        </li>
+        <li>
+         Все коикерхондье отличаются недоверчивым отношением к посторонним. Собачья подозрительность распространяется не только на незнакомых людей, но и на впервые увиденных представителей фауны.
+        </li>
+        <li>
+         Специалисты рекомендуют задействовать природную подвижность и сообразительность голландских спаниелей в спортивных дисциплинах, где те показывают отличные результаты.
+        </li>
+        <li>
+         Название породы «коикерхондье» переводится с нидерландского как «собака для охотника на уток».
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Коикерхондье" data-original="/upload/iblock/90e/3ty5oivp0j1loe7zt5edxlv68h6x9isk.jpg">
+          <noscript data-alt="Коикерхондье" data-original="/upload/iblock/90e/3ty5oivp0j1loe7zt5edxlv68h6x9isk.jpg">
+           <img alt="Коикерхондье" src="/upload/iblock/90e/3ty5oivp0j1loe7zt5edxlv68h6x9isk.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Коикерхондье
+          </strong>
+          – веселый, внимательный и интеллектуальный компаньон для тех, кому надоели «диванные» песики и хочется активную собаку, которой не будет тесно в пределах отдельно взятой квартиры. Голландский спаниель станет отличным другом любому человеку, уважающему долгие прогулки, вылазки на природу и готовому к постоянному взаимодействию с питомцем. В ответ на это коикер обязательно ответит своими лучшими качествами – преданностью, позитивным настроем и желанием свернуть горы для обожаемого двуногого друга!
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Почти не слышно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошие (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Коикерхондье основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/koikerkhonde/razmeri-porodi/">
+         размеры коикерхондье
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы коикерхондье
+        </h2>
+        <p>
+         В Нидерландах коикерхондье разводятся достаточно давно. Документально возраст породы не подтвержден, но на полотнах голландских живописцев ее представители фигурируют уже с XVII столетия. Например, Ян Стен часто включал силуэты бело-рыжих собак в семейные портреты своих заказчиков. Есть изображения спаниелеподобных собак и на картинах Рембрандта.
+        </p>
+        <p class="legenda">
+         <strong>
+          Интересный факт:
+         </strong>
+         в нидерландской культуре существует легенда, что во время одного из сражений коикерхондье спасли жизнь Вильгельму Оранскому. Один из псов проник в палатку спящего короля и разбудил его, тем самым опередив преследовавших Оранского испанцев.
+        </p>
+        <p>
+         К началу XX века популярность охоты на уток, для которой выводилась порода, сошла на нет, а вместе с ней исчезли и сами голландские спаниели. Восстанавливать численность поголовья взялась нидерландская баронесса ван Харденбрук ван Аммерстол. Энтузиастка подошла к решению проблемы не самым традиционным способом. Она привлекла к поискам бродячего торговца, которому вручила прядь шерсти и фотографию коикерхондье, поручив найти в Нидерландах точно такую же собаку.
+        </p>
+        <p>
+         В 1942 году баронесса получила первый помет щенков от суки по кличке Томми, привезенной ей посыльным. Однако путь к регистрации оказался небыстрым. Для признания в коикерхондье самостоятельной породы племенную комиссию собирали трижды. И лишь в 1966 г. спаниели попали во временный реестр Голландского клуба. В 1971 году коикеров наконец внесли в племенные списки Нидерландов, стандартизировали и допустили к разведению.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Щенок коикерхондье" data-fancybox="gallery" href="/upload/iblock/b00/sth7el4ujfi9xkm7cg6ym2r7pqyabbix.jpg" title="Щенок коикерхондье">
+          <div class="lazy-load" data-alt="Щенок коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/b00/1024_2150_1/sth7el4ujfi9xkm7cg6ym2r7pqyabbix.jpg">
+           <noscript data-alt="Щенок коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/b00/1024_2150_1/sth7el4ujfi9xkm7cg6ym2r7pqyabbix.jpg">
+            <img alt="Щенок коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/b00/1024_2150_1/sth7el4ujfi9xkm7cg6ym2r7pqyabbix.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок коикерхондье
+         </div>
+        </div>
+        <h2>
+         Видео: Коикерхондье
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="2bJZdCKkXKg">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Рабочая техника нидерландского коикерхондье
+        </h2>
+        <p>
+         Особенность охоты с породой заключается в том, что ее представители работают в тесном сотрудничестве с подсадными утками. Такой метод требует от питомца особой сообразительности и сноровки, которой обладают редкие охотничьи собаки.
+        </p>
+        <p>
+         На саму дичь коикерхондье не охотится, подранков не носит и голосом не работает. Миссия собаки – считывать жесты охотника и загонять привлеченную подсадной уткой дичь в специальные ловушки. Ими служат заполненные водой и затянутые сеткой каналы, соединенные с водоемом, где обитают водоплавающие.
+        </p>
+        <p>
+         Сначала в канал бросают приманку, на которую клюет подсадная утка, а вслед за ней – и дикие сородичи. После того как птицы заплыли в импровизированную трубу, вдоль ее затянутых тростником стен (экранов) начинает прогуливаться коикерхондье. Собака вызывает любопытство у птиц, весело помахивая хвостом то появляясь, то исчезая из виду.
+        </p>
+        <p>
+         Утки плывут за лохматым охотником все дальше по каналу, где их вспугивает человек. Подсадные пернатые при этом поворачивают назад, а дикие – в панике уплывают вперед, к специальному отсеку-ловушке, которым заканчивается лабиринт. В итоге за птицами захлопывается дверца, и утки оказываются отрезанными от мира.
+        </p>
+        <h2 id="gl3">
+         Стандарт породы коикерхондье
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Голландский коикерхондье" data-fancybox="gallery" href="/upload/iblock/af9/yjzb31bhdbv4fmlmvln7gspdczla1xb6.jpg" title="Голландский коикерхондье">
+          <div class="lazy-load" data-alt="Голландский коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/af9/412_2150_1/yjzb31bhdbv4fmlmvln7gspdczla1xb6.jpg">
+           <noscript data-alt="Голландский коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/af9/412_2150_1/yjzb31bhdbv4fmlmvln7gspdczla1xb6.jpg">
+            <img alt="Голландский коикерхондье" class="article_pic" height="618" src="/upload/resize_cache/iblock/af9/412_2150_1/yjzb31bhdbv4fmlmvln7gspdczla1xb6.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Голландский коикерхондье
+         </div>
+        </div>
+        <p>
+         Нидерландские коикерхондье – небольшие собаки, рост которых не превышает 40 см в холке. Породные суки обычно еще ниже. Отличительной чертой экстерьера породы считается постоянно виляющий хвост, которым собака «гипнотизирует» диких уток.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Голова пропорциональна телу, среднего размера и плавных очертаний. Черепная коробка без грубости, округлая. Стоп заметный, но не чересчур углубленный. Морда хорошей заполненности, клиновидная и глубокая.
+        </p>
+        <h3>
+         Нос, губы, челюсти
+        </h3>
+        <p>
+         Под черной мочкой располагаются сухие, плотно прилегающие и пигментированные губы. В идеале челюсти коикерхондье должны смыкаться в ножницеобразный прикус, но прямой вариант тоже допустим.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Темно-коричневые миндалевидные глаза собаки имеют дружелюбное и чуть настороженное выражение.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Отличительная черта голландского спаниеля и гордость породы – так называемые «серьги». Это длинные черные прядки из волос на ушах, носящие декоративную функцию. Ушное полотно собаки не слишком большое, внутренним краем прижатое к щекам. Основание ушей имеет посадку чуть выше уровня глаз.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Достаточной длины, мускулистая.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело коикерхондье отличается развитой грудью, крепкой спиной, умеренно широкой и длинной поясницей, наклонным, относительно просторным крупом.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда коикерхондье" data-fancybox="gallery" href="/upload/iblock/686/fyfpyp3isb6p2k0ywwmucdme93e2uanf.jpg" title="Морда коикерхондье">
+          <div class="lazy-load" data-alt="Морда коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/686/1024_2150_1/fyfpyp3isb6p2k0ywwmucdme93e2uanf.jpg">
+           <noscript data-alt="Морда коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/686/1024_2150_1/fyfpyp3isb6p2k0ywwmucdme93e2uanf.jpg">
+            <img alt="Морда коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/686/1024_2150_1/fyfpyp3isb6p2k0ywwmucdme93e2uanf.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда коикерхондье
+         </div>
+        </div>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Наклоненные лопатки создают плавную линию перехода от шеи собаки к ее спине. Плечевая и лопаточная части одинаковой длины. Локти прижаты к телу, костяк предплечий крепкий, пясти с легким наклоном.
+        </p>
+        <p>
+         Прямые задние ноги отличают плотные бедра и заметно опущенные скакательные суставы. Лапы овальные, небольшие, с пальцами в комке.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         С подвесом из белой шерсти, прямой, в длину – до скакательных суставов. Обычно хвост посажен на уровне спины или выше.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Мягкий волос с хорошим подшерстком имеет чуть волнистую или прямую структуру. На передних ногах растут небольшие очесы. Бедра коикерхондье – в «штанах», длина которых доходит до скакательного сустава. На шее и груди волос особенно длинный.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Для шерсти коикера характерен белый «фон» с рыже-красными пятнами. Окрас пятен должен быть доминирующим. Допускаются небольшие рыжие участки на ногах. На голове коикерхондье есть белая проточина, которая не должна быть слишком размытой и в то же время узкой. Допускается черное «кольцо» в переходной зоне хвоста (от красного окраса – к белому). Единичные черные волоски на рыжем тоже приемлемы, но только на корпусе.
+        </p>
+        <h3>
+         Серьезные дефекты экстерьера и дисквалифицирующие пороки
+        </h3>
+        <ul>
+         <li>
+          Короткие лапы и низкая посадка.
+         </li>
+         <li>
+          Прикус с недокусом или перекусом.
+         </li>
+         <li>
+          Тревожность повадок.
+         </li>
+         <li>
+          Ненормально короткий хвост.
+         </li>
+         <li>
+          Белая шерсть на ушах в любом количестве и такие же волоски вокруг глаз.
+         </li>
+         <li>
+          Агрессивное или боязливое поведение.
+         </li>
+        </ul>
+        <h2>
+         Фото коикерхондье
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/eee/k6jn75ho2mwdv667o166a64fyguc8buo.jpg" title="">
+           <div class="lazy-load" data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/eee/380_264_2/k6jn75ho2mwdv667o166a64fyguc8buo.jpg">
+            <noscript data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/eee/380_264_2/k6jn75ho2mwdv667o166a64fyguc8buo.jpg">
+             <img alt="Коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/eee/380_264_2/k6jn75ho2mwdv667o166a64fyguc8buo.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/1d4/oarvaw065gu5s51jqzs5579t2v25b081.jpg" title="">
+           <div class="lazy-load" data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/1d4/380_264_2/oarvaw065gu5s51jqzs5579t2v25b081.jpg">
+            <noscript data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/1d4/380_264_2/oarvaw065gu5s51jqzs5579t2v25b081.jpg">
+             <img alt="Коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/1d4/380_264_2/oarvaw065gu5s51jqzs5579t2v25b081.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/0ec/650jm9zx7t0p6h6eky6blevficl0v71d.jpg" title="">
+           <div class="lazy-load" data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/0ec/380_264_2/650jm9zx7t0p6h6eky6blevficl0v71d.jpg">
+            <noscript data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/0ec/380_264_2/650jm9zx7t0p6h6eky6blevficl0v71d.jpg">
+             <img alt="Коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/0ec/380_264_2/650jm9zx7t0p6h6eky6blevficl0v71d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5ea/0cy7kbd2y56bio7m76idgrfc471u72l6.jpg" title="">
+           <div class="lazy-load" data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/5ea/380_264_2/0cy7kbd2y56bio7m76idgrfc471u72l6.jpg">
+            <noscript data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/5ea/380_264_2/0cy7kbd2y56bio7m76idgrfc471u72l6.jpg">
+             <img alt="Коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/5ea/380_264_2/0cy7kbd2y56bio7m76idgrfc471u72l6.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/50b/ijthjqqlsyujr1bh3zv1sk8xwkjpi9iw.jpg" title="">
+           <div class="lazy-load" data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/50b/380_264_2/ijthjqqlsyujr1bh3zv1sk8xwkjpi9iw.jpg">
+            <noscript data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/50b/380_264_2/ijthjqqlsyujr1bh3zv1sk8xwkjpi9iw.jpg">
+             <img alt="Коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/50b/380_264_2/ijthjqqlsyujr1bh3zv1sk8xwkjpi9iw.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/086/60jmmn2enc2qjihr9uqh2kqoviszh4qi.jpg" title="">
+           <div class="lazy-load" data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/086/380_264_2/60jmmn2enc2qjihr9uqh2kqoviszh4qi.jpg">
+            <noscript data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/086/380_264_2/60jmmn2enc2qjihr9uqh2kqoviszh4qi.jpg">
+             <img alt="Коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/086/380_264_2/60jmmn2enc2qjihr9uqh2kqoviszh4qi.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/568/6kg6d76x4qfb7i08rmyr2g33rv5kdwmf.jpg" title="">
+           <div class="lazy-load" data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/568/380_264_2/6kg6d76x4qfb7i08rmyr2g33rv5kdwmf.jpg">
+            <noscript data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/568/380_264_2/6kg6d76x4qfb7i08rmyr2g33rv5kdwmf.jpg">
+             <img alt="Коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/568/380_264_2/6kg6d76x4qfb7i08rmyr2g33rv5kdwmf.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/369/c6u0sfp4sxz1rwohyx97epl2i3kdb851.jpg" title="">
+           <div class="lazy-load" data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/369/380_264_2/c6u0sfp4sxz1rwohyx97epl2i3kdb851.jpg">
+            <noscript data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/369/380_264_2/c6u0sfp4sxz1rwohyx97epl2i3kdb851.jpg">
+             <img alt="Коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/369/380_264_2/c6u0sfp4sxz1rwohyx97epl2i3kdb851.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/ce9/m0eofws3ob8j7sxngn4362i3cj3j1eue.jpg" title="">
+           <div class="lazy-load" data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/ce9/380_264_2/m0eofws3ob8j7sxngn4362i3cj3j1eue.jpg">
+            <noscript data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/ce9/380_264_2/m0eofws3ob8j7sxngn4362i3cj3j1eue.jpg">
+             <img alt="Коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/ce9/380_264_2/m0eofws3ob8j7sxngn4362i3cj3j1eue.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl4">
+         Характер коикерхондье
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="На прогулке" data-fancybox="gallery" href="/upload/iblock/799/l1wsubobaahe0n8tsndb6m2d0wova15w.jpg" title="На прогулке">
+          <div class="lazy-load" data-alt="На прогулке" data-class="article_pic" data-original="/upload/resize_cache/iblock/799/412_2150_1/l1wsubobaahe0n8tsndb6m2d0wova15w.jpg">
+           <noscript data-alt="На прогулке" data-class="article_pic" data-original="/upload/resize_cache/iblock/799/412_2150_1/l1wsubobaahe0n8tsndb6m2d0wova15w.jpg">
+            <img alt="На прогулке" class="article_pic" height="515" src="/upload/resize_cache/iblock/799/412_2150_1/l1wsubobaahe0n8tsndb6m2d0wova15w.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          На прогулке
+         </div>
+        </div>
+        <p>
+         За пределами Нидерландов порода не занимается охотой, так как голландские ловушки для уток не применяются в других странах. В итоге охотничью деятельность собакам заменили спортивные дисциплины и приятное общение с человеком, в котором должно значительное место отводится различным активностям. Да, коикер всегда ориентируется на настроение хозяина и рад ему угодить, но в обмен рассчитывает на уважение собственных интересов и пристрастий.
+        </p>
+        <p>
+         В характере коикерхондье всего в меру: он веселый, но не безбашенный, активный, но не разрушительный, общительный, но не надоедливый. Порода легко адаптируется к условиям обитания и самостоятельно управляет своими желаниями. Как пример: в квартире коикер ведет себя чинно и благовоспитанно, но, оказавшись где-нибудь на лужайке, перевернет мир с ног на голову.
+        </p>
+        <p>
+         Есть у породы и свои «заморочки». В частности, нидерландские коикерхондье очень не любят громкие и резкие звуки, что в общем понятно – «голландцев»  исторически натаскивали на бесшумную работу. Отсюда – сложные отношения с маленькими и незнакомыми детьми, от которых собака ждет подвоха. Однако голландский спаниель, принесенный в дом щенком и регулярно контактирующий с представителями младшего поколения, вырастает терпеливым и лояльным к детским забавам.
+        </p>
+        <p>
+         В своей охотничьей реальности порода не просто работала утиной приманкой, но и сторожила, а также «зачищала» территорию. В частности, охотилась на грызунов и мелких хищников, претендовавших на свой кусочек утки. В сегодняшних спаниелях эти инстинкты не угасли, поэтому гоняться в парке за кошкой или отловить мышь – для собаки все еще святое дело. Примерно так же обстоит дело с территориальным инстинктом. Коикерхондье первым отследит чужака, вторгшегося в его владения, и своевременно предупредит хозяина.
+        </p>
+        <h2 id="gl5">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Как любая порода с рабочими корнями, коикерхондье нуждается в систематическом обучении. Остановиться только на запоминании собственной клички и исполнении команды «Ко мне!» с этим товарищем не получится. Интеллект собаки должен постоянно нагружаться разнообразными задачами, будь то спортивная тренировка или просто игра на сообразительность.
+        </p>
+        <p>
+         <strong>
+          Важный момент:
+         </strong>
+         щенки голландского спаниеля кусаются чуть больше остальных сородичей, что объясняется их историческим предназначением – уничтожением конкурентов в утиной охоте. Отучать их от этого занятия можно по универсальной методике, подходящей всем «хвостам».
+        </p>
+        <p>
+         С первых дней появления малыша в доме важно установление тесного эмоционального контакта: собака – хозяин. В период социализации, когда щенок впервые попадает за пределы квартиры, важно не спугнуть его. Если малыш упрямится и боится улицы, не стоит его принуждать. А вот вызывать любопытство полезно, поэтому на прогулках со щенком коикера нужно много разговаривать, чуть-чуть играть и постоянно соблазнять вкусными запахами. Это будет стимулировать животное чаще покидать зону комфорта.
+        </p>
+        <p class="legenda">
+         <strong>
+          К сведению:
+         </strong>
+         коикерхондье работает исключительно за положительное подкрепление. Без лакомств, похвалы и перерывов на совместные игры учебный процесс просто не сдвинется с мертвой точки. Любое принуждение собакой будет воспринято в штыки или проигнорировано.
+        </p>
+        <p>
+         Наказывать питомца за промахи можно просто недовольным выражением лица и характеристикой «Плохо!». Маленькие «голландцы» превосходно распознают человеческую мимику и эмоции, поэтому даже такого внушения для них более чем достаточно.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Дрессировка коикерхондье" data-fancybox="gallery" href="/upload/iblock/069/mzt07n2ih2zcwva2k4xco2le0ijio8zy.jpg" title="Дрессировка коикерхондье">
+          <div class="lazy-load" data-alt="Дрессировка коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/069/1024_2150_1/mzt07n2ih2zcwva2k4xco2le0ijio8zy.jpg">
+           <noscript data-alt="Дрессировка коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/069/1024_2150_1/mzt07n2ih2zcwva2k4xco2le0ijio8zy.jpg">
+            <img alt="Дрессировка коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/069/1024_2150_1/mzt07n2ih2zcwva2k4xco2le0ijio8zy.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Дрессировка коикерхондье
+         </div>
+        </div>
+        <h2 id="gl6">
+         Содержание и уход
+        </h2>
+        <p>
+         Нидерландский коикерхондье – собака для дома и реже – для квартиры. Потребность питомца в активности лучше удовлетворять за пределами жилого пространства. Голландскому спаниелю по душе долгие прогулки, спорт во дворе, тренировки в лесополосе, парке или на пустыре.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Сегодня весьма ветрено" data-fancybox="gallery" href="/upload/iblock/8dd/9h2a1rp3uxaa103oaqppmlvdinfv4822.jpg" title="Сегодня весьма ветрено">
+          <div class="lazy-load" data-alt="Сегодня весьма ветрено" data-class="article_pic" data-original="/upload/resize_cache/iblock/8dd/412_2150_1/9h2a1rp3uxaa103oaqppmlvdinfv4822.jpg">
+           <noscript data-alt="Сегодня весьма ветрено" data-class="article_pic" data-original="/upload/resize_cache/iblock/8dd/412_2150_1/9h2a1rp3uxaa103oaqppmlvdinfv4822.jpg">
+            <img alt="Сегодня весьма ветрено" class="article_pic" height="549" src="/upload/resize_cache/iblock/8dd/412_2150_1/9h2a1rp3uxaa103oaqppmlvdinfv4822.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Сегодня весьма ветрено
+         </div>
+        </div>
+        <p>
+         Несмотря на повышенную лохматость, сложного ухода порода не требует. Шерсть нидерландского коикерхондье обладает водоотталкивающим эффектом и имеет способность самоочищаться. Так что если любимец извалялся в грязи, достаточно дать ему высохнуть, а затем почистить волос обычной щеткой.
+        </p>
+        <p>
+         Расчесывать голландского спаниеля нужно 1-2 раза в неделю. В период линьки расчесывания лучше проводить ежедневно, чтобы избежать сваливания волоса очесов. Порода сбрасывает шерсть стандартно – дважды в год. Полноценные купания с шампунем и кондиционером коикерам можно устраивать раз в 3-4 месяца.
+        </p>
+        <p>
+         Висячие уши собак требуют чуть больше внимания из-за плохой вентиляции. Периодически слуховой проход придется «проветривать» механически, то есть приподняв ушное полотно и осуществив им машущее движение. Избыточную серу в ушах нужно удалять предельно аккуратно.
+        </p>
+        <p>
+         Если серные выделения находятся глубоко в ушном канале, лучше задействовать специальные капли и гигиенические лосьоны. Наружные загрязнения можно удалить салфеткой. После процедуры необходимо тщательно высушить ухо мягкой тканью, так как влага в слуховом проходе коикера является благоприятной средой для размножения бактерий. Чистка глаз и зубов тоже обязательные для породы процедуры, к которым собаку необходимо приучать как можно раньше.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Прогрессивные собаководы рекомендуют для породы питание по системе BARF. Это значит, что рацион питомца должен быть максимально приближен к меню дикого хищника и минимально термически обработан. Основа BARF-меню для любой собаки:
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Любимое печенье" data-fancybox="gallery" href="/upload/iblock/8db/45kh87j4ph5h4m0jh8dksksulb1j86mw.jpg" title="Любимое печенье">
+          <div class="lazy-load" data-alt="Любимое печенье" data-class="article_pic" data-original="/upload/resize_cache/iblock/8db/412_2150_1/45kh87j4ph5h4m0jh8dksksulb1j86mw.jpg">
+           <noscript data-alt="Любимое печенье" data-class="article_pic" data-original="/upload/resize_cache/iblock/8db/412_2150_1/45kh87j4ph5h4m0jh8dksksulb1j86mw.jpg">
+            <img alt="Любимое печенье" class="article_pic" height="412" src="/upload/resize_cache/iblock/8db/412_2150_1/45kh87j4ph5h4m0jh8dksksulb1j86mw.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Любимое печенье
+         </div>
+        </div>
+        <ul>
+         <li>
+          сырое постное мясо;
+         </li>
+         <li>
+          мясокостный фарш;
+         </li>
+         <li>
+          мясная кость (мяса и костной составляющей должно быть поровну) – бычьи хвосты, крылья кур и индеек, кости овцы;
+         </li>
+         <li>
+          субпродукты – рубец, трахея, печень, сердце, почки;
+         </li>
+         <li>
+          сырая рыба без костей и рыбий жир;
+         </li>
+         <li>
+          измельченные до состояния пюре сырые овощи – брокколи, тыква, огурец, кабачок, цветная капуста;
+         </li>
+         <li>
+          нежирная кисломолочная продукция;
+         </li>
+         <li>
+          сырое куриное яйцо – не чаще двух раз в неделю;
+         </li>
+         <li>
+          растительные масла (нерафинированные), водоросли (ламинария), отруби.
+         </li>
+        </ul>
+        <p>
+         Кормление коикерхондье сухими промышленными кормами тоже продолжает практиковаться, хотя среди профессиональных заводчиков и владельцев питомников такой метод уже не имеет былой популярности.
+        </p>
+        <h2 id="gl7">
+         Здоровье и болезни коикерхондье
+        </h2>
+        <p>
+         Для голландских спаниелей действуют очень жесткие стандарты разведения, чтобы снизить количество наследуемых заболеваний во всем мировом поголовье. Несмотря на то что в XX столетии процент генетических недугов в породе снизился, полностью победить их не удалось. Среди проблем, которыми обычно страдают коикеры, – воспалительная миопатия, болезнь Виллебранда 3 типа, вывих надколенника, дисплазия почек, атаксия.
+        </p>
+        <h2 id="gl8">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Низкая или даже умеренная цена щенка коикерхондье – повод насторожиться. Из-за внушительного списка наследственных недугов стоимость обследования производителей очень высока. Этот факт и формирует цену на породу. Дешевый щенок – скорее всего потомок необследованных родителей с неизвестным набором генов.
+         </li>
+         <li>
+          Породное животное должно обязательно отдаваться покупателю с клеймом питомника или чипом (как дополнение к клейму).
+         </li>
+         <li>
+          Визуальная оценка однородности помета сильно помогает при выборе щенка. У суки коикерхондье малыши должны иметь приблизительно одинаковые габариты с небольшими отклонениями. Это свидетельствует о хорошем здоровье и качестве помета.
+         </li>
+         <li>
+          Согласно положению о племенной работе РКФ, суки мелких и средних пород, к которым относится голландский спаниель, допускаются к разведению в возрасте 18 месяцев. Интервал между пометами должен быть не менее 300 дней (рекомендуется 365). Если заводчик не соблюдает эти правила, брать у него щенков рискованно.
+         </li>
+         <li>
+          Несмотря на то что кобели, в том числе и коикерхондье, допускаются в разведение без верхнего порога по возрасту, покупать щенка от слишком пожилого родителя нежелательно. Особенно, если сука-производительница тоже возрастная.
+         </li>
+        </ul>
+        <h2>
+         Фото щенков коикерхондье
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a8b/ts7884mnr9wcrzd8jlaf1apeq9gc46lb.jpeg" title="">
+           <div class="lazy-load" data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/a8b/380_264_2/ts7884mnr9wcrzd8jlaf1apeq9gc46lb.jpeg">
+            <noscript data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/a8b/380_264_2/ts7884mnr9wcrzd8jlaf1apeq9gc46lb.jpeg">
+             <img alt="Коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/a8b/380_264_2/ts7884mnr9wcrzd8jlaf1apeq9gc46lb.jpeg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/bb8/l3gwx2nux2ffmux014w5mtjj6iyx1juu.jpg" title="">
+           <div class="lazy-load" data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/bb8/380_264_2/l3gwx2nux2ffmux014w5mtjj6iyx1juu.jpg">
+            <noscript data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/bb8/380_264_2/l3gwx2nux2ffmux014w5mtjj6iyx1juu.jpg">
+             <img alt="Коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/bb8/380_264_2/l3gwx2nux2ffmux014w5mtjj6iyx1juu.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6ed/hy5y6reqe7e7jq6sr59af994xw5n2gjd.jpg" title="">
+           <div class="lazy-load" data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/6ed/380_264_2/hy5y6reqe7e7jq6sr59af994xw5n2gjd.jpg">
+            <noscript data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/6ed/380_264_2/hy5y6reqe7e7jq6sr59af994xw5n2gjd.jpg">
+             <img alt="Коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/6ed/380_264_2/hy5y6reqe7e7jq6sr59af994xw5n2gjd.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d57/b7d479alzkzi0kpv1rcdclq7lw9lk5tz.jpg" title="">
+           <div class="lazy-load" data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/d57/380_264_2/b7d479alzkzi0kpv1rcdclq7lw9lk5tz.jpg">
+            <noscript data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/d57/380_264_2/b7d479alzkzi0kpv1rcdclq7lw9lk5tz.jpg">
+             <img alt="Коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/d57/380_264_2/b7d479alzkzi0kpv1rcdclq7lw9lk5tz.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d9f/96n4qxwig6ckbjqx0stiesmgt0z36d00.jpg" title="">
+           <div class="lazy-load" data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/d9f/380_264_2/96n4qxwig6ckbjqx0stiesmgt0z36d00.jpg">
+            <noscript data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/d9f/380_264_2/96n4qxwig6ckbjqx0stiesmgt0z36d00.jpg">
+             <img alt="Коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/d9f/380_264_2/96n4qxwig6ckbjqx0stiesmgt0z36d00.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fe6/cn1xd7awqppkhx0j1hraskxletc4kdxt.jpg" title="">
+           <div class="lazy-load" data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/fe6/380_264_2/cn1xd7awqppkhx0j1hraskxletc4kdxt.jpg">
+            <noscript data-alt="Коикерхондье" data-class="article_pic" data-original="/upload/resize_cache/iblock/fe6/380_264_2/cn1xd7awqppkhx0j1hraskxletc4kdxt.jpg">
+             <img alt="Коикерхондье" class="article_pic" src="/upload/resize_cache/iblock/fe6/380_264_2/cn1xd7awqppkhx0j1hraskxletc4kdxt.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl9">
+         Цена нидерландского коикерхондье
+        </h2>
+        <p>
+         Голландский спаниель – удовольствие, дорогое во всех смыслах. Приобрести здорового щенка коикера с надежной родословной не получится менее чем за 90 000 – 140 000 р. Зарегистрированных питомников породы в стране мало, поэтому часто животное приходится резервировать еще до рождения.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения коикерхондье на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/koikerkhonde/forum/">
+        Перейти на
+        форум коикерхондье
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Коикерхондье" src="/upload/iblock/b8f/etj7y5leh1qw03e0dl8vggckbq6tq89o.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/koikerkhonde/">
+          Коикерхондье
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/koikerkhonde/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/koikerkhonde/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/koikerkhonde/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/koikerkhonde/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/koikerkhonde/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/kitayskaya-khokhlataya-sobaka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Китайская хохлатая собака" data-original="/upload/resize_cache/iblock/39a/100_100_1/39a8f33c4174a4636113e6c2b6c8cdbe.jpg">
+          <noscript data-alt="Китайская хохлатая собака" data-original="/upload/resize_cache/iblock/39a/100_100_1/39a8f33c4174a4636113e6c2b6c8cdbe.jpg">
+           <img alt="Китайская хохлатая собака" src="/upload/resize_cache/iblock/39a/100_100_1/39a8f33c4174a4636113e6c2b6c8cdbe.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Китайская хохлатая собака
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/mini-bulterer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Мини-бультерьер" data-original="/upload/resize_cache/iblock/798/100_100_1/7981540ecc0f3d9da3919e25833b47fc.jpg">
+          <noscript data-alt="Мини-бультерьер" data-original="/upload/resize_cache/iblock/798/100_100_1/7981540ecc0f3d9da3919e25833b47fc.jpg">
+           <img alt="Мини-бультерьер" src="/upload/resize_cache/iblock/798/100_100_1/7981540ecc0f3d9da3919e25833b47fc.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Мини-бультерьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/neapolitanskiy-mastif/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Неаполитанский мастиф" data-original="/upload/resize_cache/iblock/8bd/100_100_1/8bdca11b1e0fca2190b88b5c320df3c4.jpg">
+          <noscript data-alt="Неаполитанский мастиф" data-original="/upload/resize_cache/iblock/8bd/100_100_1/8bdca11b1e0fca2190b88b5c320df3c4.jpg">
+           <img alt="Неаполитанский мастиф" src="/upload/resize_cache/iblock/8bd/100_100_1/8bdca11b1e0fca2190b88b5c320df3c4.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Неаполитанский мастиф
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/briar/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бриар" data-original="/upload/resize_cache/iblock/cdc/100_100_1/cdc6b0c8519a0234b35ed2713e199bde.jpg">
+          <noscript data-alt="Бриар" data-original="/upload/resize_cache/iblock/cdc/100_100_1/cdc6b0c8519a0234b35ed2713e199bde.jpg">
+           <img alt="Бриар" src="/upload/resize_cache/iblock/cdc/100_100_1/cdc6b0c8519a0234b35ed2713e199bde.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бриар
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkoikerkhonde%252F%253Fcheck_key%253Dda8beb0a6f235216b1d70ddffb3e4653%2526ANIMAL_CODE%253Dkoikerkhonde%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkoikerkhonde%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmtvaWtlcmtob25kZSUyRiUzRmNoZWNrX2tleSUzRGRhOGJlYjBhNmYyMzUyMTZiMWQ3MGRkZmZiM2U0NjUzJTI2QU5JTUFMX0NPREUlM0Rrb2lrZXJraG9uZGUlMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGa29pa2Vya2hvbmRlJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkoikerkhonde%252F%253Fcheck_key%253Dda8beb0a6f235216b1d70ddffb3e4653%2526ANIMAL_CODE%253Dkoikerkhonde%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fkoikerkhonde%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fkoikerkhonde%252F%253Fcheck_key%253Dda8beb0a6f235216b1d70ddffb3e4653%2526ANIMAL_CODE%253Dkoikerkhonde%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fkoikerkhonde%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "176.100.61.39"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--f3d585f9c9bd6f1d0e48735e642ea525-->

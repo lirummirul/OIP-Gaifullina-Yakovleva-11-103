@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'eaf4b32ef058'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Американский бандог, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Американский бандог – потомок амстаффов, питбулей и мастифов, изначально выведенный для участия в собачьих боях. В сегодняшних реалиях чаще используется как сторожевая порода." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/4eb/dk4uqtsfuft5yttaveo5bq0k0dmj80i3.jpg" property="og:image"/>
+     <title>
+      Американский бандог: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/amerikanskiy-bandog/" property="og:url"/>
+     <meta content="Американский бандог: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Американский бандог – потомок амстаффов, питбулей и мастифов, изначально выведенный для участия в собачьих боях. В сегодняшних реалиях чаще используется как сторожевая порода." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/amerikanskiy-bandog/" itemprop="url">
+         <span itemprop="title">
+          Американский бандог
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Американский бандог
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/amerikanskiy-bandog/">
+          Описание
+         </a>
+         <a href="/dog/amerikanskiy-bandog/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/amerikanskiy-bandog/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/amerikanskiy-bandog/photo/">
+          Фото
+         </a>
+         <a href="/dog/amerikanskiy-bandog/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Американский бандог" src="/upload/iblock/9c3/3umyn3uoddl1v807d6h0al1zps8z130b.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/amerikanskiy-bandog/">
+           американский бандогги мастиф
+          </a>
+         </span>
+         <p>
+          Американский бандог – потомок амстаффов, питбулей и мастифов, изначально выведенный для участия в собачьих боях. В сегодняшних реалиях чаще используется как сторожевая порода.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/amerikanskiy-bandog/photo/">
+         Все
+            фото американского бандога
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы американский бандог
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы американский бандог
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер американского бандога
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Здоровье и болезни американских бандогов
+          </a>
+         </li>
+         <li>
+          <a href="#gl10">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl11">
+           Цена американского бандога
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Американский бандог
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         США
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         45-68 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         не менее 50 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         10-12 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Американский бандог – достаточно серьезная и сложная в управлении собака, не подходящая малоопытным владельцам.
+        </li>
+        <li>
+         Не регистрируется большинством кинологических ассоциаций, но официально признана Американским клубом гибридных пород.
+        </li>
+        <li>
+         В РФ бандог входит в перечень потенциально опасных пород собак, выгул которых без намордника и поводка законодательно запрещен.
+        </li>
+        <li>
+         Из-за короткой, плохо согревающей шерсти американский бандог не подходит для полностью уличного содержания. В зимний период животное придется перемещать в отапливаемое помещение.
+        </li>
+        <li>
+         Порода требует уважительного к себе отношения, поэтому любая грубость, окрики и физическое насилие в отношении бандогов – табу.
+        </li>
+        <li>
+         Несмотря на суровый характер, собака неплохо ладит с детьми, при условии, что это дети ее собственного хозяина.
+        </li>
+        <li>
+         Американского бандога легко разозлить, причем управлять агрессией возбужденной собаки невозможно до тех пор, пока она не решит успокоиться сама.
+        </li>
+        <li>
+         В ряде европейских стран, включая Швейцарию, порода запрещена к разведению.
+        </li>
+        <li>
+         Американских бандогов отличает неконтролируемое слюноотделение – чуть менее выраженное, чем у бульдогов, но хорошо заметное.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Американский бандог" data-original="/upload/iblock/4eb/dk4uqtsfuft5yttaveo5bq0k0dmj80i3.jpg">
+          <noscript data-alt="Американский бандог" data-original="/upload/iblock/4eb/dk4uqtsfuft5yttaveo5bq0k0dmj80i3.jpg">
+           <img alt="Американский бандог" src="/upload/iblock/4eb/dk4uqtsfuft5yttaveo5bq0k0dmj80i3.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Американский бандог
+          </strong>
+          – питомец для сильных духом владельцев, желающих вывести свои умения дрессировки собак на кардинально новый уровень. Легко с бандогом точно не будет. Однако все сложности, связанные с обучением, с избытком компенсируются чувством защищенности и безопасности, которое способна обеспечить порода. Это та собака, с которой легендарный мем «Ты не пройдешь!» обретает буквальный смысл – попасть на территорию «американца» без угрозы для жизни и десятка рваных ран действительно невозможно.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дорогое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Почти не слышно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличные (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Американский бандог основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы американский бандог
+        </h2>
+        <p>
+         Термин «бандог» имеет солидную историю и не всегда использовался в отношении бойцовых пород. Например, в Англии XIII века это название применяли ко всем мастифоподобным рабочим собакам, занимавшимся охраной территории и охотой. Отличительными чертами первых бандогов были энергичность, врожденная свирепость и сверхбрутальный облик. Причем габаритами и строением тела представители семейства могли сильно различаться.
+        </p>
+        <p>
+         Впервые идея «обновить» экстерьер и генофонд исторических бандогов пришла в голову американскому ветеринару по фамилии Свинфорд. А поскольку дело происходило уже в 70-х годах XX века, главной рабочей квалификацией породы должны были стать собачьи бои. Племенные эксперименты проводились массово и с целью создать более прокачанный «аналог»
+         <a class="ph" href="/dog/pitbul/">
+          питбультерьера
+         </a>
+         , поэтому для вязок привлекались преимущественно
+         <a class="ph" href="/dog/pitbul/">
+          американские питбули
+         </a>
+         и
+         <a class="ph" href="/dog/amerikanskiy-staffordshirskiy-terer/">
+          стаффорды
+         </a>
+         , а также
+         <a class="ph" href="/dog/neapolitanskiy-mastif/">
+          неаполитанские мастифы
+         </a>
+         . Подбор производителей во многом зависел от предпочтений племенного специалиста. В отдельных линиях бандогов встречаются крови
+         <a clas="ph" href="/dog/bulmastif/">
+          бульмастифов
+         </a>
+         ,
+         <a class="ph" href="/dog/burbul/">
+          бурбулей
+         </a>
+         ,
+         <a class="ph" href="/dog/kane-korso/">
+          кане-корсо
+         </a>
+         ,
+         <a class="ph" href="/dog/bordoskiy-dog/">
+          бордоских догов
+         </a>
+         , фила бразилейро.
+        </p>
+        <p>
+         Через некоторое время выяснилось, что опыты оказались удачными наполовину. Из американских бандогов получились вполне неплохие бойцы, стремительно атаковавшие противника, но не способные к длительному противостоянию. В итоге первенство на ринге так и осталось за
+         <a class="ph" href="/dog/pitbul/">
+          питбультерьерами
+         </a>
+         , а бандоги изменили вектор «специализации» в сторону охранно-сторожевой деятельности.
+        </p>
+        <p class="legenda">
+         <strong>
+          К сведению:
+         </strong>
+         лучшими представителями породы считаются собаки из итальянских линий Джо Лучеро – одного из первых заводчиков, занявшихся популяризацией современных бандогов.
+        </p>
+        <h2>
+         Видео: Американский бандог
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="3_MNbzL5ktE">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы американский бандог
+        </h2>
+        <p>
+         На сегодняшний день порода разводится как в чистом виде (без примесей посторонних кровей), так и путем скрещивания. Наиболее популярный вариант подбора производителей: кобель
+         <a class="ph" href="/dog/pitbul/">
+          американского питбультерьера
+         </a>
+         с выраженным бойцовским инстинктом и крупная сука
+         <a class="ph" href="/dog/neapolitanskiy-mastif/">
+          неаполитанского мастифа
+         </a>
+         . Также нередки вязки между
+         <a class="ph" href="/dog/pitbul/">
+          питбулями
+         </a>
+         и
+         <a class="ph" href="/dog/angliyskiy-mastif/">
+          английскими мастифами
+         </a>
+         .
+        </p>
+        <p>
+         Именно специфика подбора пар повлияла на то, что у породы нет четкого стандарта экстерьера. Как результат: настоящий американский бандог может выглядеть по-разному, не теряя при этом принадлежности к породному клану. Общие внешние характеристики животных: габариты
+         <a class="ph" href="/dog/neapolitanskiy-mastif/">
+          мастифа
+         </a>
+         плюс мускулистое телосложение
+         <a class="ph" href="/dog/pitbul/">
+          питбультерьера
+         </a>
+         . В зависимости от линии разведения породный кобель может весить от 45 до 63 кг при росте от 63 до 73 см. Суки чуть изящнее: вес стандартной «девочки» начинается с 38 кг и практически никогда не доходит до 60 кг.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Уши бандога обязательно висячие. Могут быть как маленькими, так и достаточно крупными.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Радужная оболочка предпочтительно темного тона. Зависимость оттенка глаз от окраса шерсти считается допустимой особенностью.
+        </p>
+        <h3>
+         Окрас и структура шерсти
+        </h3>
+        <p>
+         Формально – любой. Наиболее распространенные варианты: песочно-серый, черный, тигровый, рыжий, палевый, золотисто-палевый. Шерстный покров короткий, плотный, но достаточно тонкий.
+        </p>
+        <h2 id="gl3">
+         Характер американского бандога
+        </h2>
+        <p>
+         Потомки
+         <a class="ph" href="/dog/pitbul/">
+          питбулей
+         </a>
+         и
+         <a class="ph" href="/dog/neapolitanskiy-mastif/">
+          мастифов
+         </a>
+         – создания серьезные, целеустремленные, не лишенные интеллекта, который удивительным образом сочетается с первобытной агрессией в отношении животных и людей. Найти подход к этим суровым бруталам практически невозможно, если вы не их хозяин. Отсюда – большое количество мифов и заблуждений относительно породы. Хотя настоящий американский бандог – далеко не тот психопат, каким его любят выставлять собаконенавистники. Наоборот, типичный представитель семейства – это адекватный, думающий и вполне управляемый питомец, хоть и с несколько взрывным характером.
+        </p>
+        <p class="legenda">
+         <strong>
+          Отличительная черта породы:
+         </strong>
+         американский бандог не использует предупреждающий лай, предпочитая в случае провокации сразу переходить к нападению. Именно эта тактика и сыграла против представителей породы, превратив их в глазах обывателей в психически нестабильных «собак-убийц».
+        </p>
+        <p>
+         Американский бандог – прирожденный лидер, готовый подчиняться лишь тому человеку, чей альфа-статус не вызывает сомнений. Заводя собаку этой породы, трезво оценивайте свои организаторские и управленческие способности. Что характерно: бандоги одинаково не готовы признавать авторитет как слабохарактерного, так и чересчур грубого хозяина, поэтому большая ошибка – пытаться подавить волю питомца. Это не та порода, которая согласится терпеть несправедливость во имя чего бы то ни было.
+        </p>
+        <p>
+         Мирное соседство американского бандога с другими домашними питомцами возможно лишь когда животные вместе росли. В остальных случаях оставьте надежду убедить собаку, что принесенный с улицы котейка вовсе не добыча, которую следует немедленно растерзать. В семьях собаки ведут себя мирно и доброжелательно. Бандоги отлично ладят с детьми, готовы выполнять бытовые требования не только хозяина, но и других домочадцев. В общем, держат себя как большинство среднестатистических воспитанных собак.
+        </p>
+        <p>
+         Тем не менее, кинологи настоятельно не рекомендуют обзаводиться потомком
+         <a class="ph" href="/dog/amerikanskiy-staffordshirskiy-terer/">
+          амстаффов
+         </a>
+         и
+         <a class="ph" href="/dog/neapolitanskiy-mastif/">
+          мастифов
+         </a>
+         людям, имеющих маленьких детей. Помните, предел терпения американского бандога не безграничен, и в ответ на случайно причиненную боль или резкое нарушение границ может последовать очень жесткая реакция.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Американский бандог – порода, ошибки в воспитании которой дорого обойдутся владельцу. Обучением питомца лучше заниматься в связке с практикующим кинологом, который при необходимости подберет специальную методику с учетом индивидуальных черт характера собаки. Не забывайте, что коррекция неправильного поведения в случае с американским бандогом – занятие сложное и крайне редко приносящее результат. Обучая щенка ОКД, имейте в виду: второго шанса сформировать у питомца правильный навык скорее всего не будет.
+        </p>
+        <p>
+         Крайне важна ранняя социализация. Чем больше встреч, впечатлений и необычных ситуаций будет у щенка в первые месяцы жизни, тем податливее он будет в учебе. Несмотря на жажду перманентного лидерства, бандог радостно реагирует на позитивное подкрепление. Так что в процессе дрессировки не скупитесь на похвалу, ласку и любимые лакомства для питомца.
+        </p>
+        <p>
+         Конечно, бандоги не служебники, впитывающие команды едва ли не с молоком матери, но ряд требований должен ими исполняться безукоризненно. Особенно это касается подзыва «Ко мне!», команд «Нельзя!», «Сидеть!», «Место!». Именно с их помощью реально управлять питомцем, останавливая его в нежелательных действиях. Расширять список команд не просто рекомендовано, но и полезно. У «американцев» отличная память, позволяющая запоминать и распознавать достаточно большое количество слов.
+        </p>
+        <p>
+         Ну и разумеется, смиритесь с мыслью, что доказывать собственное превосходство животному придется на протяжении всей жизни. Так что сразу сформируйте систему разрешений и запретов, которая поможет собаке занять правильную нишу в семье. Помните:
+        </p>
+        <ul>
+         <li>
+          лидер/вожак всегда ест и выходит из дома первым;
+         </li>
+         <li>
+          не давайте бандогу запрыгивать на себя, когда находитесь в лежачем положении – собака истолкует это как признание ее авторитета;
+         </li>
+         <li>
+          никогда не обходите лежащего на пути щенка – заставьте его встать и отправиться на свое место.
+         </li>
+        </ul>
+        <p>
+         Старайтесь обеспечить собаке максимальную занятость. Скучающий в одиночестве «американец» – явление разрушительное. В целом, бандог – это порода, интеллект и физическую мощь которой нужно развивать в комплексе, поэтому не ленитесь ставить перед животным разнообразные задачи на сообразительность и послушание.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         Американского бандога можно поселить и в доме, и во дворе. Но важно понимать, что при минусовой температуре собаке будет некомфортно на открытом воздухе. Шерсть у породы короткая и не способна согреть тело даже в небольшой мороз. Дополнительный инвентарь, помимо стандартных мисочек-лежаков, который потребуется владельцу бойцовой собаки:
+        </p>
+        <ul>
+         <li>
+          прочный поводок – можно взять разновидность с поясом, если планируете заняться каникроссом, или поводок-водилку;
+         </li>
+         <li>
+          строгий ошейник (парфорс);
+         </li>
+         <li>
+          намордник – обязателен на выгуле в местах вероятного появления людей и домашних животных.
+         </li>
+        </ul>
+        <p>
+         Если американский бандог обитает в частном доме, не забудьте обзавестись предупреждающей табличкой «Осторожно, злая собака». Помните, при нарушении территориальных границ порода нападает без предупреждения и не реагирует на уступки и отступления незнакомца, то есть преследует и кусает до победного.
+        </p>
+        <h3>
+         Выгул и физические нагрузки
+        </h3>
+        <p>
+         Если собака не участвует в боях, врожденную агрессию ей выплескивать элементарно негде. Таких питомцев важно максимально нагружать физически, то есть должны быть не просто прогулки по парку, а бег по глубокому песку с утяжелителями; не подхватывание палочки или игрушки на лету, а полноценные прыжки за фрисби-диском. Важно заниматься ежедневно. Можно совмещать спорт с выгулами или, при наличии достаточного количества свободного времени, дополнять их.
+        </p>
+        <p>
+         Любое животное или птица, попавшие в поле зрения американского бандога, – это потенциальная добыча. Так что, гуляя с собакой по лесным угодьям, полям и вблизи водоемов, подстрахуйтесь намордником. Иначе жестоко умерщвленные зайцы, утки и грызуны станут следствием каждого такого выхода. Если содержите несколько собак, выпускайте их гулять одновременно. Главное, не оставлять брутальную «компанию» без присмотра – серьезная драка гарантирована в 90% случаев.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Уход за шерстью американского бандога – это практически единственное занятие, где владелец может позволить себе расслабиться. Линяет порода по сезонам, так что никаких внеплановых «волосопадов» ждать не придется. Убрать шерсть легко обычной щеткой или силиконовой рукавицей. С полноценными купаниями с использованием шампуня лучше не перебарщивать. Короткая шерсть бандогов обладает грязеотталкивающим действием и пачкается в исключительных случаях. Смыть поверхностные загрязнения с тела питомца можно струей теплой воды или чистой влажной тканью.
+        </p>
+        <p>
+         Обязательные гигиенические процедуры: удаление серы и загрязнений из ушей собаки, протирание век и уголков глаз от скопившейся пыли, стрижка когтей, чистка зубов. С последней процедурой могут возникнуть сложности – ее искренне не любят все собаки. Так что если совать руку в пасть бандога страшновато, ограничьтесь выдачей животному косточек-зубочисток или подливайте в питьевую воду готовые жидкости для обработки полости рта. Их легко найти в зоомагазине.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Важно четко выверять объем порции. Здоровый американский бандог должен иметь выразительный мышечный рельеф и среднюю степень упитанности. Перекормленные, как слишком поджарые особи, – явление за гранью нормы. Если планируете держать собаку на натуральном питании, придерживайтесь общеизвестных правил:
+        </p>
+        <ul>
+         <li>
+          мясо – только постное;
+         </li>
+         <li>
+          рыба – изредка, исключительно морская, без костей;
+         </li>
+         <li>
+          крупы и другие углеводы по минимуму;
+         </li>
+         <li>
+          обязательно овощи и молодая зелень;
+         </li>
+         <li>
+          в качестве натуральных подкормок – сушеная ламинария, нерафинированное растительное масло (подсолнечное, льняное);
+         </li>
+         <li>
+          непременно подберите витаминно-минеральный комплекс, чтобы обеспечить организм необходимыми микро- и макроэлементами, которые не были усвоены с едой.
+         </li>
+        </ul>
+        <p>
+         Собака не пожилая и не имеет проблем с ЖКТ? Попробуйте использовать сухие промышленные корма. Однако при переводе собаки на промышленные корма возможна негативная реакция организма – нарушения стула, изменение оттенка шерсти и ее выпадение. Как правило, эти явления проходят за пару дней. Но если улучшений не наступило и пищевое расстройство продолжается, от данной марки «сушки» лучше отказаться.
+        </p>
+        <h2 id="gl9">
+         Здоровье и болезни американских бандогов
+        </h2>
+        <p>
+         Какие заболевания унаследует собака, целиком и полностью зависит от пород, принимавших участие в разведении. Типичные недуги
+         <a class="ph" href="/dog/pitbul/">
+          американского питбультерьера
+         </a>
+         и
+         <a class="ph" href="/dog/neapolitanskiy-mastif/">
+          мастифа
+         </a>
+         , перешедшие к бандогам:
+        </p>
+        <ul>
+         <li>
+          дисплазия локтевого и тазобедренного суставов;
+         </li>
+         <li>
+          эпилепсия;
+         </li>
+         <li>
+          аутоиммунный тиреоидит;
+         </li>
+         <li>
+          заворот желудка;
+         </li>
+         <li>
+          генетические патологии сетчатки (прогрессирующая атрофия).
+         </li>
+        </ul>
+        <p>
+         У многих особей наблюдается предрасположенность к онкологическим заболеваниям, которая усиливается с возрастом. Так что регулярной сдачей анализов и профилактическим осмотрами в ветклиниках лучше не пренебрегать.
+        </p>
+        <h2 id="gl10">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Заранее уточняйте у заводчика, по какой схеме идет разведение породы. Для американских бандогов существует три основные селекционные программы.
+        </p>
+        <ol>
+         <li>
+          Процент кровей
+          <a class="ph" href="/dog/pitbul/">
+           американского питбуля
+          </a>
+          или
+          <a class="ph" href="/dog/amerikanskiy-staffordshirskiy-terer/">
+           амстаффа
+          </a>
+          составляет от 25 до 75%.
+         </li>
+         <li>
+          Доля генов
+          <a class="ph" href="/dog/angliyskiy-mastif/">
+           английского
+          </a>
+          и
+          <a class="ph" href="/dog/neapolitanskiy-mastif/">
+           неаполитанского мастифа
+          </a>
+          – 25-75%.
+         </li>
+         <li>
+          Самый редкий тип – до 75% кровей
+          <a class="ph" href="/dog/amerikanskiy-buldog/">
+           бульдога
+          </a>
+          ,
+          <a class="ph" href="/dog/bulterer/">
+           бультерьера
+          </a>
+          , фила бразилейро,
+          <a class="ph" href="/dog/bulmastif/">
+           бульмастифа
+          </a>
+          ,
+          <a class="ph" href="/dog/burbul/">
+           бурбуля
+          </a>
+          ,
+          <a class="ph" href="/dog/bordoskiy-dog/">
+           бордоского дога
+          </a>
+          .
+         </li>
+        </ol>
+        <p>
+         Для линий бандогов существуют своеобразные рейтинги. Например, достаточно высокие оценки получают животные из Словакии. Так что если есть возможность посетить страну и договориться с владельцами питомников о продаже щенка, используйте этот шанс.
+        </p>
+        <ul>
+         <li>
+          Знакомство с производителями помета обязательно, так как потомство почти всегда наследует психотип родителей. Если предки имели нестабильную психику, скорее всего щенка вы получите точно такого же.
+         </li>
+         <li>
+          Не покупайте щенков-подростков. Американский бандог – собака, с обучением которой легко опоздать. Чем моложе животное, тем лучше. Оптимальный возраст для переезда щенка в новую семью – 2-2,5 месяца.
+         </li>
+         <li>
+          Обязательно оцените условия содержания и общий вид собак. Узнайте, привиты ли животные по возрасту. Щенки не должны быть чересчур худыми или закормленными.
+         </li>
+         <li>
+          Не стремитесь выбирать самого шустрого и смелого малыша в помете – это признаки будущего сильного лидера, управлять которым будет весьма непросто.
+         </li>
+        </ul>
+        <h2 id="gl11">
+         Цена американского бандога
+        </h2>
+        <p>
+         Крупных питомников, занимающихся разведением породы, на территории РФ нет. Так что искать свободных для резервирования щенков придется в группах любителей бандогов в соцсетях. Иногда объявления о продаже мелькают и на бесплатных интернет-сервисах типа Авито. Ценник достаточно гуманный – в районе 10 000 ₽. Если хочется собаку из американских линий, готовьтесь к более серьезным тратам. Среднестатистический щенок бандога от заводчиков США обойдется в 1000-1500 $ без учета расходов на доставку.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения американского бандога на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/amerikanskiy-bandog/forum/">
+        Перейти на
+        форум американского бандога
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Американский бандог" src="/upload/iblock/9c3/3umyn3uoddl1v807d6h0al1zps8z130b.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/amerikanskiy-bandog/">
+          Американский бандог
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/amerikanskiy-bandog/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/amerikanskiy-bandog/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/amerikanskiy-bandog/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/amerikanskiy-bandog/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/amerikanskiy-bandog/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/russkiy-okhotnichiy-spaniel/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Русский охотничий спаниель" data-original="/upload/resize_cache/iblock/5e4/100_100_1/5e4114477c547d94166e4bca7e364af6.jpg">
+          <noscript data-alt="Русский охотничий спаниель" data-original="/upload/resize_cache/iblock/5e4/100_100_1/5e4114477c547d94166e4bca7e364af6.jpg">
+           <img alt="Русский охотничий спаниель" src="/upload/resize_cache/iblock/5e4/100_100_1/5e4114477c547d94166e4bca7e364af6.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Русский охотничий спаниель
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/pireneyskaya-gornaya-sobaka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Пиренейская горная собака" data-original="/upload/resize_cache/iblock/3b4/100_100_1/3b4dc141fa69a8130aadf6926b25c3af.jpg">
+          <noscript data-alt="Пиренейская горная собака" data-original="/upload/resize_cache/iblock/3b4/100_100_1/3b4dc141fa69a8130aadf6926b25c3af.jpg">
+           <img alt="Пиренейская горная собака" src="/upload/resize_cache/iblock/3b4/100_100_1/3b4dc141fa69a8130aadf6926b25c3af.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Пиренейская горная собака
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/alyaskinskiy-kli-kay/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Аляскинский кли-кай" data-original="/upload/resize_cache/iblock/711/100_100_1/711575948caea27bae92a180a7853756.jpg">
+          <noscript data-alt="Аляскинский кли-кай" data-original="/upload/resize_cache/iblock/711/100_100_1/711575948caea27bae92a180a7853756.jpg">
+           <img alt="Аляскинский кли-кай" src="/upload/resize_cache/iblock/711/100_100_1/711575948caea27bae92a180a7853756.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Аляскинский кли-кай
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/gryunendal/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Грюнендаль" data-original="/upload/resize_cache/iblock/679/100_100_1/24cpab66go4l6d9wbhu0siueoeih3wbp.jpg">
+          <noscript data-alt="Грюнендаль" data-original="/upload/resize_cache/iblock/679/100_100_1/24cpab66go4l6d9wbhu0siueoeih3wbp.jpg">
+           <img alt="Грюнендаль" src="/upload/resize_cache/iblock/679/100_100_1/24cpab66go4l6d9wbhu0siueoeih3wbp.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Грюнендаль
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Famerikanskiy-bandog%252F%253Fcheck_key%253De2a47af0e02a43ba01d9faa03d152dbe%2526ANIMAL_CODE%253Damerikanskiy-bandog%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Famerikanskiy-bandog%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmFtZXJpa2Fuc2tpeS1iYW5kb2clMkYlM0ZjaGVja19rZXklM0RlMmE0N2FmMGUwMmE0M2JhMDFkOWZhYTAzZDE1MmRiZSUyNkFOSU1BTF9DT0RFJTNEYW1lcmlrYW5za2l5LWJhbmRvZyUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZhbWVyaWthbnNraXktYmFuZG9nJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Famerikanskiy-bandog%252F%253Fcheck_key%253De2a47af0e02a43ba01d9faa03d152dbe%2526ANIMAL_CODE%253Damerikanskiy-bandog%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Famerikanskiy-bandog%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Famerikanskiy-bandog%252F%253Fcheck_key%253De2a47af0e02a43ba01d9faa03d152dbe%2526ANIMAL_CODE%253Damerikanskiy-bandog%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Famerikanskiy-bandog%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "192.166.101.86"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--7bbea95e6aa4108302cfb88a2e4e4d8b-->

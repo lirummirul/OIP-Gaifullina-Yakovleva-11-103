@@ -1,0 +1,1699 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'3b94957ce4c5'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Ирландский волкодав, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Ирландский волкодав – крупная жесткошерстная собака из группы борзых, выведенная для истребления волков. В современных реалиях чаще исполняет роль компаньона, чем полноценного охотника. " name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/6e5/6e53e77f24d5f90206ad60f25a9535db.jpg" property="og:image"/>
+     <title>
+      Ирландский волкодав: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/irlandskiy-volkodav/" property="og:url"/>
+     <meta content="Ирландский волкодав: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Ирландский волкодав – крупная жесткошерстная собака из группы борзых, выведенная для истребления волков. В современных реалиях чаще исполняет роль компаньона, чем полноценного охотника. " property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/irlandskiy-volkodav/" itemprop="url">
+         <span itemprop="title">
+          Ирландский волкодав
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Ирландский волкодав
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/irlandskiy-volkodav/">
+          Описание
+         </a>
+         <a href="/dog/irlandskiy-volkodav/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/irlandskiy-volkodav/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/irlandskiy-volkodav/photo/">
+          Фото
+         </a>
+         <a href="/dog/irlandskiy-volkodav/video/">
+          Видео
+         </a>
+         <a href="/dog/irlandskiy-volkodav/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Ирландский волкодав" src="/upload/iblock/947/947ee79bab0c6304ab0ba2ae7d8be446.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Ирландский волкодав – крупная жесткошерстная собака из группы борзых, выведенная для истребления волков. В современных реалиях чаще исполняет роль компаньона, чем полноценного охотника.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/439/43957ee3d0fcbd03af21f046fe8c4fb2.jpg" data-cap="ой нежный дракончик ❤ Спасибо за чудесное фото @akvarelireki" data-fancybox="images" data-link="https://www.instagram.com/p/CEs34UCh9qJ/" data-type="image" data-username="irishdragon_oxana" href="/upload/uf/898/898304a5e2c3116539fe0d2d3b036e8e.jpg">
+            <img alt="Ирландский волкодав" src="/upload/resize_cache/uf/898/293_293_2/898304a5e2c3116539fe0d2d3b036e8e.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/c42/c42fc5d0629bca79f508237785a4fb58.jpg" data-cap="" data-fancybox="images" data-link="https://www.flickr.com/photos/carladurose/30738363144/in/pool-irishwolfhounds/" data-type="image" data-username="Bonaforte Irish Wolfhounds" href="/upload/uf/cbc/cbc7849b35bcc9899ab535af5d46005d.jpg">
+            <img alt="Ирландский волкодав" src="/upload/resize_cache/uf/cbc/293_293_2/cbc7849b35bcc9899ab535af5d46005d.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/46c/46cbb81385ec02ce3a9ae45ed014bfbf.jpg" data-cap="Irish wolfhound" data-fancybox="images" data-link="https://www.flickr.com/photos/148823914@N07/48783694457/" data-type="image" data-username="Heleen Schenk" href="/upload/uf/b3e/b3ef2324d9ee9ccb864ca23587edd167.jpg">
+            <img alt="Ирландский волкодав" src="/upload/resize_cache/uf/b3e/293_293_2/b3ef2324d9ee9ccb864ca23587edd167.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/irlandskiy-volkodav/photo/">
+         Все
+            фото ирландского волкодава
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы ирландский волкодав
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы ирландский волкодав
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер ирландского волкодава
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни ирландских волкодавов
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена ирландского волкодава
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Ирландский волкодав
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Ирландия
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели от 54,5 кг, суки от 40,5 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели не менее 79 см, суки не менее 71 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         8-11 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Невзирая на врожденную нетерпимость к крупным хищникам, в душе «ирландец» остается относительно миролюбивой и мягкой собакой, подходящей на роль безобидного домашнего питомца.
+        </li>
+        <li>
+         Из ирландских волкодавов невозможно выдрессировать агрессивных бойцов, да и сторожа из них получаются весьма посредственные.
+        </li>
+        <li>
+         На своей родине животные имеют статус национальной породы, а Королевский ирландский полк давно избрал их своим талисманом.
+        </li>
+        <li>
+         Ирландский волкодав не пустобрех, хотя иногда и не прочь поболтать низким, грудным басом. Чаще всего собака подает голос от скуки, когда вынуждена проводить время в одиночестве.
+        </li>
+        <li>
+         Каждый год, в День Святого Патрика, английская королева чествует ирландских гвардейцев, вручая букет трилистников не только военным, но и состоящему на придворной службе ирландскому волкодаву (в последние годы почетная миссия возложена на супругу принца Уильяма, герцогиню Кембриджскую).
+        </li>
+        <li>
+         Представители этой породы медленно растут и становятся по-настоящими взрослыми собаками к двум годам.
+        </li>
+        <li>
+         Считается, что «ирландцы» очень терпеливы, но запас их выдержки не безграничен. Спровоцировать собаку на агрессию проще всего, напав на ее хозяина: такого неуважения не потерпит ни один, даже самый флегматичный пес.
+        </li>
+        <li>
+         Интеллектуальные показатели ирландских волкодавов высокие. Они легко запоминают команды, но не терпят откровенной муштры.
+        </li>
+        <li>
+         Правильный «ирландец» всегда добр и снисходителен по отношению к детям.
+        </li>
+        <li>
+         Ирландский волкодав не лучший друг для домашних кошек и других некрупных животных. Редкий пес способен подавить в себе охотничий инстинкт и спокойно пройти мимо развалившейся на подушке кошки. Чаще всего проживание собаки и котофея на одной территории заканчивается смертью одного из них (догадайтесь, кого).
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Ирландский волкодав" data-original="/upload/iblock/6e5/6e53e77f24d5f90206ad60f25a9535db.jpg">
+          <noscript data-alt="Ирландский волкодав" data-original="/upload/iblock/6e5/6e53e77f24d5f90206ad60f25a9535db.jpg">
+           <img alt="Ирландский волкодав" src="/upload/iblock/6e5/6e53e77f24d5f90206ad60f25a9535db.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Ирландский волкодав
+          </strong>
+          – прямодушный косматый исполин, который охотно поделится с вами секретом самой чистой и искренней дружбы. Рожденный для опасной и трудной работы, сегодня этот грозный гигант немного отошел от дел, не растеряв при этом спортивных навыков и охотничьих инстинктов. Тем не менее не спешите очаровываться брутальным и подчеркнуто суровым обликом ирландского волкодава и не пытайтесь рассмотреть в нем свирепого защитника вашей собственности. Под маской серьезности и напускной грозности прячется умное, чуткое, но совершенно не подозрительное создание, которое ни за что не позволит себе обидеть человека.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дорогое (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не переносит (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Плохой охранник (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Ирландский волкодав основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы ирландский волкодав
+        </h2>
+        <p>
+         Предполагается, что ирландские волкодавы произошли от египетских борзовидных собак, завезенных в Ирландию кельтскими племенами более двух тысяч лет назад. А поскольку самим кельтам животные были необходимы для защиты домашнего скота от волков, ставку при их разведении сделали на выдающиеся габариты. Как результат: на стыке III и IV вв. н. э. по острову свободно разгуливали огромные, похожие на
+         <a class="ph" href="/dog/greyhound/">
+          грейхаундов
+         </a>
+         собаки, успешно расправлявшиеся с любым крупным хищником.
+        </p>
+        <p>
+         Как и полагается рабочим породам, прародители ирландских волкодавов красотой не блистали, зато повергали в трепет грозным видом и охотничьей хваткой. Так, например, в конце III века н. э. «ирландцы» выступили на арене римского цирка, где продемонстрировали необыкновенную удаль в битве со львом. Что же касается успехов на охотничьем поприще, то к 1780 году силами этих косматых гигантов волки в Ирландии были полностью истреблены, перейдя в разряд живой экзотики.
+        </p>
+        <p class="legenda">
+         На заметку: в течение нескольких столетий собаки породы ирландский волкодав существовали в двух типах: гладко– и жесткошерстном. Впоследствии особи с грубым, проволочным волосом вытеснили своих собратьев, как менее приспособленных к переменчивому островному климату.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенки ирландского волкодава" data-fancybox="gallery" href="/upload/iblock/dd7/dd724237beaa3663de8f4f7a2d1a1599.jpg" title="Щенки ирландского волкодава">
+          <div class="lazy-load" data-alt="Щенки ирландского волкодава" data-class="article_pic" data-original="/upload/resize_cache/iblock/dd7/412_2150_1/dd724237beaa3663de8f4f7a2d1a1599.jpg">
+           <noscript data-alt="Щенки ирландского волкодава" data-class="article_pic" data-original="/upload/resize_cache/iblock/dd7/412_2150_1/dd724237beaa3663de8f4f7a2d1a1599.jpg">
+            <img alt="Щенки ирландского волкодава" class="article_pic" height="281" src="/upload/resize_cache/iblock/dd7/412_2150_1/dd724237beaa3663de8f4f7a2d1a1599.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенки ирландского волкодава
+         </div>
+        </div>
+        <p>
+         Начиная с эпохи Средневековья и вплоть до XVII века ирландские волкодавы пребывали на волне популярности. Их презентовали послам и восточным вельможам, преподносили в качестве живой платы за оказанные услуги, рассылая собак во все уголки Западной Европы и даже Азии. Конец этому ажиотажу положил в 1652 году Кромвель. Лорд-генерал наложил официальный запрет на вывоз волкодавов из Ирландии, после которого они оказались в вынужденной изоляции, спровоцировавшей вырождение и почти полное вымирание породы.
+        </p>
+        <p>
+         С середины XIX столетия интерес к этому типу борзых постепенно возрождался. В частности, в 1885 году в Ирландии открылся первый клуб любителей породы под руководством капитана Г. А. Грэхема. Здесь же, год спустя, утвердили ежегодную премию «Переходный щит Грэхема» для собак, сохранивших максимум породных характеристик своих предков. Кстати, сам Грэхем в попытках вернуть миру исчезающий род ирландских волкодавов не стеснялся подмешивать в кровь его представителей гены датских догов и дирхаундов.
+        </p>
+        <p>
+         В СССР об «ирландцах» заговорили в конце 80-х, когда из польского питомника «Сагиттариус» было импортировано несколько чистокровных производителей. При этом экспонироваться на российских рингах животные начали с начала 90-х годов, после того как отечественный породный генофонд обогатился племенными особями из Венгрии, Германии и других западных стран.
+        </p>
+        <h2>
+         Видео: Ирландский волкодав
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="XBh741ABmAs">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы ирландский волкодав
+        </h2>
+        <p>
+         Ирландский волкодав – брудастый исполин, сильно смахивающий на дирхаунда, но при этом более плотный и крепкий. Минимально допустимый рост взрослого кобеля – 79 см. Невзирая на внушительные размеры, «ирландец» не выглядит тяжелым и неповоротливым. Наоборот, в движении собака обнаруживает такие легкость пластичность, которые в ней совершенно невозможно было заподозрить.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Ирландский волкодав" data-fancybox="gallery" href="/upload/iblock/39a/39ac3c14c832ffe23dc379912d4fd6a0.jpg" title="Ирландский волкодав">
+          <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/39a/412_2150_1/39ac3c14c832ffe23dc379912d4fd6a0.jpg">
+           <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/39a/412_2150_1/39ac3c14c832ffe23dc379912d4fd6a0.jpg">
+            <img alt="Ирландский волкодав" class="article_pic" height="274" src="/upload/resize_cache/iblock/39a/412_2150_1/39ac3c14c832ffe23dc379912d4fd6a0.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Ирландский волкодав
+         </div>
+        </div>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Череп «ирландца» удлиненный, с почти плоским лбом и зауженной, вытянутой мордой.
+        </p>
+        <h3>
+         Прикус
+        </h3>
+        <p>
+         У ирландского волкодава могут быть ножницеобразный и прямой типы прикуса, однако первый вариант предпочтительнее.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза собаки должны иметь максимально темный окрас.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Уши ирландского волкодава маленькие, заложенные, розовидной формы.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Чистокровный «ирландец» – обладатель длинной, хорошо омускуленной и несколько выгнутой шеи с плотно натянутой кожей.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда ирландского волкодава" data-fancybox="gallery" href="/upload/iblock/d49/d49e4907cb668b3c85686771651fc082.jpg" title="Морда ирландского волкодава">
+          <div class="lazy-load" data-alt="Морда ирландского волкодава" data-class="article_pic" data-original="/upload/resize_cache/iblock/d49/1024_2150_1/d49e4907cb668b3c85686771651fc082.jpg">
+           <noscript data-alt="Морда ирландского волкодава" data-class="article_pic" data-original="/upload/resize_cache/iblock/d49/1024_2150_1/d49e4907cb668b3c85686771651fc082.jpg">
+            <img alt="Морда ирландского волкодава" class="article_pic" src="/upload/resize_cache/iblock/d49/1024_2150_1/d49e4907cb668b3c85686771651fc082.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда ирландского волкодава
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело собаки вытянутое, заметно расширяющееся в круповой части. Поясница ирландского волкодава выпуклая. Грудная клетка развитая, в меру глубокая, живот подобран.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Ноги «ирландца» длинные и костистые с наклонными лопатками, удлиненными, мускулистыми бедрами и низкими скакательными суставами. Лапы животного округлые, поставленные прямо, с хорошо выгнутыми пальцами и когтями.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвост длинный, хорошей толщины, с легким изгибом.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Шерсть собаки достаточно жесткая, причем волос на надбровьях и морде проволокообразный.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Для ирландских волкодавов типичны те же типы окрасов, что и для дирхаундов, то есть белые, красные, тигровые, палево-коричневые, серые, черные и т. д.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Сдаюсь!" data-fancybox="gallery" href="/upload/iblock/fec/fecfb53f4973af799aee7de1159950ed.jpg" title="Сдаюсь!">
+          <div class="lazy-load" data-alt="Сдаюсь!" data-class="article_pic" data-original="/upload/resize_cache/iblock/fec/412_2150_1/fecfb53f4973af799aee7de1159950ed.jpg">
+           <noscript data-alt="Сдаюсь!" data-class="article_pic" data-original="/upload/resize_cache/iblock/fec/412_2150_1/fecfb53f4973af799aee7de1159950ed.jpg">
+            <img alt="Сдаюсь!" class="article_pic" height="576" src="/upload/resize_cache/iblock/fec/412_2150_1/fecfb53f4973af799aee7de1159950ed.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Сдаюсь!
+         </div>
+        </div>
+        <h3>
+         Возможные пороки
+        </h3>
+        <p>
+         Не каждый ирландский волкодав на 100% вписывается в эталон, закрепленный породным стандартом, причем отклонения от идеала могут быть как незначительными, так и грозящими животному дисквалификацией. Чаще всего оценка на соревнованиях снижается за наличие следующих дефектов:
+        </p>
+        <ul>
+         <li>
+          легкая или чересчур массивная голова;
+         </li>
+         <li>
+          выпуклый лоб;
+         </li>
+         <li>
+          короткое тело квадратного формата;
+         </li>
+         <li>
+          искривление передних ног;
+         </li>
+         <li>
+          провислая или прямая спина;
+         </li>
+         <li>
+          крупные или висячие уши;
+         </li>
+         <li>
+          косолапые либо с разметом ноги;
+         </li>
+         <li>
+          короткая шея и подвес на ней;
+         </li>
+         <li>
+          чересчур суженная или расширенная грудная клетка;
+         </li>
+         <li>
+          крутой изгиб хвоста;
+         </li>
+         <li>
+          любой окрас радужки, кроме черного;
+         </li>
+         <li>
+          светлая мочка;
+         </li>
+         <li>
+          губы и веки любого оттенка, кроме черного;
+         </li>
+         <li>
+          хрупкие задние ноги;
+         </li>
+         <li>
+          широко расставленные пальцы.
+         </li>
+        </ul>
+        <h2>
+         Фото ирландского волкодава
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/071/0717f269766cb83634020e86498d23ce.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/071/380_264_2/0717f269766cb83634020e86498d23ce.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/071/380_264_2/0717f269766cb83634020e86498d23ce.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/071/380_264_2/0717f269766cb83634020e86498d23ce.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/5bf/5bf1fa6d06f1d929617180049dbc1e44.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/5bf/380_264_2/5bf1fa6d06f1d929617180049dbc1e44.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/5bf/380_264_2/5bf1fa6d06f1d929617180049dbc1e44.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/5bf/380_264_2/5bf1fa6d06f1d929617180049dbc1e44.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b44/b44067157b90ba9b33cde250c76572a2.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/b44/380_264_2/b44067157b90ba9b33cde250c76572a2.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/b44/380_264_2/b44067157b90ba9b33cde250c76572a2.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/b44/380_264_2/b44067157b90ba9b33cde250c76572a2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/fd7/fd735070f098fb4774cd88a0f1c379d9.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/fd7/380_264_2/fd735070f098fb4774cd88a0f1c379d9.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/fd7/380_264_2/fd735070f098fb4774cd88a0f1c379d9.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/fd7/380_264_2/fd735070f098fb4774cd88a0f1c379d9.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e67/e670f64a5f4efa7643909f08410c703f.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/e67/380_264_2/e670f64a5f4efa7643909f08410c703f.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/e67/380_264_2/e670f64a5f4efa7643909f08410c703f.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/e67/380_264_2/e670f64a5f4efa7643909f08410c703f.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d7c/d7cb917462c802bc554dff32754c67bb.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/d7c/380_264_2/d7cb917462c802bc554dff32754c67bb.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/d7c/380_264_2/d7cb917462c802bc554dff32754c67bb.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/d7c/380_264_2/d7cb917462c802bc554dff32754c67bb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b3c/b3c256a50c25fd6d51b836a92415d5a0.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/b3c/380_264_2/b3c256a50c25fd6d51b836a92415d5a0.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/b3c/380_264_2/b3c256a50c25fd6d51b836a92415d5a0.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/b3c/380_264_2/b3c256a50c25fd6d51b836a92415d5a0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7d8/7d896843fb47e98b06ea8b7c5bb2db59.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/7d8/380_264_2/7d896843fb47e98b06ea8b7c5bb2db59.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/7d8/380_264_2/7d896843fb47e98b06ea8b7c5bb2db59.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/7d8/380_264_2/7d896843fb47e98b06ea8b7c5bb2db59.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/22c/22cb42bcd3e386bd9808ef028832a3a7.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/22c/380_264_2/22cb42bcd3e386bd9808ef028832a3a7.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/22c/380_264_2/22cb42bcd3e386bd9808ef028832a3a7.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/22c/380_264_2/22cb42bcd3e386bd9808ef028832a3a7.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер ирландского волкодава
+        </h2>
+        <p>
+         При одном взгляде на ирландского волкодава начинает казаться, что перед вами типичный крепкий орешек, с которым будет непросто поладить. В реальности же все с точностью до наоборот: любой среднестатистический «ирландец» безумно привязан к владельцу. Пес не раболепствует и не унижается, но это не мешает животному дорожить общением с человеком, взявшим его в свой дом. Помимо того, собаки породы ирландский волкодав виртуозно управляют собственной агрессией, приберегая это качество для серьезного противника и никогда не используя его против того, кто заведомо слабее. Так что смело оставляйте детей на попечение питомца: он подойдет к делу со всей ответственностью и осторожностью.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Ирландский волкодав играет с котиком" data-fancybox="gallery" href="/upload/iblock/509/50910a34cc6eb77dd683da211949fcea.jpg" title="Ирландский волкодав играет с котиком">
+          <div class="lazy-load" data-alt="Ирландский волкодав играет с котиком" data-class="article_pic" data-original="/upload/resize_cache/iblock/509/412_2150_1/50910a34cc6eb77dd683da211949fcea.jpg">
+           <noscript data-alt="Ирландский волкодав играет с котиком" data-class="article_pic" data-original="/upload/resize_cache/iblock/509/412_2150_1/50910a34cc6eb77dd683da211949fcea.jpg">
+            <img alt="Ирландский волкодав играет с котиком" class="article_pic" height="274" src="/upload/resize_cache/iblock/509/412_2150_1/50910a34cc6eb77dd683da211949fcea.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Ирландский волкодав играет с котиком
+         </div>
+        </div>
+        <p>
+         Поскольку предки «ирландцев» всегда охотились на волков и никогда на людей, превратить этих добродушных великанов в подозрительных бодигардов будет проблематично. Даже в отношении чужаков ирландские волкодавы настроены вполне мирно, если те не излучают слишком явную угрозу. А вот налаживать контакты с другими животными косматым «громилам» удается с трудом. И если присутствие собаки средней комплекции волкодав еще согласен потерпеть, то с каким-нибудь
+         <a class="ph" href="/dog/papilon/">
+          папильоном
+         </a>
+         он непременно затеет конфликт. И дело здесь не столько в соперничестве, сколько в природных инстинктах. Ирландский волкодав не чувствует разницы между помоечной крысой, бродячей кошкой и миниатюрной собачкой. Для него все они – добыча, с которой можно неплохо, а главное без риска для здоровья поразвлечься.
+        </p>
+        <p>
+         Считается, что лидерские замашки ирландским волкодавам чужды, поэтому посягать на хозяйский авторитет собаки в принципе не должны. Тем не менее порода отличается независимостью и самостоятельностью в принятии решений, так что вести себя с ее представителями лучше серьезно, без заигрывания и сюсюканья. К ревности животные не склонны и прятаться от ирландского волкодава, чтобы потискать котейку или почесать за ушком другую собаку, явно не стоит. При этом обижаться косматые гиганты могут очень сильно, особенно болезненно реагируя на несправедливое, как им самим кажется, наказание.
+        </p>
+        <p>
+         С возрастом характер ирландского волкодава начинает меняться, что в общем-то типично для крупных пород. Обычно «старички» более капризны, обидчивы и раздражительны, и с этим придется мириться. Активность пожилого животного тоже снижается, поэтому преодолевшие 7-летний рубеж «ирландцы» чаще полеживают в своем уголке, оставаясь неустрашимыми охотниками на волков разве что где-то глубоко в душе.
+        </p>
+        <div class="img-two">
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Волкодав с любимой хозяйкой" data-fancybox="gallery" href="/upload/iblock/a3c/a3ce48b18aeaa204772c02e9cd4f2062.jpg" title="Волкодав с любимой хозяйкой">
+           <div class="lazy-load" data-alt="Волкодав с любимой хозяйкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/a3c/512_342_2/a3ce48b18aeaa204772c02e9cd4f2062.jpg">
+            <noscript data-alt="Волкодав с любимой хозяйкой" data-class="article_pic" data-original="/upload/resize_cache/iblock/a3c/512_342_2/a3ce48b18aeaa204772c02e9cd4f2062.jpg">
+             <img alt="Волкодав с любимой хозяйкой" class="article_pic" src="/upload/resize_cache/iblock/a3c/512_342_2/a3ce48b18aeaa204772c02e9cd4f2062.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Волкодав с любимой хозяйкой
+          </div>
+         </div>
+         <div class="img-two-block">
+          <a class="fancybox" data-caption="Новый друг" data-fancybox="gallery" href="/upload/iblock/a1f/a1fc66a2f51362e245fcd2ae15556af2.jpg" title="Новый друг">
+           <div class="lazy-load" data-alt="Новый друг" data-class="article_pic" data-original="/upload/resize_cache/iblock/a1f/512_342_2/a1fc66a2f51362e245fcd2ae15556af2.jpg">
+            <noscript data-alt="Новый друг" data-class="article_pic" data-original="/upload/resize_cache/iblock/a1f/512_342_2/a1fc66a2f51362e245fcd2ae15556af2.jpg">
+             <img alt="Новый друг" class="article_pic" src="/upload/resize_cache/iblock/a1f/512_342_2/a1fc66a2f51362e245fcd2ae15556af2.jpg"/>
+            </noscript>
+           </div>
+          </a>
+          <div class="img_text">
+           Новый друг
+          </div>
+         </div>
+        </div>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Как бы ни хотелось, но от идеи записать ирландского волкодава на ЗКС придется отказаться. Доброжелательный, выдержанный характер – фирменная фишка породы, и воспитывать из ее представителей собак-телохранителей – бессмысленное занятие. В конце концов для этого есть
+         <a class="ph" href="/dog/rotveyler/">
+          ротвейлеры
+         </a>
+         и
+         <a class="ph" href="/dog/kavkazskaya-ovcharka/">
+          кавказские овчарки
+         </a>
+         . Аджилити, фрисби и вейтпуллинг скорее обеспечат животное проблемами с позвоночником, чем принесут истинное удовольствие, поэтому на подобные спортивные дисциплины лучше не замахиваться. А вот курсингом и рейсингом побаловаться можно, если у питомца нет сердечных патологий.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Ирландский волкодав на службе ее величества" data-fancybox="gallery" href="/upload/iblock/ba6/ba6630c13555a09be75250927cb3d354.jpg" title="Ирландский волкодав на службе ее величества">
+          <div class="lazy-load" data-alt="Ирландский волкодав на службе ее величества" data-class="article_pic" data-original="/upload/resize_cache/iblock/ba6/412_2150_1/ba6630c13555a09be75250927cb3d354.jpg">
+           <noscript data-alt="Ирландский волкодав на службе ее величества" data-class="article_pic" data-original="/upload/resize_cache/iblock/ba6/412_2150_1/ba6630c13555a09be75250927cb3d354.jpg">
+            <img alt="Ирландский волкодав на службе ее величества" class="article_pic" height="291" src="/upload/resize_cache/iblock/ba6/412_2150_1/ba6630c13555a09be75250927cb3d354.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Ирландский волкодав на службе ее величества
+         </div>
+        </div>
+        <p>
+         ОКД ирландским волкодавам жизненно необходим, так как лучшего метода привить столь крупной собаке основы послушания пока не придумано. И без разницы, возьмете ли вы миссию по обучению четверолапого друга на себя или доверите дело специалисту. Главное, чтобы животное в ходе занятий было настроено на контакт и заинтересовано в достижении цели. Сам процесс обучения должен строиться на взаимном уважении. Ирландские волкодавы категорически не приемлют грубое обращение, поэтому не повышайте голос, отдавая команду, и уж тем более не переходите на крик. Ну и конечно, не «насилуйте» животное многократными повторениями упражнений: сделали 2-3 подхода и отдохнули час-другой. Поверьте, такой метод даст лучший результат, чем систематическое пережевывание одного и того же.
+        </p>
+        <p>
+         Приучать щенка ирландского волкодава к поводку можно с 4 месяцев, причем отпускать малыша свободно побегать разрешается только тогда, когда он четко усвоил смысл команды «Ко мне!». Первые прогулки на поводке должны быть короткими: если животное плетется вслед за вами, значит кое-кто переборщил с нагрузкой, и питомцу пора домой, на отдых. Кстати, о перегрузках: они крайне опасны для юного «ирландца», а особенно для его несформировавшегося костяка.
+        </p>
+        <p>
+         У щенков ирландского волкодава очень выражен кусательный рефлекс. Отрабатывать хватку малыши могут на игрушках, окружающих их предметах и руках хозяина, поэтому задача владельца – доступно объяснить питомцу, что можно пробовать на зубок, а что нет. Только не вздумайте трясти и бить укусившего вас или ребенка щенка. Вы же не хотите вырастить нервного, злобного пса с хроническим комплексом недоверия к человеку? Игру в обнимашки, которую так любят маленькие ирландские волкодавы, лучше тоже пресекать на корню. Если дружелюбные наскоки щенка – это весело и приятно, то объятия взрослой борзой – удовольствие на любителя, причем на любителя физически крепкого.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Ирландцы с волкодавами" data-fancybox="gallery" href="/upload/iblock/db5/db58ce6fbecef4450a2eca73aafaf406.jpg" title="Ирландцы с волкодавами">
+          <div class="lazy-load" data-alt="Ирландцы с волкодавами" data-class="article_pic" data-original="/upload/resize_cache/iblock/db5/412_2150_1/db58ce6fbecef4450a2eca73aafaf406.jpg">
+           <noscript data-alt="Ирландцы с волкодавами" data-class="article_pic" data-original="/upload/resize_cache/iblock/db5/412_2150_1/db58ce6fbecef4450a2eca73aafaf406.jpg">
+            <img alt="Ирландцы с волкодавами" class="article_pic" height="275" src="/upload/resize_cache/iblock/db5/412_2150_1/db58ce6fbecef4450a2eca73aafaf406.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Ирландцы с волкодавами
+         </div>
+        </div>
+        <p>
+         Бытует мнение, что в квартирах и домах крупногабаритным ирландским волкодавам неудобно и скучно. На деле же комфорт питомца целиком зависит от стараний хозяина. Если обеспечить собаку просторной лежанкой в уголке, где за нее не будут цепляться ногами домочадцы, и нормально выгуливать, сложностей с квартирным содержанием не возникнет. Учитывайте и то, что породе ирландский волкодав противопоказано лежание на твердых поверхностях (чувствительные суставы + очень тонкий слой подкожного жира), в связи с чем многие владельцы позволяют животным поваляться на собственной постели или диване. Содержание ирландского волкодава в вольере – крайняя мера, эта собака плохо переносит одиночество и нуждается в постоянном тесном контакте с человеком. Если все же решились на такой шаг, не оставляйте четвероногого друга зимовать в пусть и утепленной, но все-таки конуре. Во-первых, это жестоко, а во-вторых, вредит здоровью питомца. Сажать ирландского волкодава на цепь тоже непозволительно: в сторожа он не нанимался.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Жесткую шерсть ирландского волкодава приводят в порядок металлическим гребнем и щеткой, позволяющими быстро и безболезненно вычесать отмершие волоски и мусор, собранный животным на прогулке. Теоретически «ирландец» не нуждается в стрижке, но на практике большинство владельцев укорачивают питомцам шерсть в самых пачкающихся местах – на лапах и под хвостом. Волос на морде стричь не разрешается, но ухаживать за ним необходимо, поэтому как только собака поела, «усы» и «бородку» полагается вытереть чистой ветошью.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Советуем отойти подальше от волкодава, который собирается отряхиваться" data-fancybox="gallery" href="/upload/iblock/737/737a0fcba064c046db9a988052d599fd.jpg" title="Советуем отойти подальше от волкодава, который собирается отряхиваться">
+          <div class="lazy-load" data-alt="Советуем отойти подальше от волкодава, который собирается отряхиваться" data-class="article_pic" data-original="/upload/resize_cache/iblock/737/412_2150_1/737a0fcba064c046db9a988052d599fd.jpg">
+           <noscript data-alt="Советуем отойти подальше от волкодава, который собирается отряхиваться" data-class="article_pic" data-original="/upload/resize_cache/iblock/737/412_2150_1/737a0fcba064c046db9a988052d599fd.jpg">
+            <img alt="Советуем отойти подальше от волкодава, который собирается отряхиваться" class="article_pic" height="274" src="/upload/resize_cache/iblock/737/412_2150_1/737a0fcba064c046db9a988052d599fd.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Советуем отойти подальше от волкодава, который собирается отряхиваться
+         </div>
+        </div>
+        <p>
+         Помимо стандартного расчесывания ирландских волкодавов следует тримминговать, но на деле этим занимаются преимущественно владельцы выставочных собак. Щиплется, как правило, не все животное целиком, а лишь голова, причем лучше делать это вручную, вооружившись силиконовым напальчником. Обычно тримминг начинается с ушей: волос с внешней части ушного полотна выщипывается до тех пор, пока ухо не станет относительно гладким. Клин между глазами, идущий ото лба к черепу, тоже аккуратно триммингуется, а вместе с ним линии шеи и щек. Обрабатывать собаку лучше не за день до выставки, а примерно за полтора месяца, чтобы переходы между выщипанными и необработанными зонами не бросались в глаза. Отдельные заводчики практикуют систематический еженедельный тримминг, точнее его упрощенный вариант, когда убираются только топорщащиеся волоски по всему черепу. Но если вы обеими руками за естественность и брутальность облика, можете пренебречь этим правилом, как поступает добрая половина заводчиков.
+        </p>
+        <p>
+         Купают ирландских волкодавов нечасто – 2-3 раз в год вполне достаточно, используя увлажняющие шампуни для жесткошерстных собак типа №33 Coarse Coat Shampoo или Clean Coating Shampoo от «Isle of Dogs». Чистка ушей «ирландца» особыми тонкостями не отличается. Раз в неделю ушную раковину обрабатывают ветеринарным лосьоном, выуживая из нее серу и грязь при помощи ватных дисков и палочек. За глазами следить нужно тщательнее, протирая их раз в 5-7 дней ромашковым настоем. А вот глазные воспаления самостоятельно лучше не лечить: есть риск неправильно поставить диагноз и запустить болезнь.
+        </p>
+        <p>
+         Уход за когтями и зубами ирландского волкодава классический: обрезание пластины когтерезом по мере ее отрастания и удаление зубного налета чистящей насадкой 3-4 раза в месяц. После прогулок проверяйте кожу на подушечках лап питомца. Если на ней нет видимых повреждений, промойте лапы теплой водой и вытрите. Если кожа потрескалась, что обычно случается зимой, дополнительно смажьте ее маслом или жирным кремом.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Прогулка по побережью" data-fancybox="gallery" href="/upload/iblock/d70/d7009ee578d4b93c0e1eb9a1e9eb3058.jpg" title="Прогулка по побережью">
+          <div class="lazy-load" data-alt="Прогулка по побережью" data-class="article_pic" data-original="/upload/resize_cache/iblock/d70/412_2150_1/d7009ee578d4b93c0e1eb9a1e9eb3058.jpg">
+           <noscript data-alt="Прогулка по побережью" data-class="article_pic" data-original="/upload/resize_cache/iblock/d70/412_2150_1/d7009ee578d4b93c0e1eb9a1e9eb3058.jpg">
+            <img alt="Прогулка по побережью" class="article_pic" height="608" src="/upload/resize_cache/iblock/d70/412_2150_1/d7009ee578d4b93c0e1eb9a1e9eb3058.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Прогулка по побережью
+         </div>
+        </div>
+        <h3>
+         Выгул
+        </h3>
+        <p>
+         Для выгула ирландского волкодава целесообразнее использовать ременной поводок. Взрослых собак выгуливают дважды в день в среднем по часу (10-минутные выходы в туалет не считаются), щенков до полугода выводят «проветриться» каждые 3 часа на 10-15 минут. Не забывайте, ирландские волкодавы – ребята энергичные, но далеко не супермены, так что перегрузки для них вредны.
+        </p>
+        <p>
+         Дайте собаке вволю побегать, если гуляете не вблизи автострады и в поле зрения не наблюдается живых провокаторов в виде бродячих кошек. Учитывайте и то, что до года ирландским волкодавам запрещены прыжки, поэтому начинать отрабатывать на свежем воздухе акробатические номера можно только тогда, когда костная система питомца укрепится. Если выгуливаете ирландского волкодава за городом, в рощах и перелесках, позаботьтесь о защите от эктопаразитов и не ленитесь, придя домой, осмотреть подмышки, холку и паховые зоны любимца. Если «враг» обнаружен, удалите его с тела животного и ближайшие пару дней наблюдайте за поведением своего подопечного – заразиться пироплазмозом от клеща для собаки проще простого.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Учитывая, что основу рациона крупной собаки должно составлять постное мясо либо «сушка» супер-премиум- и холистик-класса, ирландские волкодавы обходятся своим владельцам недешево. Конечно, мясной белок можно периодически заменять рыбным, а также субпродуктами, но такие эксперименты тоже предусматривают приличные траты. Что же касается каш, то лучшими вариантами для «ирландцев» будут гречневая, рисовая и овсяная. При этом доля крупяных изделий в миске питомца не должна превышать ⅓ порции, остальные ⅔ занимает мясо и его отходы.
+        </p>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Кто тут хочет печеньку?" data-fancybox="gallery" href="/upload/iblock/1a4/1a4cc80d2836f1ca84187e097e9aa228.jpg" title="Кто тут хочет печеньку?">
+          <div class="lazy-load" data-alt="Кто тут хочет печеньку?" data-class="article_pic" data-original="/upload/resize_cache/iblock/1a4/412_2150_1/1a4cc80d2836f1ca84187e097e9aa228.jpg">
+           <noscript data-alt="Кто тут хочет печеньку?" data-class="article_pic" data-original="/upload/resize_cache/iblock/1a4/412_2150_1/1a4cc80d2836f1ca84187e097e9aa228.jpg">
+            <img alt="Кто тут хочет печеньку?" class="article_pic" height="412" src="/upload/resize_cache/iblock/1a4/412_2150_1/1a4cc80d2836f1ca84187e097e9aa228.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Кто тут хочет печеньку?
+         </div>
+        </div>
+        <p>
+         Ирландские волкодавы, как правило, не аллергики, поэтому их стол можно разнообразить мясом индейки и курицы. Главное, не заменять полностью птицей говядину и баранину. Полезно включать в меню собаки нежирные творог и кефир, тыкву и кабачок, а также сезонную зелень. Картофель в рационе ирландского волкодава допустим, но изредка и в небольших количествах. Соблюдайте осторожность и с костями: 4-месячным малышам их лучше вообще не давать, чтобы не испортили зубы. А вот годовичкам-подросткам побаловаться кусочком телячьего хребта будет полезно – и порцию натурального коллагена получат, и хватку нижней челюсти потренируют. Взрослым и пожилым собакам кости целесообразнее заменить на менее твердые лакомства из зоомагазина: они не так губительно действуют на зубную эмаль и не провоцируют запоры.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важно:
+         </strong>
+         во избежание заворота желудка после трапезы ирландский волкодав должен полежать 1,5-2 часа, хотя зачастую сытое животное рвется играть. Задача хозяина – приучить собаку отдыхать после каждого приема пищи, без напоминания.
+        </p>
+        <p>
+         Щенки ирландских волкодавов растут очень интенсивно, в связи с чем неопытные владельцы частенько увеличивают малышу паек. Это в корне неправильно. Юный «ирландец» должен питаться строго по сетке, разработанной для щенков крупных пород, иначе вы рискуете просто раскормить его. Безусловно, выглядит упитанный волкодав куда симпатичней поджарых собратьев, но вот его опорно-двигательная система лишним килограммам рада точно не будет.
+        </p>
+        <p>
+         Витаминные комплексы и БАДы – обязательный пункт в меню ирландского волкодава, питающегося «натуралкой». Особенное внимание – препаратам с глюкозамином и хондроитином, поддерживающим в рабочем состоянии связки и суставы животного. Если же необходимо потрудиться над улучшением шерстного покрова собаки, присмотритесь к комплексам с Омега-3, 6 и 9.
+        </p>
+        <p>
+         Частота кормлений:
+        </p>
+        <ul>
+         <li>
+          от 1 до 3 месяцев – 4-5 раз в день;
+         </li>
+         <li>
+          с 3 до 6 месяцев – 3 раза, с интервалом между кормлениями в 5 часов;
+         </li>
+         <li>
+          с 6 месяцев – 2 раза в день, но если щенок слаб, можно продолжить трехразовые кормления до года.
+         </li>
+        </ul>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Рост дружбе не помеха" data-fancybox="gallery" href="/upload/iblock/ea2/ea2dda9e2cdd473b465659ad6497c97d.jpg" title="Рост дружбе не помеха">
+          <div class="lazy-load" data-alt="Рост дружбе не помеха" data-class="article_pic" data-original="/upload/resize_cache/iblock/ea2/1024_2150_1/ea2dda9e2cdd473b465659ad6497c97d.jpg">
+           <noscript data-alt="Рост дружбе не помеха" data-class="article_pic" data-original="/upload/resize_cache/iblock/ea2/1024_2150_1/ea2dda9e2cdd473b465659ad6497c97d.jpg">
+            <img alt="Рост дружбе не помеха" class="article_pic" src="/upload/resize_cache/iblock/ea2/1024_2150_1/ea2dda9e2cdd473b465659ad6497c97d.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Рост дружбе не помеха
+         </div>
+        </div>
+        <h2 id="gl6">
+         Здоровье и болезни ирландских волкодавов
+        </h2>
+        <p>
+         Неукротимые снаружи, внутри ирландские волкодавы остаются достаточно хрупкими созданиями с невысокой продолжительностью жизни (всего-то 6-8, редко – 10 лет) и предрасположенностью к обширному ряду заболеваний.
+        </p>
+        <p>
+         Недуги представителей этой породы:
+        </p>
+        <ul>
+         <li>
+          вывих коленной чашечки;
+         </li>
+         <li>
+          гипотиреоз;
+         </li>
+         <li>
+          дисплазия тазобедренных суставов;
+         </li>
+         <li>
+          пиодермия (гнойное поражение кожи);
+         </li>
+         <li>
+          катаракта;
+         </li>
+         <li>
+          энтропия (заворот века);
+         </li>
+         <li>
+          остеосаркома;
+         </li>
+         <li>
+          синдром Вобблера (нарушение деятельности ЦНС, в результате которого сжимается шейный отдел позвоночника);
+         </li>
+         <li>
+          гигрома локтевого сустава;
+         </li>
+         <li>
+          дилатационная кардиомиопатия;
+         </li>
+         <li>
+          болезнь Виллебранда (патология свертываемости крови);
+         </li>
+         <li>
+          остеохондроз плеча;
+         </li>
+         <li>
+          вздутие живота/заворот желудка.
+         </li>
+        </ul>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Мама с щенком" data-fancybox="gallery" href="/upload/iblock/b0b/b0bbd23eed1db48d756c3d1afb30cf0d.jpg" title="Мама с щенком">
+          <div class="lazy-load" data-alt="Мама с щенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/b0b/412_2150_1/b0bbd23eed1db48d756c3d1afb30cf0d.jpg">
+           <noscript data-alt="Мама с щенком" data-class="article_pic" data-original="/upload/resize_cache/iblock/b0b/412_2150_1/b0bbd23eed1db48d756c3d1afb30cf0d.jpg">
+            <img alt="Мама с щенком" class="article_pic" height="275" src="/upload/resize_cache/iblock/b0b/412_2150_1/b0bbd23eed1db48d756c3d1afb30cf0d.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Мама с щенком
+         </div>
+        </div>
+        <ul>
+         <li>
+          Ирландские волкодавы-кобели открыты и прямолинейны, чего не скажешь о суках. Так что знакомясь с породой впервые, остановитесь на «мальчике», с ним проще работать.
+         </li>
+         <li>
+          Чтобы изучить характер питомца, выбирайте подрощенного, а не двухмесячного щенка. У слишком юных «ирландцев» индивидуальность выражена слабо, поэтому они все одинаково милы и забавны.
+         </li>
+         <li>
+          Не избегайте знакомства с матерью и отцом малыша, чтобы видеть перспективы развития питомца.
+         </li>
+         <li>
+          Оцените атмосферу, царящую в питомнике. Грязные, тесные клетки, апатичные щенки с признаками рахита, отказ заводчика продемонстрировать хотя бы одного из производителей говорят о том, что здесь на собаках просто делают деньги.
+         </li>
+         <li>
+          Поинтересуйтесь возрастом суки, щенков которой вам предлагают, и откажитесь от покупки, если на продажу выставлен помет от 7-летней «бабушки».
+         </li>
+         <li>
+          Загляните в ветпаспорт щенка ирландского волкодава, где должны быть отметки о соответствующих возрасту прививках.
+         </li>
+         <li>
+          Ответственный заводчик всегда тестирует помет хотя бы на некоторые из генетических заболеваний, поэтому если в питомнике покупателям предлагают взглянуть на результаты обследования животных – это плюс в карму заведения.
+         </li>
+         <li>
+          Покупайте 6-ти, а лучше 12-недельных щенков и отказывайтесь от 5-недельных крох, слишком рано отнятых от суки.
+         </li>
+         <li>
+          Стоимость щенка ирландского волкодава никак не соотносится с его окрасом. Если продавец пытается завысить ценник за уникальный оттенок шерсти – он просто хитрит.
+         </li>
+         <li>
+          Приобретая подросшего щенка, поинтересуйтесь у заводчика, знаком ли волкодав с поводком, какие команды знает. У опытного специалисты «подростки» социализированы, послушны и отзываются на некоторые команды.
+         </li>
+        </ul>
+        <h2>
+         Фото щенков ирландского волкодава
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f20/f20572fa47440037a2bfaeb2ae4d17af.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/f20/380_264_2/f20572fa47440037a2bfaeb2ae4d17af.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/f20/380_264_2/f20572fa47440037a2bfaeb2ae4d17af.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/f20/380_264_2/f20572fa47440037a2bfaeb2ae4d17af.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/6cb/6cbb304ed1d575c269d830355dcc3735.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/6cb/380_264_2/6cbb304ed1d575c269d830355dcc3735.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/6cb/380_264_2/6cbb304ed1d575c269d830355dcc3735.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/6cb/380_264_2/6cbb304ed1d575c269d830355dcc3735.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/26b/26baf3d82898d647dea0bb14177e8efc.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/26b/380_264_2/26baf3d82898d647dea0bb14177e8efc.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/26b/380_264_2/26baf3d82898d647dea0bb14177e8efc.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/26b/380_264_2/26baf3d82898d647dea0bb14177e8efc.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/d20/d2041b7078cc89c17ed1844c877d48ef.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/d20/380_264_2/d2041b7078cc89c17ed1844c877d48ef.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/d20/380_264_2/d2041b7078cc89c17ed1844c877d48ef.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/d20/380_264_2/d2041b7078cc89c17ed1844c877d48ef.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/613/613cf57788a83006e05609f0e14a6f8b.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/613/380_264_2/613cf57788a83006e05609f0e14a6f8b.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/613/380_264_2/613cf57788a83006e05609f0e14a6f8b.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/613/380_264_2/613cf57788a83006e05609f0e14a6f8b.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/77a/77a53da3fdc9076491fed82b4dcaa337.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/77a/380_264_2/77a53da3fdc9076491fed82b4dcaa337.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/77a/380_264_2/77a53da3fdc9076491fed82b4dcaa337.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/77a/380_264_2/77a53da3fdc9076491fed82b4dcaa337.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/96c/96ce0e5f5cd36b793eb27233af6b3fc0.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/96c/380_264_2/96ce0e5f5cd36b793eb27233af6b3fc0.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/96c/380_264_2/96ce0e5f5cd36b793eb27233af6b3fc0.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/96c/380_264_2/96ce0e5f5cd36b793eb27233af6b3fc0.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/b0f/b0ffe2207ac8f5de123a9c3856975a48.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/b0f/380_264_2/b0ffe2207ac8f5de123a9c3856975a48.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/b0f/380_264_2/b0ffe2207ac8f5de123a9c3856975a48.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/b0f/380_264_2/b0ffe2207ac8f5de123a9c3856975a48.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/080/080dbd8e6704e292162e6503dcc33e2d.jpg" title="">
+           <div class="lazy-load" data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/080/380_264_2/080dbd8e6704e292162e6503dcc33e2d.jpg">
+            <noscript data-alt="Ирландский волкодав" data-class="article_pic" data-original="/upload/resize_cache/iblock/080/380_264_2/080dbd8e6704e292162e6503dcc33e2d.jpg">
+             <img alt="Ирландский волкодав" class="article_pic" src="/upload/resize_cache/iblock/080/380_264_2/080dbd8e6704e292162e6503dcc33e2d.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl8">
+         Цена ирландского волкодава
+        </h2>
+        <p>
+         В нашей стране ирландские волкодавы сравнительно мало разрекламированы, поэтому зарегистрированных питомников, занимающихся разведением породы, не так много. Тем не менее купить чистокровного «ирландца» в России вполне возможно, если вы готовы отдать за него порядка 60 000 - 80 000 рублей – именно в такие суммы оценивает своих щенков большинство отечественных заводчиков.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения ирландского волкодава на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/irlandskiy-volkodav/forum/">
+        Перейти на
+        форум ирландского волкодава
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Ирландский волкодав" src="/upload/iblock/947/947ee79bab0c6304ab0ba2ae7d8be446.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/irlandskiy-volkodav/">
+          Ирландский волкодав
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/irlandskiy-volkodav/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-volkodav/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-volkodav/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-volkodav/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-volkodav/video/">
+         Видео
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-volkodav/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/papilon/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Папильон" data-original="/upload/resize_cache/iblock/6d1/100_100_1/6d1b9f52aa9f2d04908db02f1b12056a.jpg">
+          <noscript data-alt="Папильон" data-original="/upload/resize_cache/iblock/6d1/100_100_1/6d1b9f52aa9f2d04908db02f1b12056a.jpg">
+           <img alt="Папильон" src="/upload/resize_cache/iblock/6d1/100_100_1/6d1b9f52aa9f2d04908db02f1b12056a.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Папильон
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/boston-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бостон-терьер" data-original="/upload/resize_cache/iblock/51b/100_100_1/51bfa62f60d3ffb22ed9b145cf71e7d8.jpg">
+          <noscript data-alt="Бостон-терьер" data-original="/upload/resize_cache/iblock/51b/100_100_1/51bfa62f60d3ffb22ed9b145cf71e7d8.jpg">
+           <img alt="Бостон-терьер" src="/upload/resize_cache/iblock/51b/100_100_1/51bfa62f60d3ffb22ed9b145cf71e7d8.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бостон-терьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/bedlington-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бедлингтон-терьер" data-original="/upload/resize_cache/iblock/83e/100_100_1/83eeac68250073efa9c144d031d9b5c2.jpg">
+          <noscript data-alt="Бедлингтон-терьер" data-original="/upload/resize_cache/iblock/83e/100_100_1/83eeac68250073efa9c144d031d9b5c2.jpg">
+           <img alt="Бедлингтон-терьер" src="/upload/resize_cache/iblock/83e/100_100_1/83eeac68250073efa9c144d031d9b5c2.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бедлингтон-терьер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/angliyskiy-koker-spaniel/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Английский кокер-спаниель" data-original="/upload/resize_cache/iblock/ed9/100_100_1/ed93b033c39f22c5b594c0c80f34f8be.jpg">
+          <noscript data-alt="Английский кокер-спаниель" data-original="/upload/resize_cache/iblock/ed9/100_100_1/ed93b033c39f22c5b594c0c80f34f8be.jpg">
+           <img alt="Английский кокер-спаниель" src="/upload/resize_cache/iblock/ed9/100_100_1/ed93b033c39f22c5b594c0c80f34f8be.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Английский кокер-спаниель
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Firlandskiy-volkodav%252F%253Fcheck_key%253Dd8e88a0cdbce7258243b1eff13a3474b%2526ANIMAL_CODE%253Dirlandskiy-volkodav%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Firlandskiy-volkodav%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmlybGFuZHNraXktdm9sa29kYXYlMkYlM0ZjaGVja19rZXklM0RkOGU4OGEwY2RiY2U3MjU4MjQzYjFlZmYxM2EzNDc0YiUyNkFOSU1BTF9DT0RFJTNEaXJsYW5kc2tpeS12b2xrb2RhdiUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZpcmxhbmRza2l5LXZvbGtvZGF2JTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Firlandskiy-volkodav%252F%253Fcheck_key%253Dd8e88a0cdbce7258243b1eff13a3474b%2526ANIMAL_CODE%253Dirlandskiy-volkodav%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Firlandskiy-volkodav%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Firlandskiy-volkodav%252F%253Fcheck_key%253Dd8e88a0cdbce7258243b1eff13a3474b%2526ANIMAL_CODE%253Dirlandskiy-volkodav%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Firlandskiy-volkodav%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "46.72.8.63"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--6393b3da4e7774a3752b20fc3cd42c72-->

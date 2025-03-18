@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'7b8290094eb8'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Английский фоксхаунд, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Английский фоксхаунд – профессиональный охотник на лис, а также один из живых символов британской аристократии." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/f5a/q8kjimd97oz4a65d55x2bhyohcv4xob3.jpg" property="og:image"/>
+     <title>
+      Английский фоксхаунд: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/angliyskiy-fokskhaund/" property="og:url"/>
+     <meta content="Английский фоксхаунд: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Английский фоксхаунд – профессиональный охотник на лис, а также один из живых символов британской аристократии." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/angliyskiy-fokskhaund/" itemprop="url">
+         <span itemprop="title">
+          Английский фоксхаунд
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Английский фоксхаунд
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/angliyskiy-fokskhaund/">
+          Описание
+         </a>
+         <a href="/dog/angliyskiy-fokskhaund/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/angliyskiy-fokskhaund/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/angliyskiy-fokskhaund/photo/">
+          Фото
+         </a>
+         <a href="/dog/angliyskiy-fokskhaund/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Английский фоксхаунд" src="/upload/iblock/53b/ejm59vghub9n54e1bey60d6b4lr7cp8o.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/angliyskiy-fokskhaund/">
+           английская паратая гончая
+          </a>
+          ,
+          <a href="/dog/angliyskiy-fokskhaund/">
+           английская лисья гончая
+          </a>
+          ,
+          <a href="/dog/angliyskiy-fokskhaund/">
+           парфорсная лисья гончая
+          </a>
+         </span>
+         <p>
+          Английский фоксхаунд – профессиональный охотник на лис, а также один из живых символов британской аристократии.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/angliyskiy-fokskhaund/photo/">
+         Все
+            фото английского фоксхаунда
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История паратой лисьей гончей
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Охота с английским фоксхаундом
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер английского фоксхаунда
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни английских фоксхаундов
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена английской лисьей гончей
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Английский фоксхаунд
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         XVI век
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         30-35 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         58-64 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         10-13 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Английский фоксхаунд – одна из любимых охотничьих пород Наполеона Бонапарта. По некоторым сведениям, в своре монарха одновременно содержалось до 120 особей.
+        </li>
+        <li>
+         Близкой родственницей английских фоксхаундов является русская пегая гончая (РПГ).
+        </li>
+        <li>
+         С выходом запрета охоты на лис в Великобритании поголовье английских фоксхаундов начало заметно сокращаться. Данный факт очень пугает британских гончатников, предсказывающих скорое исчезновение породы.
+        </li>
+        <li>
+         В отличие от других разновидностей гончих, английские фоксхаунды способны нести охранную службу. На исторической родине животных часто привлекали к охране скота и домашней территории.
+        </li>
+        <li>
+         Парфорсная лисья гончая – одна из немногочисленных пород, представители которой полностью сохранили первоначальную рабочую квалификацию и никогда не переходили в категорию питомцев-компаньонов.
+        </li>
+        <li>
+         В силу гипертрофированного преследовательского инстинкта кобели и суки фоксхаунда часто теряются в лесных массивах, а также убегают из дома, перепрыгивая через невысокие заборы.
+        </li>
+        <li>
+         Как все вислоухие собаки, паратые гончие требуют более внимательного к себе отношения – их органы слуха нуждаются в частых гигиенических процедурах.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Английский фоксхаунд" data-original="/upload/iblock/f5a/q8kjimd97oz4a65d55x2bhyohcv4xob3.jpg">
+          <noscript data-alt="Английский фоксхаунд" data-original="/upload/iblock/f5a/q8kjimd97oz4a65d55x2bhyohcv4xob3.jpg">
+           <img alt="Английский фоксхаунд" src="/upload/iblock/f5a/q8kjimd97oz4a65d55x2bhyohcv4xob3.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Английский фоксхаунд
+          </strong>
+          – настоящий аристократ собачьего мира с репутацией блестящего лисогона и на удивление уживчивым характером. Обладание таким выдающимся питомцем ставит владельца на ступеньку выше других гончатников, но и обязательства налагает соответствующие. А именно: обзаводиться породой, не имея в планах регулярные выезды на охоту, – заведомо провальная затея.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Плохой охранник (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Английский фоксхаунд основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История паратой лисьей гончей
+        </h2>
+        <p>
+         Возникновение породы совпало с временным промежутком, когда любимая англичанами охота на лис превратилась из стандартного истребления вредителей в аристократическое развлечение. Считается, что это произошло примерно в XVI столетии. За основу фоксхаундов был взят фенотип кельтской гончей, в который на разных этапах подмешивались гены терьеров,
+         <a class="ph" href="/dog/greyhound/">
+          грейхаундов
+         </a>
+         и даже
+         <a class="ph" href="/dog/angliyskiy-buldog/">
+          бульдогов
+         </a>
+         .
+        </p>
+        <p>
+         Сказать, как выглядели первые представители этого породного клана, достаточно сложно – племенные книги у англичан появились только в XVIII веке. Однако разведение велось рекордными темпами и с истинно британской дотошностью. О серьезном подходе к делу свидетельствуют и спортивные энциклопедии позаппрошлого века, где парфорсных гончих называют «самой совершенной породой».
+        </p>
+        <p>
+         Мировую известность британские лисогоны получили практически сразу. Известно, например, что уже в 1650 году часть собак благополучно высадилась на американском побережье. Более того, крови «англичан» дали начало такой породе, как американский фоксхаунд. Вывозили паратых лисьих гончих и в индийские колонии. Таким образом местные власти собирались бороться с нашествием шакалов. Однако эксперимент быстро провалился, поскольку неподготовленные к жаркому климату собаки быстро погибали. На сегодняшний день порода является живым символом Соединенного Королевства и помимо Англии активно разводится в США, Австралии и Канаде.
+        </p>
+        <h2>
+         Видео: Английский фоксхаунд
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="mG9HwFTC0M0">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2>
+         Стандарт английского фоксхаунда
+        </h2>
+        <p>
+         Внешне гончаки Соединенного Королевства мало чем отличаются от сородичей по группе, то есть это все такие же мощные, хорошо сбалансированные собаки, ориентированные на длительную, физически изматывающую работу. Парфорсная охота подразумевает преследование зверя до полного изнеможения. Рост среднестатистического фоксхаунда – 58-64 см, вес – 27-34 кг.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Плоские линии черепа дополнены средневыраженным стопом и квадратной удлиненной мордой. Мочка с крупными ноздрями. Присутствуют не слишком большие брыли.
+        </p>
+        <h3>
+         Челюсти
+        </h3>
+        <p>
+         Довольно массивные, сжатые в ножницеобразную конструкцию (прикус). Зубы стоят в рядах ровно и плотно.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Внимательно всматривающиеся, небольшого размера, с радужной оболочкой карего или орехового оттенка.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Не грубая, но развитая, с изгибом.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         С широкой, практически прямой спиной и немного выступающей сильной поясницей. Ребра грудной клетки заметно округлые.
+        </p>
+        <h3>
+         Ноги
+        </h3>
+        <p>
+         Длинные, крепкие и костистые с сильно отведенными назад лопатками и низкими скакательными суставами. Лапы плотные, округлых очертаний. Шаг собаки свободный, с переходом в галоп.
+        </p>
+        <h3>
+         Хвост (гон)
+        </h3>
+        <p>
+         Хвост английского фоксхаунда находится в приподнятом «веселом» положении, но не забрасывается на спину.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Плотная, короткая, хорошо защищающая в ненастье.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Белый с пятнами черного цвета в румянах либо лимонно-пегий. Вообще фоксхаунд может иметь любую масть, допустимую для представителей гончей группы. Но британские специалисты очень ценят окрас с симметрично расположенными пятнами, а также характерным темным «седлом» на спине.
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <p>
+         Безоговорочной дисквалификации подлежат особи с поведенческими нарушениями, а также имеющие явные экстерьерные отклонения от стандарта.
+        </p>
+        <h2 id="gl2">
+         Охота с английским фоксхаундом
+        </h2>
+        <p>
+         Паратая гончая была выведена специально для парфорсной охоты, которая уже давно является частью английской культуры. Классическая британская техника – это выслеживание лисы, преследование и ее поимка при помощи собак. По правилам, охотники должны проследовать за мчащейся сворой гончаков на лошадях. Ружья в погоне принципиально не используются.
+        </p>
+        <p>
+         Если в процессе преследования лиса уходит в нору, к делу подключают терьеров, но чаще всего гончаки справляются сами. В погоне фоксхаунды развивают скорость до 25 км/ч и не снижают темпа на протяжении всего «мероприятия». При этом чутье у породы не самое выдающееся. Объясняется это тем, что дикие лисы обладают достаточно сильным звериным запахом, уловить который может даже не самая чутьистая собака.
+        </p>
+        <p>
+         В старой Англии охота на лис представляла собой довольно помпезное зрелище. На нее полагалось изысканно одеваться, а лошадей к процессу тщательно готовить. Кроме того, на таких прогулках часто присутствовали дамы, так что погоня должна была выглядеть максимально эстетично.
+        </p>
+        <h2 id="gl3">
+         Характер английского фоксхаунда
+        </h2>
+        <p>
+         При всем своем миролюбии и незлобливом характере в быту паратая гончая создана для охоты и только для нее. Да, собака может посторожить дом в ваше отсутствие и даже облаять вторгшегося на территорию злоумышленника. Но ее основная деятельность все-таки охотничья. В остальном же, это добродушный и приятный во всех отношениях питомец, с которым легко наладить контакт.
+        </p>
+        <p>
+         Настоящий английский фоксхаунд любит всех и терпит даже не очень приятных для него людей. С детьми тоже не возникнет никаких конфликтов и трений. В ответ на надоедливые притязания ребятни собака скорее сменит локацию и укроется в труднодоступном месте, чем позволит себе поставить на место малолетнего приставалу.
+        </p>
+        <p>
+         Английского фоксхаунда можно спокойно брать в дом, где уже живет пара-тройка собак. Парфорсных лисьих гончих всегда разводили для работы в стае, поэтому принципы и законы собачьих коллективов эти «джентльмены» впитали на генетическом уровне.
+        </p>
+        <p>
+         Повышенная эмоциональность – отличительная черта породы. Английский фоксхаунд не считает нужным прятать радость от встречи с тем, кто ему приятен. Так что будьте готовы к внезапным наскокам, облизыванию лица, восторженному поскуливанию и прочим «нежностям». Поразговаривать «хвосты» тоже не прочь. Хотя что уж там – лая в вашей жизни будет много. Порой даже чересчур. Но такую «встроенную опцию» убрать дрессировкой очень сложно. Собственно, это одна из главных причин, почему с английским фоксхаундом невозможно жить в квартире.
+        </p>
+        <p>
+         Немного о побегах – они имеют место быть, учитывая невероятную прыгучесть породы. На прогулках по городу паратую гончую лучше не спускать с поводка, иначе увлеченный пес просто умчится за горизонт за первым попавшимся котом. Кстати, о кошках: с ними «англичанин» категорически не ладит, как, впрочем, и с другими пушистиками вроде хорьков и морских свинок.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Природная решительность немного мешает породе в обучении. Ситуации, когда парфорсная гончая упрямится, игнорирует команды или исполняет их по-своему – достаточно распространенное явление. О быстрой дрессировке с такой собакой лучше забыть. При этом интеллектуальными способностями фоксхаунд не обижен. Достаточно просто чуть более настойчиво и неуклонно следовать поставленной цели – и вы обязательно получите нужный результат.
+        </p>
+        <p class="legenda">
+         <strong>
+          К сведению:
+         </strong>
+         линии английских фоксхаундов не делятся на выставочные и рабочие. В Великобритании все представители породы обязательно охотятся. Как результат: приучить лисью гончую к малоподвижной жизни городского имиджевого питомца не получится.
+        </p>
+        <p>
+         Подготавливать щенка к охоте нужно в местах максимально вероятного появления лис. Если по незнанию подросток берет сначала заячий след, его наказывают, за лисий – наоборот, поощряют. Оптимальный возраст для нагонки – 8-10 месяцев. Общеизвестный факт: лучше всего молодая собака обучается, перенимая опыт старшего «хвоста». Так что если дома уже имеется рабочий гончак, фоксхаунд легко скопирует его технику. Правда, у методики есть и противники. Например, собакам свойственно перенимать не только сильные, но и слабые стороны старших «товарищей». Соответственно, если старая гончая не идеальна в работе, не водите ее на охоту одновременно с молодым питомцем, если не хотите повторения прежних ошибок.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         Первое и самое главное – не держать английского фоксхаунда в квартире. Загородная усадьба, сельский домик с огороженной территорией – локации, в которых будет уютно питомцу и спокойно хозяину. Обязателен выгул дважды в день в местах, удаленных от автомагистралей. В людных местах держите собаку на поводке. На лугах и в лесополосе питомца можно отпустить побегать, но при этом контролируйте его перемещения.
+        </p>
+        <p>
+         Прогулки в интервале между охотничьими выездами должны быть продуктивными, поэтому побольше нагружайте собаку. Тогда дома она будет вести себя спокойнее и менее «голосисто». Стандартные места обитания для английского фоксхаунда – будка и вольер. В суровую морозную зиму собаку лучше временно поместить в отапливаемое помещение.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Гладкая шерсть английской паратой гончей не впитывает загрязнения, так что мыть ее в принципе необязательно. Исключения – подготовка к выставке и случаи, когда пес реально испачкался в чем-то сильно пахнущем. Линька у породы проходит умеренными темпами. В этот период достаточно счищать шерстинки с тела силиконовой рукавицей или обычной щеткой.
+        </p>
+        <p>
+         С ушами придется повозиться чуть дольше. Висячее ушное полотно перекрывает доступ воздуху в воронку, создавая комфортную среду для бактерий. Чтобы этого не происходило, своевременно удаляйте серу и загрязнения из слухового прохода, а также самостоятельно «вентилируйте» его. Нужно приподнять ухо и помахать, загоняя воздух внутрь.
+        </p>
+        <p>
+         Гигиена ротовой полости должна осуществляться 2-3 раза в неделю. Приучать собаку к зубной щетке и пасте нужно со щенячьего возраста. Твердые лакомства из жил, специальные гигиенические составы от зубного камня – тоже хорошее подспорье для питомцев, которых не уговорить на классическую чистку зубов. Также обязательно контролируйте длину когтей и своевременно подрезайте отросшие кончики, которые сильно мешают на охоте.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Обычно гончатники с опытом кормят питомцев по классической схеме, то есть натуральными продуктами. При этом качественная «сушка» расценивается как приемлемая альтернатива. В целом порода в еде неприхотлива и охотно съедает то, что положено в миску. Продукт №1 для рабочей собаки – мясо. В эту категорию входят не только филейные части туши, но и хрящи, желудки (предварительно промытые), печень, легкие, сердце, селезенка. Мясо обязательно должно быть постное, то есть не свинина.
+        </p>
+        <p>
+         Некоторые охотники дают питомцам сырую свежую кровь крупного рогатого скота, поскольку в ней содержится много полезных белков. Жиры фоксхаундам положены легкоусваиваемые. Это сливочное масло, сметана, козье молоко. Зимой, когда организм затрачивает много энергии на согревание, этот список можно усилить говяжьим жиром. Хилым, медленно набирающим массу щенкам и подросткам делают укрепляющую болтушку – сырой желток куриного яйца взбивают с молоком.
+        </p>
+        <p class="legenda">
+         Важно: наиболее сытно гончую кормят в сезон охоты и менее обильно, когда она ведет образ жизни домашней собаки. При этом накануне выезда на охотничьи мероприятия питомцу еду не предлагают.
+        </p>
+        <p>
+         Покрыть потребность собачьего организма в углеводах призваны перловая, гречневая, овсяная крупы, а также ржаные сухарики. Сюда же можно добавить пророщенные пшеничные и овсяные зерна. Любые овощи – это источники витаминов и клетчатки, поэтому их тоже добавляйте в миску питомца. Хорошо, если собака приучена есть овощи сырыми в виде салатов, сдобренных нерафинированным маслом, или мелкой стружки. Если же нет, зелень и корнеплоды придется предлагать в отварном виде.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни английских фоксхаундов
+        </h2>
+        <p>
+         Для собак рабочей «квалификации» и не самых маленьких габаритов, английские фоксхаунды живут достаточно долго. Столетия планового и кропотливого разведения пошли породе только на пользу, сократив список возможных заболеваний ее представителей до абсолютного минимума. Основные недуги гончаков:
+        </p>
+        <ul>
+         <li>
+          эпилепсия;
+         </li>
+         <li>
+          болезни и патологии почек;
+         </li>
+         <li>
+          дисплазия тазобедренного сустава;
+         </li>
+         <li>
+          кардиомиопатия;
+         </li>
+         <li>
+          гипотиреоз.
+         </li>
+        </ul>
+        <p>
+         Висячее положение ушей делает фоксхаундов уязвимыми перед ушными инфекциями. Но это типичная проблема всех вислоухих пород.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Опытные охотники рекомендуют в первую очередь оценивать физиологические данные щенков. Например, не брать малышей с заваленным набок гоном (хвостом). Максимально темные глаза у щенка – хороший признак, так как по мере взросления собаки окрас радужки светлеет и может оказаться не соответствующим стандарту.
+        </p>
+        <ul>
+         <li>
+          По наблюдениям специалистов, лучшие щенки у гончих бывают в первых 3-4 пометах. Затем качество потомства постепенно снижается. Так что всегда спрашивайте у владельца, сколько раз рожала сука.
+         </li>
+         <li>
+          Выжловки (суки) в возрасте 8-9 лет – обычно не лучшие производительницы (возраст кобеля на потомство обычно не влияет). Постарайтесь не брать от них щенков.
+         </li>
+         <li>
+          Одна из самых неподходящих категорий гончаков – потомство от собак-молчунов. На охоте такие животные гонят зверя без голоса, что полностью противоречит всем охотничьим законам.
+         </li>
+        </ul>
+        <p>
+         Уделяйте максимум внимания строению черепа малышей. Выжляки и выжловки с выраженной бульдожиной – это плембрак. Толстые ножки щенка свидетельствуют о его нестомчивости (выносливости) во взрослом возрасте.
+        </p>
+        <h2 id="gl8">
+         Цена английской лисьей гончей
+        </h2>
+        <p>
+         За щенка чистых кровей из питомников Великобритании придется отдать минимум 1000 €. В РФ породой пока занимаются единичные заводчики. Это значит, что стоимость подходящего английского фоксхаунда может быть еще выше.
+        </p>
+        <h2 id="gl1">
+        </h2>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения английского фоксхаунда на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/angliyskiy-fokskhaund/forum/">
+        Перейти на
+        форум английского фоксхаунда
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Английский фоксхаунд" src="/upload/iblock/53b/ejm59vghub9n54e1bey60d6b4lr7cp8o.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/angliyskiy-fokskhaund/">
+          Английский фоксхаунд
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/angliyskiy-fokskhaund/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-fokskhaund/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-fokskhaund/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-fokskhaund/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/angliyskiy-fokskhaund/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/bretonskiy-epanol/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бретонский эпаньоль" data-original="/upload/resize_cache/iblock/c3e/100_100_1/9vgu34zs8e4pxn9xwxgb9vrhvt0jn6g0.jpg">
+          <noscript data-alt="Бретонский эпаньоль" data-original="/upload/resize_cache/iblock/c3e/100_100_1/9vgu34zs8e4pxn9xwxgb9vrhvt0jn6g0.jpg">
+           <img alt="Бретонский эпаньоль" src="/upload/resize_cache/iblock/c3e/100_100_1/9vgu34zs8e4pxn9xwxgb9vrhvt0jn6g0.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бретонский эпаньоль
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/leonberger/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Леонбергер" data-original="/upload/resize_cache/iblock/3f8/100_100_1/3f8ffbf9639e2c6370001b553ee32280.jpg">
+          <noscript data-alt="Леонбергер" data-original="/upload/resize_cache/iblock/3f8/100_100_1/3f8ffbf9639e2c6370001b553ee32280.jpg">
+           <img alt="Леонбергер" src="/upload/resize_cache/iblock/3f8/100_100_1/3f8ffbf9639e2c6370001b553ee32280.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Леонбергер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/shotlandskiy-setter/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Шотландский сеттер" data-original="/upload/resize_cache/iblock/b41/100_100_1/6iwkcqf0j4ypaiz6e617slj0tecprwqt.jpg">
+          <noscript data-alt="Шотландский сеттер" data-original="/upload/resize_cache/iblock/b41/100_100_1/6iwkcqf0j4ypaiz6e617slj0tecprwqt.jpg">
+           <img alt="Шотландский сеттер" src="/upload/resize_cache/iblock/b41/100_100_1/6iwkcqf0j4ypaiz6e617slj0tecprwqt.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Шотландский сеттер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/bankhar/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Банхар" data-original="/upload/resize_cache/iblock/caf/100_100_1/33re4sdhjdjehk1yg1hq4f9eafkrvwis.jpg">
+          <noscript data-alt="Банхар" data-original="/upload/resize_cache/iblock/caf/100_100_1/33re4sdhjdjehk1yg1hq4f9eafkrvwis.jpg">
+           <img alt="Банхар" src="/upload/resize_cache/iblock/caf/100_100_1/33re4sdhjdjehk1yg1hq4f9eafkrvwis.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Банхар
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-fokskhaund%252F%253Fcheck_key%253Dce6d871795ca62f0c3a6bc95d551e762%2526ANIMAL_CODE%253Dangliyskiy-fokskhaund%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fangliyskiy-fokskhaund%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmFuZ2xpeXNraXktZm9rc2toYXVuZCUyRiUzRmNoZWNrX2tleSUzRGNlNmQ4NzE3OTVjYTYyZjBjM2E2YmM5NWQ1NTFlNzYyJTI2QU5JTUFMX0NPREUlM0RhbmdsaXlza2l5LWZva3NraGF1bmQlMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGYW5nbGl5c2tpeS1mb2tza2hhdW5kJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-fokskhaund%252F%253Fcheck_key%253Dce6d871795ca62f0c3a6bc95d551e762%2526ANIMAL_CODE%253Dangliyskiy-fokskhaund%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fangliyskiy-fokskhaund%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fangliyskiy-fokskhaund%252F%253Fcheck_key%253Dce6d871795ca62f0c3a6bc95d551e762%2526ANIMAL_CODE%253Dangliyskiy-fokskhaund%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fangliyskiy-fokskhaund%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "176.59.35.23"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--e978e4892e35907d07aa32e95f8423a7-->

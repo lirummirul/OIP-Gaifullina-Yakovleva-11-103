@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'c8d76c863087'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Бельгийский гриффон, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Бельгийский гриффон – представитель секции малых бельгийских собак, потешный усатый брахицефал черного либо черно-подпалого окраса." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/b4a/b4a5ecb000f316245b0b14625d749c0e.jpg" property="og:image"/>
+     <title>
+      Бельгийский гриффон: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/belgiyskiy-griffon/" property="og:url"/>
+     <meta content="Бельгийский гриффон: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Бельгийский гриффон – представитель секции малых бельгийских собак, потешный усатый брахицефал черного либо черно-подпалого окраса." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/belgiyskiy-griffon/" itemprop="url">
+         <span itemprop="title">
+          Бельгийский гриффон
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Бельгийский гриффон
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/belgiyskiy-griffon/">
+          Описание
+         </a>
+         <a href="/dog/belgiyskiy-griffon/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/belgiyskiy-griffon/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/belgiyskiy-griffon/photo/">
+          Фото
+         </a>
+         <a href="/dog/belgiyskiy-griffon/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Бельгийский гриффон" src="/upload/iblock/4b1/4b1f56966009f8c2430c66de4fab5feb.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Бельгийский гриффон – представитель секции малых бельгийских собак, потешный усатый брахицефал черного либо черно-подпалого окраса.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/3df/3df20a917f5d90e7a8595e018fb9ad38.jpg" data-cap="A gazdi azt mondta, amikor rám adja a nyakkendőt beképzelt fejem lesz... szerintem hazudik #griffon #griffons #griffonpuppy #griffonlove #griffonlovers #griffonbelge #griffonsofinstagram #belgagriffon #tündérmogyoró #belgagriffondog #griffondog #grumpygriffons #griffonbruxellois #belgiangriffon #cutedog #conor #conorthegriffon #blackdog #monkeyface #hungariandog #collar #bowtie #pécsikutya #hundogstagram" data-fancybox="images" data-link="https://www.instagram.com/p/B_VGtWLjkGQ/" data-type="image" data-username="conor.the.griffon" href="/upload/uf/887/887fb1df8bb3937852c2d78dda634df2.jpg">
+            <img alt="Бельгийский гриффон" src="/upload/resize_cache/uf/887/293_293_2/887fb1df8bb3937852c2d78dda634df2.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/4a2/4a2d321a683e656470c666c4b7ebb152.jpg" data-cap="Can I take it now? Please please please " data-fancybox="images" data-link="https://www.instagram.com/p/B_VBzSUD9VQ/" data-type="image" data-username="kinggriffon" href="/upload/uf/7c9/7c916aa9315f4dc39c31ebe36b101717.jpg">
+            <img alt="Бельгийский гриффон" src="/upload/resize_cache/uf/7c9/293_293_2/7c916aa9315f4dc39c31ebe36b101717.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/aa8/aa88e2de8712292e44f7aa8c14549a68.jpg" data-cap="Getting my daily $hit done  
+#grumpygriffons #lilgriffons #griffon #griffonlovers #griffonpuppy #griffonbelge #griffonmoscow #mydog #dog #puppy #mypet #cute #monkey #monkeyface #outfitoftheday #grumpydog #dogoftheday #instadog #dogsofinstagram #гриффон #brabanson #pets #petstagram #гриффонлео #leothegriff #leonardodivanci #quarantine  #cuteanimals" data-fancybox="images" data-link="https://www.instagram.com/p/B_Uz0UpDGPW/" data-type="image" data-username="leo_the_griff" href="/upload/uf/28c/28c7824ad674c241b84be2e043869fcd.jpg">
+            <img alt="Бельгийский гриффон" src="/upload/resize_cache/uf/28c/293_293_2/28c7824ad674c241b84be2e043869fcd.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/belgiyskiy-griffon/photo/">
+         Все
+            фото бельгийского гриффона
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы бельгийский гриффон
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы бельгийский гриффон
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер бельгийского гриффона
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Здоровье и болезни бельгийских гриффонов
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Цена бельгийского гриффона
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Бельгийский гриффон
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Бельгия
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         3,5-6 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         18-20 см
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Порода несклонна к побегам и эксцентричному поведению, поэтому подходит флегматичным и пожилым людям, нуждающимся в веселом, но управляемом питомце.
+        </li>
+        <li>
+         Бельгийские гриффоны боятся сквозняков и низких температур. В зимнее время и межсезонье собаке придется приобретать утепленную одежду для прогулок.
+        </li>
+        <li>
+         Представители этого семейства не линяют самостоятельно. Шерстный покров «бельгийцев» обновляется только посредством тримминга.
+        </li>
+        <li>
+         Как и все брахицефалы, бельгийские гриффоны смешно похрапывают во сне, но делают это негромко.
+        </li>
+        <li>
+         Название породы образовано от французского слова griffon – «жесткошерстный» и никак не связано с персонажами древнегреческой мифологии.
+        </li>
+        <li>
+         Невзирая на общую декоративность облика и миниатюрную комплекцию, гриффоны пытаются управлять хозяевами, поэтому важно уделять внимание дрессировке щенков.
+        </li>
+        <li>
+         Порода положительно относится к детям, если поведение малышей не выходит за рамки дозволенного, – терпеть боль и прощать грубость собаки не станут.
+        </li>
+        <li>
+         Бельгийские гриффоны славятся умением находить индивидуальный подход к людям, так что не удивляйтесь, если с каждым домочадцем животное держит себя по-разному.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Бельгийский гриффон" data-original="/upload/iblock/b4a/b4a5ecb000f316245b0b14625d749c0e.jpg">
+          <noscript data-alt="Бельгийский гриффон" data-original="/upload/iblock/b4a/b4a5ecb000f316245b0b14625d749c0e.jpg">
+           <img alt="Бельгийский гриффон" src="/upload/iblock/b4a/b4a5ecb000f316245b0b14625d749c0e.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Бельгийский гриффон
+          </strong>
+          – миниатюрный компаньон, стрессосниматель и заменитель дверного звонка, который найдет подход ко всем обитателям дома, включая таких же четвероногих созданий, как он сам. Шалит косматый усатик в меру и на серьезные диверсии не способен, так что разногласия между хозяином и «бельгийцем» – явление редчайшее. А вот память у породы выдающаяся, поэтому если вы однажды в чем-то ущемили соседского гриффона, он это «запишет» и в дальнейшем внесет вас в список персон, с которыми не стоит связываться.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Сложно (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошие (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Бельгийский гриффон основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы бельгийский гриффон
+        </h2>
+        <p>
+         Бельгийский гриффон – порода, чья история «задокументирована» на полотнах эпохи Возрождения. Подтверждение тому – знаменитый «Портрет четы Арнольфини» Ван Эйка, на котором миниатюрная собачка с гриффоновской внешностью подбирается к подолу платья женской фигуры. Изображения косматых питомцев встречаются и на гравюрах Альбрехта Дюрера, что позволяет определить примерный возраст породы, который составляет почти 600 лет. Кстати, выяснить, какие именно собаки подарили бельгийским гриффонам такой умильный экстерьер, не удается до сих пор. Чаще всего в этом деле подозревают аффенпинчеров и рубиновых кавалер-кинг-чарльз-спаниелей, к чьей крови позднее были подмешаны гены мопсов и йорков.
+        </p>
+        <p>
+         Поначалу предки гриффонов обитали в конюшнях и занимались не самым благородным ремеслом. А если конкретнее, то животных целенаправленно разводили для отлова крыс, поедавших лошадиный овес. Спустя время крошечными собаками заинтересовалась местная знать – потешный облик и игрушечные габариты превращали гриффонов в забавных питомцев, которых было удобно содержать в покоях или брать на балы. Удовлетворять потребности бомонда тут же ринулись все, кто имел хотя бы минимальные представления о селекции, в результате Бельгийское королевство заполонили маленькие собачки с жесткой шерстью и приплюснутыми мордашками.
+        </p>
+        <p>
+         Отмечаться на выставках «бельгийцы» стали с 1883 года, хотя на тот момент их объединяли в одну породу с
+         <a class="ph" href="/dog/bryusselskiy-griffon/">
+          брюссельскими гриффонами
+         </a>
+         . Примерно в это же время животными увлеклись заводчики Туманного Альбиона, так что скоро бельгийские гриффоны начали уезжать в Англию прямо с выставочных рингов. В 1904 году порода была наконец-то стандартизирована и полностью отделена от сородичей –
+         <a class="ph" href="/dog/pti-brabanson/">
+          пти-брабансонов
+         </a>
+         и
+         <a class="ph" href="/dog/bryusselskiy-griffon/">
+          «брюссельцев»
+         </a>
+         , что увеличило ее популярность среди западных и европейских собаководов.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важный момент:
+         </strong>
+         для получения здорового потомства бельгийских гриффонов разрешено вязать как друг с другом, так и с другими представителями группы малых бельгийских собак (
+         <a class="ph" href="/dog/bryusselskiy-griffon/">
+          брюссельскими гриффонами
+         </a>
+         ,
+         <a class="ph" href="/dog/pti-brabanson/">
+          пти-брабансонами
+         </a>
+         ).
+        </p>
+        <h2>
+         Видео: Бельгийский гриффон
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="1ybMFtXUgyo">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы бельгийский гриффон
+        </h2>
+        <p>
+         Бельгийский гриффон,
+         <a class="ph" href="/dog/pti-brabanson/">
+          малый брабансон
+         </a>
+         и
+         <a class="ph" href="/dog/bryusselskiy-griffon/">
+          брюссельский гриффон
+         </a>
+         делят один стандарт внешности на троих, несмотря на то, что между породами есть существенные различия, которые видны невооруженным глазом. Например, идентифицировать
+         <a class="ph" href="/dog/bryusselskiy-griffon/">
+          «брюссельцев»
+         </a>
+         и бельгийских гриффонов можно исключительно по окрасам, чего нельзя сказать о
+         <a class="ph" href="/dog/pti-brabanson/">
+          пти-брабансонах
+         </a>
+         , которые, в отличие от своих косматых сородичей, имеют короткую и идеально прямую шерсть. Что касается непосредственно «бельгийцев», то это потешные глазастики с волосатыми мордашками, больше напоминающие не собак, а героев европейского фольклора – бородатых гномов и троллей.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         У бельгийского гриффона умеренно крупная голова округлой формы с массивным, выпуклым лбом и выраженным стопом. Морда у породистых особей классического брахицефального типа имеет длину не более 1,5 см.
+        </p>
+        <h3>
+         Челюсти, зубы, губы
+        </h3>
+        <p>
+         Нижняя челюсть широкая и имеет изогнутую форму, что позволяет ей выступать за верхние зубы. Как результат: все бельгийские гриффоны имеют заметный перекус. Зубы животного расположены плотно и в линию, при этом важно, чтобы в наличии были все резцы. Губы должны иметь черный окрас и плотно прилегать к челюстям. К тому же когда пасть собаки сомкнута, через нее не должны просматриваться язык и передние зубы.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Крупная, окрашенная в угольно-черный мочка с развернутыми ноздрями располагается на уровне глаз. Кончик носа слегка «оттянут» назад.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         У породы большие, широко расставленные, но не выпученные глаза. Разрез век округлой формы, полностью скрывающий глазной белок. Край века имеет черную окантовку. Предпочтительный окрас радужки – темно-коричневый.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Для малых бельгийских собак допустимы как нормальные, так и купированные уши. Некупированный орган имеет полустоячую «конструкцию» и слегка свисает вперед, но ни в коем случае не вбок. Купированные уши имеют остроконечную форму и стоят строго вертикально (щенкам уши временно подклеивают для придания более устойчивого положения). Само ушное полотно очень миниатюрное, поставленное высоко.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Шеи бельгийских гриффонов умеренной длины, плавно переходящие в холку.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         У гриффонов квадратный формат тела, то есть длина корпуса равна высоте животного в холке. Спина и поясничная зона укороченные, но в меру мускулистые и хорошей ширины. Круп ровный либо чуть наклоненный. Грудь развитая, достигающая локтевых суставов, живот подтянутый с четко обозначенной областью паха.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Передние ноги отличает прочный костяк, а также широкий параллельный постав. Плечи собаки с отчетливыми углами сочленений, локти держатся плотно к телу. Задние конечности крепкие, параллельные друг другу, в гармоничном балансе с передними ногами. Скакательные суставы расположены низко, без выворота во внутреннюю и наружную стороны. Лапки гриффонов миниатюрные, с плотно собранными пальцами и подушечками однородного черного окраса. В движении задние ноги животного обеспечивают мощный толчок, при этом передние конечности не выносятся чересчур высоко.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Как и уши, хвосты бельгийским гриффонам можно купировать на ⅓ от натуральной длины, а можно оставлять в естественном виде. Нормальный хвост отличают высокая посадка и приподнятое положение, когда кончик не закручен и не касается спины.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Шерстный покров двойного типа: с грубой, слегка волнообразной остью и умеренно развитым подшерстком. На мордочке собаки четко обозначены волосяные брови, бородка и усики, что делает ее похожей на сказочное существо. Шерсть на этих участках гораздо длиннее, чем на других зонах тела.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Для бельгийского гриффона характерен черный либо черно-подпалый окрас шерсти. Подпалины должны иметь однородную пигментацию и размещаться на передних ногах от пястей до лап, а на задних – на участке между лапами и скакательными суставами. Кроме того, метки подпала могут иметь место на скулах, грудине, под нижними веками, вокруг ануса, на внутренней части уха и подбородке. Присутствие незначительной доли белых волосков на груди нежелательно, но допустимо.
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <p>
+         Чтобы получить запрет на участие в выставочных мероприятиях, бельгийский гриффон должен обладать следующими пороками экстерьера:
+        </p>
+        <ul>
+         <li>
+          депигментированная либо слабо пигментированная мочка;
+         </li>
+         <li>
+          вываливающийся из-за сомкнутых губ язык;
+         </li>
+         <li>
+          белые пятна на шерсти;
+         </li>
+         <li>
+          чересчур длинная верхняя челюсть, нависающая над нижней;
+         </li>
+         <li>
+          перекосившаяся нижняя челюсть;
+         </li>
+         <li>
+          нетипичные окрасы (все, кроме угольно-черного и черно-подпалого).
+         </li>
+        </ul>
+        <p>
+         Собаки с крипторхизмом и отклонениями в поведении (трусливые и озлобленные) тоже подлежат дисквалификации.
+        </p>
+        <h2 id="gl3">
+         Характер бельгийского гриффона
+        </h2>
+        <p>
+         Бельгийские гриффоны – питомцы, удобные во всех смыслах. Игривые, но не надоедливые, эмоциональные, но легко управляемые, эти забавные глазастики наблюдательны и тонко чувствуют, когда хозяину требуется поднять настроение, а когда лучше не усердствовать и заняться своими делами. При этом человекоориентированность считается главным достоинством породы, что особенно ценно в случаях, когда общество животного призвано скрашивать повседневность, например, для людей с ограниченной подвижностью и пожилых владельцев.
+        </p>
+        <p>
+         С представителями домашней фауны гриффоны не соперничают. Более того, им абсолютно все равно, с кем делить жилплощадь: с грызунами, кошачьим семейством или высокомерными овчарками. Эти крошечные пацифисты готовы на все ради сохранения мирной атмосферы и быстро находят свою нишу в иерархической системе животного мира. Впрочем, не стоит путать бесконфликтность с откровенной трусостью. На провокации и несправедливость со стороны себе подобных «бельгийцы» очень даже реагируют, поэтому, если на улице вашему подопечному пригрозил какой-нибудь дог, крошечный «бородач» не поленится ответить на грубость заливистым лаем.
+        </p>
+        <p>
+         Бельгийские гриффоны тяжело мирятся с одиночеством, поэтому желательно, чтобы животное проживало в семье, где рядом всегда будет кто-то из домочадцев. К тому же, у породы потрясающая память на лица и действия – питомец не просто узнает появляющихся в вашем доме приятелей, но и выстраивает для каждого индивидуальную линию поведения. В компании людей из ближнего круга бельгийский гриффон держится расслабленно-доверительно и дружелюбно, придумывая разнообразные фокусы и безобидные шалости, чтобы привлечь внимание к собственной персоне. А вот незнакомцам при первом столкновении с представителем этой породы приходится проходить проверку. При виде чужака у гриффона включается режим легкой подозрительности, который постепенно сходит на нет, если двуногий «пришелец» не пытается обидеть животное или хозяина.
+        </p>
+        <p>
+         Бельгийские гриффоны не страдают меланхолией и депрессиями, они пребывают на волне позитива и охотно включаются в игровую деятельность. При этом для развлечений заводным «бородачам» всегда требуется компаньон, которым способен стать как хозяин, так и любое четвероногое создание, готовое воспринимать гриффона как равного.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Подпасть под обаяние малых бельгийских собак легко, но не забывайте, что избалованное животное, пусть даже и такое очаровательное, как бельгийский гриффон, – это большая проблема. Кроме того, в четырехмесячном возрасте крошечные «усачи» начинают посягать на статус лидера и пытаются игнорировать хозяйский авторитет. Поначалу подобные старания выглядят смешно. Однако чем дальше заходит питомец в своем непослушании, тем большим дискомфортом это грозит человеку, вынужденному сосуществовать на одной территории с невоспитанной собакой.
+        </p>
+        <p>
+         Корректировать повадки бельгийских гриффонов сравнительно легко. Порода отличается смышленостью и не страдает ослиным упрямством. В 2,5 месяца щенки должны проходить социализацию, то есть учиться спокойно воспринимать прикосновения хозяйских рук, не бояться посторонних шорохов и отзываться на собственную кличку. В то же время стоит учесть, что у малышей, не преодолевших трехмесячную возрастную планку, гиперчувствительная психика, тормозящая учебный процесс. По этой причине на юных особей нельзя давить и прикрикивать. Лучше по мере успешного выполнения команды стимулировать их лакомством.
+        </p>
+        <p>
+         Демонстрировать чрезмерную лояльность тоже не стоит, поэтому если не уверены, что увлеченный интересным занятием питомец пожелает услышать требование, стоит временно приостановить урок. Помните, команда должна выполняться всегда. Пусть поначалу это будет медленно и с отвлечением на посторонние факторы, но в конечном итоге цель должна быть достигнута. По этой причине кинологи настоятельно не советуют делать повторы требований. Юный гриффон быстро сообразит, что хозяин готов подождать, и в дальнейшем постарается откликаться на команды после того, как переделает более важные, по его мнению, дела.
+        </p>
+        <p>
+         Гриффоны-подростки – большие любители полакомиться, плюс в этом возрасте у них крайне обостренное обоняние. Часто ведомые гастрономическими инстинктами «бельгийцы» прибегают к попрошайничеству, однако вестись на умильные псевдоголодные взгляды животного не стоит ни в коем случае. Учтите, еда с вашего стола не должна оказываться перед носом питомца, иначе потом отучить его гипнотизировать взглядом обедающих домочадцев будет нереально. Рычание и попытки укусить человека тоже типичные особенности взрослеющего бельгийского гриффона. Пресекать спонтанную агрессию необходимо резко и без злобы. Достаточно встряхнуть расходившегося песика за шиворот или прижать к полу, чтобы тот понял, что переусердствовал в своем доминировании.
+        </p>
+        <h2 id="gl5">
+         Содержание и уход
+        </h2>
+        <p>
+         Невзирая на выраженные компаньонские качества, бельгийский гриффон – декоративная собака, требовательная к температурному режиму и комфорту. На улицу представители породы выходят исключительно погулять и по туалетной надобности, предпочитая остальное время проводить в домашней обстановке, в компании владельца. В квартире у питомца должен быть отдельный уголок с удобной лежанкой или корзинкой, а также несколько неприкосновенных вещей (игрушки), которыми животное не обязано делиться с членами семьи и другими четвероногими обитателями.
+        </p>
+        <p>
+         Клетка или комнатный вольер не самая любимая бельгийским гриффоном вещь, зато незаменимая для хозяина конструкция, когда требуется обезопасить собаку от нее же самой. Сажать животное в импровизированную «кпз» лучше пореже. Например, целесообразно это делать, если щенок грешит деструктивным поведением и остается один дома. Однако обставить процесс «заключения» стоит таким образом, чтобы малыш не воспринял его в качестве наказания. Со временем гриффон привыкает к временным ограничениям пространства и терпеливо их переносит, если только дело не затягивается на несколько часов.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Управлять линькой «бельгийца» предстоит хозяину: самостоятельно собаки шерстный покров не сбрасывают, что обязывает владельца к триммингу (выщипывание шерсти). Пет-питомцев триммингуют дважды в год, причем осуществляют процедуру не сезонно, а по мере вызревания шерсти. Понять, что волос бельгийского гриффона готов к обновлению, очень просто. Созревшая шерсть становится тусклой и слабо держится в волосяных луковицах. В качестве примера: если вы дернули гриффона за торчащие косматые прядки, а они остались в ваших руках, при этом собака никак не отреагировала на действие – это сигнал к тому, что животное пора «пощипать».
+        </p>
+        <p>
+         Снимать волос можно вручную, а можно с помощью тримминговочного ножа, причем основательность процедуры стоит регулировать в зависимости от сезона. Например, на зиму гриффону лучше оставить подшерсток, который будет выполнять роль согревающей фуфайки, а весной стоит убирать волос тщательнее, чтобы собаке не было жарко. Приучать питомца спокойно относиться к триммингу следует со щенячьего возраста. В 3 месяца бельгийского гриффона можно начинать пощипывать в области тела и шеи, а в 6 месяцев собаку полагается тримминговать полностью.
+        </p>
+        <p>
+         Начинают убирать шерсть всегда с области шеи, действуя резкими движениями по росту волос – только так можно минимизировать неприятные ощущения. Область захвата должна быть небольшой. Стараясь вырывать пучки погуще, вы не ускорите процесс, зато причините питомцу дискомфорт. Классическая последовательность тримминга бельгийского гриффона: шея – спина – бока – бедра – ноги до скакательных суставов. Хвост выщипывается вручную, очень осторожно, пучками по несколько волосков, поскольку в этой части тела много чувствительных нервных окончаний.
+        </p>
+        <p>
+         Голова бельгийского гриффона тоже выщипывается без использования тримминговочных инструментов. Область бородки оставляется нетронутой. Финальные штрихи – аккуратное выстригание машинкой шерсти на переносице и внутри ушной раковины, подравнивание ножницами линии усов и бородки, а также гигиеническое филирование в области анальной зоны. В промежутках между триммингами бельгийских гриффонов полагается прочесывать щеткой-стриппингом, убирающей отмершие волоски, стимулирующей кровообращение в верхних слоях кожи и придающей блеск шерстному покрову. А для ежедневного расчесывания подойдет обычный редкий гребень.
+        </p>
+        <p>
+         Купать бельгийских гриффонов, не разъезжающих по дог-шоу и выставкам, лучше раз в пару месяцев и обязательно с применением шампуня для жесткошерстных пород. А вот лапы после прогулок по городским улицам рекомендуется промывать ежедневно. Раз в неделю стоит внимательно осмотреть внутреннюю часть уха питомца и убрать скопившийся там серный налет ватной палочкой, смоченной в перекиси водорода или кипяченом и охлажденном растительном масле. Если заметили, что «бельгиец» энергично потряхивает ушами, пытается почесать их лапой и вдобавок повизгивает – срочно навестите ветеринара. Вероятно, это инфекция или ушные клещи.
+        </p>
+        <p>
+         В остальном уход за бельгийским гриффоном не требует специальных умений. Раз в месяц собаке полезно укоротить коготки, а раз в неделю ей необходимо почистить зубы, не обходя вниманием труднодоступные задние моляры. Чистка ротовой полости – обязательная для породы процедура, и к ней нужно относиться серьезно. В силу специфического строения челюстей и смещения слюнных протоков зубы бельгийского гриффона быстро обрастают зубным камнем, если за ними систематически не ухаживать. Ко всему прочему после каждого кормления стоит проходиться по мордочке собаки чистой тряпочкой – усы и бородки гриффонов часто окунаются в миску с едой, приобретая неопрятный вид.
+        </p>
+        <p class="legenda">
+         <strong>
+          Важно:
+         </strong>
+         Под глазами «бельгийцев» располагаются небольшие складки, замаскированные усами, в которые стекает слезная жидкость. Влажная среда притягивает бактерии, в результате чего кожа в «морщинках» мокнет, воспаляется и источает неприятный запах. Чтобы избежать этой проблемы, дважды в неделю проводите санацию кожных складок хлоргексидином. Если же процесс раздражения зашел далеко и дезинфицирующие растворы не помогают, выручат цинковая мазь и детская присыпка, обладающие подсушивающими и антисептическими свойствами.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Чтобы бельгийский гриффон был здоров и весел, придется соблюдать БЖУ-баланс, поскольку перекорм для породы не менее вреден, чем недокорм. Если собака питается промышленной «сушкой», это не должны быть разновидности с высоким содержанием протеина. Взрослому бельгийскому гриффону достаточно корма, содержание белка в котором не превышает 20-25%. Прессованные крокеты для щенков должны быть питательнее, поэтому для растущих особей подходит «сушка», где белка порядка 30%. Немаловажный нюанс: нужно следить за наличием в пище кальция и фосфора. В полноценном рационе должны присутствовать оба элемента, но в разумной дозировке, поскольку переизбыток фосфора ведет к серьезным сбоям в нервной системе.
+        </p>
+        <p>
+         Рацион бельгийского гриффона, питающегося натуральной едой, на 40% состоит из постного мяса. Остальные 60% приходятся на злаковые культуры (каши), овощи, рыбное филе, кисломолочную продукцию. Мясо и рыбу полезнее давать слегка отваренными либо основательно промороженными, что снизит риск заражения питомца гельминтами. Из овощей полезны тыква, морковь, свекла, огурцы и помидоры. А вот картофелю и бобовым в миске бельгийского гриффона делать нечего, как и любой еде с хозяйского стола, включая копчености, кости и сладости.
+        </p>
+        <p>
+         Двухмесячные щенки едят до пяти раз в день, причем кормежки должны осуществляться через равные временные интервалы. В трехмесячном возрасте питомца разрешается переводить на четырехразовый режим кормлений, а в шесть месяцев – на трехразовый. К году физическое развитие бельгийского гриффона полностью завершается, поэтому многие заводчики предлагают четвероногим подопечным еду только дважды в сутки – утром и вечером. В то же время отдельные собаководы рекомендуют придерживаться трехразового графика кормлений на протяжении всей жизни гриффона, поскольку такой подход позволяет снизить нагрузку на пищеварение.
+        </p>
+        <h2 id="gl6">
+         Здоровье и болезни бельгийских гриффонов
+        </h2>
+        <p>
+         У бельгийских гриффонов нет предрасположенности к сердечно-сосудистым и эндокринным заболеваниям, поэтому средняя продолжительность жизни у собак этой породы – 12-15 лет. Что касается генетически наследуемых недугов, то они специфического характера. Например, основную массу проблем приносят аномалии лицевой части черепа питомца, среди которых расщелины неба, челюсти и носовых отверстий, стеноз носовой полости, а также гидроцефалия.
+        </p>
+        <p>
+         Еще одна особенность породы – несвоевременная смена молочных зубов. Лечение в конкретном случае достаточно простое: почаще заглядывайте малышу в рот и водите его к ветеринару – иногда молочные зубы лучше заранее удалить, чтобы потом не наблюдать, как в челюсти формируются сдвоенные ряды клыков. Свойственны бельгийским гриффонам и глазные недуги вроде атрофии сетчатки, выпадения глазного яблока и катаракты. У отдельных представителей породы проявляется такая аномалия развития, как дистихиаз (рост дополнительных ресниц).
+        </p>
+        <p>
+         У брид-особей женского пола могут возникать осложнения родовой деятельности. В качестве примера: многим сукам бельгийского гриффона требуется кесарево сечение, причем зачастую появившееся на свет потомство остается нежизнеспособным либо имеет наследственные патологии. У отдельных собак дает о себе знать эклампсия, она же послеродовая тетания.
+        </p>
+        <h2 id="gl7">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Ответственно отнеситесь к выбору продавца. Бельгийский гриффон – достаточно редкая и капризная в плане разведения порода, поэтому очереди за щенками в питомниках – обычное дело.
+         </li>
+         <li>
+          Старайтесь отдавать предпочтение заводчикам, практикующим линейное разведение, при котором племенные особи имеют общего предка-чемпиона, хотя сами в близком родстве не состоят.
+         </li>
+         <li>
+          Уделите повышенное внимание экстерьеру щенка. Чересчур головастые «бельгийцы» с переразвитым лбом и миниатюрным тельцем сигнализируют о генетических мутациях помета и наличии гена карликовости, который иногда проявляется у породы.
+         </li>
+         <li>
+          Даже если в будущем не планируете покорять с питомцем выставки, особей с вываливающимся наружу языком лучше не брать. Это серьезный порок внешности, при наличии которого бельгийских гриффонов запрещают к разведению.
+         </li>
+         <li>
+          Не покупайте самого толстого или наоборот – маленького щенка в помете, отдавая предпочтение в меру упитанным середнячкам.
+         </li>
+         <li>
+          Разверните шерсть бельгийского гриффона и оцените однородность подшерстка, заодно убедившись, что на коже нет проплешин.
+         </li>
+         <li>
+          Не поддавайтесь обаянию пушистых малышей с длинной шерстью. По мере взросления такой волос не приобретает необходимую жесткость, от чего страдает породный облик гриффона.
+         </li>
+         <li>
+          Экстремально короткие мордочки бельгийских гриффонов только выглядят потешно, но на деле могут доставить массу проблем. Выбирая между щенком с классическим брахицефальным типом морды и экстремально укороченным, отдайте предпочтение первому.
+         </li>
+        </ul>
+        <h2 id="gl8">
+         Цена бельгийского гриффона
+        </h2>
+        <p>
+         Купить щенка бельгийского гриффона от чистокровных производителей дешевле 30 000 – 40 000 рублей не получится. Иногда питомники идут на уступки, объявляя импровизированные распродажи пометов, при этом важно понимать, что акционный ценник выставляется на не самое благополучное в плане здоровья и экстерьера потомство.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения бельгийского гриффона на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/belgiyskiy-griffon/forum/">
+        Перейти на
+        форум бельгийского гриффона
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Бельгийский гриффон" src="/upload/iblock/4b1/4b1f56966009f8c2430c66de4fab5feb.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/belgiyskiy-griffon/">
+          Бельгийский гриффон
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/belgiyskiy-griffon/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/belgiyskiy-griffon/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/belgiyskiy-griffon/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/belgiyskiy-griffon/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/belgiyskiy-griffon/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/amerikanskiy-koker-spaniel/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Американский кокер-спаниель" data-original="/upload/resize_cache/iblock/721/100_100_1/7214fa768d8df6c4384ce3ab7351b7bb.jpg">
+          <noscript data-alt="Американский кокер-спаниель" data-original="/upload/resize_cache/iblock/721/100_100_1/7214fa768d8df6c4384ce3ab7351b7bb.jpg">
+           <img alt="Американский кокер-спаниель" src="/upload/resize_cache/iblock/721/100_100_1/7214fa768d8df6c4384ce3ab7351b7bb.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Американский кокер-спаниель
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/prazhskiy-krysarik/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Пражский крысарик" data-original="/upload/resize_cache/iblock/53c/100_100_1/53ce498d01af92dc81d30527c8449b83.jpg">
+          <noscript data-alt="Пражский крысарик" data-original="/upload/resize_cache/iblock/53c/100_100_1/53ce498d01af92dc81d30527c8449b83.jpg">
+           <img alt="Пражский крысарик" src="/upload/resize_cache/iblock/53c/100_100_1/53ce498d01af92dc81d30527c8449b83.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Пражский крысарик
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/chekhoslovatskiy-vlchak/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Чехословацкий влчак" data-original="/upload/resize_cache/iblock/1b4/100_100_1/5eg2rkx12crs8j7x7qvg08tf4p84l3pg.jpg">
+          <noscript data-alt="Чехословацкий влчак" data-original="/upload/resize_cache/iblock/1b4/100_100_1/5eg2rkx12crs8j7x7qvg08tf4p84l3pg.jpg">
+           <img alt="Чехословацкий влчак" src="/upload/resize_cache/iblock/1b4/100_100_1/5eg2rkx12crs8j7x7qvg08tf4p84l3pg.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Чехословацкий влчак
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/sakhalinskiy-khaski/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Сахалинский хаски" data-original="/upload/resize_cache/iblock/c11/100_100_1/rbst7q2ws6jbfqftgv1nlo3ib8q1nivp.jpg">
+          <noscript data-alt="Сахалинский хаски" data-original="/upload/resize_cache/iblock/c11/100_100_1/rbst7q2ws6jbfqftgv1nlo3ib8q1nivp.jpg">
+           <img alt="Сахалинский хаски" src="/upload/resize_cache/iblock/c11/100_100_1/rbst7q2ws6jbfqftgv1nlo3ib8q1nivp.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Сахалинский хаски
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbelgiyskiy-griffon%252F%253Fcheck_key%253D8503e874d491fd863fd0618bae470569%2526ANIMAL_CODE%253Dbelgiyskiy-griffon%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbelgiyskiy-griffon%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmJlbGdpeXNraXktZ3JpZmZvbiUyRiUzRmNoZWNrX2tleSUzRDg1MDNlODc0ZDQ5MWZkODYzZmQwNjE4YmFlNDcwNTY5JTI2QU5JTUFMX0NPREUlM0RiZWxnaXlza2l5LWdyaWZmb24lMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGYmVsZ2l5c2tpeS1ncmlmZm9uJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbelgiyskiy-griffon%252F%253Fcheck_key%253D8503e874d491fd863fd0618bae470569%2526ANIMAL_CODE%253Dbelgiyskiy-griffon%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fbelgiyskiy-griffon%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbelgiyskiy-griffon%252F%253Fcheck_key%253D8503e874d491fd863fd0618bae470569%2526ANIMAL_CODE%253Dbelgiyskiy-griffon%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbelgiyskiy-griffon%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "95.25.133.228"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--2605226e95e60cec5be636b4da905bca-->

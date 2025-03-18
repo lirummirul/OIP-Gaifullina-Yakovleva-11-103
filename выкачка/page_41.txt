@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'d57029c38aac'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Бладхаунд, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Бладхаунд – один из самых крупных и древних представителей гончей группы. Это собака-следопыт, обладатель феноменального нюха, а также неординарного имиджа, включающего в себя длинные, свернутые в трубку уши и «стекающий» профиль морды." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/c94/c948c4a940e08df87b7a401e4e6ea38d.jpg" property="og:image"/>
+     <title>
+      Бладхаунд: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/bladkhaund/" property="og:url"/>
+     <meta content="Бладхаунд: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Бладхаунд – один из самых крупных и древних представителей гончей группы. Это собака-следопыт, обладатель феноменального нюха, а также неординарного имиджа, включающего в себя длинные, свернутые в трубку уши и «стекающий» профиль морды." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/bladkhaund/" itemprop="url">
+         <span itemprop="title">
+          Бладхаунд
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Бладхаунд
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/bladkhaund/">
+          Описание
+         </a>
+         <a href="/dog/bladkhaund/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/bladkhaund/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/bladkhaund/photo/">
+          Фото
+         </a>
+         <a href="/dog/bladkhaund/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Бладхаунд" src="/upload/iblock/c60/c6035673cdcf3119e45483914d43b623.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <p>
+          Бладхаунд – один из самых крупных и древних представителей гончей группы. Это собака-следопыт, обладатель феноменального нюха, а также неординарного имиджа, включающего в себя длинные, свернутые в трубку уши и «стекающий» профиль морды.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/19a/19a050c2df68ca8f5e7a55ec88258314.jpg" data-cap="We are headed to a trailing workshop this weekend hosted by @matsaralaska. We are very excited to learn and progress! -
+-
+-
+-
+-
+-
+-
+-
+-
+-
+
+#bloodhoundjudge #bloodhound #dogsthathike #bloodhoundofinstagram #bloodhoundpuppy #k9 #k9unit #searchandrescue #Igclub_dogs #igclubdogs #hikingdogsofinstagram #puppies_adoration #dawgzpetz #bloodhoundsofig #dogsofinstagram #workingdog #workingdogsofig #bloodhoundway #animalnorth #dogstagramdog #instadog #bloodhounddaily #mantrailing #dailybarker #dogsofinstaworld #bestwoof #dog_features #mydogisthecutest #dogsofbark" data-fancybox="images" data-link="https://www.instagram.com/p/Bxk4XBRJM5Z/" data-type="image" data-username="bloodhoundjudge" href="/upload/uf/b45/b45efed4ae24324737b02b37c39e6391.jpg">
+            <img alt="Бладхаунд" src="/upload/resize_cache/uf/b45/293_293_2/b45efed4ae24324737b02b37c39e6391.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="This is such a hard decision....... #paws #bloodhound #bloodhoundsofinstagram #bloodhounds #hounds #hound #hounddog #dog #dogs #puppies #puppylove #puppiesofinstagram #dogsofinstagram #puppy #dogstagram #bones #smell #tracker #growing #growinglikeaweed #handsome #mommy #jackskellington #bone #bones #choice #treat" data-fancybox="images" data-link="https://www.instagram.com/p/BxkuwL3gi2_/" data-type="image" data-username="" href="/upload/uf/e64/e640ba93f93f95763ab407752df661d4.jpg">
+            <img alt="Бладхаунд" src="/upload/resize_cache/uf/e64/293_293_2/e640ba93f93f95763ab407752df661d4.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/01a/01aafe89e2c2cb516b67752c95dac534.jpg" data-cap="If you sit still they won’t see you. " data-fancybox="images" data-link="https://www.instagram.com/p/Bxkuq9PgrYq/" data-type="image" data-username="beaconthebloodhound" href="/upload/uf/199/199304c173786231a84cc2cdcbde55c6.jpg">
+            <img alt="Бладхаунд" src="/upload/resize_cache/uf/199/293_293_2/199304c173786231a84cc2cdcbde55c6.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/bladkhaund/photo/">
+         Все
+            фото бладхаунда
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы бладхаунд
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы бладхаунд
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер бладхаунда
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Охота и розыскная деятельность с бладхаундом
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Здоровье и болезни бладхаундов
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Цена бладхаунда
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Бладхаунд
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Бельгия
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         XIII век
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 46 – 54 кг, суки 40 – 48 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 64 – 72 см, суки 58 – 66 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         10 – 12 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Дословно Bloodhound переводится как «кровяная гончая». Считается, что первоначальной обязанностью породы была охота по кровяному следу, что и отражено в ее названии. Существует и альтернативная версия, согласно которой морфема blood обозначает не охотничью квалификацию собаки, а указывает на ее чистокровность.
+        </li>
+        <li>
+         Невзирая на грозный облик, бладхаундов не привлекают к охранной службе. В силу покладистого, добродушного характера эти «бруталы» к ней просто не пригодны.
+        </li>
+        <li>
+         Прародители бладхаундов славились почти ослиным упрямством и нежеланием учиться. В современных собаках эти качества менее развиты, хотя чтобы выдрессировать их, придется изрядно потрудиться.
+        </li>
+        <li>
+         Бладхаунды превосходные пловцы и – что довольно неожиданно – замечательные ныряльщики.
+        </li>
+        <li>
+         Порода виртуозно работает даже по старому следу с давностью 300 и более часов.
+        </li>
+        <li>
+         Как и все брыластые собаки, бладхаунды – выдающиеся «слюнтяи», но до бульдогов и сенбернаров им в этом плане еще расти и расти.
+        </li>
+        <li>
+         У взрослых особей феноменальные вокальные данные. Это даже не лай, а скорее мощный басистый рык, который слышно на расстоянии нескольких километров.
+        </li>
+        <li>
+         Напав на след, бладхаунд выпадает из реальности и, как загипнотизированный, движется за интересным запахом, из-за чего на прогулках собаку приходится ежеминутно контролировать.
+        </li>
+        <li>
+         Выращивание щенка бладхаунда требует серьезных вложений и усилий: порода медленно взрослеет, полностью завершая физическое и умственное развитие только к 2,5-3 годам.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Бладхаунд" data-original="/upload/iblock/c94/c948c4a940e08df87b7a401e4e6ea38d.jpg">
+          <noscript data-alt="Бладхаунд" data-original="/upload/iblock/c94/c948c4a940e08df87b7a401e4e6ea38d.jpg">
+           <img alt="Бладхаунд" src="/upload/iblock/c94/c948c4a940e08df87b7a401e4e6ea38d.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Бладхаунды
+          </strong>
+          – невозмутимые добряки и первоклассные сыщики, которые из-под земли достанут любую добычу, имеющую мало-мальски ощутимый запах. При этом порода не привязана к своему историческому ремеслу (охоте) и при необходимости легко перепрофилируется в служебную ищейку или компаньона. Но вот кем бладхаунд точно не станет, так это диванной собакой, поэтому прежде чем брать щенка гончей, заранее позанимайтесь бегом или спортивной ходьбой – гулять с питомцем предстоит долго и интенсивно.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средняя (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средние (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Бладхаунд основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы бладхаунд
+        </h2>
+        <p>
+         Бладхаунды – собаки настолько древние, что отследить их происхождение и далеких предков почти нереально. Например, долгое время прародителями породы считались гончие из Арденнского монастыря (Бельгия), впоследствии прозванные собаками Святого Юбера, – по второму названию обители. Монахи аббатства уже в IX веке открыли для себя скрещивание и усердно его практиковали, используя в качестве племенного материала молоссов, ищеек белгов и североафриканских гончих.
+        </p>
+        <p>
+         Монастырские собаки или сент-юберы, как их окрестили в Европе, обладали фактурной внешностью. Исполинского телосложения, с массивными, отягощенными множественными морщинами и гигантскими брылями головами, они отлично гоняли крупную дичь, за что и были любимы бельгийской знатью. Поскольку в Арденнах тщательно оберегали тайну происхождения своих подопечных, подобных им гончих больше нигде не разводили. Однако вынужденная изоляция не помешала известности и распространению породы, поскольку бельгийское духовенство делилось своими питомцами с французской королевской фамилией, использовавшей животных для охоты на оленей.
+        </p>
+        <p>
+         В XIX веке русский зоолог Л. П. Сабанеев предложил собственную версию происхождения бладхаундов. По его мнению, предками породы были вовсе не арденнские собаки, а нормандские гончие – порода, выведенная в XI столетии посредством скрещивания сент-юберов с французскими гончими. Эту разновидность особенно культивировали нормандцы, на тот момент подмявшие под себя английские территории и завезшие на них своих четырехлапых любимцев. Впоследствии нормандских гончих стали скрещивать с английскими догообразными собаками, в частности, с мастифами, что дало миру бладхаундов. В пользу этой версии говорит и то, что сегодняшние представители породы имеют трубчатую «конструкцию» ушей, не характерную для сент-юберов, но типичную для французских (нормандских) гончих.
+        </p>
+        <p>
+         К началу XVII века бладхаунды стали суперпопулярны, а часть особей даже успела пересечь Атлантику и закрепить свои позиции в Новом Свете. Правда, в отличие от помешавшейся на охоте Европы, в Америке гончих собак ждала иная миссия. Их стали использовать для розыска людей, а точнее, для поимки рабов, удиравших от свирепых хозяев, а затем – для преследования беглых каторжников. Именно благодаря этой навязанной специализации за животными закрепилась репутация безжалостных сыщиков, из-за которой породу почти полностью истребили в годы гражданской войны. Кстати, современные исследователи полагают, что на рабов в США «охотились» все же не с чистокровными бладхаундами, а с их метисами.
+        </p>
+        <p>
+         В Европе гончих тоже использовали в качестве ищеек. Например, в 1616 году в Великобритании действовал закон, предписывавший держать бладхаунда на караульной службе каждому шестому приходу. Примерно к этому времени относится еще один указ, согласно которому бладхаунд имел право брать след в домах местных жителей, обязанных оказывать ему всяческое содействие и раскрывать перед носом животного двери жилища. Особо смелых, отказывавшихся сотрудничать с «брудастым следователем» и запиравшихся в своих домах, ждал печальный исход – смертная казнь.
+        </p>
+        <p>
+         В Россию породу импортировал Петр I. Несколько бладхаундов было приобретено за баснословную по тем временам сумму, чтобы разместить их в Измайловском зверинце. Однако после смерти самодержца-реформатора интерес к животным был утрачен, так что по-настоящему разводить бельгийских гончих в отечественных питомниках стали лишь в 80-х годах XX столетия.
+        </p>
+        <h3>
+         Видео: Бладхаунд
+        </h3>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="pkqAGodhd7U">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы бладхаунд
+        </h2>
+        <p>
+         Потомки сент-юберов обладают ярким, запоминающимся экстерьером и крепким телосложением. Массивный костяк, объемная, хорошо развитая мышечная масса, прямоугольный формат корпуса – все это придает облику животного брутальную основательность и стильную импозантность. В то же время чересчур утрированные (в большую сторону) габариты рассматриваются как дефект, способный повлиять на выставочную карьеру собаки.
+        </p>
+        <p>
+         Самая выразительная часть тела бладхаунда – это, безусловно, голова: обрамленная мягкими длинными ушами, напоминающими парик английского лорда, с эффектными брылями и благородными складками на лбу. Помимо того, у породы совершенно особенное выражение морды: в каком бы расположении духа ни находилась собака, ее внешний вид будет поражать величественностью и благородством. Не может не запасть в душу и умный, слегка отстраненный взгляд бладхаунда, создающий впечатление, что животное постигло все тайны мироздания и теперь видит насквозь каждого человека, включая хозяина.
+        </p>
+        <p>
+         Стандарт породы предусматривает рост в холке 64-72 см для кобелей и 58-66 см для сук. Бланхаунды мужского пола должны весить от 46 до 54 кг, женского – 40-48 кг.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Голова собаки массивная, с глубоким, уплощенным с боков черепом и сравнительно узким профилем. Надбровные дуги невыразительные, как и стоп, но затылочный бугор рельефный, хорошо прорисованный. Морда бладхаунда утолщенная в районе ноздрей, объемная по всей длине, с ровной, чуть выпуклой верхней линией.
+        </p>
+        <h3>
+         Губы
+        </h3>
+        <p>
+         Мягкие, растянутые, формирующие почти квадратный профиль, при этом верхняя губа закрывает нижнюю челюсть, свисая на 5 см вниз. В области уголков губы трансформируются в пухлые брыли, а те в свою очередь переходят в тяжелый подвес (у «девочек» брыластость менее выраженная).
+        </p>
+        <h3>
+         Зубы и прикус
+        </h3>
+        <p>
+         У бладхаундов крепкие белые зубы, смыкающиеся в классическом ножницеобразном (предпочтительно) либо клещеобразном прикусе.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Развитая широкая мочка имеет черный окрас у черно-подпалых бладхаундов и коричневый либо черный у собак остальных мастей.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         У бладхаунда средней величины глаза без тенденции к выпуклости. Стандартные оттенки радужки – темно- и светло-карие, причем для особей, не имеющих на шерсти черного плаща/седла, приемлемы и более светлые варианты, например, янтарный. Взгляд собаки умный, немного равнодушный, очень схожий со взглядом бассет-хаунда.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Ушное полотно длинное, гибкое, завернутое внутрь или назад. У отвечающих требованиям стандарта особей уши посажены на одной линии с глазами или ниже и имеют бархатистую короткую шерсть.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Достаточной длины, позволяющей напавшей на след собаке держать нос у самой земли. Кожа на горле свободно свисающая, переходящая к середине горла в толстый двойной подвес (у сук менее заметен).
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Мускулистое, развитое тело бладхаунда отличает растянуто-прямоугольный формат. Линии спины и живота ровные, идущие параллельно друг другу. Поясница собаки массивная, короткая. Круп мясистый, без выраженного скоса, почти горизонтальный. Грудная клетка широкая, длинная, сильно опущенная книзу, с выраженным килем.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         В стойке сильные мускулистые ноги бладхаунда выглядят прямыми и параллельными друг другу. Длинные, наклоненные лопатки в соединении с вытянутым плечом формируют свободные углы. Локти поставлены прямо, без выворота, пясти производят впечатление крепких, зафиксированных под легким наклоном.
+        </p>
+        <p>
+         Бедра и голени собаки объемные, с отчетливо проступающими мышцами. Скакательные суставы низкие, «перетекающие» в сильные короткие плюсны. На охоте бладхаунд движется красивой свободной рысью, не выгибая при этом спину.
+        </p>
+        <h3>
+         Кожа
+        </h3>
+        <p>
+         Эластичная, хорошо тянущаяся, образующая крупные складки на лбу и по бокам морды. Складки на корпусе и остальных частях тела не приветствуются.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Толстый саблевидный хвост бладхаунда является логическим продолжением его позвоночника. Посажен хвост низко и отличается хорошей длиной. В движении поднимается над линией позвоночника, без закручивания в штопор и заваливания на бок.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Шерстный покров бладхаунда неоднороден. На ушах шерсть мягкая, шелковистая, но ультракороткая. Остальные части тела покрыты более длинной плотной и грубой псовиной, хорошо защищающей кожу от внешних воздействий.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Типичный бладхаунд бывает одно- либо двухцветным. Шерсть одноцветных особей – это все оттенки красного, начиная от светло-рыжего и заканчивая темно-красной мастью. Двухцветные собаки бывают черно- либо печеночно-подпалыми.
+        </p>
+        <p>
+         Количество черного тона может быть различным, в связи с чем гончих подразделяют на животных с чепраком и плащом. У бладхаундов с чепраком пятна подпала превалируют над черным тоном, сконцентрированным в районе спины. У собак с плащом подпалины расположены в области конечностей, скул, надбровий, груди, морды и зоны под хвостом, в то время как черная масть занимает большую часть тела.
+        </p>
+        <p>
+         Не считаются пороком, но и не приветствуются: крошечные белые метки на кончике хвоста, пальцах, грудине; блеклые подпалины и бледно-рыжий окрас у одноцветных гончих.
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <p>
+         Один и тот же внешний дефект, в зависимости от степени выраженности, может расцениваться и как легкий недостаток, и как повод для дисквалификации на выставке. В случае с бладхаундами недопуск к выступлению на ринге можно получить из-за следующих пороков развития:
+        </p>
+        <ul>
+         <li>
+          пугливость/чрезмерная злобность;
+         </li>
+         <li>
+          несоответствие оговоренным стандартом габаритам;
+         </li>
+         <li>
+          светлый оттенок радужной оболочки глаз;
+         </li>
+         <li>
+          дефекты прикуса, включая криворотость и перекос челюстей;
+         </li>
+         <li>
+          отсутствие пигментации на губах и мочке носа;
+         </li>
+         <li>
+          нетипичные окрасы носа: у черно-подпалых бладхаундов – любой тон, кроме черного; у однотонных особей – все окрасы, кроме печеночного и черного;
+         </li>
+         <li>
+          белые пятна в неоговоренных стандартом местах, а также чересчур крупные белые отметины;
+         </li>
+         <li>
+          слабо выраженные породные черты.
+         </li>
+        </ul>
+        <h2 id="gl3">
+         Характер бладхаунда
+        </h2>
+        <p>
+         Потомки нормандских гончих – уравновешенные до флегматичности и довольно добродушные собаки. Правда, не стоит путать спокойный темперамент породы со слабохарактерностью. До мягкотелых «валенков» бладхаундам бесконечно далеко, и вить из себя веревки они никому, кроме детей, не позволят. Гончие, конечно же, счастливы дружить с человеком, но на правах товарища и уж никак не на положении бесправного питомца, за которого все решения принимает хозяин. Кстати, к вопросу о детях: бладхаунд искренне кайфует от игр с малышней и никогда не обидит ребенка умышленно. И все же про габариты животного, способного сбить годовалого карапуза с ног одним взмахом хвоста, лучше не забывать.
+        </p>
+        <p>
+         Фанаты породы уверяют, что бладхаунд может смело возглавить топ самых семейных и человекоориентированных питомцев. Он умен, обладает бесконфликтным, уживчивым характером и до беспамятства предан человеку, взявшему его на воспитание. К людям, не входящим в круг его знакомств, бладхаунд тоже вполне лоялен, поэтому смело приглашайте в дом шумные компании – гостям бельгийские гончие рады совершенно искренне и уж точно не станут вести за ними слежку. Особенно бладхаундам нравятся традиционные, повторяющиеся из года в год торжества. В своем личном календаре собаки ставят напротив каждого такого события мысленную пометку и охотно принимают участие в приеме и развлечении гостей.
+        </p>
+        <p>
+         Иногда среди «бельгийцев» встречаются чрезмерно робкие и застенчивые натуры, предпочитающие тишину и уединение коллективным развлечениям. Но в целом бладхаунд – порода компанейская и общительная. Например, ее представители легко вливаются в тусовку других четырехлапых питомцев, не издеваются над кошками и крайне редко выясняют отношения друг с другом (стычки между двумя кобелями или суками никто не отменял).
+        </p>
+        <p>
+         Лает бладхаунд редко, но метко: исходящий от собаки низкий «трубный глас» отчетливо слышен на расстоянии нескольких километров. На охоте такое качество, конечно, не повредит, а вот дома… Впрочем, никакой паники. Устраивать вокальные экзерсисы животное будет только в исключительных случаях, так что переживаются подобные концерты легко и безболезненно.
+        </p>
+        <h2 id="gl4">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Бладхаунды – собаки, много думающие и медлительные во всем, что касается учебы. Кроме того, беспрекословное подчинение – не их конек. И все же основные предпосылки к тому, чтобы стать воспитанным, управляемым другом, у «бельгийца» есть, учитывая, что он умен, сообразителен и надолго удерживает в памяти новые команды и навыки.
+        </p>
+        <p>
+         Основные проблемы, встающие перед дрессировщиком породы, – природное упрямство ее представителей и отсутствие интереса к занятиям. И если с первым придется бороться настойчивостью, то во втором случае лучше положиться на лакомства. За угощение бладхаунды работают активнее и с большим интересом, чем просто за похвалу. Уроки разумнее не затягивать. Максимум, который способна выдержать порода, – 15-20 минут, после которых концентрация сменяется скукой, а внимание переключается на другие внешние раздражители. Мешает прилежанию длинноухих следователей и феноменальное чутье: бладхаунда способен отвлечь любой, даже самый неуловимый запах, за которым он последует, как лунатик.
+        </p>
+        <p>
+         Первыми в сознание собаки внедряют ограничительно-запретительные команды «Ко мне!» и «Нельзя!», что обусловлено психологическими особенностями породы. Не занятых работой и скучающих бладхаундов постоянно тянет на вредные подвиги и разрушения, так что как только щенку исполнилось два месяца, спешите показать юному шалуну, что в этом мире ему не все позволено. Постепенно можно расширять командный словарь гончей, объясняя ей смысл таких требований, как «Апорт!» и прочих. Что касается стандартных дрессировочных курсов, то, работая с опытным хозяином или профессиональным кинологом, бладхаунды легко справляются с УГС и ОКД, при условии, что тренер не давит на собаку, а пытается донести до нее важность конкретных команд и действий.
+        </p>
+        <h2 id="gl5">
+         Охота и розыскная деятельность с бладхаундом
+        </h2>
+        <p>
+         Бладхаунд – классический «нюхач», способный выделить нужный след среди тысячи других сильных запахов и не терять его на протяжении десятков, а то и сотен километров. Кроме того, у него практически нет соперников в поиске по старому следу: самые талантливые представители породы успешно работают с «пахучими уликами» двухнедельной давности.
+        </p>
+        <p>
+         В лесу бладхаунд ведет себя профессионально и упорно, не отклоняясь от самостоятельно построенного маршрута до тех пор, пока добыча не будет обнаружена. Только в этом случае собака подаст свой глухой, по-львиному грозный голос. Поскольку порода не имеет узкой специализации, бладхаунды одинаково успешно охотятся как на крупную дичь вроде кабанов и лосей, так и на разнообразное мелкое зверье типа барсуков. Наиболее добычливыми в плане трофеев остаются суки, хотя и среди кобелей встречаются настоящие самородки.
+        </p>
+        <p>
+         Лучше всего породе дается охота по кровяному следу, поэтому среди ее представителей часто проводятся испытания по данной дисциплине. Происходит это следующим образом: в лесной полосе прокладывается петляющая кровяная «дорожка», в конце которой находится импровизированная добыча – пахнущая кровью шкура кабана. Участников соревнований по одиночке ставят на длинный поводок и пускают по следу. При этом с владельцем за бладхаундом следует инструктор, отмечающий рабочие качества четырехлапого конкурсанта: его заинтересованность в работе, движения на поворотах, отношение к выстрелу и найденной добыче.
+        </p>
+        <p>
+         Использовать бладхаундов в качестве ищеек предпочитают в основном США. Обычно собаки разыскивают пропавших людей, а также помогают обнаружить пострадавших в результате природных и техногенных катастроф. В этом гончим помогают анатомические особенности. Например, длинные висячие уши собаки работают как импровизированный веер, захватывая нужный запах и донося его до носа, но при этом блокируя и отсекая отвлекающие «ароматы» извне. Складки на лбу бладхаунда образуют небольшой капюшон, сужающий угол обзора в ходе поиска. Это помогает гончей концентрироваться на работе и не отвлекаться на происходящее вокруг.
+        </p>
+        <h2 id="gl6">
+         Содержание и уход
+        </h2>
+        <p>
+         Бладхаунд – порода, плохо приспособленная к квартирному проживанию, хотя в среде заводчиков принято утверждать обратное. Представители этого семейства – существа крупногабаритные, не обладающие выдающейся грацией, поэтому даже в самой просторной квартире им будет тесновато. Не сбрасывайте со счетов длинный сильный хвост собаки, которым она будет задевать мебель, а заодно сметать с горизонтальных поверхностей мелкие предметы. Кроме того, стоит поберечь нервы соседей по дому, которые вряд ли оценят хоть и редкий, но такой «воодушевляющий» лай вашего подопечного.
+        </p>
+        <p>
+         Гончие собаки, вынужденные коротать дни в квартире, грешат деструктивным поведением и часто вносят коррективы в интерьер жилья. А еще они неравнодушны к напольным покрытиям и охотно грызут линолеум и ламинат. Соответственно, заводить бладхаунда, не имея частного дома с хотя бы маленьким двориком, – квест для особо упорных и невозмутимых хозяев. Причем породе не требуется роскошный загородный особняк с огороженным гектаром земли. Достаточно небольшого домика в сельской местности или пригороде, учитывая, что бладхаунд легко привыкает к суетливому городскому ритму, если с ним много гуляют, а в сезон вывозят поработать в лесу.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Бладхаунд – собака с короткой, сезонно линяющей шерстью, за которой требуется минимальный уход. Обычно «бельгийцев» не расчесывают, но с периодичностью раз в неделю проходятся по их телу резиновой варежкой, собирающей отмершие волоски и массирующей кожу. Мыть бладхаунда, если это не выставочное животное, лучше по мере загрязнения, шампунем для короткошерстных пород.
+        </p>
+        <p>
+         Самые проблемные в плане ухода части тела – голова и уши собаки. В частности, чтобы гончая выглядела опрятно, в течение дня ей придется регулярно протирать морду. Бладхаунды очень слюнявы, и если за их ртами не следить, мебель в доме будет увешана скользкой «бахромой», а на полу вырастут лужицы, по которым так «весело» скользят хозяйские тапочки. Складки и морщины на голове животного – это не только часть породного имиджа, но и серьезная проблема, поскольку кожа в них часто преет, что приводит к пиодерме (дерматиту). Так что периодически морщинки на морде стоит протирать подсушивающими лосьонами на основе хлоргексидина.
+        </p>
+        <p>
+         Ушам бладхаунда тоже нужна забота. Мало того, что после каждой прогулки они цепляют массу грязи и пыли и требуют тщательного мытья, им еще необходимо вентилирование. Для этого нужно приподнять ушное полотно вверх и усердно трясти, чтобы обеспечить циркуляцию воздуха в слуховом проходе. Нельзя пренебрегать и ежедневным осмотром ушной воронки, чтобы своевременно удалять скопившиеся в ней секрет и загрязнения.
+        </p>
+        <p>
+         Гигиена глаз бладхаунда заключается в профилактике их закисания, поэтому раз в 7 дней протирайте их крепким чайным настоем. Зубы можно чистить раз в неделю, а вот проверять пасть собаки следует ежедневно. После прогулок бладхаунды часто приносят в дом кости и падаль, однако из-за массивных брылей разглядеть «добычу» во рту питомца получается не всегда. После выгула устраивайте гончей инспекцию ротовой полости на предмет наличия в ней посторонних «артефактов».
+        </p>
+        <h3>
+         Выгул
+        </h3>
+        <p>
+         Прогулки с бладхаундом – это и фитнес, и тренировка внимания хозяина одновременно. Получасовые походы в магазин и обратно в конкретном случае не вариант. Чтобы собака истратила хотя бы 70% заряда своей внутренней батарейки нужно полтора, а лучше два часа пробежек, активных игр и дрессировки, причем таких занятий в сутки должно быть не менее двух. До 8 месяцев щенков не нагружают чрезмерной физической активностью, не дают им спускаться и подниматься по лестницам, чтобы не деформировать постав ног.
+        </p>
+        <p>
+         Выводить бладхаунда на улицу в условиях любого населенного пункта нужно строго на поводке. Если животное нападет на интересный след, догонять его придется долго и упорно. Помимо того, в силу особенностей анатомии и генетической предрасположенности к болезням пищеварительной системы, бладхаундов не выгуливают сразу после еды или перед ней. Между приемом пищи и «выходом в свет» должно пройти хотя бы 1,5-2 часа.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Бладхаунды не нуждаются в специфическом рационе и довольствуются классическим собачьим меню, состоящим из постного мяса, субпродуктов, рыбного филе, кисломолочных продуктов, крупяных каш (не более 20% от общего рациона) и овощей. Отказ от натурального питания в пользу высококачественной «сушки» тоже возможен. Единственное – придется учитывать склонность породы к вздутию живота и выдавать питомцу еду небольшими порциями. Например, утреннюю или вечернюю трапезу можно разделить напополам и скормить бладхаунду в два приема.
+        </p>
+        <p>
+         Неплохой профилактикой завороту кишечника, которому подвержены гончие, будет установленная под наклоном и зафиксированная в таком положении миска для корма. Помимо того, важно просчитывать калорийность рациона, отслеживая его сбалансированность, – информация общеизвестная, успевшая наскучить, но не теряющая своей актуальности как для домашних любимцев, так и для шоу-особей. Не забывайте, чересчур упитанным, как и слишком поджарым бладхаундам чемпионство на выставке не светит, поэтому усиленно кормить собаку можно только в щенячьем возрасте. Хотя и тут лучше не перебарщивать, чтобы не нагружать неокрепшие суставы малыша.
+        </p>
+        <h2 id="gl7">
+         Здоровье и болезни бладхаундов
+        </h2>
+        <p>
+         Самая распространенная среди бладхаундов болезнь – дисплазия тазобедренного (встречается чаще) и локтевого суставов. Глубокая грудная клетка, типичная для всех представителей породы, может стать причиной таких неприятных явлений, как вздутие живота и заворот кишечника, нередко приводящих к летальному исходу. Особенно недугу подвержены особи, поглощающие корм большими порциями и выгуливающиеся сразу после приема пищи. Помимо всего прочего, у бладхаундов есть предрасположенность к дерматитам, эпилепсии, а также аномалиям развития века (выворот/заворот).
+        </p>
+        <h2 id="gl8">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          В пометах может быть от 7 до 10 щенков, хотя случаи, когда на свет появляется больше или меньше малышей, тоже не редкость.
+         </li>
+         <li>
+          Лучший возраст для покупки щенка бладхаунда – 2-3 месяца. Брать более взрослых особей тоже можно, но воспитывать и дрессировать их будет сложнее.
+         </li>
+         <li>
+          Для нормального развития малышам бладхаунда требуется много свободного пространства, поэтому выбирайте заводчиков, отдающих предпочтение загородному выращиванию. Содержание взрослой суки и ее неугомонных детенышей в квартире – сущее издевательство над породой.
+         </li>
+         <li>
+          Повышенная упитанность щенка бладхаунда в первые месяцы жизни – это нормально. Главное, чтобы она не сохранилась до 8-месячного возраста: порода склонна к ожирению, влекущему за собой ряд не менее опасных для здоровья недугов.
+         </li>
+         <li>
+          Выясните у продавца, проводилось ли тестирование на наследственную дисплазию у бладхаундов-производителей. Заводчики, которым нечего скрывать, охотно делятся с покупателям рентгеновскими снимками и результатами обследования.
+         </li>
+         <li>
+          Уточните, какой это по счету помет у суки. Стоит выяснить не только общее число родов, но и узнать, с какими промежутками пометы появлялись на свет. Если между двумя последними вязками прошло меньше года, логично предположить, что заводчик просто делает деньги на животных, наплевательски относясь к их здоровью.
+         </li>
+         <li>
+          Выбирая будущего охотника, узнайте, имеются ли у его ближайших предков рабочие дипломы. Щенок бладхаунда от первоклассных следопытов обычно наследует родительские таланты.
+         </li>
+        </ul>
+        <h2 id="gl9">
+         Цена бладхаунда
+        </h2>
+        <p>
+         В России порода собак бладхаунд не так широко распространена, как, например, в США или Европе. Отсюда – внушительный ценник на щенков и заблаговременное бронирование пометов. Покупка чистокровного клубного бладхаунда обойдется в 60 000 – 100 000 рублей, в зависимости от родословной животного, его экстерьерных особенностей и известности питомника.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения бладхаунда на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/bladkhaund/forum/">
+        Перейти на
+        форум бладхаунда
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Бладхаунд" src="/upload/iblock/c60/c6035673cdcf3119e45483914d43b623.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/bladkhaund/">
+          Бладхаунд
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/bladkhaund/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/bladkhaund/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/bladkhaund/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/bladkhaund/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/bladkhaund/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/russkaya-tsvetnaya-bolonka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Русская цветная болонка" data-original="/upload/resize_cache/iblock/023/100_100_1/023bc24c757bdb03bf6d0dd6d04651b9.jpg">
+          <noscript data-alt="Русская цветная болонка" data-original="/upload/resize_cache/iblock/023/100_100_1/023bc24c757bdb03bf6d0dd6d04651b9.jpg">
+           <img alt="Русская цветная болонка" src="/upload/resize_cache/iblock/023/100_100_1/023bc24c757bdb03bf6d0dd6d04651b9.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Русская цветная болонка
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/kern-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Керн-терьер" data-original="/upload/resize_cache/iblock/e00/100_100_1/e00878f7ff3ef8efa2f9b4932cc2199b.jpg">
+          <noscript data-alt="Керн-терьер" data-original="/upload/resize_cache/iblock/e00/100_100_1/e00878f7ff3ef8efa2f9b4932cc2199b.jpg">
+           <img alt="Керн-терьер" src="/upload/resize_cache/iblock/e00/100_100_1/e00878f7ff3ef8efa2f9b4932cc2199b.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Керн-терьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/russkiy-chernyy-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Русский черный терьер" data-original="/upload/resize_cache/iblock/b1f/100_100_1/b1f2a39155ff41379b0c49fc1f751303.jpg">
+          <noscript data-alt="Русский черный терьер" data-original="/upload/resize_cache/iblock/b1f/100_100_1/b1f2a39155ff41379b0c49fc1f751303.jpg">
+           <img alt="Русский черный терьер" src="/upload/resize_cache/iblock/b1f/100_100_1/b1f2a39155ff41379b0c49fc1f751303.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Русский черный терьер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/rizenshnautser/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Ризеншнауцер" data-original="/upload/resize_cache/iblock/709/100_100_1/709009659acc154ee0df9db563bcebed.jpg">
+          <noscript data-alt="Ризеншнауцер" data-original="/upload/resize_cache/iblock/709/100_100_1/709009659acc154ee0df9db563bcebed.jpg">
+           <img alt="Ризеншнауцер" src="/upload/resize_cache/iblock/709/100_100_1/709009659acc154ee0df9db563bcebed.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Ризеншнауцер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbladkhaund%252F%253Fcheck_key%253D208afd0a8bb25de48aaa3ceb26e7af33%2526ANIMAL_CODE%253Dbladkhaund%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbladkhaund%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmJsYWRraGF1bmQlMkYlM0ZjaGVja19rZXklM0QyMDhhZmQwYThiYjI1ZGU0OGFhYTNjZWIyNmU3YWYzMyUyNkFOSU1BTF9DT0RFJTNEYmxhZGtoYXVuZCUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZibGFka2hhdW5kJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbladkhaund%252F%253Fcheck_key%253D208afd0a8bb25de48aaa3ceb26e7af33%2526ANIMAL_CODE%253Dbladkhaund%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fbladkhaund%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fbladkhaund%252F%253Fcheck_key%253D208afd0a8bb25de48aaa3ceb26e7af33%2526ANIMAL_CODE%253Dbladkhaund%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fbladkhaund%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "109.252.44.195"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--fd304d3e632d16b819758be5b3dabbcb-->

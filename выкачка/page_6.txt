@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'0c015e69f278'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Азавак, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Азавак (африканская борзая) – вид грациозных, тонкошерстных собак, исторически обитающий в африканском регионе Сахель. Азавак относится к аборигенным примитивным породам, испытавшим минимальное влияние человека." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/ef3/1zv1yozoeo4a29rffp4x3rmg8e697z9d.jpg" property="og:image"/>
+     <title>
+      Азавак: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/azavak/" property="og:url"/>
+     <meta content="Азавак: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Азавак (африканская борзая) – вид грациозных, тонкошерстных собак, исторически обитающий в африканском регионе Сахель. Азавак относится к аборигенным примитивным породам, испытавшим минимальное влияние человека." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/azavak/" itemprop="url">
+         <span itemprop="title">
+          Азавак
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Азавак
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/azavak/">
+          Описание
+         </a>
+         <a href="/dog/azavak/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/azavak/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/azavak/photo/">
+          Фото
+         </a>
+         <a href="/dog/azavak/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/azavak/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Азавак" src="/upload/iblock/98a/32e86cxs0z7fqwtalz3yq6udyokh7cp7.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/azavak/">
+           африканская борзая
+          </a>
+          ,
+          <a href="/dog/azavak/">
+           борзая туарегов
+          </a>
+          ,
+          <a href="/dog/azavak/">
+           туарегская борзая
+          </a>
+          ,
+          <a href="/dog/azavak/">
+           борзая голубых берберов
+          </a>
+          ,
+          <a href="/dog/azavak/">
+           туарегский слюги
+          </a>
+          ,
+          <a href="/dog/azavak/">
+           южносахарская гончая
+          </a>
+         </span>
+         <p>
+          Азавак (африканская борзая) – вид грациозных, тонкошерстных собак, исторически обитающий в африканском регионе Сахель. Азавак относится к аборигенным примитивным породам, испытавшим минимальное влияние человека.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/15b/vnpb15fpiprxuysce94lca7h6wu1w879.jpg" data-cap="The Azawakh is an African sighthound of Afro-Asiatic type, which appeared in Europe towards 1970 and, comes from the Nigerien middle basin, among others, from the Valley of the Azawakh. For hundreds of years, he has been the companion of the nomads of the southern Sahara. Particularly leggy and elegant, the Azawakh gives a general impression of great fineness. His bone structure and musculature are transparent beneath fine and lean skin. This sighthound presents itself as a rangy dog whose body fits into a rectangle with its longer sides in a vertical position. Faults - Heavy general appearance." data-fancybox="images" data-link="https://www.instagram.com/p/CniftAlow4V/" data-type="image" data-username="showsightmag" href="/upload/uf/942/43nl9audvse688jxdli1d29mua9ud06n.jpg">
+            <img alt="Азавак" src="/upload/resize_cache/uf/942/293_293_2/43nl9audvse688jxdli1d29mua9ud06n.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/ccf/38iek7h8rfuogdujsngmb4tyo6lq4fac.jpg" data-cap="" data-fancybox="images" data-link="https://www.instagram.com/p/Cn6uTgAq3PA/" data-type="image" data-username="marley_und_fagui" href="/upload/uf/3cb/81emr1wa03jg7ogre12ebd79pfanxxfx.jpg">
+            <img alt="Азавак" src="/upload/resize_cache/uf/3cb/293_293_2/81emr1wa03jg7ogre12ebd79pfanxxfx.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="/upload/uf/5f7/ijn51fvrrbimlole13dchxmkwq53uq53.jpg" data-cap="Grantulla Tamikrest Masadennin" data-fancybox="images" data-link="https://www.instagram.com/p/CndNDAmBg_J/" data-type="image" data-username="sacreddeserthounds" href="/upload/uf/89e/00ekt3ex1i8jhbvvc1botyyuzrf69chi.jpg">
+            <img alt="Азавак" src="/upload/resize_cache/uf/89e/293_293_2/00ekt3ex1i8jhbvvc1botyyuzrf69chi.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/azavak/photo/">
+         Все
+            фото азавака
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы азавак
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы африканская борзая
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер азавака
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Рабочая техника породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Здоровье и болезни африканских борзых
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Цена азавака
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Азавак
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Мали
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         1980 год
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 20-25 кг, суки 15-20 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 64-74 ± 2 см , суки 60-70 ± 2 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         12-15 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Азавак – это единственный вид борзых, демонстрирующий подозрительность и откровенное недоверие по отношению к незнакомцам.
+        </li>
+        <li>
+         Порода не подходит для малоопытных владельцев, не имевших ранее дел с независимыми, высокоинтеллектуальными питомцами.
+        </li>
+        <li>
+         На языке африканских кочевников туарегов название породы звучит как «оска».
+        </li>
+        <li>
+         Азаваки относятся к одному из самых редко встречающихся типов борзых. Основное поголовье за пределами Африки сосредоточено во Франции и Германии.
+        </li>
+        <li>
+         У африканских народов борзые выполняли три функции – сторожевую, охотничью и статусную, демонстрирующую материальное благополучие владельца.
+        </li>
+        <li>
+         Порода требовательна к содержанию: из-за деликатного шерстного покрова животные плохо переносят низкие температуры и некомфортно ощущают себя в условиях ограниченного пространства.
+        </li>
+        <li>
+         Азавак – собака одного хозяина, поэтому попытки перевоспитать взрослое животное «под себя» в большинстве случаев не приносят нужного результата.
+        </li>
+        <li>
+         Порода демонстрирует неплохие результаты на собачьих бегах (в курсинге), а также в других видах спорта, где важно показать хорошую скорость.
+        </li>
+        <li>
+         Самым известным азаваком России считается питомец сенатора А. Клишаса – животное постоянно становится победителем всероссийских выставочных шоу.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Азавак" data-original="/upload/iblock/ef3/1zv1yozoeo4a29rffp4x3rmg8e697z9d.jpg">
+          <noscript data-alt="Азавак" data-original="/upload/iblock/ef3/1zv1yozoeo4a29rffp4x3rmg8e697z9d.jpg">
+           <img alt="Азавак" src="/upload/iblock/ef3/1zv1yozoeo4a29rffp4x3rmg8e697z9d.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          Азавак – утонченный легкоатлет с запоминающимся аристократическим профилем и неуемной тягой к самостоятельности во всем, что касается его жизни. Он не готов принадлежать и слепо подчиняться, но всегда рад пойти за «ярким» лидером, который докажет свою состоятельность. Несмотря на «модельную» внешность, азавак – не живое украшение интерьера, а вполне рабочий питомец, причем не только в вопросах охоты. В отличие от большинства борзых, эти обитатели пустынь легко вживаются в роль сторожей, а при правильной дрессировке быстро превращаются в «звезд» кинодромов.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умеренное время (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Плохой охранник (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Азавак основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/azavak/razmeri-porodi/">
+         размеры азавака
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы азавак
+        </h2>
+        <p>
+         Об азаваках мир узнал, благодаря кочевникам туарегам, проживающим в юго-западных районах пустыни Сахары. Они разводили животных столетиями и исключительно с практической целью. Долгое время африканская борзая выполняла функцию универсального домашнего питомца, который и незваных гостей от жилища отгонит, и верблюдов посторожит, и дичь к ужину раздобудет. Из-за отсутствия письменных документов, истинный возраст породы отследить невозможно. Однако историки склоняются к версии, что первые азаваки могли рассекать по Африке еще 15 000 лет назад.
+        </p>
+        <p>
+         В Европу африканские борзые попали только в 70-х годах XX столетия. Ведущие изолированный образ жизни туареги не спешили продавать своих питомцев. Первый азавак, прибывший на европейский континент, был вручен как подарок. Его владельцем стал югославский дипломат. Еще порядка 20 особей привез с собой французский этнолог Жерве Копе. Причем ученый сосредоточился именно на племенных животных, благодаря которым к середине 90-х годов во Франции проживало уже 300 азаваков.
+        </p>
+        <p>
+         Кинологические федерации отнеслись к африканским борзым настороженно, увидев в них еще одну разновидность слюги. Однако в 1981 году бридеры пришли к выводу, что разница между представителями этих собачьих кланов более чем заметная, поэтому вскоре азаваки получили отдельный стандарт от FCI.
+        </p>
+        <p>
+         В России порода была анонсирована в 1986 году. Первыми особями, отправившимися покорять СССР, оказались кобель Армад Эг Мастой и племенная сука Аттар Зуну Эг Мастой. Позднее еще одна племенная пара азаваков была импортирована из Чехословакии и Югославии. Собственно, эти животные и стоят у истоков российских линий африканской борзой.
+        </p>
+        <p class="legenda">
+         <strong>
+          Интересный факт:
+         </strong>
+         в официальных документах родиной породы заявлена Республика Мали. При этом всегда делается пометка, что разведение животных ведется под патронажем Франции.
+        </p>
+        <h2>
+         Видео: Азавак
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="a8lrymYPMAo">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы африканская борзая
+        </h2>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Азаваки родом из Африки. Их короткая шерсть предназначена для теплого климата. Представители породы плохо переносят холод и дождь." data-fancybox="gallery" href="/upload/iblock/d21/co18k9cnwu2k3keuwmmozdlyf3h7uir9.jpg" title="Азаваки родом из Африки. Их короткая шерсть предназначена для теплого климата. Представители породы плохо переносят холод и дождь.">
+          <div class="lazy-load" data-alt="Азаваки родом из Африки. Их короткая шерсть предназначена для теплого климата. Представители породы плохо переносят холод и дождь." data-class="article_pic" data-original="/upload/resize_cache/iblock/d21/412_2150_1/co18k9cnwu2k3keuwmmozdlyf3h7uir9.jpg">
+           <noscript data-alt="Азаваки родом из Африки. Их короткая шерсть предназначена для теплого климата. Представители породы плохо переносят холод и дождь." data-class="article_pic" data-original="/upload/resize_cache/iblock/d21/412_2150_1/co18k9cnwu2k3keuwmmozdlyf3h7uir9.jpg">
+            <img alt="Азаваки родом из Африки. Их короткая шерсть предназначена для теплого климата. Представители породы плохо переносят холод и дождь." class="article_pic" height="591" src="/upload/resize_cache/iblock/d21/412_2150_1/co18k9cnwu2k3keuwmmozdlyf3h7uir9.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Азаваки родом из Африки. Их короткая шерсть предназначена для теплого климата. Представители породы плохо переносят холод и дождь.
+         </div>
+        </div>
+        <p>
+         Чистокровный азавак – это грация и утонченность на грани возможностей. При первом знакомстве с породой может показаться, что ее представители сильно недоедают, но в этом и заключается фирменная внешняя особенность животных. Специалисты утверждают, что если у азавака не видны ребра, с ним явно что-то не так. Анатомические различия между суками и кобелями достаточно выраженные. В частности, «девочки» азаваков примерно на 4-5 см ниже «мальчиков» и на 5 кг легче.
+        </p>
+        <p>
+         Общее внешнее сходство со слюги тоже просматривается, но, чтобы уловить разницу между породами, не нужно быть племенным экспертом. Например, у африканских борзых более плоский тип мышечного корсета и, пожалуй, самая просторная и обтекаемая грудь среди собратьев по группе. Но главная деталь – белые пятна на лапах, наличие которых считается обязательным для азаваков и недопустимым для слюги.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Согласно стандарту РКФ, африканские борзые должны иметь узкую, сухую, удлиненную голову с плоским черепом. Приветствуются максимально сглаженные контуры – невыраженные надбровные дуги, едва заметная лобная борозда, легкий стоп. При этом должен быть хорошо обозначен затылочный бугор.
+        </p>
+        <p>
+         Прямая морда в меру сужена по направлению к носу. Мочка либо черная, либо темно-коричневая. Тонкие губы с хорошим прилеганием к деснам без признаков сырости. Длинные сильные челюсти сложены в правильные «ножницы» (тип прикуса). Для глаз типичны косой разрез век, миндалевидная форма и темная обводка. Радужная оболочка максимально темная или янтарная.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         У азаваков очень тонкие уши, с широким основанием. Они хорошо прилегают к черепу, назад не затянуты, всегда висят. Настороженный азавак чуть приподнимает хрящ основания, но ушное полотно при этом остается в прежнем положении.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         С легким изгибом, изящно-длинная, мускулистая, без намека на подвес.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Голова азавака" data-fancybox="gallery" href="/upload/iblock/ecc/1m5gp6pyszomufeoycxy786f7bti1dib.jpg" title="Голова азавака">
+          <div class="lazy-load" data-alt="Голова азавака" data-class="article_pic" data-original="/upload/resize_cache/iblock/ecc/1024_2150_1/1m5gp6pyszomufeoycxy786f7bti1dib.jpg">
+           <noscript data-alt="Голова азавака" data-class="article_pic" data-original="/upload/resize_cache/iblock/ecc/1024_2150_1/1m5gp6pyszomufeoycxy786f7bti1dib.jpg">
+            <img alt="Голова азавака" class="article_pic" src="/upload/resize_cache/iblock/ecc/1024_2150_1/1m5gp6pyszomufeoycxy786f7bti1dib.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Голова азавака
+         </div>
+        </div>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Почти горизонтальная или слегка восходящая линия верха с хорошо заметной холкой и наклоненной под углом 45° круповой частью. Опущенная практически до локтевых суставов грудь характеризуется крутым изгибом и идет на сужение книзу. Живот сильно подтянут.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         У африканских борзых очень тонкие и достаточно длинные хвосты с низко посаженным основанием. Хвост равномерно покрыт шерстью, на кончике может просматриваться белая кисточка.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <div class="img-right">
+         <a class="fancybox" data-caption="Щенок азавака" data-fancybox="gallery" href="/upload/iblock/b95/ulk83li2fd9ucwc2lc8ht3k43molreyv.jpg" title="Щенок азавака">
+          <div class="lazy-load" data-alt="Щенок азавака" data-class="article_pic" data-original="/upload/resize_cache/iblock/b95/412_2150_1/ulk83li2fd9ucwc2lc8ht3k43molreyv.jpg">
+           <noscript data-alt="Щенок азавака" data-class="article_pic" data-original="/upload/resize_cache/iblock/b95/412_2150_1/ulk83li2fd9ucwc2lc8ht3k43molreyv.jpg">
+            <img alt="Щенок азавака" class="article_pic" height="512" src="/upload/resize_cache/iblock/b95/412_2150_1/ulk83li2fd9ucwc2lc8ht3k43molreyv.jpg" width="412"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Щенок азавака
+         </div>
+        </div>
+        <p>
+         Грациозные длинные ноги азаваков отличаются рельефными, крайне сухими мышцами. Удлиненные очертания типичны как для лопаток, так и для бедер собаки. Углы плече-лопаточных, тазобедренных и коленных сочленений значительно и сильно открытые. Лапы округлые, выраженно сводистые, с равномерно пигментированными подушечками. Движется порода легко, пружиня в галопе и высоко поднимая ноги в шаге и рыси.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Шерсть азаваков – ультракороткая, тонкая, на животе практически отсутствующая.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Для породы характерны все варианты рыжего окраса, а также рыжий с черными тигровинами. Не исключается присутствие на морде маски. Допустимы белые метки, проточины:
+        </p>
+        <ul>
+         <li>
+          спереди на груди в виде небольших пятен, не поднимающихся выше основания шеи;
+         </li>
+         <li>
+          большое белое пятно на груди и соразмерная ему такая же отметина на загривке;
+         </li>
+         <li>
+          белые «чулки» или хотя бы метки той же масти на всех четырех ногах (не выше локтей и ни в коем случае не заходящие на бедра).
+         </li>
+        </ul>
+        <p>
+         Пятнышки на внутренней стороне бедер недостатком не считаются. Отсутствие белого «чулка» на одной из лап азавака тоже допустимо, при условии, что в остальном животное имеет эталонные экстерьерные показатели.
+        </p>
+        <h3>
+         Дефекты и дисквалифицирующие пороки
+        </h3>
+        <p>
+         Особи недостаточно элегантные, с тяжелой головой, толстыми, закрученной формы хвостами и прямым прикусом – это почти всегда низкая оценка от выставочных судей. Поводы для полной дисквалификации африканской борзой:
+        </p>
+        <ul>
+         <li>
+          нестандартный окрас;
+         </li>
+         <li>
+          собака со следами хирургической пластики;
+         </li>
+         <li>
+          животные со светлыми, голубыми глазами и ушами-розочками;
+         </li>
+         <li>
+          мелкогрудые особи и собаки с чересчур сухой мускулатурой;
+         </li>
+         <li>
+          животные с отклонениями от зафиксированного стандартом роста более чем на 3 см;
+         </li>
+         <li>
+          борзые с длинной жесткой шерстью.
+         </li>
+        </ul>
+        <p>
+         В эту же подкатегорию включают агрессивных и трусливых азаваков, собак с дефектами прикуса и врожденными физическими уродствами.
+        </p>
+        <h2>
+         Фото азавака
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/957/b3qu6bjczux7f1gtess4s4l1viamda6l.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/957/380_264_2/b3qu6bjczux7f1gtess4s4l1viamda6l.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/957/380_264_2/b3qu6bjczux7f1gtess4s4l1viamda6l.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/957/380_264_2/b3qu6bjczux7f1gtess4s4l1viamda6l.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/7b5/2t5yh23iw3mk098ku9cutt7j0es1edyb.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/7b5/380_264_2/2t5yh23iw3mk098ku9cutt7j0es1edyb.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/7b5/380_264_2/2t5yh23iw3mk098ku9cutt7j0es1edyb.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/7b5/380_264_2/2t5yh23iw3mk098ku9cutt7j0es1edyb.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/752/h2xs3k2viewps7q9uja9c27lhxvqrdqn.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/752/380_264_2/h2xs3k2viewps7q9uja9c27lhxvqrdqn.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/752/380_264_2/h2xs3k2viewps7q9uja9c27lhxvqrdqn.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/752/380_264_2/h2xs3k2viewps7q9uja9c27lhxvqrdqn.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/af3/xdth69qw068spn76kecasii20hss67so.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/af3/380_264_2/xdth69qw068spn76kecasii20hss67so.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/af3/380_264_2/xdth69qw068spn76kecasii20hss67so.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/af3/380_264_2/xdth69qw068spn76kecasii20hss67so.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/62c/cpdkk7ojj13wylh31u3fqv0u4ycuwiud.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/62c/380_264_2/cpdkk7ojj13wylh31u3fqv0u4ycuwiud.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/62c/380_264_2/cpdkk7ojj13wylh31u3fqv0u4ycuwiud.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/62c/380_264_2/cpdkk7ojj13wylh31u3fqv0u4ycuwiud.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/e97/81rns4j0bnom5ky3s64x07u8jwqhqeht.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/e97/380_264_2/81rns4j0bnom5ky3s64x07u8jwqhqeht.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/e97/380_264_2/81rns4j0bnom5ky3s64x07u8jwqhqeht.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/e97/380_264_2/81rns4j0bnom5ky3s64x07u8jwqhqeht.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c83/h6dlzgrh023pw0uxjxxbb16dy74r0dwr.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/c83/380_264_2/h6dlzgrh023pw0uxjxxbb16dy74r0dwr.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/c83/380_264_2/h6dlzgrh023pw0uxjxxbb16dy74r0dwr.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/c83/380_264_2/h6dlzgrh023pw0uxjxxbb16dy74r0dwr.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a9b/8dvvf6e4bmysze07hy0s5z88m6n2tltn.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/a9b/380_264_2/8dvvf6e4bmysze07hy0s5z88m6n2tltn.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/a9b/380_264_2/8dvvf6e4bmysze07hy0s5z88m6n2tltn.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/a9b/380_264_2/8dvvf6e4bmysze07hy0s5z88m6n2tltn.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/586/ac9e641t7vdpjyrc3gkc3wm4d9cqypil.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/586/380_264_2/ac9e641t7vdpjyrc3gkc3wm4d9cqypil.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/586/380_264_2/ac9e641t7vdpjyrc3gkc3wm4d9cqypil.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/586/380_264_2/ac9e641t7vdpjyrc3gkc3wm4d9cqypil.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div id="bxdynamic_publ1_start" style="display:none">
+        </div>
+        <div id="bxdynamic_publ1_end" style="display:none">
+        </div>
+        <h2 id="gl3">
+         Характер азавака
+        </h2>
+        <p>
+         Африканские борзые – настоящие кочевники не только внешне, но и в душе. Они гордые, самодостаточные, ценящие уважительное к себе отношение и легко «вычисляющие» человеческие слабости. С хозяином, с которым удалось удержаться «на одной волне», собака ведет себя ласково, если не сказать трепетно. Правда, такие привилегии доступны лишь владельцам, способным убедить азавака в том, что статус альфы в доме уже давно и прочно занят. Тем не менее, даже у обожаемого хозяина питомец временами будет держаться отстраненно и флегматично. Причина – унаследованное от диких предков стремление к полной сепарации от человека.
+        </p>
+        <p>
+         Все азаваки обладают нетипичной для борзых чертой – они не расположены к чужакам и относятся к ним с большой долей недоверия. Нет, они не настроены враждебно и не бросаются на каждого, кто приоткрыл дверь в дом. Но и на контакт с незнакомцем добровольно не отважатся. В сочетании с развитым территориальным инстинктом такая особенность превращает представителей породы в отличных сторожей, мимо которых не прошмыгнет ни один злоумышленник.
+        </p>
+        <p>
+         А вот навесить собаке роль няньки точно не выйдет. Африканские борзые абсолютно равнодушны к детям и предпочитают их просто не замечать. В ситуациях, когда имеет место явное приставание к животному со стороны малышни, азавак предпочтет устраниться, но ни в коем случае не подчиняться. По этой же причине не стоит перепоручать выгул питомца детям. Несмотря на конституцию «на грани анорексии», борзые туарегов – собаки невероятной силы. Скорее всего, юный «держатель поводка» просто прокатится животом по дороге и всем окрестным лужам вслед за мчащимся на всех парах азаваком.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Собаки-азаваки умны, но на все могут иметь собственное мнение. Для беспрекословного послушания им необходима дрессировка." data-fancybox="gallery" href="/upload/iblock/d98/fnji9gehvaw8rxaqr25qwygsloq2c5xr.jpg" title="Собаки-азаваки умны, но на все могут иметь собственное мнение. Для беспрекословного послушания им необходима дрессировка.">
+          <div class="lazy-load" data-alt="Собаки-азаваки умны, но на все могут иметь собственное мнение. Для беспрекословного послушания им необходима дрессировка." data-class="article_pic" data-original="/upload/resize_cache/iblock/d98/1024_2150_1/fnji9gehvaw8rxaqr25qwygsloq2c5xr.jpg">
+           <noscript data-alt="Собаки-азаваки умны, но на все могут иметь собственное мнение. Для беспрекословного послушания им необходима дрессировка." data-class="article_pic" data-original="/upload/resize_cache/iblock/d98/1024_2150_1/fnji9gehvaw8rxaqr25qwygsloq2c5xr.jpg">
+            <img alt="Собаки-азаваки умны, но на все могут иметь собственное мнение. Для беспрекословного послушания им необходима дрессировка." class="article_pic" src="/upload/resize_cache/iblock/d98/1024_2150_1/fnji9gehvaw8rxaqr25qwygsloq2c5xr.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Собаки-азаваки умны, но на все могут иметь собственное мнение. Для беспрекословного послушания им необходима дрессировка.
+         </div>
+        </div>
+        <p>
+         С себе подобными «хвостами» борзая уживается легко, но на ее же собственных условиях. Проще говоря, всех несогласных и бунтующих собака быстро угомонит. Замечена за животными и некоторая избирательность в отношениях. Так, два азавака – это вполне мирные и дружные компаньоны. А вот с представителями других, не склонных к подчинению пород отношения могут не сложиться.
+        </p>
+        <p>
+         Домашняя птица, а также мелкий и крупный с/х скот для питомцев туарегов – табу. Так что можете спокойно выпускать собаку во двор, когда в нем прогуливаются утки или овцы. Чуть сложнее обстоит дело с кошками. К ним африканскую борзую придется приучать со щенячьего возраста. Кстати, если азавак не трогает вашего кота, это не значит, что он готов держать себя в лапах при виде уличных мурлык. Так что на прогулке не теряйте бдительности и крепче держите поводок, когда находитесь в местах возможного появления пушистых провокаторов.
+        </p>
+        <h2 id="gl4">
+         Рабочая техника породы
+        </h2>
+        <p>
+         Охотничья «квалификация» азавака – работа по зайцу и газели. Борзая может долго гнать добычу по экстремальной жаре без негативных последствий для организма. На защиту животного от перегрева работает все тело – тонкая кожа и короткая шерсть, практически полное отсутствие жировой прослойки, косое расположение мышц, увеличивающих площадь охлаждающей поверхности.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Бегущий азавак" data-fancybox="gallery" href="/upload/iblock/9ed/btkflwwo4t97o9fovtielwagr11mghob.jpg" title="Бегущий азавак">
+          <div class="lazy-load" data-alt="Бегущий азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/9ed/1024_2150_1/btkflwwo4t97o9fovtielwagr11mghob.jpg">
+           <noscript data-alt="Бегущий азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/9ed/1024_2150_1/btkflwwo4t97o9fovtielwagr11mghob.jpg">
+            <img alt="Бегущий азавак" class="article_pic" src="/upload/resize_cache/iblock/9ed/1024_2150_1/btkflwwo4t97o9fovtielwagr11mghob.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Бегущий азавак
+         </div>
+        </div>
+        <h2 id="gl5">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Занятия с азаваком – это всегда хождение над пропастью и постоянные поиски баланса в общении. Давить на породу авторитетом – заведомо проигрышный шаг. Африканская борзая – тот еще лидер и гордец, потерять доверие которого можно с первым же окриком. Попытки подстроиться под животное тоже успеха не приносят. Азавак быстро понимает, что хозяин не уверен в себе, после чего начинает либо валять дурака, либо включать режим большого босса, которому глубоко параллельны любые требования.
+        </p>
+        <p>
+         Основные этапы дрессировки в первый год жизни борзой:
+        </p>
+        <ul>
+         <li>
+          2-3 месяца – приучение к кличке и ошейнику;
+         </li>
+         <li>
+          3-6 месяцев – хождение на поводке, подчинение командам «Фу!», «Рядом!»;
+         </li>
+         <li>
+          6-7 месяцев – выработка общего послушания, понимание основ жестикуляции, отработка привычки ходить рядом с хозяином без поводка.
+         </li>
+        </ul>
+        <p>
+         Идеальный тренер для азавака – человек, уже имевший опыт содержания борзых. Каким бы уникальным темпераментом порода ни обладала, с сородичами по группе ее многое роднит, особенно со слюги. Будет полезно поработать и со специальной литературой, где можно найти массу советов по правильному воспитанию собаки. Стоит заметить, что охотиться с африканской борзой в российских реалиях сложно. Представители породы показывают впечатляющие результаты только на открытых пространствах, имеющих ландшафт, максимально схожий с пустынным. Зато все эти заложенные природой навыки и инстинкты могут вполне пригодиться в собачьих видах спорта.
+        </p>
+        <h2 id="gl6">
+         Содержание и уход
+        </h2>
+        <p>
+         Мнение, что азаваки боятся морозов, сквозняков и воды, правдиво наполовину. Да, собаки, прибывшие из африканских пустынь, действительно не приспособлены к российским реалиям. А вот представители европейских и отечественных породных линий уже достаточно акклиматизированы. Это, конечно, не значит, что в экстремальные морозы животное должно сидеть во дворе или мокнуть под дождем осенью. Но стандартный выгул при минусовых температурах для здорового пса ничем не опасен.
+        </p>
+        <p>
+         Для квартирного содержания азавак не подходит. Собаке элементарно будет негде размяться. Оптимальный вариант – дом с просторным двором или огороженным участком. При этом питомцу должен быть обеспечен свободный доступ в теплое помещение. Щенков, пока они не социализируются, лучше на время запирать в клетке. Так меньше рисков, что животное где-то поранится и сбежит. Да и самому щенку будет спокойнее. На зимний период для азавака придется приобрести защитную попону, которая не даст ему простудиться на выгуле.
+        </p>
+        <h3>
+         Физическая активность и прогулки
+        </h3>
+        <p>
+         Выгуливать борзых туарегов нужно хотя бы дважды в день по паре часов. В ветреную и дождливую погоду собака сама не захочет долго находиться на улице, вы это легко поймете по ее поведению. Кстати, чтобы азавак не мерз на прогулках, его нужно спускать с поводка, стимулируя на быстрый бег и подвижные игры. Только делайте это в максимально удаленных от цивилизации местах. Помните, зазевавшийся котофей или другая собака – слишком большое искушение для борзой.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Азавак создан для бега, и ему нужно разминать свои длинные ноги не менее 30 минут в день." data-fancybox="gallery" href="/upload/iblock/d56/wijafu6a2thmu18vziekrvi0s4z7am9y.jpg" title="Азавак создан для бега, и ему нужно разминать свои длинные ноги не менее 30 минут в день.">
+          <div class="lazy-load" data-alt="Азавак создан для бега, и ему нужно разминать свои длинные ноги не менее 30 минут в день." data-class="article_pic" data-original="/upload/resize_cache/iblock/d56/1024_2150_1/wijafu6a2thmu18vziekrvi0s4z7am9y.jpg">
+           <noscript data-alt="Азавак создан для бега, и ему нужно разминать свои длинные ноги не менее 30 минут в день." data-class="article_pic" data-original="/upload/resize_cache/iblock/d56/1024_2150_1/wijafu6a2thmu18vziekrvi0s4z7am9y.jpg">
+            <img alt="Азавак создан для бега, и ему нужно разминать свои длинные ноги не менее 30 минут в день." class="article_pic" src="/upload/resize_cache/iblock/d56/1024_2150_1/wijafu6a2thmu18vziekrvi0s4z7am9y.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Азавак создан для бега, и ему нужно разминать свои длинные ноги не менее 30 минут в день.
+         </div>
+        </div>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Короткая шелковистая шерсть азавака – мечта всех, кто хоть однажды в жизни повозился с пушистым питомцем. Единственный аксессуар, которым придется обзавестись владельцу породы, – это варежка для собирания шерстинок. Проходиться силиконовой перчаткой по телу собаки достаточно раз в неделю, причем не столько для удаления выпавшей шерсти, сколько для массажа.
+        </p>
+        <p>
+         Удалить загрязнения с тела животного можно просто влажной тканью. Купания для африканских борзых – что-то вроде наказания. Но если у вас растет будущий завсегдатай выставок, побеждать водобоязнь придется. Используйте максимально щадящие средства ухода, чтобы не вызвать раздражения на коже и не ухудшить качество шерстного покрова.
+        </p>
+        <p>
+         В остальном действуйте стандартно – следите за гигиеной ушей и глаз собаки, своевременно стригите когти. Со щенячьего возраста практикуйте чистку зубов. Если же вам попался упрямый питомец, не желающий привыкать к щетке и пасте, используйте альтернативы, например, капли в воду от зубного камня, свежевыжатый томатный сок, специальные спреи от налета.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Очень важно не перекармливать собаку высококалорийной едой. Упитанный азавак – это уже не борзая. Представителям породы можно те же продукты, что и остальным собакам:
+        </p>
+        <ul>
+         <li>
+          нежирное мясо в отварном или сыром виде;
+         </li>
+         <li>
+          гречневую или овсяную кашу с добавлением мяса и субпродуктов;
+         </li>
+         <li>
+          овощи, за исключением бобовых культур и картофеля;
+         </li>
+         <li>
+          куриное яйцо (желток);
+         </li>
+         <li>
+          мягкие хрящи;
+         </li>
+         <li>
+          кисломолочную продукцию пониженной жирности;
+         </li>
+         <li>
+          ржаные сухарики – в качестве лакомства;
+         </li>
+         <li>
+          нерафинированное растительное масло – чайная ложка пару раз в неделю.
+         </li>
+        </ul>
+        <p>
+         Не забывайте и про соль, которая хоть и в небольшом количестве, но все же необходима. Под строгим запретом любые мясные деликатесы и сладости. Сухие корма подбирайте с учетом особенностей породы. В Сети можно поискать список лучшей «сушки» для борзых. Обращайте также внимание на процент белка в корме. Если азавак не гоняет сутками зайцев и газелей, пичкать его лишними жирами и углеводами совершенно ни к чему.
+        </p>
+        <h2 id="gl7">
+         Здоровье и болезни африканских борзых
+        </h2>
+        <p>
+         Тысячелетия жизни в жестких условиях африканских пустынь закалили и укрепили иммунитет борзых. Как результат: порода имеет минимальный «список» проблем, мешающих ее представителям полноценно наслаждаться жизнью. Самые распространенные из них:
+        </p>
+        <ul>
+         <li>
+          эпилептические припадки;
+         </li>
+         <li>
+          склонность к завороту желудка (присуща всем крупным породам);
+         </li>
+         <li>
+          гипотиреоз;
+         </li>
+         <li>
+          дисплазия суставов;
+         </li>
+         <li>
+          сердечно-сосудистые заболевания.
+         </li>
+        </ul>
+        <p>
+         Все перечисленные недуги имеют место у очень небольшого процента особей. Причем в подавляющем большинстве это животные европейских линий разведения. Азаваки, проживающие в Африке, остаются полностью здоровыми до преклонных лет, страдая лишь типичными для всех собак возрастными проблемами – снижением остроты зрения и двигательной активности, частичной потерей нюха и так далее.
+        </p>
+        <h2 id="gl8">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Если не все равно, как будет выглядеть щенок азавака, выясните у заводчика, из какой страны импортированы его родители.
+        </p>
+        <ul>
+         <li>
+          Особи из югославских линий выглядят костистее, имеют меньшее количество белых пятен, крепкие ноги и чуть более широковатые головы.
+         </li>
+         <li>
+          Животные из Франции внешне более элегантные, узкоголовые, с короткой легкой мордой, но часто имеют проблемные конечности (ноги в размете).
+         </li>
+         <li>
+          Найти щенков от производителей, импортированных из Африки, – большая удача. Несмотря на то что, по мнению специалистов, современные борзые берберов «уже не те», именно они дают самое здоровое потомство.
+         </li>
+         <li>
+          Постарайтесь попасть на несколько породных выставок, где будут появляться владельцы азаваков. Это шанс познакомиться с будущим продавцом и встать в очередь на щенка с хорошей родословной.
+         </li>
+         <li>
+          Оказавшись в питомнике, не удивляйтесь, если щенки бросятся от вас врассыпную с истерическими воплями. Это показатель того, что перед вами реальные борзые туарегов – независимые, недоверчивые и подозрительные.
+         </li>
+        </ul>
+        <p>
+         В РФ пик популярности азаваков пришелся на 90-е. В наши дни заводчиков, занимающихся развитием элитной породы, становится все меньше. С одной стороны, это защищает покупателя от риска столкнуться с недобросовестными «разведенцами», но с другой – увеличивает продолжительность поисков. Не забывайте также, что племенным сукам дают возможность рожать всего несколько раз в течение жизни, из-за чего ожидание щенка может растянуться на годы.
+        </p>
+        <h2>
+         Фото щенков азавака
+        </h2>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/055/m7cqc159y8t3eang8c636sqrjvytuq2p.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/055/380_264_2/m7cqc159y8t3eang8c636sqrjvytuq2p.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/055/380_264_2/m7cqc159y8t3eang8c636sqrjvytuq2p.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/055/380_264_2/m7cqc159y8t3eang8c636sqrjvytuq2p.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/c16/07ab4kjcr9q9jryhik8h09jhapai24j8.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/c16/380_264_2/07ab4kjcr9q9jryhik8h09jhapai24j8.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/c16/380_264_2/07ab4kjcr9q9jryhik8h09jhapai24j8.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/c16/380_264_2/07ab4kjcr9q9jryhik8h09jhapai24j8.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/4a0/d28hrx0m8n5uqx0ebug1yajtrgzw69xu.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/4a0/380_264_2/d28hrx0m8n5uqx0ebug1yajtrgzw69xu.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/4a0/380_264_2/d28hrx0m8n5uqx0ebug1yajtrgzw69xu.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/4a0/380_264_2/d28hrx0m8n5uqx0ebug1yajtrgzw69xu.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/0e5/0buk9r3vi3m278wxolcvxvv2a7xd614n.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/0e5/380_264_2/0buk9r3vi3m278wxolcvxvv2a7xd614n.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/0e5/380_264_2/0buk9r3vi3m278wxolcvxvv2a7xd614n.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/0e5/380_264_2/0buk9r3vi3m278wxolcvxvv2a7xd614n.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/68c/c3jqqg0ptg0f7pp848zn1bklwn62x91w.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/68c/380_264_2/c3jqqg0ptg0f7pp848zn1bklwn62x91w.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/68c/380_264_2/c3jqqg0ptg0f7pp848zn1bklwn62x91w.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/68c/380_264_2/c3jqqg0ptg0f7pp848zn1bklwn62x91w.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/665/q9dduysmi5zxt2z8nc60dnm8jqso7rfx.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/665/380_264_2/q9dduysmi5zxt2z8nc60dnm8jqso7rfx.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/665/380_264_2/q9dduysmi5zxt2z8nc60dnm8jqso7rfx.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/665/380_264_2/q9dduysmi5zxt2z8nc60dnm8jqso7rfx.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <div class="img-two">
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/f63/t3ubhvb92doacjrontssnhtqr10et14m.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/f63/380_264_2/t3ubhvb92doacjrontssnhtqr10et14m.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/f63/380_264_2/t3ubhvb92doacjrontssnhtqr10et14m.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/f63/380_264_2/t3ubhvb92doacjrontssnhtqr10et14m.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/a10/c770x2jwu0tbeqj58aeh8zacat9s8pm4.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/a10/380_264_2/c770x2jwu0tbeqj58aeh8zacat9s8pm4.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/a10/380_264_2/c770x2jwu0tbeqj58aeh8zacat9s8pm4.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/a10/380_264_2/c770x2jwu0tbeqj58aeh8zacat9s8pm4.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+         <div class="img-three-block">
+          <a class="fancybox" data-caption="" data-fancybox="gallery" href="/upload/iblock/530/ghsmhhkuqxysony3h4wwe10n1hitpr24.jpg" title="">
+           <div class="lazy-load" data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/530/380_264_2/ghsmhhkuqxysony3h4wwe10n1hitpr24.jpg">
+            <noscript data-alt="Азавак" data-class="article_pic" data-original="/upload/resize_cache/iblock/530/380_264_2/ghsmhhkuqxysony3h4wwe10n1hitpr24.jpg">
+             <img alt="Азавак" class="article_pic" src="/upload/resize_cache/iblock/530/380_264_2/ghsmhhkuqxysony3h4wwe10n1hitpr24.jpg"/>
+            </noscript>
+           </div>
+          </a>
+         </div>
+        </div>
+        <h2 id="gl9">
+         Цена азавака
+        </h2>
+        <p>
+         Для покупки туарегской борзой у заводчиков США придется пожертвовать минимум 3000 $. Причем в солидных питомниках, реализующих потомство от производителей-чемпионов, цена может вырасти до 8000 $. В Европе расценки на породу стартуют от 3000 €. В России щенка можно приобрести дешевле, но нужно приготовиться к тому, что стоимость будет выше средней – 80 000 – 90 000 ₽.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения азавака на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/azavak/forum/">
+        Перейти на
+        форум азавака
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Азавак" src="/upload/iblock/98a/32e86cxs0z7fqwtalz3yq6udyokh7cp7.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/azavak/">
+          Азавак
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/azavak/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/azavak/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/azavak/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/azavak/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/azavak/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/russkiy-toy-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Русский той-терьер" data-original="/upload/resize_cache/iblock/947/100_100_1/947e6bec6c723daeddb2296e8b71ac1a.JPG">
+          <noscript data-alt="Русский той-терьер" data-original="/upload/resize_cache/iblock/947/100_100_1/947e6bec6c723daeddb2296e8b71ac1a.JPG">
+           <img alt="Русский той-терьер" src="/upload/resize_cache/iblock/947/100_100_1/947e6bec6c723daeddb2296e8b71ac1a.JPG"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Русский той-терьер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/novoshotlandskiy-retriver/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Новошотландский ретривер" data-original="/upload/resize_cache/iblock/c7c/100_100_1/zamzc361qyc7rcwdvgbxb60sapntr3s2.jpg">
+          <noscript data-alt="Новошотландский ретривер" data-original="/upload/resize_cache/iblock/c7c/100_100_1/zamzc361qyc7rcwdvgbxb60sapntr3s2.jpg">
+           <img alt="Новошотландский ретривер" src="/upload/resize_cache/iblock/c7c/100_100_1/zamzc361qyc7rcwdvgbxb60sapntr3s2.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Новошотландский ретривер
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/alabay-sredneaziatskaya-ovcharka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Алабай (Среднеазиатская овчарка)" data-original="/upload/resize_cache/iblock/609/100_100_1/609708aa8ba6a6e5eccecc9a058c1b65.jpg">
+          <noscript data-alt="Алабай (Среднеазиатская овчарка)" data-original="/upload/resize_cache/iblock/609/100_100_1/609708aa8ba6a6e5eccecc9a058c1b65.jpg">
+           <img alt="Алабай (Среднеазиатская овчарка)" src="/upload/resize_cache/iblock/609/100_100_1/609708aa8ba6a6e5eccecc9a058c1b65.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Алабай (Среднеазиатская овчарка)
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/angliyskiy-toy-terer/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Английский той-терьер" data-original="/upload/resize_cache/iblock/aa5/100_100_1/kjcm7a5hmznogw7rntxtsqsjte2axjxt.jpg">
+          <noscript data-alt="Английский той-терьер" data-original="/upload/resize_cache/iblock/aa5/100_100_1/kjcm7a5hmznogw7rntxtsqsjte2axjxt.jpg">
+           <img alt="Английский той-терьер" src="/upload/resize_cache/iblock/aa5/100_100_1/kjcm7a5hmznogw7rntxtsqsjte2axjxt.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Английский той-терьер
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fazavak%252F%253Fcheck_key%253D79f703c5e8f9be63c9c0a732179bf298%2526ANIMAL_CODE%253Dazavak%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fazavak%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmF6YXZhayUyRiUzRmNoZWNrX2tleSUzRDc5ZjcwM2M1ZThmOWJlNjNjOWMwYTczMjE3OWJmMjk4JTI2QU5JTUFMX0NPREUlM0RhemF2YWslMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGYXphdmFrJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fazavak%252F%253Fcheck_key%253D79f703c5e8f9be63c9c0a732179bf298%2526ANIMAL_CODE%253Dazavak%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fazavak%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fazavak%252F%253Fcheck_key%253D79f703c5e8f9be63c9c0a732179bf298%2526ANIMAL_CODE%253Dazavak%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fazavak%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "185.77.216.2"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--7bc8ae24f30c14884ce45f05298da3f2-->

@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'fac955e86749'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Английский пойнтер, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Английский пойнтер – представитель группы гладкошерстных легавых родом из Великобритании. Порода ценится за выдающееся чутье и контактность, позволяющую ее представителям ладить с семьей владельца и домашними животными." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/32c/32c67cd171158cc0cbfcb4df182e954b.jpg" property="og:image"/>
+     <title>
+      Английский пойнтер: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/poynter/" property="og:url"/>
+     <meta content="Английский пойнтер: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Английский пойнтер – представитель группы гладкошерстных легавых родом из Великобритании. Порода ценится за выдающееся чутье и контактность, позволяющую ее представителям ладить с семьей владельца и домашними животными." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/poynter/" itemprop="url">
+         <span itemprop="title">
+          Английский пойнтер
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Английский пойнтер
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/poynter/">
+          Описание
+         </a>
+         <a href="/dog/poynter/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/poynter/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/poynter/photo/">
+          Фото
+         </a>
+         <a href="/dog/poynter/pitomniki/">
+          Питомники
+         </a>
+         <!--
+-->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Английский пойнтер" src="/upload/iblock/c9b/c9bcf1d2be348d424060f4bf3a90f820.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/poynter/">
+           пойнтер
+          </a>
+         </span>
+         <p>
+          Английский пойнтер – представитель группы гладкошерстных легавых родом из Великобритании. Порода ценится за выдающееся чутье и контактность, позволяющую ее представителям ладить с семьей владельца и домашними животными.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="The beaches are still closed (they said not for much longer) but the sidewalk has re-opened so we went for a sunset walk! Happy Friday Friends!! ❤️❤️
+.
+.
+.
+.
+.
+.
+.
+#beach #florida #nature #beauty #love #myzen #whitesand #relax #chill #enjoy #sunset #animals #pets #dogsofinstagram #instadaily #photooftheday #doggy #dog #mydog #gooddog #dogscorner #dogsandpals #englishpointer #pointeringles #pointersofinstagram #natural #sme #sunshine #freshair #covid19" data-fancybox="images" data-link="https://www.instagram.com/p/B_qRx1zg5xw/" data-type="image" data-username="" href="/upload/uf/f3b/f3b56b93a58d4363d44f2a2d6a15a6b1.jpg">
+            <img alt="Английский пойнтер" src="/upload/resize_cache/uf/f3b/293_293_2/f3b56b93a58d4363d44f2a2d6a15a6b1.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="Ingen stor tvil om hvem som er selvutnevnt dronning i denne familien 
+*
+*
+*
+*
+*
+
+#dogs_of_instagram #dogslife #pup #dogsitting #photooftheday #animal #instagood #instatag #doggies #bordercollie #sighthound #doggy #beautiful #doglover #doglovers #instadog #pet #cute #norskfriluftsliv #instawhippet #finnskogen #bestwoof #dogoftheday #adorable #petsagram #minfuglehund #dogs #englishpointer #pointer #turjenterno" data-fancybox="images" data-link="https://www.instagram.com/p/B_qMu6EHaez/" data-type="image" data-username="" href="/upload/uf/402/402d937c895e3eebd9d5c73375722dc2.jpg">
+            <img alt="Английский пойнтер" src="/upload/resize_cache/uf/402/293_293_2/402d937c895e3eebd9d5c73375722dc2.jpg"/>
+           </a>
+          </div>
+          <div class="foto-img">
+           <a class="wf-insta__link" data-avatar="" data-cap="What a good boy! #rescuedog #pointer_feature #goodboy #englishpointer #dogsofinstagram #petsofinstagram #spdc #pointersofinstagram #pointeroftheday" data-fancybox="images" data-link="https://www.instagram.com/p/B_p-AexF06k/" data-type="image" data-username="" href="/upload/uf/08b/08b256448e7f5859f88b4d09fe709295.jpg">
+            <img alt="Английский пойнтер" src="/upload/resize_cache/uf/08b/293_293_2/08b256448e7f5859f88b4d09fe709295.jpg"/>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/poynter/photo/">
+         Все
+            фото английского пойнтера
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы английский пойнтер
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы английский пойнтер
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Характер английского пойнтера
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Охота с пойнтером
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Воспитание, дрессировка, натаска
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Здоровье и болезни английских пойнтеров
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Цена английского пойнтера
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Английский пойнтер
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Великобритания
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         20-30 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 63-69 см, суки 61-66 см
+        </li>
+        <li>
+         <strong>
+          Продолжительность жизни:
+         </strong>
+         12-13 лет
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         С английского название породы переводится как «стрелка», потому что в стойке пойнтер вытягивает тело, голову и хвост в единую горизонтальную линию, превращаясь в живой указатель.
+        </li>
+        <li>
+         В отличие от других охотничьих собак, пойнтерам нравится контактировать не только с хозяином, но и с остальными домочадцами. По этой причине породу не рекомендуют отселять на постоянное место жительства в вольер или будку.
+        </li>
+        <li>
+         Английского пойнтера часто называют собакой эстетов, для которых процесс охоты важнее конечного результата.
+        </li>
+        <li>
+         Пойнтеры более уязвимы на охоте, чем, например, дратхаары. Гладкий короткий волос легавой не способен защитить ее тело от острых шипов и сухих сучьев.
+        </li>
+        <li>
+         Для представителей породы характерно длинное верхнее чутье. В полевых условиях собака должна безошибочно определять запах и делать стойку на расстоянии минимум 8-12 метров от птицы.
+        </li>
+        <li>
+         Пойнтеры тяжело переносят разлуку с владельцем и одиночество в целом, так что отлучки хозяина не должны затягиваться на несколько дней.
+        </li>
+        <li>
+         В силу короткого шерстного покрова порода достаточно теплолюбива, поэтому вылазки на охоту поздней осенью должны быть кратковременными, особенно если подразумевается подача дичи из водоемов.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Английский пойнтер" data-original="/upload/iblock/32c/32c67cd171158cc0cbfcb4df182e954b.jpg">
+          <noscript data-alt="Английский пойнтер" data-original="/upload/iblock/32c/32c67cd171158cc0cbfcb4df182e954b.jpg">
+           <img alt="Английский пойнтер" src="/upload/iblock/32c/32c67cd171158cc0cbfcb4df182e954b.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          Английский пойнтер – азартный охотник и преданный компаньон, умеющий превратить любой выезд в поле в завораживающее шоу по поиску пернатой дичи. Объединивший в себе гены самых добычливых пород, этот эффектный «птицелов» обладает феноменальным чутьем и невероятным трудолюбием. Недаром в охотничьих сообществах пойнтеристы пользуются заслуженным уважением, считаясь владельцами уникальных и элитных питомцев. Как и полагается английскому аристократу, пойнтер достаточно разборчив, чтобы не смешивать работу и домашние будни. Можете не волноваться за своего котейку и других пушистых любимцев – вне охоты легавая на их жизни не посягнет.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Средне (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Минимальная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Ниже среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Среднее (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не переносит (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Стандартный (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          3                                        /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="60" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошие (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Английский пойнтер основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div>
+        <h3>
+         Видео: Английский пойнтер
+        </h3>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="hOemNItkxrQ">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl1">
+         История породы английский пойнтер
+        </h2>
+        <p>
+         Предки породы появились в Англии в XVI-XVII веках, когда на Британские острова завезли староиспанских пойнтеров и португальских бракков. Импорт животных был обусловлен практической необходимостью: к тому времени количество дичи в Европе сократилось и для ее поимки требовались более ловкие и чутьистые собаки, чем подопечные английских сквайров. Чтобы сделать испанских легавых еще добычливее, британцы скрестили их с фоксхаундами, а затем с бульдогами. Позднее к получившейся помеси прилили кровь сеттеров, борзых и старофранцузских бракков, что добавило облику пойнтеров сдержанного аристократизма.
+        </p>
+        <p>
+         Участвовать в выставках, как самостоятельная порода, английские пойнтеры начали с 1877 года. Примерно в то же время легавых завезли в США, где они продемонстрировали настолько блестящие успехи в работе, что затмили популярных у американцев сеттеров. В России пойнтеры объявились раньше, чем в Штатах, – порода упоминается в отечественных печатных изданиях с 1842 года. Животных содержали, в основном, представители дворянского сословия, выписывавшие племенных кобелей и сук прямиком из Англии.
+        </p>
+        <p>
+         После 1917 года участь российских собак оказалось незавидной. Легавых целенаправленно истребляли, как питомцев ненавистной буржуазии, а те особи, которым повезло выжить, уже не имели родословных и промышляли бродяжничеством. В начале 20-х годов «реанимировать» род английских пойнтеров взялся А. А. Чумаков. Именно благодаря его стараниям, московские линии породы не вымерли от голода в годы Великой Отечественной и почти полностью сохранили поголовье. Кстати, сам заводчик был категорически против вязок собственных питомцев с импортированными пойнтерами. По его мнению, зарубежные производители не могли привнести в фенотип советских легавых ничего выдающегося.
+        </p>
+        <p>
+         Свой вклад в развитие охотничьих качеств российских пойнтеров сделали советские заводчики Б. А. Калачев, А. В. Платонов, И. А. Найденов и В. П. Рождественский. Каждый из специалистов развивал собственный тип идеальной легавой, поэтому их питомцы отличались друг от друга не только внешне, но и по рабочим показателям. Например, Калачев предпочитал черных и кофейно-пегих особей, демонстрировавших высокую скорость движения, в то время как Найденов делал ставку на артистизм животного в процессе нагонки дичи.
+        </p>
+        <p class="legenda">
+         <strong>
+          Любопытный факт:
+         </strong>
+         в Англии самым известным пойнтером считается Джуди. С 1936 года собака обитала на борту британского катера «Гнат», с командой которого пережила битву при Сингапуре, затопление судна, японский плен и полуторамесячный переход через джунгли. За спасение жизней членов экипажа и преданность Джуди была награждена медалью Марии Дикин.
+        </p>
+        <h2 id="gl2">
+         Стандарт породы английский пойнтер
+        </h2>
+        <p>
+         По внешним характеристикам пойнтер – идеальная легавая: сильная, выносливая, но при этом не потерявшая природной грациозности и утонченности облика. В экстерьере породы хоть и в приглушенном виде, но прослеживается заметное сходство с фоксхаундами. Что касается элегантности силуэта и легкости движений, то они перешли к легавым от борзых и сеттеров. В охотничьей среде работа с английским пойнтером ценится не столько за результативность, сколько за гипнотическое очарование самого процесса. Порода ищет дичь плавным карьером, в стойке выравнивая спину, морду и хвост в общую горизонтальную линию. Очень эффектно животное выглядит в стойке с приподнятой вверх передней лапой – именно в таком положении английских пойнтеров любили запечатлевать на своих полотнах художники XIX столетия.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Череп собаки гармоничный, в меру широкий, с хорошо выделяющимися затылочным бугром и стопом. Морда тупоугольной формы, под глазами слегка запавшая.
+        </p>
+        <h3>
+         Губы, зубы и челюсти
+        </h3>
+        <p>
+         У английских пойнтеров крупные, нежные губы. Эталонный тип прикуса породы – полные ножницы. Верхние зубы располагаются в ряду вертикально, нависая над нижними.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Спинка морды имеет небольшую впадину посередине, из-за чего нос легавой выглядит слегка вздернутым. Ноздри крупные, влажные, мягкие. Мочка окрашена в темный тон, который чуть светлее у собак с лимонно-белой шерстью.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         В зависимости от масти радужная оболочка глаз может быть светло-карей или коричневой. Кожа век у большинства пойнтеров темная, за исключением особей лимонно-белого окраса. Выражение глаз умное, спокойное, без дерзости и вызова.
+        </p>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Тонкое ушное полотно отличают закругленный кончик, высокий постав и плотное прилегание к голове. Сами уши средней длины.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         Удлиненная мускулистая шея лишена подвеса, но имеет легкий изгиб и плавно переходит в корпус.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело английского пойнтера сильное, гибкое, но без излишней массивности. Широкая крепкая грудь плавно сужается в районе короткой выпуклой поясницы. Ребра сильно изогнуты и отведены назад. Нижняя часть грудной клетки опускается до локтей, круп располагается на одной линии с поясницей.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Ноги английского пойнтера ровные, костистые, с превосходно развитыми мышцами. Предплечья крепкие, с ярко выраженными сухожилиями на тыльной части. Лопатки косые, поставленные под хорошим наклоном. Передняя часть запястий уплощенного типа, внутренняя – чуть выдается вперед и переходит в длинные наклонные пясти. Задние ноги мускулистые, с крупными бедрами, длинными голенями и короткими плюснами. Лапы легавой в форме овала, плотно собранные, со сводистыми пальцами и плотными подушечками. Движется собака легко, размашисто, с сильным толчком задних лап.
+        </p>
+        <h3>
+         Хвост/прут
+        </h3>
+        <p>
+         Хвост средней длины, очень толстый у основания и суженный в районе кончика. Прут не загибается кверху и держится не выше уровня спины. Размахивание им из стороны в сторону в движении недопустимо.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         Короткая жесткая шерсть английского пойнтера обладает шелковистым природным глянцем. Волос прямой, равномерно распределенный по всему телу.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Самые распространенные масти породы – лимонно-белая, черно-белая, печеночно-белая и оранжево-белая. Более редкие окрасы – сплошные и триколорные.
+        </p>
+        <h3>
+         Дисквалифицирующие пороки
+        </h3>
+        <p>
+         Степень выраженности экстерьерных и поведенческих дефектов напрямую влияет на шоу-карьеру животного. Особи с незначительными недостатками внешности допускаются на ринг, а пойнтеры, утратившие породные повадки и облик, – нет. Не принимают участия в выставках трусливые либо агрессивные собаки, неадекватно реагирующие на требования хендлера, отказывающиеся выступать перед публикой, а также пытающиеся применить силу к другим четвероногим конкурсантам и людям.
+        </p>
+        <h2 id="gl3">
+         Характер английского пойнтера
+        </h2>
+        <p>
+         Развитые охотничьи инстинкты не задавили в пойнтере внутреннего компаньона и друга человека, поэтому поладить с четвероногим легкоатлетом будет несложно. В отличие от большинства охотничьих пород, эти интеллигентные «англичане» охотно прислушиваются не только к хозяйскому мнению, так что корректировать поведение собаки способен любой член семьи, взаимодействующий с ней со щенячьего возраста. Единственная оговорка: в ответ на готовность сотрудничать легавой требуется своевременное внимание человека, выражающееся в общении, совместных играх и прогулках.
+        </p>
+        <p>
+         Территориальные инстинкты у английских пойнтеров находятся в приглушенном состоянии, так что не пытайтесь навязать породе работу сторожа. Да, скучающий пес способен флегматично гавкнуть на приоткрывшего дверь незнакомца, однако на этом его миссия, как охранника, исчерпывается. Не занимается пойнтер и травлей мелких домашних животных, хотя изредка может сорваться на случайно пробегающую мимо мышь. Единственный, с кем породе пока не удается ладить, – это домашняя птица, поэтому отправляясь с собакой в отпуск в сельскую местность, придется постоянно держать руку на пульсе. Соседские куры, утки и гуси вводят легавых в невероятный соблазн, которому они не в силах противостоять.
+        </p>
+        <p>
+         Описывая характер пойнтера, заводчики часто шутят, что у породы по-настоящему развиты только два желания: бежать и охотиться. Приносить домой потомка испанских бракков есть смысл лишь тогда, когда вы готовы бегать по полям и болотам вместе с ним. В остальных случаях лучше предпочесть неугомонному пойнтеру менее заводного питомца. В отношениях с детьми легавые в меру терпеливы и снисходительны. Трансформироваться в бдительную няньку собака, конечно, не станет, но в подвижных играх, в которых задействованы самые юные члены семьи, с удовольствием поучаствует.
+        </p>
+        <h2 id="gl4">
+         Охота с пойнтером
+        </h2>
+        <p>
+         Пойнтеры – узкоспециализированные легавые, идеально работающие верхним дальним чутьем. Это означает, что собака улавливает и вычленяет запах потенциальной добычи, распространяющийся по воздуху с чередой остальных полевых запахов. Обнаружив объект преследования, пес должен сигнализировать об этом хозяину, сделав стойку. Следующий этап охоты – подводка и поднятие птицы на крыло, то есть животное должно подобраться к пернатой дичи и спугнуть ее так, чтобы человек произвел максимально прицельный выстрел.
+        </p>
+        <p>
+         Важный нюанс охоты с английским пойнтером – верность чутья. Случается, что собака ошибается и делает стойку на месте сидки птицы (локация, где дичь пряталась ранее и откуда успела улететь) или принимает за добычу непромысловых пернатых. Кроме того, для породы характерен быстрый поиск, в ходе которого собака исследует всю площадь поля.
+        </p>
+        <p>
+         Для полноценной работы с пойнтером необходимо отработать навык челночного хода – когда легавая мчится впереди охотника, пересекая его путь движением по параллельным линиям. При этом расстояние между каждыми двумя такими параллелями должно составлять не менее 10 метров, если охота идет в условиях ровной местности.
+        </p>
+        <p>
+         Формально пойнтеры не ориентированы на подачу подбитой птицы, но на практике некоторые особи способны этим заниматься. Разумеется, собаку придется приучать заходить в воду и плыть за добычей, но если подойти к процессу грамотно, на формирование навыка уйдет не так много времени. Единственная сложность – теплолюбивость породы, в силу которой заплывы в ноябрьских прудах и болотах могут не лучшим образом сказаться на здоровье пса.
+        </p>
+        <p class="legenda">
+         <strong>
+          К сведению:
+         </strong>
+         молодых пойнтеров лучше натаскивать по дупелю, который имеет привычку перемещаться на короткие расстояния. Из боровой дичи для первых экспериментов по натаске подходит белая куропатка.
+        </p>
+        <p>
+         В погоне за дикими трофеями не стоит забывать об элитарности имиджа породы, сложившегося еще в XIX веке. Сами пойнтеристы называют охоту с потомками испанских бракков «балетом» и акцентируют внимание не столько на результате, сколько на эстетике процесса. В связи с этим попытки переквалифицировать пойнтера в универсального охотника с задатками гончей вызывают негативное отношение специалистов. Считается, что такой подход обесценивает породу, поскольку рабочие характеристики легавых формировались в течение нескольких веков не для того, чтобы их меняли из-за сиюминутных желаний владельца.
+        </p>
+        <p>
+         Что касается продолжительности охоты, то она может быть разной в начале и конце сезона. Если легавая вышла в поле или лес после длительного перерыва, она пока не обладает достаточной выносливостью, а значит работать с ней можно не более 3-4 часов в день. Более того, если пойнтер достаточно молодой, ему необходимо устраивать 15-минутные передышки в течение всего периода работы. К концу охотничьего сезона собака становится крепче и способна трудиться дольше, так что хронометраж походов за дичью можно увеличить до 4 часов утром и 3 часов вечером. Недопустимо также выводить питомца на охоту более трех дней подряд – в сезон даже самым неутомимым псам требуется тайм-аут в пару суток.
+        </p>
+        <h2 id="gl5">
+         Воспитание, дрессировка, натаска
+        </h2>
+        <p>
+         Профессиональные заводчики уверяют, что дрессировать пойнтера не сложнее, чем дратхаара. Кстати, легавых-охотников на первых порах воспитывают и обучают по тому же шаблону, что и домашних питомцев. Помните, если собака послушна и внимательна в домашней обстановке, в рабочих условиях она поведет себя аналогичным образом. И наоборот – невоспитанный пойнтер никогда не станет терпеливым охотником, способным добыть хоть какой-то трофей.
+        </p>
+        <p>
+         Первые ступени обучения щенка – социализация и воспитание привычки подчиняться человеку. Малыш должен безоговорочно принимать авторитет хозяина, но не видеть в нем тирана, щедро «выписывающего» наказания. В целом стиль коммуницирования с пойнтером должен быть сдержанным. Одинаково нельзя как распускать легавую, так и задвигать ее в жесткие рамки, поскольку это не служебная порода. Первые команды, которые обязан усвоить будущий охотник: «Лежать!» (можно заменить командой «Даун!»), «Нельзя!», «Вперед!». Обычно на их отработку уходит много времени и сил, но поскольку на охоте без элементов управления – никуда, придется постараться.
+        </p>
+        <p>
+         Многие владельцы обучают щенков английского пойнтера апортировке предметов. Это допустимый и полезный навык в условиях предстоящей охоты. Однако важно понимать, что носить в зубах мячики и пучки перьев любят только щенки. Со временем даже у суперпрофессиональных легавых интерес к апортировке и подаче дичи снижается, и вернуть его обратно получается не всегда. Если пойнтер охотно прыгает в болото за подстреленной уткой – можете считать, что вам крупно повезло с питомцем.
+        </p>
+        <p>
+         Перед тем как перейти к натаске, с легавой проходят предварительную подготовку. На данном этапе щенка необходимо приучить ходить у ноги, отработать позывистость (обязательный приход по зову владельца), умение ложиться по приказу на расстоянии и следовать в направлении, указанном охотником. Привычка следовать у ног хозяина отрабатывается с помощью поводка на ежедневных прогулках. Донесите до сознания собаки тот факт, что нельзя тянуть за ремешок и вырываться впереди человека. Если животное пусть не идеально, но послушно держится у ног, используйте для стимулирования лакомство. Легавые любят, когда поощряют их успехи, и в дальнейшем стараются заработать деликатес честным способом.
+        </p>
+        <p>
+         Выполнение команды «Лежать!» на расстоянии – самое сложное упражнение, поскольку отрабатывается на улице, где полно отвлекающих факторов. Попутно нужно обучить собаку движению в заданном направлении. Делать это лучше, сочетая команды «Вправо!», «Влево!» с указательными жестами рук – потом с их помощью будет проще обучить пойнтера челночному поиску. После того как подготовительный этап пройден, разрешается переходить к натаске, формирующейся из трех основных умений – потяжки, стойки и подводки.
+        </p>
+        <p>
+         Потяжка пойнтера – это умение сходу вычленить запах птицы. Чем быстрее собака это делает, тем ценнее ее работа. Об эффектной стойке пойнтеров написано много, поэтому можно лишь добавить, что в идеале короткая потяжка должна переходить в скульптурную стойку, которая у породы вырабатывается на инстинктивном уровне. Кульминация охоты с пойнтером – подводка. Просигнализировав стойкой о местонахождении дичи, собака начинает к ней подбираться, чтобы спугнуть под выстрел. Однако в отдельных случаях этот этап рекомендуется пропускать. Например, когда идет охота на болотных кур и коростелей. Эти птицы не всегда поднимаются на крыло и часто предпочитают полету бег по земле. В результате, вместо того чтобы сделать подводку, легавая пытается идти за добычей по следу, что противоречит охотничьим характеристикам породы.
+        </p>
+        <p>
+         Немаловажный момент в обучении и натаске английских пойнтеров – наказание. Специалисты рекомендуют до трехмесячного возраста корректировать неправильное поведение щенков очень мягко. Например, если животное шалит и не просится в туалет, ему можно пригрозить голосом либо легким встряхиванием за загривок. Зарвавшихся молодых особей заводчики предлагают несильно, но ощутимо постегивать прутом. Правда, осуществлять «экзекуцию» необходимо только в исключительных случаях. Например, когда собака знает и понимает команду, но отказывается выполнять ее из вредности и упрямства.
+        </p>
+        <h2 id="gl6">
+         Содержание и уход
+        </h2>
+        <p>
+         Теплолюбивым и общительным пойнтерам будет одинаково некомфортно и в уличной будке, и в стесненных условиях городской квартиры. Оптимальное жилье для легавой – дом с обширным двором, где собаку не станут ограничивать в перемещении и будут охотно как впускать в помещение, так и выпускать из него. Некоторые пойнтеристы предпочитают держать своих подопечных в вольерах. Это не идеально, но допустимо при условии, что вольер и находящаяся в нем будка максимально утеплены. Помните, место обитания питомца не должно располагаться в сыром и темном углу, но и под прямыми солнечными лучами ему не место.
+        </p>
+        <p>
+         Держать английского пойнтера на привязи недопустимо – собака должна свободно перемещаться по территории огороженного приусадебного участка и дома. При этом обход хозяйских владений не отменяет ежедневных прогулок. Дважды в день пойнтер должен совершить полуторачасовой променад за пределами собственного двора, вне зависимости от погоды.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Рабочий английский пойнтер – беспроблемная собака в плане гигиенических потребностей. Жесткая короткая шерсть легавой не пачкается и не нуждается в частом мытье, тримминге и расчесывании, поэтому проходиться щеткой по корпусу питомца можно раз-другой в неделю. Правда, если животное обитает в квартире, придется воспринимать как неизбежность выпавшие и «приклеившиеся» к мягкой обивке шерстинки, которые никак не хотят убираться пылесосом и веником.
+        </p>
+        <p>
+         Повышенное внимание состоянию рабочего пойнтера уделяют после охоты. По возвращении с поля нужно осмотреть лапы и тело собаки, обработав обнаружившиеся царапины водой, а потом антисептиком. Обязателен также осмотр глаз и удаление из них мусора. Попутно нужно прощупать шерсть питомца и убрать из нее клещей, если таковые появились, хотя правильнее своевременно проводить обработку легавых средствами от эктопаразитов.
+        </p>
+        <p class="legenda">
+         <strong>
+          Совет:
+         </strong>
+         лучше не пытаться выкручивать клеща, а смазать его маслом или бензином. Через несколько минут кровососущее насекомое отпадет само, а у вас появится возможность обработать место укуса йодом.
+        </p>
+        <p>
+         Если собака долго не охотится, у нее отрастают длинные когти, а подушечки лап уплощаются. В связи с этим перед натаской и выходом в поле когти необходимо укоротить, а отросшую шерсть между пальцами – выстричь, что сделает движения питомца более свободными и исключит возможность травмирования лап. Раз в неделю, а также после охоты пойнтеру проверяют уши, удаляя из них загрязнения и серу чистой ветошью, смоченной в гигиеническом лосьоне из ветаптеки.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Как истинного охотника, английского пойнтера полагается кормить нежирным жилистым мясом, разнообразными мясными отходами, а также субпродуктами. Морская рыба, разделанная до состояния филе, нежирный творог и куриное яйцо вводятся в рацион несколько раз в неделю, чтобы удовлетворить потребность организма в белке. Источником жиров для пойнтеров может стать сливочное и растительное масло, а также говяжий жир. Правда, последний продукт подойдет исключительно здоровым и активным особям.
+        </p>
+        <p>
+         Самое популярное блюдо в среде опытных пойнтеристов – мясная каша. Её варят с рисовой и гречневой крупой, добавляя кусочки моркови или тыквы. Растущим питомцам полезно вводить в рацион кальциевые добавки, подобранные ветеринаром. Периодичность кормления пойнтеров – та же, что и для других охотничьих пород. До двухмесячного возраста щенков кормят до 6 раз в сутки, с двух до четырех месяцев – 5 раз, с четырех до пяти месяцев – 4 раза, с пяти месяцев до полугода – 3 раза, с шести месяцев – дважды в день.
+        </p>
+        <p>
+         Некоторые заводчики перед охотой не кормят легавых, искренне полагая, что на голодный желудок у пойнтера обостряется чутье и он лучше концентрируется на процессе выслеживания добычи. На самом деле питание собаки в разгар охотничьего сезона должно быть усиленным, иначе животному будет неоткуда черпать энергию. Правда, во избежание заворота кишечника, потчевать охотничьего пойнтера нужно не позднее чем за 2 часа до выезда в поле, причем лучше если это будет не плотная трапеза, а небольшой перекус. Более основательно легавую кормят после охоты – это старая традиция, воспитывающая в собаке понимание важности рабочего процесса.
+        </p>
+        <h2 id="gl7">
+         Здоровье и болезни английских пойнтеров
+        </h2>
+        <p>
+         Английских пойнтеров ветеринары характеризуют как крепкую, здоровую породу, но с предрасположенностью к артриту и дисплазии тазобедренных суставов. С возрастом животных могут настигать глазные болезни – атрофия сетчатки, дисплазия роговицы, катаракта. Иногда у пойнтеров диагностируют паннус – хроническое воспаление на роговице глаза и лимбе, проявляющееся, в основном, у особей старше 4 лет.
+        </p>
+        <h2 id="gl8">
+         Как выбрать щенка
+        </h2>
+        <ul>
+         <li>
+          Лучший способ проверить рабочие гены породы – сходить с племенными суками и кобелями в поле, чтобы лично оценить качество и длину их потяжки. Соответственно, если в вашем окружении есть профессиональный охотник, продающий потомство от своих подопечных, попробуйте выбраться с ним и его питомцами за дичью.
+         </li>
+         <li>
+          Наличие полевого диплома у суки и кобеля английского пойнтера не гарантирует охотничьих подвигов у потомства. Если же достижения родителей щенков крайне важны, отдавайте предпочтение легавым, прошедшим не российские, а международные полевые испытания. По мнению заводчиков, отечественные состязания пойнтеров не выявляют охотничье мастерство собак, а лишь подтверждают наличие у них инстинкта добытчика и готовности к работе.
+         </li>
+         <li>
+          Проверить щенков на смелость и уравновешенность психики можно просто приподняв их за холку над полом. Если малыш повизгивает, вырывается, а после того как его поставили на ноги, уходит в сторонку или стоит в нерешительности, это говорит о слабости натуры, а также излишней робости.
+         </li>
+         <li>
+          Английские пойнтеры, как все легавые, довольно ласковы, но для охоты не следует выбирать щенка-подхалима, который без конца трется о ноги заводчика, заглядывая в глаза. Натаскивать таких особей гораздо проще, но результативность полевой работы у них низкая.
+         </li>
+         <li>
+          Учитывайте тип темперамента щенков. Пойнтеры-флегматики имеют вялый ход и грешат коротким поиском. Особи холерического склада энергичнее и шустрее, но иногда практикуют бессистемный поиск и спарывание птицы, к тому же они не всегда послушны.
+         </li>
+        </ul>
+        <h2 id="gl9">
+         Цена английского пойнтера
+        </h2>
+        <p>
+         Средняя цена щенка английского пойнтера у российских заводчиков состоавляет 20 000 – 25 000 рублей. Малыши от рабочих родителей, но с не самыми чистыми родословными или вообще без них, а также потомство от внеплановых вязок идут по 10 000 – 14 000 рублей. Если нет желания утруждать себя натаской и нужен подготовленный питомец, можно приобрести взрослого обученного пойнтера, за которого придется выложить порядка 30 000 рублей. Отдельную касту составляют взрослые легавые с родословными РКФ, имеющие охотничьи дипломы и участвовавшие в выставках. Стоимость таких пойнтеров может достигать 60 000 рублей и более.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения английского пойнтера на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/poynter/forum/">
+        Перейти на
+        форум английского пойнтера
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Английский пойнтер" src="/upload/iblock/c9b/c9bcf1d2be348d424060f4bf3a90f820.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/poynter/">
+          Английский пойнтер
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/poynter/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/poynter/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/poynter/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/poynter/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/poynter/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/velsh-korgi-pembrok/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Вельш-корги пемброк" data-original="/upload/resize_cache/iblock/9af/100_100_1/9af916d1cf3fb7990d7618dd6861ec43.jpg">
+          <noscript data-alt="Вельш-корги пемброк" data-original="/upload/resize_cache/iblock/9af/100_100_1/9af916d1cf3fb7990d7618dd6861ec43.jpg">
+           <img alt="Вельш-корги пемброк" src="/upload/resize_cache/iblock/9af/100_100_1/9af916d1cf3fb7990d7618dd6861ec43.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Вельш-корги пемброк
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/moskovskaya-storozhevaya-sobaka/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Московская сторожевая собака" data-original="/upload/resize_cache/iblock/e26/100_100_1/e26a3146e1edf41e3e998172e88f9768.jpg">
+          <noscript data-alt="Московская сторожевая собака" data-original="/upload/resize_cache/iblock/e26/100_100_1/e26a3146e1edf41e3e998172e88f9768.jpg">
+           <img alt="Московская сторожевая собака" src="/upload/resize_cache/iblock/e26/100_100_1/e26a3146e1edf41e3e998172e88f9768.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Московская сторожевая собака
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/siba-inu/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Сиба-ину" data-original="/upload/resize_cache/iblock/11e/100_100_1/11ea73b02406f137742271272c2812e5.jpg">
+          <noscript data-alt="Сиба-ину" data-original="/upload/resize_cache/iblock/11e/100_100_1/11ea73b02406f137742271272c2812e5.jpg">
+           <img alt="Сиба-ину" src="/upload/resize_cache/iblock/11e/100_100_1/11ea73b02406f137742271272c2812e5.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Сиба-ину
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/chau-chau/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Чау-чау" data-original="/upload/resize_cache/iblock/bd8/100_100_1/bd8964762e27a154083cf5a074971aae.jpg">
+          <noscript data-alt="Чау-чау" data-original="/upload/resize_cache/iblock/bd8/100_100_1/bd8964762e27a154083cf5a074971aae.jpg">
+           <img alt="Чау-чау" src="/upload/resize_cache/iblock/bd8/100_100_1/bd8964762e27a154083cf5a074971aae.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Чау-чау
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fpoynter%252F%253Fcheck_key%253D9b0897917e16751642fd3f10cd347a75%2526ANIMAL_CODE%253Dpoynter%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fpoynter%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRnBveW50ZXIlMkYlM0ZjaGVja19rZXklM0Q5YjA4OTc5MTdlMTY3NTE2NDJmZDNmMTBjZDM0N2E3NSUyNkFOSU1BTF9DT0RFJTNEcG95bnRlciUyNlNFQ1RJT05fQ09ERSUzRGRvZyUyNnB1dGklM0QxJnJlZGlyZWN0X3VybD0lMkZkb2clMkZwb3ludGVyJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fpoynter%252F%253Fcheck_key%253D9b0897917e16751642fd3f10cd347a75%2526ANIMAL_CODE%253Dpoynter%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Fpoynter%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Fpoynter%252F%253Fcheck_key%253D9b0897917e16751642fd3f10cd347a75%2526ANIMAL_CODE%253Dpoynter%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Fpoynter%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "91.245.151.245"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--47247b5891fbef64e1028a308ce5c0ab-->

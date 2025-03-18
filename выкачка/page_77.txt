@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <meta content="telephone=no" name="format-detection"/>
+   <link href="https://lapkins.ru/favicon.svg" rel="icon" type="image/x-icon"/>
+   <script async="" data-skip-moving="true" src="https://yandex.ru/ads/system/context.js">
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d) {var v = w.frameCacheVars = {'CACHE_MODE':'HTMLCACHE','storageBlocks':[],'dynamicBlocks':{'y0XwfU':'d41d8cd98f00','2DJmFo':'d41d8cd98f00','ALOAcH':'d41d8cd98f00','footerad':'d41d8cd98f00','MoecjV':'d41d8cd98f00','vhh5NV':'d41d8cd98f00','yn3v0T':'04c63e90391b'},'AUTO_UPDATE':true,'AUTO_UPDATE_TTL':'0','version':'2'};var inv = false;if (v.AUTO_UPDATE === false){if (v.AUTO_UPDATE_TTL && v.AUTO_UPDATE_TTL > 0){var lm = Date.parse(d.lastModified);if (!isNaN(lm)){var td = new Date().getTime();if ((lm + v.AUTO_UPDATE_TTL * 1000) >= td){w.frameRequestStart = false;w.preventAutoUpdate = true;return;}inv = true;}}else{w.frameRequestStart = false;w.preventAutoUpdate = true;return;}}var r = w.XMLHttpRequest ? new XMLHttpRequest() : (w.ActiveXObject ? new w.ActiveXObject("Microsoft.XMLHTTP") : null);if (!r) { return; }w.frameRequestStart = true;var m = v.CACHE_MODE; var l = w.location; var x = new Date().getTime();var q = "?bxrand=" + x + (l.search.length > 0 ? "&" + l.search.substring(1) : "");var u = l.protocol + "//" + l.host + l.pathname + q;r.open("GET", u, true);r.setRequestHeader("BX-ACTION-TYPE", "get_dynamic");r.setRequestHeader("X-Bitrix-Composite", "get_dynamic");r.setRequestHeader("BX-CACHE-MODE", m);r.setRequestHeader("BX-CACHE-BLOCKS", v.dynamicBlocks ? JSON.stringify(v.dynamicBlocks) : "");if (inv){r.setRequestHeader("BX-INVALIDATE-CACHE", "Y");}try { r.setRequestHeader("BX-REF", d.referrer || "");} catch(e) {}if (m === "APPCACHE"){r.setRequestHeader("BX-APPCACHE-PARAMS", JSON.stringify(v.PARAMS));r.setRequestHeader("BX-APPCACHE-URL", v.PAGE_URL ? v.PAGE_URL : "");}r.onreadystatechange = function() {if (r.readyState != 4) { return; }var a = r.getResponseHeader("BX-RAND");var b = w.BX && w.BX.frameCache ? w.BX.frameCache : false;if (a != x || !((r.status >= 200 && r.status < 300) || r.status === 304 || r.status === 1223 || r.status === 0)){var f = {error:true, reason:a!=x?"bad_rand":"bad_status", url:u, xhr:r, status:r.status};if (w.BX && w.BX.ready && b){BX.ready(function() {setTimeout(function(){BX.onCustomEvent("onFrameDataRequestFail", [f]);}, 0);});}w.frameRequestFail = f;return;}if (b){b.onFrameDataReceived(r.responseText);if (!w.frameUpdateInvoked){b.update(false);}w.frameUpdateInvoked = true;}else{w.frameDataString = r.responseText;}};r.send();var p = w.performance;if (p && p.addEventListener && p.getEntries && p.setResourceTimingBufferSize){var e = 'resourcetimingbufferfull';var h = function() {if (w.BX && w.BX.frameCache && w.BX.frameCache.frameDataInserted){p.removeEventListener(e, h);}else {p.setResourceTimingBufferSize(p.getEntries().length + 50);}};p.addEventListener(e, h);}})(window, document);
+   </script>
+   <script data-skip-moving="true">
+    (function(w, d, n) {var cl = "bx-core";var ht = d.documentElement;var htc = ht ? ht.className : undefined;if (htc === undefined || htc.indexOf(cl) !== -1){return;}var ua = n.userAgent;if (/(iPad;)|(iPhone;)/i.test(ua)){cl += " bx-ios";}else if (/Android/i.test(ua)){cl += " bx-android";}cl += (/(ipad|iphone|android|mobile|touch)/i.test(ua) ? " bx-touch" : " bx-no-touch");cl += w.devicePixelRatio && w.devicePixelRatio >= 2? " bx-retina": " bx-no-retina";var ieVersion = -1;if (/AppleWebKit/.test(ua)){cl += " bx-chrome";}else if ((ieVersion = getIeVersion()) > 0){cl += " bx-ie bx-ie" + ieVersion;if (ieVersion > 7 && ieVersion < 10 && !isDoctype()){cl += " bx-quirks";}}else if (/Opera/.test(ua)){cl += " bx-opera";}else if (/Gecko/.test(ua)){cl += " bx-firefox";}if (/Macintosh/i.test(ua)){cl += " bx-mac";}ht.className = htc ? htc + " " + cl : cl;function isDoctype(){if (d.compatMode){return d.compatMode == "CSS1Compat";}return d.documentElement && d.documentElement.clientHeight;}function getIeVersion(){if (/Opera/i.test(ua) || /Webkit/i.test(ua) || /Firefox/i.test(ua) || /Chrome/i.test(ua)){return -1;}var rv = -1;if (!!(w.MSStream) && !(w.ActiveXObject) && ("ActiveXObject" in w)){rv = 11;}else if (!!d.documentMode && d.documentMode >= 10){rv = 10;}else if (!!d.documentMode && d.documentMode >= 9){rv = 9;}else if (d.attachEvent && !/Opera/.test(ua)){rv = 8;}if (rv == -1 || rv == 8){var re;if (n.appName == "Microsoft Internet Explorer"){re = new RegExp("MSIE ([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}else if (n.appName == "Netscape"){rv = 11;re = new RegExp("Trident/.*rv:([0-9]+[\.0-9]*)");if (re.exec(ua) != null){rv = parseFloat(RegExp.$1);}}}return rv;}})(window, document, navigator);
+   </script>
+   <link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.min.css?16565705922320" rel="stylesheet" type="text/css">
+    <link href="/bitrix/js/main/popup/dist/main.popup.bundle.min.css?165589901323804" rel="stylesheet" type="text/css"/>
+    <link data-template-style="true" href="/bitrix/cache/css/s1/lapkins/template_9432886cef55a53c1929844ae04ffa3b/template_9432886cef55a53c1929844ae04ffa3b_v1.css?1738848029150001" rel="stylesheet" type="text/css"/>
+    <meta content="Ирландский водяной спаниель, порода, собака, описание, фото, цена, щенки, характер, дрессировка, уход, сколько стоит, купить" name="keywords">
+     <meta content="Ирландский водяной спаниель – самый крупный и харизматичный представитель группы спаниелей. Выведен для охоты на полевую и болотную дичь. Обладатель эффектной кудрявой шерсти на теле, контрастирующей с гладкими мордочкой и хвостом." name="description"/>
+     <meta content="article" property="og:type"/>
+     <meta content="https://lapkins.ru/upload/iblock/d94/wnq7z6n9bm5t3ruiv4ikupxg5y4n6yi9.jpg" property="og:image"/>
+     <title>
+      Ирландский водяной спаниель: все о собаке, фото, описание породы, характер, цена
+     </title>
+     <meta content="ru_RU" property="og:locale"/>
+     <meta content="Lapkins.ru" property="og:site_name"/>
+     <meta content="https://lapkins.ru/dog/irlandskiy-vodyanoy-spaniel/" property="og:url"/>
+     <meta content="Ирландский водяной спаниель: все о собаке, фото, описание породы, характер, цена" property="og:title"/>
+     <meta content="Ирландский водяной спаниель – самый крупный и харизматичный представитель группы спаниелей. Выведен для охоты на полевую и болотную дичь. Обладатель эффектной кудрявой шерсти на теле, контрастирующей с гладкими мордочкой и хвостом." property="og:description"/>
+    </meta>
+   </link>
+  </meta>
+ </head>
+ <body>
+  <div id="mtzag">
+  </div>
+  <div class="wrapper">
+   <div class="page">
+    <span class="hidden-mask">
+    </span>
+    <div class="content">
+     <div class="r-side">
+      <div class="path">
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/" itemprop="url">
+         <span itemprop="title">
+          Главная
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a href="/dog/" itemprop="url">
+         <span itemprop="title">
+          Собаки
+         </span>
+        </a>
+       </span>
+       /
+       <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+        <a class="last_url_bread" href="/dog/irlandskiy-vodyanoy-spaniel/" itemprop="url">
+         <span itemprop="title">
+          Ирландский водяной спаниель
+         </span>
+        </a>
+       </span>
+      </div>
+      <h1>
+       Ирландский водяной спаниель
+      </h1>
+      <div class="pm-hold">
+       <div class="pet-menu">
+        <nav class="pet-menu-scroll">
+         <a class="act" href="/dog/irlandskiy-vodyanoy-spaniel/">
+          Описание
+         </a>
+         <a href="/dog/irlandskiy-vodyanoy-spaniel/forum/">
+          Обсуждения
+         </a>
+         <a href="/dog/irlandskiy-vodyanoy-spaniel/otzivi/">
+          Отзывы
+         </a>
+         <a href="/dog/irlandskiy-vodyanoy-spaniel/photo/">
+          Фото
+         </a>
+         <a href="/dog/irlandskiy-vodyanoy-spaniel/pitomniki/">
+          Питомники
+         </a>
+         <!--
+                            <a href="/dog/irlandskiy-vodyanoy-spaniel/razmeri-porodi/">Размеры</a>
+                                    -->
+        </nav>
+       </div>
+      </div>
+      <div class="pet-inside">
+       <div class="pet-head">
+        <div class="pet-ava">
+         <img alt="Ирландский водяной спаниель" src="/upload/iblock/71d/ca834aerwyqlkg1pe9c9gvpqormkplu1.jpg"/>
+        </div>
+        <div class="pet-prew">
+         <span class="takje">
+          Другие названия:
+          <a href="/dog/irlandskiy-vodyanoy-spaniel/">
+           ИВС
+          </a>
+          ,
+          <a href="/dog/irlandskiy-vodyanoy-spaniel/">
+           ирландский водный спаниель
+          </a>
+         </span>
+         <p>
+          Ирландский водяной спаниель – самый крупный и харизматичный представитель группы спаниелей. Выведен для охоты на полевую и болотную дичь. Обладатель эффектной кудрявой шерсти на теле, контрастирующей с гладкими мордочкой и хвостом.
+         </p>
+        </div>
+       </div>
+       <div class="ob-line-hid">
+        <div class="ob-line nopobf">
+         <div class="ob-line2">
+         </div>
+        </div>
+       </div>
+       <div class="but-div">
+        <a class="big-button" href="/dog/irlandskiy-vodyanoy-spaniel/photo/">
+         Все
+            фото ирландского водяного спаниеля
+        </a>
+       </div>
+       <div id="bxdynamic_y0XwfU_start" style="display:none">
+       </div>
+       <div id="bxdynamic_y0XwfU_end" style="display:none">
+       </div>
+       <div class="list">
+        <strong>
+         Содержание:
+        </strong>
+        <ul class="soder">
+         <li>
+          <a href="#info">
+           Краткая информация
+          </a>
+         </li>
+         <li>
+          <a href="#moment">
+           Основные моменты
+          </a>
+         </li>
+         <li>
+          <a href="#harakter">
+           Характеристика породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl1">
+           История породы ирландский водяной спаниель
+          </a>
+         </li>
+         <li>
+          <a href="#gl2">
+           Стандарт породы ирландский водяной спаниель
+          </a>
+         </li>
+         <li>
+          <a href="#gl3">
+           Рабочая техника породы
+          </a>
+         </li>
+         <li>
+          <a href="#gl4">
+           Характер ирландского водяного спаниеля
+          </a>
+         </li>
+         <li>
+          <a href="#gl5">
+           Воспитание и дрессировка
+          </a>
+         </li>
+         <li>
+          <a href="#gl6">
+           Содержание и уход
+          </a>
+         </li>
+         <li>
+          <a href="#gl7">
+           Здоровье и болезни ирландских водяных спаниелей
+          </a>
+         </li>
+         <li>
+          <a href="#gl8">
+           Как выбрать щенка
+          </a>
+         </li>
+         <li>
+          <a href="#gl9">
+           Цена ирландского водяного спаниеля
+          </a>
+         </li>
+        </ul>
+       </div>
+       <h2 id="info">
+        Краткая информация
+       </h2>
+       <ul class="info">
+        <li>
+         <strong>
+          Название породы:
+         </strong>
+         Ирландский водяной спаниель
+        </li>
+        <li>
+         <strong>
+          Страна происхождения:
+         </strong>
+         Ирландия
+        </li>
+        <li>
+         <strong>
+          Время зарождения породы:
+         </strong>
+         1830-е годы
+        </li>
+        <li>
+         <strong>
+          Вес:
+         </strong>
+         кобели 25-31 кг, суки 20-26 кг
+        </li>
+        <li>
+         <strong>
+          Рост (высота в холке):
+         </strong>
+         кобели 53-59 см, суки 51-56 см
+        </li>
+       </ul>
+       <h2 id="moment">
+        Основные моменты
+       </h2>
+       <ul class="info-lapa">
+        <li>
+         Основное поголовье породы сосредоточено в Ирландии. Также большое количество животных обитает в США и Великобритании.
+        </li>
+        <li>
+         Чрезмерная подозрительность ирландским водяным спаниелям не присуща, чего нельзя сказать об избирательности в общении. Иногда собака может не принять конкретного незнакомца, и изменить ее мнение будет невозможно.
+        </li>
+        <li>
+         На родине породы, в Ирландии, ее представителей часто называют «хлыстохвостами», «шеннон-спаниелями» и «крысиными хвостами».
+        </li>
+        <li>
+         У большинства ирландских водяных спаниелей отличное чувство юмора, так что всевозможные фокусы и приколы владельцу собаки обеспечены.
+        </li>
+        <li>
+         Порода не страдает манией к копанию, разорению нор мелких зверьков и уничтожению грядок. Если вы устали от «археологических» пристрастий терьеров, обратите внимание на «ирландца».
+        </li>
+        <li>
+         Ирландские водяные спаниели малоразговорчивы в повседневной жизни, поэтому можно без проблем содержать собаку в квартире. Конфликтов с соседями, уставшими слушать лай скучающего пса, точно не будет.
+        </li>
+        <li>
+         Именно ирландских водяных спаниелей, наряду с ньюфаундлендами, использовали для выведения породы чесапик-бей-ретривер.
+        </li>
+       </ul>
+       <div class="start">
+        <div class="start-img">
+         <div class="lazy-load" data-alt="Ирландский водяной спаниель" data-original="/upload/iblock/d94/wnq7z6n9bm5t3ruiv4ikupxg5y4n6yi9.jpg">
+          <noscript data-alt="Ирландский водяной спаниель" data-original="/upload/iblock/d94/wnq7z6n9bm5t3ruiv4ikupxg5y4n6yi9.jpg">
+           <img alt="Ирландский водяной спаниель" src="/upload/iblock/d94/wnq7z6n9bm5t3ruiv4ikupxg5y4n6yi9.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <div class="start-text">
+         <p>
+          <strong>
+           Ирландский водяной спаниель
+          </strong>
+          – корпулентный кудряш, умелый охотник, весельчак и прирожденный юморист. Обладая от природы незлобливым общительным характером, этот уроженец Ирландии представляет собой почти идеальную собаку-компаньона. ИВС в меру активен и сообразителен, но при этом не пытается стать главным в доме и не устраивает из квартиры вместилище хаоса. С ним приятно и легко дружить, ходить на прогулки и просто дурачиться. Главное, своевременно и правильно подойти к воспитательному процессу. Каким бы очаровашкой «ирландец» ни был, держать его в определенных рамках жизненно необходимо.
+         </p>
+        </div>
+        <div id="bxdynamic_2DJmFo_start" style="display:none">
+        </div>
+        <div id="bxdynamic_2DJmFo_end" style="display:none">
+        </div>
+       </div>
+       <h2 id="harakter">
+        Характеристика породы
+       </h2>
+       <div class="stat-pet">
+        <div class="spo">
+         <div class="s-title">
+          Агрессивность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Не агрессивная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Активность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дрессировка
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Легко (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Линька
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Минимальная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          1                                                                                /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="20" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Потребность в уходе
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Высокая (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Дружелюбность
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Дружелюбная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Здоровье
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Отличное (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Стоимость содержания
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Выше среднего (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Отношение к одиночеству
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Короткие периоды (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Интеллект
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Очень умная (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          5/5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Шум
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Низкий (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          2                                                            /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <div class="spo">
+         <div class="s-title">
+          Охранные качества
+          <span class="wtf">
+           ?
+          </span>
+         </div>
+         <div class="s-text">
+          Хорошие (
+          <span class="hrm">
+           Рейтинг
+          </span>
+          4                    /5)
+         </div>
+         <div class="progress">
+          <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="80" class="progress-bar progress-bar-success" role="progressbar">
+          </div>
+         </div>
+        </div>
+        <span class="podpis">
+         *Характеристика породы Ирландский водяной спаниель основана на оценке экспертов lapkins.ru и отзывах владельцев собаки.
+        </span>
+        <style>
+         .smtak{
+				
+			}
+        </style>
+       </div>
+       <div class="cat-rubr">
+        <span class="rubrspan">
+         Смотрите также:
+        </span>
+        <a href="/dog/irlandskiy-vodyanoy-spaniel/razmeri-porodi/">
+         размеры ирландского водяного спаниеля
+        </a>
+       </div>
+       <div>
+        <h2 id="gl1">
+         История породы ирландский водяной спаниель
+        </h2>
+        <p>
+         Ирландский водяной спаниель – одна из самых засекреченных пород современности. Специалисты до сих пор не могут установить не только ее точный возраст, но и генетическую базу, на основе которой выводился данный фенотип. В повадках «ирландцы» схожи с
+         <a class="ph" href="/dog/pudel/">
+          пуделями
+         </a>
+         , барбетами, португальской и английской водяными собаками, а также
+         <a class="ph" href="/dog/angliyskiy-koker-spaniel/">
+          спаниелями
+         </a>
+         . При этом никаких документов, подтверждающих родство животных с перечисленными породами, не сохранилось.
+        </p>
+        <p>
+         Что касается современного типа ирландских водяных спаниелей, то он был сформирован в 1830-х годах заводчиком из Дублина по имени Джастин Маккарти. Главным предком сегодняшних собак является принадлежавший Маккарти пес Боцман. Считается, что именно его генетический код можно найти в каждом ныне живущем представителе породы.
+        </p>
+        <p>
+         Примечательно то, что Маккарти разработал и утвердил для ИВС породный стандарт. При этом специалист не оставил ни одной записи о собственной племенной работе. Как результат: выяснить, суки каких пород вязались с Боцманом, невозможно по сей день. Единственной «зацепкой» в происхождении клана кудрявых спаниелей остается их гладкий хвост. Такая особенность наталкивает на мысль, что в разведении участвовала неизвестная аборигенная группа собак с гладкой шерстью.
+        </p>
+        <h2>
+         Видео: Ирландский водяной спаниель
+        </h2>
+        <div class="video-informer">
+         <div class="iframe_max ytfr youtube" id="2VGt4HHzKSA">
+         </div>
+        </div>
+        <div id="bn_container_player">
+         <div id="bxdynamic_bn_container_player_start" style="display:none">
+         </div>
+         <div id="bxdynamic_bn_container_player_end" style="display:none">
+         </div>
+        </div>
+        <h2 id="gl2">
+         Стандарт породы ирландский водяной спаниель
+        </h2>
+        <p>
+         Рабочая квалификация «ирландца» не мешает ему впечатлять окружающих своим оригинальным имиджем. В меру плотный и коренастый, этот крепыш запоминается почти каракулевой «шубкой» и аккуратной курчавой «шапочкой» на голове. При этом он не выглядит как пудель-переросток или классический охотничий спаниель. Фразу из советского мультфильма «главное – хвост» можно в полной мере отнести к ирландскому водяному спаниелю. Если не получается идентифицировать породу по остальным внешним признакам, смотрите на эту часть тела – точно не промахнетесь.
+        </p>
+        <h3>
+         Голова
+        </h3>
+        <p>
+         Куполообразная, с черепной коробкой внушительной длины и ширины. Морда квадратной формы и длинная. На голове локоны из шерсти, ниспадающие вниз и заканчивающиеся над линией глаз. Важное условие – шерстяная «шапочка» на лбу не должна смотреться как парик Клеопатры, то есть ровной челочки над глазами быть не должно. На контрасте с кудряшками на макушке морда собаки покрыта ультрагладкой и очень короткой шерсткой. Ближе к основанию нижней челюсти может формироваться небольшая аккуратная бородка.
+        </p>
+        <h3>
+         Нос
+        </h3>
+        <p>
+         Ирландские водяные спаниели могут похвастать очень крупной и развитой мочкой классического печеночного цвета.
+        </p>
+        <h3>
+         Зубы
+        </h3>
+        <p>
+         У собак здоровые и крепкие зубы, предпочтительно в ножницеобразном прикусе.
+        </p>
+        <h3>
+         Глаза
+        </h3>
+        <p>
+         Глаза миндалевидной формы и некрупные. Взгляд умный. Цвет радужки – от темного янтаря до темного ореха.
+        </p>
+        <div class="img-w-center">
+         <a class="fancybox" data-caption="Морда ирландского водяного спаниеля" data-fancybox="gallery" href="/upload/iblock/3b9/wz4rscsx19as4onxnhg1v1ad50okfhbe.jpg" title="Морда ирландского водяного спаниеля">
+          <div class="lazy-load" data-alt="Морда ирландского водяного спаниеля" data-class="article_pic" data-original="/upload/resize_cache/iblock/3b9/1024_2150_1/wz4rscsx19as4onxnhg1v1ad50okfhbe.jpg">
+           <noscript data-alt="Морда ирландского водяного спаниеля" data-class="article_pic" data-original="/upload/resize_cache/iblock/3b9/1024_2150_1/wz4rscsx19as4onxnhg1v1ad50okfhbe.jpg">
+            <img alt="Морда ирландского водяного спаниеля" class="article_pic" src="/upload/resize_cache/iblock/3b9/1024_2150_1/wz4rscsx19as4onxnhg1v1ad50okfhbe.jpg"/>
+           </noscript>
+          </div>
+         </a>
+         <div class="img_text">
+          Морда ирландского водяного спаниеля
+         </div>
+        </div>
+        <h3>
+         Уши
+        </h3>
+        <p>
+         Низкого постава, округлые, висячие и очень длинные. Шерсть на ушах скрученная, кудрявая.
+        </p>
+        <h3>
+         Шея
+        </h3>
+        <p>
+         У ирландских водяных спаниелей шея прочно стоит на плечах. Характеризуется хорошей длиной и заметным изгибом.
+        </p>
+        <h3>
+         Корпус
+        </h3>
+        <p>
+         Тело животного напоминает формой бочку, при этом сложение пропорциональное и довольно мускулистое. Широкая спина с глубокой просторной поясницей. Грудь с большим обхватом и сильным изгибом ребер.
+        </p>
+        <h3>
+         Конечности
+        </h3>
+        <p>
+         Наклонные крепкие лопатки переходят в мощные плечи. Передние лапы прямые, с сильным костяком. Задние ноги такие же выносливые. Скакательные суставы поставлены низко. Лапы большого размера, округлых очертаний, с обильной шерстью, в том числе между пальцами. Собака движется классическим аллюром.
+        </p>
+        <h3>
+         Хвост
+        </h3>
+        <p>
+         Хвост ИВС принято называть крысиным. Гладкий и достаточно крепкий, он сильно контрастирует с курчавой шерстью собаки. Короткие завитки есть только у основания. В длину хвост не доходит до линии скакательного сустава.
+        </p>
+        <h3>
+         Шерсть
+        </h3>
+        <p>
+         У «ирландцев» очень густой шерстный покров, формирующийся в красивые завитки. Шерсть как бы маслянистая на вид, но при этом разная на отдельных участках тела. Например, шея собаки сверху и с боков покрыта кудрявым волосом, снизу – гладким. Передние ноги покрыты по всей длине очесами. Задние – гладкие спереди от скакательного сустава и с выраженными очесами сзади.
+        </p>
+        <h3>
+         Окрас
+        </h3>
+        <p>
+         Все ирландские водяные спаниели имеют одинаковый красно-печеночный цвет шерсти. Нежелательный нюанс – присутствие белого пятнышка на груди.
+        </p>
+        <h3>
+         Дефекты и дисквалифицирующие пороки
+        </h3>
+        <p>
+         Экстерьерные недостатки породы, на которые выставочные судьи и племенные эксперты обязательно обратят внимание:
+        </p>
+        <ul>
+         <li>
+          бледная, осветленная шерсть;
+         </li>
+         <li>
+          светлый оттенок радужки глаз;
+         </li>
+         <li>
+          пухлявость шерстного покрова;
+         </li>
+         <li>
+          очесы на фронтальной части плюсны;
+         </li>
+         <li>
+          недостаточно выраженные очесы на передних лапах спереди;
+         </li>
+         <li>
+          очесы на морде и хвосте собаки;
+         </li>
+         <li>
+          распущение лап;
+         </li>
+         <li>
+          белые пятна на лапах.
+         </li>
+        </ul>
+        <p>
+         Полностью дисквалифицируются трусливые и агрессивные собаки, не соответствующие породному типу по одному или ряду пунктов.
+        </p>
+        <h2 id="gl3">
+         Рабочая техника породы
+        </h2>
+        <p>
+         Ирландский водяной спаниель – охотник «для всего». По примеру ретриверов он легко сплавает за дичью, упавшей в воду, и отлично возьмет след по вашей команде, не забыв сделать стойку, когда обнаружит добычу. Ирландские легенды утверждают, что порода произошла от добхар-ку (довар-ху) – мифического существа, представляющего собой гибрид собаки и выдры. Такое сравнение связано с тем, что отдельные особи обладают способностями к рыболовству. Но поскольку современные спаниели, умеющие ловить рыбу, – скорее исключение из правила, поверье остается ничем иным, как красивой сказкой. В то же время «водоплавающие» характеристики у породы действительно высокие. Воды «ирландцы» не боятся, превосходно плавают и любят это делать практически в любую погоду.
+        </p>
+        <h2 id="gl4">
+         Характер ирландского водяного спаниеля
+        </h2>
+        <p>
+         Породе присущи все те черты ирландского характера, которые уже давно стали стереотипом. Настоящий ИВС – это до невероятности компанейская, энергичная собака, обладающая замечательным чувством юмора и легкой степенью безбашенности в хорошем смысле слова. Этот товарищ легко впитывает в себя требования окружающих. Ему ничего не стоит влиться в семью и стать лучшим другом детей, не теряя привязанности к тому, кто считается главным в доме. Породный «ирландец» неистощим на всевозможные выдумки и легко устроит цирк на ровном месте. И главное – он всегда готов к работе, будь то охота или просто спорт.
+        </p>
+        <p>
+         В кругу малознакомых людей ирландский водяной спаниель преображается и ведет себя более сдержанно. Нет, он не пытается ворчать и совершенно точно не показывает зубы. Просто держит ушки на макушке на случай, если произойдет что-то из ряда вон выходящее.
+        </p>
+        <p>
+         Как и полагается всем охотничьим породам, «ирландцы» ощущают себя на ступеньку выше остальных домашних питомцев, так что если не хочется противостояния с кошками, позаботьтесь об этом заранее. Например, берите в дом одновременно щенка и котенка. Когда животные вместе растут, у них больше шансов на притирку друг к другу.
+        </p>
+        <h2 id="gl5">
+         Воспитание и дрессировка
+        </h2>
+        <p>
+         Главное в обучении ирландского водяного спаниеля – ранняя социализация. Щенок должен уметь:
+        </p>
+        <ul>
+         <li>
+          игнорировать и спокойно воспринимать окружающую обстановку;
+         </li>
+         <li>
+          не реагировать на повседневные раздражители и уметь бездействовать в ситуациях, когда это требуется;
+         </li>
+         <li>
+          оставаться управляемым;
+         </li>
+         <li>
+          равнодушно или дружелюбно относиться к соплеменникам и посторонним людям.
+         </li>
+        </ul>
+        <p>
+         Только полностью социализированного питомца можно чему-то учить. Постарайтесь учесть и спрогнозировать ситуации, в которых потребуется адекватное восприятие щенком окружающей реальности. Чтобы во время прогулок собака не шарахалась от сигналящего транспорта, чаще ходите с ней возле проезжей части. Чтобы приучить спаниеля спокойно ездить с вами в веткабинет, познакомьте его с запахами салона автомобиля, посидите вместе в незаведенной машине, затем включите двигатель.
+        </p>
+        <p>
+         Не растите четвероногого затворника. Чаще появляйтесь со щенком в людных местах и не избегайте встреч с другими собаками (беспризорные своры – не в счет, это опасно). Приглашайте в гости друзей и их питомцев, чтобы у малыша была возможность понять базовые принципы животной иерархии.
+        </p>
+        <p>
+         Ирландский водяной спаниель – достаточно сообразительная и легко обучаемая порода. Заниматься с ее представителями можно по стандартным программам УГС и ОКД. Причем в большинстве случаев можно обойтись без помощи зоопсихолога и профессионального кинолога. Если собираетесь приобщать питомца к охоте на болотную дичь, используйте те же методы, что и для ретриверов.
+        </p>
+        <h2 id="gl6">
+         Содержание и уход
+        </h2>
+        <p>
+         Суровый климат Ирландии закалил породу. Умеренные холода ирландские водяные спаниели переносят легко, чего нельзя сказать о жаре. Чтобы питомец не перегревался и чувствовал себя комфортно, соблюдайте простые правила.
+        </p>
+        <ul>
+         <li>
+          Не располагайте лежак собаки у батареи.
+         </li>
+         <li>
+          Летом переносите прогулки на раннее утро и поздний вечер.
+         </li>
+         <li>
+          В знойные дни смачивайте живот и лапы собаки водой.
+         </li>
+        </ul>
+        <p>
+         Кроме того, ирландские водяные спаниели – активные создания. Выводить взрослое животное на улицу нужно хотя бы на час в день, разделив это время на два выгула. В свободные минуты старайтесь увеличивать продолжительность прогулок.
+        </p>
+        <h3>
+         Гигиена
+        </h3>
+        <p>
+         Все адепты чистоты могут спокойно выдохнуть – полноценная линька у ирландских спаниелей отсутствует. Шерстинки из «шубы» собаки выпадают в очень ограниченном количестве. А если не поленитесь раз в неделю хорошенько прочесать локоны, то никаких волос на ковре вообще не будет. Плохая новость – кудрявая шерсть замечательно цепляет семена растений и репейник. Так что либо гуляйте с собакой подальше от лесных угодий, либо готовьтесь провести вечер за выбиранием из кудрей луговых даров.
+        </p>
+        <p>
+         Для шерсти представителей породы характерна такая черта, как непромокаемость, поэтому ирландские водяные спаниели спокойно прыгают за дичью даже в очень холодную воду. Не впитывать влагу волосу помогает защитная жировая смазка. В связи с этим устраивать полноценные банные дни ИВС нежелательно. Шампунь смывает жировой слой с шерсти, придавая ей ненужную пухлявость. Если помыть собаку все же необходимо, используйте после купания бальзам-кондиционер для кудрявых пород.
+        </p>
+        <p>
+         Висячие уши ирландского водяного спаниеля, помимо регулярной чистки, нуждаются в частом проветривании. В свободное время просто приподнимайте ухо и слегка машите им, загоняя воздух внутрь слухового прохода. Если в уголках глаз собаки собралась пыль или комочки слизи, уберите их уголком чистой ткани. Обязательно проверяйте состояние глаз после каждой охоты, где есть вероятность повредить слизистую.
+        </p>
+        <h3>
+         Кормление
+        </h3>
+        <p>
+         Обычно щенки готовы к самостоятельной жизни с новым хозяином в 2,5 месяца. В этот период малышей нужно кормить 4-5 раз в день. На 4-6 месяцах жизни животного кормления сокращают до 3-4 раз. Полугодовалых подростков кормят трижды в день, а годовалых – всего дважды. Размер порции подбирается индивидуально. Собака должна опустошать миску в подлиз, но не гонять ее по полу. Такое действие свидетельствует о том, что питомец не наелся и хочет добавки.
+        </p>
+        <p>
+         Для «ирландцев» можно составить как меню, базирующееся на натуральных продуктах, так и использовать сухой корм. Главное, чтобы сушка была качественная, содержала достаточное количество мяса и поменьше злаков. Корм лучше выбирать для средних и крупных пород. Для качества шерсти можно давать таблетированные пивные дрожжи, рыбий жир или готовые витаминные комплексы из ветаптеки. Полезно для сохранения структуры волоса и нерафинированное растительное масло.
+        </p>
+        <h2 id="gl7">
+         Здоровье и болезни ирландских водяных спаниелей
+        </h2>
+        <p>
+         Ирландский водяной спаниель – здоровая собака. Список болезней, к которым у породы есть предрасположенность, небольшой. Как правило, в него входят:
+        </p>
+        <ul>
+         <li>
+          дисплазия тазобедренного сустава;
+         </li>
+         <li>
+          мегаэзофагус;
+         </li>
+         <li>
+          эпилепсия;
+         </li>
+         <li>
+          гипотиреоз;
+         </li>
+         <li>
+          энтропион;
+         </li>
+         <li>
+          катаракта.
+         </li>
+        </ul>
+        <p>
+         И не забывайте, что висячие уши питомца – это высокий риск развития разнообразных инфекций. Также у отдельных линий отмечается предрасположенность к кожным аллергическим реакциям. У некоторых представителей породы дополнительно выявлена чувствительность к сульфаниламидам и определенным видам анестетиков.
+        </p>
+        <h2 id="gl8">
+         Как выбрать щенка
+        </h2>
+        <p>
+         Перед покупкой важно определиться, какая собака нужна в будущем. Рабочие и выставочные линии сильно различаются между собой в плане поведения. Так что если не планируете охотиться, не рассматривайте потомство от рабочих суки и кобеля.
+        </p>
+        <ul>
+         <li>
+          В силу специфичного экстерьера щенка ИВС сложно спутать с другой породой. Соответственно, меньше шансов быть обманутым при покупке. Как итог: при осмотре малыша старайтесь уделить максимум внимания его общему физическому состоянию.
+         </li>
+         <li>
+          Запущенность щенков, их нездоровый вид и чрезмерная пугливость – признаки того, что заводчик плохо заботится о своих подопечных. Покупать щенка у такого владельца – большой риск.
+         </li>
+         <li>
+          Не доверяйте продавцам, не зарегистрировавшим свой питомник в кинологических клубах. И дело не только в том, что вы не получите родословную на собаку. Часто разведением в обход правил занимаются недобросовестные люди, нарушающие племенной кодекс и продающие проблемное потомство.
+         </li>
+         <li>
+          Наличие родословной и дипломов у производителей не гарантирует идеального помета. Плембрак появляется на свет даже у самых титулованных пар, поэтому каждого щенка ирландского водяного спаниеля нужно оценивать индивидуально.
+         </li>
+        </ul>
+        <p class="legenda">
+         <strong>
+          На заметку:
+         </strong>
+         британские и английские специалисты рекомендуют не брать щенка, который сам выбирает вас при первом знакомстве, то есть смело подбегает, обнюхивает, пытается лизнуть. Так поступают прирожденные лидеры и доминанты. Если цель покупки – дружелюбный и не слишком ураганный питомец, выбирайте более скромных щенков.
+        </p>
+        <h2 id="gl9">
+         Цена ирландского водяного спаниеля
+        </h2>
+        <p>
+         Найти питомник «ирландцев» в РФ будет невероятно трудно. Порода не распространена в стране и специалистов по ее разведению крайне мало. Основная часть мирового поголовья водяных спаниелей находится в Ирландии и Англии, где щенка без особых регалий можно купить за 350-600 €. В США расценки несколько выше. Что касается животных с необходимыми документами и здоровыми предками, то расценки на них стартуют от 1500 $.
+        </p>
+       </div>
+      </div>
+      <!--Начало -->
+      <div id="bxdynamic_ALOAcH_start" style="display:none">
+      </div>
+      <div id="bxdynamic_ALOAcH_end" style="display:none">
+      </div>
+      <div class="forum-inside">
+       <h2 class="dr-h2">
+        Обсуждения ирландского водяного спаниеля на форуме
+       </h2>
+       <div class="forum-prew">
+        <div class="empty-f">
+         Тем для обсуждения пока нет, Вы можете создать первую!
+        </div>
+       </div>
+       <a class="big-button" href="/dog/irlandskiy-vodyanoy-spaniel/forum/">
+        Перейти на
+        форум ирландского водяного спаниеля
+       </a>
+      </div>
+      <!--Конец -->
+      <div class="pet-bot">
+       <div class="pet-ava ava-bot">
+        <img alt="Ирландский водяной спаниель" src="/upload/iblock/71d/ca834aerwyqlkg1pe9c9gvpqormkplu1.jpg"/>
+       </div>
+       <nav class="pet-prew-bot">
+        <p class="bot-p">
+         <a class="bot-a" href="/dog/irlandskiy-vodyanoy-spaniel/">
+          Ирландский водяной спаниель
+         </a>
+         <span class="nowrap">
+          на
+          <span class="logo lapka logo-bot">
+           <span>
+            lapkins.ru
+           </span>
+          </span>
+         </span>
+        </p>
+        <a class="also-href" href="/dog/irlandskiy-vodyanoy-spaniel/">
+         Описание
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-vodyanoy-spaniel/forum/">
+         Обсуждения
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-vodyanoy-spaniel/otzivi/">
+         Отзывы
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-vodyanoy-spaniel/photo/">
+         Фотографии
+        </a>
+        <a class="also-href" href="/dog/irlandskiy-vodyanoy-spaniel/pitomniki/">
+         Питомники
+        </a>
+       </nav>
+      </div>
+      <div class="pop-porodi-block">
+       <h2 class="dr-h2">
+        Случайные породы собак
+       </h2>
+       <a class="poroda-element" href="/dog/basset-khaund/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Бассет-хаунд" data-original="/upload/resize_cache/iblock/178/100_100_1/17857d5d64a088a571464b2a524d0723.jpg">
+          <noscript data-alt="Бассет-хаунд" data-original="/upload/resize_cache/iblock/178/100_100_1/17857d5d64a088a571464b2a524d0723.jpg">
+           <img alt="Бассет-хаунд" src="/upload/resize_cache/iblock/178/100_100_1/17857d5d64a088a571464b2a524d0723.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Бассет-хаунд
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/sibirskiy-khaski/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Сибирский хаски" data-original="/upload/resize_cache/iblock/325/100_100_1/325283728e9b607099b05b329accfe28.jpg">
+          <noscript data-alt="Сибирский хаски" data-original="/upload/resize_cache/iblock/325/100_100_1/325283728e9b607099b05b329accfe28.jpg">
+           <img alt="Сибирский хаски" src="/upload/resize_cache/iblock/325/100_100_1/325283728e9b607099b05b329accfe28.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Сибирский хаски
+        </span>
+       </a>
+       <a class="poroda-element" href="/dog/leonberger/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Леонбергер" data-original="/upload/resize_cache/iblock/3f8/100_100_1/3f8ffbf9639e2c6370001b553ee32280.jpg">
+          <noscript data-alt="Леонбергер" data-original="/upload/resize_cache/iblock/3f8/100_100_1/3f8ffbf9639e2c6370001b553ee32280.jpg">
+           <img alt="Леонбергер" src="/upload/resize_cache/iblock/3f8/100_100_1/3f8ffbf9639e2c6370001b553ee32280.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Леонбергер
+        </span>
+       </a>
+       <a class="poroda-element pe4" href="/dog/chirneko-del-etna/">
+        <div class="ava-poroda">
+         <div class="lazy-load" data-alt="Чирнеко дель Этна" data-original="/upload/resize_cache/iblock/df0/100_100_1/io7u89a2ua25eaw4ixqdlm7uwodvfh3w.jpg">
+          <noscript data-alt="Чирнеко дель Этна" data-original="/upload/resize_cache/iblock/df0/100_100_1/io7u89a2ua25eaw4ixqdlm7uwodvfh3w.jpg">
+           <img alt="Чирнеко дель Этна" src="/upload/resize_cache/iblock/df0/100_100_1/io7u89a2ua25eaw4ixqdlm7uwodvfh3w.jpg"/>
+          </noscript>
+         </div>
+        </div>
+        <span>
+         Чирнеко дель Этна
+        </span>
+       </a>
+      </div>
+     </div>
+     <!--.r-side-->
+    </div>
+    <!--.content-->
+    <div id="bxdynamic_footerad_start" style="display:none">
+    </div>
+    <div id="bxdynamic_footerad_end" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_MoecjV_end" style="display:none">
+    </div>
+    <!--<div id="yandex_rtb_R-A-604547-20"></div>
+    -->
+    <!-- Yandex.RTB -->
+    <div id="bxdynamic_vhh5NV_start" style="display:none">
+    </div>
+    <div id="bxdynamic_vhh5NV_end" style="display:none">
+    </div>
+    <footer>
+     <div class="fl fl1">
+      <div class="flz">
+       Добавьте мимимишности к себе в ленту. Подписывайтесь на нас:
+      </div>
+      <a class="vk socicon" href="https://vk.com/lapkins_ru" rel="nofollow" target="_blank">
+      </a>
+      <a class="fb socicon" href="https://www.facebook.com/lapkins.ru/" rel="nofollow" target="_blank">
+      </a>
+      <a class="inst socicon" href="https://www.instagram.com/lapkins.ru/" rel="nofollow" target="_blank">
+       <i class="inst-ico">
+       </i>
+      </a>
+     </div>
+     <div class="fl fl2">
+      <a href="/">
+       Главная
+      </a>
+      <a href="/dog/">
+       Собаки
+      </a>
+      <a href="/cat/">
+       Кошки
+      </a>
+      <a href="/publ/">
+       Журнал
+      </a>
+      <!--<a href="#">Объявления</a>-->
+      <a href="/forum/">
+       Форум
+      </a>
+      <a href="/klichki/">
+       Клички
+      </a>
+     </div>
+     <div class="fl fl3">
+      <a href="/o-proekte/">
+       О проекте
+      </a>
+      <!--<a href="#">Команда</a>-->
+      <!--<a href="#">Реклама</a>-->
+      <a href="/os/">
+       Обратная связь
+      </a>
+      <a href="/terms/">
+       Правила
+      </a>
+      <!--<a href="#">Вакансии</a>-->
+     </div>
+     <div class="fl fl4">
+      2025 © «Lapkins.ru». Сделано с
+      <i class="love">
+      </i>
+      к животным. Копирование материалов
+        запрещено.
+      <span class="c-c">
+       <noscript>
+        <div>
+         <img alt="" src="https://mc.yandex.ru/watch/44565373" style="position:absolute; left:-9999px;"/>
+        </div>
+       </noscript>
+       <script data-skip-moving="true">
+        document.write("<a href='//www.liveinternet.ru/click' " + "target=_blank><img src='//counter.yadro.ru/hit?q;t50.1;r" + escape(document.referrer) + ((typeof (screen) == "undefined2") ? "" : ";s" + screen.width + "*" + screen.height + "*" + (screen.colorDepth ? screen.colorDepth : screen.pixelDepth)) + ";u" + escape(document.URL) + ";h" + escape(document.title.substring(0, 150)) + ";" + Math.random() + "' alt='' title='LiveInternet' " + "border='0' width='31' height='31'><\/a>")
+       </script>
+      </span>
+      <span id="bx-composite-banner">
+      </span>
+     </div>
+    </footer>
+   </div>
+   <div class="top">
+   </div>
+  </div>
+  <header>
+   <a class="logo lapka" href="/">
+    <span class="logotxt">
+     lapkins
+    </span>
+   </a>
+   <nav class="topmenu">
+    <div class="iconmenu">
+     <span>
+     </span>
+    </div>
+    <div class="itemsmenu">
+     <a href="/dog/">
+      Собаки
+     </a>
+     <a href="/cat/">
+      Кошки
+     </a>
+     <a href="/publ/">
+      Журнал
+     </a>
+     <a href="/forum/">
+      Форум
+     </a>
+    </div>
+    <div class="find find_btn__open">
+     <i class="find-toggle">
+     </i>
+    </div>
+   </nav>
+   <div class="login no-login" id="auth_enter">
+   </div>
+  </header>
+  <div class="poisk-fon" style="display: none">
+   <div class="poisk-head">
+    <div class="find-stroka">
+     <form action="/poisk/" method="get">
+      <input autocomplete="off" class="find-okno" name="text" placeholder="Поиск по сайту" type="text" value=""/>
+      <input name="searchid" type="hidden" value="2854646">
+       <input name="l10n" type="hidden" value="ru"/>
+       <input name="reqenc" type="hidden" value=""/>
+      </input>
+     </form>
+    </div>
+    <span class="close">
+    </span>
+   </div>
+   <div class="poisk-content">
+   </div>
+  </div>
+  <div id="socservices" style="display: none">
+   <div id="bxdynamic_yn3v0T_start" style="display:none">
+   </div>
+   <div class="bx-authform-social">
+    <ul>
+     <li>
+      <a class="mailru2 bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_MailRu2" onclick="BX.util.popup('https://oauth.mail.ru/login?client_id=60ca29c8d06b445dbee8ad18f8b8504c&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fmailru2.php&amp;scope=userinfo&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Firlandskiy-vodyanoy-spaniel%252F%253Fcheck_key%253Dc5778b51955f34e7ea88b59722583e24%2526ANIMAL_CODE%253Dirlandskiy-vodyanoy-spaniel%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Firlandskiy-vodyanoy-spaniel%252F&amp;prompt_force=1', 460, 420)" title="Mail.Ru">
+      </a>
+     </li>
+     <li>
+      <a class="vkontakte bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_VKontakte" onclick="BX.util.popup('https://oauth.vk.com/authorize?client_id=6685710&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fvkontakte.php&amp;scope=friends,offline,email&amp;response_type=code&amp;state=c2l0ZV9pZD1zMSZiYWNrdXJsPSUyRmRvZyUyRmlybGFuZHNraXktdm9keWFub3ktc3BhbmllbCUyRiUzRmNoZWNrX2tleSUzRGM1Nzc4YjUxOTU1ZjM0ZTdlYTg4YjU5NzIyNTgzZTI0JTI2QU5JTUFMX0NPREUlM0RpcmxhbmRza2l5LXZvZHlhbm95LXNwYW5pZWwlMjZTRUNUSU9OX0NPREUlM0Rkb2clMjZwdXRpJTNEMSZyZWRpcmVjdF91cmw9JTJGZG9nJTJGaXJsYW5kc2tpeS12b2R5YW5veS1zcGFuaWVsJTJG', 660, 425)" title="ВКонтакте">
+      </a>
+     </li>
+     <li>
+      <a class="yandex bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_YandexOAuth" onclick="BX.util.popup('https://oauth.yandex.ru/authorize?response_type=code&amp;client_id=ac1483f5146e4b60bec2444ba3a33b4f&amp;display=popup&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fyandex.php&amp;force_confirm=yes&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Firlandskiy-vodyanoy-spaniel%252F%253Fcheck_key%253Dc5778b51955f34e7ea88b59722583e24%2526ANIMAL_CODE%253Dirlandskiy-vodyanoy-spaniel%2526SECTION_CODE%253Ddog%2526puti%253D1%26mode%3Dopener%26redirect_url%3D%252Fdog%252Firlandskiy-vodyanoy-spaniel%252F', 680, 600)" title="Яндекс">
+      </a>
+     </li>
+     <li>
+      <a class="odnoklassniki bx-authform-social-icon" href="javascript:void(0)" id="bx_socserv_icon_Odnoklassniki" onclick="BX.util.popup('http://www.odnoklassniki.ru/oauth/authorize?client_id=512000516860&amp;redirect_uri=https%3A%2F%2Flapkins.ru%2Fbitrix%2Ftools%2Foauth%2Fodnoklassniki.php&amp;response_type=code&amp;state=site_id%3Ds1%26backurl%3D%252Fdog%252Firlandskiy-vodyanoy-spaniel%252F%253Fcheck_key%253Dc5778b51955f34e7ea88b59722583e24%2526ANIMAL_CODE%253Dirlandskiy-vodyanoy-spaniel%2526SECTION_CODE%253Ddog%2526puti%253D1%26redirect_url%3D%252Fdog%252Firlandskiy-vodyanoy-spaniel%252F%26mode%3Dopener', 580, 400)" title="Одноклассники">
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div id="bxdynamic_yn3v0T_end" style="display:none">
+   </div>
+  </div>
+  <div class="pre-fs">
+  </div>
+  <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="/js/my.js?3">
+  </script>
+  <script src="//s1.lapkins.ru/jquery.fancybox.min.js">
+  </script>
+  <script>
+   var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://www.travelpayouts.com/whereami', true);
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4 && xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+      var country = response.country_name;
+
+      if (country !== 'Россия') {
+        var scriptTag = document.createElement('script');
+        scriptTag.async = true;
+        scriptTag.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8660102429244995';
+        
+        var bodyTag = document.getElementsByTagName('body')[0];
+        bodyTag.appendChild(scriptTag);
+      }
+    }
+  };
+  xhr.send();
+  </script>
+  <script>
+   window.yaContextCb=window.yaContextCb||[]
+  </script>
+  <script>
+   setTimeout(function() {(MRGtag = window.MRGtag || []).push({});}, 12000);
+  </script>
+  <script src="/bitrix/js/main/core/core.min.js?1656570566216224">
+  </script>
+  <script>
+   BX.setJSList(['/bitrix/js/main/core/core_ajax.js','/bitrix/js/main/core/core_promise.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/loadext/loadext.js','/bitrix/js/main/loadext/extension.js','/bitrix/js/main/polyfill/promise/js/promise.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/includes/js/includes.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/ui/polyfill/closest/js/closest.js','/bitrix/js/main/polyfill/fill/main.polyfill.fill.js','/bitrix/js/main/polyfill/find/js/find.js','/bitrix/js/main/polyfill/matches/js/matches.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/core/core.js','/bitrix/js/main/polyfill/intersectionobserver/js/intersectionobserver.js','/bitrix/js/main/lazyload/dist/lazyload.bundle.js','/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js','/bitrix/js/main/parambag/dist/parambag.bundle.js']);
+BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css','/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main/kernel_main_v1.js?1730098773214054">
+  </script>
+  <script src="/bitrix/cache/js/s1/lapkins/kernel_main_polyfill_customevent/kernel_main_polyfill_customevent_v1.js?16977972361051">
+  </script>
+  <script src="/bitrix/js/ui/dexie/dist/dexie.bitrix.bundle.min.js?165589894560992">
+  </script>
+  <script src="/bitrix/js/main/core/core_ls.min.js?14888980827365">
+  </script>
+  <script src="/bitrix/js/main/core/core_frame_cache.min.js?165657056611264">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/protobuf.min.js?161780489276433">
+  </script>
+  <script src="/bitrix/js/pull/protobuf/model.min.js?161780489214190">
+  </script>
+  <script src="/bitrix/js/rest/client/rest.client.min.js?16178107549240">
+  </script>
+  <script src="/bitrix/js/pull/client/pull.client.min.js?165589892644545">
+  </script>
+  <script src="/bitrix/js/main/popup/dist/main.popup.bundle.min.js?165657056663284">
+  </script>
+  <script>
+   (function () {
+						"use strict";
+
+						var counter = function ()
+						{
+							var cookie = (function (name) {
+								var parts = ("; " + document.cookie).split("; " + name + "=");
+								if (parts.length == 2) {
+									try {return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));}
+									catch (e) {}
+								}
+							})("BITRIX_CONVERSION_CONTEXT_s1");
+
+							if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+								return;
+
+							var request = new XMLHttpRequest();
+							request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+							request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+							request.send(
+								"SITE_ID="+encodeURIComponent("s1")+
+								"&sessid="+encodeURIComponent(BX.bitrix_sessid())+
+								"&HTTP_REFERER="+encodeURIComponent(document.referrer)
+							);
+						};
+
+						if (window.frameRequestStart === true)
+							BX.addCustomEvent("onFrameDataReceived", counter);
+						else
+							BX.ready(counter);
+					})();
+  </script>
+  <script>
+   var _ba = _ba || []; _ba.push(["aid", "de5f6931e753adf56546003daa1cae62"]); _ba.push(["host", "lapkins.ru"]); (function() {var ba = document.createElement("script"); ba.type = "text/javascript"; ba.async = true;ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ba, s);})();
+  </script>
+  <script>
+   window.yaContextCb = window.yaContextCb || []
+        document.addEventListener('DOMContentLoaded', function(){
+            let storage = localStorage;
+            let dataFlag = storage.getItem('visitFlag')
+            let dataFlagTime = storage.getItem('visitTimer');
+            let deltaTimer = 0;
+
+            if(dataFlagTime!==null && (parseInt(dataFlagTime)+deltaTimer)>Date.now()) storage.setItem('visitFlag', 'Y');
+            if (dataFlag === null) storage.setItem('visitFlag', 'Y')
+            else if(dataFlag === 'Y') {
+                window.yaContextCb.push(()=>{
+                    Ya.Context.AdvManager.render({
+                        renderTo: 'yandex_rtb_R-A-604547-20',
+                        blockId: 'R-A-604547-20'
+                    })
+                });
+                storage.setItem('visitFlag', 'X')
+                storage.setItem('visitTimer', Date.now())
+            }
+        });
+  </script>
+  <script>
+   var ip = {ip_address: "89.208.177.200"};
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(44565373, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true,
+		params:window.ip
+   });
+  </script>
+  <script>
+   var abc = new XMLHttpRequest();
+var microtime = Date.now();
+var abcbody = "t="+microtime+"&w="+screen.width+"&h="+ screen.height+"&cw="+document.documentElement.clientWidth+"&ch="+document.documentElement.clientHeight;
+abc.open("POST", "/antibot/antibot9/8.php", true);
+abc.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+abc.send(abcbody);
+  </script>
+  <script type="text/javascript">
+   function BxSocServPopup(id)
+{
+	var content = BX("bx_socserv_form_"+id);
+	if(content)
+	{
+		var popup = BX.PopupWindowManager.create("socServPopup"+id, BX("bx_socserv_icon_"+id), {
+			autoHide: true,
+			closeByEsc: true,
+			angle: {offset: 24},
+			content: content,
+			offsetTop: 3
+		});
+
+		popup.show();
+
+		var input = BX.findChild(content, {'tag':'input', 'attribute':{'type':'text'}}, true);
+		if(input)
+		{
+			input.focus();
+		}
+
+		var button = BX.findChild(content, {'tag':'input', 'attribute':{'type':'submit'}}, true);
+		if(button)
+		{
+			button.className = 'btn btn-primary';
+		}
+	}
+}
+  </script>
+ </body>
+</html>
+<!--d88c485c74c4a0c214c9fc7282a937cf-->
