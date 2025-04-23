@@ -36,11 +36,9 @@ def load_lemmas(filename):
 def count_doc_frequencies(folder):
     """Подсчет частоты документов, содержащих термин/лемму"""
     doc_freq = defaultdict(int)
-    total_docs = 0
 
     for filename in os.listdir(folder):
         if filename.endswith('.txt'):
-            total_docs += 1
             with open(os.path.join(folder, filename), 'r', encoding='utf-8') as f:
                 content = f.read().lower()
                 terms = set()
@@ -58,14 +56,15 @@ def count_doc_frequencies(folder):
                 for term in terms:
                     doc_freq[term] += 1
 
-    return doc_freq, total_docs
+    return doc_freq
 
 
 def calculate_tf_idf():
     """Основная функция для расчета TF-IDF"""
     # Подсчитываем частоту документов для токенов и лемм
-    token_doc_freq, total_docs = count_doc_frequencies(tokens_folder)
-    lemma_doc_freq, _ = count_doc_frequencies(lemmas_folder)
+    total_docs = 100
+    token_doc_freq = count_doc_frequencies(tokens_folder)
+    lemma_doc_freq = count_doc_frequencies(lemmas_folder)
 
     # Вычисляем IDF для всех токенов и лемм
     token_idf = {term: math.log(total_docs / (freq + 1)) for term, freq in token_doc_freq.items()}
@@ -76,11 +75,15 @@ def calculate_tf_idf():
         if doc_file.endswith('.txt'):
             doc_id = doc_file.replace('page_', '').replace('.txt', '')
 
-            # Чтение документа
-            with open(os.path.join(docs_folder, doc_file), 'r', encoding='utf-8') as f:
-                doc_text = f.read().lower()
-                words = doc_text.split()
-                total_terms = len(words)
+            # Чтение токенов документа
+            token_file = os.path.join(tokens_folder, f'page_{doc_id}_tokens.txt')
+            if os.path.exists(token_file):
+                with open(token_file, 'r', encoding='utf-8') as f_tokens:
+                    words = [line.strip() for line in f_tokens if line.strip()]
+                    total_terms = len(words)
+            else:
+                words = []
+                total_terms = 0
 
             # Обработка токенов
             token_file = os.path.join(tokens_folder, f'page_{doc_id}_tokens.txt')
@@ -102,12 +105,14 @@ def calculate_tf_idf():
             # Обработка лемм
             lemma_file = os.path.join(lemmas_folder, f'page_{doc_id}_lemmas.txt')
             if os.path.exists(lemma_file):
-                lemmas = load_lemmas(lemma_file)
+                lemmas = load_lemmas(lemma_file)  # Загружаем леммы и их формы
                 lemma_counts = defaultdict(int)
 
+                # Считаем, сколько раз формы леммы встречаются среди токенов
                 for lemma, forms in lemmas.items():
                     for form in forms:
-                        lemma_counts[lemma] += doc_text.count(form)
+                        # Количество вхождений формы леммы в список токенов
+                        lemma_counts[lemma] += words.count(form)
 
                 # Запись TF-IDF для лемм
                 with open(os.path.join(output_lemmas, f'tfidf_lemmas_{doc_id}.txt'), 'w', encoding='utf-8') as f_out:
